@@ -1,0 +1,30 @@
+---
+import '../styles/global.css';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  keywords?: string;
+}
+
+const { title, description = "Kompetente Rechtsberatung im Schweizer Familienrecht", keywords = "Familienrecht, Schweiz, Anwalt" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content={description}>
+    <meta name="keywords" content={keywords}>
+    <title>{title} | Familienrechtsanwalt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans text-gray-800">
+    <Nav />
+    <slot />
+    <Footer />
+</body>
+</html>

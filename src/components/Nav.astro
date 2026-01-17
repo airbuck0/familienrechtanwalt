@@ -1,0 +1,46 @@
+---
+// Navigation Component
+---
+
+<nav class="bg-white shadow-md fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-20">
+            <div class="flex items-center">
+                <a href="/" class="text-2xl font-serif font-bold text-navy">Familienrechtsanwalt</a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="/eherecht" class="text-gray-700 hover:text-gold transition">Eherecht</a>
+                <a href="/scheidung" class="text-gray-700 hover:text-gold transition">Scheidung</a>
+                <a href="/unterhalt" class="text-gray-700 hover:text-gold transition">Unterhalt</a>
+                <a href="/sorgerecht" class="text-gray-700 hover:text-gold transition">Sorgerecht</a>
+                <a href="/gueterrecht" class="text-gray-700 hover:text-gold transition">Güterrecht</a>
+                <a href="/kontakt" class="bg-gold text-white px-5 py-2 rounded hover:bg-opacity-90 transition">Beratung</a>
+            </div>
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-btn" class="text-gray-700 hover:text-gold">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+        <div class="px-4 py-3 space-y-3">
+            <a href="/eherecht" class="block text-gray-700 hover:text-gold transition">Eherecht</a>
+            <a href="/scheidung" class="block text-gray-700 hover:text-gold transition">Scheidung</a>
+            <a href="/unterhalt" class="block text-gray-700 hover:text-gold transition">Unterhalt</a>
+            <a href="/sorgerecht" class="block text-gray-700 hover:text-gold transition">Sorgerecht</a>
+            <a href="/gueterrecht" class="block text-gray-700 hover:text-gold transition">Güterrecht</a>
+            <a href="/kontakt" class="block bg-gold text-white px-5 py-2 rounded text-center hover:bg-opacity-90 transition">Beratung</a>
+        </div>
+    </div>
+</nav>
+
+<script>
+    document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
+        document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+</script>
