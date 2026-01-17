@@ -1,0 +1,41 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CTA from '../../components/CTA.astro';
+
+const articles = [
+  { title: "Güterrecht in der Schweiz", href: "/gueterrecht/gueterrecht-schweiz", desc: "Übersicht über das Schweizer Güterrecht" },
+  { title: "Güterstand", href: "/gueterrecht/gueterstand", desc: "Die verschiedenen Güterstände" },
+  { title: "Errungenschaftsbeteiligung", href: "/gueterrecht/errungenschaftsbeteiligung", desc: "Der ordentliche Güterstand" },
+  { title: "Gütertrennung", href: "/gueterrecht/guetertrennung", desc: "Vollständige Vermögenstrennung" },
+  { title: "Gütergemeinschaft", href: "/gueterrecht/guetergemeinschaft", desc: "Gemeinsames Vermögen der Ehegatten" },
+  { title: "Güterrechtliche Auseinandersetzung", href: "/gueterrecht/gueterrechtliche-auseinandersetzung", desc: "Vermögensaufteilung bei Scheidung" },
+  { title: "Gütertrennungsvertrag", href: "/gueterrecht/guetertrennungsvertrag", desc: "Vertrag zur Gütertrennung" },
+];
+---
+
+<Layout title="Güterrecht" description="Alles zum Thema Güterrecht in der Schweiz: Güterstand, Errungenschaftsbeteiligung, Gütertrennung und Vermögensaufteilung">
+    <header class="bg-navy pt-32 pb-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Güterrecht in der Schweiz</h1>
+            <p class="text-xl text-blue-100">Güterstand, Vermögensaufteilung und eheliches Vermögensrecht</p>
+        </div>
+    </header>
+
+    <section class="py-12">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid gap-6">
+                {articles.map(article => (
+                    <a href={article.href} class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                        <h2 class="text-xl font-bold text-navy mb-2">{article.title}</h2>
+                        <p class="text-gray-600">{article.desc}</p>
+                    </a>
+                ))}
+            </div>
+        </div>
+    </section>
+
+    <CTA
+        title="Fragen zum Güterrecht?"
+        text="Lassen Sie sich von einem spezialisierten Familienrechtsanwalt beraten."
+    />
+</Layout>

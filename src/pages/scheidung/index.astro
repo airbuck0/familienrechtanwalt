@@ -1,0 +1,56 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CTA from '../../components/CTA.astro';
+
+const articles = [
+  { title: "Kosten einer Scheidung", href: "/scheidung/kosten-einer-scheidung", desc: "Vollständiger Überblick über alle Scheidungskosten" },
+  { title: "Ablauf einer Scheidung", href: "/scheidung/ablauf-einer-scheidung", desc: "Schritt für Schritt durch das Scheidungsverfahren" },
+  { title: "Scheidung auf gemeinsames Begehren", href: "/scheidung/auf-gemeinsames-begehren", desc: "Die einvernehmliche Scheidung in der Schweiz" },
+  { title: "Strittige Scheidung", href: "/scheidung/strittige-scheidung", desc: "Wenn keine Einigung möglich ist" },
+  { title: "Dauer der Scheidung", href: "/scheidung/dauer-der-scheidung", desc: "Wie lange dauert ein Scheidungsverfahren?" },
+  { title: "Scheidung einreichen", href: "/scheidung/einreichen", desc: "Wie und wo Sie die Scheidung einreichen" },
+  { title: "Scheidungskonvention", href: "/scheidung/scheidungskonvention", desc: "Die Vereinbarung der Scheidungsfolgen" },
+  { title: "Scheidung ohne Anwalt", href: "/scheidung/ohne-anwalt", desc: "Ist eine Scheidung ohne Anwalt möglich?" },
+  { title: "Scheidungsantrag einreichen", href: "/scheidung/scheidungsantrag-einreichen", desc: "Der formelle Scheidungsantrag" },
+  { title: "Gesetzeslage Scheidung", href: "/scheidung/gesetzeslage", desc: "Rechtliche Grundlagen der Scheidung" },
+  { title: "Anwaltskosten Scheidung", href: "/scheidung/anwaltskosten", desc: "Was kostet ein Scheidungsanwalt?" },
+  { title: "Internationale Scheidung", href: "/scheidung/internationale-scheidung", desc: "Scheidung mit Auslandsbezug" },
+  { title: "Scheidung und Haus", href: "/scheidung/haus", desc: "Was passiert mit der Immobilie?" },
+  { title: "Scheidung mit Kind", href: "/scheidung/mit-kind", desc: "Besonderheiten bei Kindern" },
+  { title: "Scheidung rechtskräftig", href: "/scheidung/rechtskraeftig", desc: "Wann wird die Scheidung rechtskräftig?" },
+  { title: "Scheidungsantrag", href: "/scheidung/scheidungsantrag", desc: "Inhalt und Form des Antrags" },
+  { title: "Scheidungsklage", href: "/scheidung/scheidungsklage", desc: "Die einseitige Scheidungsklage" },
+  { title: "Scheidungsunterlagen", href: "/scheidung/unterlagen", desc: "Welche Dokumente werden benötigt?" },
+  { title: "Gerichtskosten Scheidung", href: "/scheidung/gerichtskosten", desc: "Übersicht der Gerichtsgebühren" },
+  { title: "Namensänderung nach Scheidung", href: "/scheidung/namensaenderung", desc: "Rückkehr zum Ledignamen" },
+  { title: "Unentgeltliche Rechtspflege", href: "/scheidung/unentgeltliche-rechtspflege", desc: "Kostenlose Rechtshilfe bei Scheidung" },
+  { title: "Vermögensaufteilung", href: "/scheidung/vermoegensaufteilung", desc: "Güterrechtliche Auseinandersetzung" },
+];
+---
+
+<Layout title="Scheidung" description="Alles zum Thema Scheidung in der Schweiz: Ablauf, Kosten, Dauer und rechtliche Grundlagen">
+    <header class="bg-navy pt-32 pb-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Scheidung in der Schweiz</h1>
+            <p class="text-xl text-blue-100">Umfassende Informationen zu Ablauf, Kosten und rechtlichen Aspekten</p>
+        </div>
+    </header>
+
+    <section class="py-12">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid gap-6">
+                {articles.map(article => (
+                    <a href={article.href} class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                        <h2 class="text-xl font-bold text-navy mb-2">{article.title}</h2>
+                        <p class="text-gray-600">{article.desc}</p>
+                    </a>
+                ))}
+            </div>
+        </div>
+    </section>
+
+    <CTA
+        title="Fragen zur Scheidung?"
+        text="Lassen Sie sich von einem spezialisierten Familienrechtsanwalt beraten."
+    />
+</Layout>

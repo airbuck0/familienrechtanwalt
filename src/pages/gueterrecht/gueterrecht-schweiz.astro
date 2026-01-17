@@ -1,0 +1,138 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+---
+
+<ArticleLayout
+    title="Güterrecht in der Schweiz"
+    description="Güterrecht in der Schweiz: Errungenschaftsbeteiligung, Gütergemeinschaft und Gütertrennung erklärt. Umfassender Überblick über das eheliche Vermögensrecht."
+    keywords="Güterrecht Schweiz, Errungenschaftsbeteiligung, Gütertrennung, Gütergemeinschaft, Ehevertrag"
+    category="Güterrecht"
+    categoryLink="/gueterrecht"
+>
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Das Güterrecht regelt die vermögensrechtlichen Beziehungen zwischen Ehegatten. Es bestimmt, wem das eheliche Vermögen gehört, wie es verwaltet wird, wer für Schulden haftet und wie das Vermögen bei Scheidung oder Tod aufgeteilt wird.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Die drei Güterstände</h2>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Güterstand</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Art. ZGB</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Entstehung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bei Auflösung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Errungenschaftsbeteiligung</td>
+                    <td class="px-6 py-4 text-gray-700">196-220</td>
+                    <td class="px-6 py-4 text-gray-700">Automatisch</td>
+                    <td class="px-6 py-4 text-gray-700">1/2 des Vorschlags</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Gütergemeinschaft</td>
+                    <td class="px-6 py-4 text-gray-700">221-246</td>
+                    <td class="px-6 py-4 text-gray-700">Nur Ehevertrag</td>
+                    <td class="px-6 py-4 text-gray-700">1/2 des Gesamtguts</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Gütertrennung</td>
+                    <td class="px-6 py-4 text-gray-700">247-251</td>
+                    <td class="px-6 py-4 text-gray-700">Ehevertrag oder Gericht</td>
+                    <td class="px-6 py-4 text-gray-700">Keine Teilung</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Errungenschaftsbeteiligung (Regelfall)</h2>
+
+    <p class="text-gray-700 mb-6">Die Errungenschaftsbeteiligung ist der gesetzliche Regelfall (Art. 196-220 ZGB). Während der Ehe verwaltet jeder Ehegatte sein Vermögen selbstständig. Erst bei Auflösung erfolgt ein wertmässiger Ausgleich.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Eigengut (Art. 198-199 ZGB)</h3>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Eingebrachtes Vermögen (was bei Eheschliessung vorhanden war)</li>
+        <li>Persönliche Gegenstände (Kleidung, persönlicher Schmuck)</li>
+        <li>Erbschaften und Schenkungen</li>
+        <li>Genugtuungsansprüche</li>
+        <li>Ersatzanschaffungen für Eigengut</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Errungenschaft (Art. 197 ZGB)</h3>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Arbeitserwerb (Lohn, Gehalt, Boni)</li>
+        <li>Sozialversicherungsleistungen (AHV, IV)</li>
+        <li>Pensionskassenbezüge</li>
+        <li>Erträge des Eigenguts (Zinsen, Dividenden, Mieten)</li>
+    </ul>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Gütertrennung</h2>
+
+    <p class="text-gray-700 mb-6">Bei der Gütertrennung (Art. 247-251 ZGB) gibt es keine vermögensrechtliche Verflechtung. Jeder Ehegatte verwaltet sein Vermögen allein, haftet nur für eigene Schulden, und bei Auflösung findet keine Teilung statt.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
+        <p class="font-semibold text-navy">Entstehung der Gütertrennung:</p>
+        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+            <li>Durch Ehevertrag (Art. 182 ZGB)</li>
+            <li>Durch gerichtliche Anordnung (Art. 185, 176 ZGB)</li>
+            <li>Bei Konkurs eines Ehegatten (Art. 188 ZGB)</li>
+        </ul>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Der Ehevertrag</h2>
+
+    <p class="text-gray-700 mb-4">Ein Ehevertrag muss öffentlich beurkundet werden (notarielle Urkunde). Mögliche Regelungen:</p>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Wahl eines anderen Güterstands</li>
+        <li>Zuweisung von Errungenschaft zu Eigengut</li>
+        <li>Erträge des Eigenguts dem Eigengut zuweisen</li>
+        <li>Abweichende Vorschlagsbeteiligung</li>
+        <li>Begünstigung des überlebenden Ehegatten</li>
+    </ul>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Güterrecht bei Scheidung</h2>
+
+    <p class="text-gray-700 mb-6">Bei einer Scheidung werden verschiedene Bereiche geregelt:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bereich</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Güterrechtliche Auseinandersetzung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 196 ff. ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Vorsorgeausgleich (Pensionskasse)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 122 ff. ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Nachehelicher Unterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 125 ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6"><strong>Stichtag:</strong> Bei Scheidung ist der Tag der Einreichung des Scheidungsbegehrens massgebend für die Zusammensetzung der Vermögensmassen.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Das Güterrecht ist ein zentraler Bestandteil des Eherechts und betrifft jeden verheirateten Menschen in der Schweiz. Es lohnt sich, die eigene güterrechtliche Situation zu kennen und gegebenenfalls durch einen Ehevertrag anzupassen.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
+        <p class="font-semibold text-navy mb-2">Wichtige Gesetzesartikel:</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li>Art. 181-186 ZGB - Güterstandswahl und Ehevertrag</li>
+            <li>Art. 196-220 ZGB - Errungenschaftsbeteiligung</li>
+            <li>Art. 221-246 ZGB - Gütergemeinschaft</li>
+            <li>Art. 247-251 ZGB - Gütertrennung</li>
+        </ul>
+    </div>
+</ArticleLayout>

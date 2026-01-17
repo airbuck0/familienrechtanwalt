@@ -1,0 +1,49 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CTA from '../../components/CTA.astro';
+
+const articles = [
+  { title: "Alimente", href: "/unterhalt/alimente", desc: "Kindesunterhalt in der Schweiz" },
+  { title: "Alimente berechnen", href: "/unterhalt/alimente-berechnen", desc: "Berechnung des Kindesunterhalts" },
+  { title: "Betreuungsunterhalt", href: "/unterhalt/betreuungsunterhalt", desc: "Unterhalt für die Kinderbetreuung" },
+  { title: "Ehegattenunterhalt", href: "/unterhalt/ehegattenunterhalt", desc: "Unterhalt zwischen Ehegatten" },
+  { title: "Nachehelicher Unterhalt", href: "/unterhalt/nachehelicher-unterhalt", desc: "Unterhalt nach der Scheidung" },
+  { title: "Trennungsunterhalt", href: "/unterhalt/trennungsunterhalt", desc: "Unterhalt während der Trennung" },
+  { title: "Alimentenhilfe", href: "/unterhalt/alimentenhilfe", desc: "Staatliche Unterstützung bei Alimenten" },
+  { title: "Elternunterhalt", href: "/unterhalt/elternunterhalt", desc: "Unterhalt für Eltern" },
+  { title: "Unterhalt eheähnliche Partnerschaft", href: "/unterhalt/eheaehnliche-partnerschaft", desc: "Unterhalt im Konkubinat" },
+  { title: "Unterhalt einklagen", href: "/unterhalt/einklagen", desc: "Gerichtliche Durchsetzung von Unterhalt" },
+  { title: "Unterhalt für Studenten", href: "/unterhalt/studenten", desc: "Unterhalt für volljährige Kinder" },
+  { title: "Unterhaltsvertrag", href: "/unterhalt/unterhaltsvertrag", desc: "Vereinbarung über Unterhaltszahlungen" },
+  { title: "Unterhaltszahlung", href: "/unterhalt/zahlung", desc: "Modalitäten der Unterhaltszahlung" },
+  { title: "Vollstreckung Unterhalt", href: "/unterhalt/vollstreckung", desc: "Durchsetzung von Unterhaltsforderungen" },
+  { title: "Unterhaltsberechnung", href: "/unterhalt/berechnen", desc: "Methoden zur Berechnung" },
+];
+---
+
+<Layout title="Unterhalt" description="Alles zum Thema Unterhalt in der Schweiz: Alimente, Ehegattenunterhalt, Berechnung und Durchsetzung">
+    <header class="bg-navy pt-32 pb-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Unterhalt in der Schweiz</h1>
+            <p class="text-xl text-blue-100">Alimente, Ehegattenunterhalt und Unterhaltsberechnung</p>
+        </div>
+    </header>
+
+    <section class="py-12">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid gap-6">
+                {articles.map(article => (
+                    <a href={article.href} class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                        <h2 class="text-xl font-bold text-navy mb-2">{article.title}</h2>
+                        <p class="text-gray-600">{article.desc}</p>
+                    </a>
+                ))}
+            </div>
+        </div>
+    </section>
+
+    <CTA
+        title="Fragen zum Unterhalt?"
+        text="Lassen Sie sich von einem spezialisierten Familienrechtsanwalt beraten."
+    />
+</Layout>

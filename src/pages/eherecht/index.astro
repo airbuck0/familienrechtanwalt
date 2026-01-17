@@ -1,0 +1,49 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import CTA from '../../components/CTA.astro';
+
+const articles = [
+  { title: "Ehevertrag", href: "/eherecht/ehevertrag", desc: "Der Ehevertrag in der Schweiz" },
+  { title: "Ehevertrag Kosten", href: "/eherecht/ehevertrag-kosten", desc: "Was kostet ein Ehevertrag?" },
+  { title: "Ehevertrag Gütertrennung", href: "/eherecht/ehevertrag-guetertrennung", desc: "Gütertrennung im Ehevertrag" },
+  { title: "Ehevertrag Haus", href: "/eherecht/ehevertrag-haus", desc: "Immobilien im Ehevertrag" },
+  { title: "Eheschutz", href: "/eherecht/eheschutz", desc: "Eheschutzverfahren und -massnahmen" },
+  { title: "Eheschliessung", href: "/eherecht/eheschliessung", desc: "Heiraten in der Schweiz" },
+  { title: "Eheschein", href: "/eherecht/eheschein", desc: "Der Eheschein und seine Bedeutung" },
+  { title: "Ehefähigkeit", href: "/eherecht/ehefaehigkeit", desc: "Voraussetzungen zur Eheschliessung" },
+  { title: "Ehe annullieren", href: "/eherecht/ehe-annullieren", desc: "Aufhebung der Ehe" },
+  { title: "Eheungültigkeit", href: "/eherecht/eheungueltigkeit", desc: "Wann ist eine Ehe ungültig?" },
+  { title: "Ehevorbereitungsverfahren", href: "/eherecht/ehevorbereitungsverfahren", desc: "Vorbereitung der Eheschliessung" },
+  { title: "Eingetragene Partnerschaft", href: "/eherecht/eingetragene-partnerschaft", desc: "Rechtliche Aspekte der Partnerschaft" },
+  { title: "Konkubinat", href: "/eherecht/konkubinat", desc: "Unverheiratetes Zusammenleben" },
+  { title: "Konkubinatsvertrag", href: "/eherecht/konkubinatsvertrag", desc: "Vertrag für unverheiratete Paare" },
+  { title: "Namensänderung bei Hochzeit", href: "/eherecht/namensaenderung-hochzeit", desc: "Namensrecht bei der Heirat" },
+];
+---
+
+<Layout title="Eherecht" description="Alles zum Thema Eherecht in der Schweiz: Ehevertrag, Eheschliessung, Eheschutz und Konkubinat">
+    <header class="bg-navy pt-32 pb-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Eherecht in der Schweiz</h1>
+            <p class="text-xl text-blue-100">Ehevertrag, Eheschliessung, Eheschutz und Partnerschaft</p>
+        </div>
+    </header>
+
+    <section class="py-12">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid gap-6">
+                {articles.map(article => (
+                    <a href={article.href} class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                        <h2 class="text-xl font-bold text-navy mb-2">{article.title}</h2>
+                        <p class="text-gray-600">{article.desc}</p>
+                    </a>
+                ))}
+            </div>
+        </div>
+    </section>
+
+    <CTA
+        title="Fragen zum Eherecht?"
+        text="Lassen Sie sich von einem spezialisierten Familienrechtsanwalt beraten."
+    />
+</Layout>
