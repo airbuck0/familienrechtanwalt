@@ -4,398 +4,891 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 
 <ArticleLayout
     title="Güterrechtliche Auseinandersetzung in der Schweiz"
-    description="Güterrechtliche Auseinandersetzung in der Schweiz: Vollständiger Praxisleitfaden zur Vermögensaufteilung bei Scheidung. Die sechs Phasen, Bewertung und Berechnung."
-    keywords="Güterrechtliche Auseinandersetzung, Vermögensaufteilung Scheidung, Vorschlag berechnen, Ersatzforderungen, Errungenschaftsbeteiligung, Art. 204 ZGB"
+    description="Güterrechtliche Auseinandersetzung bei Scheidung: Ablauf, Berechnung & Stichtag. Errungenschaftsbeteiligung, Gütergemeinschaft, Gütertrennung erklärt. Jetzt informieren!"
+    keywords="Güterrechtliche Auseinandersetzung, Vermögensaufteilung Scheidung, Vorschlag berechnen, Ersatzforderungen, Errungenschaftsbeteiligung, Güterrecht Schweiz, Art. 204 ZGB"
     category="Güterrecht"
     categoryLink="/gueterrecht"
 >
-    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die güterrechtliche Auseinandersetzung bezeichnet den Prozess der Vermögensaufteilung zwischen Ehegatten bei Auflösung des Güterstands. Ob bei Scheidung, Tod eines Ehegatten oder Wechsel des Güterstands - die korrekte Durchführung ist entscheidend für eine faire Vermögensverteilung.</p>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die güterrechtliche Auseinandersetzung regelt die Vermögensaufteilung bei Auflösung des Güterstands durch Scheidung, Tod, Ungültigerklärung oder Güterstandswechsel (Art. 204 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bei der Errungenschaftsbeteiligung (ordentlicher Güterstand) hat jeder Ehegatte Anspruch auf die Hälfte des Vorschlags des anderen (Art. 215 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Der Stichtag für die Vermögenszusammensetzung ist die Einreichung des Scheidungsgesuchs; die Bewertung erfolgt zum Zeitpunkt der Auseinandersetzung.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Eigengut (eingebrachtes Vermögen, Erbschaften, Schenkungen) wird nicht geteilt – nur die während der Ehe erwirtschaftete Errungenschaft.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bei Investitionen in Vermögenswerte des anderen Ehegatten besteht ein Anspruch auf anteilsmässige Mehrwertbeteiligung (Art. 206 ZGB).</span>
+            </li>
+        </ul>
+    </div>
+
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die güterrechtliche Auseinandersetzung ist einer der wichtigsten – und oft komplexesten – Aspekte einer Scheidung in der Schweiz. Sie bestimmt, wie das während der Ehe erwirtschaftete Vermögen zwischen den Ehegatten aufgeteilt wird. Dieser umfassende Leitfaden erklärt den Ablauf, die Berechnung und alle rechtlichen Grundlagen, die Sie für eine faire Vermögensteilung kennen müssen.</p>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Was ist die güterrechtliche Auseinandersetzung?</h2>
 
-    <p class="text-gray-700 mb-6">Die güterrechtliche Auseinandersetzung ist der rechtliche Prozess, bei dem das Vermögen der Ehegatten nach Auflösung des Güterstands aufgeteilt wird. Sie umfasst:</p>
+    <p class="text-gray-700 mb-6">Die güterrechtliche Auseinandersetzung bezeichnet den rechtlichen Prozess, bei dem das Vermögen der Ehegatten nach Auflösung des Güterstands aufgeteilt wird. Im Schweizerischen Zivilgesetzbuch (ZGB) ist dieser Prozess detailliert geregelt und umfasst mehrere systematische Schritte.</p>
 
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Die Feststellung, welche Vermögenswerte zu welcher Gütermasse gehören</li>
-        <li>Die Bewertung dieser Vermögenswerte</li>
-        <li>Die Berechnung allfälliger Ausgleichsansprüche</li>
-        <li>Die tatsächliche Aufteilung des Vermögens</li>
-    </ul>
+    <p class="text-gray-700 mb-6">Anders als oft angenommen, führt die güterrechtliche Auseinandersetzung nicht zu einer physischen Teilung aller Vermögenswerte. Vielmehr handelt es sich um eine wertmässige Abfindung: Ein Ehegatte schuldet dem anderen einen Geldbetrag, der sich aus der Berechnung der jeweiligen Ansprüche ergibt (Art. 215 Abs. 2 ZGB).</p>
 
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy mb-2">Wichtig:</p>
-        <p class="text-gray-700">Die güterrechtliche Auseinandersetzung ist strikt vom Vorsorgeausgleich (Pensionskasse) und von erbrechtlichen Fragen zu trennen, obwohl diese oft gleichzeitig relevant werden.</p>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtige Unterscheidung:</p>
+        <p class="text-gray-700">Die güterrechtliche Auseinandersetzung ist strikt vom <strong>Vorsorgeausgleich</strong> (Teilung der Pensionskassenguthaben nach Art. 122 ff. ZGB) und von <strong>erbrechtlichen Ansprüchen</strong> zu trennen, obwohl diese Themen bei einer Scheidung oder beim Tod eines Ehegatten oft gleichzeitig relevant werden.</p>
     </div>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Rechtliche Grundlagen</h3>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Die drei Güterstände im Überblick</h3>
 
-    <div class="overflow-x-auto mb-6">
+    <p class="text-gray-700 mb-6">Das Schweizer Recht kennt drei verschiedene Güterstände, die jeweils unterschiedliche Regeln für die güterrechtliche Auseinandersetzung vorsehen:</p>
+
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Güterstand</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Entstehung</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlagen</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Verbreitung</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Errungenschaftsbeteiligung</td>
-                    <td class="px-6 py-4 text-gray-700">Art. 204-220 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Automatisch bei Heirat (ordentlicher Güterstand)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 196-220 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Ca. 95% aller Ehen</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">Gütergemeinschaft</td>
-                    <td class="px-6 py-4 text-gray-700">Art. 238-246 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Nur durch Ehevertrag</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 221-246 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Sehr selten</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Gütertrennung</td>
+                    <td class="px-6 py-4 text-gray-700">Durch Ehevertrag oder Gerichtsentscheid</td>
                     <td class="px-6 py-4 text-gray-700">Art. 247-251 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Ca. 5% aller Ehen</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wann findet eine güterrechtliche Auseinandersetzung statt?</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wann wird der Güterstand aufgelöst?</h2>
 
-    <div class="overflow-x-auto mb-6">
+    <p class="text-gray-700 mb-6">Der Güterstand – und damit die güterrechtliche Auseinandersetzung – wird durch verschiedene Ereignisse ausgelöst (Art. 204 ZGB):</p>
+
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Auflösungsgrund</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Stichtag</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Scheidung/Trennung</td>
-                    <td class="px-6 py-4 text-gray-700">Einreichung des Begehrens beim Gericht</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Scheidung</td>
+                    <td class="px-6 py-4 text-gray-700">Einreichung des Scheidungsgesuchs</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 204 Abs. 2 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Gerichtliche Trennung</td>
+                    <td class="px-6 py-4 text-gray-700">Einreichung des Trennungsgesuchs</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 204 Abs. 2 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Ungültigerklärung der Ehe</td>
+                    <td class="px-6 py-4 text-gray-700">Einreichung der Klage</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 204 Abs. 2 ZGB</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">Tod eines Ehegatten</td>
                     <td class="px-6 py-4 text-gray-700">Todestag</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 204 Abs. 1 ZGB</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Ehevertrag (neuer Güterstand)</td>
-                    <td class="px-6 py-4 text-gray-700">Datum des Vertrags</td>
+                    <td class="px-6 py-4 text-gray-700">Datum der Beurkundung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 204 Abs. 1 ZGB</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">Gerichtliche Gütertrennung</td>
                     <td class="px-6 py-4 text-gray-700">Einreichung des Gesuchs</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 185, 189 ZGB</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Konkurs eines Ehegatten</td>
                     <td class="px-6 py-4 text-gray-700">Konkurseröffnung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 188 ZGB</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Die sechs Phasen der Auseinandersetzung</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Güterrechtliche Auseinandersetzung bei der Errungenschaftsbeteiligung</h2>
 
-    <p class="text-gray-700 mb-6">Die güterrechtliche Auseinandersetzung bei der Errungenschaftsbeteiligung erfolgt systematisch in sechs Phasen:</p>
+    <p class="text-gray-700 mb-6">Da die grosse Mehrheit der Schweizer Ehepaare unter dem ordentlichen Güterstand der Errungenschaftsbeteiligung lebt, konzentriert sich dieser Abschnitt auf den detaillierten Ablauf der Auseinandersetzung in diesem Güterstand.</p>
 
-    <div class="overflow-x-auto mb-6">
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Die vier Gütermassen</h3>
+
+    <p class="text-gray-700 mb-6">Bei der Errungenschaftsbeteiligung existieren während der Ehe vier separate Gütermassen, die bei der Auseinandersetzung unterschieden werden müssen:</p>
+
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Phase</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gütermasse</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Inhalt (Beispiele)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Eigengut Ehemann</td>
+                    <td class="px-6 py-4 text-gray-700">Eingebrachtes Vermögen, Erbschaften, Schenkungen, persönliche Gegenstände, Genugtuungsansprüche</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 198 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Eigengut Ehefrau</td>
+                    <td class="px-6 py-4 text-gray-700">Eingebrachtes Vermögen, Erbschaften, Schenkungen, persönliche Gegenstände, Genugtuungsansprüche</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 198 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Errungenschaft Ehemann</td>
+                    <td class="px-6 py-4 text-gray-700">Arbeitserwerb, Erträge aus Eigengut (Zinsen, Mieten), Sozialversicherungsleistungen, Ersatzanschaffungen für Errungenschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 197 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Errungenschaft Ehefrau</td>
+                    <td class="px-6 py-4 text-gray-700">Arbeitserwerb, Erträge aus Eigengut (Zinsen, Mieten), Sozialversicherungsleistungen, Ersatzanschaffungen für Errungenschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 197 ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Beweislast gemäss Art. 200 Abs. 3 ZGB:</p>
+        <p class="text-gray-700">Kann die Zugehörigkeit eines Vermögenswerts zum Eigengut nicht bewiesen werden, gilt die gesetzliche Vermutung zugunsten der Errungenschaft. Das heisst: Ohne Nachweis wird ein Vermögenswert als Errungenschaft behandelt und damit bei der Scheidung geteilt.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Der Ablauf in sechs Schritten</h3>
+
+    <p class="text-gray-700 mb-6">Die güterrechtliche Auseinandersetzung bei der Errungenschaftsbeteiligung erfolgt systematisch in sechs Phasen:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Schritt</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Bezeichnung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Inhalt</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">1</td>
-                    <td class="px-6 py-4 text-gray-700">Bestandesaufnahme</td>
-                    <td class="px-6 py-4 text-gray-700">Art. 207 ZGB</td>
+                    <td class="px-6 py-4 font-semibold text-gray-700">Rücknahme der Vermögenswerte</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder Ehegatte nimmt seine Vermögenswerte zurück, die sich im Besitz des anderen befinden</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 205 Abs. 1 ZGB</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">2</td>
-                    <td class="px-6 py-4 text-gray-700">Zuordnung zu Eigengut oder Errungenschaft</td>
+                    <td class="px-6 py-4 font-semibold text-gray-700">Zuordnung zu den Gütermassen</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder Vermögenswert wird dem Eigengut oder der Errungenschaft zugeordnet</td>
                     <td class="px-6 py-4 text-gray-700">Art. 197-200 ZGB</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">3</td>
-                    <td class="px-6 py-4 text-gray-700">Hinzurechnung</td>
+                    <td class="px-6 py-4 font-semibold text-gray-700">Hinzurechnung</td>
+                    <td class="px-6 py-4 text-gray-700">Bestimmte Vermögenswerte werden fiktiv zur Errungenschaft hinzugerechnet (Schenkungen, Verschleuderungen)</td>
                     <td class="px-6 py-4 text-gray-700">Art. 208 ZGB</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">4</td>
-                    <td class="px-6 py-4 text-gray-700">Ersatzforderungen berechnen</td>
-                    <td class="px-6 py-4 text-gray-700">Art. 209 ZGB</td>
+                    <td class="px-6 py-4 font-semibold text-gray-700">Ersatzforderungen berechnen</td>
+                    <td class="px-6 py-4 text-gray-700">Ausgleich von Vermögensverschiebungen zwischen den Gütermassen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 206, 209 ZGB</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">5</td>
-                    <td class="px-6 py-4 text-gray-700">Bewertung zum Verkehrswert</td>
+                    <td class="px-6 py-4 font-semibold text-gray-700">Bewertung zum Verkehrswert</td>
+                    <td class="px-6 py-4 text-gray-700">Alle Vermögenswerte werden zum aktuellen Marktwert bewertet</td>
                     <td class="px-6 py-4 text-gray-700">Art. 211, 214 ZGB</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">6</td>
-                    <td class="px-6 py-4 text-gray-700">Vorschlagsteilung</td>
+                    <td class="px-6 py-4 font-semibold text-gray-700">Vorschlagsteilung</td>
+                    <td class="px-6 py-4 text-gray-700">Berechnung und hälftige Teilung des Vorschlags</td>
                     <td class="px-6 py-4 text-gray-700">Art. 215 ZGB</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Phase 2: Zuordnung der Vermögenswerte</h3>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 1: Rücknahme der Vermögenswerte</h3>
 
-    <p class="text-gray-700 mb-4">Jeder Vermögenswert wird einer der vier Gütermassen zugeordnet:</p>
+    <p class="text-gray-700 mb-6">Zunächst nimmt jeder Ehegatte diejenigen Vermögenswerte zurück, die sich im Besitz des anderen Ehegatten befinden, ihm aber gehören (Art. 205 Abs. 1 ZGB). Dies betrifft beispielsweise:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Das eigene Auto, das in der gemeinsamen Garage steht</li>
+        <li>Persönliche Wertgegenstände (Schmuck, Kunstwerke)</li>
+        <li>Dokumente und Unterlagen</li>
+        <li>Geschäftsunterlagen und Arbeitsgeräte</li>
+    </ul>
+
+    <p class="text-gray-700 mb-6">Bei gemeinschaftlichem Eigentum kann ein Ehegatte, der ein überwiegendes Interesse nachweist, beantragen, dass ihm der Vermögenswert ungeteilt gegen volle Entschädigung zugewiesen wird (Art. 205 Abs. 2 ZGB). Dies ist besonders relevant bei der ehelichen Liegenschaft.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 2: Zuordnung zu Eigengut und Errungenschaft</h3>
+
+    <p class="text-gray-700 mb-6">In diesem zentralen Schritt wird jeder Vermögenswert einer der vier Gütermassen zugeordnet. Die korrekte Zuordnung ist entscheidend, da nur die Errungenschaft bei der Scheidung geteilt wird.</p>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Was gehört zum Eigengut? (Art. 198 ZGB)</h4>
 
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Gütermasse</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Zugehörige Werte</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kategorie</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beispiele</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Eigengut Ehemann</td>
-                    <td class="px-6 py-4 text-gray-700">Eingebrachtes, Geerbtes, Geschenktes, Persönliches</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Eingebrachtes Vermögen</td>
+                    <td class="px-6 py-4 text-gray-700">Vermögen, das bei der Heirat bereits vorhanden war</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Eigengut Ehefrau</td>
-                    <td class="px-6 py-4 text-gray-700">Eingebrachtes, Geerbtes, Geschenktes, Persönliches</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Erbschaften</td>
+                    <td class="px-6 py-4 text-gray-700">Alle während der Ehe geerbten Vermögenswerte</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Errungenschaft Ehemann</td>
-                    <td class="px-6 py-4 text-gray-700">Während der Ehe entgeltlich Erworbenes</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Schenkungen</td>
+                    <td class="px-6 py-4 text-gray-700">Unentgeltlich erhaltene Zuwendungen</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Errungenschaft Ehefrau</td>
-                    <td class="px-6 py-4 text-gray-700">Während der Ehe entgeltlich Erworbenes</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Persönliche Gegenstände</td>
+                    <td class="px-6 py-4 text-gray-700">Gegenstände zum ausschliesslich persönlichen Gebrauch</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Genugtuungsansprüche</td>
+                    <td class="px-6 py-4 text-gray-700">Entschädigungen für immaterielle Schäden</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Ersatzanschaffungen für Eigengut</td>
+                    <td class="px-6 py-4 text-gray-700">Mit Eigengut erworbene Ersatzgüter</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy">Art. 200 Abs. 3 ZGB:</p>
-        <p class="text-gray-700 italic">Kann die Zugehörigkeit zum Eigengut nicht bewiesen werden, gilt die Vermutung zugunsten der Errungenschaft.</p>
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Was gehört zur Errungenschaft? (Art. 197 ZGB)</h4>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kategorie</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beispiele</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Arbeitserwerb</td>
+                    <td class="px-6 py-4 text-gray-700">Lohn, Boni, Honorare, Gewinnanteile</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Sozialversicherungsleistungen</td>
+                    <td class="px-6 py-4 text-gray-700">AHV, IV, Pensionskasse, Unfallversicherung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Erträge aus Eigengut</td>
+                    <td class="px-6 py-4 text-gray-700">Zinsen, Dividenden, Mietzinserträge aus Eigengut</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Ersatzanschaffungen für Errungenschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Mit Errungenschaft erworbene Güter</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Praktisches Berechnungsbeispiel</h2>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig – Wertsteigerungen:</p>
+        <p class="text-gray-700">Konjunkturelle Wertsteigerungen (z.B. Hauspreis steigt durch Marktentwicklung) von Eigengut bleiben Eigengut. Erträge aus Eigengut (z.B. Mietzinseinnahmen) sind jedoch Errungenschaft (Art. 197 Abs. 2 Ziff. 4 ZGB).</p>
+    </div>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Berechnung des Vorschlags</h3>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 3: Hinzurechnung (Art. 208 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Die Hinzurechnung dient dem Schutz des Anspruchs eines Ehegatten auf Beteiligung am Vorschlag. Bestimmte Vermögenswerte, die aus der Errungenschaft verschwunden sind, werden bei der Berechnung fiktiv wieder hinzugerechnet.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Tatbestand</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Voraussetzungen</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Unentgeltliche Zuwendungen</td>
+                    <td class="px-6 py-4 text-gray-700">Innerhalb der letzten 5 Jahre vor Auflösung, ohne Zustimmung des anderen Ehegatten, keine üblichen Gelegenheitsgeschenke</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 208 Abs. 1 Ziff. 1 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Vermögensentäusserungen in Schädigungsabsicht</td>
+                    <td class="px-6 py-4 text-gray-700">Während der gesamten Ehedauer, in der Absicht, den Anspruch des anderen zu schmälern</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 208 Abs. 1 Ziff. 2 ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Deckt das Vermögen des verpflichteten Ehegatten die Beteiligungsforderung nicht, kann sich der benachteiligte Ehegatte unter Umständen direkt an den begünstigten Dritten wenden (Art. 220 ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 4: Ersatzforderungen (Art. 206, 209 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Ersatzforderungen entstehen, wenn Vermögensverschiebungen zwischen den Gütermassen stattgefunden haben. Sie stellen sicher, dass jede Gütermasse am Ende den ihr zustehenden Wert erhält.</p>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Arten von Ersatzforderungen</h4>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Situation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Ersatzforderung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beispiel</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Eigengut zahlt Schuld der Errungenschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Eigengut hat Forderung gegen Errungenschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Erbschaft zur Tilgung eines Konsumkredits verwendet</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Errungenschaft zahlt Schuld des Eigenguts</td>
+                    <td class="px-6 py-4 text-gray-700">Errungenschaft hat Forderung gegen Eigengut</td>
+                    <td class="px-6 py-4 text-gray-700">Lohn für Renovation des geerbten Hauses verwendet</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Eigengut investiert in Errungenschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Eigengut hat Forderung gegen Errungenschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Erbschaft als Anzahlung für Familienauto verwendet</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Errungenschaft investiert in Eigengut</td>
+                    <td class="px-6 py-4 text-gray-700">Errungenschaft hat Forderung gegen Eigengut</td>
+                    <td class="px-6 py-4 text-gray-700">Ersparnisse für Ausbau des geerbten Hauses verwendet</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Mehrwertbeteiligung (Art. 206 ZGB)</h4>
+
+    <p class="text-gray-700 mb-6">Wenn ein Ehegatte ohne entsprechende Gegenleistung zum Erwerb, zur Verbesserung oder zur Erhaltung von Vermögenswerten des anderen beigetragen hat, hat er Anspruch auf einen anteilsmässigen Mehrwert. Ein allfälliger Minderwert muss hingegen nicht getragen werden – der investierende Ehegatte erhält mindestens seinen Beitrag zurück (Nennwertgarantie).</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Berechnungsbeispiel Mehrwertbeteiligung:</p>
+        <p class="text-gray-700 mb-4">Die Ehefrau erbt ein Haus (Eigengut) im Wert von CHF 500'000. Der Ehemann investiert CHF 100'000 aus seiner Errungenschaft für Renovationen.</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>Gesamtinvestition: CHF 600'000</li>
+            <li>Anteil Ehemann: 100'000 / 600'000 = 16.67%</li>
+            <li>Aktueller Verkehrswert bei Scheidung: CHF 750'000</li>
+            <li><strong>Ersatzforderung Ehemann: 16.67% × 750'000 = CHF 125'000</strong></li>
+        </ul>
+        <p class="text-gray-700 mt-4">Wäre der Wert auf CHF 450'000 gesunken, erhielte der Ehemann trotzdem seine investierten CHF 100'000 zurück (Nennwertgarantie).</p>
+    </div>
+
+    <p class="text-gray-700 mb-6">Gemäss Art. 206 Abs. 3 ZGB können die Ehegatten die Mehrwertbeteiligung durch schriftliche Vereinbarung ausschliessen oder abändern.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 5: Bewertung zum Verkehrswert</h3>
+
+    <p class="text-gray-700 mb-6">Alle Vermögenswerte werden zum Verkehrswert – dem aktuellen Marktwert – bewertet (Art. 211 ZGB). Der massgebliche Zeitpunkt ist der Zeitpunkt der Auseinandersetzung, nicht der Stichtag.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Vermögensart</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bewertungsmethode</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Hinweise</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Bankguthaben</td>
+                    <td class="px-6 py-4 text-gray-700">Kontostand am Bewertungstag</td>
+                    <td class="px-6 py-4 text-gray-700">Einfach zu ermitteln</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Wertpapiere (kotiert)</td>
+                    <td class="px-6 py-4 text-gray-700">Börsenkurs am Bewertungstag</td>
+                    <td class="px-6 py-4 text-gray-700">Einfach zu ermitteln</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Immobilien</td>
+                    <td class="px-6 py-4 text-gray-700">Schätzung durch Experten</td>
+                    <td class="px-6 py-4 text-gray-700">Oft Streitpunkt; Gutachter erforderlich</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Fahrzeuge</td>
+                    <td class="px-6 py-4 text-gray-700">Eurotax, Händlerbewertung</td>
+                    <td class="px-6 py-4 text-gray-700">Standardmethoden verfügbar</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Unternehmen / Beteiligungen</td>
+                    <td class="px-6 py-4 text-gray-700">Praktikermethode, DCF, Substanzwert</td>
+                    <td class="px-6 py-4 text-gray-700">Sehr komplex; oft streitig</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Lebensversicherungen</td>
+                    <td class="px-6 py-4 text-gray-700">Rückkaufswert</td>
+                    <td class="px-6 py-4 text-gray-700">Bei der Versicherung erfragen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Kunst und Sammlungen</td>
+                    <td class="px-6 py-4 text-gray-700">Expertenschätzung</td>
+                    <td class="px-6 py-4 text-gray-700">Spezialgutachter nötig</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Säule 3a-Guthaben</td>
+                    <td class="px-6 py-4 text-gray-700">Aktueller Guthabenstand</td>
+                    <td class="px-6 py-4 text-gray-700">Latente Steuern berücksichtigen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Bundesgerichtspraxis zur Bewertung (BGE 137 III 337):</p>
+        <p class="text-gray-700">Das Bundesgericht unterscheidet strikt zwischen dem Stichtag (für die Zusammensetzung der Vermögensmassen) und dem Bewertungszeitpunkt (für die Wertbestimmung). Die Vermögenswerte werden zum Zeitpunkt der Auseinandersetzung bewertet, auch wenn das Scheidungsverfahren Jahre dauert.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 6: Vorschlagsberechnung und -teilung</h3>
+
+    <p class="text-gray-700 mb-6">Der Vorschlag ist der Überschuss der Errungenschaft über deren Schulden. Jeder Ehegatte hat gemäss Art. 215 Abs. 1 ZGB Anspruch auf die Hälfte des Vorschlags des anderen.</p>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Berechnungsformel</h4>
+
+    <div class="bg-gray-100 p-6 rounded-lg mb-6">
+        <p class="font-mono text-navy">
+            <strong>Vorschlag</strong> = Aktiven der Errungenschaft − Schulden der Errungenschaft + Ersatzforderungen (an Eigengut) − Ersatzforderungen (von Eigengut)
+        </p>
+    </div>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Vorschlag und Rückschlag</h4>
+
+    <p class="text-gray-700 mb-6">Übersteigen die Schulden die Aktiven, spricht man von einem Rückschlag. Wichtig: An einem Rückschlag muss sich der andere Ehegatte nicht beteiligen (Art. 210 Abs. 2 ZGB). Jeder trägt seinen Rückschlag selbst.</p>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Vollständiges Berechnungsbeispiel</h4>
 
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Position</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Ehemann (CHF)</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Ehefrau (CHF)</th>
+                    <th class="px-6 py-3 text-right text-sm font-semibold">Ehemann (CHF)</th>
+                    <th class="px-6 py-3 text-right text-sm font-semibold">Ehefrau (CHF)</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 text-gray-700" colspan="3"><strong>Aktiven Errungenschaft</strong></td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold" colspan="3">Aktiven Errungenschaft</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 text-gray-700">Bankkonten</td>
-                    <td class="px-6 py-4 text-gray-700">80'000</td>
-                    <td class="px-6 py-4 text-gray-700">30'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">80'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">45'000</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 text-gray-700">Wertschriften</td>
-                    <td class="px-6 py-4 text-gray-700">120'000</td>
-                    <td class="px-6 py-4 text-gray-700">50'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">120'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">60'000</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 text-gray-700">Anteil Immobilie</td>
-                    <td class="px-6 py-4 text-gray-700">200'000</td>
-                    <td class="px-6 py-4 text-gray-700">200'000</td>
+                    <td class="px-6 py-4 text-gray-700">Miteigentumsanteil Liegenschaft</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">400'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">400'000</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 text-gray-700">Fahrzeug</td>
-                    <td class="px-6 py-4 text-gray-700">40'000</td>
-                    <td class="px-6 py-4 text-gray-700">20'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">35'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">18'000</td>
                 </tr>
-                <tr class="bg-gray-50 font-semibold">
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Säule 3a</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">85'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">42'000</td>
+                </tr>
+                <tr class="font-semibold">
                     <td class="px-6 py-4 text-navy">Summe Aktiven</td>
-                    <td class="px-6 py-4 text-navy">440'000</td>
-                    <td class="px-6 py-4 text-navy">300'000</td>
+                    <td class="px-6 py-4 text-navy text-right">720'000</td>
+                    <td class="px-6 py-4 text-navy text-right">565'000</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 text-gray-700" colspan="3"><strong>Schulden Errungenschaft</strong></td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold" colspan="3">Passiven Errungenschaft</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 text-gray-700">Hypothek (Anteil)</td>
-                    <td class="px-6 py-4 text-gray-700">150'000</td>
-                    <td class="px-6 py-4 text-gray-700">150'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">300'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">300'000</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 text-gray-700">Kredit</td>
-                    <td class="px-6 py-4 text-gray-700">20'000</td>
-                    <td class="px-6 py-4 text-gray-700">0</td>
+                    <td class="px-6 py-4 text-gray-700">Leasing / Kredite</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">15'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">5'000</td>
                 </tr>
-                <tr class="bg-gray-50 font-semibold">
-                    <td class="px-6 py-4 text-navy">Summe Schulden</td>
-                    <td class="px-6 py-4 text-navy">170'000</td>
-                    <td class="px-6 py-4 text-navy">150'000</td>
+                <tr class="font-semibold bg-gray-50">
+                    <td class="px-6 py-4 text-navy">Summe Passiven</td>
+                    <td class="px-6 py-4 text-navy text-right">315'000</td>
+                    <td class="px-6 py-4 text-navy text-right">305'000</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 text-gray-700" colspan="3"><strong>Ersatzforderungen</strong></td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold" colspan="3">Ersatzforderungen</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 text-gray-700">Von Eigengut erhalten</td>
-                    <td class="px-6 py-4 text-gray-700">+30'000</td>
-                    <td class="px-6 py-4 text-gray-700">+0</td>
+                    <td class="px-6 py-4 text-gray-700">Von Eigengut erhalten (wird subtrahiert)</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">−50'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">−0</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 text-gray-700">An Eigengut geleistet</td>
-                    <td class="px-6 py-4 text-gray-700">-0</td>
-                    <td class="px-6 py-4 text-gray-700">-20'000</td>
+                    <td class="px-6 py-4 text-gray-700">An Eigengut geleistet (wird addiert)</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">+0</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">+25'000</td>
                 </tr>
-                <tr class="bg-gray-50 font-semibold">
+                <tr class="font-bold bg-gold/20">
                     <td class="px-6 py-4 text-navy">Vorschlag</td>
-                    <td class="px-6 py-4 text-navy">300'000</td>
-                    <td class="px-6 py-4 text-navy">130'000</td>
+                    <td class="px-6 py-4 text-navy text-right">355'000</td>
+                    <td class="px-6 py-4 text-navy text-right">285'000</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ausgleichsberechnung</h3>
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Ausgleichsberechnung</h4>
 
-    <div class="overflow-x-auto mb-6">
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Berechnung</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Betrag (CHF)</th>
+                    <th class="px-6 py-3 text-right text-sm font-semibold">Betrag (CHF)</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 text-gray-700">Anspruch Ehefrau: 1/2 x 300'000</td>
-                    <td class="px-6 py-4 text-gray-700">150'000</td>
+                    <td class="px-6 py-4 text-gray-700">Anspruch Ehefrau auf Vorschlag Ehemann: ½ × 355'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">177'500</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 text-gray-700">Anspruch Ehemann: 1/2 x 130'000</td>
-                    <td class="px-6 py-4 text-gray-700">65'000</td>
+                    <td class="px-6 py-4 text-gray-700">Anspruch Ehemann auf Vorschlag Ehefrau: ½ × 285'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">142'500</td>
                 </tr>
-                <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Netto-Zahlung Ehemann an Ehefrau</td>
-                    <td class="px-6 py-4 font-semibold text-navy">85'000</td>
+                <tr class="font-bold">
+                    <td class="px-6 py-4 text-navy">Netto-Zahlung Ehemann an Ehefrau</td>
+                    <td class="px-6 py-4 text-navy text-right">35'000</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Stichtag und Bewertungszeitpunkt</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Güterrechtliche Auseinandersetzung bei der Gütergemeinschaft</h2>
 
-    <p class="text-gray-700 mb-6">Das Bundesgericht unterscheidet strikt zwischen zwei Zeitpunkten:</p>
+    <p class="text-gray-700 mb-6">Bei der Gütergemeinschaft existiert neben dem Eigengut beider Ehegatten ein gemeinsames Gesamtgut. Die Auseinandersetzung folgt anderen Regeln als bei der Errungenschaftsbeteiligung.</p>
 
-    <div class="overflow-x-auto mb-6">
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ablauf bei Scheidung oder Trennung (Art. 242 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Wird die Gütergemeinschaft durch Scheidung, Trennung oder Ungültigerklärung der Ehe aufgelöst, gilt Folgendes:</p>
+
+    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-3">
+        <li><strong>Rücknahme des «fiktiven Eigenguts»:</strong> Jeder Ehegatte nimmt aus dem Gesamtgut diejenigen Vermögenswerte zurück, die bei der Errungenschaftsbeteiligung zu seinem Eigengut gehören würden (Art. 242 Abs. 1 ZGB).</li>
+        <li><strong>Hälftige Teilung des Rests:</strong> Das verbleibende Gesamtgut wird je zur Hälfte unter den Ehegatten aufgeteilt (Art. 242 Abs. 2 ZGB).</li>
+        <li><strong>Abweichende Vereinbarungen:</strong> Im Ehevertrag kann eine andere Aufteilung festgelegt werden (z.B. 70/30 statt 50/50).</li>
+    </ol>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Unterschied zur Auflösung durch Tod (Art. 241 ZGB):</p>
+        <p class="text-gray-700">Bei Tod eines Ehegatten steht dem überlebenden Ehegatten grundsätzlich die Hälfte des gesamten Gesamtguts zu – nicht nur des nach Abzug des «fiktiven Eigenguts» verbleibenden Rests.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Güterrechtliche Auseinandersetzung bei der Gütertrennung</h2>
+
+    <p class="text-gray-700 mb-6">Bei der Gütertrennung ist die Auseinandersetzung grundsätzlich einfach: Da während der Ehe keine gemeinsamen Vermögensmassen entstehen, behält jeder Ehegatte sein eigenes Vermögen (Art. 247 ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Typische Problemfelder</h3>
+
+    <p class="text-gray-700 mb-6">Auch bei der Gütertrennung können Schwierigkeiten auftreten:</p>
+
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Zeitpunkt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Problem</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Lösung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Zusammensetzung der Vermögensmassen</td>
-                    <td class="px-6 py-4 text-gray-700">Stichtag (Auflösung des Güterstands)</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Unklare Eigentumsverhältnisse</td>
+                    <td class="px-6 py-4 text-gray-700">Wer die Zugehörigkeit nicht beweisen kann, dessen Vermögenswerte gelten als Miteigentum beider Ehegatten</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 248 ZGB</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Bewertung der Vermögenswerte</td>
-                    <td class="px-6 py-4 text-gray-700">Zeitpunkt der Auseinandersetzung</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Gemeinsame Anschaffungen</td>
+                    <td class="px-6 py-4 text-gray-700">Aufteilung nach Miteigentumsregeln oder Zuweisung gegen Entschädigung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 251 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Schulden zwischen Ehegatten</td>
+                    <td class="px-6 py-4 text-gray-700">Fällig bei Auflösung, ausser Stundung ist vereinbart oder die Umstände erfordern sie</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 250 ZGB</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Bewertung von Vermögenswerten</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Der güterrechtliche Stichtag</h2>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Bewertungsmethoden nach Vermögensart</h3>
+    <p class="text-gray-700 mb-6">Der Stichtag ist von zentraler Bedeutung für die güterrechtliche Auseinandersetzung. Er bestimmt, welche Vermögenswerte berücksichtigt werden und auf welchen Zeitpunkt das Vermögen «eingefroren» wird.</p>
 
-    <div class="overflow-x-auto mb-6">
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Stichtag bei verschiedenen Konstellationen</h3>
+
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Vermögensart</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Bewertungsmethode</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Konstellation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Stichtag</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Besonderheiten</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 text-gray-700">Bankguthaben</td>
-                    <td class="px-6 py-4 text-gray-700">Kontostand am Bewertungstag</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Einvernehmliche Scheidung</td>
+                    <td class="px-6 py-4 text-gray-700">Frei wählbar (z.B. Auszugsdatum, 31.12.)</td>
+                    <td class="px-6 py-4 text-gray-700">Vereinbarung in Scheidungskonvention</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 text-gray-700">Wertpapiere</td>
-                    <td class="px-6 py-4 text-gray-700">Börsenkurs am Bewertungstag</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Strittige Scheidung</td>
+                    <td class="px-6 py-4 text-gray-700">Einreichung der Scheidungsklage</td>
+                    <td class="px-6 py-4 text-gray-700">Zwingend nach Art. 204 Abs. 2 ZGB</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 text-gray-700">Immobilien</td>
-                    <td class="px-6 py-4 text-gray-700">Schätzung durch Experten</td>
-                </tr>
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4 text-gray-700">Fahrzeuge</td>
-                    <td class="px-6 py-4 text-gray-700">Händlerbewertung, Eurotax</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4 text-gray-700">Unternehmen</td>
-                    <td class="px-6 py-4 text-gray-700">Praktikermethode, DCF</td>
-                </tr>
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4 text-gray-700">Kunstgegenstände</td>
-                    <td class="px-6 py-4 text-gray-700">Expertenschätzung</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Nach Eheschutzverfahren</td>
+                    <td class="px-6 py-4 text-gray-700">Datum der Anordnung der Gütertrennung</td>
+                    <td class="px-6 py-4 text-gray-700">Falls im Eheschutz Gütertrennung angeordnet</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Ersatzforderungen und Mehrwertbeteiligung</h2>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtige Unterscheidung:</p>
+        <p class="text-gray-700"><strong>Stichtag</strong> (für die Zusammensetzung der Vermögensmassen) und <strong>Bewertungszeitpunkt</strong> (für die Wertbestimmung) sind nicht identisch. Die Vermögenswerte werden zum aktuellen Verkehrswert im Zeitpunkt der Auseinandersetzung bewertet – nicht zum Stichtag.</p>
+    </div>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wann entstehen Ersatzforderungen?</h3>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Auskunftspflicht der Ehegatten (Art. 170 ZGB)</h2>
 
-    <p class="text-gray-700 mb-4">Ersatzforderungen entstehen bei Vermögensverschiebungen zwischen den Gütermassen:</p>
+    <p class="text-gray-700 mb-6">Für eine korrekte güterrechtliche Auseinandersetzung ist die vollständige Offenlegung der Vermögensverhältnisse unerlässlich. Das Gesetz sieht deshalb eine umfassende Auskunftspflicht vor.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Umfang der Auskunftspflicht</h3>
+
+    <p class="text-gray-700 mb-6">Gemäss Art. 170 Abs. 1 ZGB kann jeder Ehegatte vom anderen Auskunft verlangen über:</p>
 
     <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Eigengut zahlt Errungenschaftsschuld:</strong> Ersatzforderung Eigengut gegen Errungenschaft</li>
-        <li><strong>Errungenschaft zahlt Eigengutsschuld:</strong> Ersatzforderung Errungenschaft gegen Eigengut</li>
-        <li><strong>Eigengut investiert in Errungenschaft:</strong> Ersatzforderung Eigengut gegen Errungenschaft</li>
+        <li>Einkommen (Lohn, Nebeneinkünfte, Sozialleistungen)</li>
+        <li>Vermögen (Konten, Immobilien, Wertpapiere, Beteiligungen)</li>
+        <li>Schulden (Kredite, Hypotheken, Bürgschaften)</li>
     </ul>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Mehrwertbeteiligung (Art. 206 ZGB)</h3>
+    <p class="text-gray-700 mb-6">Auf Begehren kann das Gericht den anderen Ehegatten oder auch Dritte (z.B. Banken, Arbeitgeber) verpflichten, die erforderlichen Auskünfte zu erteilen und Urkunden vorzulegen (Art. 170 Abs. 2 ZGB).</p>
 
-    <p class="text-gray-700 mb-6">Wenn ein Ehegatte in Vermögenswerte des anderen investiert, hat er Anspruch auf anteilige Beteiligung am Mehrwert.</p>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Durchsetzung</h3>
 
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy mb-2">Beispiel:</p>
-        <p class="text-gray-700 mb-2">Die Ehefrau erbt ein Haus (Eigengut, Wert CHF 500'000). Der Ehemann investiert CHF 100'000 aus seiner Errungenschaft für Renovationen.</p>
-        <ul class="list-disc list-inside text-gray-700 space-y-1">
-            <li>Anteil Ehemann: 100'000 / 600'000 = 16.67%</li>
-            <li>Aktueller Wert: CHF 750'000</li>
-            <li><strong>Ersatzforderung: 16.67% x 750'000 = CHF 125'000</strong></li>
-        </ul>
+    <p class="text-gray-700 mb-6">Kommt ein Ehegatte seiner Auskunftspflicht nicht nach, kann das Gericht folgende Massnahmen anordnen:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Ungehorsamsstrafe nach Art. 292 StGB (Busse)</li>
+        <li>Zwangsvollstreckung</li>
+        <li>Prozessuale Nachteile (ungünstige Beweiswürdigung)</li>
+    </ul>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Einvernehmliche vs. strittige Auseinandersetzung</h2>
+
+    <p class="text-gray-700 mb-6">Im Gegensatz zu anderen Scheidungsfolgen (z.B. Kinderunterhalt) gilt für die güterrechtliche Auseinandersetzung der Verhandlungsgrundsatz (Art. 277 ZPO). Die Ehegatten können und sollen sich also einigen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Einvernehmliche Regelung (Scheidungskonvention)</h3>
+
+    <p class="text-gray-700 mb-6">Bei einer einvernehmlichen Scheidung regeln die Ehegatten die güterrechtliche Auseinandersetzung in der Scheidungskonvention. Sie können dabei:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Einen beliebigen Stichtag wählen</li>
+        <li>Die Aufteilung flexibel gestalten</li>
+        <li>Pauschalvereinbarungen treffen («per Saldo aller Ansprüche»)</li>
+        <li>Vermögenswerte direkt zuweisen statt wertmässig ausgleichen</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praxishinweis:</p>
+        <p class="text-gray-700">Die weitaus meisten güterrechtlichen Auseinandersetzungen werden aussergerichtlich durch Vergleich geregelt. Eine einvernehmliche Lösung ist nicht nur kostengünstiger und schneller, sondern führt erfahrungsgemäss auch zu dauerhafteren Ergebnissen.</p>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Hinzurechnung (Art. 208 ZGB)</h2>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Strittige Auseinandersetzung</h3>
 
-    <p class="text-gray-700 mb-6">Die Hinzurechnung schützt den Anspruch eines Ehegatten, wenn der andere das Vermögen böswillig geschmälert hat:</p>
+    <p class="text-gray-700 mb-6">Können sich die Ehegatten nicht einigen, entscheidet das Gericht. Die Parteien müssen ihre güterrechtlichen Ansprüche behaupten und beweisen (Verhandlungsgrundsatz). Dies erfordert:</p>
 
-    <div class="overflow-x-auto mb-6">
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Vollständige Aufstellung aller Vermögenswerte</li>
+        <li>Dokumentation der Zuordnung (Eigengut/Errungenschaft)</li>
+        <li>Nachweis von Ersatzforderungen</li>
+        <li>Bewertungsgutachten für komplexe Vermögenswerte</li>
+    </ul>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Dauer der güterrechtlichen Auseinandersetzung</h2>
+
+    <p class="text-gray-700 mb-6">Die Dauer hängt stark von der Komplexität der Vermögensverhältnisse und der Kooperationsbereitschaft beider Parteien ab:</p>
+
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Tatbestand</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Voraussetzungen</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Konstellation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Typische Dauer</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Einflussfaktoren</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Unentgeltliche Zuwendungen</td>
-                    <td class="px-6 py-4 text-gray-700">5-Jahres-Frist, ohne Zustimmung des anderen</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Einfache Verhältnisse, einvernehmlich</td>
+                    <td class="px-6 py-4 text-gray-700">1–3 Monate</td>
+                    <td class="px-6 py-4 text-gray-700">Klare Vermögensverhältnisse, keine Immobilien</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Vermögensentäusserungen</td>
-                    <td class="px-6 py-4 text-gray-700">In Schädigungsabsicht, ganze Ehedauer</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Mittlere Komplexität, einvernehmlich</td>
+                    <td class="px-6 py-4 text-gray-700">3–6 Monate</td>
+                    <td class="px-6 py-4 text-gray-700">Immobilie vorhanden, Ersatzforderungen zu klären</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Komplexe Verhältnisse, einvernehmlich</td>
+                    <td class="px-6 py-4 text-gray-700">6–12 Monate</td>
+                    <td class="px-6 py-4 text-gray-700">Unternehmensbeteiligungen, internationale Vermögen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Strittige Auseinandersetzung</td>
+                    <td class="px-6 py-4 text-gray-700">1–3+ Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">Gerichtsverfahren, Gutachten, Rechtsmittel</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kosten der güterrechtlichen Auseinandersetzung</h2>
+
+    <p class="text-gray-700 mb-6">Die Kosten variieren stark je nach Komplexität und Verfahrensart:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kostenfaktor</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Einvernehmlich</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Strittig</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Anwaltskosten</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 2'000–10'000</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 10'000–50'000+</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Gerichtskosten</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'000–3'000</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 5'000–30'000+ (streitwertabhängig)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Gutachterkosten</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'000–5'000 (falls nötig)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 5'000–20'000+</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Immobilienschätzung</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'500–4'000</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 3'000–10'000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Checkliste: Benötigte Unterlagen</h2>
+
+    <p class="text-gray-700 mb-6">Für eine vollständige güterrechtliche Auseinandersetzung sollten folgende Dokumente zusammengestellt werden:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kategorie</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Benötigte Unterlagen</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Bankkonten</td>
+                    <td class="px-6 py-4 text-gray-700">Kontoauszüge per Stichtag und aktuell, Kontoübersichten</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Wertpapiere</td>
+                    <td class="px-6 py-4 text-gray-700">Depotauszüge per Stichtag und aktuell</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Immobilien</td>
+                    <td class="px-6 py-4 text-gray-700">Grundbuchauszug, Kaufvertrag, Hypothekarvertrag, Verkehrswertschätzung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Fahrzeuge</td>
+                    <td class="px-6 py-4 text-gray-700">Fahrzeugausweis, Kaufvertrag, Leasingvertrag</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Versicherungen</td>
+                    <td class="px-6 py-4 text-gray-700">Policen, Rückkaufswerte (bei kapitalbildenden Versicherungen)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Vorsorge</td>
+                    <td class="px-6 py-4 text-gray-700">Freizügigkeitsausweise (2. Säule), Säule-3a-Bescheinigungen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Schulden</td>
+                    <td class="px-6 py-4 text-gray-700">Kreditverträge, Leasingverträge, Bürgschaften</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Eigengut-Nachweise</td>
+                    <td class="px-6 py-4 text-gray-700">Erbverträge, Schenkungsurkunden, Vermögensstand bei Heirat, Steuererklärungen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Unternehmen</td>
+                    <td class="px-6 py-4 text-gray-700">Jahresabschlüsse, Gesellschaftsverträge, Aktionärsbindungsverträge</td>
                 </tr>
             </tbody>
         </table>
@@ -403,52 +896,241 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wichtige Bundesgerichtsentscheide</h2>
 
-    <div class="overflow-x-auto mb-6">
+    <p class="text-gray-700 mb-6">Die Rechtsprechung des Bundesgerichts hat die güterrechtliche Auseinandersetzung in vielen Punkten präzisiert:</p>
+
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">BGE</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">BGE / Urteil</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Kernaussage</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">BGE 137 III 337</td>
-                    <td class="px-6 py-4 text-gray-700">Zusammensetzung zum Stichtag, Bewertung bei Auseinandersetzung</td>
+                    <td class="px-6 py-4 text-gray-700">Zusammensetzung der Vermögensmassen zum Stichtag; Bewertung zum Zeitpunkt der Auseinandersetzung</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">BGE 138 III 689</td>
-                    <td class="px-6 py-4 text-gray-700">Definition der unentgeltlichen Zuwendung</td>
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 123 III 152</td>
+                    <td class="px-6 py-4 text-gray-700">Berechnung von Ersatzforderungen bei Grundstücksinvestitionen (Art. 206 und 209 ZGB)</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">BGE 141 III 53</td>
-                    <td class="px-6 py-4 text-gray-700">Berechnung bei Grundstücksinvestitionen</td>
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 117 II 218</td>
+                    <td class="px-6 py-4 text-gray-700">Auskunftspflicht im Scheidungsverfahren; Bewertung von Unternehmensbeteiligungen</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">BGE 5A_361/2022</td>
-                    <td class="px-6 py-4 text-gray-700">Personenbezogene Unternehmen niedriger bewerten</td>
+                    <td class="px-6 py-4 font-semibold text-navy">BGer 5A_623/2017</td>
+                    <td class="px-6 py-4 text-gray-700">Einheit des Scheidungsurteils; güterrechtliche Auseinandersetzung kann nur aus wichtigen Gründen abgetrennt werden</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">BGer 5A_108/2023</td>
+                    <td class="px-6 py-4 text-gray-700">Güterrechtliche Auseinandersetzung als actio duplex; unbezifferte Anträge zulässig</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Checkliste für die güterrechtliche Auseinandersetzung</h2>
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Benötigte Unterlagen</h3>
+        <p class="text-gray-700 mb-6">Die güterrechtliche Auseinandersetzung ist oft komplexer als erwartet. Selbst bei scheinbar einfachen Verhältnissen können Fragen zu Ersatzforderungen, Mehrwertbeteiligungen oder der korrekten Zuordnung von Vermögenswerten auftreten, die ohne fachkundige Unterstützung zu erheblichen finanziellen Nachteilen führen können.</p>
 
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Konten:</strong> Kontoauszüge (Stichtag + aktuell)</li>
-        <li><strong>Immobilien:</strong> Grundbuchauszug, Schätzung, Hypothekarvertrag</li>
-        <li><strong>Wertpapiere:</strong> Depotauszüge</li>
-        <li><strong>Versicherungen:</strong> Policen, Rückkaufswerte</li>
-        <li><strong>Vorsorge:</strong> Freizügigkeitsausweise</li>
-        <li><strong>Schulden:</strong> Kreditverträge</li>
-        <li><strong>Eigengut:</strong> Nachweise (Erbverträge, Schenkungs-Urkunden)</li>
-    </ul>
+        <p class="text-gray-700 mb-6">Besonders bei folgenden Konstellationen ist die Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> dringend empfohlen:</p>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Immobilien im gemeinsamen oder alleinigen Eigentum</li>
+            <li>Unternehmensbeteiligungen oder selbständige Erwerbstätigkeit</li>
+            <li>Komplexe Ersatzforderungen zwischen Gütermassen</li>
+            <li>Investitionen eines Ehegatten in Vermögenswerte des anderen</li>
+            <li>Unklare Eigentumsverhältnisse oder fehlende Dokumentation</li>
+            <li>Verdacht auf Vermögensverschiebungen oder -verschleierungen</li>
+            <li>Internationale Vermögenswerte oder Auslandsbezug</li>
+        </ul>
 
-    <p class="text-gray-700 mb-6">Die güterrechtliche Auseinandersetzung erfordert sorgfältige Vorbereitung und systematisches Vorgehen. Eine korrekte Durchführung gewährleistet eine faire Vermögensaufteilung. Bei komplexen Verhältnissen empfiehlt sich die Beratung durch einen spezialisierten Familienrechtsanwalt.</p>
+        <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kann sicherstellen, dass alle Ansprüche korrekt berechnet werden und keine Vermögenswerte übersehen werden. Auch bei einer einvernehmlichen Scheidung ist zumindest eine anwaltliche Überprüfung der Vereinbarung sinnvoll, um spätere böse Überraschungen zu vermeiden. Bei strittigen Verfahren ist die Unterstützung durch einen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> praktisch unerlässlich.</p>
 
-    <p class="text-gray-500 text-sm mt-8 italic">Dieser Artikel dient der allgemeinen Information und ersetzt keine individuelle Rechtsberatung. Bei konkreten Fragen zur güterrechtlichen Auseinandersetzung empfehlen wir, einen spezialisierten Anwalt für Familienrecht zu konsultieren.</p>
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Sie stehen vor einer Scheidung und haben Fragen zur güterrechtlichen Auseinandersetzung? Wir analysieren Ihre Vermögensverhältnisse und zeigen Ihnen Ihre Ansprüche auf – verständlich und transparent.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- Fazit -->
+    <h2 class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Die güterrechtliche Auseinandersetzung ist ein zentraler Bestandteil jeder Scheidung in der Schweiz. Sie folgt einem systematischen Ablauf: Rücknahme der Vermögenswerte, Zuordnung zu den Gütermassen, Hinzurechnung, Berechnung der Ersatzforderungen, Bewertung und schliesslich die Teilung des Vorschlags.</p>
+
+    <p class="text-gray-700 mb-6">Entscheidend für eine faire Aufteilung ist die korrekte Unterscheidung zwischen Eigengut und Errungenschaft sowie die sorgfältige Dokumentation aller Vermögensverschiebungen während der Ehe. Der Stichtag bestimmt die Zusammensetzung der Vermögensmassen, während die Bewertung zum Zeitpunkt der Auseinandersetzung erfolgt.</p>
+
+    <p class="text-gray-700 mb-6">Eine einvernehmliche Lösung in der Scheidungskonvention ist in den meisten Fällen der schnellste, günstigste und nachhaltigste Weg. Bei komplexen Verhältnissen oder Streitigkeiten sollte jedoch unbedingt fachkundige Unterstützung beigezogen werden, um die eigenen Ansprüche vollständig zu wahren.</p>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen Eigengut und Errungenschaft?</h3>
+                <p class="text-gray-700">Eigengut umfasst das vor der Ehe vorhandene Vermögen sowie Erbschaften, Schenkungen und persönliche Gegenstände (Art. 198 ZGB). Die Errungenschaft hingegen ist das während der Ehe entgeltlich erworbene Vermögen, insbesondere der Arbeitserwerb und Erträge aus dem Eigengut (Art. 197 ZGB). Bei der Scheidung wird nur die Errungenschaft geteilt.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie wird der Vorschlag berechnet?</h3>
+                <p class="text-gray-700">Der Vorschlag ergibt sich aus den Aktiven der Errungenschaft abzüglich der Schulden, bereinigt um allfällige Ersatzforderungen zwischen Eigengut und Errungenschaft. Jeder Ehegatte hat Anspruch auf die Hälfte des Vorschlags des anderen (Art. 215 ZGB). Ein Rückschlag (negativer Saldo) muss vom jeweiligen Ehegatten allein getragen werden.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Stichtag bei einer Scheidung?</h3>
+                <p class="text-gray-700">Bei einer strittigen Scheidung ist der Stichtag die Einreichung des Scheidungsgesuchs (Art. 204 Abs. 2 ZGB). Bei einer einvernehmlichen Scheidung können die Eheleute den Stichtag frei wählen, z.B. das Auszugsdatum oder den 31. Dezember eines bestimmten Jahres. Der Stichtag bestimmt die Zusammensetzung der Vermögensmassen.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert mit einer geerbten Immobilie bei der Scheidung?</h3>
+                <p class="text-gray-700">Eine geerbte Immobilie gehört zum Eigengut und wird grundsätzlich nicht geteilt. Allerdings können Ersatzforderungen entstehen, wenn der andere Ehegatte in die Immobilie investiert hat (Mehrwertbeteiligung nach Art. 206 ZGB). Zudem sind allfällige Erträge aus der Immobilie (z.B. Mieteinnahmen) Errungenschaft.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie lange dauert eine güterrechtliche Auseinandersetzung?</h3>
+                <p class="text-gray-700">Bei einvernehmlicher Regelung und einfachen Verhältnissen kann die Auseinandersetzung in 1–3 Monaten abgeschlossen werden. Bei komplexen Vermögensverhältnissen oder strittigen Verfahren kann sie jedoch 1–3 Jahre oder länger dauern, insbesondere wenn Gutachten eingeholt oder Rechtsmittel ergriffen werden.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was sind Ersatzforderungen?</h3>
+                <p class="text-gray-700">Ersatzforderungen entstehen, wenn Vermögen zwischen den Gütermassen verschoben wurde – z.B. wenn aus dem Eigengut eine Schuld der Errungenschaft bezahlt wurde oder umgekehrt. Sie stellen sicher, dass bei der Auseinandersetzung jede Gütermasse den ihr zustehenden Wert erhält (Art. 209 ZGB).</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich mein Vermögen vor der Scheidung schützen?</h3>
+                <p class="text-gray-700">Das Gesetz schützt den Anspruch des anderen Ehegatten: Unentgeltliche Zuwendungen der letzten 5 Jahre ohne Zustimmung sowie Vermögensentäusserungen in Schädigungsabsicht werden bei der Berechnung hinzugerechnet (Art. 208 ZGB). Eine «Vermögensverschiebung» vor der Scheidung ist daher nicht zielführend und kann sogar rechtliche Konsequenzen haben.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was kostet eine güterrechtliche Auseinandersetzung?</h3>
+                <p class="text-gray-700">Die Kosten variieren stark: Bei einer einvernehmlichen Regelung liegen die Anwaltskosten typischerweise bei CHF 2'000–10'000. Bei strittigen Verfahren können Anwalts-, Gerichts- und Gutachterkosten zusammen CHF 30'000–100'000 oder mehr betragen. Eine einvernehmliche Lösung ist daher meist die wirtschaftlich sinnvollste Option.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Güterrechtliche Auseinandersetzung in der Schweiz",
+        "description": "Güterrechtliche Auseinandersetzung bei Scheidung: Ablauf, Berechnung & Stichtag. Errungenschaftsbeteiligung, Gütergemeinschaft, Gütertrennung erklärt. Jetzt informieren!",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-20",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/gueterrecht/gueterrechtliche-auseinandersetzung"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen Eigengut und Errungenschaft?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Eigengut umfasst das vor der Ehe vorhandene Vermögen sowie Erbschaften, Schenkungen und persönliche Gegenstände (Art. 198 ZGB). Die Errungenschaft hingegen ist das während der Ehe entgeltlich erworbene Vermögen, insbesondere der Arbeitserwerb und Erträge aus dem Eigengut (Art. 197 ZGB). Bei der Scheidung wird nur die Errungenschaft geteilt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie wird der Vorschlag berechnet?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der Vorschlag ergibt sich aus den Aktiven der Errungenschaft abzüglich der Schulden, bereinigt um allfällige Ersatzforderungen zwischen Eigengut und Errungenschaft. Jeder Ehegatte hat Anspruch auf die Hälfte des Vorschlags des anderen (Art. 215 ZGB). Ein Rückschlag (negativer Saldo) muss vom jeweiligen Ehegatten allein getragen werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist der Stichtag bei einer Scheidung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei einer strittigen Scheidung ist der Stichtag die Einreichung des Scheidungsgesuchs (Art. 204 Abs. 2 ZGB). Bei einer einvernehmlichen Scheidung können die Eheleute den Stichtag frei wählen, z.B. das Auszugsdatum oder den 31. Dezember eines bestimmten Jahres. Der Stichtag bestimmt die Zusammensetzung der Vermögensmassen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert mit einer geerbten Immobilie bei der Scheidung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Eine geerbte Immobilie gehört zum Eigengut und wird grundsätzlich nicht geteilt. Allerdings können Ersatzforderungen entstehen, wenn der andere Ehegatte in die Immobilie investiert hat (Mehrwertbeteiligung nach Art. 206 ZGB). Zudem sind allfällige Erträge aus der Immobilie (z.B. Mieteinnahmen) Errungenschaft."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie lange dauert eine güterrechtliche Auseinandersetzung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei einvernehmlicher Regelung und einfachen Verhältnissen kann die Auseinandersetzung in 1–3 Monaten abgeschlossen werden. Bei komplexen Vermögensverhältnissen oder strittigen Verfahren kann sie jedoch 1–3 Jahre oder länger dauern, insbesondere wenn Gutachten eingeholt oder Rechtsmittel ergriffen werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was sind Ersatzforderungen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ersatzforderungen entstehen, wenn Vermögen zwischen den Gütermassen verschoben wurde – z.B. wenn aus dem Eigengut eine Schuld der Errungenschaft bezahlt wurde oder umgekehrt. Sie stellen sicher, dass bei der Auseinandersetzung jede Gütermasse den ihr zustehenden Wert erhält (Art. 209 ZGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich mein Vermögen vor der Scheidung schützen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das Gesetz schützt den Anspruch des anderen Ehegatten: Unentgeltliche Zuwendungen der letzten 5 Jahre ohne Zustimmung sowie Vermögensentäusserungen in Schädigungsabsicht werden bei der Berechnung hinzugerechnet (Art. 208 ZGB). Eine «Vermögensverschiebung» vor der Scheidung ist daher nicht zielführend und kann sogar rechtliche Konsequenzen haben."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was kostet eine güterrechtliche Auseinandersetzung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Kosten variieren stark: Bei einer einvernehmlichen Regelung liegen die Anwaltskosten typischerweise bei CHF 2'000–10'000. Bei strittigen Verfahren können Anwalts-, Gerichts- und Gutachterkosten zusammen CHF 30'000–100'000 oder mehr betragen. Eine einvernehmliche Lösung ist daher meist die wirtschaftlich sinnvollste Option."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Güterrecht",
+                "item": "https://familienrechtanwalt.ch/gueterrecht"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Güterrechtliche Auseinandersetzung in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/gueterrecht/gueterrechtliche-auseinandersetzung"
+            }
+        ]
+    })} />
+
 </ArticleLayout>

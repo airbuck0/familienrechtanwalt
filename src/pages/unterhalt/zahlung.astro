@@ -3,132 +3,260 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 ---
 
 <ArticleLayout
-    title="Unterhaltszahlung in der Schweiz: Rechtliches, Hoehe und steuerliche Behandlung"
-    description="Unterhaltszahlung in der Schweiz: Hoehe, Dauer, steuerliche Behandlung und praktische Tipps. Alles zu Kindes- und Ehegattenunterhalt."
-    keywords="Unterhaltszahlung Schweiz, Alimente Steuern, Unterhalt Hoehe, Zahlungsmodalitaeten, Indexierung Unterhalt"
+    title="Unterhaltszahlung in der Schweiz: Berechnung, Steuern und Indexierung"
+    description="Unterhaltszahlung in der Schweiz: Zweistufige Methode, steuerliche Behandlung, Indexierung nach LIK und Kapitalabfindung. Mit BGE-Rechtsprechung und praktischen Tipps."
+    keywords="Unterhaltszahlung Schweiz, Alimente Steuern, Unterhalt Berechnung, Indexierung Unterhalt, Kapitalabfindung, zweistufige Methode, BGE 147 III 265"
     category="Unterhalt"
     categoryLink="/unterhalt"
 >
-    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Unterhaltszahlungen sind finanzielle Leistungen, die ein Elternteil oder Ehegatte dem anderen schuldet. Sie dienen der Sicherung des Lebensunterhalts und unterliegen spezifischen rechtlichen Regelungen.</p>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Unterhaltszahlungen sind beim Zahlenden steuerlich abzugsfähig (Art. 33 Abs. 1 lit. c DBG) und beim Empfangenden als Einkommen steuerbar - Korrespondenzprinzip.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Berechnung erfolgt nach der bundesgerichtlich verbindlichen zweistufigen Methode mit Überschussverteilung (BGE 147 III 265, BGE 147 III 293).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Indexierung passt den Unterhalt jährlich an den Landesindex der Konsumentenpreise (LIK) an - meist per 1. Januar nach Indexstand November.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Eine Kapitalabfindung statt monatlicher Rente ist nur bei besonderen Umständen möglich (Art. 126 Abs. 2 ZGB) - steuerlich vorteilhaft, da steuerfrei.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bei erheblicher Veränderung der Verhältnisse kann der Unterhalt angepasst werden (Art. 286/129 ZGB) - aber nie automatisch.</span>
+            </li>
+        </ul>
+    </div>
+
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Unterhaltszahlungen sind finanzielle Leistungen, die ein Elternteil oder Ehegatte dem anderen schuldet. Sie dienen der Sicherung des Lebensunterhalts und unterliegen spezifischen rechtlichen Regelungen bezüglich Berechnung, steuerlicher Behandlung und Anpassung. Dieser Leitfaden erklärt alle Aspekte der Unterhaltszahlung mit der aktuellen Bundesgerichtspraxis.</p>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Arten von Unterhaltszahlungen</h2>
 
-    <div class="overflow-x-auto mb-6">
+    <p class="text-gray-700 mb-6">Das Schweizer Recht kennt verschiedene Unterhaltsarten mit unterschiedlichen Rechtsgrundlagen und Begünstigten. Die korrekte Einordnung ist wichtig für die Berechnung und steuerliche Behandlung.</p>
+
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Art</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Beguenstigter</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Begünstigter</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Dauer</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 text-gray-700">Kindesunterhalt (Alimente)</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Kindesunterhalt (Barunterhalt)</td>
                     <td class="px-6 py-4 text-gray-700">Kind</td>
                     <td class="px-6 py-4 text-gray-700">Art. 276 ff. ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Bis Volljährigkeit / Erstausbildung</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 text-gray-700">Betreuungsunterhalt</td>
-                    <td class="px-6 py-4 text-gray-700">Kind (faktisch betreuender Elternteil)</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Betreuungsunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Kind (für betreuenden Elternteil)</td>
                     <td class="px-6 py-4 text-gray-700">Art. 285 Abs. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Nach Schulstufenmodell</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 text-gray-700">Ehegattenunterhalt</td>
-                    <td class="px-6 py-4 text-gray-700">Ehegatte waehrend Ehe</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Ehelicher Unterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Ehegatte während Ehe</td>
                     <td class="px-6 py-4 text-gray-700">Art. 163 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Während der Ehe</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 text-gray-700">Trennungsunterhalt</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Trennungsunterhalt</td>
                     <td class="px-6 py-4 text-gray-700">Ehegatte bei Trennung</td>
                     <td class="px-6 py-4 text-gray-700">Art. 176 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Bis Scheidung</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 text-gray-700">Nachehelicher Unterhalt</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Nachehelicher Unterhalt</td>
                     <td class="px-6 py-4 text-gray-700">Ex-Ehegatte</td>
                     <td class="px-6 py-4 text-gray-700">Art. 125 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Befristet oder unbefristet</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Hoehe der Unterhaltszahlungen</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Berechnung nach der zweistufigen Methode</h2>
 
-    <p class="text-gray-700 mb-4">Die Berechnung erfolgt nach der vom Bundesgericht vorgeschriebenen zweistufigen Methode mit Ueberschussverteilung.</p>
+    <p class="text-gray-700 mb-6">Das Bundesgericht hat mit den Leitentscheiden BGE 147 III 265 (Kindesunterhalt), BGE 147 III 293 (nachehelicher Unterhalt) und BGE 147 III 301 (Trennungsunterhalt) die zweistufige Methode mit Überschussverteilung als einzig verbindliche Berechnungsmethode festgelegt.</p>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Faktoren beim Kindesunterhalt</h3>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
+        <p class="font-semibold text-navy mb-2">BGE 147 III 265 E. 7.2:</p>
+        <p class="text-gray-700 italic">Bei der zweistufigen Methode werden zum einen die zur Verfügung stehenden finanziellen Mittel festgestellt, zum anderen der Bedarf der betroffenen Personen ermittelt. Schliesslich werden die vorhandenen Ressourcen auf die beteiligten Familienmitglieder verteilt.</p>
+    </div>
 
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Alter des Kindes</li>
-        <li>Besondere Beduerfnisse</li>
-        <li>Betreuungssituation</li>
-        <li>Lebensstandard der Eltern</li>
-        <li>Leistungsfaehigkeit der Eltern</li>
-    </ul>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Die zwei Stufen der Berechnung</h3>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Faktoren beim Ehegattenunterhalt</h3>
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Stufe</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Inhalt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Details</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Stufe 1</td>
+                    <td class="px-6 py-4 text-gray-700">Bedarfsdeckung</td>
+                    <td class="px-6 py-4 text-gray-700">Deckung des betreibungsrechtlichen Existenzminimums aller Beteiligten, dann Erweiterung zum familienrechtlichen Grundbedarf</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Stufe 2</td>
+                    <td class="px-6 py-4 text-gray-700">Überschussverteilung</td>
+                    <td class="px-6 py-4 text-gray-700">Verteilung des verbleibenden Überschusses nach "grossen und kleinen Köpfen"</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Ehedauer</li>
-        <li>Aufgabenteilung waehrend der Ehe</li>
-        <li>Erwerbsfaehigkeit</li>
-        <li>Alter und Gesundheit</li>
-        <li>Lebensstandard waehrend der Ehe</li>
-    </ul>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Rangfolge der Unterhaltsansprüche</h3>
+
+    <p class="text-gray-700 mb-6">Bei der Verteilung der Mittel gilt eine klare gesetzliche Rangfolge (Art. 276a ZGB):</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rang</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Unterhaltsart</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Begründung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">1</td>
+                    <td class="px-6 py-4 text-gray-700">Barunterhalt minderjähriger Kinder</td>
+                    <td class="px-6 py-4 text-gray-700">Kindeswohl hat Vorrang</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">2</td>
+                    <td class="px-6 py-4 text-gray-700">Betreuungsunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Ermöglicht Kinderbetreuung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">3</td>
+                    <td class="px-6 py-4 text-gray-700">Nachehelicher Unterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 276a Abs. 1 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">4</td>
+                    <td class="px-6 py-4 text-gray-700">Volljährigenunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Erst nach Deckung des Familienbedarfs</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Überschussverteilung nach Köpfen</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Person</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kopfanteil</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beispiel (CHF 1'500 Überschuss)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Erwachsener 1</td>
+                    <td class="px-6 py-4 text-gray-700">1 voller Kopf</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 500</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Erwachsener 2</td>
+                    <td class="px-6 py-4 text-gray-700">1 voller Kopf</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 500</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Minderjähriges Kind</td>
+                    <td class="px-6 py-4 text-gray-700">½ Kopf</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 250</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Volljähriges Kind</td>
+                    <td class="px-6 py-4 text-gray-700">Kein Anteil am Überschuss</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Dauer der Zahlungspflicht</h2>
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kindesunterhalt</h3>
 
-    <p class="text-gray-700 mb-4"><strong>Grundsatz:</strong> Bis zur Volljaehrigkeit (18 Jahre)</p>
-    <p class="text-gray-700 mb-6"><strong>Ausnahme:</strong> Fortdauer waehrend der Erstausbildung (Art. 277 Abs. 2 ZGB)</p>
+    <p class="text-gray-700 mb-6">Der Kindesunterhalt dauert grundsätzlich bis zur Volljährigkeit (18 Jahre). Bei Kindern in Ausbildung verlängert sich die Pflicht bis zum Abschluss der Erstausbildung (Art. 277 Abs. 2 ZGB).</p>
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Betreuungsunterhalt nach Schulstufenmodell</h3>
 
-    <div class="overflow-x-auto mb-6">
+    <p class="text-gray-700 mb-6">Das Schulstufenmodell bestimmt die Erwerbsobliegenheit des betreuenden Elternteils und damit indirekt die Dauer des Betreuungsunterhalts:</p>
+
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Phase</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Alter Kind</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Erwerbsobliegenheit</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Betreuungsunterhalt</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 text-gray-700">Bis Kindergarteneintritt (ca. 4 Jahre)</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Vor Kindergarten</td>
+                    <td class="px-6 py-4 text-gray-700">0-4 Jahre</td>
                     <td class="px-6 py-4 text-gray-700">0%</td>
+                    <td class="px-6 py-4 text-gray-700">Vollständig</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 text-gray-700">Ab Kindergarten</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Kindergarten/Primarstufe</td>
+                    <td class="px-6 py-4 text-gray-700">4-12 Jahre</td>
                     <td class="px-6 py-4 text-gray-700">50%</td>
+                    <td class="px-6 py-4 text-gray-700">Reduziert</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 text-gray-700">Ab Sekundarstufe</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Sekundarstufe</td>
+                    <td class="px-6 py-4 text-gray-700">12-16 Jahre</td>
                     <td class="px-6 py-4 text-gray-700">80%</td>
+                    <td class="px-6 py-4 text-gray-700">Stark reduziert</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 text-gray-700">Ab 16 Jahren</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Ab 16 Jahren</td>
+                    <td class="px-6 py-4 text-gray-700">16+ Jahre</td>
                     <td class="px-6 py-4 text-gray-700">100%</td>
+                    <td class="px-6 py-4 text-gray-700">Entfällt in der Regel</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Zahlungsmodalitaeten</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Steuerliche Behandlung von Unterhaltszahlungen</h2>
 
-    <p class="text-gray-700 mb-4">Die Unterhaltszahlungen sind in der Regel monatlich im Voraus faellig, typischerweise zum Monatsersten oder bis zum 3. oder 5. des Monats.</p>
+    <p class="text-gray-700 mb-6">Die steuerliche Behandlung von Unterhaltszahlungen folgt dem Korrespondenzprinzip: Was beim Zahlenden abzugsfähig ist, ist beim Empfangenden steuerbar - und umgekehrt.</p>
 
-    <p class="text-gray-700 mb-4"><strong>Empfohlen:</strong> Bankueberweisung auf ein bezeichnetes Konto (Nachweisbarkeit, Automatisierung moeglich per Dauerauftrag)</p>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
+        <p class="font-semibold text-navy mb-2">Art. 33 Abs. 1 lit. c DBG:</p>
+        <p class="text-gray-700 italic">Von den Einkünften werden abgezogen: "die Unterhaltsbeiträge an den geschiedenen, gerichtlich oder tatsächlich getrennt lebenden Ehegatten sowie die Unterhaltsbeiträge an einen Elternteil für die unter dessen elterlicher Sorge stehenden Kinder."</p>
+    </div>
 
-    <p class="text-gray-700 mb-6"><strong>Zahlungsvermerk:</strong> Name des Kindes/Berechtigten, Zeitraum (z.B. "Alimente Januar 2025")</p>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Steuerliche Behandlung nach Unterhaltsart</h3>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Steuerliche Behandlung</h2>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Grundprinzip</h3>
-
-    <p class="text-gray-700 mb-6">Unterhaltszahlungen fuehren zu einem Steuerabzug beim Zahlenden und zu einer Steuerpflicht beim Empfangenden.</p>
-
-    <div class="overflow-x-auto mb-6">
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
@@ -139,88 +267,525 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Kindesunterhalt</td>
-                    <td class="px-6 py-4 text-gray-700">Abzugsfaehig</td>
-                    <td class="px-6 py-4 text-gray-700">Steuerbar (beim betreuenden Elternteil)</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Kindesunterhalt (minderjährig)</td>
+                    <td class="px-6 py-4 text-gray-700">Vollständig abzugsfähig</td>
+                    <td class="px-6 py-4 text-gray-700">Steuerbar beim betreuenden Elternteil</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Kindesunterhalt (volljährig)</td>
+                    <td class="px-6 py-4 text-gray-700">Nicht abzugsfähig</td>
+                    <td class="px-6 py-4 text-gray-700">Steuerfrei (Art. 24 lit. e DBG)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Betreuungsunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Vollständig abzugsfähig</td>
+                    <td class="px-6 py-4 text-gray-700">Steuerbar</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">Ehegattenunterhalt</td>
-                    <td class="px-6 py-4 text-gray-700">Vollstaendig abzugsfaehig</td>
-                    <td class="px-6 py-4 text-gray-700">Vollstaendig steuerbar</td>
+                    <td class="px-6 py-4 text-gray-700">Vollständig abzugsfähig</td>
+                    <td class="px-6 py-4 text-gray-700">Vollständig steuerbar</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Kapitalabfindung</td>
+                    <td class="px-6 py-4 text-gray-700">Nicht abzugsfähig</td>
+                    <td class="px-6 py-4 text-gray-700">Steuerfrei</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Nicht bezahlte Unterhaltsbetraege</h3>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wichtige steuerliche Regeln</h3>
 
-    <p class="text-gray-700 mb-6">Nur effektiv geleistete Zahlungen sind steuerlich relevant. Beim Zahlenden sind nur tatsaechlich geleistete Betraege abzugsfaehig, beim Empfangenden nur tatsaechlich erhaltene Betraege steuerbar.</p>
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Regel</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Details</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Nur effektive Zahlungen</td>
+                    <td class="px-6 py-4 text-gray-700">Nur tatsächlich geleistete Beträge sind abzugsfähig/steuerbar</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Kinderabzug ausgeschlossen</td>
+                    <td class="px-6 py-4 text-gray-700">Wer Alimente abzieht, kann keinen Kinderabzug machen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Vereinbarung erforderlich</td>
+                    <td class="px-6 py-4 text-gray-700">Freiwillige Zahlungen ohne Rechtsgrund nicht abzugsfähig</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Nachweispflicht</td>
+                    <td class="px-6 py-4 text-gray-700">Empfänger muss Zahlungseingänge belegen (Kontoauszug)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Interkantonale Aufteilung</td>
+                    <td class="px-6 py-4 text-gray-700">Bei mehreren Steuerdomizilen: proportionale Aufteilung</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Unterhaltszahlung bei Arbeitslosigkeit</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kapitalabfindung statt monatlicher Rente</h2>
 
-    <p class="text-gray-700 mb-4">Arbeitslosigkeit befreit grundsaetzlich nicht von der Unterhaltspflicht. Die Pflicht besteht weiter, allenfalls in angepasster Hoehe.</p>
+    <p class="text-gray-700 mb-6">Grundsätzlich wird Unterhalt als monatliche Rente gezahlt (Art. 126 Abs. 1 ZGB). In Ausnahmefällen kann jedoch eine einmalige Kapitalabfindung festgesetzt werden (Art. 126 Abs. 2 ZGB).</p>
 
-    <p class="text-gray-700 mb-6"><strong>Wichtig:</strong> Der Unterhalt passt sich nicht automatisch an. Eine Anpassung muss beantragt werden.</p>
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Monatliche Rente</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kapitalabfindung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Steuer Zahlender</td>
+                    <td class="px-6 py-4 text-gray-700">Vollständig abzugsfähig</td>
+                    <td class="px-6 py-4 text-gray-700">Nicht abzugsfähig</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Steuer Empfangender</td>
+                    <td class="px-6 py-4 text-gray-700">Vollständig steuerbar</td>
+                    <td class="px-6 py-4 text-gray-700">Steuerfrei</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Anpassbarkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Veränderung möglich</td>
+                    <td class="px-6 py-4 text-gray-700">Keine Anpassung möglich</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Erlöschen</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Tod/Wiederheirat</td>
+                    <td class="px-6 py-4 text-gray-700">Keine Rückforderung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Voraussetzung</td>
+                    <td class="px-6 py-4 text-gray-700">Regelfall</td>
+                    <td class="px-6 py-4 text-gray-700">Besondere Umstände erforderlich</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Indexierung der Unterhaltszahlungen</h2>
 
-    <p class="text-gray-700 mb-4">Die Indexierung passt die Unterhaltszahlungen an die Teuerung an, damit die Kaufkraft erhalten bleibt.</p>
+    <p class="text-gray-700 mb-6">Die Indexierung passt die Unterhaltszahlungen an die Teuerung an, damit die Kaufkraft erhalten bleibt. Massgebend ist der Landesindex der Konsumentenpreise (LIK).</p>
 
     <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy">Art. 286 Abs. 2 ZGB:</p>
-        <p class="text-gray-700">"Das Gericht kann anordnen, dass der Unterhaltsbeitrag sich bei bestimmten Veraenderungen der Lebenskosten ohne weiteres erhoeht oder vermindert."</p>
+        <p class="font-semibold text-navy mb-2">Art. 286 Abs. 2 ZGB:</p>
+        <p class="text-gray-700 italic">"Das Gericht kann anordnen, dass der Unterhaltsbeitrag sich bei bestimmten Veränderungen der Lebenskosten ohne weiteres erhöht oder vermindert."</p>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Bei Zahlungsschwierigkeiten</h2>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Funktionsweise der Indexierung</h3>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wenn der Pflichtige nicht zahlen kann</h3>
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Element</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Details</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Referenzindex</td>
+                    <td class="px-6 py-4 text-gray-700">Landesindex der Konsumentenpreise (LIK)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Anpassungszeitpunkt</td>
+                    <td class="px-6 py-4 text-gray-700">Meist per 1. Januar (nach Indexstand November)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Automatische Anpassung</td>
+                    <td class="px-6 py-4 text-gray-700">Erfolgt gemäss Indexklausel im Urteil ohne Gesuch</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Begrenzung</td>
+                    <td class="px-6 py-4 text-gray-700">Nur im Umfang der Einkommensindexierung des Pflichtigen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Berechnung</td>
+                    <td class="px-6 py-4 text-gray-700">LIK-Teuerungsrechner des Bundesamts für Statistik</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Kurzfristig:</strong> Kommunikation, Ratenzahlung, vorubergehende Stundung</li>
-        <li><strong>Dauerhaft:</strong> Anpassungsgesuch einreichen, Nachweis der Einkommensreduktion</li>
-    </ul>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
+        <p class="font-semibold text-navy mb-2">Praktischer Hinweis:</p>
+        <p class="text-gray-700">Das Obergericht Zürich stellt einen Online-Indexrechner zur Verfügung. Die Gemeinde sollte spätestens im Dezember über die neue Indexierung informieren, damit der angepasste Betrag ab Januar bezahlt werden kann.</p>
+    </div>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wenn der Pflichtige nicht zahlen will</h3>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Zahlungsmodalitäten</h2>
 
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Mahnung</li>
-        <li>Inkassohilfe</li>
-        <li>Betreibung</li>
-        <li>Schuldneranweisung</li>
-        <li>Strafanzeige (bei beharrlicher Nichtzahlung)</li>
-    </ul>
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Empfehlung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Fälligkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Monatlich im Voraus (zum 1., 3. oder 5. des Monats)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Zahlungsweg</td>
+                    <td class="px-6 py-4 text-gray-700">Banküberweisung auf bezeichnetes Konto</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Automatisierung</td>
+                    <td class="px-6 py-4 text-gray-700">Dauerauftrag einrichten für pünktliche Zahlung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Zahlungsvermerk</td>
+                    <td class="px-6 py-4 text-gray-700">Name des Berechtigten + Zeitraum (z.B. "Alimente Januar 2025")</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Dokumentation</td>
+                    <td class="px-6 py-4 text-gray-700">Alle Belege für Steuerzwecke aufbewahren</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Anpassung von Unterhaltszahlungen</h2>
+
+    <p class="text-gray-700 mb-6">Bei erheblicher Veränderung der Verhältnisse kann der Unterhalt angepasst werden. Wichtig: Die Anpassung erfolgt nie automatisch - sie muss beantragt werden.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Voraussetzungen für eine Abänderung</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Voraussetzung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Erheblichkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Wesentliche Änderung der finanziellen Verhältnisse</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Dauerhaftigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Keine bloss vorübergehende Schwankung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Nicht berücksichtigt</td>
+                    <td class="px-6 py-4 text-gray-700">Änderung war bei Urteilsfällung nicht vorhersehbar (BGE 131 III 189)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Unzumutbares Ungleichgewicht</td>
+                    <td class="px-6 py-4 text-gray-700">Durch altes Urteil entstandenes Ungleichgewicht</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Typische Anpassungsgründe</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Grund</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Wirkung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Arbeitslosigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Herabsetzung möglich</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 286/129 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Einkommenserhöhung</td>
+                    <td class="px-6 py-4 text-gray-700">Erhöhung möglich</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 286/129 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Krankheit/Invalidität</td>
+                    <td class="px-6 py-4 text-gray-700">Anpassung je nach Situation</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 286/129 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Neues Kind</td>
+                    <td class="px-6 py-4 text-gray-700">Neuverteilung der Mittel</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 286 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Eigenes Einkommen des Kindes</td>
+                    <td class="px-6 py-4 text-gray-700">Herabsetzung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 286 ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
+        <p class="font-semibold text-navy mb-2">Wichtig bei Arbeitslosigkeit:</p>
+        <p class="text-gray-700">Arbeitslosigkeit befreit nicht automatisch von der Unterhaltspflicht. Die Pflicht besteht weiter, allenfalls in angepasster Höhe. Sie müssen eine Anpassung beim Gericht beantragen und die Einkommensreduktion nachweisen.</p>
+    </div>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Praktische Tipps</h2>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Fuer den zahlenden Elternteil</h3>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Für den zahlenden Elternteil</h3>
 
-    <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
-        <li>Dauerauftrag einrichten fuer automatisierte, puenktliche Zahlung</li>
-        <li>Korrekten Vermerk angeben fuer eindeutige Zuordnung</li>
-        <li>Alle Belege aufbewahren</li>
-        <li>Bei Problemen fruehzeitig informieren</li>
-    </ul>
+    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Dauerauftrag einrichten:</strong> Automatisierte, pünktliche Zahlung sicherstellen</li>
+        <li><strong>Korrekten Vermerk angeben:</strong> Name des Berechtigten und Zeitraum für eindeutige Zuordnung</li>
+        <li><strong>Alle Belege aufbewahren:</strong> Für Steuererklärung und eventuelle Streitigkeiten</li>
+        <li><strong>Indexanpassung beachten:</strong> Jährlich per Januar prüfen und anpassen</li>
+        <li><strong>Bei Problemen frühzeitig handeln:</strong> Nicht einfach nicht zahlen, sondern Anpassung beantragen</li>
+    </ol>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Fuer den empfangenden Elternteil</h3>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Für den empfangenden Elternteil</h3>
 
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Zahlungseingaenge regelmaessig pruefen</li>
-        <li>Bei Verzug zeitnah mahnen</li>
-        <li>Ausstaende dokumentieren</li>
-        <li>Inkassohilfe nutzen</li>
-    </ul>
+    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Zahlungseingänge prüfen:</strong> Monatlich kontrollieren, ob korrekt und vollständig</li>
+        <li><strong>Bei Verzug zeitnah mahnen:</strong> Schriftlich per Einschreiben</li>
+        <li><strong>Ausstände dokumentieren:</strong> Für Betreibung und Strafanzeige</li>
+        <li><strong>Inkassohilfe nutzen:</strong> Kostenloser Service bei der Gemeinde</li>
+        <li><strong>Steuerliche Meldung:</strong> Erhaltene Zahlungen als Einkommen deklarieren</li>
+    </ol>
+
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">Die korrekte Berechnung, Anpassung und steuerliche Behandlung von Unterhaltszahlungen erfordert Fachwissen. Fehler können zu finanziellen Nachteilen oder rechtlichen Problemen führen.</p>
+
+        <p class="text-gray-700 mb-6">Besonders in folgenden Situationen ist die Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> empfohlen:</p>
+
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Sie möchten die Unterhaltshöhe nach der zweistufigen Methode überprüfen lassen</li>
+            <li>Sie haben Ihre Stelle verloren und können den Unterhalt nicht mehr zahlen</li>
+            <li>Die Gegenseite zahlt den Unterhalt nicht oder nicht vollständig</li>
+            <li>Sie haben Fragen zur steuerlichen Behandlung (Rente vs. Kapitalabfindung)</li>
+            <li>Die Betreuungssituation hat sich geändert und der Unterhalt muss angepasst werden</li>
+            <li>Sie möchten eine Indexierungsklausel durchsetzen oder anfechten</li>
+            <li>Es besteht ein Mankofall und die Mittel reichen nicht für alle Bedarfe</li>
+        </ul>
+
+        <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kann Ihre Unterhaltsberechnung prüfen und bei Bedarf eine Anpassung beantragen. Als <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> kennt er die aktuelle Bundesgerichtspraxis zur zweistufigen Methode.</p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Unsere spezialisierten Anwälte beraten Sie zu allen Fragen rund um Unterhaltszahlungen - von der Berechnung über die Indexierung bis zur Anpassung.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
 
-    <p class="text-gray-700 mb-6">Unterhaltszahlungen sind ein wichtiger Bestandteil der finanziellen Absicherung von Kindern und geschiedenen Ehegatten. Die zweistufige Methode mit Ueberschussverteilung ist verbindlich. Unterhalt ist beim Zahlenden abzugsfaehig und beim Empfangenden steuerbar. Eine sorgfaeltige Dokumentation ist fuer steuerliche und rechtliche Zwecke wichtig.</p>
+    <p class="text-gray-700 mb-6">Unterhaltszahlungen sind ein wichtiger Bestandteil der finanziellen Absicherung von Kindern und geschiedenen Ehegatten. Die Berechnung erfolgt nach der bundesgerichtlich verbindlichen zweistufigen Methode mit Überschussverteilung (BGE 147 III 265). Beim Zahlenden sind die Unterhaltsbeiträge steuerlich abzugsfähig, beim Empfangenden steuerbar - ausser bei Volljährigenunterhalt und Kapitalabfindung.</p>
+
+    <p class="text-gray-700 mb-6">Die Indexierung nach dem Landesindex der Konsumentenpreise sichert die Kaufkraft der Zahlungen. Bei erheblicher Veränderung der Verhältnisse kann eine Anpassung beantragt werden - aber nie automatisch. Eine sorgfältige Dokumentation aller Zahlungen ist für steuerliche und rechtliche Zwecke unerlässlich.</p>
 
     <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy mb-2">Relevante Gesetzesbestimmungen:</p>
+        <p class="font-semibold text-navy mb-2">Relevante Rechtsprechung und Gesetzesbestimmungen:</p>
         <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li>BGE 147 III 265 (Kindesunterhalt, zweistufige Methode)</li>
+            <li>BGE 147 III 293 (nachehelicher Unterhalt)</li>
+            <li>BGE 147 III 301 (Trennungsunterhalt)</li>
             <li>Art. 276-277 ZGB (Unterhaltspflicht der Eltern)</li>
             <li>Art. 285-286 ZGB (Bemessung und Anpassung)</li>
-            <li>Art. 125 ZGB (Nachehelicher Unterhalt)</li>
-            <li>Art. 163, 176 ZGB (Ehelicher Unterhalt/Trennung)</li>
+            <li>Art. 125-126 ZGB (Nachehelicher Unterhalt, Kapitalabfindung)</li>
+            <li>Art. 33 Abs. 1 lit. c DBG (Steuerlicher Abzug)</li>
         </ul>
     </div>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wann muss ich Unterhalt zahlen?</h3>
+                <p class="text-gray-700">Unterhaltszahlungen sind in der Regel monatlich im Voraus fällig, typischerweise zum Monatsersten oder bis zum 3. oder 5. des Monats - je nach Vereinbarung oder Gerichtsentscheid. Die Zahlung sollte per Banküberweisung mit klarem Vermerk (Name des Berechtigten und Zeitraum) erfolgen. Ein Dauerauftrag wird empfohlen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Ist Unterhalt steuerlich absetzbar?</h3>
+                <p class="text-gray-700">Ja, der Zahlende kann Unterhaltsbeiträge für minderjährige Kinder und Ehegatten vollständig von seinem steuerbaren Einkommen abziehen (Art. 33 Abs. 1 lit. c DBG). Im Gegenzug muss der Empfangende die erhaltenen Zahlungen als Einkommen versteuern. Ausnahmen: Volljährigenunterhalt ist beim Empfänger steuerfrei und beim Zahlenden nicht abzugsfähig. Kapitalabfindungen sind beidseitig steuerneutral.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist die zweistufige Methode?</h3>
+                <p class="text-gray-700">Die zweistufige Methode mit Überschussverteilung ist die vom Bundesgericht als verbindlich erklärte Berechnungsmethode für alle Unterhaltsarten (BGE 147 III 265). In Stufe 1 wird der Bedarf aller Beteiligten gedeckt (Existenzminimum), in Stufe 2 wird ein verbleibender Überschuss nach "grossen und kleinen Köpfen" verteilt (voller Anteil für Erwachsene, halber Anteil für minderjährige Kinder).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert bei Arbeitslosigkeit mit dem Unterhalt?</h3>
+                <p class="text-gray-700">Arbeitslosigkeit befreit nicht automatisch von der Unterhaltspflicht. Die Pflicht besteht weiter, allenfalls in angepasster Höhe. Wichtig: Der Unterhalt passt sich nicht automatisch an. Sie müssen beim Gericht eine Abänderungsklage einreichen und die erhebliche, dauerhafte Einkommensreduktion nachweisen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist die Indexierung beim Unterhalt?</h3>
+                <p class="text-gray-700">Die Indexierung passt die Unterhaltszahlungen jährlich an die Teuerung an (Art. 286 Abs. 2 ZGB). Massgebend ist der Landesindex der Konsumentenpreise (LIK). Üblicherweise erfolgt die Anpassung per 1. Januar nach dem Indexstand November des Vorjahres. Die Anpassung erfolgt automatisch gemäss der im Urteil festgelegten Klausel, ist aber auf die Einkommensindexierung des Pflichtigen begrenzt.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie lange dauert die Unterhaltspflicht für Kinder?</h3>
+                <p class="text-gray-700">Der Kindesunterhalt dauert grundsätzlich bis zur Volljährigkeit (18 Jahre). Bei Kindern in Ausbildung verlängert sich die Pflicht bis zum Abschluss der Erstausbildung (Art. 277 Abs. 2 ZGB). Der Betreuungsunterhalt richtet sich nach dem Schulstufenmodell und entfällt in der Regel ab dem 16. Geburtstag des Kindes, wenn volle Erwerbsobliegenheit des betreuenden Elternteils besteht.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist eine Kapitalabfindung beim Unterhalt?</h3>
+                <p class="text-gray-700">Statt monatlicher Rentenzahlung kann in Ausnahmefällen eine einmalige Kapitalabfindung festgesetzt werden (Art. 126 Abs. 2 ZGB). Dies erfordert besondere Umstände. Steuerlich ist die Kapitalabfindung vorteilhaft: Sie ist beim Empfänger steuerfrei und beim Zahlenden nicht abzugsfähig. Nachteil: Keine spätere Anpassung möglich und keine Rückforderung bei Wiederheirat.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich den Unterhalt anpassen lassen?</h3>
+                <p class="text-gray-700">Ja, bei erheblicher und dauerhafter Veränderung der Verhältnisse kann der Unterhalt angepasst werden (Art. 286/129 ZGB). Die Änderung muss unvorhersehbar gewesen sein und darf bei Urteilsfällung nicht bereits berücksichtigt worden sein. Typische Gründe: Arbeitslosigkeit, Einkommenserhöhung, Krankheit, neues Kind. Die Anpassung muss beim Gericht beantragt werden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Überschussanteil beim Kindesunterhalt?</h3>
+                <p class="text-gray-700">Nach der zweistufigen Methode wird ein verbleibender Überschuss nach "Köpfen" verteilt: Erwachsene erhalten einen vollen Kopfanteil, minderjährige Kinder einen halben. Volljährige Kinder partizipieren nicht am Überschuss (BGE 147 III 265 E. 7.3). Beispiel: Bei CHF 1'500 Überschuss und Familie mit 2 Erwachsenen + 1 Kind erhält jeder Erwachsene CHF 500, das Kind CHF 250.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Welche Rangfolge gilt bei den Unterhaltsansprüchen?</h3>
+                <p class="text-gray-700">Bei der Verteilung der Mittel gilt folgende Rangfolge (Art. 276a ZGB): 1. Barunterhalt minderjähriger Kinder, 2. Betreuungsunterhalt, 3. Nachehelicher Ehegattenunterhalt, 4. Volljährigenunterhalt. Diese Rangfolge bestimmt, wessen Bedarf bei knappen Mitteln zuerst gedeckt wird.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Unterhaltszahlung in der Schweiz: Berechnung, Steuern und Indexierung",
+        "description": "Unterhaltszahlung in der Schweiz: Zweistufige Methode, steuerliche Behandlung, Indexierung nach LIK und Kapitalabfindung. Mit BGE-Rechtsprechung und praktischen Tipps.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-25",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/unterhalt/zahlung"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Wann muss ich Unterhalt zahlen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Unterhaltszahlungen sind in der Regel monatlich im Voraus fällig, typischerweise zum Monatsersten oder bis zum 3. oder 5. des Monats - je nach Vereinbarung oder Gerichtsentscheid. Die Zahlung sollte per Banküberweisung mit klarem Vermerk (Name des Berechtigten und Zeitraum) erfolgen. Ein Dauerauftrag wird empfohlen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Ist Unterhalt steuerlich absetzbar?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, der Zahlende kann Unterhaltsbeiträge für minderjährige Kinder und Ehegatten vollständig von seinem steuerbaren Einkommen abziehen (Art. 33 Abs. 1 lit. c DBG). Im Gegenzug muss der Empfangende die erhaltenen Zahlungen als Einkommen versteuern. Ausnahmen: Volljährigenunterhalt ist beim Empfänger steuerfrei und beim Zahlenden nicht abzugsfähig. Kapitalabfindungen sind beidseitig steuerneutral."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist die zweistufige Methode?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die zweistufige Methode mit Überschussverteilung ist die vom Bundesgericht als verbindlich erklärte Berechnungsmethode für alle Unterhaltsarten (BGE 147 III 265). In Stufe 1 wird der Bedarf aller Beteiligten gedeckt (Existenzminimum), in Stufe 2 wird ein verbleibender Überschuss nach grossen und kleinen Köpfen verteilt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert bei Arbeitslosigkeit mit dem Unterhalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Arbeitslosigkeit befreit nicht automatisch von der Unterhaltspflicht. Die Pflicht besteht weiter, allenfalls in angepasster Höhe. Sie müssen beim Gericht eine Abänderungsklage einreichen und die erhebliche, dauerhafte Einkommensreduktion nachweisen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist die Indexierung beim Unterhalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Indexierung passt die Unterhaltszahlungen jährlich an die Teuerung an (Art. 286 Abs. 2 ZGB). Massgebend ist der Landesindex der Konsumentenpreise (LIK). Üblicherweise erfolgt die Anpassung per 1. Januar nach dem Indexstand November des Vorjahres."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie lange dauert die Unterhaltspflicht für Kinder?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der Kindesunterhalt dauert grundsätzlich bis zur Volljährigkeit (18 Jahre). Bei Kindern in Ausbildung verlängert sich die Pflicht bis zum Abschluss der Erstausbildung (Art. 277 Abs. 2 ZGB). Der Betreuungsunterhalt richtet sich nach dem Schulstufenmodell."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist eine Kapitalabfindung beim Unterhalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Statt monatlicher Rentenzahlung kann in Ausnahmefällen eine einmalige Kapitalabfindung festgesetzt werden (Art. 126 Abs. 2 ZGB). Steuerlich ist die Kapitalabfindung vorteilhaft: Sie ist beim Empfänger steuerfrei und beim Zahlenden nicht abzugsfähig."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich den Unterhalt anpassen lassen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, bei erheblicher und dauerhafter Veränderung der Verhältnisse kann der Unterhalt angepasst werden (Art. 286/129 ZGB). Die Änderung muss unvorhersehbar gewesen sein. Typische Gründe: Arbeitslosigkeit, Einkommenserhöhung, Krankheit, neues Kind."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist der Überschussanteil beim Kindesunterhalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nach der zweistufigen Methode wird ein verbleibender Überschuss nach Köpfen verteilt: Erwachsene erhalten einen vollen Kopfanteil, minderjährige Kinder einen halben. Volljährige Kinder partizipieren nicht am Überschuss (BGE 147 III 265 E. 7.3)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welche Rangfolge gilt bei den Unterhaltsansprüchen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei der Verteilung der Mittel gilt folgende Rangfolge (Art. 276a ZGB): 1. Barunterhalt minderjähriger Kinder, 2. Betreuungsunterhalt, 3. Nachehelicher Ehegattenunterhalt, 4. Volljährigenunterhalt."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Unterhalt",
+                "item": "https://familienrechtanwalt.ch/unterhalt"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Unterhaltszahlung",
+                "item": "https://familienrechtanwalt.ch/unterhalt/zahlung"
+            }
+        ]
+    })} />
+
 </ArticleLayout>

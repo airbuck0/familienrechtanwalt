@@ -3,171 +3,706 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 ---
 
 <ArticleLayout
-    title="Alimentenhilfe in der Schweiz: Inkassohilfe und Alimentenbevorschussung"
-    description="Alimentenhilfe in der Schweiz: Inkassohilfe und Alimentenbevorschussung bei ausbleibenden Unterhaltszahlungen. Kantonale Unterschiede, Voraussetzungen und Verfahren."
-    keywords="Alimentenhilfe Schweiz, Inkassohilfe, Alimentenbevorschussung, Unterhalt eintreiben, InkHV, Alimentenstelle"
+    title="Alimentenhilfe in der Schweiz"
+    description="Alimentenhilfe erklärt: Inkassohilfe & Alimentenbevorschussung bei ausbleibenden Unterhaltszahlungen. Voraussetzungen, Höchstbeträge nach Kantonen & Verfahren."
+    keywords="Alimentenhilfe, Alimentenhilfe Schweiz, Alimentenbevorschussung, Inkassohilfe, Alimente nicht bezahlt, Unterhaltsvorschuss, InkHV, Art. 293 ZGB"
     category="Unterhalt"
     categoryLink="/unterhalt"
 >
-    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Wenn Unterhaltszahlungen ausbleiben, stehen Unterhaltsberechtigte oft vor erheblichen finanziellen Schwierigkeiten. Die Schweiz kennt deshalb ein umfassendes System der Alimentenhilfe, das aus Inkassohilfe und Alimentenbevorschussung besteht. Dieser Leitfaden erklaert alle relevanten Aspekte und zeigt die kantonalen Unterschiede auf.</p>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die <strong>Alimentenhilfe</strong> umfasst zwei Leistungen: <strong>Inkassohilfe</strong> (Eintreiben der Alimente) und <strong>Alimentenbevorschussung</strong> (Vorschusszahlung durch die Gemeinde/Kanton).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die <strong>Inkassohilfe</strong> ist gemäss Art. 131 ZGB und Art. 290 ZGB kostenlos und steht allen Unterhaltsberechtigten mit einem Rechtstitel zur Verfügung.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die <strong>Alimentenbevorschussung</strong> ist kantonal geregelt und an <strong>Einkommens- und Vermögensgrenzen</strong> gebunden. Nur Kindesunterhalt kann bevorschusst werden.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Der <strong>Höchstbetrag</strong> der Bevorschussung liegt je nach Kanton zwischen CHF 756 und CHF 1'008 pro Kind und Monat (2025).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Zuständig ist die <strong>Wohnsitzgemeinde</strong> des Kindes. Die Alimentenhilfe ist <strong>kostenlos</strong>.</span>
+            </li>
+        </ul>
+    </div>
+
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+        Wenn der unterhaltspflichtige Elternteil die <a href="/unterhalt/alimente" class="text-gold hover:underline font-semibold">Alimente</a> nicht, nicht vollständig oder nicht rechtzeitig bezahlt, stehen alleinerziehende Eltern und ihre Kinder oft vor erheblichen finanziellen Schwierigkeiten. Die Schweiz kennt deshalb ein umfassendes System der Alimentenhilfe, das aus zwei Säulen besteht: der Inkassohilfe, bei der die Behörde das Eintreiben der ausstehenden Zahlungen übernimmt, und der Alimentenbevorschussung, bei der die Gemeinde die Unterhaltsbeiträge vorschiesst. In diesem umfassenden Ratgeber erfahren Sie alles über die Voraussetzungen, das Verfahren, die kantonalen Unterschiede und die Höchstbeträge der Alimentenhilfe in der Schweiz.
+    </p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Was ist Alimentenhilfe?</h2>
+
+    <p class="text-gray-700 mb-6">
+        Die Alimentenhilfe ist ein staatliches Unterstützungssystem für Personen, die Anspruch auf Unterhaltszahlungen haben, diese aber nicht oder nicht vollständig erhalten. Sie verfolgt ein soziales Ziel: den Unterhalt für Kinder und in gewissem Umfang auch für Ehegatten zu sichern, wenn der Unterhaltspflichtige seinen Pflichten nicht nachkommt.
+    </p>
+
+    <p class="text-gray-700 mb-6">
+        Die Alimentenhilfe besteht aus zwei Komponenten:
+    </p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Komponente</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Für wen?</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Inkassohilfe</td>
+                    <td class="px-6 py-4 text-gray-700">Die Behörde treibt die ausstehenden Unterhaltsbeiträge bei der unterhaltspflichtigen Person ein und überweist sie an die berechtigte Person.</td>
+                    <td class="px-6 py-4 text-gray-700">Kinder und Ehegatten mit Rechtstitel</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Alimentenbevorschussung</td>
+                    <td class="px-6 py-4 text-gray-700">Die Gemeinde/Kanton zahlt die ausstehenden Unterhaltsbeiträge als Vorschuss aus und fordert das Geld anschliessend beim Unterhaltspflichtigen zurück.</td>
+                    <td class="px-6 py-4 text-gray-700">Nur für Kindesunterhalt (einkommensabhängig)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen der Alimentenhilfe</h2>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Bundesrechtliche Basis</h3>
+    <p class="text-gray-700 mb-6">
+        Die Alimentenhilfe basiert auf mehreren Rechtsgrundlagen im Schweizerischen Zivilgesetzbuch (ZGB) und seit 2022 auch auf einer bundesweiten Verordnung:
+    </p>
 
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy">Art. 131 ZGB - Vollstreckungshilfe:</p>
-        <p class="text-gray-700">"Erfuellt der Schuldner die Unterhaltspflicht nicht, so hilft eine vom kantonalen Recht bezeichnete Fachstelle auf Gesuch hin der berechtigten Person bei der Vollstreckung des Unterhaltsanspruchs in geeigneter Weise und in der Regel unentgeltlich."</p>
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Inhalt</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 131 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Inkassohilfe und Bevorschussung für <strong>Ehegattenunterhalt</strong>: Bezeichnet Fachstelle für Vollstreckungshilfe bei nachehelichem Unterhalt.</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 131a ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Bevorschussung und Übergang der Unterhaltsansprüche auf das Gemeinwesen (Subrogation) bei Ehegattenunterhalt.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 290 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Inkassohilfe für <strong>Kindesunterhalt</strong>: Anspruch des Kindes auf Hilfe bei der Vollstreckung des Unterhaltsanspruchs.</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 293 Abs. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Bevorschussung für <strong>Kindesunterhalt</strong>: Das öffentliche Recht regelt die Ausrichtung von Vorschüssen, wenn die Eltern ihrer Unterhaltspflicht nicht nachkommen.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 289 Abs. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Subrogation: Kommt das Gemeinwesen für den Unterhalt auf, geht der Unterhaltsanspruch auf das Gemeinwesen über.</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">InkHV (seit 1.1.2022)</td>
+                    <td class="px-6 py-4 text-gray-700">Verordnung über die Inkassohilfe bei familienrechtlichen Unterhaltsansprüchen: Schweizweite Vereinheitlichung der Inkassohilfe.</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
-    <p class="text-gray-700 mb-6">Seit dem 1. Januar 2022 gilt die Verordnung ueber die Inkassohilfe bei familienrechtlichen Unterhaltsanspruechen (InkHV). Diese Bundesverordnung hat die Inkassohilfe schweizweit vereinheitlicht.</p>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Gesetzliche Grundlage der Bevorschussung:</p>
+        <p class="text-gray-700 italic">"Das öffentliche Recht regelt die Ausrichtung von Vorschüssen für den Unterhalt des Kindes, wenn die Eltern ihrer Unterhaltspflicht nicht nachkommen." - Art. 293 Abs. 2 ZGB</p>
+    </div>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Inkassohilfe im Detail</h2>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Leistungen der Inkassohilfe</h3>
-
-    <p class="text-gray-700 mb-4">Die Fachstellen fuer Inkassohilfe bieten folgende Dienstleistungen an:</p>
-
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Beratung und Information:</strong> Auskunft ueber rechtliche Moeglichkeiten und Hilfe bei der Dokumentation</li>
-        <li><strong>Aussergerichtliche Massnahmen:</strong> Mahnungen, Vermittlungsgespraeche, Zahlungsvereinbarungen</li>
-        <li><strong>Unterstuetzung bei der Betreibung:</strong> Einleitung und Begleitung von Betreibungsverfahren</li>
-        <li><strong>Schuldneranweisung:</strong> Unterstuetzung beim Antrag auf Schuldneranweisung</li>
-        <li><strong>Strafanzeige:</strong> Pruefung der Voraussetzungen fuer Art. 217 StGB</li>
-    </ul>
+    <p class="text-gray-700 mb-6">
+        Die Inkassohilfe ist das Recht von Unterhaltsberechtigten, staatliche Unterstützung beim Eintreiben ausstehender Unterhaltsbeiträge zu erhalten. Seit dem 1. Januar 2022 ist die Inkassohilfe durch die <strong>Inkassohilfeverordnung (InkHV)</strong> schweizweit vereinheitlicht.
+    </p>
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wer hat Anspruch auf Inkassohilfe?</h3>
 
-    <div class="overflow-x-auto mb-6">
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Personenkreis</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Gesetzliche Grundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Voraussetzungen</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Minderjaehrige Kinder</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Minderjährige Kinder</td>
                     <td class="px-6 py-4 text-gray-700">Art. 290 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Rechtstitel vorhanden</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Volljaehrige Kinder in Erstausbildung</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Volljährige Kinder in Erstausbildung</td>
                     <td class="px-6 py-4 text-gray-700">Art. 277 Abs. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Bis zum Abschluss der Erstausbildung</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Geschiedene Ehegatten</td>
                     <td class="px-6 py-4 text-gray-700">Art. 131 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Rechtstitel vorhanden</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">Getrennt lebende Ehegatten</td>
                     <td class="px-6 py-4 text-gray-700">Art. 176 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Eheschutzurteil oder Vereinbarung</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Alimentenbevorschussung</h2>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Leistungen der Inkassohilfe</h3>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Funktionsweise</h3>
-
-    <p class="text-gray-700 mb-6">Bei der Alimentenbevorschussung zahlt der Staat (Kanton oder Gemeinde) die ausstehenden Unterhaltsbeitraege ganz oder teilweise an die unterhaltsberechtigte Person aus, wenn der Unterhaltspflichtige nicht zahlt. Der Staat tritt damit in Vorleistung und versucht anschliessend, die Betraege beim Schuldner einzutreiben.</p>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Voraussetzungen fuer die Bevorschussung</h3>
-
-    <p class="text-gray-700 mb-4">Die Voraussetzungen variieren je nach Kanton, umfassen aber in der Regel:</p>
+    <p class="text-gray-700 mb-6">
+        Die Fachstellen für Inkassohilfe bieten folgende Dienstleistungen an:
+    </p>
 
     <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Wohnsitz im betreffenden Kanton</li>
-        <li>Gueltiger Rechtstitel (Urteil oder genehmigter Unterhaltsvertrag)</li>
-        <li>Nachweis der ausbleibenden Zahlungen</li>
-        <li>Einhaltung von Einkommens- und Vermoegensgrenzen</li>
-        <li>Mitwirkungspflicht bei der Geltendmachung</li>
+        <li><strong>Beratung und Information:</strong> Auskunft über rechtliche Möglichkeiten und Hilfe bei der Dokumentation</li>
+        <li><strong>Aussergerichtliche Massnahmen:</strong> Mahnungen, Vermittlungsgespräche, Zahlungsvereinbarungen mit dem Schuldner</li>
+        <li><strong>Unterstützung bei der Betreibung:</strong> Einleitung und Begleitung von Betreibungsverfahren</li>
+        <li><strong>Schuldneranweisung:</strong> Unterstützung beim Antrag auf Schuldneranweisung (direkte Lohnabzug)</li>
+        <li><strong>Strafanzeige:</strong> Prüfung der Voraussetzungen für eine Strafanzeige nach Art. 217 StGB (Vernachlässigung von Unterhaltspflichten)</li>
     </ul>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Umfang der Bevorschussung</h3>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig:</p>
+        <p class="text-gray-700">Die Inkassohilfe ist gemäss Art. 290 Abs. 1 ZGB und Art. 131 Abs. 1 ZGB <strong>in der Regel unentgeltlich</strong>. Für die Inkassohilfe bei Ehegattenunterhalt kann je nach Kanton eine Kostenbeteiligung verlangt werden.</p>
+    </div>
 
-    <div class="overflow-x-auto mb-6">
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Massnahmen zur Durchsetzung</h3>
+
+    <p class="text-gray-700 mb-6">
+        Bei der Durchsetzung von Unterhaltsansprüchen stehen verschiedene rechtliche Mittel zur Verfügung:
+    </p>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">1. Betreibungsverfahren</h4>
+
+    <p class="text-gray-700 mb-6">
+        Das Betreibungsverfahren ist das häufigste Mittel zur Durchsetzung von Unterhaltsansprüchen. Die Inkassohilfestelle kann das Verfahren im Namen des Berechtigten einleiten:
+    </p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Betreibungsbegehren:</strong> Einreichung beim Betreibungsamt am Wohnsitz des Schuldners</li>
+        <li><strong>Zahlungsbefehl:</strong> Der Schuldner erhält einen Zahlungsbefehl mit 20-tägiger Frist</li>
+        <li><strong>Rechtsvorschlag:</strong> Bei Rechtsvorschlag muss dieser durch Rechtsöffnung beseitigt werden</li>
+        <li><strong>Fortsetzungsbegehren:</strong> Nach Ablauf der Frist kann die Pfändung beantragt werden</li>
+        <li><strong>Lohnpfändung:</strong> Der pfändbare Lohnanteil (über dem Existenzminimum) wird direkt ans Betreibungsamt überwiesen</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Besonderheit bei Alimenten:</p>
+        <p class="text-gray-700">Betreibungen für Alimentenforderungen haben gegenüber anderen Forderungen einen <strong>privilegierten Status</strong>. Sie können auch während einer Stundung weiterlaufen. Die Gebühren für das Betreibungsverfahren betragen CHF 40-100, abhängig von der Höhe der Forderung.</p>
+    </div>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">2. Schuldneranweisung (Art. 291 ZGB)</h4>
+
+    <p class="text-gray-700 mb-6">
+        Die Schuldneranweisung ist ein besonders wirksames Instrument: Das Gericht weist den Arbeitgeber des Unterhaltspflichtigen an, die Unterhaltsbeiträge direkt vom Lohn abzuziehen und an die berechtigte Person zu überweisen. Anders als bei der Lohnpfändung gilt dies nicht nur für bestehende Rückstände, sondern auch für <strong>zukünftige Zahlungen</strong>.
+    </p>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">3. Strafanzeige (Art. 217 StGB)</h4>
+
+    <p class="text-gray-700 mb-6">
+        Wer seine familienrechtlichen Unterhaltspflichten verletzt, obwohl er über die Mittel dazu verfügt oder verfügen könnte, macht sich strafbar. Die Strafe kann Freiheitsstrafe bis zu drei Jahren oder Geldstrafe betragen. Eine Strafanzeige kann zusätzlichen Druck auf säumige Unterhaltspflichtige ausüben.
+    </p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Alimentenbevorschussung im Detail</h2>
+
+    <p class="text-gray-700 mb-6">
+        Bei der Alimentenbevorschussung zahlt die Gemeinde oder der Kanton die ausstehenden Unterhaltsbeiträge ganz oder teilweise an die unterhaltsberechtigte Person aus, wenn der Unterhaltspflichtige nicht zahlt. Der Staat tritt in Vorleistung und versucht anschliessend, die Beträge beim Schuldner einzutreiben.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Voraussetzungen für die Bevorschussung</h3>
+
+    <p class="text-gray-700 mb-6">
+        Die Voraussetzungen für die Alimentenbevorschussung variieren je nach Kanton, umfassen aber in der Regel folgende Punkte:
+    </p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Zivilrechtlicher Wohnsitz:</strong> Das Kind muss seinen Wohnsitz in der betreffenden Gemeinde/Kanton haben</li>
+        <li><strong>Gültiger Rechtstitel:</strong> Gerichtsurteil, Scheidungsurteil, Eheschutzentscheid oder von der KESB genehmigter Unterhaltsvertrag</li>
+        <li><strong>Nur Kindesunterhalt:</strong> Ehegatten- oder nachehelicher Unterhalt kann <strong>nicht</strong> bevorschusst werden</li>
+        <li><strong>Keine Hausgemeinschaft:</strong> Das Kind darf nicht mit der unterhaltspflichtigen Person im selben Haushalt leben</li>
+        <li><strong>Einkommens- und Vermögensgrenzen:</strong> Die Bevorschussung ist einkommensabhängig (kantonal unterschiedlich)</li>
+        <li><strong>Ausbleibende Zahlungen:</strong> Der Unterhaltspflichtige zahlt nicht, nicht vollständig oder nicht rechtzeitig</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig:</p>
+        <p class="text-gray-700">Die Bevorschussung wird nur für die <strong>Zukunft</strong> ausgerichtet, nicht für bereits fällige Unterhaltsansprüche (Rückstände). Für rückständige Alimente ist die Inkassohilfe zuständig.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Was wird bevorschusst?</h3>
+
+    <p class="text-gray-700 mb-6">
+        Seit dem neuen Kindesunterhaltsrecht (1. Januar 2017) umfasst der Kindesunterhalt zwei Komponenten, die beide bevorschusst werden können:
+    </p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Barunterhalt:</strong> Die direkten Kosten für das Kind (Nahrung, Kleidung, Wohnen, etc.)</li>
+        <li><strong><a href="/unterhalt/betreuungsunterhalt" class="text-gold hover:underline">Betreuungsunterhalt</a>:</strong> Die indirekten Kosten, die aufgrund der persönlichen Betreuung des Kindes entstehen</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Höchstbeträge nach Kantonen (2025)</h3>
+
+    <p class="text-gray-700 mb-6">
+        Die Höhe der Bevorschussung ist kantonal unterschiedlich geregelt. Die meisten Kantone orientieren sich an der <strong>maximalen einfachen AHV-Waisenrente</strong> (ab 1.1.2025: CHF 1'008 pro Monat):
+    </p>
+
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Kanton</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Maximalbetrag pro Kind/Monat</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Maximalbetrag pro Kind/Monat (2025)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bemerkung</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Zuerich</td>
-                    <td class="px-6 py-4 text-gray-700">CHF 965 (Stand 2024)</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Zürich</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'008</td>
+                    <td class="px-6 py-4 text-gray-700">Max. AHV-Waisenrente</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Basel-Landschaft</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'008</td>
+                    <td class="px-6 py-4 text-gray-700">Max. AHV-Waisenrente</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Basel-Stadt</td>
+                    <td class="px-6 py-4 text-gray-700">Einkommensabhängig</td>
+                    <td class="px-6 py-4 text-gray-700">Berechnung nach Einkommen/Vermögen</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">Bern</td>
                     <td class="px-6 py-4 text-gray-700">CHF 900 - 1'100</td>
+                    <td class="px-6 py-4 text-gray-700">Je nach Alter des Kindes</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Basel-Stadt</td>
-                    <td class="px-6 py-4 text-gray-700">CHF 1'000</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Aargau</td>
+                    <td class="px-6 py-4 text-gray-700">ca. CHF 900</td>
+                    <td class="px-6 py-4 text-gray-700">-</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Aargau</td>
-                    <td class="px-6 py-4 text-gray-700">CHF 900</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Graubünden</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 780</td>
+                    <td class="px-6 py-4 text-gray-700">-</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Solothurn</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 756</td>
+                    <td class="px-6 py-4 text-gray-700">-</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Thurgau</td>
+                    <td class="px-6 py-4 text-gray-700">Max. AHV-Waisenrente</td>
+                    <td class="px-6 py-4 text-gray-700">-</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">St. Gallen</td>
+                    <td class="px-6 py-4 text-gray-700">Kantonal geregelt</td>
+                    <td class="px-6 py-4 text-gray-700">Kontakt mit Gemeinde</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kantonale Unterschiede</h2>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Tipp:</p>
+        <p class="text-gray-700">Die genauen Beträge und Einkommensgrenzen variieren je nach Kanton und werden regelmässig angepasst. Kontaktieren Sie Ihre <strong>Wohnsitzgemeinde</strong> für die aktuellen Werte in Ihrem Kanton.</p>
+    </div>
 
-    <p class="text-gray-700 mb-4">Die Organisation der Alimentenhilfe variiert erheblich zwischen den Kantonen:</p>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Einkommensgrenzen</h3>
+
+    <p class="text-gray-700 mb-6">
+        Die Alimentenbevorschussung ist an Einkommens- und Vermögensgrenzen gebunden. Die Grenzen variieren je nach Kanton erheblich. Beispiele:
+    </p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Basel-Landschaft:</strong> Jahreseinkommen unter CHF 52'000 (Alleinstehende) bzw. CHF 78'000 (Verheiratete/Paare)</li>
+        <li><strong>Genf:</strong> Zusätzlich: Wohnsitz seit mehr als einem Jahr im Kanton erforderlich</li>
+    </ul>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Subrogation: Übergang der Ansprüche auf das Gemeinwesen</h2>
+
+    <p class="text-gray-700 mb-6">
+        Wenn die Gemeinde Alimente bevorschusst, gehen die Unterhaltsansprüche des Kindes <strong>auf das Gemeinwesen über</strong> (Art. 289 Abs. 2 ZGB). Dies nennt man <strong>Subrogation</strong>. Das bedeutet:
+    </p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Die Gemeinde tritt in die Rechte des Kindes ein</li>
+        <li>Die Gemeinde macht die Unterhaltsansprüche im eigenen Namen beim Unterhaltspflichtigen geltend</li>
+        <li>Erhaltene Zahlungen fliessen an die Gemeinde zurück, nicht an das Kind</li>
+        <li>Die Gemeinde kann alle Rechtsmittel (Betreibung, Klage, etc.) im eigenen Namen nutzen</li>
+    </ul>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Verfahren und Ablauf</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 1: Kontaktaufnahme mit der Alimentenhilfestelle</h3>
+
+    <p class="text-gray-700 mb-6">
+        Der erste Schritt ist die Kontaktaufnahme mit der zuständigen Alimentenhilfestelle. Diese ist in der Regel bei der <strong>Wohnsitzgemeinde des Kindes</strong> angesiedelt. Je nach Kanton gibt es unterschiedliche Organisationsformen:
+    </p>
 
     <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
         <li><strong>Kantonale Fachstellen:</strong> Basel-Stadt, Fribourg, Genf, Neuenburg, Waadt, Wallis</li>
-        <li><strong>Bezirks- oder Gemeindeebene:</strong> Zuerich (Bezirk), Bern (Gemeinde), Solothurn (Bezirk)</li>
-        <li><strong>Gemischte Systeme:</strong> Einige Kantone haben kantonale Koordinationsstellen und regionale Anlaufstellen</li>
+        <li><strong>Bezirksebene:</strong> Zürich, Solothurn</li>
+        <li><strong>Gemeindeebene:</strong> Bern, Aargau, Luzern, St. Gallen und weitere</li>
     </ul>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Ablauf und Verfahren</h2>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 2: Erforderliche Unterlagen einreichen</h3>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 1: Kontaktaufnahme</h3>
-    <p class="text-gray-700 mb-4">Zunaechst ist die zustaendige Alimentenhilfestelle zu kontaktieren. Diese ist in der Regel am Wohnsitz des unterhaltsberechtigten Kindes.</p>
+    <p class="text-gray-700 mb-6">
+        Für den Antrag auf Alimentenhilfe werden folgende Unterlagen benötigt:
+    </p>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 2: Einreichen der Unterlagen</h3>
-    <p class="text-gray-700 mb-4">Folgende Dokumente werden benoetigt:</p>
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kategorie</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Unterlagen</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Persönliche Dokumente</td>
+                    <td class="px-6 py-4 text-gray-700">Personalausweis, Wohnsitzbestätigung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Rechtstitel</td>
+                    <td class="px-6 py-4 text-gray-700">Scheidungsurteil, Eheschutzentscheid, KESB-genehmigter Unterhaltsvertrag (mit Rechtskraftbestätigung)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Nachweis Rückstände</td>
+                    <td class="px-6 py-4 text-gray-700">Aufstellung ausstehender Zahlungen (1 Jahr rückwirkend bei Kindesunterhalt, 3 Monate bei Ehegattenunterhalt)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Einkommensnachweise</td>
+                    <td class="px-6 py-4 text-gray-700">Lohnabrechnungen, Steuererklärung/-veranlagung aller Haushaltsmitglieder</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Angaben zum Schuldner</td>
+                    <td class="px-6 py-4 text-gray-700">Adresse der unterhaltspflichtigen Person und deren Arbeitgeber</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 3: Prüfung und Entscheid</h3>
+
+    <p class="text-gray-700 mb-6">
+        Die Alimentenhilfestelle prüft die formellen Voraussetzungen und die Anspruchsberechtigung. Bei der Inkassohilfe beginnt die Stelle sofort mit den Inkassobemühungen. Bei der Bevorschussung wird zusätzlich die Einkommens- und Vermögenssituation geprüft.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Fristen und Meldepflichten</h3>
+
     <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Personalausweis und Wohnsitzbestaetigung</li>
-        <li>Rechtstitel (Urteil, genehmigter Vertrag)</li>
-        <li>Eigene Einkommensnachweise und Steuererklaerung</li>
-        <li>Informationen zum Unterhaltspflichtigen</li>
+        <li><strong>Unterlagen einreichen:</strong> In der Regel innerhalb von 2 Monaten nach Antragstellung (Kanton Zürich)</li>
+        <li><strong>Meldepflicht:</strong> Veränderungen (Zivilstand, Umzug, Einkommen, Zahlungseingänge, neues Urteil) müssen <strong>unverzüglich</strong> gemeldet werden</li>
+        <li><strong>Überprüfung:</strong> Bewilligte Fälle werden in der Regel alle 2 Jahre überprüft</li>
     </ul>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 3: Pruefung und Entscheid</h3>
-    <p class="text-gray-700 mb-6">Die Alimentenhilfestelle prueft die formellen Voraussetzungen und die Anspruchsberechtigung.</p>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rückzahlung und Konsequenzen bei Verletzung der Meldepflicht</h2>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kosten und Gebuehren</h2>
-
-    <p class="text-gray-700 mb-6">Die Inkassohilfe fuer Unterhaltsbeitraege zugunsten von Kindern ist gemaess Art. 290 Abs. 1 ZGB und Art. 131 Abs. 1 ZGB in der Regel unentgeltlich. Fuer die Inkassohilfe bei Ehegattenunterhalt kann eine Kostenbeteiligung verlangt werden.</p>
-
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Praktische Tipps</h2>
+    <p class="text-gray-700 mb-6">
+        Die Alimentenbevorschussung muss von der unterhaltsberechtigten Person <strong>nicht zurückgezahlt</strong> werden - der Staat fordert das Geld beim Unterhaltspflichtigen ein. Eine Rückzahlungspflicht besteht nur, wenn:
+    </p>
 
     <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Sofort handeln:</strong> Warten Sie nicht zu lange mit der Kontaktaufnahme zur Alimentenhilfestelle</li>
-        <li><strong>Dokumentation:</strong> Fuehren Sie eine genaue Aufstellung aller ausstehenden Zahlungen</li>
-        <li><strong>Kommunikation:</strong> Versuchen Sie zunaechst, den Schuldner direkt zu kontaktieren</li>
-        <li><strong>Schriftlichkeit:</strong> Halten Sie alle Mahnungen schriftlich fest</li>
-        <li><strong>Ehrlichkeit:</strong> Melden Sie erhaltene Zahlungen unverzueglich</li>
+        <li>Die Leistungen <strong>zu Unrecht</strong> bezogen wurden (z.B. falsche Angaben)</li>
+        <li>Die <strong>Meldepflicht verletzt</strong> wurde (z.B. Einkommensänderung nicht gemeldet)</li>
+        <li>Die <strong>Voraussetzungen nachträglich weggefallen</strong> sind</li>
     </ul>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig:</p>
+        <p class="text-gray-700">Jede Verletzung der Meldepflicht führt zur Einstellung der finanziellen Leistung, wenn die Voraussetzungen nicht mehr gegeben sind. Melden Sie daher alle Veränderungen (Einkommensänderung, Umzug, Geburt eines weiteren Kindes, Zahlungseingänge) umgehend der Alimentenhilfestelle.</p>
+    </div>
 
-    <p class="text-gray-700 mb-6">Die Alimentenhilfe ist ein wichtiges Instrument zum Schutz unterhaltsberechtigter Personen, insbesondere von Kindern. Mit der InkHV wurde die Inkassohilfe seit 2022 schweizweit vereinheitlicht, waehrend die Bevorschussung weiterhin kantonal geregelt ist. Bei ausbleibenden Unterhaltszahlungen empfiehlt sich die fruehzeitige Kontaktaufnahme mit der zustaendigen Alimentenhilfestelle.</p>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kosten der Alimentenhilfe</h2>
 
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
+    <p class="text-gray-700 mb-6">
+        Die Alimentenhilfestellen verlangen <strong>keine Gebühren</strong> für ihre Dienstleistungen. Sowohl die Inkassohilfe als auch die Alimentenbevorschussung sind für die unterhaltsberechtigte Person kostenlos.
+    </p>
+
+    <p class="text-gray-700 mb-6">
+        Ausnahme: Für die Inkassohilfe bei <strong>Ehegattenunterhalt</strong> kann je nach Kanton eine geringe Kostenbeteiligung verlangt werden. Die Inkassohilfe für Kindesunterhalt ist jedoch immer unentgeltlich.
+    </p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Besondere Situationen</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wenn der Aufenthaltsort des Unterhaltspflichtigen unbekannt ist</h3>
+
+    <p class="text-gray-700 mb-6">
+        In einigen Kantonen (z.B. Basel-Stadt) kann auch dann eine Bevorschussung gewährt werden, wenn die unterhaltspflichtige Person <strong>abwesend</strong> ist und ihr Wohnort unbekannt ist. Die Alimentenhilfestelle wird dann Nachforschungen anstellen.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wenn noch kein Rechtstitel vorhanden ist</h3>
+
+    <p class="text-gray-700 mb-6">
+        Grundsätzlich ist ein Rechtstitel (Gerichtsurteil oder genehmigter Vertrag) Voraussetzung für die Alimentenhilfe. Einzelne Kantone (z.B. Basel-Stadt) gewähren jedoch auch dann Vorschüsse, wenn die Höhe der Unterhaltsbeiträge noch nicht gerichtlich festgelegt wurde. In diesem Fall sollten Sie sich direkt an Ihre Gemeinde wenden.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Volljährige Kinder in Ausbildung</h3>
+
+    <p class="text-gray-700 mb-6">
+        Die meisten Kantone bevorschussen Unterhaltsbeiträge für volljährige Kinder in Erstausbildung bis zum vollendeten <strong>20. Altersjahr</strong>. Die Inkassohilfe steht hingegen allen unterhaltsberechtigten volljährigen Kindern in Erstausbildung zur Verfügung (Art. 277 Abs. 2 ZGB).
+    </p>
+
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">
+            Die Alimentenhilfestellen bieten wertvolle Unterstützung beim Eintreiben von Unterhaltszahlungen. In komplexeren Situationen kann jedoch zusätzliche anwaltliche Beratung sinnvoll sein.
+        </p>
+
+        <p class="text-gray-700 mb-6">
+            Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> kann Sie in folgenden Situationen unterstützen:
+        </p>
+
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Sie haben noch <strong>keinen Rechtstitel</strong> und müssen erst Unterhalt gerichtlich festlegen lassen</li>
+            <li>Der Unterhaltspflichtige legt <strong>Rechtsvorschlag</strong> gegen die Betreibung ein</li>
+            <li>Sie möchten eine <strong>Schuldneranweisung</strong> beantragen</li>
+            <li>Der Unterhaltspflichtige lebt im <strong>Ausland</strong> und internationale Rechtshilfe ist erforderlich</li>
+            <li>Sie möchten den <strong>Unterhaltsbeitrag anpassen</strong> lassen (erhöhen oder herabsetzen)</li>
+            <li>Es bestehen <strong>komplexe Vermögensverhältnisse</strong> beim Unterhaltspflichtigen</li>
+            <li>Sie erwägen eine <strong>Strafanzeige</strong> nach Art. 217 StGB</li>
+        </ul>
+
+        <p class="text-gray-700 mb-6">
+            Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kann Ihre Ansprüche gerichtlich durchsetzen und dafür sorgen, dass Sie die Ihnen zustehenden Unterhaltszahlungen auch tatsächlich erhalten.
+        </p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Erhalten Sie keine oder unvollständige Unterhaltszahlungen? In einer unverbindlichen Erstberatung können wir Ihre Situation einschätzen und Ihnen konkrete Handlungsoptionen aufzeigen.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- Fazit -->
+    <h2 class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">
+        Die Alimentenhilfe ist ein wichtiges Instrument zum Schutz unterhaltsberechtigter Personen, insbesondere von Kindern. Sie besteht aus zwei Säulen: der kostenlosen Inkassohilfe, bei der die Behörde das Eintreiben der ausstehenden Zahlungen übernimmt, und der einkommensabhängigen Alimentenbevorschussung, bei der die Gemeinde die Unterhaltsbeiträge vorschiesst.
+    </p>
+
+    <p class="text-gray-700 mb-6">
+        Seit der Einführung der Inkassohilfeverordnung (InkHV) am 1. Januar 2022 ist die Inkassohilfe schweizweit vereinheitlicht. Die Alimentenbevorschussung bleibt hingegen kantonal geregelt, mit unterschiedlichen Höchstbeträgen und Einkommensgrenzen. Bei ausbleibenden Unterhaltszahlungen empfiehlt sich die frühzeitige Kontaktaufnahme mit der zuständigen Alimentenhilfestelle bei Ihrer Wohnsitzgemeinde.
+    </p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
         <p class="font-semibold text-navy mb-2">Relevante Gesetzesbestimmungen:</p>
         <ul class="list-disc list-inside text-gray-700 space-y-1">
-            <li>Art. 131 ZGB (Vollstreckungshilfe Ehegattenunterhalt)</li>
-            <li>Art. 131a ZGB (Bevorschussung)</li>
-            <li>Art. 290 ZGB (Inkassohilfe Kindesunterhalt)</li>
-            <li>InkHV (Inkassohilfeverordnung)</li>
+            <li><strong>Art. 131 ZGB</strong> - Inkassohilfe und Bevorschussung bei Ehegattenunterhalt</li>
+            <li><strong>Art. 131a ZGB</strong> - Bevorschussung und Subrogation bei Ehegattenunterhalt</li>
+            <li><strong>Art. 289 Abs. 2 ZGB</strong> - Subrogation bei Kindesunterhalt</li>
+            <li><strong>Art. 290 ZGB</strong> - Inkassohilfe bei Kindesunterhalt</li>
+            <li><strong>Art. 291 ZGB</strong> - Schuldneranweisung</li>
+            <li><strong>Art. 293 Abs. 2 ZGB</strong> - Bevorschussung bei Kindesunterhalt</li>
+            <li><strong>Art. 217 StGB</strong> - Vernachlässigung von Unterhaltspflichten (Strafnorm)</li>
+            <li><strong>InkHV</strong> - Verordnung über die Inkassohilfe bei familienrechtlichen Unterhaltsansprüchen</li>
         </ul>
     </div>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen Inkassohilfe und Alimentenbevorschussung?</h3>
+                <p class="text-gray-700">Bei der <strong>Inkassohilfe</strong> treibt die Behörde die ausstehenden Unterhaltsbeiträge beim Schuldner ein und überweist sie an die berechtigte Person - sie erhalten also nur Geld, wenn der Schuldner auch zahlt. Bei der <strong>Alimentenbevorschussung</strong> zahlt die Gemeinde die Alimente als Vorschuss aus, auch wenn der Schuldner nicht zahlt. Die Gemeinde fordert das Geld dann selbst beim Schuldner zurück. Die Bevorschussung ist einkommensabhängig und nur für Kindesunterhalt möglich.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wer hat Anspruch auf Alimentenhilfe?</h3>
+                <p class="text-gray-700">Anspruch auf <strong>Inkassohilfe</strong> haben alle Personen mit einem Rechtstitel (Gerichtsurteil oder genehmigter Vertrag) über Unterhaltszahlungen: minderjährige Kinder, volljährige Kinder in Erstausbildung sowie geschiedene oder getrennt lebende Ehegatten. Die <strong>Alimentenbevorschussung</strong> ist nur für Kindesunterhalt möglich und an Einkommens- und Vermögensgrenzen gebunden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie hoch ist die Alimentenbevorschussung?</h3>
+                <p class="text-gray-700">Die Höchstbeträge variieren je nach Kanton zwischen CHF 756 (Solothurn) und CHF 1'008 (Zürich, Basel-Landschaft) pro Kind und Monat (Stand 2025). Die meisten Kantone orientieren sich an der maximalen einfachen AHV-Waisenrente. Die tatsächliche Höhe hängt vom festgelegten Unterhaltsbeitrag und der Einkommens-/Vermögenssituation ab. Kontaktieren Sie Ihre Wohnsitzgemeinde für die aktuellen Werte.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wo beantrage ich Alimentenhilfe?</h3>
+                <p class="text-gray-700">Die Alimentenhilfe wird bei der Alimentenhilfestelle am <strong>Wohnsitz des Kindes</strong> beantragt. Je nach Kanton ist dies die Gemeinde, der Bezirk oder eine kantonale Stelle. Kontaktieren Sie Ihre Wohnsitzgemeinde für die genaue Zuständigkeit. Die Alimentenhilfestellen verlangen keine Gebühren für ihre Dienstleistungen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Welche Unterlagen brauche ich für den Antrag?</h3>
+                <p class="text-gray-700">Für den Antrag benötigen Sie: einen gültigen <strong>Rechtstitel</strong> (Scheidungsurteil, Eheschutzentscheid oder KESB-genehmigter Unterhaltsvertrag) mit Rechtskraftbestätigung, eine Aufstellung der ausstehenden Zahlungen, Einkommensnachweise und Steuerdaten aller Haushaltsmitglieder sowie die Adresse des Unterhaltspflichtigen und dessen Arbeitgeber.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann auch Ehegattenunterhalt bevorschusst werden?</h3>
+                <p class="text-gray-700">Nein, die Alimentenbevorschussung ist <strong>nur für Kindesunterhalt</strong> möglich. Ehegatten- oder nachehelicher Unterhalt kann nicht bevorschusst werden. Allerdings steht die <strong>Inkassohilfe</strong> auch für Ehegattenunterhalt zur Verfügung - die Behörde unterstützt Sie beim Eintreiben der ausstehenden Zahlungen. Dafür kann jedoch je nach Kanton eine geringe Kostenbeteiligung verlangt werden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Muss ich die Alimentenbevorschussung zurückzahlen?</h3>
+                <p class="text-gray-700">Nein, als unterhaltsberechtigte Person müssen Sie die Bevorschussung <strong>nicht zurückzahlen</strong>. Die Gemeinde fordert das Geld beim Unterhaltspflichtigen ein (Subrogation). Eine Rückzahlungspflicht besteht nur, wenn Sie die Leistungen zu Unrecht bezogen haben, z.B. durch falsche Angaben oder Verletzung der Meldepflicht.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist eine Schuldneranweisung?</h3>
+                <p class="text-gray-700">Die Schuldneranweisung nach Art. 291 ZGB ist ein wirksames Instrument: Das Gericht weist den Arbeitgeber des Unterhaltspflichtigen an, die Unterhaltsbeiträge <strong>direkt vom Lohn abzuziehen</strong> und an die berechtigte Person zu überweisen. Anders als bei der Lohnpfändung gilt dies auch für zukünftige Zahlungen, nicht nur für Rückstände.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann der Unterhaltspflichtige bestraft werden, wenn er nicht zahlt?</h3>
+                <p class="text-gray-700">Ja, wer seine familienrechtlichen Unterhaltspflichten verletzt, obwohl er über die Mittel dazu verfügt oder verfügen könnte, macht sich nach <strong>Art. 217 StGB</strong> (Vernachlässigung von Unterhaltspflichten) strafbar. Die Strafe kann Freiheitsstrafe bis zu drei Jahren oder Geldstrafe betragen. Die Inkassohilfestelle kann bei der Prüfung einer Strafanzeige unterstützen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert, wenn ich Änderungen nicht melde?</h3>
+                <p class="text-gray-700">Veränderungen (Einkommensänderung, Umzug, neues Urteil, Zahlungseingänge vom Unterhaltspflichtigen) müssen Sie der Alimentenhilfestelle <strong>unverzüglich melden</strong>. Bei Verletzung der Meldepflicht wird die Leistung eingestellt, und Sie müssen zu Unrecht bezogene Beträge zurückzahlen. Die Fälle werden in der Regel alle zwei Jahre überprüft.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Alimentenhilfe in der Schweiz",
+        "description": "Alimentenhilfe erklärt: Inkassohilfe & Alimentenbevorschussung bei ausbleibenden Unterhaltszahlungen. Voraussetzungen, Höchstbeträge nach Kantonen & Verfahren.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-20",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/unterhalt/alimentenhilfe"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen Inkassohilfe und Alimentenbevorschussung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei der Inkassohilfe treibt die Behörde die ausstehenden Unterhaltsbeiträge beim Schuldner ein und überweist sie an die berechtigte Person - sie erhalten also nur Geld, wenn der Schuldner auch zahlt. Bei der Alimentenbevorschussung zahlt die Gemeinde die Alimente als Vorschuss aus, auch wenn der Schuldner nicht zahlt. Die Gemeinde fordert das Geld dann selbst beim Schuldner zurück. Die Bevorschussung ist einkommensabhängig und nur für Kindesunterhalt möglich."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wer hat Anspruch auf Alimentenhilfe?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Anspruch auf Inkassohilfe haben alle Personen mit einem Rechtstitel (Gerichtsurteil oder genehmigter Vertrag) über Unterhaltszahlungen: minderjährige Kinder, volljährige Kinder in Erstausbildung sowie geschiedene oder getrennt lebende Ehegatten. Die Alimentenbevorschussung ist nur für Kindesunterhalt möglich und an Einkommens- und Vermögensgrenzen gebunden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie hoch ist die Alimentenbevorschussung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Höchstbeträge variieren je nach Kanton zwischen CHF 756 (Solothurn) und CHF 1'008 (Zürich, Basel-Landschaft) pro Kind und Monat (Stand 2025). Die meisten Kantone orientieren sich an der maximalen einfachen AHV-Waisenrente. Die tatsächliche Höhe hängt vom festgelegten Unterhaltsbeitrag und der Einkommens-/Vermögenssituation ab."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wo beantrage ich Alimentenhilfe?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Alimentenhilfe wird bei der Alimentenhilfestelle am Wohnsitz des Kindes beantragt. Je nach Kanton ist dies die Gemeinde, der Bezirk oder eine kantonale Stelle. Kontaktieren Sie Ihre Wohnsitzgemeinde für die genaue Zuständigkeit. Die Alimentenhilfestellen verlangen keine Gebühren für ihre Dienstleistungen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welche Unterlagen brauche ich für den Antrag?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Für den Antrag benötigen Sie: einen gültigen Rechtstitel (Scheidungsurteil, Eheschutzentscheid oder KESB-genehmigter Unterhaltsvertrag) mit Rechtskraftbestätigung, eine Aufstellung der ausstehenden Zahlungen, Einkommensnachweise und Steuerdaten aller Haushaltsmitglieder sowie die Adresse des Unterhaltspflichtigen und dessen Arbeitgeber."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann auch Ehegattenunterhalt bevorschusst werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, die Alimentenbevorschussung ist nur für Kindesunterhalt möglich. Ehegatten- oder nachehelicher Unterhalt kann nicht bevorschusst werden. Allerdings steht die Inkassohilfe auch für Ehegattenunterhalt zur Verfügung - die Behörde unterstützt Sie beim Eintreiben der ausstehenden Zahlungen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Muss ich die Alimentenbevorschussung zurückzahlen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, als unterhaltsberechtigte Person müssen Sie die Bevorschussung nicht zurückzahlen. Die Gemeinde fordert das Geld beim Unterhaltspflichtigen ein (Subrogation). Eine Rückzahlungspflicht besteht nur, wenn Sie die Leistungen zu Unrecht bezogen haben, z.B. durch falsche Angaben oder Verletzung der Meldepflicht."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist eine Schuldneranweisung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Schuldneranweisung nach Art. 291 ZGB ist ein wirksames Instrument: Das Gericht weist den Arbeitgeber des Unterhaltspflichtigen an, die Unterhaltsbeiträge direkt vom Lohn abzuziehen und an die berechtigte Person zu überweisen. Anders als bei der Lohnpfändung gilt dies auch für zukünftige Zahlungen, nicht nur für Rückstände."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann der Unterhaltspflichtige bestraft werden, wenn er nicht zahlt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, wer seine familienrechtlichen Unterhaltspflichten verletzt, obwohl er über die Mittel dazu verfügt oder verfügen könnte, macht sich nach Art. 217 StGB (Vernachlässigung von Unterhaltspflichten) strafbar. Die Strafe kann Freiheitsstrafe bis zu drei Jahren oder Geldstrafe betragen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert, wenn ich Änderungen nicht melde?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Veränderungen (Einkommensänderung, Umzug, neues Urteil, Zahlungseingänge vom Unterhaltspflichtigen) müssen Sie der Alimentenhilfestelle unverzüglich melden. Bei Verletzung der Meldepflicht wird die Leistung eingestellt, und Sie müssen zu Unrecht bezogene Beträge zurückzahlen. Die Fälle werden in der Regel alle zwei Jahre überprüft."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Unterhalt",
+                "item": "https://familienrechtanwalt.ch/unterhalt"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Alimentenhilfe in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/unterhalt/alimentenhilfe"
+            }
+        ]
+    })} />
+
 </ArticleLayout>

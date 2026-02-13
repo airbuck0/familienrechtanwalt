@@ -9,6 +9,33 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
     category="Eherecht"
     categoryLink="/eherecht"
 >
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Voraussetzungen: Volljährigkeit (18 Jahre), Urteilsfähigkeit und kein Ehehindernis (bestehende Ehe, zu enge Verwandtschaft).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Das Ehevorbereitungsverfahren beim Zivilstandsamt kann frühestens 3 Monate vor dem gewünschten Termin eingeleitet werden.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Seit dem 1. Juli 2022 steht die Ehe allen Paaren offen («Ehe für alle») – gleichgeschlechtliche und verschiedengeschlechtliche Paare sind gleichgestellt.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Ziviltrauung ist die einzige rechtlich verbindliche Form der Eheschliessung – religiöse Trauungen haben keine rechtliche Wirkung.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Kosten: CHF 300-700 total (Vorbereitungsverfahren CHF 75-150, Trauung CHF 150-250, plus Zuschläge für Samstag oder externes Lokal).</span>
+            </li>
+        </ul>
+    </div>
+
     <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die Eheschliessung in der Schweiz ist ein rechtlich geregelter Vorgang, der weit mehr umfasst als nur die romantische Zeremonie vor dem Zivilstandsamt. Mit der Trauung gehen die Ehegatten eine Vielzahl von Rechten und Pflichten ein, die ihr gemeinsames Leben in rechtlicher, wirtschaftlicher und persönlicher Hinsicht prägen.</p>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen der Eheschliessung</h2>
@@ -339,6 +366,26 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         <li>Testament und Vorsorgeauftrag überprüfen/erstellen</li>
     </ul>
 
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+        <p class="text-gray-700 mb-6">Die Eheschliessung selbst ist in der Regel unkompliziert. Allerdings sollten Sie vor der Hochzeit über wichtige rechtliche Fragen nachdenken – insbesondere über den Güterstand und die Absicherung bei einer möglichen späteren Trennung.</p>
+        <p class="text-gray-700 mb-6">Besonders in folgenden Situationen ist die Beratung durch einen erfahrenen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> dringend empfohlen:</p>
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Wenn einer oder beide Partner selbständig erwerbstätig sind oder ein Unternehmen besitzen</li>
+            <li>Bei erheblichen Vermögensunterschieden oder Erbschaften</li>
+            <li>Wenn Sie über einen Ehevertrag (Gütertrennung, modifizierte Errungenschaftsbeteiligung) nachdenken</li>
+            <li>Bei internationalen Ehen mit Bezug zu mehreren Rechtsordnungen</li>
+            <li>Wenn ausländische Dokumente für das Ehevorbereitungsverfahren benötigt werden</li>
+        </ul>
+        <p class="text-gray-700 mb-6">Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> kann Sie zu den güterrechtlichen Optionen beraten und einen massgeschneiderten Ehevertrag aufsetzen, der Ihre Interessen schützt.</p>
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Lassen Sie sich vor der Hochzeit unverbindlich beraten, ob ein Ehevertrag für Sie sinnvoll ist und welche Regelungen in Betracht kommen.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
 
     <p class="text-gray-700 mb-6">Die Eheschliessung in der Schweiz ist ein rechtlich geregelter Vorgang, der sorgfältige Vorbereitung erfordert. Mit dem Ehevorbereitungsverfahren stellt der Staat sicher, dass alle Voraussetzungen für eine gültige Ehe erfüllt sind. Die Ziviltrauung vor dem Zivilstandsamt ist die einzige rechtlich verbindliche Form der Eheschliessung.</p>
@@ -346,4 +393,126 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
     <p class="text-gray-700 mb-6">Mit der Eheschliessung entstehen umfassende Rechte und Pflichten zwischen den Ehegatten. Das Schweizer Eherecht basiert auf dem Grundsatz der Gleichberechtigung und gewährt den Ehegatten weitgehende Gestaltungsfreiheit.</p>
 
     <p class="text-gray-700 mb-6">Seit der Einführung der «Ehe für alle» am 1. Juli 2022 steht die Ehe allen Paaren unabhängig von ihrem Geschlecht offen. Die rechtlichen Wirkungen sind für alle Ehepaare dieselben.</p>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie lange dauert das Ehevorbereitungsverfahren?</h3>
+                <p class="text-gray-700">Bei Schweizer Staatsangehörigen dauert das Verfahren in der Regel 2-4 Wochen. Bei ausländischen Staatsangehörigen kann es 4-8 Wochen oder länger dauern, da zusätzliche Dokumente geprüft werden müssen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Brauche ich Trauzeugen für die Ziviltrauung?</h3>
+                <p class="text-gray-700">Ja, für die Ziviltrauung sind zwei Trauzeugen obligatorisch (Art. 102 ZGB). Diese müssen volljährig und urteilsfähig sein und einen gültigen Ausweis vorweisen können.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich vor der zivilen Hochzeit kirchlich heiraten?</h3>
+                <p class="text-gray-700">Nein, nach Art. 97 Abs. 3 ZGB darf eine religiöse Eheschliessung erst nach der Ziviltrauung stattfinden. Geistliche, die dagegen verstossen, können bestraft werden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Welcher Güterstand gilt, wenn wir keinen Ehevertrag abschliessen?</h3>
+                <p class="text-gray-700">Ohne Ehevertrag gilt automatisch die Errungenschaftsbeteiligung (Art. 196 ff. ZGB). Bei diesem Güterstand bleibt das vor der Ehe eingebrachte Vermögen und Erbschaften Eigengut, während das während der Ehe erworbene Vermögen bei einer Scheidung geteilt wird.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Können gleichgeschlechtliche Paare in der Schweiz heiraten?</h3>
+                <p class="text-gray-700">Ja, seit dem 1. Juli 2022 ist die «Ehe für alle» in Kraft. Gleichgeschlechtliche Paare können unter denselben Voraussetzungen heiraten wie verschiedengeschlechtliche Paare und haben dieselben Rechte und Pflichten.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Eheschliessung in der Schweiz: Ablauf, Voraussetzungen, Rechte und Pflichten",
+        "description": "Eheschliessung in der Schweiz: Ablauf, Voraussetzungen, Rechte und Pflichten. Alles über Ehevorbereitungsverfahren, Ziviltrauung, Namensrecht und Güterstände.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-20",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/eherecht/eheschliessung"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Wie lange dauert das Ehevorbereitungsverfahren?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei Schweizer Staatsangehörigen dauert das Verfahren in der Regel 2-4 Wochen. Bei ausländischen Staatsangehörigen kann es 4-8 Wochen oder länger dauern, da zusätzliche Dokumente geprüft werden müssen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Brauche ich Trauzeugen für die Ziviltrauung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, für die Ziviltrauung sind zwei Trauzeugen obligatorisch (Art. 102 ZGB). Diese müssen volljährig und urteilsfähig sein und einen gültigen Ausweis vorweisen können."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich vor der zivilen Hochzeit kirchlich heiraten?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, nach Art. 97 Abs. 3 ZGB darf eine religiöse Eheschliessung erst nach der Ziviltrauung stattfinden. Geistliche, die dagegen verstossen, können bestraft werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welcher Güterstand gilt, wenn wir keinen Ehevertrag abschliessen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ohne Ehevertrag gilt automatisch die Errungenschaftsbeteiligung (Art. 196 ff. ZGB). Bei diesem Güterstand bleibt das vor der Ehe eingebrachte Vermögen und Erbschaften Eigengut, während das während der Ehe erworbene Vermögen bei einer Scheidung geteilt wird."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Können gleichgeschlechtliche Paare in der Schweiz heiraten?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, seit dem 1. Juli 2022 ist die «Ehe für alle» in Kraft. Gleichgeschlechtliche Paare können unter denselben Voraussetzungen heiraten wie verschiedengeschlechtliche Paare und haben dieselben Rechte und Pflichten."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Eherecht",
+                "item": "https://familienrechtanwalt.ch/eherecht"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Eheschliessung in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/eherecht/eheschliessung"
+            }
+        ]
+    })} />
 </ArticleLayout>

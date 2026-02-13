@@ -9,6 +9,33 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
     category="Eherecht"
     categoryLink="/eherecht"
 >
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Seit dem 1. Juli 2022 können keine neuen eingetragenen Partnerschaften mehr begründet werden – gleichgeschlechtliche Paare können nun heiraten («Ehe für alle»).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bestehende eingetragene Partnerschaften bleiben gültig und können zeitlich unbegrenzt weitergeführt oder freiwillig in eine Ehe umgewandelt werden.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Der ordentliche Güterstand bei der eingetragenen Partnerschaft ist die Gütertrennung (nicht die Errungenschaftsbeteiligung wie bei der Ehe).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bei der Umwandlung in eine Ehe wechselt der Güterstand automatisch zur Errungenschaftsbeteiligung – für Gütertrennung ist ein Ehevertrag erforderlich.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Auflösung erfolgt auf gemeinsames Begehren oder nach einjähriger Trennung auf Klage (kürzer als die 2-Jahres-Frist bei der Ehe).</span>
+            </li>
+        </ul>
+    </div>
+
     <section class="bg-white rounded-lg shadow-md p-8 mb-8">
         <h2 class="text-3xl font-serif font-bold text-navy mb-6">Geschichte und rechtliche Grundlagen</h2>
         <p class="mb-4">Das Partnerschaftsgesetz (PartG) wurde am 18. Juni 2004 verabschiedet und trat am 1. Januar 2007 in Kraft. Die Schweiz war das erste Land weltweit, das die rechtliche Anerkennung gleichgeschlechtlicher Partnerschaften durch eine Volksabstimmung (58% Ja-Stimmen) einführte.</p>
@@ -97,21 +124,144 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         </div>
     </section>
 
-    <section class="bg-gray-50 rounded-lg p-8 mb-8">
-        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Häufige Fragen</h2>
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+        <p class="text-gray-700 mb-6">Die eingetragene Partnerschaft und ihre mögliche Umwandlung in eine Ehe werfen zahlreiche rechtliche Fragen auf. Insbesondere die güterrechtlichen und vorsorgerechtlichen Auswirkungen einer Umwandlung sollten sorgfältig geprüft werden, um unerwünschte finanzielle Konsequenzen zu vermeiden.</p>
+        <p class="text-gray-700 mb-6">Besonders in folgenden Situationen ist die Beratung durch einen erfahrenen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> dringend empfohlen:</p>
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Bei der Entscheidung zwischen Weiterführung der Partnerschaft und Umwandlung in eine Ehe</li>
+            <li>Wenn Sie den Güterstand der Gütertrennung auch nach einer Umwandlung beibehalten möchten (Ehevertrag erforderlich)</li>
+            <li>Bei der Auflösung einer eingetragenen Partnerschaft, insbesondere wenn Uneinigkeit besteht</li>
+            <li>Bei Fragen zur güterrechtlichen Auseinandersetzung oder Unterhaltsansprüchen</li>
+        </ul>
+        <p class="text-gray-700 mb-6">Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> kann Sie umfassend zu den rechtlichen Unterschieden zwischen Partnerschaft und Ehe beraten und einen allfälligen Ehevertrag aufsetzen.</p>
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Lassen Sie sich unverbindlich beraten, welche Option – Weiterführung der Partnerschaft oder Umwandlung in eine Ehe – für Ihre persönliche Situation die beste Lösung ist.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
         <div class="space-y-6">
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <h3 class="text-lg font-semibold text-navy mb-2">Kann ich noch eine eingetragene Partnerschaft eingehen?</h3>
-                <p class="text-gray-700">Nein, seit dem 1. Juli 2022 können keine neuen eingetragenen Partnerschaften mehr begründet werden. Gleichgeschlechtliche Paare können nun heiraten.</p>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich noch eine eingetragene Partnerschaft eingehen?</h3>
+                <p class="text-gray-700">Nein, seit dem 1. Juli 2022 können keine neuen eingetragenen Partnerschaften mehr begründet werden. Gleichgeschlechtliche Paare können nun heiraten («Ehe für alle»).</p>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <h3 class="text-lg font-semibold text-navy mb-2">Muss ich meine Partnerschaft in eine Ehe umwandeln?</h3>
-                <p class="text-gray-700">Nein, eine Umwandlung ist freiwillig. Die Partnerschaft kann zeitlich unbegrenzt weitergeführt werden.</p>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Muss ich meine Partnerschaft in eine Ehe umwandeln?</h3>
+                <p class="text-gray-700">Nein, eine Umwandlung ist freiwillig. Die eingetragene Partnerschaft kann zeitlich unbegrenzt weitergeführt werden. Es gibt keinen Druck zur Umwandlung.</p>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <h3 class="text-lg font-semibold text-navy mb-2">Ändert sich bei der Umwandlung der Güterstand?</h3>
-                <p class="text-gray-700">Ja, der Güterstand wechselt automatisch von Gütertrennung zur Errungenschaftsbeteiligung. Für Gütertrennung benötigen Sie einen Ehevertrag.</p>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Ändert sich bei der Umwandlung der Güterstand?</h3>
+                <p class="text-gray-700">Ja, der Güterstand wechselt automatisch von Gütertrennung zur Errungenschaftsbeteiligung. Wenn Sie die Gütertrennung beibehalten möchten, benötigen Sie einen notariell beurkundeten Ehevertrag.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was kostet die Umwandlung in eine Ehe?</h3>
+                <p class="text-gray-700">Die Umwandlung einer eingetragenen Partnerschaft in eine Ehe kostet CHF 0 bis CHF 75, je nach Kanton. Die Erklärung erfolgt persönlich beim Zivilstandsamt.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Welche Vorteile hat die Ehe gegenüber der eingetragenen Partnerschaft?</h3>
+                <p class="text-gray-700">Die Ehe ermöglicht gemeinsame Adoption, Zugang zur Samenspende für Frauenpaare und erleichterte Einbürgerung des ausländischen Ehepartners. Diese Rechte stehen in der eingetragenen Partnerschaft nicht zur Verfügung.</p>
             </div>
         </div>
     </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Eingetragene Partnerschaft in der Schweiz: Der vollständige Leitfaden",
+        "description": "Leitfaden zur eingetragenen Partnerschaft in der Schweiz: Rechtliche Grundlagen, Unterschiede zur Ehe, Güterrecht, Umwandlung in Ehe seit 2022.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-20",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/eherecht/eingetragene-partnerschaft"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Kann ich noch eine eingetragene Partnerschaft eingehen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, seit dem 1. Juli 2022 können keine neuen eingetragenen Partnerschaften mehr begründet werden. Gleichgeschlechtliche Paare können nun heiraten («Ehe für alle»)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Muss ich meine Partnerschaft in eine Ehe umwandeln?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, eine Umwandlung ist freiwillig. Die eingetragene Partnerschaft kann zeitlich unbegrenzt weitergeführt werden. Es gibt keinen Druck zur Umwandlung."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Ändert sich bei der Umwandlung der Güterstand?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, der Güterstand wechselt automatisch von Gütertrennung zur Errungenschaftsbeteiligung. Wenn Sie die Gütertrennung beibehalten möchten, benötigen Sie einen notariell beurkundeten Ehevertrag."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was kostet die Umwandlung in eine Ehe?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Umwandlung einer eingetragenen Partnerschaft in eine Ehe kostet CHF 0 bis CHF 75, je nach Kanton. Die Erklärung erfolgt persönlich beim Zivilstandsamt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welche Vorteile hat die Ehe gegenüber der eingetragenen Partnerschaft?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Ehe ermöglicht gemeinsame Adoption, Zugang zur Samenspende für Frauenpaare und erleichterte Einbürgerung des ausländischen Ehepartners. Diese Rechte stehen in der eingetragenen Partnerschaft nicht zur Verfügung."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Eherecht",
+                "item": "https://familienrechtanwalt.ch/eherecht"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Eingetragene Partnerschaft in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/eherecht/eingetragene-partnerschaft"
+            }
+        ]
+    })} />
 </ArticleLayout>

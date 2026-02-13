@@ -4,324 +4,466 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 
 <ArticleLayout
     title="Vermögensaufteilung bei Scheidung in der Schweiz"
-    description="Vermögensaufteilung bei Scheidung in der Schweiz: Der vollständige Leitfaden zu güterrechtlicher Auseinandersetzung, Errungenschaftsbeteiligung, Vorschlagsberechnung und Immobilien."
-    keywords="Vermögensaufteilung, Scheidung, Güterrecht, Errungenschaftsbeteiligung, Eigengut, Errungenschaft, Vorschlag, Schweiz"
+    description="Vermögensaufteilung bei Scheidung erklärt: Errungenschaftsbeteiligung, Eigengut, Vorschlagsberechnung, Pensionskasse & Immobilien. Mit BGE-Rechtsprechung & Beispielen."
+    keywords="Vermögensaufteilung Scheidung, Güterrecht Schweiz, Errungenschaftsbeteiligung, Eigengut, Errungenschaft, Vorschlag Berechnung, güterrechtliche Auseinandersetzung"
     category="Güterrecht"
     categoryLink="/gueterrecht"
 >
-    <p class="text-lg text-gray-700 mb-6">Die Vermögensaufteilung ist einer der komplexesten und oft konfliktreichsten Aspekte einer Scheidung in der Schweiz. Wie das gemeinsam aufgebaute Vermögen verteilt wird, hängt massgeblich vom Güterstand ab, in dem die Ehegatten gelebt haben. Dieser Leitfaden erklärt alle rechtlichen Grundlagen, Berechnungsmethoden und praktischen Aspekte der güterrechtlichen Auseinandersetzung.</p>
-
-    <h2 class="text-3xl font-serif font-bold text-navy mt-12 mb-6">Grundlagen der Vermögensaufteilung</h2>
-
-    <p class="text-gray-700 mb-6">Bei einer Scheidung in der Schweiz muss das während der Ehe angesammelte Vermögen zwischen den Ehegatten aufgeteilt werden. Dieser Vorgang wird als <strong>güterrechtliche Auseinandersetzung</strong> bezeichnet und ist in den Art. 196-251 des Schweizerischen Zivilgesetzbuches (ZGB) geregelt.</p>
-
-    <div class="overflow-x-auto mb-6">
-        <table class="w-full border-collapse bg-white border border-gray-200 rounded-lg overflow-hidden">
-            <thead class="bg-navy text-white">
-                <tr>
-                    <th class="px-6 py-4 text-left">Rechtsbereich</th>
-                    <th class="px-6 py-4 text-left">ZGB-Artikel</th>
-                    <th class="px-6 py-4 text-left">Regelungsinhalt</th>
-                </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200">
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4">Allgemeine Bestimmungen</td>
-                    <td class="px-6 py-4">Art. 181-195</td>
-                    <td class="px-6 py-4">Wahl des Güterstands, Ehevertrag</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4">Errungenschaftsbeteiligung</td>
-                    <td class="px-6 py-4">Art. 196-220</td>
-                    <td class="px-6 py-4">Ordentlicher Güterstand</td>
-                </tr>
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4">Gütergemeinschaft</td>
-                    <td class="px-6 py-4">Art. 221-246</td>
-                    <td class="px-6 py-4">Ausserordentlicher Güterstand</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4">Gütertrennung</td>
-                    <td class="px-6 py-4">Art. 247-251</td>
-                    <td class="px-6 py-4">Ausserordentlicher Güterstand</td>
-                </tr>
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4">Scheidungsrecht</td>
-                    <td class="px-6 py-4">Art. 111-134</td>
-                    <td class="px-6 py-4">Scheidungsverfahren</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <h2 class="text-3xl font-serif font-bold text-navy mt-12 mb-6">Die drei Güterstände und ihre Auswirkungen</h2>
-
-    <p class="text-gray-700 mb-6">Die Schweiz kennt drei Güterstände, die jeweils unterschiedliche Auswirkungen auf die Vermögensaufteilung bei einer Scheidung haben.</p>
-
-    <div class="overflow-x-auto mb-6">
-        <table class="w-full border-collapse bg-white border border-gray-200 rounded-lg overflow-hidden">
-            <thead class="bg-navy text-white">
-                <tr>
-                    <th class="px-6 py-4 text-left">Güterstand</th>
-                    <th class="px-6 py-4 text-left">Was wird geteilt?</th>
-                    <th class="px-6 py-4 text-left">Besonderheiten</th>
-                </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200">
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-medium">Errungenschaftsbeteiligung</td>
-                    <td class="px-6 py-4">Vorschlag (Überschuss der Errungenschaft) wird hälftig geteilt</td>
-                    <td class="px-6 py-4">Ordentlicher Güterstand, gilt automatisch</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4 font-medium">Gütergemeinschaft</td>
-                    <td class="px-6 py-4">Gesamtgut wird hälftig geteilt</td>
-                    <td class="px-6 py-4">Nur durch Ehevertrag möglich</td>
-                </tr>
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-medium">Gütertrennung</td>
-                    <td class="px-6 py-4">Nichts wird geteilt</td>
-                    <td class="px-6 py-4">Jeder behält sein Eigentum</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="bg-blue-50 border-l-4 border-gold p-6 rounded-r-lg mb-6">
-        <p class="text-gray-700">Die grosse Mehrheit der Schweizer Ehepaare lebt im ordentlichen Güterstand der <strong>Errungenschaftsbeteiligung</strong>. Die Gütergemeinschaft und die Gütertrennung kommen nur vor, wenn die Ehegatten dies ausdrücklich in einem Ehevertrag vereinbart haben.</p>
-    </div>
-
-    <h2 class="text-3xl font-serif font-bold text-navy mt-12 mb-6">Vermögensaufteilung bei Errungenschaftsbeteiligung</h2>
-
-    <h3 class="text-2xl font-serif font-bold text-navy mt-8 mb-4">Die vier Vermögensmassen</h3>
-    <p class="text-gray-700 mb-4">Bei der Errungenschaftsbeteiligung wird das Vermögen jedes Ehegatten in zwei Kategorien eingeteilt:</p>
-
-    <div class="grid md:grid-cols-2 gap-6 mb-6">
-        <div class="bg-blue-50 p-6 rounded-lg">
-            <h4 class="font-bold text-navy mb-3">Ehemann</h4>
-            <ul class="text-gray-700 space-y-2">
-                <li>- Eigengut</li>
-                <li>- Errungenschaft</li>
-            </ul>
-        </div>
-        <div class="bg-blue-50 p-6 rounded-lg">
-            <h4 class="font-bold text-navy mb-3">Ehefrau</h4>
-            <ul class="text-gray-700 space-y-2">
-                <li>- Eigengut</li>
-                <li>- Errungenschaft</li>
-            </ul>
-        </div>
-    </div>
-
-    <h3 class="text-2xl font-serif font-bold text-navy mt-8 mb-4">Grundprinzip der Teilung</h3>
-    <div class="bg-gray-50 p-6 rounded-lg mb-6">
-        <ul class="text-gray-700 space-y-2">
-            <li>- Jeder Ehegatte behält sein <strong>Eigengut</strong> vollständig</li>
-            <li>- Die <strong>Errungenschaften</strong> werden ausgeglichen: Jeder Ehegatte hat Anspruch auf die Hälfte des Vorschlags des anderen</li>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Vermögensaufteilung richtet sich nach dem <strong>Güterstand</strong> – ohne Ehevertrag gilt die Errungenschaftsbeteiligung (Art. 196 ff. ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Eigengut</strong> (voreheliches Vermögen, Erbschaften, Schenkungen) bleibt beim jeweiligen Ehegatten.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die <strong>Errungenschaft</strong> (während der Ehe erwirtschaftetes Vermögen) wird je hälftig geteilt.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die <strong>Pensionskasse</strong> wird unabhängig vom Güterstand hälftig geteilt (Art. 122 ff. ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Stichtag für die Vermögenszusammensetzung ist der <strong>Tag der Einreichung des Scheidungsbegehrens</strong> (Art. 204 Abs. 2 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Wer <strong>Vermögen nicht nachweisen</strong> kann, muss davon ausgehen, dass es als Errungenschaft behandelt wird (Art. 200 Abs. 3 ZGB).</span>
+            </li>
         </ul>
     </div>
 
-    <h3 class="text-2xl font-serif font-bold text-navy mt-8 mb-4">Ablauf der güterrechtlichen Auseinandersetzung</h3>
-    <div class="overflow-x-auto mb-6">
-        <table class="w-full border-collapse bg-white border border-gray-200 rounded-lg overflow-hidden">
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die Vermögensaufteilung ist einer der komplexesten und oft konfliktreichsten Aspekte einer Scheidung in der Schweiz. Wie das gemeinsam aufgebaute Vermögen verteilt wird, hängt massgeblich vom Güterstand ab, in dem die Ehegatten gelebt haben. Dieser umfassende Leitfaden erklärt alle rechtlichen Grundlagen, Berechnungsmethoden und praktischen Aspekte der güterrechtlichen Auseinandersetzung nach Schweizer Recht.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen der Vermögensaufteilung</h2>
+
+    <p class="text-gray-700 mb-6">Bei einer Scheidung in der Schweiz muss das während der Ehe angesammelte Vermögen zwischen den Ehegatten aufgeteilt werden. Dieser Vorgang wird als <strong>güterrechtliche Auseinandersetzung</strong> bezeichnet und ist in den Art. 196-251 des Schweizerischen Zivilgesetzbuches (ZGB) geregelt. Das Güterrecht bestimmt dabei, wem welche Vermögenswerte gehören, wie diese verwaltet werden und wie sie bei der Auflösung des Güterstands aufgeteilt werden.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-4 py-3 text-left">Phase</th>
-                    <th class="px-4 py-3 text-left">Bezeichnung</th>
-                    <th class="px-4 py-3 text-left">Beschreibung</th>
-                    <th class="px-4 py-3 text-left">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsbereich</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">ZGB-Artikel</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Regelungsinhalt</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
-                <tr class="bg-gray-50">
-                    <td class="px-4 py-3">1</td>
-                    <td class="px-4 py-3 font-medium">Bestandesaufnahme</td>
-                    <td class="px-4 py-3">Erfassung aller Vermögenswerte beider Ehegatten</td>
-                    <td class="px-4 py-3">Art. 207 ZGB</td>
-                </tr>
                 <tr>
-                    <td class="px-4 py-3">2</td>
-                    <td class="px-4 py-3 font-medium">Zuordnung</td>
-                    <td class="px-4 py-3">Zuteilung zu Eigengut oder Errungenschaft</td>
-                    <td class="px-4 py-3">Art. 197-200 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Allgemeine Vorschriften</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 181-195 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Wahl des Güterstands, Ehevertrag, Schutz der Gläubiger</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-4 py-3">3</td>
-                    <td class="px-4 py-3 font-medium">Ersatzforderungen</td>
-                    <td class="px-4 py-3">Berechnung von Ausgleichsforderungen</td>
-                    <td class="px-4 py-3">Art. 209 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Errungenschaftsbeteiligung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 196-220 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Ordentlicher Güterstand, Eigengut, Errungenschaft, Vorschlag</td>
                 </tr>
                 <tr>
-                    <td class="px-4 py-3">4</td>
-                    <td class="px-4 py-3 font-medium">Bewertung</td>
-                    <td class="px-4 py-3">Feststellung des Verkehrswerts</td>
-                    <td class="px-4 py-3">Art. 211, 214 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Gütergemeinschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 221-246 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Gesamtgut, Eigengut, Sondergut, Auflösung</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-4 py-3">5</td>
-                    <td class="px-4 py-3 font-medium">Vorschlagsberechnung</td>
-                    <td class="px-4 py-3">Berechnung des Überschusses</td>
-                    <td class="px-4 py-3">Art. 210, 215 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Gütertrennung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 247-251 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Getrennte Vermögen, keine Ausgleichspflicht</td>
                 </tr>
                 <tr>
-                    <td class="px-4 py-3">6</td>
-                    <td class="px-4 py-3 font-medium">Teilung</td>
-                    <td class="px-4 py-3">Hälftige Aufteilung der Vorschläge</td>
-                    <td class="px-4 py-3">Art. 215 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Vorsorgeausgleich</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 122-124e ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Teilung der Pensionskasse, Rentenausgleich</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="text-3xl font-serif font-bold text-navy mt-12 mb-6">Eigengut und Errungenschaft unterscheiden</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Die drei Güterstände in der Schweiz</h2>
 
-    <p class="text-gray-700 mb-6">Die korrekte Unterscheidung zwischen Eigengut und Errungenschaft ist fundamental für die Vermögensaufteilung.</p>
+    <p class="text-gray-700 mb-6">Das Schweizer Recht kennt drei Güterstände, die jeweils unterschiedliche Auswirkungen auf die Vermögensaufteilung bei einer Scheidung haben. Die grosse Mehrheit der Schweizer Ehepaare lebt im ordentlichen Güterstand der Errungenschaftsbeteiligung, da dieser automatisch gilt, wenn kein Ehevertrag abgeschlossen wurde.</p>
 
-    <div class="grid md:grid-cols-2 gap-6 mb-6">
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="text-xl font-bold text-navy mb-4">Eigengut (Art. 198 ZGB)</h3>
-            <ul class="text-gray-700 space-y-2 text-sm">
-                <li><strong>Eingebrachtes Vermögen:</strong> Vermögen bei Eheschliessung, Ersparnisse vor der Ehe</li>
-                <li><strong>Erbschaften:</strong> Erbe von Eltern, Vermächtnisse, Erbvorbezüge</li>
-                <li><strong>Schenkungen:</strong> Geschenke von Dritten (nicht vom Ehepartner)</li>
-                <li><strong>Persönliche Gegenstände:</strong> Kleidung, Schmuck, persönliche Arbeitsgeräte</li>
-                <li><strong>Genugtuungsansprüche:</strong> Schmerzensgeld, Genugtuung</li>
-                <li><strong>Ersatzanschaffungen:</strong> Was an Stelle von Eigengut tritt</li>
-            </ul>
-        </div>
-        <div class="bg-blue-50 p-6 rounded-lg">
-            <h3 class="text-xl font-bold text-navy mb-4">Errungenschaft (Art. 197 ZGB)</h3>
-            <ul class="text-gray-700 space-y-2 text-sm">
-                <li><strong>Arbeitserwerb:</strong> Lohn, Gehalt, Boni, Honorare, Trinkgelder</li>
-                <li><strong>Sozialversicherungsleistungen:</strong> AHV, IV, Arbeitslosenentschädigung</li>
-                <li><strong>Pensionskassenbezüge:</strong> Altersleistungen, Kapitalbezüge 2. Säule</li>
-                <li><strong>Entschädigungen:</strong> Unfalltaggelder, Erwerbsausfallentschädigung</li>
-                <li><strong>Erträge des Eigenguts:</strong> Zinsen, Dividenden, Mieteinnahmen</li>
-                <li><strong>Ersatzanschaffungen:</strong> Mit Errungenschaftsmitteln Erworbenes</li>
-            </ul>
-        </div>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Errungenschaftsbeteiligung (Art. 196-220 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Die Errungenschaftsbeteiligung ist der <strong>ordentliche Güterstand</strong> in der Schweiz. Er gilt automatisch für alle Ehepaare, die keinen Ehevertrag abgeschlossen haben (Art. 196 ZGB). Bei diesem Güterstand wird das Vermögen jedes Ehegatten in zwei Kategorien eingeteilt: Eigengut und Errungenschaft. Während der Ehe verwaltet jeder Ehegatte sein Vermögen selbstständig. Erst bei der Auflösung des Güterstands – durch Scheidung, Tod oder Wechsel des Güterstands – kommt es zur güterrechtlichen Auseinandersetzung.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Grundprinzip der Errungenschaftsbeteiligung:</p>
+        <p class="text-gray-700">Jeder Ehegatte behält sein Eigengut vollständig. Der Vorschlag (Überschuss der Errungenschaft) wird hälftig geteilt. Jeder Ehegatte hat Anspruch auf die Hälfte des Vorschlags des anderen (Art. 215 Abs. 1 ZGB).</p>
     </div>
 
-    <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg mb-6">
-        <h4 class="font-bold text-red-800 mb-2">Wichtige Vermutungsregel (Art. 200 Abs. 3 ZGB)</h4>
-        <p class="text-gray-700">Kann nicht bewiesen werden, dass ein Vermögenswert zum Eigengut gehört, wird vermutet, dass er zur Errungenschaft zählt. Diese Beweislastregel macht eine sorgfältige Dokumentation während der Ehe unerlässlich.</p>
-    </div>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gütergemeinschaft (Art. 221-246 ZGB)</h3>
 
-    <h2 class="text-3xl font-serif font-bold text-navy mt-12 mb-6">Berechnung des Vorschlags</h2>
+    <p class="text-gray-700 mb-6">Die Gütergemeinschaft kann nur durch Ehevertrag begründet werden (Art. 221 ZGB). Bei diesem Güterstand werden die Vermögen der Ehegatten zu einem <strong>Gesamtgut</strong> vereinigt, über das beide gemeinsam verfügen. Daneben gibt es weiterhin Eigengut jedes Ehegatten. Bei der Auflösung durch Scheidung nimmt gemäss Art. 242 ZGB jeder Ehegatte sein Eigengut zurück. Das verbleibende Gesamtgut wird hälftig geteilt, sofern im Ehevertrag keine andere Regelung getroffen wurde.</p>
 
-    <p class="text-gray-700 mb-4">Der Vorschlag ist der zentrale Begriff bei der Vermögensaufteilung. Er bezeichnet den Überschuss der Errungenschaft nach Abzug der Schulden.</p>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gütertrennung (Art. 247-251 ZGB)</h3>
 
-    <div class="bg-gray-50 p-6 rounded-lg mb-6">
-        <h4 class="font-bold text-navy mb-2">Formel zur Vorschlagsberechnung</h4>
-        <p class="text-gray-700 font-mono bg-white p-4 rounded border">Vorschlag = Aktiven der Errungenschaft - Schulden der Errungenschaft</p>
-        <p class="text-gray-600 mt-2 text-sm">Ist das Ergebnis positiv, spricht man vom <strong>Vorschlag</strong>. Ist es negativ, liegt ein <strong>Rückschlag</strong> vor.</p>
-    </div>
+    <p class="text-gray-700 mb-6">Bei der Gütertrennung bleiben die Vermögen beider Ehegatten <strong>vollständig getrennt</strong>. Jeder Ehegatte verwaltet sein eigenes Vermögen und haftet nur für seine eigenen Schulden. Bei einer Scheidung findet keine güterrechtliche Auseinandersetzung statt – jeder behält einfach sein Vermögen (Art. 249 ZGB). Die Gütertrennung kann durch Ehevertrag vereinbart oder durch das Gericht angeordnet werden.</p>
 
-    <h3 class="text-2xl font-serif font-bold text-navy mt-8 mb-4">Berechnungsbeispiel</h3>
-    <div class="overflow-x-auto mb-6">
-        <table class="w-full border-collapse bg-white border border-gray-200 rounded-lg overflow-hidden">
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-4 text-left">Position</th>
-                    <th class="px-6 py-4 text-right">Ehemann (CHF)</th>
-                    <th class="px-6 py-4 text-right">Ehefrau (CHF)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Güterstand</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Entstehung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Was wird geteilt?</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Häufigkeit</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
-                <tr class="bg-gray-100">
-                    <td class="px-6 py-3 font-bold" colspan="3">Aktiven der Errungenschaft</td>
-                </tr>
                 <tr>
-                    <td class="px-6 py-3">Bankguthaben</td>
-                    <td class="px-6 py-3 text-right">50'000</td>
-                    <td class="px-6 py-3 text-right">20'000</td>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Errungenschaftsbeteiligung</td>
+                    <td class="px-6 py-4 text-gray-700">Automatisch (ohne Ehevertrag)</td>
+                    <td class="px-6 py-4 text-gray-700">Vorschlag (Überschuss der Errungenschaft) hälftig</td>
+                    <td class="px-6 py-4 text-gray-700">Ca. 95% aller Ehen</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-3">Wertschriften</td>
-                    <td class="px-6 py-3 text-right">80'000</td>
-                    <td class="px-6 py-3 text-right">30'000</td>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Gütergemeinschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Nur durch Ehevertrag</td>
+                    <td class="px-6 py-4 text-gray-700">Gesamtgut hälftig</td>
+                    <td class="px-6 py-4 text-gray-700">Sehr selten</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-3">Fahrzeug</td>
-                    <td class="px-6 py-3 text-right">25'000</td>
-                    <td class="px-6 py-3 text-right">15'000</td>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Gütertrennung</td>
+                    <td class="px-6 py-4 text-gray-700">Durch Ehevertrag oder Gericht</td>
+                    <td class="px-6 py-4 text-gray-700">Nichts (jeder behält sein Vermögen)</td>
+                    <td class="px-6 py-4 text-gray-700">Ca. 5% aller Ehen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Eigengut und Errungenschaft verstehen</h2>
+
+    <p class="text-gray-700 mb-6">Die zentrale Unterscheidung bei der Errungenschaftsbeteiligung ist jene zwischen <strong>Eigengut</strong> und <strong>Errungenschaft</strong>. Diese Unterscheidung ist entscheidend, da nur die Errungenschaft geteilt wird, während das Eigengut beim jeweiligen Ehegatten verbleibt.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Was ist Eigengut? (Art. 198 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Das Eigengut umfasst Vermögenswerte, die nicht geteilt werden und beim jeweiligen Ehegatten verbleiben. Das Gesetz definiert in Art. 198 ZGB abschliessend, was zum Eigengut gehört:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Eigengut-Kategorie</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gesetzliche Grundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beispiele</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Eingebrachtes Vermögen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 198 Ziff. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Bankguthaben bei Heirat, voreheliche Ersparnisse, Fahrzeuge</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-3">Anteil an Immobilie (aus Errungenschaft)</td>
-                    <td class="px-6 py-3 text-right">150'000</td>
-                    <td class="px-6 py-3 text-right">150'000</td>
+                    <td class="px-6 py-4 text-gray-700">Erbschaften und Vermächtnisse</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 198 Ziff. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Erbe von Eltern, Erbvorbezüge, Legate</td>
                 </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Schenkungen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 198 Ziff. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Geschenke von Dritten (nicht vom Ehepartner)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Persönliche Gegenstände</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 198 Ziff. 1 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Kleidung, Schmuck, Arbeitsgeräte zum persönlichen Gebrauch</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Genugtuungsansprüche</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 198 Ziff. 3 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Schmerzensgeld, Genugtuung für immaterielle Unbill</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Ersatzanschaffungen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 198 Ziff. 4 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Was mit Eigengutsmitteln angeschafft wurde (Surrogation)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Was ist Errungenschaft? (Art. 197 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Die Errungenschaft umfasst alle Vermögenswerte, die ein Ehegatte während der Ehe <strong>entgeltlich erwirbt</strong> (Art. 197 Abs. 1 ZGB). Der Vorschlag der Errungenschaft wird bei der Scheidung hälftig geteilt.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Errungenschafts-Kategorie</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gesetzliche Grundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beispiele</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Arbeitserwerb</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 197 Abs. 2 Ziff. 1 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Lohn, Gehalt, Boni, Honorare, Trinkgelder, Provisionen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Sozialversicherungsleistungen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 197 Abs. 2 Ziff. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">AHV-Renten, IV-Renten, Arbeitslosenentschädigung, Unfalltaggelder</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Pensionskassenbezüge</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 197 Abs. 2 Ziff. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Alterskapital, Kapitalbezüge aus der 2. Säule</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Entschädigungen wegen Arbeitsunfähigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 197 Abs. 2 Ziff. 3 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Erwerbsausfallentschädigung, Krankentaggeld</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Erträge des Eigenguts</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 197 Abs. 2 Ziff. 4 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Zinsen, Dividenden, Mieteinnahmen aus Eigengut</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Ersatzanschaffungen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 197 Abs. 2 Ziff. 5 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Mit Errungenschaftsmitteln Erworbenes</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-red-50 border-l-4 border-red-500 p-6 my-8">
+        <p class="font-semibold text-red-800 mb-2">Wichtige Beweislastregel (Art. 200 Abs. 3 ZGB):</p>
+        <p class="text-gray-700">Kann nicht bewiesen werden, dass ein Vermögenswert zum Eigengut gehört, wird <strong>vermutet</strong>, dass er zur Errungenschaft zählt. Diese Vermutungsregel macht eine sorgfältige Dokumentation während der Ehe unerlässlich. Das Bundesgericht bestätigt diese Regel regelmässig (vgl. BGE 141 III 53).</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wertzuwachs und Erträge</h3>
+
+    <p class="text-gray-700 mb-6">Ein häufiger Streitpunkt betrifft die Frage, wie <strong>Wertzuwachs</strong> und <strong>Erträge</strong> behandelt werden:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Art des Zuwachses</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zuordnung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beispiel</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Konjunktureller Mehrwert von Eigengut</td>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Bleibt Eigengut</td>
+                    <td class="px-6 py-4 text-gray-700">Wertsteigerung einer geerbten Immobilie durch Marktentwicklung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Erträge aus Eigengut</td>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Errungenschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Mieteinnahmen aus geerbter Wohnung, Zinsen, Dividenden</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Wertzuwachs durch Investitionen aus Errungenschaft</td>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Anteilige Ersatzforderung</td>
+                    <td class="px-6 py-4 text-gray-700">Renovation einer Eigenguts-Liegenschaft mit Lohneinkommen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Das Bundesgericht hat in BGE 132 III 145 klargestellt, dass der konjunkturelle Mehrwert einer Liegenschaft immer dem ganzen Vermögenswert folgt. Entsprechend partizipiert nicht nur eine anfängliche Investition von diesen Mehrwerten, sondern auch eine spätere Investition.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Ablauf der güterrechtlichen Auseinandersetzung</h2>
+
+    <p class="text-gray-700 mb-6">Die güterrechtliche Auseinandersetzung bei Errungenschaftsbeteiligung erfolgt systematisch in mehreren Phasen (Art. 204-220 ZGB):</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Phase</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bezeichnung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-bold">1</td>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Aussonderung</td>
+                    <td class="px-6 py-4 text-gray-700">Trennung der Vermögensmassen beider Ehegatten</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 205 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-bold">2</td>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Zuordnung</td>
+                    <td class="px-6 py-4 text-gray-700">Zuteilung zu Eigengut oder Errungenschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 197-200 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-bold">3</td>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Hinzurechnung</td>
+                    <td class="px-6 py-4 text-gray-700">Hinzurechnung unentgeltlicher Zuwendungen und verschleuderter Vermögenswerte</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 208 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-bold">4</td>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Ersatzforderungen</td>
+                    <td class="px-6 py-4 text-gray-700">Berechnung von Ausgleichsforderungen zwischen den Gütermassen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 209 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-bold">5</td>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Bewertung</td>
+                    <td class="px-6 py-4 text-gray-700">Feststellung des Verkehrswerts aller Vermögenswerte</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 211, 214 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-bold">6</td>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Vorschlagsberechnung</td>
+                    <td class="px-6 py-4 text-gray-700">Ermittlung des Überschusses der Errungenschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 210 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-bold">7</td>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Teilung</td>
+                    <td class="px-6 py-4 text-gray-700">Hälftige Aufteilung der Vorschläge</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 215 ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Berechnung des Vorschlags</h2>
+
+    <p class="text-gray-700 mb-6">Der <strong>Vorschlag</strong> ist der zentrale Begriff bei der Vermögensaufteilung. Er bezeichnet den Überschuss der Errungenschaft eines Ehegatten nach Abzug der Schulden (Art. 210 ZGB).</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Formel zur Vorschlagsberechnung:</p>
+        <p class="text-gray-700 font-mono bg-white p-4 rounded border mt-2">Vorschlag = Aktiven der Errungenschaft - Passiven der Errungenschaft</p>
+        <p class="text-gray-600 mt-3">Ist das Ergebnis positiv, spricht man vom <strong>Vorschlag</strong>. Ist es negativ, liegt ein <strong>Rückschlag</strong> vor.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Berechnungsbeispiel</h3>
+
+    <p class="text-gray-700 mb-6">Das folgende Beispiel zeigt die konkrete Berechnung der Vorschläge und die Aufteilung:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Position</th>
+                    <th class="px-6 py-3 text-right text-sm font-semibold">Ehemann (CHF)</th>
+                    <th class="px-6 py-3 text-right text-sm font-semibold">Ehefrau (CHF)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
                 <tr class="bg-blue-50">
-                    <td class="px-6 py-3 font-bold">Summe Aktiven</td>
-                    <td class="px-6 py-3 text-right font-bold">305'000</td>
-                    <td class="px-6 py-3 text-right font-bold">215'000</td>
-                </tr>
-                <tr class="bg-gray-100">
-                    <td class="px-6 py-3 font-bold" colspan="3">Passiven (Schulden der Errungenschaft)</td>
+                    <td class="px-6 py-3 font-bold text-navy" colspan="3">Aktiven der Errungenschaft</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-3">Hypothek (Anteil aus Errungenschaft)</td>
-                    <td class="px-6 py-3 text-right">80'000</td>
-                    <td class="px-6 py-3 text-right">80'000</td>
+                    <td class="px-6 py-4 text-gray-700">Bankguthaben (während Ehe angespart)</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">50'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">20'000</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-3">Darlehen</td>
-                    <td class="px-6 py-3 text-right">25'000</td>
-                    <td class="px-6 py-3 text-right">0</td>
+                    <td class="px-6 py-4 text-gray-700">Wertschriften (während Ehe erworben)</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">80'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">30'000</td>
                 </tr>
-                <tr class="bg-blue-50">
-                    <td class="px-6 py-3 font-bold">Summe Passiven</td>
-                    <td class="px-6 py-3 text-right font-bold">105'000</td>
-                    <td class="px-6 py-3 text-right font-bold">80'000</td>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Fahrzeug (während Ehe gekauft)</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">25'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">15'000</td>
                 </tr>
-                <tr class="bg-gold bg-opacity-20">
-                    <td class="px-6 py-4 font-bold text-navy">Vorschlag</td>
-                    <td class="px-6 py-4 text-right font-bold text-navy">200'000</td>
-                    <td class="px-6 py-4 text-right font-bold text-navy">135'000</td>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Säule 3a (während Ehe angespart)</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">45'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">25'000</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Anteil an Immobilie (aus Errungenschaft)</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">150'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">150'000</td>
+                </tr>
+                <tr class="bg-blue-100">
+                    <td class="px-6 py-4 text-gray-700 font-bold">Summe Aktiven</td>
+                    <td class="px-6 py-4 text-gray-700 text-right font-bold">350'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right font-bold">240'000</td>
+                </tr>
+                <tr class="bg-red-50">
+                    <td class="px-6 py-3 font-bold text-navy" colspan="3">Passiven (Schulden der Errungenschaft)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Hypothek (Anteil aus Errungenschaft)</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">80'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">80'000</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Persönliches Darlehen</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">20'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">0</td>
+                </tr>
+                <tr class="bg-red-100">
+                    <td class="px-6 py-4 text-gray-700 font-bold">Summe Passiven</td>
+                    <td class="px-6 py-4 text-gray-700 text-right font-bold">100'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right font-bold">80'000</td>
+                </tr>
+                <tr class="bg-gold bg-opacity-30">
+                    <td class="px-6 py-4 font-bold text-navy text-lg">Vorschlag</td>
+                    <td class="px-6 py-4 text-right font-bold text-navy text-lg">250'000</td>
+                    <td class="px-6 py-4 text-right font-bold text-navy text-lg">160'000</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h3 class="text-2xl font-serif font-bold text-navy mt-8 mb-4">Aufteilung der Vorschläge</h3>
-    <div class="overflow-x-auto mb-6">
-        <table class="w-full border-collapse bg-white border border-gray-200 rounded-lg overflow-hidden">
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Aufteilung der Vorschläge</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-4 text-left">Berechnung</th>
-                    <th class="px-6 py-4 text-right">Betrag (CHF)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Berechnung</th>
+                    <th class="px-6 py-3 text-right text-sm font-semibold">Betrag (CHF)</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4">Anspruch Ehefrau auf 1/2 Vorschlag Ehemann</td>
-                    <td class="px-6 py-4 text-right">100'000</td>
-                </tr>
                 <tr>
-                    <td class="px-6 py-4">Anspruch Ehemann auf 1/2 Vorschlag Ehefrau</td>
-                    <td class="px-6 py-4 text-right">67'500</td>
+                    <td class="px-6 py-4 text-gray-700">Anspruch Ehefrau auf 1/2 Vorschlag Ehemann (250'000 × 50%)</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">125'000</td>
                 </tr>
-                <tr class="bg-gold bg-opacity-20">
-                    <td class="px-6 py-4 font-bold">Netto-Ausgleichszahlung Ehemann an Ehefrau</td>
-                    <td class="px-6 py-4 text-right font-bold">32'500</td>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Anspruch Ehemann auf 1/2 Vorschlag Ehefrau (160'000 × 50%)</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">80'000</td>
+                </tr>
+                <tr class="bg-gold bg-opacity-30">
+                    <td class="px-6 py-4 font-bold text-navy">Netto-Ausgleichszahlung Ehemann an Ehefrau</td>
+                    <td class="px-6 py-4 text-right font-bold text-navy">45'000</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <div class="bg-blue-50 border-l-4 border-gold p-6 rounded-r-lg mb-6">
-        <h4 class="font-bold text-navy mb-2">Behandlung des Rückschlags</h4>
-        <p class="text-gray-700">Ein Rückschlag wird bei der güterrechtlichen Auseinandersetzung nicht berücksichtigt. Wenn ein Ehegatte mehr Schulden als Vermögen in seiner Errungenschaft hat, trägt er diesen Verlust allein. Der andere Ehegatte muss sich nicht an den Schulden beteiligen.</p>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Behandlung des Rückschlags (Art. 210 Abs. 2 ZGB):</p>
+        <p class="text-gray-700">Ein Rückschlag (negative Errungenschaft) wird bei der güterrechtlichen Auseinandersetzung <strong>nicht berücksichtigt</strong>. Wenn ein Ehegatte mehr Schulden als Vermögen in seiner Errungenschaft hat, trägt er diesen Verlust allein. Der andere Ehegatte muss sich nicht an den Schulden beteiligen.</p>
     </div>
 
-    <h2 class="text-3xl font-serif font-bold text-navy mt-12 mb-6">Stichtag und Bewertungszeitpunkt</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Stichtag und Bewertungszeitpunkt</h2>
 
-    <p class="text-gray-700 mb-6">Bei der Vermögensaufteilung ist zwischen zwei verschiedenen Zeitpunkten zu unterscheiden:</p>
+    <p class="text-gray-700 mb-6">Bei der Vermögensaufteilung sind zwei verschiedene Zeitpunkte zu unterscheiden:</p>
 
-    <div class="grid md:grid-cols-2 gap-6 mb-6">
+    <div class="grid md:grid-cols-2 gap-6 mb-8">
         <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="text-xl font-bold text-navy mb-4">Stichtag für die Zusammensetzung (Art. 207 ZGB)</h3>
-            <p class="text-gray-700 mb-4">Der Stichtag bestimmt, welche Vermögenswerte in die Auseinandersetzung einbezogen werden:</p>
+            <h3 class="text-xl font-bold text-navy mb-4">Stichtag für die Zusammensetzung (Art. 204, 207 ZGB)</h3>
+            <p class="text-gray-700 mb-4">Bestimmt, welche Vermögenswerte in die Auseinandersetzung einbezogen werden:</p>
             <ul class="text-gray-700 space-y-2 text-sm">
                 <li><strong>Scheidung:</strong> Tag der Einreichung des Scheidungsbegehrens</li>
                 <li><strong>Ehetrennung:</strong> Tag der Einreichung des Trennungsbegehrens</li>
@@ -336,340 +478,756 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         </div>
     </div>
 
-    <h2 class="text-3xl font-serif font-bold text-navy mt-12 mb-6">Mehrwertbeteiligung bei Investitionen</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Hinzurechnung und Schutz vor Vermögensverschiebungen (Art. 208 ZGB)</h2>
 
-    <p class="text-gray-700 mb-6">Wenn ein Ehegatte in Vermögenswerte des anderen investiert hat, regelt Art. 206 ZGB die Mehrwertbeteiligung.</p>
+    <p class="text-gray-700 mb-6">Das Gesetz schützt vor Vermögensmanipulationen durch die Hinzurechnungsregel in Art. 208 ZGB. Bestimmte Vermögensabgänge werden rechnerisch wieder zur Errungenschaft hinzugezählt:</p>
 
-    <div class="bg-gray-50 p-6 rounded-lg mb-6">
-        <h3 class="text-xl font-bold text-navy mb-4">Praxisbeispiel</h3>
-        <p class="text-gray-700 mb-4">Die Ehefrau erbt ein Haus (Eigengut) im Wert von CHF 600'000. Der Ehemann investiert CHF 100'000 aus seiner Errungenschaft für eine Renovation. Bei der Scheidung ist das Haus CHF 840'000 wert.</p>
-
-        <div class="overflow-x-auto">
-            <table class="w-full border-collapse bg-white border border-gray-200 rounded-lg overflow-hidden">
-                <thead class="bg-navy text-white">
-                    <tr>
-                        <th class="px-6 py-4 text-left">Berechnung</th>
-                        <th class="px-6 py-4 text-right">Betrag</th>
-                    </tr>
-                </thead>
-                <tbody class="divide-y divide-gray-200">
-                    <tr class="bg-gray-50">
-                        <td class="px-6 py-4">Ursprünglicher Wert Haus</td>
-                        <td class="px-6 py-4 text-right">CHF 600'000</td>
-                    </tr>
-                    <tr>
-                        <td class="px-6 py-4">Investition Ehemann</td>
-                        <td class="px-6 py-4 text-right">CHF 100'000</td>
-                    </tr>
-                    <tr class="bg-gray-50">
-                        <td class="px-6 py-4">Gesamtinvestition</td>
-                        <td class="px-6 py-4 text-right">CHF 700'000</td>
-                    </tr>
-                    <tr>
-                        <td class="px-6 py-4">Investitionsanteil Ehemann</td>
-                        <td class="px-6 py-4 text-right">100'000 / 700'000 = 14.29%</td>
-                    </tr>
-                    <tr class="bg-gray-50">
-                        <td class="px-6 py-4">Aktueller Wert</td>
-                        <td class="px-6 py-4 text-right">CHF 840'000</td>
-                    </tr>
-                    <tr class="bg-gold bg-opacity-20">
-                        <td class="px-6 py-4 font-bold">Ersatzforderung Ehemann</td>
-                        <td class="px-6 py-4 text-right font-bold">14.29% x 840'000 = CHF 120'000</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <p class="text-gray-600 mt-4 text-sm">Der Ehemann erhält also nicht nur seine ursprünglichen CHF 100'000 zurück, sondern profitiert auch anteilig vom Wertzuwachs.</p>
-    </div>
-
-    <h2 class="text-3xl font-serif font-bold text-navy mt-12 mb-6">Vorsorgeausgleich: Pensionskasse und Säule 3a</h2>
-
-    <p class="text-gray-700 mb-6">Der Ausgleich der beruflichen Vorsorge erfolgt separat von der güterrechtlichen Auseinandersetzung.</p>
-
-    <div class="overflow-x-auto mb-6">
-        <table class="w-full border-collapse bg-white border border-gray-200 rounded-lg overflow-hidden">
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-4 text-left">Vorsorgesäule</th>
-                    <th class="px-6 py-4 text-left">Aufteilung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Hinzurechnungsgrund</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zeitlicher Rahmen</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beispiele</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Unentgeltliche Zuwendungen ohne Zustimmung</td>
+                    <td class="px-6 py-4 text-gray-700">Letzte 5 Jahre vor Auflösung</td>
+                    <td class="px-6 py-4 text-gray-700">Grössere Schenkungen an Freunde oder Familie</td>
+                </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-medium">Pensionskasse (2. Säule)</td>
-                    <td class="px-6 py-4">Hälftige Teilung der während der Ehe erworbenen Austrittsleistungen (Art. 122-124e ZGB)</td>
+                    <td class="px-6 py-4 text-gray-700">Zuwendungen in Schädigungsabsicht</td>
+                    <td class="px-6 py-4 text-gray-700">Unbegrenzt rückwirkend</td>
+                    <td class="px-6 py-4 text-gray-700">Vermögensübertragungen zur Schmälerung des Vorschlags</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-medium">Säule 3a</td>
-                    <td class="px-6 py-4">Als Errungenschaft behandelt und im Rahmen der güterrechtlichen Auseinandersetzung hälftig geteilt</td>
-                </tr>
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-medium">Säule 3b (freie Vorsorge)</td>
-                    <td class="px-6 py-4">Fällt in die Errungenschaft und wird entsprechend aufgeteilt</td>
+                    <td class="px-6 py-4 text-gray-700">Verschleudertes Vermögen</td>
+                    <td class="px-6 py-4 text-gray-700">Unbegrenzt rückwirkend</td>
+                    <td class="px-6 py-4 text-gray-700">Exzessives Glücksspiel, sinnlose Ausgaben</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="text-3xl font-serif font-bold text-navy mt-12 mb-6">Immobilien und Wohneigentum</h2>
+    <div class="bg-red-50 border-l-4 border-red-500 p-6 my-8">
+        <p class="font-semibold text-red-800 mb-2">Warnung: Vermögen verstecken lohnt sich nicht</p>
+        <p class="text-gray-700">Wenn bei der Scheidung plötzlich grössere Summen fehlen, muss der betreffende Ehegatte im Streitfall nachweisen, wofür das Geld ausgegeben wurde. Misslingt dies, kann das Gericht die unerklärlichen Abgänge zur Errungenschaft hinzuzählen. Das Verstecken von Vermögen ist somit keine erfolgversprechende Strategie.</p>
+    </div>
 
-    <p class="text-gray-700 mb-6">Die Aufteilung von Immobilien ist häufig der komplexeste Teil der Vermögensaufteilung.</p>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Mehrwertbeteiligung bei Investitionen (Art. 206 ZGB)</h2>
 
-    <h3 class="text-2xl font-serif font-bold text-navy mt-8 mb-4">Eigentumsformen</h3>
-    <div class="overflow-x-auto mb-6">
-        <table class="w-full border-collapse bg-white border border-gray-200 rounded-lg overflow-hidden">
+    <p class="text-gray-700 mb-6">Wenn ein Ehegatte aus einer Gütermasse (z.B. Errungenschaft) in eine andere Gütermasse (z.B. Eigengut des anderen) investiert, hat er bei der Auflösung einen Anspruch auf anteilige Beteiligung am Mehrwert.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Praxisbeispiel: Investment in Eigengut</h3>
+
+    <p class="text-gray-700 mb-6">Die Ehefrau erbt ein Haus (Eigengut) im Wert von CHF 600'000. Der Ehemann investiert CHF 100'000 aus seiner Errungenschaft für eine Renovation. Bei der Scheidung ist das Haus CHF 840'000 wert.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-4 text-left">Form</th>
-                    <th class="px-6 py-4 text-left">Beschreibung</th>
-                    <th class="px-6 py-4 text-left">Häufigkeit</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Berechnung</th>
+                    <th class="px-6 py-3 text-right text-sm font-semibold">Betrag</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Ursprünglicher Wert Haus (Eigengut Ehefrau)</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">CHF 600'000</td>
+                </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-medium">Alleineigentum</td>
-                    <td class="px-6 py-4">Liegenschaft gehört nur einem Ehegatten</td>
-                    <td class="px-6 py-4">Häufig bei Eigengut (Erbschaft)</td>
+                    <td class="px-6 py-4 text-gray-700">Investition Ehemann aus Errungenschaft</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">CHF 100'000</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-medium">Miteigentum</td>
-                    <td class="px-6 py-4">Definierte Anteile (z.B. je 50%)</td>
-                    <td class="px-6 py-4">Am häufigsten bei gemeinsam gekauften Liegenschaften</td>
+                    <td class="px-6 py-4 text-gray-700">Gesamtinvestition</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">CHF 700'000</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-medium">Gesamteigentum</td>
-                    <td class="px-6 py-4">Gemeinschaftliches Eigentum ohne Anteile</td>
-                    <td class="px-6 py-4">Selten</td>
+                    <td class="px-6 py-4 text-gray-700">Investitionsanteil Ehemann</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">100'000 / 700'000 = 14.29%</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Aktueller Wert der Liegenschaft</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">CHF 840'000</td>
+                </tr>
+                <tr class="bg-gold bg-opacity-30">
+                    <td class="px-6 py-4 font-bold text-navy">Ersatzforderung Ehemann (14.29% × 840'000)</td>
+                    <td class="px-6 py-4 text-right font-bold text-navy">CHF 120'000</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h3 class="text-2xl font-serif font-bold text-navy mt-8 mb-4">Zuteilung bei Scheidung</h3>
+    <p class="text-gray-700 mb-6">Der Ehemann erhält also nicht nur seine ursprünglichen CHF 100'000 zurück, sondern profitiert auch anteilig vom Wertzuwachs des Hauses. Dieser Grundsatz wurde vom Bundesgericht in BGE 132 III 145 bestätigt.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Vorsorgeausgleich: AHV, Pensionskasse und Säule 3a</h2>
+
+    <p class="text-gray-700 mb-6">Die Aufteilung der Vorsorgegelder erfolgt nach speziellen Regeln, die teilweise vom Güterstand unabhängig sind.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">1. Säule (AHV)</h3>
+
+    <p class="text-gray-700 mb-6">Bei der AHV erfolgt ein sogenanntes <strong>Einkommenssplitting</strong>. Die während der Ehe erzielten Einkommen beider Ehegatten werden auf den individuellen AHV-Konten je hälftig aufgeteilt. Dies geschieht automatisch durch die Ausgleichskassen nach der Scheidung. Ausgenommen sind das Jahr der Heirat und das Jahr der Scheidung.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">2. Säule (Pensionskasse)</h3>
+
+    <p class="text-gray-700 mb-6">Die während der Ehe erworbenen Pensionskassenguthaben werden <strong>unabhängig vom Güterstand</strong> hälftig geteilt (Art. 122 ff. ZGB). Dies gilt seit der Gesetzesrevision von 2017 auch dann, wenn ein Ehegatte bereits pensioniert ist oder eine Invalidenrente bezieht.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Regelung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Grundsatz</td>
+                    <td class="px-6 py-4 text-gray-700">Hälftige Teilung der während der Ehe erworbenen Austrittsleistungen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Zeitraum</td>
+                    <td class="px-6 py-4 text-gray-700">Von der Heirat bis zur Einreichung des Scheidungsbegehrens</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Vorbezüge für Wohneigentum</td>
+                    <td class="px-6 py-4 text-gray-700">Werden bei der Berechnung berücksichtigt</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Freiwillige Einkäufe aus Eigengut</td>
+                    <td class="px-6 py-4 text-gray-700">Werden nicht geteilt (wenn nachweisbar)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Verzicht auf Teilung</td>
+                    <td class="px-6 py-4 text-gray-700">Möglich bei angemessener Altersvorsorge beider Ehegatten (Art. 124b ZGB)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Das Bundesgericht hat in BGE 129 III 577 festgehalten, dass der Grundsatz der hälftigen Teilung der Pensionskasse gilt und ein Verzicht die Ausnahme bleiben muss. Die Teilung kann nicht einfach deshalb verweigert werden, weil ein Ehegatte während der Ehe nur teilzeitlich erwerbstätig war.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">3. Säule (Säule 3a und 3b)</h3>
+
+    <p class="text-gray-700 mb-6">Im Gegensatz zur Pensionskasse wird die dritte Säule nach dem <strong>Güterrecht</strong> behandelt:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Vorsorge</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Behandlung bei Scheidung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Säule 3a (gebundene Vorsorge)</td>
+                    <td class="px-6 py-4 text-gray-700">Zählt zur Errungenschaft und wird im Rahmen der güterrechtlichen Auseinandersetzung berücksichtigt. Das während der Ehe angesparte Guthaben wird hälftig geteilt.</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Säule 3b (freie Vorsorge)</td>
+                    <td class="px-6 py-4 text-gray-700">Ebenfalls Errungenschaft. Wird zusammen mit den übrigen Vermögenswerten aufgeteilt.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig:</p>
+        <p class="text-gray-700">Nur bei vereinbarter <strong>Gütertrennung</strong> wird das Säule-3a-Guthaben nicht geteilt. Bei der Errungenschaftsbeteiligung (Normalfall) ist auch das während der Ehe in die Säule 3a eingezahlte Guthaben zu teilen.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Immobilien und Wohneigentum bei der Scheidung</h2>
+
+    <p class="text-gray-700 mb-6">Die Aufteilung von Immobilien ist häufig der komplexeste Teil der Vermögensaufteilung, da hier grosse Werte auf dem Spiel stehen und emotionale Faktoren hinzukommen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Eigentumsformen bei Immobilien</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Eigentumsform</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Auswirkung bei Scheidung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Alleineigentum</td>
+                    <td class="px-6 py-4 text-gray-700">Liegenschaft gehört nur einem Ehegatten</td>
+                    <td class="px-6 py-4 text-gray-700">Verbleibt beim Eigentümer; Wertzuwachs kann aber Errungenschaft sein</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Miteigentum</td>
+                    <td class="px-6 py-4 text-gray-700">Definierte Anteile (z.B. je 50%)</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder Anteil wird separat betrachtet und dem jeweiligen Ehegatten zugeordnet</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Gesamteigentum</td>
+                    <td class="px-6 py-4 text-gray-700">Gemeinschaftliches Eigentum ohne Anteile</td>
+                    <td class="px-6 py-4 text-gray-700">Muss vor der Scheidung in Miteigentum umgewandelt oder verkauft werden</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Optionen bei der Scheidung</h3>
+
     <p class="text-gray-700 mb-4">Bei Miteigentum gibt es folgende Möglichkeiten:</p>
-    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
-        <li><strong>Verkauf und Teilung des Erlöses:</strong> Beide Ehegatten verkaufen gemeinsam</li>
-        <li><strong>Übernahme durch einen Ehegatten:</strong> Mit Auszahlung des anderen</li>
-        <li><strong>Beibehaltung des Miteigentums:</strong> Selten praktikabel</li>
+
+    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6 ml-4">
+        <li><strong>Verkauf und Teilung des Erlöses:</strong> Beide Ehegatten verkaufen gemeinsam und teilen den Erlös entsprechend den Eigentumsanteilen</li>
+        <li><strong>Übernahme durch einen Ehegatten:</strong> Ein Ehegatte übernimmt den Anteil des anderen gegen Entschädigung</li>
+        <li><strong>Beibehaltung des Miteigentums:</strong> In seltenen Fällen behalten beide nach der Scheidung ihre Anteile (z.B. zur Vermietung)</li>
     </ul>
 
-    <div class="bg-blue-50 border-l-4 border-gold p-6 rounded-r-lg mb-6">
-        <h4 class="font-bold text-navy mb-2">Übernahmerecht (Art. 205 Abs. 2 ZGB)</h4>
-        <p class="text-gray-700">Ein Ehegatte kann verlangen, dass ihm ein Vermögenswert gegen volle Entschädigung zugeteilt wird, wenn er ein überwiegendes Interesse nachweist. Dies gilt insbesondere für die eheliche Wohnung.</p>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Übernahmerecht bei überwiegendem Interesse (Art. 205 Abs. 2 ZGB):</p>
+        <p class="text-gray-700">Ein Ehegatte kann verlangen, dass ihm ein Vermögenswert gegen volle Entschädigung zugeteilt wird, wenn er ein <strong>überwiegendes Interesse</strong> nachweist. Dies gilt insbesondere für die eheliche Wohnung, wenn beispielsweise die gemeinsamen Kinder dort wohnen bleiben sollen.</p>
     </div>
 
-    <h2 class="text-3xl font-serif font-bold text-navy mt-12 mb-6">Unternehmen und Geschäftsvermögen</h2>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Berechnung bei gemischter Finanzierung</h3>
 
-    <p class="text-gray-700 mb-6">Die Bewertung und Aufteilung von Unternehmen ist besonders komplex.</p>
+    <p class="text-gray-700 mb-6">Wurde eine Immobilie sowohl aus Eigengut als auch aus Errungenschaft finanziert, muss für jede Gütermasse ein separater Anteil berechnet werden:</p>
 
-    <h3 class="text-2xl font-serif font-bold text-navy mt-8 mb-4">Zuordnung des Unternehmens</h3>
-    <div class="overflow-x-auto mb-6">
-        <table class="w-full border-collapse bg-white border border-gray-200 rounded-lg overflow-hidden">
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-4 text-left">Situation</th>
-                    <th class="px-6 py-4 text-left">Zuordnung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Finanzierungsquelle</th>
+                    <th class="px-6 py-3 text-right text-sm font-semibold">Betrag (CHF)</th>
+                    <th class="px-6 py-3 text-right text-sm font-semibold">Anteil</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Eigengut Ehemann (Erbschaft)</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">200'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">25%</td>
+                </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4">Unternehmen vor der Ehe gegründet</td>
-                    <td class="px-6 py-4">Eigengut (Grundstock), Wertzuwachs kann Errungenschaft sein</td>
+                    <td class="px-6 py-4 text-gray-700">Errungenschaft Ehemann (Ersparnisse)</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">100'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">12.5%</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4">Unternehmen während der Ehe gegründet</td>
-                    <td class="px-6 py-4">In der Regel Errungenschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Errungenschaft Ehefrau (Ersparnisse)</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">100'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">12.5%</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4">Durch Ehevertrag zum Eigengut erklärt</td>
-                    <td class="px-6 py-4">Eigengut</td>
+                    <td class="px-6 py-4 text-gray-700">Hypothek</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">400'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">50%</td>
+                </tr>
+                <tr class="bg-blue-50">
+                    <td class="px-6 py-4 text-gray-700 font-bold">Total Kaufpreis</td>
+                    <td class="px-6 py-4 text-gray-700 text-right font-bold">800'000</td>
+                    <td class="px-6 py-4 text-gray-700 text-right font-bold">100%</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h3 class="text-2xl font-serif font-bold text-navy mt-8 mb-4">Bewertungsmethoden</h3>
-    <div class="overflow-x-auto mb-6">
-        <table class="w-full border-collapse bg-white border border-gray-200 rounded-lg overflow-hidden">
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wertschriften und Depots bei der Scheidung</h2>
+
+    <p class="text-gray-700 mb-6">Bei Wertschriftendepots ist zwischen dem Grundstock und dem Wertzuwachs zu unterscheiden:</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Beispiel Wertschriftendepot:</p>
+        <p class="text-gray-700">Sie haben ein Depot mit CHF 50'000 aus der Zeit vor der Ehe (Eigengut). Während der Ehe wächst der Wert auf CHF 80'000. Die ursprünglichen CHF 50'000 bleiben Ihr Eigengut. Der <strong>konjunkturelle Wertzuwachs</strong> von CHF 30'000 bleibt ebenfalls Eigengut (er folgt dem Grundstock). Aber: Dividenden und Zinsen, die während der Ehe angefallen sind, zählen zur Errungenschaft und werden geteilt.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Schulden bei der Scheidung</h2>
+
+    <p class="text-gray-700 mb-6">Im Schweizer Recht haftet jeder Ehegatte grundsätzlich nur für seine eigenen Schulden (Art. 202 ZGB). Es gibt jedoch wichtige Ausnahmen:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-4 text-left">Methode</th>
-                    <th class="px-6 py-4 text-left">Beschreibung</th>
-                    <th class="px-6 py-4 text-left">Anwendung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Schuldenart</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Haftung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aufteilung bei Scheidung</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-medium">Substanzwertmethode</td>
-                    <td class="px-6 py-4">Summe aller Vermögenswerte minus Schulden</td>
-                    <td class="px-6 py-4">Vermögensintensive Unternehmen</td>
-                </tr>
                 <tr>
-                    <td class="px-6 py-4 font-medium">Ertragswertmethode</td>
-                    <td class="px-6 py-4">Kapitalisierung der zukünftigen Erträge</td>
-                    <td class="px-6 py-4">Ertragsstarke Unternehmen</td>
+                    <td class="px-6 py-4 text-gray-700">Persönliche Schulden eines Ehegatten</td>
+                    <td class="px-6 py-4 text-gray-700">Nur der Schuldner haftet</td>
+                    <td class="px-6 py-4 text-gray-700">Werden der Errungenschaft des Schuldners belastet</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-medium">Praktikermethode</td>
-                    <td class="px-6 py-4">Kombination aus Substanz- und Ertragswert</td>
-                    <td class="px-6 py-4">Häufig in der Praxis</td>
+                    <td class="px-6 py-4 text-gray-700">Gemeinsam unterschriebene Verträge</td>
+                    <td class="px-6 py-4 text-gray-700">Beide haften solidarisch</td>
+                    <td class="px-6 py-4 text-gray-700">Im Innenverhältnis hälftig (wenn nicht anders vereinbart)</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-medium">DCF-Methode</td>
-                    <td class="px-6 py-4">Diskontierte Cashflows</td>
-                    <td class="px-6 py-4">Grössere Unternehmen</td>
+                    <td class="px-6 py-4 text-gray-700">Hypothek auf gemeinsamer Liegenschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Beide haften solidarisch gegenüber der Bank</td>
+                    <td class="px-6 py-4 text-gray-700">Im Innenverhältnis nach Eigentumsanteilen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Schulden für Familienbedürfnisse</td>
+                    <td class="px-6 py-4 text-gray-700">Beide können solidarisch haften</td>
+                    <td class="px-6 py-4 text-gray-700">Im Innenverhältnis nach Vereinbarung</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="text-3xl font-serif font-bold text-navy mt-12 mb-6">Praktische Durchführung</h2>
+    <div class="bg-red-50 border-l-4 border-red-500 p-6 my-8">
+        <p class="font-semibold text-red-800 mb-2">Wichtig: Rückschlag trägt jeder selbst</p>
+        <p class="text-gray-700">Gemäss Art. 210 Abs. 2 ZGB muss sich der andere Ehegatte an einem <strong>Rückschlag</strong> (negative Errungenschaft) nicht beteiligen. Wer mehr Schulden als Vermögen in seiner Errungenschaft hat, trägt diesen Verlust allein.</p>
+    </div>
 
-    <h3 class="text-2xl font-serif font-bold text-navy mt-8 mb-4">Einvernehmliche vs. strittige Scheidung</h3>
-    <div class="overflow-x-auto mb-6">
-        <table class="w-full border-collapse bg-white border border-gray-200 rounded-lg overflow-hidden">
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Unternehmen und Geschäftsvermögen</h2>
+
+    <p class="text-gray-700 mb-6">Die Bewertung und Aufteilung von Unternehmen ist besonders komplex und erfordert oft die Beizug von Experten.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Zuordnung des Unternehmens</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-4 text-left">Aspekt</th>
-                    <th class="px-6 py-4 text-left">Einvernehmliche Scheidung</th>
-                    <th class="px-6 py-4 text-left">Strittige Scheidung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Situation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zuordnung</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4">Vermögensaufteilung</td>
-                    <td class="px-6 py-4">In Scheidungskonvention geregelt</td>
-                    <td class="px-6 py-4">Vom Gericht entschieden</td>
-                </tr>
                 <tr>
-                    <td class="px-6 py-4">Dauer</td>
-                    <td class="px-6 py-4">Kürzer</td>
-                    <td class="px-6 py-4">Länger</td>
+                    <td class="px-6 py-4 text-gray-700">Unternehmen vor der Ehe gegründet</td>
+                    <td class="px-6 py-4 text-gray-700">Grundstock = Eigengut; Wertzuwachs kann Errungenschaft sein</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4">Kosten</td>
-                    <td class="px-6 py-4">Günstiger</td>
-                    <td class="px-6 py-4">Teurer</td>
+                    <td class="px-6 py-4 text-gray-700">Unternehmen während der Ehe gegründet</td>
+                    <td class="px-6 py-4 text-gray-700">In der Regel Errungenschaft</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4">Flexibilität</td>
-                    <td class="px-6 py-4">Grosse Gestaltungsfreiheit</td>
-                    <td class="px-6 py-4">Gesetzliche Vorgaben</td>
+                    <td class="px-6 py-4 text-gray-700">Durch Ehevertrag zum Eigengut erklärt</td>
+                    <td class="px-6 py-4 text-gray-700">Eigengut (mit möglicher Ersatzforderung für Arbeitsleistung)</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h3 class="text-2xl font-serif font-bold text-navy mt-8 mb-4">Dokumente für die Vermögensaufteilung</h3>
-    <div class="grid md:grid-cols-2 gap-4 mb-6">
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Bewertungsmethoden für Unternehmen</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Methode</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Anwendung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Substanzwertmethode</td>
+                    <td class="px-6 py-4 text-gray-700">Summe aller Vermögenswerte minus Schulden</td>
+                    <td class="px-6 py-4 text-gray-700">Vermögensintensive Unternehmen (Immobiliengesellschaften)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Ertragswertmethode</td>
+                    <td class="px-6 py-4 text-gray-700">Kapitalisierung der zukünftigen Erträge</td>
+                    <td class="px-6 py-4 text-gray-700">Ertragsstarke Unternehmen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Praktikermethode</td>
+                    <td class="px-6 py-4 text-gray-700">Gewichtete Kombination aus Substanz- und Ertragswert</td>
+                    <td class="px-6 py-4 text-gray-700">Häufig in der Praxis (KMU)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">DCF-Methode</td>
+                    <td class="px-6 py-4 text-gray-700">Diskontierte zukünftige Cashflows</td>
+                    <td class="px-6 py-4 text-gray-700">Grössere Unternehmen, internationale Standards</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Praktische Durchführung der Vermögensaufteilung</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Einvernehmliche vs. strittige Scheidung</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Einvernehmliche Scheidung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Strittige Scheidung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Vermögensaufteilung</td>
+                    <td class="px-6 py-4 text-gray-700">In Scheidungskonvention frei geregelt</td>
+                    <td class="px-6 py-4 text-gray-700">Vom Gericht nach gesetzlichen Regeln entschieden</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Verfahrensgrundsatz</td>
+                    <td class="px-6 py-4 text-gray-700">Dispositionsmaxime (freie Einigung)</td>
+                    <td class="px-6 py-4 text-gray-700">Verhandlungsgrundsatz (Art. 277 ZPO)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Dauer</td>
+                    <td class="px-6 py-4 text-gray-700">Wenige Monate</td>
+                    <td class="px-6 py-4 text-gray-700">Oft mehrere Jahre</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Kosten</td>
+                    <td class="px-6 py-4 text-gray-700">Deutlich günstiger</td>
+                    <td class="px-6 py-4 text-gray-700">Hohe Anwalts- und Gerichtskosten</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Flexibilität</td>
+                    <td class="px-6 py-4 text-gray-700">Grosse Gestaltungsfreiheit</td>
+                    <td class="px-6 py-4 text-gray-700">Strenge gesetzliche Vorgaben</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Benötigte Dokumente</h3>
+
+    <div class="grid md:grid-cols-2 gap-4 mb-8">
         <div class="bg-gray-50 p-4 rounded-lg">
-            <h4 class="font-bold text-navy mb-2">Banken</h4>
-            <p class="text-gray-700 text-sm">Kontoauszüge, Depotauszüge, Stichtag und aktuell</p>
+            <h4 class="font-bold text-navy mb-2">Banken & Finanzen</h4>
+            <p class="text-gray-700 text-sm">Kontoauszüge (Stichtag und aktuell), Depotauszüge, Kreditverträge, Säule-3a-Ausweise</p>
         </div>
         <div class="bg-gray-50 p-4 rounded-lg">
             <h4 class="font-bold text-navy mb-2">Immobilien</h4>
-            <p class="text-gray-700 text-sm">Grundbuchauszüge, Schätzungen, Hypothekarverträge</p>
+            <p class="text-gray-700 text-sm">Grundbuchauszüge, aktuelle Schätzungen, Hypothekarverträge, Kaufverträge</p>
         </div>
         <div class="bg-gray-50 p-4 rounded-lg">
             <h4 class="font-bold text-navy mb-2">Versicherungen</h4>
-            <p class="text-gray-700 text-sm">Policen, Rückkaufswerte</p>
+            <p class="text-gray-700 text-sm">Policen mit Rückkaufswerten, Lebensversicherungen, Kapitalisierungsprodukte</p>
         </div>
         <div class="bg-gray-50 p-4 rounded-lg">
             <h4 class="font-bold text-navy mb-2">Vorsorge</h4>
-            <p class="text-gray-700 text-sm">Freizügigkeitsausweise, Vorsorgeausweise</p>
+            <p class="text-gray-700 text-sm">Freizügigkeitsausweise (bei Heirat und aktuell), Vorsorgeausweise, AHV-Auszüge</p>
         </div>
         <div class="bg-gray-50 p-4 rounded-lg">
-            <h4 class="font-bold text-navy mb-2">Schulden</h4>
-            <p class="text-gray-700 text-sm">Darlehensverträge, Leasingverträge</p>
+            <h4 class="font-bold text-navy mb-2">Fahrzeuge</h4>
+            <p class="text-gray-700 text-sm">Fahrzeugausweise, Kaufverträge, Leasingverträge, aktuelle Bewertungen</p>
         </div>
         <div class="bg-gray-50 p-4 rounded-lg">
-            <h4 class="font-bold text-navy mb-2">Eigengut</h4>
-            <p class="text-gray-700 text-sm">Nachweise für Erbschaften, Schenkungen, voreheliches Vermögen</p>
+            <h4 class="font-bold text-navy mb-2">Eigengut-Nachweise</h4>
+            <p class="text-gray-700 text-sm">Erbschaftsdokumente, Schenkungsverträge, Kontoauszüge bei Heirat</p>
         </div>
     </div>
 
-    <h2 class="text-3xl font-serif font-bold text-navy mt-12 mb-6">Handlungsempfehlungen</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wichtige Bundesgerichtsentscheide zur Vermögensaufteilung</h2>
 
-    <div class="grid md:grid-cols-2 gap-6 mb-6">
-        <div class="bg-blue-50 p-6 rounded-lg">
-            <h3 class="text-xl font-bold text-navy mb-4">Vor der Scheidung</h3>
-            <ol class="text-gray-700 space-y-2 list-decimal list-inside">
-                <li>Alle Vermögenswerte und Schulden vollständig erfassen</li>
-                <li>Nachweise für Eigengut zusammenstellen (Erbschaften, Schenkungen)</li>
-                <li>Professionelle Bewertungen für Immobilien und Unternehmen einholen</li>
-                <li>Freizügigkeitsausweise der Pensionskassen anfordern</li>
-            </ol>
-        </div>
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="text-xl font-bold text-navy mb-4">Während des Verfahrens</h3>
-            <ol class="text-gray-700 space-y-2 list-decimal list-inside">
-                <li>Keine einseitigen Vermögensverschiebungen vornehmen</li>
-                <li>Alle Konten und Vermögenswerte offenlegen</li>
-                <li>Bei Unklarheiten rechtliche Beratung suchen</li>
-                <li>Mediation als Alternative zum Gerichtsverfahren prüfen</li>
-            </ol>
-        </div>
-    </div>
-
-    <h2 class="text-3xl font-serif font-bold text-navy mt-12 mb-6">Wichtige Gesetzesartikel im Überblick</h2>
-
-    <div class="overflow-x-auto mb-6">
-        <table class="w-full border-collapse bg-white border border-gray-200 rounded-lg overflow-hidden">
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-4 text-left">Artikel</th>
-                    <th class="px-6 py-4 text-left">Regelungsinhalt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">BGE</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Thema</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kernaussage</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-medium">Art. 197 ZGB</td>
-                    <td class="px-6 py-4">Definition Errungenschaft</td>
-                </tr>
                 <tr>
-                    <td class="px-6 py-4 font-medium">Art. 198 ZGB</td>
-                    <td class="px-6 py-4">Definition Eigengut</td>
+                    <td class="px-6 py-4 text-gray-700 font-medium">BGE 132 III 145</td>
+                    <td class="px-6 py-4 text-gray-700">Mehrwertbeteiligung</td>
+                    <td class="px-6 py-4 text-gray-700">Der konjunkturelle Mehrwert betrifft immer den ganzen Vermögenswert; auch spätere Investitionen partizipieren am Mehrwert.</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-medium">Art. 200 ZGB</td>
-                    <td class="px-6 py-4">Beweislast</td>
+                    <td class="px-6 py-4 text-gray-700 font-medium">BGE 129 III 577</td>
+                    <td class="px-6 py-4 text-gray-700">Pensionskassenteilung</td>
+                    <td class="px-6 py-4 text-gray-700">Die hälftige Teilung ist der Grundsatz; ein Verzicht muss die Ausnahme bleiben.</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-medium">Art. 206 ZGB</td>
-                    <td class="px-6 py-4">Mehrwertbeteiligung</td>
+                    <td class="px-6 py-4 text-gray-700 font-medium">BGE 141 III 53</td>
+                    <td class="px-6 py-4 text-gray-700">Beweislast Eigengut</td>
+                    <td class="px-6 py-4 text-gray-700">Wer Eigengut behauptet, muss dies beweisen; sonst gilt die Vermutung zugunsten der Errungenschaft.</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-medium">Art. 207 ZGB</td>
-                    <td class="px-6 py-4">Stichtag für Zusammensetzung</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4 font-medium">Art. 208 ZGB</td>
-                    <td class="px-6 py-4">Hinzurechnung</td>
-                </tr>
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-medium">Art. 209 ZGB</td>
-                    <td class="px-6 py-4">Ersatzforderungen</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4 font-medium">Art. 210, 215 ZGB</td>
-                    <td class="px-6 py-4">Vorschlag und hälftige Teilung</td>
-                </tr>
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-medium">Art. 211, 214 ZGB</td>
-                    <td class="px-6 py-4">Bewertung</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4 font-medium">Art. 122-124e ZGB</td>
-                    <td class="px-6 py-4">Vorsorgeausgleich</td>
+                    <td class="px-6 py-4 text-gray-700 font-medium">BGE 145 III 56</td>
+                    <td class="px-6 py-4 text-gray-700">Teilungsverweigerung</td>
+                    <td class="px-6 py-4 text-gray-700">Die Teilung kann verweigert werden, wenn ein Ehegatte seine Pflicht zum Familienunterhalt schwerwiegend verletzt hat.</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <div class="bg-blue-50 border-l-4 border-gold p-6 rounded-r-lg mb-6">
-        <h2 class="text-2xl font-serif font-bold text-navy mb-4">Fazit</h2>
-        <p class="text-gray-700 mb-4">Die Vermögensaufteilung bei einer Scheidung ist komplex und erfordert sorgfältige Vorbereitung. Eine faire Aufteilung hängt von der korrekten Erfassung, Zuordnung und Bewertung aller Vermögenswerte ab.</p>
-        <p class="text-gray-700">Während der Ehe sollten Vermögensverhältnisse dokumentiert werden. Bei grösseren Anschaffungen empfiehlt es sich, die Finanzierungsquellen festzuhalten. Prüfen Sie, ob ein Ehevertrag für Ihre Situation sinnvoll wäre.</p>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wichtige Gesetzesartikel im Überblick</h2>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Artikel</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Regelungsinhalt</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Art. 196 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Errungenschaftsbeteiligung als ordentlicher Güterstand</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Art. 197 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Definition der Errungenschaft</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Art. 198 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Definition des Eigenguts</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Art. 200 Abs. 3 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Vermutung zugunsten der Errungenschaft (Beweislast)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Art. 204 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Auflösung des Güterstands, massgeblicher Zeitpunkt</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Art. 206 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Mehrwertbeteiligung bei Investitionen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Art. 207 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Stichtag für die Zusammensetzung des Vermögens</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Art. 208 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Hinzurechnung (Schenkungen, Verschleuderung)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Art. 209 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Ersatzforderungen zwischen Gütermassen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Art. 210 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Vorschlag und Rückschlag</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Art. 214, 215 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Bewertung und hälftige Teilung des Vorschlags</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Art. 122-124e ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Vorsorgeausgleich (Pensionskasse)</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
+
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">Die güterrechtliche Auseinandersetzung ist rechtlich komplex und birgt erhebliche finanzielle Risiken. Fehler bei der Zuordnung von Vermögenswerten, falschen Bewertungen oder mangelhafter Dokumentation können zu erheblichen finanziellen Nachteilen führen. Ohne fachkundige Beratung besteht die Gefahr, berechtigte Ansprüche zu verlieren oder ungünstige Vereinbarungen zu treffen.</p>
+
+        <p class="text-gray-700 mb-6">Besonders bei folgenden Konstellationen ist die Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> dringend empfohlen:</p>
+
+        <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6 ml-4">
+            <li>Grössere Vermögenswerte wie Immobilien oder Unternehmen sind beteiligt</li>
+            <li>Die Abgrenzung zwischen Eigengut und Errungenschaft ist unklar</li>
+            <li>Ein Ehegatte hat während der Ehe in Vermögenswerte des anderen investiert</li>
+            <li>Es bestehen komplexe Finanzierungsstrukturen bei Immobilien</li>
+            <li>Ausländische Vermögenswerte oder internationales Recht sind involviert</li>
+            <li>Der andere Ehegatte verhält sich unkooperativ oder versteckt Vermögen</li>
+        </ul>
+
+        <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kann Ihre Vermögenssituation analysieren, Ihre Ansprüche berechnen und eine faire Aufteilung durchsetzen. Auch bei einer einvernehmlichen Scheidung ist es ratsam, die Scheidungskonvention durch einen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> prüfen zu lassen, um spätere Nachteile zu vermeiden.</p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Vermögensaufteilung</h3>
+            <p class="mb-6">Lassen Sie Ihre güterrechtliche Situation von einem spezialisierten Anwalt analysieren. In einer unverbindlichen Erstberatung erfahren Sie, welche Ansprüche Ihnen zustehen und wie Sie diese durchsetzen können.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- Fazit -->
+    <h2 class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Die Vermögensaufteilung bei einer Scheidung in der Schweiz folgt klaren gesetzlichen Regeln, ist aber in der praktischen Umsetzung oft komplex. Die wichtigsten Grundsätze sind:</p>
+
+    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6 ml-4">
+        <li>Ohne Ehevertrag gilt die Errungenschaftsbeteiligung mit hälftiger Teilung des Vorschlags</li>
+        <li>Eigengut (voreheliches Vermögen, Erbschaften, Schenkungen) bleibt ungeteilt</li>
+        <li>Die Pensionskasse wird unabhängig vom Güterstand hälftig geteilt</li>
+        <li>Eine sorgfältige Dokumentation während der Ehe erleichtert die spätere Auseinandersetzung erheblich</li>
+        <li>Einvernehmliche Lösungen sind schneller, günstiger und bieten mehr Gestaltungsfreiheit</li>
+    </ul>
+
+    <p class="text-gray-700 mb-6">Die frühzeitige Erfassung und Dokumentation von Vermögenswerten – insbesondere der Nachweis von Eigengut – ist entscheidend. Bei komplexeren Vermögensverhältnissen oder Uneinigkeit über die Aufteilung ist professionelle rechtliche Beratung unerlässlich, um finanzielle Nachteile zu vermeiden.</p>
+
+    <!-- FAQ-Sektion -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wird bei einer Scheidung alles 50:50 geteilt?</h3>
+                <p class="text-gray-700">Nein, nicht alles wird hälftig geteilt. Bei der Errungenschaftsbeteiligung wird nur der <strong>Vorschlag</strong> (Überschuss der Errungenschaft) geteilt. Das Eigengut – also voreheliches Vermögen, Erbschaften und Schenkungen – verbleibt vollständig beim jeweiligen Ehegatten. Die Pensionskassenguthaben werden allerdings unabhängig vom Güterstand hälftig geteilt.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Welcher Stichtag gilt für die Vermögensaufteilung?</h3>
+                <p class="text-gray-700">Für die Zusammensetzung des Vermögens ist der <strong>Tag der Einreichung des Scheidungsbegehrens</strong> massgebend (Art. 204 Abs. 2 ZGB). Für die Bewertung der Vermögenswerte gilt jedoch der Zeitpunkt der tatsächlichen Auseinandersetzung. Diese Unterscheidung kann bei langen Verfahren zu erheblichen Unterschieden führen.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Muss ich die Schulden meines Ehepartners übernehmen?</h3>
+                <p class="text-gray-700">Grundsätzlich nein. Jeder Ehegatte haftet nur für seine eigenen Schulden. Ein Rückschlag (negative Errungenschaft) muss vom anderen Ehegatten nicht mitgetragen werden (Art. 210 Abs. 2 ZGB). Eine Ausnahme gilt bei gemeinsam unterschriebenen Verträgen wie Hypotheken – hier haften beide Ehegatten solidarisch gegenüber der Bank.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie wird die Pensionskasse bei der Scheidung aufgeteilt?</h3>
+                <p class="text-gray-700">Die während der Ehe erworbenen Pensionskassenguthaben werden grundsätzlich hälftig geteilt – unabhängig vom Güterstand. Der Berechnungszeitraum läuft von der Heirat bis zur Einreichung des Scheidungsbegehrens. Seit 2017 gilt dies auch, wenn ein Ehegatte bereits pensioniert oder invalid ist. Ein Verzicht auf die Teilung ist nur möglich, wenn beide Ehegatten über eine angemessene Altersvorsorge verfügen (Art. 124b ZGB).</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert mit dem Haus bei einer Scheidung?</h3>
+                <p class="text-gray-700">Die Optionen hängen von der Eigentumssituation ab: Das Haus kann verkauft und der Erlös geteilt werden, ein Ehegatte kann den Anteil des anderen übernehmen (mit Auszahlung), oder das Miteigentum kann ausnahmsweise beibehalten werden. Bei der Zuteilung berücksichtigt das Gericht überwiegende Interessen, etwa wenn Kinder im Haus bleiben sollen. Die Finanzierungsanteile aus Eigengut und Errungenschaft müssen separat berechnet werden.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wird die Säule 3a bei der Scheidung auch geteilt?</h3>
+                <p class="text-gray-700">Ja, die Säule 3a wird bei der Errungenschaftsbeteiligung im Rahmen der güterrechtlichen Auseinandersetzung berücksichtigt. Das während der Ehe eingezahlte Guthaben zählt zur Errungenschaft und wird entsprechend geteilt. Anders als bei der Pensionskasse kann bei der Säule 3a im Scheidungsurteil individuell geregelt werden, ob und wie geteilt wird.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen Vorschlag und Rückschlag?</h3>
+                <p class="text-gray-700">Der <strong>Vorschlag</strong> ist der positive Überschuss der Errungenschaft nach Abzug der Schulden. Er wird bei der Scheidung hälftig geteilt. Ein <strong>Rückschlag</strong> liegt vor, wenn die Schulden der Errungenschaft deren Vermögenswerte übersteigen. Der Rückschlag wird nicht geteilt – der verschuldete Ehegatte trägt diesen allein.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann mein Ehepartner Vermögen vor mir verstecken?</h3>
+                <p class="text-gray-700">Verstecktes Vermögen kann aufgedeckt werden. Bei unerklärlichen Vermögensabgängen muss der Ehegatte nachweisen, wofür das Geld verwendet wurde. Gelingt dies nicht, wird es zur Errungenschaft hinzugezählt. Zudem werden Schenkungen ohne Zustimmung der letzten fünf Jahre sowie alle Zuwendungen in Schädigungsabsicht zur Errungenschaft hinzugerechnet (Art. 208 ZGB).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Vermögensaufteilung bei Scheidung in der Schweiz",
+        "description": "Vermögensaufteilung bei Scheidung erklärt: Errungenschaftsbeteiligung, Eigengut, Vorschlagsberechnung, Pensionskasse & Immobilien. Mit BGE-Rechtsprechung & Beispielen.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-20",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/gueterrecht/vermoegensaufteilung-bei-scheidung"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Wird bei einer Scheidung alles 50:50 geteilt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, nicht alles wird hälftig geteilt. Bei der Errungenschaftsbeteiligung wird nur der Vorschlag (Überschuss der Errungenschaft) geteilt. Das Eigengut – also voreheliches Vermögen, Erbschaften und Schenkungen – verbleibt vollständig beim jeweiligen Ehegatten. Die Pensionskassenguthaben werden allerdings unabhängig vom Güterstand hälftig geteilt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welcher Stichtag gilt für die Vermögensaufteilung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Für die Zusammensetzung des Vermögens ist der Tag der Einreichung des Scheidungsbegehrens massgebend (Art. 204 Abs. 2 ZGB). Für die Bewertung der Vermögenswerte gilt jedoch der Zeitpunkt der tatsächlichen Auseinandersetzung. Diese Unterscheidung kann bei langen Verfahren zu erheblichen Unterschieden führen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Muss ich die Schulden meines Ehepartners übernehmen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Grundsätzlich nein. Jeder Ehegatte haftet nur für seine eigenen Schulden. Ein Rückschlag (negative Errungenschaft) muss vom anderen Ehegatten nicht mitgetragen werden (Art. 210 Abs. 2 ZGB). Eine Ausnahme gilt bei gemeinsam unterschriebenen Verträgen wie Hypotheken – hier haften beide Ehegatten solidarisch gegenüber der Bank."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie wird die Pensionskasse bei der Scheidung aufgeteilt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die während der Ehe erworbenen Pensionskassenguthaben werden grundsätzlich hälftig geteilt – unabhängig vom Güterstand. Der Berechnungszeitraum läuft von der Heirat bis zur Einreichung des Scheidungsbegehrens. Seit 2017 gilt dies auch, wenn ein Ehegatte bereits pensioniert oder invalid ist. Ein Verzicht auf die Teilung ist nur möglich, wenn beide Ehegatten über eine angemessene Altersvorsorge verfügen (Art. 124b ZGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert mit dem Haus bei einer Scheidung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Optionen hängen von der Eigentumssituation ab: Das Haus kann verkauft und der Erlös geteilt werden, ein Ehegatte kann den Anteil des anderen übernehmen (mit Auszahlung), oder das Miteigentum kann ausnahmsweise beibehalten werden. Bei der Zuteilung berücksichtigt das Gericht überwiegende Interessen, etwa wenn Kinder im Haus bleiben sollen. Die Finanzierungsanteile aus Eigengut und Errungenschaft müssen separat berechnet werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wird die Säule 3a bei der Scheidung auch geteilt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, die Säule 3a wird bei der Errungenschaftsbeteiligung im Rahmen der güterrechtlichen Auseinandersetzung berücksichtigt. Das während der Ehe eingezahlte Guthaben zählt zur Errungenschaft und wird entsprechend geteilt. Anders als bei der Pensionskasse kann bei der Säule 3a im Scheidungsurteil individuell geregelt werden, ob und wie geteilt wird."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen Vorschlag und Rückschlag?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der Vorschlag ist der positive Überschuss der Errungenschaft nach Abzug der Schulden. Er wird bei der Scheidung hälftig geteilt. Ein Rückschlag liegt vor, wenn die Schulden der Errungenschaft deren Vermögenswerte übersteigen. Der Rückschlag wird nicht geteilt – der verschuldete Ehegatte trägt diesen allein."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann mein Ehepartner Vermögen vor mir verstecken?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Verstecktes Vermögen kann aufgedeckt werden. Bei unerklärlichen Vermögensabgängen muss der Ehegatte nachweisen, wofür das Geld verwendet wurde. Gelingt dies nicht, wird es zur Errungenschaft hinzugezählt. Zudem werden Schenkungen ohne Zustimmung der letzten fünf Jahre sowie alle Zuwendungen in Schädigungsabsicht zur Errungenschaft hinzugerechnet (Art. 208 ZGB)."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Güterrecht",
+                "item": "https://familienrechtanwalt.ch/gueterrecht"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Vermögensaufteilung bei Scheidung in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/gueterrecht/vermoegensaufteilung-bei-scheidung"
+            }
+        ]
+    })} />
+
 </ArticleLayout>

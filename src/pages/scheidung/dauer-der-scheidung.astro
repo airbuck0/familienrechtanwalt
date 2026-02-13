@@ -4,16 +4,44 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 
 <ArticleLayout
   title="Dauer einer Scheidung in der Schweiz: Alle Fristen und Zeiträume im Überblick"
-  description="Dauer einer Scheidung in der Schweiz: Umfassender Leitfaden zu allen Fristen und Zeiträumen bei einvernehmlicher und strittiger Scheidung, Rechtsmittelverfahren und praktischen Tipps."
-  keywords="Dauer Scheidung Schweiz, Scheidungsdauer, Trennungsfrist, Scheidungsverfahren Dauer, einvernehmliche Scheidung Dauer, strittige Scheidung Dauer"
+  description="Wie lange dauert eine Scheidung in der Schweiz? Einvernehmlich 2-6 Monate, strittig bis zu mehreren Jahren. Alle Fristen, Einflussfaktoren und Tipps zur Beschleunigung."
+  keywords="Dauer Scheidung Schweiz, Scheidungsdauer, wie lange dauert Scheidung, Trennungsfrist, Scheidungsverfahren Dauer, einvernehmliche Scheidung Dauer, strittige Scheidung Dauer, Scheidung beschleunigen"
   category="Scheidung"
   categoryLink="/scheidung"
 >
-  <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die Frage nach der Dauer einer Scheidung gehört zu den häufigsten Anliegen, mit denen sich scheidungswillige Ehepaare an einen Anwalt wenden. Die Antwort hängt massgeblich davon ab, ob die Eheleute sich einig sind oder ob ein streitiges Verfahren droht. Dieser umfassende Ratgeber erläutert alle relevanten Fristen, typische Verfahrensdauern und Faktoren, die den Zeitrahmen beeinflussen können.</p>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Überblick über die Verfahrensdauer</h2>
+  <!-- Das Wichtigste in Kürze -->
+  <div class="bg-navy text-white p-8 rounded-lg mb-12">
+    <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+    <ul class="space-y-3">
+      <li class="flex items-start">
+        <span class="text-gold mr-3">✓</span>
+        <span><strong>Einvernehmliche Scheidung:</strong> Bei vollständiger Einigung dauert das Verfahren in der Regel 2-6 Monate (Art. 111 ZGB).</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-gold mr-3">✓</span>
+        <span><strong>Strittige Scheidung:</strong> Voraussetzung sind 2 Jahre Trennungsfrist (Art. 114 ZGB), danach kann das Verfahren 1-5 Jahre oder länger dauern.</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-gold mr-3">✓</span>
+        <span><strong>Härtefall (Art. 115 ZGB):</strong> Bei schwerwiegenden Gründen wie häuslicher Gewalt ist eine sofortige Scheidung ohne Trennungsfrist möglich.</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-gold mr-3">✓</span>
+        <span><strong>Rechtskraft:</strong> Das Urteil wird 30 Tage nach Zustellung rechtskräftig, sofern kein Rechtsmittel eingelegt wird.</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-gold mr-3">✓</span>
+        <span><strong>Beschleunigung:</strong> Eine vollständige Scheidungskonvention und Mediation können das Verfahren erheblich verkürzen.</span>
+      </li>
+    </ul>
+  </div>
 
-  <p class="text-gray-700 mb-6">Die Gesamtdauer einer Scheidung setzt sich aus verschiedenen Komponenten zusammen: der Vorbereitungsphase, dem eigentlichen Gerichtsverfahren, allfälligen Rechtsmittelverfahren und der Zeit bis zum Eintritt der Rechtskraft. Je nach Verfahrensart variiert die Gesamtdauer erheblich.</p>
+  <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die Frage «Wie lange dauert eine Scheidung in der Schweiz?» beschäftigt nahezu alle Betroffenen. Die Antwort hängt massgeblich von der Verfahrensart ab: Sind sich beide Ehegatten über die Scheidung und deren Folgen einig, kann das Verfahren innert weniger Monate abgeschlossen werden. Bei Uneinigkeit hingegen kann sich eine Scheidung über mehrere Jahre hinziehen. Dieser umfassende Ratgeber erläutert alle relevanten Fristen, typische Verfahrensdauern und konkrete Faktoren, die den Zeitrahmen beeinflussen können.</p>
+
+  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Überblick: Wie lange dauert eine Scheidung in der Schweiz?</h2>
+
+  <p class="text-gray-700 mb-6">Die Gesamtdauer einer Scheidung setzt sich aus verschiedenen Komponenten zusammen: der Vorbereitungsphase, dem eigentlichen Gerichtsverfahren, allfälligen Rechtsmittelverfahren und der Zeit bis zum Eintritt der Rechtskraft. Je nach Verfahrensart und Komplexität variiert die Dauer erheblich.</p>
 
   <div class="overflow-x-auto mb-6">
     <table class="min-w-full bg-white border border-gray-200">
@@ -22,99 +50,353 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
           <th class="px-6 py-3 text-left text-sm font-semibold">Verfahrensart</th>
           <th class="px-6 py-3 text-left text-sm font-semibold">Typische Dauer</th>
           <th class="px-6 py-3 text-left text-sm font-semibold">Spannweite</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
         </tr>
       </thead>
       <tbody class="divide-y divide-gray-200">
         <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Einvernehmliche Scheidung (vollständige Einigung)</td>
+          <td class="px-6 py-4 font-semibold text-navy">Einvernehmliche Scheidung (umfassende Einigung)</td>
           <td class="px-6 py-4 text-gray-700">2-4 Monate</td>
           <td class="px-6 py-4 text-gray-700">1-6 Monate</td>
+          <td class="px-6 py-4 text-gray-700">Art. 111 ZGB</td>
         </tr>
         <tr class="bg-gray-50">
           <td class="px-6 py-4 font-semibold text-navy">Scheidung mit Teileinigung</td>
           <td class="px-6 py-4 text-gray-700">4-12 Monate</td>
           <td class="px-6 py-4 text-gray-700">3-18 Monate</td>
+          <td class="px-6 py-4 text-gray-700">Art. 112 ZGB</td>
         </tr>
         <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Strittige Scheidung</td>
+          <td class="px-6 py-4 font-semibold text-navy">Strittige Scheidung (einseitiges Begehren)</td>
           <td class="px-6 py-4 text-gray-700">1-3 Jahre</td>
           <td class="px-6 py-4 text-gray-700">6 Monate - 5+ Jahre</td>
+          <td class="px-6 py-4 text-gray-700">Art. 114 ZGB</td>
         </tr>
         <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">Strittige Scheidung mit Rechtsmittelverfahren</td>
+          <td class="px-6 py-4 font-semibold text-navy">Härtefall-Scheidung</td>
+          <td class="px-6 py-4 text-gray-700">6-18 Monate</td>
+          <td class="px-6 py-4 text-gray-700">3 Monate - 2 Jahre</td>
+          <td class="px-6 py-4 text-gray-700">Art. 115 ZGB</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">Mit Rechtsmittelverfahren (Berufung/Bundesgericht)</td>
           <td class="px-6 py-4 text-gray-700">2-5 Jahre</td>
           <td class="px-6 py-4 text-gray-700">1-7+ Jahre</td>
+          <td class="px-6 py-4 text-gray-700">Art. 308ff. ZPO, BGG</td>
         </tr>
       </tbody>
     </table>
   </div>
 
-  <p class="text-gray-700 mb-6">Diese Angaben sind Richtwerte, die je nach Kanton, Komplexität des Falles und Belastung der Gerichte variieren können.</p>
-
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Vorbereitungsphase und Voraussetzungen</h2>
-
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Keine Wartefrist bei einvernehmlicher Scheidung</h3>
-
-  <p class="text-gray-700 mb-6">Einer der wesentlichen Vorteile der Scheidung auf gemeinsames Begehren gemäss Art. 111 und 112 ZGB ist, dass keine Wartefristen eingehalten werden müssen. Die Ehegatten können das Scheidungsbegehren einreichen, sobald sie sich über die Scheidung und deren Folgen geeinigt haben. Eine vorherige Trennungszeit ist nicht erforderlich.</p>
-
-  <p class="text-gray-700 mb-6">Dies bedeutet, dass theoretisch bereits wenige Wochen nach dem Entschluss zur Scheidung das Verfahren eingeleitet werden kann. In der Praxis benötigt die Vorbereitung einer vollständigen Scheidungskonvention mit allen erforderlichen Unterlagen jedoch einige Wochen bis Monate, abhängig von der Komplexität der Verhältnisse und der Verfügbarkeit aller notwendigen Dokumente.</p>
-
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Zweijährige Trennungsfrist bei einseitigem Begehren</h3>
-
-  <p class="text-gray-700 mb-6">Bei der Scheidung auf einseitiges Begehren gemäss Art. 114 ZGB müssen die Ehegatten grundsätzlich mindestens zwei Jahre getrennt gelebt haben, bevor die Scheidungsklage eingereicht werden kann. Diese Frist ist eine materielle Voraussetzung der Scheidung und kann nicht verkürzt werden, ausser es liegt ein Fall der Unzumutbarkeit gemäss Art. 115 ZGB vor.</p>
-
-  <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-    <p class="font-semibold text-navy">BGE 136 III 113:</p>
-    <p class="text-gray-700">Das Bundesgericht hat die Anforderungen an das Getrenntleben konkretisiert. Demnach muss mindestens ein Ehegatte durch sein Verhalten klar zum Ausdruck bringen, dass er die eheliche Gemeinschaft nicht fortsetzen will. Die blosse räumliche Trennung genügt nicht; vielmehr muss die körperliche, geistige und wirtschaftliche Lebensgemeinschaft aufgegeben worden sein.</p>
+  <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+    <p class="font-semibold text-navy mb-2">Wichtig:</p>
+    <p class="text-gray-700">Diese Angaben sind Richtwerte. Die tatsächliche Dauer variiert je nach Kanton, Auslastung des Gerichts und Komplexität des Einzelfalls erheblich. In besonders strittigen Fällen mit mehreren Rechtsmittelverfahren kann eine Scheidung auch über 10 Jahre dauern (vgl. BGE 147 III 265).</p>
   </div>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Beginn der Trennungsfrist</h3>
+  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Die drei Wege zur Scheidung im Schweizer Recht</h2>
 
-  <p class="text-gray-700 mb-6">Die zweijährige Frist beginnt in dem Moment, in dem ein Ehegatte die Ehe faktisch und willentlich aufgibt. Dies ist typischerweise der Auszug aus der gemeinsamen Wohnung verbunden mit der erkennbaren Absicht, das eheliche Zusammenleben zu beenden. Der genaue Zeitpunkt kann im Streitfall beweisrechtlich relevant werden, weshalb eine Dokumentation sinnvoll ist.</p>
+  <p class="text-gray-700 mb-6">Das Schweizerische Zivilgesetzbuch (ZGB) kennt drei verschiedene Scheidungsgründe, die jeweils unterschiedliche Voraussetzungen und Verfahrensdauern mit sich bringen.</p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Unterbrechung der Trennungsfrist</h3>
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">1. Scheidung auf gemeinsames Begehren (Art. 111/112 ZGB)</h3>
 
-  <p class="text-gray-700 mb-6">Ein kurzfristiger Versöhnungsversuch unterbricht die Trennungsfrist grundsätzlich nicht. Das Bundesgericht hat in seiner Rechtsprechung klargestellt, dass eine Wiederaufnahme des gemeinsamen Haushalts von bis zu drei Monaten als Versöhnungsversuch gilt und die Frist weiterlaufen lässt. Bei längeren Zeiträumen beginnt die Frist hingegen von neuem.</p>
+  <p class="text-gray-700 mb-6">Die einvernehmliche Scheidung ist der schnellste Weg zur Auflösung der Ehe. Beide Ehegatten müssen der Scheidung zustimmen und können das gemeinsame Begehren jederzeit einreichen – eine vorgängige Trennungszeit ist nicht erforderlich.</p>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Verfahrensdauer bei einvernehmlicher Scheidung</h2>
+  <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Umfassende Einigung (Art. 111 ZGB)</h4>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Typischer Ablauf und Zeitbedarf</h3>
+  <p class="text-gray-700 mb-6">Bei der umfassenden Einigung haben sich die Ehegatten über sämtliche Scheidungsfolgen geeinigt und legen dem Gericht eine vollständige <a href="/scheidung/scheidungskonvention" class="text-gold hover:underline font-semibold">Scheidungskonvention</a> vor. Diese muss Regelungen zu allen relevanten Punkten enthalten: Unterhalt, Sorgerecht, Vermögensaufteilung und Vorsorgeausgleich. Die Dauer beträgt typischerweise 2-4 Monate.</p>
 
-  <p class="text-gray-700 mb-6">Bei einer vollständig vorbereiteten Scheidung auf gemeinsames Begehren läuft das Verfahren in der Regel zügig ab. Nach Einreichung des Begehrens setzt das Gericht einen Termin für die Anhörung an, die gemäss Art. 287 ZPO zwingend vorgeschrieben ist. Je nach Auslastung des Gerichts liegt dieser Termin zwischen zwei Wochen und drei Monaten nach Eingang des Gesuchs.</p>
+  <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Teileinigung (Art. 112 ZGB)</h4>
 
-  <p class="text-gray-700 mb-6">Die Anhörung selbst dauert bei unkomplizierten Fällen zwischen 20 und 60 Minuten. Das Gericht vergewissert sich, dass beide Ehegatten aus freiem Willen die Scheidung wünschen und die Vereinbarungen verstanden haben. Anschliessend kann das Gericht das Urteil direkt aussprechen oder innert weniger Wochen schriftlich eröffnen.</p>
+  <p class="text-gray-700 mb-6">Sind sich die Ehegatten über die Scheidung einig, können sich aber nicht über alle Folgen verständigen, können sie eine Teileinigung einreichen. Die strittigen Punkte werden dann vom Gericht entschieden. Dies führt zu einem längeren Verfahren (typischerweise 4-12 Monate), ist aber immer noch deutlich schneller als eine vollständig strittige Scheidung.</p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Einflussfaktoren auf die Verfahrensdauer</h3>
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">2. Scheidung nach Getrenntleben (Art. 114 ZGB)</h3>
 
-  <p class="text-gray-700 mb-4">Die Dauer des einvernehmlichen Verfahrens wird von mehreren Faktoren beeinflusst:</p>
+  <p class="text-gray-700 mb-6">Stimmt ein Ehegatte der Scheidung nicht zu, kann der andere nach Ablauf einer zweijährigen Trennungsfrist die Scheidung einseitig verlangen. Die Trennungsfrist muss im Zeitpunkt der Einreichung der Scheidungsklage abgelaufen sein (Art. 114 ZGB).</p>
 
-  <p class="text-gray-700 mb-4">Die Vollständigkeit der eingereichten Unterlagen spielt eine wesentliche Rolle. Fehlen Dokumente wie die Bestätigung der Vorsorgeeinrichtung oder notwendige Belege, muss das Gericht Nachforderungen stellen, was zu Verzögerungen führt. Eine sorgfältige Vorbereitung kann mehrere Wochen einsparen.</p>
+  <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+    <p class="font-semibold text-navy mb-2">BGE 136 III 113 – Anforderungen an das Getrenntleben:</p>
+    <p class="text-gray-700">Das Bundesgericht hat präzisiert, dass nicht nur die räumliche Trennung erforderlich ist, sondern auch die Aufgabe der körperlichen, geistigen und wirtschaftlichen Lebensgemeinschaft. Ein Ehegatte muss durch sein Verhalten klar zum Ausdruck bringen, dass er die eheliche Gemeinschaft nicht fortsetzen will.</p>
+  </div>
 
-  <p class="text-gray-700 mb-4">Die Auslastung des zuständigen Gerichts ist ebenfalls relevant. In stark belasteten Gerichten, etwa in grossen Städten, können die Wartezeiten bis zur Anhörung länger sein als in weniger frequentierten ländlichen Gerichten.</p>
+  <p class="text-gray-700 mb-6">Interessanterweise ist ein gemeinsamer Haushalt kein Ausschlussgrund: Ehegatten können auch unter demselben Dach «getrennt» leben, wenn ihr Alltag deutlich von einer normalen ehelichen Lebensgemeinschaft abweicht (BGE 5A_322/2022 E. 4.1).</p>
 
-  <p class="text-gray-700 mb-6">Die Komplexität der Konvention kann die Prüfungsdauer beeinflussen. Enthält die Vereinbarung umfangreiche güterrechtliche Regelungen, komplizierte Unterhaltsberechnungen oder spezielle Regelungen zu den Kindern, benötigt das Gericht mehr Zeit für die Angemessenheitsprüfung.</p>
+  <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Beginn und Berechnung der Trennungsfrist</h4>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Verfahrensdauer bei streitiger Scheidung</h2>
+  <p class="text-gray-700 mb-6">Die zweijährige Frist beginnt mit dem Zeitpunkt, in dem ein Ehegatte die eheliche Gemeinschaft faktisch und willentlich aufgibt. Dies ist typischerweise der Auszug aus der gemeinsamen Wohnung verbunden mit der erkennbaren Absicht, das eheliche Zusammenleben zu beenden. Eine Dokumentation des Trennungszeitpunkts ist empfehlenswert, da dieser im Streitfall bewiesen werden muss.</p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Erstinstanzliches Verfahren</h3>
+  <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Versöhnungsversuche und die Trennungsfrist</h4>
 
-  <p class="text-gray-700 mb-6">Die strittige Scheidung ist in der Regel ein langwieriges Verfahren, dessen Dauer stark von der Komplexität der Streitpunkte und dem Verhalten der Parteien abhängt.</p>
+  <p class="text-gray-700 mb-6">Ein kurzfristiger Versöhnungsversuch unterbricht die Trennungsfrist grundsätzlich nicht. Nach bundesgerichtlicher Rechtsprechung gilt eine Wiederaufnahme des gemeinsamen Haushalts von bis zu drei Monaten als Versöhnungsversuch, der die Frist weiterlaufen lässt. Bei längerer Wiedervereinigung beginnt die Frist jedoch von neuem.</p>
 
-  <p class="text-gray-700 mb-6">Nach Einreichung der Klage wird dem Beklagten eine Frist zur Klageantwort eingeräumt, die typischerweise vier bis acht Wochen beträgt. Anschliessend lädt das Gericht zu einer Einigungsverhandlung (Sühneverhandlung) gemäss Art. 291 ZPO. Scheitert diese, folgen weitere Rechtsschriften, Beweisabnahmen und schliesslich die Hauptverhandlung.</p>
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">3. Härtefall-Scheidung (Art. 115 ZGB)</h3>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtsmittelverfahren und Rechtskraft</h2>
+  <p class="text-gray-700 mb-6">In Ausnahmefällen kann die Scheidung auch ohne die zweijährige Trennungsfrist verlangt werden, wenn die Fortsetzung der Ehe aus schwerwiegenden Gründen, die dem klagenden Ehegatten nicht zuzurechnen sind, nicht zugemutet werden kann.</p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Berufungsfrist und -verfahren</h3>
+  <div class="overflow-x-auto mb-6">
+    <table class="min-w-full bg-white border border-gray-200">
+      <thead class="bg-navy text-white">
+        <tr>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Anerkannte Härtefälle</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Nicht ausreichende Gründe</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-200">
+        <tr>
+          <td class="px-6 py-4 text-gray-700">Schwere körperliche oder psychische Gewalt</td>
+          <td class="px-6 py-4 text-gray-700">Ehebruch allein</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 text-gray-700">Verbrechen gegen den Ehegatten</td>
+          <td class="px-6 py-4 text-gray-700">Entfremdung der Ehegatten</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 text-gray-700">Fortgesetzte schwere Belästigung</td>
+          <td class="px-6 py-4 text-gray-700">Finanzielle Schwierigkeiten</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 text-gray-700">Missbräuchliche Eheschliessung (z.B. zur Aufenthaltsbewilligung)</td>
+          <td class="px-6 py-4 text-gray-700">Unterschiedliche Lebensvorstellungen</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-  <p class="text-gray-700 mb-6">Nach Zustellung des erstinstanzlichen Urteils beträgt die Berufungsfrist gemäss Art. 311 Abs. 1 ZPO 30 Tage. Legt eine Partei Berufung ein, verlängert sich die Gesamtdauer des Verfahrens um die Dauer des zweitinstanzlichen Verfahrens, das typischerweise sechs Monate bis anderthalb Jahre in Anspruch nimmt.</p>
+  <p class="text-gray-700 mb-6">Art. 115 ZGB kommt in der Praxis nur selten zur Anwendung, da die Anforderungen an die «Unzumutbarkeit» sehr hoch sind. Das Gesetz wurde bewusst als «Notventil» für echte Härtefälle konzipiert. Die Beweislast für das Vorliegen der Voraussetzungen liegt beim klagenden Ehegatten.</p>
+
+  <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+    <p class="font-semibold text-navy mb-2">Hinweis zur Motion 2025:</p>
+    <p class="text-gray-700">Eine Motion zur Verkürzung der Trennungsfrist von zwei Jahren auf sechs oder zwölf Monate wurde 2025 vom Parlament abgelehnt. Die zweijährige Frist bleibt somit weiterhin in Kraft.</p>
+  </div>
+
+  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Der Ablauf des Scheidungsverfahrens im Detail</h2>
+
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Einreichung der Unterlagen</h3>
+
+  <p class="text-gray-700 mb-6">Das Scheidungsverfahren beginnt mit der Einreichung des Scheidungsbegehrens beim zuständigen Gericht am Wohnsitz eines Ehegatten. Bei einem gemeinsamen Begehren sind folgende Unterlagen erforderlich:</p>
+
+  <div class="overflow-x-auto mb-6">
+    <table class="min-w-full bg-white border border-gray-200">
+      <thead class="bg-navy text-white">
+        <tr>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Dokument</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Zweck</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-200">
+        <tr>
+          <td class="px-6 py-4 text-gray-700">Gemeinsames Scheidungsbegehren</td>
+          <td class="px-6 py-4 text-gray-700">Antrag auf Scheidung</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 text-gray-700">Scheidungskonvention</td>
+          <td class="px-6 py-4 text-gray-700">Regelung aller Scheidungsfolgen</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 text-gray-700">Familienbüchlein/Eheschein</td>
+          <td class="px-6 py-4 text-gray-700">Nachweis der Ehe</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 text-gray-700">Bestätigung der Vorsorgeeinrichtungen</td>
+          <td class="px-6 py-4 text-gray-700">Für den Vorsorgeausgleich</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 text-gray-700">Einkommens- und Vermögensnachweise</td>
+          <td class="px-6 py-4 text-gray-700">Berechnung Unterhalt</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 text-gray-700">Geburtsurkunden der Kinder</td>
+          <td class="px-6 py-4 text-gray-700">Bei gemeinsamen Kindern</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="text-gray-700 mb-6">Fehlen Unterlagen, fordert das Gericht diese nach. Dies führt zu Verzögerungen von mehreren Wochen. Eine vollständige Einreichung ist daher entscheidend für ein zügiges Verfahren.</p>
+
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Die Anhörung vor Gericht</h3>
+
+  <p class="text-gray-700 mb-6">Nach Eingang des Gesuchs lädt das Gericht beide Ehegatten zur persönlichen Anhörung vor (Art. 287 ZPO). Je nach Kanton und Auslastung des Gerichts erfolgt die Vorladung innerhalb von 1-4 Monaten nach Einreichung.</p>
+
+  <p class="text-gray-700 mb-6">Die Anhörung selbst dauert bei einer einvernehmlichen Scheidung typischerweise 20-30 Minuten. Das Gericht vergewissert sich, dass das Scheidungsbegehren auf freiem Willen und reiflicher Überlegung beruht (Art. 111 Abs. 1 ZGB). Die Scheidungskonvention wird Punkt für Punkt durchgegangen und auf ihre Angemessenheit geprüft.</p>
+
+  <p class="text-gray-700 mb-6">Seit der Scheidungsrechtsreform 2010 ist die frühere zweimonatige Bedenkfrist nach der Anhörung entfallen. Das Gericht kann das Urteil daher direkt im Anschluss an die Anhörung aussprechen.</p>
+
+  <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+    <p class="font-semibold text-navy mb-2">Elektronische Anhörung (Art. 141a/141b ZPO):</p>
+    <p class="text-gray-700">Unter bestimmten Voraussetzungen können Ehegatten mittels Videokonferenz (Zoom, Teams etc.) angehört werden. Dies kann das Verfahren beschleunigen, insbesondere wenn ein Ehegatte im Ausland lebt. Minderjährige Kinder müssen jedoch stets persönlich angehört werden (Art. 298 Abs. 1bis ZPO).</p>
+  </div>
+
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Die Kindesanhörung bei minderjährigen Kindern</h3>
+
+  <p class="text-gray-700 mb-6">Sind gemeinsame minderjährige Kinder vorhanden, muss das Gericht diese grundsätzlich persönlich anhören (Art. 298 ZPO). Die Anhörungspflicht ergibt sich auch aus Art. 12 der UN-Kinderrechtskonvention, die für die Schweiz seit 1997 in Kraft ist.</p>
+
+  <p class="text-gray-700 mb-6">Die Kindesanhörung erfolgt in der Regel ab dem 6. Altersjahr, bei strittigen Verhältnissen bereits ab dem 3. Altersjahr. Das Kind wird ohne Anwesenheit der Eltern angehört, um eine unbeeinflusste Meinungsäusserung zu ermöglichen. Die Anhörung kann die Verfahrensdauer um einige Wochen verlängern.</p>
+
+  <p class="text-gray-700 mb-6">Bei besonders strittigen Sorgerechts- oder Obhutsfragen kann das Gericht zudem einen Kindesvertreter (Verfahrensbeistand) ernennen (Art. 299 ZPO). Manche Gerichte verlangen auch einen Sozialbericht, was zu zusätzlichen Verzögerungen führen kann.</p>
+
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Urteil und Rechtskraft</h3>
+
+  <p class="text-gray-700 mb-6">Nach erfolgreicher Anhörung und Prüfung der Konvention fällt das Gericht das Scheidungsurteil. Dieses wird den Parteien schriftlich eröffnet. Ab Zustellung beginnt die 30-tägige Rechtsmittelfrist zu laufen.</p>
+
+  <p class="text-gray-700 mb-6">Verzichten beide Ehegatten auf Rechtsmittel, wird das Urteil sofort rechtskräftig. Der Rechtsmittelverzicht kann jedoch erst nach Eröffnung des schriftlichen Urteilsdispositivs erklärt werden – ein vorgängiger Verzicht an der Verhandlung ist nach herrschender Meinung unbeachtlich.</p>
+
+  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Faktoren, die die Scheidungsdauer beeinflussen</h2>
+
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Die Scheidungskonvention als Schlüssel zum schnellen Verfahren</h3>
+
+  <p class="text-gray-700 mb-6">Der wichtigste Faktor für eine kurze Verfahrensdauer ist eine vollständige und ausgewogene <a href="/scheidung/scheidungskonvention" class="text-gold hover:underline font-semibold">Scheidungskonvention</a>. Je detaillierter und klarer die Vereinbarungen sind, desto weniger Rückfragen hat das Gericht und desto schneller kann das Verfahren abgeschlossen werden.</p>
+
+  <p class="text-gray-700 mb-6">Die Konvention muss insbesondere folgende Punkte regeln:</p>
+
+  <div class="overflow-x-auto mb-6">
+    <table class="min-w-full bg-white border border-gray-200">
+      <thead class="bg-navy text-white">
+        <tr>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Regelungsbereich</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Komplexität</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-200">
+        <tr>
+          <td class="px-6 py-4 text-gray-700">Elterliche Sorge und Obhut</td>
+          <td class="px-6 py-4 text-gray-700">Art. 133 ZGB</td>
+          <td class="px-6 py-4 text-gray-700">Hoch bei Uneinigkeit</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 text-gray-700">Betreuungsanteile und Besuchsrecht</td>
+          <td class="px-6 py-4 text-gray-700">Art. 133 ZGB</td>
+          <td class="px-6 py-4 text-gray-700">Mittel</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 text-gray-700">Kinderunterhalt</td>
+          <td class="px-6 py-4 text-gray-700">Art. 133, 285 ZGB</td>
+          <td class="px-6 py-4 text-gray-700">Mittel bis hoch</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 text-gray-700">Ehegattenunterhalt</td>
+          <td class="px-6 py-4 text-gray-700">Art. 125 ZGB</td>
+          <td class="px-6 py-4 text-gray-700">Hoch</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 text-gray-700">Güterrechtliche Auseinandersetzung</td>
+          <td class="px-6 py-4 text-gray-700">Art. 120 ZGB</td>
+          <td class="px-6 py-4 text-gray-700">Hoch bei Vermögen</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 text-gray-700">Vorsorgeausgleich (BVG)</td>
+          <td class="px-6 py-4 text-gray-700">Art. 122ff. ZGB</td>
+          <td class="px-6 py-4 text-gray-700">Mittel</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 text-gray-700">Ehewohnung und Hausrat</td>
+          <td class="px-6 py-4 text-gray-700">Art. 121 ZGB</td>
+          <td class="px-6 py-4 text-gray-700">Niedrig bis mittel</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Streitpunkte und Konflikte</h3>
+
+  <p class="text-gray-700 mb-6">Je mehr Punkte strittig sind, desto länger dauert das Verfahren. Typische Streitpunkte, die zu erheblichen Verzögerungen führen, sind:</p>
+
+  <p class="text-gray-700 mb-4"><strong>Sorgerecht und Obhut:</strong> Streitigkeiten über das Sorgerecht oder die Betreuungsanteile sind häufig besonders langwierig, da sie oft von Gutachten und Sozialberichten abhängen.</p>
+
+  <p class="text-gray-700 mb-4"><strong>Unterhalt:</strong> Die Berechnung des nachehelichen Unterhalts nach Art. 125 ZGB ist komplex und führt häufig zu Meinungsverschiedenheiten. Unterschiedliche Berechnungsmethoden in verschiedenen Kantonen erschweren die Einigung zusätzlich.</p>
+
+  <p class="text-gray-700 mb-6"><strong>Vermögensaufteilung:</strong> Bei grösserem Vermögen, Immobilien oder Unternehmensbeteiligungen kann die güterrechtliche Auseinandersetzung besonders zeitaufwendig sein.</p>
+
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Mediation als Alternative</h3>
+
+  <p class="text-gray-700 mb-6">Bei Uneinigkeiten kann eine Mediation helfen, Kompromisse zu finden und das Verfahren zu beschleunigen. Der Schweizerische Dachverband für Mediation gibt eine durchschnittliche Mediationsdauer von 5-7 Stunden an – deutlich weniger als ein langwieriges Gerichtsverfahren.</p>
+
+  <p class="text-gray-700 mb-6">Seit 2017 haben die Gerichte die Mediation bei Kindschaftssachen gestärkt. Empfiehlt das Gericht bei Konflikten betreffend gemeinsame Kinder eine Mediation, haben einkommensschwache Betroffene Anspruch auf Kostenübernahme durch den Staat.</p>
+
+  <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+    <p class="font-semibold text-navy mb-2">Vorteile der Mediation:</p>
+    <p class="text-gray-700">Mediationslösungen führen erfahrungsgemäss zu dauerhafteren Ergebnissen als gerichtliche Entscheide, da beide Parteien aktiv an der Lösung mitgewirkt haben. Zudem sind die Kosten in der Regel deutlich geringer.</p>
+  </div>
+
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kantonale Unterschiede</h3>
+
+  <p class="text-gray-700 mb-6">Die Verfahrensdauer variiert erheblich zwischen den Kantonen, da die Auslastung der Gerichte unterschiedlich ist. In grossen Städten wie Zürich können die Wartezeiten bis zur Anhörung länger sein als in ländlichen Gebieten.</p>
+
+  <p class="text-gray-700 mb-6">Auch die Gerichtskosten unterscheiden sich stark:</p>
+
+  <div class="overflow-x-auto mb-6">
+    <table class="min-w-full bg-white border border-gray-200">
+      <thead class="bg-navy text-white">
+        <tr>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Kanton</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Gerichtskosten (einvernehmlich)</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-200">
+        <tr>
+          <td class="px-6 py-4 text-gray-700">Zürich (Bezirk Dietikon/Meilen)</td>
+          <td class="px-6 py-4 text-gray-700">CHF 2'600</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 text-gray-700">Bern</td>
+          <td class="px-6 py-4 text-gray-700">CHF 1'800</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 text-gray-700">Basel-Landschaft</td>
+          <td class="px-6 py-4 text-gray-700">CHF 1'700</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 text-gray-700">Basel-Stadt</td>
+          <td class="px-6 py-4 text-gray-700">CHF 830 - 5'000</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 text-gray-700">Durchschnitt Schweiz</td>
+          <td class="px-6 py-4 text-gray-700">CHF 1'500 - 1'800</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="text-gray-700 mb-6">Leben die Ehegatten in verschiedenen Kantonen, kann es sinnvoll sein, das Scheidungsbegehren in dem Kanton einzureichen, in dem die Gerichtskosten niedriger sind und die Verfahren schneller abgewickelt werden.</p>
+
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vorsorgliche Massnahmen</h3>
+
+  <p class="text-gray-700 mb-6">Bis zur rechtskräftigen Scheidung kann es dauern – besonders bei strittigen Verfahren. In dringenden Fällen können vorsorgliche Massnahmen beantragt werden, etwa zur vorläufigen Regelung von Kinderbelangen, Unterhalt oder der Nutzung der Ehewohnung.</p>
+
+  <p class="text-gray-700 mb-6">In besonders dringenden Fällen (z.B. bei Gefährdung) kann das Gericht superprovisorische Massnahmen erlassen, die sofort und ohne Anhörung der Gegenpartei wirksam werden. Diese müssen innerhalb von etwa drei Wochen durch eine ordentliche vorsorgliche Verfügung bestätigt oder abgeändert werden.</p>
+
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Der Vorsorgeausgleich</h3>
+
+  <p class="text-gray-700 mb-6">Der Vorsorgeausgleich (Aufteilung der Pensionskassenguthaben) ist seit 2017 neu geregelt. Die während der Ehe angesammelten Vorsorgeguthaben werden grundsätzlich hälftig geteilt (Art. 122ff. ZGB). Massgeblicher Zeitpunkt ist die Einleitung des Scheidungsverfahrens, nicht mehr das Scheidungsdatum.</p>
+
+  <p class="text-gray-700 mb-6">Die Einholung der Bestätigungen der Vorsorgeeinrichtungen kann mehrere Wochen in Anspruch nehmen und sollte frühzeitig veranlasst werden. Die Übertragung der Guthaben erfolgt nach rechtskräftiger Scheidung steuerneutral von Pensionskasse zu Pensionskasse oder auf ein Freizügigkeitskonto.</p>
+
+  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtsmittel und ihre Auswirkung auf die Verfahrensdauer</h2>
+
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Rechtsmittelfrist und Rechtskraft</h3>
+
+  <p class="text-gray-700 mb-6">Nach Zustellung des erstinstanzlichen Urteils beginnt die 30-tägige Rechtsmittelfrist (Art. 311 Abs. 1 ZPO). Wird kein Rechtsmittel eingelegt und kein Rechtsmittelverzicht erklärt, wird das Urteil nach Ablauf dieser Frist rechtskräftig.</p>
+
+  <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+    <p class="font-semibold text-navy mb-2">Gerichtsferien (Art. 145 ZPO):</p>
+    <p class="text-gray-700">Die Rechtsmittelfristen laufen während der Gerichtsferien nicht: 18. Dezember bis 2. Januar, eine Woche vor und nach Ostern, sowie 15. Juli bis 15. August. Dies kann die Verfahrensdauer verlängern.</p>
+  </div>
+
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Berufung ans Obergericht</h3>
+
+  <p class="text-gray-700 mb-6">Gegen das erstinstanzliche Urteil kann Berufung beim kantonalen Obergericht eingelegt werden. Die Berufung hat aufschiebende Wirkung (Art. 315 Abs. 1 ZPO), d.h. das Urteil wird nicht vollstreckbar. Das Berufungsverfahren dauert typischerweise 6 Monate bis 1.5 Jahre.</p>
 
   <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Beschwerde ans Bundesgericht</h3>
 
-  <p class="text-gray-700 mb-6">Gegen Entscheide des Obergerichts ist unter den Voraussetzungen des Bundesgerichtsgesetzes die Beschwerde in Zivilsachen ans Bundesgericht möglich. Die Beschwerdefrist beträgt ebenfalls 30 Tage. Ein Bundesgerichtsverfahren dauert typischerweise sechs Monate bis ein Jahr, kann aber bei komplexen Fällen auch länger dauern.</p>
+  <p class="text-gray-700 mb-6">Gegen das Obergerichtsurteil ist unter bestimmten Voraussetzungen die Beschwerde in Zivilsachen ans Bundesgericht möglich (Art. 72ff. BGG). Die Beschwerdefrist beträgt ebenfalls 30 Tage. Im Gegensatz zur Berufung hat die Beschwerde keine automatische aufschiebende Wirkung (Art. 103 BGG), diese muss gesondert beantragt werden.</p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Eintritt der Rechtskraft</h3>
+  <p class="text-gray-700 mb-6">Ein Bundesgerichtsverfahren dauert typischerweise 6 Monate bis 1 Jahr, kann aber bei komplexen Fällen deutlich länger dauern.</p>
 
-  <p class="text-gray-700 mb-6">Das Scheidungsurteil wird rechtskräftig, wenn die Rechtsmittelfrist ungenutzt abläuft, die Parteien auf Rechtsmittel verzichten oder ein Rechtsmittelverfahren rechtskräftig abgeschlossen wird. Ab diesem Zeitpunkt ist die Ehe formell aufgelöst und die im Urteil getroffenen Regelungen werden vollstreckbar.</p>
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Rechtsmittelverzicht</h3>
+
+  <p class="text-gray-700 mb-6">Verzichten beide Ehegatten auf Rechtsmittel, wird das Scheidungsurteil sofort rechtskräftig. Der Verzicht kann erst nach Eröffnung des schriftlichen Urteilsdispositivs wirksam erklärt werden.</p>
+
+  <p class="text-gray-700 mb-6">Allerdings raten viele Juristen von einem vorschnellen Rechtsmittelverzicht ab: Die 30-tägige Bedenkzeit ermöglicht eine nochmalige Prüfung des Urteils. Insbesondere bei komplexen Unterhalts- oder Güterrechtsfragen kann eine Überprüfung sinnvoll sein.</p>
 
   <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Übersicht der wichtigsten Fristen</h2>
 
@@ -122,69 +404,271 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
     <table class="min-w-full bg-white border border-gray-200">
       <thead class="bg-navy text-white">
         <tr>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Fristbezeichnung</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Frist</th>
           <th class="px-6 py-3 text-left text-sm font-semibold">Dauer</th>
           <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
         </tr>
       </thead>
       <tbody class="divide-y divide-gray-200">
         <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Trennungsfrist vor Scheidungsklage</td>
+          <td class="px-6 py-4 font-semibold text-navy">Trennungsfrist bei einseitigem Begehren</td>
           <td class="px-6 py-4 text-gray-700">2 Jahre</td>
           <td class="px-6 py-4 text-gray-700">Art. 114 ZGB</td>
         </tr>
         <tr class="bg-gray-50">
           <td class="px-6 py-4 font-semibold text-navy">Maximale Dauer Versöhnungsversuch</td>
           <td class="px-6 py-4 text-gray-700">3 Monate</td>
-          <td class="px-6 py-4 text-gray-700">Rechtsprechung</td>
+          <td class="px-6 py-4 text-gray-700">Bundesgerichtliche Praxis</td>
         </tr>
         <tr>
+          <td class="px-6 py-4 font-semibold text-navy">Frist für Klageantwort</td>
+          <td class="px-6 py-4 text-gray-700">30 Tage (erstreckbar)</td>
+          <td class="px-6 py-4 text-gray-700">Art. 222 ZPO</td>
+        </tr>
+        <tr class="bg-gray-50">
           <td class="px-6 py-4 font-semibold text-navy">Berufungsfrist</td>
           <td class="px-6 py-4 text-gray-700">30 Tage</td>
           <td class="px-6 py-4 text-gray-700">Art. 311 ZPO</td>
         </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">Beschwerdefrist ans Bundesgericht</td>
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">Beschwerdefrist Bundesgericht</td>
           <td class="px-6 py-4 text-gray-700">30 Tage</td>
           <td class="px-6 py-4 text-gray-700">Art. 100 BGG</td>
         </tr>
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Rechtskraft nach Urteilszustellung</td>
-          <td class="px-6 py-4 text-gray-700">30 Tage (ohne Rechtsmittel)</td>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 font-semibold text-navy">Rechtskraft ohne Rechtsmittel</td>
+          <td class="px-6 py-4 text-gray-700">30 Tage nach Zustellung</td>
           <td class="px-6 py-4 text-gray-700">Art. 311 ZPO</td>
         </tr>
       </tbody>
     </table>
   </div>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Praktische Empfehlungen zur Verkürzung der Verfahrensdauer</h2>
+  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Internationale Scheidungen</h2>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vorbereitung und Dokumentation</h3>
+  <p class="text-gray-700 mb-6">Bei Scheidungen mit internationalem Bezug – etwa wenn ein Ehegatte ausländischer Staatsangehöriger ist oder im Ausland lebt – können zusätzliche Fragen zur Zuständigkeit und zum anwendbaren Recht auftreten, die das Verfahren verlängern können.</p>
 
-  <p class="text-gray-700 mb-6">Eine gründliche Vorbereitung ist der wichtigste Faktor für ein zügiges Verfahren. Dazu gehört das frühzeitige Zusammenstellen aller erforderlichen Unterlagen, die vollständige Dokumentation der finanziellen Verhältnisse, die rechtzeitige Einholung der Bestätigungen der Vorsorgeeinrichtungen und die Erstellung einer durchdachten und vollständigen Scheidungskonvention.</p>
+  <p class="text-gray-700 mb-6">Grundsätzlich sind die Schweizer Gerichte zuständig, wenn mindestens ein Ehegatte seinen Wohnsitz in der Schweiz hat. Leben beide Ehegatten im Ausland, kann das Scheidungsbegehren nur ausnahmsweise in der Schweiz eingereicht werden, wenn eine Scheidung im Ausland unmöglich oder unzumutbar wäre (Art. 60 IPRG).</p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kooperationsbereitschaft zeigen</h3>
+  <p class="text-gray-700 mb-6">Mehr Informationen finden Sie in unserem Artikel zur <a href="/scheidung/internationale-scheidung" class="text-gold hover:underline font-semibold">internationalen Scheidung</a>.</p>
 
-  <p class="text-gray-700 mb-6">Ein kooperatives Verhalten gegenüber dem Ehegatten, dessen Anwalt und dem Gericht kann das Verfahren erheblich beschleunigen. Die Bereitschaft zu konstruktiven Verhandlungen, die Vermeidung unnötiger Konflikte und die zeitnahe Reaktion auf Anfragen tragen zu einem zügigen Ablauf bei.</p>
+  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Praktische Tipps zur Verkürzung der Scheidungsdauer</h2>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Mediation in Betracht ziehen</h3>
+  <p class="text-gray-700 mb-6">Mit den richtigen Massnahmen können Sie die Verfahrensdauer aktiv beeinflussen:</p>
 
-  <p class="text-gray-700 mb-6">Die Mediation kann auch bei zunächst streitigen Scheidungen helfen, eine einvernehmliche Lösung zu finden und damit das Verfahren erheblich zu verkürzen. Der Zeitaufwand für eine erfolgreiche Mediation ist in der Regel deutlich geringer als jener für ein vollstreitiges Gerichtsverfahren.</p>
+  <p class="text-gray-700 mb-4"><strong>1. Vollständige Unterlagen einreichen:</strong> Stellen Sie alle erforderlichen Dokumente im Voraus zusammen. Fehlende Unterlagen führen zu Nachforderungen und Verzögerungen.</p>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
+  <p class="text-gray-700 mb-4"><strong>2. Detaillierte Scheidungskonvention:</strong> Je präziser und vollständiger die Konvention, desto weniger Rückfragen hat das Gericht.</p>
 
-  <p class="text-gray-700 mb-4">Die Dauer einer Scheidung in der Schweiz variiert zwischen wenigen Monaten bei einvernehmlicher Scheidung und mehreren Jahren bei streitigem Verfahren mit Rechtsmitteln. Der wichtigste Einflussfaktor ist die Einigkeit der Ehegatten. Je mehr Punkte einvernehmlich geregelt werden können, desto kürzer wird das Verfahren.</p>
+  <p class="text-gray-700 mb-4"><strong>3. Kooperationsbereitschaft:</strong> Ein sachlicher und konstruktiver Umgang mit dem Ehegatten beschleunigt das Verfahren erheblich.</p>
 
-  <p class="text-gray-700 mb-6">Eine sorgfältige Vorbereitung, kooperatives Verhalten und realistische Erwartungen tragen wesentlich dazu bei, die Verfahrensdauer im Rahmen zu halten. Professionelle rechtliche Beratung hilft nicht nur bei der Durchsetzung der eigenen Interessen, sondern auch bei der effizienten Gestaltung des Verfahrens.</p>
+  <p class="text-gray-700 mb-4"><strong>4. Mediation nutzen:</strong> Bei Meinungsverschiedenheiten kann eine Mediation oft schneller zu einer Lösung führen als ein Gerichtsverfahren.</p>
 
-  <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
+  <p class="text-gray-700 mb-4"><strong>5. Vorsorgebestätigungen frühzeitig einholen:</strong> Die Bestätigungen der Pensionskassen können mehrere Wochen dauern.</p>
+
+  <p class="text-gray-700 mb-6"><strong>6. Fachkundige Beratung:</strong> Ein erfahrener Anwalt kann das Verfahren effizient gestalten und typische Fehler vermeiden.</p>
+
+  <!-- Anwalt-Sektion -->
+  <section class="mb-12">
+    <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+    <p class="text-gray-700 mb-6">Obwohl bei einer einvernehmlichen Scheidung grundsätzlich kein Anwaltszwang besteht, kann fachkundige Unterstützung das Verfahren erheblich beschleunigen und typische Fehler vermeiden, die zu Verzögerungen führen. Gerade bei der Erstellung der Scheidungskonvention und der korrekten Berechnung von Unterhalt und Vorsorgeausgleich ist juristische Expertise von grossem Wert.</p>
+
+    <p class="text-gray-700 mb-6">Besonders bei folgenden Konstellationen ist die Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> empfohlen: bei Uneinigkeit über wesentliche Scheidungsfolgen, bei komplexen Vermögensverhältnissen, bei strittigen Sorgerechts- oder Unterhaltsfragen sowie bei Scheidungen mit internationalem Bezug.</p>
+
+    <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kann nicht nur Ihre Rechte wahren, sondern auch konstruktiv zu einer Einigung beitragen und so die Verfahrensdauer verkürzen. Auch bei einer drohenden strittigen Scheidung kann ein <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> durch geschickte Verhandlungsführung oft doch noch eine einvernehmliche Lösung erreichen.</p>
+
+    <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+      <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+      <p class="mb-6">Erhalten Sie eine unverbindliche Einschätzung zur voraussichtlichen Dauer Ihres Scheidungsverfahrens und zu möglichen Beschleunigungsoptionen. Unsere spezialisierten Familienrechtsanwälte beraten Sie kompetent und diskret.</p>
+      <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+    </div>
+  </section>
+
+  <!-- Fazit -->
+  <h2 class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+  <p class="text-gray-700 mb-6">Die Dauer einer Scheidung in der Schweiz variiert erheblich je nach Verfahrensart und Komplexität des Falls. Bei einer einvernehmlichen Scheidung mit vollständiger Einigung ist das Verfahren in 2-6 Monaten abgeschlossen. Bei einer strittigen Scheidung müssen zunächst 2 Jahre Trennungsfrist abgewartet werden, bevor das Verfahren selbst nochmals 1-5 Jahre oder länger dauern kann.</p>
+
+  <p class="text-gray-700 mb-6">Der wichtigste Einflussfaktor ist die Einigkeit der Ehegatten. Je mehr Punkte einvernehmlich geregelt werden können, desto kürzer ist das Verfahren. Eine sorgfältige Vorbereitung, vollständige Unterlagen und eine detaillierte Scheidungskonvention sind der Schlüssel zu einem zügigen Ablauf. Bei Meinungsverschiedenheiten kann eine Mediation oft schneller und kostengünstiger zu einer Lösung führen als ein gerichtliches Verfahren.</p>
+
+  <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
     <p class="font-semibold text-navy mb-2">Relevante Gesetzesbestimmungen:</p>
     <ul class="list-disc list-inside text-gray-700 space-y-1">
-      <li>Art. 111-115 ZGB (Scheidungsvoraussetzungen)</li>
+      <li>Art. 111-115 ZGB (Scheidungsgründe und -voraussetzungen)</li>
+      <li>Art. 120-132 ZGB (Scheidungsfolgen)</li>
       <li>Art. 274-293 ZPO (Verfahren bei Scheidung)</li>
-      <li>Art. 265 ZPO (Vorsorgliche Massnahmen)</li>
+      <li>Art. 298 ZPO (Kindesanhörung)</li>
       <li>Art. 308-318 ZPO (Berufung)</li>
       <li>Art. 72-89, 100 BGG (Beschwerde ans Bundesgericht)</li>
+      <li>Art. 145 ZPO (Gerichtsferien/Fristenstillstand)</li>
     </ul>
   </div>
+
+  <!-- FAQ -->
+  <section class="mt-16 mb-12">
+    <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+
+    <div class="space-y-6">
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Wie lange dauert eine einvernehmliche Scheidung in der Schweiz?</h3>
+        <p class="text-gray-700">Bei vollständiger Einigung über alle Scheidungsfolgen dauert das Verfahren in der Regel 2-4 Monate, je nach Auslastung des Gerichts auch 1-6 Monate. Voraussetzung ist eine vollständige Scheidungskonvention mit allen erforderlichen Unterlagen.</p>
+      </div>
+
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Wie lange muss ich getrennt leben, bevor ich die Scheidung einreichen kann?</h3>
+        <p class="text-gray-700">Bei einer einvernehmlichen Scheidung (Art. 111/112 ZGB) ist keine Trennungszeit erforderlich. Bei einer einseitigen Scheidung (Art. 114 ZGB) müssen Sie mindestens 2 Jahre getrennt gelebt haben. Nur bei schwerwiegenden Härtefällen (Art. 115 ZGB) kann diese Frist entfallen.</p>
+      </div>
+
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Wann wird das Scheidungsurteil rechtskräftig?</h3>
+        <p class="text-gray-700">Das Scheidungsurteil wird 30 Tage nach Zustellung rechtskräftig, sofern keine Partei Berufung einlegt. Bei einem beidseitigen Rechtsmittelverzicht nach Eröffnung des schriftlichen Urteilsdispositivs tritt die Rechtskraft sofort ein.</p>
+      </div>
+
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Kann ich die Scheidung beschleunigen?</h3>
+        <p class="text-gray-700">Ja, durch vollständige Unterlagen, eine detaillierte Scheidungskonvention und Kooperationsbereitschaft kann das Verfahren beschleunigt werden. Bei Uneinigkeit kann eine Mediation helfen, schneller zu einer Lösung zu kommen als ein strittiges Gerichtsverfahren.</p>
+      </div>
+
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Wie lange dauert eine strittige Scheidung?</h3>
+        <p class="text-gray-700">Eine strittige Scheidung kann sich über mehrere Jahre hinziehen. Zunächst müssen 2 Jahre Trennungsfrist abgewartet werden. Das anschliessende Verfahren dauert je nach Streitpunkten 1-3 Jahre, mit Rechtsmittelverfahren bis zum Bundesgericht auch 5-7 Jahre oder länger.</p>
+      </div>
+
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Was ist eine Härtefall-Scheidung und wie lange dauert sie?</h3>
+        <p class="text-gray-700">Bei schwerwiegenden Gründen wie häuslicher Gewalt kann die Scheidung nach Art. 115 ZGB ohne die zweijährige Trennungsfrist verlangt werden. Die Voraussetzungen sind jedoch streng. Das Verfahren selbst dauert typischerweise 6-18 Monate.</p>
+      </div>
+
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Unterscheidet sich die Scheidungsdauer je nach Kanton?</h3>
+        <p class="text-gray-700">Ja, die Verfahrensdauer variiert zwischen den Kantonen erheblich, abhängig von der Auslastung der Gerichte. In grossen Städten wie Zürich können die Wartezeiten länger sein als in ländlichen Gebieten. Auch die Gerichtskosten unterscheiden sich stark (CHF 830 - 2'600 bei einvernehmlicher Scheidung).</p>
+      </div>
+
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Verlängert sich die Scheidung, wenn wir Kinder haben?</h3>
+        <p class="text-gray-700">Die Scheidung mit Kindern kann etwas länger dauern, da das Gericht die Kinder anhören muss (ab ca. 6 Jahren) und die Kinderbelange besonders sorgfältig prüft. Bei strittigen Sorgerechts- oder Obhutsfragen kann ein Sozialbericht erforderlich sein, was zusätzliche Wochen in Anspruch nimmt.</p>
+      </div>
+    </div>
+  </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Dauer einer Scheidung in der Schweiz: Alle Fristen und Zeiträume im Überblick",
+        "description": "Wie lange dauert eine Scheidung in der Schweiz? Einvernehmlich 2-6 Monate, strittig bis zu mehreren Jahren. Alle Fristen, Einflussfaktoren und Tipps zur Beschleunigung.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-20",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/scheidung/dauer-der-scheidung"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Wie lange dauert eine einvernehmliche Scheidung in der Schweiz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei vollständiger Einigung über alle Scheidungsfolgen dauert das Verfahren in der Regel 2-4 Monate, je nach Auslastung des Gerichts auch 1-6 Monate. Voraussetzung ist eine vollständige Scheidungskonvention mit allen erforderlichen Unterlagen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie lange muss ich getrennt leben, bevor ich die Scheidung einreichen kann?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei einer einvernehmlichen Scheidung (Art. 111/112 ZGB) ist keine Trennungszeit erforderlich. Bei einer einseitigen Scheidung (Art. 114 ZGB) müssen Sie mindestens 2 Jahre getrennt gelebt haben. Nur bei schwerwiegenden Härtefällen (Art. 115 ZGB) kann diese Frist entfallen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wann wird das Scheidungsurteil rechtskräftig?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das Scheidungsurteil wird 30 Tage nach Zustellung rechtskräftig, sofern keine Partei Berufung einlegt. Bei einem beidseitigen Rechtsmittelverzicht nach Eröffnung des schriftlichen Urteilsdispositivs tritt die Rechtskraft sofort ein."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich die Scheidung beschleunigen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, durch vollständige Unterlagen, eine detaillierte Scheidungskonvention und Kooperationsbereitschaft kann das Verfahren beschleunigt werden. Bei Uneinigkeit kann eine Mediation helfen, schneller zu einer Lösung zu kommen als ein strittiges Gerichtsverfahren."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie lange dauert eine strittige Scheidung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Eine strittige Scheidung kann sich über mehrere Jahre hinziehen. Zunächst müssen 2 Jahre Trennungsfrist abgewartet werden. Das anschliessende Verfahren dauert je nach Streitpunkten 1-3 Jahre, mit Rechtsmittelverfahren bis zum Bundesgericht auch 5-7 Jahre oder länger."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist eine Härtefall-Scheidung und wie lange dauert sie?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei schwerwiegenden Gründen wie häuslicher Gewalt kann die Scheidung nach Art. 115 ZGB ohne die zweijährige Trennungsfrist verlangt werden. Die Voraussetzungen sind jedoch streng. Das Verfahren selbst dauert typischerweise 6-18 Monate."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Unterscheidet sich die Scheidungsdauer je nach Kanton?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, die Verfahrensdauer variiert zwischen den Kantonen erheblich, abhängig von der Auslastung der Gerichte. In grossen Städten wie Zürich können die Wartezeiten länger sein als in ländlichen Gebieten. Auch die Gerichtskosten unterscheiden sich stark (CHF 830 - 2'600 bei einvernehmlicher Scheidung)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Verlängert sich die Scheidung, wenn wir Kinder haben?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Scheidung mit Kindern kann etwas länger dauern, da das Gericht die Kinder anhören muss (ab ca. 6 Jahren) und die Kinderbelange besonders sorgfältig prüft. Bei strittigen Sorgerechts- oder Obhutsfragen kann ein Sozialbericht erforderlich sein, was zusätzliche Wochen in Anspruch nimmt."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Scheidung",
+                "item": "https://familienrechtanwalt.ch/scheidung"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Dauer einer Scheidung in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/scheidung/dauer-der-scheidung"
+            }
+        ]
+    })} />
+
 </ArticleLayout>

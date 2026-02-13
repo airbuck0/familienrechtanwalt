@@ -3,114 +3,794 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 ---
 
 <ArticleLayout
-  title="Scheidung einreichen in der Schweiz"
-  description="Scheidung einreichen in der Schweiz: Anleitung, Zuständigkeit und Vorgehensweise. Welche Unterlagen benötigt werden und wie das Verfahren abläuft."
-  keywords="Scheidung einreichen Schweiz, Scheidungsbegehren, zuständiges Gericht Scheidung, Scheidungsunterlagen, Kostenvorschuss Scheidung"
-  category="Scheidung"
-  categoryLink="/scheidung"
+    title="Scheidung einreichen in der Schweiz: Ablauf, Unterlagen & Kosten"
+    description="Scheidung einreichen Schweiz: Vollständige Anleitung mit Schritt-für-Schritt Ablauf, allen Unterlagen, Kosten nach Kanton & Gerichtsverfahren. Art. 111-115 ZGB erklärt."
+    keywords="Scheidung einreichen Schweiz, Scheidungsbegehren, Scheidungsklage, Scheidungskonvention, zuständiges Gericht Scheidung, Scheidungsunterlagen, Art. 111 ZGB, Art. 114 ZGB"
+    category="Scheidung"
+    categoryLink="/scheidung"
 >
-  <p class="text-xl text-gray-700 mb-8 leading-relaxed">Das Einreichen einer Scheidung ist der formelle erste Schritt zur Auflösung einer Ehe. Dieser Leitfaden erklärt, wo und wie Sie die Scheidung einreichen, welche Unterlagen erforderlich sind und was Sie bei der Vorbereitung beachten müssen.</p>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bei einer einvernehmlichen Scheidung (gemeinsames Begehren) reichen beide Ehegatten gemeinsam das Scheidungsbegehren mit einer Scheidungskonvention ein (Art. 111-112 ZGB)</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bei einer strittigen Scheidung (einseitiges Begehren) muss in der Regel eine zweijährige Trennungsfrist abgewartet werden (Art. 114 ZGB)</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Das Scheidungsbegehren wird beim Bezirksgericht am Wohnsitz eines Ehegatten eingereicht (Art. 23 ZPO)</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Gerichtskosten betragen bei einvernehmlicher Scheidung CHF 600-2'600 je nach Kanton, bei strittiger Scheidung deutlich mehr</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Eine einvernehmliche Scheidung dauert 1-6 Monate, strittige Verfahren können mehrere Jahre dauern</span>
+            </li>
+        </ul>
+    </div>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wann kann eine Scheidung eingereicht werden?</h2>
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Das Einreichen der Scheidung ist der formelle erste Schritt zur Auflösung einer Ehe. Je nachdem, ob sich die Ehegatten einig sind oder nicht, unterscheidet sich das Verfahren grundlegend. Dieser umfassende Ratgeber erklärt Schritt für Schritt, wie Sie Ihre Scheidung einreichen, welche Unterlagen Sie benötigen, mit welchen Kosten Sie rechnen müssen und wie das Verfahren vor Gericht abläuft.</p>
 
-  <div class="overflow-x-auto mb-6">
-    <table class="min-w-full bg-white border border-gray-200">
-      <thead class="bg-navy text-white">
-        <tr>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Verfahrensart</th>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Trennungsfrist</th>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Einigung erforderlich</th>
-        </tr>
-      </thead>
-      <tbody class="divide-y divide-gray-200">
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Gemeinsames Begehren (Art. 111 ZGB)</td>
-          <td class="px-6 py-4 text-gray-700">Keine</td>
-          <td class="px-6 py-4 text-gray-700">Über Scheidung und alle Folgen</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">Gemeinsames Begehren (Art. 112 ZGB)</td>
-          <td class="px-6 py-4 text-gray-700">Keine</td>
-          <td class="px-6 py-4 text-gray-700">Über Scheidung, nicht alle Folgen</td>
-        </tr>
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Einseitiges Begehren (Art. 114 ZGB)</td>
-          <td class="px-6 py-4 text-gray-700">2 Jahre</td>
-          <td class="px-6 py-4 text-gray-700">Keine</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">Einseitiges Begehren (Art. 115 ZGB)</td>
-          <td class="px-6 py-4 text-gray-700">Keine (Unzumutbarkeit)</td>
-          <td class="px-6 py-4 text-gray-700">Keine</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wann kann eine Scheidung eingereicht werden?</h2>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Zuständiges Gericht</h2>
+    <p class="text-gray-700 mb-6">Das Schweizer Scheidungsrecht kennt verschiedene Möglichkeiten, eine Scheidung einzureichen. Die Vorgehensweise hängt davon ab, ob beide Ehegatten die Scheidung wollen und sich über die Folgen einig sind:</p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Örtliche Zuständigkeit</h3>
-  <p class="text-gray-700 mb-6">Nach Art. 23 ZPO ist das Gericht am Wohnsitz eines der Ehegatten zuständig. Bei verschiedenen Wohnsitzen können Sie wählen - ein Vergleich der kantonalen Gerichtskosten kann sich lohnen.</p>
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Verfahrensart</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Voraussetzungen</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Einzureichende Dokumente</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Gemeinsames Begehren mit vollständiger Einigung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 111 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Einigung über Scheidung und alle Folgen</td>
+                    <td class="px-6 py-4 text-gray-700">Scheidungsbegehren + vollständige Konvention</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Gemeinsames Begehren mit Teileinigung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 112 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Einigung über Scheidung, nicht über alle Folgen</td>
+                    <td class="px-6 py-4 text-gray-700">Scheidungsbegehren + Teilkonvention</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Einseitiges Begehren nach Getrenntleben</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 114 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Mindestens 2 Jahre Getrenntleben</td>
+                    <td class="px-6 py-4 text-gray-700">Scheidungsklage</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Einseitiges Begehren wegen Unzumutbarkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 115 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Schwerwiegende Gründe (z.B. Gewalt)</td>
+                    <td class="px-6 py-4 text-gray-700">Scheidungsklage + Begründung</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Sachliche Zuständigkeit</h3>
-  <p class="text-gray-700 mb-6">Zuständig sind die erstinstanzlichen Zivilgerichte: Bezirksgericht, Regionalgericht oder Kreisgericht je nach Kanton. In einigen Kantonen bestehen spezialisierte Familiengerichte.</p>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig zu wissen:</p>
+        <p class="text-gray-700">In der Schweiz ist es grundsätzlich nicht entscheidend, wer die Scheidung einreicht. Beide Ehegatten haben die gleichen Rechte und Pflichten im Scheidungsverfahren. Die Schuldfrage spielt seit der Scheidungsrechtsrevision von 2000 keine Rolle mehr für den Scheidungsanspruch.</p>
+    </div>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Erforderliche Unterlagen</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Scheidung auf gemeinsames Begehren (einvernehmlich)</h2>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Grunddokumente</h3>
-  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-    <li>Scheidungsbegehren oder Scheidungsklage</li>
-    <li>Familienausweis oder Auszug aus dem Zivilstandsregister</li>
-    <li>Kopien der Ausweisdokumente beider Ehegatten</li>
-    <li>Wohnsitzbescheinigung (bei ausländischen Staatsangehörigen)</li>
-  </ul>
+    <p class="text-gray-700 mb-6">Die <a href="/scheidung/scheidung-auf-gemeinsames-begehren" class="text-gold hover:underline font-semibold">Scheidung auf gemeinsames Begehren</a> ist der häufigste und schnellste Weg zur Scheidung. Beide Ehegatten sind sich einig, dass die Ehe geschieden werden soll, und reichen gemeinsam das Scheidungsbegehren ein.</p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Zusätzlich bei einvernehmlicher Scheidung</h3>
-  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-    <li>Vollständige Scheidungskonvention</li>
-    <li>Bestätigungen der Vorsorgeeinrichtungen</li>
-    <li>Einkommensnachweise (Lohnausweise, Steuererklärungen)</li>
-    <li>Nachweise über Vermögenswerte und Schulden</li>
-  </ul>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vollständige Einigung (Art. 111 ZGB)</h3>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kostenvorschuss</h2>
+    <p class="text-gray-700 mb-6">Bei der vollständigen Einigung haben sich die Ehegatten über sämtliche Scheidungsfolgen geeinigt und legen dem Gericht eine vollständige <a href="/scheidung/scheidungskonvention" class="text-gold hover:underline font-semibold">Scheidungskonvention</a> vor. Das Gericht prüft lediglich, ob:</p>
 
-  <p class="text-gray-700 mb-4">Nach Art. 98 ZPO verlangt das Gericht einen Kostenvorschuss in Höhe der voraussichtlichen Gerichtskosten:</p>
-  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-    <li>Einvernehmliche Scheidung: CHF 500-3'000</li>
-    <li>Strittige Verfahren: Deutlich höher, abhängig vom Streitwert</li>
-    <li>Bei fehlenden Mitteln: Unentgeltliche Rechtspflege beantragen</li>
-  </ul>
-
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtswirkungen der Einreichung</h2>
-
-  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-    <li><strong>Rechtshängigkeit:</strong> Die Zuständigkeit wird fixiert</li>
-    <li><strong>Stichtag Vorsorgeausgleich:</strong> Massgebend für die Berechnung der zu teilenden Guthaben</li>
-    <li><strong>Sperrwirkung:</strong> Kein weiteres Scheidungsverfahren möglich</li>
-  </ul>
-
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Vorsorgliche Massnahmen</h2>
-
-  <p class="text-gray-700 mb-4">Zusammen mit dem Scheidungsbegehren können vorsorgliche Massnahmen beantragt werden (Art. 276 ZPO):</p>
-  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-    <li>Zuteilung der Obhut über die Kinder</li>
-    <li>Regelung des Besuchsrechts</li>
-    <li>Festsetzung von Unterhaltsbeiträgen</li>
-    <li>Zuweisung der Ehewohnung</li>
-  </ul>
-
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
-
-  <p class="text-gray-700 mb-6">Das Einreichen einer Scheidung erfordert sorgfältige Vorbereitung. Die Wahl des richtigen Verfahrens, vollständige Unterlagen und die Beachtung der Zuständigkeitsregeln sind die Grundpfeiler für einen erfolgreichen Verfahrensstart.</p>
-
-  <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-    <p class="font-semibold text-navy mb-2">Relevante Gesetzesbestimmungen:</p>
-    <ul class="list-disc list-inside text-gray-700 space-y-1">
-      <li>Art. 111-115 ZGB (Scheidungsgründe)</li>
-      <li>Art. 23 ZPO (Örtliche Zuständigkeit)</li>
-      <li>Art. 62 ZPO (Rechtshängigkeit)</li>
-      <li>Art. 276 ZPO (Vorsorgliche Massnahmen)</li>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Der Scheidungswille auf reiflicher Überlegung beruht</li>
+        <li>Die Konvention klar und vollständig ist</li>
+        <li>Die Konvention nicht offensichtlich unangemessen ist</li>
+        <li>Bei Kindern das Kindeswohl gewahrt ist</li>
     </ul>
-  </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Teileinigung (Art. 112 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Wenn sich die Ehegatten zwar über den Scheidungswillen, aber nicht über alle Scheidungsfolgen einig sind, können sie eine Teilkonvention einreichen und das Gericht bitten, über die strittigen Punkte zu entscheiden (Art. 112 ZGB, Art. 286 ZPO). Das Verfahren dauert in diesem Fall länger.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Scheidung auf Klage (strittig)</h2>
+
+    <p class="text-gray-700 mb-6">Ist der andere Ehegatte nicht mit der Scheidung einverstanden, bleibt nur die <a href="/scheidung/scheidungsklage" class="text-gold hover:underline font-semibold">Scheidungsklage</a> auf einseitiges Begehren. Hierfür gelten strengere Voraussetzungen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Art. 114 ZGB: Scheidung nach zweijährigem Getrenntleben</h3>
+
+    <p class="text-gray-700 mb-6">Die häufigste Form der strittigen Scheidung ist die Klage nach Art. 114 ZGB. Voraussetzung ist, dass die Ehegatten mindestens zwei Jahre getrennt gelebt haben:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Voraussetzung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Trennungsdauer</td>
+                    <td class="px-6 py-4 text-gray-700">Mindestens 2 Jahre zum Zeitpunkt der Klageeinreichung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Trennungswille</td>
+                    <td class="px-6 py-4 text-gray-700">Mindestens ein Ehegatte muss die Trennung gewollt haben</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Aufhebung der Gemeinschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Keine gemeinsame Haushaltsführung mehr (getrennte Wohnungen oder "Trennung unter einem Dach")</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Keine richterliche Genehmigung</td>
+                    <td class="px-6 py-4 text-gray-700">Ein Eheschutzentscheid ist nicht erforderlich</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Getrenntleben unter einem Dach:</p>
+        <p class="text-gray-700">Ehegatten gelten auch als getrennt lebend, wenn sie weiterhin unter demselben Dach wohnen, aber die eheliche Gemeinschaft aufgehoben haben. Dies setzt voraus, dass getrennte Schlafzimmer genutzt werden, keine gemeinsamen Mahlzeiten eingenommen werden und keine gemeinsame Haushaltsführung mehr besteht.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Art. 115 ZGB: Scheidung wegen Unzumutbarkeit</h3>
+
+    <p class="text-gray-700 mb-6">In Ausnahmefällen kann die Scheidung auch ohne Einhaltung der zweijährigen Trennungsfrist verlangt werden, wenn die Fortsetzung der Ehe aus schwerwiegenden Gründen unzumutbar ist. Die Anforderungen sind hoch und Art. 115 ZGB kommt in der Praxis selten zur Anwendung (BGE 127 III 129).</p>
+
+    <p class="text-gray-700 mb-6">Als schwerwiegende Gründe gelten beispielsweise:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Schwere körperliche oder psychische Gewalt</li>
+        <li>Fortgesetztes Stalking oder Nachstellen</li>
+        <li>Schwere Straftaten gegen den Ehegatten oder dessen Angehörige</li>
+        <li>Heiratsschwindel oder Vortäuschung eines echten Ehewillens</li>
+        <li>Schwere Ehrverletzungen</li>
+        <li>Langjährige aussereheliche Beziehungen</li>
+    </ul>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Schritt-für-Schritt: Scheidung einreichen</h2>
+
+    <p class="text-gray-700 mb-6">Der Ablauf beim Einreichen einer Scheidung unterscheidet sich je nach Verfahrensart. Hier der typische Ablauf bei einer einvernehmlichen Scheidung:</p>
+
+    <div class="space-y-6 mb-8">
+        <div class="flex gap-4">
+            <div class="flex-shrink-0 w-10 h-10 bg-navy text-white rounded-full flex items-center justify-center font-bold">1</div>
+            <div>
+                <h4 class="font-bold text-navy mb-2">Scheidungsfolgen regeln</h4>
+                <p class="text-gray-700">Einigen Sie sich mit Ihrem Ehepartner über alle Scheidungsfolgen: Kinderbelange (Sorgerecht, Obhut, Besuchsrecht, Unterhalt), Güterrecht, Vorsorgeausgleich, nachehelicher Unterhalt und Wohnung.</p>
+            </div>
+        </div>
+        <div class="flex gap-4">
+            <div class="flex-shrink-0 w-10 h-10 bg-navy text-white rounded-full flex items-center justify-center font-bold">2</div>
+            <div>
+                <h4 class="font-bold text-navy mb-2">Scheidungskonvention erstellen</h4>
+                <p class="text-gray-700">Halten Sie alle Vereinbarungen schriftlich in einer Scheidungskonvention fest. Eine rechtliche Beratung wird empfohlen, um Fehler zu vermeiden.</p>
+            </div>
+        </div>
+        <div class="flex gap-4">
+            <div class="flex-shrink-0 w-10 h-10 bg-navy text-white rounded-full flex items-center justify-center font-bold">3</div>
+            <div>
+                <h4 class="font-bold text-navy mb-2">Unterlagen zusammenstellen</h4>
+                <p class="text-gray-700">Besorgen Sie alle erforderlichen Dokumente: Familienausweis, Einkommensnachweise, Pensionskassenbestätigungen, Steuererklärungen etc.</p>
+            </div>
+        </div>
+        <div class="flex gap-4">
+            <div class="flex-shrink-0 w-10 h-10 bg-navy text-white rounded-full flex items-center justify-center font-bold">4</div>
+            <div>
+                <h4 class="font-bold text-navy mb-2">Scheidungsbegehren ausfüllen</h4>
+                <p class="text-gray-700">Füllen Sie das Formular für das gemeinsame Scheidungsbegehren aus. Viele Gerichte stellen Formulare auf ihrer Website zur Verfügung.</p>
+            </div>
+        </div>
+        <div class="flex gap-4">
+            <div class="flex-shrink-0 w-10 h-10 bg-navy text-white rounded-full flex items-center justify-center font-bold">5</div>
+            <div>
+                <h4 class="font-bold text-navy mb-2">Einreichung beim Gericht</h4>
+                <p class="text-gray-700">Reichen Sie das Scheidungsbegehren mit allen Unterlagen beim zuständigen Bezirksgericht ein und bezahlen Sie den Kostenvorschuss.</p>
+            </div>
+        </div>
+        <div class="flex gap-4">
+            <div class="flex-shrink-0 w-10 h-10 bg-navy text-white rounded-full flex items-center justify-center font-bold">6</div>
+            <div>
+                <h4 class="font-bold text-navy mb-2">Anhörung vor Gericht</h4>
+                <p class="text-gray-700">Das Gericht lädt Sie zur Anhörung vor. Bei vollständiger Einigung und Genehmigung durch das Gericht wird die Scheidung sofort rechtskräftig.</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Zuständiges Gericht</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Örtliche Zuständigkeit (Art. 23 ZPO)</h3>
+
+    <p class="text-gray-700 mb-6">Das Scheidungsbegehren muss beim Gericht am Wohnsitz eines der Ehegatten eingereicht werden. Bei verschiedenen Wohnsitzen können Sie wählen, in welchem Kanton Sie die Scheidung einreichen. Dies kann sich finanziell lohnen, da die Gerichtskosten kantonal variieren.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Sachliche Zuständigkeit</h3>
+
+    <p class="text-gray-700 mb-6">Zuständig sind die erstinstanzlichen Zivilgerichte. Die Bezeichnung variiert je nach Kanton:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kanton</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zuständiges Gericht</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Zürich, Aargau, Thurgau, St. Gallen</td>
+                    <td class="px-6 py-4 text-gray-700">Bezirksgericht</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Bern</td>
+                    <td class="px-6 py-4 text-gray-700">Regionalgericht</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Graubünden</td>
+                    <td class="px-6 py-4 text-gray-700">Regionalgericht</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Basel-Stadt</td>
+                    <td class="px-6 py-4 text-gray-700">Zivilgericht</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Luzern</td>
+                    <td class="px-6 py-4 text-gray-700">Bezirksgericht</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Erforderliche Unterlagen</h2>
+
+    <p class="text-gray-700 mb-6">Je nach Art der Scheidung werden unterschiedliche Unterlagen benötigt. Hier eine vollständige Übersicht der <a href="/scheidung/scheidungsunterlagen" class="text-gold hover:underline font-semibold">Scheidungsunterlagen</a>:</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Grunddokumente (immer erforderlich)</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Dokument</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Details</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Scheidungsbegehren / Scheidungsklage</td>
+                    <td class="px-6 py-4 text-gray-700">Von beiden unterschrieben (bei gem. Begehren) oder nur vom Kläger (bei Klage)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Familienausweis / Familienbüchlein</td>
+                    <td class="px-6 py-4 text-gray-700">Original, nicht älter als 6 Monate</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Ausweiskopien</td>
+                    <td class="px-6 py-4 text-gray-700">Pass oder Identitätskarte beider Ehegatten</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Wohnsitzbescheinigung</td>
+                    <td class="px-6 py-4 text-gray-700">Bei ausländischen Staatsangehörigen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Zusätzliche Unterlagen bei einvernehmlicher Scheidung</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Dokument</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Details</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Scheidungskonvention</td>
+                    <td class="px-6 py-4 text-gray-700">Von beiden unterschrieben, regelt alle Scheidungsfolgen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Pensionskassenbestätigungen</td>
+                    <td class="px-6 py-4 text-gray-700">Beider Ehegatten, nicht älter als 6 Monate, Original</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Einkommensnachweise</td>
+                    <td class="px-6 py-4 text-gray-700">Lohnausweise der letzten 3 Monate + Jahreslohnausweis</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Steuererklärungen</td>
+                    <td class="px-6 py-4 text-gray-700">Der letzten 2 Jahre mit allen Beilagen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Vermögensnachweise</td>
+                    <td class="px-6 py-4 text-gray-700">Kontoauszüge, Depotauszüge, Grundbuchauszüge</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Schuldenübersicht</td>
+                    <td class="px-6 py-4 text-gray-700">Kreditverträge, Hypotheken, Leasingverträge</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Mietvertrag</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Übertragung des Mietverhältnisses</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Die Scheidungskonvention</h2>
+
+    <p class="text-gray-700 mb-6">Die Scheidungskonvention ist das zentrale Dokument bei einer einvernehmlichen Scheidung. Sie regelt alle Folgen der Scheidung und muss von beiden Ehegatten unterschrieben werden.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Inhalt der Scheidungskonvention</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Themenbereich</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zu regelnde Punkte</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Kinderbelange</td>
+                    <td class="px-6 py-4 text-gray-700">Elterliche Sorge, Obhut, Betreuungsregelung, Besuchsrecht, Kindesunterhalt</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Güterrecht</td>
+                    <td class="px-6 py-4 text-gray-700">Aufteilung des Vermögens, Vorschlagsbeteiligung, Zuteilung von Vermögenswerten</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Vorsorge</td>
+                    <td class="px-6 py-4 text-gray-700">Teilung der Pensionskassenguthaben (Vorsorgeausgleich)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Nachehelicher Unterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Höhe und Dauer von Unterhaltszahlungen zwischen den Ehegatten</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Wohnung</td>
+                    <td class="px-6 py-4 text-gray-700">Zuweisung der Ehewohnung, Übernahme des Mietvertrags</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Verfahrenskosten</td>
+                    <td class="px-6 py-4 text-gray-700">Aufteilung der Gerichts- und Anwaltskosten</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Die Anhörung vor Gericht</h2>
+
+    <p class="text-gray-700 mb-6">Nach Eingang des Scheidungsbegehrens lädt das Gericht die Ehegatten zu einer Anhörung vor. Die Zeitspanne zwischen Einreichung und Vorladung variiert je nach Kanton und Arbeitsbelastung des Gerichts.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ablauf der Anhörung</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Phase</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Einzelbefragung</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder Ehegatte wird einzeln zum Scheidungswillen befragt</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Gemeinsame Befragung</td>
+                    <td class="px-6 py-4 text-gray-700">Beide Ehegatten werden gemeinsam zur Konvention befragt</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Prüfung durch Gericht</td>
+                    <td class="px-6 py-4 text-gray-700">Das Gericht prüft, ob die Einigung auf reiflicher Überlegung beruht</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Genehmigung</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Genehmigung wird die Scheidung sofort rechtskräftig</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Die Anhörung dauert in der Regel 20-30 Minuten. Das Gericht stellt sicher, dass beide Ehegatten freiwillig geschieden werden wollen und die Konvention verstanden haben.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Anwesenheitspflicht:</p>
+        <p class="text-gray-700">Grundsätzlich müssen beide Ehegatten persönlich zur Anhörung erscheinen. In Ausnahmefällen kann auf Antrag eine Befreiung von der Anwesenheitspflicht gewährt werden, wenn wichtige Gründe vorliegen (Art. 278 ZPO). Bei gemeinsamen Kindern ist eine Befreiung grundsätzlich nicht möglich. In seltenen Ausnahmefällen kann eine Vertretung durch einen Anwalt erfolgen (BGE 131 III 182).</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kosten einer Scheidung</h2>
+
+    <p class="text-gray-700 mb-6">Die <a href="/scheidung/kosten-einer-scheidung" class="text-gold hover:underline font-semibold">Kosten einer Scheidung</a> setzen sich aus Gerichtskosten und allenfalls Anwaltskosten zusammen. Die Höhe hängt stark davon ab, ob es sich um eine einvernehmliche oder strittige Scheidung handelt.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gerichtskosten bei einvernehmlicher Scheidung (Auswahl)</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kanton</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gerichtskosten (ca.)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bemerkung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Zürich</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'500-2'600</td>
+                    <td class="px-6 py-4 text-gray-700">Variiert nach Bezirk</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Bern</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 600-2'000</td>
+                    <td class="px-6 py-4 text-gray-700">Nach Einkommen berechnet</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Basel-Stadt</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 830-1'500</td>
+                    <td class="px-6 py-4 text-gray-700">Günstigster Kanton</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Aargau</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'000-2'000</td>
+                    <td class="px-6 py-4 text-gray-700">Nach Streitwert</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">St. Gallen</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 800-1'800</td>
+                    <td class="px-6 py-4 text-gray-700">Pauschal + Nebenkosten</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kosten bei strittiger Scheidung</h3>
+
+    <p class="text-gray-700 mb-6">Bei einer strittigen Scheidung sind die Kosten deutlich höher:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Gerichtskosten:</strong> CHF 5'000-10'000 oder mehr, je nach Streitwert und Dauer</li>
+        <li><strong>Anwaltskosten:</strong> CHF 10'000-100'000+ pro Partei, je nach Komplexität</li>
+        <li><strong>Gutachterkosten:</strong> Zusätzlich bei Kinderbelangen oder Bewertungsfragen</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Unentgeltliche Rechtspflege:</p>
+        <p class="text-gray-700">Wer nicht über die finanziellen Mittel verfügt, um die Gerichts- und Anwaltskosten zu tragen, kann unentgeltliche Rechtspflege beantragen (Art. 117 ff. ZPO). Das Gesuch wird zusammen mit dem Scheidungsbegehren eingereicht.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Dauer des Scheidungsverfahrens</h2>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Verfahrensart</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Typische Dauer</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Faktoren</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Einvernehmlich (vollständige Einigung)</td>
+                    <td class="px-6 py-4 text-gray-700">1-4 Monate</td>
+                    <td class="px-6 py-4 text-gray-700">Arbeitsbelastung des Gerichts</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Einvernehmlich (Teileinigung)</td>
+                    <td class="px-6 py-4 text-gray-700">4-12 Monate</td>
+                    <td class="px-6 py-4 text-gray-700">Umfang der strittigen Punkte</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Strittig (nach 2 Jahren Trennung)</td>
+                    <td class="px-6 py-4 text-gray-700">1-3 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">Komplexität, Kinderbelange</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Hochstrittig</td>
+                    <td class="px-6 py-4 text-gray-700">3-10+ Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">Rechtsmittelverfahren, Expertise</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtswirkungen der Einreichung</h2>
+
+    <p class="text-gray-700 mb-6">Mit der Einreichung des Scheidungsbegehrens oder der Scheidungsklage treten wichtige Rechtswirkungen ein:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtswirkung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bedeutung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Rechtshängigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Die gerichtliche Zuständigkeit wird fixiert</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 62 ZPO</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Stichtag Güterrecht</td>
+                    <td class="px-6 py-4 text-gray-700">Massgebend für die Zusammensetzung der Gütermassen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 204 Abs. 2 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Stichtag Vorsorgeausgleich</td>
+                    <td class="px-6 py-4 text-gray-700">Massgebend für die zu teilenden Pensionskassenguthaben</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 122 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Sperrwirkung</td>
+                    <td class="px-6 py-4 text-gray-700">Kein weiteres Scheidungsverfahren in derselben Sache möglich</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 64 ZPO</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Vorsorgliche Massnahmen</h2>
+
+    <p class="text-gray-700 mb-6">Zusammen mit dem Scheidungsbegehren oder während des Verfahrens können vorsorgliche Massnahmen beantragt werden (Art. 276 ZPO). Diese regeln die Verhältnisse bis zum rechtskräftigen Scheidungsurteil:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Zuteilung der Obhut über die Kinder</li>
+        <li>Regelung des Besuchs- und Ferienrechts</li>
+        <li>Festsetzung von Kindes- und Ehegattenunterhalt</li>
+        <li>Zuweisung der Ehewohnung an einen Ehegatten</li>
+        <li>Kontaktverbot oder Annäherungsverbot</li>
+        <li>Sicherstellung von Vermögenswerten</li>
+    </ul>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Praktische Tipps beim Scheidung einreichen</h2>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-green-50 p-6 rounded-lg">
+            <h4 class="font-bold text-navy mb-3">Empfohlen</h4>
+            <ul class="text-gray-700 space-y-2">
+                <li>• Frühzeitig alle Unterlagen zusammenstellen</li>
+                <li>• Rechtliche Beratung vor Einreichung einholen</li>
+                <li>• Einvernehmliche Lösung anstreben</li>
+                <li>• Mediation in Betracht ziehen</li>
+                <li>• Vollständige Konvention erstellen lassen</li>
+                <li>• Pensionskassenauszüge rechtzeitig bestellen</li>
+            </ul>
+        </div>
+        <div class="bg-red-50 p-6 rounded-lg">
+            <h4 class="font-bold text-navy mb-3">Zu vermeiden</h4>
+            <ul class="text-gray-700 space-y-2">
+                <li>• Unvollständige Unterlagen einreichen</li>
+                <li>• Vermögen verstecken oder verschieben</li>
+                <li>• Voreilige Entscheidungen unter Emotionen</li>
+                <li>• Kommunikation über Kinder abbrechen</li>
+                <li>• Unrealistische Forderungen stellen</li>
+                <li>• Ohne Beratung komplexe Konvention unterschreiben</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">Eine Scheidung ist ein komplexer rechtlicher Vorgang mit weitreichenden finanziellen und persönlichen Konsequenzen. Auch bei einer einvernehmlichen Scheidung können Fehler in der Konvention zu erheblichen Nachteilen führen. Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> kann Sie bei folgenden Punkten unterstützen:</p>
+
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Prüfung und Erstellung einer rechtssicheren Scheidungskonvention</li>
+            <li>Berechnung von Unterhaltsansprüchen und Vorsorgeausgleich</li>
+            <li>Verhandlung mit dem anderen Ehegatten oder dessen Anwalt</li>
+            <li>Vertretung vor Gericht bei strittigen Verfahren</li>
+            <li>Beantragung von vorsorglichen Massnahmen</li>
+            <li>Unterstützung bei Kinderbelangen (Sorgerecht, Obhut, Besuchsrecht)</li>
+        </ul>
+
+        <p class="text-gray-700 mb-6">Besonders bei komplexen Vermögensverhältnissen, gemeinsamen Kindern oder wenn der andere Ehegatte bereits anwaltlich vertreten ist, sollten Sie einen erfahrenen <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> beiziehen. Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> kennt die Fallstricke und kann Ihre Interessen wirksam vertreten.</p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Lassen Sie sich unverbindlich beraten, wie Sie Ihre Scheidung optimal vorbereiten und einreichen können. Wir prüfen Ihre Situation und zeigen Ihnen die besten Optionen auf.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- Fazit -->
+    <h2 class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Das Einreichen einer Scheidung erfordert sorgfältige Vorbereitung und die Wahl des richtigen Verfahrens. Eine einvernehmliche Scheidung auf gemeinsames Begehren ist der schnellste, kostengünstigste und in der Regel auch schonendste Weg. Wenn eine Einigung nicht möglich ist, bleibt nur die Scheidungsklage nach zweijährigem Getrenntleben oder – in Ausnahmefällen – wegen Unzumutbarkeit.</p>
+
+    <p class="text-gray-700 mb-6">Unabhängig vom gewählten Verfahren sollten Sie vollständige Unterlagen einreichen, die Scheidungskonvention sorgfältig prüfen lassen und sich über die finanziellen Folgen im Klaren sein. Eine fundierte rechtliche Beratung kann helfen, kostspielige Fehler zu vermeiden und Ihre Interessen zu wahren.</p>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wo reiche ich die Scheidung ein?</h3>
+                <p class="text-gray-700">Das Scheidungsbegehren wird beim Bezirksgericht (oder je nach Kanton Regionalgericht/Zivilgericht) am Wohnsitz eines der Ehegatten eingereicht. Bei verschiedenen Wohnsitzen können Sie wählen, was bei unterschiedlichen kantonalen Gerichtskosten relevant sein kann.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Welche Unterlagen brauche ich für die Scheidung?</h3>
+                <p class="text-gray-700">Für eine einvernehmliche Scheidung benötigen Sie: Scheidungsbegehren, Scheidungskonvention, Familienausweis (Original, nicht älter als 6 Monate), Ausweiskopien, Pensionskassenbestätigungen beider Ehegatten, Einkommensnachweise (Lohnausweise) und Steuererklärungen der letzten 2 Jahre.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was kostet es, die Scheidung einzureichen?</h3>
+                <p class="text-gray-700">Die Gerichtskosten bei einer einvernehmlichen Scheidung liegen je nach Kanton zwischen CHF 600 und CHF 2'600. Bei strittigen Verfahren können die Kosten CHF 10'000 und mehr betragen. Hinzu kommen allenfalls Anwaltskosten.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie lange dauert eine Scheidung nach Einreichung?</h3>
+                <p class="text-gray-700">Eine einvernehmliche Scheidung mit vollständiger Einigung dauert typischerweise 1-4 Monate. Bei Teileinigung rechnen Sie mit 4-12 Monaten. Strittige Scheidungen können 1-3 Jahre oder bei hochstrittigen Fällen sogar länger dauern.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich die Scheidung auch ohne meinen Partner einreichen?</h3>
+                <p class="text-gray-700">Ja, Sie können eine Scheidungsklage auf einseitiges Begehren einreichen. Voraussetzung ist in der Regel, dass Sie mindestens 2 Jahre getrennt gelebt haben (Art. 114 ZGB). Nur bei schwerwiegenden Gründen wie Gewalt ist eine sofortige Scheidung ohne Trennungsfrist möglich (Art. 115 ZGB).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen Scheidungsbegehren und Scheidungsklage?</h3>
+                <p class="text-gray-700">Das Scheidungsbegehren wird bei einer einvernehmlichen Scheidung von beiden Ehegatten gemeinsam eingereicht (Art. 111-112 ZGB). Die Scheidungsklage ist das einseitige Begehren eines Ehegatten, wenn der andere nicht einverstanden ist (Art. 114-115 ZGB).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Muss ich zur Anhörung vor Gericht persönlich erscheinen?</h3>
+                <p class="text-gray-700">Ja, grundsätzlich müssen beide Ehegatten persönlich zur Anhörung erscheinen. In Ausnahmefällen kann auf Antrag eine Befreiung gewährt werden (Art. 278 ZPO). Bei gemeinsamen Kindern ist eine Befreiung grundsätzlich nicht möglich.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert nach der Einreichung der Scheidung?</h3>
+                <p class="text-gray-700">Nach der Einreichung prüft das Gericht die Vollständigkeit der Unterlagen und fordert den Kostenvorschuss an. Dann werden Sie zur Anhörung vorgeladen. Bei vollständiger Einigung und Genehmigung durch das Gericht wird die Scheidung am Ende der Anhörung sofort rechtskräftig.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Relevante Gesetzesbestimmungen:</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li>Art. 111-112 ZGB (Scheidung auf gemeinsames Begehren)</li>
+            <li>Art. 114 ZGB (Scheidung nach Getrenntleben)</li>
+            <li>Art. 115 ZGB (Scheidung wegen Unzumutbarkeit)</li>
+            <li>Art. 23 ZPO (Örtliche Zuständigkeit)</li>
+            <li>Art. 62 ZPO (Rechtshängigkeit)</li>
+            <li>Art. 276 ZPO (Vorsorgliche Massnahmen)</li>
+            <li>Art. 117 ff. ZPO (Unentgeltliche Rechtspflege)</li>
+        </ul>
+    </div>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Scheidung einreichen in der Schweiz: Ablauf, Unterlagen & Kosten",
+        "description": "Scheidung einreichen Schweiz: Vollständige Anleitung mit Schritt-für-Schritt Ablauf, allen Unterlagen, Kosten nach Kanton & Gerichtsverfahren. Art. 111-115 ZGB erklärt.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-20",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/scheidung/scheidung-einreichen"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Wo reiche ich die Scheidung ein?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das Scheidungsbegehren wird beim Bezirksgericht (oder je nach Kanton Regionalgericht/Zivilgericht) am Wohnsitz eines der Ehegatten eingereicht. Bei verschiedenen Wohnsitzen können Sie wählen, was bei unterschiedlichen kantonalen Gerichtskosten relevant sein kann."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welche Unterlagen brauche ich für die Scheidung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Für eine einvernehmliche Scheidung benötigen Sie: Scheidungsbegehren, Scheidungskonvention, Familienausweis (Original, nicht älter als 6 Monate), Ausweiskopien, Pensionskassenbestätigungen beider Ehegatten, Einkommensnachweise (Lohnausweise) und Steuererklärungen der letzten 2 Jahre."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was kostet es, die Scheidung einzureichen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Gerichtskosten bei einer einvernehmlichen Scheidung liegen je nach Kanton zwischen CHF 600 und CHF 2'600. Bei strittigen Verfahren können die Kosten CHF 10'000 und mehr betragen. Hinzu kommen allenfalls Anwaltskosten."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie lange dauert eine Scheidung nach Einreichung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Eine einvernehmliche Scheidung mit vollständiger Einigung dauert typischerweise 1-4 Monate. Bei Teileinigung rechnen Sie mit 4-12 Monaten. Strittige Scheidungen können 1-3 Jahre oder bei hochstrittigen Fällen sogar länger dauern."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich die Scheidung auch ohne meinen Partner einreichen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, Sie können eine Scheidungsklage auf einseitiges Begehren einreichen. Voraussetzung ist in der Regel, dass Sie mindestens 2 Jahre getrennt gelebt haben (Art. 114 ZGB). Nur bei schwerwiegenden Gründen wie Gewalt ist eine sofortige Scheidung ohne Trennungsfrist möglich (Art. 115 ZGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen Scheidungsbegehren und Scheidungsklage?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das Scheidungsbegehren wird bei einer einvernehmlichen Scheidung von beiden Ehegatten gemeinsam eingereicht (Art. 111-112 ZGB). Die Scheidungsklage ist das einseitige Begehren eines Ehegatten, wenn der andere nicht einverstanden ist (Art. 114-115 ZGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Muss ich zur Anhörung vor Gericht persönlich erscheinen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, grundsätzlich müssen beide Ehegatten persönlich zur Anhörung erscheinen. In Ausnahmefällen kann auf Antrag eine Befreiung gewährt werden (Art. 278 ZPO). Bei gemeinsamen Kindern ist eine Befreiung grundsätzlich nicht möglich."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert nach der Einreichung der Scheidung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nach der Einreichung prüft das Gericht die Vollständigkeit der Unterlagen und fordert den Kostenvorschuss an. Dann werden Sie zur Anhörung vorgeladen. Bei vollständiger Einigung und Genehmigung durch das Gericht wird die Scheidung am Ende der Anhörung sofort rechtskräftig."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Scheidung",
+                "item": "https://familienrechtanwalt.ch/scheidung"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Scheidung einreichen in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/scheidung/scheidung-einreichen"
+            }
+        ]
+    })} />
+
 </ArticleLayout>

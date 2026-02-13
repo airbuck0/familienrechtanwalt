@@ -1,0 +1,1297 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+---
+
+<ArticleLayout
+    title="Häusliche Gewalt in der Schweiz"
+    description="Häusliche Gewalt: Alle Schutzmassnahmen nach Art. 28b ZGB, Strafrecht (inkl. Stalking Art. 181b StGB) & Opferhilfe. Schritt-für-Schritt-Anleitung, Notfallnummern & BGE-Rechtsprechung."
+    keywords="häusliche Gewalt Schweiz, Gewaltschutzmassnahmen, Art. 28b ZGB, Wegweisung, Kontaktverbot, Rayonverbot, Opferhilfe, Stalking Schweiz, Annäherungsverbot, Frauenhaus, Gewaltschutzgesetz"
+    category="Eherecht"
+    categoryLink="/eherecht"
+>
+
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Häusliche Gewalt ist in der Schweiz ein <strong>Offizialdelikt</strong>: Einfache Körperverletzung, wiederholte Tätlichkeiten und Drohung gegen den Partner werden seit 2004 von Amtes wegen verfolgt (Art. 123 Ziff. 2, Art. 126 Abs. 2, Art. 180 Abs. 2 StGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Das Zivilrecht bietet umfassende Schutzmassnahmen: <strong>Annäherungsverbot, Kontaktverbot, Rayonverbot und Wegweisung</strong> aus der gemeinsamen Wohnung (Art. 28b ZGB). Seit 2022 ist auch eine <strong>elektronische Fussfessel</strong> möglich (Art. 28c ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Polizei kann eine <strong>sofortige Wegweisung</strong> des gewalttätigen Partners anordnen. Die Dauer variiert kantonal zwischen 10 und 20 Tagen (kantonale Gewaltschutzgesetze).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Stalking</strong> (Nachstellung) ist seit dem 1. Januar 2026 ein eigenständiger Straftatbestand (Art. 181b StGB), der mit Freiheitsstrafe bis zu 3 Jahren bestraft wird.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die <strong>Opferhilfe</strong> (OHG) bietet kostenlose Beratung, Soforthilfe, Entschädigung (max. CHF 130'000) und Genugtuung (max. CHF 76'000) -- unabhängig davon, ob eine Strafanzeige erstattet wird.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bei <strong>akuter Gefahr</strong>: Polizei 117, Dargebotene Hand 143, Frauenhaus-Hotline 0800 44 88 00. Schutz ist rund um die Uhr verfügbar.</span>
+            </li>
+        </ul>
+    </div>
+
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Häusliche Gewalt betrifft in der Schweiz jedes Jahr über 21'000 registrierte Fälle -- die Dunkelziffer liegt um ein Vielfaches höher. Ob physische, psychische, sexuelle oder ökonomische Gewalt: Betroffene haben Anspruch auf umfassenden Schutz durch Polizei, Zivilgericht, Strafrecht und Opferhilfe. Dieser Ratgeber erklärt alle rechtlichen Instrumente, Schutzmassnahmen und Hilfsangebote systematisch und praxisnah.</p>
+
+    <!-- Inhaltsverzeichnis -->
+    <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-12">
+        <h2 class="font-serif text-xl font-bold text-navy mb-4">Inhaltsverzeichnis</h2>
+        <ol class="space-y-2 text-gray-700">
+            <li><a href="#definition" class="text-gold hover:underline">1. Was ist häusliche Gewalt? -- Definition und Formen</a></li>
+            <li><a href="#statistiken" class="text-gold hover:underline">2. Häusliche Gewalt in Zahlen -- Statistiken Schweiz</a></li>
+            <li><a href="#sofortmassnahmen" class="text-gold hover:underline">3. Sofortmassnahmen: Was tun bei akuter Gefahr?</a></li>
+            <li><a href="#polizei" class="text-gold hover:underline">4. Polizeiliche Schutzmassnahmen (kantonales Recht)</a></li>
+            <li><a href="#zivilrecht" class="text-gold hover:underline">5. Zivilrechtlicher Gewaltschutz (Art. 28b ZGB)</a></li>
+            <li><a href="#eheschutz" class="text-gold hover:underline">6. Eheschutzverfahren bei häuslicher Gewalt (Art. 172 ff. ZGB)</a></li>
+            <li><a href="#strafrecht" class="text-gold hover:underline">7. Strafrechtlicher Schutz</a></li>
+            <li><a href="#stalking" class="text-gold hover:underline">8. Stalking als neuer Straftatbestand (Art. 181b StGB)</a></li>
+            <li><a href="#opferhilfe" class="text-gold hover:underline">9. Opferhilfe (OHG)</a></li>
+            <li><a href="#kantone" class="text-gold hover:underline">10. Kantonale Gewaltschutzgesetze im Vergleich</a></li>
+            <li><a href="#kinder" class="text-gold hover:underline">11. Häusliche Gewalt und Kinder -- Kindesschutz</a></li>
+            <li><a href="#scheidung" class="text-gold hover:underline">12. Häusliche Gewalt und Scheidung</a></li>
+            <li><a href="#migration" class="text-gold hover:underline">13. Besondere Situationen: Migration, Männer, LGBTQ+</a></li>
+            <li><a href="#istanbul" class="text-gold hover:underline">14. Istanbul-Konvention und internationale Verpflichtungen</a></li>
+            <li><a href="#bge" class="text-gold hover:underline">15. Übersicht der wichtigsten BGE-Entscheide</a></li>
+            <li><a href="#anwalt" class="text-gold hover:underline">16. Wann Sie einen Anwalt für Familienrecht beiziehen sollten</a></li>
+            <li><a href="#fazit" class="text-gold hover:underline">17. Fazit</a></li>
+            <li><a href="#faq" class="text-gold hover:underline">18. Häufig gestellte Fragen (FAQ)</a></li>
+        </ol>
+    </div>
+
+    <!-- 1. Definition -->
+    <h2 id="definition" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">1. Was ist häusliche Gewalt? -- Definition und Formen</h2>
+
+    <p class="text-gray-700 mb-6">Häusliche Gewalt umfasst jede Form von Gewalt, die innerhalb einer bestehenden oder aufgelösten familiären, ehelichen oder partnerschaftlichen Beziehung ausgeübt wird. Sie ist nicht auf das gemeinsame Wohnen beschränkt und kann auch nach einer Trennung oder <a href="/scheidung/ablauf-einer-scheidung" class="text-gold hover:underline font-semibold">Scheidung</a> fortdauern. Betroffen sind nicht nur Ehepartner, sondern auch Konkubinatspartner, eingetragene Partner, Ex-Partner, Eltern-Kind-Beziehungen und weitere Verwandtschaftsverhältnisse.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Formen häuslicher Gewalt</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Form</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beispiele</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Strafrechtliche Einordnung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Körperliche Gewalt</td>
+                    <td class="px-6 py-4 text-gray-700">Schlagen, Treten, Stossen, Würgen, Beissen, Verbrennen, Waffengewalt</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 122/123 StGB (Körperverletzung), Art. 126 StGB (Tätlichkeiten)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Psychische Gewalt</td>
+                    <td class="px-6 py-4 text-gray-700">Drohungen, Einschüchterung, systematische Abwertung, Kontrolle, Isolation, Gaslighting</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 180 StGB (Drohung), Art. 181 StGB (Nötigung), Art. 177 StGB (Beschimpfung)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Sexuelle Gewalt</td>
+                    <td class="px-6 py-4 text-gray-700">Vergewaltigung (auch in der Ehe), sexuelle Nötigung, unerwünschte sexuelle Handlungen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 189 StGB (sexuelle Nötigung), Art. 190 StGB (Vergewaltigung) -- beides Offizialdelikte</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Ökonomische Gewalt</td>
+                    <td class="px-6 py-4 text-gray-700">Entzug finanzieller Mittel, Arbeitsverbot, Kontrolle des Einkommens, Verschuldung des Partners</td>
+                    <td class="px-6 py-4 text-gray-700">Je nach Konstellation Art. 181 StGB (Nötigung)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Soziale Gewalt</td>
+                    <td class="px-6 py-4 text-gray-700">Isolation von Familie und Freunden, Kontaktverbote, Überwachung, Einsperren</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 181 StGB (Nötigung), Art. 183 StGB (Freiheitsberaubung)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Digitale Gewalt</td>
+                    <td class="px-6 py-4 text-gray-700">Cyberstalking, Überwachungs-Apps, GPS-Tracker, Ausspionieren von Handys und E-Mails, Verbreitung intimer Bilder</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 181b StGB (Stalking), Art. 179bis ff. StGB (Abhören/Aufnehmen)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Der Gewaltkreislauf nach Walker</h3>
+
+    <p class="text-gray-700 mb-6">Häusliche Gewalt verläuft typischerweise in einem wiederkehrenden Muster -- dem sogenannten <strong>Gewaltkreislauf</strong> (nach Lenore Walker):</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Phase</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Phase 1: Spannungsaufbau</td>
+                    <td class="px-6 py-4 text-gray-700">Zunehmende Reizbarkeit, Kritik, verbale Aggression. Das Opfer versucht, den Partner zu beschwichtigen und Konflikte zu vermeiden.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Phase 2: Gewaltausbruch</td>
+                    <td class="px-6 py-4 text-gray-700">Akute Gewalthandlung -- körperlich, sexuell oder massiv psychisch. Der Täter verliert (scheinbar) die Kontrolle.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Phase 3: Versöhnung und Reue</td>
+                    <td class="px-6 py-4 text-gray-700">Der Täter zeigt Reue, entschuldigt sich, verspricht Besserung, überhäuft das Opfer mit Aufmerksamkeit («Honeymoon-Phase»). Das Opfer schöpft Hoffnung auf Veränderung.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Dieser Kreislauf wiederholt sich typischerweise mit zunehmender Intensität: Die Gewaltausbrüche werden häufiger und heftiger, die Versöhnungsphasen kürzer. Das Erkennen dieses Musters ist für Betroffene oft der erste Schritt, um professionelle Hilfe zu suchen.</p>
+
+    <!-- 2. Statistiken -->
+    <h2 id="statistiken" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">2. Häusliche Gewalt in Zahlen -- Statistiken Schweiz</h2>
+
+    <p class="text-gray-700 mb-6">Die Polizeiliche Kriminalstatistik (PKS) des Bundesamts für Statistik erfasst häusliche Gewalt seit 2009 systematisch. Die Zahlen zeigen einen besorgniserregenden Trend.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kennzahl (2024)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Wert</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Registrierte Straftaten im häuslichen Bereich</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">21'127 (+6,1 % gegenüber 2023)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Vollendete Tötungsdelikte im häuslichen Bereich</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">26 von 45 landesweit (über die Hälfte)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Anteil Frauen bei schwerer häuslicher Gewalt (Opfer)</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">88 %</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Anteil Männer unter den Beschuldigten</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">71 %</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Gewalt in bestehender Partnerschaft</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">54,6 % aller Fälle</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Gewalt in ehemaliger Partnerschaft</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">22,5 % aller Fälle</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Eltern-Kind-Beziehung</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">14,6 % aller Fälle</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Dunkelziffer:</p>
+        <p class="text-gray-700">Die polizeilich registrierten Fälle bilden nur die Spitze des Eisbergs. Das Bundesamt für Statistik schätzt die <strong>Dunkelziffer um ein Vielfaches höher</strong> ein. Insbesondere psychische Gewalt, ökonomische Gewalt und sexuelle Gewalt in der Partnerschaft werden selten angezeigt. Gemäss dem unabhängigen Forschungsprojekt Stop Femizid (stopfemizid.ch) ereignen sich in der Schweiz durchschnittlich rund <strong>drei Femizide pro Monat</strong>.</p>
+    </div>
+
+    <!-- 3. Sofortmassnahmen -->
+    <h2 id="sofortmassnahmen" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">3. Sofortmassnahmen: Was tun bei akuter Gefahr?</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Notfallnummern und Anlaufstellen</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Nummer</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Organisation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erreichbarkeit</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">117</td>
+                    <td class="px-6 py-4 text-gray-700">Polizei (Notruf)</td>
+                    <td class="px-6 py-4 text-gray-700">24/7</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">112</td>
+                    <td class="px-6 py-4 text-gray-700">Europäischer Notruf</td>
+                    <td class="px-6 py-4 text-gray-700">24/7</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">143</td>
+                    <td class="px-6 py-4 text-gray-700">Dargebotene Hand (Krisentelefon)</td>
+                    <td class="px-6 py-4 text-gray-700">24/7</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">0800 44 88 00</td>
+                    <td class="px-6 py-4 text-gray-700">Frauenhaus-Hotline Schweiz</td>
+                    <td class="px-6 py-4 text-gray-700">24/7</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">147</td>
+                    <td class="px-6 py-4 text-gray-700">Pro Juventute (für Kinder und Jugendliche)</td>
+                    <td class="px-6 py-4 text-gray-700">24/7</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">0800 133 133</td>
+                    <td class="px-6 py-4 text-gray-700">LGBT+ Helpline</td>
+                    <td class="px-6 py-4 text-gray-700">Mo-Do 19-22 Uhr</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Beweissicherung -- Checkliste</h3>
+
+    <p class="text-gray-700 mb-6">Eine frühzeitige Beweissicherung ist für spätere Gerichtsverfahren entscheidend. Die Dokumentation kann unabhängig von einer Strafanzeige erfolgen:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beweismittel</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Hinweise</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Ärztliches Attest</td>
+                    <td class="px-6 py-4 text-gray-700">Arztbesuch zeitnah dokumentieren; Verletzungen detailliert beschreiben lassen (Grösse, Farbe, Lokalisation). Rechtsmedizinische Untersuchung bei sexueller Gewalt innert 72 Stunden.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Fotografien</td>
+                    <td class="px-6 py-4 text-gray-700">Verletzungen mit Datum fotografieren (Smartphone mit automatischer Zeitangabe). Beschädigte Gegenstände, Verwüstungen dokumentieren.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Digitale Kommunikation</td>
+                    <td class="px-6 py-4 text-gray-700">Drohende SMS, WhatsApp-Nachrichten, E-Mails, Sprachnachrichten sichern (Screenshots mit Datum). Nicht löschen.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Polizeirapport</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder Polizeieinsatz wird dokumentiert. Auch wenn keine Anzeige erstattet wird, wird ein Rapport erstellt.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Zeugenaussagen</td>
+                    <td class="px-6 py-4 text-gray-700">Nachbarn, Familienangehörige, Freunde als Zeugen benennen. Personen, die Verletzungen gesehen oder Streit gehört haben.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Berichte Beratungsstellen</td>
+                    <td class="px-6 py-4 text-gray-700">Berichte von Opferhilfe-Beratungsstellen oder Frauenhäusern. Professionelle Einschätzung der Gewaltsituation.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Tagebucheinträge</td>
+                    <td class="px-6 py-4 text-gray-700">Zeitnahe Dokumentation jedes Vorfalls mit Datum, Uhrzeit, Beschreibung, allfälligen Zeugen. Dient als zeitgenössische Dokumentation.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig:</p>
+        <p class="text-gray-700">Die Beweissicherung erfordert <strong>keine Strafanzeige</strong>. Sie können Verletzungen dokumentieren lassen und sich beraten lassen, ohne gleichzeitig eine Anzeige zu erstatten. Die gesicherten Beweise können auch zu einem späteren Zeitpunkt in einem Straf- oder Zivilverfahren verwendet werden.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Frauenhaus und Schutzunterkünfte</h3>
+
+    <p class="text-gray-700 mb-6">In der Schweiz gibt es 22 Frauenhäuser, die Betroffenen (auch mit Kindern) rund um die Uhr Aufnahme bieten. Der Aufenthalt ist vertraulich -- die Adresse des Frauenhauses wird geheim gehalten. Die Kosten der ersten 35 Tage werden im Rahmen der Opferhilfe als Soforthilfe übernommen, sofern glaubhaft gemacht wird, dass eine Straftat vorliegt. Für den Zugang ist keine Strafanzeige und kein Gerichtsentscheid erforderlich -- ein Anruf bei der Hotline genügt.</p>
+
+    <!-- 4. Polizeiliche Schutzmassnahmen -->
+    <h2 id="polizei" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">4. Polizeiliche Schutzmassnahmen (kantonales Recht)</h2>
+
+    <p class="text-gray-700 mb-6">Auf Bundesebene ermächtigt Art. 28b Abs. 4 ZGB die Kantone, eine Behörde (typischerweise die Polizei) zu bezeichnen, die in Krisensituationen eine <strong>sofortige Wegweisung</strong> aus der gemeinsamen Wohnung anordnen kann. Jeder Kanton hat dies in einem eigenen Gewaltschutzgesetz oder im Polizeigesetz umgesetzt.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Was passiert bei einem Polizeieinsatz?</h3>
+
+    <p class="text-gray-700 mb-6">Ruft das Opfer oder eine Drittperson die Polizei (117), erfolgt in der Regel folgendes Vorgehen: Die Polizei erscheint vor Ort und trennt die Parteien. Sie nimmt die Situation auf und erstellt einen Rapport. Bei Offizialdelikten (einfache Körperverletzung, wiederholte Tätlichkeiten, Drohung gegen den Partner) erfolgt automatisch eine Anzeige -- unabhängig vom Willen des Opfers. Die Polizei informiert das Opfer über seine Rechte (Opferhilfe, Beratungsstellen, rechtliche Möglichkeiten). Bei Vorliegen einer Gefährdung ordnet die Polizei eine oder mehrere Schutzmassnahmen an. Sind Kinder im Haushalt, wird die <a href="/sorgerecht/kesb" class="text-gold hover:underline font-semibold">KESB</a> informiert.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Polizeiliche Massnahmen im Überblick</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Massnahme</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Wirkung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Wegweisung</td>
+                    <td class="px-6 py-4 text-gray-700">Sofortige Entfernung der gewalttätigen Person aus der gemeinsamen Wohnung. Auch der Eigentümer der Wohnung kann weggewiesen werden (BGE 134 I 140).</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Rückkehrverbot</td>
+                    <td class="px-6 py-4 text-gray-700">Verbot, in die gemeinsame Wohnung zurückzukehren, für die Dauer der polizeilichen Massnahme.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kontaktverbot</td>
+                    <td class="px-6 py-4 text-gray-700">Verbot jeder Form der Kontaktaufnahme -- persönlich, telefonisch, schriftlich, elektronisch.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Rayonverbot</td>
+                    <td class="px-6 py-4 text-gray-700">Betretungsverbot für bestimmte Gebiete (Umkreis der Wohnung, Arbeitsort des Opfers, Schule der Kinder).</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Dauer der polizeilichen Massnahmen nach Kanton</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kanton</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Dauer Wegweisung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Besonderheiten</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Zürich</td>
+                    <td class="px-6 py-4 text-gray-700">Gewaltschutzgesetz (GSG), seit 2007</td>
+                    <td class="px-6 py-4 text-gray-700">14 Tage</td>
+                    <td class="px-6 py-4 text-gray-700">Verlängerung durch Zivilgericht bis 3 Monate; Pflichtberatung für Täter</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Bern</td>
+                    <td class="px-6 py-4 text-gray-700">Polizeigesetz (PolG), seit 2020</td>
+                    <td class="px-6 py-4 text-gray-700">20 Tage</td>
+                    <td class="px-6 py-4 text-gray-700">Breiter Schutz: auch Arbeitsort, regelmässige Aufenthaltsorte</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Basel-Stadt</td>
+                    <td class="px-6 py-4 text-gray-700">Gewaltschutzgesetz, seit 2007</td>
+                    <td class="px-6 py-4 text-gray-700">14 Tage</td>
+                    <td class="px-6 py-4 text-gray-700">Struktur ähnlich Zürcher Modell</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Basel-Landschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Gewaltschutzgesetz, seit 2006</td>
+                    <td class="px-6 py-4 text-gray-700">14 Tage</td>
+                    <td class="px-6 py-4 text-gray-700">Erstes GSG in der Region Basel</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Aargau</td>
+                    <td class="px-6 py-4 text-gray-700">Polizeigesetz</td>
+                    <td class="px-6 py-4 text-gray-700">20 Tage</td>
+                    <td class="px-6 py-4 text-gray-700">Inkl. Annäherungs- und Kontaktverbot</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Luzern</td>
+                    <td class="px-6 py-4 text-gray-700">Polizeigesetz</td>
+                    <td class="px-6 py-4 text-gray-700">20 Tage</td>
+                    <td class="px-6 py-4 text-gray-700">Verlängerte Maximaldauer</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">St. Gallen</td>
+                    <td class="px-6 py-4 text-gray-700">Polizeigesetz</td>
+                    <td class="px-6 py-4 text-gray-700">14 Tage</td>
+                    <td class="px-6 py-4 text-gray-700">Verlängerung durch Zivilgericht möglich</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Was passiert nach Ablauf der polizeilichen Massnahmen?</h3>
+
+    <p class="text-gray-700 mb-6">Die polizeilichen Massnahmen sind <strong>zeitlich befristet</strong> (10-20 Tage). Nach ihrem Ablauf kehrt die gewalttätige Person automatisch in die gemeinsame Wohnung zurück, <strong>sofern das Opfer nicht rechtzeitig gerichtliche Schutzmassnahmen beantragt hat</strong>. Dies ist eine bekannte Schutzlücke. Das Opfer muss daher innerhalb der polizeilichen Frist (in Zürich: innert 8 Arbeitstagen) beim Zivilgericht einen Antrag auf Schutzmassnahmen nach Art. 28b ZGB stellen oder ein <a href="/eherecht/eheschutz" class="text-gold hover:underline font-semibold">Eheschutzverfahren</a> einleiten, um den Schutz über die polizeiliche Frist hinaus zu verlängern.</p>
+
+    <!-- 5. Zivilrechtlicher Gewaltschutz -->
+    <h2 id="zivilrecht" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">5. Zivilrechtlicher Gewaltschutz (Art. 28b ZGB)</h2>
+
+    <p class="text-gray-700 mb-6">Art. 28b ZGB ist die zentrale bundesrechtliche Norm für den zivilrechtlichen Schutz gegen Gewalt, Drohungen und Nachstellungen (Stalking). Er wurde am 1. Juli 2007 eingeführt und mit Revisionen am 1. Juli 2020 sowie am 1. Januar 2022 erheblich verstärkt. Er gilt für <strong>alle Personen</strong> -- unabhängig von Zivilstand oder Beziehungsform.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Massnahmen nach Art. 28b Abs. 1 ZGB</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Massnahme</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Wirkung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Annäherungsverbot</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 28b Abs. 1 Ziff. 1 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Verbot, sich dem Opfer zu nähern oder sich in einem bestimmten Umkreis der Wohnung aufzuhalten.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Aufenthaltsverbot / Rayonverbot</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 28b Abs. 1 Ziff. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Verbot, sich an bestimmten Orten aufzuhalten (bestimmte Strassen, Plätze, Quartiere -- z.B. Umgebung des Arbeitsplatzes oder der Schule der Kinder).</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kontaktverbot</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 28b Abs. 1 Ziff. 3 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Verbot, mit dem Opfer telefonisch, schriftlich oder elektronisch Kontakt aufzunehmen oder es in anderer Weise zu belästigen.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Wegweisung aus der Wohnung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 28b Abs. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Ausweisung der gewalttätigen Person aus der gemeinsamen Wohnung für eine bestimmte Zeit. Einmal verlängerbar aus wichtigen Gründen. Auch der Eigentümer kann ausgewiesen werden.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Die Aufzählung in Art. 28b Abs. 1 ZGB ist <strong>nicht abschliessend</strong> (Wort «insbesondere»). Das Gericht kann auch weitere, nicht ausdrücklich genannte Massnahmen anordnen, sofern sie dem Schutzzweck dienen. Gemäss BGE 144 III 257 ist das Gericht bei der <strong>zeitlichen Begrenzung</strong> der Massnahmen frei: Bei Stalking ist eine unbefristete Anordnung oft angemessener, da ein Verlängerungsgesuch zu erneuter Konfrontation zwischen Opfer und Täter führen würde.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Elektronische Überwachung / Fussfessel (Art. 28c ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Seit dem 1. Januar 2022 ermöglicht Art. 28c ZGB eine technische Durchsetzung von Schutzmassnahmen: Bei Verstoss gegen eine Anordnung nach Art. 28b ZGB kann das Gericht auf Antrag des Opfers eine <strong>elektronische Vorrichtung</strong> (GPS-Fussfessel) anordnen, die der gewalttätigen Person permanent angelegt wird und eine lückenlose Standortbestimmung ermöglicht.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Details</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Voraussetzung</td>
+                    <td class="px-6 py-4 text-gray-700">Verstoss gegen eine bestehende Anordnung nach Art. 28b ZGB (oder drohender Verstoss)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Anordnung</td>
+                    <td class="px-6 py-4 text-gray-700">Nur auf <strong>Antrag des Opfers</strong> -- nicht von Amtes wegen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Dauer</td>
+                    <td class="px-6 py-4 text-gray-700">Maximal 6 Monate; verlängerbar um jeweils weitere 6 Monate (keine Obergrenze der Verlängerungen)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kosten für das Opfer</td>
+                    <td class="px-6 py-4 text-gray-700"><strong>Keine</strong> -- das Opfer trägt keinerlei Kosten (Art. 28c Abs. 4 ZGB)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Datenschutz</td>
+                    <td class="px-6 py-4 text-gray-700">Standortdaten dürfen nur für die Durchsetzung der Massnahme verwendet werden. Löschung innert 12 Monaten nach Ende der Massnahme.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Superprovisorische Massnahmen (Art. 265 ZPO)</h3>
+
+    <p class="text-gray-700 mb-6">Bei besonderer Dringlichkeit kann das Gericht <strong>superprovisorische Massnahmen ohne vorgängige Anhörung der Gegenpartei</strong> anordnen (Art. 265 ZPO). Die Hürde dafür ist eine <strong>Glaubhaftmachung</strong> (kein voller Beweis erforderlich): Das Opfer muss glaubhaft machen, dass es durch Gewalt, Drohungen oder Nachstellungen unmittelbar gefährdet ist. Polizeirapporte, Arztzeugnisse, Fotografien und Zeugenaussagen genügen. Nach der superprovisorischen Anordnung wird die Gegenpartei nachträglich angehört -- das Gericht bestätigt, ändert oder hebt die Massnahmen danach auf.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Verfahren: Schritt für Schritt</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Schritt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Was zu tun ist</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">1. Zuständiges Gericht</td>
+                    <td class="px-6 py-4 text-gray-700">Bezirksgericht (Einzelrichter) am Wohnsitz einer der Parteien (Art. 20 lit. a ZPO). Kein Friedensrichter zuständig.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">2. Antrag stellen</td>
+                    <td class="px-6 py-4 text-gray-700">Schriftliche Klage oder Gesuch um vorsorgliche Massnahmen. In Notfällen: superprovisorisches Gesuch (auch persönlich am Gericht während der Bürozeiten).</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">3. Glaubhaftmachung</td>
+                    <td class="px-6 py-4 text-gray-700">Beweise vorlegen: Polizeirapporte, Arztzeugnisse, Fotos, Screenshots von Drohungen, Zeugenaussagen.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">4. Gerichtsentscheid</td>
+                    <td class="px-6 py-4 text-gray-700">Superprovisorisch: Entscheid innert Stunden bis Tagen. Vorsorgliche Massnahmen: nach Anhörung beider Parteien.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">5. Durchsetzung</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Missachtung: Strafanzeige (Art. 292 StGB: Ungehorsam gegen amtliche Verfügung) und ggf. elektronische Überwachung (Art. 28c ZGB).</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Verfahrensrechtliche Besonderheiten:</p>
+        <p class="text-gray-700">Für Art. 28b-Verfahren gilt das <strong>vereinfachte Verfahren</strong> (Art. 243 Abs. 2 lit. b ZPO). Es ist <strong>keine vorgängige Schlichtung</strong> erforderlich und <strong>keine Gerichtsferien</strong> anwendbar -- das Verfahren kann jederzeit eingeleitet werden. Seit der Revision 2020 muss das Gericht seinen Entscheid automatisch der <strong>KESB</strong> und anderen zuständigen Stellen mitteilen (Art. 28b Abs. 3bis ZGB).</p>
+    </div>
+
+    <!-- 6. Eheschutzverfahren -->
+    <h2 id="eheschutz" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">6. Eheschutzverfahren bei häuslicher Gewalt (Art. 172 ff. ZGB)</h2>
+
+    <p class="text-gray-700 mb-6">Für <strong>verheiratete Paare</strong> bietet das <a href="/eherecht/eheschutz" class="text-gold hover:underline font-semibold">Eheschutzverfahren</a> einen umfassenderen Schutz als Art. 28b ZGB allein. Art. 172 Abs. 3 ZGB erlaubt dem Eheschutzrichter ausdrücklich, die gleichen Massnahmen wie nach Art. 28b ZGB anzuordnen -- zusätzlich kann er aber auch Unterhalt, Obhut und Sorgerecht regeln.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Art. 28b ZGB (alle Personen)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Eheschutz (Art. 172 ff. ZGB)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Anwendungsbereich</td>
+                    <td class="px-6 py-4 text-gray-700">Alle Personen (auch unverheiratete)</td>
+                    <td class="px-6 py-4 text-gray-700">Nur Ehegatten</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Gewaltschutz</td>
+                    <td class="px-6 py-4 text-gray-700">Annäherungs-, Kontakt-, Rayonverbot, Wegweisung</td>
+                    <td class="px-6 py-4 text-gray-700">Gleiche Massnahmen (Art. 172 Abs. 3 ZGB)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Wohnungszuweisung</td>
+                    <td class="px-6 py-4 text-gray-700">Befristete Wegweisung</td>
+                    <td class="px-6 py-4 text-gray-700">Zuweisung der ehelichen Wohnung (Art. 176 Abs. 1 Ziff. 1 ZGB) -- kann dauerhaft gelten</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Unterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Keine Unterhaltsregelung</td>
+                    <td class="px-6 py-4 text-gray-700">Ehegatten- und <a href="/unterhalt/kindesunterhalt" class="text-gold hover:underline font-semibold">Kindesunterhalt</a> wird geregelt</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Sorgerecht/Obhut</td>
+                    <td class="px-6 py-4 text-gray-700">Keine Regelung</td>
+                    <td class="px-6 py-4 text-gray-700">Obhut, Sorgerecht und Besuchsrecht werden geregelt</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Superprovisorisch</td>
+                    <td class="px-6 py-4 text-gray-700">Ja (Art. 265 ZPO)</td>
+                    <td class="px-6 py-4 text-gray-700">Ja (Art. 265 ZPO) -- inkl. Sofortregelung für Unterhalt und Kinder</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Für verheiratete Opfer ist das Eheschutzverfahren daher meist das <strong>umfassendere und wirksamere Instrument</strong>, da es alle Folgen der Trennung in einem Verfahren regelt. Auch im Eheschutzverfahren sind superprovisorische Massnahmen innert Stunden möglich -- etwa die sofortige Zuweisung der ehelichen Wohnung und ein vorläufiger Unterhalt, damit das Opfer die laufenden Kosten decken kann.</p>
+
+    <!-- 7. Strafrecht -->
+    <h2 id="strafrecht" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">7. Strafrechtlicher Schutz</h2>
+
+    <p class="text-gray-700 mb-6">Seit der Revision vom 1. April 2004 werden die wichtigsten Gewaltdelikte im häuslichen Bereich als <strong>Offizialdelikte</strong> von Amtes wegen verfolgt. Das Opfer muss keine Strafanzeige erstatten -- die Strafverfolgung erfolgt automatisch, sobald die Behörden Kenntnis erhalten. Die Revision von 2020 hat den Schutz auf <strong>Lebenspartner</strong> (hetero- und homosexuell) und <strong>ehemalige Partner</strong> (bis ein Jahr nach Trennung/Scheidung) ausgeweitet.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Offizialdelikte vs. Antragsdelikte bei häuslicher Gewalt</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Straftatbestand</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Artikel</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Im häuslichen Kontext</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Strafmass</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Einfache Körperverletzung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 123 Ziff. 2 StGB</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold text-red-700">Offizialdelikt</td>
+                    <td class="px-6 py-4 text-gray-700">Freiheitsstrafe bis 3 Jahre oder Geldstrafe</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Wiederholte Tätlichkeiten</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 126 Abs. 2 StGB</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold text-red-700">Offizialdelikt</td>
+                    <td class="px-6 py-4 text-gray-700">Busse</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Drohung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 180 Abs. 2 StGB</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold text-red-700">Offizialdelikt</td>
+                    <td class="px-6 py-4 text-gray-700">Freiheitsstrafe bis 3 Jahre oder Geldstrafe</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Nötigung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 181 StGB</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold text-red-700">Offizialdelikt (immer)</td>
+                    <td class="px-6 py-4 text-gray-700">Freiheitsstrafe bis 3 Jahre oder Geldstrafe</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Sexuelle Nötigung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 189 StGB</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold text-red-700">Offizialdelikt (immer)</td>
+                    <td class="px-6 py-4 text-gray-700">Freiheitsstrafe bis 10 Jahre oder Geldstrafe</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Vergewaltigung (auch in der Ehe)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 190 StGB</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold text-red-700">Offizialdelikt (seit 2004)</td>
+                    <td class="px-6 py-4 text-gray-700">Freiheitsstrafe 1 bis 10 Jahre</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Einzelne Tätlichkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 126 Abs. 1 StGB</td>
+                    <td class="px-6 py-4 text-gray-700">Antragsdelikt (auch im häuslichen Kontext)</td>
+                    <td class="px-6 py-4 text-gray-700">Busse</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Beschimpfung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 177 StGB</td>
+                    <td class="px-6 py-4 text-gray-700">Antragsdelikt (auch im häuslichen Kontext)</td>
+                    <td class="px-6 py-4 text-gray-700">Geldstrafe bis 90 Tagessätze</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Stalking / Nachstellung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 181b StGB</td>
+                    <td class="px-6 py-4 text-gray-700">Antragsdelikt (seit 1.1.2026)</td>
+                    <td class="px-6 py-4 text-gray-700">Freiheitsstrafe bis 3 Jahre oder Geldstrafe</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Sistierung des Strafverfahrens (Art. 55a StGB)</h3>
+
+    <p class="text-gray-700 mb-6">Art. 55a StGB erlaubt es der Staatsanwaltschaft oder dem Gericht, das Strafverfahren bei häuslichen Offizialdelikten zu <strong>sistieren</strong> (vorübergehend einzustellen), wenn dies geeignet ist, die Situation des Opfers zu stabilisieren oder zu verbessern. Die blosse Willensäusserung des Opfers genügt allerdings nicht -- die Sistierung muss objektiv im Interesse des Opfers liegen (BGE 143 IV 104). Bei wiederholter Gewalt ist eine Sistierung ausgeschlossen. Während der Sistierung kann der Täter verpflichtet werden, ein Lernprogramm gegen Gewalt zu absolvieren. Tritt keine Verbesserung ein, wird das Verfahren wieder aufgenommen.</p>
+
+    <!-- 8. Stalking -->
+    <h2 id="stalking" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">8. Stalking als neuer Straftatbestand (Art. 181b StGB)</h2>
+
+    <p class="text-gray-700 mb-6">Seit dem <strong>1. Januar 2026</strong> ist Stalking (Nachstellung) in der Schweiz ein eigenständiger Straftatbestand. Art. 181b StGB schliesst eine langjährige Lücke im Schweizer Strafrecht: Bisher konnten Stalking-Handlungen nur über andere Tatbestände (Nötigung, Drohung, Hausfriedensbruch) erfasst werden, was in vielen Fällen ungenügend war.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Details</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Tatbestand</td>
+                    <td class="px-6 py-4 text-gray-700">Wer eine Person <strong>beharrlich</strong> verfolgt, belästigt oder bedroht und dadurch deren Lebensgestaltungsfreiheit <strong>erheblich beschränkt</strong>.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Strafmass</td>
+                    <td class="px-6 py-4 text-gray-700">Freiheitsstrafe bis 3 Jahre oder Geldstrafe</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Deliktart</td>
+                    <td class="px-6 py-4 text-gray-700"><strong>Antragsdelikt</strong> -- Strafantrag des Opfers erforderlich (Frist: 3 Monate ab Kenntnis)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Typische Handlungen</td>
+                    <td class="px-6 py-4 text-gray-700">Lauern, Verfolgen, unerwünschte Kontaktaufnahme, Überwachung, Cyberstalking, Geschenke/Nachrichten trotz Verbot, Kontaktaufnahme über Dritte</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Beharrlichkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Einmalige Handlungen genügen nicht -- es muss ein <strong>wiederholtes, andauerndes Verhaltensmuster</strong> vorliegen.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Verhältnis zu Art. 28b ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 181b StGB (Strafrecht) und Art. 28b ZGB (Zivilrecht) können <strong>parallel</strong> angewendet werden: zivilrechtliches Kontaktverbot + Strafanzeige wegen Stalking.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 9. Opferhilfe -->
+    <h2 id="opferhilfe" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">9. Opferhilfe (OHG)</h2>
+
+    <p class="text-gray-700 mb-6">Das Bundesgesetz über die Hilfe an Opfer von Straftaten (Opferhilfegesetz, OHG) bietet Opfern häuslicher Gewalt ein umfassendes Unterstützungssystem -- <strong>unabhängig davon, ob eine Strafanzeige erstattet wird</strong>. Das OHG steht jeder Person zu, deren körperliche, psychische oder sexuelle Integrität durch eine Straftat unmittelbar beeinträchtigt wurde (Art. 1 OHG).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Die drei Pfeiler der Opferhilfe</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Pfeiler</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Leistungen</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Beratung</td>
+                    <td class="px-6 py-4 text-gray-700">Kostenlose, vertrauliche Beratung durch kantonale Beratungsstellen. Juristische Erstberatung, psychologische Unterstützung, Vermittlung an Fachstellen.</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 9-13 OHG</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Soforthilfe und längerfristige Hilfe</td>
+                    <td class="px-6 py-4 text-gray-700">Soforthilfe ohne Bedarfsprüfung (ca. CHF 1'000 für erste Anwaltsbemühungen). Längerfristige Hilfe: Therapie, Anwaltskosten, Unterkunft -- bedarfsabhängig.</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 13-17 OHG</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Entschädigung und Genugtuung</td>
+                    <td class="px-6 py-4 text-gray-700">Entschädigung: max. CHF 130'000 (Erwerbsausfall, Heilungskosten, Versorgerschaden). Genugtuung: max. CHF 76'000 für Opfer, CHF 38'000 für Angehörige.</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 19-27 OHG</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Opferhilfe vs. unentgeltliche Rechtspflege:</p>
+        <p class="text-gray-700">Opfer häuslicher Gewalt haben Zugang zu <strong>beiden</strong> Systemen: Die Opferhilfe (OHG) übernimmt Anwaltskosten über die Soforthilfe oder die längerfristige Hilfe. Alternativ oder ergänzend kann <a href="/scheidung/unentgeltliche-rechtspflege" class="text-gold hover:underline font-semibold">unentgeltliche Rechtspflege</a> beantragt werden (Art. 117-123 ZPO). Die Systeme schliessen sich nicht aus -- das Opfer kann frei wählen oder beide kombinieren.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Fristen für Entschädigung und Genugtuung</h3>
+
+    <p class="text-gray-700 mb-6">Anträge auf Entschädigung und Genugtuung müssen innert <strong>5 Jahren</strong> ab dem Datum der Straftat oder ab Kenntnis der Straftat eingereicht werden (Art. 25 OHG). Für Minderjährige gelten verlängerte Fristen -- in bestimmten Fällen beginnt die Frist erst mit Erreichen der Volljährigkeit zu laufen. Der OHG-Anspruch ist <strong>subsidiär</strong>: Er greift erst, wenn der Schaden nicht durch den Täter oder durch Versicherungsleistungen gedeckt wird. Es ist jedoch <strong>keine Verurteilung des Täters erforderlich</strong> -- der Opferstatus wird anhand der tatsächlichen Beeinträchtigung beurteilt.</p>
+
+    <!-- 10. Kantonale Gewaltschutzgesetze -->
+    <h2 id="kantone" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">10. Kantonale Gewaltschutzgesetze im Vergleich</h2>
+
+    <p class="text-gray-700 mb-6">Es gibt kein einheitliches Bundesgesetz zum polizeilichen Gewaltschutz. Jeder Kanton hat die Vorgabe von Art. 28b Abs. 4 ZGB eigenständig umgesetzt -- entweder in einem separaten <strong>Gewaltschutzgesetz (GSG)</strong> oder in Bestimmungen des kantonalen <strong>Polizeigesetzes (PolG)</strong>. Die Verfassungsmässigkeit dieser kantonalen Regelungen hat das Bundesgericht im Grundsatzentscheid BGE 134 I 140 bestätigt.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gesetzgebungsmodell</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kantone</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Eigenständiges Gewaltschutzgesetz (GSG)</td>
+                    <td class="px-6 py-4 text-gray-700">Zürich, Basel-Stadt, Basel-Landschaft, Neuenburg, Obwalden, Wallis, Waadt</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Integration ins Polizeigesetz (PolG)</td>
+                    <td class="px-6 py-4 text-gray-700">Bern, Aargau, Luzern, St. Gallen, Thurgau, Solothurn, Graubünden und übrige Kantone</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Unabhängig vom Gesetzgebungsmodell bieten alle Kantone dieselben grundlegenden Massnahmen: Wegweisung, Rückkehrverbot, Kontaktverbot und Rayonverbot. Die wesentlichen Unterschiede liegen in der <strong>Dauer</strong> der Massnahmen, den <strong>Verlängerungsmöglichkeiten</strong> und den <strong>Begleitangeboten</strong> (z.B. Pflichtberatung für Täter). Der Kanton Zürich hat mit seinem GSG von 2007 eine Vorreiterrolle eingenommen und verfügt zusätzlich über ein ausgebautes System der Pflichtberatung für gewaltausübende Personen.</p>
+
+    <!-- 11. Kinder und häusliche Gewalt -->
+    <h2 id="kinder" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">11. Häusliche Gewalt und Kinder -- Kindesschutz</h2>
+
+    <p class="text-gray-700 mb-6">Kinder, die in einem von häuslicher Gewalt geprägten Haushalt aufwachsen, sind <strong>immer mitbetroffen</strong> -- auch wenn die Gewalt nicht direkt gegen sie gerichtet ist. Das blosse Miterleben von Gewalt zwischen den Eltern ist eine anerkannte Form der Kindeswohlgefährdung und kann schwerwiegende psychische Folgen haben.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Meldepflicht und Melderecht an die KESB</h3>
+
+    <p class="text-gray-700 mb-6">Art. 314c ZGB regelt, wer bei Verdacht auf Kindeswohlgefährdung die <a href="/sorgerecht/kesb" class="text-gold hover:underline font-semibold">KESB</a> informieren muss oder kann:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kategorie</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Personenkreis</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Pflicht oder Recht?</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Meldepflicht</td>
+                    <td class="px-6 py-4 text-gray-700">Behörden, Amtsträger, Schulen, subventionierte Institutionen, Fachpersonen im Gesundheits- und Sozialwesen</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Pflicht</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Melderecht</td>
+                    <td class="px-6 py-4 text-gray-700">Alle Personen (Nachbarn, Verwandte, Bekannte)</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Recht (freiwillig)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Die Polizei informiert die KESB <strong>routinemässig</strong> bei jedem Einsatz wegen häuslicher Gewalt, bei dem Kinder im Haushalt leben. Seit der Revision 2020 müssen auch Gerichte, die Schutzmassnahmen nach Art. 28b ZGB anordnen, die KESB automatisch benachrichtigen (Art. 28b Abs. 3bis ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kindesschutzmassnahmen bei häuslicher Gewalt</h3>
+
+    <p class="text-gray-700 mb-6">Die KESB folgt dem <strong>Verhältnismässigkeitsprinzip</strong> und ordnet stets die mildeste wirksame Massnahme an:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Stufe</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Massnahme</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">1 (mildeste)</td>
+                    <td class="px-6 py-4 text-gray-700">Ermahnungen und Weisungen (z.B. obligatorische Gewaltberatung, Familienbegleitung)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 307 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">2</td>
+                    <td class="px-6 py-4 text-gray-700">Beistandschaft -- Beistand berät und unterstützt die Eltern, überwacht die Einhaltung von Auflagen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 308 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">3</td>
+                    <td class="px-6 py-4 text-gray-700"><a href="/sorgerecht/entzug-der-elterlichen-sorge" class="text-gold hover:underline font-semibold">Aufhebung des Aufenthaltsbestimmungsrechts</a> -- Fremdplatzierung in Pflegefamilie oder Heim</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 310 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">4 (schwerste)</td>
+                    <td class="px-6 py-4 text-gray-700"><a href="/sorgerecht/entzug-der-elterlichen-sorge" class="text-gold hover:underline font-semibold">Entzug der elterlichen Sorge</a> -- vollständiger Entzug aller elterlichen Rechte</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 311/312 ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 12. Häusliche Gewalt und Scheidung -->
+    <h2 id="scheidung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">12. Häusliche Gewalt und Scheidung</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Sofortige Scheidung wegen Unzumutbarkeit (Art. 115 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Bei häuslicher Gewalt muss die zweijährige Trennungsfrist nach Art. 114 ZGB <strong>nicht abgewartet</strong> werden. Art. 115 ZGB erlaubt die Scheidung auf Klage, wenn die Fortsetzung der Ehe aus schwerwiegenden Gründen nicht zugemutet werden kann. Häusliche Gewalt stellt einen solchen schwerwiegenden Grund dar. Die <a href="/scheidung/scheidungsklage" class="text-gold hover:underline font-semibold">Scheidungsklage</a> kann sofort eingereicht werden.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Auswirkungen auf Sorgerecht, Obhut und Besuchsrecht</h3>
+
+    <p class="text-gray-700 mb-6">Grundsätzlich gilt auch nach häuslicher Gewalt das <a href="/sorgerecht/gemeinsames-sorgerecht" class="text-gold hover:underline font-semibold">gemeinsame Sorgerecht</a> als Regelfall (Art. 296 Abs. 2 ZGB). Das Gericht kann davon abweichen, wenn das Kindeswohl dies erfordert. Bei häuslicher Gewalt wird die <a href="/sorgerecht/alleiniges-sorgerecht-und-alleinige-obhut" class="text-gold hover:underline font-semibold">alleinige Obhut</a> in der Regel dem nicht-gewalttätigen Elternteil zugesprochen. <a href="/sorgerecht/alternierende-obhut" class="text-gold hover:underline font-semibold">Alternierende Obhut</a> wird bei häuslicher Gewalt generell als ungeeignet angesehen, da sie ein hohes Mass an Kooperation und Kommunikation erfordert.</p>
+
+    <p class="text-gray-700 mb-6">Das <a href="/sorgerecht/umgangsrecht" class="text-gold hover:underline font-semibold">Besuchsrecht</a> des gewalttätigen Elternteils kann eingeschränkt, an Bedingungen geknüpft oder in schweren Fällen entzogen werden (Art. 274 Abs. 2 ZGB). Als Zwischenlösung ordnen Gerichte häufig ein <a href="/sorgerecht/betreuter-umgang" class="text-gold hover:underline font-semibold">begleitetes Besuchsrecht</a> an -- der Kontakt zwischen Kind und gewaltausübendem Elternteil findet unter Aufsicht einer Fachperson statt (BGer 5A_68/2020). Selbst bei schwerer Gewalt ist der vollständige Entzug des Besuchsrechts die <strong>Ultima Ratio</strong> -- begleiteter Umgang wird in der Regel bevorzugt (BGE 130 III 585).</p>
+
+    <!-- 13. Besondere Situationen -->
+    <h2 id="migration" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">13. Besondere Situationen</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Migrationshintergrund und Aufenthaltsbewilligung (Art. 50 AIG)</h3>
+
+    <p class="text-gray-700 mb-6">Für Migrantinnen, deren Aufenthaltsbewilligung an die Ehe geknüpft ist, besteht eine besondere Verletzlichkeit: Die Angst vor dem Verlust der Aufenthaltsbewilligung kann dazu führen, dass Gewalt nicht gemeldet wird. Art. 50 Abs. 1 lit. b AIG sieht deshalb eine <strong>Härtefallregelung</strong> vor: Die Aufenthaltsbewilligung bleibt bestehen, wenn wichtige persönliche Gründe einen weiteren Aufenthalt in der Schweiz erforderlich machen -- häusliche Gewalt ist ein solcher Grund.</p>
+
+    <p class="text-gray-700 mb-6">Als Nachweis dienen Arztberichte, Polizeirapporte, Berichte von Fachstellen (Opferhilfe, Frauenhaus) und Zeugenaussagen (Art. 50 Abs. 2 AIG). Gemäss BGE 138 II 229 muss die Gewalt eine <strong>gewisse Intensität</strong> erreichen -- eine einmalige Ohrfeige genügt nicht, systematische Misshandlung hingegen schon. Die Gesetzesänderung von 2025 hat den Schutz erweitert: Die Härtefallregelung gilt nun auch für <a href="/eherecht/konkubinat" class="text-gold hover:underline font-semibold">Konkubinat</a>, <a href="/eherecht/eingetragene-partnerschaft" class="text-gold hover:underline font-semibold">eingetragene Partnerschaft</a> und Personen mit B-, L- und F-Bewilligungen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Männer als Opfer</h3>
+
+    <p class="text-gray-700 mb-6">Rund 24 % der polizeilich registrierten Opfer häuslicher Gewalt sind Männer. Männliche Opfer haben dieselben Rechte auf Schutz und Opferhilfe. Einige Kantone haben spezifische Schutzunterkünfte für Männer eingerichtet, und spezialisierte Beratungsangebote (z.B. Mannebuero Zürich) stehen zur Verfügung. Die Hemmschwelle, Hilfe zu suchen, ist bei männlichen Opfern erfahrungsgemäss höher.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">LGBTQ+ und häusliche Gewalt</h3>
+
+    <p class="text-gray-700 mb-6">Häusliche Gewalt kommt in gleich- und verschiedengeschlechtlichen Beziehungen gleichermassen vor. LGBTQ+-Opfer haben Zugang zu denselben rechtlichen Schutzmassnahmen. Seit der Revision 2020 gelten die strafrechtlichen Offizialdelikte explizit auch für Lebenspartnerschaften (hetero- und homosexuell). Die LGBT+ Helpline (0800 133 133) bietet spezifische Beratung.</p>
+
+    <!-- 14. Istanbul-Konvention -->
+    <h2 id="istanbul" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">14. Istanbul-Konvention und internationale Verpflichtungen</h2>
+
+    <p class="text-gray-700 mb-6">Das Übereinkommen des Europarats zur Verhütung und Bekämpfung von Gewalt gegen Frauen und häuslicher Gewalt (Istanbul-Konvention, SR 0.311.35) ist in der Schweiz seit dem <strong>1. April 2018</strong> in Kraft. Es verpflichtet die Schweiz zu umfassenden Massnahmen in vier Bereichen: Prävention, Schutz, Strafverfolgung und integrierte Politiken.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">GREVIO-Bericht 2022: Kritik an der Schweiz</h3>
+
+    <p class="text-gray-700 mb-6">Der erste GREVIO-Evaluationsbericht über die Schweiz (15. November 2022) enthält über 50 konkrete Empfehlungen und identifiziert erhebliche Defizite:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kritikpunkt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Details</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Ungenügende Finanzierung</td>
+                    <td class="px-6 py-4 text-gray-700">Frauenhäuser chronisch unterfinanziert und mit ungenügender Kapazität. Kantonale Unterschiede bei den Budgets.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kantonale Unterschiede</td>
+                    <td class="px-6 py-4 text-gray-700">Kein einheitliches Schutzniveau -- je nach Wohnort des Opfers unterschiedliche Massnahmen und Dauer.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Diskriminierung vulnerabler Gruppen</td>
+                    <td class="px-6 py-4 text-gray-700">Migrantinnen, Frauen mit Behinderung, LGBTQ+-Personen und ältere Frauen ungenügend geschützt.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Datenerhebung</td>
+                    <td class="px-6 py-4 text-gray-700">Systematische Datenerhebung zu allen Formen geschlechtsspezifischer Gewalt muss substantiell verbessert werden.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Fehlende nationale Definition</td>
+                    <td class="px-6 py-4 text-gray-700">Keine einheitliche nationale Definition von häuslicher Gewalt; föderale Struktur führt zu Fragmentierung.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Der Nationale Aktionsplan 2022-2026 soll die identifizierten Lücken schrittweise schliessen. Die zivilgesellschaftliche Überwachung erfolgt durch das Netzwerk Istanbul Konvention (Brava, DAO Frauenhäuser, Frieda).</p>
+
+    <!-- 15. BGE-Übersicht -->
+    <h2 id="bge" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">15. Übersicht der wichtigsten BGE-Entscheide</h2>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">BGE / Entscheid</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Thema</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kernaussage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 134 I 140</td>
+                    <td class="px-6 py-4 text-gray-700">Verfassungsmässigkeit kantonaler GSG</td>
+                    <td class="px-6 py-4 text-gray-700">Polizeiliche Gewaltschutzmassnahmen sind verfassungskonform. Fokus auf Schutzbedürfnis des Opfers, nicht auf Bestrafung des Täters. Auch der Wohnungseigentümer kann weggewiesen werden.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 144 III 257</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 28b ZGB -- Dauer und Bestimmtheit</td>
+                    <td class="px-6 py-4 text-gray-700">Keine obligatorische zeitliche Befristung von Schutzmassnahmen. Bei Stalking ist unbefristete Anordnung oft angemessener. Massnahmen müssen hinreichend bestimmt formuliert sein.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 143 IV 104</td>
+                    <td class="px-6 py-4 text-gray-700">Sistierung nach Art. 55a StGB</td>
+                    <td class="px-6 py-4 text-gray-700">Opferwille allein reicht nicht für Sistierung. Das Gericht muss prüfen, ob die Sistierung objektiv geeignet ist, die Situation zu stabilisieren. Bei wiederholter Gewalt ausgeschlossen.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 138 II 229</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 50 AIG -- Härtefall bei häuslicher Gewalt</td>
+                    <td class="px-6 py-4 text-gray-700">Häusliche Gewalt als Härtefallgrund für die Aufenthaltsbewilligung. Definition «systematische Misshandlung» -- gewisse Intensität erforderlich, einmalige Ohrfeige genügt nicht.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 130 III 585</td>
+                    <td class="px-6 py-4 text-gray-700">Besuchsrecht und Kindeswohl</td>
+                    <td class="px-6 py-4 text-gray-700">Begleitetes Besuchsrecht erfordert konkrete Anhaltspunkte für eine Gefährdung. Elterlicher Konflikt allein genügt nicht. Vollständiger Entzug nur als Ultima Ratio.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGer 5A_68/2020</td>
+                    <td class="px-6 py-4 text-gray-700">Begleitetes Besuchsrecht bei Gewalt</td>
+                    <td class="px-6 py-4 text-gray-700">Begleiteter Umgang dient der Deeskalation, dem Abbau von Ängsten und der Unterstützung der Eltern-Kind-Beziehung. Geeignete Zwischenlösung bei Gewaltkontext.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 140 IV 19</td>
+                    <td class="px-6 py-4 text-gray-700">Kontakt-/Rayonverbot im Strafverfahren</td>
+                    <td class="px-6 py-4 text-gray-700">Kombination mehrerer Verbote im Strafverfahren möglich. Voraussetzung: konkrete Kollusionsgefahr oder Gefährdung des Opfers.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGer 5A_377/2009</td>
+                    <td class="px-6 py-4 text-gray-700">Definition Gewalt/Drohung/Stalking nach Art. 28b ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Gewalt: Angriff auf Integrität von gewisser Intensität. Drohung: erwarteter rechtswidriger Angriff, der ernsthafte Furcht verursacht. Stalking: zwanghaftes Verfolgen über längere Zeit.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 16. Wann Sie einen Anwalt beiziehen sollten -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">Häusliche Gewalt stellt Betroffene vor eine Vielzahl rechtlicher Herausforderungen – vom Strafverfahren über zivilrechtliche Schutzmassnahmen bis hin zu familienrechtlichen Folgen wie Scheidung, Sorgerecht und Unterhalt. Die Komplexität des Zusammenspiels von Strafrecht, Zivilrecht, Opferhilferecht und kantonalem Gewaltschutzrecht erfordert fundierte juristische Begleitung, um alle verfügbaren Schutzmöglichkeiten auszuschöpfen.</p>
+
+        <p class="text-gray-700 mb-6">Besonders in folgenden Situationen ist die Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> dringend empfohlen:</p>
+
+        <ul class="space-y-3 mb-6">
+            <li class="flex items-start">
+                <span class="text-gold mr-3 font-bold">•</span>
+                <span class="text-gray-700"><strong>Sofortschutz beantragen:</strong> Superprovisorische Massnahmen nach Art. 265 ZPO, Kontakt- und Rayonverbote nach Art. 28b ZGB, elektronische Überwachung nach Art. 28c ZGB</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3 font-bold">•</span>
+                <span class="text-gray-700"><strong>Strafverfahren begleiten:</strong> Strafanzeige erstatten, als Privatklägerschaft auftreten, Opferrechte wahrnehmen, Sistierungsentscheid beeinflussen (Art. 55a StGB)</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3 font-bold">•</span>
+                <span class="text-gray-700"><strong>Eheschutzverfahren einleiten:</strong> Getrenntleben, Zuweisung der ehelichen Wohnung, vorläufiger Unterhalt und Sorgerechtsregelung (Art. 172–179 ZGB)</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3 font-bold">•</span>
+                <span class="text-gray-700"><strong>Scheidung bei Gewalt:</strong> Sofortige Scheidungsklage auf Unzumutbarkeit (Art. 115 ZGB) ohne Trennungsfrist, Regelung von <a href="/sorgerecht" class="text-gold hover:underline">Sorgerecht</a>, Obhut und <a href="/unterhalt/kindesunterhalt" class="text-gold hover:underline">Kindesunterhalt</a></span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3 font-bold">•</span>
+                <span class="text-gray-700"><strong>KESB-Verfahren:</strong> Vertretung bei <a href="/sorgerecht/kesb" class="text-gold hover:underline">KESB-Kindesschutzmassnahmen</a>, Anfechtung ungerechtfertigter Entscheide, Sicherstellung des Kinderschutzes</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3 font-bold">•</span>
+                <span class="text-gray-700"><strong>Opferhilfe geltend machen:</strong> Entschädigungs- und Genugtuungsforderungen nach OHG, Kostengutsprache für Rechtsvertretung</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3 font-bold">•</span>
+                <span class="text-gray-700"><strong>Aufenthaltsrechtliche Fragen:</strong> Sicherung der Aufenthaltsbewilligung nach Art. 50 AIG bei Trennung wegen Gewalt, Härtefallgesuch</span>
+            </li>
+        </ul>
+
+        <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kennt die Wechselwirkungen zwischen den verschiedenen Verfahren und kann eine koordinierte Strategie entwickeln, die sowohl den sofortigen Schutz als auch die langfristigen familienrechtlichen Interessen sicherstellt. Gerade bei häuslicher Gewalt ist es entscheidend, dass die Schritte im Straf-, Zivil- und Familienrecht aufeinander abgestimmt werden. Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> kann zudem sicherstellen, dass die Gewaltvorgeschichte bei der Regelung von <a href="/eherecht/eheschutz" class="text-gold hover:underline">Eheschutz</a>, Unterhalt und Vermögensteilung angemessen berücksichtigt wird.</p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Vertrauliche und kostenlose Ersteinschätzung</h3>
+            <p class="mb-6">Sie sind von häuslicher Gewalt betroffen und benötigen rechtliche Unterstützung? Unsere spezialisierten Familienrechtsanwälte beraten Sie diskret und kompetent zu allen Schutzmassnahmen, Ihren Rechten im Strafverfahren und den familienrechtlichen Optionen. Die Ersteinschätzung ist kostenlos und unverbindlich.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt vertrauliche Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- 17. Fazit -->
+    <h2 class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Häusliche Gewalt ist kein Privatproblem, sondern eine Straftat, die von Polizei, Strafverfolgungsbehörden und Gerichten ernst genommen wird. Die Schweiz verfügt über ein mehrschichtiges Schutzsystem, das Betroffenen schnelle und wirksame Hilfe bietet – vom polizeilichen Sofortschutz über zivilrechtliche Massnahmen nach Art. 28b ZGB bis hin zum strafrechtlichen Schutz durch Offizialdelikte.</p>
+
+    <p class="text-gray-700 mb-6">Die wichtigsten Erkenntnisse im Überblick: Polizeiliche Wegweisungen und Kontaktverbote bieten sofortigen Schutz. Zivilrechtliche Schutzmassnahmen nach Art. 28b ZGB können superprovisorisch – also ohne Anhörung der Gegenpartei – erlassen werden. Seit dem 1. Januar 2022 steht mit der elektronischen Überwachung nach Art. 28c ZGB ein zusätzliches Instrument zur Verfügung. Seit dem 1. Januar 2026 ist Stalking mit Art. 181b StGB ein eigenständiger Straftatbestand. Die Opferhilfe nach OHG gewährt Betroffenen umfassende Unterstützung – von Soforthilfe über längerfristige Hilfe bis hin zu Entschädigung und Genugtuung.</p>
+
+    <p class="text-gray-700 mb-6">Entscheidend ist, dass Betroffene die verschiedenen Rechtswege kennen und frühzeitig fachkundige Hilfe in Anspruch nehmen. Die Kombination aus polizeilichem, zivilrechtlichem und strafrechtlichem Schutz, ergänzt durch die Leistungen der Opferhilfe, ermöglicht einen umfassenden Schutz – vorausgesetzt, die einzelnen Schritte werden koordiniert und zeitnah eingeleitet. Ein spezialisierter Familienrechtsanwalt kann dabei helfen, alle verfügbaren Schutzmechanismen optimal einzusetzen und die familienrechtlichen Folgen der Gewalt sachgerecht zu regeln.</p>
+
+    <!-- 18. FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was fällt alles unter häusliche Gewalt?</h3>
+                <p class="text-gray-700">Häusliche Gewalt umfasst jede Form von physischer, psychischer, sexueller und ökonomischer Gewalt zwischen aktuellen oder ehemaligen Beziehungspartnern sowie innerhalb der Familie. Dazu gehören Schläge, Tritte und Würgen (physisch), Drohungen, Beschimpfungen, Isolation und Kontrolle (psychisch), erzwungene sexuelle Handlungen auch in der Ehe (sexuell) sowie das Vorenthalten finanzieller Mittel oder das Verbieten einer Erwerbstätigkeit (ökonomisch). Auch Stalking – das zwanghafte Verfolgen und Belästigen – fällt unter häusliche Gewalt, wenn es in einer familiären oder partnerschaftlichen Beziehung stattfindet.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert, wenn man bei häuslicher Gewalt die Polizei ruft?</h3>
+                <p class="text-gray-700">Die Polizei ist verpflichtet, sofort einzugreifen und den Schutz des Opfers sicherzustellen. Konkret trennt sie die Parteien, erstellt ein Protokoll und dokumentiert Verletzungen. In den meisten Kantonen kann die Polizei die gewaltausübende Person sofort aus der Wohnung wegweisen (je nach Kanton für 10–20 Tage) und ein Kontakt- sowie Rayonverbot aussprechen. Zudem wird das Opfer über die Opferhilfe informiert und bei Bedarf an ein Frauenhaus vermittelt. Liegt ein Offizialdelikt vor (z.B. Körperverletzung nach Art. 123 StGB), leitet die Polizei von Amtes wegen ein Strafverfahren ein – unabhängig davon, ob das Opfer eine Anzeige erstattet.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie lange dauert eine polizeiliche Wegweisung?</h3>
+                <p class="text-gray-700">Die Dauer der polizeilichen Wegweisung ist kantonal unterschiedlich geregelt. In den meisten Kantonen beträgt sie 10 bis 14 Tage, in einzelnen Kantonen bis zu 20 Tage. Im Kanton Zürich beispielsweise dauert die Wegweisung 14 Tage (§ 3 GSG ZH), im Kanton Bern 20 Tage (Art. 10 GSGB), in Basel-Stadt 10 Tage (§ 13 PolG BS). Wichtig: Während dieser Frist muss das Opfer beim Zivilgericht eine Verlängerung des Schutzes nach Art. 28b ZGB beantragen, da der polizeiliche Schutz automatisch endet.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Ist häusliche Gewalt in der Schweiz ein Offizialdelikt?</h3>
+                <p class="text-gray-700">Ja, die meisten Formen häuslicher Gewalt sind Offizialdelikte und werden von Amtes wegen verfolgt. Dazu gehören einfache Körperverletzung in Ehe/Partnerschaft (Art. 123 Ziff. 2 Abs. 5 StGB), wiederholte Tätlichkeiten (Art. 126 Abs. 2 lit. b/bbis StGB), Drohung (Art. 180 Abs. 2 StGB), Nötigung (Art. 181 StGB), sexuelle Nötigung (Art. 189 StGB), Vergewaltigung (Art. 190 StGB) und Stalking (Art. 181b StGB). Als Offizialdelikte können sie nicht durch Rückzug der Anzeige eingestellt werden. Allerdings kann die Staatsanwaltschaft das Verfahren auf Antrag des Opfers vorläufig sistieren (Art. 55a StGB).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie kann ich ein Kontaktverbot beantragen?</h3>
+                <p class="text-gray-700">Ein zivilrechtliches Kontaktverbot beantragen Sie beim zuständigen Zivilgericht gestützt auf Art. 28b Abs. 1 Ziff. 1 ZGB. In dringenden Fällen können Sie superprovisorische Massnahmen nach Art. 265 ZPO beantragen – das Gericht entscheidet dann ohne Anhörung der Gegenpartei, oft innert Stunden. Im Gesuch müssen Sie die Gewalt glaubhaft machen (z.B. durch Arztberichte, Polizeirapporte, Fotos, Zeugenaussagen). Das Gericht kann zusätzlich zum Kontaktverbot ein Annäherungs- und Rayonverbot sowie die Zuweisung der gemeinsamen Wohnung anordnen. Alternativ können Sie im Rahmen eines Eheschutzverfahrens (Art. 172 ff. ZGB) ähnliche Schutzmassnahmen beantragen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen Stalking und häuslicher Gewalt?</h3>
+                <p class="text-gray-700">Stalking ist eine spezifische Form der Gewalt, die sich durch beharrliches und wiederholtes Verfolgen, Überwachen und Belästigen einer Person auszeichnet. Es kann, muss aber nicht im Kontext häuslicher Gewalt stattfinden. Häusliche Gewalt umfasst dagegen alle Gewaltformen innerhalb einer familiären oder partnerschaftlichen Beziehung. Seit dem 1. Januar 2026 ist Stalking mit Art. 181b StGB ein eigenständiger Straftatbestand (Freiheitsstrafe bis zu 3 Jahre). Stalking durch einen aktuellen oder ehemaligen Partner wird sowohl als häusliche Gewalt als auch als Stalking-Straftat erfasst und kann über Art. 28b ZGB (Zivilrecht) und Art. 181b StGB (Strafrecht) gleichzeitig bekämpft werden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Welche Hilfe bietet die Opferhilfe bei häuslicher Gewalt?</h3>
+                <p class="text-gray-700">Die Opferhilfe nach dem Opferhilfegesetz (OHG) bietet drei Säulen der Unterstützung: Erstens Beratung und Soforthilfe (medizinische Versorgung, psychologische Betreuung, vorübergehende Unterkunft, Rechtsberatung). Zweitens längerfristige Hilfe durch spezialisierte Opferhilfe-Beratungsstellen, einschliesslich therapeutischer Unterstützung und Begleitung im Strafverfahren. Drittens finanzielle Leistungen in Form von Entschädigung (bis CHF 120'000) und Genugtuung (bis CHF 70'000) für erlittene Schäden (Art. 19–23 OHG). Alle Leistungen sind kostenlos und vertraulich. Die Beratungsstellen vermitteln bei Bedarf auch kostenlose Rechtsvertretung.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie kann ich häusliche Gewalt beweisen?</h3>
+                <p class="text-gray-700">Für die Beweissicherung bei häuslicher Gewalt stehen mehrere Mittel zur Verfügung: ärztliche Atteste und Berichte über Verletzungen (möglichst zeitnah erstellen lassen), Fotografien von Verletzungen und beschädigten Gegenständen (mit Datum), Polizeirapporte und Protokolle von Einsätzen, Aussagen von Zeugen (Nachbarn, Freunde, Familienangehörige), Textnachrichten, E-Mails und Sprachnachrichten mit Drohungen, sowie ein Gewalttagebuch mit Datum, Uhrzeit und Beschreibung der Vorfälle. Im zivilrechtlichen Verfahren genügt die Glaubhaftmachung (Wahrscheinlichkeitsnachweis), während im Strafverfahren der volle Beweis erforderlich ist. Das Bundesgericht hat bestätigt, dass auch die Gesamtheit mehrerer Indizien für den Nachweis ausreichen kann (BGE 129 IV 262).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Können auch Männer Opfer häuslicher Gewalt sein?</h3>
+                <p class="text-gray-700">Ja, auch Männer können Opfer häuslicher Gewalt sein. Gemäss der polizeilichen Kriminalstatistik sind rund 25 % der Opfer häuslicher Gewalt in der Schweiz männlich. Männer erleben besonders häufig psychische Gewalt und Kontrolle, sind aber auch von physischer Gewalt betroffen. Alle Schutzmassnahmen – polizeiliche Wegweisung, Art. 28b ZGB, Strafrecht, Opferhilfe – stehen geschlechtsunabhängig zur Verfügung. In der Schweiz gibt es zunehmend spezialisierte Beratungsangebote für männliche Opfer, etwa das Männerhaus ZwüscheHalt in der Zentralschweiz oder die Beratungsstelle für gewaltbetroffene Männer des Mannebüro Züri.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was sind superprovisorische Massnahmen bei häuslicher Gewalt?</h3>
+                <p class="text-gray-700">Superprovisorische Massnahmen sind sofort wirksame gerichtliche Anordnungen, die ohne vorherige Anhörung der Gegenpartei erlassen werden (Art. 265 ZPO). Sie dienen dem Sofortschutz in Notfällen und können ein Kontakt-, Annäherungs- und Rayonverbot, die sofortige Wegweisung aus der Wohnung sowie die Zuweisung der Wohnung an das Opfer umfassen. Die Anordnung kann oft innert Stunden oder weniger Tage erfolgen. Die gewaltausübende Person wird erst nachträglich angehört, woraufhin das Gericht die Massnahmen bestätigt, anpasst oder aufhebt. Voraussetzung ist die Glaubhaftmachung von Gewalt, Drohung oder Stalking sowie die besondere Dringlichkeit.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Hat häusliche Gewalt Auswirkungen auf das Sorgerecht?</h3>
+                <p class="text-gray-700">Ja, häusliche Gewalt hat erhebliche Auswirkungen auf das Sorgerecht. Das Kindeswohl steht dabei im Vordergrund (Art. 296 Abs. 1 ZGB). Bei nachgewiesener Gewalt kann das Gericht die alleinige elterliche Sorge dem nicht-gewalttätigen Elternteil zuteilen (Art. 298 Abs. 1 ZGB), die Obhut dem gewaltfreien Elternteil allein zuweisen und das Besuchsrecht des gewalttätigen Elternteils einschränken, an Auflagen knüpfen (z.B. begleiteter Besuch) oder ganz entziehen (Art. 274 Abs. 2 ZGB). Das Bundesgericht hat in BGE 142 III 1 klargestellt, dass Gewalt zwischen Elternteilen auch dann kindeswohlrelevant ist, wenn sie nicht direkt gegen das Kind gerichtet war. Die KESB kann zudem eigenständig Kindesschutzmassnahmen nach Art. 307–312 ZGB anordnen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was kostet ein Anwalt bei häuslicher Gewalt?</h3>
+                <p class="text-gray-700">Opfer häuslicher Gewalt haben mehrere Möglichkeiten, kostenlose oder kostengünstige Rechtsvertretung zu erhalten. Die Opferhilfe-Beratungsstellen bieten kostenlose Rechtsberatung und können die Kosten einer anwaltlichen Vertretung ganz oder teilweise übernehmen (Art. 14 OHG). Zudem haben Opfer Anspruch auf unentgeltliche Rechtspflege (kostenloser Anwalt), wenn sie finanziell bedürftig sind und das Verfahren nicht aussichtslos erscheint (Art. 117 ZPO). Im Strafverfahren kann ein unentgeltlicher Rechtsbeistand bestellt werden (Art. 136 StPO). Die regulären Anwaltskosten liegen bei CHF 250–450 pro Stunde, werden für Opfer häuslicher Gewalt aber in vielen Fällen von der Opferhilfe oder der unentgeltlichen Rechtspflege getragen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist die Istanbul-Konvention und welche Bedeutung hat sie für die Schweiz?</h3>
+                <p class="text-gray-700">Die Istanbul-Konvention (Übereinkommen des Europarats zur Verhütung und Bekämpfung von Gewalt gegen Frauen und häuslicher Gewalt, SR 0.311.35) ist seit dem 1. April 2018 für die Schweiz verbindlich. Sie verpflichtet die Schweiz zu umfassenden Massnahmen in den Bereichen Prävention, Schutz, Strafverfolgung und integrierte Politik. Die Expertengruppe GREVIO hat die Schweiz 2022 erstmals evaluiert und Empfehlungen ausgesprochen, darunter die Verbesserung der Datenlage, den Ausbau spezialisierter Beratungsangebote und die Einführung eines eigenständigen Stalking-Straftatbestands – Letzteres wurde mit Art. 181b StGB per 1. Januar 2026 umgesetzt.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist die elektronische Fussfessel bei häuslicher Gewalt?</h3>
+                <p class="text-gray-700">Seit dem 1. Januar 2022 kann das Zivilgericht zur Durchsetzung von Kontakt-, Annäherungs- und Rayonverboten eine elektronische Überwachung anordnen (Art. 28c ZGB). Die gewaltausübende Person trägt dabei ein GPS-Gerät (elektronische Fussfessel), das ihren Aufenthaltsort überwacht. Nähert sie sich dem Opfer oder betritt das verbotene Gebiet, wird automatisch eine Meldung ausgelöst und die Polizei alarmiert. Die Massnahme wird nur angeordnet, wenn andere Mittel nicht ausreichen und die gewaltausübende Person Schutzmassnahmen wiederholt missachtet hat oder eine erhebliche Gefährdung besteht. Die Kosten werden von der verurteilten Person getragen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Verliere ich meine Aufenthaltsbewilligung, wenn ich mich wegen häuslicher Gewalt trenne?</h3>
+                <p class="text-gray-700">Nein, bei häuslicher Gewalt besteht grundsätzlich ein Anspruch auf Verlängerung der Aufenthaltsbewilligung – auch wenn die Ehe vor Ablauf von drei Jahren aufgelöst wird. Art. 50 Abs. 1 lit. b und Abs. 2 AIG sieht ausdrücklich einen Härtefall vor, wenn die eheliche Gemeinschaft wegen häuslicher Gewalt aufgelöst wurde. Die Gewalt muss durch Arztberichte, Polizeirapporte, Berichte der Opferhilfe oder andere Beweismittel belegt werden. Das Bundesgericht hat in BGE 138 II 229 die Anforderungen an den Nachweis konkretisiert: Es genügt eine Gesamtwürdigung aller Umstände, wobei systematische Misshandlung oder eine Einzeltat von hinreichender Schwere ausreicht.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich mich bei häuslicher Gewalt sofort scheiden lassen?</h3>
+                <p class="text-gray-700">Ja, bei häuslicher Gewalt ist eine sofortige Scheidungsklage ohne die übliche zweijährige Trennungsfrist möglich. Art. 115 ZGB erlaubt die Scheidung vor Ablauf der Trennungsfrist, wenn die Fortsetzung der Ehe aus schwerwiegenden Gründen unzumutbar ist. Häusliche Gewalt – insbesondere wiederholte oder schwere körperliche Übergriffe – wird von der Rechtsprechung als solcher Unzumutbarkeitsgrund anerkannt (BGE 126 III 404). Parallel zur Scheidung können superprovisorische Schutzmassnahmen beantragt werden. Zusätzlich besteht die Möglichkeit, über ein <a href="/eherecht/eheschutz" class="text-gold hover:underline">Eheschutzverfahren</a> vorläufige Regelungen (Getrenntleben, Wohnungszuweisung, Unterhalt) zu erwirken.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup: Article -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Häusliche Gewalt in der Schweiz",
+        "description": "Häusliche Gewalt: Alle Schutzmassnahmen nach Art. 28b ZGB, Strafrecht (inkl. Stalking Art. 181b StGB) & Opferhilfe. Schritt-für-Schritt-Anleitung, Notfallnummern & BGE-Rechtsprechung.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2026-02-11",
+        "dateModified": "2026-02-11",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/eherecht/haeusliche-gewalt"
+        }
+    })} />
+
+    <!-- Schema Markup: FAQPage -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Was fällt alles unter häusliche Gewalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Häusliche Gewalt umfasst jede Form von physischer, psychischer, sexueller und ökonomischer Gewalt zwischen aktuellen oder ehemaligen Beziehungspartnern sowie innerhalb der Familie. Dazu gehören Schläge, Tritte und Würgen (physisch), Drohungen, Beschimpfungen, Isolation und Kontrolle (psychisch), erzwungene sexuelle Handlungen auch in der Ehe (sexuell) sowie das Vorenthalten finanzieller Mittel oder das Verbieten einer Erwerbstätigkeit (ökonomisch). Auch Stalking – das zwanghafte Verfolgen und Belästigen – fällt unter häusliche Gewalt, wenn es in einer familiären oder partnerschaftlichen Beziehung stattfindet."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert, wenn man bei häuslicher Gewalt die Polizei ruft?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Polizei ist verpflichtet, sofort einzugreifen und den Schutz des Opfers sicherzustellen. Konkret trennt sie die Parteien, erstellt ein Protokoll und dokumentiert Verletzungen. In den meisten Kantonen kann die Polizei die gewaltausübende Person sofort aus der Wohnung wegweisen (je nach Kanton für 10–20 Tage) und ein Kontakt- sowie Rayonverbot aussprechen. Zudem wird das Opfer über die Opferhilfe informiert und bei Bedarf an ein Frauenhaus vermittelt. Liegt ein Offizialdelikt vor (z.B. Körperverletzung nach Art. 123 StGB), leitet die Polizei von Amtes wegen ein Strafverfahren ein – unabhängig davon, ob das Opfer eine Anzeige erstattet."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie lange dauert eine polizeiliche Wegweisung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Dauer der polizeilichen Wegweisung ist kantonal unterschiedlich geregelt. In den meisten Kantonen beträgt sie 10 bis 14 Tage, in einzelnen Kantonen bis zu 20 Tage. Im Kanton Zürich beispielsweise dauert die Wegweisung 14 Tage (§ 3 GSG ZH), im Kanton Bern 20 Tage (Art. 10 GSGB), in Basel-Stadt 10 Tage (§ 13 PolG BS). Wichtig: Während dieser Frist muss das Opfer beim Zivilgericht eine Verlängerung des Schutzes nach Art. 28b ZGB beantragen, da der polizeiliche Schutz automatisch endet."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Ist häusliche Gewalt in der Schweiz ein Offizialdelikt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, die meisten Formen häuslicher Gewalt sind Offizialdelikte und werden von Amtes wegen verfolgt. Dazu gehören einfache Körperverletzung in Ehe/Partnerschaft (Art. 123 Ziff. 2 Abs. 5 StGB), wiederholte Tätlichkeiten (Art. 126 Abs. 2 lit. b/bbis StGB), Drohung (Art. 180 Abs. 2 StGB), Nötigung (Art. 181 StGB), sexuelle Nötigung (Art. 189 StGB), Vergewaltigung (Art. 190 StGB) und Stalking (Art. 181b StGB). Als Offizialdelikte können sie nicht durch Rückzug der Anzeige eingestellt werden. Allerdings kann die Staatsanwaltschaft das Verfahren auf Antrag des Opfers vorläufig sistieren (Art. 55a StGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie kann ich ein Kontaktverbot beantragen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ein zivilrechtliches Kontaktverbot beantragen Sie beim zuständigen Zivilgericht gestützt auf Art. 28b Abs. 1 Ziff. 1 ZGB. In dringenden Fällen können Sie superprovisorische Massnahmen nach Art. 265 ZPO beantragen – das Gericht entscheidet dann ohne Anhörung der Gegenpartei, oft innert Stunden. Im Gesuch müssen Sie die Gewalt glaubhaft machen (z.B. durch Arztberichte, Polizeirapporte, Fotos, Zeugenaussagen). Das Gericht kann zusätzlich zum Kontaktverbot ein Annäherungs- und Rayonverbot sowie die Zuweisung der gemeinsamen Wohnung anordnen. Alternativ können Sie im Rahmen eines Eheschutzverfahrens (Art. 172 ff. ZGB) ähnliche Schutzmassnahmen beantragen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen Stalking und häuslicher Gewalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Stalking ist eine spezifische Form der Gewalt, die sich durch beharrliches und wiederholtes Verfolgen, Überwachen und Belästigen einer Person auszeichnet. Es kann, muss aber nicht im Kontext häuslicher Gewalt stattfinden. Häusliche Gewalt umfasst dagegen alle Gewaltformen innerhalb einer familiären oder partnerschaftlichen Beziehung. Seit dem 1. Januar 2026 ist Stalking mit Art. 181b StGB ein eigenständiger Straftatbestand (Freiheitsstrafe bis zu 3 Jahre). Stalking durch einen aktuellen oder ehemaligen Partner wird sowohl als häusliche Gewalt als auch als Stalking-Straftat erfasst und kann über Art. 28b ZGB (Zivilrecht) und Art. 181b StGB (Strafrecht) gleichzeitig bekämpft werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welche Hilfe bietet die Opferhilfe bei häuslicher Gewalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Opferhilfe nach dem Opferhilfegesetz (OHG) bietet drei Säulen der Unterstützung: Erstens Beratung und Soforthilfe (medizinische Versorgung, psychologische Betreuung, vorübergehende Unterkunft, Rechtsberatung). Zweitens längerfristige Hilfe durch spezialisierte Opferhilfe-Beratungsstellen, einschliesslich therapeutischer Unterstützung und Begleitung im Strafverfahren. Drittens finanzielle Leistungen in Form von Entschädigung (bis CHF 120'000) und Genugtuung (bis CHF 70'000) für erlittene Schäden (Art. 19–23 OHG). Alle Leistungen sind kostenlos und vertraulich. Die Beratungsstellen vermitteln bei Bedarf auch kostenlose Rechtsvertretung."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie kann ich häusliche Gewalt beweisen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Für die Beweissicherung bei häuslicher Gewalt stehen mehrere Mittel zur Verfügung: ärztliche Atteste und Berichte über Verletzungen (möglichst zeitnah erstellen lassen), Fotografien von Verletzungen und beschädigten Gegenständen (mit Datum), Polizeirapporte und Protokolle von Einsätzen, Aussagen von Zeugen (Nachbarn, Freunde, Familienangehörige), Textnachrichten, E-Mails und Sprachnachrichten mit Drohungen, sowie ein Gewalttagebuch mit Datum, Uhrzeit und Beschreibung der Vorfälle. Im zivilrechtlichen Verfahren genügt die Glaubhaftmachung (Wahrscheinlichkeitsnachweis), während im Strafverfahren der volle Beweis erforderlich ist. Das Bundesgericht hat bestätigt, dass auch die Gesamtheit mehrerer Indizien für den Nachweis ausreichen kann (BGE 129 IV 262)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Können auch Männer Opfer häuslicher Gewalt sein?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, auch Männer können Opfer häuslicher Gewalt sein. Gemäss der polizeilichen Kriminalstatistik sind rund 25 % der Opfer häuslicher Gewalt in der Schweiz männlich. Männer erleben besonders häufig psychische Gewalt und Kontrolle, sind aber auch von physischer Gewalt betroffen. Alle Schutzmassnahmen – polizeiliche Wegweisung, Art. 28b ZGB, Strafrecht, Opferhilfe – stehen geschlechtsunabhängig zur Verfügung. In der Schweiz gibt es zunehmend spezialisierte Beratungsangebote für männliche Opfer, etwa das Männerhaus ZwüscheHalt in der Zentralschweiz oder die Beratungsstelle für gewaltbetroffene Männer des Mannebüro Züri."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was sind superprovisorische Massnahmen bei häuslicher Gewalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Superprovisorische Massnahmen sind sofort wirksame gerichtliche Anordnungen, die ohne vorherige Anhörung der Gegenpartei erlassen werden (Art. 265 ZPO). Sie dienen dem Sofortschutz in Notfällen und können ein Kontakt-, Annäherungs- und Rayonverbot, die sofortige Wegweisung aus der Wohnung sowie die Zuweisung der Wohnung an das Opfer umfassen. Die Anordnung kann oft innert Stunden oder weniger Tage erfolgen. Die gewaltausübende Person wird erst nachträglich angehört, woraufhin das Gericht die Massnahmen bestätigt, anpasst oder aufhebt. Voraussetzung ist die Glaubhaftmachung von Gewalt, Drohung oder Stalking sowie die besondere Dringlichkeit."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Hat häusliche Gewalt Auswirkungen auf das Sorgerecht?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, häusliche Gewalt hat erhebliche Auswirkungen auf das Sorgerecht. Das Kindeswohl steht dabei im Vordergrund (Art. 296 Abs. 1 ZGB). Bei nachgewiesener Gewalt kann das Gericht die alleinige elterliche Sorge dem nicht-gewalttätigen Elternteil zuteilen (Art. 298 Abs. 1 ZGB), die Obhut dem gewaltfreien Elternteil allein zuweisen und das Besuchsrecht des gewalttätigen Elternteils einschränken, an Auflagen knüpfen (z.B. begleiteter Besuch) oder ganz entziehen (Art. 274 Abs. 2 ZGB). Das Bundesgericht hat in BGE 142 III 1 klargestellt, dass Gewalt zwischen Elternteilen auch dann kindeswohlrelevant ist, wenn sie nicht direkt gegen das Kind gerichtet war. Die KESB kann zudem eigenständig Kindesschutzmassnahmen nach Art. 307–312 ZGB anordnen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was kostet ein Anwalt bei häuslicher Gewalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Opfer häuslicher Gewalt haben mehrere Möglichkeiten, kostenlose oder kostengünstige Rechtsvertretung zu erhalten. Die Opferhilfe-Beratungsstellen bieten kostenlose Rechtsberatung und können die Kosten einer anwaltlichen Vertretung ganz oder teilweise übernehmen (Art. 14 OHG). Zudem haben Opfer Anspruch auf unentgeltliche Rechtspflege (kostenloser Anwalt), wenn sie finanziell bedürftig sind und das Verfahren nicht aussichtslos erscheint (Art. 117 ZPO). Im Strafverfahren kann ein unentgeltlicher Rechtsbeistand bestellt werden (Art. 136 StPO). Die regulären Anwaltskosten liegen bei CHF 250–450 pro Stunde, werden für Opfer häuslicher Gewalt aber in vielen Fällen von der Opferhilfe oder der unentgeltlichen Rechtspflege getragen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist die Istanbul-Konvention und welche Bedeutung hat sie für die Schweiz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Istanbul-Konvention (Übereinkommen des Europarats zur Verhütung und Bekämpfung von Gewalt gegen Frauen und häuslicher Gewalt, SR 0.311.35) ist seit dem 1. April 2018 für die Schweiz verbindlich. Sie verpflichtet die Schweiz zu umfassenden Massnahmen in den Bereichen Prävention, Schutz, Strafverfolgung und integrierte Politik. Die Expertengruppe GREVIO hat die Schweiz 2022 erstmals evaluiert und Empfehlungen ausgesprochen, darunter die Verbesserung der Datenlage, den Ausbau spezialisierter Beratungsangebote und die Einführung eines eigenständigen Stalking-Straftatbestands – Letzteres wurde mit Art. 181b StGB per 1. Januar 2026 umgesetzt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist die elektronische Fussfessel bei häuslicher Gewalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Seit dem 1. Januar 2022 kann das Zivilgericht zur Durchsetzung von Kontakt-, Annäherungs- und Rayonverboten eine elektronische Überwachung anordnen (Art. 28c ZGB). Die gewaltausübende Person trägt dabei ein GPS-Gerät (elektronische Fussfessel), das ihren Aufenthaltsort überwacht. Nähert sie sich dem Opfer oder betritt das verbotene Gebiet, wird automatisch eine Meldung ausgelöst und die Polizei alarmiert. Die Massnahme wird nur angeordnet, wenn andere Mittel nicht ausreichen und die gewaltausübende Person Schutzmassnahmen wiederholt missachtet hat oder eine erhebliche Gefährdung besteht. Die Kosten werden von der verurteilten Person getragen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Verliere ich meine Aufenthaltsbewilligung, wenn ich mich wegen häuslicher Gewalt trenne?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, bei häuslicher Gewalt besteht grundsätzlich ein Anspruch auf Verlängerung der Aufenthaltsbewilligung – auch wenn die Ehe vor Ablauf von drei Jahren aufgelöst wird. Art. 50 Abs. 1 lit. b und Abs. 2 AIG sieht ausdrücklich einen Härtefall vor, wenn die eheliche Gemeinschaft wegen häuslicher Gewalt aufgelöst wurde. Die Gewalt muss durch Arztberichte, Polizeirapporte, Berichte der Opferhilfe oder andere Beweismittel belegt werden. Das Bundesgericht hat in BGE 138 II 229 die Anforderungen an den Nachweis konkretisiert: Es genügt eine Gesamtwürdigung aller Umstände, wobei systematische Misshandlung oder eine Einzeltat von hinreichender Schwere ausreicht."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich mich bei häuslicher Gewalt sofort scheiden lassen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, bei häuslicher Gewalt ist eine sofortige Scheidungsklage ohne die übliche zweijährige Trennungsfrist möglich. Art. 115 ZGB erlaubt die Scheidung vor Ablauf der Trennungsfrist, wenn die Fortsetzung der Ehe aus schwerwiegenden Gründen unzumutbar ist. Häusliche Gewalt – insbesondere wiederholte oder schwere körperliche Übergriffe – wird von der Rechtsprechung als solcher Unzumutbarkeitsgrund anerkannt (BGE 126 III 404). Parallel zur Scheidung können superprovisorische Schutzmassnahmen beantragt werden. Zusätzlich besteht die Möglichkeit, über ein Eheschutzverfahren vorläufige Regelungen (Getrenntleben, Wohnungszuweisung, Unterhalt) zu erwirken."
+                }
+            }
+        ]
+    })} />
+
+    <!-- Schema Markup: BreadcrumbList -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Eherecht",
+                "item": "https://familienrechtanwalt.ch/eherecht"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Häusliche Gewalt in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/eherecht/haeusliche-gewalt"
+            }
+        ]
+    })} />
+
+</ArticleLayout>

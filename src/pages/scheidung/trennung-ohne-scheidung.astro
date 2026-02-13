@@ -1,0 +1,1385 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+---
+
+<ArticleLayout
+    title="Trennung ohne Scheidung in der Schweiz"
+    description="Trennung ohne Scheidung: Eheschutzverfahren, Trennungsunterhalt, Wohnung, Kinder & Güterrecht. Mit BGE-Rechtsprechung, Kosten & Vergleich zur Scheidung."
+    keywords="Trennung ohne Scheidung Schweiz, Eheschutzverfahren, Eheschutzmassnahmen, Getrenntleben Schweiz, Trennungsvereinbarung, Art. 175 176 ZGB, Trennungsunterhalt"
+    category="Scheidung"
+    categoryLink="/scheidung"
+>
+
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>In der Schweiz gibt es <strong>drei Trennungsarten</strong>: die faktische Trennung (formlos), das Eheschutzverfahren (Art. 172–179 ZGB) und die gerichtliche Ehetrennung (Art. 117 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Während der Trennung bleiben Sie <strong>verheiratet</strong> – mit allen Konsequenzen für Erbrecht, Sozialversicherungen und Unterhaltspflichten.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Der <strong>Trennungsunterhalt</strong> basiert auf Art. 163 ZGB und ist gemäss BGE 148 III 358 <strong>nicht befristbar</strong> – er ist oft höher als der nacheheliche Unterhalt nach Scheidung.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Das <strong>Eheschutzverfahren</strong> ist ein summarisches Verfahren und deutlich schneller (1–6 Monate) und günstiger als eine Scheidung.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die <strong>eheliche Wohnung</strong> wird nach Bedürfnis zugeteilt, nicht nach Eigentum – Kinder haben Vorrang (BGE 130 III 537).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Das <strong>gemeinsame Sorgerecht</strong> bleibt bei Trennung bestehen; das Gericht regelt Obhut, Betreuung und Besuchsrecht.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bei Trennung erfolgt <strong>kein BVG-Vorsorgeausgleich</strong> und <strong>kein AHV-Splitting</strong> – beides geschieht erst bei der Scheidung.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Nach <strong>zwei Jahren Trennung</strong> kann jeder Ehegatte einseitig die Scheidung verlangen (Art. 114 ZGB).</span>
+            </li>
+        </ul>
+    </div>
+
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Nicht jede Ehekrise endet sofort mit einer Scheidung. Viele Ehepaare in der Schweiz entscheiden sich zunächst für eine <strong>Trennung ohne Scheidung</strong> – sei es, um sich Zeit zum Nachdenken zu geben, aus religiösen Gründen, oder weil die finanziellen Konsequenzen einer Scheidung zu einschneidend wären. Dieser Ratgeber erklärt umfassend, welche rechtlichen Möglichkeiten bestehen, welche Rechte und Pflichten während der Trennung gelten und wann eine Scheidung doch der bessere Weg ist.</p>
+
+    <!-- Inhaltsverzeichnis -->
+    <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-12">
+        <h2 class="font-serif text-xl font-bold text-navy mb-4">Inhaltsverzeichnis</h2>
+        <ol class="space-y-2 text-gray-700">
+            <li><a href="#arten-der-trennung" class="text-gold hover:underline">1. Drei Arten der Trennung in der Schweiz</a></li>
+            <li><a href="#faktische-trennung" class="text-gold hover:underline">2. Faktische (informelle) Trennung</a></li>
+            <li><a href="#eheschutzverfahren" class="text-gold hover:underline">3. Das Eheschutzverfahren (Art. 172–179 ZGB)</a></li>
+            <li><a href="#eheliche-wohnung" class="text-gold hover:underline">4. Eheliche Wohnung und Hausrat bei Trennung</a></li>
+            <li><a href="#trennungsunterhalt" class="text-gold hover:underline">5. Trennungsunterhalt: Berechnung und Anspruch</a></li>
+            <li><a href="#kinder-bei-trennung" class="text-gold hover:underline">6. Kinder bei Trennung: Sorgerecht, Obhut und Unterhalt</a></li>
+            <li><a href="#gueterrecht" class="text-gold hover:underline">7. Güterrecht und Gütertrennung bei Trennung</a></li>
+            <li><a href="#steuern" class="text-gold hover:underline">8. Steuerliche Folgen der Trennung</a></li>
+            <li><a href="#vorsorge" class="text-gold hover:underline">9. Vorsorge und Sozialversicherungen (AHV, BVG, 3a)</a></li>
+            <li><a href="#erbrecht" class="text-gold hover:underline">10. Erbrecht während der Trennung</a></li>
+            <li><a href="#schulden" class="text-gold hover:underline">11. Schulden und Haftung bei Trennung</a></li>
+            <li><a href="#trennungsvereinbarung" class="text-gold hover:underline">12. Die Trennungsvereinbarung</a></li>
+            <li><a href="#superprovisorisch" class="text-gold hover:underline">13. Superprovisorische Massnahmen und Gewaltschutz</a></li>
+            <li><a href="#kosten" class="text-gold hover:underline">14. Kosten des Eheschutzverfahrens</a></li>
+            <li><a href="#abaenderung" class="text-gold hover:underline">15. Abänderung von Eheschutzmassnahmen (Art. 179 ZGB)</a></li>
+            <li><a href="#uebergang-scheidung" class="text-gold hover:underline">16. Von der Trennung zur Scheidung</a></li>
+            <li><a href="#vergleich" class="text-gold hover:underline">17. Trennung vs. Scheidung: Der umfassende Vergleich</a></li>
+            <li><a href="#trennung-im-alter" class="text-gold hover:underline">18. Trennung im Alter (Grauscheidung)</a></li>
+            <li><a href="#innertrennung" class="text-gold hover:underline">19. Innertrennung: Trennung unter einem Dach</a></li>
+            <li><a href="#anwalt" class="text-gold hover:underline">20. Wann Sie einen Anwalt für Familienrecht beiziehen sollten</a></li>
+            <li><a href="#fazit" class="text-gold hover:underline">21. Fazit</a></li>
+            <li><a href="#faq" class="text-gold hover:underline">22. Häufig gestellte Fragen (FAQ)</a></li>
+        </ol>
+    </div>
+
+    <!-- 1. Arten der Trennung -->
+    <h2 id="arten-der-trennung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">1. Drei Arten der Trennung in der Schweiz</h2>
+
+    <p class="text-gray-700 mb-6">Das Schweizer Recht kennt drei verschiedene Formen der Trennung, die sich in ihren Voraussetzungen, ihrem Ablauf und ihren rechtlichen Wirkungen grundlegend unterscheiden.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Faktische Trennung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Eheschutzverfahren (Art. 172–179 ZGB)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Ehetrennung (Art. 117 ZGB)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Formerfordernis</td>
+                    <td class="px-6 py-4 text-gray-700">Kein Gericht nötig</td>
+                    <td class="px-6 py-4 text-gray-700">Summarisches Gerichtsverfahren</td>
+                    <td class="px-6 py-4 text-gray-700">Ordentliches Gerichtsverfahren</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Voraussetzungen</td>
+                    <td class="px-6 py-4 text-gray-700">Einigung beider Ehegatten</td>
+                    <td class="px-6 py-4 text-gray-700">Einseitiger Antrag genügt</td>
+                    <td class="px-6 py-4 text-gray-700">Gemeinsames Begehren oder 2 Jahre Trennung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Dauer</td>
+                    <td class="px-6 py-4 text-gray-700">Sofort</td>
+                    <td class="px-6 py-4 text-gray-700">1–6 Monate</td>
+                    <td class="px-6 py-4 text-gray-700">6–18 Monate</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Gütertrennung</td>
+                    <td class="px-6 py-4 text-gray-700">Nein (nur bei Ehevertrag)</td>
+                    <td class="px-6 py-4 text-gray-700">Auf Antrag möglich</td>
+                    <td class="px-6 py-4 text-gray-700">Automatisch (Art. 118 ZGB)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Vollstreckbarkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Keine (ohne Gericht)</td>
+                    <td class="px-6 py-4 text-gray-700">Ja (Gerichtsurteil)</td>
+                    <td class="px-6 py-4 text-gray-700">Ja (Gerichtsurteil)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kosten</td>
+                    <td class="px-6 py-4 text-gray-700">Gering (evtl. Anwalt)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 5'000–20'000</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 10'000–30'000+</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Praxisrelevanz</td>
+                    <td class="px-6 py-4 text-gray-700">Häufig</td>
+                    <td class="px-6 py-4 text-gray-700">Sehr häufig</td>
+                    <td class="px-6 py-4 text-gray-700">Selten (zunehmend bei älteren Paaren)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 2. Faktische Trennung -->
+    <h2 id="faktische-trennung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">2. Faktische (informelle) Trennung</h2>
+
+    <p class="text-gray-700 mb-6">Die faktische Trennung ist die einfachste Form: Die Ehegatten heben den gemeinsamen Haushalt auf, ohne ein Gericht einzuschalten. Art. 175 ZGB gibt jedem Ehegatten das Recht, den gemeinsamen Haushalt aufzuheben, «solange seine Persönlichkeit, seine wirtschaftliche Sicherheit oder das Wohl der Familie durch das Zusammenleben ernstlich gefährdet ist». In der heutigen Praxis wird dieses Recht als grundlegendes Persönlichkeitsrecht liberal ausgelegt – ein Ehegatte kann faktisch jederzeit ausziehen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Voraussetzungen und Beginn</h3>
+
+    <p class="text-gray-700 mb-6">Die faktische Trennung beginnt am Tag, an dem ein Ehegatte den gemeinsamen Haushalt <strong>absichtlich und dauerhaft</strong> aufhebt. Es braucht keine behördliche Bewilligung und kein gerichtliches Verfahren. Voraussetzung ist allerdings, dass sich beide Ehegatten über die wesentlichen Trennungsfolgen einigen können – andernfalls ist ein <a href="/eherecht/eheschutz" class="text-gold hover:underline font-semibold">Eheschutzverfahren</a> notwendig.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig:</p>
+        <p class="text-gray-700">Es gibt in der Schweiz <strong>keine zeitliche Obergrenze</strong> für das Getrenntleben. Ehepaare können theoretisch unbegrenzt getrennt leben, ohne sich scheiden zu lassen. Nach zwei Jahren Trennung kann jedoch jeder Ehegatte <strong>einseitig</strong> die Scheidung verlangen (Art. 114 ZGB).</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Grenzen der faktischen Trennung</h3>
+
+    <p class="text-gray-700 mb-6">Die faktische Trennung hat erhebliche praktische Nachteile. Eine rein private Trennungsvereinbarung ist <strong>nicht vollstreckbar</strong>: Hält sich ein Ehegatte nicht an die Abmachungen, kann der andere die Vereinbarung nicht zwangsweise durchsetzen. Zudem können ohne gerichtliches Urteil weder <a href="/unterhalt/alimentenhilfe" class="text-gold hover:underline font-semibold">Alimentenhilfe</a> noch Alimentenbevorschussung beantragt werden. Vereinbarungen über Kinderbelange haben ohne richterliche Genehmigung keine rechtsverbindliche Wirkung.</p>
+
+    <!-- 3. Eheschutzverfahren -->
+    <h2 id="eheschutzverfahren" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">3. Das Eheschutzverfahren (Art. 172–179 ZGB)</h2>
+
+    <p class="text-gray-700 mb-6">Das Eheschutzverfahren ist das zentrale Instrument zur gerichtlichen Regelung des Getrenntlebens in der Schweiz. Es ist als <strong>summarisches Verfahren</strong> ausgestaltet (Art. 271 ff. ZPO), was bedeutet: einfacher, schneller und weniger formell als ein ordentliches Scheidungsverfahren. Jeder Ehegatte kann das Verfahren <strong>einseitig</strong> einleiten – die Zustimmung des anderen ist nicht erforderlich (Art. 172 Abs. 1 ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Voraussetzungen (Art. 175 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Ein Ehegatte ist berechtigt, den gemeinsamen Haushalt aufzuheben und Eheschutzmassnahmen zu beantragen, wenn das Zusammenleben eine ernstliche Gefährdung darstellt. Das Gesetz nennt drei Aufhebungsgründe:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aufhebungsgrund</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beispiele</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Gefährdung der Persönlichkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Häusliche Gewalt, psychische Belastung, Mobbing, Ehrverletzungen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Gefährdung der wirtschaftlichen Sicherheit</td>
+                    <td class="px-6 py-4 text-gray-700">Verschwendung, unkontrollierte Schuldenanhäufung, Verweigerung von Unterhaltsbeiträgen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Gefährdung des Wohls der Familie</td>
+                    <td class="px-6 py-4 text-gray-700">Alkoholismus, Drogensucht, Vernachlässigung der Kinder</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">In der heutigen Gerichtspraxis wird die Schwelle für eine Trennung <strong>liberal ausgelegt</strong>: Anträge auf Aufhebung des gemeinsamen Haushalts werden praktisch immer gutgeheissen. Das Recht, sich zu trennen, wird als grundlegendes Persönlichkeitsrecht anerkannt.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ablauf des Eheschutzverfahrens</h3>
+
+    <p class="text-gray-700 mb-6">Das Verfahren folgt einem klaren, mehrstufigen Ablauf:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Schritt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zeitrahmen</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">1. Gesuchseinreichung</td>
+                    <td class="px-6 py-4 text-gray-700">Schriftliches Eheschutzbegehren beim zuständigen Bezirksgericht einreichen, zusammen mit Belegen (Einkommen, Vermögen, Wohnsituation)</td>
+                    <td class="px-6 py-4 text-gray-700">Tag 1</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">2. Vorladung</td>
+                    <td class="px-6 py-4 text-gray-700">Das Gericht lädt beide Ehegatten zu einer mündlichen Verhandlung vor (kein vorgängiges Schlichtungsverfahren nötig, Art. 198 lit. a ZPO)</td>
+                    <td class="px-6 py-4 text-gray-700">ca. 4–6 Wochen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">3. Verhandlung</td>
+                    <td class="px-6 py-4 text-gray-700">Mündliche Verhandlung vor dem Einzelrichter. Das Gericht versucht eine Einigung; stellt den Sachverhalt von Amtes wegen fest (Art. 272 ZPO)</td>
+                    <td class="px-6 py-4 text-gray-700">1 Verhandlungstag</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">4. Kindesanhörung</td>
+                    <td class="px-6 py-4 text-gray-700">Bei minderjährigen Kindern: Anhörung des Kindes ab ca. 6 Jahren (Art. 314a ZGB), angepasst an Alter und Reife</td>
+                    <td class="px-6 py-4 text-gray-700">Im Rahmen des Verfahrens</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">5. Entscheid / Vereinbarung</td>
+                    <td class="px-6 py-4 text-gray-700">Gerichtlich genehmigte Vereinbarung (bei Einigung) oder autoritativer Eheschutzentscheid (bei Uneinigkeit)</td>
+                    <td class="px-6 py-4 text-gray-700">Nach der Verhandlung</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Verfahrensbesonderheiten:</p>
+        <p class="text-gray-700">Im Eheschutzverfahren gilt der <strong>eingeschränkte Untersuchungsgrundsatz</strong> (Art. 272 ZPO): Das Gericht stellt den Sachverhalt von Amtes wegen fest, allerdings mit eingeschränkten Beweismitteln. Zulässig sind Urkunden, Augenschein, schriftliche Auskünfte und Parteibefragung – eine <strong>Zeugeneinvernahme ist nicht zulässig</strong> (im Unterschied zum Scheidungsverfahren). Das Beweismass ist die Glaubhaftmachung, nicht der volle Beweis.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Eheschutzmassnahmen im Überblick (Art. 176 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Art. 176 ZGB ist die <strong>zentrale Bestimmung</strong> für die Regelung des Getrenntlebens. Das Gericht kann folgende Massnahmen anordnen:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Massnahme</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Inhalt</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Trennungsunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 176 Abs. 1 Ziff. 1 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Geldbeiträge, die ein Ehegatte dem anderen schuldet</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Wohnungszuweisung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 176 Abs. 1 Ziff. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Zuweisung der ehelichen Wohnung und Haushaltgegenstände</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Gütertrennung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 176 Abs. 1 Ziff. 3 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Güterrechtliche Anordnungen, namentlich Gütertrennung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kinderbelange</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 176 ZGB i.V.m. Art. 296 ff. ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Obhut, Betreuung, Kindesunterhalt, Besuchsrecht</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Verfügungsbeschränkungen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 178 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Beschränkung der Verfügungsmacht über bestimmte Vermögenswerte (Grundbuchanmerkung bei Liegenschaften)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gerichtliche Ehetrennung (Art. 117–118 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Neben dem Eheschutzverfahren kennt das Schweizer Recht die formelle <strong>Ehetrennung</strong> nach Art. 117 ZGB. Sie setzt die gleichen Voraussetzungen wie eine Scheidung voraus (gemeinsames Begehren oder zweijährige Trennung) und wird im ordentlichen Verfahren durchgeführt. Im Unterschied zum Eheschutzverfahren bewirkt die Ehetrennung <strong>automatisch die Gütertrennung</strong> (Art. 118 Abs. 1 ZGB), ohne dass diese separat beantragt werden muss.</p>
+
+    <p class="text-gray-700 mb-6">Die Ehetrennung war historisch für Ehegatten gedacht, die aus religiösen Gründen keine Scheidung wollten. In der Praxis wird sie selten genutzt, da das Eheschutzverfahren schneller und günstiger ist. In jüngster Zeit gewinnt sie jedoch für <strong>ältere Ehepaare</strong> an Bedeutung, die von den finanziellen Vorteilen einer Trennung ohne Scheidung profitieren möchten (insbesondere beim Erhalt von Hinterlassenenleistungen und der Vermeidung eines BVG-Splittings).</p>
+
+    <!-- 4. Eheliche Wohnung -->
+    <h2 id="eheliche-wohnung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">4. Eheliche Wohnung und Hausrat bei Trennung</h2>
+
+    <p class="text-gray-700 mb-6">Die Frage, wer in der <a href="/scheidung/haus" class="text-gold hover:underline font-semibold">ehelichen Wohnung</a> bleiben darf, ist einer der häufigsten Streitpunkte bei einer Trennung. Das Gericht entscheidet gemäss Art. 176 Abs. 1 Ziff. 2 ZGB nach dem Grundsatz der <strong>Zweckmässigkeit und Nützlichkeit</strong> – nicht nach Eigentumsverhältnissen (BGE 130 III 537).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kriterien für die Wohnungszuweisung</h3>
+
+    <p class="text-gray-700 mb-6">Das Bundesgericht hat in seiner Rechtsprechung klare Kriterien für die Zuweisung der ehelichen Wohnung entwickelt:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kriterium</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erläuterung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gewichtung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kindesinteressen</td>
+                    <td class="px-6 py-4 text-gray-700">Der hauptbetreuende Elternteil erhält die Wohnung, damit Kinder in vertrauter Umgebung bleiben</td>
+                    <td class="px-6 py-4 text-gray-700">Vorrangig</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Nützlichkeit/Bedürfnis</td>
+                    <td class="px-6 py-4 text-gray-700">Wem nützt die Wohnung objektiv mehr?</td>
+                    <td class="px-6 py-4 text-gray-700">Primäres Kriterium</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Berufliche Bedürfnisse</td>
+                    <td class="px-6 py-4 text-gray-700">Nähe zum Arbeitsplatz, Homeoffice-Nutzung</td>
+                    <td class="px-6 py-4 text-gray-700">Sekundär</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Gesundheitliche Gründe</td>
+                    <td class="px-6 py-4 text-gray-700">Barrierefreiheit, Nähe zu medizinischen Einrichtungen</td>
+                    <td class="px-6 py-4 text-gray-700">Sekundär</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Eigentumsverhältnisse</td>
+                    <td class="px-6 py-4 text-gray-700">Grundsätzlich irrelevant; nur bei Pattsituation berücksichtigt</td>
+                    <td class="px-6 py-4 text-gray-700">Subsidiär</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Mietwohnung vs. Wohneigentum</h3>
+
+    <p class="text-gray-700 mb-6">Bei einer <strong>Mietwohnung</strong> kann das Gericht den Mietvertrag dem in der Wohnung verbleibenden Ehegatten zuweisen und den anderen aus der Mithaft entlassen – ohne Zustimmung des Vermieters. Gemäss BGE 145 III 281 kann zudem jeder Ehegatte eine Kündigung der Familienwohnung <strong>selbständig anfechten</strong>. Art. 169 ZGB bietet zusätzlichen Schutz: Kein Ehegatte darf ohne Zustimmung des anderen die Familienwohnung kündigen oder darüber verfügen – unabhängig davon, wer Mieter oder Eigentümer ist.</p>
+
+    <p class="text-gray-700 mb-6">Bei <strong>Wohneigentum</strong> spielt das Eigentum für die Nutzungszuweisung während der Trennung grundsätzlich keine Rolle. Das Gericht kann die Nutzung auch dem Nicht-Eigentümer zuweisen. Eine Benutzungsentschädigung kann angeordnet werden. Die Hypothekarzahlungen werden typischerweise vom Eigentümer weitergetragen oder gerichtlich geregelt.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praxistipp:</p>
+        <p class="text-gray-700">Wer die eheliche Wohnung verlässt, verliert dadurch <strong>keine Rechte</strong>. Der Auszug bedeutet nicht, dass der verbleibende Ehegatte automatisch ein dauerhaftes Wohnrecht erhält. Das Gericht entscheidet unabhängig davon, wer zuerst ausgezogen ist.</p>
+    </div>
+
+    <!-- 5. Trennungsunterhalt -->
+    <h2 id="trennungsunterhalt" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">5. Trennungsunterhalt: Berechnung und Anspruch</h2>
+
+    <p class="text-gray-700 mb-6">Der <a href="/unterhalt/trennungsunterhalt" class="text-gold hover:underline font-semibold">Trennungsunterhalt</a> basiert auf Art. 163 ZGB (ehelicher Unterhalt) und Art. 176 Abs. 1 Ziff. 1 ZGB. Im Unterschied zum <a href="/unterhalt/nachehelicher-unterhalt" class="text-gold hover:underline font-semibold">nachehelichen Unterhalt</a> nach Art. 125 ZGB gilt beim Trennungsunterhalt der Grundsatz der <strong>Gleichbehandlung</strong> beider Ehegatten: Beide sollen den zuletzt gemeinsam gelebten Lebensstandard möglichst aufrechterhalten können.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Berechnungsmethode: Die zweistufig-konkrete Methode</h3>
+
+    <p class="text-gray-700 mb-6">Seit den Leitentscheiden des Bundesgerichts vom November 2020 (BGE 147 III 265, BGE 147 III 293, BGE 147 III 301) ist die <strong>zweistufig-konkrete Methode mit Überschussverteilung</strong> die schweizweit verbindliche Berechnungsmethode für alle Unterhaltsarten – auch für den Trennungsunterhalt:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Stufe</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Stufe 1: Einkommen und Bedarf</td>
+                    <td class="px-6 py-4 text-gray-700">Ermittlung des tatsächlichen und gegebenenfalls hypothetischen Einkommens beider Ehegatten sowie des konkreten Bedarfs aller Familienmitglieder (betreibungsrechtliches Existenzminimum + familienrechtlicher Zuschlag)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Stufe 2: Verteilung</td>
+                    <td class="px-6 py-4 text-gray-700">Zuerst Deckung des Existenzminimums aller Beteiligten; danach hälftige Überschussverteilung zwischen den Ehegatten. Bei unzureichenden Mitteln: Mankoteilung (Defizit wird geteilt).</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wesentliche Unterschiede zum Scheidungsunterhalt</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Trennungsunterhalt (Art. 163 ZGB)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Scheidungsunterhalt (Art. 125 ZGB)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Grundprinzip</td>
+                    <td class="px-6 py-4 text-gray-700">Gleichbehandlung der Ehegatten</td>
+                    <td class="px-6 py-4 text-gray-700">Eigenversorgung (Clean Break)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Massstab</td>
+                    <td class="px-6 py-4 text-gray-700">Zuletzt gelebter Lebensstandard</td>
+                    <td class="px-6 py-4 text-gray-700">Angemessener Unterhalt</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Befristung</td>
+                    <td class="px-6 py-4 text-gray-700"><strong>Nicht möglich</strong> (BGE 148 III 358)</td>
+                    <td class="px-6 py-4 text-gray-700">Möglich und üblich</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Ende</td>
+                    <td class="px-6 py-4 text-gray-700">Rechtskräftige Scheidung oder Tod</td>
+                    <td class="px-6 py-4 text-gray-700">Befristung, Wiederheirat, Tod, Verwirkung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Höhe</td>
+                    <td class="px-6 py-4 text-gray-700">Tendenziell <strong>höher</strong></td>
+                    <td class="px-6 py-4 text-gray-700">Tendenziell tiefer</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Erwerbsobliegenheit und Schulstufenmodell</h3>
+
+    <p class="text-gray-700 mb-6">Trotz der Nicht-Befristbarkeit des Trennungsunterhalts besteht eine <strong>Pflicht zur Aufnahme oder Erweiterung der Erwerbstätigkeit</strong>, insbesondere wenn eine Versöhnung nicht mehr realistisch erscheint (BGE 137 III 385). Das Bundesgericht wendet dabei zunehmend die Kriterien von Art. 125 ZGB an. Für die Frage, ab wann und in welchem Umfang der betreuende Elternteil arbeiten muss, gilt das <strong>Schulstufenmodell</strong> (BGE 5A_743/2017):</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Alter des jüngsten Kindes</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erwartetes Erwerbspensum</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Vorschulalter (0–4 Jahre)</td>
+                    <td class="px-6 py-4 text-gray-700">Keine oder minimale Erwerbstätigkeit</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Ab Kindergarten/Schulpflicht (ca. 4–5 Jahre)</td>
+                    <td class="px-6 py-4 text-gray-700"><strong>50 %</strong></td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Ab Sekundarstufe I (ca. 12 Jahre)</td>
+                    <td class="px-6 py-4 text-gray-700"><strong>80 %</strong></td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Ab dem 16. Lebensjahr</td>
+                    <td class="px-6 py-4 text-gray-700"><strong>100 %</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Diese Richtwerte sind Leitlinien, keine starren Regeln. Das Gericht berücksichtigt stets die individuellen Umstände. Liegt das tatsächliche Einkommen unter dem zumutbaren Pensum, kann ein <strong>hypothetisches Einkommen</strong> angerechnet werden. Übergangsfristen von 6–12 Monaten werden üblicherweise gewährt.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Mankoteilung:</p>
+        <p class="text-gray-700">Genügen die verfügbaren Mittel nicht, um den Bedarf beider Ehegatten zu decken, wird das <strong>Manko geteilt</strong>. Es gibt keinen gesetzlich vorgeschriebenen Verteilungsschlüssel; in der Praxis wird das Defizit häufig hälftig aufgeteilt, doch Abweichungen sind möglich.</p>
+    </div>
+
+    <!-- 6. Kinder bei Trennung -->
+    <h2 id="kinder-bei-trennung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">6. Kinder bei Trennung: Sorgerecht, Obhut und Unterhalt</h2>
+
+    <p class="text-gray-700 mb-6">Die Regelung der Kinderbelange ist oft der sensibelste Teil einer Trennung. Grundsätzlich gilt: Das <a href="/sorgerecht/gemeinsames-sorgerecht" class="text-gold hover:underline font-semibold">gemeinsame Sorgerecht</a> bleibt bei einer Trennung automatisch bestehen (Art. 296 ff. ZGB). Beide Eltern müssen weiterhin gemeinsam über wichtige Belange wie Schulwahl, medizinische Eingriffe, Religionszugehörigkeit und Wohnortwechsel entscheiden.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Obhut und Betreuungsregelung</h3>
+
+    <p class="text-gray-700 mb-6">Das Eheschutzgericht regelt, bei welchem Elternteil das Kind seinen Lebensmittelpunkt hat (Obhut). Zunehmend wird auch die <a href="/sorgerecht/alternierende-obhut" class="text-gold hover:underline font-semibold">alternierende Obhut</a> (Wechselmodell) geprüft, sofern dies dem Kindeswohl dient und die Umstände es erlauben. Das Bundesgericht hat die alternierende Obhut seit BGE 142 III 612 gestärkt. Massgebend bei der Obhutszuteilung sind:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kriterium</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erläuterung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kindeswohl</td>
+                    <td class="px-6 py-4 text-gray-700">Oberster Massstab für alle Entscheidungen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Bisherige Betreuung</td>
+                    <td class="px-6 py-4 text-gray-700">Stabilität und Kontinuität der bestehenden Betreuungssituation</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Erziehungsfähigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Fähigkeit beider Eltern, das Kind angemessen zu betreuen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Bindung des Kindes</td>
+                    <td class="px-6 py-4 text-gray-700">Emotionale Beziehung zu jedem Elternteil</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Räumliche Nähe</td>
+                    <td class="px-6 py-4 text-gray-700">Nähe zu Schule, Freunden und sozialem Umfeld</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Wille des Kindes</td>
+                    <td class="px-6 py-4 text-gray-700">Ab ca. 12 Jahren zunehmend beachtet</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kooperationsfähigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Bereitschaft zur Zusammenarbeit (besonders bei alternierend Obhut)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Besuchsrecht (persönlicher Verkehr)</h3>
+
+    <p class="text-gray-700 mb-6">Der nicht-obhutsberechtigte Elternteil hat ein Recht auf regelmässigen persönlichen Verkehr mit dem Kind (Art. 273 ZGB). Die übliche Regelung umfasst jedes zweite Wochenende (Freitagabend bis Sonntagabend), einen Nachmittag oder Abend pro Woche sowie eine hälftige Aufteilung der Schulferien und abwechselnde Feiertage. Mehr Informationen finden Sie in unserem Artikel zum <a href="/sorgerecht/umgangsrecht" class="text-gold hover:underline font-semibold">Umgangsrecht</a>. Das Besuchsrecht kann eingeschränkt oder in Ausnahmefällen entzogen werden, wenn das Kindeswohl gefährdet ist (Art. 274 ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kindesunterhalt bei Trennung</h3>
+
+    <p class="text-gray-700 mb-6">Der <a href="/unterhalt/alimente" class="text-gold hover:underline font-semibold">Kindesunterhalt</a> hat Vorrang vor dem Ehegattenunterhalt (Art. 276a ZGB). Er setzt sich seit der Revision von 2017 aus zwei Komponenten zusammen: dem <strong>Barunterhalt</strong> (tatsächliche Kinderkosten wie Essen, Kleidung, Krankenkasse, Schule) und dem <a href="/unterhalt/betreuungsunterhalt" class="text-gold hover:underline font-semibold">Betreuungsunterhalt</a> (Sicherung der Existenz des betreuenden Elternteils, der wegen der Kinderbetreuung nicht voll erwerbstätig sein kann). Die Berechnung erfolgt ebenfalls nach der zweistufig-konkreten Methode (BGE 147 III 265).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Zuständigkeit: Eheschutzgericht vs. KESB</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Situation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zuständige Behörde</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Laufendes Eheschutzverfahren</td>
+                    <td class="px-6 py-4 text-gray-700">Eheschutzgericht (Einzelrichter Bezirksgericht)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Laufendes Scheidungsverfahren</td>
+                    <td class="px-6 py-4 text-gray-700">Scheidungsgericht</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Kein gerichtliches Verfahren hängig</td>
+                    <td class="px-6 py-4 text-gray-700"><a href="/sorgerecht/kesb" class="text-gold hover:underline font-semibold">KESB</a> am Wohnsitz des Kindes</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Nicht verheiratete Eltern</td>
+                    <td class="px-6 py-4 text-gray-700">KESB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Kindesschutzmassnahmen (Art. 307–317 ZGB)</td>
+                    <td class="px-6 py-4 text-gray-700">KESB (unabhängig vom Zivilstand)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Umzug mit Kindern:</p>
+        <p class="text-gray-700">Bei gemeinsamer elterlicher Sorge bedarf ein <strong>Umzug mit dem Kind an einen weiter entfernten Ort</strong> der Zustimmung des anderen Elternteils, sofern der Umzug das Besuchsrecht erheblich beeinträchtigt. Ein Umzug <strong>ins Ausland</strong> erfordert immer die Zustimmung. Wird keine Einigung erzielt, entscheidet das Gericht oder die KESB gestützt auf das Kindeswohl.</p>
+    </div>
+
+    <!-- 7. Güterrecht -->
+    <h2 id="gueterrecht" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">7. Güterrecht und Gütertrennung bei Trennung</h2>
+
+    <p class="text-gray-700 mb-6">Ohne gerichtliche Anordnung läuft der ordentliche Güterstand der <a href="/gueterrecht" class="text-gold hover:underline font-semibold">Errungenschaftsbeteiligung</a> während der Trennung weiter. Das bedeutet: Die Errungenschaft beider Ehegatten wächst auch während des Getrenntlebens an – mit allen Vor- und Nachteilen. Wertveränderungen (z.B. Börsenverluste, Schuldenanhäufung) eines Ehegatten betreffen den späteren Vorschlag.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gütertrennung auf Antrag (Art. 176 Abs. 1 Ziff. 3 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Das Eheschutzgericht kann die Gütertrennung anordnen, wenn die Umstände es rechtfertigen. Das Bundesgericht legt diese Voraussetzung gemäss BGE 116 II 21 zwar <strong>restriktiv aus</strong> – es braucht eine konkrete Gefährdung der wirtschaftlichen Interessen –, doch in der Praxis wird dem Antrag bei einer effektiven Trennung meist stattgegeben. Die Wirkungen sind erheblich:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Ohne Gütertrennung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Mit Gütertrennung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Errungenschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Wächst weiter an</td>
+                    <td class="px-6 py-4 text-gray-700">Wird aufgeteilt (Stichtag: Tag der Anordnung)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Vermögensverwaltung</td>
+                    <td class="px-6 py-4 text-gray-700">Gemäss Errungenschaftsbeteiligung</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder verwaltet und nutzt sein Vermögen allein</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Risiko</td>
+                    <td class="px-6 py-4 text-gray-700">Wertminderung betrifft Vorschlag</td>
+                    <td class="px-6 py-4 text-gray-700">Kein Risiko durch Verhalten des anderen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Stichtag bei späterer Scheidung</td>
+                    <td class="px-6 py-4 text-gray-700">Tag der Einreichung des Scheidungsbegehrens (Art. 204 Abs. 2 ZGB)</td>
+                    <td class="px-6 py-4 text-gray-700">Tag der Anordnung der Gütertrennung</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Bei der <strong>Ehetrennung nach Art. 117 ZGB</strong> tritt die Gütertrennung automatisch ein (Art. 118 Abs. 1 ZGB), ohne dass sie separat beantragt werden muss. Im Eheschutzverfahren hingegen muss sie ausdrücklich verlangt und begründet werden.</p>
+
+    <!-- 8. Steuern -->
+    <h2 id="steuern" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">8. Steuerliche Folgen der Trennung</h2>
+
+    <p class="text-gray-700 mb-6">Die Trennung hat sofortige steuerliche Konsequenzen. Ab dem <strong>Trennungsjahr</strong> werden die Ehegatten für die gesamte Steuerperiode <strong>getrennt veranlagt</strong> – jeder füllt eine eigene Steuererklärung aus.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Voraussetzungen für die getrennte Veranlagung</h3>
+
+    <p class="text-gray-700 mb-6">Die Steuerbehörden erkennen eine Trennung an, wenn folgende <strong>kumulative Kriterien</strong> erfüllt sind:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kriterium</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erläuterung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Aufhebung des Haushalts</td>
+                    <td class="px-6 py-4 text-gray-700">Gemeinsamer Haushalt dauerhaft aufgehoben (mindestens 6 Monate)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Keine Mittelgemeinschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Kein Poolen der Mittel für Wohnen und Unterhalt</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Dokumentierte Zahlungen</td>
+                    <td class="px-6 py-4 text-gray-700">Unterstützung nur in bezifferten, dokumentierten Unterhaltsbeiträgen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Steuerliche Behandlung von Unterhaltsbeiträgen</h3>
+
+    <p class="text-gray-700 mb-6"><strong>Periodische Unterhaltszahlungen</strong> (monatliche Alimente) sind beim Empfänger steuerbares Einkommen und beim Leistenden abzugsfähig. <strong>Kapitalzahlungen</strong> hingegen sind beim Empfänger steuerfrei und beim Leistenden nicht abzugsfähig. Der Kinderabzug steht dem Elternteil zu, bei dem das Kind lebt. Die Solidarhaftung für gemeinsame Steuerschulden aus Vorjahren entfällt mit der Trennung.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Heiratsstrafe bei Trennung:</p>
+        <p class="text-gray-700">Die getrennte Veranlagung kann für Doppelverdiener-Ehepaare steuerlich vorteilhaft sein, da die sogenannte <strong>«Heiratsstrafe»</strong> (Progression durch gemeinsame Veranlagung) entfällt. Andererseits gehen der Verheiratetenabzug und gewisse Sozialabzüge verloren.</p>
+    </div>
+
+    <!-- 9. Vorsorge -->
+    <h2 id="vorsorge" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">9. Vorsorge und Sozialversicherungen (AHV, BVG, 3a)</h2>
+
+    <p class="text-gray-700 mb-6">Die Auswirkungen einer Trennung auf die Vorsorge unterscheiden sich fundamental von denjenigen einer <a href="/scheidung/vorsorgeausgleich" class="text-gold hover:underline font-semibold">Scheidung</a>. Grundregel: Bei blosser Trennung erfolgt <strong>kein Vorsorgeausgleich</strong>.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Säule</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bei Trennung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bei Scheidung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">AHV (1. Säule)</td>
+                    <td class="px-6 py-4 text-gray-700">Kein Splitting; <strong>Plafonierung</strong> bleibt (max. 150 % Maximalrente für Ehepaar) – bis zu CHF 14'000/Jahr weniger als Unverheiratete</td>
+                    <td class="px-6 py-4 text-gray-700">Splitting der Einkommen; volle Einzelrenten</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Pensionskasse (2. Säule)</td>
+                    <td class="px-6 py-4 text-gray-700"><strong>Keine Teilung</strong> der Austrittsleistung</td>
+                    <td class="px-6 py-4 text-gray-700">Hälftige Teilung (Art. 122 ff. ZGB)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Säule 3a</td>
+                    <td class="px-6 py-4 text-gray-700"><strong>Keine Teilung</strong></td>
+                    <td class="px-6 py-4 text-gray-700">Teilung im Rahmen des Güterrechts</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Witwenrente/Witwerrente</td>
+                    <td class="px-6 py-4 text-gray-700"><strong>Voller Anspruch</strong> bleibt erhalten</td>
+                    <td class="px-6 py-4 text-gray-700">Strengere Bedingungen (mind. 10 Jahre Ehe + Kinder)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Diese Unterschiede schaffen einen <strong>komplexen finanziellen Trade-off</strong>: Die Trennung bewahrt wertvolle Hinterlassenenleistungen und vermeidet das oft schmerzhafte BVG-Splitting, kostet aber durch die AHV-Rentenplafonierung bis zu CHF 14'000 jährlich. Für Paare im oder kurz vor dem Rentenalter kann diese Abwägung entscheidend sein.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">AHV-Beitragspflicht bei Trennung:</p>
+        <p class="text-gray-700">Ein nicht erwerbstätiger Ehegatte, dessen erwerbstätiger Partner mindestens den doppelten Mindestbeitrag an die AHV entrichtet, ist von der eigenen Beitragspflicht befreit. Bei einer Trennung kann diese Befreiung <strong>entfallen</strong>, sodass der nichterwerbstätige Ehegatte eigene AHV-Beiträge entrichten muss.</p>
+    </div>
+
+    <!-- 10. Erbrecht -->
+    <h2 id="erbrecht" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">10. Erbrecht während der Trennung</h2>
+
+    <p class="text-gray-700 mb-6">Getrennt lebende Ehegatten bleiben <strong>gesetzliche Erben</strong> füreinander (Art. 462 ZGB). Der Pflichtteilsschutz des überlebenden Ehegatten bleibt grundsätzlich vollumfänglich bestehen. Erst die rechtskräftige Scheidung beseitigt das gegenseitige Erbrecht vollständig.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bei Trennung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bei Scheidung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Gesetzliches Erbrecht</td>
+                    <td class="px-6 py-4 text-gray-700">Bleibt vollständig bestehen</td>
+                    <td class="px-6 py-4 text-gray-700">Entfällt vollständig</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Pflichtteil</td>
+                    <td class="px-6 py-4 text-gray-700">Grundsätzlich bestehend</td>
+                    <td class="px-6 py-4 text-gray-700">Entfällt</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Ausnahme Pflichtteil</td>
+                    <td class="px-6 py-4 text-gray-700">Entfällt bei 2+ Jahren Trennung und hängiger Scheidungsklage (Art. 472 ZGB, seit 01.01.2023)</td>
+                    <td class="px-6 py-4 text-gray-700">–</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Testierfreiheit</td>
+                    <td class="px-6 py-4 text-gray-700">Frei verfügbare Quote kann zugunsten Dritter verwendet werden</td>
+                    <td class="px-6 py-4 text-gray-700">Volle Testierfreiheit (kein Ehegatten-Pflichtteil)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Dringend empfohlen:</p>
+        <p class="text-gray-700">Bei einer Trennung sollte dringend ein <strong>Testament</strong> errichtet oder aktualisiert werden, um die frei verfügbare Quote nach eigenen Wünschen zu verteilen. Ohne testamentarische Verfügung erbt der getrennt lebende Ehegatte gemäss den gesetzlichen Bestimmungen – möglicherweise gegen den Willen des Verstorbenen.</p>
+    </div>
+
+    <!-- 11. Schulden -->
+    <h2 id="schulden" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">11. Schulden und Haftung bei Trennung</h2>
+
+    <p class="text-gray-700 mb-6">Während des Zusammenlebens haften Ehegatten gemäss Art. 166 ZGB <strong>solidarisch</strong> für Schulden, die zur Deckung der laufenden Familienbedürfnisse eingegangen wurden (Haushaltseinkäufe, Kinderkosten, Versicherungen, Arztkosten). Mit der Aufhebung des gemeinsamen Haushalts entfällt diese Solidarhaftung für <strong>neue</strong> Verbindlichkeiten grundsätzlich.</p>
+
+    <p class="text-gray-700 mb-6">Bereits bestehende gemeinsame Verpflichtungen – etwa eine gemeinsame Hypothek, ein Darlehen oder ein Leasingvertrag – bleiben allerdings <strong>trotz Trennung bestehen</strong>. Die interne Aufteilung zwischen den Ehegatten ändert nichts an der Haftung gegenüber Dritten. Wird eine Gütertrennung angeordnet, entsteht keine gemeinsame Haftung mehr für neue Schulden, doch Altschulden bleiben unberührt.</p>
+
+    <!-- 12. Trennungsvereinbarung -->
+    <h2 id="trennungsvereinbarung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">12. Die Trennungsvereinbarung</h2>
+
+    <p class="text-gray-700 mb-6">Eine <strong>Trennungsvereinbarung</strong> (auch Trennungskonvention genannt) ist ein schriftliches Abkommen zwischen den Ehegatten, das die wesentlichen Folgen der Trennung regelt. Sie kann aussergerichtlich geschlossen oder vom Gericht im Rahmen eines Eheschutzverfahrens genehmigt werden.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Inhalt einer Trennungsvereinbarung</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Regelungspunkt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Details</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Eheliche Wohnung</td>
+                    <td class="px-6 py-4 text-gray-700">Wer bleibt? Wer zieht aus? Kostentragung (Miete/Hypothek)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Hausrat</td>
+                    <td class="px-6 py-4 text-gray-700">Aufteilung der Möbel, Fahrzeuge und Haushaltgegenstände</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Ehegattenunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Höhe, Zahlungsmodalitäten, Dauer</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kinderbelange</td>
+                    <td class="px-6 py-4 text-gray-700">Obhut, Betreuungsregelung, Besuchsrecht mit konkreten Tagen/Zeiten/Übergabeorten</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kindesunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Konkrete Beträge für Bar- und Betreuungsunterhalt</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Ferien und Feiertage</td>
+                    <td class="px-6 py-4 text-gray-700">Aufteilung der Schulferien, Weihnachten, Ostern etc.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Laufende Kosten</td>
+                    <td class="px-6 py-4 text-gray-700">Aufteilung von Miete, Nebenkosten, Versicherungen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Steuern</td>
+                    <td class="px-6 py-4 text-gray-700">Regelung für das Übergangsjahr</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Konten und Vermögen</td>
+                    <td class="px-6 py-4 text-gray-700">Bankkonten, Wertpapiere, Immobilien</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Dauer und Kündigung</td>
+                    <td class="px-6 py-4 text-gray-700">Geltungsdauer, Kündigungsfristen, Anpassungsklauseln</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Aussergerichtlich vs. gerichtlich genehmigt</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aussergerichtlich</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gerichtlich genehmigt</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Vollstreckbarkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Nicht direkt vollstreckbar</td>
+                    <td class="px-6 py-4 text-gray-700">Vollstreckbar wie ein Gerichtsurteil</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Alimentenhilfe</td>
+                    <td class="px-6 py-4 text-gray-700"><strong>Nicht möglich</strong></td>
+                    <td class="px-6 py-4 text-gray-700">Möglich</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Alimentenbevorschussung</td>
+                    <td class="px-6 py-4 text-gray-700"><strong>Nicht möglich</strong></td>
+                    <td class="px-6 py-4 text-gray-700">Möglich</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kinderbelange</td>
+                    <td class="px-6 py-4 text-gray-700">Keine rechtsverbindliche Wirkung</td>
+                    <td class="px-6 py-4 text-gray-700">Rechtsverbindlich</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kosten</td>
+                    <td class="px-6 py-4 text-gray-700">Gering (evtl. Anwaltsberatung)</td>
+                    <td class="px-6 py-4 text-gray-700">Gerichtsgebühren + evtl. Anwaltskosten</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Mustervorlagen für Trennungsvereinbarungen – sowohl für Paare mit als auch ohne Kinder – sind bei kantonalen Gerichten erhältlich, beispielsweise bei den Gerichten des Kantons Zürich.</p>
+
+    <!-- 13. Superprovisorische Massnahmen -->
+    <h2 id="superprovisorisch" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">13. Superprovisorische Massnahmen und Gewaltschutz</h2>
+
+    <p class="text-gray-700 mb-6">In besonders dringenden Fällen – namentlich bei <strong>häuslicher Gewalt</strong> – kann das Gericht gestützt auf Art. 265 ZPO <strong>superprovisorische Massnahmen</strong> anordnen: sofortige Schutzanordnungen <strong>ohne Anhörung der Gegenpartei</strong>. Diese können innerhalb von Stunden oder wenigen Tagen erlassen werden.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Typische superprovisorische Massnahmen</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Massnahme</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Inhalt</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Wegweisung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 28b Abs. 1 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Sofortige Entfernung des Gewalttäters aus der gemeinsamen Wohnung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kontaktverbot</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 28b Abs. 1 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Verbot der Kontaktaufnahme (persönlich, telefonisch, elektronisch)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Rayonverbot</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 28b Abs. 1 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Verbot, sich bestimmten Orten zu nähern (Wohnung, Arbeitsplatz, Schule)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Sofortige Wohnungszuweisung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 176 Abs. 1 Ziff. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Zuweisung der ehelichen Wohnung an den gefährdeten Ehegatten</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Sofortige Obhutsregelung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 176 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Vorläufige Regelung der Kinderbetreuung</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Voraussetzung für superprovisorische Massnahmen ist die <strong>Glaubhaftmachung</strong> einer unmittelbaren Gefährdung. Blosse Behauptungen genügen nicht – es müssen Belege oder Indizien vorgelegt werden (z.B. ärztliche Atteste, Fotos, Polizeirapporte). Nach Erlass muss das Gericht der Gegenpartei unverzüglich Gelegenheit zur Stellungnahme geben. Zusätzlich verfügen viele Kantone über eigene <strong>Gewaltschutzgesetze</strong>, die der Polizei ermöglichen, eine sofortige Wegweisung anzuordnen.</p>
+
+    <!-- 14. Kosten -->
+    <h2 id="kosten" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">14. Kosten des Eheschutzverfahrens</h2>
+
+    <p class="text-gray-700 mb-6">Die <a href="/scheidung/kosten-einer-scheidung" class="text-gold hover:underline font-semibold">Kosten</a> eines Eheschutzverfahrens setzen sich aus Gerichtsgebühren und allfälligen Anwaltskosten zusammen. Sie variieren je nach Kanton, Komplexität und Streitwert erheblich.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kostenart</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Einvernehmlich</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Strittig</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Gerichtsgebühren</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 200–800</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'000–5'000+</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Anwaltskosten (pro Partei)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'500–4'000</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 3'000–15'000+</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Gesamtkosten (geschätzt)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 2'000–5'000</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 5'000–20'000+</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Stundenansatz Anwalt</td>
+                    <td class="px-6 py-4 text-gray-700" colspan="2">CHF 250–350/Stunde (je nach Kanzlei und Region)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Finanzierung des Verfahrens</h3>
+
+    <p class="text-gray-700 mb-6">Wer die Kosten nicht selbst tragen kann, hat zwei Möglichkeiten: Die <a href="/scheidung/unentgeltliche-rechtspflege" class="text-gold hover:underline font-semibold">unentgeltliche Rechtspflege</a> (Art. 117 ZPO) wird bei nachgewiesener Bedürftigkeit und nicht aussichtsloser Klage gewährt. Im Eheschutz gilt die Besonderheit, dass die unentgeltliche Rechtspflege unter Umständen nur <strong>bedingt</strong> gewährt wird – nämlich unter der Voraussetzung, dass zuerst ein <strong>Prozesskostenvorschuss</strong> (provisio ad litem) vom anderen Ehegatten verlangt wird (Art. 159 ZGB). Erst wenn dieser den Vorschuss nicht leisten kann, wird die volle unentgeltliche Rechtspflege gewährt.</p>
+
+    <!-- 15. Abänderung -->
+    <h2 id="abaenderung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">15. Abänderung von Eheschutzmassnahmen (Art. 179 ZGB)</h2>
+
+    <p class="text-gray-700 mb-6">Eheschutzmassnahmen sind nicht in Stein gemeisselt. Gemäss Art. 179 ZGB können sie <strong>jederzeit abgeändert</strong> werden, wenn sich die Verhältnisse <strong>wesentlich und dauernd</strong> geändert haben. Im Unterschied zu Scheidungsurteilen erlangen Eheschutzentscheide keine <strong>materielle Rechtskraft</strong> – sie sind grundsätzlich jederzeit abänderbar (BGE 141 III 376).</p>
+
+    <p class="text-gray-700 mb-6">Typische Gründe für eine Abänderung sind: erhebliche Einkommensveränderungen (Jobverlust, Beförderung), veränderte Betreuungssituation der Kinder, Aufnahme einer neuen Partnerschaft, Gesundheitsveränderungen oder ein Wohnortwechsel. Der Antrag auf Abänderung kann von beiden Ehegatten jederzeit gestellt werden – es gibt keine Sperrfrist.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Rechtsmittel gegen Ehschutzentscheide</h3>
+
+    <p class="text-gray-700 mb-6">Gegen einen erstinstanzlichen Eheschutzentscheid steht die <strong>Berufung</strong> an die obere kantonale Instanz offen. Die Berufungsfrist beträgt im summarischen Verfahren nur <strong>10 Tage</strong> (Art. 314 Abs. 1 ZPO) – deutlich kürzer als die 30-tägige Frist im ordentlichen Verfahren. Die Berufung hat <strong>keine automatische aufschiebende Wirkung</strong>: Der Eheschutzentscheid bleibt vorläufig wirksam, bis die Berufungsinstanz anders entscheidet.</p>
+
+    <!-- 16. Übergang zur Scheidung -->
+    <h2 id="uebergang-scheidung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">16. Von der Trennung zur Scheidung</h2>
+
+    <p class="text-gray-700 mb-6">Eine Trennung ist in der Schweiz <strong>keine Voraussetzung</strong> für eine Scheidung. Es gibt drei Wege von der Trennung zur Scheidung:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Scheidungsart</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Voraussetzungen</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold"><a href="/scheidung/scheidung-auf-gemeinsames-begehren" class="text-gold hover:underline">Gemeinsames Begehren</a></td>
+                    <td class="px-6 py-4 text-gray-700">Art. 111/112 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Einverständnis beider Ehegatten; <strong>jederzeit möglich</strong>, keine Wartefrist</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold"><a href="/scheidung/scheidungsklage" class="text-gold hover:underline">Scheidung nach 2 Jahren</a></td>
+                    <td class="px-6 py-4 text-gray-700">Art. 114 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Mindestens zweijährige faktische Trennung; <strong>einseitig möglich</strong></td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Unzumutbarkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 115 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Schwerwiegende Gründe (z.B. schwere Straftaten, fortdauernde Gewalt); sofort möglich</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Gemäss Art. 137 ZGB bleiben bestehende Eheschutzmassnahmen in Kraft, bis das Scheidungsgericht etwas anderes anordnet. Die Scheidungsmassnahmen treten dann an die Stelle der Eheschutzmassnahmen. Kurze Versöhnungsversuche von weniger als drei Monaten unterbrechen die zweijährige Trennungsfrist grundsätzlich nicht.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wirkungsdauer:</p>
+        <p class="text-gray-700">Eheschutzmassnahmen haben <strong>keine automatische Befristung</strong>. Sie gelten, bis sie aufgehoben, abgeändert oder durch ein Scheidungsurteil ersetzt werden. Es gibt keine Pflicht, nach einer bestimmten Trennungsdauer die Scheidung einzureichen.</p>
+    </div>
+
+    <!-- 17. Vergleich Trennung vs. Scheidung -->
+    <h2 id="vergleich" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">17. Trennung vs. Scheidung: Der umfassende Vergleich</h2>
+
+    <p class="text-gray-700 mb-6">Die Entscheidung zwischen Trennung und <a href="/scheidung/ablauf-einer-scheidung" class="text-gold hover:underline font-semibold">Scheidung</a> hat weitreichende Konsequenzen. Die folgende Übersicht zeigt die wichtigsten Unterschiede.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Trennung (Eheschutz)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Scheidung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Zivilstand</td>
+                    <td class="px-6 py-4 text-gray-700">Verheiratet</td>
+                    <td class="px-6 py-4 text-gray-700">Geschieden</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Wiederheirat</td>
+                    <td class="px-6 py-4 text-gray-700">Nicht möglich</td>
+                    <td class="px-6 py-4 text-gray-700">Möglich</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Verfahren</td>
+                    <td class="px-6 py-4 text-gray-700">Summarisch (schnell, günstig)</td>
+                    <td class="px-6 py-4 text-gray-700">Ordentlich (umfassend, teurer)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Dauer</td>
+                    <td class="px-6 py-4 text-gray-700">1–6 Monate</td>
+                    <td class="px-6 py-4 text-gray-700">6 Monate bis 3+ Jahre</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kosten</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 5'000–20'000</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 10'000–50'000+</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Unterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Oft höher, nicht befristbar</td>
+                    <td class="px-6 py-4 text-gray-700">Oft tiefer, befristbar</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Güterrecht</td>
+                    <td class="px-6 py-4 text-gray-700">Läuft weiter (oder Gütertrennung auf Antrag)</td>
+                    <td class="px-6 py-4 text-gray-700">Zwingende güterrechtliche Auseinandersetzung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BVG-Teilung</td>
+                    <td class="px-6 py-4 text-gray-700">Nein</td>
+                    <td class="px-6 py-4 text-gray-700">Ja (zwingend, Art. 122 ff. ZGB)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">AHV-Splitting</td>
+                    <td class="px-6 py-4 text-gray-700">Nein (Plafonierung bleibt)</td>
+                    <td class="px-6 py-4 text-gray-700">Ja (volle Einzelrenten)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Erbrecht</td>
+                    <td class="px-6 py-4 text-gray-700">Bleibt bestehen</td>
+                    <td class="px-6 py-4 text-gray-700">Entfällt vollständig</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Witwenrente</td>
+                    <td class="px-6 py-4 text-gray-700">Voller Anspruch</td>
+                    <td class="px-6 py-4 text-gray-700">Strengere Bedingungen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Beweismass</td>
+                    <td class="px-6 py-4 text-gray-700">Glaubhaftmachung</td>
+                    <td class="px-6 py-4 text-gray-700">Voller Beweis</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Rechtskraft</td>
+                    <td class="px-6 py-4 text-gray-700">Abänderbar (Art. 179 ZGB)</td>
+                    <td class="px-6 py-4 text-gray-700">Materiell rechtskräftig</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wann ist eine Trennung sinnvoll?</h3>
+
+    <p class="text-gray-700 mb-6">Eine Trennung ohne Scheidung ist insbesondere in folgenden Situationen empfehlenswert: wenn Sie sich <strong>Zeit zum Nachdenken</strong> geben möchten und eine Versöhnung nicht ausgeschlossen ist; wenn <strong>religiöse oder moralische Gründe</strong> gegen eine Scheidung sprechen; wenn die <strong>erbrechtliche Absicherung</strong> des finanziell schwächeren Ehegatten wichtig ist; wenn der <strong>Erhalt der Witwenrente</strong> finanziell bedeutsam ist; oder wenn Sie im <strong>Rentenalter</strong> sind und ein BVG-Splitting vermeiden möchten.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wann ist eine Scheidung besser?</h3>
+
+    <p class="text-gray-700 mb-6">Eine Scheidung ist dagegen ratsam, wenn Sie <strong>endgültig Klarheit</strong> schaffen wollen; wenn Sie <strong>eine neue Ehe</strong> eingehen möchten; wenn der finanziell schwächere Ehegatte vom <strong>BVG-Vorsorgeausgleich</strong> profitieren würde; wenn die <strong>AHV-Rentenplafonierung</strong> finanziell stark ins Gewicht fällt; oder wenn eine dauerhafte <strong>rechtliche Verflechtung</strong> vermieden werden soll.</p>
+
+    <!-- 18. Trennung im Alter -->
+    <h2 id="trennung-im-alter" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">18. Trennung im Alter (Grauscheidung)</h2>
+
+    <p class="text-gray-700 mb-6">Ein wachsender Trend: Immer mehr ältere Paare trennen sich. Für Personen im Rentenalter ist die Abwägung zwischen Trennung und Scheidung besonders komplex, da die finanziellen Konsequenzen gravierend sind.</p>
+
+    <p class="text-gray-700 mb-6">Die <strong>AHV-Rentenplafonierung</strong> kostet getrennt lebende Ehepaare bis zu CHF 14'000 jährlich im Vergleich zu geschiedenen Einzelpersonen. Gleichzeitig würde eine Scheidung das <strong>BVG-Splitting</strong> auslösen, was bei bereits laufenden Renten zu erheblichen und schwer voraussehbaren Einbussen führen kann. Hinzu kommt: 27 % der geschiedenen weiblichen Pensionärinnen in der Schweiz sind auf AHV-Ergänzungsleistungen angewiesen – ein Risiko, das durch die Beibehaltung des Ehestands vermieden werden kann.</p>
+
+    <p class="text-gray-700 mb-6">In diesem Kontext gewinnt die formelle <strong>Ehetrennung nach Art. 117 ZGB</strong> neue Bedeutung. Sie ermöglicht die Auflösung des Güterstands (automatische Gütertrennung gemäss Art. 118 ZGB) bei gleichzeitiger Beibehaltung der erbrechtlichen und vorsorgerechtlichen Rechtsstellung. Für ältere Ehepaare kann dies der ideale Kompromiss zwischen finanzieller Absicherung und persönlicher Trennung sein.</p>
+
+    <!-- 19. Innertrennung -->
+    <h2 id="innertrennung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">19. Innertrennung: Trennung unter einem Dach</h2>
+
+    <p class="text-gray-700 mb-6">Nicht immer ist ein sofortiger Auszug möglich oder gewollt. Manche Ehepaare leben getrennt <strong>innerhalb derselben Wohnung</strong> – die sogenannte Innertrennung. Diese Situation ist rechtlich problematisch.</p>
+
+    <p class="text-gray-700 mb-6">Damit eine Innertrennung rechtlich als Trennung anerkannt wird, müssen mehrere Voraussetzungen erfüllt sein: <strong>separate Schlafräume</strong>, <strong>getrennte Finanzen</strong> (kein gemeinsames Haushaltsgeld), <strong>keine gemeinsamen Mahlzeiten</strong>, <strong>separate Haushaltsführung</strong> (jeder kocht, wäscht und putzt für sich) und <strong>kein gemeinsames soziales Auftreten</strong> als Paar.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Steuerliche Anerkennung unsicher:</p>
+        <p class="text-gray-700">Die Steuerbehörden erkennen eine Innertrennung <strong>häufig nicht an</strong>. Die Voraussetzung der «dauerhaften Aufhebung des gemeinsamen Haushalts» ist bei gemeinsamer Wohnung schwer nachzuweisen. Ebenso ist fraglich, ob eine Innertrennung für die <strong>zweijährige Trennungsfrist</strong> nach Art. 114 ZGB anerkannt wird – die Rechtsprechung ist hier uneinheitlich.</p>
+    </div>
+
+    <!-- 20. Anwalt-Sektion -->
+    <section id="anwalt" class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">20. Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">Eine Trennung berührt zahlreiche Lebensbereiche gleichzeitig: Wohnsituation, Finanzen, Kinderbetreuung, Vorsorge und Erbrecht. Fehler bei der Regelung der Trennungsfolgen können langfristige und oft irreversible Konsequenzen haben – etwa bei der Unterhaltsberechnung, der Wohnungszuweisung oder der güterrechtlichen Auseinandersetzung.</p>
+
+        <p class="text-gray-700 mb-6">Besonders bei folgenden Konstellationen ist die Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> dringend empfohlen: wenn Kinder betroffen sind und die Obhut strittig ist, wenn erhebliches Vermögen oder Immobilien vorhanden sind, wenn ein Ehegatte wirtschaftlich deutlich schwächer gestellt ist, wenn häusliche Gewalt vorliegt und superprovisorische Massnahmen nötig sind, oder wenn unklar ist, ob eine Trennung oder eine Scheidung der bessere Weg wäre.</p>
+
+        <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kann die Trennungsvereinbarung so gestalten, dass Ihre Rechte gewahrt bleiben, die Unterhaltsberechnung korrekt erfolgt und die Weichen für eine allfällige spätere Scheidung richtig gestellt werden. Bei komplexen Vorsorgefragen – insbesondere für ältere Paare – sollte auch ein <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> mit Erfahrung in der Vorsorgeberatung hinzugezogen werden.</p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Lassen Sie Ihre Trennungssituation unverbindlich von einem spezialisierten Familienrechtsanwalt einschätzen. Wir zeigen Ihnen die beste Vorgehensweise und klären Ihre Rechte und Pflichten.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- 21. Fazit -->
+    <h2 id="fazit" class="text-3xl font-serif font-bold text-navy mb-6">21. Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Die Trennung ohne Scheidung bietet in der Schweiz eine flexible und oft weniger einschneidende Alternative zur endgültigen Auflösung der Ehe. Das Eheschutzverfahren nach Art. 172–179 ZGB ermöglicht eine rasche und rechtlich verbindliche Regelung aller Trennungsfolgen – von der Wohnungszuweisung über den Unterhalt bis zur Kinderbetreuung. Im Vergleich zur Scheidung ist das Verfahren schneller, günstiger und lässt die Möglichkeit einer Versöhnung offen.</p>
+
+    <p class="text-gray-700 mb-6">Gleichzeitig bringt die Trennung auch Nachteile mit sich: Der Trennungsunterhalt ist nicht befristbar und oft höher als der nacheheliche Unterhalt, es findet kein Vorsorgeausgleich statt, und die fortbestehende rechtliche Verflechtung kann über Jahre andauern. Ob Trennung oder Scheidung der richtige Weg ist, hängt stark von den individuellen Umständen ab – insbesondere vom Alter, der finanziellen Situation und den persönlichen Lebensumständen. Eine fachkundige Beratung durch einen spezialisierten Anwalt ist in jedem Fall empfehlenswert, um die beste Lösung für Ihre persönliche Situation zu finden.</p>
+
+    <!-- 22. FAQ -->
+    <section id="faq" class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">22. Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen Trennung und Scheidung in der Schweiz?</h3>
+                <p class="text-gray-700">Bei einer Trennung bleiben Sie rechtlich verheiratet, leben aber getrennt. Bei einer Scheidung wird die Ehe aufgelöst. Die Trennung kann formlos (faktisch) oder gerichtlich (Eheschutzverfahren, Art. 172–179 ZGB) erfolgen. Bei der Trennung bleiben Erbrecht, Witwenrente und der Güterstand grundsätzlich bestehen, während bei der Scheidung eine vollständige güterrechtliche Auseinandersetzung und ein Vorsorgeausgleich stattfinden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie lange kann man in der Schweiz getrennt leben, ohne sich scheiden zu lassen?</h3>
+                <p class="text-gray-700">Es gibt in der Schweiz keine zeitliche Obergrenze für das Getrenntleben. Ehepaare können unbegrenzt getrennt leben. Allerdings kann nach zwei Jahren Trennung jeder Ehegatte einseitig die Scheidung verlangen (Art. 114 ZGB). Eine Pflicht zur Scheidung besteht jedoch nicht.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist ein Eheschutzverfahren und wie läuft es ab?</h3>
+                <p class="text-gray-700">Das Eheschutzverfahren (Art. 172–179 ZGB) ist ein summarisches Gerichtsverfahren zur Regelung des Getrenntlebens. Es kann von jedem Ehegatten einseitig eingeleitet werden. Der Ablauf: Einreichung eines schriftlichen Gesuchs beim Bezirksgericht, mündliche Verhandlung (in der Regel nur eine), Versuch einer Einigung, bei Scheitern: autoritativer Entscheid des Richters. Das Verfahren dauert typischerweise 1–6 Monate und ist deutlich schneller als eine Scheidung.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wer darf bei einer Trennung in der gemeinsamen Wohnung bleiben?</h3>
+                <p class="text-gray-700">Das Gericht weist die eheliche Wohnung nach dem Grundsatz der Zweckmässigkeit zu – nicht nach Eigentumsverhältnissen (BGE 130 III 537). Hauptkriterium ist, wem die Wohnung objektiv mehr nützt. Sind Kinder vorhanden, wird die Wohnung in der Regel dem hauptbetreuenden Elternteil zugewiesen. Dass jemand Eigentümer oder Hauptmieter ist, spielt grundsätzlich keine Rolle.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie wird der Trennungsunterhalt berechnet?</h3>
+                <p class="text-gray-700">Der Trennungsunterhalt wird seit BGE 147 III 265 schweizweit nach der zweistufig-konkreten Methode berechnet. In der ersten Stufe werden Einkommen und konkreter Bedarf beider Ehegatten ermittelt. In der zweiten Stufe wird zuerst das Existenzminimum gedeckt, danach der Überschuss hälftig verteilt. Der Trennungsunterhalt ist gemäss BGE 148 III 358 nicht befristbar und tendenziell höher als der nacheheliche Unterhalt.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert mit dem Sorgerecht bei einer Trennung?</h3>
+                <p class="text-gray-700">Das gemeinsame Sorgerecht (elterliche Sorge) bleibt bei einer Trennung automatisch bestehen. Beide Eltern treffen weiterhin gemeinsam wichtige Entscheidungen. Das Gericht regelt im Eheschutzverfahren die Obhut (bei wem das Kind lebt), die Betreuungsregelung und das Besuchsrecht. Ein alleiniges Sorgerecht wird nur in Ausnahmefällen bei Gefährdung des Kindeswohls angeordnet (Art. 311 ZGB).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert mit der Pensionskasse bei einer Trennung?</h3>
+                <p class="text-gray-700">Bei einer blossen Trennung findet kein Vorsorgeausgleich statt. Die Pensionskasse (2. Säule) wird nicht geteilt – dies geschieht erst bei der Scheidung (Art. 122 ff. ZGB). Ebenso erfolgt kein AHV-Splitting. Die AHV-Rentenplafonierung (max. 150 % der Maximalrente für Ehepaare) bleibt bestehen, was bis zu CHF 14'000 jährlich weniger bedeuten kann als bei geschiedenen Einzelpersonen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Werden getrennt lebende Ehepaare separat besteuert?</h3>
+                <p class="text-gray-700">Ja. Ab dem Trennungsjahr werden die Ehegatten für die gesamte Steuerperiode getrennt veranlagt. Jeder füllt eine eigene Steuererklärung aus. Periodische Unterhaltszahlungen sind beim Empfänger steuerbares Einkommen und beim Leistenden abzugsfähig. Voraussetzung ist, dass die Steuerbehörden die Trennung anerkennen (dauerhaft getrennter Haushalt, keine Mittelgemeinschaft).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was kostet ein Eheschutzverfahren?</h3>
+                <p class="text-gray-700">Die Kosten variieren je nach Kanton und Komplexität. Bei einvernehmlicher Regelung rechnen Sie mit ca. CHF 2'000–5'000 (inkl. Gerichtsgebühren und Anwaltskosten). Bei strittigen Verfahren können die Gesamtkosten auf CHF 5'000–20'000+ ansteigen. Anwaltshonorare liegen typischerweise bei CHF 250–350 pro Stunde. Bei nachgewiesener Bedürftigkeit kann unentgeltliche Rechtspflege beantragt werden (Art. 117 ZPO).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Bleibt das Erbrecht während der Trennung bestehen?</h3>
+                <p class="text-gray-700">Ja. Getrennt lebende Ehegatten bleiben gesetzliche Erben füreinander (Art. 462 ZGB). Der Pflichtteilsschutz bleibt grundsätzlich bestehen. Eine Ausnahme gilt seit dem 1. Januar 2023: Bei mindestens zweijähriger Trennung und hängiger Scheidungsklage entfällt der Pflichtteil des Ehegatten (Art. 472 ZGB). Es ist dringend empfohlen, bei einer Trennung ein Testament zu errichten.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Ist eine Trennungsvereinbarung rechtlich bindend?</h3>
+                <p class="text-gray-700">Eine aussergerichtliche Trennungsvereinbarung ist grundsätzlich verbindlich, aber nicht direkt vollstreckbar. Hält sich ein Ehegatte nicht daran, muss zuerst ein Gerichtsurteil erwirkt werden. Vereinbarungen über Kinderbelange sind ohne richterliche Genehmigung nicht rechtsverbindlich. Zudem können ohne Gerichtsurteil weder Alimentenhilfe noch Alimentenbevorschussung beantragt werden. Eine gerichtlich genehmigte Vereinbarung ist daher deutlich sicherer.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann man innerhalb der gleichen Wohnung getrennt leben?</h3>
+                <p class="text-gray-700">Eine sogenannte Innertrennung ist theoretisch möglich, rechtlich aber problematisch. Sie erfordert separate Schlafräume, getrennte Finanzen, keine gemeinsamen Mahlzeiten und separate Haushaltsführung. Die Steuerbehörden erkennen eine Innertrennung häufig nicht an, und es ist fraglich, ob sie für die zweijährige Trennungsfrist nach Art. 114 ZGB zählt.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Können Eheschutzmassnahmen nachträglich geändert werden?</h3>
+                <p class="text-gray-700">Ja. Gemäss Art. 179 ZGB können Eheschutzmassnahmen jederzeit abgeändert werden, wenn sich die Verhältnisse wesentlich und dauernd geändert haben. Typische Gründe sind Einkommensveränderungen, veränderte Betreuungssituationen oder ein Wohnortwechsel. Eheschutzentscheide erlangen keine materielle Rechtskraft und sind grundsätzlich jederzeit abänderbar (BGE 141 III 376).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was kann ich bei häuslicher Gewalt sofort tun?</h3>
+                <p class="text-gray-700">Bei häuslicher Gewalt können Sie sofortige superprovisorische Massnahmen beim Gericht beantragen (Art. 265 ZPO). Diese werden ohne Anhörung der Gegenpartei erlassen und umfassen typischerweise eine Wegweisung aus der Wohnung, ein Kontaktverbot und ein Rayonverbot (Art. 28b ZGB). Zusätzlich können Sie die Polizei rufen, die in vielen Kantonen gestützt auf kantonale Gewaltschutzgesetze eine sofortige Wegweisung anordnen kann.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Ist es finanziell besser, getrennt zu leben statt sich scheiden zu lassen?</h3>
+                <p class="text-gray-700">Das hängt von den individuellen Umständen ab. Die Trennung bewahrt wertvolle Ansprüche wie die Witwenrente und vermeidet das BVG-Splitting, was insbesondere im Rentenalter vorteilhaft sein kann. Andererseits kostet die AHV-Rentenplafonierung bis zu CHF 14'000 jährlich, und der Trennungsunterhalt ist nicht befristbar und oft höher als der Scheidungsunterhalt. Eine individuelle Berechnung durch einen Anwalt oder Vorsorgeberater ist unerlässlich.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Ab wann beginnt die 2-jährige Trennungsfrist für die Scheidung?</h3>
+                <p class="text-gray-700">Die zweijährige Trennungsfrist nach Art. 114 ZGB beginnt am Tag, an dem ein Ehegatte den gemeinsamen Haushalt absichtlich und dauerhaft aufhebt. Es braucht kein Eheschutzurteil – die faktische Trennung genügt. Kurze Versöhnungsversuche von weniger als drei Monaten unterbrechen die Frist grundsätzlich nicht. Die Frist muss am Tag der Einreichung der Scheidungsklage abgelaufen sein.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Trennung ohne Scheidung in der Schweiz",
+        "description": "Trennung ohne Scheidung: Eheschutzverfahren, Trennungsunterhalt, Wohnung, Kinder & Güterrecht. Mit BGE-Rechtsprechung, Kosten & Vergleich zur Scheidung.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2026-02-11",
+        "dateModified": "2026-02-11",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/scheidung/trennung-ohne-scheidung"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen Trennung und Scheidung in der Schweiz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei einer Trennung bleiben Sie rechtlich verheiratet, leben aber getrennt. Bei einer Scheidung wird die Ehe aufgelöst. Die Trennung kann formlos (faktisch) oder gerichtlich (Eheschutzverfahren, Art. 172–179 ZGB) erfolgen. Bei der Trennung bleiben Erbrecht, Witwenrente und der Güterstand grundsätzlich bestehen, während bei der Scheidung eine vollständige güterrechtliche Auseinandersetzung und ein Vorsorgeausgleich stattfinden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie lange kann man in der Schweiz getrennt leben, ohne sich scheiden zu lassen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Es gibt in der Schweiz keine zeitliche Obergrenze für das Getrenntleben. Ehepaare können unbegrenzt getrennt leben. Allerdings kann nach zwei Jahren Trennung jeder Ehegatte einseitig die Scheidung verlangen (Art. 114 ZGB). Eine Pflicht zur Scheidung besteht jedoch nicht."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist ein Eheschutzverfahren und wie läuft es ab?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das Eheschutzverfahren (Art. 172–179 ZGB) ist ein summarisches Gerichtsverfahren zur Regelung des Getrenntlebens. Es kann von jedem Ehegatten einseitig eingeleitet werden. Der Ablauf: Einreichung eines schriftlichen Gesuchs beim Bezirksgericht, mündliche Verhandlung (in der Regel nur eine), Versuch einer Einigung, bei Scheitern: autoritativer Entscheid des Richters. Das Verfahren dauert typischerweise 1–6 Monate und ist deutlich schneller als eine Scheidung."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wer darf bei einer Trennung in der gemeinsamen Wohnung bleiben?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das Gericht weist die eheliche Wohnung nach dem Grundsatz der Zweckmässigkeit zu – nicht nach Eigentumsverhältnissen (BGE 130 III 537). Hauptkriterium ist, wem die Wohnung objektiv mehr nützt. Sind Kinder vorhanden, wird die Wohnung in der Regel dem hauptbetreuenden Elternteil zugewiesen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie wird der Trennungsunterhalt berechnet?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der Trennungsunterhalt wird seit BGE 147 III 265 schweizweit nach der zweistufig-konkreten Methode berechnet. In der ersten Stufe werden Einkommen und konkreter Bedarf beider Ehegatten ermittelt. In der zweiten Stufe wird zuerst das Existenzminimum gedeckt, danach der Überschuss hälftig verteilt. Der Trennungsunterhalt ist gemäss BGE 148 III 358 nicht befristbar."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert mit dem Sorgerecht bei einer Trennung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das gemeinsame Sorgerecht bleibt bei einer Trennung automatisch bestehen. Beide Eltern treffen weiterhin gemeinsam wichtige Entscheidungen. Das Gericht regelt im Eheschutzverfahren die Obhut, die Betreuungsregelung und das Besuchsrecht. Ein alleiniges Sorgerecht wird nur in Ausnahmefällen bei Gefährdung des Kindeswohls angeordnet."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert mit der Pensionskasse bei einer Trennung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei einer blossen Trennung findet kein Vorsorgeausgleich statt. Die Pensionskasse wird nicht geteilt – dies geschieht erst bei der Scheidung (Art. 122 ff. ZGB). Ebenso erfolgt kein AHV-Splitting. Die AHV-Rentenplafonierung bleibt bestehen, was bis zu CHF 14'000 jährlich weniger bedeuten kann als bei geschiedenen Einzelpersonen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Werden getrennt lebende Ehepaare separat besteuert?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja. Ab dem Trennungsjahr werden die Ehegatten für die gesamte Steuerperiode getrennt veranlagt. Periodische Unterhaltszahlungen sind beim Empfänger steuerbares Einkommen und beim Leistenden abzugsfähig. Voraussetzung ist, dass die Steuerbehörden die Trennung anerkennen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was kostet ein Eheschutzverfahren?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei einvernehmlicher Regelung rechnen Sie mit ca. CHF 2'000–5'000. Bei strittigen Verfahren können die Gesamtkosten auf CHF 5'000–20'000+ ansteigen. Anwaltshonorare liegen typischerweise bei CHF 250–350 pro Stunde. Bei nachgewiesener Bedürftigkeit kann unentgeltliche Rechtspflege beantragt werden (Art. 117 ZPO)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bleibt das Erbrecht während der Trennung bestehen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja. Getrennt lebende Ehegatten bleiben gesetzliche Erben füreinander (Art. 462 ZGB). Der Pflichtteilsschutz bleibt grundsätzlich bestehen. Eine Ausnahme gilt seit dem 1. Januar 2023: Bei mindestens zweijähriger Trennung und hängiger Scheidungsklage entfällt der Pflichtteil des Ehegatten (Art. 472 ZGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Ist eine Trennungsvereinbarung rechtlich bindend?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Eine aussergerichtliche Trennungsvereinbarung ist grundsätzlich verbindlich, aber nicht direkt vollstreckbar. Vereinbarungen über Kinderbelange sind ohne richterliche Genehmigung nicht rechtsverbindlich. Ohne Gerichtsurteil können weder Alimentenhilfe noch Alimentenbevorschussung beantragt werden. Eine gerichtlich genehmigte Vereinbarung ist daher deutlich sicherer."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann man innerhalb der gleichen Wohnung getrennt leben?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Eine Innertrennung ist theoretisch möglich, rechtlich aber problematisch. Sie erfordert separate Schlafräume, getrennte Finanzen, keine gemeinsamen Mahlzeiten und separate Haushaltsführung. Die Steuerbehörden erkennen eine Innertrennung häufig nicht an, und es ist fraglich, ob sie für die zweijährige Trennungsfrist nach Art. 114 ZGB zählt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Können Eheschutzmassnahmen nachträglich geändert werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja. Gemäss Art. 179 ZGB können Eheschutzmassnahmen jederzeit abgeändert werden, wenn sich die Verhältnisse wesentlich und dauernd geändert haben. Eheschutzentscheide erlangen keine materielle Rechtskraft und sind grundsätzlich jederzeit abänderbar (BGE 141 III 376)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was kann ich bei häuslicher Gewalt sofort tun?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei häuslicher Gewalt können Sie sofortige superprovisorische Massnahmen beim Gericht beantragen (Art. 265 ZPO). Diese werden ohne Anhörung der Gegenpartei erlassen und umfassen typischerweise eine Wegweisung aus der Wohnung, ein Kontaktverbot und ein Rayonverbot (Art. 28b ZGB). Zusätzlich können Sie die Polizei rufen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Ist es finanziell besser, getrennt zu leben statt sich scheiden zu lassen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das hängt von den individuellen Umständen ab. Die Trennung bewahrt wertvolle Ansprüche wie die Witwenrente und vermeidet das BVG-Splitting. Andererseits kostet die AHV-Rentenplafonierung bis zu CHF 14'000 jährlich, und der Trennungsunterhalt ist nicht befristbar. Eine individuelle Berechnung durch einen Anwalt oder Vorsorgeberater ist unerlässlich."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Ab wann beginnt die 2-jährige Trennungsfrist für die Scheidung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die zweijährige Trennungsfrist nach Art. 114 ZGB beginnt am Tag, an dem ein Ehegatte den gemeinsamen Haushalt absichtlich und dauerhaft aufhebt. Es braucht kein Ehschutzurteil – die faktische Trennung genügt. Kurze Versöhnungsversuche von weniger als drei Monaten unterbrechen die Frist grundsätzlich nicht."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Scheidung",
+                "item": "https://familienrechtanwalt.ch/scheidung"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Trennung ohne Scheidung in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/scheidung/trennung-ohne-scheidung"
+            }
+        ]
+    })} />
+
+</ArticleLayout>

@@ -3,140 +3,884 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 ---
 
 <ArticleLayout
-    title="Aufenthaltsbestimmungsrecht in der Schweiz: Rechtslage, Grenzen und Auswirkungen"
-    description="Aufenthaltsbestimmungsrecht in der Schweiz: Rechtslage, Grenzen und Auswirkungen nach Art. 301a ZGB. Umzug mit Kind, Zustimmungspflicht und Kindeswohl."
-    keywords="Aufenthaltsbestimmungsrecht, Schweiz, Umzug Kind, Art. 301a ZGB, Zustimmungspflicht, Kindeswohl, Sorgerecht, Wohnsitzwechsel"
+    title="Aufenthaltsbestimmungsrecht in der Schweiz"
+    description="Aufenthaltsbestimmungsrecht erklärt: Definition, Art. 301a ZGB, Zustimmungspflicht bei Umzug, BGE-Rechtsprechung, Entzug durch KESB & internationale Kindesentführung."
+    keywords="Aufenthaltsbestimmungsrecht, Aufenthaltsbestimmungsrecht Schweiz, Art. 301a ZGB, Umzug Kind, Zustimmungspflicht, Kindeswohl, Sorgerecht, KESB, Obhut, Zügelartikel, HKÜ"
     category="Sorgerecht"
     categoryLink="/sorgerecht"
 >
-    <p class="lead text-xl text-gray-600 mb-8">Das Aufenthaltsbestimmungsrecht ist ein wesentlicher Bestandteil der elterlichen Sorge und gewinnt bei Trennung oder Scheidung besondere Bedeutung. Es regelt, wo das Kind seinen Wohnsitz haben darf und unter welchen Voraussetzungen ein Umzug zulässig ist.</p>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Das <strong>Aufenthaltsbestimmungsrecht</strong> ist das Recht, den Wohnort des Kindes zu bestimmen, und ist seit der Sorgerechtsrevision 2014 Teil der <strong>elterlichen Sorge</strong> (Art. 301a Abs. 1 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bei <strong>gemeinsamem Sorgerecht</strong> steht das Aufenthaltsbestimmungsrecht beiden Eltern gemeinsam zu - ein Umzug ins Ausland bedarf <strong>immer</strong> der Zustimmung (Art. 301a Abs. 2 lit. a ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Ein <strong>Inlandumzug</strong> ist nur zustimmungspflichtig, wenn er erhebliche Auswirkungen auf die Ausübung der elterlichen Sorge und den persönlichen Verkehr hat (BGE 142 III 481).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Der sog. <strong>Zügelartikel</strong> (Art. 301a ZGB) ist bewusst <strong>sanktionslos</strong> ausgestaltet - indirekte Sanktion: mögliche Obhutsumteilung (BGE 144 III 10).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bei schwerer <strong>Kindeswohlgefährdung</strong> kann die KESB das Aufenthaltsbestimmungsrecht entziehen und das Kind fremdplatzieren (Art. 310 ZGB) - rund <strong>4'500 Fälle</strong> jährlich.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Ein eigenmächtiger Umzug ins Ausland kann als <strong>internationale Kindesentführung</strong> gewertet werden - Rückführung nach dem <strong>Haager Übereinkommen (HKÜ)</strong> möglich.</span>
+            </li>
+        </ul>
+    </div>
 
-    <blockquote class="border-l-4 border-gold pl-6 italic my-8 text-gray-700">
-        Das Aufenthaltsbestimmungsrecht ist das Recht der sorgeberechtigten Eltern, den Wohnsitz des Kindes zu bestimmen. Bei gemeinsamem Sorgerecht bedarf ein Umzug des Kindes, der den Schulbesuch oder die Beziehung zum anderen Elternteil erheblich beeinträchtigt, der Zustimmung des anderen Elternteils.
-    </blockquote>
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+        Das Aufenthaltsbestimmungsrecht ist ein zentraler Bestandteil der elterlichen Sorge und gewinnt insbesondere bei Trennung oder Scheidung grosse Bedeutung. Seit der Sorgerechtsrevision vom 1. Juli 2014 wurde das Aufenthaltsbestimmungsrecht von der Obhut gelöst und als direkter Teil der elterlichen Sorge ausgestaltet (BGE 142 III 612 E. 4.1). Diese grundlegende Änderung hat weitreichende Konsequenzen: Auch der nicht hauptsächlich betreuende Elternteil hat bei gemeinsamem Sorgerecht ein Mitspracherecht beim Wohnort des Kindes. In diesem umfassenden Ratgeber erfahren Sie alles über die rechtlichen Grundlagen, die bundesgerichtliche Rechtsprechung, das Verfahren bei Umzugskonflikten und die Möglichkeiten des Entzugs durch die KESB.
+    </p>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen des Aufenthaltsbestimmungsrechts</h2>
+    <!-- BGE-Rechtsprechungsübersicht -->
+    <div class="bg-gray-100 border-l-4 border-navy p-6 my-8">
+        <h2 class="text-2xl font-serif font-bold text-navy mb-4">BGE-Rechtsprechungsübersicht zum Aufenthaltsbestimmungsrecht</h2>
+        <div class="overflow-x-auto">
+            <table class="min-w-full bg-white border border-gray-200">
+                <thead class="bg-navy text-white">
+                    <tr>
+                        <th class="px-4 py-3 text-left text-sm font-semibold">Entscheid</th>
+                        <th class="px-4 py-3 text-left text-sm font-semibold">Datum</th>
+                        <th class="px-4 py-3 text-left text-sm font-semibold">Kernaussage</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    <tr>
+                        <td class="px-4 py-3 font-semibold text-navy">BGE 142 III 481</td>
+                        <td class="px-4 py-3 text-gray-700">12.07.2016</td>
+                        <td class="px-4 py-3 text-gray-700">Leitentscheid zu Wegzugsstreitigkeiten: Respekt der Bewegungsfreiheit, Kindeswohl als Massstab, keine Prüfung der Umzugsmotive</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-4 py-3 font-semibold text-navy">BGE 142 III 498</td>
+                        <td class="px-4 py-3 text-gray-700">12.07.2016</td>
+                        <td class="px-4 py-3 text-gray-700">Bestätigung der Grundsätze bei Auslandsumzügen; Kriterien für die Interessenabwägung</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 font-semibold text-navy">BGE 142 III 502</td>
+                        <td class="px-4 py-3 text-gray-700">12.07.2016</td>
+                        <td class="px-4 py-3 text-gray-700">Kein automatisches Recht, das Kind bei Umzug mitzunehmen; Obhutsumteilung als mögliche Konsequenz</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-4 py-3 font-semibold text-navy">BGE 142 III 612</td>
+                        <td class="px-4 py-3 text-gray-700">29.08.2016</td>
+                        <td class="px-4 py-3 text-gray-700">Aufenthaltsbestimmungsrecht ist nicht mehr Teil der Obhut, sondern Element der elterlichen Sorge</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 font-semibold text-navy">BGE 144 III 10</td>
+                        <td class="px-4 py-3 text-gray-700">06.11.2017</td>
+                        <td class="px-4 py-3 text-gray-700">Art. 301a ZGB ist bewusst sanktionslos; massgeblich für Aufenthaltsbestimmung ist allein die Sorgerechtslage</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-4 py-3 font-semibold text-navy">BGE 147 III 121</td>
+                        <td class="px-4 py-3 text-gray-700">26.11.2020</td>
+                        <td class="px-4 py-3 text-gray-700">Aufenthaltsbestimmungsrecht kann nur gesamthaft (nicht teilweise) entzogen werden; Obhutsbegriff nach revidiertem Recht</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-3 font-semibold text-navy">5A_218/2023</td>
+                        <td class="px-4 py-3 text-gray-700">19.04.2023</td>
+                        <td class="px-4 py-3 text-gray-700">Unteilbarkeit des Aufenthaltsbestimmungsrechts bestätigt; Zusammenhang mit elterlicher Sorge</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Definition nach Art. 301a ZGB</h3>
-    <p class="text-gray-700 mb-6">Das Aufenthaltsbestimmungsrecht ist in Art. 301a ZGB geregelt, der mit der Sorgerechtsrevision per 1. Juli 2014 eingeführt wurde. Diese Bestimmung regelt die Befugnis der Eltern, über den Aufenthaltsort des Kindes zu entscheiden, und schränkt diese Befugnis zugleich ein, um das Kindeswohl und die Rechte des anderen Elternteils zu schützen.</p>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Was ist das Aufenthaltsbestimmungsrecht?</h2>
 
-    <p class="text-gray-700 mb-6">Der Wortlaut von Art. 301a ZGB bestimmt in Absatz 1: Die elterliche Sorge schliesst das Recht ein, den Aufenthaltsort des Kindes zu bestimmen.</p>
+    <p class="text-gray-700 mb-6">
+        Das Aufenthaltsbestimmungsrecht bezeichnet das Recht der Eltern, über den <strong>dauerhaften oder vorübergehenden Aufenthaltsort</strong> ihres Kindes zu bestimmen. Es umfasst die Befugnis zu entscheiden, wo das Kind seinen Wohnsitz hat, bei wem es lebt und ob es umziehen darf. Das Bundesgericht hat in BGE 142 III 612 E. 4.1 klargestellt, dass dieses Recht seit der Sorgerechtsrevision 2014 ein eigenständiges Element der elterlichen Sorge darstellt.
+    </p>
 
-    <p class="text-gray-700 mb-6">Absatz 2 regelt: Üben die Eltern die elterliche Sorge gemeinsam aus und will ein Elternteil den Aufenthaltsort des Kindes wechseln, so bedarf dies der Zustimmung des andern Elternteils oder der Entscheidung des Gerichts oder der Kindesschutzbehörde, wenn der neue Aufenthaltsort im Ausland liegt oder der Wechsel des Aufenthaltsortes erhebliche Auswirkungen auf die Ausübung der elterlichen Sorge und den persönlichen Verkehr durch den andern Elternteil hat.</p>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Gesetzliche Definition (Art. 301a Abs. 1 ZGB):</p>
+        <p class="text-gray-700 italic">"Die elterliche Sorge schliesst das Recht ein, den Aufenthaltsort des Kindes zu bestimmen."</p>
+    </div>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Verhältnis zur elterlichen Sorge</h3>
-    <p class="text-gray-700 mb-6">Das Aufenthaltsbestimmungsrecht ist ein Teilbereich der elterlichen Sorge. Wer die elterliche Sorge innehat, hat grundsätzlich auch das Recht, über den Aufenthaltsort des Kindes zu bestimmen. Bei gemeinsamem Sorgerecht steht dieses Recht beiden Eltern gemeinsam zu, was bedeutet, dass wichtige Entscheidungen über den Wohnort einvernehmlich getroffen werden müssen.</p>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Systematische Einordnung</h3>
 
-    <div class="overflow-x-auto my-8">
+    <p class="text-gray-700 mb-6">
+        Das Aufenthaltsbestimmungsrecht ist kein eigenständiges Recht, sondern ein <strong>Teilbereich der elterlichen Sorge</strong> (Art. 296 ff. ZGB). Wer die elterliche Sorge innehat, hat grundsätzlich auch das Recht, über den Aufenthaltsort des Kindes zu bestimmen. Bei gemeinsamem Sorgerecht steht dieses Recht beiden Eltern gemeinsam zu. Dies wurde in BGE 144 III 10 ausdrücklich bestätigt: Allein massgeblich für die Frage der Aufenthaltsbestimmung ist die Sorgerechtslage.
+    </p>
+
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Situation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Aufenthaltsbestimmungsrecht</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Rechtsgrundlage</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 301a ZGB (seit 1. Juli 2014)</td>
+                </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 text-gray-700">Verheiratete Eltern</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Systematische Zuordnung</td>
+                    <td class="px-6 py-4 text-gray-700">Teil der elterlichen Sorge (nicht der Obhut!)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Inhaber</td>
+                    <td class="px-6 py-4 text-gray-700">Sorgeberechtigte Elternteile</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Bei gemeinsamem Sorgerecht</td>
                     <td class="px-6 py-4 text-gray-700">Beide Eltern gemeinsam</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 text-gray-700">Gemeinsames Sorgerecht nach Trennung</td>
-                    <td class="px-6 py-4 text-gray-700">Beide Eltern gemeinsam, Zustimmungspflicht bei erheblichem Umzug</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Übertragbarkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Kann nicht separat übertragen werden (BGE 5A_218/2023)</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 text-gray-700">Alleiniges Sorgerecht</td>
-                    <td class="px-6 py-4 text-gray-700">Nur sorgeberechtigter Elternteil, aber Informationspflicht</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4 text-gray-700">Alleinige Obhut bei gem. Sorgerecht</td>
-                    <td class="px-6 py-4 text-gray-700">Obhutsberechtigter entscheidet, aber Zustimmung bei erheblichem Wechsel nötig</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Entzug möglich?</td>
+                    <td class="px-6 py-4 text-gray-700">Ja, durch KESB bei Kindeswohlgefährdung (Art. 310 ZGB)</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Zustimmungspflicht bei Wohnsitzwechsel</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Geschichte: Der "Zügelartikel" und die Sorgerechtsrevision 2014</h2>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wann ist die Zustimmung erforderlich?</h3>
-    <p class="text-gray-700 mb-4">Art. 301a Abs. 2 ZGB nennt zwei Fallgruppen, in denen bei gemeinsamem Sorgerecht die Zustimmung des anderen Elternteils oder eine behördliche Entscheidung erforderlich ist:</p>
+    <p class="text-gray-700 mb-6">
+        Mit dem Bundesgesetz vom 21. Juni 2013, in Kraft getreten am <strong>1. Juli 2014</strong> (AS 2014 357), wurde das Familienrecht grundlegend revidiert. Eines der Kernelemente war die Einführung des gemeinsamen Sorgerechts als Regelfall sowie die Neuordnung des Aufenthaltsbestimmungsrechts. Der sogenannte <strong>"Zügelartikel"</strong> (Art. 301a ZGB) war während der parlamentarischen Beratung umstritten.
+    </p>
 
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Auslandumzug:</strong> Der neue Aufenthaltsort liegt im Ausland. Jeder Umzug über die Landesgrenzen hinaus bedarf der Zustimmung, unabhängig davon, ob es sich um einen dauerhaften Umzug oder einen länger befristeten Auslandsaufenthalt handelt.</li>
-        <li><strong>Erhebliche Auswirkungen:</strong> Der Wechsel hat erhebliche Auswirkungen auf die Ausübung der elterlichen Sorge oder den persönlichen Verkehr. Dies ist bei Inlandumzügen zu prüfen.</li>
-    </ul>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Hintergrund der Reform</h3>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Erheblichkeit bei Inlandumzügen</h3>
-    <p class="text-gray-700 mb-4">Das Bundesgericht hat in mehreren Entscheiden präzisiert, wann ein Inlandumzug erhebliche Auswirkungen hat:</p>
-
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>BGE 142 III 481:</strong> Ein Umzug ist erheblich, wenn er die Ausübung des persönlichen Verkehrs wesentlich erschwert oder das bisher praktizierte Betreuungsmodell verunmöglicht.</li>
-        <li><strong>5A_581/2017:</strong> Nicht jede Veränderung der Anfahrtswege ist erheblich. Eine Verlängerung um 30 bis 45 Minuten pro Weg kann je nach Umständen noch zumutbar sein.</li>
-        <li><strong>5A_641/2015:</strong> Bei alternierender Obhut ist die Erheblichkeitsschwelle niedriger, da bereits moderate Distanzvergrösserungen das Modell gefährden können.</li>
-    </ul>
-
-    <p class="text-gray-700 mb-6">Als Faustregel gilt: Ein Umzug, der dazu führt, dass das Kind nicht mehr dieselbe Schule besuchen kann oder dass der persönliche Verkehr wesentlich eingeschränkt werden muss, ist in der Regel als erheblich einzustufen.</p>
-
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Entscheidungskriterien bei Umzugsstreitigkeiten</h2>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kindeswohl als oberster Massstab</h3>
-    <p class="text-gray-700 mb-4">Das Kindeswohl ist der zentrale Massstab bei der Entscheidung über die Bewilligung eines Umzugs. Das Gericht prüft, welche Lösung dem Interesse des Kindes am besten entspricht.</p>
-
-    <p class="text-gray-700 mb-4">Dabei werden verschiedene Faktoren berücksichtigt:</p>
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Aufrechterhaltung der Beziehung zu beiden Elternteilen:</strong> Kann der persönliche Verkehr auch nach dem Umzug aufrechterhalten werden?</li>
-        <li><strong>Stabilität und Kontinuität:</strong> Welche Auswirkungen hat der Umzug auf das soziale Umfeld des Kindes, die Schule, Freundschaften?</li>
-        <li><strong>Gründe für den Umzug:</strong> Sind die Gründe sachlich nachvollziehbar oder dient der Umzug der Entfremdung vom anderen Elternteil?</li>
-        <li><strong>Alter und Wille des Kindes:</strong> Ältere Kinder haben ein stärkeres Mitspracherecht.</li>
-    </ul>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Keine automatische Mitnahme des Kindes</h3>
-    <p class="text-gray-700 mb-6">Das Bundesgericht hat klargestellt, dass es kein automatisches Recht gibt, das Kind bei einem Umzug mitzunehmen (BGE 142 III 502). Wenn der Umzug das Kindeswohl beeinträchtigt, kann das Gericht den Umzug des Elternteils zulassen, aber anordnen, dass das Kind beim anderen Elternteil bleibt. Dies kann auch eine Änderung der Obhutszuteilung zur Folge haben.</p>
-
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Umzug ins Ausland</h2>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Besondere Anforderungen</h3>
-    <p class="text-gray-700 mb-4">Ein Umzug ins Ausland stellt einen besonders schwerwiegenden Eingriff in die Beziehung zum zurückbleibenden Elternteil dar. Das Bundesgericht legt daher strenge Massstäbe an:</p>
-
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Der umzugswillige Elternteil muss nachvollziehbare Gründe für den Auslandumzug darlegen.</li>
-        <li>Es muss geprüft werden, wie der persönliche Verkehr nach dem Umzug gestaltet werden kann.</li>
-        <li>Die Möglichkeiten moderner Kommunikation (Videoanrufe) können den persönlichen Kontakt nicht vollständig ersetzen.</li>
-    </ul>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kindesentführung</h3>
-    <p class="text-gray-700 mb-6">Ein Umzug ins Ausland ohne die erforderliche Zustimmung kann als internationale Kindesentführung gewertet werden. Der zurückgebliebene Elternteil kann gestützt auf das Haager Kindesentführungsübereinkommen (HKÜ) die Rückführung des Kindes verlangen. Der entführende Elternteil macht sich unter Umständen strafbar nach Art. 220 StGB.</p>
-
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Bundesgerichtliche Rechtsprechung</h2>
-
-    <div class="overflow-x-auto my-8">
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Entscheid</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Kernaussage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Vor 1. Juli 2014</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Seit 1. Juli 2014</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Sorgerecht bei Scheidung</td>
+                    <td class="px-6 py-4 text-gray-700">Regelfall: Alleiniges Sorgerecht</td>
+                    <td class="px-6 py-4 text-gray-700">Regelfall: Gemeinsames Sorgerecht</td>
+                </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">BGE 142 III 481</td>
-                    <td class="px-6 py-4 text-gray-700">Definition der erheblichen Auswirkungen eines Umzugs</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Aufenthaltsbestimmungsrecht</td>
+                    <td class="px-6 py-4 text-gray-700">Teil der Obhut</td>
+                    <td class="px-6 py-4 text-gray-700">Teil der elterlichen Sorge</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">BGE 142 III 502</td>
-                    <td class="px-6 py-4 text-gray-700">Kein automatisches Recht, das Kind bei Umzug mitzunehmen</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Wer entscheidet über Wohnort?</td>
+                    <td class="px-6 py-4 text-gray-700">Obhutsinhaber allein</td>
+                    <td class="px-6 py-4 text-gray-700">Beide Sorgeberechtigte gemeinsam</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Umzug ins Ausland</td>
+                    <td class="px-6 py-4 text-gray-700">Keine ausdrückliche Regelung</td>
+                    <td class="px-6 py-4 text-gray-700">Zustimmungspflicht (Art. 301a Abs. 2 lit. a ZGB)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Debatte um das "Müttergefängnis"</h3>
+
+    <p class="text-gray-700 mb-6">
+        Während der parlamentarischen Beratung wurde argumentiert, dass eine zu strenge Regelung zu einer unverhältnismässigen Einschränkung der verfassungsmässig garantierten <strong>Niederlassungsfreiheit</strong> der Eltern führen könnte. Kritiker befürchteten, die Schweiz könnte aufgrund einer "faktischen Residenzpflicht" zu einem "Müttergefängnis" werden. Der Gesetzgeber hat diesem Bedenken durch eine bewusste Modifikation von Art. 301a Abs. 2 ZGB Rechnung getragen (vgl. Botschaft, BBl 2011 9107).
+    </p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Bundesgerichtliche Klarstellung (BGE 142 III 481 E. 2.5 ff.):</p>
+        <p class="text-gray-700">Das Bundesgericht hat klargestellt, dass es nicht nach den Motiven für den elterlichen Wegzug zu forschen ist, sondern von diesem als <strong>Prämisse</strong> auszugehen ist. Die Niederlassungs- und Bewegungsfreiheit der Eltern wird grundsätzlich respektiert. Die entscheidende Frage ist nur: Ist das Kindeswohl besser gewahrt, wenn das Kind mit dem wegzugswilligen Elternteil geht oder beim zurückbleibenden Elternteil bleibt?</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen nach Art. 301a ZGB</h2>
+
+    <p class="text-gray-700 mb-6">
+        Art. 301a ZGB ist die zentrale Norm zum Aufenthaltsbestimmungsrecht. Die Bestimmung regelt umfassend, wann ein Elternteil die Zustimmung des anderen benötigt und welche Informationspflichten bestehen.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vollständiger Inhalt von Art. 301a ZGB</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Absatz</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Inhalt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bedeutung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Abs. 1</td>
+                    <td class="px-6 py-4 text-gray-700">Die elterliche Sorge schliesst das Recht ein, den Aufenthaltsort des Kindes zu bestimmen.</td>
+                    <td class="px-6 py-4 text-gray-700">Grundnorm: Aufenthaltsbestimmungsrecht = Teil der elterlichen Sorge</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Abs. 2 lit. a</td>
+                    <td class="px-6 py-4 text-gray-700">Bei gemeinsamem Sorgerecht bedarf ein Umzug <strong>ins Ausland</strong> der Zustimmung oder behördlichen Entscheidung.</td>
+                    <td class="px-6 py-4 text-gray-700">Auslandsumzug = <strong>immer</strong> zustimmungspflichtig</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Abs. 2 lit. b</td>
+                    <td class="px-6 py-4 text-gray-700">Bei gemeinsamem Sorgerecht bedarf ein Umzug <strong>innerhalb der Schweiz</strong> der Zustimmung, wenn er <strong>erhebliche Auswirkungen</strong> hat.</td>
+                    <td class="px-6 py-4 text-gray-700">Inlandumzug = nur bei Erheblichkeit zustimmungspflichtig</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Abs. 3</td>
+                    <td class="px-6 py-4 text-gray-700">Ein Elternteil mit alleiniger elterlicher Sorge muss den anderen rechtzeitig über einen geplanten Umzug <strong>des Kindes</strong> informieren.</td>
+                    <td class="px-6 py-4 text-gray-700">Informationspflicht bei alleinigem Sorgerecht</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Abs. 4</td>
+                    <td class="px-6 py-4 text-gray-700">Dieselbe Informationspflicht gilt für den <strong>eigenen Wohnsitzwechsel</strong> eines Elternteils.</td>
+                    <td class="px-6 py-4 text-gray-700">Auch eigener Umzug muss mitgeteilt werden</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Abs. 5</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Bedarf werden Kinderbelange (Obhut, persönlicher Verkehr, Unterhalt) vom Gericht oder der KESB neu geregelt.</td>
+                    <td class="px-6 py-4 text-gray-700">Ermöglicht Neuordnung bei Veränderungen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Unterschied: Elterliche Sorge, Obhut und Aufenthaltsbestimmungsrecht</h2>
+
+    <p class="text-gray-700 mb-6">
+        Diese drei Begriffe werden oft verwechselt, bezeichnen aber unterschiedliche Rechtsbereiche. Die Sorgerechtsrevision 2014 hat die Abgrenzung grundlegend verändert.
+    </p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Begriff</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Definition</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Inhalt</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy"><a href="/sorgerecht/sorgerecht-kinder" class="text-gold hover:underline">Elterliche Sorge</a></td>
+                    <td class="px-6 py-4 text-gray-700">Umfassende Pflicht und Recht, für das Kind zu sorgen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 296 ff. ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Erziehung, gesetzliche Vertretung, Vermögensverwaltung, <strong>Aufenthaltsbestimmung</strong></td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Obhut (faktische Obhut)</td>
+                    <td class="px-6 py-4 text-gray-700">Tatsächliche, alltägliche Betreuung des Kindes ("garde de fait")</td>
+                    <td class="px-6 py-4 text-gray-700">Nicht ausdrücklich kodifiziert</td>
+                    <td class="px-6 py-4 text-gray-700">Tägliche Pflege, Erziehung im Alltag, Entscheidungen des täglichen Lebens</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Aufenthaltsbestimmungsrecht</td>
+                    <td class="px-6 py-4 text-gray-700">Recht zu bestimmen, wo das Kind wohnt</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 301a ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Wohnsitz, Aufenthaltsort, Umzugsentscheidungen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-red-50 border-l-4 border-red-500 p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtige Unterscheidung nach neuem Recht (BGE 147 III 121):</p>
+        <p class="text-gray-700">Seit der Sorgerechtsrevision 2014 ist das Aufenthaltsbestimmungsrecht <strong>nicht mehr Teil der Obhut</strong>, sondern ein Teil der elterlichen Sorge. Die Obhut ist auf die "garde de fait" beschränkt, d.h. die Befugnis für die alltägliche Betreuung des Kindes und die Ausübung von Rechten und Pflichten im Zusammenhang mit dessen Pflege und laufender Erziehung. Das bedeutet: Auch der nicht hauptsächlich betreuende Elternteil hat bei gemeinsamem Sorgerecht ein <strong>Mitspracherecht beim Wohnort</strong> des Kindes.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wem steht das Aufenthaltsbestimmungsrecht zu?</h2>
+
+    <p class="text-gray-700 mb-6">
+        Das Aufenthaltsbestimmungsrecht steht grundsätzlich den Inhabern der elterlichen Sorge zu. Da seit 2014 das <a href="/sorgerecht/gemeinsames-sorgerecht" class="text-gold hover:underline font-semibold">gemeinsame Sorgerecht</a> der Regelfall ist (Art. 296 Abs. 2 ZGB), haben in den meisten Fällen beide Eltern gemeinsam dieses Recht.
+    </p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Konstellation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aufenthaltsbestimmungsrecht</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Konsequenz bei Umzug</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Verheiratete Eltern</td>
+                    <td class="px-6 py-4 text-gray-700">Beide Eltern gemeinsam</td>
+                    <td class="px-6 py-4 text-gray-700">Einvernehmliche Entscheidung erforderlich</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Gemeinsames Sorgerecht nach Trennung/Scheidung</td>
+                    <td class="px-6 py-4 text-gray-700">Beide Eltern gemeinsam</td>
+                    <td class="px-6 py-4 text-gray-700">Zustimmung bei erheblichem Umzug oder Ausland nötig</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy"><a href="/sorgerecht/alleiniges-sorgerecht" class="text-gold hover:underline">Alleiniges Sorgerecht</a> eines Elternteils</td>
+                    <td class="px-6 py-4 text-gray-700">Nur der allein sorgeberechtigte Elternteil</td>
+                    <td class="px-6 py-4 text-gray-700">Freie Entscheidung, aber Informationspflicht (Art. 301a Abs. 3 ZGB)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Alleinige Obhut bei gemeinsamem Sorgerecht</td>
+                    <td class="px-6 py-4 text-gray-700">Beide Eltern gemeinsam</td>
+                    <td class="px-6 py-4 text-gray-700">Zustimmung bei erheblichem Umzug oder Ausland nötig</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy"><a href="/sorgerecht/alternierende-obhut" class="text-gold hover:underline">Alternierende Obhut</a></td>
+                    <td class="px-6 py-4 text-gray-700">Beide Eltern gemeinsam</td>
+                    <td class="px-6 py-4 text-gray-700">Erhöhte Sensibilität - niedrigere Erheblichkeitsschwelle</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Entzug durch KESB (Art. 310 ZGB)</td>
+                    <td class="px-6 py-4 text-gray-700">KESB/Vormund bestimmt Aufenthaltsort</td>
+                    <td class="px-6 py-4 text-gray-700">Eltern haben kein Mitspracherecht mehr</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Zustimmungspflicht bei Umzug mit dem Kind</h2>
+
+    <p class="text-gray-700 mb-6">
+        Eine der wichtigsten praktischen Konsequenzen des Aufenthaltsbestimmungsrechts betrifft die Frage, ob und wann ein Elternteil mit dem Kind umziehen darf. Art. 301a Abs. 2 ZGB unterscheidet zwischen zwei Fallgruppen mit unterschiedlichen Schwellen.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">1. Umzug ins Ausland (Art. 301a Abs. 2 lit. a ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">
+        Bei einem geplanten Umzug ins Ausland ist die Zustimmung des anderen Elternteils <strong>immer erforderlich</strong> - unabhängig davon, ob der neue Wohnort direkt an der Landesgrenze liegt oder am anderen Ende der Welt. Das Bundesgericht hat in BGE 142 III 498 E. 4.4 festgehalten, dass ein Wegzug ins Ausland <strong>auch dann</strong> zustimmungspflichtig ist, wenn der Vorgang keine erheblichen Auswirkungen auf die Wahrnehmung der elterlichen Sorge hat.
+    </p>
+
+    <div class="bg-red-50 border-l-4 border-red-500 p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Warnung: Internationale Kindesentführung</p>
+        <p class="text-gray-700">Ein Umzug ins Ausland ohne die erforderliche Zustimmung kann als <strong>internationale Kindesentführung</strong> gewertet werden. Der zurückgebliebene Elternteil kann gestützt auf das <strong>Haager Kindesentführungsübereinkommen (HKÜ)</strong> die Rückführung des Kindes verlangen. Der entführende Elternteil macht sich unter Umständen strafbar nach <strong>Art. 220 StGB</strong> (Entziehen von Minderjährigen) - Freiheitsstrafe bis zu drei Jahren oder Geldstrafe.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">2. Umzug innerhalb der Schweiz (Art. 301a Abs. 2 lit. b ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">
+        Bei einem Umzug innerhalb der Schweiz ist die Zustimmung des anderen Elternteils nur dann erforderlich, wenn der Wechsel des Aufenthaltsortes <strong>erhebliche Auswirkungen</strong> auf die Ausübung der elterlichen Sorge und den persönlichen Verkehr (Besuchsrecht) hat.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wann ist ein Inlandumzug "erheblich"? (Bundesgerichtliche Kriterien)</h3>
+
+    <p class="text-gray-700 mb-6">
+        Das Bundesgericht hat in mehreren Leitentscheiden präzisiert, wann ein Inlandumzug als erheblich gilt:
+    </p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">BGE-Entscheid</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kriterium für Erheblichkeit</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 142 III 481</td>
+                    <td class="px-6 py-4 text-gray-700">Erheblich, wenn der Umzug die Ausübung des persönlichen Verkehrs <strong>wesentlich erschwert</strong> oder das bisher praktizierte Betreuungsmodell verunmöglicht</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">5A_581/2017</td>
-                    <td class="px-6 py-4 text-gray-700">Beurteilung der Erheblichkeit bei moderater Distanzvergrösserung</td>
+                    <td class="px-6 py-4 text-gray-700">Nicht jede Veränderung der Anfahrtswege ist erheblich; eine Verlängerung um 30-45 Minuten pro Weg <strong>kann</strong> je nach Umständen noch zumutbar sein</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">5A_641/2015</td>
-                    <td class="px-6 py-4 text-gray-700">Niedrigere Erheblichkeitsschwelle bei alternierender Obhut</td>
+                    <td class="px-6 py-4 text-gray-700">Bei <a href="/sorgerecht/alternierende-obhut" class="text-gold hover:underline">alternierender Obhut</a> ist die Erheblichkeitsschwelle <strong>niedriger</strong>, da bereits moderate Distanzvergrösserungen das Modell gefährden können</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Übersicht: Zustimmungspflicht nach Umzugssituation</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Umzugssituation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zustimmung erforderlich?</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Begründung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Umzug ins Ausland (jede Distanz)</td>
+                    <td class="px-6 py-4 text-green-600 font-semibold">Ja, immer</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 301a Abs. 2 lit. a ZGB - keine Erheblichkeitsprüfung</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">5A_450/2020</td>
-                    <td class="px-6 py-4 text-gray-700">Interessenabwägung bei Auslandsumzug</td>
+                    <td class="px-6 py-4 text-gray-700">Umzug innerhalb derselben Gemeinde</td>
+                    <td class="px-6 py-4 text-red-600 font-semibold">In der Regel nein</td>
+                    <td class="px-6 py-4 text-gray-700">Keine erheblichen Auswirkungen zu erwarten</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Umzug in Nachbargemeinde, Kind bleibt in derselben Schule</td>
+                    <td class="px-6 py-4 text-red-600 font-semibold">In der Regel nein</td>
+                    <td class="px-6 py-4 text-gray-700">Soziales Umfeld bleibt weitgehend erhalten</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Umzug mit Schulwechsel</td>
+                    <td class="px-6 py-4 text-yellow-600 font-semibold">Kommt auf die Umstände an</td>
+                    <td class="px-6 py-4 text-gray-700">Einzelfallprüfung der Auswirkungen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Umzug in anderen Kanton (z.B. Zürich → Bern)</td>
+                    <td class="px-6 py-4 text-green-600 font-semibold">Meistens ja</td>
+                    <td class="px-6 py-4 text-gray-700">Erhebliche Distanzvergrösserung typisch</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Umzug bei alternierender Obhut</td>
+                    <td class="px-6 py-4 text-green-600 font-semibold">Schneller erheblich</td>
+                    <td class="px-6 py-4 text-gray-700">Niedrigere Schwelle wegen Modellgefährdung</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Sanktionslosigkeit des Art. 301a ZGB ("Zahnloser Zügelartikel")</h2>
+
+    <p class="text-gray-700 mb-6">
+        Eine wichtige Besonderheit des Aufenthaltsbestimmungsrechts ist die <strong>bewusste Sanktionslosigkeit</strong> des Art. 301a ZGB. Das Bundesgericht hat dies in mehreren Entscheiden bestätigt.
+    </p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">BGE 144 III 10 - Keine direkten Sanktionen:</p>
+        <p class="text-gray-700">Art. 301a Abs. 2 ZGB gibt unabhängig vom Zeitpunkt, in welchem der Aufenthaltsort der Kinder verlegt wird, dem anderen Elternteil <strong>keine zivilrechtliche Möglichkeit</strong>, die betreffenden Handlungen effektiv zu verhindern oder rückgängig zu machen. Der Gesetzgeber hat die Norm bewusst sanktionslos ausgestaltet.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Mögliche Sanktionen bei Verletzung</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Sanktionsart</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Möglich?</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Anmerkung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Verhinderung des Umzugs (Realvollstreckung)</td>
+                    <td class="px-6 py-4 text-red-600 font-semibold">Nein</td>
+                    <td class="px-6 py-4 text-gray-700">—</td>
+                    <td class="px-6 py-4 text-gray-700">Keine zivilrechtliche Handhabe</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Rückführung des Kindes (national)</td>
+                    <td class="px-6 py-4 text-red-600 font-semibold">Nein</td>
+                    <td class="px-6 py-4 text-gray-700">—</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 301a ZGB ermöglicht keine Rückführungsanordnung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Obhutsumteilung</td>
+                    <td class="px-6 py-4 text-green-600 font-semibold">Ja (indirekt)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 301a Abs. 5 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Bei missbräuchlichem Wegzug möglich (BGE 142 III 481 E. 2.7)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Neuordnung Besuchsrecht</td>
+                    <td class="px-6 py-4 text-green-600 font-semibold">Ja</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 301a Abs. 5 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Anpassung an neue Situation</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Strafanzeige (Art. 220 StGB)</td>
+                    <td class="px-6 py-4 text-yellow-600 font-semibold">Eingeschränkt</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 220 StGB</td>
+                    <td class="px-6 py-4 text-gray-700">Nur bei vollständigem Entzug, Antragsdelikt, 3 Monate Frist</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Rückführung nach HKÜ (international)</td>
+                    <td class="px-6 py-4 text-green-600 font-semibold">Ja</td>
+                    <td class="px-6 py-4 text-gray-700">Haager Übereinkommen</td>
+                    <td class="px-6 py-4 text-gray-700">Nur bei Auslandsumzug in HKÜ-Vertragsstaat</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Verfahren bei Uneinigkeit über den Umzug</h2>
+
+    <p class="text-gray-700 mb-6">
+        Wenn sich die Eltern nicht über einen geplanten Umzug einigen können, muss das <strong>Gericht oder die KESB</strong> (Kindes- und Erwachsenenschutzbehörde) entscheiden. Das Verfahren richtet sich nach der konkreten Situation.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Zuständige Behörde</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Situation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zuständige Behörde</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Während des Scheidungsverfahrens</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Scheidungsgericht</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 283 ZPO</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Nach der Scheidung</td>
+                    <td class="px-6 py-4 font-semibold text-navy">KESB am Wohnort des Kindes</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 315a ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Bei unverheirateten Eltern</td>
+                    <td class="px-6 py-4 font-semibold text-navy">KESB am Wohnort des Kindes</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 315a ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Während Eheschutzverfahren</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Eheschutzgericht</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 176 ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Entscheidungskriterien: Das Kindeswohl (BGE 142 III 481)</h3>
+
+    <p class="text-gray-700 mb-6">
+        Das <strong>Kindeswohl</strong> ist der zentrale Massstab bei der Entscheidung über die Bewilligung eines Umzugs. Das Bundesgericht hat in BGE 142 III 481 E. 2.5 ff. detaillierte Grundsätze aufgestellt:
+    </p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kriterium</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Prüfungsinhalt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">BGE-Referenz</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Bewegungsfreiheit</td>
+                    <td class="px-6 py-4 text-gray-700">Die Niederlassungsfreiheit der Eltern wird grundsätzlich respektiert; Umzug wird als Prämisse akzeptiert</td>
+                    <td class="px-6 py-4 text-gray-700">BGE 142 III 481 E. 2.5</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Keine Motivforschung</td>
+                    <td class="px-6 py-4 text-gray-700">Es wird nicht nach den Gründen für den Umzug geforscht - Ausnahme: offensichtliche Entfremdungsabsicht</td>
+                    <td class="px-6 py-4 text-gray-700">BGE 142 III 481 E. 2.7</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Kernfrage</td>
+                    <td class="px-6 py-4 text-gray-700">Ist das Kindeswohl besser gewahrt beim wegzugswilligen oder beim zurückbleibenden Elternteil?</td>
+                    <td class="px-6 py-4 text-gray-700">BGE 142 III 481 E. 2.6</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Hauptbezugsperson</td>
+                    <td class="px-6 py-4 text-gray-700">Es wird tendenziell angenommen, dass das Kind bei der Hauptbezugsperson bleibt und mit dieser umzieht</td>
+                    <td class="px-6 py-4 text-gray-700">BGE 142 III 481 E. 2.6</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Erziehungsfähigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Welcher Elternteil bietet die besseren Erziehungsvoraussetzungen?</td>
+                    <td class="px-6 py-4 text-gray-700">BGE 142 III 481 E. 2.6</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Betreuungsmöglichkeiten</td>
+                    <td class="px-6 py-4 text-gray-700">Tatsächliche Betreuungskapazität beider Elternteile</td>
+                    <td class="px-6 py-4 text-gray-700">BGE 142 III 481 E. 2.6</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Stabilität</td>
+                    <td class="px-6 py-4 text-gray-700">Auswirkungen auf das soziale Umfeld, Schule, Freundschaften</td>
+                    <td class="px-6 py-4 text-gray-700">BGE 142 III 481 E. 2.6</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Kindeswille</td>
+                    <td class="px-6 py-4 text-gray-700">Bei älteren Kindern zunehmend gewichtig (umweltorientiert statt personenorientiert)</td>
+                    <td class="px-6 py-4 text-gray-700">BGE 142 III 481 E. 2.6</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Keine automatische Mitnahme des Kindes (BGE 142 III 502)</h3>
+
+    <p class="text-gray-700 mb-6">
+        Das Bundesgericht hat klargestellt, dass es <strong>kein automatisches Recht</strong> gibt, das Kind bei einem Umzug mitzunehmen. Wenn der Umzug das Kindeswohl beeinträchtigt, kann das Gericht alternative Anordnungen treffen:
+    </p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Mögliche Anordnung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Umzug erlauben, Kind bleibt</td>
+                    <td class="px-6 py-4 text-gray-700">Elternteil darf umziehen, Kind bleibt beim anderen Elternteil</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Obhutsumteilung</td>
+                    <td class="px-6 py-4 text-gray-700">Zuteilung der Obhut an den nicht umziehenden Elternteil</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Anpassung Besuchsrecht</td>
+                    <td class="px-6 py-4 text-gray-700">Erweiterung des Besuchsrechts für den zurückbleibenden Elternteil</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Umzug mit Kind bewilligen</td>
+                    <td class="px-6 py-4 text-gray-700">Wenn Kindeswohl besser beim umziehenden Elternteil gewahrt</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Entzug des Aufenthaltsbestimmungsrechts (Art. 310 ZGB)</h2>
+
+    <p class="text-gray-700 mb-6">
+        In schwerwiegenden Fällen kann das Aufenthaltsbestimmungsrecht den Eltern ganz oder teilweise <strong>entzogen</strong> werden. Diese einschneidende Kindesschutzmassnahme ist in <strong>Art. 310 ZGB</strong> geregelt und wird von der KESB angeordnet. Gemäss KOKES-Statistiken betrifft dies rund <strong>4'500 Fälle</strong> pro Jahr in der Schweiz.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Voraussetzungen für den Entzug</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Voraussetzung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">1. Kindeswohlgefährdung</td>
+                    <td class="px-6 py-4 text-gray-700">Ernstliche Möglichkeit einer Beeinträchtigung der körperlichen, psychischen oder sittlichen Entfaltung des Kindes</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 310 Abs. 1 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">2. Subsidiarität</td>
+                    <td class="px-6 py-4 text-gray-700">Der Gefährdung kann nicht durch mildere Massnahmen begegnet werden (z.B. Beistandschaft, Erziehungsberatung)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 307 Abs. 1 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">3. Verhältnismässigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Der Eingriff muss zum Schutz des Kindes geeignet, erforderlich und zumutbar sein</td>
+                    <td class="px-6 py-4 text-gray-700">BGE 144 III 442</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Typische Gründe für den Entzug</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gefährdungsgrund</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beispiele</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Körperliche Misshandlung</td>
+                    <td class="px-6 py-4 text-gray-700">Schläge, Körperverletzung, physische Gewalt</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Psychische Misshandlung</td>
+                    <td class="px-6 py-4 text-gray-700">Beschimpfungen, Demütigungen, emotionale Vernachlässigung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Sexueller Missbrauch</td>
+                    <td class="px-6 py-4 text-gray-700">Sexuelle Übergriffe, Missbrauchshandlungen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Schwere Vernachlässigung</td>
+                    <td class="px-6 py-4 text-gray-700">Ungenügende Ernährung, fehlende Hygiene, Verwahrlosung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Suchtproblematik</td>
+                    <td class="px-6 py-4 text-gray-700">Erhebliche Alkohol- oder Drogensucht der Eltern</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Psychische Erkrankung</td>
+                    <td class="px-6 py-4 text-gray-700">Schwere psychische Störung, die die Betreuung verunmöglicht</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Häusliche Gewalt</td>
+                    <td class="px-6 py-4 text-gray-700">Gewalt zwischen den Eltern, der das Kind ausgesetzt ist</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Manifeste Erziehungsdefizite</td>
+                    <td class="px-6 py-4 text-gray-700">Dauerhafte Unfähigkeit, grundlegende Erziehungsaufgaben zu bewältigen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Unteilbarkeit des Aufenthaltsbestimmungsrechts (BGE 147 III 121)</h3>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtiger Grundsatz:</p>
+        <p class="text-gray-700">Das Bundesgericht hat in BGE 147 III 121 und 5A_218/2023 klargestellt, dass das Aufenthaltsbestimmungsrecht <strong>nur gesamthaft</strong> - nicht teilweise - entzogen werden kann. Es kann nicht auf einen Elternteil allein übertragen werden, ohne gleichzeitig die elterliche Sorge entsprechend zu regeln. Das Aufenthaltsbestimmungsrecht folgt der Sorgerechtszuteilung.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Internationale Kindesentführung und das Haager Übereinkommen (HKÜ)</h2>
+
+    <p class="text-gray-700 mb-6">
+        Bei einem eigenmächtigen Umzug ins Ausland kann das <strong>Haager Kindesentführungsübereinkommen (HKÜ)</strong> zur Anwendung kommen. Die Schweiz ist seit 1984 Vertragsstaat und hat Rückführungspflichten gegenüber insgesamt <strong>87 Vertragsstaaten</strong>.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wann liegt eine internationale Kindesentführung vor?</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Voraussetzung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Widerrechtliches Verbringen</td>
+                    <td class="px-6 py-4 text-gray-700">Aufenthaltsortswechsel ins Ausland ohne Zustimmung des Mitsorgeberechtigten</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Verletzung des Sorgerechts</td>
+                    <td class="px-6 py-4 text-gray-700">Der zurückbleibende Elternteil hat (Mit-)Sorgerecht inkl. Aufenthaltsbestimmungsrecht</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Gewöhnlicher Aufenthalt</td>
+                    <td class="px-6 py-4 text-gray-700">Das Kind hatte seinen gewöhnlichen Aufenthalt in einem HKÜ-Vertragsstaat (Schweiz)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Zielstaat</td>
+                    <td class="px-6 py-4 text-gray-700">Das Kind wurde in einen anderen HKÜ-Vertragsstaat verbracht</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Verfahren und Fristen nach dem HKÜ</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Regelung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Zuständige Behörde Schweiz</td>
+                    <td class="px-6 py-4 text-gray-700">Bundesamt für Justiz (BJ), Zentralbehörde für internationale Kindesentführungen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Antragsfrist</td>
+                    <td class="px-6 py-4 text-gray-700">Innerhalb eines Jahres nach Verbringen des Kindes ins Ausland</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Entscheidungsfrist</td>
+                    <td class="px-6 py-4 text-gray-700">6 Wochen gemäss Art. 12 HKÜ</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Nach Ablauf der Jahresfrist</td>
+                    <td class="px-6 py-4 text-gray-700">Rückführung kann abgelehnt werden, wenn sich das Kind eingelebt hat</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ausnahmen von der Rückführungspflicht (Art. 13 HKÜ)</h3>
+
+    <p class="text-gray-700 mb-6">
+        In bestimmten Fällen kann die Rückführung ausnahmsweise abgelehnt werden:
+    </p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Ausnahme</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Schwerwiegende Gefahr eines körperlichen oder seelischen Schadens für das Kind</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 13 Abs. 1 lit. b HKÜ</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Das Kind würde in eine unzumutbare Lage gebracht</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 13 Abs. 1 lit. b HKÜ</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Der Antragsteller hat zugestimmt oder später eingewilligt</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 13 Abs. 1 lit. a HKÜ</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Das Kind widersetzt sich der Rückführung (bei entsprechendem Alter und Reife)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 13 Abs. 2 HKÜ</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-lg my-8 border border-gray-200">
+        <p class="font-semibold text-navy mb-3">Vertiefender Artikel zur internationalen Kindesentführung:</p>
+        <p class="text-gray-700 mb-2">Unser umfassender Artikel behandelt das HKÜ-Verfahren im Detail – von der Rückführungsklage über Ausnahmen nach Art. 13 HKÜ bis zu Präventionsmassnahmen und der aktuellen BGE-Rechtsprechung.</p>
+        <p>→ <a href="/internationales-familienrecht/internationale-kindesentfuehrung" class="text-gold hover:underline font-semibold">Internationale Kindesentführung – HKÜ, Rückführung & Prävention</a></p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Aufenthaltsbestimmungsrecht im Wechselmodell</h2>
+
+    <p class="text-gray-700 mb-6">
+        Bei der <a href="/sorgerecht/alternierende-obhut" class="text-gold hover:underline font-semibold">alternierenden Obhut</a> (Wechselmodell) leben die Kinder abwechselnd bei beiden Elternteilen. Das Aufenthaltsbestimmungsrecht hat hier besondere Bedeutung und unterliegt strengeren Anforderungen.
+    </p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Besonderheit bei alternierender Obhut</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Wohnsitz des Kindes</td>
+                    <td class="px-6 py-4 text-gray-700">Das Kind kann rechtlich nur <strong>einen Wohnsitz</strong> haben - Eltern müssen sich einigen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Erheblichkeitsschwelle</td>
+                    <td class="px-6 py-4 text-gray-700"><strong>Niedriger</strong> als bei alleiniger Obhut - bereits moderate Distanzänderungen können das Modell gefährden</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Aufschiebende Wirkung</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Rechtsmitteln nur mit grosser Zurückhaltung zu verweigern (Kontinuitätsprinzip)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Konsequenz bei Umzug</td>
+                    <td class="px-6 py-4 text-gray-700">Häufig Aufgabe der alternierenden Obhut und Zuteilung an einen Elternteil</td>
                 </tr>
             </tbody>
         </table>
@@ -144,42 +888,338 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Praktische Empfehlungen</h2>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Für umzugswillige Eltern</h3>
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Kommunizieren Sie frühzeitig und informieren Sie den anderen Elternteil rechtzeitig über Ihre Umzugspläne.</li>
-        <li>Dokumentieren Sie Ihre Gründe schriftlich (Arbeitsplatz, familiäre Gründe).</li>
-        <li>Unterbreiten Sie Vorschläge für den persönlichen Verkehr nach dem Umzug.</li>
-        <li>Holen Sie bei absehbaren Konflikten frühzeitig rechtliche Beratung ein.</li>
-    </ul>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Für Eltern, die einen Umzug planen</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Empfehlung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Begründung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Frühzeitig kommunizieren</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 301a Abs. 3 und 4 ZGB verlangen rechtzeitige Information</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Gründe dokumentieren</td>
+                    <td class="px-6 py-4 text-gray-700">Schriftliche Festhaltung (Arbeitsplatz, familiäre Gründe, neuer Partner)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Lösungsvorschläge unterbreiten</td>
+                    <td class="px-6 py-4 text-gray-700">Konkrete Vorschläge für Besuchsrecht nach dem Umzug</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Rechtliche Beratung einholen</td>
+                    <td class="px-6 py-4 text-gray-700">Bei absehbaren Konflikten frühzeitig Anwalt konsultieren</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Nicht eigenmächtig handeln</td>
+                    <td class="px-6 py-4 text-gray-700">Umzug ohne Zustimmung kann schwerwiegende Folgen haben (Obhutsumteilung, HKÜ)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Für den anderen Elternteil</h3>
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Prüfen Sie sachlich, ob der Umzug tatsächlich erhebliche Auswirkungen auf Ihre Beziehung zum Kind hat.</li>
-        <li>Versuchen Sie, eine einvernehmliche Lösung zu finden.</li>
-        <li>Handeln Sie schnell bei drohendem Umzug und beantragen Sie vorsorgliche Massnahmen.</li>
-    </ul>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Häufig gestellte Fragen</h2>
-
-    <div class="space-y-6">
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-bold text-navy mb-2">Darf ich mit meinem Kind ohne Zustimmung des anderen Elternteils umziehen?</h3>
-            <p class="text-gray-700">Bei gemeinsamem Sorgerecht benötigen Sie die Zustimmung, wenn der Umzug erhebliche Auswirkungen auf den persönlichen Verkehr hat oder ins Ausland führt. Bei kleineren Umzügen innerhalb derselben Region ist in der Regel keine Zustimmung erforderlich.</p>
-        </div>
-
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-bold text-navy mb-2">Was gilt als erheblicher Umzug?</h3>
-            <p class="text-gray-700">Ein Umzug ist erheblich, wenn er dazu führt, dass das Kind die Schule wechseln muss, das bisherige Betreuungsmodell nicht mehr praktikabel ist oder der persönliche Verkehr wesentlich erschwert wird.</p>
-        </div>
-
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-bold text-navy mb-2">Was passiert, wenn ich ohne Zustimmung umziehe?</h3>
-            <p class="text-gray-700">Ein Umzug ohne die erforderliche Zustimmung ist rechtswidrig. Der andere Elternteil kann die Rückführung des Kindes verlangen. Bei einem Auslandsumzug kann das Haager Kindesentführungsübereinkommen angewendet werden.</p>
-        </div>
-
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-bold text-navy mb-2">Kann ich bei alleinigem Sorgerecht frei umziehen?</h3>
-            <p class="text-gray-700">Ja, bei alleinigem Sorgerecht können Sie grundsätzlich den Wohnsitz des Kindes frei bestimmen. Sie müssen aber den anderen Elternteil informieren und beachten, dass ein Umzug Auswirkungen auf das Besuchsrecht haben kann.</p>
-        </div>
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Empfehlung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Begründung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Sachlich prüfen</td>
+                    <td class="px-6 py-4 text-gray-700">Hat der Umzug tatsächlich erhebliche Auswirkungen auf die Beziehung zum Kind?</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Dialog suchen</td>
+                    <td class="px-6 py-4 text-gray-700">Einvernehmliche Lösung ist meist besser als gerichtlicher Streit</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Schnell handeln</td>
+                    <td class="px-6 py-4 text-gray-700">Bei drohendem Umzug ohne Zustimmung umgehend rechtliche Schritte einleiten</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Kindeswohl beachten</td>
+                    <td class="px-6 py-4 text-gray-700">Das Wohl des Kindes muss im Vordergrund stehen, nicht eigene Interessen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Bei Auslandsumzug: HKÜ-Frist beachten</td>
+                    <td class="px-6 py-4 text-gray-700">Rückführungsantrag innerhalb eines Jahres stellen</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
+
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">
+            Konflikte rund um das Aufenthaltsbestimmungsrecht gehören zu den emotional belastendsten Situationen im Familienrecht. Die rechtlichen Regelungen sind komplex, die bundesgerichtliche Rechtsprechung ist umfangreich, und Fehlentscheidungen können schwerwiegende Konsequenzen für das Verhältnis zum Kind haben.
+        </p>
+
+        <p class="text-gray-700 mb-6">
+            Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> kann Sie in folgenden Situationen unterstützen:
+        </p>
+
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Der andere Elternteil <strong>plant einen Umzug</strong>, dem Sie nicht zustimmen möchten</li>
+            <li>Sie möchten <strong>mit dem Kind umziehen</strong> und benötigen die Zustimmung oder eine behördliche Bewilligung</li>
+            <li>Es droht ein <strong>eigenmächtiger Umzug</strong> oder eine internationale Kindesentführung</li>
+            <li>Die KESB hat ein <strong>Verfahren eingeleitet</strong> bezüglich des Aufenthaltsbestimmungsrechts</li>
+            <li>Sie sind von einem <strong>Entzug des Aufenthaltsbestimmungsrechts</strong> betroffen oder möchten dies beantragen</li>
+            <li>Unklarheiten bei der <strong>alternierenden Obhut</strong> und der Wohnsitzfrage</li>
+            <li>Sie benötigen Unterstützung bei einem <strong>Rückführungsverfahren nach dem HKÜ</strong></li>
+        </ul>
+
+        <p class="text-gray-700 mb-6">
+            Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kennt die bundesgerichtliche Rechtsprechung (BGE 142 III 481, 498, 502; BGE 144 III 10; BGE 147 III 121) und kann Ihre Interessen vor Gericht oder der KESB vertreten. Auch ein <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> kann bei Umzugskonflikten während der Ehe oder Trennung helfen, eine kindeswohlgerechte Lösung zu finden.
+        </p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Haben Sie Fragen zum Aufenthaltsbestimmungsrecht oder steht ein Umzugskonflikt bevor? In einer unverbindlichen Erstberatung können wir Ihre Situation einschätzen und Ihnen konkrete Handlungsoptionen aufzeigen.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- Fazit -->
+    <h2 class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">
+        Das Aufenthaltsbestimmungsrecht ist seit der Sorgerechtsrevision 2014 ein zentraler Bestandteil der elterlichen Sorge. Mit der Einführung des "Zügelartikels" (Art. 301a ZGB) wurde klargestellt, dass bei gemeinsamem Sorgerecht beide Eltern gemeinsam über den Wohnort des Kindes entscheiden müssen. Das Bundesgericht hat in seinen Leitentscheiden (BGE 142 III 481, 498, 502; BGE 144 III 10) die Grundsätze für Wegzugsstreitigkeiten präzisiert: Die Bewegungsfreiheit der Eltern wird respektiert, aber das Kindeswohl bleibt der entscheidende Massstab.
+    </p>
+
+    <p class="text-gray-700 mb-6">
+        Der Zügelartikel ist bewusst sanktionslos ausgestaltet - direkte zivilrechtliche Mittel zur Verhinderung eines Umzugs bestehen nicht. Indirekt kann jedoch eine Obhutsumteilung als Konsequenz drohen, und bei internationalen Umzügen greift das Haager Kindesentführungsübereinkommen. In schweren Fällen der Kindeswohlgefährdung kann die KESB das Aufenthaltsbestimmungsrecht nach Art. 310 ZGB entziehen.
+    </p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Relevante Gesetzesbestimmungen:</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li><strong>Art. 301a ZGB</strong> - Aufenthaltsbestimmungsrecht ("Zügelartikel")</li>
+            <li><strong>Art. 296 ZGB</strong> - Gemeinsame elterliche Sorge als Regelfall</li>
+            <li><strong>Art. 301 ff. ZGB</strong> - Inhalt der elterlichen Sorge</li>
+            <li><strong>Art. 310 ZGB</strong> - Entzug des Aufenthaltsbestimmungsrechts</li>
+            <li><strong>Art. 315a ZGB</strong> - Zuständigkeit der KESB</li>
+            <li><strong>Art. 220 StGB</strong> - Entziehen von Minderjährigen (Freiheitsstrafe bis 3 Jahre)</li>
+            <li><strong>Art. 292 StGB</strong> - Ungehorsam gegen amtliche Verfügungen</li>
+            <li><strong>Haager Kindesentführungsübereinkommen (HKÜ)</strong> - Internationale Kindesentführung</li>
+        </ul>
+    </div>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist das Aufenthaltsbestimmungsrecht?</h3>
+                <p class="text-gray-700">Das Aufenthaltsbestimmungsrecht ist das Recht der Eltern, über den Wohnort des Kindes zu bestimmen. Es ist seit der Sorgerechtsrevision 2014 Teil der elterlichen Sorge gemäss Art. 301a Abs. 1 ZGB - nicht mehr der Obhut (BGE 142 III 612). Bei gemeinsamem Sorgerecht steht dieses Recht beiden Eltern gemeinsam zu, was bedeutet, dass wichtige Entscheidungen über den Aufenthaltsort einvernehmlich getroffen werden müssen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wem steht das Aufenthaltsbestimmungsrecht zu?</h3>
+                <p class="text-gray-700">Das Aufenthaltsbestimmungsrecht steht den Inhabern der elterlichen Sorge zu. Bei gemeinsamem Sorgerecht (seit 2014 der Regelfall nach Art. 296 Abs. 2 ZGB) haben beide Eltern dieses Recht gemeinsam. Bei alleinigem Sorgerecht hat nur der sorgeberechtigte Elternteil das Aufenthaltsbestimmungsrecht, muss aber den anderen Elternteil rechtzeitig über Umzüge informieren (Art. 301a Abs. 3 ZGB).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Darf ich mit meinem Kind ohne Zustimmung des anderen Elternteils umziehen?</h3>
+                <p class="text-gray-700">Bei gemeinsamem Sorgerecht benötigen Sie die Zustimmung des anderen Elternteils, wenn der Umzug ins Ausland führt (Art. 301a Abs. 2 lit. a ZGB - immer zustimmungspflichtig) oder wenn ein Inlandumzug erhebliche Auswirkungen auf die Ausübung der elterlichen Sorge und den persönlichen Verkehr hat (Art. 301a Abs. 2 lit. b ZGB). Bei kleineren Umzügen ohne erhebliche Auswirkungen ist keine Zustimmung erforderlich.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was gilt als erheblicher Umzug innerhalb der Schweiz?</h3>
+                <p class="text-gray-700">Ein Umzug ist erheblich, wenn er die Ausübung des persönlichen Verkehrs wesentlich erschwert oder das bisher praktizierte Betreuungsmodell verunmöglicht (BGE 142 III 481). Typische Beispiele: Das Kind muss die Schule wechseln, die Anfahrtswege werden deutlich länger, oder bei alternierender Obhut wird das Modell gefährdet. Nicht jede moderate Distanzvergrösserung (30-45 Minuten) ist automatisch erheblich (5A_581/2017).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert, wenn ich ohne Zustimmung mit dem Kind ins Ausland umziehe?</h3>
+                <p class="text-gray-700">Ein Umzug ins Ausland ohne die erforderliche Zustimmung kann als internationale Kindesentführung nach dem Haager Kindesentführungsübereinkommen (HKÜ) gewertet werden. Der andere Elternteil kann beim Bundesamt für Justiz die Rückführung des Kindes beantragen. Die Vertragsstaaten müssen innerhalb von 6 Wochen entscheiden. Zudem macht sich der entführende Elternteil nach Art. 220 StGB strafbar (Freiheitsstrafe bis 3 Jahre oder Geldstrafe).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wer entscheidet bei Uneinigkeit über einen Umzug?</h3>
+                <p class="text-gray-700">Bei Uneinigkeit entscheidet während des Scheidungsverfahrens das Scheidungsgericht (Art. 283 ZPO), ansonsten die KESB am Wohnort des Kindes (Art. 315a ZGB). Das entscheidende Kriterium ist das Kindeswohl. Das Gericht prüft gemäss BGE 142 III 481, ob das Kind besser mit dem umzugswilligen Elternteil geht oder beim anderen Elternteil bleibt - nicht, ob der Umzug sinnvoll ist.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann das Aufenthaltsbestimmungsrecht entzogen werden?</h3>
+                <p class="text-gray-700">Ja, bei schwerer Kindeswohlgefährdung kann die KESB das Aufenthaltsbestimmungsrecht gemäss Art. 310 ZGB entziehen (rund 4'500 Fälle jährlich). Voraussetzungen sind eine erhebliche Gefährdung des Kindes (z.B. Misshandlung, Vernachlässigung) und dass mildere Massnahmen nicht ausreichen. Die KESB bestimmt dann, wo das Kind künftig lebt. Gemäss BGE 147 III 121 kann das Recht nur gesamthaft - nicht teilweise - entzogen werden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen Aufenthaltsbestimmungsrecht und Obhut?</h3>
+                <p class="text-gray-700">Das Aufenthaltsbestimmungsrecht ist seit 2014 Teil der elterlichen Sorge, nicht der Obhut (BGE 142 III 612, BGE 147 III 121). Die Obhut bezeichnet die faktische, alltägliche Betreuung des Kindes ("garde de fait"). Das Aufenthaltsbestimmungsrecht regelt hingegen, wer über den rechtlichen Wohnsitz des Kindes entscheiden darf. Auch der nicht hauptsächlich betreuende Elternteil hat bei gemeinsamem Sorgerecht ein Mitspracherecht beim Wohnort.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Gibt es Sanktionen bei Verletzung von Art. 301a ZGB?</h3>
+                <p class="text-gray-700">Art. 301a ZGB ist bewusst sanktionslos ausgestaltet (BGE 144 III 10). Es gibt keine zivilrechtliche Möglichkeit, einen Umzug direkt zu verhindern oder rückgängig zu machen. Indirekte Sanktion: Bei missbräuchlichem Wegzug kann eine Obhutsumteilung erfolgen (Art. 301a Abs. 5 ZGB). Bei Auslandsumzügen greift das HKÜ. Strafrechtlich kann Art. 220 StGB (Entziehen von Minderjährigen) relevant sein.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie ist das Aufenthaltsbestimmungsrecht bei alternierender Obhut geregelt?</h3>
+                <p class="text-gray-700">Bei der alternierenden Obhut (Wechselmodell) steht das Aufenthaltsbestimmungsrecht beiden Eltern gemeinsam zu. Das Kind kann rechtlich nur einen Wohnsitz haben - die Eltern müssen sich einigen. Die Erheblichkeitsschwelle für Umzüge ist niedriger (5A_641/2015), da bereits moderate Distanzänderungen das Modell gefährden können. Bei Rechtsmitteln sollte die aufschiebende Wirkung nur mit grosser Zurückhaltung verweigert werden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Muss ich den anderen Elternteil über einen Umzug informieren?</h3>
+                <p class="text-gray-700">Ja, es besteht eine gesetzliche Informationspflicht. Nach Art. 301a Abs. 3 ZGB muss ein Elternteil mit alleiniger elterlicher Sorge den anderen Elternteil rechtzeitig über einen geplanten Umzug des Kindes informieren. Nach Art. 301a Abs. 4 ZGB gilt dieselbe Pflicht auch für den eigenen Wohnsitzwechsel. Diese Informationspflicht dient dazu, dem anderen Elternteil die Planung und Ausübung des Besuchsrechts zu ermöglichen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der "Zügelartikel"?</h3>
+                <p class="text-gray-700">Der "Zügelartikel" ist die umgangssprachliche Bezeichnung für Art. 301a ZGB, der mit der Sorgerechtsrevision am 1. Juli 2014 in Kraft trat. Er regelt das Aufenthaltsbestimmungsrecht und die Zustimmungspflicht bei Umzügen. Die Bezeichnung stammt aus der parlamentarischen Debatte, wo befürchtet wurde, dass die Norm zu einem "Müttergefängnis" führen könnte. Der Gesetzgeber hat den Artikel bewusst sanktionslos ausgestaltet, um die Niederlassungsfreiheit zu wahren.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Aufenthaltsbestimmungsrecht in der Schweiz",
+        "description": "Aufenthaltsbestimmungsrecht erklärt: Definition, Art. 301a ZGB, Zustimmungspflicht bei Umzug, BGE-Rechtsprechung, Entzug durch KESB & internationale Kindesentführung.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2026-01-26",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/sorgerecht/aufenthaltsbestimmungsrecht"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Was ist das Aufenthaltsbestimmungsrecht?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das Aufenthaltsbestimmungsrecht ist das Recht der Eltern, über den Wohnort des Kindes zu bestimmen. Es ist seit der Sorgerechtsrevision 2014 Teil der elterlichen Sorge gemäss Art. 301a Abs. 1 ZGB - nicht mehr der Obhut (BGE 142 III 612). Bei gemeinsamem Sorgerecht steht dieses Recht beiden Eltern gemeinsam zu, was bedeutet, dass wichtige Entscheidungen über den Aufenthaltsort einvernehmlich getroffen werden müssen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wem steht das Aufenthaltsbestimmungsrecht zu?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das Aufenthaltsbestimmungsrecht steht den Inhabern der elterlichen Sorge zu. Bei gemeinsamem Sorgerecht (seit 2014 der Regelfall nach Art. 296 Abs. 2 ZGB) haben beide Eltern dieses Recht gemeinsam. Bei alleinigem Sorgerecht hat nur der sorgeberechtigte Elternteil das Aufenthaltsbestimmungsrecht, muss aber den anderen Elternteil rechtzeitig über Umzüge informieren (Art. 301a Abs. 3 ZGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Darf ich mit meinem Kind ohne Zustimmung des anderen Elternteils umziehen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei gemeinsamem Sorgerecht benötigen Sie die Zustimmung des anderen Elternteils, wenn der Umzug ins Ausland führt (Art. 301a Abs. 2 lit. a ZGB - immer zustimmungspflichtig) oder wenn ein Inlandumzug erhebliche Auswirkungen auf die Ausübung der elterlichen Sorge und den persönlichen Verkehr hat (Art. 301a Abs. 2 lit. b ZGB). Bei kleineren Umzügen ohne erhebliche Auswirkungen ist keine Zustimmung erforderlich."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was gilt als erheblicher Umzug innerhalb der Schweiz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ein Umzug ist erheblich, wenn er die Ausübung des persönlichen Verkehrs wesentlich erschwert oder das bisher praktizierte Betreuungsmodell verunmöglicht (BGE 142 III 481). Typische Beispiele: Das Kind muss die Schule wechseln, die Anfahrtswege werden deutlich länger, oder bei alternierender Obhut wird das Modell gefährdet. Nicht jede moderate Distanzvergrösserung (30-45 Minuten) ist automatisch erheblich (5A_581/2017)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert, wenn ich ohne Zustimmung mit dem Kind ins Ausland umziehe?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ein Umzug ins Ausland ohne die erforderliche Zustimmung kann als internationale Kindesentführung nach dem Haager Kindesentführungsübereinkommen (HKÜ) gewertet werden. Der andere Elternteil kann beim Bundesamt für Justiz die Rückführung des Kindes beantragen. Die Vertragsstaaten müssen innerhalb von 6 Wochen entscheiden. Zudem macht sich der entführende Elternteil nach Art. 220 StGB strafbar (Freiheitsstrafe bis 3 Jahre oder Geldstrafe)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wer entscheidet bei Uneinigkeit über einen Umzug?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei Uneinigkeit entscheidet während des Scheidungsverfahrens das Scheidungsgericht (Art. 283 ZPO), ansonsten die KESB am Wohnort des Kindes (Art. 315a ZGB). Das entscheidende Kriterium ist das Kindeswohl. Das Gericht prüft gemäss BGE 142 III 481, ob das Kind besser mit dem umzugswilligen Elternteil geht oder beim anderen Elternteil bleibt - nicht, ob der Umzug sinnvoll ist."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann das Aufenthaltsbestimmungsrecht entzogen werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, bei schwerer Kindeswohlgefährdung kann die KESB das Aufenthaltsbestimmungsrecht gemäss Art. 310 ZGB entziehen (rund 4'500 Fälle jährlich). Voraussetzungen sind eine erhebliche Gefährdung des Kindes (z.B. Misshandlung, Vernachlässigung) und dass mildere Massnahmen nicht ausreichen. Die KESB bestimmt dann, wo das Kind künftig lebt. Gemäss BGE 147 III 121 kann das Recht nur gesamthaft - nicht teilweise - entzogen werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen Aufenthaltsbestimmungsrecht und Obhut?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das Aufenthaltsbestimmungsrecht ist seit 2014 Teil der elterlichen Sorge, nicht der Obhut (BGE 142 III 612, BGE 147 III 121). Die Obhut bezeichnet die faktische, alltägliche Betreuung des Kindes ('garde de fait'). Das Aufenthaltsbestimmungsrecht regelt hingegen, wer über den rechtlichen Wohnsitz des Kindes entscheiden darf. Auch der nicht hauptsächlich betreuende Elternteil hat bei gemeinsamem Sorgerecht ein Mitspracherecht beim Wohnort."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Gibt es Sanktionen bei Verletzung von Art. 301a ZGB?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Art. 301a ZGB ist bewusst sanktionslos ausgestaltet (BGE 144 III 10). Es gibt keine zivilrechtliche Möglichkeit, einen Umzug direkt zu verhindern oder rückgängig zu machen. Indirekte Sanktion: Bei missbräuchlichem Wegzug kann eine Obhutsumteilung erfolgen (Art. 301a Abs. 5 ZGB). Bei Auslandsumzügen greift das HKÜ. Strafrechtlich kann Art. 220 StGB (Entziehen von Minderjährigen) relevant sein."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie ist das Aufenthaltsbestimmungsrecht bei alternierender Obhut geregelt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei der alternierenden Obhut (Wechselmodell) steht das Aufenthaltsbestimmungsrecht beiden Eltern gemeinsam zu. Das Kind kann rechtlich nur einen Wohnsitz haben - die Eltern müssen sich einigen. Die Erheblichkeitsschwelle für Umzüge ist niedriger (5A_641/2015), da bereits moderate Distanzänderungen das Modell gefährden können. Bei Rechtsmitteln sollte die aufschiebende Wirkung nur mit grosser Zurückhaltung verweigert werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Muss ich den anderen Elternteil über einen Umzug informieren?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, es besteht eine gesetzliche Informationspflicht. Nach Art. 301a Abs. 3 ZGB muss ein Elternteil mit alleiniger elterlicher Sorge den anderen Elternteil rechtzeitig über einen geplanten Umzug des Kindes informieren. Nach Art. 301a Abs. 4 ZGB gilt dieselbe Pflicht auch für den eigenen Wohnsitzwechsel. Diese Informationspflicht dient dazu, dem anderen Elternteil die Planung und Ausübung des Besuchsrechts zu ermöglichen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist der 'Zügelartikel'?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der 'Zügelartikel' ist die umgangssprachliche Bezeichnung für Art. 301a ZGB, der mit der Sorgerechtsrevision am 1. Juli 2014 in Kraft trat. Er regelt das Aufenthaltsbestimmungsrecht und die Zustimmungspflicht bei Umzügen. Die Bezeichnung stammt aus der parlamentarischen Debatte, wo befürchtet wurde, dass die Norm zu einem 'Müttergefängnis' führen könnte. Der Gesetzgeber hat den Artikel bewusst sanktionslos ausgestaltet, um die Niederlassungsfreiheit zu wahren."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Sorgerecht",
+                "item": "https://familienrechtanwalt.ch/sorgerecht"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Aufenthaltsbestimmungsrecht in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/sorgerecht/aufenthaltsbestimmungsrecht"
+            }
+        ]
+    })} />
+
 </ArticleLayout>

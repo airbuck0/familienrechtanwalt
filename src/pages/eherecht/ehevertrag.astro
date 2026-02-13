@@ -9,6 +9,33 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
     category="Eherecht"
     categoryLink="/eherecht"
 >
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Der Ehevertrag ermöglicht die individuelle Gestaltung der Vermögensverhältnisse und muss notariell beurkundet werden (Art. 184 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Drei Güterstände stehen zur Wahl: Errungenschaftsbeteiligung (gesetzlich), Gütertrennung oder Gütergemeinschaft.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Besonders empfehlenswert bei Selbständigkeit, Unternehmensbeteiligung, Immobilien oder Patchwork-Familien.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Kosten variieren kantonal zwischen CHF 200 und CHF 7'500 je nach Vermögenswert und Komplexität.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Ein Ehevertrag kann jederzeit während der Ehe abgeschlossen oder geändert werden – auch nach vielen Ehejahren.</span>
+            </li>
+        </ul>
+    </div>
+
     <p class="text-xl text-gray-700 mb-8 leading-relaxed">Der Ehevertrag ist ein zentrales Instrument des schweizerischen Ehegüterrechts, mit dem Ehegatten ihre vermögensrechtlichen Verhältnisse individuell gestalten können. Obwohl in der Schweiz niemand zum Abschluss eines Ehevertrags verpflichtet ist, kann er in vielen Lebenssituationen sinnvoll oder sogar notwendig sein – sei es zum Schutz eines Unternehmens, zur Begünstigung des überlebenden Ehegatten oder zur Absicherung bei Patchwork-Familien. Dieser Leitartikel erläutert alle relevanten Aspekte des Ehevertrags nach schweizerischem Recht.</p>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Was ist ein Ehevertrag?</h2>
@@ -745,49 +772,65 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         <li>Bei wesentlichen Änderungen: Anpassung erwägen</li>
     </ul>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Häufig gestellte Fragen (FAQ)</h2>
-
-    <div class="space-y-6">
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-serif text-xl font-bold text-navy mb-3">Kann ein Ehevertrag nachträglich abgeschlossen werden?</h3>
-            <p class="text-gray-700">Ja, ein Ehevertrag kann jederzeit während der Ehe abgeschlossen werden. Die Dauer der bestehenden Ehe spielt keine Rolle.</p>
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Eherecht beiziehen sollten</h2>
+        <p class="text-gray-700 mb-6">Die Gestaltung eines Ehevertrags erfordert juristisches Fachwissen, da fehlerhafte Formulierungen weitreichende finanzielle Konsequenzen haben können. Obwohl die notarielle Beurkundung obligatorisch ist, kann ein Notar nur formelle Aspekte prüfen – eine umfassende Interessenvertretung erfolgt durch einen spezialisierten Anwalt.</p>
+        <p class="text-gray-700 mb-6">Besonders in folgenden Situationen ist die Beratung durch einen erfahrenen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> dringend empfohlen:</p>
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Bei Unternehmensbeteiligungen oder selbständiger Erwerbstätigkeit</li>
+            <li>Bei erheblichen Vermögensunterschieden zwischen den Ehegatten</li>
+            <li>Bei Patchwork-Familien mit Kindern aus früheren Beziehungen</li>
+            <li>Bei Immobilieneigentum und komplexen Finanzierungsstrukturen</li>
+            <li>Bei internationalen Bezügen (unterschiedliche Staatsangehörigkeit, Vermögen im Ausland)</li>
+            <li>Bei der Kombination von Ehevertrag und Erbvertrag zur maximalen Begünstigung</li>
+        </ul>
+        <p class="text-gray-700 mb-6">Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> kann sicherstellen, dass Ihre Interessen vollständig gewahrt werden und der Vertrag auch einer gerichtlichen Überprüfung standhält. Dies ist besonders wichtig, da das Gericht bei einer Scheidung prüft, ob der Ehevertrag «offensichtlich unbillig» ist.</p>
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Lassen Sie Ihre Vermögenssituation von einem erfahrenen Fachanwalt für Familienrecht analysieren und erfahren Sie, welche güterrechtlichen Regelungen für Sie optimal sind.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
         </div>
+    </section>
 
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-serif text-xl font-bold text-navy mb-3">Was kostet ein Ehevertrag?</h3>
-            <p class="text-gray-700">Die Kosten variieren je nach Kanton zwischen CHF 200 und CHF 7'500. Hinzu kommen eventuell Kosten für ein Inventar und anwaltliche Beratung.</p>
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ein Ehevertrag nachträglich abgeschlossen werden?</h3>
+                <p class="text-gray-700">Ja, ein Ehevertrag kann jederzeit während der Ehe abgeschlossen werden. Die Dauer der bestehenden Ehe spielt keine Rolle – auch nach 20 Jahren Ehe ist ein Ehevertrag noch möglich.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was kostet ein Ehevertrag?</h3>
+                <p class="text-gray-700">Die Kosten variieren je nach Kanton zwischen CHF 200 und CHF 7'500. Die Höhe hängt vom Nettovermögen und der Komplexität des Vertrags ab. Hinzu kommen eventuell Kosten für ein Inventar und anwaltliche Beratung.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ein Ehevertrag einseitig geändert werden?</h3>
+                <p class="text-gray-700">Nein, für eine Änderung oder Aufhebung ist die Zustimmung beider Ehegatten und eine erneute notarielle Beurkundung erforderlich. Eine einseitige Änderung ist ausgeschlossen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Schützt ein Ehevertrag vor Schulden des Ehepartners?</h3>
+                <p class="text-gray-700">Bei Gütertrennung haftet jeder Ehegatte nur für seine eigenen Schulden. Das Vermögen des anderen Ehegatten ist geschützt. Bei der Errungenschaftsbeteiligung besteht während der Ehe ebenfalls keine Mithaftung.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Ist ein Ehevertrag ohne Notar gültig?</h3>
+                <p class="text-gray-700">Nein, ein Ehevertrag ohne öffentliche Beurkundung ist gemäss Art. 184 ZGB nichtig und hat keine rechtliche Wirkung. Die notarielle Form ist zwingend vorgeschrieben.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann man Unterhaltsansprüche im Ehevertrag ausschliessen?</h3>
+                <p class="text-gray-700">Nein, der vollständige Ausschluss von Unterhaltsansprüchen ist unzulässig. Entsprechende Klauseln sind rechtlich nicht bindend und können vor Gericht angefochten werden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert mit dem Ehevertrag bei Scheidung?</h3>
+                <p class="text-gray-700">Der Ehevertrag regelt die güterrechtliche Auseinandersetzung. Das Gericht prüft jedoch nach Art. 277 ZPO, ob der Vertrag «offensichtlich unbillig» ist und kann ihn gegebenenfalls anpassen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Brauche ich einen Anwalt für den Ehevertrag?</h3>
+                <p class="text-gray-700">Nicht zwingend, aber empfehlenswert – besonders bei komplexen Vermögensverhältnissen, Unternehmensbeteiligungen oder wenn der überlebende Ehegatte maximal begünstigt werden soll.</p>
+            </div>
         </div>
-
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-serif text-xl font-bold text-navy mb-3">Kann ein Ehevertrag einseitig geändert werden?</h3>
-            <p class="text-gray-700">Nein, für eine Änderung oder Aufhebung ist die Zustimmung beider Ehegatten und eine erneute notarielle Beurkundung erforderlich.</p>
-        </div>
-
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-serif text-xl font-bold text-navy mb-3">Schützt ein Ehevertrag vor Schulden des Ehepartners?</h3>
-            <p class="text-gray-700">Bei Gütertrennung haftet jeder Ehegatte nur für seine eigenen Schulden. Das Vermögen des anderen Ehegatten ist geschützt.</p>
-        </div>
-
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-serif text-xl font-bold text-navy mb-3">Ist ein Ehevertrag ohne Notar gültig?</h3>
-            <p class="text-gray-700">Nein, ein Ehevertrag ohne öffentliche Beurkundung ist nichtig und hat keine rechtliche Wirkung.</p>
-        </div>
-
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-serif text-xl font-bold text-navy mb-3">Kann man Unterhaltsansprüche im Ehevertrag ausschliessen?</h3>
-            <p class="text-gray-700">Nein, der vollständige Ausschluss von Unterhaltsansprüchen ist unzulässig. Entsprechende Klauseln sind rechtlich nicht bindend.</p>
-        </div>
-
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-serif text-xl font-bold text-navy mb-3">Was passiert mit dem Ehevertrag bei Scheidung?</h3>
-            <p class="text-gray-700">Der Ehevertrag regelt die güterrechtliche Auseinandersetzung. Das Gericht prüft jedoch, ob der Vertrag «offensichtlich unbillig» ist.</p>
-        </div>
-
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-serif text-xl font-bold text-navy mb-3">Brauche ich einen Anwalt für den Ehevertrag?</h3>
-            <p class="text-gray-700">Nicht zwingend, aber empfehlenswert – besonders bei komplexen Vermögensverhältnissen oder Unternehmensbeteiligungen.</p>
-        </div>
-    </div>
+    </section>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
 
@@ -805,4 +848,123 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
     <p class="text-gray-700 mb-4">Der Abschluss eines Ehevertrags erfordert die öffentliche Beurkundung durch einen Notar. Die Kosten variieren je nach Kanton und Komplexität des Vertrags. Ein einmal abgeschlossener Ehevertrag kann jederzeit im gegenseitigen Einvernehmen geändert oder aufgehoben werden.</p>
 
     <p class="text-gray-700 mb-6">Bei komplexen Vermögensverhältnissen, Unternehmensbeteiligungen oder internationalen Bezügen empfiehlt sich die Beratung durch eine spezialisierte Rechtsanwältin oder einen spezialisierten Rechtsanwalt für Familienrecht, um alle rechtlichen Möglichkeiten optimal zu nutzen und mögliche Fallstricke zu vermeiden.</p>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Ehevertrag in der Schweiz: Inhalt, Kosten, Güterstände und rechtliche Grundlagen",
+        "description": "Ehevertrag in der Schweiz: Umfassender Leitfaden zu Inhalt, Kosten, Güterständen und rechtlichen Grundlagen. Alles über Errungenschaftsbeteiligung, Gütertrennung und Gütergemeinschaft.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-20",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/eherecht/ehevertrag"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Kann ein Ehevertrag nachträglich abgeschlossen werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, ein Ehevertrag kann jederzeit während der Ehe abgeschlossen werden. Die Dauer der bestehenden Ehe spielt keine Rolle – auch nach 20 Jahren Ehe ist ein Ehevertrag noch möglich."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was kostet ein Ehevertrag?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Kosten variieren je nach Kanton zwischen CHF 200 und CHF 7'500. Die Höhe hängt vom Nettovermögen und der Komplexität des Vertrags ab. Hinzu kommen eventuell Kosten für ein Inventar und anwaltliche Beratung."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ein Ehevertrag einseitig geändert werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, für eine Änderung oder Aufhebung ist die Zustimmung beider Ehegatten und eine erneute notarielle Beurkundung erforderlich. Eine einseitige Änderung ist ausgeschlossen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Schützt ein Ehevertrag vor Schulden des Ehepartners?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei Gütertrennung haftet jeder Ehegatte nur für seine eigenen Schulden. Das Vermögen des anderen Ehegatten ist geschützt. Bei der Errungenschaftsbeteiligung besteht während der Ehe ebenfalls keine Mithaftung."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Ist ein Ehevertrag ohne Notar gültig?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, ein Ehevertrag ohne öffentliche Beurkundung ist gemäss Art. 184 ZGB nichtig und hat keine rechtliche Wirkung. Die notarielle Form ist zwingend vorgeschrieben."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann man Unterhaltsansprüche im Ehevertrag ausschliessen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, der vollständige Ausschluss von Unterhaltsansprüchen ist unzulässig. Entsprechende Klauseln sind rechtlich nicht bindend und können vor Gericht angefochten werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert mit dem Ehevertrag bei Scheidung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der Ehevertrag regelt die güterrechtliche Auseinandersetzung. Das Gericht prüft jedoch nach Art. 277 ZPO, ob der Vertrag «offensichtlich unbillig» ist und kann ihn gegebenenfalls anpassen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Brauche ich einen Anwalt für den Ehevertrag?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nicht zwingend, aber empfehlenswert – besonders bei komplexen Vermögensverhältnissen, Unternehmensbeteiligungen oder wenn der überlebende Ehegatte maximal begünstigt werden soll."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Eherecht",
+                "item": "https://familienrechtanwalt.ch/eherecht"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Ehevertrag in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/eherecht/ehevertrag"
+            }
+        ]
+    })} />
 </ArticleLayout>

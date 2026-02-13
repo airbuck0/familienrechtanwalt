@@ -3,101 +3,239 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 ---
 
 <ArticleLayout
-    title="Elterliche Sorge beantragen in der Schweiz: Verfahren für unverheiratete Eltern"
-    description="Elterliche Sorge beantragen in der Schweiz: Verfahren für unverheiratete Eltern. Sorgeerklärung beim Zivilstandsamt, KESB-Verfahren und rechtliche Grundlagen."
-    keywords="Elterliche Sorge beantragen, gemeinsames Sorgerecht, unverheiratete Eltern, Sorgeerklärung, KESB, Art. 298a ZGB, Vaterschaftsanerkennung"
+    title="Elterliche Sorge beantragen in der Schweiz: Ablauf, Voraussetzungen & Kosten"
+    description="Elterliche Sorge beantragen in der Schweiz: Sorgeerklärung beim Zivilstandsamt, KESB-Verfahren, Vaterschaftsanerkennung & Kosten. Mit Schritt-für-Schritt-Anleitung für unverheiratete Eltern."
+    keywords="Elterliche Sorge beantragen, gemeinsames Sorgerecht, unverheiratete Eltern, Sorgeerklärung, KESB, Art. 298a ZGB, Vaterschaftsanerkennung, Zivilstandsamt"
     category="Sorgerecht"
     categoryLink="/sorgerecht"
 >
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <h3 class="font-semibold text-navy mb-2">Das Wichtigste in Kürze</h3>
-        <p class="text-gray-700">Bei unverheirateten Eltern steht die elterliche Sorge zunächst allein der Mutter zu. Der Vater kann die gemeinsame elterliche Sorge durch eine gemeinsame Sorgeerklärung beim Zivilstandsamt oder der KESB erlangen. Verweigert die Mutter die Zustimmung, kann der Vater bei der KESB einen Antrag auf gemeinsame Sorge stellen. Seit der Revision 2014 wird die gemeinsame Sorge in der Regel gewährt, sofern sie dem Kindeswohl entspricht.</p>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Verheiratete Eltern</strong> haben automatisch die gemeinsame elterliche Sorge – sie müssen nichts beantragen (Art. 296 Abs. 2 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Unverheiratete Eltern</strong> müssen eine gemeinsame Sorgeerklärung abgeben – am einfachsten beim Zivilstandsamt zusammen mit der Vaterschaftsanerkennung.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die <strong>Sorgeerklärung</strong> kann vor oder nach der Geburt erfolgen und kostet beim Zivilstandsamt ca. <strong>CHF 30</strong>.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Erfolgt die Erklärung <strong>nach der Vaterschaftsanerkennung</strong>, ist die KESB am Wohnsitz des Kindes zuständig (Kosten: CHF 200-1'000).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bei <strong>Verweigerung eines Elternteils</strong> kann der andere die KESB anrufen – die gemeinsame Sorge wird grundsätzlich verfügt (Art. 298b ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die <strong>gemeinsame elterliche Sorge</strong> ist seit 2014 der gesetzliche Regelfall – auch für unverheiratete Eltern.</span>
+            </li>
+        </ul>
+    </div>
+
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die elterliche Sorge ist das Recht und die Pflicht, für ein Kind zu entscheiden, wo es das noch nicht selbst kann. Während verheiratete Eltern automatisch die gemeinsame Sorge erhalten, müssen unverheiratete Paare aktiv werden. Dieser Ratgeber erklärt Schritt für Schritt, wie Sie die elterliche Sorge beantragen, welche Voraussetzungen erfüllt sein müssen und mit welchen Kosten Sie rechnen sollten.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Was ist die elterliche Sorge?</h2>
+
+    <p class="text-gray-700 mb-6">Die elterliche Sorge umfasst das Recht und die Pflicht, die nötigen Entscheidungen für das minderjährige Kind zu treffen. Wer die elterliche Sorge innehat, entscheidet über grundlegende Fragen im Leben des Kindes:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Bestimmung des <strong>Aufenthaltsortes</strong> (Wohnort) des Kindes</li>
+        <li><strong>Schulwahl</strong> und Ausbildungsentscheidungen</li>
+        <li><strong>Religiöse Erziehung</strong></li>
+        <li><strong>Medizinische Entscheidungen</strong>, die über Routinebehandlungen hinausgehen</li>
+        <li><strong>Namensänderungen</strong></li>
+        <li><strong>Vermögensverwaltung</strong> des Kindes</li>
+        <li><strong>Rechtliche Vertretung</strong> des Kindes</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig – Unterschied zur Obhut:</p>
+        <p class="text-gray-700">Die elterliche Sorge ist nicht mit der <a href="/sorgerecht/alternierende-obhut" class="text-gold hover:underline">Obhut</a> zu verwechseln. Die Obhut betrifft die faktische Betreuung im Alltag (bei wem das Kind lebt), während die Sorge die rechtlichen Entscheidungsbefugnisse umfasst. Eltern können gemeinsam die Sorge haben, auch wenn das Kind nur bei einem Elternteil lebt.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wer muss die elterliche Sorge beantragen?</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Verheiratete Eltern – Automatische gemeinsame Sorge</h3>
+
+    <p class="text-gray-700 mb-6">Wenn Sie verheiratet sind, haben Sie und Ihr Ehemann oder Ihre Ehefrau <strong>automatisch von Geburt an</strong> die gemeinsame elterliche Sorge für Ihre gemeinsamen Kinder (Art. 296 Abs. 2 ZGB). Sie müssen nichts beantragen oder erklären.</p>
+
+    <p class="text-gray-700 mb-6">Diese automatische Zuteilung gilt auch, wenn das Kind während der Ehe geboren wird und der Ehemann nicht der biologische Vater ist – solange die Vaterschaft nicht angefochten wird, gilt die Vaterschaftsvermutung (Art. 255 ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Unverheiratete Eltern – Sorgeerklärung erforderlich</h3>
+
+    <p class="text-gray-700 mb-6">Bei unverheirateten Paaren ist die Situation anders: Mit der Geburt erhält <strong>allein die Mutter</strong> das Sorgerecht. Der Vater erhält die elterliche Sorge nicht automatisch – auch nicht durch die Vaterschaftsanerkennung allein.</p>
+
+    <p class="text-gray-700 mb-6">Um die <strong>gemeinsame elterliche Sorge</strong> zu erlangen, müssen unverheiratete Eltern eine gemeinsame Erklärung abgeben (Art. 298a ZGB). Diese Erklärung erfolgt entweder:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Beim Zivilstandsamt</strong> – zusammen mit der Vaterschaftsanerkennung (vor oder nach der Geburt)</li>
+        <li><strong>Bei der KESB</strong> – wenn die Erklärung erst nach der Vaterschaftsanerkennung erfolgt</li>
+    </ul>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Elternkonstellation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Elterliche Sorge bei Geburt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Handlungsbedarf</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Verheiratete Eltern</td>
+                    <td class="px-6 py-4 text-gray-700">Gemeinsam (automatisch)</td>
+                    <td class="px-6 py-4 text-gray-700">Keiner</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Unverheiratete Eltern</td>
+                    <td class="px-6 py-4 text-gray-700">Allein bei der Mutter</td>
+                    <td class="px-6 py-4 text-gray-700">Vaterschaftsanerkennung + Sorgeerklärung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Eingetragene Partnerschaft (gleichgeschlechtlich)</td>
+                    <td class="px-6 py-4 text-gray-700">Gebärende Person allein</td>
+                    <td class="px-6 py-4 text-gray-700">Stiefkindadoption für gemeinsame Sorge</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen</h2>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Art. 296 ZGB: Elterliche Sorge</h3>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Art. 296 ZGB – Grundsatz der gemeinsamen Sorge</h3>
 
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy">Art. 296 Abs. 1 ZGB:</p>
-        <p class="text-gray-700 italic">"Das Kind steht, solange es minderjährig ist, unter der gemeinsamen elterlichen Sorge von Vater und Mutter."</p>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Art. 296 Abs. 1 und 2 ZGB:</p>
+        <p class="text-gray-700 italic">"Das Kind steht, solange es minderjährig ist, unter der gemeinsamen elterlichen Sorge von Vater und Mutter. [...] Sind die Eltern miteinander verheiratet, so steht ihnen die elterliche Sorge gemeinsam zu."</p>
     </div>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Art. 298a ZGB: Unverheiratete Eltern - gemeinsame Erklärung</h3>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Art. 298a ZGB – Gemeinsame Erklärung unverheirateter Eltern</h3>
 
-    <p class="text-gray-700 mb-6">Art. 298a ZGB regelt das Verfahren für unverheiratete Eltern. Sind die Eltern nicht miteinander verheiratet und anerkennt der Vater das Kind, so kommt die gemeinsame elterliche Sorge aufgrund einer gemeinsamen Erklärung der Eltern zustande.</p>
+    <p class="text-gray-700 mb-6">Art. 298a ZGB regelt das Verfahren für unverheiratete Eltern. Wenn die Eltern nicht miteinander verheiratet sind und der Vater das Kind anerkennt, kommt die gemeinsame elterliche Sorge durch eine <strong>gemeinsame Erklärung</strong> der Eltern zustande.</p>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Art. 298b ZGB: Unverheiratete Eltern - Entscheid der Behörde</h3>
+    <p class="text-gray-700 mb-6">In dieser Erklärung bestätigen die Eltern:</p>
 
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy">Art. 298b Abs. 2 ZGB:</p>
+    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
+        <li>Dass sie bereit sind, <strong>gemeinsam die Verantwortung</strong> für das Kind zu übernehmen</li>
+        <li>Dass sie sich über die <strong>Obhut</strong> und den <strong>persönlichen Verkehr</strong> oder die Betreuungsanteile verständigt haben</li>
+        <li>Dass sie sich über den <strong>Unterhaltsbeitrag</strong> für das Kind verständigt haben</li>
+    </ol>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Art. 298b ZGB – Entscheid der Behörde bei Uneinigkeit</h3>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Art. 298b Abs. 2 ZGB:</p>
         <p class="text-gray-700 italic">"Die Kindesschutzbehörde verfügt die gemeinsame elterliche Sorge, sofern nicht zur Wahrung des Kindeswohls an der alleinigen elterlichen Sorge der Mutter festzuhalten oder die alleinige elterliche Sorge dem Vater zu übertragen ist."</p>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Voraussetzungen für die Beantragung</h2>
+    <p class="text-gray-700 mb-6">Das bedeutet: Weigert sich ein Elternteil, die gemeinsame Erklärung abzugeben, kann der andere die KESB anrufen. Die Behörde ist verpflichtet, die gemeinsame Sorge zu verfügen – es sei denn, das Kindeswohl erfordert eine andere Lösung.</p>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vaterschaft muss feststehen</h3>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Vaterschaftsanerkennung als Voraussetzung</h2>
 
-    <p class="text-gray-700 mb-6">Grundvoraussetzung für die Beantragung der elterlichen Sorge durch den Vater ist, dass die Vaterschaft rechtlich feststeht. Dies kann auf zwei Wegen geschehen:</p>
+    <p class="text-gray-700 mb-6">Bevor ein unverheirateter Vater die elterliche Sorge beantragen kann, muss die <strong>Vaterschaft rechtlich feststehen</strong>. Dies geschieht in der Regel durch die Vaterschaftsanerkennung beim Zivilstandsamt.</p>
 
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Anerkennung der Vaterschaft:</strong> Der Vater erkennt das Kind beim Zivilstandsamt an. Dies erfordert die Zustimmung der Mutter oder eine gerichtliche Ersetzung der Zustimmung.</li>
-        <li><strong>Gerichtliche Feststellung der Vaterschaft:</strong> Wenn der Vater die Vaterschaft nicht anerkennt oder die Mutter die Anerkennung verweigert, kann die Vaterschaft gerichtlich festgestellt werden.</li>
-    </ul>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Volljährigkeit und Handlungsfähigkeit</h3>
-
-    <p class="text-gray-700 mb-6">Beide Eltern müssen volljährig (18 Jahre) und handlungsfähig sein. Minderjährige Eltern haben keine elterliche Sorge; diese geht auf sie über, wenn sie volljährig werden.</p>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kein Ausschlussgrund</h3>
-
-    <p class="text-gray-700 mb-4">Die gemeinsame Sorge darf nicht dem Kindeswohl widersprechen. Gründe, die gegen die gemeinsame Sorge sprechen können:</p>
-
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Schwere Kindeswohlgefährdung durch einen Elternteil</li>
-        <li>Fehlende Erziehungsfähigkeit</li>
-        <li>Schwerer Dauerkonflikt, der das Kind erheblich belastet</li>
-        <li>Mangelndes Interesse am Kind (der Vater hat sich nie um das Kind gekümmert)</li>
-    </ul>
-
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Verfahren im Überblick</h2>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Variante 1: Gemeinsame Sorgeerklärung</h3>
-
-    <p class="text-gray-700 mb-4">Wenn beide Eltern einverstanden sind, ist das Verfahren einfach:</p>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wann kann die Vaterschaft anerkannt werden?</h3>
 
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Schritt</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Zuständigkeit</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zeitpunkt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Möglichkeit</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Empfehlung</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">1. Vaterschaftsanerkennung</td>
-                    <td class="px-6 py-4 text-gray-700">Der Vater erkennt das Kind an</td>
-                    <td class="px-6 py-4 text-gray-700">Zivilstandsamt</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Vor der Geburt</td>
+                    <td class="px-6 py-4 text-gray-700">Ja, jederzeit ab Feststellung der Schwangerschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Empfohlen – bei Komplikationen sind die Verhältnisse geklärt</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">2. Sorgeerklärung</td>
-                    <td class="px-6 py-4 text-gray-700">Beide Eltern erklären gemeinsam, dass sie die elterliche Sorge gemeinsam ausüben wollen</td>
-                    <td class="px-6 py-4 text-gray-700">Zivilstandsamt oder KESB</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Nach der Geburt</td>
+                    <td class="px-6 py-4 text-gray-700">Ja, jederzeit</td>
+                    <td class="px-6 py-4 text-gray-700">Möglichst zeitnah nach der Geburt</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">3. Eintragung</td>
-                    <td class="px-6 py-4 text-gray-700">Die gemeinsame Sorge wird im Personenstandsregister eingetragen</td>
-                    <td class="px-6 py-4 text-gray-700">Zivilstandsamt</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Jahre später</td>
+                    <td class="px-6 py-4 text-gray-700">Ja, keine Frist</td>
+                    <td class="px-6 py-4 text-gray-700">Möglich, aber Kind trägt bereits den Namen der Mutter</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Variante 2: Antrag an die KESB</h3>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praxis-Tipp – Anerkennung vor der Geburt:</p>
+        <p class="text-gray-700">Damit das Kind ab Geburt den Namen des Vaters tragen kann, müssen <strong>sowohl die Vaterschaftsanerkennung als auch die Sorgeerklärung vor der Geburt</strong> erfolgen. Eine nachträgliche Namensänderung ist aufwendiger.</p>
+    </div>
 
-    <p class="text-gray-700 mb-4">Wenn die Mutter die Zustimmung zur gemeinsamen Sorge verweigert:</p>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ablauf der Vaterschaftsanerkennung</h3>
+
+    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-3">
+        <li><strong>Terminvereinbarung</strong> beim Zivilstandsamt (telefonisch empfohlen)</li>
+        <li><strong>Persönliches Erscheinen</strong> des Vaters (Mutter sollte anwesend sein für gleichzeitige Sorgeerklärung)</li>
+        <li><strong>Vorlage der Dokumente:</strong> Gültiger Ausweis, Wohnsitzbescheinigung (nicht älter als 8 Wochen), ggf. Geburtsurkunde des Kindes</li>
+        <li><strong>Mündliche Erklärung</strong> der Vaterschaft und Unterzeichnung der Anerkennungsurkunde</li>
+        <li><strong>Sofortige Sorgeerklärung</strong> (optional, aber empfohlen)</li>
+    </ol>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kosten der Vaterschaftsanerkennung</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Leistung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kosten (ca.)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Anerkennungserklärung beim Zivilstandsamt</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 75</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Anerkennungsurkunde</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 30</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Sorgeerklärung (gleichzeitig)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 30</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Total (empfohlener Ablauf)</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">ca. CHF 135</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Gemeinsame elterliche Sorge beantragen – Variante 1: Beim Zivilstandsamt</h2>
+
+    <p class="text-gray-700 mb-6">Der <strong>einfachste und günstigste Weg</strong> ist die Abgabe der Sorgeerklärung beim Zivilstandsamt, unmittelbar nach der Vaterschaftsanerkennung. Dies ist der empfohlene Ablauf für unverheiratete Paare, die sich einig sind.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Voraussetzungen für die Sorgeerklärung beim Zivilstandsamt</h3>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Die Eltern sind im Zeitpunkt der Geburt <strong>nicht miteinander verheiratet</strong></li>
+        <li>Beide Elternteile sind <strong>volljährig und handlungsfähig</strong></li>
+        <li>Beide Elternteile sind <strong>persönlich anwesend</strong> beim Termin</li>
+        <li>Der gewöhnliche <strong>Aufenthaltsort des Kindes</strong> nach der Geburt liegt in der Schweiz</li>
+        <li>Die Eltern haben sich über <strong>Obhut, Betreuungsanteile und Unterhalt</strong> verständigt</li>
+        <li>Die Erklärung erfolgt <strong>unmittelbar nach</strong> der Vaterschaftsanerkennung</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ablauf beim Zivilstandsamt</h3>
 
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-200">
@@ -105,104 +243,203 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Schritt</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Zuständigkeit</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Dauer</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">1. Vaterschaft</td>
-                    <td class="px-6 py-4 text-gray-700">Muss feststehen (Anerkennung oder Urteil)</td>
-                    <td class="px-6 py-4 text-gray-700">Zivilstandsamt oder Gericht</td>
+                    <td class="px-6 py-4 font-semibold text-navy">1. Terminvereinbarung</td>
+                    <td class="px-6 py-4 text-gray-700">Telefonisch beim zuständigen Zivilstandsamt</td>
+                    <td class="px-6 py-4 text-gray-700">Wenige Tage bis Wochen</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">2. Versuch der Einigung</td>
-                    <td class="px-6 py-4 text-gray-700">Gespräch mit der Mutter, ggf. Mediation</td>
-                    <td class="px-6 py-4 text-gray-700">Eltern</td>
+                    <td class="px-6 py-4 font-semibold text-navy">2. Dokumente vorbereiten</td>
+                    <td class="px-6 py-4 text-gray-700">Ausweise, Wohnsitzbescheinigung, ggf. Geburtsurkunde</td>
+                    <td class="px-6 py-4 text-gray-700">–</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">3. Antrag</td>
-                    <td class="px-6 py-4 text-gray-700">Antrag auf gemeinsame elterliche Sorge bei der KESB</td>
-                    <td class="px-6 py-4 text-gray-700">KESB am Wohnsitz des Kindes</td>
+                    <td class="px-6 py-4 font-semibold text-navy">3. Persönliches Erscheinen</td>
+                    <td class="px-6 py-4 text-gray-700">Beide Eltern erscheinen gemeinsam beim Termin</td>
+                    <td class="px-6 py-4 text-gray-700">ca. 30-60 Min.</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">4. Verfahren</td>
-                    <td class="px-6 py-4 text-gray-700">KESB hört beide Eltern an und prüft das Kindeswohl</td>
-                    <td class="px-6 py-4 text-gray-700">KESB</td>
+                    <td class="px-6 py-4 font-semibold text-navy">4. Vaterschaftsanerkennung</td>
+                    <td class="px-6 py-4 text-gray-700">Vater erklärt mündlich die Vaterschaft, unterschreibt Urkunde</td>
+                    <td class="px-6 py-4 text-gray-700">Teil des Termins</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">5. Sorgeerklärung</td>
+                    <td class="px-6 py-4 text-gray-700">Beide Eltern erklären gemeinsam die elterliche Sorge</td>
+                    <td class="px-6 py-4 text-gray-700">Teil des Termins</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">6. Eintragung</td>
+                    <td class="px-6 py-4 text-gray-700">Eintragung im Personenstandsregister</td>
+                    <td class="px-6 py-4 text-gray-700">Sofort wirksam</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Inhalt der Sorgeerklärung</h3>
+
+    <p class="text-gray-700 mb-6">Die Sorgeerklärung nach Art. 298a ZGB enthält:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Die <strong>gemeinsame Erklärung</strong> beider Eltern, dass sie die elterliche Sorge gemeinsam ausüben wollen</li>
+        <li>Bestätigung, dass sie <strong>gemeinsam Verantwortung</strong> für das Kind übernehmen wollen</li>
+        <li>Angaben zur <strong>Obhut</strong> (wo lebt das Kind hauptsächlich?)</li>
+        <li>Angaben zum <strong>persönlichen Verkehr</strong> (Besuchsrecht) oder zu den Betreuungsanteilen</li>
+        <li>Bestätigung der <strong>Verständigung über den Unterhalt</strong></li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Erziehungsgutschriften AHV:</p>
+        <p class="text-gray-700">Mit der Sorgeerklärung können die Eltern gleichzeitig eine <strong>Vereinbarung über die Anrechnung der Erziehungsgutschriften</strong> für die AHV treffen. Diese Gutschriften werden bei der Rentenberechnung berücksichtigt und sollten fair aufgeteilt werden.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Gemeinsame elterliche Sorge beantragen – Variante 2: Bei der KESB</h2>
+
+    <p class="text-gray-700 mb-6">Wenn die Sorgeerklärung <strong>nicht unmittelbar nach der Vaterschaftsanerkennung</strong> erfolgt, ist die <strong>Kindes- und Erwachsenenschutzbehörde (KESB)</strong> am Wohnsitz des Kindes zuständig.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wann ist die KESB zuständig?</h3>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Die Vaterschaft wurde <strong>bereits früher anerkannt</strong> (ohne gleichzeitige Sorgeerklärung)</li>
+        <li>Die Eltern waren sich zum Zeitpunkt der Anerkennung <strong>noch nicht einig</strong></li>
+        <li>Ein Elternteil <strong>verweigert</strong> die Abgabe einer gemeinsamen Erklärung</li>
+        <li>Das Kind ist bereits <strong>älter</strong> und die Sorge soll nachträglich geregelt werden</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ablauf bei der KESB (einvernehmlich)</h3>
+
+    <p class="text-gray-700 mb-6">Wenn beide Eltern einverstanden sind, aber die Erklärung nicht beim Zivilstandsamt erfolgen kann:</p>
+
+    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-3">
+        <li><strong>Schriftliche Erklärung</strong> beider Eltern an die KESB am Wohnsitz des Kindes</li>
+        <li>Einreichung der erforderlichen <strong>Dokumente</strong> (Ausweise, Geburtsurkunde, Anerkennungsurkunde)</li>
+        <li>Die KESB <strong>nimmt die Erklärung entgegen</strong> und trägt die gemeinsame Sorge ein</li>
+    </ol>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kosten bei der KESB</h3>
+
+    <p class="text-gray-700 mb-6">Das Verfahren bei der KESB ist teurer als beim Zivilstandsamt:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Verfahrensart</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kosten (ca.)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Einvernehmliche Sorgeerklärung bei KESB</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 200-500</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Streitiges Verfahren (ein Elternteil verweigert)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 500-1'500</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Mit Gutachten oder umfangreichen Abklärungen</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'500-5'000+</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wenn ein Elternteil die Zustimmung verweigert</h2>
+
+    <p class="text-gray-700 mb-6">Ist ein Elternteil (typischerweise die Mutter) nicht bereit, die gemeinsame Sorgeerklärung abzugeben, kann der andere Elternteil die <strong>KESB am Wohnsitz des Kindes anrufen</strong> (Art. 298b Abs. 1 ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ablauf des KESB-Verfahrens bei Verweigerung</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Schritt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">1. Schriftlicher Antrag</td>
+                    <td class="px-6 py-4 text-gray-700">Der antragstellende Elternteil reicht einen Antrag auf gemeinsame elterliche Sorge bei der KESB ein</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">2. Anhörung beider Eltern</td>
+                    <td class="px-6 py-4 text-gray-700">Die KESB hört beide Elternteile an und klärt die Sachlage ab</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">3. Prüfung des Kindeswohls</td>
+                    <td class="px-6 py-4 text-gray-700">Die Behörde prüft, ob die gemeinsame Sorge dem Kindeswohl entspricht</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">4. Ggf. weitere Abklärungen</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Bedarf: Anhörung des Kindes, Einholung eines Gutachtens, Sozialabklärung</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">5. Entscheid</td>
-                    <td class="px-6 py-4 text-gray-700">KESB verfügt die gemeinsame Sorge oder lehnt ab</td>
-                    <td class="px-6 py-4 text-gray-700">KESB</td>
+                    <td class="px-6 py-4 text-gray-700">Die KESB verfügt die gemeinsame Sorge oder lehnt ab (begründeter Entscheid)</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Sorgeerklärung beim Zivilstandsamt</h2>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Entscheidungskriterien der KESB</h3>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Inhalt der Erklärung</h3>
-
-    <p class="text-gray-700 mb-4">Die Sorgeerklärung nach Art. 298a ZGB enthält:</p>
+    <p class="text-gray-700 mb-6">Die KESB ist gemäss Art. 298b Abs. 2 ZGB <strong>verpflichtet</strong>, die gemeinsame Sorge zu verfügen, sofern nicht das Kindeswohl dagegen spricht. Die gemeinsame Sorge darf nur abgelehnt werden, wenn:</p>
 
     <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Die Erklärung beider Eltern, dass sie die elterliche Sorge gemeinsam ausüben wollen</li>
-        <li>Informationen über die Person des Kindes</li>
-        <li>Angaben zur Obhut (wo lebt das Kind hauptsächlich?)</li>
-        <li>Angaben zum persönlichen Verkehr (Besuchsrecht)</li>
-        <li>Angaben zur Betreuung</li>
-        <li>Unterhaltsregelung (kann beigefügt werden)</li>
+        <li>Das Kindeswohl eine <strong>Alleinsorge der Mutter</strong> erfordert</li>
+        <li>Das Kindeswohl eine <strong>Alleinsorge des Vaters</strong> erfordert</li>
     </ul>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Erforderliche Dokumente</h3>
+    <p class="text-gray-700 mb-6">Die KESB prüft dabei:</p>
 
     <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Gültige Ausweisdokumente beider Eltern</li>
-        <li>Geburtsschein oder Familienbüchlein des Kindes</li>
-        <li>Nachweis der Vaterschaftsanerkennung (falls separat erfolgt)</li>
-        <li>Gegebenenfalls Unterhaltsvertrag</li>
+        <li>Die <strong>Beziehung</strong> des antragstellenden Elternteils zum Kind</li>
+        <li>Die bisherige <strong>Beteiligung an der Betreuung</strong></li>
+        <li>Die <strong>Erziehungsfähigkeit</strong> beider Eltern</li>
+        <li>Die <strong>Kooperationsfähigkeit</strong> der Eltern (schwerer Dauerkonflikt?)</li>
+        <li>Den <strong>Willen des Kindes</strong> (bei älteren Kindern)</li>
+        <li>Allfällige <strong>Kindesschutzbedenken</strong></li>
     </ul>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kosten</h3>
-
-    <p class="text-gray-700 mb-6">Die Gebühren für die Sorgeerklärung sind kantonal unterschiedlich, liegen aber typischerweise zwischen <strong>CHF 50 und CHF 150</strong>.</p>
-
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Antrag an die KESB bei Verweigerung</h2>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wann kommt die KESB zum Zug?</h3>
-
-    <p class="text-gray-700 mb-4">Ein Antrag an die KESB ist erforderlich, wenn:</p>
-
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Die Mutter die Abgabe einer gemeinsamen Sorgeerklärung verweigert</li>
-        <li>Zwischen den Eltern Uneinigkeit über die Betreuungsregelung besteht</li>
-        <li>Das Kind bereits älter ist und die Sorgeerklärung nachgeholt werden soll, die Mutter aber nicht einverstanden ist</li>
-    </ul>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Entscheidungskriterien</h3>
-
-    <p class="text-gray-700 mb-4">Die KESB prüft, ob die gemeinsame Sorge dem Kindeswohl entspricht. Kriterien sind unter anderem:</p>
-
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Beziehung des Vaters zum Kind</li>
-        <li>Bisherige Beteiligung an der Betreuung</li>
-        <li>Kooperationsfähigkeit der Eltern</li>
-        <li>Wille des Kindes (bei älteren Kindern)</li>
-        <li>Erziehungsfähigkeit beider Eltern</li>
-    </ul>
-
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy mb-2">Wichtig:</p>
-        <p class="text-gray-700">Seit der Revision 2014 ist die gemeinsame Sorge der Regelfall. Die KESB darf nur dann an der alleinigen Sorge der Mutter festhalten oder die alleinige Sorge dem Vater übertragen, wenn dies zur Wahrung des Kindeswohls erforderlich ist.</p>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">BGE 142 III 1 – Gemeinsame Sorge als Regelfall:</p>
+        <p class="text-gray-700">Das Bundesgericht hat klargestellt, dass seit der Revision 2014 die gemeinsame elterliche Sorge der <strong>Regelfall</strong> ist. Die Verweigerung der Zustimmung durch die Mutter allein reicht nicht aus, um die gemeinsame Sorge abzulehnen. Es müssen <strong>konkrete Kindesschutzgründe</strong> vorliegen.</p>
     </div>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kosten des KESB-Verfahrens</h3>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Alleinige elterliche Sorge beantragen</h2>
 
-    <p class="text-gray-700 mb-4">Die Kosten des KESB-Verfahrens variieren je nach Kanton und Aufwand:</p>
+    <p class="text-gray-700 mb-6">Die alleinige elterliche Sorge ist in der Schweiz der <strong>Ausnahmefall</strong>. Der Gesetzgeber hat hohe Hürden festgelegt, da der Sorgerechtsentzug ein massiver Einschnitt in die Eltern-Kind-Beziehung darstellt.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Voraussetzungen für das alleinige Sorgerecht</h3>
+
+    <p class="text-gray-700 mb-6">Das Gericht oder die KESB ordnet die alleinige Sorge nur an, wenn die gemeinsame elterliche Sorge <strong>mit dem Kindeswohl nicht zu vereinbaren</strong> ist. Gründe können sein:</p>
 
     <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Verfahrensgebühren von <strong>CHF 200 bis CHF 1'000</strong></li>
-        <li>Bei Gutachten und umfangreichen Abklärungen deutlich höher</li>
-        <li>Bei geringem Einkommen kann unentgeltliche Rechtspflege beantragt werden</li>
+        <li><strong>Schwere Kindesmisshandlung</strong> oder -vernachlässigung</li>
+        <li><strong>Sexueller Missbrauch</strong> des Kindes</li>
+        <li>Schwere <strong>Alkohol- oder Drogensucht</strong></li>
+        <li><strong>Schwere psychische Erkrankung</strong>, die die Erziehungsfähigkeit ausschliesst</li>
+        <li><strong>Dauerhafter schwerer Elternkonflikt</strong>, der das Kind erheblich belastet (BGE 142 III 1)</li>
+        <li><strong>Völlige Unfähigkeit zur Kommunikation</strong> in Kinderbelangen</li>
+        <li><strong>Längere Haftstrafe</strong></li>
+        <li><strong>Dauerhafter Auslandaufenthalt</strong> ohne Kontakt zum Kind</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Zuständigkeit und Verfahren</h3>
+
+    <p class="text-gray-700 mb-6">Für den Entzug der elterlichen Sorge sind zuständig:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>KESB:</strong> Für Kindesschutzmassnahmen von Amtes wegen (Art. 311, 312 ZGB)</li>
+        <li><strong>Gericht:</strong> Im Rahmen von Eheschutz- oder Scheidungsverfahren (Art. 298 Abs. 1 ZGB)</li>
     </ul>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Bundesgerichtliche Rechtsprechung</h2>
@@ -211,30 +448,30 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Entscheid</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">BGE/Urteil</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Kernaussage</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">BGE 142 III 1</td>
-                    <td class="px-6 py-4 text-gray-700">Gemeinsame Sorge als Regelfall seit Revision 2014</td>
+                    <td class="px-6 py-4 text-gray-700">Gemeinsame Sorge ist seit der Revision 2014 der Regelfall. Alleinsorge nur bei schwerwiegendem Dauerkonflikt oder Kindeswohlgefährdung.</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">BGE 141 III 472</td>
-                    <td class="px-6 py-4 text-gray-700">Fehlende Kommunikation allein schliesst gemeinsame Sorge nicht aus</td>
+                    <td class="px-6 py-4 text-gray-700">Fehlende Kommunikation zwischen den Eltern allein schliesst die gemeinsame elterliche Sorge nicht aus.</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">5A_497/2017</td>
-                    <td class="px-6 py-4 text-gray-700">Interesse des Vaters an gemeinsamer Sorge ist zu berücksichtigen</td>
+                    <td class="px-6 py-4 text-gray-700">Das berechtigte Interesse des Vaters an der Mitsorge ist bei der Entscheidung zu berücksichtigen.</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">5A_923/2014</td>
-                    <td class="px-6 py-4 text-gray-700">Prüfungsmassstab für die Ablehnung der gemeinsamen Sorge</td>
+                    <td class="px-6 py-4 font-semibold text-navy">5A_248/2023</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Antrag auf Wechsel zur gemeinsamen Sorge muss dem Antrag grundsätzlich stattgegeben werden, sofern das Kindeswohl nicht verschlechtert wird.</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">5A_85/2017</td>
-                    <td class="px-6 py-4 text-gray-700">Kindesanhörung bei Sorgerechtsverfahren</td>
+                    <td class="px-6 py-4 font-semibold text-navy">5A_701/2017</td>
+                    <td class="px-6 py-4 text-gray-700">Blosse Streitigkeiten, wie sie bei Trennungen vorkommen, rechtfertigen keine Alleinsorge.</td>
                 </tr>
             </tbody>
         </table>
@@ -242,48 +479,249 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Praktische Empfehlungen</h2>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Für Väter</h3>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Für unverheiratete Väter</h3>
 
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Anerkennen Sie das Kind so früh wie möglich.</strong> Die Vaterschaftsanerkennung ist Voraussetzung für die Beantragung der elterlichen Sorge.</li>
-        <li>Geben Sie die Sorgeerklärung gemeinsam mit der Anerkennung ab, wenn die Mutter einverstanden ist.</li>
-        <li>Dokumentieren Sie Ihre Beziehung zum Kind, falls die Mutter die Zustimmung verweigert.</li>
-        <li>Suchen Sie das Gespräch und versuchen Sie, eine einvernehmliche Lösung zu finden.</li>
-        <li>Ziehen Sie bei Konflikten einen Familienrechtsanwalt hinzu.</li>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-3">
+        <li><strong>Anerkennen Sie das Kind so früh wie möglich</strong> – idealerweise vor der Geburt. Die Vaterschaftsanerkennung ist Voraussetzung für die Beantragung der elterlichen Sorge.</li>
+        <li><strong>Geben Sie die Sorgeerklärung sofort ab</strong> – zusammen mit der Anerkennung beim Zivilstandsamt ist dies der günstigste und einfachste Weg.</li>
+        <li><strong>Dokumentieren Sie Ihre Beziehung zum Kind</strong> – falls die Mutter die Zustimmung verweigert, sind Nachweise über Ihre Beteiligung an der Betreuung hilfreich.</li>
+        <li><strong>Suchen Sie das Gespräch</strong> – versuchen Sie zunächst, eine einvernehmliche Lösung zu finden.</li>
+        <li><strong>Ziehen Sie bei Konflikten einen Anwalt hinzu</strong> – besonders wenn ein KESB-Verfahren nötig wird.</li>
     </ul>
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Für Mütter</h3>
 
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Bedenken Sie, dass die gemeinsame Sorge seit 2014 der Regelfall ist. Eine Verweigerung ist nur bei konkreten Kindesschutzbedenken gerechtfertigt.</li>
-        <li>Wenn Sie Bedenken haben, artikulieren Sie diese konkret und sachlich.</li>
-        <li>Bedenken Sie, dass die KESB die gemeinsame Sorge auch gegen Ihren Willen anordnen kann, wenn keine schwerwiegenden Gründe dagegen sprechen.</li>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-3">
+        <li><strong>Bedenken Sie, dass die gemeinsame Sorge der Regelfall ist</strong> – eine Verweigerung ist nur bei konkreten Kindesschutzbedenken gerechtfertigt und durchsetzbar.</li>
+        <li><strong>Artikulieren Sie allfällige Bedenken konkret</strong> – vage Ängste reichen nicht, um die gemeinsame Sorge abzulehnen.</li>
+        <li><strong>Bedenken Sie die rechtliche Realität</strong> – die KESB kann und wird die gemeinsame Sorge auch gegen Ihren Willen anordnen, wenn keine schwerwiegenden Gründe dagegen sprechen.</li>
+        <li><strong>Kooperieren Sie im Interesse des Kindes</strong> – langfristig profitiert das Kind von einer guten Beziehung zu beiden Elternteilen.</li>
     </ul>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
 
-    <p class="text-gray-700 mb-6">Die Beantragung der elterlichen Sorge ist für unverheiratete Väter seit der Revision 2014 deutlich einfacher geworden. Bei Einigkeit der Eltern genügt eine gemeinsame Erklärung beim Zivilstandsamt. Bei Verweigerung durch die Mutter kann der Vater die KESB anrufen, die in der Regel die gemeinsame Sorge verfügt, sofern sie dem Kindeswohl entspricht.</p>
+        <p class="text-gray-700 mb-6">Die Beantragung der elterlichen Sorge ist bei Einigkeit der Eltern ein einfacher Vorgang. Bei Konflikten oder besonderen Umständen kann jedoch fachkundige Unterstützung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> entscheidend sein.</p>
 
-    <p class="text-gray-700 mb-6">Für Väter, die eine aktive Rolle im Leben ihres Kindes übernehmen möchten, ist die frühzeitige Klärung der Sorgerechtsfrage empfehlenswert. Die gemeinsame elterliche Sorge gibt beiden Eltern Rechte und Pflichten und stellt sicher, dass wichtige Entscheidungen im Leben des Kindes gemeinsam getroffen werden.</p>
+        <p class="text-gray-700 mb-6">Anwaltliche Beratung ist besonders empfohlen in folgenden Situationen:</p>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">FAQ: Häufig gestellte Fragen</h2>
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Die Mutter verweigert die Abgabe einer gemeinsamen Sorgeerklärung</li>
+            <li>Es bestehen Vorwürfe bezüglich Kindeswohlgefährdung</li>
+            <li>Sie möchten die alleinige Sorge beantragen</li>
+            <li>Der andere Elternteil hat bereits einen Anwalt eingeschaltet</li>
+            <li>Es besteht ein internationaler Bezug (ein Elternteil lebt im Ausland)</li>
+            <li>Das KESB-Verfahren gestaltet sich kompliziert</li>
+        </ul>
 
-    <div class="space-y-6">
-        <div>
-            <h4 class="font-semibold text-navy mb-2">Bekomme ich als unverheirateter Vater automatisch das Sorgerecht?</h4>
-            <p class="text-gray-700">Nein, bei unverheirateten Eltern steht die elterliche Sorge zunächst allein der Mutter zu. Der Vater muss aktiv werden: entweder durch eine gemeinsame Sorgeerklärung mit der Mutter oder durch einen Antrag an die KESB.</p>
+        <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> kann Sie im KESB-Verfahren vertreten, die rechtlichen Erfolgsaussichten einschätzen und sicherstellen, dass Ihre Rechte als Elternteil gewahrt werden. Bei Scheidungen regelt ein <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> auch die Sorgerechtsfragen als Teil der Scheidungsfolgen.</p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Möchten Sie die elterliche Sorge beantragen und haben Fragen zum Ablauf oder benötigen Unterstützung im Konfliktfall? Unsere spezialisierten Familienrechtsanwälte beraten Sie kompetent.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
         </div>
-        <div>
-            <h4 class="font-semibold text-navy mb-2">Kann die Mutter die gemeinsame Sorge verweigern?</h4>
-            <p class="text-gray-700">Die Mutter kann die Abgabe einer gemeinsamen Sorgeerklärung verweigern. Der Vater kann dann aber die KESB anrufen, die in der Regel die gemeinsame Sorge verfügt, sofern keine schwerwiegenden Gründe dagegen sprechen.</p>
-        </div>
-        <div>
-            <h4 class="font-semibold text-navy mb-2">Wie lange dauert das Verfahren?</h4>
-            <p class="text-gray-700">Die Sorgeerklärung beim Zivilstandsamt ist innerhalb weniger Tage bis Wochen erledigt. Ein KESB-Verfahren kann einige Monate dauern, je nach Komplexität und Arbeitsbelastung der Behörde.</p>
-        </div>
-        <div>
-            <h4 class="font-semibold text-navy mb-2">Kann ich das Sorgerecht auch Jahre nach der Geburt noch beantragen?</h4>
-            <p class="text-gray-700">Ja, es gibt keine Frist. Der Vater kann die gemeinsame Sorge jederzeit beantragen, auch wenn das Kind bereits älter ist.</p>
-        </div>
+    </section>
+
+    <h2 class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Die Beantragung der elterlichen Sorge ist für unverheiratete Väter seit der Revision 2014 deutlich einfacher geworden. Die gemeinsame elterliche Sorge ist heute der gesetzliche Regelfall – auch für nicht verheiratete Eltern.</p>
+
+    <p class="text-gray-700 mb-6">Der einfachste Weg ist die Abgabe der Sorgeerklärung beim Zivilstandsamt, unmittelbar nach der Vaterschaftsanerkennung. Dies kostet nur rund CHF 30 und ist innerhalb eines Termins erledigt. Bei nachträglicher Regelung ist die KESB zuständig, was mit höheren Kosten verbunden ist.</p>
+
+    <p class="text-gray-700 mb-6">Verweigert ein Elternteil die Zustimmung, kann der andere die KESB anrufen. Die Behörde ist verpflichtet, die gemeinsame Sorge zu verfügen, sofern keine schwerwiegenden Kindesschutzgründe dagegen sprechen. Für Väter, die eine aktive Rolle im Leben ihres Kindes übernehmen möchten, ist die frühzeitige Klärung der Sorgerechtsfrage daher sehr empfehlenswert.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Relevante Gesetzesbestimmungen:</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li>Art. 296 ZGB (Grundsatz der elterlichen Sorge)</li>
+            <li>Art. 298a ZGB (Gemeinsame Erklärung unverheirateter Eltern)</li>
+            <li>Art. 298b ZGB (Entscheid der KESB bei Uneinigkeit)</li>
+            <li>Art. 301 ff. ZGB (Inhalt der elterlichen Sorge)</li>
+            <li>Art. 311-312 ZGB (Entzug der elterlichen Sorge)</li>
+        </ul>
     </div>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Bekomme ich als unverheirateter Vater automatisch das Sorgerecht?</h3>
+                <p class="text-gray-700">Nein, bei unverheirateten Eltern steht die elterliche Sorge zunächst allein der Mutter zu. Der Vater muss aktiv werden: Zuerst die Vaterschaft anerkennen, dann zusammen mit der Mutter eine Sorgeerklärung abgeben – oder bei deren Verweigerung einen Antrag an die KESB stellen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wo kann ich die gemeinsame elterliche Sorge beantragen?</h3>
+                <p class="text-gray-700">Am einfachsten beim Zivilstandsamt, unmittelbar nach der Vaterschaftsanerkennung. Erfolgt die Erklärung erst später, ist die KESB am Wohnsitz des Kindes zuständig. Die Kosten beim Zivilstandsamt betragen ca. CHF 30, bei der KESB CHF 200-1'000.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann die Mutter die gemeinsame Sorge verweigern?</h3>
+                <p class="text-gray-700">Die Mutter kann die Abgabe einer gemeinsamen Sorgeerklärung verweigern. Der Vater kann dann aber die KESB anrufen, die in der Regel die gemeinsame Sorge verfügt. Seit 2014 ist die gemeinsame Sorge der Regelfall – eine Ablehnung ist nur bei konkreten Kindesschutzgründen möglich.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was kostet es, die elterliche Sorge zu beantragen?</h3>
+                <p class="text-gray-700">Beim Zivilstandsamt (zusammen mit Vaterschaftsanerkennung): ca. CHF 30 für die Sorgeerklärung. Bei der KESB: CHF 200-500 bei einvernehmlicher Erklärung, CHF 500-1'500 bei streitigen Verfahren. Mit Gutachten können die Kosten deutlich höher sein.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich das Sorgerecht auch Jahre nach der Geburt noch beantragen?</h3>
+                <p class="text-gray-700">Ja, es gibt keine Frist. Der Vater kann die gemeinsame elterliche Sorge jederzeit beantragen, auch wenn das Kind bereits älter ist. Nach der Vaterschaftsanerkennung ist die KESB zuständig.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie lange dauert das Verfahren?</h3>
+                <p class="text-gray-700">Die Sorgeerklärung beim Zivilstandsamt ist innerhalb eines Termins erledigt (Terminwartezeit: wenige Tage bis Wochen). Ein KESB-Verfahren kann bei Einvernehmen wenige Wochen, bei Konflikten mehrere Monate dauern.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was muss ich zur Sorgeerklärung mitbringen?</h3>
+                <p class="text-gray-700">Gültige Ausweisdokumente beider Eltern (Pass oder ID), Wohnsitzbescheinigung (nicht älter als 8 Wochen) und bei Erklärung nach der Geburt die Geburtsurkunde des Kindes. Bei KESB-Verfahren zusätzlich die Vaterschaftsanerkennungsurkunde.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich die elterliche Sorge auch vor der Geburt beantragen?</h3>
+                <p class="text-gray-700">Ja, das ist möglich und empfehlenswert. Beide Eltern können vor der Geburt sowohl die Vaterschaftsanerkennung als auch die Sorgeerklärung beim Zivilstandsamt abgeben. So sind bei Komplikationen alle Verhältnisse geklärt und das Kind kann ab Geburt den Namen des Vaters tragen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen Sorgerecht und Obhut?</h3>
+                <p class="text-gray-700">Die elterliche Sorge umfasst das Recht, wichtige Entscheidungen für das Kind zu treffen (Schulwahl, medizinische Entscheide, religiöse Erziehung). Die Obhut betrifft die faktische Betreuung im Alltag – also bei wem das Kind hauptsächlich lebt. Eltern können gemeinsam die Sorge haben, auch wenn das Kind nur bei einem Elternteil wohnt.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie heisst das Kind bei unverheirateten Eltern mit gemeinsamer Sorge?</h3>
+                <p class="text-gray-700">Wenn die gemeinsame Sorge vor der Geburt erklärt wird, können die Eltern wählen, ob das Kind den Namen der Mutter oder des Vaters trägt. Wird die Sorge erst nach der Geburt erklärt, trägt das Kind bereits den Namen der Mutter – eine Namensänderung ist dann aufwendiger.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Elterliche Sorge beantragen in der Schweiz: Ablauf, Voraussetzungen & Kosten",
+        "description": "Elterliche Sorge beantragen in der Schweiz: Sorgeerklärung beim Zivilstandsamt, KESB-Verfahren, Vaterschaftsanerkennung & Kosten. Mit Schritt-für-Schritt-Anleitung für unverheiratete Eltern.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-20",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/sorgerecht/elterliche-sorge-beantragen"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Bekomme ich als unverheirateter Vater automatisch das Sorgerecht?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, bei unverheirateten Eltern steht die elterliche Sorge zunächst allein der Mutter zu. Der Vater muss aktiv werden: Zuerst die Vaterschaft anerkennen, dann zusammen mit der Mutter eine Sorgeerklärung abgeben – oder bei deren Verweigerung einen Antrag an die KESB stellen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wo kann ich die gemeinsame elterliche Sorge beantragen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Am einfachsten beim Zivilstandsamt, unmittelbar nach der Vaterschaftsanerkennung. Erfolgt die Erklärung erst später, ist die KESB am Wohnsitz des Kindes zuständig. Die Kosten beim Zivilstandsamt betragen ca. CHF 30, bei der KESB CHF 200-1'000."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann die Mutter die gemeinsame Sorge verweigern?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Mutter kann die Abgabe einer gemeinsamen Sorgeerklärung verweigern. Der Vater kann dann aber die KESB anrufen, die in der Regel die gemeinsame Sorge verfügt. Seit 2014 ist die gemeinsame Sorge der Regelfall – eine Ablehnung ist nur bei konkreten Kindesschutzgründen möglich."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was kostet es, die elterliche Sorge zu beantragen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Beim Zivilstandsamt (zusammen mit Vaterschaftsanerkennung): ca. CHF 30 für die Sorgeerklärung. Bei der KESB: CHF 200-500 bei einvernehmlicher Erklärung, CHF 500-1'500 bei streitigen Verfahren. Mit Gutachten können die Kosten deutlich höher sein."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich das Sorgerecht auch Jahre nach der Geburt noch beantragen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, es gibt keine Frist. Der Vater kann die gemeinsame elterliche Sorge jederzeit beantragen, auch wenn das Kind bereits älter ist. Nach der Vaterschaftsanerkennung ist die KESB zuständig."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie lange dauert das Verfahren?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Sorgeerklärung beim Zivilstandsamt ist innerhalb eines Termins erledigt (Terminwartezeit: wenige Tage bis Wochen). Ein KESB-Verfahren kann bei Einvernehmen wenige Wochen, bei Konflikten mehrere Monate dauern."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was muss ich zur Sorgeerklärung mitbringen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Gültige Ausweisdokumente beider Eltern (Pass oder ID), Wohnsitzbescheinigung (nicht älter als 8 Wochen) und bei Erklärung nach der Geburt die Geburtsurkunde des Kindes. Bei KESB-Verfahren zusätzlich die Vaterschaftsanerkennungsurkunde."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich die elterliche Sorge auch vor der Geburt beantragen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, das ist möglich und empfehlenswert. Beide Eltern können vor der Geburt sowohl die Vaterschaftsanerkennung als auch die Sorgeerklärung beim Zivilstandsamt abgeben. So sind bei Komplikationen alle Verhältnisse geklärt und das Kind kann ab Geburt den Namen des Vaters tragen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen Sorgerecht und Obhut?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die elterliche Sorge umfasst das Recht, wichtige Entscheidungen für das Kind zu treffen (Schulwahl, medizinische Entscheide, religiöse Erziehung). Die Obhut betrifft die faktische Betreuung im Alltag – also bei wem das Kind hauptsächlich lebt. Eltern können gemeinsam die Sorge haben, auch wenn das Kind nur bei einem Elternteil wohnt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie heisst das Kind bei unverheirateten Eltern mit gemeinsamer Sorge?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Wenn die gemeinsame Sorge vor der Geburt erklärt wird, können die Eltern wählen, ob das Kind den Namen der Mutter oder des Vaters trägt. Wird die Sorge erst nach der Geburt erklärt, trägt das Kind bereits den Namen der Mutter – eine Namensänderung ist dann aufwendiger."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Sorgerecht",
+                "item": "https://familienrechtanwalt.ch/sorgerecht"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Elterliche Sorge beantragen",
+                "item": "https://familienrechtanwalt.ch/sorgerecht/elterliche-sorge-beantragen"
+            }
+        ]
+    })} />
+
 </ArticleLayout>

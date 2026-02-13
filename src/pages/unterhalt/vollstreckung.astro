@@ -4,20 +4,54 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 
 <ArticleLayout
     title="Vollstreckung von Unterhalt in der Schweiz: Rechtslage, Verfahren und Massnahmen"
-    description="Vollstreckung von Unterhalt in der Schweiz: Inkassohilfe, Schuldneranweisung, Betreibung und Privilegien bei Unterhaltsforderungen. Vollstaendiger Leitfaden."
-    keywords="Vollstreckung Unterhalt Schweiz, Betreibung Alimente, Schuldneranweisung, Inkassohilfe, Vorfahrprivileg, Art. 217 StGB"
+    description="Vollstreckung von Unterhalt in der Schweiz: Inkassohilfe, Schuldneranweisung, Betreibung, Vorfahrprivileg und internationale Vollstreckung. Mit BGE-Rechtsprechung."
+    keywords="Vollstreckung Unterhalt Schweiz, Betreibung Alimente, Schuldneranweisung, Inkassohilfe, Vorfahrprivileg BGE, Art. 217 StGB, Rechtsöffnung Unterhalt, privilegierte Pfändung"
     category="Unterhalt"
     categoryLink="/unterhalt"
 >
-    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Wenn Unterhaltszahlungen ausbleiben, stehen verschiedene Vollstreckungsmassnahmen zur Verfuegung. Von der Inkassohilfe ueber die Schuldneranweisung bis zur Betreibung reichen die Moeglichkeiten, Unterhaltsansprueche durchzusetzen.</p>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Für die Vollstreckung ist ein Rechtstitel erforderlich: Gerichtsurteil, Eheschutzentscheid oder KESB-genehmigter Unterhaltsvertrag ermöglichen die definitive Rechtsöffnung (Art. 80 SchKG).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Das Vorfahrprivileg (BGE 145 III 317) erlaubt die Pfändung ins Existenzminimum für laufende Unterhaltsforderungen – aber nur für den Unterhaltsberechtigten persönlich, nicht für das bevorschussende Gemeinwesen.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die privilegierte Anschlusspfändung (Art. 111 SchKG) ermöglicht Kindern und Ex-Ehegatten binnen 40 Tagen den Anschluss an laufende Pfändungen ohne eigene Betreibung.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Unterhaltsforderungen geniessen erste Konkursklasse (Art. 219 Abs. 4 SchKG) mit Vorrang bei der Verwertung für Beiträge der letzten 12 Monate vor Konkurseröffnung.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bei schuldhafter Nichtzahlung drohen strafrechtliche Konsequenzen nach Art. 217 StGB: Geldstrafe oder Freiheitsstrafe bis zu 3 Jahren (BGE 126 IV 131).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Inkassohilfe (Art. 131/290 ZGB) ist kostenlos und unterstützt bei Mahnungen, Betreibungen und Schuldneranweisungen.</span>
+            </li>
+        </ul>
+    </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Uebersicht der Vollstreckungsmassnahmen</h2>
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Wenn Unterhaltszahlungen ausbleiben, stehen dem Berechtigten verschiedene Vollstreckungsmassnahmen zur Verfügung. Das Schweizer Recht gewährt Unterhaltsforderungen besondere Privilegien, die eine effektive Durchsetzung ermöglichen – vom Vorfahrprivileg über die privilegierte Anschlusspfändung bis zur ersten Konkursklasse. Die richtige Wahl der Vollstreckungsmittel hängt von der konkreten Situation ab.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Übersicht der Vollstreckungsmassnahmen</h2>
+
+    <p class="text-gray-700 mb-6">Das Schweizer Recht stellt für die Durchsetzung von Unterhaltsansprüchen ein abgestuftes System von Massnahmen bereit, die je nach Situation einzeln oder kombiniert eingesetzt werden können.</p>
 
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Massnahme</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Zielgruppe</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Wirkung</th>
                 </tr>
@@ -25,26 +59,43 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
             <tbody class="divide-y divide-gray-200">
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Inkassohilfe</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 131/290 ZGB</td>
                     <td class="px-6 py-4 text-gray-700">Alle Unterhaltsberechtigten</td>
-                    <td class="px-6 py-4 text-gray-700">Unterstuetzung bei der Eintreibung</td>
+                    <td class="px-6 py-4 text-gray-700">Kostenlose behördliche Unterstützung</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">Schuldneranweisung</td>
-                    <td class="px-6 py-4 text-gray-700">Erwerbstaetige Schuldner</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 132/177/291 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Erwerbstätige Schuldner</td>
                     <td class="px-6 py-4 text-gray-700">Direktzahlung durch Arbeitgeber</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Betreibung</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Betreibung auf Pfändung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 67 ff. SchKG</td>
                     <td class="px-6 py-4 text-gray-700">Alle Schuldner</td>
-                    <td class="px-6 py-4 text-gray-700">Pfaendung von Vermoegen/Einkommen</td>
+                    <td class="px-6 py-4 text-gray-700">Zwangsvollstreckung in Vermögen</td>
                 </tr>
                 <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Privilegierte Anschlusspfändung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 111 SchKG</td>
+                    <td class="px-6 py-4 text-gray-700">Kinder/Ex-Ehegatten</td>
+                    <td class="px-6 py-4 text-gray-700">Anschluss ohne eigene Betreibung</td>
+                </tr>
+                <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Sicherstellung</td>
-                    <td class="px-6 py-4 text-gray-700">Vermoegende Schuldner</td>
-                    <td class="px-6 py-4 text-gray-700">Sicherung kuenftiger Ansprueche</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 132 Abs. 2/292 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Vermögende Schuldner</td>
+                    <td class="px-6 py-4 text-gray-700">Sicherung künftiger Ansprüche</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Alimentenbevorschussung</td>
+                    <td class="px-6 py-4 text-gray-700">Kantonales Recht</td>
+                    <td class="px-6 py-4 text-gray-700">Kinder mit Zahlungsausfällen</td>
+                    <td class="px-6 py-4 text-gray-700">Staatliche Vorschusszahlung</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Strafanzeige</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 217 StGB</td>
                     <td class="px-6 py-4 text-gray-700">Beharrliche Verweigerer</td>
                     <td class="px-6 py-4 text-gray-700">Strafrechtliche Konsequenzen</td>
                 </tr>
@@ -52,116 +103,178 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Voraussetzungen fuer die Vollstreckung</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Voraussetzungen für die Vollstreckung</h2>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Rechtstitel erforderlich</h3>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Der Rechtstitel als Vollstreckungsgrundlage</h3>
 
-    <p class="text-gray-700 mb-4">Fuer die meisten Vollstreckungsmassnahmen ist ein Rechtstitel erforderlich:</p>
-
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Rechtskraeftiges Gerichtsurteil (Scheidung, Vaterschaft)</li>
-        <li>Eheschutzentscheid</li>
-        <li>Von der KESB genehmigter Unterhaltsvertrag</li>
-        <li>Gerichtlicher Vergleich</li>
-    </ul>
-
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Inkassohilfe</h2>
-
-    <p class="text-gray-700 mb-4">Die Inkassohilfe ist die Unterstuetzung durch kantonale Fachstellen bei der Durchsetzung von Unterhaltsanspruechen. Sie ist in Art. 131 und 290 ZGB verankert.</p>
-
-    <p class="text-gray-700 mb-4"><strong>Leistungen:</strong></p>
-
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Beratung und Information</li>
-        <li>Versand von Mahnungen</li>
-        <li>Einleitung von Betreibungen</li>
-        <li>Unterstuetzung bei der Schuldneranweisung</li>
-        <li>Alimentenbevorschussung (kantonal geregelt)</li>
-    </ul>
-
-    <p class="text-gray-700 mb-6">Die Inkassohilfe fuer Kindesunterhalt ist grundsaetzlich kostenlos.</p>
-
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Schuldneranweisung</h2>
-
-    <p class="text-gray-700 mb-4">Bei der Schuldneranweisung weist das Gericht einen Dritten (z.B. Arbeitgeber) an, Zahlungen direkt an den Unterhaltsberechtigten zu leisten, anstatt an den Unterhaltsschuldner.</p>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Rechtliche Grundlagen</h3>
-
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Art. 132 ZGB (nachehelicher Unterhalt)</li>
-        <li>Art. 177 ZGB (Trennungsunterhalt)</li>
-        <li>Art. 291 ZGB (Kindesunterhalt)</li>
-    </ul>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Voraussetzungen</h3>
-
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Rechtskraeftiger Unterhaltstitel</li>
-        <li>Wiederholte Zahlungsversaeumnisse oder Verspaetungen</li>
-        <li>Lohn- oder andere regelmaessige Zahlungen des Schuldners</li>
-    </ul>
-
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Betreibungsverfahren</h2>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ablauf im Detail</h3>
-
-    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Betreibungsbegehren:</strong> Einreichung beim Betreibungsamt am Wohnsitz des Schuldners</li>
-        <li><strong>Zahlungsbefehl:</strong> Zustellung an den Schuldner (Zahlungsfrist: 20 Tage, Rechtsvorschlagsfrist: 10 Tage)</li>
-        <li><strong>Rechtsoeffnung:</strong> Definitive Rechtsoeffnung bei vollstreckbarem Urteil/Vertrag</li>
-        <li><strong>Fortsetzungsbegehren:</strong> Nach Ablauf der Zahlungsfrist (Frist: 1 Jahr)</li>
-        <li><strong>Pfaendung:</strong> Pfaendung von Vermoegen und Einkommen</li>
-    </ol>
-
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Privilegien bei Unterhaltsforderungen</h2>
+    <p class="text-gray-700 mb-6">Für die zwangsweise Durchsetzung von Unterhaltsforderungen ist grundsätzlich ein Rechtstitel erforderlich. Dieser bildet die Grundlage für die definitive Rechtsöffnung nach Art. 80 SchKG und ermöglicht die Fortsetzung der Betreibung ohne Anerkennungsklage.</p>
 
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Privileg</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Wirkung</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Grundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtstitel</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Art der Rechtsöffnung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtliche Grundlage</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Erste Konkursklasse</td>
-                    <td class="px-6 py-4 text-gray-700">Vorrang bei Verwertung</td>
-                    <td class="px-6 py-4 text-gray-700">Art. 219 SchKG</td>
+                    <td class="px-6 py-4 text-gray-700">Rechtskräftiges Scheidungsurteil</td>
+                    <td class="px-6 py-4 font-semibold text-green-700">Definitive Rechtsöffnung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 80 Abs. 1 SchKG</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Anschlusspfaendung</td>
-                    <td class="px-6 py-4 text-gray-700">Beteiligung an laufenden Pfaendungen</td>
-                    <td class="px-6 py-4 text-gray-700">Art. 111 SchKG</td>
+                    <td class="px-6 py-4 text-gray-700">Eheschutzentscheid</td>
+                    <td class="px-6 py-4 font-semibold text-green-700">Definitive Rechtsöffnung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 80 Abs. 1 SchKG</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Vorfahrprivileg</td>
-                    <td class="px-6 py-4 text-gray-700">Eingriff ins Existenzminimum</td>
-                    <td class="px-6 py-4 text-gray-700">BGE-Rechtsprechung</td>
+                    <td class="px-6 py-4 text-gray-700">Von KESB genehmigter Unterhaltsvertrag</td>
+                    <td class="px-6 py-4 font-semibold text-green-700">Definitive Rechtsöffnung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 80 Abs. 2 Ziff. 1 SchKG</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Gerichtlich genehmigte Konvention</td>
+                    <td class="px-6 py-4 font-semibold text-green-700">Definitive Rechtsöffnung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 80 Abs. 2 Ziff. 1 SchKG</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Vaterschaftsurteil mit Unterhalt</td>
+                    <td class="px-6 py-4 font-semibold text-green-700">Definitive Rechtsöffnung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 80 Abs. 1 SchKG</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Vorsorgliche Massnahmen</td>
+                    <td class="px-6 py-4 font-semibold text-green-700">Definitive Rechtsöffnung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 80 Abs. 1 SchKG</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Privater Unterhaltsvertrag (unterzeichnet)</td>
+                    <td class="px-6 py-4 font-semibold text-yellow-700">Provisorische Rechtsöffnung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 82 SchKG</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy">Das Vorfahrprivileg:</p>
-        <p class="text-gray-700">Beim "Vorfahrprivileg" handelt es sich um ein von der bundesgerichtlichen Praxis entwickeltes Vorrecht, welches der erleichterten Vollstreckung von Unterhaltsbeitraegen dient. Unter bestimmten Voraussetzungen kann ins Existenzminimum des Schuldners gepfaendet werden.</p>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig zur Rechtsöffnung:</p>
+        <p class="text-gray-700">Das Rechtsöffnungsgericht prüft von Amtes wegen, ob ein vollstreckbarer Entscheid vorliegt (Art. 80 Abs. 1 SchKG). Eine interpretationsbedürftige Scheidungskonvention ist kein genügender Rechtsöffnungstitel. Behauptet der Schuldner, die Verhältnisse hätten sich seit dem Urteil geändert, kann er dies nicht im Rechtsöffnungsverfahren vorbringen, sondern muss eine Abänderungsklage einreichen.</p>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Sicherstellung</h2>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Definitive vs. provisorische Rechtsöffnung</h3>
 
-    <p class="text-gray-700 mb-4">Die Sicherstellung dient dem Schutz kuenftiger Unterhaltsansprueche. Sie kann angeordnet werden bei:</p>
+    <p class="text-gray-700 mb-6">Die Art des Rechtsöffnungstitels bestimmt, welche Art der Rechtsöffnung gewährt wird. Dies hat erhebliche praktische Konsequenzen für das weitere Verfahren.</p>
 
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Beharrlicher Vernachlaessigung der Unterhaltspflicht</li>
-        <li>Gefahr der Vermoegensverschleuderung</li>
-        <li>Fluchtgefahr</li>
-    </ul>
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kriterium</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Definitive Rechtsöffnung (Art. 80 SchKG)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Provisorische Rechtsöffnung (Art. 82 SchKG)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Titel</td>
+                    <td class="px-6 py-4 text-gray-700">Vollstreckbarer Gerichtsentscheid oder öffentliche Urkunde</td>
+                    <td class="px-6 py-4 text-gray-700">Schuldanerkennung (private Urkunde)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Einwendungen Schuldner</td>
+                    <td class="px-6 py-4 text-gray-700">Nur durch Urkunden sofort nachweisbare Einwendungen</td>
+                    <td class="px-6 py-4 text-gray-700">Glaubhaftmachung von Einwendungen genügt</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Aberkennungsklage</td>
+                    <td class="px-6 py-4 text-gray-700">Nicht möglich</td>
+                    <td class="px-6 py-4 text-gray-700">Möglich (20 Tage Frist nach Art. 83 Abs. 2 SchKG)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Vollstreckbarkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Sofort und endgültig vollstreckbar</td>
+                    <td class="px-6 py-4 text-gray-700">Vorläufig bedingte Vollstreckbarkeit</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Praktische Wirkung</td>
+                    <td class="px-6 py-4 text-gray-700">Schuldner muss Gegenbeweis erbringen</td>
+                    <td class="px-6 py-4 text-gray-700">Gläubiger trägt Prozessrisiko</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Strafanzeige (Art. 217 StGB)</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Inkassohilfe (Art. 131/290 ZGB)</h2>
 
-    <p class="text-gray-700 mb-4">Bei beharrlicher Nichtzahlung kann Strafanzeige erstattet werden:</p>
+    <p class="text-gray-700 mb-6">Die Inkassohilfe ist die behördliche Unterstützung bei der Durchsetzung von Unterhaltsansprüchen. Sie ist in Art. 131 ZGB für den nachehelichen Unterhalt und in Art. 290 ZGB für den Kindesunterhalt verankert. Die Kantone bezeichnen eine Fachstelle, welche auf Gesuch des Berechtigten bei der Vollstreckung des Unterhaltsanspruchs in geeigneter Weise und in der Regel unentgeltlich hilft.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Leistungen der Inkassohilfe</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Leistung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kosten</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Beratung und Information</td>
+                    <td class="px-6 py-4 text-gray-700">Aufklärung über Rechte und Vollstreckungsmöglichkeiten</td>
+                    <td class="px-6 py-4 text-gray-700">Kostenlos</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Mahnwesen</td>
+                    <td class="px-6 py-4 text-gray-700">Versand von Zahlungsaufforderungen an den Schuldner</td>
+                    <td class="px-6 py-4 text-gray-700">Kostenlos</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Betreibungseinleitung</td>
+                    <td class="px-6 py-4 text-gray-700">Einreichung des Betreibungsbegehrens</td>
+                    <td class="px-6 py-4 text-gray-700">Kostenlos (Vorschuss)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Rechtsöffnungsbegehren</td>
+                    <td class="px-6 py-4 text-gray-700">Unterstützung bei der Beseitigung des Rechtsvorschlags</td>
+                    <td class="px-6 py-4 text-gray-700">Meist kostenlos</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Schuldneranweisung</td>
+                    <td class="px-6 py-4 text-gray-700">Unterstützung bei der Antragstellung</td>
+                    <td class="px-6 py-4 text-gray-700">Kostenlos</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Zahlungsüberwachung</td>
+                    <td class="px-6 py-4 text-gray-700">Laufende Kontrolle der Zahlungseingänge</td>
+                    <td class="px-6 py-4 text-gray-700">Kostenlos</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Bevorschussung</td>
+                    <td class="px-6 py-4 text-gray-700">Vorschusszahlung bei Zahlungsausfall (kantonal)</td>
+                    <td class="px-6 py-4 text-gray-700">Einkommensabhängig</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Alimentenbevorschussung</h3>
+
+    <p class="text-gray-700 mb-6">Die Alimentenbevorschussung ist kantonal unterschiedlich geregelt. Die Kantone gewähren bei Zahlungsausfall des Unterhaltspflichtigen Vorschüsse bis zu einem Maximalbetrag. Der Anspruch auf Unterhalt geht gemäss Art. 289 Abs. 2 ZGB "mit allen Rechten" auf das bevorschussende Gemeinwesen über (Legalzession).</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Übergang der Rechte auf das Gemeinwesen:</p>
+        <p class="text-gray-700">Mit der Bevorschussung geht der Unterhaltsanspruch auf das Gemeinwesen über. Das Bundesgericht hat entschieden, dass das bevorschussende Gemeinwesen die privilegierte Anschlusspfändung (Art. 111 SchKG) und das Klassenprivileg (Art. 219 SchKG) geltend machen kann. Das Vorfahrprivileg steht dem Gemeinwesen jedoch nicht zu (BGE 145 III 317).</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Schuldneranweisung (Art. 132/177/291 ZGB)</h2>
+
+    <p class="text-gray-700 mb-6">Die Schuldneranweisung ist eine richterliche Anordnung, wonach ein Dritter (typischerweise der Arbeitgeber) den geschuldeten Unterhaltsbetrag direkt vom Lohn des Schuldners abzieht und an den Berechtigten überweist. Sie ist in Art. 132 ZGB für den nachehelichen Unterhalt, Art. 177 ZGB für den Trennungsunterhalt und Art. 291 ZGB für den Kindesunterhalt geregelt.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Voraussetzungen der Schuldneranweisung</h3>
 
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-200">
@@ -173,50 +286,740 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Unterhaltspflicht</td>
-                    <td class="px-6 py-4 text-gray-700">Rechtlich bestehende Pflicht</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Rechtskräftiger Unterhaltstitel</td>
+                    <td class="px-6 py-4 text-gray-700">Gerichtsurteil, Eheschutzentscheid, genehmigter Unterhaltsvertrag</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Nichterfuellung</td>
-                    <td class="px-6 py-4 text-gray-700">Wiederholte Nichterfuellung</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Pflichtverletzung</td>
+                    <td class="px-6 py-4 text-gray-700">Erhebliche oder wiederholte Verletzung der Unterhaltspflicht (Zahlungsverzug, Verspätungen)</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Leistungsfaehigkeit</td>
-                    <td class="px-6 py-4 text-gray-700">Schuldner koennte zahlen</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Regelmässiges Einkommen des Schuldners</td>
+                    <td class="px-6 py-4 text-gray-700">Lohn, Renten, Taggelder oder andere wiederkehrende Leistungen</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Strafantrag</td>
-                    <td class="px-6 py-4 text-gray-700">Antrag des Berechtigten (Frist: 3 Monate)</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Bestimmter Drittschuldner</td>
+                    <td class="px-6 py-4 text-gray-700">Arbeitgeber, AHV-Ausgleichskasse, Versicherung, Pensionskasse</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <p class="text-gray-700 mb-6"><strong>Moegliche Sanktionen:</strong> Geldstrafe oder Freiheitsstrafe bis zu 3 Jahren</p>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Verfahren und Wirkung</h3>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Praktische Anleitung</h2>
+    <p class="text-gray-700 mb-6">Das Gesuch um Schuldneranweisung ist beim zuständigen Gericht zu stellen. Zuständig ist das Gericht am Wohnsitz einer der Parteien. Die Anweisung kann für laufende und für rückständige Unterhaltsbeiträge erteilt werden. Der angewiesene Drittschuldner ist zur Zahlung verpflichtet und macht sich schadenersatzpflichtig, wenn er die Anweisung missachtet.</p>
 
-    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Dokumentation:</strong> Alle ausstehenden Zahlungen notieren, Kontoauszuege sichern</li>
-        <li><strong>Mahnung:</strong> Schriftliche Aufforderung, per Einschreiben</li>
-        <li><strong>Inkassohilfe beantragen:</strong> Kontakt mit zustaendiger Stelle</li>
-        <li><strong>Betreibung einleiten:</strong> Betreibungsbegehren beim Betreibungsamt</li>
-        <li><strong>Schuldneranweisung pruefen:</strong> Bei erwerbstaetigem Schuldner</li>
-        <li><strong>Weitere Massnahmen:</strong> Sicherstellung, Strafanzeige bei Bedarf</li>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praktischer Hinweis:</p>
+        <p class="text-gray-700">Die Schuldneranweisung ist besonders effektiv bei erwerbstätigen Schuldnern mit stabilem Arbeitsverhältnis. Sie hat gegenüber der Betreibung den Vorteil, dass keine Gebühren anfallen und der Schuldner keinen Rechtsvorschlag erheben kann. Bei häufigem Stellenwechsel des Schuldners muss die Anweisung jedoch jeweils neu beantragt werden.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Betreibungsverfahren (SchKG)</h2>
+
+    <p class="text-gray-700 mb-6">Das Betreibungsverfahren nach dem Schuldbetreibungs- und Konkursgesetz (SchKG) ist das zentrale Instrument zur zwangsweisen Durchsetzung von Unterhaltsforderungen. Für Unterhaltsforderungen kommt grundsätzlich die Betreibung auf Pfändung zur Anwendung (Art. 42 Abs. 1 SchKG).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ablauf des Betreibungsverfahrens</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Schritt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Handlung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Frist</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Hinweise</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">1. Betreibungsbegehren</td>
+                    <td class="px-6 py-4 text-gray-700">Einreichung beim Betreibungsamt am Wohnsitz des Schuldners</td>
+                    <td class="px-6 py-4 text-gray-700">Keine</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 67 SchKG; Kostenvorschuss erforderlich</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">2. Zahlungsbefehl</td>
+                    <td class="px-6 py-4 text-gray-700">Zustellung an den Schuldner durch das Betreibungsamt</td>
+                    <td class="px-6 py-4 text-gray-700">Zustellung innert weniger Tage</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 69 ff. SchKG</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">3. Rechtsvorschlag</td>
+                    <td class="px-6 py-4 text-gray-700">Mögliche Bestreitung durch den Schuldner</td>
+                    <td class="px-6 py-4 text-gray-700">10 Tage ab Zustellung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 74 ff. SchKG</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">4. Rechtsöffnung</td>
+                    <td class="px-6 py-4 text-gray-700">Beseitigung des Rechtsvorschlags beim Gericht</td>
+                    <td class="px-6 py-4 text-gray-700">Keine; empfohlen: baldmöglichst</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 80/82 SchKG; definitive oder provisorische</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">5. Fortsetzungsbegehren</td>
+                    <td class="px-6 py-4 text-gray-700">Antrag auf Fortsetzung der Betreibung</td>
+                    <td class="px-6 py-4 text-gray-700">Frühestens 20 Tage nach Zahlungsbefehl, spätestens 1 Jahr</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 88 SchKG</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">6. Pfändung</td>
+                    <td class="px-6 py-4 text-gray-700">Beschlagnahme von Vermögenswerten und Einkommen</td>
+                    <td class="px-6 py-4 text-gray-700">Innert 15 Tagen nach Fortsetzungsbegehren</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 89 ff. SchKG</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">7. Verwertung</td>
+                    <td class="px-6 py-4 text-gray-700">Versteigerung oder Verwertung gepfändeter Vermögenswerte</td>
+                    <td class="px-6 py-4 text-gray-700">Begehren frühestens 1 Monat, spätestens 1 Jahr nach Pfändung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 116 ff. SchKG</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Betreibungskosten</h3>
+
+    <p class="text-gray-700 mb-6">Die Kosten des Betreibungsverfahrens richten sich nach der Gebührenverordnung zum SchKG (GebV SchKG). Der Gläubiger muss die Kosten vorschiessen, kann sie aber vom Schuldner zurückfordern.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Verfahrensschritt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gebühr (ca.)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Betreibungsbegehren und Zahlungsbefehl</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 60 – 200</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Rechtsöffnung (Gerichtsgebühr)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 150 – 500</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Fortsetzungsbegehren</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 30 – 60</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Pfändung (Einkommenspfändung)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 50 – 100</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Pfändung (Vermögenspfändung)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 60 – 200</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Privilegien bei Unterhaltsforderungen</h2>
+
+    <p class="text-gray-700 mb-6">Das Schweizer Recht gewährt Unterhaltsforderungen besondere Privilegien im Vollstreckungsrecht. Diese sollen sicherstellen, dass Unterhaltsberechtigte ihre Ansprüche auch dann durchsetzen können, wenn der Schuldner bereits von anderen Gläubigern betrieben wird oder in finanziellen Schwierigkeiten steckt.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Das Vorfahrprivileg (saisie prioritaire)</h3>
+
+    <p class="text-gray-700 mb-6">Das Vorfahrprivileg ist ein von der bundesgerichtlichen Rechtsprechung entwickeltes Vorrecht, das es ermöglicht, für Unterhaltsforderungen ins Existenzminimum des Schuldners zu pfänden. Es handelt sich um ein echtes Privileg in der Pfändung, welches von Art. 219 SchKG (Klassenprivileg) zu unterscheiden ist (BGE 145 III 317 E. 3.2).</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Vorfahrprivileg</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Rechtsgrundlage</td>
+                    <td class="px-6 py-4 text-gray-700">Bundesgerichtliche Rechtsprechung (BGE 145 III 317)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Wirkung</td>
+                    <td class="px-6 py-4 text-gray-700">Pfändung ins Existenzminimum für laufende Unterhaltsbeiträge</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Berechtigte</td>
+                    <td class="px-6 py-4 text-gray-700">Nur der Unterhaltsgläubiger persönlich, nicht das bevorschussende Gemeinwesen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Funktionsweise</td>
+                    <td class="px-6 py-4 text-gray-700">Die Unterhaltspflicht wirkt notbedarfserhöhend; der Unterhaltsbetrag wird bei Festsetzung der pfändbaren Quote berücksichtigt</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Einschränkung</td>
+                    <td class="px-6 py-4 text-gray-700">Gilt nur für laufende und künftige Forderungen, nicht für Unterhaltsrückstände</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Gemeinwesen</td>
+                    <td class="px-6 py-4 text-gray-700">Kein Anspruch (BGE 145 III 317; OGer ZH PS180042)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">BGE 145 III 317 zum Vorfahrprivileg:</p>
+        <p class="text-gray-700">Das Bundesgericht hat entschieden, dass das Vorfahrprivileg nicht auf das bevorschussende Gemeinwesen übergeht. Die Begründung: Das Privileg wurde zur Sicherung des Unterhaltsberechtigten geschaffen, damit dieser nicht in eine finanzielle Notlage gerät. Das Gemeinwesen ist jedoch nicht in gleicher Weise schutzbedürftig und kann daher keinen Eingriff ins Existenzminimum des Schuldners verlangen.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Privilegierte Anschlusspfändung (Art. 111 SchKG)</h3>
+
+    <p class="text-gray-700 mb-6">Den in Art. 111 SchKG genannten Personen steht in der Betreibung auf Pfändung das Recht auf einen privilegierten Pfändungsanschluss zu. Sie können sich innerhalb von 40 Tagen einer laufenden Pfändung anschliessen, ohne selbst betrieben zu haben.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Privilegierte Anschlusspfändung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Rechtsgrundlage</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 111 SchKG</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Berechtigte</td>
+                    <td class="px-6 py-4 text-gray-700">Ehegatte, eingetragener Partner, Kinder</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Zeitliche Beschränkung (Ehegatte)</td>
+                    <td class="px-6 py-4 text-gray-700">Bis ein Jahr nach Scheidung bzw. Auflösung der Partnerschaft</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Frist für Anschluss</td>
+                    <td class="px-6 py-4 text-gray-700">40 Tage ab Vollzug der ersten Pfändung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Voraussetzung</td>
+                    <td class="px-6 py-4 text-gray-700">Keine eigene Betreibung erforderlich</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Wirkung</td>
+                    <td class="px-6 py-4 text-gray-700">Gleichberechtigte Teilnahme am Pfändungsergebnis</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Übergang auf Gemeinwesen</td>
+                    <td class="px-6 py-4 text-gray-700">Ja (Art. 289 Abs. 2 ZGB; privilegium causae)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Das Bundesgericht hat entschieden, dass das bevorschussende Gemeinwesen die privilegierte Anschlusspfändung nach Art. 111 SchKG geltend machen kann. Gemäss Art. 289 Abs. 2 ZGB geht der Unterhaltsanspruch "mit allen Rechten" auf das erfüllende Gemeinwesen über, und das Anschlussprivileg haftet als privilegium causae an der Unterhaltsforderung.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Erste Konkursklasse (Art. 219 SchKG)</h3>
+
+    <p class="text-gray-700 mb-6">Unterhaltsforderungen geniessen im Konkurs das Klassenprivileg der ersten Konkursklasse (Art. 219 Abs. 4 SchKG). Dies bedeutet, dass sie bei der Verwertung des Schuldnervermögens vor den meisten anderen Forderungen befriedigt werden.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Konkursklasse</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Forderungen</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">1. Klasse (privilegiert)</td>
+                    <td class="px-6 py-4 text-gray-700">Familienrechtliche Unterhalts- und Unterstützungsforderungen (letzte 12 Monate vor Konkurseröffnung), Arbeitnehmerforderungen, AHV/IV/BVG-Beiträge</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">2. Klasse</td>
+                    <td class="px-6 py-4 text-gray-700">Weitere Sozialversicherungsforderungen, Miet- und Pachtzinsen, Forderungen aus Kaution</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">3. Klasse</td>
+                    <td class="px-6 py-4 text-gray-700">Alle übrigen Forderungen (gewöhnliche Gläubiger)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Übersicht der Vollstreckungsprivilegien</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Privileg</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Wirkung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gemeinwesen berechtigt?</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Vorfahrprivileg</td>
+                    <td class="px-6 py-4 text-gray-700">Pfändung ins Existenzminimum</td>
+                    <td class="px-6 py-4 text-gray-700">BGE 145 III 317</td>
+                    <td class="px-6 py-4 text-red-600 font-semibold">Nein</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Privilegierte Anschlusspfändung</td>
+                    <td class="px-6 py-4 text-gray-700">Anschluss ohne Betreibung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 111 SchKG</td>
+                    <td class="px-6 py-4 text-green-600 font-semibold">Ja</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Erste Konkursklasse</td>
+                    <td class="px-6 py-4 text-gray-700">Vorrang bei Verwertung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 219 Abs. 4 SchKG</td>
+                    <td class="px-6 py-4 text-green-600 font-semibold">Ja</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Sicherstellung (Art. 132 Abs. 2/292 ZGB)</h2>
+
+    <p class="text-gray-700 mb-6">Die Sicherstellung dient dem Schutz künftiger Unterhaltsansprüche. Sie kann vom Gericht angeordnet werden, wenn besondere Umstände vorliegen, die den künftigen Unterhalt gefährden. Die Rechtsgrundlage findet sich in Art. 132 Abs. 2 ZGB für den nachehelichen Unterhalt und in Art. 292 ZGB für den Kindesunterhalt.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Voraussetzungen der Sicherstellung</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Voraussetzung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Beharrliche Vernachlässigung</td>
+                    <td class="px-6 py-4 text-gray-700">Wiederholte, schuldhafte Nichtzahlung trotz Zahlungsfähigkeit</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Vermögensverschleuderung</td>
+                    <td class="px-6 py-4 text-gray-700">Gefahr, dass der Schuldner sein Vermögen verschleudert oder verschiebt</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Fluchtgefahr</td>
+                    <td class="px-6 py-4 text-gray-700">Konkrete Anzeichen, dass der Schuldner die Schweiz verlassen will</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Vermögensverschiebung</td>
+                    <td class="px-6 py-4 text-gray-700">Übertragung von Vermögen an Dritte zur Vereitelung der Vollstreckung</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Formen der Sicherstellung</h3>
+
+    <p class="text-gray-700 mb-6">Die Sicherstellung kann in verschiedenen Formen erfolgen: Bankgarantie, Bürgschaft, Grundpfandrecht, Hinterlegung von Wertpapieren oder Bargeld. Das Gericht legt die Art und Höhe der Sicherheit nach den Umständen des Einzelfalls fest.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Strafanzeige nach Art. 217 StGB</h2>
+
+    <p class="text-gray-700 mb-6">Wer seine familienrechtlichen Unterhalts- oder Unterstützungspflichten nicht erfüllt, obschon er über die Mittel dazu verfügt oder verfügen könnte, macht sich gemäss Art. 217 StGB strafbar. Es drohen Geldstrafe oder Freiheitsstrafe bis zu drei Jahren.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Tatbestandsvoraussetzungen (BGE-Rechtsprechung)</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Voraussetzung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">BGE-Rechtsprechung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Familienrechtliche Unterhaltspflicht</td>
+                    <td class="px-6 py-4 text-gray-700">Rechtlich bestehende Pflicht (Ehegatten-, Kindes- oder Elternunterhalt)</td>
+                    <td class="px-6 py-4 text-gray-700">BGE 132 IV 49</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Nichterfüllung</td>
+                    <td class="px-6 py-4 text-gray-700">Nicht vollständige, nicht rechtzeitige oder nicht korrekte Erfüllung</td>
+                    <td class="px-6 py-4 text-gray-700">BGE 126 IV 131</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Leistungsfähigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Schuldner verfügt über Mittel oder könnte darüber verfügen (hypothetisches Einkommen)</td>
+                    <td class="px-6 py-4 text-gray-700">BGE 126 IV 131; BGE 114 IV 124</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Verschulden (Vorsatz)</td>
+                    <td class="px-6 py-4 text-gray-700">Wissentliches und willentliches Unterlassen der Zahlung</td>
+                    <td class="px-6 py-4 text-gray-700">BGE 121 IV 272</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Hypothetisches Einkommen</h3>
+
+    <p class="text-gray-700 mb-6">Nach bundesgerichtlicher Rechtsprechung kann dem Schuldner ein hypothetisches Einkommen angerechnet werden (BGE 126 IV 131). Eine Tätigkeit, die den eigenen Notbedarf nur ungenügend deckt, verpflichtet dazu, in dem Umfang einer zumutbaren entgeltlichen Tätigkeit nachzugehen, dass die familienrechtlichen Verpflichtungen erfüllt werden können (BGE 114 IV 124). Das Gericht muss jedoch die konkreten finanziellen Mittel des Schuldners feststellen und darf sich nicht mit Annäherungen zufrieden geben.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Dauerdelikt und Strafantragsfrist</h3>
+
+    <p class="text-gray-700 mb-6">Die Vernachlässigung von Unterhaltspflichten ist ein Dauerdelikt (BGE 132 IV 49). Die Strafantragsfrist von drei Monaten beginnt erst mit der letzten verschuldeten Unterlassung zu laufen – zum Beispiel wenn der Schuldner die Zahlungen wieder aufnimmt oder es ihm ohne eigenes Verschulden nicht mehr möglich ist, seiner Pflicht nachzukommen.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Antragsdelikt:</p>
+        <p class="text-gray-700">Art. 217 StGB ist ein Antragsdelikt. Der Strafantrag muss innerhalb von drei Monaten ab Kenntnis des Berechtigten gestellt werden. Das Antragsrecht steht auch den von den Kantonen bezeichneten Behörden und Stellen zu und ist unter Wahrung der Interessen der Familie auszuüben. Der Strafantrag kann während des laufenden Verfahrens zurückgezogen werden.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Sanktionen</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Sanktion</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Geldstrafe</td>
+                    <td class="px-6 py-4 text-gray-700">Tagessätze entsprechend der finanziellen Leistungsfähigkeit</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Freiheitsstrafe</td>
+                    <td class="px-6 py-4 text-gray-700">Bis zu 3 Jahren bei schweren Fällen oder Wiederholung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Bedingte Strafe</td>
+                    <td class="px-6 py-4 text-gray-700">Möglich mit Auflage zur Zahlung des Unterhalts</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Eintrag im Strafregister</td>
+                    <td class="px-6 py-4 text-gray-700">Verurteilung wird im Strafregister eingetragen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Internationale Vollstreckung</h2>
+
+    <p class="text-gray-700 mb-6">Lebt oder arbeitet der Unterhaltspflichtige im Ausland, stellen sich besondere Herausforderungen bei der Vollstreckung. Je nach Staat kommen unterschiedliche internationale Übereinkommen zur Anwendung.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Anwendbare Rechtsgrundlagen</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Übereinkommen</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Anwendungsbereich</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Vertragsstaaten</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Lugano-Übereinkommen (LugÜ)</td>
+                    <td class="px-6 py-4 text-gray-700">Anerkennung und Vollstreckung von Zivilurteilen</td>
+                    <td class="px-6 py-4 text-gray-700">EU-Staaten, EFTA-Staaten</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Haager Unterhaltsstatut 1973</td>
+                    <td class="px-6 py-4 text-gray-700">Anwendbares Recht bei Unterhaltspflichten</td>
+                    <td class="px-6 py-4 text-gray-700">Diverse Staaten weltweit</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">IPRG (Bundesgesetz)</td>
+                    <td class="px-6 py-4 text-gray-700">Subsidiär, wenn kein Staatsvertrag</td>
+                    <td class="px-6 py-4 text-gray-700">Schweiz (nationales Recht)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Bilaterale Abkommen</td>
+                    <td class="px-6 py-4 text-gray-700">Je nach Vertragsstaat unterschiedlich</td>
+                    <td class="px-6 py-4 text-gray-700">Diverse Staaten</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vollstreckung in EU/EFTA-Staaten (Lugano-Übereinkommen)</h3>
+
+    <p class="text-gray-700 mb-6">Das Lugano-Übereinkommen von 2007 (LugÜ) ist für die Schweiz seit dem 1. Januar 2011 in Kraft und regelt die Anerkennung und Vollstreckung von Entscheidungen in Zivil- und Handelssachen, einschliesslich Unterhaltsurteile. Entscheidungen werden in den Vertragsstaaten anerkannt, ohne dass es eines besonderen Verfahrens bedarf. Das LugÜ geht dem IPRG grundsätzlich vor.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Verfahren der Vollstreckbarerklärung:</p>
+        <p class="text-gray-700">Für die Vollstreckung im Ausland muss das Schweizer Unterhaltsurteil im Zielstaat für vollstreckbar erklärt werden (Exequaturverfahren). Das Verfahren ist im LugÜ vereinfacht geregelt: Es erfolgt auf Antrag ohne vorherige Anhörung des Schuldners, der erst im Rechtsmittelverfahren gehört wird.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Praktische Anleitung zur Vollstreckung</h2>
+
+    <p class="text-gray-700 mb-6">Die Durchsetzung von Unterhaltsansprüchen erfordert ein strukturiertes Vorgehen. Das folgende Schema zeigt die empfohlene Vorgehensweise.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt-für-Schritt-Anleitung</h3>
+
+    <ol class="list-decimal list-outside ml-6 text-gray-700 mb-6 space-y-4">
+        <li><strong>Dokumentation erstellen:</strong> Alle ausstehenden Zahlungen notieren, Kontoauszüge sichern, Rechtstitel bereithalten</li>
+        <li><strong>Schriftliche Mahnung:</strong> Zahlungsaufforderung per Einschreiben mit Fristsetzung (z.B. 10 Tage)</li>
+        <li><strong>Inkassohilfe beantragen:</strong> Kontaktaufnahme mit der zuständigen kantonalen Fachstelle</li>
+        <li><strong>Schuldneranweisung prüfen:</strong> Bei erwerbstätigem Schuldner Antrag beim Gericht stellen</li>
+        <li><strong>Betreibung einleiten:</strong> Betreibungsbegehren beim Betreibungsamt am Wohnsitz des Schuldners</li>
+        <li><strong>Rechtsöffnung beantragen:</strong> Bei Rechtsvorschlag definitive/provisorische Rechtsöffnung beantragen</li>
+        <li><strong>Fortsetzung verlangen:</strong> Fortsetzungsbegehren stellen und Pfändung durchführen lassen</li>
+        <li><strong>Sicherstellung prüfen:</strong> Bei Fluchtgefahr oder Vermögensverschiebung Antrag stellen</li>
+        <li><strong>Strafanzeige erwägen:</strong> Bei beharrlicher schuldhafter Nichtzahlung Art. 217 StGB</li>
     </ol>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Verjährung von Unterhaltsforderungen</h3>
+
+    <p class="text-gray-700 mb-6">Unterhaltsforderungen unterliegen der Verjährung. Es ist wichtig, Ansprüche rechtzeitig geltend zu machen.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Art der Forderung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Verjährungsfrist</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Periodische Unterhaltsbeiträge</td>
+                    <td class="px-6 py-4 text-gray-700">5 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 128 Ziff. 1 OR</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Unterhaltsanspruch als Stammrecht</td>
+                    <td class="px-6 py-4 text-gray-700">10 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 127 OR</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Vollstreckbare Unterhaltstitel (Betreibung)</td>
+                    <td class="px-6 py-4 text-gray-700">10 Jahre ab Rechtskraft</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 149a Abs. 1 SchKG</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+        <p class="text-gray-700 mb-6">Die Vollstreckung von Unterhaltsansprüchen kann komplex werden, insbesondere wenn der Schuldner sich wehrt, Vermögen versteckt, im Ausland lebt oder Rechtsvorschlag erhebt. Ein erfahrener Anwalt kennt alle rechtlichen Möglichkeiten und kann die effektivste Strategie wählen – von der Schuldneranweisung über die privilegierte Pfändung bis zur Strafanzeige.</p>
+        <p class="text-gray-700 mb-6">Besonders in folgenden Situationen ist die Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> dringend empfohlen:</p>
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Der Unterhaltspflichtige erhebt Rechtsvorschlag gegen die Betreibung</li>
+            <li>Sie möchten das Vorfahrprivileg (BGE 145 III 317) geltend machen</li>
+            <li>Der Schuldner versteckt Vermögen oder verschleiert sein Einkommen</li>
+            <li>Der Unterhaltspflichtige lebt oder arbeitet im Ausland (Lugano-Übereinkommen)</li>
+            <li>Sie möchten eine Schuldneranweisung oder Sicherstellung beantragen</li>
+            <li>Eine Strafanzeige nach Art. 217 StGB ist zu prüfen</li>
+            <li>Die Inkassohilfe stösst an ihre Grenzen</li>
+            <li>Der Schuldner behauptet fehlende Leistungsfähigkeit</li>
+        </ul>
+        <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kann alle verfügbaren Vollstreckungsmittel koordiniert einsetzen und Ihre Ansprüche effektiv durchsetzen. Als spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> kennt er die aktuelle BGE-Rechtsprechung zu den Vollstreckungsprivilegien.</p>
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Unsere spezialisierten Anwälte beraten Sie zu den effektivsten Vollstreckungsmöglichkeiten für Ihre Unterhaltsansprüche – von der Betreibung mit Vorfahrprivileg bis zur internationalen Vollstreckung.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
 
-    <p class="text-gray-700 mb-6">Die Vollstreckung von Unterhaltsanspruechen ist durch verschiedene wirksame Massnahmen moeglich. Unterhaltsforderungen geniessen besondere Vorrechte im Vollstreckungsrecht. Die Inkassohilfe ist der beste erste Anlaufpunkt, da sie kostenlos ist und umfassende Unterstuetzung bietet. Handeln Sie fruehzeitig bei ausbleibenden Zahlungen.</p>
+    <p class="text-gray-700 mb-6">Das Schweizer Recht bietet Unterhaltsberechtigten ein umfassendes Instrumentarium zur Durchsetzung ihrer Ansprüche. Die Vollstreckungsprivilegien – insbesondere das Vorfahrprivileg (BGE 145 III 317), die privilegierte Anschlusspfändung (Art. 111 SchKG) und die erste Konkursklasse (Art. 219 Abs. 4 SchKG) – stellen sicher, dass Unterhaltsforderungen auch bei schwieriger finanzieller Lage des Schuldners durchgesetzt werden können.</p>
+
+    <p class="text-gray-700 mb-6">Die Inkassohilfe ist der beste erste Anlaufpunkt, da sie kostenlos ist und umfassende Unterstützung bietet. Bei hartnäckigen Schuldnern stehen Schuldneranweisung, Betreibung mit privilegierter Pfändung und als Ultima Ratio die Strafanzeige nach Art. 217 StGB zur Verfügung. Bei Schuldnern im Ausland ermöglicht das Lugano-Übereinkommen die grenzüberschreitende Vollstreckung in EU- und EFTA-Staaten.</p>
 
     <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy mb-2">Relevante Gesetzesbestimmungen:</p>
+        <p class="font-semibold text-navy mb-2">Relevante Gesetzesbestimmungen und BGE:</p>
         <ul class="list-disc list-inside text-gray-700 space-y-1">
-            <li>Art. 131, 132 ZGB (Vollstreckungshilfe, Schuldneranweisung)</li>
-            <li>Art. 177 ZGB (Schuldneranweisung Trennungsunterhalt)</li>
-            <li>Art. 290, 291, 292 ZGB (Inkassohilfe, Schuldneranweisung, Sicherstellung)</li>
-            <li>Art. 217 StGB (Vernachlaessigung von Unterhaltspflichten)</li>
-            <li>SchKG (Schuldbetreibungs- und Konkursgesetz)</li>
+            <li>Art. 131, 132 ZGB – Inkassohilfe, Schuldneranweisung (nachehelicher Unterhalt)</li>
+            <li>Art. 177 ZGB – Schuldneranweisung (Trennungsunterhalt)</li>
+            <li>Art. 289, 290, 291, 292 ZGB – Bevorschussung, Inkassohilfe, Schuldneranweisung, Sicherstellung (Kindesunterhalt)</li>
+            <li>Art. 80, 82, 111, 219 SchKG – Rechtsöffnung, Anschlusspfändung, Klassenprivileg</li>
+            <li>Art. 217 StGB – Vernachlässigung von Unterhaltspflichten</li>
+            <li>BGE 145 III 317 – Vorfahrprivileg, kein Übergang auf Gemeinwesen</li>
+            <li>BGE 126 IV 131, BGE 132 IV 49, BGE 114 IV 124 – Art. 217 StGB Rechtsprechung</li>
+            <li>Lugano-Übereinkommen – Internationale Vollstreckung</li>
         </ul>
     </div>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist das Vorfahrprivileg bei Unterhaltsforderungen?</h3>
+                <p class="text-gray-700">Das Vorfahrprivileg (saisie prioritaire) ist ein von der bundesgerichtlichen Rechtsprechung entwickeltes Vorrecht (BGE 145 III 317), das die Pfändung ins Existenzminimum des Schuldners für laufende Unterhaltsforderungen ermöglicht. Die Unterhaltspflicht wirkt notbedarfserhöhend: Der geschuldete Unterhaltsbetrag wird bei der Berechnung der pfändbaren Quote berücksichtigt. Dieses Privileg steht jedoch nur dem Unterhaltsberechtigten persönlich zu, nicht dem bevorschussenden Gemeinwesen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was brauche ich für die Vollstreckung von Unterhalt?</h3>
+                <p class="text-gray-700">Für die definitive Rechtsöffnung (Art. 80 SchKG) benötigen Sie einen vollstreckbaren Rechtstitel: ein rechtskräftiges Gerichtsurteil (Scheidungs- oder Vaterschaftsurteil), einen Eheschutzentscheid, einen von der KESB genehmigten Unterhaltsvertrag oder einen gerichtlichen Vergleich. Bei einem privaten Unterhaltsvertrag ist nur provisorische Rechtsöffnung (Art. 82 SchKG) möglich.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie funktioniert die privilegierte Anschlusspfändung?</h3>
+                <p class="text-gray-700">Die privilegierte Anschlusspfändung nach Art. 111 SchKG erlaubt Ehegatten (bis ein Jahr nach Scheidung), eingetragenen Partnern und Kindern, sich innerhalb von 40 Tagen einer laufenden Pfändung anzuschliessen – ohne selbst eine Betreibung eingeleitet zu haben. Dieses Privileg geht gemäss Art. 289 Abs. 2 ZGB auch auf das bevorschussende Gemeinwesen über.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Welche Vorrechte haben Unterhaltsforderungen im Konkurs?</h3>
+                <p class="text-gray-700">Unterhaltsforderungen fallen in die erste Konkursklasse nach Art. 219 Abs. 4 SchKG und werden damit vor den meisten anderen Forderungen befriedigt. Das Privileg gilt für familienrechtliche Unterhalts- und Unterstützungsforderungen der letzten 12 Monate vor Konkurseröffnung. Das Klassenprivileg geht auch auf das bevorschussende Gemeinwesen über.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie funktioniert die Schuldneranweisung?</h3>
+                <p class="text-gray-700">Bei der Schuldneranweisung (Art. 132/177/291 ZGB) weist das Gericht den Arbeitgeber oder einen anderen Schuldner des Unterhaltspflichtigen an, den Unterhaltsbetrag direkt vom Lohn abzuziehen und an den Berechtigten zu überweisen. Voraussetzungen sind ein rechtskräftiger Unterhaltstitel und wiederholte Zahlungsverzögerungen. Der Antrag wird beim zuständigen Gericht gestellt.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wann macht eine Strafanzeige nach Art. 217 StGB Sinn?</h3>
+                <p class="text-gray-700">Eine Strafanzeige ist sinnvoll bei beharrlicher Nichtzahlung trotz Leistungsfähigkeit. Der Schuldner muss zahlen können oder könnte durch zumutbare Arbeit die Mittel erwerben (hypothetisches Einkommen gemäss BGE 126 IV 131). Die Anzeige muss innerhalb von drei Monaten nach Kenntnis gestellt werden. Es drohen Geldstrafe oder Freiheitsstrafe bis zu drei Jahren. Die Strafanzeige führt oft zu einer schnellen Zahlung.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was leistet die Inkassohilfe?</h3>
+                <p class="text-gray-700">Die Inkassohilfe (Art. 131/290 ZGB) ist eine kostenlose behördliche Unterstützung bei der Durchsetzung von Unterhaltsansprüchen. Sie umfasst Beratung, Mahnwesen, Einleitung von Betreibungen, Unterstützung bei Rechtsöffnung und Schuldneranweisung sowie die Alimentenbevorschussung (kantonal unterschiedlich geregelt). Die Inkassohilfe ist der empfohlene erste Anlaufpunkt bei Zahlungsausfällen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich Unterhalt auch im Ausland vollstrecken?</h3>
+                <p class="text-gray-700">Ja, im EU/EFTA-Raum ermöglicht das Lugano-Übereinkommen (LugÜ) die Vollstreckung von Schweizer Unterhaltsurteilen. Das Urteil muss im Zielstaat für vollstreckbar erklärt werden (Exequaturverfahren), wobei das Verfahren im LugÜ vereinfacht ist. Für Staaten ausserhalb des LugÜ kommen das Haager Unterhaltsstatut, bilaterale Abkommen oder subsidiär das IPRG zur Anwendung.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wann verjähren Unterhaltsforderungen?</h3>
+                <p class="text-gray-700">Periodische Unterhaltsbeiträge (einzelne Raten) verjähren nach fünf Jahren (Art. 128 Ziff. 1 OR). Der Unterhaltsanspruch als Stammrecht verjährt nach zehn Jahren (Art. 127 OR). Vollstreckbare Unterhaltstitel in der Betreibung verjähren zehn Jahre ab Rechtskraft (Art. 149a Abs. 1 SchKG). Es ist wichtig, Ansprüche rechtzeitig geltend zu machen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was kann ich tun, wenn der Schuldner kein pfändbares Einkommen hat?</h3>
+                <p class="text-gray-700">Bei fehlendem pfändbarem Einkommen können Sie die Alimentenbevorschussung bei der kantonalen Inkassostelle beantragen. Prüfen Sie, ob der Schuldner Vermögen besitzt, das gepfändet werden kann. Bei Verdacht auf Einkommensverschleierung kann eine Strafanzeige nach Art. 217 StGB die Offenlegung erzwingen. Langfristig kann eine Sicherstellung (Art. 132 Abs. 2/292 ZGB) beantragt werden, wenn der Schuldner wieder zu Vermögen kommt.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Vollstreckung von Unterhalt in der Schweiz: Rechtslage, Verfahren und Massnahmen",
+        "description": "Vollstreckung von Unterhalt in der Schweiz: Inkassohilfe, Schuldneranweisung, Betreibung, Vorfahrprivileg und internationale Vollstreckung. Mit BGE-Rechtsprechung.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-25",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/unterhalt/vollstreckung"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Was ist das Vorfahrprivileg bei Unterhaltsforderungen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das Vorfahrprivileg (saisie prioritaire) ist ein von der bundesgerichtlichen Rechtsprechung entwickeltes Vorrecht (BGE 145 III 317), das die Pfändung ins Existenzminimum des Schuldners für laufende Unterhaltsforderungen ermöglicht. Die Unterhaltspflicht wirkt notbedarfserhöhend: Der geschuldete Unterhaltsbetrag wird bei der Berechnung der pfändbaren Quote berücksichtigt. Dieses Privileg steht jedoch nur dem Unterhaltsberechtigten persönlich zu, nicht dem bevorschussenden Gemeinwesen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was brauche ich für die Vollstreckung von Unterhalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Für die definitive Rechtsöffnung (Art. 80 SchKG) benötigen Sie einen vollstreckbaren Rechtstitel: ein rechtskräftiges Gerichtsurteil (Scheidungs- oder Vaterschaftsurteil), einen Eheschutzentscheid, einen von der KESB genehmigten Unterhaltsvertrag oder einen gerichtlichen Vergleich. Bei einem privaten Unterhaltsvertrag ist nur provisorische Rechtsöffnung (Art. 82 SchKG) möglich."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie funktioniert die privilegierte Anschlusspfändung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die privilegierte Anschlusspfändung nach Art. 111 SchKG erlaubt Ehegatten (bis ein Jahr nach Scheidung), eingetragenen Partnern und Kindern, sich innerhalb von 40 Tagen einer laufenden Pfändung anzuschliessen – ohne selbst eine Betreibung eingeleitet zu haben. Dieses Privileg geht gemäss Art. 289 Abs. 2 ZGB auch auf das bevorschussende Gemeinwesen über."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welche Vorrechte haben Unterhaltsforderungen im Konkurs?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Unterhaltsforderungen fallen in die erste Konkursklasse nach Art. 219 Abs. 4 SchKG und werden damit vor den meisten anderen Forderungen befriedigt. Das Privileg gilt für familienrechtliche Unterhalts- und Unterstützungsforderungen der letzten 12 Monate vor Konkurseröffnung. Das Klassenprivileg geht auch auf das bevorschussende Gemeinwesen über."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie funktioniert die Schuldneranweisung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei der Schuldneranweisung (Art. 132/177/291 ZGB) weist das Gericht den Arbeitgeber oder einen anderen Schuldner des Unterhaltspflichtigen an, den Unterhaltsbetrag direkt vom Lohn abzuziehen und an den Berechtigten zu überweisen. Voraussetzungen sind ein rechtskräftiger Unterhaltstitel und wiederholte Zahlungsverzögerungen. Der Antrag wird beim zuständigen Gericht gestellt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wann macht eine Strafanzeige nach Art. 217 StGB Sinn?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Eine Strafanzeige ist sinnvoll bei beharrlicher Nichtzahlung trotz Leistungsfähigkeit. Der Schuldner muss zahlen können oder könnte durch zumutbare Arbeit die Mittel erwerben (hypothetisches Einkommen gemäss BGE 126 IV 131). Die Anzeige muss innerhalb von drei Monaten nach Kenntnis gestellt werden. Es drohen Geldstrafe oder Freiheitsstrafe bis zu drei Jahren. Die Strafanzeige führt oft zu einer schnellen Zahlung."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was leistet die Inkassohilfe?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Inkassohilfe (Art. 131/290 ZGB) ist eine kostenlose behördliche Unterstützung bei der Durchsetzung von Unterhaltsansprüchen. Sie umfasst Beratung, Mahnwesen, Einleitung von Betreibungen, Unterstützung bei Rechtsöffnung und Schuldneranweisung sowie die Alimentenbevorschussung (kantonal unterschiedlich geregelt). Die Inkassohilfe ist der empfohlene erste Anlaufpunkt bei Zahlungsausfällen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich Unterhalt auch im Ausland vollstrecken?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, im EU/EFTA-Raum ermöglicht das Lugano-Übereinkommen (LugÜ) die Vollstreckung von Schweizer Unterhaltsurteilen. Das Urteil muss im Zielstaat für vollstreckbar erklärt werden (Exequaturverfahren), wobei das Verfahren im LugÜ vereinfacht ist. Für Staaten ausserhalb des LugÜ kommen das Haager Unterhaltsstatut, bilaterale Abkommen oder subsidiär das IPRG zur Anwendung."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wann verjähren Unterhaltsforderungen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Periodische Unterhaltsbeiträge (einzelne Raten) verjähren nach fünf Jahren (Art. 128 Ziff. 1 OR). Der Unterhaltsanspruch als Stammrecht verjährt nach zehn Jahren (Art. 127 OR). Vollstreckbare Unterhaltstitel in der Betreibung verjähren zehn Jahre ab Rechtskraft (Art. 149a Abs. 1 SchKG). Es ist wichtig, Ansprüche rechtzeitig geltend zu machen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was kann ich tun, wenn der Schuldner kein pfändbares Einkommen hat?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei fehlendem pfändbarem Einkommen können Sie die Alimentenbevorschussung bei der kantonalen Inkassostelle beantragen. Prüfen Sie, ob der Schuldner Vermögen besitzt, das gepfändet werden kann. Bei Verdacht auf Einkommensverschleierung kann eine Strafanzeige nach Art. 217 StGB die Offenlegung erzwingen. Langfristig kann eine Sicherstellung (Art. 132 Abs. 2/292 ZGB) beantragt werden, wenn der Schuldner wieder zu Vermögen kommt."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Unterhalt",
+                "item": "https://familienrechtanwalt.ch/unterhalt"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Vollstreckung von Unterhalt",
+                "item": "https://familienrechtanwalt.ch/unterhalt/vollstreckung"
+            }
+        ]
+    })} />
 </ArticleLayout>

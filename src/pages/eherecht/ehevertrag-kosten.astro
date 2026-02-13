@@ -9,6 +9,33 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
     category="Eherecht"
     categoryLink="/eherecht"
 >
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Kosten für einen Ehevertrag in der Schweiz bewegen sich zwischen CHF 50 (Schwyz) und CHF 7'500 (Zürich).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die grossen Unterschiede entstehen durch das föderalistische Notariatssystem (Amts-, freies und gemischtes Notariat).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Ein einfacher Ehevertrag kostet typischerweise CHF 500–2'000, ein kombinierter Ehe- und Erbvertrag CHF 2'500–5'000.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Spartipp: Der Gang in einen günstigeren Nachbarkanton kann sich lohnen – ein Ehevertrag hat keinen zwingenden örtlichen Bezug.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Kosten für einen Ehevertrag sind steuerlich nicht absetzbar.</span>
+            </li>
+        </ul>
+    </div>
+
     <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die Kosten für einen Ehevertrag in der Schweiz variieren erheblich und bewegen sich zwischen CHF 50 und CHF 7'500. Die grossen Unterschiede ergeben sich aus dem föderalistischen Notariatssystem, bei dem jeder Kanton eigene Gebührentarife festlegt. Wer die Kostenfaktoren kennt und die richtigen Entscheidungen trifft, kann bei gleicher Qualität erheblich sparen.</p>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Überblick: Was kostet ein Ehevertrag?</h2>
@@ -288,34 +315,52 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 
     <p class="text-gray-700 mb-6">Kostenaufstellung: Die Beurkundungsgebühr für die Vertragsänderung beträgt ca. CHF 300 bis CHF 500. Die Gesamtkosten belaufen sich auf ca. <strong>CHF 300 bis CHF 500</strong>.</p>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Häufige Fragen zu den Kosten</h2>
-
-    <div class="space-y-6">
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-serif text-xl font-bold text-navy mb-3">Kann ich einen Ehevertrag ohne Notar abschliessen?</h3>
-            <p class="text-gray-700">Nein, ein Ehevertrag ist nur gültig, wenn er öffentlich beurkundet wurde (Art. 184 ZGB). Ein privatschriftlicher Vertrag ist rechtlich unwirksam. Die notarielle Beurkundung dient dem Schutz beider Parteien und stellt sicher, dass sie über die Tragweite ihrer Vereinbarung informiert sind.</p>
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Eherecht beiziehen sollten</h2>
+        <p class="text-gray-700 mb-6">Obwohl ein Notar für die Beurkundung zwingend erforderlich ist, kann die vorgängige Beratung durch einen spezialisierten Anwalt erheblichen Mehrwert bieten. Ein Notar ist zur Neutralität verpflichtet und berät beide Parteien gleichermassen – ein Anwalt vertritt hingegen ausschliesslich Ihre Interessen.</p>
+        <p class="text-gray-700 mb-6">Besonders in folgenden Situationen ist die Beratung durch einen erfahrenen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> empfehlenswert:</p>
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Bei komplexen Vermögensverhältnissen (Unternehmen, Immobilien, Auslandsvermögen)</li>
+            <li>Wenn ein Ehegatte wirtschaftlich deutlich stärker ist als der andere</li>
+            <li>Bei Kombination von Ehevertrag mit erbrechtlichen Regelungen</li>
+            <li>Wenn Sie unsicher sind, welcher Güterstand für Ihre Situation optimal ist</li>
+            <li>Bei Patchwork-Familien mit unterschiedlichen Interessen</li>
+        </ul>
+        <p class="text-gray-700 mb-6">Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> kann den Vertragsentwurf erstellen oder prüfen und sicherstellen, dass Ihre Interessen vollständig gewahrt werden. Die zusätzlichen Anwaltskosten sind im Vergleich zu möglichen späteren Nachteilen durch einen ungünstigen Vertrag oft gut investiert.</p>
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Lassen Sie sich von einem erfahrenen Fachanwalt für Familienrecht beraten, welche güterrechtlichen Regelungen für Sie optimal sind und mit welchen Kosten Sie rechnen müssen.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
         </div>
+    </section>
 
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-serif text-xl font-bold text-navy mb-3">Sind die Notariatskosten verhandelbar?</h3>
-            <p class="text-gray-700">In Kantonen mit gesetzlich festgelegten Tarifen sind die Gebühren nicht verhandelbar. Der Notar ist an den kantonalen Gebührentarif gebunden. In Kantonen mit freiem Notariat kann es gewisse Spielräume geben, insbesondere bei der Berechnung des Zeitaufwands für die Vertragserstellung.</p>
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich einen Ehevertrag ohne Notar abschliessen?</h3>
+                <p class="text-gray-700">Nein, ein Ehevertrag ist nur gültig, wenn er öffentlich beurkundet wurde (Art. 184 ZGB). Ein privatschriftlicher Vertrag ist rechtlich unwirksam. Die notarielle Beurkundung dient dem Schutz beider Parteien und stellt sicher, dass sie über die Tragweite ihrer Vereinbarung informiert sind.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Sind die Notariatskosten verhandelbar?</h3>
+                <p class="text-gray-700">In Kantonen mit gesetzlich festgelegten Tarifen sind die Gebühren nicht verhandelbar. Der Notar ist an den kantonalen Gebührentarif gebunden. In Kantonen mit freiem Notariat kann es gewisse Spielräume geben, insbesondere bei der Berechnung des Zeitaufwands für die Vertragserstellung.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Muss ich den Notar am Wohnort nehmen?</h3>
+                <p class="text-gray-700">Nein, für Eheverträge besteht keine örtliche Zuständigkeit. Sie können jeden Notar in der Schweiz frei wählen. Der Gang in einen günstigeren Kanton kann sich finanziell lohnen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wer trägt die Kosten für den Ehevertrag?</h3>
+                <p class="text-gray-700">Das Gesetz enthält keine Regelung. Üblich ist die hälftige Teilung. Bei ungleichen Einkommensverhältnissen kann eine anteilige Kostenverteilung sinnvoll sein. Die Kosten für den Ehevertrag sind steuerlich nicht absetzbar.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was kostet die Änderung eines Ehevertrags?</h3>
+                <p class="text-gray-700">Die Kosten für die Änderung eines bestehenden Ehevertrags liegen typischerweise zwischen CHF 300 und CHF 500, je nach Umfang der Änderungen. Die Änderung muss ebenfalls notariell beurkundet werden.</p>
+            </div>
         </div>
-
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-serif text-xl font-bold text-navy mb-3">Muss ich den Notar am Wohnort nehmen?</h3>
-            <p class="text-gray-700">Nein, für Eheverträge besteht keine örtliche Zuständigkeit. Sie können jeden Notar in der Schweiz wählen. Bei Grundstückgeschäften ist jedoch der Notar am Ort der Liegenschaft zuständig.</p>
-        </div>
-
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-serif text-xl font-bold text-navy mb-3">Sind die Kosten bei beiden Ehegatten gleich?</h3>
-            <p class="text-gray-700">Der Notar stellt in der Regel eine Gesamtrechnung aus. Wie die Kosten zwischen den Ehegatten aufgeteilt werden, ist deren Sache. Eine gesetzliche Vorgabe gibt es nicht.</p>
-        </div>
-
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-serif text-xl font-bold text-navy mb-3">Was passiert, wenn ich mir die Kosten nicht leisten kann?</h3>
-            <p class="text-gray-700">Anders als bei Gerichtsverfahren gibt es für Eheverträge keine unentgeltliche Rechtspflege. Die Kosten müssen von den Ehegatten selbst getragen werden. Bei knappen finanziellen Verhältnissen sollte man prüfen, ob ein Ehevertrag wirklich erforderlich ist oder ob der ordentliche Güterstand der Errungenschaftsbeteiligung nicht ausreicht.</p>
-        </div>
-    </div>
+    </section>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit und Empfehlungen</h2>
 
@@ -328,4 +373,99 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
     <p class="text-gray-700 mb-4">Vor dem Abschluss eines Ehevertrags sollte stets geprüft werden, ob ein solcher überhaupt erforderlich ist. Der ordentliche Güterstand der Errungenschaftsbeteiligung bietet für viele Ehepaare eine angemessene Lösung. Nur wenn besondere Umstände vorliegen, rechtfertigen sich die Kosten und der Aufwand für einen Ehevertrag.</p>
 
     <p class="text-gray-700 mb-6">Schliesslich sollte man bedenken, dass ein Ehevertrag kein statisches Dokument ist. Er sollte bei wesentlichen Veränderungen der Lebensumstände überprüft und gegebenenfalls angepasst werden. Die Kosten für eine Vertragsänderung sind in der Regel überschaubar und stehen in keinem Verhältnis zu den möglichen Nachteilen eines veralteten Vertrages.</p>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Ehevertrag Kosten in der Schweiz: Der vollständige Leitfaden 2025",
+        "description": "Ehevertrag Kosten Schweiz 2025: Vollständiger Überblick über Notariatsgebühren, kantonale Unterschiede und Spartipps. Von CHF 50 bis CHF 7'500.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-20",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/eherecht/ehevertrag-kosten"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Kann ich einen Ehevertrag ohne Notar abschliessen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, ein Ehevertrag ist nur gültig, wenn er öffentlich beurkundet wurde (Art. 184 ZGB). Ein privatschriftlicher Vertrag ist rechtlich unwirksam."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Sind die Notariatskosten verhandelbar?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "In Kantonen mit gesetzlich festgelegten Tarifen sind die Gebühren nicht verhandelbar. In Kantonen mit freiem Notariat kann es gewisse Spielräume geben."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Muss ich den Notar am Wohnort nehmen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, für Eheverträge besteht keine örtliche Zuständigkeit. Sie können jeden Notar in der Schweiz frei wählen. Der Gang in einen günstigeren Kanton kann sich finanziell lohnen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wer trägt die Kosten für den Ehevertrag?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das Gesetz enthält keine Regelung. Üblich ist die hälftige Teilung. Bei ungleichen Einkommensverhältnissen kann eine anteilige Kostenverteilung sinnvoll sein."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was kostet die Änderung eines Ehevertrags?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Kosten für die Änderung eines bestehenden Ehevertrags liegen typischerweise zwischen CHF 300 und CHF 500, je nach Umfang der Änderungen."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Eherecht",
+                "item": "https://familienrechtanwalt.ch/eherecht"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Ehevertrag Kosten in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/eherecht/ehevertrag-kosten"
+            }
+        ]
+    })} />
 </ArticleLayout>

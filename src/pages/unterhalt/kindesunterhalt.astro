@@ -1,0 +1,1293 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+---
+
+<ArticleLayout
+    title="Kindesunterhalt in der Schweiz"
+    description="Kindesunterhalt berechnen: Barunterhalt, Betreuungsunterhalt, zweistufige Methode & Schulstufenmodell. Mit BGE-Rechtsprechung, Beispielen & Kinderkostentabelle."
+    keywords="Kindesunterhalt Schweiz, Alimente berechnen, Barunterhalt, Betreuungsunterhalt, zweistufige Methode, Schulstufenmodell, Art. 276 285 ZGB, Kinderkostentabelle"
+    category="Unterhalt"
+    categoryLink="/unterhalt"
+>
+
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Der Kindesunterhalt setzt sich aus drei Komponenten zusammen: <strong>Barunterhalt</strong> (direkte Kinderkosten), <strong>Betreuungsunterhalt</strong> (Erwerbseinbusse des betreuenden Elternteils) und <strong>Überschussanteil</strong>.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Berechnung erfolgt seit BGE 147 III 265 schweizweit nach der <strong>zweistufig-konkreten Methode</strong> mit Überschussverteilung.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Der Kindesunterhalt hat <strong>absoluten Vorrang</strong> vor allen anderen familienrechtlichen Unterhaltspflichten (Art. 276a ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Das <strong>Schulstufenmodell</strong> (BGE 144 III 481) bestimmt die Erwerbsobliegenheit des betreuenden Elternteils: 50 % ab Einschulung, 80 % ab Sekundarstufe, 100 % ab 16 Jahren.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Unterhaltspflicht dauert grundsätzlich bis zur <strong>Volljährigkeit</strong> (18 Jahre), kann aber bis zum Abschluss der <strong>Erstausbildung</strong> weiterlaufen (Art. 277 Abs. 2 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Seit der <strong>Revision 2017</strong> sind eheliche und aussereheliche Kinder im Unterhaltsrecht vollständig gleichgestellt.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Als Richtwerte gelten ca. <strong>15–17 %</strong> des Nettoeinkommens für ein Kind, <strong>25–27 %</strong> für zwei Kinder – massgebend ist aber immer die konkrete Bedarfsberechnung.</span>
+            </li>
+        </ul>
+    </div>
+
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Der Kindesunterhalt gehört zu den wichtigsten und zugleich komplexesten Themen im Schweizer Familienrecht. Ob bei Scheidung, Trennung oder als unverheirateter Elternteil – die korrekte Berechnung und Festsetzung des Kindesunterhalts hat weitreichende finanzielle Konsequenzen für alle Beteiligten. Dieser Ratgeber erklärt die gesetzlichen Grundlagen, die aktuelle Berechnungsmethode und alle Spezialfälle umfassend und praxisnah.</p>
+
+    <!-- Inhaltsverzeichnis -->
+    <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-12">
+        <h2 class="font-serif text-xl font-bold text-navy mb-4">Inhaltsverzeichnis</h2>
+        <ol class="space-y-2 text-gray-700">
+            <li><a href="#grundlagen" class="text-gold hover:underline">1. Gesetzliche Grundlagen des Kindesunterhalts</a></li>
+            <li><a href="#revision-2017" class="text-gold hover:underline">2. Die Revision 2017: Was hat sich geändert?</a></li>
+            <li><a href="#drei-komponenten" class="text-gold hover:underline">3. Die drei Komponenten des Kindesunterhalts</a></li>
+            <li><a href="#zweistufige-methode" class="text-gold hover:underline">4. Die zweistufig-konkrete Methode (BGE 147 III 265)</a></li>
+            <li><a href="#kinderkostentabelle" class="text-gold hover:underline">5. Die Zürcher Kinderkostentabelle</a></li>
+            <li><a href="#schulstufenmodell" class="text-gold hover:underline">6. Das Schulstufenmodell (BGE 144 III 481)</a></li>
+            <li><a href="#hypothetisches-einkommen" class="text-gold hover:underline">7. Hypothetisches Einkommen</a></li>
+            <li><a href="#mankofall" class="text-gold hover:underline">8. Der Mankofall</a></li>
+            <li><a href="#rangfolge" class="text-gold hover:underline">9. Rangfolge der Unterhaltsansprüche</a></li>
+            <li><a href="#volljaehrige" class="text-gold hover:underline">10. Unterhalt für volljährige Kinder</a></li>
+            <li><a href="#unverheiratet" class="text-gold hover:underline">11. Kindesunterhalt bei nicht verheirateten Eltern</a></li>
+            <li><a href="#alternierende-obhut" class="text-gold hover:underline">12. Kindesunterhalt bei alternierender Obhut</a></li>
+            <li><a href="#abaenderung" class="text-gold hover:underline">13. Abänderung des Kindesunterhalts</a></li>
+            <li><a href="#durchsetzung" class="text-gold hover:underline">14. Alimente einfordern und durchsetzen</a></li>
+            <li><a href="#steuern" class="text-gold hover:underline">15. Steuerliche Behandlung des Kindesunterhalts</a></li>
+            <li><a href="#strafrecht" class="text-gold hover:underline">16. Strafrechtliche Konsequenzen bei Nichtzahlung</a></li>
+            <li><a href="#bge-uebersicht" class="text-gold hover:underline">17. Übersicht der wichtigsten BGE-Entscheide</a></li>
+            <li><a href="#anwalt" class="text-gold hover:underline">18. Wann Sie einen Anwalt für Familienrecht beiziehen sollten</a></li>
+            <li><a href="#fazit" class="text-gold hover:underline">19. Fazit</a></li>
+            <li><a href="#faq" class="text-gold hover:underline">20. Häufig gestellte Fragen (FAQ)</a></li>
+        </ol>
+    </div>
+
+    <!-- 1. Gesetzliche Grundlagen -->
+    <h2 id="grundlagen" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">1. Gesetzliche Grundlagen des Kindesunterhalts</h2>
+
+    <p class="text-gray-700 mb-6">Der Kindesunterhalt ist in den Art. 276–293 ZGB geregelt. Die Eltern haben gemeinsam für den gebührenden Unterhalt des Kindes aufzukommen, jeder nach seinen Kräften (Art. 276 Abs. 2 ZGB). Die Unterhaltspflicht umfasst die Kosten von Betreuung, Erziehung, Ausbildung und Kindesschutzmassnahmen.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Artikel</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Inhalt</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Art. 276 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Unterhaltspflicht der Eltern – Gegenstand und Umfang</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Art. 276a ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Vorrang des Kindesunterhalts vor allen anderen Unterhaltspflichten</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Art. 277 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Dauer der Unterhaltspflicht (bis Volljährigkeit + Erstausbildung)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Art. 285 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Bemessung des Unterhaltsbeitrags (Bar- und Betreuungsunterhalt)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Art. 285a ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Anrechnung von Sozialversicherungsleistungen (IV-/AHV-Kinderrenten)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Art. 286 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Abänderung des Unterhaltsbeitrags durch das Gericht</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Art. 286a ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Nachforderung bei ausserordentlicher Verbesserung (5-Jahres-Frist)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Art. 287 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Unterhaltsvertrag (KESB-Genehmigung erforderlich)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Art. 289 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Inkassohilfe und Alimentenbevorschussung durch das Gemeinwesen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Art. 291 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Schuldneranweisung (Arbeitgeber zahlt direkt an Berechtigten)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 2. Revision 2017 -->
+    <h2 id="revision-2017" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">2. Die Revision 2017: Was hat sich geändert?</h2>
+
+    <p class="text-gray-700 mb-6">Am 1. Januar 2017 trat die umfassende Revision des Kindesunterhaltsrechts in Kraft. Sie brachte grundlegende Veränderungen, die bis heute die gesamte Unterhaltsberechnung prägen.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Vor 2017</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Seit 2017</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Betreuungsunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Existierte nicht als eigenständige Komponente</td>
+                    <td class="px-6 py-4 text-gray-700">Eigenständiger Unterhaltsanspruch (Art. 285 Abs. 2 ZGB)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Gleichstellung</td>
+                    <td class="px-6 py-4 text-gray-700">Kinder verheirateter Eltern besser gestellt</td>
+                    <td class="px-6 py-4 text-gray-700">Vollständige Gleichstellung aller Kinder unabhängig vom Zivilstand</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Rangfolge</td>
+                    <td class="px-6 py-4 text-gray-700">Keine klare gesetzliche Rangfolge</td>
+                    <td class="px-6 py-4 text-gray-700">Kindesunterhalt hat Vorrang (Art. 276a ZGB)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Nachforderung</td>
+                    <td class="px-6 py-4 text-gray-700">Nicht möglich</td>
+                    <td class="px-6 py-4 text-gray-700">Bis 5 Jahre rückwirkend bei ausserordentlicher Verbesserung (Art. 286a ZGB)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Unverheiratete Mütter</td>
+                    <td class="px-6 py-4 text-gray-700">Kein Anspruch auf Kompensation der Erwerbseinbusse</td>
+                    <td class="px-6 py-4 text-gray-700">Anspruch auf Betreuungsunterhalt wie verheiratete Eltern</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 3. Drei Komponenten -->
+    <h2 id="drei-komponenten" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">3. Die drei Komponenten des Kindesunterhalts</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Barunterhalt (direkte Kinderkosten)</h3>
+
+    <p class="text-gray-700 mb-6">Der Barunterhalt deckt die konkreten, direkt dem Kind zurechenbaren Kosten: Ernährung, Bekleidung, anteilige Wohnkosten, Krankenkassenprämien (KVG-Grundversicherung), Schulkosten, Fremdbetreuungskosten (Kita, Mittagstisch), Freizeitaktivitäten, Transport und Körperpflege. Die Richtwerte ergeben sich aus der Zürcher Kinderkostentabelle und werden individuell auf den Einzelfall angepasst.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Betreuungsunterhalt (Art. 285 Abs. 2 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Der <a href="/unterhalt/betreuungsunterhalt" class="text-gold hover:underline font-semibold">Betreuungsunterhalt</a> deckt die Erwerbseinbusse des Elternteils, der das Kind persönlich betreut und deshalb seine Erwerbstätigkeit reduziert. Er wird nach der <strong>Lebenshaltungskostenmethode</strong> berechnet (BGE 144 III 481): Die Differenz zwischen dem familienrechtlichen Existenzminimum des betreuenden Elternteils und dessen (hypothetischem) Einkommen ergibt den Betreuungsunterhalt. Er ist formell Kindesunterhalt, kommt wirtschaftlich aber dem betreuenden Elternteil zugute. Seit der Revision 2017 steht er Eltern unabhängig vom Zivilstand zu.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Überschussanteil</h3>
+
+    <p class="text-gray-700 mb-6">Verbleibt nach Deckung aller Existenzminima ein Überschuss, wird dieser nach dem Prinzip der <strong>«grossen und kleinen Köpfe»</strong> verteilt: Jeder Erwachsene erhält zwei Anteile, jedes Kind einen Anteil. Bei einer Familie mit zwei Eltern und einem Kind ergibt dies eine Verteilung von 2/5, 2/5 und 1/5. Gemäss BGE 5A_936/2022 darf der Überschussanteil des Kindes nicht pauschal auf einen bestimmten Prozentsatz begrenzt werden.</p>
+
+    <!-- 4. Zweistufige Methode -->
+    <h2 id="zweistufige-methode" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">4. Die zweistufig-konkrete Methode (BGE 147 III 265)</h2>
+
+    <p class="text-gray-700 mb-6">Mit dem Leitentscheid BGE 147 III 265 vom 11. November 2020 hat das Bundesgericht die <strong>zweistufig-konkrete Methode mit Überschussverteilung</strong> als schweizweit verbindliche Berechnungsmethode für alle Unterhaltsarten festgelegt. Abstrakte Methoden (Quotenmethoden) und die einstufig-konkrete Methode sind grundsätzlich nicht mehr zulässig.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Stufe</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Stufe 1: Einkommen und Bedarf ermitteln</td>
+                    <td class="px-6 py-4 text-gray-700">Tatsächliches (und ggf. hypothetisches) Einkommen beider Eltern erfassen. Konkreten Bedarf aller Familienmitglieder berechnen: zuerst betreibungsrechtliches Existenzminimum, dann familienrechtliches Existenzminimum (erweiterter Bedarf).</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Stufe 2: Überschussverteilung</td>
+                    <td class="px-6 py-4 text-gray-700">Zuerst alle Existenzminima decken. Verbleibenden Überschuss nach dem Prinzip der «grossen und kleinen Köpfe» verteilen. Bei Manko: dem Unterhaltspflichtigen ist das betreibungsrechtliche Existenzminimum zu belassen.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Betreibungsrechtliches vs. familienrechtliches Existenzminimum</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Position</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Betreibungsrechtlich</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Familienrechtlich</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Grundbetrag</td>
+                    <td class="px-6 py-4 text-gray-700">Ja</td>
+                    <td class="px-6 py-4 text-gray-700">Ja</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Wohnkosten (effektive Miete)</td>
+                    <td class="px-6 py-4 text-gray-700">Ja</td>
+                    <td class="px-6 py-4 text-gray-700">Ja</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">KVG-Grundversicherung</td>
+                    <td class="px-6 py-4 text-gray-700">Ja</td>
+                    <td class="px-6 py-4 text-gray-700">Ja</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Berufsauslagen</td>
+                    <td class="px-6 py-4 text-gray-700">Ja</td>
+                    <td class="px-6 py-4 text-gray-700">Ja</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Kommunikation, Versicherungen, Zusatzversicherung</td>
+                    <td class="px-6 py-4 text-gray-700">Nein</td>
+                    <td class="px-6 py-4 text-gray-700">Ja</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Besuchsrechtskosten, Weiterbildung</td>
+                    <td class="px-6 py-4 text-gray-700">Nein</td>
+                    <td class="px-6 py-4 text-gray-700">Ja</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Konkretes Berechnungsbeispiel</h3>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Beispiel: Familie mit einem Kind (10 Jahre), Mutter betreut, Vater zahlt</p>
+        <p class="text-gray-700 mb-4"><strong>Einkommen:</strong> Vater CHF 7'500 netto/Monat, Mutter CHF 2'000 netto (50 %-Pensum gemäss Schulstufenmodell), Familienzulage CHF 200.</p>
+        <p class="text-gray-700 mb-4"><strong>Bedarf Vater:</strong> Grundbetrag CHF 1'200 + Miete CHF 1'500 + KVG CHF 400 + Berufsauslagen CHF 300 + Steuern CHF 800 = <strong>CHF 4'200</strong></p>
+        <p class="text-gray-700 mb-4"><strong>Bedarf Mutter:</strong> Grundbetrag CHF 1'200 + Miete (Anteil) CHF 1'100 + KVG CHF 380 + Berufsauslagen CHF 150 + Steuern CHF 200 = <strong>CHF 3'030</strong></p>
+        <p class="text-gray-700 mb-4"><strong>Bedarf Kind:</strong> Gemäss Kinderkostentabelle ca. CHF 1'400 (inkl. Wohnkostenanteil, KVG, Schule) abzüglich Familienzulage CHF 200 = <strong>CHF 1'200</strong></p>
+        <p class="text-gray-700 mb-4"><strong>Gesamtbedarf:</strong> CHF 4'200 + CHF 3'030 + CHF 1'200 = CHF 8'430</p>
+        <p class="text-gray-700 mb-4"><strong>Gesamteinkommen:</strong> CHF 7'500 + CHF 2'000 = CHF 9'500</p>
+        <p class="text-gray-700 mb-4"><strong>Überschuss:</strong> CHF 9'500 – CHF 8'430 = <strong>CHF 1'070</strong></p>
+        <p class="text-gray-700 mb-4"><strong>Verteilung (2+2+1 = 5 Anteile):</strong> Vater 2/5 = CHF 428, Mutter 2/5 = CHF 428, Kind 1/5 = CHF 214</p>
+        <p class="text-gray-700 mb-2"><strong>Barunterhalt Vater an Mutter:</strong> Bedarf Kind CHF 1'200 + Überschussanteil CHF 214 + Betreuungsunterhalt (Defizit Mutter: CHF 3'030 – CHF 2'000 = CHF 1'030) = <strong>ca. CHF 2'444/Monat</strong></p>
+    </div>
+
+    <p class="text-gray-700 mb-6">Dieses Beispiel ist vereinfacht. In der Praxis sind die Berechnungen oft komplexer, da weitere Faktoren berücksichtigt werden (Steuerlast, Drittbetreuungskosten, Sonderbedarf etc.).</p>
+
+    <!-- 5. Zürcher Kinderkostentabelle -->
+    <h2 id="kinderkostentabelle" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">5. Die Zürcher Kinderkostentabelle</h2>
+
+    <p class="text-gray-700 mb-6">Die Zürcher Kinderkostentabelle – herausgegeben vom Amt für Jugend und Berufsberatung des Kantons Zürich – dient als wichtigste Orientierungshilfe für die Ermittlung der direkten Kinderkosten (Barunterhalt). Sie wird von den meisten Schweizer Gerichten herangezogen, da es keine bundesweit verbindliche Tabelle gibt. Die Tabelle weist durchschnittliche Kosten nach Alter des Kindes und Haushaltsgrösse aus.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Alter des Kindes</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Richtwert Barunterhalt/Monat (ohne Drittbetreuung)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Hinweise</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">0–5 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 900–1'250</td>
+                    <td class="px-6 py-4 text-gray-700">Hoher Betreuungsbedarf, oft Kita-Kosten zusätzlich</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">6–12 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'100–1'500</td>
+                    <td class="px-6 py-4 text-gray-700">Schulkosten, Mittagstisch, Freizeitaktivitäten</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">13–17 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'300–1'800</td>
+                    <td class="px-6 py-4 text-gray-700">Steigende Kosten für Verpflegung, Kleidung, Mobilität</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Ab 18 Jahre (in Ausbildung)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'500–2'200</td>
+                    <td class="px-6 py-4 text-gray-700">Eigener Haushalt möglich, Studienkosten, kein Betreuungsunterhalt mehr</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig zur Kinderkostentabelle:</p>
+        <p class="text-gray-700">Die Richtwerte verstehen sich als <strong>Durchschnittswerte</strong> für den Kanton Zürich. In anderen Kantonen können die Lebenshaltungskosten abweichen. Zudem berücksichtigt die Tabelle weder Drittbetreuungskosten (Kita, Tagesmutter) noch den Wohnkostenanteil des Kindes – diese müssen separat berechnet und addiert werden. Die Familienzulagen sind jeweils vom Barunterhalt abzuziehen (Art. 285 Abs. 2bis ZGB).</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Welche Kosten gehören zum Barunterhalt?</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kostenposition</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Typische Beträge (Richtwerte)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Nahrung/Getränke</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 300–500/Monat</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Bekleidung/Schuhe</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 70–150/Monat</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Wohnkostenanteil (Kinderzimmer)</td>
+                    <td class="px-6 py-4 text-gray-700">20–30 % der Gesamtmiete</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">KVG-Grundversicherung</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 110–130/Monat (je nach Kanton)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Schule/Schulmaterial</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 30–80/Monat</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Freizeitaktivitäten/Sport</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 50–150/Monat</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Drittbetreuung (Kita/Mittagstisch)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 0–2'500/Monat (je nach Ausmass)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Mobilität/ÖV-Abo</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 0–80/Monat</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 6. Schulstufenmodell -->
+    <h2 id="schulstufenmodell" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">6. Das Schulstufenmodell (BGE 144 III 481)</h2>
+
+    <p class="text-gray-700 mb-6">Das Schulstufenmodell – eingeführt mit BGE 144 III 481 vom 21. September 2018 – bestimmt, ab welchem Alter des jüngsten Kindes dem betreuenden Elternteil eine (erhöhte) Erwerbstätigkeit zugemutet wird. Es ersetzt die früher kantonal unterschiedlichen Regeln (z.B. «10/16-Regel» im Kanton Zürich oder «16-Regel» im Kanton Bern) durch eine <strong>schweizweit einheitliche Staffelung</strong>.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Alter des jüngsten Kindes</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zumutbares Erwerbspensum</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erläuterung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">0 bis Kindergarteneintritt</td>
+                    <td class="px-6 py-4 text-gray-700">0 % (keine Erwerbspflicht)</td>
+                    <td class="px-6 py-4 text-gray-700">Vollzeitbetreuung zumutbar; Erwerbstätigkeit freiwillig</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kindergarten/Einschulung (ca. 4–6 Jahre)</td>
+                    <td class="px-6 py-4 text-gray-700">50 %</td>
+                    <td class="px-6 py-4 text-gray-700">Kind ist halbtags in der Schule; Teilzeitarbeit zumutbar</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Eintritt Sekundarstufe I (ca. 12–13 Jahre)</td>
+                    <td class="px-6 py-4 text-gray-700">80 %</td>
+                    <td class="px-6 py-4 text-gray-700">Kind ist weitgehend selbständig; erhöhte Erwerbstätigkeit zumutbar</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Ab 16 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">100 %</td>
+                    <td class="px-6 py-4 text-gray-700">Kind ist selbständig; Vollzeiterwerbstätigkeit zumutbar</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praxishinweis – Übergangsfristen:</p>
+        <p class="text-gray-700">Bei jedem Stufenwechsel gewähren die Gerichte in der Regel eine <strong>Übergangsfrist von 6 bis 12 Monaten</strong>, um den betreuenden Elternteil nicht abrupt mit einer höheren Erwerbsobliegenheit zu belasten (BGE 147 III 308). Die Stufenerhöhung muss zudem im Unterhaltsentscheid explizit gestaffelt werden.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Mehrere Kinder und das Schulstufenmodell</h3>
+
+    <p class="text-gray-700 mb-6">Bei mehreren Kindern ist stets das <strong>jüngste Kind</strong> massgebend (BGE 144 III 481, E. 4.7.6). Sind beispielsweise drei Kinder vorhanden (14, 10 und 4 Jahre), ist das Erwerbspensum des betreuenden Elternteils auf maximal 0 % festzusetzen, da das jüngste Kind noch nicht schulpflichtig ist. Eine kumulative Betrachtung – also die Betreuungsbelastung durch alle Kinder zusammen – erfolgt nicht automatisch, kann aber im Einzelfall berücksichtigt werden.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ausnahmen und Abweichungen</h3>
+
+    <p class="text-gray-700 mb-6">Das Schulstufenmodell gilt als <strong>Regelfall</strong>. Abweichungen sind nach bundesgerichtlicher Rechtsprechung möglich bei besonderen Umständen: bei einem Kind mit Behinderung oder erhöhtem Betreuungsbedarf, bei mehreren Kindern, die insgesamt eine überdurchschnittliche Belastung darstellen, bei Krankheit des betreuenden Elternteils, oder bei einer während der Ehe gelebten Rollenteilung, die eine andere Erwerbsobliegen­heit nahelegt (BGE 147 III 308, E. 5.5). Die Abweichung muss jeweils konkret begründet werden.</p>
+
+    <!-- 7. Hypothetisches Einkommen -->
+    <h2 id="hypothetisches-einkommen" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">7. Hypothetisches Einkommen</h2>
+
+    <p class="text-gray-700 mb-6">Arbeitet ein Elternteil weniger als ihm zumutbar wäre, rechnet das Gericht ihm ein <strong>hypothetisches Einkommen</strong> an. Dies betrifft sowohl den unterhaltspflichtigen als auch den betreuenden Elternteil. Die Anrechnung dient dazu, eine Unterhaltsverkürzung durch freiwillige Unterbeschäftigung zu verhindern.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Voraussetzungen für die Anrechnung</h3>
+
+    <p class="text-gray-700 mb-6">Nach ständiger Rechtsprechung (BGE 143 III 233, E. 3.2; BGE 137 III 118, E. 2.3) müssen zwei kumulative Voraussetzungen erfüllt sein, damit ein hypothetisches Einkommen angerechnet werden darf:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Voraussetzung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erläuterung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">1. Zumutbarkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Die Erzielung des höheren Einkommens muss tatsächlich zumutbar sein (Alter, Gesundheit, Ausbildung, Kinderbetreuungspflichten, Arbeitsmarktlage).</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">2. Möglichkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Die Person muss bei zumutbarer Anstrengung tatsächlich in der Lage sein, das angerechnete Einkommen zu erzielen (konkrete Stellenangebote, berufliche Qualifikation, regionale Arbeitsmarktsituation).</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Die Anrechnung erfolgt nie automatisch. Das Gericht muss in jedem Einzelfall konkret begründen, warum und in welcher Höhe ein hypothetisches Einkommen angerechnet wird. Eine angemessene <strong>Übergangsfrist</strong> zur Stellensuche oder Erhöhung des Arbeitspensums ist in der Regel zu gewähren – das Bundesgericht verlangt typischerweise 3 bis 12 Monate (BGE 147 III 308, E. 5.5.3).</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praxisbeispiel:</p>
+        <p class="text-gray-700">Ein 45-jähriger Vater mit kaufmännischer Ausbildung arbeitet als Angestellter zu 80 % und erzielt CHF 5'000 netto. Das Gericht stellt fest, dass er gesundheitlich zu 100 % arbeitsfähig ist und eine Vollzeitstelle in seiner Region realistisch ist. Es rechnet ihm ein hypothetisches Einkommen von CHF 6'250 an. Dem Vater wird eine Übergangsfrist von 6 Monaten gewährt, um eine Vollzeitstelle zu finden.</p>
+    </div>
+
+    <!-- 8. Mankofall -->
+    <h2 id="mankofall" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">8. Der Mankofall</h2>
+
+    <p class="text-gray-700 mb-6">Von einem <strong>Mankofall</strong> spricht man, wenn die Gesamteinkommen beider Eltern nicht ausreichen, um die Existenzminima aller Beteiligten zu decken. Dies ist in der Praxis häufig – insbesondere bei tiefen und mittleren Einkommen. Die Aufteilung des Mankos folgt differenzierten Regeln.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Grundsätze der Mankoteilung</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Regel</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erläuterung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Absoluter Schutz des Schuldnerexistenzminimums</td>
+                    <td class="px-6 py-4 text-gray-700">Dem Unterhaltspflichtigen ist stets das <strong>betreibungsrechtliche Existenzminimum</strong> zu belassen (Art. 93 SchKG). Er darf nicht unter das Existenzminimum gesetzt werden – auch nicht zugunsten der Kinder (BGE 147 III 265, E. 7.3).</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Mankoteilung bei verheirateten Eltern</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Ehegatten wird das Manko in der Regel <strong>hälftig</strong> geteilt, da die eheliche Beistandspflicht eine gleichmässige Belastung gebietet.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Mankoteilung bei unverheirateten Eltern</td>
+                    <td class="px-6 py-4 text-gray-700">Das Manko wird allein dem <strong>betreuenden Elternteil</strong> zugewiesen, da zwischen unverheirateten Eltern keine Beistandspflicht besteht (BGE 147 III 265, E. 7.4).</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kein Überschuss im Mankofall</td>
+                    <td class="px-6 py-4 text-gray-700">Wenn die Existenzminima nicht gedeckt sind, entfällt die Überschussverteilung vollständig. Ein allfälliger Fehlbetrag beim Barunterhalt des Kindes wird als <strong>Mankounterhalt</strong> tituliert.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praxistipp – Sozialhilfe im Mankofall:</p>
+        <p class="text-gray-700">Wenn der Unterhalt das Existenzminimum des Berechtigten nicht deckt, besteht ein Anspruch auf <strong>Sozialhilfe</strong> (subsidiäre Leistung). Die Sozialhilfe ist keine Unterhaltsleistung und wird nicht auf den Unterhaltsbeitrag angerechnet. Im Mankofall empfiehlt es sich, das Manko im Urteil <strong>beziffert zu titulieren</strong> – dies erleichtert eine spätere Abänderung, wenn sich die finanzielle Situation verbessert.</p>
+    </div>
+
+    <!-- 9. Rangfolge -->
+    <h2 id="rangfolge" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">9. Rangfolge der Unterhaltsansprüche (Art. 276a ZGB)</h2>
+
+    <p class="text-gray-700 mb-6">Mit der Revision 2017 wurde die Rangfolge der familienrechtlichen Unterhaltspflichten erstmals gesetzlich kodifiziert. Art. 276a Abs. 1 ZGB stellt klar: <strong>Der Unterhalt des minderjährigen Kindes geht allen anderen familienrechtlichen Unterhaltspflichten vor.</strong></p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rang</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Unterhaltsanspruch</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">1. Rang</td>
+                    <td class="px-6 py-4 text-gray-700">Unterhalt minderjähriger Kinder (Bar- + Betreuungsunterhalt)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 276a Abs. 1 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">2. Rang</td>
+                    <td class="px-6 py-4 text-gray-700"><a href="/unterhalt/nachehelicher-unterhalt" class="text-gold hover:underline font-semibold">Nachehelicher Unterhalt</a> (Ehegattenunterhalt)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 125 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">3. Rang</td>
+                    <td class="px-6 py-4 text-gray-700">Unterhalt volljähriger Kinder in Erstausbildung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 277 Abs. 2 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">4. Rang</td>
+                    <td class="px-6 py-4 text-gray-700">Verwandtenunterhalt (z.B. Eltern, Grosseltern)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 328 ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Die Rangfolge bedeutet: Reicht das Einkommen nicht für alle Unterhaltspflichten, wird zunächst der Kindesunterhalt vollständig gedeckt, bevor ein allfälliger <a href="/unterhalt/nachehelicher-unterhalt" class="text-gold hover:underline font-semibold">nachehelicher Ehegattenunterhalt</a> zugesprochen wird. In der Praxis kann dies dazu führen, dass bei tiefen Einkommen kein Ehegattenunterhalt mehr möglich ist. Unter Ehegatten gleichen Rangs (z.B. Kinder mehrerer Beziehungen) gilt das Gleichbehandlungsprinzip – alle minderjährigen Kinder werden proportional gleichermassen berücksichtigt.</p>
+
+    <!-- 10. Volljährige Kinder -->
+    <h2 id="volljaehrige" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">10. Unterhalt für volljährige Kinder (Art. 277 Abs. 2 ZGB)</h2>
+
+    <p class="text-gray-700 mb-6">Mit Erreichen der Volljährigkeit (18 Jahre) endet die Unterhaltspflicht grundsätzlich. Art. 277 Abs. 2 ZGB sieht jedoch eine wichtige Ausnahme vor: Befindet sich das Kind noch in einer angemessenen Erstausbildung, dauert die Unterhaltspflicht fort, <strong>sofern dies den Eltern nach den gesamten Umständen zugemutet werden kann</strong>.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Voraussetzungen des Mündigenunterhalts</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Voraussetzung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Details</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Erstausbildung</td>
+                    <td class="px-6 py-4 text-gray-700">Berufslehre, Studium (Bachelor/Master), Fachhochschule oder vergleichbare Ausbildung. Keine Zweit- oder Weiterbildung.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Angemessenheit</td>
+                    <td class="px-6 py-4 text-gray-700">Die Ausbildung muss den Fähigkeiten und Neigungen des Kindes entsprechen und innert angemessener Frist abgeschlossen werden (BGE 117 II 127).</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Zielstrebigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Das Kind muss die Ausbildung zielstrebig und ernsthaft betreiben. Trödeln oder Abbrüche ohne Grund können den Anspruch verwirken.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Zumutbarkeit für Eltern</td>
+                    <td class="px-6 py-4 text-gray-700">Finanzielle Leistungsfähigkeit der Eltern, persönliche Beziehung zum Kind, Gesamtumstände.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Eigene Anstrengungen des Kindes</td>
+                    <td class="px-6 py-4 text-gray-700">Zumutbarer Eigenverdienst (Nebenjob), Stipendien, BAföG-Äquivalente (kantonale Ausbildungsbeiträge).</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Besonderheiten des Mündigenunterhalts</h3>
+
+    <p class="text-gray-700 mb-6">Mit Volljährigkeit wird das Kind selber anspruchsberechtigt und muss den Unterhalt <strong>im eigenen Namen</strong> geltend machen – die Mutter oder der Vater kann dies nicht mehr stellvertretend tun. Der Betreuungsunterhalt entfällt mit der Volljährigkeit vollständig, da keine Betreuungsbedürftigkeit mehr besteht. Es wird ausschliesslich Barunterhalt geschuldet. Das volljährige Kind hat zudem eine <strong>Mitwirkungspflicht</strong>: Es muss seinen eigenen Bedarf offenlegen und zumutbare eigene Anstrengungen unternehmen (z.B. kantonale Stipendien beantragen, Nebenjob). Die Unterhaltspflicht endet spätestens mit Abschluss der Erstausbildung – bei einem regulären Studium typischerweise mit ca. 25–27 Jahren (BGE 130 III 585).</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Sonderfall – Ausbildungswechsel:</p>
+        <p class="text-gray-700">Ein einmaliger Ausbildungswechsel zu Beginn des Studiums oder der Lehre wird in der Regel toleriert und beendet den Unterhaltsanspruch nicht (BGE 117 II 127). Bei mehrfachem Abbruch oder nicht nachvollziehbaren Wechseln kann die Unterhaltspflicht jedoch entfallen.</p>
+    </div>
+
+    <!-- 11. Unverheiratete Eltern -->
+    <h2 id="unverheiratet" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">11. Kindesunterhalt bei nicht verheirateten Eltern</h2>
+
+    <p class="text-gray-700 mb-6">Seit der Revision 2017 sind Kinder verheirateter und unverheirateter Eltern im Unterhaltsrecht <strong>vollständig gleichgestellt</strong>. Das Kind hat denselben Anspruch auf Barunterhalt, Betreuungsunterhalt und Überschussanteil – unabhängig davon, ob seine Eltern verheiratet sind, in einer Partnerschaft leben oder keinen Kontakt mehr haben.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Verfahren und Zuständigkeit</h3>
+
+    <p class="text-gray-700 mb-6">Unverheiratete Eltern können den Kindesunterhalt auf zwei Wegen regeln:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Weg</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Vorgehen</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Genehmigung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Unterhaltsvertrag</td>
+                    <td class="px-6 py-4 text-gray-700">Eltern einigen sich aussergerichtlich auf den Unterhaltsbeitrag</td>
+                    <td class="px-6 py-4 text-gray-700">Genehmigung durch die <a href="/sorgerecht/kesb" class="text-gold hover:underline font-semibold">KESB</a> erforderlich (Art. 287 Abs. 1 ZGB)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Unterhaltsklage</td>
+                    <td class="px-6 py-4 text-gray-700">Klage beim Gericht am Wohnsitz des Kindes (Art. 279 ZGB)</td>
+                    <td class="px-6 py-4 text-gray-700">Gerichtsentscheid; vereinfachtes Verfahren (Art. 295 ZPO)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Unterschiede zum Unterhalt bei verheirateten Eltern</h3>
+
+    <p class="text-gray-700 mb-6">Obwohl die Kinder gleichgestellt sind, bestehen wichtige Unterschiede im Verfahren und bei der Mankoteilung:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Verheiratete Eltern</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Unverheiratete Eltern</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Unterhaltsregelung im Rahmen von</td>
+                    <td class="px-6 py-4 text-gray-700"><a href="/scheidung/scheidungsverfahren" class="text-gold hover:underline font-semibold">Scheidungsverfahren</a></td>
+                    <td class="px-6 py-4 text-gray-700">Eigenständige Unterhaltsklage oder KESB-genehmigter Vertrag</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Mankoteilung</td>
+                    <td class="px-6 py-4 text-gray-700">Hälftige Teilung des Mankos</td>
+                    <td class="px-6 py-4 text-gray-700">Manko wird dem betreuenden Elternteil allein zugewiesen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Ehegattenunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Zusätzlicher Anspruch auf <a href="/unterhalt/nachehelicher-unterhalt" class="text-gold hover:underline font-semibold">nachehelichen Unterhalt</a> möglich</td>
+                    <td class="px-6 py-4 text-gray-700">Kein Anspruch auf Partnerunterhalt – nur Betreuungsunterhalt als Kindesunterhalt</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Vaterschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Durch Ehe begründet (Art. 255 ZGB)</td>
+                    <td class="px-6 py-4 text-gray-700">Anerkennung (Art. 260 ZGB) oder Vaterschaftsklage (Art. 261 ZGB) erforderlich</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 12. Alternierende Obhut -->
+    <h2 id="alternierende-obhut" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">12. Kindesunterhalt bei alternierender Obhut</h2>
+
+    <p class="text-gray-700 mb-6">Bei der <a href="/sorgerecht/gemeinsames-sorgerecht" class="text-gold hover:underline font-semibold">alternierenden Obhut</a> betreuen beide Elternteile das Kind abwechselnd zu annähernd gleichen Teilen (z.B. je eine Woche oder nach einem 5/9-Modell). Die Berechnung des Kindesunterhalts wird dadurch komplexer, da beide Eltern sowohl Bar- als auch Naturalunterhalt leisten.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Berechnungsmethode</h3>
+
+    <p class="text-gray-700 mb-6">Auch bei alternierender Obhut gilt die zweistufig-konkrete Methode (BGE 147 III 265). Folgende Besonderheiten sind zu beachten:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Element</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Besonderheit bei alternierender Obhut</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Barunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Wird anteilig aufgeteilt – jeder Elternteil trägt die direkten Kosten während seiner Betreuungszeit. Fixkosten (KVG, Schulgeld) werden nach wirtschaftlicher Leistungsfähigkeit geteilt.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Betreuungsunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Entfällt teilweise oder ganz, wenn beide Eltern gleichermassen in der Erwerbstätigkeit eingeschränkt sind. Besteht ein Einkommensgefälle, kann ein Betreuungsunterhalt-Ausgleich fällig werden.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Wohnkosten</td>
+                    <td class="px-6 py-4 text-gray-700">Beide Haushalte benötigen ein Kinderzimmer – der Wohnkostenanteil des Kindes fällt doppelt an.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Ausgleichszahlung</td>
+                    <td class="px-6 py-4 text-gray-700">Der wirtschaftlich besser gestellte Elternteil leistet eine <strong>Ausgleichszahlung</strong> an den anderen, damit das Kind in beiden Haushalten einen vergleichbaren Lebensstandard hat.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig:</p>
+        <p class="text-gray-700">Alternierende Obhut ist <strong>nicht automatisch kostenneutral</strong>. Selbst bei einer 50/50-Betreuung kann eine Unterhaltspflicht bestehen, wenn die Einkommen der Eltern unterschiedlich hoch sind. Das Bundesgericht hat klargestellt, dass die alternierende Obhut keinen Elternteil automatisch von der Pflicht entbindet, einen Geldbeitrag zu leisten (BGE 147 III 265, E. 5.5).</p>
+    </div>
+
+    <!-- 13. Abänderung -->
+    <h2 id="abaenderung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">13. Abänderung des Kindesunterhalts (Art. 286 ZGB)</h2>
+
+    <p class="text-gray-700 mb-6">Der Kindesunterhalt kann jederzeit abgeändert werden, wenn sich die Verhältnisse <strong>erheblich und dauerhaft</strong> verändert haben (Art. 286 Abs. 2 ZGB). Die Abänderung erfolgt durch das Gericht und gilt grundsätzlich ab dem Datum der Klageeinreichung – eine rückwirkende Abänderung ist nur ausnahmsweise möglich.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Typische Abänderungsgründe</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kategorie</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beispiele</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Einkommensveränderung</td>
+                    <td class="px-6 py-4 text-gray-700">Arbeitslosigkeit, Invalidität, Beförderung, Gehaltserhöhung, neuer Beruf</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Veränderung der Betreuungssituation</td>
+                    <td class="px-6 py-4 text-gray-700">Wechsel der Obhut, Einführung alternierender Obhut, Kind zieht zum anderen Elternteil</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Veränderung beim Kind</td>
+                    <td class="px-6 py-4 text-gray-700">Schuleintritt (Schulstufenwechsel), Volljährigkeit, Beginn/Ende einer Ausbildung, Krankheit</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Neue Unterhaltspflichten</td>
+                    <td class="px-6 py-4 text-gray-700">Geburt weiterer Kinder (aus neuer Beziehung), Heirat und Unterhalt gegenüber neuem Ehegatten</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Ausserordentliche Verbesserung</td>
+                    <td class="px-6 py-4 text-gray-700">Erhebliche Verbesserung der Leistungsfähigkeit des Pflichtigen (Art. 286a ZGB: Nachforderung bis 5 Jahre rückwirkend)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Verfahren der Abänderung</h3>
+
+    <p class="text-gray-700 mb-6">Die Abänderung erfolgt durch Klage am Gericht des Wohnsitzes des Kindes (Art. 282 Abs. 2 ZPO). Das Verfahren richtet sich nach dem vereinfachten Verfahren (Art. 295 ZPO). Vorsorgliche Massnahmen sind möglich, wenn eine dringliche Anpassung nötig ist (z.B. bei plötzlichem Einkommensverlust). Bei einvernehmlichen Änderungen genügt die Genehmigung des neuen Unterhaltsvertrags durch die <a href="/sorgerecht/kesb" class="text-gold hover:underline font-semibold">KESB</a>.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig – Leistung trotz Abänderungswunsch:</p>
+        <p class="text-gray-700">Bis zum Vorliegen eines neuen Entscheids bleibt der bestehende Unterhaltsbeitrag <strong>vollumfänglich geschuldet</strong>. Eigenmächtige Kürzungen sind unzulässig und können strafrechtliche Konsequenzen nach sich ziehen (Art. 217 StGB). Im Zweifelsfall ist eine vorsorgliche Massnahme beim Gericht zu beantragen.</p>
+    </div>
+
+    <!-- 14. Durchsetzung -->
+    <h2 id="durchsetzung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">14. Alimente einfordern und durchsetzen</h2>
+
+    <p class="text-gray-700 mb-6">Wird der Kindesunterhalt nicht oder nicht vollständig bezahlt, stehen dem berechtigten Elternteil verschiedene Instrumente zur Verfügung. Das Schweizer Recht bietet ein mehrschichtiges System zur Durchsetzung von Unterhaltsforderungen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Inkassohilfe (Art. 290 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Das Gemeinwesen ist verpflichtet, dem berechtigten Elternteil bei der <strong>Eintreibung der Unterhaltsbeiträge</strong> zu helfen. Die Inkassohilfe ist kostenlos und wird von den kantonalen Inkassostellen oder Sozialdiensten durchgeführt. Sie umfasst Mahnungen, Betreibungen und im Extremfall die Einleitung der Schuldneranweisung.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Alimentenbevorschussung (Art. 293 Abs. 2 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Zahlt der Unterhaltspflichtige nicht, hat der betreuende Elternteil in den meisten Kantonen Anspruch auf eine <strong>Alimentenbevorschussung</strong> durch das Gemeinwesen. Die Höchstbeträge und Voraussetzungen variieren kantonal erheblich.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kanton</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Maximaler Bevorschussungsbetrag/Kind/Monat</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Einkommensgrenze</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Zürich</td>
+                    <td class="px-6 py-4 text-gray-700">Max. gemäss Urteil, bis CHF ~980</td>
+                    <td class="px-6 py-4 text-gray-700">Einkommens- und Vermögensgrenze</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Bern</td>
+                    <td class="px-6 py-4 text-gray-700">Max. gemäss Urteil</td>
+                    <td class="px-6 py-4 text-gray-700">Bedarfsabhängig</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Luzern</td>
+                    <td class="px-6 py-4 text-gray-700">Max. CHF ~600</td>
+                    <td class="px-6 py-4 text-gray-700">Einkommens- und Vermögensgrenze</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Aargau</td>
+                    <td class="px-6 py-4 text-gray-700">Max. gemäss Urteil</td>
+                    <td class="px-6 py-4 text-gray-700">Bedarfsabhängig</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">St. Gallen</td>
+                    <td class="px-6 py-4 text-gray-700">Max. CHF ~700</td>
+                    <td class="px-6 py-4 text-gray-700">Einkommens- und Vermögensgrenze</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schuldneranweisung (Art. 291 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Bei wiederholter Nichtzahlung kann das Gericht eine <strong>Schuldneranweisung</strong> erlassen: Der Arbeitgeber des Pflichtigen wird angewiesen, den Unterhaltsbeitrag direkt vom Lohn abzuziehen und an den Berechtigten zu überweisen. Voraussetzung ist ein rechtskräftiger Unterhaltstitel und die nicht fristgerechte Leistung der Alimente.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Weitere Durchsetzungsmittel</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Instrument</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Betreibung</td>
+                    <td class="px-6 py-4 text-gray-700">Reguläre Betreibung auf Geldzahlung; bei öffentlicher Urkunde ohne vorgängige Klage</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 67 ff. SchKG</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Definitive Rechtsöffnung</td>
+                    <td class="px-6 py-4 text-gray-700">Gerichtsurteil als definitiver Rechtsöffnungstitel – kein Rechtsvorschlag möglich</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 80 SchKG</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Sicherheitsleistung</td>
+                    <td class="px-6 py-4 text-gray-700">Gericht kann den Pflichtigen verpflichten, eine Sicherheit zu hinterlegen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 292 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Strafanzeige</td>
+                    <td class="px-6 py-4 text-gray-700">Vernachlässigung der Unterhaltspflicht ist ein Straftatbestand</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 217 StGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 15. Steuern -->
+    <h2 id="steuern" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">15. Steuerliche Behandlung des Kindesunterhalts</h2>
+
+    <p class="text-gray-700 mb-6">Die steuerliche Behandlung von Kindesunterhaltsbeiträgen folgt dem sogenannten <strong>Korrespondenzprinzip</strong>: Was beim Zahlenden abzugsfähig ist, muss beim Empfänger als Einkommen versteuert werden – und umgekehrt. Dieses Prinzip gilt für den Barunterhalt und den Betreuungsunterhalt gleichermassen.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Steuerlicher Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zahlender Elternteil</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Empfangender Elternteil</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kindesunterhalt (Bar + Betreuung)</td>
+                    <td class="px-6 py-4 text-gray-700">Vollständig abzugsfähig (Art. 33 Abs. 1 lit. c DBG)</td>
+                    <td class="px-6 py-4 text-gray-700">Muss als Einkommen versteuert werden (Art. 23 lit. f DBG)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kinderabzug</td>
+                    <td class="px-6 py-4 text-gray-700">Kein Kinderabzug (da Unterhalt bereits abzugsfähig)</td>
+                    <td class="px-6 py-4 text-gray-700">Kinderabzug steht dem betreuenden Elternteil zu</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Familienzulagen</td>
+                    <td class="px-6 py-4 text-gray-700">Werden vom Barunterhalt abgezogen</td>
+                    <td class="px-6 py-4 text-gray-700">Steuerbares Einkommen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Unterhalt für volljährige Kinder</td>
+                    <td class="px-6 py-4 text-gray-700"><strong>Nicht</strong> abzugsfähig</td>
+                    <td class="px-6 py-4 text-gray-700"><strong>Nicht</strong> steuerbar</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Achtung – Volljährigenunterhalt steuerlich anders behandelt:</p>
+        <p class="text-gray-700">Der Unterhalt an <strong>volljährige Kinder</strong> ist steuerlich <strong>nicht abzugsfähig</strong> und beim Kind <strong>nicht steuerbar</strong>. Stattdessen kann der zahlende Elternteil den <strong>Unterstützungsabzug</strong> geltend machen (Art. 35 Abs. 1 lit. b DBG), sofern er nachweislich mindestens den Abzugsbetrag an Unterstützungsleistungen erbringt. Der empfangende Elternteil verliert mit der Volljährigkeit des Kindes den Kinderabzug – dieser kann aber unter bestimmten Voraussetzungen dem Kind selbst oder dem zahlenden Elternteil zustehen.</p>
+    </div>
+
+    <!-- 16. Strafrecht -->
+    <h2 id="strafrecht" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">16. Strafrechtliche Konsequenzen bei Nichtzahlung (Art. 217 StGB)</h2>
+
+    <p class="text-gray-700 mb-6">Die Vernachlässigung familienrechtlicher Unterhaltspflichten ist in der Schweiz ein <strong>Offizialdelikt</strong> (Art. 217 StGB). Seit der Revision vom 1. Juli 2022 wird die Nichtzahlung von Unterhaltsbeiträgen verschärft verfolgt.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Details</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Tatbestand</td>
+                    <td class="px-6 py-4 text-gray-700">Wer seine familienrechtliche Pflicht zur Leistung von Unterhaltsbeiträgen nicht erfüllt, obwohl er dazu in der Lage wäre oder bei zumutbarer Anstrengung in der Lage sein könnte.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Strafmass</td>
+                    <td class="px-6 py-4 text-gray-700">Freiheitsstrafe bis 3 Jahre oder Geldstrafe</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Offizialdelikt</td>
+                    <td class="px-6 py-4 text-gray-700">Strafverfolgung von Amtes wegen – keine Strafanzeige des Opfers nötig (seit 2022)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Leistungsunfähigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Wer <strong>objektiv nicht leisten kann</strong> (z.B. Arbeitslosigkeit, Krankheit), ist nicht strafbar – die Leistungsfähigkeit muss nachgewiesen werden.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Meldepflicht</td>
+                    <td class="px-6 py-4 text-gray-700">Inkassostellen sind seit 2022 verpflichtet, bei Kenntnis einer möglichen Vernachlässigung Anzeige zu erstatten.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praxistipp:</p>
+        <p class="text-gray-700">Die Strafanzeige dient in erster Linie als <strong>Druckmittel</strong> zur Zahlung und führt häufig dazu, dass der Pflichtige doch noch zahlt. Die tatsächliche strafrechtliche Verurteilung setzt voraus, dass der Pflichtige leistungsfähig war und dennoch nicht gezahlt hat. Im Strafverfahren trägt die Staatsanwaltschaft die <strong>Beweislast</strong> für die Leistungsfähigkeit.</p>
+    </div>
+
+    <!-- 17. BGE-Übersicht -->
+    <h2 id="bge-uebersicht" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">17. Übersicht der wichtigsten BGE-Entscheide zum Kindesunterhalt</h2>
+
+    <p class="text-gray-700 mb-6">Die folgende Tabelle fasst die wichtigsten Bundesgerichtsentscheide zusammen, die das Kindesunterhaltsrecht massgeblich geprägt haben.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">BGE / Entscheid</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Thema</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kernaussage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 147 III 265</td>
+                    <td class="px-6 py-4 text-gray-700">Zweistufig-konkrete Methode</td>
+                    <td class="px-6 py-4 text-gray-700">Verbindliche Festlegung der zweistufig-konkreten Methode mit Überschussverteilung als schweizweit einheitliche Berechnungsmethode für alle Unterhaltsarten.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 144 III 481</td>
+                    <td class="px-6 py-4 text-gray-700">Schulstufenmodell</td>
+                    <td class="px-6 py-4 text-gray-700">Einführung des Schulstufenmodells: 50 % ab Einschulung, 80 % ab Sekundarstufe, 100 % ab 16 Jahren. Massgebend ist das jüngste Kind.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 147 III 308</td>
+                    <td class="px-6 py-4 text-gray-700">Übergangsfristen</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Stufenwechseln im Schulstufenmodell sind angemessene Übergangsfristen zu gewähren. Konkretisierung der Zumutbarkeit.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 143 III 233</td>
+                    <td class="px-6 py-4 text-gray-700">Hypothetisches Einkommen</td>
+                    <td class="px-6 py-4 text-gray-700">Zwei kumulative Voraussetzungen: Zumutbarkeit und tatsächliche Möglichkeit der Erzielung des angerechneten Einkommens.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 137 III 118</td>
+                    <td class="px-6 py-4 text-gray-700">Hypothetisches Einkommen (Ergänzung)</td>
+                    <td class="px-6 py-4 text-gray-700">Der Nachweis konkreter Stellenangebote ist nicht zwingend, aber die Arbeitsmarktsituation muss realistisch gewürdigt werden.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 5A_936/2022</td>
+                    <td class="px-6 py-4 text-gray-700">Überschussverteilung</td>
+                    <td class="px-6 py-4 text-gray-700">Der Überschussanteil des Kindes darf nicht pauschal begrenzt werden; bei hohen Einkommen ist aber eine Sparquote zu berücksichtigen.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 130 III 585</td>
+                    <td class="px-6 py-4 text-gray-700">Mündigenunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Unterhaltspflicht für volljährige Kinder bis Abschluss der Erstausbildung. Anforderungen an Zielstrebigkeit und Eigenleistung.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 117 II 127</td>
+                    <td class="px-6 py-4 text-gray-700">Ausbildungswechsel</td>
+                    <td class="px-6 py-4 text-gray-700">Ein einmaliger Ausbildungswechsel zu Beginn beendet den Unterhaltsanspruch nicht. Mehrfache Abbrüche können zum Wegfall führen.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 148 III 353</td>
+                    <td class="px-6 py-4 text-gray-700">Betreuungsunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Betreuungsunterhalt wird nach der Lebenshaltungskostenmethode berechnet: Differenz zwischen Existenzminimum und (hypothetischem) Einkommen des betreuenden Elternteils.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 147 III 457</td>
+                    <td class="px-6 py-4 text-gray-700">Alternierende Obhut und Unterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Bei alternierender Obhut entfällt die Unterhaltspflicht nicht automatisch. Ausgleichszahlung bei ungleichen Einkommen geschuldet.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 5A_743/2017</td>
+                    <td class="px-6 py-4 text-gray-700">Mankoteilung unverheiratete Eltern</td>
+                    <td class="px-6 py-4 text-gray-700">Das Manko wird bei unverheirateten Eltern dem betreuenden Elternteil allein zugewiesen (keine Beistandspflicht).</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 5A_311/2019</td>
+                    <td class="px-6 py-4 text-gray-700">Anrechnung Kinderrenten</td>
+                    <td class="px-6 py-4 text-gray-700">IV-Kinderrenten und AHV-Kinderrenten sind auf den Barunterhalt anzurechnen (Art. 285a ZGB). Sie ersetzen den Barunterhalt teilweise oder ganz.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 18. Anwalt-Sektion -->
+    <section id="anwalt" class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">18. Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">Die Berechnung des Kindesunterhalts nach der zweistufig-konkreten Methode ist technisch anspruchsvoll und fehleranfällig. Bereits kleine Ungenauigkeiten bei der Bedarfsermittlung oder der Einkommensberechnung können über die gesamte Unterhaltsdauer zu Differenzen von mehreren zehntausend Franken führen. Zudem sind viele Fragen – etwa zur Anrechenbarkeit eines hypothetischen Einkommens, zur Mankoteilung oder zum Schulstufenmodell – von der aktuellen Rechtsprechung abhängig und erfordern juristisches Fachwissen.</p>
+
+        <p class="text-gray-700 mb-6">Besonders bei folgenden Konstellationen ist die Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> dringend empfohlen: bei strittiger Unterhaltsberechnung, wenn ein hypothetisches Einkommen angerechnet werden soll, bei der Abänderung eines bestehenden Unterhaltstitels, bei einem Mankofall mit komplexer Verteilung, bei alternierender Obhut, bei Unterhalt für volljährige Kinder sowie bei Durchsetzungsproblemen (Inkasso, Schuldneranweisung, Strafanzeige).</p>
+
+        <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> stellt sicher, dass alle massgeblichen Einkommens- und Bedarfspositionen korrekt erfasst werden und die aktuelle Rechtsprechung angewandt wird. Auch bei einvernehmlichen Lösungen empfiehlt es sich, die Berechnung durch einen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> überprüfen zu lassen – denn der einmal festgesetzte Unterhalt wirkt über Jahre und lässt sich nur unter strengen Voraussetzungen abändern.</p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihres Kindesunterhalts</h3>
+            <p class="mb-6">Lassen Sie Ihren Kindesunterhalt von einem spezialisierten Familienrechtsanwalt überprüfen. Wir analysieren Ihre Situation und zeigen Ihnen, ob der berechnete Unterhalt korrekt ist – oder ob Anpassungsbedarf besteht.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- 19. Fazit -->
+    <h2 id="fazit" class="text-3xl font-serif font-bold text-navy mb-6">19. Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Der Kindesunterhalt im Schweizer Recht ist seit der Revision 2017 und den richtungsweisenden Bundesgerichtsentscheiden grundlegend neu strukturiert. Die zweistufig-konkrete Methode (BGE 147 III 265) hat die Berechnung vereinheitlicht, das Schulstufenmodell (BGE 144 III 481) klare Massstäbe für die Erwerbsobliegenheit gesetzt, und die drei Komponenten – Barunterhalt, Betreuungsunterhalt und Überschussanteil – bilden ein differenziertes System, das den Interessen des Kindes Vorrang einräumt (Art. 276a ZGB).</p>
+
+    <p class="text-gray-700 mb-6">Trotz dieser klaren Grundlagen bleibt die konkrete Berechnung komplex: Hypothetische Einkommen, Mankoteilung, alternierende Obhut und steuerliche Folgen erfordern eine sorgfältige Analyse des Einzelfalls. Der Kindesunterhalt wirkt über viele Jahre – eine korrekte Erstfestsetzung ist daher ebenso wichtig wie die rechtzeitige Abänderung bei veränderten Verhältnissen. Bei allen offenen Fragen ist die frühzeitige anwaltliche Beratung der sicherste Weg, um die Rechte des Kindes und die eigenen Interessen zu wahren.</p>
+
+    <!-- 20. FAQ -->
+    <section id="faq" class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">20. Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie hoch ist der Kindesunterhalt in der Schweiz?</h3>
+                <p class="text-gray-700">Der Kindesunterhalt wird individuell berechnet und hängt von den Einkommen beider Eltern, dem konkreten Bedarf des Kindes und dessen Alter ab. Als grobe Richtwerte gelten ca. 15–17 % des Nettoeinkommens des Pflichtigen für ein Kind und 25–27 % für zwei Kinder. Massgebend ist seit BGE 147 III 265 die zweistufig-konkrete Methode mit Überschussverteilung. Gemäss Zürcher Kinderkostentabelle liegen die direkten Kinderkosten je nach Alter zwischen CHF 900 und CHF 1'800 pro Monat, zuzüglich Betreuungsunterhalt und Überschussanteil.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie wird der Kindesunterhalt berechnet?</h3>
+                <p class="text-gray-700">Die Berechnung erfolgt nach der zweistufig-konkreten Methode (BGE 147 III 265): Auf Stufe 1 werden die Einkommen beider Eltern und der konkrete Bedarf aller Familienmitglieder ermittelt. Auf Stufe 2 werden zunächst die Existenzminima gedeckt, dann der verbleibende Überschuss nach dem Prinzip der «grossen und kleinen Köpfe» verteilt. Der Kindesunterhalt setzt sich aus Barunterhalt (direkte Kosten), Betreuungsunterhalt (Erwerbseinbusse des betreuenden Elternteils) und Überschussanteil zusammen (Art. 285 ZGB).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie lange muss man Kindesunterhalt zahlen?</h3>
+                <p class="text-gray-700">Die Unterhaltspflicht dauert grundsätzlich bis zur Volljährigkeit (18 Jahre). Befindet sich das Kind jedoch noch in einer angemessenen Erstausbildung (Lehre, Studium), besteht die Pflicht fort, sofern dies den Eltern zugemutet werden kann (Art. 277 Abs. 2 ZGB). Bei einem regulären Studium endet die Pflicht typischerweise mit ca. 25–27 Jahren. Ab Volljährigkeit wird nur noch Barunterhalt geschuldet – der Betreuungsunterhalt entfällt.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Betreuungsunterhalt?</h3>
+                <p class="text-gray-700">Der Betreuungsunterhalt (Art. 285 Abs. 2 ZGB) deckt die Erwerbseinbusse des Elternteils, der das Kind persönlich betreut und deshalb nicht voll erwerbstätig sein kann. Er wird nach der Lebenshaltungskostenmethode berechnet: Differenz zwischen dem familienrechtlichen Existenzminimum des betreuenden Elternteils und dessen tatsächlichem oder hypothetischem Einkommen. Der Betreuungsunterhalt ist formell Kindesunterhalt, kommt aber wirtschaftlich dem betreuenden Elternteil zugute. Er steht seit 2017 allen Eltern zu – unabhängig vom Zivilstand.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert, wenn der Vater keinen Unterhalt zahlt?</h3>
+                <p class="text-gray-700">Bei Nichtzahlung stehen mehrere Mittel zur Verfügung: Inkassohilfe durch das Gemeinwesen (Art. 290 ZGB), Alimentenbevorschussung durch den Kanton, Betreibung mit definitiver Rechtsöffnung, Schuldneranweisung an den Arbeitgeber (Art. 291 ZGB) und Strafanzeige wegen Vernachlässigung der Unterhaltspflicht (Art. 217 StGB). Seit 2022 ist dies ein Offizialdelikt – die Strafverfolgung erfolgt von Amtes wegen. Die Strafe beträgt bis zu 3 Jahre Freiheitsstrafe oder Geldstrafe.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann der Kindesunterhalt geändert werden?</h3>
+                <p class="text-gray-700">Ja. Der Kindesunterhalt kann jederzeit abgeändert werden, wenn sich die Verhältnisse erheblich und dauerhaft verändert haben (Art. 286 Abs. 2 ZGB). Typische Gründe sind: Einkommensveränderung (Arbeitslosigkeit, Beförderung), Wechsel der Betreuungssituation, Schulstufenwechsel des Kindes, Geburt weiterer Kinder oder Volljährigkeit. Die Abänderung erfolgt durch Klage oder bei Einigung durch KESB-genehmigten Vertrag. Bis zum neuen Entscheid bleibt der bestehende Betrag geschuldet.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist das Schulstufenmodell?</h3>
+                <p class="text-gray-700">Das Schulstufenmodell (BGE 144 III 481) bestimmt, ab wann dem betreuenden Elternteil eine (erhöhte) Erwerbstätigkeit zugemutet wird: 0 % bis Schuleintritt, 50 % ab Einschulung (ca. 4–6 Jahre), 80 % ab Sekundarstufe (ca. 12–13 Jahre), 100 % ab 16 Jahren. Massgebend ist das Alter des jüngsten Kindes. Bei Stufenwechseln sind Übergangsfristen von 6–12 Monaten üblich. Das Modell gilt schweizweit einheitlich.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Muss ich auch Unterhalt zahlen, wenn ich das Kind zur Hälfte betreue?</h3>
+                <p class="text-gray-700">Ja, alternierende Obhut (50/50-Betreuung) befreit nicht automatisch von der Unterhaltspflicht. Wenn die Einkommen der Eltern unterschiedlich hoch sind, muss der besser verdienende Elternteil eine Ausgleichszahlung leisten, damit das Kind in beiden Haushalten einen vergleichbaren Lebensstandard hat (BGE 147 III 265, E. 5.5). Die Berechnung erfolgt ebenfalls nach der zweistufig-konkreten Methode.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist ein Mankofall beim Kindesunterhalt?</h3>
+                <p class="text-gray-700">Ein Mankofall liegt vor, wenn die Gesamteinkommen beider Eltern nicht ausreichen, um alle Existenzminima zu decken. In diesem Fall wird dem Unterhaltspflichtigen sein betreibungsrechtliches Existenzminimum belassen. Bei verheirateten Eltern wird das Manko hälftig geteilt, bei unverheirateten Eltern trägt der betreuende Elternteil das Manko allein (BGE 147 III 265, E. 7.4). Die Differenz kann durch Sozialhilfe gedeckt werden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich den Kindesunterhalt von den Steuern abziehen?</h3>
+                <p class="text-gray-700">Ja, der zahlende Elternteil kann Kindesunterhaltsbeiträge (Bar- und Betreuungsunterhalt) für minderjährige Kinder vollständig vom steuerbaren Einkommen abziehen (Art. 33 Abs. 1 lit. c DBG). Im Gegenzug muss der empfangende Elternteil die erhaltenen Alimente als Einkommen versteuern (Korrespondenzprinzip). Unterhalt an volljährige Kinder ist hingegen nicht abzugsfähig – hier kann nur der Unterstützungsabzug geltend gemacht werden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist die zweistufig-konkrete Methode?</h3>
+                <p class="text-gray-700">Die zweistufig-konkrete Methode (BGE 147 III 265) ist die seit 2020 schweizweit verbindliche Berechnungsmethode für alle Unterhaltsarten. Auf Stufe 1 werden die tatsächlichen Einkommen und der konkrete Bedarf aller Familienmitglieder ermittelt. Auf Stufe 2 werden zuerst die Existenzminima gedeckt, anschliessend wird der Überschuss nach Köpfen verteilt (Erwachsene je 2 Anteile, Kinder je 1 Anteil). Abstrakte Methoden wie Quotenberechnungen sind nicht mehr zulässig.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Müssen unverheiratete Väter auch Kindesunterhalt zahlen?</h3>
+                <p class="text-gray-700">Ja, seit der Revision 2017 sind Kinder verheirateter und unverheirateter Eltern im Unterhaltsrecht vollständig gleichgestellt. Der Vater schuldet Barunterhalt, Betreuungsunterhalt und Überschussanteil – unabhängig davon, ob er mit der Mutter verheiratet ist (Art. 276 ff. ZGB). Voraussetzung ist die rechtliche Vaterschaft durch Anerkennung (Art. 260 ZGB) oder Vaterschaftsklage (Art. 261 ZGB). Der Unterhalt wird durch KESB-genehmigten Vertrag oder gerichtliches Urteil festgesetzt.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie hoch ist der Kindesunterhalt bei einem Einkommen von CHF 5'000?</h3>
+                <p class="text-gray-700">Bei einem Nettoeinkommen von CHF 5'000 ist eine pauschale Angabe nicht möglich, da der Unterhalt individuell nach der zweistufig-konkreten Methode berechnet wird. Massgebend sind auch das Einkommen des anderen Elternteils, der konkrete Bedarf des Kindes und das Existenzminimum des Pflichtigen. Als grober Anhaltspunkt: Bei einem Kind und einem betreuenden Elternteil mit geringem Einkommen liegt der Gesamtunterhalt (Bar + Betreuung) typischerweise bei CHF 1'500–2'200 pro Monat, sofern das Existenzminimum des Pflichtigen gewahrt bleibt.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Bis wann müssen Eltern für das Studium der Kinder aufkommen?</h3>
+                <p class="text-gray-700">Die Unterhaltspflicht dauert bis zum Abschluss der angemessenen Erstausbildung (Art. 277 Abs. 2 ZGB). Bei einem regulären Studium (Bachelor/Master) endet sie typischerweise mit ca. 25–27 Jahren (BGE 130 III 585). Voraussetzung ist, dass das Kind die Ausbildung zielstrebig betreibt und dies den Eltern zumutbar ist. Ein einmaliger Studienwechsel wird toleriert (BGE 117 II 127). Das volljährige Kind muss den Unterhalt im eigenen Namen geltend machen und eigene Anstrengungen unternehmen (Stipendien, Nebenjob).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist ein hypothetisches Einkommen?</h3>
+                <p class="text-gray-700">Ein hypothetisches Einkommen wird angerechnet, wenn ein Elternteil weniger arbeitet als ihm zumutbar wäre. Zwei Voraussetzungen müssen kumulativ erfüllt sein: Die Erzielung des höheren Einkommens muss zumutbar und tatsächlich möglich sein (BGE 143 III 233). Das Gericht gewährt in der Regel eine Übergangsfrist von 3–12 Monaten. Die Anrechnung dient dazu, eine freiwillige Unterbeschäftigung zulasten des unterhaltsberechtigten Kindes zu verhindern.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Hat der Kindesunterhalt Vorrang vor dem Ehegattenunterhalt?</h3>
+                <p class="text-gray-700">Ja. Seit der Revision 2017 hat der Unterhalt des minderjährigen Kindes absoluten Vorrang vor allen anderen familienrechtlichen Unterhaltspflichten (Art. 276a Abs. 1 ZGB). Reicht das Einkommen nicht für alle Ansprüche, wird zuerst der Kindesunterhalt vollständig gedeckt, bevor ein nachehelicher Ehegattenunterhalt (Art. 125 ZGB) zugesprochen wird. Dies kann dazu führen, dass bei tiefen Einkommen kein Ehegattenunterhalt mehr möglich ist.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Kindesunterhalt in der Schweiz",
+        "description": "Kindesunterhalt berechnen: Barunterhalt, Betreuungsunterhalt, zweistufige Methode & Schulstufenmodell. Mit BGE-Rechtsprechung, Beispielen & Kinderkostentabelle.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2026-02-11",
+        "dateModified": "2026-02-11",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/unterhalt/kindesunterhalt"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Wie hoch ist der Kindesunterhalt in der Schweiz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der Kindesunterhalt wird individuell berechnet und hängt von den Einkommen beider Eltern, dem konkreten Bedarf des Kindes und dessen Alter ab. Als grobe Richtwerte gelten ca. 15–17 % des Nettoeinkommens des Pflichtigen für ein Kind und 25–27 % für zwei Kinder. Massgebend ist seit BGE 147 III 265 die zweistufig-konkrete Methode mit Überschussverteilung. Gemäss Zürcher Kinderkostentabelle liegen die direkten Kinderkosten je nach Alter zwischen CHF 900 und CHF 1'800 pro Monat, zuzüglich Betreuungsunterhalt und Überschussanteil."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie wird der Kindesunterhalt berechnet?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Berechnung erfolgt nach der zweistufig-konkreten Methode (BGE 147 III 265): Auf Stufe 1 werden die Einkommen beider Eltern und der konkrete Bedarf aller Familienmitglieder ermittelt. Auf Stufe 2 werden zunächst die Existenzminima gedeckt, dann der verbleibende Überschuss nach dem Prinzip der «grossen und kleinen Köpfe» verteilt. Der Kindesunterhalt setzt sich aus Barunterhalt (direkte Kosten), Betreuungsunterhalt (Erwerbseinbusse des betreuenden Elternteils) und Überschussanteil zusammen (Art. 285 ZGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie lange muss man Kindesunterhalt zahlen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Unterhaltspflicht dauert grundsätzlich bis zur Volljährigkeit (18 Jahre). Befindet sich das Kind jedoch noch in einer angemessenen Erstausbildung (Lehre, Studium), besteht die Pflicht fort, sofern dies den Eltern zugemutet werden kann (Art. 277 Abs. 2 ZGB). Bei einem regulären Studium endet die Pflicht typischerweise mit ca. 25–27 Jahren. Ab Volljährigkeit wird nur noch Barunterhalt geschuldet – der Betreuungsunterhalt entfällt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist der Betreuungsunterhalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der Betreuungsunterhalt (Art. 285 Abs. 2 ZGB) deckt die Erwerbseinbusse des Elternteils, der das Kind persönlich betreut und deshalb nicht voll erwerbstätig sein kann. Er wird nach der Lebenshaltungskostenmethode berechnet: Differenz zwischen dem familienrechtlichen Existenzminimum des betreuenden Elternteils und dessen tatsächlichem oder hypothetischem Einkommen. Der Betreuungsunterhalt ist formell Kindesunterhalt, kommt aber wirtschaftlich dem betreuenden Elternteil zugute. Er steht seit 2017 allen Eltern zu – unabhängig vom Zivilstand."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert, wenn der Vater keinen Unterhalt zahlt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei Nichtzahlung stehen mehrere Mittel zur Verfügung: Inkassohilfe durch das Gemeinwesen (Art. 290 ZGB), Alimentenbevorschussung durch den Kanton, Betreibung mit definitiver Rechtsöffnung, Schuldneranweisung an den Arbeitgeber (Art. 291 ZGB) und Strafanzeige wegen Vernachlässigung der Unterhaltspflicht (Art. 217 StGB). Seit 2022 ist dies ein Offizialdelikt – die Strafverfolgung erfolgt von Amtes wegen. Die Strafe beträgt bis zu 3 Jahre Freiheitsstrafe oder Geldstrafe."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann der Kindesunterhalt geändert werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja. Der Kindesunterhalt kann jederzeit abgeändert werden, wenn sich die Verhältnisse erheblich und dauerhaft verändert haben (Art. 286 Abs. 2 ZGB). Typische Gründe sind: Einkommensveränderung (Arbeitslosigkeit, Beförderung), Wechsel der Betreuungssituation, Schulstufenwechsel des Kindes, Geburt weiterer Kinder oder Volljährigkeit. Die Abänderung erfolgt durch Klage oder bei Einigung durch KESB-genehmigten Vertrag. Bis zum neuen Entscheid bleibt der bestehende Betrag geschuldet."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist das Schulstufenmodell?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das Schulstufenmodell (BGE 144 III 481) bestimmt, ab wann dem betreuenden Elternteil eine (erhöhte) Erwerbstätigkeit zugemutet wird: 0 % bis Schuleintritt, 50 % ab Einschulung (ca. 4–6 Jahre), 80 % ab Sekundarstufe (ca. 12–13 Jahre), 100 % ab 16 Jahren. Massgebend ist das Alter des jüngsten Kindes. Bei Stufenwechseln sind Übergangsfristen von 6–12 Monaten üblich. Das Modell gilt schweizweit einheitlich."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Muss ich auch Unterhalt zahlen, wenn ich das Kind zur Hälfte betreue?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, alternierende Obhut (50/50-Betreuung) befreit nicht automatisch von der Unterhaltspflicht. Wenn die Einkommen der Eltern unterschiedlich hoch sind, muss der besser verdienende Elternteil eine Ausgleichszahlung leisten, damit das Kind in beiden Haushalten einen vergleichbaren Lebensstandard hat (BGE 147 III 265, E. 5.5). Die Berechnung erfolgt ebenfalls nach der zweistufig-konkreten Methode."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist ein Mankofall beim Kindesunterhalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ein Mankofall liegt vor, wenn die Gesamteinkommen beider Eltern nicht ausreichen, um alle Existenzminima zu decken. In diesem Fall wird dem Unterhaltspflichtigen sein betreibungsrechtliches Existenzminimum belassen. Bei verheirateten Eltern wird das Manko hälftig geteilt, bei unverheirateten Eltern trägt der betreuende Elternteil das Manko allein (BGE 147 III 265, E. 7.4). Die Differenz kann durch Sozialhilfe gedeckt werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich den Kindesunterhalt von den Steuern abziehen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, der zahlende Elternteil kann Kindesunterhaltsbeiträge (Bar- und Betreuungsunterhalt) für minderjährige Kinder vollständig vom steuerbaren Einkommen abziehen (Art. 33 Abs. 1 lit. c DBG). Im Gegenzug muss der empfangende Elternteil die erhaltenen Alimente als Einkommen versteuern (Korrespondenzprinzip). Unterhalt an volljährige Kinder ist hingegen nicht abzugsfähig – hier kann nur der Unterstützungsabzug geltend gemacht werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist die zweistufig-konkrete Methode?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die zweistufig-konkrete Methode (BGE 147 III 265) ist die seit 2020 schweizweit verbindliche Berechnungsmethode für alle Unterhaltsarten. Auf Stufe 1 werden die tatsächlichen Einkommen und der konkrete Bedarf aller Familienmitglieder ermittelt. Auf Stufe 2 werden zuerst die Existenzminima gedeckt, anschliessend wird der Überschuss nach Köpfen verteilt (Erwachsene je 2 Anteile, Kinder je 1 Anteil). Abstrakte Methoden wie Quotenberechnungen sind nicht mehr zulässig."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Müssen unverheiratete Väter auch Kindesunterhalt zahlen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, seit der Revision 2017 sind Kinder verheirateter und unverheirateter Eltern im Unterhaltsrecht vollständig gleichgestellt. Der Vater schuldet Barunterhalt, Betreuungsunterhalt und Überschussanteil – unabhängig davon, ob er mit der Mutter verheiratet ist (Art. 276 ff. ZGB). Voraussetzung ist die rechtliche Vaterschaft durch Anerkennung (Art. 260 ZGB) oder Vaterschaftsklage (Art. 261 ZGB). Der Unterhalt wird durch KESB-genehmigten Vertrag oder gerichtliches Urteil festgesetzt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie hoch ist der Kindesunterhalt bei einem Einkommen von CHF 5'000?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei einem Nettoeinkommen von CHF 5'000 ist eine pauschale Angabe nicht möglich, da der Unterhalt individuell nach der zweistufig-konkreten Methode berechnet wird. Massgebend sind auch das Einkommen des anderen Elternteils, der konkrete Bedarf des Kindes und das Existenzminimum des Pflichtigen. Als grober Anhaltspunkt: Bei einem Kind und einem betreuenden Elternteil mit geringem Einkommen liegt der Gesamtunterhalt (Bar + Betreuung) typischerweise bei CHF 1'500–2'200 pro Monat, sofern das Existenzminimum des Pflichtigen gewahrt bleibt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bis wann müssen Eltern für das Studium der Kinder aufkommen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Unterhaltspflicht dauert bis zum Abschluss der angemessenen Erstausbildung (Art. 277 Abs. 2 ZGB). Bei einem regulären Studium (Bachelor/Master) endet sie typischerweise mit ca. 25–27 Jahren (BGE 130 III 585). Voraussetzung ist, dass das Kind die Ausbildung zielstrebig betreibt und dies den Eltern zumutbar ist. Ein einmaliger Studienwechsel wird toleriert (BGE 117 II 127). Das volljährige Kind muss den Unterhalt im eigenen Namen geltend machen und eigene Anstrengungen unternehmen (Stipendien, Nebenjob)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist ein hypothetisches Einkommen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ein hypothetisches Einkommen wird angerechnet, wenn ein Elternteil weniger arbeitet als ihm zumutbar wäre. Zwei Voraussetzungen müssen kumulativ erfüllt sein: Die Erzielung des höheren Einkommens muss zumutbar und tatsächlich möglich sein (BGE 143 III 233). Das Gericht gewährt in der Regel eine Übergangsfrist von 3–12 Monaten. Die Anrechnung dient dazu, eine freiwillige Unterbeschäftigung zulasten des unterhaltsberechtigten Kindes zu verhindern."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Hat der Kindesunterhalt Vorrang vor dem Ehegattenunterhalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja. Seit der Revision 2017 hat der Unterhalt des minderjährigen Kindes absoluten Vorrang vor allen anderen familienrechtlichen Unterhaltspflichten (Art. 276a Abs. 1 ZGB). Reicht das Einkommen nicht für alle Ansprüche, wird zuerst der Kindesunterhalt vollständig gedeckt, bevor ein nachehelicher Ehegattenunterhalt (Art. 125 ZGB) zugesprochen wird. Dies kann dazu führen, dass bei tiefen Einkommen kein Ehegattenunterhalt mehr möglich ist."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Unterhalt",
+                "item": "https://familienrechtanwalt.ch/unterhalt"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Kindesunterhalt in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/unterhalt/kindesunterhalt"
+            }
+        ]
+    })} />
+
+</ArticleLayout>

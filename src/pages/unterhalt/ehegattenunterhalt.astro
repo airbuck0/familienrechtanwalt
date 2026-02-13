@@ -3,15 +3,44 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 ---
 
 <ArticleLayout
-    title="Ehegattenunterhalt in der Schweiz"
-    description="Ehegattenunterhalt in der Schweiz: Rechtliche Grundlagen, Berechnung und Ansprüche. Trennungsunterhalt und nachehelicher Unterhalt erklärt."
-    keywords="Ehegattenunterhalt Schweiz, Trennungsunterhalt, nachehelicher Unterhalt, Art. 125 ZGB, Unterhaltsberechnung"
+    title="Ehegattenunterhalt in der Schweiz: Anspruch, Berechnung & Dauer nach BGE"
+    description="Ehegattenunterhalt Schweiz: Voraussetzungen nach Art. 125 ZGB, lebensprägende Ehe (BGE 147 III 249), zweistufige Methode & Abschaffung der 45er-Regel. Umfassender Leitfaden."
+    keywords="Ehegattenunterhalt Schweiz, nachehelicher Unterhalt, Art. 125 ZGB, lebensprägende Ehe, Trennungsunterhalt, BGE 147 III 293, Eigenversorgung"
     category="Unterhalt"
     categoryLink="/unterhalt"
 >
-    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Der Ehegattenunterhalt ist ein zentrales Thema bei Trennung und Scheidung. Er umfasst sowohl den Unterhalt während der Ehe und bei Trennung (Trennungsunterhalt) als auch den Unterhalt nach der Scheidung (nachehelicher Unterhalt).</p>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Grundsatz der Eigenversorgung:</strong> Nach der Scheidung soll jeder Ehegatte grundsätzlich für sich selbst sorgen – der Unterhaltsanspruch ist die Ausnahme (Art. 125 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Lebensprägende Ehe:</strong> Ein Unterhaltsanspruch setzt voraus, dass die Ehe die wirtschaftliche Situation eines Ehegatten konkret beeinflusst hat (keine automatische Vermutung mehr bei 10 Jahren oder Kindern nach BGE 147 III 249).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>45er-Regel abgeschafft:</strong> Die frühere Regel, wonach ab 45 Jahren keine Erwerbsobliegenheit mehr bestand, gilt nicht mehr (BGE 147 III 308).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Zweistufige Methode:</strong> Die Berechnung erfolgt schweizweit einheitlich nach der zweistufigen Methode mit Überschussverteilung (BGE 147 III 293).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Erlöschen:</strong> Der Anspruch erlischt bei Wiederverheiratung automatisch, bei qualifiziertem Konkubinat (ab ca. 5 Jahren) vollständig und endgültig (BGE 138 III 97).</span>
+            </li>
+        </ul>
+    </div>
+
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Der Ehegattenunterhalt ist eines der komplexesten und am häufigsten strittigen Themen bei Scheidungen in der Schweiz. Die bundesgerichtliche Rechtsprechung hat sich in den letzten Jahren grundlegend gewandelt: Die «45er-Regel» wurde abgeschafft, die Vermutungen zur lebensprägenden Ehe relativiert und die Erwerbsobliegenheit verstärkt. Dieser umfassende Leitfaden erklärt die aktuellen Voraussetzungen, die Berechnung und die Dauer des Ehegattenunterhalts nach neuester Rechtsprechung.</p>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Arten des Ehegattenunterhalts</h2>
+
+    <p class="text-gray-700 mb-4">Das Schweizer Recht unterscheidet verschiedene Arten des Ehegattenunterhalts je nach Phase der Ehe:</p>
 
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-200">
@@ -20,6 +49,7 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
                     <th class="px-6 py-3 text-left text-sm font-semibold">Art</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Phase</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Grundsatz</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
@@ -27,29 +57,30 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
                     <td class="px-6 py-4 font-semibold text-navy">Ehelicher Unterhalt</td>
                     <td class="px-6 py-4 text-gray-700">Während aufrechter Ehe</td>
                     <td class="px-6 py-4 text-gray-700">Art. 163 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Gemeinsamer Familienunterhalt</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">Trennungsunterhalt</td>
-                    <td class="px-6 py-4 text-gray-700">Bei Getrenntleben</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Getrenntleben (Eheschutz)</td>
                     <td class="px-6 py-4 text-gray-700">Art. 176 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Gleichwertiges Leben</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Nachehelicher Unterhalt</td>
-                    <td class="px-6 py-4 text-gray-700">Nach Scheidung</td>
+                    <td class="px-6 py-4 text-gray-700">Nach rechtskräftiger Scheidung</td>
                     <td class="px-6 py-4 text-gray-700">Art. 125 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Eigenversorgung</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen</h2>
-
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy">Art. 163 ZGB - Unterhalt der Familie:</p>
-        <p class="text-gray-700 italic">"Die Ehegatten sorgen gemeinsam, ein jeder nach seinen Kräften, für den gebührenden Unterhalt der Familie."</p>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Art. 125 Abs. 1 ZGB:</p>
+        <p class="text-gray-700 italic">«Ist einem Ehegatten nicht zuzumuten, dass er für den ihm gebührenden Unterhalt unter Einschluss einer angemessenen Altersvorsorge selbst aufkommt, so hat ihm der andere einen angemessenen Beitrag zu leisten.»</p>
     </div>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Übersicht der relevanten Gesetzesbestimmungen</h3>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen</h2>
 
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-200">
@@ -57,70 +88,260 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Artikel</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Thema</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Inhalt</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Art. 125 ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Grundsatz des nachehelichen Unterhalts</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 125 Abs. 1 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Grundsatz</td>
+                    <td class="px-6 py-4 text-gray-700">Anspruchsvoraussetzungen nachehelicher Unterhalt</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 125 Abs. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Bemessungskriterien</td>
+                    <td class="px-6 py-4 text-gray-700">8 Faktoren für Höhe und Dauer</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 125 Abs. 3 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Verweigerung/Kürzung</td>
+                    <td class="px-6 py-4 text-gray-700">Gründe für Herabsetzung oder Verweigerung</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">Art. 126 ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Unterhaltsrente oder Kapitalabfindung</td>
+                    <td class="px-6 py-4 text-gray-700">Form</td>
+                    <td class="px-6 py-4 text-gray-700">Rente oder Kapitalabfindung</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Art. 129 ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Abänderung des Unterhalts</td>
+                    <td class="px-6 py-4 text-gray-700">Abänderung</td>
+                    <td class="px-6 py-4 text-gray-700">Anpassung bei veränderten Verhältnissen</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">Art. 130 ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Erlöschen des Unterhaltsanspruchs</td>
+                    <td class="px-6 py-4 text-gray-700">Erlöschen</td>
+                    <td class="px-6 py-4 text-gray-700">Automatisches Ende bei Wiederverheiratung</td>
                 </tr>
                 <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 131 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Inkassohilfe</td>
+                    <td class="px-6 py-4 text-gray-700">Kantonale Unterstützung bei Eintreibung</td>
+                </tr>
+                <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">Art. 132 ZGB</td>
                     <td class="px-6 py-4 text-gray-700">Schuldneranweisung</td>
+                    <td class="px-6 py-4 text-gray-700">Direktzahlung durch Arbeitgeber</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Voraussetzungen für einen Unterhaltsanspruch</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Voraussetzungen für nachehelichen Unterhalt</h2>
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Grundsatz der Eigenversorgung</h3>
-    <p class="text-gray-700 mb-6">Das Schweizer Recht geht vom Grundsatz aus, dass jeder Ehegatte nach der Scheidung für sich selbst sorgen soll. Der Unterhaltsanspruch ist die Ausnahme, nicht die Regel.</p>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Lebensprägende Ehe</h3>
-    <p class="text-gray-700 mb-4">Ein Unterhaltsanspruch setzt in der Regel eine "lebensprägende Ehe" voraus. Diese liegt typischerweise vor bei:</p>
+    <p class="text-gray-700 mb-6">Das Schweizer Recht geht vom <strong>Grundsatz der Eigenversorgung</strong> aus: Jeder Ehegatte soll nach der Scheidung für sich selbst sorgen. Das Bundesgericht hat diesen Grundsatz in seiner jüngsten Rechtsprechung erheblich verstärkt (BGE 147 III 249). Der nacheheliche Unterhalt ist die <strong>Ausnahme</strong>, nicht die Regel.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Die lebensprägende Ehe – neue Rechtsprechung</h3>
+
+    <p class="text-gray-700 mb-4">Ein Unterhaltsanspruch setzt in der Regel eine «lebensprägende Ehe» voraus. Die früher geltenden <strong>Vermutungen wurden durch das Bundesgericht erheblich relativiert</strong>:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kriterium</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Frühere Praxis</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Neue Rechtsprechung (ab 2021)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Ehedauer über 10 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">Automatische Vermutung für Lebensprägung</td>
+                    <td class="px-6 py-4 text-gray-700">Keine automatische Vermutung mehr – Einzelfallprüfung (BGE 147 III 249)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Gemeinsame Kinder</td>
+                    <td class="px-6 py-4 text-gray-700">Automatische Vermutung für Lebensprägung</td>
+                    <td class="px-6 py-4 text-gray-700">Keine absolute Vermutung mehr – nur bei Rollenverteilung mit Erwerbsverzicht</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">45er-Regel</td>
+                    <td class="px-6 py-4 text-gray-700">Ab 45 Jahren keine Erwerbsobliegenheit mehr</td>
+                    <td class="px-6 py-4 text-gray-700">Abgeschafft (BGE 147 III 308) – Einzelfallprüfung</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">BGE 147 III 249 – Neue Massstäbe:</p>
+        <p class="text-gray-700">Das Bundesgericht betont, dass dem Umstand, ob eine lebensprägende oder eine nicht lebensprägende Ehe vorliegt, <strong>nicht die Funktion eines «Kippschalters»</strong> zukommt. Die bisher für das Vorliegen von Lebensprägung sprechenden Vermutungen haben keine absolute Geltung mehr. Entscheidend ist, ob die Ehe die <strong>wirtschaftliche Situation eines Ehegatten konkret beeinflusst</strong> hat.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wann liegt eine lebensprägende Ehe vor?</h3>
+
+    <p class="text-gray-700 mb-4">Eine Ehe gilt nach aktueller Rechtsprechung als lebensprägend, wenn:</p>
+
     <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Ehedauer über 10 Jahre</strong></li>
-        <li><strong>Gemeinsamen Kindern</strong> (auch bei kürzerer Ehedauer)</li>
-        <li><strong>Aufgabe der Erwerbstätigkeit</strong> zugunsten von Haushalt und Kindern</li>
-        <li><strong>Vollständiger Entwurzelung</strong> aus dem ursprünglichen Kulturkreis</li>
+        <li>Ein Ehegatte seine <strong>ökonomische Selbstständigkeit zugunsten von Haushaltsbesorgung und Kinderbetreuung aufgegeben</strong> hat</li>
+        <li>Es dem Ehegatten <strong>nach langjähriger Ehe nicht mehr möglich</strong> ist, an seine frühere berufliche Stellung anzuknüpfen</li>
+        <li>Eine <strong>vollständige Entwurzelung</strong> aus dem ursprünglichen Kulturkreis stattfand</li>
+        <li>Durch die eheliche <strong>Rollenverteilung konkrete wirtschaftliche Nachteile</strong> entstanden sind</li>
     </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Dreistufige Prüfung bei lebensprägender Ehe</h3>
+
+    <p class="text-gray-700 mb-4">Bei einer lebensprägenden Ehe prüft das Gericht den Unterhaltsanspruch in drei Schritten:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Stufe</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Prüfung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Massstab</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">1. Gebührender Unterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Feststellung des zuletzt gelebten ehelichen Standards</td>
+                    <td class="px-6 py-4 text-gray-700">Obergrenze und Zielgrösse des gebührenden Unterhalts</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">2. Eigenversorgungskapazität</td>
+                    <td class="px-6 py-4 text-gray-700">Kann der Ehegatte diesen Unterhalt selbst finanzieren?</td>
+                    <td class="px-6 py-4 text-gray-700">Erwerbsobliegenheit und hypothetisches Einkommen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">3. Nacheheliche Solidarität</td>
+                    <td class="px-6 py-4 text-gray-700">Leistungsfähigkeit des anderen Ehegatten</td>
+                    <td class="px-6 py-4 text-gray-700">Unterhaltsbeitrag nur bei fehlender Eigenversorgung</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Berechnung des Ehegattenunterhalts</h2>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Die zweistufige Methode</h3>
-    <p class="text-gray-700 mb-6">Mit dem Leitentscheid BGE 147 III 293 hat das Bundesgericht festgelegt, dass der Ehegattenunterhalt nach der zweistufigen Methode mit Überschussverteilung zu berechnen ist.</p>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Die zweistufige Methode (BGE 147 III 293)</h3>
 
-    <p class="text-gray-700 mb-4"><strong>Stufe 1: Bedarfsermittlung</strong></p>
-    <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
-        <li>Grundbetrag (betreibungsrechtliches Existenzminimum)</li>
-        <li>Wohnkosten</li>
-        <li>Krankenkassenprämien</li>
-        <li>Steuern</li>
-        <li>Berufsauslagen</li>
-    </ul>
+    <p class="text-gray-700 mb-6">Das Bundesgericht hat mit dem Leitentscheid BGE 147 III 293 die <strong>zweistufige Methode mit Überschussverteilung</strong> als schweizweit verbindliche Berechnungsmethode für alle Unterhaltsarten festgelegt.</p>
 
-    <p class="text-gray-700 mb-4"><strong>Stufe 2: Überschussverteilung</strong></p>
-    <p class="text-gray-700 mb-6">Der verbleibende Überschuss wird nach dem Prinzip der hälftigen Teilung verteilt.</p>
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-4">Stufe 1: Bedarfsermittlung</h4>
 
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy">Berechnungsformel:</p>
-        <p class="text-gray-700">Unterhaltsanspruch = (Bedarf + Überschussanteil) - Eigenes Einkommen</p>
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bedarfsposition</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Richtwerte 2025</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Grundbetrag</td>
+                    <td class="px-6 py-4 text-gray-700">Nahrung, Kleidung, Hygiene, Telefon</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'350 (alleinstehend)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Wohnkosten</td>
+                    <td class="px-6 py-4 text-gray-700">Miete inkl. Nebenkosten</td>
+                    <td class="px-6 py-4 text-gray-700">Effektiv</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Krankenversicherung</td>
+                    <td class="px-6 py-4 text-gray-700">Prämie Grundversicherung</td>
+                    <td class="px-6 py-4 text-gray-700">Effektiv (abzgl. Prämienverbilligung)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Berufsauslagen</td>
+                    <td class="px-6 py-4 text-gray-700">Arbeitsweg, Verpflegung, Berufskleidung</td>
+                    <td class="px-6 py-4 text-gray-700">Pauschal oder effektiv</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Steuern</td>
+                    <td class="px-6 py-4 text-gray-700">Geschätzte Steuerbelastung</td>
+                    <td class="px-6 py-4 text-gray-700">Berechnet</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-4">Stufe 2: Überschussverteilung</h4>
+
+    <p class="text-gray-700 mb-4">Nach Deckung des Grundbedarfs wird der verbleibende <strong>Überschuss hälftig</strong> auf die Ehegatten verteilt:</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Berechnungsformel:</p>
+        <p class="text-gray-700">Unterhaltsanspruch = (Bedarf + Überschussanteil) − Eigenes Einkommen</p>
+        <p class="text-gray-700 mt-2">Bei kinderlosen Paaren: 50/50-Teilung des Überschusses</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Bemessungskriterien nach Art. 125 Abs. 2 ZGB</h3>
+
+    <p class="text-gray-700 mb-4">Bei der Bestimmung von Höhe und Dauer des Unterhalts berücksichtigt das Gericht insbesondere:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Ziffer</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kriterium</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bedeutung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">1.</td>
+                    <td class="px-6 py-4 text-gray-700">Aufgabenteilung während der Ehe</td>
+                    <td class="px-6 py-4 text-gray-700">Wer hat Haushalt/Kinder übernommen?</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">2.</td>
+                    <td class="px-6 py-4 text-gray-700">Dauer der Ehe</td>
+                    <td class="px-6 py-4 text-gray-700">Je länger, desto eher Unterhalt</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">3.</td>
+                    <td class="px-6 py-4 text-gray-700">Lebensstellung während der Ehe</td>
+                    <td class="px-6 py-4 text-gray-700">Standard, an den sich beide gewöhnt haben</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">4.</td>
+                    <td class="px-6 py-4 text-gray-700">Alter und Gesundheitszustand</td>
+                    <td class="px-6 py-4 text-gray-700">Beeinflusst Erwerbsobliegenheit</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">5.</td>
+                    <td class="px-6 py-4 text-gray-700">Einkommen und Vermögen</td>
+                    <td class="px-6 py-4 text-gray-700">Leistungsfähigkeit und Bedarf</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">6.</td>
+                    <td class="px-6 py-4 text-gray-700">Umfang/Dauer Kinderbetreuung</td>
+                    <td class="px-6 py-4 text-gray-700">Beeinflusst Erwerbsmöglichkeit</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">7.</td>
+                    <td class="px-6 py-4 text-gray-700">Berufliche Ausbildung</td>
+                    <td class="px-6 py-4 text-gray-700">Eingliederungsmöglichkeiten</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">8.</td>
+                    <td class="px-6 py-4 text-gray-700">Altersvorsorge</td>
+                    <td class="px-6 py-4 text-gray-700">Ausgleich für Vorsorgelücken</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Dauer des Unterhaltsanspruchs</h2>
+
+    <p class="text-gray-700 mb-4">Art. 125 ZGB sieht keine gesetzliche Befristung vor. In der Praxis wird der Unterhalt jedoch <strong>meist befristet</strong> zugesprochen:</p>
 
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-200">
@@ -128,78 +349,188 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Situation</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Typische Dauer</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Begründung</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Kurze Ehe ohne Kinder</td>
-                    <td class="px-6 py-4 text-gray-700">Maximal Dauer der Ehe</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Kurze Ehe (unter 5 Jahre)</td>
+                    <td class="px-6 py-4 text-gray-700">In der Regel kein Unterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Keine Lebensprägung</td>
                 </tr>
                 <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Kurze Ehe ohne Kinder</td>
+                    <td class="px-6 py-4 text-gray-700">Maximal Dauer der Ehe</td>
+                    <td class="px-6 py-4 text-gray-700">Rückkehr zur Eigenversorgung</td>
+                </tr>
+                <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Mittlere Ehedauer, Kinder</td>
-                    <td class="px-6 py-4 text-gray-700">Bis Selbstständigkeit der Kinder</td>
+                    <td class="px-6 py-4 text-gray-700">Bis Kinder 16 Jahre (Erwerbsobliegenheit)</td>
+                    <td class="px-6 py-4 text-gray-700">Betreuungsunterhalt für Kinder</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Eingliederungsunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Dauer der Umschulung/Weiterbildung</td>
+                    <td class="px-6 py-4 text-gray-700">Übergang zur Eigenversorgung</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Lange Ehe, traditionelle Rollenverteilung</td>
-                    <td class="px-6 py-4 text-gray-700">Bis AHV-Alter</td>
-                </tr>
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Eingliederungsbedarf</td>
-                    <td class="px-6 py-4 text-gray-700">Für Dauer der Umschulung/Weiterbildung</td>
+                    <td class="px-6 py-4 text-gray-700">Bis AHV-Alter des Pflichtigen</td>
+                    <td class="px-6 py-4 text-gray-700">Wiedereingliederung nicht möglich</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kürzung und Verweigerung des Unterhalts</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kürzung und Verweigerung (Art. 125 Abs. 3 ZGB)</h2>
 
-    <p class="text-gray-700 mb-4">Nach Art. 125 Abs. 3 ZGB kann der Unterhaltsanspruch gekürzt oder verweigert werden, insbesondere wenn die berechtigte Person:</p>
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Ihre Pflicht, zum Unterhalt der Familie beizutragen, grob verletzt hat</li>
-        <li>Ihre Bedürftigkeit mutwillig herbeigeführt hat</li>
-        <li>Gegen die verpflichtete Person eine schwere Straftat begangen hat</li>
-    </ul>
+    <p class="text-gray-700 mb-4">Der Unterhalt kann <strong>ausgeschlossen oder gekürzt</strong> werden, wenn:</p>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Erlöschen des Unterhaltsanspruchs</h2>
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Verweigerungsgrund</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beispiel</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Grobe Verletzung der Unterhaltspflicht</td>
+                    <td class="px-6 py-4 text-gray-700">Hat während der Ehe nicht zum Familienunterhalt beigetragen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Mutwillige Herbeiführung der Bedürftigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Absichtliche Kündigung zur Erhöhung des Unterhalts</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Schwere Straftat gegen den Pflichtigen</td>
+                    <td class="px-6 py-4 text-gray-700">Körperverletzung, Vermögensdelikte</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Unbilligkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Unterhaltsforderung erscheint offensichtlich unbillig</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Erlöschen des Unterhaltsanspruchs (Art. 130 ZGB)</h2>
 
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Grund</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Wirkung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Tod</td>
-                    <td class="px-6 py-4 text-gray-700">Tod des Berechtigten oder des Pflichtigen</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Tod des Berechtigten</td>
+                    <td class="px-6 py-4 text-gray-700">Automatisches Erlöschen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 130 Abs. 1 ZGB</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Wiederverheiratung</td>
-                    <td class="px-6 py-4 text-gray-700">Heirat des unterhaltsberechtigten Ehegatten</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Tod des Pflichtigen</td>
+                    <td class="px-6 py-4 text-gray-700">Vorbehaltlich Ansprüche gegen Erben</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 130 Abs. 1 ZGB</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Fristablauf</td>
-                    <td class="px-6 py-4 text-gray-700">Bei befristetem Unterhalt</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Wiederverheiratung</td>
+                    <td class="px-6 py-4 text-gray-700">Automatisches Erlöschen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 130 Abs. 2 ZGB</td>
                 </tr>
                 <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Fristablauf</td>
+                    <td class="px-6 py-4 text-gray-700">Bei befristetem Unterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Scheidungsurteil</td>
+                </tr>
+                <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Qualifiziertes Konkubinat</td>
-                    <td class="px-6 py-4 text-gray-700">Bei gefestigter neuer Partnerschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Vollständiges und endgültiges Erlöschen</td>
+                    <td class="px-6 py-4 text-gray-700">BGE 138 III 97</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
+    <div class="bg-red-50 border-l-4 border-red-500 p-6 my-8">
+        <p class="font-semibold text-red-800 mb-2">BGE 138 III 97 – Qualifiziertes Konkubinat:</p>
+        <p class="text-gray-700">Bei einem qualifizierten Konkubinat (eheähnliche Lebensgemeinschaft ab ca. 5 Jahren) erlischt der nacheheliche Unterhaltsanspruch <strong>vollständig und endgültig</strong>. Eine blosse Sistierung ist nicht möglich. Bei Auflösung des Konkubinats lebt der Anspruch nicht wieder auf. Entscheidend ist der wirtschaftliche Vorteil aus der Beziehung.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Abänderung des Unterhalts (Art. 129 ZGB)</h2>
+
+    <p class="text-gray-700 mb-4">Bei <strong>erheblicher und dauernder Veränderung</strong> der Verhältnisse kann der Unterhalt angepasst werden:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Voraussetzung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Erheblichkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Mindestens 10% Veränderung der Leistungsfähigkeit</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Dauerhaftigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Nicht nur vorübergehende Änderung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Unvorhersehbarkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Nicht bereits im Urteil berücksichtigt</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Keine Selbstverschuldung</td>
+                    <td class="px-6 py-4 text-gray-700">Keine absichtliche Herbeiführung</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-4"><strong>Wichtig:</strong> Eine Erhöhung des Unterhalts ist nach Art. 129 Abs. 3 ZGB nur innerhalb von <strong>fünf Jahren</strong> seit Rechtskraft der Scheidung möglich, sofern im Urteil festgehalten wurde, dass weniger als der angemessene Bedarf festgesetzt wurde.</p>
+
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Vollstreckung des Ehegattenunterhalts</h2>
 
-    <p class="text-gray-700 mb-4">Zahlt der Pflichtige nicht, stehen dem Berechtigten verschiedene Mittel zur Verfügung:</p>
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Betreibungsverfahren:</strong> Definitive Rechtsöffnung bei Gerichtsurteil</li>
-        <li><strong>Schuldneranweisung (Art. 132 ZGB):</strong> Gericht weist Arbeitgeber an, direkt zu zahlen</li>
-        <li><strong>Inkassohilfe (Art. 131 ZGB):</strong> Kostenlose Unterstützung durch kantonale Fachstellen</li>
-        <li><strong>Alimentenbevorschussung:</strong> Staatliche Vorleistung bei ausbleibenden Zahlungen</li>
-    </ul>
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Massnahme</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Betreibung</td>
+                    <td class="px-6 py-4 text-gray-700">Definitive Rechtsöffnung bei Gerichtsurteil</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 80 SchKG</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Schuldneranweisung</td>
+                    <td class="px-6 py-4 text-gray-700">Gericht weist Arbeitgeber an, direkt zu zahlen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 132 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Inkassohilfe</td>
+                    <td class="px-6 py-4 text-gray-700">Kostenlose kantonale Unterstützung beim Eintreiben</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 131 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Bevorschussung</td>
+                    <td class="px-6 py-4 text-gray-700">Staatliche Vorleistung bei ausbleibenden Zahlungen</td>
+                    <td class="px-6 py-4 text-gray-700">Kantonales Recht</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Relevante Bundesgerichtsentscheide</h2>
 
@@ -207,42 +538,267 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Entscheid</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">BGE</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Thema</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kernaussage</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">BGE 147 III 293</td>
-                    <td class="px-6 py-4 text-gray-700">Zweistufige Methode für nachehelichen Unterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Zweistufige Methode</td>
+                    <td class="px-6 py-4 text-gray-700">Schweizweit verbindliche Berechnungsmethode</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">BGE 147 III 301</td>
-                    <td class="px-6 py-4 text-gray-700">Zweistufige Methode für ehelichen Unterhalt</td>
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 147 III 249</td>
+                    <td class="px-6 py-4 text-gray-700">Lebensprägende Ehe</td>
+                    <td class="px-6 py-4 text-gray-700">Keine automatischen Vermutungen mehr</td>
                 </tr>
                 <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 147 III 308</td>
+                    <td class="px-6 py-4 text-gray-700">45er-Regel</td>
+                    <td class="px-6 py-4 text-gray-700">Abschaffung der Altersvermutung</td>
+                </tr>
+                <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">BGE 141 III 465</td>
-                    <td class="px-6 py-4 text-gray-700">Lebensprägende Ehe</td>
+                    <td class="px-6 py-4 text-gray-700">Pensionierung</td>
+                    <td class="px-6 py-4 text-gray-700">Unterhalt nach Pensionierung bei lebensprägender Ehe</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 138 III 97</td>
+                    <td class="px-6 py-4 text-gray-700">Konkubinat</td>
+                    <td class="px-6 py-4 text-gray-700">Qualifiziertes Konkubinat: endgültiges Erlöschen</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">BGE 137 III 102</td>
                     <td class="px-6 py-4 text-gray-700">Erwerbsobliegenheit</td>
+                    <td class="px-6 py-4 text-gray-700">Vorrang der Eigenversorgung, nacheheliche Solidarität</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+        <p class="text-gray-700 mb-6">Die Berechnung und Durchsetzung von Ehegattenunterhalt ist komplex und hat erhebliche finanzielle Auswirkungen – oft über Jahrzehnte. Die bundesgerichtliche Rechtsprechung hat sich in den letzten Jahren grundlegend verändert, weshalb fundierte Rechtskenntnisse unerlässlich sind.</p>
+        <p class="text-gray-700 mb-6">Besonders in folgenden Situationen ist die Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> dringend empfohlen:</p>
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Bei der Festlegung des Unterhalts im Scheidungsverfahren</li>
+            <li>Wenn Sie eine Anpassung des Unterhalts beantragen oder abwehren möchten (Art. 129 ZGB)</li>
+            <li>Bei Streitigkeiten über die Höhe oder Dauer des Unterhalts</li>
+            <li>Bei komplexen Einkommensverhältnissen (Selbstständigkeit, Bonuszahlungen, Vermögen)</li>
+            <li>Wenn die Frage der lebensprägenden Ehe strittig ist</li>
+            <li>Wenn der Ex-Ehegatte ein neues Konkubinat eingeht</li>
+        </ul>
+        <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kann die korrekte Berechnung nach der zweistufigen Methode sicherstellen und die aktuelle Rechtsprechung zu Ihren Gunsten nutzen. Auch bei Fragen zur Vollstreckung oder zum Erlöschen des Unterhaltsanspruchs ist fachkundige Unterstützung durch einen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> unerlässlich.</p>
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Lassen Sie Ihre Unterhaltssituation von einem erfahrenen Familienrechtsanwalt beurteilen. Wir prüfen Ihre rechtlichen Möglichkeiten unter Berücksichtigung der neuesten Rechtsprechung und zeigen Ihnen den besten Weg auf.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
 
-    <p class="text-gray-700 mb-6">Der Ehegattenunterhalt ist ein komplexes Rechtsgebiet mit zahlreichen Fallstricken. Der Grundsatz der Eigenversorgung hat Vorrang, ein Unterhaltsanspruch setzt in der Regel eine lebensprägende Ehe voraus. Die Berechnung erfolgt nach der vom Bundesgericht verbindlich vorgeschriebenen zweistufigen Methode mit Überschussverteilung.</p>
+    <p class="text-gray-700 mb-4">Der Ehegattenunterhalt hat sich durch die bundesgerichtliche Rechtsprechung der letzten Jahre grundlegend verändert. Die wichtigsten Erkenntnisse:</p>
 
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy mb-2">Handlungsempfehlungen:</p>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Vorrang der Eigenversorgung:</strong> Jeder Ehegatte soll nach der Scheidung grundsätzlich selbst für sich sorgen.</li>
+        <li><strong>Keine automatischen Vermutungen:</strong> Die 10-Jahres-Regel, die Kindervermutung und die 45er-Regel gelten nicht mehr absolut.</li>
+        <li><strong>Lebensprägende Ehe:</strong> Entscheidend ist, ob die Ehe die wirtschaftliche Situation eines Ehegatten konkret beeinflusst hat.</li>
+        <li><strong>Zweistufige Methode:</strong> Schweizweit verbindliche Berechnungsmethode (BGE 147 III 293).</li>
+        <li><strong>Erlöschen bei Konkubinat:</strong> Qualifiziertes Konkubinat führt zum vollständigen und endgültigen Erlöschen (BGE 138 III 97).</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Weiterführende Informationen:</p>
         <ul class="list-disc list-inside text-gray-700 space-y-1">
-            <li>Lassen Sie Ihre Unterhaltssituation frühzeitig analysieren</li>
-            <li>Dokumentieren Sie Ihre finanzielle Situation und die Aufgabenteilung</li>
-            <li>Prüfen Sie bei Änderungen, ob eine Anpassung sinnvoll ist</li>
-            <li>Ziehen Sie bei Bedarf eine Mediation in Betracht</li>
+            <li><a href="/unterhalt/nachehelicher-unterhalt" class="text-gold hover:underline">Nachehelicher Unterhalt im Detail</a></li>
+            <li><a href="/unterhalt/trennungsunterhalt" class="text-gold hover:underline">Trennungsunterhalt während des Getrenntlebens</a></li>
+            <li><a href="/unterhalt/eheaehnliche-partnerschaft" class="text-gold hover:underline">Konkubinat und Auswirkung auf Unterhalt</a></li>
         </ul>
     </div>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wann hat man Anspruch auf Ehegattenunterhalt?</h3>
+                <p class="text-gray-700">Ein Unterhaltsanspruch setzt nach neuer Rechtsprechung voraus, dass die Ehe die wirtschaftliche Situation eines Ehegatten konkret beeinflusst hat (lebensprägende Ehe). Die früheren automatischen Vermutungen bei 10 Jahren Ehedauer oder gemeinsamen Kindern gelten nicht mehr absolut (BGE 147 III 249). Entscheidend ist, ob ein Ehegatte seine Erwerbstätigkeit zugunsten der Familie aufgegeben hat.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie wird der Ehegattenunterhalt berechnet?</h3>
+                <p class="text-gray-700">Die Berechnung erfolgt nach der schweizweit verbindlichen zweistufigen Methode (BGE 147 III 293): In Stufe 1 wird der Bedarf beider Ehegatten ermittelt (Grundbetrag, Wohnkosten, Krankenversicherung, Steuern). In Stufe 2 wird ein allfälliger Überschuss hälftig verteilt. Der Unterhaltsanspruch ergibt sich aus: (Bedarf + Überschussanteil) minus eigenes Einkommen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was bedeutet die Abschaffung der 45er-Regel?</h3>
+                <p class="text-gray-700">Die frühere Regel, wonach Ehegatten ab dem 45. Lebensjahr keine Erwerbstätigkeit mehr aufnehmen mussten, wurde durch das Bundesgericht abgeschafft (BGE 147 III 308). Heute gilt eine Einzelfallprüfung: Das Alter ist nur noch ein Faktor unter vielen bei der Beurteilung der Erwerbsobliegenheit. Auch über 45-Jährige müssen sich grundsätzlich um eine Erwerbstätigkeit bemühen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie lange muss Ehegattenunterhalt bezahlt werden?</h3>
+                <p class="text-gray-700">Die Dauer richtet sich nach den Umständen des Einzelfalls. Bei kurzen Ehen ohne Lebensprägung kein Unterhalt, bei mittlerer Ehedauer mit Kindern oft bis diese 16 Jahre alt sind, bei langer Ehe mit traditioneller Rollenverteilung bis zum AHV-Alter. In der Praxis wird der Unterhalt heute meist befristet zugesprochen (Eingliederungsunterhalt).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wann erlischt der Anspruch auf Ehegattenunterhalt?</h3>
+                <p class="text-gray-700">Der Anspruch erlischt automatisch bei Tod oder Wiederverheiratung (Art. 130 ZGB), bei Ablauf einer Befristung oder bei qualifiziertem Konkubinat. Bei einem qualifizierten Konkubinat (stabile Beziehung ab ca. 5 Jahren) erlischt der Anspruch gemäss BGE 138 III 97 vollständig und endgültig – er lebt auch bei späterer Auflösung des Konkubinats nicht wieder auf.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann der Ehegattenunterhalt gekürzt oder verweigert werden?</h3>
+                <p class="text-gray-700">Ja, nach Art. 125 Abs. 3 ZGB kann der Unterhalt gekürzt oder verweigert werden, wenn der Berechtigte seine Pflicht zum Familienunterhalt grob verletzt hat, seine Bedürftigkeit mutwillig herbeigeführt hat oder eine schwere Straftat gegen den Pflichtigen begangen hat. Auch wenn die Forderung offensichtlich unbillig erscheint, ist eine Verweigerung möglich.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann der Ehegattenunterhalt nachträglich angepasst werden?</h3>
+                <p class="text-gray-700">Ja, bei erheblicher und dauerhafter Veränderung der Verhältnisse (Art. 129 ZGB). Die Änderung muss mindestens 10% der Leistungsfähigkeit betragen, dauerhaft und unvorhersehbar sein. Eine Erhöhung ist nur innerhalb von 5 Jahren nach der Scheidung möglich und nur, wenn im Urteil festgehalten wurde, dass weniger als der angemessene Bedarf festgesetzt wurde.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen Trennungsunterhalt und nachehelichem Unterhalt?</h3>
+                <p class="text-gray-700">Beim Trennungsunterhalt (Art. 176 ZGB) gilt der Grundsatz des gleichwertigen Lebens – beide Ehegatten sollen den bisherigen Lebensstandard aufrechterhalten können. Beim nachehelichen Unterhalt (Art. 125 ZGB) gilt dagegen der Grundsatz der Eigenversorgung – jeder Ehegatte soll grundsätzlich selbst für sich sorgen. Die Erwerbsobliegenheit ist beim nachehelichen Unterhalt strenger.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was bedeutet «lebensprägende Ehe» nach neuer Rechtsprechung?</h3>
+                <p class="text-gray-700">Eine lebensprägende Ehe liegt vor, wenn die Ehe die wirtschaftliche Situation eines Ehegatten konkret beeinflusst hat – etwa durch Aufgabe der Erwerbstätigkeit für Haushalt und Kinder. Das Bundesgericht betont, dass dies keine Funktion eines «Kippschalters» hat (BGE 147 III 249). Die früheren Vermutungen (10 Jahre, Kinder, 45 Jahre) gelten nicht mehr absolut.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie wird der Ehegattenunterhalt durchgesetzt, wenn nicht bezahlt wird?</h3>
+                <p class="text-gray-700">Bei Nichtzahlung stehen mehrere Mittel zur Verfügung: Betreibung mit definitiver Rechtsöffnung, Schuldneranweisung an den Arbeitgeber (Art. 132 ZGB), kostenlose Inkassohilfe durch kantonale Fachstellen (Art. 131 ZGB) oder Alimentenbevorschussung durch den Kanton. Der rechtskräftige Scheidungsentscheid ist ein vollstreckbarer Titel.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Ehegattenunterhalt in der Schweiz: Anspruch, Berechnung & Dauer nach BGE",
+        "description": "Ehegattenunterhalt Schweiz: Voraussetzungen nach Art. 125 ZGB, lebensprägende Ehe (BGE 147 III 249), zweistufige Methode & Abschaffung der 45er-Regel. Umfassender Leitfaden.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-25",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/unterhalt/ehegattenunterhalt"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Wann hat man Anspruch auf Ehegattenunterhalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ein Unterhaltsanspruch setzt nach neuer Rechtsprechung voraus, dass die Ehe die wirtschaftliche Situation eines Ehegatten konkret beeinflusst hat (lebensprägende Ehe). Die früheren automatischen Vermutungen bei 10 Jahren Ehedauer oder gemeinsamen Kindern gelten nicht mehr absolut (BGE 147 III 249). Entscheidend ist, ob ein Ehegatte seine Erwerbstätigkeit zugunsten der Familie aufgegeben hat."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie wird der Ehegattenunterhalt berechnet?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Berechnung erfolgt nach der schweizweit verbindlichen zweistufigen Methode (BGE 147 III 293): In Stufe 1 wird der Bedarf beider Ehegatten ermittelt (Grundbetrag, Wohnkosten, Krankenversicherung, Steuern). In Stufe 2 wird ein allfälliger Überschuss hälftig verteilt. Der Unterhaltsanspruch ergibt sich aus: (Bedarf + Überschussanteil) minus eigenes Einkommen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was bedeutet die Abschaffung der 45er-Regel?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die frühere Regel, wonach Ehegatten ab dem 45. Lebensjahr keine Erwerbstätigkeit mehr aufnehmen mussten, wurde durch das Bundesgericht abgeschafft (BGE 147 III 308). Heute gilt eine Einzelfallprüfung: Das Alter ist nur noch ein Faktor unter vielen bei der Beurteilung der Erwerbsobliegenheit. Auch über 45-Jährige müssen sich grundsätzlich um eine Erwerbstätigkeit bemühen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie lange muss Ehegattenunterhalt bezahlt werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Dauer richtet sich nach den Umständen des Einzelfalls. Bei kurzen Ehen ohne Lebensprägung kein Unterhalt, bei mittlerer Ehedauer mit Kindern oft bis diese 16 Jahre alt sind, bei langer Ehe mit traditioneller Rollenverteilung bis zum AHV-Alter. In der Praxis wird der Unterhalt heute meist befristet zugesprochen (Eingliederungsunterhalt)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wann erlischt der Anspruch auf Ehegattenunterhalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der Anspruch erlischt automatisch bei Tod oder Wiederverheiratung (Art. 130 ZGB), bei Ablauf einer Befristung oder bei qualifiziertem Konkubinat. Bei einem qualifizierten Konkubinat (stabile Beziehung ab ca. 5 Jahren) erlischt der Anspruch gemäss BGE 138 III 97 vollständig und endgültig – er lebt auch bei späterer Auflösung des Konkubinats nicht wieder auf."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann der Ehegattenunterhalt gekürzt oder verweigert werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, nach Art. 125 Abs. 3 ZGB kann der Unterhalt gekürzt oder verweigert werden, wenn der Berechtigte seine Pflicht zum Familienunterhalt grob verletzt hat, seine Bedürftigkeit mutwillig herbeigeführt hat oder eine schwere Straftat gegen den Pflichtigen begangen hat. Auch wenn die Forderung offensichtlich unbillig erscheint, ist eine Verweigerung möglich."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann der Ehegattenunterhalt nachträglich angepasst werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, bei erheblicher und dauerhafter Veränderung der Verhältnisse (Art. 129 ZGB). Die Änderung muss mindestens 10% der Leistungsfähigkeit betragen, dauerhaft und unvorhersehbar sein. Eine Erhöhung ist nur innerhalb von 5 Jahren nach der Scheidung möglich und nur, wenn im Urteil festgehalten wurde, dass weniger als der angemessene Bedarf festgesetzt wurde."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen Trennungsunterhalt und nachehelichem Unterhalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Beim Trennungsunterhalt (Art. 176 ZGB) gilt der Grundsatz des gleichwertigen Lebens – beide Ehegatten sollen den bisherigen Lebensstandard aufrechterhalten können. Beim nachehelichen Unterhalt (Art. 125 ZGB) gilt dagegen der Grundsatz der Eigenversorgung – jeder Ehegatte soll grundsätzlich selbst für sich sorgen. Die Erwerbsobliegenheit ist beim nachehelichen Unterhalt strenger."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was bedeutet «lebensprägende Ehe» nach neuer Rechtsprechung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Eine lebensprägende Ehe liegt vor, wenn die Ehe die wirtschaftliche Situation eines Ehegatten konkret beeinflusst hat – etwa durch Aufgabe der Erwerbstätigkeit für Haushalt und Kinder. Das Bundesgericht betont, dass dies keine Funktion eines «Kippschalters» hat (BGE 147 III 249). Die früheren Vermutungen (10 Jahre, Kinder, 45 Jahre) gelten nicht mehr absolut."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie wird der Ehegattenunterhalt durchgesetzt, wenn nicht bezahlt wird?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei Nichtzahlung stehen mehrere Mittel zur Verfügung: Betreibung mit definitiver Rechtsöffnung, Schuldneranweisung an den Arbeitgeber (Art. 132 ZGB), kostenlose Inkassohilfe durch kantonale Fachstellen (Art. 131 ZGB) oder Alimentenbevorschussung durch den Kanton. Der rechtskräftige Scheidungsentscheid ist ein vollstreckbarer Titel."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Unterhalt",
+                "item": "https://familienrechtanwalt.ch/unterhalt"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Ehegattenunterhalt",
+                "item": "https://familienrechtanwalt.ch/unterhalt/ehegattenunterhalt"
+            }
+        ]
+    })} />
 </ArticleLayout>

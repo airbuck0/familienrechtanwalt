@@ -9,6 +9,33 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
     category="Eherecht"
     categoryLink="/eherecht"
 >
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Eigentumsverhältnisse an einer Immobilie richten sich nach dem Grundbucheintrag – nicht nach dem Güterstand.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Wer mehr Eigenmittel (Eigengut) einbringt, hat bei Wertsteigerung Anspruch auf proportionalen Mehrwertanteil (Art. 206 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Familienwohnung geniesst besonderen Schutz: Verkauf nur mit Zustimmung des Ehegatten möglich (Art. 169 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Zur Begünstigung des überlebenden Ehegatten: Vorschlagszuweisung nach Art. 216 ZGB ermöglicht, dass dieser das Haus behalten kann.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Dokumentation ist entscheidend: Wer welche Mittel für Erwerb, Ausbau oder Renovation aufgewendet hat, sollte nachweisbar sein.</span>
+            </li>
+        </ul>
+    </div>
+
     <p class="text-xl text-gray-700 mb-8 leading-relaxed">Der Ehevertrag ist ein wichtiges Instrument zur Regelung der vermögensrechtlichen Verhältnisse zwischen Ehegatten, insbesondere wenn Wohneigentum im Spiel ist. In der Schweiz leben viele Ehepaare in einem gemeinsamen Haus oder einer Eigentumswohnung, ohne sich über die güterrechtlichen Konsequenzen bei Scheidung oder Tod Gedanken zu machen. Dieser umfassende Leitfaden erklärt, wie Immobilien im Güterrecht behandelt werden und welche Regelungen ein Ehevertrag für das Haus enthalten sollte.</p>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Was ist ein Ehevertrag?</h2>
@@ -317,44 +344,53 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         <li><strong>Pflichtteilsansprüche beachten:</strong> Gibt es nicht gemeinsame Kinder, deren Pflichtteilsansprüche gewahrt werden müssen?</li>
     </ul>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Häufige Fragen zum Ehevertrag mit Haus</h2>
-
-    <div class="space-y-6">
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-serif text-xl font-bold text-navy mb-3">Gehört ein während der Ehe gekauftes Haus beiden Ehegatten?</h3>
-            <p class="text-gray-700">Nicht automatisch. Entscheidend ist, wer im Grundbuch als Eigentümer eingetragen ist. Ohne Ehevertrag und ohne abweichende Vereinbarung wird bei Errungenschaftsbeteiligung aber der während der Ehe erzielte Wertzuwachs als Errungenschaft behandelt und bei Auflösung des Güterstandes hälftig geteilt.</p>
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+        <p class="text-gray-700 mb-6">Die güterrechtlichen Regelungen bei Immobilien sind komplex und fehlerträchtig. Falsche Entscheidungen können bei einer Scheidung oder im Todesfall zu erheblichen finanziellen Nachteilen führen. Eine spezialisierte anwaltliche Beratung ist daher in vielen Fällen unverzichtbar.</p>
+        <p class="text-gray-700 mb-6">Besonders in folgenden Situationen sollten Sie einen erfahrenen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> beiziehen:</p>
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Vor dem gemeinsamen Immobilienkauf zur Klärung der Eigentumsverhältnisse</li>
+            <li>Bei ungleicher Finanzierung (einer bringt mehr Eigenmittel ein)</li>
+            <li>Wenn Erbschafts- oder Schenkungsmittel für den Hauskauf verwendet werden</li>
+            <li>Bei Patchwork-Familien mit unterschiedlichen Erbinteressen</li>
+            <li>Wenn der überlebende Ehegatte optimal abgesichert werden soll</li>
+            <li>Bei bereits bestehendem Immobilieneigentum vor oder bei der Heirat</li>
+        </ul>
+        <p class="text-gray-700 mb-6">Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> kann die Eigentumsverhältnisse optimal strukturieren, die Finanzierung dokumentieren und einen massgeschneiderten Ehevertrag erstellen, der Ihre Interessen und die Ihres Partners fair berücksichtigt.</p>
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Lassen Sie Ihre Immobilien- und Vermögenssituation von einem erfahrenen Fachanwalt für Familienrecht analysieren und erfahren Sie, welche güterrechtlichen Regelungen für Sie optimal sind.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
         </div>
+    </section>
 
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-serif text-xl font-bold text-navy mb-3">Was passiert mit dem Haus bei einer Scheidung ohne Ehevertrag?</h3>
-            <p class="text-gray-700">Bei einer Scheidung wird das Vermögen nach den Regeln des geltenden Güterstandes aufgeteilt. Bei der Errungenschaftsbeteiligung erhält jeder sein Eigengut zurück, und die Errungenschaft wird hälftig geteilt. Die Eigentumsverhältnisse am Haus (gemäss Grundbuch) ändern sich dadurch nicht automatisch. Die Ehegatten müssen sich einigen, wer die Immobilie übernimmt und den anderen auszahlt, oder sie verkaufen.</p>
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Gehört ein während der Ehe gekauftes Haus beiden Ehegatten?</h3>
+                <p class="text-gray-700">Nicht automatisch. Entscheidend ist, wer im Grundbuch als Eigentümer eingetragen ist. Ohne Ehevertrag wird bei Errungenschaftsbeteiligung aber der während der Ehe erzielte Wertzuwachs als Errungenschaft behandelt und bei Auflösung des Güterstandes hälftig geteilt.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert mit dem Haus bei einer Scheidung ohne Ehevertrag?</h3>
+                <p class="text-gray-700">Bei Errungenschaftsbeteiligung erhält jeder sein Eigengut zurück, die Errungenschaft wird hälftig geteilt. Die Eigentumsverhältnisse am Haus ändern sich nicht automatisch. Die Ehegatten müssen sich einigen, wer die Immobilie übernimmt und den anderen auszahlt, oder sie verkaufen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich das Haus ohne Zustimmung meines Ehepartners verkaufen?</h3>
+                <p class="text-gray-700">Nur wenn es sich nicht um die Familienwohnung handelt. Bei der Familienwohnung benötigen Sie gemäss Art. 169 ZGB die ausdrückliche Zustimmung Ihres Ehepartners, auch wenn Sie Alleineigentümer sind.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist ein Mehrwertanteil bei Immobilien?</h3>
+                <p class="text-gray-700">Wenn ein Ehegatte aus Eigengut zur Finanzierung einer Immobilie beiträgt, die dem anderen gehört, hat er bei Wertsteigerung Anspruch auf einen proportionalen Mehrwertanteil (Art. 206 ZGB). Hat er z.B. 20% finanziert, erhält er auch 20% des Mehrwerts.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wann sollte ich den Ehevertrag abschliessen?</h3>
+                <p class="text-gray-700">Idealerweise vor einem grösseren Vermögenserwerb, insbesondere vor dem Kauf einer Immobilie. So können die Eigentumsverhältnisse und Finanzierungsanteile von Anfang an klar geregelt werden. Ein Ehevertrag ist aber auch später noch möglich.</p>
+            </div>
         </div>
-
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-serif text-xl font-bold text-navy mb-3">Kann ich im Ehevertrag festlegen, dass mein Partner bei Scheidung nichts vom Haus erhält?</h3>
-            <p class="text-gray-700">Eine solche Regelung ist nur im Rahmen des Güterstandes der Gütertrennung möglich. Aber auch dann können dem anderen Ehegatten Ansprüche zustehen, wenn er zur Finanzierung beigetragen hat. Eine vollständige Ausschlussklausel könnte zudem als sittenwidrig qualifiziert werden, wenn sie einen Ehegatten unangemessen benachteiligt.</p>
-        </div>
-
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-serif text-xl font-bold text-navy mb-3">Brauche ich einen Ehevertrag, wenn das Haus mir allein gehört?</h3>
-            <p class="text-gray-700">Nicht zwingend, aber es ist empfehlenswert. Auch wenn Sie Alleineigentümer sind, kann Ihr Ehegatte bei einer Scheidung Ansprüche haben, wenn er zur Wertsteigerung der Immobilie beigetragen hat oder wenn die Immobilie zur Errungenschaft gehört. Ein Ehevertrag schafft Klarheit und vermeidet spätere Streitigkeiten.</p>
-        </div>
-
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-serif text-xl font-bold text-navy mb-3">Kann ich das Haus ohne Zustimmung meines Ehepartners verkaufen?</h3>
-            <p class="text-gray-700">Nur wenn es sich nicht um die Familienwohnung handelt. Bei der Familienwohnung benötigen Sie gemäss Art. 169 ZGB die ausdrückliche Zustimmung Ihres Ehepartners, auch wenn Sie Alleineigentümer sind.</p>
-        </div>
-
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-serif text-xl font-bold text-navy mb-3">Wann sollte ich den Ehevertrag abschliessen?</h3>
-            <p class="text-gray-700">Ein Ehevertrag kann vor oder nach der Hochzeit abgeschlossen werden. Idealerweise sollte er aber vor einem grösseren Vermögenserwerb, insbesondere vor dem Kauf einer Immobilie, erstellt werden. So können die Eigentumsverhältnisse und Finanzierungsanteile von Anfang an klar geregelt werden.</p>
-        </div>
-
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-serif text-xl font-bold text-navy mb-3">Kann ich einen bestehenden Ehevertrag ändern?</h3>
-            <p class="text-gray-700">Ja, ein Ehevertrag kann jederzeit einvernehmlich geändert werden. Die Änderung muss aber wiederum öffentlich beurkundet werden. Da dies mit Kosten und Aufwand verbunden ist, empfiehlt es sich, den Ehevertrag von Anfang an sorgfältig zu gestalten.</p>
-        </div>
-    </div>
+    </section>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit und Handlungsempfehlungen</h2>
 
@@ -416,4 +452,99 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
     </div>
 
     <p class="text-gray-500 text-sm mt-8">Stand: Januar 2026</p>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Ehevertrag mit Haus in der Schweiz: Vermögensaufteilung, Güterrecht und Immobilien",
+        "description": "Ehevertrag mit Haus in der Schweiz: Vermögensaufteilung, Güterrecht und Immobilien. Alles über Eigengut, Errungenschaft und Regelungen für Immobilien bei Scheidung oder Tod.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-20",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/eherecht/ehevertrag-haus"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Gehört ein während der Ehe gekauftes Haus beiden Ehegatten?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nicht automatisch. Entscheidend ist, wer im Grundbuch als Eigentümer eingetragen ist. Ohne Ehevertrag wird bei Errungenschaftsbeteiligung aber der während der Ehe erzielte Wertzuwachs als Errungenschaft behandelt und bei Auflösung des Güterstandes hälftig geteilt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert mit dem Haus bei einer Scheidung ohne Ehevertrag?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei Errungenschaftsbeteiligung erhält jeder sein Eigengut zurück, die Errungenschaft wird hälftig geteilt. Die Eigentumsverhältnisse am Haus ändern sich nicht automatisch. Die Ehegatten müssen sich einigen, wer die Immobilie übernimmt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich das Haus ohne Zustimmung meines Ehepartners verkaufen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nur wenn es sich nicht um die Familienwohnung handelt. Bei der Familienwohnung benötigen Sie gemäss Art. 169 ZGB die ausdrückliche Zustimmung Ihres Ehepartners, auch wenn Sie Alleineigentümer sind."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist ein Mehrwertanteil bei Immobilien?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Wenn ein Ehegatte aus Eigengut zur Finanzierung einer Immobilie beiträgt, die dem anderen gehört, hat er bei Wertsteigerung Anspruch auf einen proportionalen Mehrwertanteil (Art. 206 ZGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wann sollte ich den Ehevertrag abschliessen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Idealerweise vor einem grösseren Vermögenserwerb, insbesondere vor dem Kauf einer Immobilie. So können die Eigentumsverhältnisse und Finanzierungsanteile von Anfang an klar geregelt werden."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Eherecht",
+                "item": "https://familienrechtanwalt.ch/eherecht"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Ehevertrag mit Haus in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/eherecht/ehevertrag-haus"
+            }
+        ]
+    })} />
 </ArticleLayout>

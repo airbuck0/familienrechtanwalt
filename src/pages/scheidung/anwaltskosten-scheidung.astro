@@ -3,143 +3,877 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 ---
 
 <ArticleLayout
-  title="Anwaltskosten bei der Scheidung"
-  description="Anwaltskosten bei der Scheidung in der Schweiz: Honorararten, typische Kostenrahmen und Finanzierungsmoeglichkeiten. Vollstaendiger Ratgeber."
-  keywords="Anwaltskosten Scheidung Schweiz, Scheidungsanwalt Kosten, Honorar Familienrecht, unentgeltliche Rechtspflege"
-  category="Scheidung"
-  categoryLink="/scheidung"
+    title="Anwaltskosten bei der Scheidung in der Schweiz"
+    description="Anwaltskosten Scheidung Schweiz: Stundenansätze, Pauschalhonorar, kantonale Unterschiede & unentgeltliche Rechtspflege. Mit Kostenbeispielen & Spartipps."
+    keywords="Anwaltskosten Scheidung Schweiz, Scheidungsanwalt Kosten, Honorar Familienrecht, Stundenansatz Anwalt, unentgeltliche Rechtspflege, Prozesskostenvorschuss"
+    category="Scheidung"
+    categoryLink="/scheidung"
 >
-  <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die Anwaltskosten stellen neben den Gerichtskosten den wesentlichen Kostenfaktor bei einer Scheidung dar. Dieser Leitfaden erklaert die rechtlichen Grundlagen der Anwaltsvergütung, zeigt auf, welche Faktoren die Kosten beeinflussen, und gibt praktische Hinweise zur Kostenkontrolle.</p>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3 mt-1">&#10003;</span>
+                <span><strong>Stundenansätze</strong> liegen in der Schweiz zwischen CHF 200 und 500, wobei in Zürich CHF 300-500 und in der übrigen Deutschschweiz CHF 250-350 üblich sind.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3 mt-1">&#10003;</span>
+                <span>Bei einer <strong>einvernehmlichen Scheidung</strong> betragen die Anwaltskosten typischerweise CHF 1'500-10'000 pro Person.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3 mt-1">&#10003;</span>
+                <span>Bei einer <strong>strittigen Scheidung</strong> können die Kosten auf CHF 20'000-100'000+ pro Person steigen.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3 mt-1">&#10003;</span>
+                <span>In der Schweiz besteht <strong>kein Anwaltszwang</strong> – eine anwaltliche Vertretung ist aber in den meisten Fällen empfehlenswert.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3 mt-1">&#10003;</span>
+                <span>Bei finanzieller Bedürftigkeit kann <strong>unentgeltliche Rechtspflege</strong> gemäss Art. 117 ZPO beantragt werden.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3 mt-1">&#10003;</span>
+                <span>Der finanzkräftigere Ehegatte kann zur Leistung eines <strong>Prozesskostenvorschusses</strong> verpflichtet werden (Art. 159/163 ZGB).</span>
+            </li>
+        </ul>
+    </div>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtsgrundlagen der Anwaltsvergütung</h2>
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die Anwaltskosten stellen bei einer Scheidung in der Schweiz neben den Gerichtskosten den wesentlichen Kostenfaktor dar. Eine transparente Honorarvereinbarung und das Verständnis der verschiedenen Abrechnungsmodelle sind entscheidend, um die Kosten im Griff zu behalten. Dieser umfassende Leitfaden erklärt die rechtlichen Grundlagen, zeigt kantonale Unterschiede auf und gibt praktische Hinweise zur Kostenkontrolle.</p>
 
-  <p class="text-gray-700 mb-6">Das Bundesgesetz über die Freizügigkeit der Anwältinnen und Anwälte (BGFA) enthält in Art. 12 lit. i die grundlegende Verpflichtung der Anwälte, ihre Klienten bei der Mandatsübernahme über die Grundsätze ihrer Rechnungsstellung zu informieren und sie periodisch über die Höhe des geschuldeten Honorars aufzuklären.</p>
+    <!-- Inhaltsverzeichnis -->
+    <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-12">
+        <h2 class="text-xl font-serif font-bold text-navy mb-4">Inhaltsverzeichnis</h2>
+        <nav class="space-y-2 text-gray-700">
+            <a href="#rechtsgrundlagen" class="block hover:text-gold">1. Rechtsgrundlagen der Anwaltsvergütung</a>
+            <a href="#honorararten" class="block hover:text-gold">2. Honorararten im Überblick</a>
+            <a href="#stundenansaetze" class="block hover:text-gold">3. Stundenansätze nach Region</a>
+            <a href="#kostenrahmen" class="block hover:text-gold">4. Typische Kostenrahmen nach Verfahrensart</a>
+            <a href="#kostenfaktoren" class="block hover:text-gold">5. Faktoren, die die Kosten beeinflussen</a>
+            <a href="#kostenverteilung" class="block hover:text-gold">6. Kostenverteilung zwischen den Ehegatten</a>
+            <a href="#parteientschaedigung" class="block hover:text-gold">7. Parteientschädigung bei strittiger Scheidung</a>
+            <a href="#prozesskostenvorschuss" class="block hover:text-gold">8. Prozesskostenvorschuss vom Ehegatten</a>
+            <a href="#unentgeltliche-rechtspflege" class="block hover:text-gold">9. Unentgeltliche Rechtspflege</a>
+            <a href="#kantonale-unterschiede" class="block hover:text-gold">10. Kantonale Unterschiede bei den Kosten</a>
+            <a href="#spartipps" class="block hover:text-gold">11. Praktische Tipps zur Kostensenkung</a>
+            <a href="#anwalt" class="block hover:text-gold">12. Wann Sie einen Scheidungsanwalt beiziehen sollten</a>
+            <a href="#fazit" class="block hover:text-gold">13. Fazit</a>
+            <a href="#faq" class="block hover:text-gold">14. Häufig gestellte Fragen (FAQ)</a>
+        </nav>
+    </div>
 
-  <p class="text-gray-700 mb-6">Die Schweizerische Zivilprozessordnung (ZPO) regelt in den Art. 95-111 die Prozesskosten, zu denen auch die Parteientschädigung zählt. Die konkrete Festlegung der Tarife obliegt jedoch den Kantonen (Art. 96 ZPO).</p>
+    <!-- 1. Rechtsgrundlagen -->
+    <h2 id="rechtsgrundlagen" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtsgrundlagen der Anwaltsvergütung</h2>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Honorararten im Überblick</h2>
+    <p class="text-gray-700 mb-6">Das Anwaltshonorar in der Schweiz unterliegt verschiedenen rechtlichen Rahmenbedingungen. Das Bundesgesetz über die Freizügigkeit der Anwältinnen und Anwälte (BGFA) enthält in <strong>Art. 12 lit. i BGFA</strong> die grundlegende Verpflichtung, Klienten bei der Mandatsübernahme über die Grundsätze der Rechnungsstellung zu informieren und sie periodisch über die Höhe des geschuldeten Honorars aufzuklären.</p>
 
-  <div class="overflow-x-auto mb-6">
-    <table class="min-w-full bg-white border border-gray-200">
-      <thead class="bg-navy text-white">
-        <tr>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Honorarart</th>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Typischer Anwendungsbereich</th>
-        </tr>
-      </thead>
-      <tbody class="divide-y divide-gray-200">
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Stundenhonorar</td>
-          <td class="px-6 py-4 text-gray-700">Abrechnung nach effektivem Zeitaufwand</td>
-          <td class="px-6 py-4 text-gray-700">Häufigste Form bei Scheidungen</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">Pauschalhonorar</td>
-          <td class="px-6 py-4 text-gray-700">Fester Betrag für definierte Leistung</td>
-          <td class="px-6 py-4 text-gray-700">Einfache einvernehmliche Scheidungen</td>
-        </tr>
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Erfolgshonorar</td>
-          <td class="px-6 py-4 text-gray-700">Zusätzliche Vergütung bei Erfolg</td>
-          <td class="px-6 py-4 text-gray-700">Nur als Zusatz zum Grundhonorar zulässig</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">Mischformen</td>
-          <td class="px-6 py-4 text-gray-700">Kombination verschiedener Elemente</td>
-          <td class="px-6 py-4 text-gray-700">Komplexere Mandate</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Regelungsinhalt</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 12 lit. i BGFA</td>
+                    <td class="px-6 py-4 text-gray-700">Informationspflicht des Anwalts über Honorargrundsätze</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 95-111 ZPO</td>
+                    <td class="px-6 py-4 text-gray-700">Allgemeine Regelung der Prozesskosten</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 96 ZPO</td>
+                    <td class="px-6 py-4 text-gray-700">Kantone legen Tarife fest</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 117-123 ZPO</td>
+                    <td class="px-6 py-4 text-gray-700">Unentgeltliche Rechtspflege</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Kantonale Gebührenverordnungen</td>
+                    <td class="px-6 py-4 text-gray-700">Konkrete Tarife und Honorarrahmen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Typische Kostenrahmen</h2>
+    <p class="text-gray-700 mb-6">Die Schweizerische Zivilprozessordnung (ZPO) regelt in den Art. 95-111 die Prozesskosten, zu denen auch die Parteientschädigung zählt. Die konkrete Festlegung der Tarife obliegt jedoch den Kantonen (Art. 96 ZPO), weshalb die Kosten je nach Kanton erheblich variieren können.</p>
 
-  <div class="overflow-x-auto mb-6">
-    <table class="min-w-full bg-white border border-gray-200">
-      <thead class="bg-navy text-white">
-        <tr>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Verfahrensart</th>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Kostenschätzung (pro Partei)</th>
-        </tr>
-      </thead>
-      <tbody class="divide-y divide-gray-200">
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Einvernehmliche Scheidung (einfach)</td>
-          <td class="px-6 py-4 text-gray-700">CHF 1'500 - 5'000</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">Einvernehmliche Scheidung (komplex)</td>
-          <td class="px-6 py-4 text-gray-700">CHF 5'000 - 10'000</td>
-        </tr>
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Teileinigung</td>
-          <td class="px-6 py-4 text-gray-700">CHF 5'000 - 20'000</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">Strittige Scheidung</td>
-          <td class="px-6 py-4 text-gray-700">CHF 20'000 - 50'000+</td>
-        </tr>
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Hochstrittige Scheidung mit mehreren Instanzen</td>
-          <td class="px-6 py-4 text-gray-700">CHF 50'000 - 150'000+</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig: Honorarvereinbarung</p>
+        <p class="text-gray-700">Grundsätzlich können Honorarvereinbarungen frei getroffen werden. Werden keine individuellen Vereinbarungen mit dem Anwalt getroffen, gelten die kantonalen Gebührenverordnungen als subsidiäre Rechtsgrundlage.</p>
+    </div>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kostenfaktoren</h2>
+    <!-- 2. Honorararten -->
+    <h2 id="honorararten" class="font-serif text-3xl font-bold text-navy mt-16 mb-6">Honorararten im Überblick</h2>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Verfahrensart und Komplexität</h3>
-  <p class="text-gray-700 mb-6">Der wichtigste Kostenfaktor ist die Art des Scheidungsverfahrens. Eine einvernehmliche Scheidung erfordert typischerweise einen Zeitaufwand von 5 bis 20 Stunden, während eine vollstreitige Scheidung leicht 50 bis 200 oder mehr Stunden Anwaltsarbeit erfordern kann.</p>
+    <p class="text-gray-700 mb-6">Bei Scheidungsangelegenheiten kommen verschiedene Honorarmodelle zur Anwendung. Die Wahl des richtigen Modells hängt von der Art des Mandats und den individuellen Umständen ab.</p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Regionale Unterschiede</h3>
-  <p class="text-gray-700 mb-6">Die Anwaltskosten variieren zwischen den Kantonen erheblich. In städtischen Zentren wie Zürich liegen die Stundensätze typischerweise bei 350 bis 500 Franken, während in kleineren Kantonen Ansätze von 200 bis 350 Franken die Regel sein können.</p>
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Honorarart</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Typischer Anwendungsbereich</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Vor-/Nachteile</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Stundenhonorar</td>
+                    <td class="px-6 py-4 text-gray-700">Abrechnung nach effektivem Zeitaufwand</td>
+                    <td class="px-6 py-4 text-gray-700">Häufigste Form bei Scheidungen</td>
+                    <td class="px-6 py-4 text-gray-700">+ Transparent / - Kosten schwer kalkulierbar</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Pauschalhonorar</td>
+                    <td class="px-6 py-4 text-gray-700">Fester Betrag für definierte Leistung</td>
+                    <td class="px-6 py-4 text-gray-700">Einfache einvernehmliche Scheidungen</td>
+                    <td class="px-6 py-4 text-gray-700">+ Planbare Kosten / - Nur bei klarem Umfang</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Streitwertabhängiges Honorar</td>
+                    <td class="px-6 py-4 text-gray-700">Berechnung nach dem Wert des Streitgegenstands</td>
+                    <td class="px-6 py-4 text-gray-700">Bei hohen Vermögenswerten</td>
+                    <td class="px-6 py-4 text-gray-700">+ Bei geringem Streitwert günstiger / - Bei hohem Streitwert teuer</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Erfolgshonorar (pactum de quota litis)</td>
+                    <td class="px-6 py-4 text-gray-700">Zusätzliche Vergütung bei Erfolg</td>
+                    <td class="px-6 py-4 text-gray-700">Nur als Zusatz zum Grundhonorar zulässig</td>
+                    <td class="px-6 py-4 text-gray-700">+ Interessengleichheit / - Nicht als alleiniges Honorar erlaubt</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Mischformen</td>
+                    <td class="px-6 py-4 text-gray-700">Kombination verschiedener Elemente</td>
+                    <td class="px-6 py-4 text-gray-700">Komplexere Mandate</td>
+                    <td class="px-6 py-4 text-gray-700">+ Flexibel / - Komplexere Abrechnung</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kostenverteilung zwischen den Ehegatten</h2>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-10 mb-4">Das Stundenhonorar im Detail</h3>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Bei einvernehmlicher Scheidung</h3>
-  <p class="text-gray-700 mb-6">Bei einer Scheidung auf gemeinsames Begehren tragen die Ehegatten grundsätzlich ihre eigenen Anwaltskosten selbst. In der Scheidungskonvention kann jedoch eine abweichende Regelung getroffen werden.</p>
+    <p class="text-gray-700 mb-6">Das Stundenhonorar ist die gängigste Form der Abrechnung bei Scheidungsverfahren. Der Anwalt erfasst seinen Zeitaufwand und rechnet diesen mit dem vereinbarten Stundensatz ab. Typischerweise werden folgende Tätigkeiten erfasst:</p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Prozesskostenvorschuss zwischen Ehegatten</h3>
-  <p class="text-gray-700 mb-6">Während des Scheidungsverfahrens kann ein Ehegatte vom anderen einen Prozesskostenvorschuss verlangen, wenn er nicht über genügend eigene Mittel verfügt. Dieser Anspruch ergibt sich aus der ehelichen Beistandspflicht gemäss Art. 159 Abs. 3 ZGB.</p>
-
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Unentgeltliche Rechtspflege</h2>
-
-  <p class="text-gray-700 mb-4">Wer nicht über die erforderlichen Mittel verfügt, kann unentgeltliche Rechtspflege beantragen (Art. 117 ZPO). Diese umfasst:</p>
-  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-    <li>Befreiung von Gerichtskosten</li>
-    <li>Übernahme der Kosten eines unentgeltlichen Rechtsbeistands</li>
-    <li>Befreiung von Sicherheitsleistungen</li>
-  </ul>
-
-  <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-    <p class="font-semibold text-navy">Rückzahlungspflicht:</p>
-    <p class="text-gray-700">Die unentgeltliche Rechtspflege ist keine endgültige Kostenbefreiung. Die begünstigte Partei ist verpflichtet, die erhaltenen Beträge zurückzuzahlen, sobald sie dazu in der Lage ist (Art. 123 ZPO). Diese Nachzahlungspflicht gilt für zehn Jahre nach Abschluss des Verfahrens.</p>
-  </div>
-
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Praktische Empfehlungen zur Kostensenkung</h2>
-
-  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-    <li>Mehrere Erstberatungen einholen, um Kostenniveau zu vergleichen</li>
-    <li>Honorarvereinbarung schriftlich festhalten</li>
-    <li>Unterlagen gut vorbereitet und geordnet bereitstellen</li>
-    <li>Anfragen gebündelt stellen statt viele einzelne Telefonate führen</li>
-    <li>Regelmässig den Kostenstand erfragen</li>
-    <li>Einvernehmliche Lösungen anstreben</li>
-  </ul>
-
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
-
-  <p class="text-gray-700 mb-6">Die Anwaltskosten bei einer Scheidung können je nach Komplexität erheblich variieren. Eine transparente Honorarvereinbarung, regelmässige Kostenkontrolle und das Anstreben einvernehmlicher Lösungen sind die wichtigsten Instrumente zur Kostenbegrenzung. Die Investition in kompetente rechtliche Beratung kann durch effiziente Mandatsführung und Vermeidung von Fehlern einen erheblichen Mehrwert schaffen.</p>
-
-  <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-    <p class="font-semibold text-navy mb-2">Relevante Gesetzesbestimmungen:</p>
-    <ul class="list-disc list-inside text-gray-700 space-y-1">
-      <li>Art. 12 BGFA (Berufsregeln für Anwälte)</li>
-      <li>Art. 95-111 ZPO (Prozesskosten)</li>
-      <li>Art. 117-123 ZPO (Unentgeltliche Rechtspflege)</li>
-      <li>Art. 159 Abs. 3 ZGB (Eheliche Beistandspflicht)</li>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2 ml-4">
+        <li>Besprechungen mit dem Klienten (persönlich, telefonisch, per Videokonferenz)</li>
+        <li>Aktenstudium und Dokumentenanalyse</li>
+        <li>Erstellen von Schriftsätzen (Scheidungsbegehren, Stellungnahmen)</li>
+        <li>Korrespondenz mit Gegenseite und Gericht</li>
+        <li>Teilnahme an Gerichtsverhandlungen</li>
+        <li>Reisezeit (oft zu reduziertem Satz)</li>
+        <li>Verhandlungen mit der Gegenpartei</li>
     </ul>
-  </div>
+
+    <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
+        <p class="font-semibold text-navy mb-4">Abrechnungsintervalle</p>
+        <p class="text-gray-700">Die meisten Anwälte rechnen in 6-Minuten-Intervallen (1/10 Stunde) oder 15-Minuten-Intervallen (1/4 Stunde) ab. Ein kurzes Telefonat von 5 Minuten kann daher als 6 oder 15 Minuten berechnet werden. Fragen Sie Ihren Anwalt nach dem verwendeten Abrechnungsintervall.</p>
+    </div>
+
+    <!-- 3. Stundenansätze nach Region -->
+    <h2 id="stundenansaetze" class="font-serif text-3xl font-bold text-navy mt-16 mb-6">Stundenansätze nach Region</h2>
+
+    <p class="text-gray-700 mb-6">Die Stundenansätze für Anwälte variieren in der Schweiz erheblich – sowohl nach Region als auch nach Spezialisierungsgrad und Erfahrung des Anwalts.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Region / Kanton</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Stundenansatz (CHF)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bemerkung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Zürich</td>
+                    <td class="px-6 py-4 text-gray-700">300 - 500</td>
+                    <td class="px-6 py-4 text-gray-700">Höchstes Kostenniveau, Spezialisten bis CHF 600+</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Genf, Basel-Stadt</td>
+                    <td class="px-6 py-4 text-gray-700">280 - 450</td>
+                    <td class="px-6 py-4 text-gray-700">Städtisches Preisniveau</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Bern, Luzern</td>
+                    <td class="px-6 py-4 text-gray-700">250 - 380</td>
+                    <td class="px-6 py-4 text-gray-700">Mittleres Preisniveau</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Übrige Deutschschweiz</td>
+                    <td class="px-6 py-4 text-gray-700">200 - 350</td>
+                    <td class="px-6 py-4 text-gray-700">Regionales Preisniveau</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Ländliche Kantone</td>
+                    <td class="px-6 py-4 text-gray-700">180 - 300</td>
+                    <td class="px-6 py-4 text-gray-700">Günstigstes Preisniveau</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-10 mb-4">Faktoren für den Stundenansatz</h3>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
+            <h4 class="font-bold text-navy mb-3">Höherer Stundenansatz</h4>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li>Fachanwalt für Familienrecht</li>
+                <li>Langjährige Erfahrung (15+ Jahre)</li>
+                <li>Kanzlei in Grossstadt</li>
+                <li>Hoher Streitwert</li>
+                <li>Komplexe internationale Fälle</li>
+            </ul>
+        </div>
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
+            <h4 class="font-bold text-navy mb-3">Niedrigerer Stundenansatz</h4>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                <li>Generalist ohne Spezialisierung</li>
+                <li>Weniger Berufserfahrung</li>
+                <li>Kanzlei in ländlicher Region</li>
+                <li>Standardfälle ohne Besonderheiten</li>
+                <li>Juristische Mitarbeiter (CHF 100-250)</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 4. Kostenrahmen -->
+    <h2 id="kostenrahmen" class="font-serif text-3xl font-bold text-navy mt-16 mb-6">Typische Kostenrahmen nach Verfahrensart</h2>
+
+    <p class="text-gray-700 mb-6">Die Gesamtkosten einer Scheidung hängen massgeblich von der Verfahrensart ab. Eine einvernehmliche Scheidung ist in der Regel deutlich günstiger als eine strittige Scheidung.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Verfahrensart</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Anwaltskosten pro Person (CHF)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Typischer Zeitaufwand</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Dauer</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Einvernehmliche Scheidung (einfach)</td>
+                    <td class="px-6 py-4 text-gray-700">1'500 - 5'000</td>
+                    <td class="px-6 py-4 text-gray-700">5-15 Stunden</td>
+                    <td class="px-6 py-4 text-gray-700">2-4 Monate</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Einvernehmliche Scheidung (komplex)</td>
+                    <td class="px-6 py-4 text-gray-700">5'000 - 15'000</td>
+                    <td class="px-6 py-4 text-gray-700">15-40 Stunden</td>
+                    <td class="px-6 py-4 text-gray-700">3-6 Monate</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Teileinigung (nur einzelne Punkte strittig)</td>
+                    <td class="px-6 py-4 text-gray-700">8'000 - 25'000</td>
+                    <td class="px-6 py-4 text-gray-700">25-70 Stunden</td>
+                    <td class="px-6 py-4 text-gray-700">6-18 Monate</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Strittige Scheidung</td>
+                    <td class="px-6 py-4 text-gray-700">20'000 - 60'000</td>
+                    <td class="px-6 py-4 text-gray-700">60-150 Stunden</td>
+                    <td class="px-6 py-4 text-gray-700">1-3 Jahre</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Hochstrittige Scheidung mit Rechtsmitteln</td>
+                    <td class="px-6 py-4 text-gray-700">50'000 - 150'000+</td>
+                    <td class="px-6 py-4 text-gray-700">150-400+ Stunden</td>
+                    <td class="px-6 py-4 text-gray-700">3-10+ Jahre</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-red-50 border-l-4 border-red-500 p-6 my-8">
+        <p class="font-semibold text-red-800 mb-2">Achtung: Kostenexplosion bei strittiger Scheidung</p>
+        <p class="text-gray-700">Bei einer strittigen Scheidung, deren Verfahren bis zu 10 Jahre und länger dauern kann, können sich die Anwaltskosten auf <strong>über CHF 100'000 pro Person</strong> belaufen. Dies ist insbesondere dann der Fall, wenn Rechtsmittel bis zum Bundesgericht ergriffen werden oder Gutachten (z.B. zur Erziehungsfähigkeit) eingeholt werden müssen.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-10 mb-4">Berechnungsbeispiel: Einvernehmliche Scheidung</h3>
+
+    <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
+        <p class="font-semibold text-navy mb-4">Beispiel: Einfache einvernehmliche Scheidung in Zürich</p>
+        <p class="text-gray-700 mb-3">Ehepaar ohne Kinder, klare Vermögensverhältnisse, Scheidungskonvention wird gemeinsam erstellt.</p>
+        <div class="bg-white p-4 rounded border border-blue-300">
+            <p class="text-gray-700"><strong>Stundenansatz:</strong> CHF 350</p>
+            <p class="text-gray-700 mt-2"><strong>Zeitaufwand:</strong></p>
+            <ul class="list-disc list-inside text-gray-700 ml-4 mt-1">
+                <li>Erstberatung: 1.5 Stunden</li>
+                <li>Erstellung Scheidungskonvention: 3 Stunden</li>
+                <li>Korrespondenz/Telefonate: 2 Stunden</li>
+                <li>Vorbereitung Gerichtsverhandlung: 1.5 Stunden</li>
+                <li>Gerichtsverhandlung inkl. Reise: 2 Stunden</li>
+            </ul>
+            <p class="text-gray-700 font-semibold mt-3">Total: 10 Stunden × CHF 350 = CHF 3'500</p>
+            <p class="text-gray-700 mt-1">+ Auslagen (Kopien, Porto): ca. CHF 100</p>
+            <p class="text-gray-700 mt-1">+ MwSt. 8.1%: ca. CHF 290</p>
+            <p class="text-gray-700 font-bold mt-2 text-navy">Gesamtkosten: ca. CHF 3'890</p>
+        </div>
+    </div>
+
+    <!-- 5. Kostenfaktoren -->
+    <h2 id="kostenfaktoren" class="font-serif text-3xl font-bold text-navy mt-16 mb-6">Faktoren, die die Kosten beeinflussen</h2>
+
+    <p class="text-gray-700 mb-6">Die Höhe der Anwaltskosten wird von zahlreichen Faktoren beeinflusst. Das Verständnis dieser Faktoren hilft, die Kosten besser einzuschätzen und zu kontrollieren.</p>
+
+    <div class="space-y-6 mb-8">
+        <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="font-bold text-navy mb-3">1. Verfahrensart und Einigungsbereitschaft</h3>
+            <p class="text-gray-700">Der wichtigste Kostenfaktor ist die Verfahrensart. Eine einvernehmliche Scheidung erfordert typischerweise 5-20 Stunden Anwaltsarbeit, während eine vollstreitige Scheidung leicht 100-300 Stunden und mehr erfordern kann. Jeder Streitpunkt erhöht den Aufwand erheblich.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="font-bold text-navy mb-3">2. Vermögensverhältnisse und Streitwert</h3>
+            <p class="text-gray-700">Je höher der Streitwert (Wert der Vermögenswerte, Unterhaltsforderungen), desto komplexer wird die güterrechtliche Auseinandersetzung. Bei Immobilien, Unternehmensbeteiligungen oder internationalem Vermögen steigt der Aufwand erheblich.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="font-bold text-navy mb-3">3. Kinderbelange</h3>
+            <p class="text-gray-700">Wenn Kinder involviert sind, kommen Fragen zu Sorgerecht, Obhut, Besuchsrecht und Kindesunterhalt hinzu. Bei Uneinigkeit können Gutachten zur Erziehungsfähigkeit erforderlich werden, was die Kosten zusätzlich erhöht.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="font-bold text-navy mb-3">4. Verhalten der Gegenpartei</h3>
+            <p class="text-gray-700">Ein unkooperativer Ehegatte oder ein Anwalt, der auf Konfrontation setzt, kann die Kosten massiv in die Höhe treiben. Jede zusätzliche Eingabe, jede versäumte Frist der Gegenseite verursacht Mehraufwand.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="font-bold text-navy mb-3">5. Internationale Elemente</h3>
+            <p class="text-gray-700">Bei Ehen mit internationalem Bezug (verschiedene Staatsangehörigkeiten, Vermögen im Ausland) kommen Fragen des internationalen Privatrechts hinzu, was spezialisiertes Wissen erfordert und die Kosten erhöht.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="font-bold text-navy mb-3">6. Dringlichkeit und Eheschutzmassnahmen</h3>
+            <p class="text-gray-700">Müssen vorgängig Eheschutzmassnahmen (z.B. Regelung des Getrenntlebens, vorsorgliche Unterhaltszahlungen) beantragt werden, entstehen zusätzliche Kosten für dieses separate Verfahren.</p>
+        </div>
+    </div>
+
+    <!-- 6. Kostenverteilung -->
+    <h2 id="kostenverteilung" class="font-serif text-3xl font-bold text-navy mt-16 mb-6">Kostenverteilung zwischen den Ehegatten</h2>
+
+    <p class="text-gray-700 mb-6">Die Frage, wer die Anwaltskosten bei einer Scheidung trägt, hängt von der Art des Verfahrens ab.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-10 mb-4">Bei einvernehmlicher Scheidung</h3>
+
+    <p class="text-gray-700 mb-6">Bei einer Scheidung auf gemeinsames Begehren tragen die Ehegatten grundsätzlich <strong>ihre eigenen Anwaltskosten selbst</strong>. In der Scheidungskonvention kann jedoch eine abweichende Regelung getroffen werden, beispielsweise:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2 ml-4">
+        <li>Hälftige Teilung der gesamten Anwaltskosten</li>
+        <li>Übernahme durch den finanzkräftigeren Ehegatten</li>
+        <li>Nutzung eines gemeinsamen Anwalts zur Kostenteilung</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Gemeinsamer Anwalt bei einvernehmlicher Scheidung</p>
+        <p class="text-gray-700">Bei einer einvernehmlichen Scheidung kann ein gemeinsamer Anwalt die Scheidungskonvention erstellen. Dies spart erhebliche Kosten, da nur eine Rechnung anfällt. Der Anwalt muss jedoch neutral beraten und beide Seiten gleichermassen informieren. Bei Interessenkonflikten ist eine getrennte Vertretung erforderlich.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-10 mb-4">Bei strittiger Scheidung</h3>
+
+    <p class="text-gray-700 mb-6">Bei einer strittigen Scheidung gilt der Grundsatz: <strong>Die unterliegende Partei trägt die Kosten</strong> (Art. 106 ZPO). Dies umfasst sowohl die Gerichtskosten als auch die Parteientschädigung (Anwaltskosten der Gegenpartei).</p>
+
+    <!-- 7. Parteientschädigung -->
+    <h2 id="parteientschaedigung" class="font-serif text-3xl font-bold text-navy mt-16 mb-6">Parteientschädigung bei strittiger Scheidung</h2>
+
+    <p class="text-gray-700 mb-6">Die Parteientschädigung ist der Betrag, den die unterliegende Partei der obsiegenden Partei für deren Anwaltskosten zu ersetzen hat. Sie wird vom Gericht festgesetzt.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Situation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kostenfolge</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Vollständiges Obsiegen</td>
+                    <td class="px-6 py-4 text-gray-700">Unterlegener trägt alle Kosten + volle Parteientschädigung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Teilweises Obsiegen (z.B. 70:30)</td>
+                    <td class="px-6 py-4 text-gray-700">Kosten werden im Verhältnis 70:30 aufgeteilt, Parteientschädigungen werden verrechnet</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Klagerückzug</td>
+                    <td class="px-6 py-4 text-gray-700">Gilt als Unterliegen – Kläger trägt alle Kosten (BGE 5A_352/2013)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Vergleich</td>
+                    <td class="px-6 py-4 text-gray-700">Kostenregelung wird im Vergleich vereinbart (oft hälftige Teilung)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig: Antrag erforderlich</p>
+        <p class="text-gray-700">Das Rechtsbegehren sollte einen <strong>Antrag auf Parteientschädigung</strong> enthalten. Wird kein Antrag gestellt, wird aufgrund der Dispositionsmaxime keine Parteientschädigung zugesprochen – auch bei vollständigem Obsiegen.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-10 mb-4">Differenz zwischen Parteientschädigung und tatsächlichen Kosten</h3>
+
+    <p class="text-gray-700 mb-6">Die vom Gericht festgesetzte Parteientschädigung entspricht nicht immer den tatsächlichen Anwaltskosten. Sie wird nach den kantonalen Gebührenverordnungen berechnet, die oft unter den effektiven Kosten liegen. Die <strong>Differenz</strong> zwischen der erhaltenen Parteientschädigung und dem tatsächlich bezahlten Honorar muss die obsiegende Partei selbst tragen.</p>
+
+    <!-- 8. Prozesskostenvorschuss -->
+    <h2 id="prozesskostenvorschuss" class="font-serif text-3xl font-bold text-navy mt-16 mb-6">Prozesskostenvorschuss vom Ehegatten</h2>
+
+    <p class="text-gray-700 mb-6">Ein Ehegatte kann vom anderen einen <strong>Prozesskostenvorschuss</strong> (auch: provisio ad litem) verlangen, wenn er nicht über genügend eigene Mittel verfügt, um die Gerichts- und Anwaltskosten zu bezahlen. Dieser Anspruch ergibt sich aus der ehelichen Beistandspflicht (Art. 159 Abs. 3 ZGB) und der Unterhaltspflicht (Art. 163 ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-10 mb-4">Voraussetzungen</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Voraussetzung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erläuterung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Bedürftigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Dem antragstellenden Ehegatten fehlen die Mittel, um die Kosten selbst vorzuschiessen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Leistungsfähigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Der angesprochene Ehegatte muss in der Lage sein, den Vorschuss zu bezahlen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Bestehende Ehe</td>
+                    <td class="px-6 py-4 text-gray-700">Der Anspruch besteht nur während bestehender Ehe (auch bei Getrenntleben)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
+        <p class="font-semibold text-navy mb-4">Verhältnis zur unentgeltlichen Rechtspflege</p>
+        <p class="text-gray-700">In Scheidungsverfahren wird die unentgeltliche Rechtspflege oft unter der Bedingung gewährt, dass der bedürftige Ehegatte zunächst einen Prozesskostenvorschuss vom anderen Ehegatten verlangt. Die unentgeltliche Rechtspflege ist somit <strong>subsidiär</strong> zum Prozesskostenvorschuss.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-10 mb-4">Geltendmachung</h3>
+
+    <p class="text-gray-700 mb-6">Der Prozesskostenvorschuss wird typischerweise als vorsorgliche Massnahme im Scheidungsverfahren oder als Eheschutzmassnahme beantragt. Das Gericht setzt dann einen angemessenen Betrag fest. Bei Nichtleistung kann der Vorschuss vollstreckt werden, das Nichtleisten ist jedoch <strong>keine Prozessvoraussetzung</strong> – die Scheidungsklage kann nicht mangels Zahlung abgewiesen werden.</p>
+
+    <!-- 9. Unentgeltliche Rechtspflege -->
+    <h2 id="unentgeltliche-rechtspflege" class="font-serif text-3xl font-bold text-navy mt-16 mb-6">Unentgeltliche Rechtspflege</h2>
+
+    <p class="text-gray-700 mb-6">Wer nicht über die erforderlichen finanziellen Mittel verfügt, kann <strong>unentgeltliche Rechtspflege</strong> beantragen. Der Anspruch ergibt sich aus Art. 29 Abs. 3 BV (Bundesverfassung) und wird in Art. 117-123 ZPO konkretisiert.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-10 mb-4">Voraussetzungen (Art. 117 ZPO)</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Voraussetzung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gesetzliche Grundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erläuterung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Mittellosigkeit (Bedürftigkeit)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 117 lit. a ZPO</td>
+                    <td class="px-6 py-4 text-gray-700">Person kann Prozesskosten nicht aufbringen, ohne Existenz zu gefährden</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Keine Aussichtslosigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 117 lit. b ZPO</td>
+                    <td class="px-6 py-4 text-gray-700">Rechtsbegehren darf nicht offensichtlich aussichtslos erscheinen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-10 mb-4">Berechnung der Mittellosigkeit</h3>
+
+    <p class="text-gray-700 mb-6">Als bedürftig gilt, wer die Prozesskosten nicht aufbringen kann, ohne jene Mittel anzugreifen, die zur Deckung des notwendigen Lebensunterhalts erforderlich sind. Der <strong>zivilprozessuale Notbedarf</strong> liegt dabei typischerweise 10-30% höher als das betreibungsrechtliche Existenzminimum, da insbesondere laufende Steuern berücksichtigt werden.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-10 mb-4">Umfang der unentgeltlichen Rechtspflege (Art. 118 ZPO)</h3>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2 ml-4">
+        <li><strong>Befreiung von Vorschüssen und Sicherheitsleistungen</strong></li>
+        <li><strong>Befreiung von Gerichtskosten</strong></li>
+        <li><strong>Unentgeltlicher Rechtsbeistand</strong> (wenn zur Wahrung der Rechte notwendig)</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Besonderheit bei Scheidungsverfahren</p>
+        <p class="text-gray-700">In familienrechtlichen Verfahren (Eheschutz, Scheidung) werden die Voraussetzungen für die unentgeltliche Rechtspflege oft erfüllt: Dem Unterhaltspflichtigen ist das Existenzminimum zu belassen, und der zugesprochene Unterhalt reicht oft nicht aus, um den Bedarf der unterhaltsberechtigten Person zu decken. Zudem werden familienrechtliche Verfahren in der Regel <strong>nicht als aussichtslos</strong> beurteilt.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-10 mb-4">Rückzahlungspflicht (Art. 123 ZPO)</h3>
+
+    <p class="text-gray-700 mb-6">Die unentgeltliche Rechtspflege ist <strong>keine endgültige Kostenbefreiung</strong>, sondern ein zinsloses Darlehen des Staates. Die begünstigte Person ist verpflichtet, die erhaltenen Beträge zurückzuzahlen, sobald sie dazu in der Lage ist. Diese Nachzahlungspflicht gilt für <strong>10 Jahre</strong> nach Abschluss des Verfahrens.</p>
+
+    <div class="bg-red-50 border-l-4 border-red-500 p-6 my-8">
+        <p class="font-semibold text-red-800 mb-2">Kantonale Unterschiede bei der Rückforderung</p>
+        <p class="text-gray-700">Die Praxis der Kantone ist bei der Gewährung und insbesondere bei der Rückforderung der unentgeltlichen Rechtspflege sehr unterschiedlich. Einige Kantone fordern konsequent zurück (auch in Raten), andere sind grosszügiger. Erkundigen Sie sich beim zuständigen Gericht über die lokale Praxis.</p>
+    </div>
+
+    <!-- 10. Kantonale Unterschiede -->
+    <h2 id="kantonale-unterschiede" class="font-serif text-3xl font-bold text-navy mt-16 mb-6">Kantonale Unterschiede bei den Kosten</h2>
+
+    <p class="text-gray-700 mb-6">Die Anwalts- und Gerichtskosten variieren je nach Kanton erheblich. Dies betrifft sowohl die Gerichtsgebühren als auch die Honorarrahmen gemäss kantonaler Gebührenverordnung.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kanton</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gerichtskosten einvernehmlich (ca.)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Massgebliche Verordnung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Zürich</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 2'000 - 2'600</td>
+                    <td class="px-6 py-4 text-gray-700">AnwGebV (LS 215.3), GebV OG (LS 211.11)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Bern</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'800 - 2'200</td>
+                    <td class="px-6 py-4 text-gray-700">Dekret über die Anwaltsgebühren</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Basel-Stadt</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 830 - 1'200</td>
+                    <td class="px-6 py-4 text-gray-700">Tarifordnung für Advokaten</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Luzern</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'800 - 2'400</td>
+                    <td class="px-6 py-4 text-gray-700">Kostenverordnung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">St. Gallen</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'500 - 2'000</td>
+                    <td class="px-6 py-4 text-gray-700">Honorarordnung für Rechtsanwälte</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Schwyz</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'000 - 1'500</td>
+                    <td class="px-6 py-4 text-gray-700">Gebührentarif für Rechtsanwälte (SRSZ 280.411)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Tipp: Gebührenrechner nutzen</p>
+        <p class="text-gray-700">Einige Kantone wie Zürich bieten online Gebührenrechner an, mit denen die voraussichtlichen Gerichtskosten berechnet werden können. Nutzen Sie diese Tools für eine erste Kostenschätzung.</p>
+    </div>
+
+    <!-- 11. Spartipps -->
+    <h2 id="spartipps" class="font-serif text-3xl font-bold text-navy mt-16 mb-6">Praktische Tipps zur Kostensenkung</h2>
+
+    <p class="text-gray-700 mb-6">Mit den folgenden Strategien können Sie die Anwaltskosten bei Ihrer Scheidung deutlich reduzieren:</p>
+
+    <div class="space-y-4 mb-8">
+        <div class="flex items-start">
+            <div class="bg-navy text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1 flex-shrink-0">1</div>
+            <div>
+                <p class="font-semibold text-navy">Einvernehmliche Lösung anstreben</p>
+                <p class="text-gray-700">Der grösste Kostentreiber ist Streit. Jede Einigung spart massiv Kosten. Erwägen Sie Mediation, wenn direkte Gespräche schwierig sind.</p>
+            </div>
+        </div>
+        <div class="flex items-start">
+            <div class="bg-navy text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1 flex-shrink-0">2</div>
+            <div>
+                <p class="font-semibold text-navy">Mehrere Erstberatungen einholen</p>
+                <p class="text-gray-700">Vergleichen Sie die Kostenstruktur verschiedener Anwälte. Viele bieten eine erste Kurzberatung kostenlos oder zu einem Fixpreis an.</p>
+            </div>
+        </div>
+        <div class="flex items-start">
+            <div class="bg-navy text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1 flex-shrink-0">3</div>
+            <div>
+                <p class="font-semibold text-navy">Schriftliche Honorarvereinbarung abschliessen</p>
+                <p class="text-gray-700">Vereinbaren Sie Stundenansatz, Abrechnungsintervall und Zahlungsmodalitäten schriftlich. Fragen Sie nach einer Kostenschätzung.</p>
+            </div>
+        </div>
+        <div class="flex items-start">
+            <div class="bg-navy text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1 flex-shrink-0">4</div>
+            <div>
+                <p class="font-semibold text-navy">Unterlagen gut vorbereiten</p>
+                <p class="text-gray-700">Stellen Sie alle relevanten Dokumente geordnet und vollständig bereit. Jede Stunde, die der Anwalt mit Suchen verbringt, kostet Sie Geld.</p>
+            </div>
+        </div>
+        <div class="flex items-start">
+            <div class="bg-navy text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1 flex-shrink-0">5</div>
+            <div>
+                <p class="font-semibold text-navy">Anfragen bündeln</p>
+                <p class="text-gray-700">Statt vieler einzelner Telefonate oder E-Mails sammeln Sie Ihre Fragen und klären diese in einem Gespräch. Jeder Kontakt wird abgerechnet.</p>
+            </div>
+        </div>
+        <div class="flex items-start">
+            <div class="bg-navy text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1 flex-shrink-0">6</div>
+            <div>
+                <p class="font-semibold text-navy">Regelmässig Kostenstand erfragen</p>
+                <p class="text-gray-700">Verlangen Sie regelmässige Zwischenabrechnungen oder Kostenübersichten. So behalten Sie die Kontrolle und vermeiden böse Überraschungen.</p>
+            </div>
+        </div>
+        <div class="flex items-start">
+            <div class="bg-navy text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1 flex-shrink-0">7</div>
+            <div>
+                <p class="font-semibold text-navy">Gemeinsamen Anwalt bei Einigkeit prüfen</p>
+                <p class="text-gray-700">Bei einer einvernehmlichen Scheidung kann ein gemeinsamer Anwalt die Konvention erstellen – die Kosten werden geteilt.</p>
+            </div>
+        </div>
+        <div class="flex items-start">
+            <div class="bg-navy text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1 flex-shrink-0">8</div>
+            <div>
+                <p class="font-semibold text-navy">Emotionen von Rechtsberatung trennen</p>
+                <p class="text-gray-700">Der Anwalt ist kein Therapeut. Nutzen Sie die (teure) Anwaltszeit für rechtliche Fragen und suchen Sie bei Bedarf separate psychologische Unterstützung.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 12. Anwalt-Sektion -->
+    <section id="anwalt" class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Scheidungsanwalt beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">In der Schweiz besteht kein Anwaltszwang für Scheidungsverfahren. In vielen Situationen ist eine anwaltliche Vertretung dennoch dringend empfohlen – die Investition zahlt sich durch eine bessere Verhandlungsposition und die Vermeidung kostspieliger Fehler oft mehrfach aus.</p>
+
+        <p class="text-gray-700 mb-6">Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> ist besonders wichtig in folgenden Situationen:</p>
+
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2 ml-4">
+            <li>Die Gegenseite ist <strong>anwaltlich vertreten</strong> – ohne eigenen Anwalt sind Sie im Nachteil</li>
+            <li>Es zeichnet sich eine <strong>strittige Scheidung</strong> ab</li>
+            <li>Es sind <strong>Kinder</strong> involviert und Sorgerecht, Obhut oder Besuchsrecht sind umstritten</li>
+            <li>Es ist <strong>erhebliches Vermögen</strong> vorhanden (Immobilien, Unternehmen, Wertschriften)</li>
+            <li>Die <strong>güterrechtliche Auseinandersetzung</strong> ist komplex (gemischte Finanzierungen, Erbschaften)</li>
+            <li>Es bestehen <strong>Unterhaltsansprüche</strong> und die Berechnung ist umstritten</li>
+            <li>Die Ehe hat <strong>internationalen Bezug</strong> (verschiedene Staatsangehörigkeiten, Auslandsvermögen)</li>
+            <li>Ihr Ehegatte verhält sich <strong>unkooperativ oder aggressiv</strong></li>
+        </ul>
+
+        <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kennt die Praxis der lokalen Gerichte, kann realistische Erwartungen setzen und Ihre Interessen optimal vertreten. Auch bei einer grundsätzlich einvernehmlichen Scheidung ist die Überprüfung der Scheidungskonvention durch einen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> sinnvoll, um spätere Probleme zu vermeiden.</p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Scheidungssituation</h3>
+            <p class="mb-6">Unsere spezialisierten Familienrechtsanwälte beraten Sie kompetent zu allen Fragen rund um Ihre Scheidung – von der Erstberatung bis zur Vertretung vor Gericht. Erhalten Sie eine unverbindliche Einschätzung Ihrer Situation und der zu erwartenden Kosten.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- 13. Fazit -->
+    <h2 id="fazit" class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Die Anwaltskosten bei einer Scheidung in der Schweiz können je nach Verfahrensart und Komplexität erheblich variieren – von wenigen tausend Franken bei einer einfachen einvernehmlichen Scheidung bis zu sechsstelligen Beträgen bei hochstrittigen Verfahren mit mehreren Instanzen.</p>
+
+    <p class="text-gray-700 mb-6">Die wichtigsten Erkenntnisse:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2 ml-4">
+        <li><strong>Stundenansätze</strong> variieren regional zwischen CHF 200 und 500, mit Tendenz zu höheren Sätzen in Grossstädten wie Zürich.</li>
+        <li><strong>Einvernehmliche Scheidungen</strong> sind deutlich günstiger – jede Einigung spart Kosten.</li>
+        <li>Eine <strong>transparente Honorarvereinbarung</strong> und regelmässige Kostenkontrolle sind essenziell.</li>
+        <li>Bei finanzieller Bedürftigkeit stehen <strong>Prozesskostenvorschuss</strong> und <strong>unentgeltliche Rechtspflege</strong> als Finanzierungsoptionen zur Verfügung.</li>
+        <li>Die <strong>Parteientschädigung</strong> bei strittiger Scheidung deckt oft nicht die gesamten Anwaltskosten.</li>
+        <li>Gute Vorbereitung, gebündelte Kommunikation und die Fokussierung auf einvernehmliche Lösungen sind die besten Strategien zur Kostensenkung.</li>
+    </ul>
+
+    <p class="text-gray-700 mb-6">Die Investition in kompetente anwaltliche Beratung kann sich trotz der Kosten lohnen: Durch effiziente Mandatsführung, Vermeidung von Fehlern und eine bessere Verhandlungsposition kann langfristig oft mehr gespart werden, als die Beratung kostet.</p>
+
+    <!-- 14. FAQ -->
+    <section id="faq" class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was kostet ein Scheidungsanwalt in der Schweiz?</h3>
+                <p class="text-gray-700">Die Stundenansätze liegen typischerweise zwischen CHF 200 und 500, je nach Region und Spezialisierung. In Zürich sind CHF 300-500 üblich, in der übrigen Deutschschweiz CHF 250-350. Die Gesamtkosten hängen vom Zeitaufwand ab und betragen bei einer einvernehmlichen Scheidung ca. CHF 1'500-10'000 pro Person, bei strittigen Scheidungen CHF 20'000-100'000+.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Brauche ich für eine Scheidung zwingend einen Anwalt?</h3>
+                <p class="text-gray-700">Nein, in der Schweiz besteht kein Anwaltszwang für Scheidungsverfahren. Eine anwaltliche Vertretung ist jedoch empfehlenswert, wenn die Gegenseite anwaltlich vertreten ist, die Scheidung strittig wird, Kinder oder erhebliches Vermögen involviert sind, oder die güterrechtliche Auseinandersetzung komplex ist.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wer zahlt die Anwaltskosten bei einer Scheidung?</h3>
+                <p class="text-gray-700">Bei einer einvernehmlichen Scheidung trägt grundsätzlich jeder Ehegatte seine eigenen Anwaltskosten. Bei einer strittigen Scheidung trägt die unterliegende Partei die Kosten (Art. 106 ZPO), einschliesslich einer Parteientschädigung für die Anwaltskosten der Gegenseite. Bei Teilunterliegen werden die Kosten anteilig aufgeteilt.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist ein Prozesskostenvorschuss?</h3>
+                <p class="text-gray-700">Ein Prozesskostenvorschuss ist ein Betrag, den der finanzkräftigere Ehegatte dem anderen für die Deckung der Gerichts- und Anwaltskosten zahlen muss. Der Anspruch ergibt sich aus der ehelichen Beistandspflicht (Art. 159 ZGB) und der Unterhaltspflicht (Art. 163 ZGB) und besteht während der Dauer der Ehe, auch bei Getrenntleben.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wann habe ich Anspruch auf unentgeltliche Rechtspflege?</h3>
+                <p class="text-gray-700">Sie haben Anspruch auf unentgeltliche Rechtspflege (Art. 117 ZPO), wenn Sie mittellos sind (die Prozesskosten nicht aufbringen können, ohne Ihre Existenz zu gefährden) und Ihr Rechtsbegehren nicht offensichtlich aussichtslos ist. Bei Scheidungsverfahren werden diese Voraussetzungen oft erfüllt. Die unentgeltliche Rechtspflege ist jedoch rückzahlbar, wenn Sie später zu Mitteln kommen (10-Jahres-Frist).</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich bei einer einvernehmlichen Scheidung einen gemeinsamen Anwalt nehmen?</h3>
+                <p class="text-gray-700">Ja, bei einer einvernehmlichen Scheidung kann ein gemeinsamer Anwalt die Scheidungskonvention erstellen. Dies spart erhebliche Kosten. Der Anwalt muss jedoch neutral beraten und beide Seiten gleichermassen über ihre Rechte und Pflichten informieren. Bei Interessenkonflikten ist eine getrennte Vertretung erforderlich.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie kann ich bei den Anwaltskosten sparen?</h3>
+                <p class="text-gray-700">Die wichtigsten Spartipps: Streben Sie eine einvernehmliche Lösung an, bereiten Sie Ihre Unterlagen gut vor, bündeln Sie Ihre Anfragen, verlangen Sie regelmässige Kostenübersichten, schliessen Sie eine schriftliche Honorarvereinbarung ab, und nutzen Sie die (teure) Anwaltszeit nur für rechtliche Fragen.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist die Parteientschädigung?</h3>
+                <p class="text-gray-700">Die Parteientschädigung ist der Betrag, den die unterliegende Partei der obsiegenden Partei für deren Anwaltskosten ersetzen muss. Sie wird vom Gericht nach kantonaler Gebührenverordnung festgesetzt und deckt oft nicht die gesamten tatsächlichen Anwaltskosten. Ein Antrag auf Parteientschädigung muss im Rechtsbegehren gestellt werden.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Welche Honorararten gibt es bei Scheidungsanwälten?</h3>
+                <p class="text-gray-700">Die gängigste Form ist das Stundenhonorar (Abrechnung nach Zeitaufwand). Bei einfachen einvernehmlichen Scheidungen sind auch Pauschalhonorare möglich. Streitwertabhängige Honorare orientieren sich am Wert des Streitgegenstands. Reine Erfolgshonorare sind nicht zulässig, können aber als Zusatz zum Grundhonorar vereinbart werden.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was mache ich, wenn ich mit der Anwaltsrechnung nicht einverstanden bin?</h3>
+                <p class="text-gray-700">Bei Unzufriedenheit mit der Rechnung können Sie zunächst das Gespräch mit dem Anwalt suchen. Hilft das nicht, können Sie bei den meisten kantonalen Anwaltsverbänden oder der kantonalen Aufsichtsbehörde über Anwälte eine Überprüfung der Rechnung verlangen. Das Honorar muss angemessen und nachvollziehbar sein.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Anwaltskosten bei der Scheidung in der Schweiz",
+        "description": "Anwaltskosten Scheidung Schweiz: Stundenansätze, Pauschalhonorar, kantonale Unterschiede & unentgeltliche Rechtspflege. Mit Kostenbeispielen & Spartipps.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-19",
+        "dateModified": "2025-01-19",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/scheidung/anwaltskosten-scheidung"
+        }
+    })}></script>
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Was kostet ein Scheidungsanwalt in der Schweiz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Stundenansätze liegen typischerweise zwischen CHF 200 und 500, je nach Region und Spezialisierung. In Zürich sind CHF 300-500 üblich, in der übrigen Deutschschweiz CHF 250-350. Die Gesamtkosten betragen bei einer einvernehmlichen Scheidung ca. CHF 1'500-10'000 pro Person, bei strittigen Scheidungen CHF 20'000-100'000+."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Brauche ich für eine Scheidung zwingend einen Anwalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, in der Schweiz besteht kein Anwaltszwang für Scheidungsverfahren. Eine anwaltliche Vertretung ist jedoch empfehlenswert, wenn die Gegenseite anwaltlich vertreten ist, die Scheidung strittig wird, Kinder oder erhebliches Vermögen involviert sind."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wer zahlt die Anwaltskosten bei einer Scheidung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei einer einvernehmlichen Scheidung trägt grundsätzlich jeder Ehegatte seine eigenen Anwaltskosten. Bei einer strittigen Scheidung trägt die unterliegende Partei die Kosten (Art. 106 ZPO), einschliesslich einer Parteientschädigung für die Anwaltskosten der Gegenseite."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist ein Prozesskostenvorschuss?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ein Prozesskostenvorschuss ist ein Betrag, den der finanzkräftigere Ehegatte dem anderen für die Deckung der Gerichts- und Anwaltskosten zahlen muss. Der Anspruch ergibt sich aus der ehelichen Beistandspflicht (Art. 159 ZGB) und der Unterhaltspflicht (Art. 163 ZGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wann habe ich Anspruch auf unentgeltliche Rechtspflege?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sie haben Anspruch auf unentgeltliche Rechtspflege (Art. 117 ZPO), wenn Sie mittellos sind und Ihr Rechtsbegehren nicht offensichtlich aussichtslos ist. Die unentgeltliche Rechtspflege ist jedoch rückzahlbar, wenn Sie später zu Mitteln kommen (10-Jahres-Frist)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich bei einer einvernehmlichen Scheidung einen gemeinsamen Anwalt nehmen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, bei einer einvernehmlichen Scheidung kann ein gemeinsamer Anwalt die Scheidungskonvention erstellen. Der Anwalt muss jedoch neutral beraten und beide Seiten gleichermassen informieren. Bei Interessenkonflikten ist eine getrennte Vertretung erforderlich."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie kann ich bei den Anwaltskosten sparen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die wichtigsten Spartipps: Streben Sie eine einvernehmliche Lösung an, bereiten Sie Ihre Unterlagen gut vor, bündeln Sie Ihre Anfragen, verlangen Sie regelmässige Kostenübersichten, schliessen Sie eine schriftliche Honorarvereinbarung ab."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist die Parteientschädigung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Parteientschädigung ist der Betrag, den die unterliegende Partei der obsiegenden Partei für deren Anwaltskosten ersetzen muss. Sie wird vom Gericht nach kantonaler Gebührenverordnung festgesetzt und deckt oft nicht die gesamten tatsächlichen Anwaltskosten."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welche Honorararten gibt es bei Scheidungsanwälten?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die gängigste Form ist das Stundenhonorar. Bei einfachen einvernehmlichen Scheidungen sind auch Pauschalhonorare möglich. Streitwertabhängige Honorare orientieren sich am Wert des Streitgegenstands. Reine Erfolgshonorare sind nicht zulässig."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was mache ich, wenn ich mit der Anwaltsrechnung nicht einverstanden bin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei Unzufriedenheit mit der Rechnung können Sie zunächst das Gespräch mit dem Anwalt suchen. Hilft das nicht, können Sie bei den kantonalen Anwaltsverbänden oder der kantonalen Aufsichtsbehörde über Anwälte eine Überprüfung der Rechnung verlangen."
+                }
+            }
+        ]
+    })}></script>
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Scheidung",
+                "item": "https://familienrechtanwalt.ch/scheidung"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Anwaltskosten bei der Scheidung",
+                "item": "https://familienrechtanwalt.ch/scheidung/anwaltskosten-scheidung"
+            }
+        ]
+    })}></script>
+
 </ArticleLayout>

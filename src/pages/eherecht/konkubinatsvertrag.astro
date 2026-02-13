@@ -9,6 +9,33 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
     category="Eherecht"
     categoryLink="/eherecht"
 >
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Der Konkubinatsvertrag ist formfrei – aus Beweisgründen ist die schriftliche Form jedoch dringend empfohlen.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Erbrechtliche Verfügungen gehören nicht in den Konkubinatsvertrag – dafür ist ein Testament oder Erbvertrag (notariell) erforderlich.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Empfohlene Regelungen: Haushaltskosten, Eigentumsverhältnisse, gemeinsame Immobilie, Trennungsfolgen und Kinderbetreuung.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Kosten: Kostenlose Vorlagen bis CHF 2'000+ bei anwaltlicher Erstellung für komplexe Verhältnisse.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Ohne Konkubinatsvertrag wenden Gerichte bei Trennung häufig die Regeln der einfachen Gesellschaft an (Art. 530 ff. OR).</span>
+            </li>
+        </ul>
+    </div>
+
     <section class="bg-white rounded-lg shadow-md p-8 mb-8">
         <h2 class="text-3xl font-serif font-bold text-navy mb-6">Was ist ein Konkubinatsvertrag?</h2>
         <p class="mb-4">Ein Konkubinatsvertrag ist ein privatrechtlicher Vertrag zwischen zwei Personen, die in einer nichtehelichen Lebensgemeinschaft zusammenleben. Er regelt die Bedingungen des gemeinsamen Zusammenlebens und definiert die gegenseitigen Rechte und Pflichten.</p>
@@ -140,21 +167,145 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         </div>
     </section>
 
-    <section class="bg-gray-50 rounded-lg p-8 mb-8">
-        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Häufige Fragen</h2>
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+        <p class="text-gray-700 mb-6">Ein Konkubinatsvertrag aus dem Internet mag für sehr einfache Verhältnisse ausreichen. Bei komplexeren Situationen ist jedoch professionelle Unterstützung wichtig, um alle relevanten Aspekte abzudecken und rechtliche Fallstricke zu vermeiden.</p>
+        <p class="text-gray-700 mb-6">Besonders in folgenden Situationen ist die Beratung durch einen erfahrenen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> dringend empfohlen:</p>
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Wenn Sie gemeinsam eine Immobilie erwerben oder besitzen</li>
+            <li>Bei erheblichen Einkommens- oder Vermögensunterschieden zwischen den Partnern</li>
+            <li>Wenn ein Partner für die Kinderbetreuung die Erwerbstätigkeit reduziert</li>
+            <li>Wenn ein Partner in die Selbständigkeit des anderen investiert</li>
+            <li>Für die Koordination von Konkubinatsvertrag, Testament und Vorsorgevollmacht</li>
+        </ul>
+        <p class="text-gray-700 mb-6">Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> kann einen massgeschneiderten Konkubinatsvertrag erstellen und Sie zu ergänzenden Dokumenten (Testament, Erbvertrag, Vorsorgeauftrag) beraten.</p>
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Lassen Sie sich beraten, welche Regelungen für Ihre persönliche Situation sinnvoll sind und wie Sie sich optimal absichern können.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
         <div class="space-y-6">
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <h3 class="text-lg font-semibold text-navy mb-2">Ist ein Konkubinatsvertrag rechtlich bindend?</h3>
-                <p class="text-gray-700">Ja, sofern er den allgemeinen Voraussetzungen für Verträge entspricht und keine unwirksamen Klauseln enthält.</p>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Ist ein Konkubinatsvertrag rechtlich bindend?</h3>
+                <p class="text-gray-700">Ja, sofern er den allgemeinen Voraussetzungen für Verträge entspricht (Handlungsfähigkeit, freier Wille, möglicher und erlaubter Inhalt) und keine unwirksamen Klauseln enthält.</p>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <h3 class="text-lg font-semibold text-navy mb-2">Muss der Vertrag notariell beglaubigt werden?</h3>
-                <p class="text-gray-700">Nein, die einfache Schriftlichkeit mit Unterschrift genügt. Nur bei erbrechtlichen Verfügungen oder Grundstückübertragungen ist eine notarielle Beurkundung erforderlich.</p>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Muss der Konkubinatsvertrag notariell beglaubigt werden?</h3>
+                <p class="text-gray-700">Nein, die einfache Schriftlichkeit mit Unterschrift beider Partner genügt. Nur bei erbrechtlichen Verfügungen (Erbvertrag) oder Grundstückübertragungen ist eine notarielle Beurkundung zwingend erforderlich.</p>
             </div>
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <h3 class="text-lg font-semibold text-navy mb-2">Was passiert ohne Konkubinatsvertrag bei Trennung?</h3>
-                <p class="text-gray-700">Ohne Vertrag gibt es keine gesetzlichen Regelungen. Gerichte wenden häufig die Regeln der einfachen Gesellschaft (Art. 530 ff. OR) an, was zu aufwändigen Verfahren führen kann.</p>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert ohne Konkubinatsvertrag bei einer Trennung?</h3>
+                <p class="text-gray-700">Ohne Vertrag gibt es keine gesetzlichen Regelungen für das Konkubinat. Gerichte wenden häufig die Regeln der einfachen Gesellschaft an (Art. 530 ff. OR), was zu aufwändigen und kostspieligen Verfahren führen kann.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich im Konkubinatsvertrag Unterhalt für den Fall der Trennung vereinbaren?</h3>
+                <p class="text-gray-700">Ja, Sie können Ausgleichszahlungen oder Unterhaltsbeiträge für den Fall der Trennung vereinbaren. Solche Regelungen sind rechtlich bindend, sofern sie nicht sittenwidrig sind.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich im Konkubinatsvertrag regeln, wer die Wohnung bei Trennung behält?</h3>
+                <p class="text-gray-700">Ja, Sie können vereinbaren, wer bei einer Trennung in der gemeinsamen Wohnung verbleibt und zu welchen Bedingungen (z.B. Auszugsfrist, Übernahme des Mietvertrags). Bei Mietwohnungen muss jedoch der Vermieter zustimmen.</p>
             </div>
         </div>
     </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Konkubinatsvertrag in der Schweiz: Inhalt, Muster und rechtliche Grundlagen",
+        "description": "Leitfaden zum Konkubinatsvertrag in der Schweiz: Inhalt, Formvorschriften, empfohlene Regelungen und häufige Fehler.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-20",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/eherecht/konkubinatsvertrag"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Ist ein Konkubinatsvertrag rechtlich bindend?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, sofern er den allgemeinen Voraussetzungen für Verträge entspricht (Handlungsfähigkeit, freier Wille, möglicher und erlaubter Inhalt) und keine unwirksamen Klauseln enthält."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Muss der Konkubinatsvertrag notariell beglaubigt werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, die einfache Schriftlichkeit mit Unterschrift beider Partner genügt. Nur bei erbrechtlichen Verfügungen (Erbvertrag) oder Grundstückübertragungen ist eine notarielle Beurkundung zwingend erforderlich."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert ohne Konkubinatsvertrag bei einer Trennung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ohne Vertrag gibt es keine gesetzlichen Regelungen für das Konkubinat. Gerichte wenden häufig die Regeln der einfachen Gesellschaft an (Art. 530 ff. OR), was zu aufwändigen und kostspieligen Verfahren führen kann."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich im Konkubinatsvertrag Unterhalt für den Fall der Trennung vereinbaren?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, Sie können Ausgleichszahlungen oder Unterhaltsbeiträge für den Fall der Trennung vereinbaren. Solche Regelungen sind rechtlich bindend, sofern sie nicht sittenwidrig sind."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich im Konkubinatsvertrag regeln, wer die Wohnung bei Trennung behält?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, Sie können vereinbaren, wer bei einer Trennung in der gemeinsamen Wohnung verbleibt und zu welchen Bedingungen (z.B. Auszugsfrist, Übernahme des Mietvertrags). Bei Mietwohnungen muss jedoch der Vermieter zustimmen."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Eherecht",
+                "item": "https://familienrechtanwalt.ch/eherecht"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Konkubinatsvertrag in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/eherecht/konkubinatsvertrag"
+            }
+        ]
+    })} />
 </ArticleLayout>

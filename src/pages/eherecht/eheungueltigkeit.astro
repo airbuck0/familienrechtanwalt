@@ -9,6 +9,33 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
     category="Eherecht"
     categoryLink="/eherecht"
 >
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Eheungültigkeit bedeutet, dass eine Ehe wegen eines schwerwiegenden Mangels gerichtlich für ungültig erklärt wird – die Gründe sind in Art. 104-109 ZGB abschliessend geregelt.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Unterschied zur Scheidung: Bei der Scheidung wird eine gültige Ehe beendet, bei der Ungültigerklärung wird festgestellt, dass die Ehe von Anfang an mangelhaft war.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Unbefristete Gründe (jederzeit klagbar): Bigamie, dauernde Urteilsunfähigkeit, Verwandtschaft, Scheinehe (seit 2008), Zwangsehe (seit 2013).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Befristete Gründe (6 Monate/5 Jahre): Vorübergehende Urteilsunfähigkeit, Irrtum, absichtliche Täuschung, Drohung.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Wirkung des Urteils: Grundsätzlich ex nunc (für die Zukunft), aber erbrechtliche Ansprüche entfallen rückwirkend.</span>
+            </li>
+        </ul>
+    </div>
+
     <!-- Einleitung -->
     <section class="bg-white rounded-lg shadow-md p-8 mb-8">
         <h2 class="text-3xl font-serif font-bold text-navy mb-6">Was ist Eheungültigkeit?</h2>
@@ -288,29 +315,49 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="bg-gray-50 rounded-lg p-8 mb-8">
-        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Häufige Fragen zur Eheungültigkeit</h2>
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+        <p class="text-gray-700 mb-6">Die Eheungültigkeit ist ein rechtlich komplexes Gebiet, bei dem anwaltliche Unterstützung fast immer erforderlich ist. Sie müssen den Ungültigkeitsgrund beweisen, und die Fristen bei befristeten Gründen sind sehr kurz.</p>
+        <p class="text-gray-700 mb-6">Besonders in folgenden Situationen ist die Beratung durch einen erfahrenen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> dringend empfohlen:</p>
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Wenn Sie vermuten, dass Ihre Ehe auf einem Ungültigkeitsgrund beruht</li>
+            <li>Bei Fragen zu den Fristen – bei befristeten Gründen haben Sie nur 6 Monate ab Kenntnis</li>
+            <li>Wenn Sie Opfer einer Zwangsheirat sind oder waren</li>
+            <li>Wenn gegen Sie ein Ungültigkeitsverfahren eingeleitet wurde</li>
+            <li>Zur Abwägung, ob eine Scheidung nicht der einfachere Weg wäre</li>
+        </ul>
+        <p class="text-gray-700 mb-6">Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kann Sie zu den rechtlichen Möglichkeiten beraten und bei Bedarf auch auf Opferhilfestellen verweisen.</p>
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Lassen Sie unverbindlich prüfen, ob in Ihrem Fall ein Ungültigkeitsgrund vorliegt und welche rechtlichen Schritte sinnvoll sind.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
 
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
         <div class="space-y-6">
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <h3 class="text-lg font-semibold text-navy mb-2">Kann ich meine Ehe annullieren lassen, weil ich mich getäuscht habe?</h3>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich meine Ehe annullieren lassen, weil ich mich getäuscht habe?</h3>
                 <p class="text-gray-700">Nur wenn Ihr Partner Sie absichtlich über wesentliche persönliche Eigenschaften getäuscht hat. Blosse Irrtümer über Charaktereigenschaften genügen nicht. Es gilt eine Frist von 6 Monaten ab Kenntnis, maximal 5 Jahre ab Eheschliessung.</p>
             </div>
-
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <h3 class="text-lg font-semibold text-navy mb-2">Was ist der Unterschied zur Scheidung?</h3>
-                <p class="text-gray-700">Die Scheidung beendet eine gültige Ehe, während die Ungültigkeit eine von Anfang an mangelhafte Ehe betrifft. Für die Ungültigkeit braucht es einen gesetzlichen Grund.</p>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen Eheungültigkeit und Scheidung?</h3>
+                <p class="text-gray-700">Die Scheidung beendet eine gültige Ehe für die Zukunft, während die Ungültigerklärung feststellt, dass die Ehe von Anfang an mit einem Mangel behaftet war. Für die Ungültigkeit braucht es einen gesetzlichen Grund.</p>
             </div>
-
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <h3 class="text-lg font-semibold text-navy mb-2">Wer kann eine Ungültigkeitsklage erheben?</h3>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wer kann eine Ungültigkeitsklage erheben?</h3>
                 <p class="text-gray-700">Bei unbefristeten Gründen (Art. 105 ZGB) kann jedermann mit rechtlichem Interesse klagen; die Behörden müssen von Amtes wegen klagen. Bei befristeten Gründen (Art. 107 ZGB) nur der betroffene Ehegatte selbst.</p>
             </div>
-
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <h3 class="text-lg font-semibold text-navy mb-2">Welche Auswirkungen hat die Ungültigerklärung auf Kinder?</h3>
-                <p class="text-gray-700">Die Kinder behalten ihren Status als eheliche Kinder. Elterliche Sorge und Unterhalt werden wie bei einer Scheidung geregelt. Ausnahme: Bei Scheinehen kann die Vaterschaftsvermutung entfallen.</p>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Welche Auswirkungen hat die Ungültigerklärung auf Kinder?</h3>
+                <p class="text-gray-700">Die Kinder behalten ihren Status als eheliche Kinder. Elterliche Sorge und Unterhalt werden wie bei einer Scheidung geregelt. Ausnahme: Bei Scheinehen kann die Vaterschaftsvermutung des Ehemannes entfallen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Verliere ich bei einer Eheungültigerklärung meine Ansprüche?</h3>
+                <p class="text-gray-700">Nein, die Wirkungen ähneln der Scheidung: Unterhalt, güterrechtliche Auseinandersetzung und Vorsorgeausgleich werden geregelt. Nur die erbrechtlichen Ansprüche entfallen rückwirkend.</p>
             </div>
         </div>
     </section>
@@ -329,7 +376,7 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
     </section>
 
     <!-- Rechtliche Grundlagen -->
-    <section class="bg-navy/5 rounded-lg p-8">
+    <section class="bg-navy/5 rounded-lg p-8 mb-8">
         <h2 class="text-2xl font-serif font-bold text-navy mb-4">Rechtliche Grundlagen (Auswahl)</h2>
         <ul class="space-y-2 text-gray-700">
             <li>Schweizerisches Zivilgesetzbuch (ZGB), Art. 94-109</li>
@@ -340,4 +387,99 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         </ul>
         <p class="text-sm text-gray-500 mt-4">Stand: Januar 2026</p>
     </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Eheungültigkeit in der Schweiz: Rechtslage, Gründe, Verfahren und Wirkungen",
+        "description": "Umfassender Leitfaden zur Eheungültigkeit in der Schweiz: Unbefristete und befristete Ungültigkeitsgründe, Unterschied zu Nichtehe und Scheidung, Verfahren und Wirkungen.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-20",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/eherecht/eheungueltigkeit"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Kann ich meine Ehe annullieren lassen, weil ich mich getäuscht habe?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nur wenn Ihr Partner Sie absichtlich über wesentliche persönliche Eigenschaften getäuscht hat. Blosse Irrtümer über Charaktereigenschaften genügen nicht. Es gilt eine Frist von 6 Monaten ab Kenntnis, maximal 5 Jahre ab Eheschliessung."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen Eheungültigkeit und Scheidung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Scheidung beendet eine gültige Ehe für die Zukunft, während die Ungültigerklärung feststellt, dass die Ehe von Anfang an mit einem Mangel behaftet war. Für die Ungültigkeit braucht es einen gesetzlichen Grund."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wer kann eine Ungültigkeitsklage erheben?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei unbefristeten Gründen (Art. 105 ZGB) kann jedermann mit rechtlichem Interesse klagen; die Behörden müssen von Amtes wegen klagen. Bei befristeten Gründen (Art. 107 ZGB) nur der betroffene Ehegatte selbst."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welche Auswirkungen hat die Ungültigerklärung auf Kinder?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Kinder behalten ihren Status als eheliche Kinder. Elterliche Sorge und Unterhalt werden wie bei einer Scheidung geregelt. Ausnahme: Bei Scheinehen kann die Vaterschaftsvermutung des Ehemannes entfallen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Verliere ich bei einer Eheungültigerklärung meine Ansprüche?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, die Wirkungen ähneln der Scheidung: Unterhalt, güterrechtliche Auseinandersetzung und Vorsorgeausgleich werden geregelt. Nur die erbrechtlichen Ansprüche entfallen rückwirkend."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Eherecht",
+                "item": "https://familienrechtanwalt.ch/eherecht"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Eheungültigkeit in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/eherecht/eheungueltigkeit"
+            }
+        ]
+    })} />
 </ArticleLayout>

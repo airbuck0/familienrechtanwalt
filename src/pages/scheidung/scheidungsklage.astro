@@ -3,183 +3,901 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 ---
 
 <ArticleLayout
-  title="Scheidungsklage in der Schweiz: Voraussetzungen, Verfahren und Erfolgsaussichten"
-  description="Scheidungsklage in der Schweiz: Voraussetzungen, Verfahren und Erfolgsaussichten bei einseitiger Scheidung nach Art. 114 und 115 ZGB."
-  keywords="Scheidungsklage Schweiz, einseitige Scheidung, Scheidung Trennung, Scheidung Unzumutbarkeit, Art 114 ZGB"
-  category="Scheidung"
-  categoryLink="/scheidung"
+    title="Scheidungsklage in der Schweiz: Voraussetzungen, Ablauf und Kosten 2025"
+    description="Scheidungsklage Schweiz: Alles zu Art. 114 & 115 ZGB, Trennungsfrist, Unzumutbarkeit, Verfahrensablauf, Kosten und Dauer. Mit BGE-Rechtsprechung und Praxistipps."
+    keywords="Scheidungsklage Schweiz, Scheidung auf Klage, einseitige Scheidung, Art. 114 ZGB, Art. 115 ZGB, Trennungsfrist, Unzumutbarkeit, Scheidungsklage einreichen"
+    category="Scheidung"
+    categoryLink="/scheidung"
 >
-  <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die Scheidungsklage ist das rechtliche Instrument fuer die einseitige Scheidung, wenn ein gemeinsames Begehren nicht moeglich ist. Sie ermoeglicht die Aufloesung der Ehe auch gegen den Willen des anderen Ehegatten. Dieser umfassende Ratgeber erlaeutert die Voraussetzungen, das Verfahren und die praktischen Aspekte der Scheidungsklage.</p>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die <strong>Scheidungsklage</strong> ermöglicht die Auflösung der Ehe ohne Zustimmung des anderen Ehegatten nach Art. 114 ZGB (nach 2-jähriger Trennung) oder Art. 115 ZGB (bei Unzumutbarkeit).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Trennungsfrist</strong>: Die zweijährige Trennung muss im Zeitpunkt der Klageeinreichung erfüllt sein – nicht erst während des Verfahrens.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Unzumutbarkeit (Art. 115 ZGB)</strong>: Ermöglicht Scheidung ohne Trennungsfrist bei schwerwiegenden Gründen wie Gewalt, Stalking oder Heiratsschwindel.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Kosten</strong>: Gerichtskosten von CHF 1'000-13'000 plus Anwaltskosten (CHF 250-450/Stunde). Die unterlegene Partei trägt grundsätzlich alle Prozesskosten (Art. 106 ZPO).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Dauer</strong>: Bei Einigung über die Nebenfolgen wenige Monate; bei strittiger Scheidung 1-3 Jahre, mit Rechtsmittelverfahren bis zu 10 Jahre.</span>
+            </li>
+        </ul>
+    </div>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Die zwei Klagearten</h2>
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die Scheidungsklage – auch «Scheidung auf einseitiges Begehren» oder «Scheidung auf Klage» genannt – ist der rechtliche Weg zur Auflösung einer Ehe, wenn eine <a href="/scheidung/scheidung-auf-gemeinsames-begehren" class="text-gold hover:underline font-semibold">einvernehmliche Scheidung</a> nicht möglich ist. Sie ermöglicht es einem Ehegatten, die Scheidung auch gegen den Willen des anderen durchzusetzen. Dieser umfassende Ratgeber erläutert sämtliche Voraussetzungen, den detaillierten Verfahrensablauf, die Kosten und gibt praktische Tipps für Betroffene.</p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Scheidungsklage nach Art. 114 ZGB (Trennung)</h3>
+    <!-- Definition und Abgrenzung -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Was ist eine Scheidungsklage?</h2>
 
-  <p class="text-gray-700 mb-6">Die Scheidungsklage nach Art. 114 ZGB ist der Regelfall der einseitigen Scheidung. Sie setzt voraus, dass die Ehegatten mindestens zwei Jahre getrennt gelebt haben. Die Trennung muss tatsaechlich und ununterbrochen sein. Die Trennung war auf Dauer angelegt. Ein Ehegatte verlangt die Scheidung.</p>
+    <p class="text-gray-700 mb-6">Eine Scheidungsklage ist ein gerichtliches Verfahren, bei dem ein Ehegatte die Auflösung der Ehe einseitig beantragt – also ohne die Zustimmung des anderen Ehegatten. Das Schweizer Zivilgesetzbuch (ZGB) unterscheidet klar zwischen zwei Scheidungsformen:</p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Scheidungsklage nach Art. 115 ZGB (Unzumutbarkeit)</h3>
-
-  <p class="text-gray-700 mb-6">Die Scheidungsklage wegen Unzumutbarkeit ermoeglicht eine Scheidung auch vor Ablauf der zweijaehrigen Trennungsfrist. Sie setzt voraus, dass dem klagenden Ehegatten die Fortsetzung der Ehe aus schwerwiegenden Gruenden nicht zugemutet werden kann.</p>
-
-  <div class="overflow-x-auto mb-6">
-    <table class="min-w-full bg-white border border-gray-200">
-      <thead class="bg-navy text-white">
-        <tr>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Art. 114 ZGB (Trennung)</th>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Art. 115 ZGB (Unzumutbarkeit)</th>
-        </tr>
-      </thead>
-      <tbody class="divide-y divide-gray-200">
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Trennungsfrist</td>
-          <td class="px-6 py-4 text-gray-700">2 Jahre erforderlich</td>
-          <td class="px-6 py-4 text-gray-700">Keine Trennungsfrist</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">Voraussetzungen</td>
-          <td class="px-6 py-4 text-gray-700">Objektive Trennung genuegt</td>
-          <td class="px-6 py-4 text-gray-700">Schwerwiegende Gruende erforderlich</td>
-        </tr>
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Beweislast</td>
-          <td class="px-6 py-4 text-gray-700">Trennung nachweisen</td>
-          <td class="px-6 py-4 text-gray-700">Unzumutbarkeit und Gruende nachweisen</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">Praxishaeufigkeit</td>
-          <td class="px-6 py-4 text-gray-700">Haeufig</td>
-          <td class="px-6 py-4 text-gray-700">Selten</td>
-        </tr>
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Erfolgsaussichten</td>
-          <td class="px-6 py-4 text-gray-700">Hoch bei erwiesener Trennung</td>
-          <td class="px-6 py-4 text-gray-700">Abhaengig von der Schwere der Gruende</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Die zweijaehrige Trennungsfrist</h2>
-
-  <p class="text-gray-700 mb-6">Die Trennungsfrist von zwei Jahren muss im Zeitpunkt der Klageeinreichung erfuellt sein. Die Trennung beginnt, wenn mindestens ein Ehegatte den Willen zur Aufloesung der ehelichen Gemeinschaft bekundet und dieser Wille durch tatsaechliche Trennung umgesetzt wird.</p>
-
-  <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-    <p class="font-semibold text-navy">BGE 118 II 225 - Begriff der Trennung:</p>
-    <p class="text-gray-700">Das Bundesgericht hat klargestellt, dass die Aufhebung der haeuslichen Gemeinschaft, der wirtschaftlichen Gemeinschaft und der persoenlichen Gemeinschaft erforderlich ist.</p>
-  </div>
-
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Schwerwiegende Gruende bei Art. 115 ZGB</h2>
-
-  <p class="text-gray-700 mb-6">Die Rechtsprechung anerkennt folgende Gruende als schwerwiegend:</p>
-
-  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-    <li>Schwere Gewalt gegen den Ehegatten oder die Kinder</li>
-    <li>Schwerer Missbrauch von Alkohol oder Drogen mit massiven Auswirkungen</li>
-    <li>Fuehren eines Doppellebens ueber laengere Zeit</li>
-    <li>Schwere psychische Erkrankung mit aggressivem Verhalten</li>
-    <li>Zeugung eines ausserehelichen Kindes waehrend der Ehe</li>
-    <li>Strafrechtlich relevantes Verhalten gegen den Ehegatten oder die Kinder</li>
-  </ul>
-
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Verfahrensablauf</h2>
-
-  <div class="overflow-x-auto mb-6">
-    <table class="min-w-full bg-white border border-gray-200">
-      <thead class="bg-navy text-white">
-        <tr>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Phase</th>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Schritt</th>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Typische Dauer</th>
-        </tr>
-      </thead>
-      <tbody class="divide-y divide-gray-200">
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">1</td>
-          <td class="px-6 py-4 text-gray-700">Einreichung der Klage</td>
-          <td class="px-6 py-4 text-gray-700">-</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">2</td>
-          <td class="px-6 py-4 text-gray-700">Zustellung an Beklagten</td>
-          <td class="px-6 py-4 text-gray-700">2-4 Wochen</td>
-        </tr>
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">3</td>
-          <td class="px-6 py-4 text-gray-700">Einigungsverhandlung</td>
-          <td class="px-6 py-4 text-gray-700">2-4 Monate nach Einreichung</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">4</td>
-          <td class="px-6 py-4 text-gray-700">Klagebegruendung / Klageantwort</td>
-          <td class="px-6 py-4 text-gray-700">Je 30 Tage</td>
-        </tr>
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">5</td>
-          <td class="px-6 py-4 text-gray-700">Beweisverfahren</td>
-          <td class="px-6 py-4 text-gray-700">2-6 Monate</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">6</td>
-          <td class="px-6 py-4 text-gray-700">Hauptverhandlung und Urteil</td>
-          <td class="px-6 py-4 text-gray-700">1-3 Monate</td>
-        </tr>
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Total</td>
-          <td class="px-6 py-4 text-gray-700"></td>
-          <td class="px-6 py-4 text-gray-700 font-semibold">1-3 Jahre</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kosten der Scheidungsklage</h2>
-
-  <p class="text-gray-700 mb-6">Die Gerichtskosten bei strittigen Scheidungen sind deutlich hoeher als bei einvernehmlichen Scheidungen. Sie haengen vom Streitwert und vom Aufwand ab.</p>
-
-  <div class="overflow-x-auto mb-6">
-    <table class="min-w-full bg-white border border-gray-200">
-      <thead class="bg-navy text-white">
-        <tr>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Streitwert</th>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Typische Gerichtskosten</th>
-        </tr>
-      </thead>
-      <tbody class="divide-y divide-gray-200">
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Bis CHF 30'000</td>
-          <td class="px-6 py-4 text-gray-700">CHF 2'000 - 4'000</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">CHF 30'000 - 100'000</td>
-          <td class="px-6 py-4 text-gray-700">CHF 3'000 - 8'000</td>
-        </tr>
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">CHF 100'000 - 500'000</td>
-          <td class="px-6 py-4 text-gray-700">CHF 5'000 - 15'000</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">Ueber CHF 500'000</td>
-          <td class="px-6 py-4 text-gray-700">CHF 10'000 - 30'000</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
-
-  <p class="text-gray-700 mb-6">Die Scheidungsklage ermoeglicht die Aufloesung der Ehe auch ohne Einwilligung des anderen Ehegatten. Nach zweijaehriger Trennung besteht ein Rechtsanspruch auf Scheidung. Vor Ablauf der Trennungsfrist ist die Scheidung nur bei schwerwiegenden, nicht selbst verschuldeten Gruenden moeglich.</p>
-
-  <p class="text-gray-700 mb-6">Das Verfahren ist aufwendiger und kostspieliger als die einvernehmliche Scheidung. Anwaltliche Vertretung ist dringend empfohlen. Die sorgfaeltige Vorbereitung und Dokumentation der Voraussetzungen erhoeht die Erfolgsaussichten.</p>
-
-  <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-    <p class="font-semibold text-navy mb-2">Relevante Gesetzesbestimmungen:</p>
-    <ul class="list-disc list-inside text-gray-700 space-y-1">
-      <li>Art. 114 ZGB (Scheidung nach Trennung)</li>
-      <li>Art. 115 ZGB (Scheidung wegen Unzumutbarkeit)</li>
-      <li>Art. 274-293 ZPO (Scheidungsverfahren)</li>
-      <li>Art. 276 ZPO (Vorsorgliche Massnahmen)</li>
-      <li>Art. 117-123 ZPO (Unentgeltliche Rechtspflege)</li>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Scheidung auf gemeinsames Begehren</strong> (Art. 111/112 ZGB): Beide Ehegatten wollen die Scheidung</li>
+        <li><strong>Scheidung auf Klage</strong> (Art. 114/115 ZGB): Ein Ehegatte verlangt die Scheidung einseitig</li>
     </ul>
-  </div>
+
+    <p class="text-gray-700 mb-6">Die Scheidungsklage kommt immer dann zum Einsatz, wenn sich die Ehegatten nicht einigen können – sei es über die Scheidung selbst oder über deren Folgen wie Unterhalt, Sorgerecht oder Vermögensaufteilung.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Scheidungsklage vs. Scheidung auf gemeinsames Begehren</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Merkmal</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Scheidung auf gemeinsames Begehren</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Scheidungsklage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Rechtsgrundlage</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 111/112 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 114/115 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Einvernehmen</td>
+                    <td class="px-6 py-4 text-gray-700">Beide wollen Scheidung</td>
+                    <td class="px-6 py-4 text-gray-700">Nicht erforderlich</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Voraussetzung</td>
+                    <td class="px-6 py-4 text-gray-700">Keine Trennungsfrist</td>
+                    <td class="px-6 py-4 text-gray-700">2 Jahre Trennung oder Unzumutbarkeit</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Verfahrensart</td>
+                    <td class="px-6 py-4 text-gray-700">Anhörung + Genehmigung</td>
+                    <td class="px-6 py-4 text-gray-700">Ordentliches Klageverfahren</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Typische Dauer</td>
+                    <td class="px-6 py-4 text-gray-700">2-6 Monate</td>
+                    <td class="px-6 py-4 text-gray-700">1-3 Jahre (oder länger)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Gerichtskosten</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'000-4'000</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'700-13'000+</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Komplexität</td>
+                    <td class="px-6 py-4 text-gray-700">Niedrig bis mittel</td>
+                    <td class="px-6 py-4 text-gray-700">Mittel bis hoch</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Voraussetzungen -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Voraussetzungen für eine Scheidungsklage</h2>
+
+    <p class="text-gray-700 mb-6">Das Schweizer Recht kennt zwei verschiedene Grundlagen für die Einreichung einer Scheidungsklage: die Scheidung nach zweijähriger Trennung (Art. 114 ZGB) und die Scheidung wegen Unzumutbarkeit (Art. 115 ZGB). Bei beiden handelt es sich um sogenannte Scheidungsgründe, die auf dem Zerrüttungsprinzip basieren.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Scheidungsklage nach Art. 114 ZGB: Zweijährige Trennung</h3>
+
+    <p class="text-gray-700 mb-6">Art. 114 ZGB bildet den häufigsten Klagegrund und lautet: «Ein Ehegatte kann die Scheidung verlangen, wenn die Ehegatten bei Eintritt der Rechtshängigkeit der Klage oder bei Wechsel zur Scheidung auf Klage mindestens zwei Jahre getrennt gelebt haben.»</p>
+
+    <p class="text-gray-700 mb-6">Die Voraussetzungen im Detail:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Räumliche Trennung</strong>: Die Ehegatten müssen getrennt voneinander leben</li>
+        <li><strong>Trennungswille</strong>: Mindestens ein Ehegatte muss den Willen haben, die eheliche Gemeinschaft aufzugeben</li>
+        <li><strong>Trennungsdauer</strong>: Die Trennung muss ununterbrochen zwei Jahre gedauert haben</li>
+        <li><strong>Zeitpunkt</strong>: Die Frist muss bei Klageeinreichung erfüllt sein</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig – BGE 131 III 249:</p>
+        <p class="text-gray-700">Nach Ablauf der zweijährigen Trennungsfrist besteht ein <strong>absoluter Rechtsanspruch</strong> auf Scheidung. Der andere Ehegatte kann die Scheidung nicht verhindern, selbst wenn er an der Ehe festhalten möchte. Das Gericht muss dem Scheidungsbegehren stattgeben.</p>
+    </div>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-4">Was zählt als «Trennung»?</h4>
+
+    <p class="text-gray-700 mb-6">Die Trennung im Sinne von Art. 114 ZGB erfordert nach der Rechtsprechung des Bundesgerichts (BGE 118 II 225) die Aufhebung der ehelichen Gemeinschaft in drei Dimensionen:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Häusliche Gemeinschaft</strong>: Getrenntes Wohnen (getrennte Haushalte)</li>
+        <li><strong>Wirtschaftliche Gemeinschaft</strong>: Getrennte Finanzen und Haushaltsführung</li>
+        <li><strong>Persönliche Gemeinschaft</strong>: Keine gemeinsame Lebensführung als Ehepaar</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praxishinweis – Trennung unter einem Dach:</p>
+        <p class="text-gray-700">Eine Trennung ist ausnahmsweise auch möglich, wenn die Ehegatten weiterhin unter demselben Dach leben – etwa aus finanziellen Gründen. Das Bundesgericht hat in BGE 118 II 225 klargestellt, dass Ehegatten als getrennt gelten, wenn die aktuelle Organisation ihres Lebens «in erheblichem Masse» von dem abweicht, was sie sich unter einem gemeinsamen Leben vorgestellt haben. Der Nachweis ist jedoch schwierig und sollte dokumentiert werden.</p>
+    </div>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-4">Beginn und Unterbrechung der Trennungsfrist</h4>
+
+    <p class="text-gray-700 mb-6">Die Trennungsfrist beginnt, wenn mindestens ein Ehegatte den Willen zur Beendigung der ehelichen Gemeinschaft hat und dieser Wille durch tatsächliche Trennung umgesetzt wird. Eine richterliche Bewilligung oder ein <a href="/eherecht/eheschutz" class="text-gold hover:underline font-semibold">Eheschutzverfahren</a> ist nicht erforderlich.</p>
+
+    <p class="text-gray-700 mb-6">Die folgenden Umstände unterbrechen die Trennungsfrist <strong>nicht</strong>:</p>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Kurzfristige Versöhnungsversuche (wenige Tage bis Wochen)</li>
+        <li>Gelegentlicher Geschlechtsverkehr</li>
+        <li>Unregelmässiger gegenseitiger Kontakt</li>
+        <li>Zusammenarbeit im Interesse der gemeinsamen Kinder</li>
+        <li>Gegenseitige Hilfeleistung in Notfällen</li>
+    </ul>
+
+    <p class="text-gray-700 mb-6">Die Frist wird jedoch <strong>unterbrochen</strong> bei:</p>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Mehrmonatigem Zusammenleben mit Wiederaufnahme der ehelichen Gemeinschaft</li>
+        <li>Vollständiger Versöhnung mit ernsthafter Absicht</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Scheidungsklage nach Art. 115 ZGB: Unzumutbarkeit</h3>
+
+    <p class="text-gray-700 mb-6">Art. 115 ZGB ermöglicht die Scheidung <strong>ohne Einhaltung der zweijährigen Trennungsfrist</strong>, wenn schwerwiegende Gründe vorliegen. Der Gesetzestext lautet: «Vor Ablauf der zweijährigen Frist kann ein Ehegatte die Scheidung verlangen, wenn ihm die Fortsetzung der Ehe aus schwerwiegenden Gründen, die ihm nicht zuzurechnen sind, nicht zugemutet werden kann.»</p>
+
+    <p class="text-gray-700 mb-6">Die Voraussetzungen für Art. 115 ZGB sind kumulativ:</p>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Schwerwiegende Gründe</strong>: Es müssen Umstände von erheblichem Gewicht vorliegen</li>
+        <li><strong>Unzumutbarkeit</strong>: Die Fortsetzung der Ehe muss dem klagenden Ehegatten seelisch nicht zugemutet werden können</li>
+        <li><strong>Fehlende Zurechenbarkeit</strong>: Die Gründe dürfen nicht vom klagenden Ehegatten selbst verursacht sein</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">BGE 127 III 129 – Massstab der Unzumutbarkeit:</p>
+        <p class="text-gray-700">Das Bundesgericht prüft, ob dem klagenden Ehegatten der <strong>Fortbestand des ehelichen Bandes seelisch zugemutet</strong> werden kann. Es geht nicht nur um das Zusammenleben, sondern um das rechtliche Band selbst. Die Anforderungen sind hoch, da Art. 115 ZGB die Ausnahme und nicht die Regel sein soll.</p>
+    </div>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-4">Anerkannte schwerwiegende Gründe</h4>
+
+    <p class="text-gray-700 mb-4">Die Rechtsprechung des Bundesgerichts und der kantonalen Gerichte hat folgende Gründe als schwerwiegend im Sinne von Art. 115 ZGB anerkannt:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Schwerwiegender Grund</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erläuterung und Beispiele</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Körperliche Gewalt</td>
+                    <td class="px-6 py-4 text-gray-700">Schwere körperliche Misshandlungen des Ehegatten oder der Kinder, wiederholte Tätlichkeiten</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Psychische Gewalt</td>
+                    <td class="px-6 py-4 text-gray-700">Schwere seelische Misshandlungen, systematische Demütigung, emotionaler Missbrauch</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Stalking</td>
+                    <td class="px-6 py-4 text-gray-700">Systematisches, planmässiges Nachstellen und Verfolgen während der Trennung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Schwere Straftaten</td>
+                    <td class="px-6 py-4 text-gray-700">Verbrechen gegen den Ehegatten, die Kinder oder deren Angehörige</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Langjährige aussereheliche Beziehung</td>
+                    <td class="px-6 py-4 text-gray-700">Dauerhaftes Doppelleben über mehrere Jahre; einmaliger Ehebruch genügt nicht (BGE 128 III 1)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Schwere Ehrverletzungen</td>
+                    <td class="px-6 py-4 text-gray-700">Massive, wiederholte Demütigungen, Verleumdungen, Rufschädigung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Heiratsschwindel</td>
+                    <td class="px-6 py-4 text-gray-700">Vortäuschung eines echten Ehewillens aus fremdenpolizeilichen oder finanziellen Motiven</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Schein- oder Zwangsehe</td>
+                    <td class="px-6 py-4 text-gray-700">Ehe wurde nur zum Schein oder unter Zwang geschlossen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Lasterhafter Lebenswandel</td>
+                    <td class="px-6 py-4 text-gray-700">Prostitution, Zuhälterei, schwere Spielsucht mit massiven Auswirkungen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-4">Nicht ausreichende Gründe</h4>
+
+    <p class="text-gray-700 mb-4">Folgende Umstände genügen in der Regel <strong>nicht</strong> für eine Scheidung nach Art. 115 ZGB:</p>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Einmaliger Ehebruch (BGE 128 III 1)</li>
+        <li>Kurzfristige aussereheliche Beziehung</li>
+        <li>Einmalige Tätlichkeit ohne schwere Verletzung</li>
+        <li>Leichte Drohungen oder verbale Auseinandersetzungen</li>
+        <li>Blosse Entfremdung oder unterschiedliche Lebensvorstellungen</li>
+        <li>Finanzielle Schwierigkeiten oder Schulden</li>
+        <li>Charakterliche Inkompatibilität</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praxishinweis:</p>
+        <p class="text-gray-700">Art. 115 ZGB kommt in der Praxis <strong>selten zur Anwendung</strong>, da die Anforderungen sehr hoch sind und der Nachweis schwierig ist. In den meisten Fällen ist es einfacher und sicherer, die zweijährige Trennungsfrist abzuwarten und dann nach Art. 114 ZGB zu klagen.</p>
+    </div>
+
+    <!-- Ablauf der Scheidungsklage -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Ablauf einer Scheidungsklage: Das Verfahren im Detail</h2>
+
+    <p class="text-gray-700 mb-6">Das Verfahren der Scheidungsklage ist in den Art. 274-293 der Schweizerischen Zivilprozessordnung (ZPO) geregelt. Es unterscheidet sich wesentlich von der einvernehmlichen Scheidung und folgt einem mehrstufigen Ablauf.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">1. Einreichung der Scheidungsklage</h3>
+
+    <p class="text-gray-700 mb-6">Der erste Schritt ist die Einreichung der Scheidungsklage beim zuständigen Gericht. Zuständig ist das Zivilgericht (in den meisten Kantonen das Bezirksgericht) am Wohnsitz eines der Ehegatten (Art. 23 ZPO). Die Klage kann zunächst ohne vollständige Begründung eingereicht werden (Art. 290 ZPO).</p>
+
+    <p class="text-gray-700 mb-6">Die Scheidungsklage muss enthalten:</p>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Rechtsbegehren</strong>: Antrag auf Scheidung und Regelung der Nebenfolgen</li>
+        <li><strong>Sachverhalt</strong>: Darstellung der Umstände (Trennung, Gründe)</li>
+        <li><strong>Begründung</strong>: Rechtliche Argumentation</li>
+        <li><strong>Beweismittel</strong>: Urkunden, Zeugen, Gutachten</li>
+        <li><strong>Beilagen</strong>: <a href="/scheidung/scheidungsunterlagen" class="text-gold hover:underline font-semibold">Scheidungsunterlagen</a> wie Familienbüchlein, Steuererklärungen etc.</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">2. Zustellung und Klageantwort</h3>
+
+    <p class="text-gray-700 mb-6">Nach Eingang der Klage stellt das Gericht diese dem beklagten Ehegatten zu und setzt ihm eine Frist zur Einreichung einer <strong>Klageantwort</strong> (in der Regel 30 Tage, Art. 222 ZPO). In der Klageantwort kann der Beklagte:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Die Klage anerkennen (seltener Fall)</li>
+        <li>Die Klage bestreiten und eigene Anträge stellen</li>
+        <li>Eigene Scheidungsanträge stellen (ohne formelle Widerklage, da Scheidungsverfahren eine «actio duplex» ist)</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Besonderheit – Actio duplex:</p>
+        <p class="text-gray-700">Das Scheidungsverfahren ist eine sogenannte «actio duplex». Das bedeutet, dass der beklagte Ehegatte in seiner Klageantwort eigene Anträge zu den Scheidungsnebenfolgen stellen kann, ohne formal Widerklage erheben zu müssen. Beide Parteien sind in Bezug auf die güterrechtliche Auseinandersetzung gleichzeitig Kläger und Beklagte.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">3. Einigungsverhandlung (Art. 291 ZPO)</h3>
+
+    <p class="text-gray-700 mb-6">Das Gericht lädt die Parteien zu einer <strong>Einigungsverhandlung</strong> vor. Diese hat zwei Ziele:</p>
+
+    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Prüfung der Scheidungsvoraussetzungen</strong>: Das Gericht prüft, ob der Scheidungsgrund (zweijährige Trennung oder Unzumutbarkeit) vorliegt.</li>
+        <li><strong>Einigungsversuch</strong>: Das Gericht versucht, zwischen den Ehegatten eine Einigung über die Scheidungsfolgen herbeizuführen.</li>
+    </ol>
+
+    <p class="text-gray-700 mb-6">Mögliche Ausgänge der Einigungsverhandlung:</p>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Vollständige Einigung</strong>: Scheidung kann umgehend ausgesprochen werden (Umwandlung in gemeinsames Begehren nach Art. 292 ZPO)</li>
+        <li><strong>Teileinigung</strong>: Über unstreitige Punkte wird eine Vereinbarung protokolliert; Verfahren nur über strittige Punkte</li>
+        <li><strong>Keine Einigung</strong>: Fortsetzung im ordentlichen Verfahren</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">4. Klagebegründung und Hauptverfahren</h3>
+
+    <p class="text-gray-700 mb-6">Kommt in der Einigungsverhandlung keine vollständige Einigung zustande, folgt das kontradiktorische Hauptverfahren:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Klagebegründung</strong>: Der Kläger muss seine Klage vollständig begründen (falls noch nicht geschehen)</li>
+        <li><strong>Klageantwort</strong>: Der Beklagte nimmt Stellung und stellt eigene Anträge</li>
+        <li><strong>Replik und Duplik</strong>: Weiterer Schriftenwechsel bei Bedarf</li>
+        <li><strong>Beweisabnahme</strong>: Einvernahme von Zeugen, Einholung von Gutachten, Urkundenprüfung</li>
+        <li><strong>Hauptverhandlung</strong>: Mündliche Verhandlung mit Plädoyers</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">5. Urteil und Rechtsmittel</h3>
+
+    <p class="text-gray-700 mb-6">Das Gericht fällt ein Urteil über die Scheidung und sämtliche Nebenfolgen. Gegen das erstinstanzliche Urteil stehen folgende Rechtsmittel zur Verfügung:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Berufung</strong> (Art. 308 ff. ZPO): Ans obere kantonale Gericht, Frist 30 Tage</li>
+        <li><strong>Beschwerde ans Bundesgericht</strong> (Art. 72 ff. BGG): Gegen den kantonal letztinstanzlichen Entscheid, Frist 30 Tage</li>
+    </ul>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Phase</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Typische Dauer</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">1</td>
+                    <td class="px-6 py-4 text-gray-700">Einreichung der Scheidungsklage</td>
+                    <td class="px-6 py-4 text-gray-700">–</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">2</td>
+                    <td class="px-6 py-4 text-gray-700">Zustellung an Beklagten und Klageantwort</td>
+                    <td class="px-6 py-4 text-gray-700">4-8 Wochen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">3</td>
+                    <td class="px-6 py-4 text-gray-700">Einigungsverhandlung</td>
+                    <td class="px-6 py-4 text-gray-700">2-4 Monate nach Klageeinreichung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">4</td>
+                    <td class="px-6 py-4 text-gray-700">Klagebegründung / Schriftenwechsel</td>
+                    <td class="px-6 py-4 text-gray-700">2-4 Monate</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">5</td>
+                    <td class="px-6 py-4 text-gray-700">Beweisverfahren (inkl. ev. Gutachten)</td>
+                    <td class="px-6 py-4 text-gray-700">3-12 Monate</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">6</td>
+                    <td class="px-6 py-4 text-gray-700">Hauptverhandlung und Urteil</td>
+                    <td class="px-6 py-4 text-gray-700">1-3 Monate</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">7</td>
+                    <td class="px-6 py-4 text-gray-700">Ev. Berufungsverfahren</td>
+                    <td class="px-6 py-4 text-gray-700">6-18 Monate</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Total</td>
+                    <td class="px-6 py-4 text-gray-700 font-bold">Gesamtdauer erstinstanzlich</td>
+                    <td class="px-6 py-4 text-gray-700 font-bold">6 Monate – 3 Jahre</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Vorsorgliche Massnahmen -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Vorsorgliche Massnahmen während des Verfahrens</h2>
+
+    <p class="text-gray-700 mb-6">Da Scheidungsklageverfahren oft lange dauern, können während des Verfahrens <strong>vorsorgliche Massnahmen</strong> nach Art. 276 ZPO beantragt werden. Diese regeln das Zusammenleben bzw. Getrenntleben der Ehegatten bis zum rechtskräftigen Scheidungsurteil.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Mögliche vorsorgliche Massnahmen</h3>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Zuweisung der Ehewohnung</strong>: Wer darf in der gemeinsamen Wohnung bleiben?</li>
+        <li><strong>Regelung des Getrenntlebens</strong>: Aufteilung des Hausrats</li>
+        <li><strong>Unterhalt während des Verfahrens</strong>: Beiträge an den anderen Ehegatten und die Kinder</li>
+        <li><strong>Vorläufige Kinderbelange</strong>: Obhut, Betreuung, Besuchsrecht</li>
+        <li><strong>Sicherung von Vermögenswerten</strong>: Verhinderung von Vermögensverschiebungen</li>
+        <li><strong>Kontosperre</strong>: Blockierung von Bankkonten</li>
+        <li><strong>Grundbuchsperre</strong>: Verhinderung von Immobilienverkäufen</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Superprovisorische Massnahmen (Art. 265 ZPO):</p>
+        <p class="text-gray-700">In besonders dringenden Fällen – etwa bei Verdacht auf Vermögensverschiebung oder bei häuslicher Gewalt – kann das Gericht <strong>superprovisorische Massnahmen</strong> anordnen. Diese werden ohne Anhörung der Gegenpartei sofort erlassen und sind unmittelbar wirksam.</p>
+    </div>
+
+    <!-- Nebenfolgen -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Nebenfolgen der Scheidung bei einer Scheidungsklage</h2>
+
+    <p class="text-gray-700 mb-6">Bei einer Scheidungsklage muss das Gericht nicht nur über die Scheidung selbst, sondern auch über sämtliche <strong>Nebenfolgen</strong> entscheiden, über die keine Einigung erzielt wurde:</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kinderbelange</h3>
+
+    <p class="text-gray-700 mb-6">Bei einer <a href="/scheidung/mit-kind" class="text-gold hover:underline font-semibold">Scheidung mit Kindern</a> entscheidet das Gericht über:</p>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong><a href="/sorgerecht" class="text-gold hover:underline font-semibold">Elterliche Sorge</a></strong>: Seit 2014 ist das gemeinsame Sorgerecht der Regelfall (Art. 296 Abs. 2 ZGB)</li>
+        <li><strong>Obhut</strong>: Bei welchem Elternteil leben die Kinder hauptsächlich?</li>
+        <li><strong>Besuchs- und Ferienrecht</strong>: Regelung des Kontakts zum anderen Elternteil</li>
+        <li><strong><a href="/unterhalt" class="text-gold hover:underline font-semibold">Kindesunterhalt</a></strong>: Barunterhalt und Betreuungsunterhalt</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Nachehelicher Unterhalt</h3>
+
+    <p class="text-gray-700 mb-6">Der <a href="/unterhalt/nachehelicher-unterhalt" class="text-gold hover:underline font-semibold">nacheheliche Unterhalt</a> (Art. 125 ZGB) wird nach verschiedenen Kriterien bemessen: Aufgabenteilung während der Ehe, Dauer der Ehe, Alter und Gesundheit, Erwerbsaussichten, berufliche Ausbildung und wirtschaftliche Leistungsfähigkeit.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Güterrechtliche Auseinandersetzung</h3>
+
+    <p class="text-gray-700 mb-6">Das eheliche Vermögen wird nach dem anwendbaren <a href="/gueterrecht" class="text-gold hover:underline font-semibold">Güterstand</a> aufgeteilt. Bei der <a href="/gueterrecht/errungenschaftsbeteiligung" class="text-gold hover:underline font-semibold">Errungenschaftsbeteiligung</a> (gesetzlicher Güterstand) hat jeder Ehegatte Anspruch auf die Hälfte des während der Ehe erwirtschafteten Vermögens des anderen (Vorschlagsbeteiligung).</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig – Stichtag bei der Scheidungsklage:</p>
+        <p class="text-gray-700">Bei einer Scheidungsklage ist der <strong>Tag der Einreichung der Klage</strong> massgebend für die güterrechtliche Berechnung. Was an diesem Tag an Aktiven und Passiven vorhanden war, bildet die Berechnungsgrundlage.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vorsorgeausgleich</h3>
+
+    <p class="text-gray-700 mb-6">Die während der Ehe erworbenen Ansprüche aus der beruflichen Vorsorge (2. Säule) werden hälftig geteilt (Art. 122 ff. ZGB). Ebenso werden die AHV-Beitragsjahre (1. Säule) ausgeglichen (Splitting).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wohnung und Hausrat</h3>
+
+    <p class="text-gray-700 mb-6">Das Gericht entscheidet, wem die eheliche Wohnung und der Hausrat zugewiesen werden. Dies ist besonders wichtig bei Mietwohnungen (Übertragung des Mietvertrags) und bei <a href="/scheidung/haus" class="text-gold hover:underline font-semibold">Wohneigentum</a>.</p>
+
+    <!-- Kosten -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kosten einer Scheidungsklage</h2>
+
+    <p class="text-gray-700 mb-6">Die <a href="/scheidung/kosten-einer-scheidung" class="text-gold hover:underline font-semibold">Kosten einer Scheidungsklage</a> setzen sich aus Gerichtskosten und Anwaltskosten zusammen und sind in der Regel deutlich höher als bei einer einvernehmlichen Scheidung.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gerichtskosten</h3>
+
+    <p class="text-gray-700 mb-6">Die <a href="/scheidung/gerichtskosten" class="text-gold hover:underline font-semibold">Gerichtskosten</a> werden von den Gerichten nach den kantonalen Gebührenverordnungen festgelegt. Sie hängen vom Streitwert, der Komplexität und der Dauer des Verfahrens ab.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kanton</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gerichtskosten Scheidungsklage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Zürich</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 300 – 13'000 (je nach Streitwert und Aufwand)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Bern</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'000 – 10'000</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Basel-Stadt</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'500 – 8'000</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">St. Gallen</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'200 – 10'000</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Durchschnitt Schweiz</td>
+                    <td class="px-6 py-4 text-gray-700 font-bold">CHF 1'700 – 13'000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Anwaltskosten</h3>
+
+    <p class="text-gray-700 mb-6">Die <a href="/scheidung/anwaltskosten-scheidung" class="text-gold hover:underline font-semibold">Anwaltskosten</a> bei einer Scheidungsklage hängen vom Aufwand ab. Die Stundensätze liegen typischerweise zwischen CHF 250 und CHF 450. Bei einem strittigen Verfahren fallen schnell 30-150 Stunden an.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Verfahrenskomplexität</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Typische Anwaltskosten (pro Partei)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Einfach (schnelle Einigung)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 3'000 – 10'000</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Mittel</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 10'000 – 30'000</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Hochstrittig</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 30'000 – 100'000+</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kostenverteilung (Art. 106 ZPO)</h3>
+
+    <p class="text-gray-700 mb-6">Bei einer Scheidungsklage trägt grundsätzlich die <strong>unterlegene Partei</strong> die Prozesskosten (Gerichtskosten und Parteientschädigung). Wird die Klage zurückgezogen, gilt der Kläger als unterliegend. Gibt es keine eindeutig unterlegene Partei (was bei Scheidungen häufig der Fall ist), verteilt das Gericht die Kosten nach Ermessen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Unentgeltliche Rechtspflege</h3>
+
+    <p class="text-gray-700 mb-6">Wer nicht über ausreichende finanzielle Mittel verfügt, kann <a href="/scheidung/unentgeltliche-rechtspflege" class="text-gold hover:underline font-semibold">unentgeltliche Rechtspflege</a> beantragen (Art. 117 ZPO). Diese umfasst die Befreiung von den Gerichtskosten und die Bestellung eines unentgeltlichen Rechtsbeistands. Voraussetzung ist, dass das Rechtsbegehren nicht aussichtslos erscheint.</p>
+
+    <!-- Dauer -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Dauer einer Scheidungsklage</h2>
+
+    <p class="text-gray-700 mb-6">Die <a href="/scheidung/dauer-der-scheidung" class="text-gold hover:underline font-semibold">Dauer einer Scheidungsklage</a> variiert stark je nach den Umständen:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Situation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Typische Dauer</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Einigung in der Einigungsverhandlung</td>
+                    <td class="px-6 py-4 text-gray-700">3-6 Monate</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Teilweise strittig (ohne Gutachten)</td>
+                    <td class="px-6 py-4 text-gray-700">1-2 Jahre</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Hochstrittig (mit Gutachten)</td>
+                    <td class="px-6 py-4 text-gray-700">2-4 Jahre</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Mit Berufungsverfahren</td>
+                    <td class="px-6 py-4 text-gray-700">3-5 Jahre</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Bis Bundesgericht</td>
+                    <td class="px-6 py-4 text-gray-700">4-10 Jahre</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Hinweis:</p>
+        <p class="text-gray-700">Die zweijährige Trennungsfrist nach Art. 114 ZGB muss <strong>vor</strong> Einreichung der Klage erfüllt sein. Diese Zeit kommt zur Verfahrensdauer hinzu. Bei einer Scheidungsklage müssen Sie also mit einer Gesamtdauer von mindestens 2,5-3 Jahren rechnen.</p>
+    </div>
+
+    <!-- Kann man sich wehren? -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kann man sich gegen eine Scheidungsklage wehren?</h2>
+
+    <p class="text-gray-700 mb-6">Eine häufige Frage lautet: Kann der beklagte Ehegatte die Scheidung verhindern? Die Antwort ist differenziert:</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Nach Ablauf der Trennungsfrist (Art. 114 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Nach BGE 131 III 249 besteht nach Ablauf der zweijährigen Trennungsfrist ein <strong>absoluter Rechtsanspruch</strong> auf Scheidung. Der beklagte Ehegatte kann die Scheidung nicht verhindern. Er kann jedoch:</p>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Die Erfüllung der Trennungsfrist bestreiten</li>
+        <li>Eigene Anträge zu den Nebenfolgen stellen</li>
+        <li>Das Verfahren durch Verzögerungstaktiken verlängern (was aber Kostenfolgen haben kann)</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vor Ablauf der Trennungsfrist (Art. 115 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Wird die Scheidung wegen Unzumutbarkeit vor Ablauf der Trennungsfrist verlangt, kann der beklagte Ehegatte die schwerwiegenden Gründe bestreiten. Das Gericht muss dann prüfen, ob die Voraussetzungen erfüllt sind.</p>
+
+    <!-- Benötigte Unterlagen -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Benötigte Unterlagen für eine Scheidungsklage</h2>
+
+    <p class="text-gray-700 mb-6">Für die Einreichung einer Scheidungsklage benötigen Sie folgende <a href="/scheidung/scheidungsunterlagen" class="text-gold hover:underline font-semibold">Scheidungsunterlagen</a>:</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Obligatorische Dokumente</h3>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Familienbüchlein</strong> oder Familienbescheinigung (nicht älter als 3-6 Monate)</li>
+        <li><strong>Personalausweis/Pass</strong> beider Ehegatten (Kopie)</li>
+        <li><strong>Meldebestätigung</strong> (Wohnsitzbescheinigung)</li>
+        <li><strong>Nachweis der Trennung</strong>: Mietvertrag, Ummeldung, schriftliche Trennungsvereinbarung</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Finanzielle Unterlagen</h3>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Steuererklärungen</strong> der letzten 3 Jahre</li>
+        <li><strong>Lohnausweise</strong> oder Lohnabrechnungen (letzte 6-12 Monate)</li>
+        <li><strong>Pensionskassenauszüge</strong> beider Ehegatten</li>
+        <li><strong>Kontoauszüge</strong> aller Bankkonten</li>
+        <li><strong>Belege für Vermögenswerte</strong>: Immobilien, Fahrzeuge, Wertpapiere</li>
+        <li><strong>Schuldenübersicht</strong>: Kredite, Hypotheken, Leasingverträge</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Bei Kindern zusätzlich</h3>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Geburtsurkunden der Kinder</li>
+        <li>Schulzeugnisse und Ausbildungsunterlagen</li>
+        <li>Nachweis über Kinderbetreuungskosten</li>
+    </ul>
+
+    <!-- Häufige Fehler -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Häufige Fehler bei der Scheidungsklage vermeiden</h2>
+
+    <p class="text-gray-700 mb-6">Scheidungsklagen werden häufiger abgewiesen als man denkt. Die häufigsten Fehler:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Fehler</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Konsequenz</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Vermeidung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Zu frühe Klageeinreichung</td>
+                    <td class="px-6 py-4 text-gray-700">Abweisung wegen nicht erfüllter Trennungsfrist</td>
+                    <td class="px-6 py-4 text-gray-700">Trennungszeitpunkt dokumentieren und genau berechnen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Formale Fehler</td>
+                    <td class="px-6 py-4 text-gray-700">Rückweisung zur Nachbesserung</td>
+                    <td class="px-6 py-4 text-gray-700">Anwaltliche Hilfe bei der Klageformulierung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Unvollständige Rechtsbegehren</td>
+                    <td class="px-6 py-4 text-gray-700">Nachforderung durch Gericht, Verzögerung</td>
+                    <td class="px-6 py-4 text-gray-700">Alle Nebenfolgen mit konkreten Zahlen beantragen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Fehlende Belege</td>
+                    <td class="px-6 py-4 text-gray-700">Verzögerung, Beweisschwierigkeiten</td>
+                    <td class="px-6 py-4 text-gray-700">Alle Unterlagen vor Klageeinreichung sammeln</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Unrealistische Anträge</td>
+                    <td class="px-6 py-4 text-gray-700">Unterliegen mit Kostenfolgen</td>
+                    <td class="px-6 py-4 text-gray-700">Realistische Einschätzung durch Anwalt</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">Bei einer Scheidungsklage ist die anwaltliche Vertretung zwar nicht gesetzlich vorgeschrieben, aber <strong>dringend empfohlen</strong>. Das Verfahren ist komplex, und formale Fehler können zur Abweisung der Klage führen – mit entsprechenden Kostenfolgen.</p>
+
+        <p class="text-gray-700 mb-6">Besonders bei folgenden Konstellationen ist die Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> unerlässlich:</p>
+
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Wenn der andere Ehegatte die Scheidung ablehnt</li>
+            <li>Bei Streitigkeiten über das <a href="/sorgerecht" class="text-gold hover:underline font-semibold">Sorgerecht</a> oder die Obhut der Kinder</li>
+            <li>Bei komplexen Vermögensverhältnissen (Unternehmen, Immobilien, Auslandsvermögen)</li>
+            <li>Bei Unstimmigkeiten über den <a href="/unterhalt" class="text-gold hover:underline font-semibold">Unterhalt</a></li>
+            <li>Wenn der andere Ehegatte bereits anwaltlich vertreten ist</li>
+            <li>Bei Verdacht auf Vermögensverschiebungen</li>
+            <li>Bei häuslicher Gewalt oder anderen schwerwiegenden Gründen (Art. 115 ZGB)</li>
+        </ul>
+
+        <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kann die Scheidungsklage professionell verfassen, vorsorgliche Massnahmen beantragen, Ihre Position in Verhandlungen stärken und Sie vor Gericht kompetent vertreten. Auch bei der Entwicklung einer Verhandlungsstrategie und der realistischen Einschätzung Ihrer Erfolgsaussichten ist ein <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> von grossem Wert.</p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Sie erwägen, eine Scheidungsklage einzureichen, oder haben eine Scheidungsklage erhalten? Unsere spezialisierten Familienrechtsanwälte analysieren Ihre individuelle Situation und zeigen Ihnen Ihre rechtlichen Möglichkeiten auf.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- Fazit -->
+    <h2 class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Die Scheidungsklage ist das rechtliche Instrument zur Auflösung einer Ehe, wenn eine einvernehmliche Lösung nicht möglich ist. Nach Ablauf der zweijährigen Trennungsfrist besteht ein absoluter Rechtsanspruch auf Scheidung – auch gegen den Willen des anderen Ehegatten. Bei schwerwiegenden Gründen wie Gewalt oder Stalking ist eine Scheidung nach Art. 115 ZGB auch ohne Trennungsfrist möglich.</p>
+
+    <p class="text-gray-700 mb-6">Das Verfahren ist aufwendiger und kostspieliger als die einvernehmliche Scheidung. Deshalb sollte stets geprüft werden, ob eine <a href="/scheidung/scheidung-auf-gemeinsames-begehren" class="text-gold hover:underline font-semibold">einvernehmliche Scheidung</a> – auch mit Teileinigung – möglich ist. Anwaltliche Vertretung ist bei einer Scheidungsklage dringend empfohlen, um Fehler zu vermeiden und Ihre Interessen optimal zu wahren.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Relevante Gesetzesbestimmungen:</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li>Art. 114 ZGB (Scheidung nach zweijähriger Trennung)</li>
+            <li>Art. 115 ZGB (Scheidung wegen Unzumutbarkeit)</li>
+            <li>Art. 111/112 ZGB (Scheidung auf gemeinsames Begehren)</li>
+            <li>Art. 274-293 ZPO (Scheidungsverfahren)</li>
+            <li>Art. 276 ZPO (Vorsorgliche Massnahmen)</li>
+            <li>Art. 290 ZPO (Einleitung der Scheidungsklage)</li>
+            <li>Art. 291 ZPO (Einigungsverhandlung)</li>
+            <li>Art. 292 ZPO (Wechsel zur Scheidung auf gemeinsames Begehren)</li>
+            <li>Art. 106 ZPO (Kostenverteilung)</li>
+            <li>Art. 117 ZPO (Unentgeltliche Rechtspflege)</li>
+        </ul>
+    </div>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist eine Scheidungsklage?</h3>
+                <p class="text-gray-700">Eine Scheidungsklage ist ein gerichtliches Verfahren, bei dem ein Ehegatte die Auflösung der Ehe einseitig beantragt – also ohne Zustimmung des anderen Ehegatten. Sie ist nach Art. 114 ZGB (nach zweijähriger Trennung) oder Art. 115 ZGB (bei Unzumutbarkeit) möglich.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie lange muss man getrennt sein für eine Scheidungsklage?</h3>
+                <p class="text-gray-700">Nach Art. 114 ZGB müssen die Ehegatten mindestens zwei Jahre getrennt gelebt haben, bevor eine Scheidungsklage eingereicht werden kann. Die Frist muss bei Klageeinreichung erfüllt sein. Bei schwerwiegenden Gründen (Art. 115 ZGB) wie Gewalt ist eine Klage auch ohne Trennungsfrist möglich.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was kostet eine Scheidungsklage in der Schweiz?</h3>
+                <p class="text-gray-700">Die Gerichtskosten betragen je nach Kanton CHF 1'700-13'000. Hinzu kommen Anwaltskosten von typischerweise CHF 3'000-100'000 pro Partei, abhängig von der Komplexität. Die unterlegene Partei trägt grundsätzlich alle Prozesskosten (Art. 106 ZPO). Bei finanzieller Bedürftigkeit kann unentgeltliche Rechtspflege beantragt werden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie lange dauert eine Scheidungsklage?</h3>
+                <p class="text-gray-700">Bei schneller Einigung in der Einigungsverhandlung dauert das Verfahren 3-6 Monate. Bei strittigen Scheidungen ohne Gutachten 1-2 Jahre, mit Gutachten 2-4 Jahre. Mit Rechtsmittelverfahren bis zum Bundesgericht kann die Dauer auf 4-10 Jahre ansteigen. Hinzu kommt die obligatorische zweijährige Trennungsfrist vor Klageeinreichung.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich mich gegen eine Scheidungsklage wehren?</h3>
+                <p class="text-gray-700">Nach Ablauf der zweijährigen Trennungsfrist besteht ein absoluter Rechtsanspruch auf Scheidung (BGE 131 III 249). Der beklagte Ehegatte kann die Scheidung dann nicht verhindern, aber eigene Anträge zu den Nebenfolgen stellen. Vor Ablauf der Frist kann die Erfüllung der Voraussetzungen des Art. 115 ZGB bestritten werden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wo reiche ich eine Scheidungsklage ein?</h3>
+                <p class="text-gray-700">Die Scheidungsklage muss beim zuständigen Zivilgericht (in den meisten Kantonen Bezirksgericht) am Wohnsitz eines der Ehegatten eingereicht werden (Art. 23 ZPO). Sie können also entweder am eigenen Wohnsitz oder am Wohnsitz Ihres Ehepartners klagen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was sind schwerwiegende Gründe für Art. 115 ZGB?</h3>
+                <p class="text-gray-700">Als schwerwiegende Gründe für eine Scheidung ohne Trennungsfrist anerkennt die Rechtsprechung: schwere körperliche oder psychische Gewalt, systematisches Stalking, schwere Straftaten, langjährige aussereheliche Beziehung (Doppelleben), schwere Ehrverletzungen, Heiratsschwindel sowie Schein- oder Zwangsehen. Einmaliger Ehebruch genügt nicht (BGE 128 III 1).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Brauche ich einen Anwalt für eine Scheidungsklage?</h3>
+                <p class="text-gray-700">Es besteht keine gesetzliche Anwaltspflicht. Anwaltliche Vertretung ist bei Scheidungsklagen jedoch dringend empfohlen. Formale Fehler können zur Abweisung der Klage führen. Zudem ist das Verfahren komplex, und ohne fachkundige Unterstützung riskieren Sie, Ihre Rechte und Ansprüche nicht optimal zu wahren.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wer zahlt die Scheidungskosten bei einer Scheidungsklage?</h3>
+                <p class="text-gray-700">Nach Art. 106 ZPO trägt grundsätzlich die unterlegene Partei die Prozesskosten (Gerichtskosten und Parteientschädigung). Wird die Klage zurückgezogen, gilt der Kläger als unterliegend. Bei keiner eindeutig unterlegenen Partei verteilt das Gericht die Kosten nach Ermessen, was bei Scheidungen häufig der Fall ist.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann eine Scheidungsklage in eine einvernehmliche Scheidung umgewandelt werden?</h3>
+                <p class="text-gray-700">Ja, gemäss Art. 292 ZPO kann eine Scheidungsklage jederzeit in eine Scheidung auf gemeinsames Begehren umgewandelt werden, wenn sich die Ehegatten in der Einigungsverhandlung oder später einigen. Dies spart Zeit und Kosten und wird vom Gericht gefördert.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Welche Unterlagen brauche ich für eine Scheidungsklage?</h3>
+                <p class="text-gray-700">Für eine Scheidungsklage benötigen Sie: Familienbüchlein oder Familienbescheinigung (nicht älter als 3-6 Monate), Personalausweis/Pass (Kopie), Meldebestätigung, Nachweis der Trennung (Mietvertrag, Ummeldung), Steuererklärungen der letzten 3 Jahre, Lohnausweise, Pensionskassenauszüge sowie Belege für Vermögenswerte und Schulden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert bei der Einigungsverhandlung?</h3>
+                <p class="text-gray-700">Bei der Einigungsverhandlung (Art. 291 ZPO) prüft das Gericht zunächst, ob der Scheidungsgrund vorliegt. Dann versucht es, eine Einigung zwischen den Ehegatten herbeizuführen. Bei vollständiger Einigung wird die Scheidung umgehend ausgesprochen. Bei Teileinigung wird nur über die strittigen Punkte weiterverhandelt.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Scheidungsklage in der Schweiz: Voraussetzungen, Ablauf und Kosten 2025",
+        "description": "Scheidungsklage Schweiz: Alles zu Art. 114 & 115 ZGB, Trennungsfrist, Unzumutbarkeit, Verfahrensablauf, Kosten und Dauer. Mit BGE-Rechtsprechung und Praxistipps.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-20",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/scheidung/scheidungsklage"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Was ist eine Scheidungsklage?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Eine Scheidungsklage ist ein gerichtliches Verfahren, bei dem ein Ehegatte die Auflösung der Ehe einseitig beantragt – also ohne Zustimmung des anderen Ehegatten. Sie ist nach Art. 114 ZGB (nach zweijähriger Trennung) oder Art. 115 ZGB (bei Unzumutbarkeit) möglich."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie lange muss man getrennt sein für eine Scheidungsklage?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nach Art. 114 ZGB müssen die Ehegatten mindestens zwei Jahre getrennt gelebt haben, bevor eine Scheidungsklage eingereicht werden kann. Die Frist muss bei Klageeinreichung erfüllt sein. Bei schwerwiegenden Gründen (Art. 115 ZGB) wie Gewalt ist eine Klage auch ohne Trennungsfrist möglich."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was kostet eine Scheidungsklage in der Schweiz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Gerichtskosten betragen je nach Kanton CHF 1'700-13'000. Hinzu kommen Anwaltskosten von typischerweise CHF 3'000-100'000 pro Partei, abhängig von der Komplexität. Die unterlegene Partei trägt grundsätzlich alle Prozesskosten (Art. 106 ZPO). Bei finanzieller Bedürftigkeit kann unentgeltliche Rechtspflege beantragt werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie lange dauert eine Scheidungsklage?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei schneller Einigung in der Einigungsverhandlung dauert das Verfahren 3-6 Monate. Bei strittigen Scheidungen ohne Gutachten 1-2 Jahre, mit Gutachten 2-4 Jahre. Mit Rechtsmittelverfahren bis zum Bundesgericht kann die Dauer auf 4-10 Jahre ansteigen. Hinzu kommt die obligatorische zweijährige Trennungsfrist vor Klageeinreichung."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich mich gegen eine Scheidungsklage wehren?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nach Ablauf der zweijährigen Trennungsfrist besteht ein absoluter Rechtsanspruch auf Scheidung (BGE 131 III 249). Der beklagte Ehegatte kann die Scheidung dann nicht verhindern, aber eigene Anträge zu den Nebenfolgen stellen. Vor Ablauf der Frist kann die Erfüllung der Voraussetzungen des Art. 115 ZGB bestritten werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wo reiche ich eine Scheidungsklage ein?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Scheidungsklage muss beim zuständigen Zivilgericht (in den meisten Kantonen Bezirksgericht) am Wohnsitz eines der Ehegatten eingereicht werden (Art. 23 ZPO). Sie können also entweder am eigenen Wohnsitz oder am Wohnsitz Ihres Ehepartners klagen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was sind schwerwiegende Gründe für Art. 115 ZGB?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Als schwerwiegende Gründe für eine Scheidung ohne Trennungsfrist anerkennt die Rechtsprechung: schwere körperliche oder psychische Gewalt, systematisches Stalking, schwere Straftaten, langjährige aussereheliche Beziehung (Doppelleben), schwere Ehrverletzungen, Heiratsschwindel sowie Schein- oder Zwangsehen. Einmaliger Ehebruch genügt nicht (BGE 128 III 1)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Brauche ich einen Anwalt für eine Scheidungsklage?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Es besteht keine gesetzliche Anwaltspflicht. Anwaltliche Vertretung ist bei Scheidungsklagen jedoch dringend empfohlen. Formale Fehler können zur Abweisung der Klage führen. Zudem ist das Verfahren komplex, und ohne fachkundige Unterstützung riskieren Sie, Ihre Rechte und Ansprüche nicht optimal zu wahren."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wer zahlt die Scheidungskosten bei einer Scheidungsklage?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nach Art. 106 ZPO trägt grundsätzlich die unterlegene Partei die Prozesskosten (Gerichtskosten und Parteientschädigung). Wird die Klage zurückgezogen, gilt der Kläger als unterliegend. Bei keiner eindeutig unterlegenen Partei verteilt das Gericht die Kosten nach Ermessen, was bei Scheidungen häufig der Fall ist."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann eine Scheidungsklage in eine einvernehmliche Scheidung umgewandelt werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, gemäss Art. 292 ZPO kann eine Scheidungsklage jederzeit in eine Scheidung auf gemeinsames Begehren umgewandelt werden, wenn sich die Ehegatten in der Einigungsverhandlung oder später einigen. Dies spart Zeit und Kosten und wird vom Gericht gefördert."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welche Unterlagen brauche ich für eine Scheidungsklage?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Für eine Scheidungsklage benötigen Sie: Familienbüchlein oder Familienbescheinigung (nicht älter als 3-6 Monate), Personalausweis/Pass (Kopie), Meldebestätigung, Nachweis der Trennung (Mietvertrag, Ummeldung), Steuererklärungen der letzten 3 Jahre, Lohnausweise, Pensionskassenauszüge sowie Belege für Vermögenswerte und Schulden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert bei der Einigungsverhandlung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei der Einigungsverhandlung (Art. 291 ZPO) prüft das Gericht zunächst, ob der Scheidungsgrund vorliegt. Dann versucht es, eine Einigung zwischen den Ehegatten herbeizuführen. Bei vollständiger Einigung wird die Scheidung umgehend ausgesprochen. Bei Teileinigung wird nur über die strittigen Punkte weiterverhandelt."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Scheidung",
+                "item": "https://familienrechtanwalt.ch/scheidung"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Scheidungsklage in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/scheidung/scheidungsklage"
+            }
+        ]
+    })} />
+
 </ArticleLayout>

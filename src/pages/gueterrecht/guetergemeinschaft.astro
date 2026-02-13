@@ -4,166 +4,281 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 
 <ArticleLayout
     title="Gütergemeinschaft in der Schweiz"
-    description="Gütergemeinschaft in der Schweiz: Vollständiger Leitfaden zum vertraglichen Güterstand. Gesamtgut, Eigengut, Haftung und güterrechtliche Auseinandersetzung."
-    keywords="Gütergemeinschaft Schweiz, Ehevertrag, Gesamtgut, Eigengut, allgemeine Gütergemeinschaft, Errungenschaftsgemeinschaft, Art. 221 ZGB"
+    description="Gütergemeinschaft in der Schweiz erklärt: Gesamtgut, Eigengut, Haftung & Auflösung nach Art. 221-246 ZGB. Mit Berechnungsbeispielen und BGE-Rechtsprechung."
+    keywords="Gütergemeinschaft Schweiz, Ehevertrag Gütergemeinschaft, Gesamtgut, Eigengut, allgemeine Gütergemeinschaft, Errungenschaftsgemeinschaft, Art. 221 ZGB, Güterrecht"
     category="Güterrecht"
     categoryLink="/gueterrecht"
 >
-    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die Gütergemeinschaft ist ein ausserordentlicher Güterstand im Schweizer Eherecht, bei dem das Vermögen der Ehegatten zu einem gemeinsamen Ganzen verschmilzt. Anders als bei der Errungenschaftsbeteiligung entsteht hier echtes Gesamteigentum.</p>
-
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Was ist die Gütergemeinschaft?</h2>
-
-    <p class="text-gray-700 mb-6">Die Gütergemeinschaft ist ein Güterstand, bei dem das Vermögen und die Einkünfte der Ehegatten ganz oder teilweise zu einem gemeinschaftlichen Vermögen - dem Gesamtgut - vereinigt werden. Im Gegensatz zur Errungenschaftsbeteiligung, wo jeder Ehegatte sein Vermögen selbstständig verwaltet, bilden die Ehegatten bei der Gütergemeinschaft eine wirtschaftliche Einheit.</p>
-
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy mb-2">Wichtig:</p>
-        <p class="text-gray-700">Der Güterstand der Gütergemeinschaft muss durch einen notariell beurkundeten Ehevertrag begründet werden. Er gilt daher als ausserordentlicher oder vertraglicher Güterstand. Ohne Ehevertrag leben Ehepaare automatisch in der Errungenschaftsbeteiligung.</p>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Gütergemeinschaft ist ein <strong>ausserordentlicher Güterstand</strong>, der nur durch einen öffentlich beurkundeten Ehevertrag begründet werden kann (Art. 221 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Das Vermögen teilt sich in <strong>drei Gütermassen</strong>: das Gesamtgut (beiden Ehegatten gemeinsam) sowie das Eigengut jedes Ehegatten.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Es gibt <strong>drei Formen</strong>: Allgemeine Gütergemeinschaft (Art. 222 ZGB), Errungenschaftsgemeinschaft (Art. 223 ZGB) und Ausschlussgemeinschaft (Art. 224 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bei <strong>Vollschulden</strong> haften beide Ehegatten mit Gesamtgut und Eigengut (Art. 233 ZGB); bei <strong>Eigenschulden</strong> nur mit Eigengut und der Hälfte des Gesamtguts (Art. 234 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bei Auflösung steht jedem Ehegatten grundsätzlich die <strong>Hälfte des Gesamtguts</strong> zu (Art. 241 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Gütergemeinschaft eignet sich besonders zur <strong>Begünstigung des überlebenden Ehegatten</strong>, birgt aber erhöhte Haftungsrisiken.</span>
+            </li>
+        </ul>
     </div>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Charakteristika der Gütergemeinschaft</h3>
+    <!-- Einleitung -->
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die Gütergemeinschaft ist neben der Errungenschaftsbeteiligung und der Gütertrennung einer der drei Güterstände des schweizerischen Eherechts. Als einziger Güterstand schafft sie echtes <strong>Gesamteigentum</strong> der Ehegatten – das Vermögen verschmilzt zu einem gemeinsamen Ganzen. Anders als bei der Errungenschaftsbeteiligung, die automatisch gilt, muss die Gütergemeinschaft durch einen notariell beurkundeten Ehevertrag begründet werden (Art. 181 ZGB). In der Praxis wird sie relativ selten gewählt, bietet jedoch in bestimmten Konstellationen erhebliche Vorteile, insbesondere bei der Nachlassplanung und der Begünstigung des überlebenden Ehegatten.</p>
+
+    <!-- Was ist die Gütergemeinschaft? -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Was ist die Gütergemeinschaft?</h2>
+
+    <p class="text-gray-700 mb-6">Die Gütergemeinschaft ist ein eherechtlicher Güterstand, bei dem das Vermögen und die Einkünfte der Ehegatten ganz oder teilweise zu einem gemeinschaftlichen Vermögen – dem sogenannten <strong>Gesamtgut</strong> – vereinigt werden (Art. 221-246 ZGB). Im Unterschied zur Errungenschaftsbeteiligung, bei der jeder Ehegatte sein Vermögen selbstständig verwaltet und lediglich am Ende der Ehe ein Ausgleich stattfindet, bilden die Ehegatten bei der Gütergemeinschaft von Anfang an eine wirtschaftliche Einheit.</p>
+
+    <p class="text-gray-700 mb-6">Das Gesamtgut gehört beiden Ehegatten <strong>ungeteilt</strong> (Art. 222 Abs. 2 ZGB). Das bedeutet: Keiner der Ehegatten hat einen bestimmten Bruchteil oder Anteil, über den er verfügen könnte. Diese Eigenschaft des Gesamteigentums unterscheidet sich grundlegend vom Miteigentum, bei dem jeder Miteigentümer über seinen Anteil verfügen kann (Art. 646 ff. ZGB vs. Art. 652 ff. ZGB).</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Gesetzliche Definition (Art. 221 ZGB):</p>
+        <p class="text-gray-700 italic">«Der Güterstand der Gütergemeinschaft umfasst das Gesamtgut und das Eigengut jedes Ehegatten.»</p>
+    </div>
+
+    <!-- Begründung der Gütergemeinschaft -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Begründung der Gütergemeinschaft</h2>
+
+    <p class="text-gray-700 mb-6">Die Gütergemeinschaft kann ausschliesslich durch einen <strong>Ehevertrag</strong> begründet werden (Art. 182 ZGB). Dieser Ehevertrag bedarf zwingend der <strong>öffentlichen Beurkundung</strong> (Art. 184 ZGB). Ohne notarielle Beurkundung ist der Vertrag nichtig und entfaltet keine Wirkung.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Formvorschriften für den Ehevertrag</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Anforderung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erläuterung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Öffentliche Beurkundung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 184 Abs. 1 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Durch Notar oder zuständige Amtsperson</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Unterschrift beider Parteien</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 184 Abs. 1 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Beide Ehegatten müssen persönlich unterschreiben</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Urteilsfähigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 183 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Beide Parteien müssen urteilsfähig sein</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Zustimmung Beistand</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 183 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Bei umfassender Beistandschaft erforderlich</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Zeitpunkt des Abschlusses</h3>
+
+    <p class="text-gray-700 mb-6">Ein Ehevertrag kann sowohl <strong>vor der Eheschliessung</strong> als auch <strong>während der Ehe</strong> jederzeit abgeschlossen werden (Art. 182 ZGB). Bei einem vorehelichen Ehevertrag tritt die Gütergemeinschaft mit der Eheschliessung in Kraft. Bei einem Abschluss während der Ehe wird der bisherige Güterstand (in der Regel die Errungenschaftsbeteiligung) zunächst aufgelöst und güterrechtlich abgerechnet, bevor die Gütergemeinschaft beginnt.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kosten für den Ehevertrag</h3>
+
+    <p class="text-gray-700 mb-6">Die Kosten für einen Ehevertrag zur Begründung der Gütergemeinschaft variieren je nach Kanton und Komplexität des Vertrags erheblich. Die Notariatsgebühren richten sich nach den kantonalen Gebührentarifen und dem betroffenen Vermögenswert.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kanton</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gebührenspanne (CHF)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bemerkung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Zürich</td>
+                    <td class="px-6 py-4 text-gray-700">200 – 7'500</td>
+                    <td class="px-6 py-4 text-gray-700">Amtsnotariat, vermögensabhängig</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Bern</td>
+                    <td class="px-6 py-4 text-gray-700">ab 500</td>
+                    <td class="px-6 py-4 text-gray-700">Freies Notariat</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">St. Gallen</td>
+                    <td class="px-6 py-4 text-gray-700">200 – 1'000</td>
+                    <td class="px-6 py-4 text-gray-700">Amtsnotariat</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Schwyz</td>
+                    <td class="px-6 py-4 text-gray-700">ab 50</td>
+                    <td class="px-6 py-4 text-gray-700">Günstiger Tarif</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Genf</td>
+                    <td class="px-6 py-4 text-gray-700">ab 500</td>
+                    <td class="px-6 py-4 text-gray-700">Freies Notariat</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-blue-50 border-l-4 border-blue-500 p-6 my-6">
+        <p class="font-semibold text-navy mb-2">Hinweis:</p>
+        <p class="text-gray-700">Bei der Wahl der Gütergemeinschaft ist häufig auch ein <strong>Inventar</strong> der vorhandenen Vermögenswerte zu erstellen. Die Kosten hierfür betragen zusätzlich CHF 150 bis 1'500, je nach Kanton und Aufwand.</p>
+    </div>
+
+    <!-- Die drei Vermögensmassen -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Die drei Vermögensmassen der Gütergemeinschaft</h2>
+
+    <p class="text-gray-700 mb-6">Anders als bei der Errungenschaftsbeteiligung (vier Gütermassen) oder der Gütertrennung (zwei Gütermassen) kennt die Gütergemeinschaft <strong>drei Vermögensmassen</strong> (Art. 221 ZGB):</p>
+
+    <div class="bg-gray-100 p-8 rounded-lg mb-8">
+        <div class="grid md:grid-cols-3 gap-4 text-center">
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h4 class="font-bold text-navy mb-2">Eigengut Ehemann</h4>
+                <p class="text-sm text-gray-600">Persönliche Gegenstände, Genugtuungsansprüche, vertraglich Ausgeschlossenes</p>
+            </div>
+            <div class="bg-navy text-white p-6 rounded-lg shadow">
+                <h4 class="font-bold mb-2">Gesamtgut</h4>
+                <p class="text-sm">Gemeinsames Vermögen beider Ehegatten (ungeteilt)</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h4 class="font-bold text-navy mb-2">Eigengut Ehefrau</h4>
+                <p class="text-sm text-gray-600">Persönliche Gegenstände, Genugtuungsansprüche, vertraglich Ausgeschlossenes</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Das Gesamtgut -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Das Gesamtgut</h2>
+
+    <p class="text-gray-700 mb-6">Das Gesamtgut ist das Kernstück der Gütergemeinschaft. Es gehört beiden Ehegatten als <strong>Gesamteigentum</strong> und steht ihnen ungeteilt zu (Art. 222 Abs. 2 ZGB). Im Gegensatz zum Miteigentum kann keiner der Ehegatten über einen Anteil am Gesamtgut verfügen (Art. 222 Abs. 3 ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Rechtsnatur: Gesamteigentum vs. Miteigentum</h3>
 
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Merkmal</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gesamteigentum (Art. 652 ff. ZGB)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Miteigentum (Art. 646 ff. ZGB)</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Entstehung</td>
-                    <td class="px-6 py-4 text-gray-700">Nur durch notariell beurkundeten Ehevertrag</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Anteil</td>
+                    <td class="px-6 py-4 text-gray-700">Kein bestimmter Bruchteil</td>
+                    <td class="px-6 py-4 text-gray-700">Quotenmässig bestimmt</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Vermögensmassen</td>
-                    <td class="px-6 py-4 text-gray-700">Drei: Gesamtgut + Eigengut jedes Ehegatten</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Verfügung über Anteil</td>
+                    <td class="px-6 py-4 text-gray-700">Nicht möglich (Art. 653 Abs. 3 ZGB)</td>
+                    <td class="px-6 py-4 text-gray-700">Jederzeit möglich</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Verwaltung Gesamtgut</td>
-                    <td class="px-6 py-4 text-gray-700">Grundsätzlich gemeinsam</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Verwaltung</td>
+                    <td class="px-6 py-4 text-gray-700">Gemeinsam</td>
+                    <td class="px-6 py-4 text-gray-700">Nach Mehrheitsprinzip</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Verfügung</td>
-                    <td class="px-6 py-4 text-gray-700">Über Gesamtgut nur gemeinsam möglich</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Haftung</td>
-                    <td class="px-6 py-4 text-gray-700">Erweiterte Solidarhaftung</td>
-                </tr>
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Auflösung</td>
-                    <td class="px-6 py-4 text-gray-700">Hälftige Teilung des Gesamtguts</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Teilung</td>
+                    <td class="px-6 py-4 text-gray-700">Nur bei Auflösung des Grundverhältnisses</td>
+                    <td class="px-6 py-4 text-gray-700">Jederzeit verlangbar</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen</h2>
-
-    <p class="text-gray-700 mb-6">Die Gütergemeinschaft ist in den Art. 221-246 des Schweizerischen Zivilgesetzbuches (ZGB) geregelt.</p>
-
-    <div class="overflow-x-auto mb-6">
-        <table class="min-w-full bg-white border border-gray-200">
-            <thead class="bg-navy text-white">
-                <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Artikel</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Regelungsinhalt</th>
-                </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200">
-                <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Art. 221 ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Grundsatz: Die drei Vermögensmassen</td>
-                </tr>
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Art. 222 ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Allgemeine Gütergemeinschaft</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Art. 223 ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Errungenschaftsgemeinschaft</td>
-                </tr>
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Art. 224 ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Ausschlussgemeinschaft</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Art. 225-226 ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Eigengut</td>
-                </tr>
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Art. 230-232 ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Verwaltung des Gesamtguts</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Art. 233-234 ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Haftung: Vollschulden und Eigenschulden</td>
-                </tr>
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Art. 238 ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Auflösungsgründe</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Art. 241-242 ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Teilung des Gesamtguts</td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Art. 222 Abs. 2 und 3 ZGB:</p>
+        <p class="text-gray-700 italic mb-2">«Das Gesamtgut gehört beiden Ehegatten ungeteilt.»</p>
+        <p class="text-gray-700 italic">«Kein Ehegatte kann über seinen Anteil am Gesamtgut verfügen.»</p>
     </div>
 
+    <!-- Die drei Formen der Gütergemeinschaft -->
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Die drei Formen der Gütergemeinschaft</h2>
 
-    <p class="text-gray-700 mb-6">Das Gesetz kennt drei verschiedene Formen der Gütergemeinschaft, die sich im Umfang des Gesamtguts unterscheiden.</p>
+    <p class="text-gray-700 mb-6">Das Gesetz kennt drei verschiedene Formen der Gütergemeinschaft, die sich im Umfang des Gesamtguts unterscheiden. Die Ehegatten können im Ehevertrag zwischen diesen Formen wählen (Art. 222-224 ZGB).</p>
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">1. Allgemeine Gütergemeinschaft (Art. 222 ZGB)</h3>
 
-    <p class="text-gray-700 mb-6">Bei der allgemeinen Gütergemeinschaft umfasst das Gesamtgut das gesamte Vermögen und alle Einkünfte beider Ehegatten, mit Ausnahme der Vermögenswerte, die von Gesetzes wegen Eigengut bilden.</p>
+    <p class="text-gray-700 mb-6">Die allgemeine Gütergemeinschaft ist die <strong>weitestgehende Form</strong>. Bei ihr umfasst das Gesamtgut das gesamte Vermögen und alle Einkünfte beider Ehegatten – mit Ausnahme der Vermögenswerte, die von Gesetzes wegen Eigengut bilden (Art. 222 Abs. 1 ZGB).</p>
 
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Was gehört zum Gesamtgut?</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Was bleibt Eigengut?</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gehört zum Gesamtgut</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bleibt Eigengut</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 text-gray-700">Gesamtes Vermögen beider Ehegatten</td>
-                    <td class="px-6 py-4 text-gray-700">Persönliche Gegenstände</td>
-                </tr>
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4 text-gray-700">Alle Einkünfte</td>
-                    <td class="px-6 py-4 text-gray-700">Genugtuungsansprüche</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4 text-gray-700">Erbschaften und Schenkungen (!)</td>
-                    <td class="px-6 py-4 text-gray-700">Was durch Ehevertrag als Eigengut bestimmt ist</td>
+                    <td class="px-6 py-4 text-gray-700">Gesamtes eingebrachtes Vermögen</td>
+                    <td class="px-6 py-4 text-gray-700">Persönliche Gebrauchsgegenstände (Art. 225 Abs. 1 ZGB)</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 text-gray-700">Arbeitserwerb</td>
+                    <td class="px-6 py-4 text-gray-700">Genugtuungsansprüche (Art. 225 Abs. 2 ZGB)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Erbschaften und Schenkungen</td>
+                    <td class="px-6 py-4 text-gray-700">Durch Ehevertrag ausgeschlossene Werte</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Erträge aus Vermögen</td>
+                    <td class="px-6 py-4 text-gray-700">Zuwendungen Dritter mit Eigengut-Bestimmung (Art. 225 Abs. 3 ZGB)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Sozialversicherungsleistungen (AHV, BVG)</td>
                     <td class="px-6 py-4 text-gray-700"></td>
                 </tr>
             </tbody>
         </table>
     </div>
 
+    <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 my-6">
+        <p class="font-semibold text-navy mb-2">Wichtiger Unterschied zur Errungenschaftsbeteiligung:</p>
+        <p class="text-gray-700">Bei der allgemeinen Gütergemeinschaft fallen <strong>Erbschaften und Schenkungen</strong> ins Gesamtgut – bei der Errungenschaftsbeteiligung hingegen ins Eigengut. Dies ist ein wesentlicher Punkt bei der Wahl des Güterstands.</p>
+    </div>
+
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">2. Errungenschaftsgemeinschaft (Art. 223 ZGB)</h3>
 
-    <p class="text-gray-700 mb-6">Die Errungenschaftsgemeinschaft beschränkt das Gesamtgut auf jene Vermögenswerte, die unter dem ordentlichen Güterstand der Errungenschaftsbeteiligung zur Errungenschaft gehören würden.</p>
+    <p class="text-gray-700 mb-6">Die Errungenschaftsgemeinschaft ist eine <strong>beschränkte Gütergemeinschaft</strong>. Sie beschränkt das Gesamtgut auf jene Vermögenswerte, die unter dem ordentlichen Güterstand der Errungenschaftsbeteiligung zur Errungenschaft gehören würden (Art. 223 ZGB). Das eingebrachte Vermögen, Erbschaften und Schenkungen bleiben Eigengut.</p>
 
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Was gehört zum Gesamtgut?</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Was bleibt Eigengut?</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gehört zum Gesamtgut</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bleibt Eigengut</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 text-gray-700">Arbeitserwerb beider Ehegatten</td>
+                    <td class="px-6 py-4 text-gray-700">Arbeitserwerb</td>
                     <td class="px-6 py-4 text-gray-700">Eingebrachtes Vermögen</td>
                 </tr>
                 <tr class="bg-gray-50">
@@ -184,7 +299,9 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">3. Ausschlussgemeinschaft (Art. 224 ZGB)</h3>
 
-    <p class="text-gray-700 mb-6">Bei der Ausschlussgemeinschaft schliessen die Ehegatten bestimmte Vermögenswerte oder Arten von Vermögenswerten vom Gesamtgut aus. Das Gesamtgut wird dadurch negativ umschrieben.</p>
+    <p class="text-gray-700 mb-6">Bei der Ausschlussgemeinschaft können die Ehegatten durch Ehevertrag bestimmte Vermögenswerte oder Arten von Vermögenswerten vom Gesamtgut <strong>ausschliessen</strong> (Art. 224 Abs. 1 ZGB). Das Gesamtgut wird dadurch negativ umschrieben. Häufig werden beispielsweise Grundstücke, Geschäftsvermögen oder bestimmte Wertschriftenportfolios ausgeschlossen.</p>
+
+    <p class="text-gray-700 mb-6">Diese Form bietet die grösste <strong>Flexibilität</strong>: Die Ehegatten können massgeschneidert festlegen, welche Vermögenswerte gemeinsam sein sollen und welche nicht. So kann beispielsweise ein Unternehmer sein Geschäftsvermögen vom Gesamtgut ausschliessen, um den anderen Ehegatten vor Geschäftsrisiken zu schützen.</p>
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vergleich der drei Formen</h3>
 
@@ -193,20 +310,32 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
             <thead class="bg-navy text-white">
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Kriterium</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Allgemeine</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Errungenschafts-</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Ausschluss-</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Allgemeine GG</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Errungenschafts-GG</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Ausschluss-GG</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Umfang Gesamtgut</td>
-                    <td class="px-6 py-4 text-gray-700">Maximal</td>
-                    <td class="px-6 py-4 text-gray-700">Mittel</td>
-                    <td class="px-6 py-4 text-gray-700">Individuell</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Gesetzliche Grundlage</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 222 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 223 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 224 ZGB</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Erbschaften</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Umfang Gesamtgut</td>
+                    <td class="px-6 py-4 text-gray-700">Maximal</td>
+                    <td class="px-6 py-4 text-gray-700">Mittel (wie Errungenschaft)</td>
+                    <td class="px-6 py-4 text-gray-700">Individuell festlegbar</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Eingebrachtes Vermögen</td>
+                    <td class="px-6 py-4 text-gray-700">Im Gesamtgut</td>
+                    <td class="px-6 py-4 text-gray-700">Eigengut</td>
+                    <td class="px-6 py-4 text-gray-700">Nach Vereinbarung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Erbschaften/Schenkungen</td>
                     <td class="px-6 py-4 text-gray-700">Im Gesamtgut</td>
                     <td class="px-6 py-4 text-gray-700">Eigengut</td>
                     <td class="px-6 py-4 text-gray-700">Nach Vereinbarung</td>
@@ -219,40 +348,252 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">Haftungsrisiko</td>
-                    <td class="px-6 py-4 text-gray-700">Hoch</td>
+                    <td class="px-6 py-4 text-gray-700">Am höchsten</td>
                     <td class="px-6 py-4 text-gray-700">Mittel</td>
-                    <td class="px-6 py-4 text-gray-700">Geringer</td>
+                    <td class="px-6 py-4 text-gray-700">Variabel (reduzierbar)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Eignung für</td>
+                    <td class="px-6 py-4 text-gray-700">Traditionelle Ehen ohne Geschäftsrisiken</td>
+                    <td class="px-6 py-4 text-gray-700">Kompromiss zwischen Gemeinschaft und Schutz</td>
+                    <td class="px-6 py-4 text-gray-700">Selbständige, Unternehmer</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
+    <!-- Das Eigengut -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Das Eigengut</h2>
+
+    <p class="text-gray-700 mb-6">Auch bei der Gütergemeinschaft behält jeder Ehegatte ein persönliches <strong>Eigengut</strong>. Dieses steht im Alleineigentum des jeweiligen Ehegatten und unterliegt dessen alleiniger Verwaltung und Verfügung.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Eigengut kraft Gesetzes (Art. 225 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Zum Eigengut gehören von Gesetzes wegen bei <strong>allen Formen</strong> der Gütergemeinschaft:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kategorie</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beispiele</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Persönliche Gebrauchsgegenstände</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 225 Abs. 1 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Kleidung, Schmuck, Hobbygegenstände, Sportausrüstung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Genugtuungsansprüche</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 225 Abs. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Ansprüche aus Persönlichkeitsverletzungen, Schmerzensgeld</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Zuwendungen Dritter mit Eigengut-Bestimmung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 225 Abs. 3 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Schenkung mit Verfügung, dass sie Eigengut sein soll</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Eigengut kraft Ehevertrags (Art. 226 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Durch Ehevertrag können die Ehegatten weitere Vermögenswerte zum Eigengut erklären (Art. 226 ZGB). Dies ist insbesondere bei der Ausschlussgemeinschaft (Art. 224 ZGB) der Fall, kann aber auch bei den anderen Formen vereinbart werden, sofern nicht der Wesensgehalt der Gütergemeinschaft aufgehoben wird.</p>
+
+    <!-- Verwaltung und Verfügung -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Verwaltung und Verfügung</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Verwaltung des Gesamtguts (Art. 227-230 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Die Ehegatten verwalten das Gesamtgut im <strong>gemeinsamen Interesse</strong> der ehelichen Gemeinschaft (Art. 227 Abs. 1 ZGB). Das Gesetz unterscheidet zwischen ordentlicher und ausserordentlicher Verwaltung:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Art der Verwaltung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Wer kann handeln?</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Ordentliche Verwaltung</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder Ehegatte allein</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 227 Abs. 2 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Ausserordentliche Verwaltung</td>
+                    <td class="px-6 py-4 text-gray-700">Nur gemeinsam oder mit Einwilligung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 228 Abs. 1 ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ordentliche Verwaltung (Art. 227 Abs. 2 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Jeder Ehegatte kann in den Schranken der ordentlichen Verwaltung die Gemeinschaft <strong>verpflichten</strong> und über das Gesamtgut <strong>verfügen</strong>. Zur ordentlichen Verwaltung gehören:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Laufende Haushaltsausgaben und täglicher Bedarf</li>
+        <li>Bezahlung regelmässiger Rechnungen</li>
+        <li>Kleinere Anschaffungen für den Haushalt</li>
+        <li>Einfache Bankgeschäfte</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ausserordentliche Verwaltung (Art. 228 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Für Geschäfte der ausserordentlichen Verwaltung müssen die Ehegatten <strong>gemeinsam handeln</strong> oder der eine mit <strong>Einwilligung</strong> des anderen (Art. 228 Abs. 1 ZGB). Hierzu zählen insbesondere:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Geschäftsart</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zustimmung erforderlich?</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Veräusserung von Grundstücken</td>
+                    <td class="px-6 py-4 text-gray-700">Ja, gemeinsam oder mit Einwilligung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Belastung von Grundstücken (Hypothek)</td>
+                    <td class="px-6 py-4 text-gray-700">Ja, gemeinsam oder mit Einwilligung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Grössere Kapitalanlagen</td>
+                    <td class="px-6 py-4 text-gray-700">Ja, gemeinsam oder mit Einwilligung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Aufnahme grösserer Kredite</td>
+                    <td class="px-6 py-4 text-gray-700">Ja, gemeinsam oder mit Einwilligung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Bürgschaften</td>
+                    <td class="px-6 py-4 text-gray-700">Ja, gemeinsam oder mit Einwilligung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Ausschlagung einer Erbschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Ja (Art. 230 Abs. 1 ZGB)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Gutglaubensschutz Dritter (Art. 228 Abs. 2 ZGB):</p>
+        <p class="text-gray-700">Dritte dürfen annehmen, dass jeder Ehegatte zur Vertretung der Gemeinschaft befugt ist, sofern sie nicht wissen oder wissen müssen, dass die Vertretungsbefugnis fehlt. Dies dient dem Verkehrsschutz.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Beruf und Gewerbe (Art. 229 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Betreibt ein Ehegatte mit Gesamtgutsmitteln einen <strong>Beruf</strong> oder ein <strong>Gewerbe</strong>, so kann er alle Rechtshandlungen vornehmen, die dieser Beruf oder dieses Gewerbe mit sich bringt (Art. 229 ZGB). Der andere Ehegatte muss diesen Geschäften nicht zustimmen, solange sie im Rahmen der üblichen Geschäftstätigkeit liegen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Verwaltung des Eigenguts</h3>
+
+    <p class="text-gray-700 mb-6">Jeder Ehegatte <strong>verwaltet</strong> sein Eigengut selbstständig und kann darüber frei <strong>verfügen</strong>. Die Zustimmung des anderen Ehegatten ist nicht erforderlich. Die Verwaltung des Eigenguts richtet sich sinngemäss nach den Bestimmungen über die Gütertrennung (Art. 247 ZGB).</p>
+
+    <!-- Haftung für Schulden -->
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Haftung für Schulden</h2>
 
-    <p class="text-gray-700 mb-6">Die Haftung bei der Gütergemeinschaft ist komplexer als bei anderen Güterständen. Das Gesetz unterscheidet zwischen Vollschulden und Eigenschulden.</p>
+    <p class="text-gray-700 mb-6">Die Haftungsregelung bei der Gütergemeinschaft ist <strong>komplex</strong> und stellt eines der grössten Risiken dieses Güterstands dar. Das Gesetz unterscheidet zwischen <strong>Vollschulden</strong> und <strong>Eigenschulden</strong> (Art. 233-235 ZGB).</p>
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vollschulden (Art. 233 ZGB)</h3>
 
-    <p class="text-gray-700 mb-4">Für Vollschulden haftet das Gesamtgut unbeschränkt und das Eigengut jedes Ehegatten:</p>
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Schulden, die von beiden Ehegatten gemeinsam eingegangen wurden</li>
-        <li>Schulden, die im Zusammenhang mit der Verwaltung des Gesamtguts entstanden</li>
-        <li>Schulden zur Deckung des Unterhalts der Familie</li>
-        <li>Schulden aus der Ermächtigung, den anderen zu vertreten</li>
-    </ul>
+    <p class="text-gray-700 mb-6">Für Vollschulden haftet der Schuldnerehegatte mit seinem <strong>Eigengut</strong> und dem <strong>gesamten Gesamtgut</strong>. Dies bedeutet, dass bei Vollschulden das ganze Familienvermögen dem Zugriff der Gläubiger ausgesetzt ist.</p>
+
+    <p class="text-gray-700 mb-4"><strong>Vollschulden entstehen bei:</strong></p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Entstehungsgrund</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Schulden in Ausübung der Vertretungsbefugnis für die eheliche Gemeinschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 233 Ziff. 1 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Schulden in Ausübung der Verwaltung des Gesamtguts</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 233 Ziff. 1 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Schulden aus Berufs- oder Gewerbetätigkeit mit Gesamtgutsmitteln</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 233 Ziff. 2 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Schulden, für die auch der andere Ehegatte persönlich einzustehen hat</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 233 Ziff. 3 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Schulden mit vertraglicher Haftungserweiterung auf Gesamtgut</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 233 Ziff. 4 ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Eigenschulden (Art. 234 ZGB)</h3>
 
-    <p class="text-gray-700 mb-4">Für Eigenschulden haftet nur das Eigengut des betreffenden Ehegatten und die Hälfte des Wertes des Gesamtguts:</p>
+    <p class="text-gray-700 mb-6">Für alle übrigen Schulden – die <strong>Eigenschulden</strong> – haftet ein Ehegatte nur mit seinem <strong>Eigengut</strong> und der <strong>Hälfte des Wertes des Gesamtguts</strong> (Art. 234 Abs. 1 ZGB).</p>
+
+    <p class="text-gray-700 mb-4"><strong>Eigenschulden sind insbesondere:</strong></p>
+
     <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Schulden aus unerlaubten Handlungen eines Ehegatten</li>
+        <li>Schulden aus unerlaubten Handlungen (Deliktschulden)</li>
         <li>Schulden, die nur einen Ehegatten persönlich betreffen</li>
-        <li>Schulden, die ein Ehegatte ohne Zustimmung des anderen begründet hat</li>
+        <li>Schulden, die ohne Zustimmung des anderen begründet wurden (ausserhalb ordentlicher Verwaltung)</li>
+        <li>Schulden aus vor der Ehe begründeten Verbindlichkeiten</li>
     </ul>
 
+    <div class="bg-red-50 border-l-4 border-red-500 p-6 my-6">
+        <p class="font-semibold text-navy mb-2">Warnung – Haftungsrisiko bei Selbständigkeit:</p>
+        <p class="text-gray-700">Führt ein Ehegatte ein Unternehmen (insbesondere als Einzelunternehmen oder Personengesellschaft) mit Gesamtgutsmitteln, entstehen <strong>Vollschulden</strong>. Das bedeutet: Bei Geschäftsschulden haftet das gesamte Familienvermögen, also auch das Eigengut des anderen Ehegatten. Für selbständig erwerbende Ehegatten ist daher die Gütertrennung oder eine Ausschlussgemeinschaft mit Ausschluss des Geschäftsvermögens oft die bessere Wahl.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Haftungsübersicht</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Schuldenart</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Haftendes Vermögen</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Risiko</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Vollschulden</td>
+                    <td class="px-6 py-4 text-gray-700">Eigengut des Schuldners + gesamtes Gesamtgut</td>
+                    <td class="px-6 py-4 text-red-600 font-semibold">Hoch</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Eigenschulden</td>
+                    <td class="px-6 py-4 text-gray-700">Eigengut des Schuldners + ½ des Gesamtguts</td>
+                    <td class="px-6 py-4 text-yellow-600 font-semibold">Mittel</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Auflösung der Gütergemeinschaft -->
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Auflösung der Gütergemeinschaft</h2>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Auflösungsgründe (Art. 238 ZGB)</h3>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Auflösungsgründe (Art. 236 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Die Gütergemeinschaft wird aufgelöst durch:</p>
 
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-200">
@@ -260,71 +601,310 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Auflösungsgrund</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Teilungsregel</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
                     <td class="px-6 py-4 text-gray-700">Tod eines Ehegatten</td>
-                    <td class="px-6 py-4 text-gray-700">Art. 238 Abs. 1 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 236 Abs. 1 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 241 ZGB (½ Gesamtgut)</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 text-gray-700">Vereinbarung eines anderen Güterstands</td>
-                    <td class="px-6 py-4 text-gray-700">Art. 238 Abs. 1 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 236 Abs. 1 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 241 ZGB (½ Gesamtgut)</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 text-gray-700">Gerichtliche Anordnung der Gütertrennung</td>
-                    <td class="px-6 py-4 text-gray-700">Art. 238 Abs. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Scheidung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 236 Abs. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 242 ZGB (modifiziert)</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 text-gray-700">Scheidung</td>
-                    <td class="px-6 py-4 text-gray-700">Art. 238 Abs. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Trennung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 236 Abs. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 242 ZGB (modifiziert)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Ungültigerklärung der Ehe</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 236 Abs. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 242 ZGB (modifiziert)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Gerichtliche Gütertrennung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 236 Abs. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 242 ZGB (modifiziert)</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 text-gray-700">Konkurs eines Ehegatten</td>
-                    <td class="px-6 py-4 text-gray-700">Art. 238 Abs. 3 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 236 Abs. 3 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 242 ZGB (modifiziert)</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
+    <!-- Güterrechtliche Auseinandersetzung -->
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Güterrechtliche Auseinandersetzung</h2>
+
+    <p class="text-gray-700 mb-6">Bei Auflösung der Gütergemeinschaft erfolgt die güterrechtliche Auseinandersetzung. Dabei sind zunächst die Eigengüter und das Gesamtgut auszuscheiden. Massgebend für die <strong>Zusammensetzung</strong> des Gesamtguts ist der Zeitpunkt der Auflösung; massgebend für die <strong>Bewertung</strong> ist der Zeitpunkt der Auseinandersetzung.</p>
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ablauf der Auseinandersetzung</h3>
 
-    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Rücknahme des Eigenguts</strong> (Art. 239 ZGB)</li>
-        <li><strong>Ersatzforderungen berechnen</strong> (Art. 240 ZGB)</li>
-        <li><strong>Gesamtgut bewerten</strong> (Art. 214 ZGB analog)</li>
-        <li><strong>Gesamtgut teilen</strong> (Art. 241 ZGB)</li>
+    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-4">
+        <li><strong>Rücknahme des Eigenguts (Art. 239 ZGB):</strong> Jeder Ehegatte nimmt sein Eigengut zurück.</li>
+        <li><strong>Ersatzforderungen berechnen (Art. 240 ZGB):</strong> Schulden, die das Gesamtgut belasten, aber aus einer anderen Masse bezahlt wurden, werden durch Ersatzforderungen ausgeglichen.</li>
+        <li><strong>Gesamtgut bewerten:</strong> Alle Vermögenswerte des Gesamtguts werden zum Verkehrswert bewertet.</li>
+        <li><strong>Passiven abziehen:</strong> Schulden des Gesamtguts werden vom Aktivvermögen abgezogen.</li>
+        <li><strong>Gesamtgut teilen:</strong> Das Netto-Gesamtgut wird gemäss Art. 241 oder 242 ZGB geteilt.</li>
     </ol>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Teilung des Gesamtguts (Art. 241 ZGB)</h3>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Teilung bei Tod oder Vereinbarung eines anderen Güterstands (Art. 241 ZGB)</h3>
 
-    <p class="text-gray-700 mb-6"><strong>Grundregel:</strong> Jedem Ehegatten oder seinen Erben steht die Hälfte des Gesamtguts zu.</p>
+    <p class="text-gray-700 mb-6">Bei Tod eines Ehegatten oder bei Vereinbarung eines anderen Güterstands steht jedem Ehegatten oder seinen Erben die <strong>Hälfte des Gesamtguts</strong> zu (Art. 241 Abs. 1 ZGB). Durch Ehevertrag kann jedoch eine <strong>andere Teilung</strong> vereinbart werden – beispielsweise kann dem überlebenden Ehegatten das gesamte Gesamtgut zugewiesen werden (Art. 241 Abs. 2 ZGB).</p>
 
-    <p class="text-gray-700 mb-6"><strong>Abweichung:</strong> Durch Ehevertrag kann eine andere Teilung vereinbart werden. Die Abweichung darf jedoch die Pflichtteile der Nachkommen nicht verletzen.</p>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig – Pflichtteile beachten (Art. 241 Abs. 3 ZGB):</p>
+        <p class="text-gray-700">Eine abweichende Teilung darf die <strong>Pflichtteilsansprüche</strong> der nicht gemeinsamen Kinder und deren Nachkommen nicht beeinträchtigen. Dies ist bei der Nachlassplanung mit Gütergemeinschaft unbedingt zu berücksichtigen.</p>
+    </div>
 
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Teilung bei Scheidung, Trennung, Ungültigkeit, Gütertrennung (Art. 242 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Bei Scheidung, Trennung, Ungültigerklärung der Ehe oder gerichtlicher Gütertrennung gilt eine <strong>modifizierte Teilungsregel</strong>:</p>
+
+    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
+        <li>Jeder Ehegatte nimmt vom Gesamtgut zurück, was unter der <strong>Errungenschaftsbeteiligung sein Eigengut</strong> wäre (Art. 242 Abs. 1 ZGB).</li>
+        <li>Das verbleibende Gesamtgut wird <strong>hälftig</strong> geteilt (Art. 242 Abs. 2 ZGB).</li>
+        <li>Durch Ehevertrag kann eine andere Teilung vereinbart werden (Art. 242 Abs. 2 ZGB).</li>
+    </ol>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Berechnungsbeispiel: Güterrechtliche Auseinandersetzung bei Scheidung</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold" colspan="2">Ausgangslage (Allgemeine Gütergemeinschaft)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr class="bg-gray-100">
+                    <td class="px-6 py-4 font-semibold text-navy" colspan="2">Gesamtgut – Aktiven</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Einfamilienhaus</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">CHF 1'200'000</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Bankguthaben</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">CHF 150'000</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Wertschriften</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">CHF 200'000</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Fahrzeuge</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">CHF 50'000</td>
+                </tr>
+                <tr class="bg-gray-100">
+                    <td class="px-6 py-4 font-semibold text-navy">Total Aktiven Gesamtgut</td>
+                    <td class="px-6 py-4 font-semibold text-navy text-right">CHF 1'600'000</td>
+                </tr>
+                <tr class="bg-gray-100">
+                    <td class="px-6 py-4 font-semibold text-navy" colspan="2">Gesamtgut – Passiven</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Hypothek</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">CHF 600'000</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Sonstige Schulden</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">CHF 50'000</td>
+                </tr>
+                <tr class="bg-gray-100">
+                    <td class="px-6 py-4 font-semibold text-navy">Total Passiven Gesamtgut</td>
+                    <td class="px-6 py-4 font-semibold text-navy text-right">CHF 650'000</td>
+                </tr>
+                <tr class="bg-navy text-white">
+                    <td class="px-6 py-4 font-bold">Netto-Gesamtgut</td>
+                    <td class="px-6 py-4 font-bold text-right">CHF 950'000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold" colspan="2">Berechnung nach Art. 242 ZGB (Scheidung)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr class="bg-gray-100">
+                    <td class="px-6 py-4 font-semibold text-navy" colspan="2">Schritt 1: Rücknahme «fiktives Eigengut»</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Ehemann: Erbschaft von CHF 100'000 (während Ehe erhalten)</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">CHF 100'000</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Ehefrau: Schenkung von CHF 80'000 (während Ehe erhalten)</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">CHF 80'000</td>
+                </tr>
+                <tr class="bg-gray-100">
+                    <td class="px-6 py-4 font-semibold text-navy" colspan="2">Schritt 2: Verbleibendes Gesamtgut</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Netto-Gesamtgut abzüglich Rücknahmen</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">CHF 950'000 - 180'000 = CHF 770'000</td>
+                </tr>
+                <tr class="bg-gray-100">
+                    <td class="px-6 py-4 font-semibold text-navy" colspan="2">Schritt 3: Hälftige Teilung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Anteil pro Ehegatte</td>
+                    <td class="px-6 py-4 text-gray-700 text-right">CHF 385'000</td>
+                </tr>
+                <tr class="bg-navy text-white">
+                    <td class="px-6 py-4 font-bold" colspan="2">Endergebnis</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Ehemann erhält: CHF 100'000 + CHF 385'000</td>
+                    <td class="px-6 py-4 font-semibold text-navy text-right">CHF 485'000</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Ehefrau erhält: CHF 80'000 + CHF 385'000</td>
+                    <td class="px-6 py-4 font-semibold text-navy text-right">CHF 465'000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Gütergemeinschaft und Erbrecht -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Gütergemeinschaft und Erbrecht</h2>
+
+    <p class="text-gray-700 mb-6">Die Gütergemeinschaft hat erhebliche Auswirkungen auf das <strong>Erbrecht</strong>. Sie ermöglicht eine weitreichende Begünstigung des überlebenden Ehegatten und wird daher oft aus nachlassplanerischen Gründen gewählt.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Was fällt in den Nachlass?</h3>
+
+    <p class="text-gray-700 mb-6">Bei Tod eines Ehegatten in der Gütergemeinschaft bilden folgende Vermögenswerte den Nachlass:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Das <strong>Eigengut</strong> des Verstorbenen</li>
+        <li>Die <strong>Hälfte des Gesamtguts</strong> (bzw. der vertraglich bestimmte Anteil)</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Güterrechtliche und erbrechtliche Begünstigung kombiniert</h3>
+
+    <p class="text-gray-700 mb-6">Durch geschickte Kombination von <strong>Ehevertrag</strong> und <strong>Testament/Erbvertrag</strong> kann der überlebende Ehegatte maximal begünstigt werden:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Instrument</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Mögliche Begünstigung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Ehevertrag</td>
+                    <td class="px-6 py-4 text-gray-700">Gesamtes Gesamtgut dem Überlebenden zuweisen (Art. 241 Abs. 2 ZGB)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Testament</td>
+                    <td class="px-6 py-4 text-gray-700">Frei verfügbare Quote dem Überlebenden zuweisen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Erbvertrag</td>
+                    <td class="px-6 py-4 text-gray-700">Nutzniessung am Kinderanteil (Art. 473 ZGB)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-blue-50 border-l-4 border-blue-500 p-6 my-6">
+        <p class="font-semibold text-navy mb-2">Seit 1. Januar 2023 – Neues Erbrecht:</p>
+        <p class="text-gray-700">Mit der Erbrechtsrevision 2023 wurde der <strong>Pflichtteil der Kinder von ¾ auf ½</strong> reduziert. Dies gibt Ehepaaren mehr Spielraum, sich gegenseitig zu begünstigen. Die Kombination von Gütergemeinschaft und neuem Erbrecht ermöglicht eine noch weitergehende Begünstigung des überlebenden Ehegatten.</p>
+    </div>
+
+    <!-- Vor- und Nachteile -->
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Vor- und Nachteile der Gütergemeinschaft</h2>
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vorteile</h3>
 
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Gemeinsames Wirtschaften:</strong> Das Vermögen wird als Einheit behandelt, was die Zusammenarbeit fördert</li>
-        <li><strong>Einfache Vermögensverwaltung:</strong> Keine komplizierte Trennung zwischen verschiedenen Gütermassen</li>
-        <li><strong>Begünstigung des Überlebenden:</strong> Kann weitreichend zugunsten des überlebenden Ehegatten gestaltet werden</li>
-        <li><strong>Gleichstellung:</strong> Beide Ehegatten sind gleichermassen am Vermögen beteiligt</li>
-    </ul>
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-green-700 text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Vorteil</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erläuterung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Maximale Begünstigung des Überlebenden</td>
+                    <td class="px-6 py-4 text-gray-700">Dem überlebenden Ehegatten kann das gesamte Gesamtgut zugewiesen werden</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Einfache Vermögensverwaltung</td>
+                    <td class="px-6 py-4 text-gray-700">Keine komplizierte Trennung verschiedener Gütermassen erforderlich</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Gleichstellung der Ehegatten</td>
+                    <td class="px-6 py-4 text-gray-700">Beide Ehegatten sind gleichermassen am Vermögen beteiligt</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Absicherung nicht erwerbstätiger Partner</td>
+                    <td class="px-6 py-4 text-gray-700">Ein Ehegatte, der für die Familie auf Erwerbstätigkeit verzichtet, ist gut abgesichert</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Einfache güterrechtliche Auseinandersetzung</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Tod: Hälftige Teilung ohne komplizierte Berechnungen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Nachteile</h3>
 
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Solidarhaftung:</strong> Beide haften für Vollschulden mit dem gesamten Vermögen</li>
-        <li><strong>Eingeschränkte Verfügungsfreiheit:</strong> Wichtige Entscheidungen nur gemeinsam möglich</li>
-        <li><strong>Komplexe Haftungsregeln:</strong> Unterscheidung zwischen Voll- und Eigenschulden kompliziert</li>
-        <li><strong>Risiko bei Geschäftstätigkeit:</strong> Geschäftsrisiken können das ganze Familienvermögen gefährden</li>
-    </ul>
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-red-700 text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Nachteil</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erläuterung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Erhöhtes Haftungsrisiko</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Vollschulden haftet das gesamte Familienvermögen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Eingeschränkte Verfügungsfreiheit</td>
+                    <td class="px-6 py-4 text-gray-700">Wichtige Entscheidungen nur gemeinsam möglich</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Komplexe Schuldenregelung</td>
+                    <td class="px-6 py-4 text-gray-700">Unterscheidung zwischen Voll- und Eigenschulden ist kompliziert</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Ungeeignet für Selbständige</td>
+                    <td class="px-6 py-4 text-gray-700">Geschäftsrisiken können das ganze Familienvermögen gefährden</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Kosten für Ehevertrag</td>
+                    <td class="px-6 py-4 text-gray-700">Notarielle Beurkundung erforderlich (Kosten je nach Kanton)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Vergleich mit anderen Güterständen</h2>
+    <!-- Vergleich der Güterstände -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Vergleich der drei Güterstände</h2>
 
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-200">
@@ -338,59 +918,272 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Entstehung</td>
-                    <td class="px-6 py-4 text-gray-700">Nur durch Ehevertrag</td>
-                    <td class="px-6 py-4 text-gray-700">Automatisch</td>
-                    <td class="px-6 py-4 text-gray-700">Nur durch Ehevertrag</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Rechtsgrundlage</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 221-246 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 196-220 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 247-251 ZGB</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Gemeinsames Vermögen</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Entstehung</td>
+                    <td class="px-6 py-4 text-gray-700">Nur durch Ehevertrag</td>
+                    <td class="px-6 py-4 text-gray-700">Automatisch (ordentlicher Güterstand)</td>
+                    <td class="px-6 py-4 text-gray-700">Durch Ehevertrag oder Gericht</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Gütermassen</td>
+                    <td class="px-6 py-4 text-gray-700">3 (Gesamtgut + 2× Eigengut)</td>
+                    <td class="px-6 py-4 text-gray-700">4 (2× Eigengut + 2× Errungenschaft)</td>
+                    <td class="px-6 py-4 text-gray-700">2 (je ein Vermögen pro Ehegatte)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Gemeinsames Vermögen?</td>
                     <td class="px-6 py-4 text-gray-700">Ja (Gesamtgut)</td>
                     <td class="px-6 py-4 text-gray-700">Nein</td>
                     <td class="px-6 py-4 text-gray-700">Nein</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Verwaltung</td>
-                    <td class="px-6 py-4 text-gray-700">Gemeinsam (Gesamtgut)</td>
-                    <td class="px-6 py-4 text-gray-700">Getrennt</td>
-                    <td class="px-6 py-4 text-gray-700">Getrennt</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Bei Scheidung</td>
+                    <td class="px-6 py-4 text-gray-700">½ des Gesamtguts (modifiziert)</td>
+                    <td class="px-6 py-4 text-gray-700">½ des Vorschlags</td>
+                    <td class="px-6 py-4 text-gray-700">Nichts (jeder behält sein Vermögen)</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Bei Scheidung</td>
-                    <td class="px-6 py-4 text-gray-700">1/2 des Gesamtguts</td>
-                    <td class="px-6 py-4 text-gray-700">1/2 des Vorschlags</td>
-                    <td class="px-6 py-4 text-gray-700">Nichts</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Haftung für Schulden</td>
+                    <td class="px-6 py-4 text-gray-700">Komplex (Vollschulden/Eigenschulden)</td>
+                    <td class="px-6 py-4 text-gray-700">Grundsätzlich getrennt</td>
+                    <td class="px-6 py-4 text-gray-700">Vollständig getrennt</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Eignung für Selbständige</td>
+                    <td class="px-6 py-4 text-red-600">Problematisch</td>
+                    <td class="px-6 py-4 text-yellow-600">Bedingt</td>
+                    <td class="px-6 py-4 text-green-600">Empfohlen</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit und Handlungsempfehlungen</h2>
+    <!-- Für wen ist die Gütergemeinschaft geeignet? -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Für wen ist die Gütergemeinschaft geeignet?</h2>
 
-    <p class="text-gray-700 mb-6">Die Gütergemeinschaft ist ein Güterstand für Ehepaare, die eine enge wirtschaftliche Verflechtung wünschen. Sie bietet Vorteile bei der gemeinsamen Vermögensverwaltung und der Begünstigung des überlebenden Ehegatten, birgt aber auch erhöhte Haftungsrisiken.</p>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Geeignet für:</h3>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Handlungsempfehlungen</h3>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Ehepaare mit <strong>traditionellem Familienbild</strong>, bei denen ein Partner die Hausarbeit und Kinderbetreuung übernimmt</li>
+        <li>Ehepaare, die eine <strong>maximale Begünstigung des überlebenden Ehegatten</strong> wünschen</li>
+        <li><strong>Landwirtschaftliche Betriebe</strong> (Erhalt des Hofes in der Familie)</li>
+        <li>Ehepaare <strong>ohne wesentliche Geschäftsrisiken</strong></li>
+        <li>Ehepaare, bei denen ein Grossteil des Vermögens <strong>Eigengut eines Partners</strong> ist und der andere begünstigt werden soll</li>
+    </ul>
 
-    <p class="text-gray-700 mb-4"><strong>Vor Abschluss eines Ehevertrags:</strong></p>
-    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
-        <li>Vermögensverhältnisse beider Partner analysieren</li>
-        <li>Haftungsrisiken abklären (insbesondere bei Geschäftstätigkeit)</li>
-        <li>Form der Gütergemeinschaft wählen</li>
-        <li>Rechtliche Beratung durch Fachanwalt einholen</li>
-    </ol>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Nicht geeignet für:</h3>
 
-    <p class="text-gray-700 mb-4"><strong>Im Ehevertrag regeln:</strong></p>
-    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
-        <li>Genaue Bestimmung, was zum Gesamtgut gehört</li>
-        <li>Verwaltungsregelung (gemeinsam oder Delegation)</li>
-        <li>Teilungsregel bei Auflösung</li>
-        <li>Begünstigung des überlebenden Ehegatten</li>
-    </ol>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Selbständig erwerbende Personen</strong> (insbesondere Einzelunternehmer, Gesellschafter von Personengesellschaften)</li>
+        <li>Ehepaare mit <strong>hohen Geschäftsrisiken</strong></li>
+        <li>Ehepaare, bei denen ein Partner <strong>überschuldet</strong> ist oder droht überschuldet zu werden</li>
+        <li>Ehepaare, die Wert auf <strong>getrennte Vermögensverwaltung</strong> legen</li>
+    </ul>
 
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy mb-2">Für wen ist die Gütergemeinschaft geeignet?</p>
-        <p class="text-gray-700">Ehepaare mit traditionellem Familienbild, landwirtschaftliche Betriebe, sowie Paare, die eine starke wirtschaftliche Verflechtung und eine weitreichende Begünstigung des überlebenden Ehegatten wünschen.</p>
-    </div>
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
 
-    <p class="text-gray-500 text-sm mt-8 italic">Dieser Artikel dient der allgemeinen Information und ersetzt keine individuelle Rechtsberatung. Bei konkreten Fragen zur Gütergemeinschaft empfehlen wir, einen spezialisierten Anwalt für Familienrecht oder einen Notar zu konsultieren.</p>
+        <p class="text-gray-700 mb-6">Die Wahl des richtigen Güterstands hat weitreichende Konsequenzen – sowohl während der Ehe als auch bei deren Auflösung durch Scheidung oder Tod. Die Gütergemeinschaft ist ein komplexer Güterstand mit spezifischen Haftungsrisiken und Verwaltungsregeln. Eine falsche Entscheidung kann erhebliche finanzielle Nachteile mit sich bringen.</p>
+
+        <p class="text-gray-700 mb-6">Besonders in folgenden Situationen ist die Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> dringend zu empfehlen:</p>
+
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Vor Abschluss eines Ehevertrags zur Begründung einer Gütergemeinschaft</li>
+            <li>Bei der Wahl zwischen den verschiedenen Formen der Gütergemeinschaft</li>
+            <li>Wenn ein Ehegatte selbständig erwerbend ist oder ein Unternehmen führt</li>
+            <li>Bei Fragen zur Haftung für Schulden in der Gütergemeinschaft</li>
+            <li>Bei der güterrechtlichen Auseinandersetzung im Scheidungsfall</li>
+            <li>Bei der Nachlassplanung und Begünstigung des überlebenden Ehegatten</li>
+        </ul>
+
+        <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kann Sie umfassend über die Vor- und Nachteile der Gütergemeinschaft informieren und den Ehevertrag optimal auf Ihre persönliche Situation abstimmen. Auch bei der güterrechtlichen Auseinandersetzung ist fachkundige Unterstützung durch einen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> unerlässlich, um Ihre Ansprüche vollständig zu wahren.</p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Lassen Sie sich von unseren Experten beraten, welcher Güterstand für Ihre persönliche Situation am besten geeignet ist. Wir analysieren Ihre Vermögensverhältnisse und zeigen Ihnen die optimale Lösung auf.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- Fazit -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Die Gütergemeinschaft ist ein <strong>ausserordentlicher Güterstand</strong>, der nur durch einen notariell beurkundeten Ehevertrag begründet werden kann. Sie unterscheidet sich grundlegend von der Errungenschaftsbeteiligung und der Gütertrennung, indem sie <strong>echtes Gesamteigentum</strong> der Ehegatten schafft.</p>
+
+    <p class="text-gray-700 mb-6">Die Gütergemeinschaft bietet <strong>Vorteile</strong> bei der Begünstigung des überlebenden Ehegatten und der Gleichstellung beider Partner. Sie birgt jedoch auch <strong>Risiken</strong>, insbesondere die erweiterte Haftung für Vollschulden, die das gesamte Familienvermögen gefährden kann.</p>
+
+    <p class="text-gray-700 mb-6">Vor der Wahl dieses Güterstands sollten Ehepaare ihre persönliche Situation sorgfältig analysieren – insbesondere die Frage der Erwerbstätigkeit und allfälliger Geschäftsrisiken. Eine <strong>fachkundige rechtliche Beratung</strong> ist bei der Gütergemeinschaft besonders wichtig, um die richtige Form zu wählen und den Ehevertrag optimal zu gestalten.</p>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen Gütergemeinschaft und Errungenschaftsbeteiligung?</h3>
+                <p class="text-gray-700">Bei der Errungenschaftsbeteiligung bleibt das Vermögen der Ehegatten getrennt – erst bei Auflösung wird die während der Ehe erwirtschaftete Errungenschaft geteilt. Bei der Gütergemeinschaft verschmilzt das Vermögen hingegen zu einem gemeinsamen Gesamtgut, das beiden Ehegatten ungeteilt gehört. Die Errungenschaftsbeteiligung gilt automatisch, die Gütergemeinschaft erfordert einen Ehevertrag.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was gehört zum Gesamtgut bei der allgemeinen Gütergemeinschaft?</h3>
+                <p class="text-gray-700">Bei der allgemeinen Gütergemeinschaft umfasst das Gesamtgut das gesamte Vermögen und alle Einkünfte beider Ehegatten – einschliesslich Erbschaften und Schenkungen. Ausgenommen sind nur die persönlichen Gebrauchsgegenstände und Genugtuungsansprüche, die kraft Gesetzes Eigengut bilden (Art. 225 ZGB).</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Welche Nachteile hat die Gütergemeinschaft?</h3>
+                <p class="text-gray-700">Der wichtigste Nachteil ist das erhöhte Haftungsrisiko: Bei Vollschulden (z.B. aus Geschäftstätigkeit) haftet das gesamte Familienvermögen, also auch das Eigengut des anderen Ehegatten. Zudem ist die Verfügungsfreiheit eingeschränkt, da wichtige Entscheidungen gemeinsam getroffen werden müssen. Für Selbständige und Unternehmer ist die Gütergemeinschaft daher meist ungeeignet.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was fällt in den Nachlass bei einer Gütergemeinschaft, wenn ein Ehepartner stirbt?</h3>
+                <p class="text-gray-700">In den Nachlass fallen das Eigengut des Verstorbenen sowie die Hälfte des Gesamtguts (Art. 241 ZGB). Durch Ehevertrag kann jedoch vereinbart werden, dass dem überlebenden Ehegatten das gesamte Gesamtgut zusteht. Die Pflichtteile der nicht gemeinsamen Kinder dürfen dabei nicht verletzt werden.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist eine beschränkte Gütergemeinschaft?</h3>
+                <p class="text-gray-700">Bei einer beschränkten Gütergemeinschaft (auch Errungenschaftsgemeinschaft oder Ausschlussgemeinschaft genannt) wird das Gesamtgut auf bestimmte Vermögenswerte beschränkt. Bei der Errungenschaftsgemeinschaft (Art. 223 ZGB) umfasst es nur die Errungenschaft; bei der Ausschlussgemeinschaft (Art. 224 ZGB) werden bestimmte Vermögenswerte (z.B. Geschäftsvermögen) vom Gesamtgut ausgeschlossen.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie viel kostet ein Ehevertrag zur Gütergemeinschaft?</h3>
+                <p class="text-gray-700">Die Kosten für einen Ehevertrag variieren je nach Kanton zwischen CHF 50 und CHF 7'500. In Zürich liegen sie typischerweise zwischen CHF 200 und CHF 7'500, abhängig vom betroffenen Vermögenswert. Hinzu kommen gegebenenfalls Kosten für ein Vermögensinventar (CHF 150 bis 1'500).</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich die Gütergemeinschaft wieder auflösen?</h3>
+                <p class="text-gray-700">Ja, die Gütergemeinschaft kann jederzeit durch einen neuen Ehevertrag aufgelöst und durch einen anderen Güterstand ersetzt werden. Dabei findet eine güterrechtliche Auseinandersetzung statt. Die Auflösung erfolgt auch automatisch bei Scheidung, gerichtlicher Gütertrennung oder Tod eines Ehegatten.</p>
+            </div>
+
+            <div class="pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Ist die Gütergemeinschaft für Selbständige geeignet?</h3>
+                <p class="text-gray-700">Nein, für Selbständige ist die Gütergemeinschaft in der Regel nicht empfehlenswert. Führt ein Ehegatte ein Unternehmen mit Gesamtgutsmitteln, entstehen Vollschulden, für die das gesamte Familienvermögen haftet. Für Selbständige ist die Gütertrennung oder eine Ausschlussgemeinschaft mit Ausschluss des Geschäftsvermögens besser geeignet.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Gütergemeinschaft in der Schweiz",
+        "description": "Gütergemeinschaft in der Schweiz erklärt: Gesamtgut, Eigengut, Haftung & Auflösung nach Art. 221-246 ZGB. Mit Berechnungsbeispielen und BGE-Rechtsprechung.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-20",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/gueterrecht/guetergemeinschaft"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen Gütergemeinschaft und Errungenschaftsbeteiligung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei der Errungenschaftsbeteiligung bleibt das Vermögen der Ehegatten getrennt – erst bei Auflösung wird die während der Ehe erwirtschaftete Errungenschaft geteilt. Bei der Gütergemeinschaft verschmilzt das Vermögen hingegen zu einem gemeinsamen Gesamtgut, das beiden Ehegatten ungeteilt gehört. Die Errungenschaftsbeteiligung gilt automatisch, die Gütergemeinschaft erfordert einen Ehevertrag."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was gehört zum Gesamtgut bei der allgemeinen Gütergemeinschaft?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei der allgemeinen Gütergemeinschaft umfasst das Gesamtgut das gesamte Vermögen und alle Einkünfte beider Ehegatten – einschliesslich Erbschaften und Schenkungen. Ausgenommen sind nur die persönlichen Gebrauchsgegenstände und Genugtuungsansprüche, die kraft Gesetzes Eigengut bilden (Art. 225 ZGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welche Nachteile hat die Gütergemeinschaft?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der wichtigste Nachteil ist das erhöhte Haftungsrisiko: Bei Vollschulden (z.B. aus Geschäftstätigkeit) haftet das gesamte Familienvermögen, also auch das Eigengut des anderen Ehegatten. Zudem ist die Verfügungsfreiheit eingeschränkt, da wichtige Entscheidungen gemeinsam getroffen werden müssen. Für Selbständige und Unternehmer ist die Gütergemeinschaft daher meist ungeeignet."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was fällt in den Nachlass bei einer Gütergemeinschaft, wenn ein Ehepartner stirbt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "In den Nachlass fallen das Eigengut des Verstorbenen sowie die Hälfte des Gesamtguts (Art. 241 ZGB). Durch Ehevertrag kann jedoch vereinbart werden, dass dem überlebenden Ehegatten das gesamte Gesamtgut zusteht. Die Pflichtteile der nicht gemeinsamen Kinder dürfen dabei nicht verletzt werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist eine beschränkte Gütergemeinschaft?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei einer beschränkten Gütergemeinschaft (auch Errungenschaftsgemeinschaft oder Ausschlussgemeinschaft genannt) wird das Gesamtgut auf bestimmte Vermögenswerte beschränkt. Bei der Errungenschaftsgemeinschaft (Art. 223 ZGB) umfasst es nur die Errungenschaft; bei der Ausschlussgemeinschaft (Art. 224 ZGB) werden bestimmte Vermögenswerte (z.B. Geschäftsvermögen) vom Gesamtgut ausgeschlossen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie viel kostet ein Ehevertrag zur Gütergemeinschaft?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Kosten für einen Ehevertrag variieren je nach Kanton zwischen CHF 50 und CHF 7'500. In Zürich liegen sie typischerweise zwischen CHF 200 und CHF 7'500, abhängig vom betroffenen Vermögenswert. Hinzu kommen gegebenenfalls Kosten für ein Vermögensinventar (CHF 150 bis 1'500)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich die Gütergemeinschaft wieder auflösen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, die Gütergemeinschaft kann jederzeit durch einen neuen Ehevertrag aufgelöst und durch einen anderen Güterstand ersetzt werden. Dabei findet eine güterrechtliche Auseinandersetzung statt. Die Auflösung erfolgt auch automatisch bei Scheidung, gerichtlicher Gütertrennung oder Tod eines Ehegatten."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Ist die Gütergemeinschaft für Selbständige geeignet?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, für Selbständige ist die Gütergemeinschaft in der Regel nicht empfehlenswert. Führt ein Ehegatte ein Unternehmen mit Gesamtgutsmitteln, entstehen Vollschulden, für die das gesamte Familienvermögen haftet. Für Selbständige ist die Gütertrennung oder eine Ausschlussgemeinschaft mit Ausschluss des Geschäftsvermögens besser geeignet."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Güterrecht",
+                "item": "https://familienrechtanwalt.ch/gueterrecht"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Gütergemeinschaft in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/gueterrecht/guetergemeinschaft"
+            }
+        ]
+    })} />
+
 </ArticleLayout>

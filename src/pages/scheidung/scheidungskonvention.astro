@@ -3,132 +3,763 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 ---
 
 <ArticleLayout
-  title="Scheidungskonvention in der Schweiz"
-  description="Scheidungskonvention in der Schweiz: Inhalt, Genehmigung und rechtliche Wirkung. Alles zu Kinderbelangen, Unterhalt, Güterrecht und Vorsorgeausgleich."
-  keywords="Scheidungskonvention Schweiz, Scheidungsvereinbarung, Scheidungsfolgen, Kinderbelange Scheidung, Unterhalt Scheidung"
-  category="Scheidung"
-  categoryLink="/scheidung"
+    title="Scheidungskonvention in der Schweiz"
+    description="Scheidungskonvention Schweiz: Inhalt, Muster & Genehmigung. Alle Regelungen zu Kinderbelangen, Unterhalt, Güterrecht & Vorsorgeausgleich nach Art. 111 ZGB."
+    keywords="Scheidungskonvention Schweiz, Scheidungsvereinbarung, Scheidungskonvention Muster, Scheidungskonvention Inhalt, Scheidung auf gemeinsames Begehren"
+    category="Scheidung"
+    categoryLink="/scheidung"
 >
-  <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die Scheidungskonvention ist das zentrale Dokument der einvernehmlichen Scheidung. In ihr regeln die Ehegatten alle Scheidungsfolgen verbindlich und eigenverantwortlich. Eine sorgfältig ausgearbeitete Konvention ist die Grundlage für ein schnelles, kostengünstiges Verfahren.</p>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Scheidungskonvention ist die einvernehmliche Regelung aller Scheidungsfolgen zwischen den Ehegatten (Art. 111 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Sie muss Kinderbelange, Unterhalt, Güterrecht, Vorsorgeausgleich und die Ehewohnung regeln.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Das Gericht prüft die Konvention auf Vollständigkeit, Angemessenheit und Kindeswohl (Art. 279 ZPO).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bei Teileinigung ist eine Teilkonvention nach Art. 112 ZGB möglich.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bis zur gerichtlichen Genehmigung kann die Konvention jederzeit widerrufen werden.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Mit der Genehmigung erlangt die Scheidungskonvention Urteilswirkung und ist vollstreckbar.</span>
+            </li>
+        </ul>
+    </div>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Obligatorische Regelungen</h2>
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die Scheidungskonvention – auch Scheidungsvereinbarung genannt – ist das zentrale Dokument bei einer <a href="/scheidung/scheidung-auf-gemeinsames-begehren" class="text-gold hover:underline font-semibold">Scheidung auf gemeinsames Begehren</a>. In dieser Vereinbarung regeln die Ehegatten alle rechtlichen Folgen ihrer Trennung eigenverantwortlich und verbindlich. Eine sorgfältig ausgearbeitete Konvention bildet die Grundlage für ein schnelles, kostengünstiges Scheidungsverfahren und führt erfahrungsgemäss zu dauerhafteren Ergebnissen als gerichtlich verfügte Lösungen.</p>
 
-  <div class="overflow-x-auto mb-6">
-    <table class="min-w-full bg-white border border-gray-200">
-      <thead class="bg-navy text-white">
-        <tr>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Bereich</th>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Regelungsinhalt</th>
-        </tr>
-      </thead>
-      <tbody class="divide-y divide-gray-200">
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Elterliche Sorge</td>
-          <td class="px-6 py-4 text-gray-700">Gemeinsam oder allein</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">Obhut</td>
-          <td class="px-6 py-4 text-gray-700">Bei wem lebt das Kind</td>
-        </tr>
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Besuchsrecht</td>
-          <td class="px-6 py-4 text-gray-700">Umfang und Modalitäten</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">Kindesunterhalt</td>
-          <td class="px-6 py-4 text-gray-700">Höhe, Dauer, Anpassung</td>
-        </tr>
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Nachehelicher Unterhalt</td>
-          <td class="px-6 py-4 text-gray-700">Höhe, Dauer, Befristung</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">Güterrecht</td>
-          <td class="px-6 py-4 text-gray-700">Vermögensaufteilung</td>
-        </tr>
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Vorsorgeausgleich</td>
-          <td class="px-6 py-4 text-gray-700">Teilung der Pensionskasse</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">Ehewohnung</td>
-          <td class="px-6 py-4 text-gray-700">Zuweisung oder Verkauf</td>
-        </tr>
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Kosten</td>
-          <td class="px-6 py-4 text-gray-700">Gerichts- und Anwaltskosten</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Was ist eine Scheidungskonvention?</h2>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kinderbelange</h2>
+    <p class="text-gray-700 mb-6">Unter einer Scheidungskonvention versteht man einen schriftlichen Vertrag zwischen den Ehegatten, in dem sie ihren gemeinsamen Scheidungswunsch zum Ausdruck bringen und sämtliche Folgen der Scheidung im Detail regeln. Die Konvention wird zusammen mit dem gemeinsamen Scheidungsbegehren beim zuständigen Gericht eingereicht (Art. 111 Abs. 1 ZGB).</p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Elterliche Sorge</h3>
-  <p class="text-gray-700 mb-6">Seit 2014 ist die gemeinsame elterliche Sorge der Regelfall (Art. 298 ZGB). Die Konvention kann vorsehen, dass die gemeinsame Sorge bestehen bleibt oder ausnahmsweise einem Elternteil die alleinige Sorge zugeteilt wird.</p>
+    <p class="text-gray-700 mb-6">Die Scheidungskonvention ist nur bei der einvernehmlichen Scheidung auf gemeinsames Begehren möglich. Bei einer <a href="/scheidung/scheidungsklage" class="text-gold hover:underline font-semibold">Scheidungsklage</a> (einseitiges Begehren) werden die Scheidungsfolgen hingegen vom Gericht entschieden, sofern sich die Parteien nicht während des Verfahrens noch einigen.</p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kindesunterhalt</h3>
-  <p class="text-gray-700 mb-4">Der Kindesunterhalt umfasst seit 2017:</p>
-  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-    <li><strong>Barunterhalt:</strong> Direkte Kosten des Kindes</li>
-    <li><strong>Betreuungsunterhalt:</strong> Lebenshaltungskosten des betreuenden Elternteils</li>
-  </ul>
-  <p class="text-gray-700 mb-6">Die Berechnung erfolgt nach der zweistufigen Methode (BGE 147 III 265).</p>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Vorteile einer Scheidungskonvention:</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li>Schnelleres Verfahren (oft nur 2-6 Monate)</li>
+            <li>Deutlich geringere Kosten als bei streitiger Scheidung</li>
+            <li>Selbstbestimmung über zentrale Lebensbereiche</li>
+            <li>Dauerhaftere und tragfähigere Lösungen</li>
+            <li>Geringere emotionale Belastung für alle Beteiligten</li>
+        </ul>
+    </div>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Nachehelicher Unterhalt</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen der Scheidungskonvention</h2>
 
-  <p class="text-gray-700 mb-4">Die Konvention kann verschiedene Formen vorsehen:</p>
-  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-    <li><strong>Unbefristeter Unterhalt:</strong> Bei lebensprägenden Ehen</li>
-    <li><strong>Befristeter Unterhalt:</strong> Zeitlich begrenzte Zahlung</li>
-    <li><strong>Degressiver Unterhalt:</strong> Stufenweise Reduktion</li>
-    <li><strong>Kapitalabfindung:</strong> Einmalige Zahlung</li>
-    <li><strong>Verzicht:</strong> Wenn beide wirtschaftlich selbständig sind</li>
-  </ul>
+    <p class="text-gray-700 mb-6">Die Scheidungskonvention findet ihre gesetzliche Grundlage im Schweizerischen Zivilgesetzbuch (ZGB) und in der Schweizerischen Zivilprozessordnung (ZPO). Die wichtigsten Bestimmungen sind:</p>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Genehmigungsverfahren</h2>
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gesetzesartikel</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Regelungsinhalt</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 111 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Scheidung auf gemeinsames Begehren mit vollständiger Einigung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 112 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Scheidung auf gemeinsames Begehren mit Teileinigung (Teilkonvention)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 120 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Güterrechtliche Auseinandersetzung bei Scheidung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 122-124b ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Vorsorgeausgleich (Teilung der Pensionskasse)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 125 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Nachehelicher Unterhalt</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 133 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Regelung der Kinderbelange bei Scheidung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 276-277 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Kindesunterhalt</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 279-280 ZPO</td>
+                    <td class="px-6 py-4 text-gray-700">Genehmigung der Vereinbarung durch das Gericht</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-  <p class="text-gray-700 mb-4">Das Gericht prüft die Konvention auf:</p>
-  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-    <li>Vollständigkeit aller erforderlichen Regelungen</li>
-    <li>Angemessenheit (keine sittenwidrigen Vereinbarungen)</li>
-    <li>Wahrung des Kindeswohls</li>
-    <li>Freien Willen beider Ehegatten</li>
-  </ul>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Voraussetzungen für eine Scheidungskonvention</h2>
 
-  <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-    <p class="font-semibold text-navy">Typische Ablehnungsgründe:</p>
-    <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
-      <li>Offensichtlich unangemessene Regelungen</li>
-      <li>Gefährdung des Kindeswohls</li>
-      <li>Verstoss gegen zwingendes Recht</li>
-      <li>Fehlende Freiwilligkeit</li>
+    <p class="text-gray-700 mb-6">Damit eine Scheidungskonvention beim Gericht eingereicht werden kann, müssen folgende Voraussetzungen erfüllt sein:</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">1. Einvernehmlicher Scheidungswille</h3>
+    <p class="text-gray-700 mb-6">Beide Ehegatten müssen die Scheidung wollen. Anders als bei der Scheidung auf Klage nach Art. 114 ZGB ist keine zweijährige Trennungsfrist erforderlich. Die Ehegatten können auch ohne vorgängiges Getrenntleben sofort ein gemeinsames Scheidungsbegehren mit Konvention einreichen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">2. Freier Wille und reifliche Überlegung</h3>
+    <p class="text-gray-700 mb-6">Das Gericht muss sich davon überzeugen, dass die Konvention auf dem freien Willen beider Ehegatten beruht und dass diese ihre Entscheidung reiflich überlegt haben (Art. 111 Abs. 1 ZGB). Es darf kein Druck oder Zwang auf einen Ehegatten ausgeübt worden sein.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">3. Vollständigkeit der Regelungen</h3>
+    <p class="text-gray-700 mb-6">Die Konvention muss alle wesentlichen Scheidungsfolgen regeln. Unvollständige Konventionen werden vom Gericht nicht genehmigt. Alternativ können die Ehegatten eine Teilkonvention nach Art. 112 ZGB einreichen und die strittigen Punkte dem Gericht zur Entscheidung überlassen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">4. Schriftform</h3>
+    <p class="text-gray-700 mb-6">Die Scheidungskonvention muss schriftlich verfasst und von beiden Ehegatten unterschrieben werden. Eine mündliche Vereinbarung genügt nicht.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Inhalt der Scheidungskonvention</h2>
+
+    <p class="text-gray-700 mb-6">Eine vollständige Scheidungskonvention muss sämtliche Scheidungsfolgen regeln. Die zwingend erforderlichen Regelungsbereiche sind:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Regelungsbereich</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Konkrete Inhalte</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gesetzliche Grundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Elterliche Sorge</td>
+                    <td class="px-6 py-4 text-gray-700">Gemeinsam oder allein; Entscheidungsbefugnisse</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 133, 296-298 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Obhut</td>
+                    <td class="px-6 py-4 text-gray-700">Bei wem lebt das Kind; alleinige oder alternierende Obhut</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 133 Abs. 1 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Besuchsrecht</td>
+                    <td class="px-6 py-4 text-gray-700">Umfang, Rhythmus, Ferien, Feiertage</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 273 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Kindesunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Barunterhalt, Betreuungsunterhalt, Dauer, Anpassungsklauseln</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 276-277, 285-286 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Nachehelicher Unterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Höhe, Dauer, Befristung, Anpassung, Verzicht</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 125-132 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Güterrechtliche Auseinandersetzung</td>
+                    <td class="px-6 py-4 text-gray-700">Vermögensaufteilung, Errungenschaft, Eigengut</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 120, 196-220 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Vorsorgeausgleich</td>
+                    <td class="px-6 py-4 text-gray-700">Teilung der Pensionskassenguthaben</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 122-124b ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Ehewohnung</td>
+                    <td class="px-6 py-4 text-gray-700">Zuweisung, Mietvertrag, Verkauf</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 121 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Verfahrenskosten</td>
+                    <td class="px-6 py-4 text-gray-700">Aufteilung Gerichts- und Anwaltskosten</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 107 ZPO</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kinderbelange in der Scheidungskonvention</h3>
+
+    <p class="text-gray-700 mb-6">Die Regelungen zu den Kindern werden vom Gericht besonders sorgfältig geprüft. Das <strong>Kindeswohl</strong> steht im Vordergrund und ist der oberste Massstab für die gerichtliche Genehmigung (Art. 133 Abs. 3 ZGB).</p>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Elterliche Sorge</h4>
+    <p class="text-gray-700 mb-6">Seit der Revision des Sorgerechts im Jahr 2014 ist die <strong>gemeinsame elterliche Sorge</strong> der Regelfall (Art. 298 Abs. 1 ZGB). Die Konvention kann vorsehen, dass die gemeinsame Sorge bestehen bleibt oder ausnahmsweise einem Elternteil die alleinige Sorge zugeteilt wird. Die alleinige Sorge wird nur angeordnet, wenn dies zum Schutz des Kindeswohls erforderlich ist – etwa bei Gewalt, Missbrauch oder schwerer Suchterkrankung eines Elternteils.</p>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Obhut und Betreuung</h4>
+    <p class="text-gray-700 mb-6">Die Obhut bestimmt, bei welchem Elternteil das Kind lebt und wer für die alltägliche Betreuung zuständig ist. Die Konvention kann eine <strong>alleinige Obhut</strong> (Kind lebt hauptsächlich bei einem Elternteil) oder eine <strong>alternierende Obhut</strong> (Kind lebt abwechselnd bei beiden Eltern) vorsehen. Bei der alternierenden Obhut muss die Konvention das genaue Betreuungsmodell festlegen (z.B. wochenweise Wechsel, 50:50 oder 70:30).</p>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Besuchsrecht (persönlicher Verkehr)</h4>
+    <p class="text-gray-700 mb-6">Bei alleiniger Obhut muss das Besuchsrecht des nicht betreuenden Elternteils geregelt werden (Art. 273 ZGB). Die Konvention sollte konkret festhalten:</p>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Regelmässiger Besuchsrhythmus (z.B. jedes zweite Wochenende)</li>
+        <li>Ferienregelung (Aufteilung der Schulferien)</li>
+        <li>Feiertage (Weihnachten, Ostern, Geburtstage)</li>
+        <li>Abholungs- und Rückgabemodalitäten</li>
     </ul>
-  </div>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtswirkung nach Genehmigung</h2>
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Kindesunterhalt</h4>
+    <p class="text-gray-700 mb-6">Der <a href="/unterhalt/kindesunterhalt" class="text-gold hover:underline font-semibold">Kindesunterhalt</a> umfasst seit der Revision von 2017 zwei Komponenten (Art. 276, 285 ZGB):</p>
 
-  <p class="text-gray-700 mb-4">Mit der Genehmigung erlangt die Konvention Urteilswirkung:</p>
-  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-    <li>Die Vereinbarungen sind vollstreckbar</li>
-    <li>Eine Abänderung ist nur unter erschwerten Voraussetzungen möglich</li>
-    <li>Voraussetzung: Erhebliche und dauerhafte Veränderung der Verhältnisse</li>
-  </ul>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
+        <p class="font-semibold text-navy mb-2">Komponenten des Kindesunterhalts:</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li><strong>Barunterhalt:</strong> Die direkten Kosten des Kindes (Nahrung, Kleidung, Wohnen, Krankenkasse, Schule, Freizeitaktivitäten etc.)</li>
+            <li><strong>Betreuungsunterhalt:</strong> Die Lebenshaltungskosten des betreuenden Elternteils, soweit dieser wegen der Kinderbetreuung nicht voll erwerbstätig sein kann</li>
+        </ul>
+    </div>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Widerruf und Änderung</h2>
+    <p class="text-gray-700 mb-6">Die Berechnung erfolgt nach der <strong>zweistufigen Methode mit Überschussverteilung</strong>, die vom Bundesgericht als verbindlich erklärt wurde (BGE 147 III 265). Die Konvention sollte den konkreten Unterhaltsbetrag, die Zahlungsmodalitäten und allfällige Indexierungsklauseln enthalten.</p>
 
-  <p class="text-gray-700 mb-6">Bis zur Genehmigung kann jeder Ehegatte die Konvention widerrufen. Der Widerruf erfolgt durch einfache schriftliche Erklärung. Die Ehegatten können die Konvention bis zur Genehmigung auch einvernehmlich ändern.</p>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Nachehelicher Unterhalt</h3>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
+    <p class="text-gray-700 mb-6">Der <a href="/unterhalt/nachehelicher-unterhalt" class="text-gold hover:underline font-semibold">nacheheliche Unterhalt</a> richtet sich nach Art. 125 ZGB. Ein Ehegatte hat Anspruch auf Unterhalt, wenn er nicht in der Lage ist, für seinen gebührenden Unterhalt selbst aufzukommen – vorausgesetzt, die Ehe war <strong>lebensprägend</strong>.</p>
 
-  <p class="text-gray-700 mb-6">Die Scheidungskonvention ist das Herzstück der einvernehmlichen Scheidung. Eine sorgfältig ausgearbeitete Konvention vermeidet Konflikte und schafft die Grundlage für einen Neuanfang. Professionelle Beratung ist empfehlenswert, um Fehler zu vermeiden.</p>
-
-  <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-    <p class="font-semibold text-navy mb-2">Relevante Gesetzesbestimmungen:</p>
-    <ul class="list-disc list-inside text-gray-700 space-y-1">
-      <li>Art. 111-112 ZGB (Scheidung auf gemeinsames Begehren)</li>
-      <li>Art. 140 ZGB (Genehmigung der Vereinbarung)</li>
-      <li>Art. 285-289 ZPO (Verfahren)</li>
+    <p class="text-gray-700 mb-6">Eine Ehe gilt in der Regel als lebensprägend, wenn:</p>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Gemeinsame Kinder vorhanden sind</li>
+        <li>Die Ehe länger als 10 Jahre gedauert hat</li>
+        <li>Ein Ehegatte seine wirtschaftliche Selbständigkeit zugunsten von Haushaltsführung oder Kinderbetreuung aufgegeben hat</li>
     </ul>
-  </div>
+
+    <p class="text-gray-700 mb-6">Die Scheidungskonvention kann verschiedene Unterhaltsformen vorsehen:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Unterhaltsform</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Unbefristeter Unterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Bei langen, lebensprägenden Ehen; heute selten</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Befristeter Unterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Zeitlich begrenzte Zahlung (z.B. 5 Jahre)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Degressiver Unterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Stufenweise Reduktion über die Zeit</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Kapitalabfindung</td>
+                    <td class="px-6 py-4 text-gray-700">Einmalige Zahlung anstelle monatlicher Renten</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Vollständiger Verzicht</td>
+                    <td class="px-6 py-4 text-gray-700">Wenn beide Ehegatten wirtschaftlich selbständig sind</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Bei der Festsetzung sind die Kriterien nach Art. 125 Abs. 2 ZGB zu berücksichtigen: Aufgabenteilung während der Ehe, Ehedauer, Lebensstellung, Alter und Gesundheit, Einkommen und Vermögen, Betreuungspflichten sowie Erwerbsaussichten.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Güterrechtliche Auseinandersetzung</h3>
+
+    <p class="text-gray-700 mb-6">Die <a href="/gueterrecht/gueterrechtliche-auseinandersetzung" class="text-gold hover:underline font-semibold">güterrechtliche Auseinandersetzung</a> regelt die Aufteilung des ehelichen Vermögens. Das Ergebnis hängt vom Güterstand ab, unter dem die Ehe geführt wurde (Art. 120 ZGB).</p>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Errungenschaftsbeteiligung (ordentlicher Güterstand)</h4>
+    <p class="text-gray-700 mb-6">Ohne Ehevertrag gilt die <a href="/gueterrecht/errungenschaftsbeteiligung" class="text-gold hover:underline font-semibold">Errungenschaftsbeteiligung</a> (Art. 196-220 ZGB). Das Vermögen jedes Ehegatten wird in <strong>Eigengut</strong> und <strong>Errungenschaft</strong> eingeteilt:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Eigengut</strong> (Art. 198 ZGB): Vermögen vor der Ehe, Erbschaften, Schenkungen – wird nicht geteilt</li>
+        <li><strong>Errungenschaft</strong> (Art. 197 ZGB): Während der Ehe erworbenes Vermögen durch Arbeitseinkommen – der Vorschlag (Errungenschaft minus Schulden) wird hälftig geteilt</li>
+    </ul>
+
+    <p class="text-gray-700 mb-6">Die Konvention muss die Berechnung der Vorschlagsanteile und deren Ausgleich regeln. Oft enthält sie auch eine <strong>Saldoklausel</strong>, mit der beide Ehegatten bestätigen, dass alle güterrechtlichen Ansprüche ausgeglichen sind.</p>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Gütertrennung</h4>
+    <p class="text-gray-700 mb-6">Bei der <a href="/gueterrecht/guetertrennung" class="text-gold hover:underline font-semibold">Gütertrennung</a> (Art. 247-251 ZGB) haben beide Ehegatten getrennte Vermögen. Eine Vermögensaufteilung findet nicht statt – jeder behält sein Vermögen.</p>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Gütergemeinschaft</h4>
+    <p class="text-gray-700 mb-6">Bei der <a href="/gueterrecht/guetergemeinschaft" class="text-gold hover:underline font-semibold">Gütergemeinschaft</a> (Art. 221-246 ZGB) wird das Gesamtgut hälftig geteilt, sofern der Ehevertrag nichts anderes vorsieht (Art. 242 ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vorsorgeausgleich (Teilung der Pensionskasse)</h3>
+
+    <p class="text-gray-700 mb-6">Der Vorsorgeausgleich ist ein zentraler Bestandteil der Scheidungskonvention. Die während der Ehe geäufneten Pensionskassenguthaben (2. Säule) müssen grundsätzlich hälftig geteilt werden (Art. 122-124b ZGB).</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
+        <p class="font-semibold text-navy mb-2">Grundsatz des Vorsorgeausgleichs (Art. 122 ZGB):</p>
+        <p class="text-gray-700">Die während der Ehe bis zum Zeitpunkt der Einleitung des Scheidungsverfahrens erworbenen Ansprüche aus der beruflichen Vorsorge werden bei der Scheidung ausgeglichen.</p>
+    </div>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Berechnung der zu teilenden Austrittsleistung</h4>
+    <p class="text-gray-700 mb-6">Für jeden Ehegatten wird die Austrittsleistung zum Zeitpunkt der Heirat und zum Zeitpunkt der Einleitung des Scheidungsverfahrens ermittelt. Die Differenz ergibt das während der Ehe angesparte Vorsorgeguthaben (Art. 22a FZG). Dieses wird hälftig geteilt.</p>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Abweichungen von der hälftigen Teilung</h4>
+    <p class="text-gray-700 mb-6">Die Ehegatten können in der Scheidungskonvention von der hälftigen Teilung abweichen (Art. 124b ZGB), wenn:</p>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Beide eine angemessene Alters- und Invalidenvorsorge behalten</li>
+        <li>Die Vereinbarung klar, vollständig und nicht offensichtlich unangemessen ist</li>
+    </ul>
+
+    <p class="text-gray-700 mb-6">Ein vollständiger Verzicht auf den Vorsorgeausgleich ist nur unter strengen Voraussetzungen möglich und wird vom Gericht kritisch geprüft, insbesondere wenn ein Ehegatte wegen Kinderbetreuung über wenig eigene Vorsorge verfügt.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ehewohnung und Hausrat</h3>
+
+    <p class="text-gray-700 mb-6">Die Konvention muss regeln, was mit der gemeinsamen Wohnung geschieht (Art. 121 ZGB):</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Zuweisung an einen Ehegatten:</strong> Ein Ehegatte übernimmt die Wohnung (Miete oder Eigentum)</li>
+        <li><strong>Übernahme des Mietvertrags:</strong> Bei Mietwohnungen kann der Mietvertrag auf einen Ehegatten übertragen werden</li>
+        <li><strong>Verkauf:</strong> Bei Wohneigentum kann ein Verkauf und die Aufteilung des Erlöses vereinbart werden</li>
+        <li><strong>Aufteilung des Hausrats:</strong> Möbel, Geräte und andere Gegenstände werden verteilt</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Verfahrens- und Anwaltskosten</h3>
+
+    <p class="text-gray-700 mb-6">Die Konvention sollte auch die Aufteilung der Verfahrenskosten regeln. Bei einvernehmlichen Scheidungen ist es üblich, dass jede Partei die Hälfte der Gerichtskosten und die eigenen Anwaltskosten trägt. Die Parteien können aber auch eine andere Aufteilung vereinbaren.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Teilkonvention bei Teileinigung (Art. 112 ZGB)</h2>
+
+    <p class="text-gray-700 mb-6">Wenn sich die Ehegatten zwar über die Scheidung selbst einig sind, aber nicht über alle Scheidungsfolgen, können sie eine <strong>Teilkonvention</strong> nach Art. 112 ZGB einreichen. In diesem Fall regelt die Konvention nur die Punkte, über die Einigkeit besteht. Über die strittigen Punkte entscheidet das Gericht.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
+        <p class="font-semibold text-navy mb-2">Beispiel Teilkonvention:</p>
+        <p class="text-gray-700">Die Ehegatten einigen sich über die elterliche Sorge, das Besuchsrecht und den Kindesunterhalt. Über den nachehelichen Unterhalt besteht jedoch Uneinigkeit. Das Gericht genehmigt die Teilkonvention und entscheidet über den strittigen Unterhaltspunkt.</p>
+    </div>
+
+    <p class="text-gray-700 mb-6">Die Teilkonvention ermöglicht eine schnellere Scheidung als die vollständig streitige Scheidung auf Klage, da nur die strittigen Punkte gerichtlich geklärt werden müssen.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Ablauf des Genehmigungsverfahrens</h2>
+
+    <p class="text-gray-700 mb-6">Das Verfahren bei einer Scheidung auf gemeinsames Begehren mit Konvention läuft typischerweise wie folgt ab:</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">1. Einreichung beim Gericht</h3>
+    <p class="text-gray-700 mb-6">Das gemeinsame Scheidungsbegehren und die Scheidungskonvention werden beim <strong>Gericht am Wohnsitz</strong> eines der Ehegatten eingereicht. Eine Wahl eines anderen Gerichtsstands ist nicht möglich. Ein vorgängiges Schlichtungsverfahren ist bei einvernehmlichen Scheidungen nicht erforderlich (Art. 198 lit. c ZPO).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">2. Prüfung durch das Gericht</h3>
+    <p class="text-gray-700 mb-6">Das Gericht prüft die eingereichten Unterlagen auf Vollständigkeit und fordert gegebenenfalls weitere Belege an (Lohnabrechnungen, Kontoauszüge, Pensionskassenausweise, Steuererklärungen etc.).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">3. Anhörung der Ehegatten</h3>
+    <p class="text-gray-700 mb-6">Das Gericht lädt die Ehegatten zu einer Anhörung vor. Diese besteht aus zwei Teilen:</p>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Einzelanhörung:</strong> Jeder Ehegatte wird zunächst allein angehört. Das Gericht prüft, ob der Scheidungswille und die Zustimmung zur Konvention auf freiem Willen beruhen und nicht unter Druck entstanden sind.</li>
+        <li><strong>Gemeinsame Anhörung:</strong> Anschliessend werden beide Ehegatten gemeinsam angehört. Das Gericht geht die Konvention Punkt für Punkt durch, klärt offene Fragen und beseitigt Unklarheiten.</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">4. Anhörung der Kinder</h3>
+    <p class="text-gray-700 mb-6">Sind gemeinsame Kinder vorhanden, werden diese in der Regel ebenfalls angehört, sofern sie urteilsfähig sind (in der Regel ab ca. 12 Jahren). Bei jüngeren Kindern kann das Gericht auf eine Anhörung verzichten, wenn diese nicht im Interesse des Kindes liegt.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">5. Genehmigung und Scheidungsurteil</h3>
+    <p class="text-gray-700 mb-6">Wenn das Gericht keine Einwände hat, genehmigt es die Konvention. Die Genehmigung wird grundsätzlich nur bei <strong>offensichtlicher Unangemessenheit</strong> verweigert (Art. 279 Abs. 1 ZPO). Die Scheidung kann noch am gleichen Tag ausgesprochen werden und wird mit Verlesung des Urteils sofort rechtskräftig.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Gerichtliche Prüfung der Scheidungskonvention</h2>
+
+    <p class="text-gray-700 mb-6">Das Gericht muss die Konvention gemäss Art. 279 Abs. 1 ZPO auf folgende Punkte prüfen:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Prüfungskriterium</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bedeutung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Freier Wille</td>
+                    <td class="px-6 py-4 text-gray-700">Beide Ehegatten müssen freiwillig zustimmen, ohne Druck oder Zwang</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Reifliche Überlegung</td>
+                    <td class="px-6 py-4 text-gray-700">Die Entscheidung muss wohlüberlegt sein</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Klarheit</td>
+                    <td class="px-6 py-4 text-gray-700">Die Vereinbarungen müssen eindeutig und verständlich formuliert sein</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Vollständigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Alle erforderlichen Scheidungsfolgen müssen geregelt sein</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Angemessenheit</td>
+                    <td class="px-6 py-4 text-gray-700">Keine offensichtlich unangemessenen oder sittenwidrigen Regelungen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Kindeswohl</td>
+                    <td class="px-6 py-4 text-gray-700">Die Regelungen zu den Kindern müssen dem Kindeswohl entsprechen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wann ist eine Konvention «offensichtlich unangemessen»?</h3>
+
+    <p class="text-gray-700 mb-6">Nach bundesgerichtlicher Rechtsprechung ist eine Vereinbarung offensichtlich unangemessen, wenn sie von den gesetzlichen Regelungen in einer sofort erkennbaren und krassen Weise abweicht und diese Abweichung nicht durch Billigkeitsgründe gerechtfertigt werden kann (BGE 145 III 474).</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
+        <p class="font-semibold text-navy mb-2">Typische Ablehnungsgründe:</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li>Offensichtlich zu tiefer oder zu hoher Unterhalt</li>
+            <li>Gefährdung des Kindeswohls durch die Betreuungsregelung</li>
+            <li>Verzicht auf Vorsorgeausgleich ohne angemessene Altersvorsorge</li>
+            <li>Fehlende Regelungen zu wesentlichen Punkten</li>
+            <li>Erkennbarer Willensmangel bei einem Ehegatten</li>
+        </ul>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Widerruf und Änderung der Scheidungskonvention</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vor der gerichtlichen Genehmigung</h3>
+    <p class="text-gray-700 mb-6">Bis zur gerichtlichen Genehmigung kann jeder Ehegatte die Konvention <strong>jederzeit und ohne Begründung widerrufen</strong>. Es genügt eine einfache schriftliche Erklärung an das Gericht. Auch einvernehmliche Änderungen der Konvention sind bis zur Genehmigung problemlos möglich.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Nach der gerichtlichen Genehmigung</h3>
+    <p class="text-gray-700 mb-6">Nach der Genehmigung erlangt die Scheidungskonvention <strong>Urteilswirkung</strong> (Art. 279 Abs. 2 ZPO). Eine Abänderung ist nur noch unter erschwerten Voraussetzungen möglich:</p>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Erhebliche und dauerhafte Veränderung der Verhältnisse</strong> (z.B. Arbeitslosigkeit, Krankheit, Wiederverheiratung)</li>
+        <li><strong>Willensmängel</strong> (Irrtum, Täuschung, Drohung) – Anfechtung innerhalb eines Jahres</li>
+        <li><strong>Kinderbelange</strong> können auf Antrag eines Elternteils oder der KESB immer angepasst werden, wenn das Kindeswohl es erfordert</li>
+    </ul>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kosten einer Scheidung mit Konvention</h2>
+
+    <p class="text-gray-700 mb-6">Die <a href="/scheidung/kosten-einer-scheidung" class="text-gold hover:underline font-semibold">Kosten einer einvernehmlichen Scheidung</a> setzen sich aus Gerichtsgebühren und allfälligen Anwaltskosten zusammen. Sie sind deutlich tiefer als bei einer streitigen Scheidung.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gerichtsgebühren nach Kanton</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kanton</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gerichtsgebühr (ca.)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Basel-Stadt</td>
+                    <td class="px-6 py-4 text-gray-700">ca. CHF 830</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Bern</td>
+                    <td class="px-6 py-4 text-gray-700">ca. CHF 1'000 – 2'000</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">St. Gallen</td>
+                    <td class="px-6 py-4 text-gray-700">ab CHF 1'800</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Zürich</td>
+                    <td class="px-6 py-4 text-gray-700">bis CHF 2'600</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Waadt</td>
+                    <td class="px-6 py-4 text-gray-700">kostenlos (Ausnahme)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Die genauen Gebühren hängen vom Kanton und teilweise vom Einkommen der Ehegatten ab. Wenn beide Ehegatten in verschiedenen Kantonen wohnen, kann es sich lohnen, das Scheidungsbegehren im günstigeren Kanton einzureichen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Anwaltskosten</h3>
+    <p class="text-gray-700 mb-6">Anwaltskosten sind bei einer einvernehmlichen Scheidung nicht zwingend erforderlich. Wenn dennoch ein Anwalt beigezogen wird, liegen die Stundensätze in der Schweiz zwischen CHF 250 und CHF 600. Für eine einfache einvernehmliche Scheidung mit Konventionserstellung ist mit Anwaltskosten von ca. CHF 2'000 – 5'000 pro Partei zu rechnen.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Scheidungskonvention ohne Anwalt?</h2>
+
+    <p class="text-gray-700 mb-6">Eine <a href="/scheidung/ohne-anwalt" class="text-gold hover:underline font-semibold">Scheidung ohne Anwalt</a> ist in der Schweiz grundsätzlich möglich. Bei einvernehmlichen Scheidungen besteht keine Anwaltspflicht. Die Ehegatten können das Scheidungsbegehren und die Konvention selbst verfassen und einreichen.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
+        <p class="font-semibold text-navy mb-2">Scheidung ohne Anwalt – Wann möglich?</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li>Beide Ehegatten sind sich über alle Punkte einig</li>
+            <li>Die Vermögensverhältnisse sind überschaubar</li>
+            <li>Keine komplexen güterrechtlichen oder vorsorgerechtlichen Fragen</li>
+            <li>Beide Ehegatten sind in der Lage, ihre Interessen selbst wahrzunehmen</li>
+        </ul>
+    </div>
+
+    <p class="text-gray-700 mb-6">Allerdings ist bei komplexeren Verhältnissen eine anwaltliche Beratung dringend empfohlen. Fehlerhafte oder unvollständige Konventionen können zu erheblichen Nachteilen führen und werden vom Gericht möglicherweise nicht genehmigt.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Mustervorlagen und Checkliste</h2>
+
+    <p class="text-gray-700 mb-6">Verschiedene Kantone und Institutionen stellen Mustervorlagen für Scheidungskonventionen zur Verfügung:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Gerichte Zürich:</strong> Interaktive PDF-Formulare für Scheidungskonventionen mit und ohne Kinderbelange</li>
+        <li><strong>Kanton Zug:</strong> Muster-Scheidungskonvention als Word-Dokument</li>
+        <li><strong>Kanton Basel-Stadt:</strong> Merkblätter und Formulare für einvernehmliche Scheidungen</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Checkliste: Unterlagen für die Scheidungskonvention</h3>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
+        <p class="font-semibold text-navy mb-4">Erforderliche Unterlagen:</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>Familienbüchlein oder Familienschein</li>
+            <li>Personalausweis oder Pass beider Ehegatten</li>
+            <li>Lohnabrechnungen der letzten 3-6 Monate</li>
+            <li>Steuererklärungen der letzten 2-3 Jahre</li>
+            <li>Pensionskassenausweise beider Ehegatten</li>
+            <li>Kontoauszüge und Depotauszüge</li>
+            <li>Grundbuchauszug (bei Wohneigentum)</li>
+            <li>Mietvertrag (bei Mietwohnung)</li>
+            <li>Ehevertrag (falls vorhanden)</li>
+            <li>Geburtsurkunden der Kinder</li>
+        </ul>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Praktische Tipps für die Scheidungskonvention</h2>
+
+    <p class="text-gray-700 mb-6">Beachten Sie folgende Punkte für eine erfolgreiche Scheidungskonvention:</p>
+
+    <div class="space-y-4 mb-8">
+        <div class="bg-white border border-gray-200 p-6 rounded-lg">
+            <h4 class="font-semibold text-navy mb-2">1. Vollständigkeit sicherstellen</h4>
+            <p class="text-gray-700">Regeln Sie alle Scheidungsfolgen lückenlos. Unvollständige Konventionen werden nicht genehmigt.</p>
+        </div>
+        <div class="bg-white border border-gray-200 p-6 rounded-lg">
+            <h4 class="font-semibold text-navy mb-2">2. Klare Formulierungen verwenden</h4>
+            <p class="text-gray-700">Vermeiden Sie Unklarheiten und Interpretationsspielraum. Konkrete Beträge, Daten und Modalitäten angeben.</p>
+        </div>
+        <div class="bg-white border border-gray-200 p-6 rounded-lg">
+            <h4 class="font-semibold text-navy mb-2">3. Kindeswohl priorisieren</h4>
+            <p class="text-gray-700">Das Gericht prüft die Kinderbelange besonders genau. Stellen Sie das Wohl der Kinder in den Vordergrund.</p>
+        </div>
+        <div class="bg-white border border-gray-200 p-6 rounded-lg">
+            <h4 class="font-semibold text-navy mb-2">4. Anpassungsklauseln einfügen</h4>
+            <p class="text-gray-700">Vereinbaren Sie, wie Unterhaltsbeiträge bei veränderten Verhältnissen angepasst werden (z.B. Indexierung).</p>
+        </div>
+        <div class="bg-white border border-gray-200 p-6 rounded-lg">
+            <h4 class="font-semibold text-navy mb-2">5. Saldoklausel nicht vorschnell unterschreiben</h4>
+            <p class="text-gray-700">Prüfen Sie die güterrechtliche Auseinandersetzung sorgfältig, bevor Sie bestätigen, dass alle Ansprüche abgegolten sind.</p>
+        </div>
+        <div class="bg-white border border-gray-200 p-6 rounded-lg">
+            <h4 class="font-semibold text-navy mb-2">6. Pensionskassenausweise einholen</h4>
+            <p class="text-gray-700">Fordern Sie frühzeitig die aktuellen Pensionskassenausweise an, um den Vorsorgeausgleich korrekt berechnen zu können.</p>
+        </div>
+    </div>
+
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">Auch bei einvernehmlichen Scheidungen kann die fachkundige Unterstützung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> entscheidend sein. Die Scheidungskonvention regelt weitreichende finanzielle und persönliche Fragen, die Ihr Leben langfristig beeinflussen.</p>
+
+        <p class="text-gray-700 mb-6">Besonders bei folgenden Konstellationen ist die Beratung durch einen erfahrenen <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> dringend empfohlen:</p>
+
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Grösseres Vermögen oder Immobilienbesitz</li>
+            <li>Komplexe Erwerbsverhältnisse (Selbständigkeit, Unternehmensanteile)</li>
+            <li>Ungleiche Einkommensverhältnisse</li>
+            <li>Streitige oder unklare Kinderbelange</li>
+            <li>Internationaler Bezug (verschiedene Staatsangehörigkeiten, Auslandsvermögen)</li>
+            <li>Bestehender Ehevertrag mit komplexen Regelungen</li>
+        </ul>
+
+        <p class="text-gray-700 mb-6">Ein qualifizierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> stellt sicher, dass Ihre Interessen in der Konvention angemessen berücksichtigt werden, und hilft, kostspielige Fehler zu vermeiden, die später nur schwer korrigierbar sind.</p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Lassen Sie Ihre Scheidungskonvention von einem erfahrenen Familienrechtsanwalt prüfen. Wir beraten Sie zu allen Fragen rund um Unterhalt, Güterrecht und Kinderbelange.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- Fazit -->
+    <h2 class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Die Scheidungskonvention ist das Herzstück jeder einvernehmlichen Scheidung in der Schweiz. Sie ermöglicht es den Ehegatten, alle Scheidungsfolgen eigenverantwortlich und einvernehmlich zu regeln – von den Kinderbelangen über den Unterhalt bis zur Vermögensaufteilung und dem Vorsorgeausgleich.</p>
+
+    <p class="text-gray-700 mb-6">Eine sorgfältig ausgearbeitete Konvention ist die Grundlage für ein schnelles, kostengünstiges Verfahren und führt zu tragfähigeren Ergebnissen als gerichtlich verfügte Lösungen. Gleichzeitig sollten Sie die weitreichende Bedeutung der Vereinbarung nicht unterschätzen: Mit der gerichtlichen Genehmigung erlangt die Konvention Urteilswirkung und ist nur noch unter erschwerten Voraussetzungen abänderbar.</p>
+
+    <p class="text-gray-700 mb-6">Bei komplexeren Verhältnissen empfiehlt sich die fachkundige Beratung durch einen spezialisierten Familienrechtsanwalt, um kostspielige Fehler zu vermeiden und sicherzustellen, dass Ihre Interessen angemessen gewahrt werden.</p>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist eine Scheidungskonvention?</h3>
+                <p class="text-gray-700">Eine Scheidungskonvention ist die einvernehmliche schriftliche Vereinbarung zwischen den Ehegatten über alle Folgen ihrer Scheidung. Sie regelt Kinderbelange (Sorgerecht, Obhut, Unterhalt), nachehelichen Unterhalt, die Vermögensaufteilung, den Vorsorgeausgleich und die Zuteilung der Ehewohnung. Die Konvention wird zusammen mit dem gemeinsamen Scheidungsbegehren beim Gericht eingereicht (Art. 111 ZGB).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was muss in einer Scheidungskonvention geregelt werden?</h3>
+                <p class="text-gray-700">Eine vollständige Scheidungskonvention muss folgende Punkte regeln: Elterliche Sorge, Obhut und Betreuung der Kinder, Besuchsrecht, Kindesunterhalt (Barunterhalt und Betreuungsunterhalt), nachehelicher Unterhalt, güterrechtliche Auseinandersetzung (Vermögensaufteilung), Vorsorgeausgleich (Teilung der Pensionskasse), Zuteilung der Ehewohnung und des Hausrats sowie die Aufteilung der Verfahrenskosten.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann das Gericht eine Scheidungskonvention ablehnen?</h3>
+                <p class="text-gray-700">Ja, das Gericht kann die Genehmigung verweigern, allerdings nur unter bestimmten Voraussetzungen: Wenn die Konvention nicht auf dem freien Willen der Ehegatten beruht, wenn sie unklar oder unvollständig ist, wenn sie offensichtlich unangemessen ist oder wenn sie das Kindeswohl gefährdet (Art. 279 Abs. 1 ZPO). In der Praxis werden die meisten Konventionen genehmigt.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Brauche ich einen Anwalt für eine Scheidungskonvention?</h3>
+                <p class="text-gray-700">Nein, bei einer einvernehmlichen Scheidung besteht in der Schweiz keine Anwaltspflicht. Sie können die Scheidungskonvention selbst verfassen und einreichen. Bei komplexeren Verhältnissen (grösseres Vermögen, Immobilien, Selbständigkeit, strittige Kinderbelange) ist eine anwaltliche Beratung jedoch dringend empfohlen, um Fehler zu vermeiden und Ihre Interessen zu wahren.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich die Scheidungskonvention widerrufen?</h3>
+                <p class="text-gray-700">Bis zur gerichtlichen Genehmigung kann jeder Ehegatte die Konvention jederzeit und ohne Begründung widerrufen. Es genügt eine einfache schriftliche Erklärung an das Gericht. Nach der Genehmigung erlangt die Konvention Urteilswirkung und kann nur noch unter erschwerten Voraussetzungen (erhebliche Veränderung der Verhältnisse, Willensmängel) abgeändert werden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was kostet eine Scheidung mit Konvention?</h3>
+                <p class="text-gray-700">Die Gerichtsgebühren für eine einvernehmliche Scheidung variieren je nach Kanton zwischen ca. CHF 830 (Basel-Stadt) und CHF 2'600 (Zürich). Im Kanton Waadt ist das Verfahren kostenlos. Hinzu kommen allfällige Anwaltskosten, die bei CHF 250-600 pro Stunde liegen. Insgesamt ist eine einvernehmliche Scheidung mit Konvention deutlich günstiger als eine strittige Scheidung.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie lange dauert eine Scheidung mit Konvention?</h3>
+                <p class="text-gray-700">Eine einvernehmliche Scheidung auf gemeinsames Begehren mit vollständiger Konvention dauert in der Schweiz in der Regel 2-6 Monate. Nach Einreichung aller Unterlagen werden die Ehegatten zu einer Anhörung geladen. Wenn das Gericht die Konvention genehmigt, kann die Scheidung noch am selben Tag ausgesprochen werden und wird sofort rechtskräftig.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist eine Teilkonvention?</h3>
+                <p class="text-gray-700">Eine Teilkonvention nach Art. 112 ZGB ist möglich, wenn sich die Ehegatten zwar über die Scheidung selbst einig sind, aber nicht über alle Scheidungsfolgen. Die Konvention regelt dann nur die Punkte, über die Einigkeit besteht. Über die strittigen Punkte entscheidet das Gericht. Dies ermöglicht eine schnellere Scheidung als bei einer vollständig streitigen Scheidungsklage.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wo muss ich die Scheidungskonvention einreichen?</h3>
+                <p class="text-gray-700">Das gemeinsame Scheidungsbegehren mit der Konvention muss beim Gericht am Wohnsitz eines der Ehegatten eingereicht werden. Eine Wahl eines anderen Gerichtsstands ist nicht möglich. Wenn beide Ehegatten in verschiedenen Kantonen wohnen, können Sie wählen und sollten die unterschiedlichen Gerichtsgebühren vergleichen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann die Scheidungskonvention nach der Scheidung geändert werden?</h3>
+                <p class="text-gray-700">Nach der gerichtlichen Genehmigung ist eine Änderung nur unter erschwerten Voraussetzungen möglich. Es braucht eine erhebliche und dauerhafte Veränderung der Verhältnisse (z.B. Arbeitslosigkeit, Krankheit, Wiederverheiratung). Kinderbelange können jedoch jederzeit angepasst werden, wenn das Kindeswohl es erfordert. Bei Willensmängeln (Irrtum, Täuschung) ist eine Anfechtung innerhalb eines Jahres möglich.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Scheidungskonvention in der Schweiz",
+        "description": "Scheidungskonvention Schweiz: Inhalt, Muster & Genehmigung. Alle Regelungen zu Kinderbelangen, Unterhalt, Güterrecht & Vorsorgeausgleich nach Art. 111 ZGB.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2026-01-20",
+        "dateModified": "2026-01-20",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/scheidung/scheidungskonvention"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Was ist eine Scheidungskonvention?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Eine Scheidungskonvention ist die einvernehmliche schriftliche Vereinbarung zwischen den Ehegatten über alle Folgen ihrer Scheidung. Sie regelt Kinderbelange (Sorgerecht, Obhut, Unterhalt), nachehelichen Unterhalt, die Vermögensaufteilung, den Vorsorgeausgleich und die Zuteilung der Ehewohnung. Die Konvention wird zusammen mit dem gemeinsamen Scheidungsbegehren beim Gericht eingereicht (Art. 111 ZGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was muss in einer Scheidungskonvention geregelt werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Eine vollständige Scheidungskonvention muss folgende Punkte regeln: Elterliche Sorge, Obhut und Betreuung der Kinder, Besuchsrecht, Kindesunterhalt (Barunterhalt und Betreuungsunterhalt), nachehelicher Unterhalt, güterrechtliche Auseinandersetzung (Vermögensaufteilung), Vorsorgeausgleich (Teilung der Pensionskasse), Zuteilung der Ehewohnung und des Hausrats sowie die Aufteilung der Verfahrenskosten."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann das Gericht eine Scheidungskonvention ablehnen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, das Gericht kann die Genehmigung verweigern, allerdings nur unter bestimmten Voraussetzungen: Wenn die Konvention nicht auf dem freien Willen der Ehegatten beruht, wenn sie unklar oder unvollständig ist, wenn sie offensichtlich unangemessen ist oder wenn sie das Kindeswohl gefährdet (Art. 279 Abs. 1 ZPO). In der Praxis werden die meisten Konventionen genehmigt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Brauche ich einen Anwalt für eine Scheidungskonvention?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, bei einer einvernehmlichen Scheidung besteht in der Schweiz keine Anwaltspflicht. Sie können die Scheidungskonvention selbst verfassen und einreichen. Bei komplexeren Verhältnissen (grösseres Vermögen, Immobilien, Selbständigkeit, strittige Kinderbelange) ist eine anwaltliche Beratung jedoch dringend empfohlen, um Fehler zu vermeiden und Ihre Interessen zu wahren."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich die Scheidungskonvention widerrufen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bis zur gerichtlichen Genehmigung kann jeder Ehegatte die Konvention jederzeit und ohne Begründung widerrufen. Es genügt eine einfache schriftliche Erklärung an das Gericht. Nach der Genehmigung erlangt die Konvention Urteilswirkung und kann nur noch unter erschwerten Voraussetzungen (erhebliche Veränderung der Verhältnisse, Willensmängel) abgeändert werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was kostet eine Scheidung mit Konvention?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Gerichtsgebühren für eine einvernehmliche Scheidung variieren je nach Kanton zwischen ca. CHF 830 (Basel-Stadt) und CHF 2'600 (Zürich). Im Kanton Waadt ist das Verfahren kostenlos. Hinzu kommen allfällige Anwaltskosten, die bei CHF 250-600 pro Stunde liegen. Insgesamt ist eine einvernehmliche Scheidung mit Konvention deutlich günstiger als eine strittige Scheidung."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie lange dauert eine Scheidung mit Konvention?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Eine einvernehmliche Scheidung auf gemeinsames Begehren mit vollständiger Konvention dauert in der Schweiz in der Regel 2-6 Monate. Nach Einreichung aller Unterlagen werden die Ehegatten zu einer Anhörung geladen. Wenn das Gericht die Konvention genehmigt, kann die Scheidung noch am selben Tag ausgesprochen werden und wird sofort rechtskräftig."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist eine Teilkonvention?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Eine Teilkonvention nach Art. 112 ZGB ist möglich, wenn sich die Ehegatten zwar über die Scheidung selbst einig sind, aber nicht über alle Scheidungsfolgen. Die Konvention regelt dann nur die Punkte, über die Einigkeit besteht. Über die strittigen Punkte entscheidet das Gericht. Dies ermöglicht eine schnellere Scheidung als bei einer vollständig streitigen Scheidungsklage."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wo muss ich die Scheidungskonvention einreichen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das gemeinsame Scheidungsbegehren mit der Konvention muss beim Gericht am Wohnsitz eines der Ehegatten eingereicht werden. Eine Wahl eines anderen Gerichtsstands ist nicht möglich. Wenn beide Ehegatten in verschiedenen Kantonen wohnen, können Sie wählen und sollten die unterschiedlichen Gerichtsgebühren vergleichen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann die Scheidungskonvention nach der Scheidung geändert werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nach der gerichtlichen Genehmigung ist eine Änderung nur unter erschwerten Voraussetzungen möglich. Es braucht eine erhebliche und dauerhafte Veränderung der Verhältnisse (z.B. Arbeitslosigkeit, Krankheit, Wiederverheiratung). Kinderbelange können jedoch jederzeit angepasst werden, wenn das Kindeswohl es erfordert. Bei Willensmängeln (Irrtum, Täuschung) ist eine Anfechtung innerhalb eines Jahres möglich."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Scheidung",
+                "item": "https://familienrechtanwalt.ch/scheidung"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Scheidungskonvention in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/scheidung/scheidungskonvention"
+            }
+        ]
+    })} />
+
 </ArticleLayout>

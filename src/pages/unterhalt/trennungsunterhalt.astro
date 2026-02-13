@@ -3,15 +3,44 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 ---
 
 <ArticleLayout
-    title="Trennungsunterhalt in der Schweiz"
-    description="Trennungsunterhalt in der Schweiz: Eheschutz, Berechnung und rechtliche Grundlagen. Umfassender Leitfaden zum Unterhalt bei Trennung."
-    keywords="Trennungsunterhalt Schweiz, Eheschutz, Art. 176 ZGB, Getrenntleben, Unterhaltsberechnung"
+    title="Trennungsunterhalt in der Schweiz: Eheschutz, Berechnung & Verfahren"
+    description="Trennungsunterhalt Schweiz: Berechnung nach zweistufiger Methode (BGE 147 III 301), Eheschutzverfahren, Kosten & Ablauf. Umfassender Leitfaden mit BGE-Rechtsprechung."
+    keywords="Trennungsunterhalt Schweiz, Eheschutz, Art. 176 ZGB, Getrenntleben, Eheschutzverfahren, zweistufige Methode, BGE 147 III 301"
     category="Unterhalt"
     categoryLink="/unterhalt"
 >
-    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Bei einer Trennung stellt sich häufig die Frage, wer wie viel zum Lebensunterhalt beizutragen hat. Der Trennungsunterhalt regelt die finanziellen Verhältnisse während des Getrenntlebens und wird im Rahmen eines Eheschutzverfahrens festgelegt.</p>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Rechtsgrundlage:</strong> Der Trennungsunterhalt wird im Eheschutzverfahren gemäss Art. 176 ZGB festgelegt und gilt bis zur rechtskräftigen Scheidung.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Grundsatz:</strong> Beide Ehegatten sollen möglichst den bisherigen Lebensstandard aufrechterhalten können – anders als beim nachehelichen Unterhalt gilt nicht der Grundsatz der Eigenversorgung.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Berechnung:</strong> Schweizweit einheitlich nach der zweistufigen Methode mit Überschussverteilung (BGE 147 III 301).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Verfahren:</strong> Das Eheschutzverfahren ist ein summarisches Verfahren und dauert in der Regel 2-4 Monate.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Vollstreckung:</strong> Der Eheschutzentscheid ist ein definitiver Rechtsöffnungstitel und sofort vollstreckbar.</span>
+            </li>
+        </ul>
+    </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Abgrenzung zu anderen Unterhaltsarten</h2>
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Bei einer Trennung stellt sich häufig die Frage, wer wie viel zum Lebensunterhalt beizutragen hat. Der Trennungsunterhalt regelt die finanziellen Verhältnisse während des Getrenntlebens und wird im Rahmen eines Eheschutzverfahrens festgelegt. Anders als beim nachehelichen Unterhalt gilt beim Trennungsunterhalt der Grundsatz, dass beide Ehegatten das Leben, wie es während der Ehe geführt wurde, möglichst fortsetzen können sollen. Dieser umfassende Leitfaden erklärt das Eheschutzverfahren, die Berechnung nach bundesgerichtlicher Rechtsprechung und die Durchsetzung des Trennungsunterhalts.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Abgrenzung: Unterhaltsarten im Schweizer Recht</h2>
+
+    <p class="text-gray-700 mb-4">Das Schweizer Recht kennt verschiedene Unterhaltsarten für die unterschiedlichen Phasen einer Ehe. Es ist wichtig, diese voneinander abzugrenzen:</p>
 
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-200">
@@ -20,44 +49,46 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
                     <th class="px-6 py-3 text-left text-sm font-semibold">Unterhaltsart</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Phase</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Grundsatz</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Ehelicher Unterhalt</td>
-                    <td class="px-6 py-4 text-gray-700">Zusammenleben</td>
+                    <td class="px-6 py-4 text-gray-700">Während Zusammenleben</td>
                     <td class="px-6 py-4 text-gray-700">Art. 163 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Gemeinsamer Familienunterhalt</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">Trennungsunterhalt</td>
-                    <td class="px-6 py-4 text-gray-700">Getrenntleben</td>
+                    <td class="px-6 py-4 text-gray-700">Getrenntleben bis Scheidung</td>
                     <td class="px-6 py-4 text-gray-700">Art. 176 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Gleichwertiges Leben</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Nachehelicher Unterhalt</td>
-                    <td class="px-6 py-4 text-gray-700">Nach Scheidung</td>
+                    <td class="px-6 py-4 text-gray-700">Nach rechtskräftiger Scheidung</td>
                     <td class="px-6 py-4 text-gray-700">Art. 125 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Eigenversorgung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Vorsorgliche Massnahmen</td>
+                    <td class="px-6 py-4 text-gray-700">Während Scheidungsverfahren</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 276 ZPO</td>
+                    <td class="px-6 py-4 text-gray-700">Gleichwertiges Leben</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy">Grundprinzip:</p>
-        <p class="text-gray-700">Anders als beim nachehelichen Unterhalt geht es beim Trennungsunterhalt darum, dass beide Ehegatten das Leben, wie es während der Ehe geführt wurde, möglichst fortsetzen können.</p>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtiger Unterschied:</p>
+        <p class="text-gray-700">Beim Trennungsunterhalt gilt der Grundsatz des <strong>gleichwertigen Lebens</strong> beider Ehegatten. Beim nachehelichen Unterhalt (Art. 125 ZGB) gilt dagegen der Grundsatz der <strong>Eigenversorgung</strong> – jeder Ehegatte soll nach der Scheidung grundsätzlich für sich selbst sorgen. Diese fundamentale Unterscheidung beeinflusst sowohl die Höhe des Unterhalts als auch die Erwerbsobliegenheit.</p>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen des Trennungsunterhalts</h2>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Art. 176 ZGB - Eheschutzmassnahmen</h3>
-    <p class="text-gray-700 mb-4">Bei begründeter Aufhebung des gemeinsamen Haushalts legt das Gericht auf Antrag fest:</p>
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Die Geld- und Sachleistungen, die die Ehegatten einander zu erbringen haben</li>
-        <li>Die Benützung der Wohnung und des Hausrats</li>
-        <li>Gegebenenfalls die Gütertrennung</li>
-    </ul>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Übersicht der relevanten Bestimmungen</h3>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Übersicht der relevanten Gesetzesbestimmungen</h3>
 
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-200">
@@ -65,124 +96,338 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Artikel</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Inhalt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bedeutung</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Art. 163 ZGB</td>
                     <td class="px-6 py-4 text-gray-700">Unterhaltspflicht während der Ehe</td>
+                    <td class="px-6 py-4 text-gray-700">Grundlage der ehelichen Beistandspflicht</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">Art. 175 ZGB</td>
                     <td class="px-6 py-4 text-gray-700">Berechtigung zur Aufhebung des Haushalts</td>
+                    <td class="px-6 py-4 text-gray-700">Recht zur Trennung bei wichtigen Gründen</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Art. 176 ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Regelung der Unterhaltsleistungen</td>
+                    <td class="px-6 py-4 text-gray-700">Regelung der Geld- und Sachleistungen</td>
+                    <td class="px-6 py-4 text-gray-700">Zentrale Norm für Trennungsunterhalt</td>
                 </tr>
                 <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 177 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Schuldneranweisung</td>
+                    <td class="px-6 py-4 text-gray-700">Direkte Zahlung durch Arbeitgeber</td>
+                </tr>
+                <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Art. 179 ZGB</td>
                     <td class="px-6 py-4 text-gray-700">Abänderung der Massnahmen</td>
+                    <td class="px-6 py-4 text-gray-700">Anpassung bei veränderten Verhältnissen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 271 ff. ZPO</td>
+                    <td class="px-6 py-4 text-gray-700">Summarisches Verfahren</td>
+                    <td class="px-6 py-4 text-gray-700">Verfahrensvorschriften Eheschutz</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Art. 176 ZGB – Eheschutzmassnahmen</h3>
+
+    <p class="text-gray-700 mb-4">Art. 176 Abs. 1 ZGB ermächtigt das Gericht, bei begründeter Aufhebung des gemeinsamen Haushalts auf Antrag eines Ehegatten folgende Regelungen zu treffen:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Die <strong>Geld- und Sachleistungen</strong>, die die Ehegatten einander zu erbringen haben</li>
+        <li>Die Benützung der <strong>Wohnung und des Hausrats</strong></li>
+        <li>Gegebenenfalls die <strong>Gütertrennung</strong></li>
+        <li>Bei gemeinsamen Kindern: <strong>Obhut, Betreuung und Kindesunterhalt</strong></li>
+    </ul>
+
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Das Eheschutzverfahren</h2>
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Was ist ein Eheschutzverfahren?</h3>
-    <p class="text-gray-700 mb-6">Das Eheschutzverfahren ist ein summarisches gerichtliches Verfahren, mit dem die Regelung des Getrenntlebens beantragt werden kann. Es ist kein Scheidungsverfahren, sondern dient der Regelung der Verhältnisse während der Trennungsphase.</p>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ablauf des Verfahrens</h3>
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Gesuchstellung:</strong> Ein Ehegatte reicht beim zuständigen Gericht ein Gesuch ein</li>
-        <li><strong>Anhörung:</strong> Das Gericht hört beide Ehegatten an</li>
-        <li><strong>Entscheid:</strong> Das Gericht regelt Unterhalt, Wohnung, Hausrat und Kinderbelange</li>
-    </ul>
+    <p class="text-gray-700 mb-6">Das Eheschutzverfahren ist ein <strong>summarisches gerichtliches Verfahren</strong> (Art. 271 ff. ZPO), mit dem die Regelung des Getrenntlebens beantragt werden kann. Es ist kein Scheidungsverfahren, sondern dient der Regelung der Verhältnisse während der Trennungsphase. Das Eheschutzverfahren stellt oft eine Vorstufe zur Scheidung dar, ist aber auch eigenständig möglich, wenn keine Scheidungsabsicht besteht.</p>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Berechnung des Trennungsunterhalts</h2>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig:</p>
+        <p class="text-gray-700">Sobald ein <strong>Scheidungsverfahren eingeleitet</strong> wurde, kann kein Eheschutzverfahren mehr beantragt werden (Art. 276 ZPO). In diesem Fall werden die vorsorglichen Massnahmen im Rahmen des Scheidungsverfahrens angeordnet.</p>
+    </div>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Die zweistufige Methode</h3>
-    <p class="text-gray-700 mb-6">Das Bundesgericht hat auch für den Trennungsunterhalt die zweistufige Methode mit Überschussverteilung als verbindlich erklärt (BGE 147 III 301).</p>
-
-    <p class="text-gray-700 mb-4"><strong>Stufe 1: Bedarfsermittlung</strong></p>
-    <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
-        <li>Grundbetrag (betreibungsrechtliches Existenzminimum)</li>
-        <li>Wohnkosten</li>
-        <li>Krankenkassenprämien</li>
-        <li>Steuern</li>
-        <li>Berufsauslagen</li>
-    </ul>
-
-    <p class="text-gray-700 mb-4"><strong>Stufe 2: Überschussverteilung</strong></p>
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Bei kinderlosen Paaren: 50/50</li>
-        <li>Bei Paaren mit Kindern: Nach grossen und kleinen Köpfen</li>
-    </ul>
-
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Unterschied zum nachehelichen Unterhalt</h2>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ablauf des Eheschutzverfahrens</h3>
 
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Trennungsunterhalt</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Nachehelicher Unterhalt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Schritt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Dauer (ca.)</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Grundsatz</td>
-                    <td class="px-6 py-4 text-gray-700">Gleichwertiges Leben</td>
-                    <td class="px-6 py-4 text-gray-700">Eigenversorgung</td>
+                    <td class="px-6 py-4 font-semibold text-navy">1. Gesuchstellung</td>
+                    <td class="px-6 py-4 text-gray-700">Einreichung des Eheschutzgesuchs beim zuständigen Gericht mit Belegen</td>
+                    <td class="px-6 py-4 text-gray-700">–</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Erwerbsobliegenheit</td>
-                    <td class="px-6 py-4 text-gray-700">Eingeschränkt</td>
-                    <td class="px-6 py-4 text-gray-700">Umfassend</td>
+                    <td class="px-6 py-4 font-semibold text-navy">2. Kostenvorschuss</td>
+                    <td class="px-6 py-4 text-gray-700">Leistung des Kostenvorschusses (oder Gesuch um unentgeltliche Rechtspflege)</td>
+                    <td class="px-6 py-4 text-gray-700">1-2 Wochen</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Berechnung</td>
-                    <td class="px-6 py-4 text-gray-700">Bisheriger Standard</td>
-                    <td class="px-6 py-4 text-gray-700">Angemessener Unterhalt</td>
+                    <td class="px-6 py-4 font-semibold text-navy">3. Zustellung an Gegenseite</td>
+                    <td class="px-6 py-4 text-gray-700">Gericht stellt Gesuch dem anderen Ehegatten zu, Frist zur Stellungnahme</td>
+                    <td class="px-6 py-4 text-gray-700">2-4 Wochen</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Dauer</td>
-                    <td class="px-6 py-4 text-gray-700">Bis Scheidung</td>
-                    <td class="px-6 py-4 text-gray-700">Befristet/unbefristet</td>
+                    <td class="px-6 py-4 font-semibold text-navy">4. Mündliche Verhandlung</td>
+                    <td class="px-6 py-4 text-gray-700">Anhörung beider Ehegatten, Einigungsversuch</td>
+                    <td class="px-6 py-4 text-gray-700">4-8 Wochen nach Zustellung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">5. Entscheid</td>
+                    <td class="px-6 py-4 text-gray-700">Einigung protokolliert oder Entscheid des Gerichts</td>
+                    <td class="px-6 py-4 text-gray-700">1-4 Wochen</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Superprovisorische Massnahmen</h3>
+
+    <p class="text-gray-700 mb-4">Bei <strong>besonderer Dringlichkeit</strong> kann das Gericht superprovisorische Massnahmen mit sofortiger Wirkung anordnen, ohne die Gegenseite vorher anzuhören (Art. 265 ZPO). Diese Möglichkeit besteht insbesondere bei:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Häuslicher Gewalt:</strong> Sofortige Wegweisung des gewalttätigen Partners</li>
+        <li><strong>Akuter Gefährdung der Kinder:</strong> Sofortige Obhutsregelung</li>
+        <li><strong>Drohender Vermögensverschleuderung:</strong> Sicherungsmassnahmen</li>
+        <li><strong>Dringendem Unterhaltsbedarf:</strong> Provisorische Unterhaltszahlung</li>
+    </ul>
+
+    <div class="bg-red-50 border-l-4 border-red-500 p-6 my-8">
+        <p class="font-semibold text-red-800 mb-2">Anforderungen an superprovisorische Massnahmen:</p>
+        <p class="text-gray-700">Blosse Behauptungen genügen nicht. Es müssen dem Gericht wenn möglich <strong>Belege</strong> eingereicht werden: Polizeiverfügungen, Arztzeugnisse, Einvernahmeprotokolle aus Strafverfahren oder andere Indizien, welche die Dringlichkeit glaubhaft machen. Das Gericht hört die Gegenseite später an und bestätigt oder hebt die Massnahmen auf.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Regelungsbereiche im Eheschutz</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bereich</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Eheschutz</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Scheidung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Ehegattenunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">✓ Trennungsunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">✓ Nachehelicher Unterhalt</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Kindesunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">✓ Vollständige Regelung</td>
+                    <td class="px-6 py-4 text-gray-700">✓ Vollständige Regelung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Obhut/Betreuung</td>
+                    <td class="px-6 py-4 text-gray-700">✓ Vollständige Regelung</td>
+                    <td class="px-6 py-4 text-gray-700">✓ Vollständige Regelung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Familienwohnung</td>
+                    <td class="px-6 py-4 text-gray-700">✓ Zuweisung an einen Ehegatten</td>
+                    <td class="px-6 py-4 text-gray-700">✓ Definitive Zuteilung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Gütertrennung</td>
+                    <td class="px-6 py-4 text-gray-700">✓ Anordnung möglich</td>
+                    <td class="px-6 py-4 text-gray-700">✓ Güterrechtliche Auseinandersetzung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Vorsorgeausgleich</td>
+                    <td class="px-6 py-4 text-gray-700">✗ Nicht möglich</td>
+                    <td class="px-6 py-4 text-gray-700">✓ Teilung Pensionskassenguthaben</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Mietvertragsübertragung</td>
+                    <td class="px-6 py-4 text-gray-700">✗ Nicht möglich</td>
+                    <td class="px-6 py-4 text-gray-700">✓ Übertragung auf einen Ehegatten</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Berechnung des Trennungsunterhalts</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Die zweistufige Methode (BGE 147 III 301)</h3>
+
+    <p class="text-gray-700 mb-6">Das Bundesgericht hat in seiner wegweisenden Rechtsprechung von 2021 die <strong>zweistufige Methode mit Überschussverteilung</strong> als schweizweit einheitliche Berechnungsmethode für alle Unterhaltsarten festgelegt. Diese gilt für den Kindesunterhalt (BGE 147 III 265), den nachehelichen Unterhalt (BGE 147 III 293) und den Trennungsunterhalt (BGE 147 III 301, BGer 5A_800/2019).</p>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-4">Stufe 1: Bedarfsermittlung</h4>
+
+    <p class="text-gray-700 mb-4">In der ersten Stufe wird der Bedarf jedes Familienmitglieds konkret ermittelt. Ausgangspunkt sind die Richtlinien zur Berechnung des <strong>betreibungsrechtlichen Existenzminimums</strong>:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bedarfsposition</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Richtwerte 2025</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Grundbetrag Alleinstehend</td>
+                    <td class="px-6 py-4 text-gray-700">Nahrung, Kleidung, Hygiene, Telefon, Versicherungen</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'350</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Grundbetrag Alleinerziehend</td>
+                    <td class="px-6 py-4 text-gray-700">Erhöhter Betrag mit Kindern im Haushalt</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'350</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Wohnkosten</td>
+                    <td class="px-6 py-4 text-gray-700">Miete inkl. Nebenkosten</td>
+                    <td class="px-6 py-4 text-gray-700">Effektiv</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Krankenversicherung</td>
+                    <td class="px-6 py-4 text-gray-700">Prämie Grundversicherung (abzgl. Prämienverbilligung)</td>
+                    <td class="px-6 py-4 text-gray-700">Effektiv</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Berufsauslagen</td>
+                    <td class="px-6 py-4 text-gray-700">Arbeitsweg, Verpflegung, Berufskleidung</td>
+                    <td class="px-6 py-4 text-gray-700">Pauschal oder effektiv</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Steuern</td>
+                    <td class="px-6 py-4 text-gray-700">Geschätzte Steuerbelastung</td>
+                    <td class="px-6 py-4 text-gray-700">Berechnet</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-4">Stufe 2: Überschussverteilung</h4>
+
+    <p class="text-gray-700 mb-4">Nach Deckung des Grundbedarfs aller Familienmitglieder wird ein allfälliger <strong>Überschuss</strong> auf die Familie verteilt:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Konstellation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Verteilung des Überschusses</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Kinderlose Paare</td>
+                    <td class="px-6 py-4 text-gray-700">50% / 50% zwischen den Ehegatten</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Paare mit Kindern</td>
+                    <td class="px-6 py-4 text-gray-700">Nach «grossen und kleinen Köpfen» (Erwachsene 2 Teile, Kinder 1 Teil)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Alternative</td>
+                    <td class="px-6 py-4 text-gray-700">Überschuss nur zwischen Ehegatten (50/50), nicht auf Kinder</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Ausnahme – Einstufig-konkrete Methode:</p>
+        <p class="text-gray-700">Bei <strong>aussergewöhnlich günstigen Verhältnissen</strong> (sehr hohes Einkommen) kann ausnahmsweise die einstufig-konkrete Methode angewandt werden. Dies muss im Entscheid begründet werden (BGE 147 III 293, E. 4.5; BGE 147 III 301, E. 4.3).</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Der Mankofall</h3>
+
+    <p class="text-gray-700 mb-4">Mangelsituationen kommen häufig vor: Das Familieneinkommen, das die Bedürfnisse einer Familie in einem gemeinsamen Haushalt noch decken konnte, reicht oft nicht für die Finanzierung <strong>zweier getrennter Haushalte</strong>.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rangfolge der Bedarfsdeckung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Priorität</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">1. Existenzminimum der minderjährigen Kinder</td>
+                    <td class="px-6 py-4 text-gray-700">Höchste Priorität (Art. 276a Abs. 1 ZGB)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">2. Existenzminimum des Unterhaltspflichtigen</td>
+                    <td class="px-6 py-4 text-gray-700">Hohe Priorität (Schutz vor Eingriff ins Existenzminimum)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">3. Existenzminimum des Ehegatten</td>
+                    <td class="px-6 py-4 text-gray-700">Mittlere Priorität</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">4. Unterhalt volljähriger Kinder</td>
+                    <td class="px-6 py-4 text-gray-700">Niedrigere Priorität</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-red-50 border-l-4 border-red-500 p-6 my-8">
+        <p class="font-semibold text-red-800 mb-2">Konsequenz im Mankofall:</p>
+        <p class="text-gray-700">Der unterhaltsberechtigte Ehegatte muss das Manko, also seinen durch Unterhalt nicht gedeckten Bedarf, <strong>selbst tragen</strong>. Ist dies nicht möglich, muss er gegebenenfalls Sozialhilfe beziehen. Die Unterhaltspflicht endet an der Grenze des Existenzminimums des Unterhaltspflichtigen.</p>
+    </div>
+
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Erwerbsobliegenheit bei Trennung</h2>
 
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Grundsatz</h3>
+
+    <p class="text-gray-700 mb-6">Anders als beim nachehelichen Unterhalt ist die Erwerbsobliegenheit beim Trennungsunterhalt <strong>eingeschränkt</strong>. Während der Trennung können die bisherigen Lebensumstände grundsätzlich beibehalten werden. Wer während der Ehe nicht erwerbstätig war, muss nicht sofort eine Arbeit aufnehmen – ausser bei einer Mangelsituation.</p>
+
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schulstufenmodell bei Kindern</h3>
+
+    <p class="text-gray-700 mb-4">Bei Kindern gilt das Schulstufenmodell für die Erwerbsobliegenheit des hauptbetreuenden Elternteils:</p>
 
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Alter des jüngsten Kindes</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Zumutbares Pensum</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Schulstufe</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zumutbares Erwerbspensum</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Vor Kindergarten (0-4 Jahre)</td>
+                    <td class="px-6 py-4 font-semibold text-navy">0-4 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">Vor Kindergarten</td>
                     <td class="px-6 py-4 text-gray-700">0%</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Kindergarten/Primarschule (4-12 Jahre)</td>
+                    <td class="px-6 py-4 font-semibold text-navy">4-12 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">Kindergarten / Primarschule</td>
                     <td class="px-6 py-4 text-gray-700">50%</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Sekundarstufe I (12-16 Jahre)</td>
+                    <td class="px-6 py-4 font-semibold text-navy">12-16 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">Sekundarstufe I</td>
                     <td class="px-6 py-4 text-gray-700">80%</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">Ab 16 Jahren</td>
+                    <td class="px-6 py-4 text-gray-700">Sekundarstufe II / Erwachsen</td>
                     <td class="px-6 py-4 text-gray-700">100%</td>
                 </tr>
             </tbody>
@@ -191,52 +436,369 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Dauer und Ende des Trennungsunterhalts</h2>
 
-    <p class="text-gray-700 mb-4">Der Trennungsunterhalt gilt für die Dauer des Getrenntlebens. Er endet:</p>
+    <p class="text-gray-700 mb-4">Der Trennungsunterhalt gilt für die <strong>Dauer des Getrenntlebens</strong>. Er endet bei:</p>
+
     <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Bei Wiedervereinigung der Ehegatten</li>
-        <li>Bei rechtskräftiger Scheidung</li>
-        <li>Bei Tod eines Ehegatten</li>
+        <li><strong>Wiedervereinigung:</strong> Wiederaufnahme des gemeinsamen Haushalts</li>
+        <li><strong>Scheidung:</strong> Mit Rechtskraft des Scheidungsurteils (dann gilt nachehelicher Unterhalt)</li>
+        <li><strong>Tod:</strong> Tod eines Ehegatten</li>
+        <li><strong>Abänderung:</strong> Gerichtliche Aufhebung oder Reduktion nach Art. 179 ZGB</li>
     </ul>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Anpassung des Trennungsunterhalts</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Anpassung des Trennungsunterhalts (Art. 179 ZGB)</h2>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Art. 179 ZGB - Abänderung</h3>
-    <p class="text-gray-700 mb-4">Voraussetzungen für eine Anpassung:</p>
+    <p class="text-gray-700 mb-4">Bei wesentlicher und dauerhafter Veränderung der Verhältnisse kann eine <strong>Anpassung</strong> beantragt werden:</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Voraussetzungen für eine Abänderung</h3>
+
     <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Wesentliche Veränderung der Verhältnisse</li>
-        <li>Dauerhafte Änderung (nicht nur vorübergehend)</li>
-        <li>Änderung nach Erlass des Eheschutzentscheids</li>
+        <li>Die Änderung muss <strong>wesentlich</strong> sein (in der Regel mindestens 10% des Einkommens)</li>
+        <li>Die Änderung muss <strong>dauerhaft</strong> sein (nicht nur vorübergehend)</li>
+        <li>Die Änderung muss <strong>nach Erlass</strong> des ursprünglichen Eheschutzentscheids eingetreten sein</li>
+        <li>Die Änderung darf <strong>nicht selbst verschuldet</strong> sein (z.B. freiwillige Kündigung)</li>
     </ul>
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Typische Änderungsgründe</h3>
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Arbeitsplatzverlust oder Lohnerhöhung</li>
-        <li>Aufnahme einer Erwerbstätigkeit</li>
-        <li>Pensionierung</li>
-        <li>Änderung der Wohnsituation</li>
-        <li>Änderung der Kinderbetreuungssituation</li>
-    </ul>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Änderungsgrund</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Mögliche Auswirkung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Arbeitsplatzverlust</td>
+                    <td class="px-6 py-4 text-gray-700">Reduktion oder Aufhebung (nicht bei selbst verschuldetem Verlust)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Lohnerhöhung</td>
+                    <td class="px-6 py-4 text-gray-700">Erhöhung des Unterhalts möglich</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Aufnahme Erwerbstätigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Reduktion des Unterhaltsanspruchs</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Pensionierung</td>
+                    <td class="px-6 py-4 text-gray-700">Neuberechnung auf Basis Renteneinkommen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Änderung Kinderbetreuung</td>
+                    <td class="px-6 py-4 text-gray-700">Anpassung an neue Betreuungssituation</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Neues Konkubinat</td>
+                    <td class="px-6 py-4 text-gray-700">Reduktion bei Kostenersparnis oder Unterstützungsleistungen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Vollstreckung und Durchsetzung</h2>
 
-    <p class="text-gray-700 mb-4">Der rechtskräftige Eheschutzentscheid ist ein definitiver Rechtsöffnungstitel. Bei Nichtzahlung:</p>
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Betreibungsverfahren:</strong> Definitive Rechtsöffnung gestützt auf Eheschutzentscheid</li>
-        <li><strong>Schuldneranweisung (Art. 177 ZGB):</strong> Gericht kann Arbeitgeber anweisen, direkt zu zahlen</li>
-        <li><strong>Inkassohilfe und Bevorschussung:</strong> Kantonale Alimentenhilfe steht zur Verfügung</li>
-    </ul>
+    <p class="text-gray-700 mb-4">Der rechtskräftige Eheschutzentscheid ist ein <strong>definitiver Rechtsöffnungstitel</strong>. Bei Nichtzahlung stehen verschiedene Durchsetzungsmöglichkeiten zur Verfügung:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Massnahme</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Vorteile</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Betreibung</td>
+                    <td class="px-6 py-4 text-gray-700">Definitive Rechtsöffnung gestützt auf Eheschutzentscheid</td>
+                    <td class="px-6 py-4 text-gray-700">Schnell und effektiv</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Schuldneranweisung (Art. 177 ZGB)</td>
+                    <td class="px-6 py-4 text-gray-700">Gericht weist Arbeitgeber an, direkt zu zahlen</td>
+                    <td class="px-6 py-4 text-gray-700">Regelmässige Zahlung gesichert</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Inkassohilfe</td>
+                    <td class="px-6 py-4 text-gray-700">Kantonale Alimentenhilfe unterstützt beim Eintreiben</td>
+                    <td class="px-6 py-4 text-gray-700">Kostenlos</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Bevorschussung</td>
+                    <td class="px-6 py-4 text-gray-700">Kanton schiesst Unterhalt vor</td>
+                    <td class="px-6 py-4 text-gray-700">Sofortige finanzielle Sicherheit</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kosten des Eheschutzverfahrens</h2>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kostenart</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Ungefähre Kosten</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bemerkung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Gerichtsgebühr</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'000–3'000</td>
+                    <td class="px-6 py-4 text-gray-700">Je nach Kanton und Streitwert</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Anwaltskosten (einfacher Fall)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 3'000–6'000</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Einigung an der Verhandlung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Anwaltskosten (streitig)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 6'000–15'000</td>
+                    <td class="px-6 py-4 text-gray-700">Bei aufwändigem Verfahren</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Unentgeltliche Rechtspflege</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 0</td>
+                    <td class="px-6 py-4 text-gray-700">Bei nachgewiesener Bedürftigkeit</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Tipp – Unentgeltliche Rechtspflege:</p>
+        <p class="text-gray-700">Bei fehlenden finanziellen Mitteln kann ein <strong>Gesuch um unentgeltliche Rechtspflege</strong> gestellt werden. Bei Bedürftigkeit werden Gerichtskosten und Anwaltskosten vom Staat übernommen. Das Gesuch muss zusammen mit dem Eheschutzgesuch oder möglichst früh eingereicht werden.</p>
+    </div>
+
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+        <p class="text-gray-700 mb-6">Das Eheschutzverfahren ist ein summarisches Verfahren mit oft kurzen Fristen und begrenzten Beweismöglichkeiten. Die korrekte Darstellung Ihrer finanziellen Situation und Ihrer Ansprüche ist entscheidend für das Ergebnis – insbesondere da der Eheschutzentscheid oft als Grundlage für das spätere Scheidungsverfahren dient.</p>
+        <p class="text-gray-700 mb-6">Besonders in folgenden Situationen ist die Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> dringend empfohlen:</p>
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Bei Einleitung eines Eheschutzverfahrens oder Erhalt eines Eheschutzgesuchs</li>
+            <li>Bei komplexen Einkommens- oder Vermögensverhältnissen (Selbständigkeit, variable Einkommen)</li>
+            <li>Wenn gemeinsame Kinder betroffen sind und Obhut/Betreuung streitig ist</li>
+            <li>Bei Streitigkeiten über die Zuweisung der Familienwohnung</li>
+            <li>Wenn häusliche Gewalt vorliegt und superprovisorische Massnahmen nötig sind</li>
+            <li>Wenn der andere Ehegatte bereits anwaltlich vertreten ist</li>
+        </ul>
+        <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kann die korrekte Berechnung nach der zweistufigen Methode sicherstellen und Ihre Interessen vor Gericht wirksam vertreten. Auch bei der späteren Anpassung des Trennungsunterhalts ist fachkundige Unterstützung durch einen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> von grossem Wert.</p>
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Lassen Sie Ihre Situation von einem erfahrenen Familienrechtsanwalt beurteilen. Wir prüfen Ihre rechtlichen Möglichkeiten und zeigen Ihnen den besten Weg auf – auch im Hinblick auf ein späteres Scheidungsverfahren.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
 
-    <p class="text-gray-700 mb-6">Der Trennungsunterhalt sichert die finanzielle Stellung beider Ehegatten während des Getrenntlebens. Die Berechnung erfolgt nach der zweistufigen Methode, wobei beide Ehegatten möglichst das bisherige Leben weiterführen können sollen.</p>
+    <p class="text-gray-700 mb-4">Der Trennungsunterhalt sichert die finanzielle Stellung beider Ehegatten während des Getrenntlebens. Die wichtigsten Erkenntnisse:</p>
 
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy mb-2">Handlungsempfehlungen:</p>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Grundsatz des gleichwertigen Lebens:</strong> Anders als beim nachehelichen Unterhalt sollen beide Ehegatten möglichst den bisherigen Lebensstandard aufrechterhalten können.</li>
+        <li><strong>Zweistufige Methode:</strong> Die Berechnung erfolgt schweizweit einheitlich nach BGE 147 III 301 – Bedarf ermitteln, dann Überschuss verteilen.</li>
+        <li><strong>Eheschutzverfahren:</strong> Summarisches Verfahren mit ca. 2-4 Monaten Dauer, bei Dringlichkeit superprovisorische Massnahmen möglich.</li>
+        <li><strong>Vollstreckbarkeit:</strong> Der Eheschutzentscheid ist ein definitiver Rechtsöffnungstitel.</li>
+        <li><strong>Anpassung:</strong> Bei wesentlicher Veränderung der Verhältnisse ist eine Abänderung nach Art. 179 ZGB möglich.</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Relevante Rechtsprechung:</p>
         <ul class="list-disc list-inside text-gray-700 space-y-1">
-            <li>Sammeln Sie alle relevanten finanziellen Unterlagen vor dem Verfahren</li>
-            <li>Berechnen Sie Ihren Bedarf realistisch und dokumentieren Sie ihn</li>
-            <li>Ziehen Sie bei komplexen Verhältnissen einen Anwalt bei</li>
-            <li>Prüfen Sie die Möglichkeit der unentgeltlichen Rechtspflege</li>
+            <li><strong>BGE 147 III 301:</strong> Zweistufige Methode für Trennungsunterhalt</li>
+            <li><strong>BGE 147 III 293:</strong> Zweistufige Methode für nachehelichen Unterhalt</li>
+            <li><strong>BGE 147 III 265:</strong> Zweistufige Methode für Kindesunterhalt</li>
+            <li><strong>5A_800/2019:</strong> Einheitliches Vorgehen beim Trennungsunterhalt</li>
+            <li><strong>5A_891/2018:</strong> Einheitliches Vorgehen beim Scheidungsunterhalt</li>
         </ul>
     </div>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie hoch ist der Trennungsunterhalt?</h3>
+                <p class="text-gray-700">Die Höhe wird nach der zweistufigen Methode berechnet (BGE 147 III 301). Zunächst wird der Bedarf beider Ehegatten ermittelt (Grundbetrag, Wohnkosten, Krankenversicherung, Steuern), dann ein allfälliger Überschuss hälftig verteilt. Das Ziel ist, dass beide Ehegatten möglichst den bisherigen Lebensstandard aufrechterhalten können.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie lange dauert ein Eheschutzverfahren?</h3>
+                <p class="text-gray-700">Das Eheschutzverfahren ist ein summarisches Verfahren und dauert in der Regel 2-4 Monate. Bei dringlichen Fällen (z.B. häusliche Gewalt) kann das Gericht superprovisorische Massnahmen innert weniger Tage anordnen, ohne die Gegenseite vorher anzuhören (Art. 265 ZPO).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen Trennungsunterhalt und nachehelichem Unterhalt?</h3>
+                <p class="text-gray-700">Beim Trennungsunterhalt gilt der Grundsatz des gleichwertigen Lebens – beide Ehegatten sollen den bisherigen Lebensstandard aufrechterhalten können. Beim nachehelichen Unterhalt gilt dagegen der Grundsatz der Eigenversorgung – jeder Ehegatte soll nach der Scheidung grundsätzlich für sich selbst sorgen. Dies beeinflusst sowohl die Höhe des Unterhalts als auch die Erwerbsobliegenheit.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann der Trennungsunterhalt angepasst werden?</h3>
+                <p class="text-gray-700">Ja, bei wesentlicher und dauerhafter Veränderung der Verhältnisse kann eine Anpassung nach Art. 179 ZGB beantragt werden. Die Änderung muss mindestens 10% des Einkommens betragen und nach dem ursprünglichen Entscheid eingetreten sein. Typische Gründe sind Arbeitsplatzverlust, Lohnerhöhung, Pensionierung oder Änderung der Betreuungssituation.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Brauche ich einen Anwalt für das Eheschutzverfahren?</h3>
+                <p class="text-gray-700">Ein Anwalt ist nicht zwingend vorgeschrieben, bei komplexen Fällen jedoch dringend empfohlen. Das Eheschutzverfahren hat kurze Fristen und begrenzte Beweismöglichkeiten. Zudem dient der Eheschutzentscheid oft als Grundlage für das spätere Scheidungsverfahren, weshalb eine korrekte Berechnung und Darstellung von Anfang an wichtig ist.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert bei einem Mankofall?</h3>
+                <p class="text-gray-700">Wenn das Familieneinkommen nicht für zwei getrennte Haushalte reicht, wird der Bedarf nach einer Rangfolge gedeckt: Zuerst das Existenzminimum der minderjährigen Kinder (Art. 276a ZGB), dann des Unterhaltspflichtigen, dann des Ehegatten. Das verbleibende Manko muss der Unterhaltsberechtigte selbst tragen – gegebenenfalls durch Bezug von Sozialhilfe.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was kostet ein Eheschutzverfahren?</h3>
+                <p class="text-gray-700">Die Gerichtsgebühr beträgt je nach Kanton und Streitwert ca. CHF 1'000-3'000. Anwaltskosten liegen bei einfachen Fällen bei CHF 3'000-6'000, bei streitigen Verfahren bei CHF 6'000-15'000. Bei Bedürftigkeit kann unentgeltliche Rechtspflege beantragt werden, wodurch Gerichts- und Anwaltskosten vom Staat übernommen werden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wann endet der Trennungsunterhalt?</h3>
+                <p class="text-gray-700">Der Trennungsunterhalt endet bei Wiedervereinigung der Ehegatten, bei rechtskräftiger Scheidung (dann gilt der nacheheliche Unterhalt), bei Tod eines Ehegatten oder durch gerichtliche Abänderung nach Art. 179 ZGB. Bei Scheidung wird der Unterhalt neu berechnet – dann unter dem Grundsatz der Eigenversorgung.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie wird der Trennungsunterhalt durchgesetzt, wenn nicht bezahlt wird?</h3>
+                <p class="text-gray-700">Der Eheschutzentscheid ist ein definitiver Rechtsöffnungstitel. Bei Nichtzahlung können Sie eine Betreibung einleiten, das Gericht kann eine Schuldneranweisung an den Arbeitgeber erlassen (Art. 177 ZGB), oder Sie können die kantonale Alimentenhilfe für Inkasso und Bevorschussung in Anspruch nehmen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich während des Scheidungsverfahrens noch ein Eheschutzverfahren beantragen?</h3>
+                <p class="text-gray-700">Nein, sobald ein Scheidungsverfahren eingeleitet wurde, kann kein Eheschutzverfahren mehr beantragt werden (Art. 276 ZPO). In diesem Fall können jedoch im Rahmen des Scheidungsverfahrens vorsorgliche Massnahmen beantragt werden, die dieselben Regelungsbereiche abdecken.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Trennungsunterhalt in der Schweiz: Eheschutz, Berechnung & Verfahren",
+        "description": "Trennungsunterhalt Schweiz: Berechnung nach zweistufiger Methode (BGE 147 III 301), Eheschutzverfahren, Kosten & Ablauf. Umfassender Leitfaden mit BGE-Rechtsprechung.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-25",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/unterhalt/trennungsunterhalt"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Wie hoch ist der Trennungsunterhalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Höhe wird nach der zweistufigen Methode berechnet (BGE 147 III 301). Zunächst wird der Bedarf beider Ehegatten ermittelt (Grundbetrag, Wohnkosten, Krankenversicherung, Steuern), dann ein allfälliger Überschuss hälftig verteilt. Das Ziel ist, dass beide Ehegatten möglichst den bisherigen Lebensstandard aufrechterhalten können."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie lange dauert ein Eheschutzverfahren?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das Eheschutzverfahren ist ein summarisches Verfahren und dauert in der Regel 2-4 Monate. Bei dringlichen Fällen (z.B. häusliche Gewalt) kann das Gericht superprovisorische Massnahmen innert weniger Tage anordnen, ohne die Gegenseite vorher anzuhören (Art. 265 ZPO)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen Trennungsunterhalt und nachehelichem Unterhalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Beim Trennungsunterhalt gilt der Grundsatz des gleichwertigen Lebens – beide Ehegatten sollen den bisherigen Lebensstandard aufrechterhalten können. Beim nachehelichen Unterhalt gilt dagegen der Grundsatz der Eigenversorgung – jeder Ehegatte soll nach der Scheidung grundsätzlich für sich selbst sorgen. Dies beeinflusst sowohl die Höhe des Unterhalts als auch die Erwerbsobliegenheit."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann der Trennungsunterhalt angepasst werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, bei wesentlicher und dauerhafter Veränderung der Verhältnisse kann eine Anpassung nach Art. 179 ZGB beantragt werden. Die Änderung muss mindestens 10% des Einkommens betragen und nach dem ursprünglichen Entscheid eingetreten sein. Typische Gründe sind Arbeitsplatzverlust, Lohnerhöhung, Pensionierung oder Änderung der Betreuungssituation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Brauche ich einen Anwalt für das Eheschutzverfahren?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ein Anwalt ist nicht zwingend vorgeschrieben, bei komplexen Fällen jedoch dringend empfohlen. Das Eheschutzverfahren hat kurze Fristen und begrenzte Beweismöglichkeiten. Zudem dient der Eheschutzentscheid oft als Grundlage für das spätere Scheidungsverfahren, weshalb eine korrekte Berechnung und Darstellung von Anfang an wichtig ist."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert bei einem Mankofall?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Wenn das Familieneinkommen nicht für zwei getrennte Haushalte reicht, wird der Bedarf nach einer Rangfolge gedeckt: Zuerst das Existenzminimum der minderjährigen Kinder (Art. 276a ZGB), dann des Unterhaltspflichtigen, dann des Ehegatten. Das verbleibende Manko muss der Unterhaltsberechtigte selbst tragen – gegebenenfalls durch Bezug von Sozialhilfe."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was kostet ein Eheschutzverfahren?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Gerichtsgebühr beträgt je nach Kanton und Streitwert ca. CHF 1'000-3'000. Anwaltskosten liegen bei einfachen Fällen bei CHF 3'000-6'000, bei streitigen Verfahren bei CHF 6'000-15'000. Bei Bedürftigkeit kann unentgeltliche Rechtspflege beantragt werden, wodurch Gerichts- und Anwaltskosten vom Staat übernommen werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wann endet der Trennungsunterhalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der Trennungsunterhalt endet bei Wiedervereinigung der Ehegatten, bei rechtskräftiger Scheidung (dann gilt der nacheheliche Unterhalt), bei Tod eines Ehegatten oder durch gerichtliche Abänderung nach Art. 179 ZGB. Bei Scheidung wird der Unterhalt neu berechnet – dann unter dem Grundsatz der Eigenversorgung."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie wird der Trennungsunterhalt durchgesetzt, wenn nicht bezahlt wird?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der Eheschutzentscheid ist ein definitiver Rechtsöffnungstitel. Bei Nichtzahlung können Sie eine Betreibung einleiten, das Gericht kann eine Schuldneranweisung an den Arbeitgeber erlassen (Art. 177 ZGB), oder Sie können die kantonale Alimentenhilfe für Inkasso und Bevorschussung in Anspruch nehmen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich während des Scheidungsverfahrens noch ein Eheschutzverfahren beantragen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, sobald ein Scheidungsverfahren eingeleitet wurde, kann kein Eheschutzverfahren mehr beantragt werden (Art. 276 ZPO). In diesem Fall können jedoch im Rahmen des Scheidungsverfahrens vorsorgliche Massnahmen beantragt werden, die dieselben Regelungsbereiche abdecken."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Unterhalt",
+                "item": "https://familienrechtanwalt.ch/unterhalt"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Trennungsunterhalt",
+                "item": "https://familienrechtanwalt.ch/unterhalt/trennungsunterhalt"
+            }
+        ]
+    })} />
 </ArticleLayout>

@@ -3,93 +3,359 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 ---
 
 <ArticleLayout
-    title="Der Unterhaltsvertrag in der Schweiz: Inhalt, Genehmigung und rechtliche Anforderungen"
-    description="Der Unterhaltsvertrag in der Schweiz: Inhalt, KESB-Genehmigung und rechtliche Anforderungen. Vollstaendiger Leitfaden zur Regelung des Kindesunterhalts."
-    keywords="Unterhaltsvertrag Schweiz, KESB Genehmigung, Kindesunterhalt Vertrag, Art. 287 ZGB, Alimentenvertrag"
+    title="Der Unterhaltsvertrag in der Schweiz: Inhalt, KESB-Genehmigung und Abänderung"
+    description="Unterhaltsvertrag Schweiz: Art. 287 & 287a ZGB erklärt. KESB-Genehmigung, Inhalt, Muster, Kosten, Abänderung und vollstreckbarer Titel. Vollständiger Leitfaden."
+    keywords="Unterhaltsvertrag Schweiz, KESB Genehmigung, Kindesunterhalt Vertrag, Art. 287 ZGB, Art. 287a ZGB, Alimentenvertrag, Barunterhalt, Betreuungsunterhalt"
     category="Unterhalt"
     categoryLink="/unterhalt"
 >
-    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Der Unterhaltsvertrag ist ein wichtiges Instrument zur Regelung von Kindesunterhalt bei unverheirateten oder geschiedenen Eltern. Er bedarf der Genehmigung durch die KESB oder das Gericht, um vollstreckbar zu sein.</p>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Der Unterhaltsvertrag regelt den Kindesunterhalt schriftlich zwischen den Eltern und muss von der KESB genehmigt werden (Art. 287 ZGB) – erst dann ist er verbindlich und vollstreckbar.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Art. 287a ZGB schreibt den Mindestinhalt vor: Einkommen/Vermögen beider Eltern, Barunterhalt, Betreuungsunterhalt, Manko und Indexierungsklausel müssen enthalten sein.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Der genehmigte Vertrag ist ein vollstreckbarer Titel – vergleichbar mit einem Gerichtsurteil – und ermöglicht Betreibung, Schuldneranweisung und Inkassohilfe.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bei volljährigen Kindern ist keine KESB-Genehmigung erforderlich – sie können den Unterhalt direkt mit den Eltern vereinbaren.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Änderungen des Unterhaltsvertrags sind bei wesentlich veränderten Verhältnissen möglich und müssen ebenfalls genehmigt werden.</span>
+            </li>
+        </ul>
+    </div>
+
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Der Unterhaltsvertrag ist ein zentrales Instrument zur Regelung des Kindesunterhalts bei unverheirateten oder getrennt lebenden Eltern. Er ermöglicht eine einvernehmliche Lösung ausserhalb des Gerichts, muss jedoch von der KESB genehmigt werden, um rechtsverbindlich und vollstreckbar zu sein. Dieser Artikel erklärt alle rechtlichen Anforderungen, den erforderlichen Inhalt nach Art. 287a ZGB und das Genehmigungsverfahren.</p>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Was ist ein Unterhaltsvertrag?</h2>
 
-    <p class="text-gray-700 mb-4">Der Unterhaltsvertrag ist eine schriftliche Vereinbarung zwischen den Eltern ueber die Unterhaltsbeitraege fuer das gemeinsame Kind. Er regelt, welcher Elternteil in welcher Hoehe zum Unterhalt des Kindes beitraegt.</p>
+    <p class="text-gray-700 mb-4">Der Unterhaltsvertrag ist eine schriftliche Vereinbarung zwischen den Eltern über die Unterhaltsbeiträge für das gemeinsame Kind. Er regelt, welcher Elternteil in welcher Höhe zum Unterhalt des Kindes beiträgt – sowohl den Barunterhalt als auch den Betreuungsunterhalt.</p>
 
-    <p class="text-gray-700 mb-6">Der genehmigte Unterhaltsvertrag ist ein vollstreckbarer Titel, vergleichbar mit einem Gerichtsurteil. Er ermoeglicht die definitive Rechtsoeffnung bei Betreibung, die Beantragung einer Schuldneranweisung und die Inanspruchnahme der Inkassohilfe.</p>
+    <p class="text-gray-700 mb-6">Ein von der KESB genehmigter Unterhaltsvertrag ist ein vollstreckbarer Titel, vergleichbar mit einem Gerichtsurteil. Er ermöglicht:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Die definitive Rechtsöffnung bei Betreibung (Art. 80 SchKG)</li>
+        <li>Die Beantragung einer Schuldneranweisung (Art. 291 ZGB)</li>
+        <li>Die Inanspruchnahme der Inkassohilfe (Art. 131 ZGB)</li>
+        <li>Die Alimentenbevorschussung durch die Gemeinde</li>
+    </ul>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen</h2>
 
     <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy">Art. 287 ZGB - Unterhaltsvertrag:</p>
-        <p class="text-gray-700">"(1) Unterhaltsvertraege werden fuer das Kind erst mit der Genehmigung durch die Kindesschutzbehoerde verbindlich. (2) Vertraglich festgelegte Unterhaltsbeitraege koennen geaendert werden, soweit dies nicht mit Genehmigung der Kindesschutzbehoerde ausgeschlossen worden ist."</p>
+        <p class="font-semibold text-navy">Art. 287 ZGB – Unterhaltsvertrag:</p>
+        <p class="text-gray-700 mt-2"><em>«(1) Unterhaltsverträge werden für das Kind erst mit der Genehmigung durch die Kindesschutzbehörde verbindlich.</em></p>
+        <p class="text-gray-700"><em>(2) Vertraglich festgelegte Unterhaltsbeiträge können geändert werden, soweit dies nicht mit Genehmigung der Kindesschutzbehörde ausgeschlossen worden ist.</em></p>
+        <p class="text-gray-700"><em>(3) Wird der Vertrag in einem gerichtlichen Verfahren geschlossen, so ist für die Genehmigung das Gericht zuständig.»</em></p>
     </div>
 
-    <p class="text-gray-700 mb-6">Die Genehmigung ist nach Art. 287 Abs. 1 ZGB ein Gueltigkeitserfordernis. Ohne Genehmigung ist der Unterhaltsvertrag nicht verbindlich und nicht vollstreckbar.</p>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
+        <p class="font-semibold text-navy">Art. 287a ZGB – Inhalt des Unterhaltsvertrags und des Entscheids:</p>
+        <p class="text-gray-700 mt-2"><em>«Werden im Unterhaltsvertrag oder im Entscheid Unterhaltsbeiträge festgelegt, so ist darin anzugeben:</em></p>
+        <p class="text-gray-700"><em>a. von welchem Einkommen und Vermögen jedes Elternteils und jedes Kindes ausgegangen wird;</em></p>
+        <p class="text-gray-700"><em>b. welcher Betrag für jedes Kind bestimmt ist;</em></p>
+        <p class="text-gray-700"><em>c. welcher Betrag zur Deckung des gebührenden Unterhalts jedes Kindes fehlt;</em></p>
+        <p class="text-gray-700"><em>d. ob und in welchem Ausmass die Unterhaltsbeiträge den Veränderungen der Lebenskosten angepasst werden.»</em></p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gesetzliche Grundlagen im Überblick</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gesetzesartikel</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Regelungsinhalt</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Art. 287 Abs. 1 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Genehmigung durch KESB als Gültigkeitsvoraussetzung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Art. 287 Abs. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Änderbarkeit des Vertrags</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Art. 287 Abs. 3 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Gerichtliche Genehmigung bei Vertragsschluss im Verfahren</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Art. 287a ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Pflichtinhalt des Unterhaltsvertrags (Transparenzvorschrift)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Art. 286 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Abänderung durch das Gericht</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Art. 286a ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Nachzahlung bei ausserordentlicher Leistungssteigerung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Art. 301a ZPO</td>
+                    <td class="px-6 py-4 text-gray-700">Entsprechende Vorschrift für gerichtliche Entscheide</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wer braucht einen Unterhaltsvertrag?</h2>
 
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Personengruppe</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Situation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">KESB-Genehmigung?</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Unverheiratete Eltern</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Trennung, Geburt des Kindes, Änderung der Betreuungssituation</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold text-green-600">Ja</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Geschiedene Eltern</td>
+                    <td class="px-6 py-4 text-gray-700">Bei nachträglicher Änderung ausserhalb eines Gerichtsverfahrens</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold text-green-600">Ja</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Getrennt lebende Ehegatten</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Regelung ausserhalb des Eheschutzverfahrens</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold text-green-600">Ja</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Volljährige Kinder</td>
+                    <td class="px-6 py-4 text-gray-700">Regelung des Volljährigenunterhalts direkt mit Eltern</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold text-red-600">Nein</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
+        <p class="font-semibold text-navy">Wichtig – Volljährige Kinder:</p>
+        <p class="text-gray-700">Das volljährige Kind und der zahlungspflichtige Elternteil können den Unterhalt selbstständig regeln. Der entsprechende Vertrag bedarf keiner behördlichen Genehmigung. Bei Uneinigkeit ist das Gericht am Wohnsitz einer Partei für die Festsetzung zuständig.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Pflichtinhalt nach Art. 287a ZGB</h2>
+
+    <p class="text-gray-700 mb-4">Mit der Kindesunterhaltsrevision 2017 wurde Art. 287a ZGB eingeführt, der den Mindestinhalt des Unterhaltsvertrags verbindlich vorschreibt. Diese Transparenzvorschrift soll sicherstellen, dass spätere Abänderungen nachvollziehbar möglich sind.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Pflichtangabe (Art. 287a ZGB)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erklärung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">a) Einkommen und Vermögen</td>
+                    <td class="px-6 py-4 text-gray-700">Von welchem Einkommen und Vermögen jedes Elternteils und jedes Kindes ausgegangen wird</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">b) Betrag pro Kind</td>
+                    <td class="px-6 py-4 text-gray-700">Welcher Betrag für jedes Kind bestimmt ist (aufgeschlüsselt in Bar- und Betreuungsunterhalt)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">c) Manko (Fehlbetrag)</td>
+                    <td class="px-6 py-4 text-gray-700">Welcher Betrag zur Deckung des gebührenden Unterhalts fehlt</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">d) Indexierung</td>
+                    <td class="px-6 py-4 text-gray-700">Ob und in welchem Ausmass Anpassung an Lebenskosten erfolgt</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Detaillierte Inhaltsanforderungen</h3>
+
+    <p class="text-gray-700 mb-4">Im Unterhaltsvertrag sind folgende Grundlagen einzeln anzugeben:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kategorie</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erforderliche Angaben</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Personalien</td>
+                    <td class="px-6 py-4 text-gray-700">Vollständige Namen, Geburtsdaten, Adressen von Mutter, Vater und Kind(ern)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Einkommen Eltern</td>
+                    <td class="px-6 py-4 text-gray-700">Nettoeinkommen beider Elternteile mit Berechnungsgrundlage</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Barbedarf Eltern</td>
+                    <td class="px-6 py-4 text-gray-700">Familienrechtliches Existenzminimum beider Elternteile</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Vermögen (falls relevant)</td>
+                    <td class="px-6 py-4 text-gray-700">Vermögen der Eltern und des Kindes, sofern für Berechnung relevant</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Gebührender Unterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Barunterhalt und Betreuungsunterhalt separat ausgewiesen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Betreuungssituation</td>
+                    <td class="px-6 py-4 text-gray-700">Obhut, Betreuungsanteile, externe Betreuung (Kita, Hort)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Manko</td>
+                    <td class="px-6 py-4 text-gray-700">Fehlbetrag zum gebührenden Unterhalt bei Leistungsunfähigkeit</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Indexierung</td>
+                    <td class="px-6 py-4 text-gray-700">Anpassung an Landesindex der Konsumentenpreise (LIK)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Zahlungsmodalitäten</td>
+                    <td class="px-6 py-4 text-gray-700">Fälligkeit, Zahlungsweg, Bankverbindung</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Barunterhalt und Betreuungsunterhalt</h3>
+
+    <p class="text-gray-700 mb-4">Seit der Kindesunterhaltsrevision 2017 setzt sich der Kindesunterhalt aus zwei Komponenten zusammen, die im Vertrag separat auszuweisen sind:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Unterhaltsart</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zweck</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beispiele</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Barunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Deckung der direkten Kindeskosten</td>
+                    <td class="px-6 py-4 text-gray-700">Nahrung, Kleidung, Wohnkostenanteil, Krankenkasse, Schule, Hobbys, externe Betreuung (Kita, Hort)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Betreuungsunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Ausgleich des Erwerbsausfalls des betreuenden Elternteils</td>
+                    <td class="px-6 py-4 text-gray-700">Lebenshaltungskosten des Elternteils während der Betreuungszeit</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
+        <p class="font-semibold text-navy">Wichtig:</p>
+        <p class="text-gray-700">Der Betreuungsunterhalt fällt bei mehreren zu betreuenden Kindern nur einmal an, da der betreuende Elternteil den Erwerbsausfall nur einmal hat. Er wird jedoch anteilig auf die Kinder verteilt.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Der Mankofall</h3>
+
+    <p class="text-gray-700 mb-4">Lässt sich angesichts beschränkter Leistungsfähigkeit nicht der gesamte als gebührend erachtete Unterhalt decken (sog. Mankofall), ist der Fehlbetrag im Unterhaltsvertrag auszuweisen (Art. 287a lit. c ZGB). Dies ist wichtig, weil:</p>
+
     <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Unverheiratete Eltern:</strong> Bei Trennung, bei Geburt des Kindes, bei Aenderung der Betreuungssituation</li>
-        <li><strong>Geschiedene Eltern:</strong> Bei nachtraeglicher Aenderung der im Scheidungsurteil geregelten Alimente</li>
-        <li><strong>Getrennt lebende Ehegatten:</strong> Bei Regelung ausserhalb des Eheschutzverfahrens</li>
-    </ul>
-
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Inhalt des Unterhaltsvertrags</h2>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Mindestinhalt</h3>
-
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Personenverhaeltnis:</strong> Vollstaendige Personalien der Mutter, des Vaters und des Kindes</li>
-        <li><strong>Ausgangslage:</strong> Einkommen beider Eltern, Vermoegen, Betreuungssituation</li>
-        <li><strong>Unterhaltsregelung:</strong> Hoehe des Barunterhalts, Hoehe des Betreuungsunterhalts, Beginn und Ende der Zahlungspflicht</li>
-    </ul>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Empfohlener erweiterter Inhalt</h3>
-
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Zahlungsmodalitaeten:</strong> Zahlungstermin, Zahlungsweg, Bankverbindung</li>
-        <li><strong>Indexierung:</strong> Anpassung an die Teuerung (Landesindex der Konsumentenpreise)</li>
-        <li><strong>Zusaetzliche Kosten:</strong> Regelung ausserordentlicher Kosten (Kieferorthopaedie, Nachhilfe)</li>
-        <li><strong>Informationspflichten:</strong> Mitteilung von Einkommensaenderungen</li>
+        <li>Bei späterer Leistungssteigerung eine Nachzahlung möglich ist (Art. 286a ZGB)</li>
+        <li>Der gebührende Unterhalt dokumentiert wird</li>
+        <li>Klarheit für eine allfällige Alimentenbevorschussung besteht</li>
+        <li>Bei Verbesserung der finanziellen Situation eine Anpassung erleichtert wird</li>
     </ul>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Genehmigung durch die KESB</h2>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Zustaendigkeit</h3>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Zuständigkeit</h3>
 
-    <p class="text-gray-700 mb-6">Bei Einigkeit von nicht miteinander verheirateten Eltern ist die KESB am Wohnsitz des Kindes fuer die Genehmigung des Unterhaltsvertrages zustaendig.</p>
+    <p class="text-gray-700 mb-6">Bei Einigkeit von nicht miteinander verheirateten oder getrennt lebenden Eltern ist die KESB am Wohnsitz des Kindes für die Genehmigung des Unterhaltsvertrages zuständig. Wird der Vertrag in einem gerichtlichen Verfahren (z.B. Scheidung, Eheschutz) geschlossen, ist das Gericht für die Genehmigung zuständig (Art. 287 Abs. 3 ZGB).</p>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Verfahren</h3>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
+        <p class="font-semibold text-navy">Schlichtungsverfahren:</p>
+        <p class="text-gray-700">Das Schlichtungsverfahren vor dem Friedensrichter ist kein gerichtliches Verfahren im Sinne von Art. 287 Abs. 3 ZGB. Für die Genehmigung einer vor dem Friedensrichter geschlossenen Unterhaltsvereinbarung ist daher die KESB zuständig.</p>
+    </div>
 
-    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Einreichung:</strong> Einreichung des unterzeichneten Vertrags mit allen erforderlichen Unterlagen</li>
-        <li><strong>Pruefung:</strong> Pruefung der formellen Voraussetzungen und materiellen Angemessenheit</li>
-        <li><strong>Entscheid:</strong> Genehmigung oder Ablehnung, bei Genehmigung: Rechtskraeftiger Titel</li>
-    </ol>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Verfahrensablauf</h3>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Voraussetzungen fuer die Genehmigung</h2>
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Schritt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">1. Vorbereitung</td>
+                    <td class="px-6 py-4 text-gray-700">Unterlagen zusammenstellen, Unterhalt berechnen, Vertrag entwerfen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">2. Unterzeichnung</td>
+                    <td class="px-6 py-4 text-gray-700">Beide Elternteile unterzeichnen den Vertrag</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">3. Einreichung</td>
+                    <td class="px-6 py-4 text-gray-700">Einreichung des unterzeichneten Vertrags mit allen Unterlagen bei der KESB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">4. Prüfung</td>
+                    <td class="px-6 py-4 text-gray-700">KESB prüft formelle und materielle Voraussetzungen (Kindeswohl)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">5. Rückfragen</td>
+                    <td class="px-6 py-4 text-gray-700">Ggf. Nachforderung von Unterlagen oder Anpassungsvorschläge</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">6. Entscheid</td>
+                    <td class="px-6 py-4 text-gray-700">Genehmigung oder Ablehnung – bei Genehmigung: rechtskräftiger, vollstreckbarer Titel</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Formelle Voraussetzungen</h3>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Prüfung durch die KESB</h3>
 
-    <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+    <p class="text-gray-700 mb-4">Die KESB prüft den Vertrag auf formelle und materielle Voraussetzungen:</p>
+
+    <p class="text-gray-700 mb-2"><strong>Formelle Voraussetzungen:</strong></p>
+    <ul class="list-disc list-inside text-gray-700 mb-4 space-y-1">
         <li>Schriftform</li>
         <li>Unterschriften beider Elternteile</li>
-        <li>Vollstaendige Personalien</li>
+        <li>Vollständige Personalien</li>
+        <li>Alle Pflichtangaben nach Art. 287a ZGB enthalten</li>
         <li>Klare und eindeutige Formulierungen</li>
     </ul>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Materielle Voraussetzungen</h3>
-
-    <p class="text-gray-700 mb-4">Die KESB prueft, ob der Vertrag dem Kindeswohl entspricht:</p>
-
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+    <p class="text-gray-700 mb-2"><strong>Materielle Voraussetzungen (Kindeswohlprüfung):</strong></p>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-1">
         <li>Entspricht der Unterhalt dem Bedarf des Kindes?</li>
-        <li>Ist die Leistungsfaehigkeit der Eltern beruecksichtigt?</li>
+        <li>Ist die Leistungsfähigkeit der Eltern korrekt berücksichtigt?</li>
         <li>Ist der Betreuungsunterhalt korrekt berechnet?</li>
-        <li>Wurde auf Kindesunterhalt verzichtet (unzulaessig)?</li>
+        <li>Wurde auf Kindesunterhalt verzichtet? (unzulässig!)</li>
+        <li>Ist die Indexierungsklausel angemessen?</li>
     </ul>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Benoetigte Unterlagen</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Benötigte Unterlagen</h2>
 
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-200">
@@ -102,61 +368,382 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
             <tbody class="divide-y divide-gray-200">
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Personenbezogen</td>
-                    <td class="px-6 py-4 text-gray-700">Ausweiskopien, Geburtsurkunde des Kindes, Wohnsitzbestaetigung</td>
+                    <td class="px-6 py-4 text-gray-700">Ausweiskopien beider Eltern, Geburtsurkunde des Kindes, Wohnsitzbestätigung, ggf. Vaterschaftsanerkennung</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">Einkommensnachweise</td>
-                    <td class="px-6 py-4 text-gray-700">Lohnabrechnungen (3-6 Monate), Steuererklaerung, bei Selbstaendigen: Geschaeftsabschluesse</td>
+                    <td class="px-6 py-4 text-gray-700">Lohnabrechnungen (3-6 Monate), letzte Steuererklärung mit Veranlagung, bei Selbständigen: Geschäftsabschlüsse (2-3 Jahre)</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Weitere Unterlagen</td>
-                    <td class="px-6 py-4 text-gray-700">Mietvertrag, Krankenkassenpolice des Kindes, Nachweis ueber Drittbetreuungskosten</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Ausgabennachweise</td>
+                    <td class="px-6 py-4 text-gray-700">Mietvertrag, Krankenkassenpolice (Eltern und Kind), Berufsauslagen-Nachweise</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Kindbezogen</td>
+                    <td class="px-6 py-4 text-gray-700">Drittbetreuungskosten (Kita, Hort), Schulbestätigung, ggf. Therapiekosten</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Vermögen (falls relevant)</td>
+                    <td class="px-6 py-4 text-gray-700">Bankkontoauszüge, Wertschriftendepot, Grundbuchauszüge</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Aenderung des Unterhaltsvertrags</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kosten und Gebühren</h2>
 
-    <p class="text-gray-700 mb-4">Auch Aenderungen des Unterhaltsvertrages muessen von der KESB genehmigt werden. Gruende fuer Aenderungen koennen sein:</p>
+    <p class="text-gray-700 mb-4">Die Kosten für die KESB-Genehmigung variieren kantonal. Im Folgenden typische Richtwerte:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Position</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kosten (Richtwerte)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">KESB-Genehmigung (Kostenvorschuss)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 300-500 (je CHF 150-250 pro Elternteil)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">KESB-Genehmigung (definitive Kosten)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 200-600 (nach Aufwand)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Anwaltliche Vertragserstellung</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 500-1'500 (je nach Komplexität)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Änderung eines bestehenden Vertrags</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 200-400</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Änderung des Unterhaltsvertrags</h2>
+
+    <p class="text-gray-700 mb-4">Auch Änderungen des Unterhaltsvertrages müssen von der KESB genehmigt werden, sofern sie nicht im ursprünglichen Vertrag ausgeschlossen wurden (Art. 287 Abs. 2 ZGB). Bei wesentlich veränderten Verhältnissen ist eine Anpassung möglich und geboten.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gründe für Abänderung</h3>
 
     <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Wesentliche Einkommensaenderung</li>
-        <li>Aenderung der Betreuungssituation</li>
-        <li>Aenderung der Beduerfnisse des Kindes</li>
-        <li>Erreichen einer neuen Altersstufe</li>
+        <li><strong>Einkommensänderung:</strong> Erhebliche Erhöhung oder Reduktion des Einkommens eines Elternteils</li>
+        <li><strong>Betreuungssituation:</strong> Änderung der Obhut oder Betreuungsanteile</li>
+        <li><strong>Kindsbedürfnisse:</strong> Neue Kosten (Therapie, Privatschule) oder Wegfall von Kosten</li>
+        <li><strong>Altersstufe:</strong> Erreichen einer neuen Stufe gemäss Schulstufenmodell (4/12/16 Jahre)</li>
+        <li><strong>Arbeitsaufnahme:</strong> Erhöhung des Arbeitspensums gemäss Erwerbsobliegenheit</li>
+        <li><strong>Neue Familie:</strong> Geburt weiterer Kinder, neue Unterhaltspflichten</li>
     </ul>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kosten und Gebuehren</h2>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Nachzahlung bei Leistungssteigerung (Art. 286a ZGB)</h3>
 
-    <p class="text-gray-700 mb-6">Die Ausarbeitung und die Genehmigung eines Unterhaltsvertrages sind kostenpflichtig. Es wird typischerweise ein Kostenvorschuss von CHF 400.00 (CHF 200.00 pro Elternteil) erhoben. Die Kosten variieren kantonal.</p>
-
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Haeufige Fehler vermeiden</h2>
-
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Fehler 1:</strong> Unvollstaendige Angaben - Checkliste verwenden</li>
-        <li><strong>Fehler 2:</strong> Zu tiefer Unterhalt - Bedarf des Kindes sorgfaeltig berechnen</li>
-        <li><strong>Fehler 3:</strong> Fehlende Indexierung - Anpassungsklausel aufnehmen</li>
-        <li><strong>Fehler 4:</strong> Unklare Formulierungen - Praezise und eindeutig formulieren</li>
-        <li><strong>Fehler 5:</strong> Vergessen des Betreuungsunterhalts - Beide Komponenten separat ausweisen</li>
-    </ul>
+    <p class="text-gray-700 mb-6">Wenn beim Unterhaltsverpflichteten in Zukunft eine ausserordentliche Steigerung der Leistungsfähigkeit eintritt (Eintritt ins Erwerbsleben, Karrieresprung, Aufbau einer selbständigen Erwerbstätigkeit), kann sich nach dem neuen Unterhaltsrecht eine Nachzahlungspflicht für das im Vertrag ausgewiesene Manko ergeben.</p>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Bei Uneinigkeit der Eltern</h2>
 
-    <p class="text-gray-700 mb-4">Sind sich die Eltern nicht einig, muessen sie sich an das zustaendige Bezirksgericht wenden. Kommt kein Unterhaltsvertrag zustande, ernennt die KESB eine Beistaendin oder einen Beistand, die das Kind bei der Wahrung seines Unterhaltsanspruches vertritt.</p>
+    <p class="text-gray-700 mb-4">Sind sich die Eltern nicht einig, gibt es folgende Optionen:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Option</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Mediation</td>
+                    <td class="px-6 py-4 text-gray-700">Professionelle Vermittlung zur einvernehmlichen Lösung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Gerichtliche Festsetzung</td>
+                    <td class="px-6 py-4 text-gray-700">Unterhaltsklage beim Bezirksgericht am Wohnsitz des Kindes</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Beistandschaft</td>
+                    <td class="px-6 py-4 text-gray-700">KESB ernennt einen Beistand, der das Kind bei der Wahrung seiner Unterhaltsansprüche vertritt</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Häufige Fehler vermeiden</h2>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Fehler</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Folge</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Lösung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Keine KESB-Genehmigung eingeholt</td>
+                    <td class="px-6 py-4 text-gray-700">Vertrag nicht verbindlich/vollstreckbar</td>
+                    <td class="px-6 py-4 text-gray-700">Immer Genehmigung beantragen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Fehlende Pflichtangaben (Art. 287a)</td>
+                    <td class="px-6 py-4 text-gray-700">Genehmigung wird verweigert</td>
+                    <td class="px-6 py-4 text-gray-700">Checkliste verwenden</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Betreuungsunterhalt vergessen</td>
+                    <td class="px-6 py-4 text-gray-700">Unvollständiger Unterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Beide Komponenten separat ausweisen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Fehlende Indexierungsklausel</td>
+                    <td class="px-6 py-4 text-gray-700">Kaufkraftverlust über die Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">LIK-Anpassungsklausel aufnehmen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Manko nicht ausgewiesen</td>
+                    <td class="px-6 py-4 text-gray-700">Nachzahlung erschwert</td>
+                    <td class="px-6 py-4 text-gray-700">Gebührenden Unterhalt dokumentieren</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Internet-Vorlagen verwendet</td>
+                    <td class="px-6 py-4 text-gray-700">Oft nicht rechtskonform</td>
+                    <td class="px-6 py-4 text-gray-700">Kantonale Muster oder Anwalt nutzen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Verzicht auf Kindesunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">KESB verweigert Genehmigung</td>
+                    <td class="px-6 py-4 text-gray-700">Unzulässig – nicht möglich</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+        <p class="text-gray-700 mb-6">Die korrekte Gestaltung eines Unterhaltsvertrags ist entscheidend für die spätere Durchsetzbarkeit und den Schutz der Kindesinteressen. Fehler bei der Berechnung, fehlende Pflichtangaben nach Art. 287a ZGB oder unklare Formulierungen können dazu führen, dass die KESB die Genehmigung verweigert oder das Kind finanziell benachteiligt wird.</p>
+        <p class="text-gray-700 mb-6">Besonders in folgenden Situationen ist die Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> dringend empfohlen:</p>
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Sie sind sich über die Höhe des Unterhalts nicht einig</li>
+            <li>Es besteht Unsicherheit bei der Berechnung des Betreuungsunterhalts nach BGE 147 III 265</li>
+            <li>Ein Elternteil ist selbständig erwerbend oder hat unregelmässiges Einkommen</li>
+            <li>Es liegt ein Mankofall vor und Sie möchten eine Nachzahlungsklausel aufnehmen</li>
+            <li>Es gibt besondere Kindeskosten (Therapien, Privatschule, besondere Betreuung)</li>
+            <li>Sie möchten eine Änderung eines bestehenden Unterhaltsvertrags erreichen</li>
+            <li>Die KESB hat die Genehmigung des Vertrags abgelehnt</li>
+            <li>Der andere Elternteil verweigert die Mitwirkung</li>
+        </ul>
+        <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kann einen rechtssicheren Unterhaltsvertrag erstellen, der alle Anforderungen des Art. 287a ZGB erfüllt und die Interessen Ihres Kindes optimal wahrt. Bei komplexen Einkommenssituationen oder bei Streit über die Berechnung ist die Unterstützung durch einen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> besonders wertvoll.</p>
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Unsere spezialisierten Anwälte beraten Sie zur Gestaltung, Genehmigung oder Änderung Ihres Unterhaltsvertrags. Wir prüfen Ihre Unterlagen und erstellen einen rechtssicheren Vertrag.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
 
-    <p class="text-gray-700 mb-6">Der Unterhaltsvertrag ist ein wichtiges Instrument zur verbindlichen Regelung des Kindesunterhalts. Ohne Genehmigung durch die KESB ist der Vertrag nicht verbindlich und nicht vollstreckbar. Der Vertrag muss alle wesentlichen Punkte regeln: Barunterhalt, Betreuungsunterhalt, Indexierung, Zahlungsmodalitaeten.</p>
+    <p class="text-gray-700 mb-6">Der Unterhaltsvertrag ist ein wichtiges Instrument zur verbindlichen Regelung des Kindesunterhalts ausserhalb eines Gerichtsverfahrens. Ohne Genehmigung durch die KESB ist der Vertrag nicht verbindlich und nicht vollstreckbar. Seit der Revision 2017 schreibt Art. 287a ZGB den Mindestinhalt verbindlich vor: Einkommen und Vermögen der Eltern, Bar- und Betreuungsunterhalt separat, allfälliges Manko und die Indexierungsklausel.</p>
+
+    <p class="text-gray-700 mb-6">Ein korrekt erstellter und genehmigter Unterhaltsvertrag bietet Rechtssicherheit für beide Eltern und schützt die finanziellen Interessen des Kindes. Er ist einem Gerichtsurteil gleichgestellt und ermöglicht alle Durchsetzungsmassnahmen wie Betreibung, Schuldneranweisung und Inkassohilfe.</p>
 
     <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
         <p class="font-semibold text-navy mb-2">Handlungsempfehlungen:</p>
         <ul class="list-disc list-inside text-gray-700 space-y-1">
-            <li>Holen Sie sich fruehzeitig Informationen bei Ihrer KESB</li>
+            <li>Holen Sie sich frühzeitig Informationen und Mustervorlagen bei Ihrer KESB</li>
             <li>Verwenden Sie kantonale Mustervorlagen statt Internet-Vorlagen</li>
-            <li>Berechnen Sie den Unterhalt sorgfaeltig und dokumentieren Sie die Grundlagen</li>
-            <li>Reichen Sie alle erforderlichen Unterlagen vollstaendig ein</li>
+            <li>Stellen Sie sicher, dass alle Pflichtangaben nach Art. 287a ZGB enthalten sind</li>
+            <li>Weisen Sie Barunterhalt und Betreuungsunterhalt separat aus</li>
+            <li>Dokumentieren Sie ein allfälliges Manko für spätere Nachzahlungen</li>
+            <li>Nehmen Sie eine Indexierungsklausel (LIK) auf</li>
+            <li>Reichen Sie alle erforderlichen Unterlagen vollständig ein</li>
             <li>Ziehen Sie bei komplexen Situationen professionelle Hilfe bei</li>
         </ul>
     </div>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Ist ein Unterhaltsvertrag ohne KESB-Genehmigung gültig?</h3>
+                <p class="text-gray-700">Nein. Ohne Genehmigung durch die KESB ist der Unterhaltsvertrag für minderjährige Kinder nicht verbindlich und nicht vollstreckbar (Art. 287 Abs. 1 ZGB). Sie können bei ausbleibenden Zahlungen keine Betreibung einleiten, keine Schuldneranweisung beantragen und keine Inkassohilfe nutzen. Der Vertrag hat dann lediglich eine faktische, aber keine rechtliche Wirkung.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was muss ein Unterhaltsvertrag zwingend enthalten?</h3>
+                <p class="text-gray-700">Art. 287a ZGB schreibt den Mindestinhalt vor: (a) Einkommen und Vermögen beider Eltern und des Kindes, (b) der Unterhaltsbetrag pro Kind (aufgeschlüsselt in Bar- und Betreuungsunterhalt), (c) ein allfälliges Manko (Fehlbetrag zum gebührenden Unterhalt) und (d) die Indexierungsklausel. Fehlen diese Angaben, kann die KESB die Genehmigung verweigern.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was kostet die KESB-Genehmigung eines Unterhaltsvertrags?</h3>
+                <p class="text-gray-700">Die Kosten variieren kantonal. Typischerweise wird ein Kostenvorschuss von CHF 300-500 erhoben (ca. CHF 150-250 pro Elternteil). Die definitiven Kosten hängen vom Aufwand ab und liegen meist zwischen CHF 200-600. Hinzu können Kosten für die anwaltliche Vertragserstellung kommen (CHF 500-1'500).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ein Unterhaltsvertrag nachträglich geändert werden?</h3>
+                <p class="text-gray-700">Ja. Bei wesentlichen Veränderungen (Einkommensänderung, geänderte Betreuungssituation, neue Altersstufe des Kindes) kann der Vertrag angepasst werden (Art. 287 Abs. 2 ZGB). Die Änderung muss ebenfalls von der KESB genehmigt werden. Wurde im ursprünglichen Vertrag die Änderbarkeit ausgeschlossen, sind Anpassungen nur eingeschränkt über das Gericht möglich.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert, wenn sich die Eltern nicht einigen können?</h3>
+                <p class="text-gray-700">Wenn keine Einigung möglich ist, muss der Unterhalt gerichtlich festgesetzt werden. Die KESB kann zudem einen Beistand ernennen, der das Kind bei der Wahrung seiner Unterhaltsansprüche vertritt. Der Beistand kann dann im Namen des Kindes eine Unterhaltsklage beim zuständigen Bezirksgericht einreichen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Braucht ein volljähriges Kind einen Unterhaltsvertrag mit KESB-Genehmigung?</h3>
+                <p class="text-gray-700">Nein. Das volljährige Kind und der zahlungspflichtige Elternteil können den Unterhalt selbstständig regeln. Der Vertrag bedarf keiner behördlichen Genehmigung. Bei Uneinigkeit kann das volljährige Kind aber eine Unterhaltsklage beim Gericht einreichen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen Barunterhalt und Betreuungsunterhalt?</h3>
+                <p class="text-gray-700">Der Barunterhalt deckt die direkten Kosten des Kindes (Nahrung, Kleidung, Wohnen, Krankenkasse, Kita). Der Betreuungsunterhalt gleicht den Erwerbsausfall des betreuenden Elternteils aus, der wegen der Kinderbetreuung nicht voll arbeiten kann. Beide Komponenten müssen im Vertrag separat ausgewiesen werden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist ein Manko im Unterhaltsvertrag?</h3>
+                <p class="text-gray-700">Ein Manko liegt vor, wenn die Leistungsfähigkeit der Eltern nicht ausreicht, um den vollen gebührenden Unterhalt des Kindes zu decken. Dieser Fehlbetrag muss nach Art. 287a lit. c ZGB im Vertrag ausgewiesen werden. Bei späterer Verbesserung der finanziellen Situation kann eine Nachzahlung verlangt werden (Art. 286a ZGB).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Welche Unterlagen brauche ich für die KESB-Genehmigung?</h3>
+                <p class="text-gray-700">Sie benötigen: Ausweiskopien beider Eltern, Geburtsurkunde des Kindes, Lohnabrechnungen der letzten 3-6 Monate, letzte Steuererklärung mit Veranlagung, Mietvertrag, Krankenkassenpolice des Kindes und Nachweise über Drittbetreuungskosten. Bei Selbständigen zusätzlich Geschäftsabschlüsse der letzten 2-3 Jahre.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann auf Kindesunterhalt verzichtet werden?</h3>
+                <p class="text-gray-700">Nein. Ein Verzicht auf Kindesunterhalt ist unzulässig. Enthält der Vertrag eine Klausel, die den Unterhalt des Kindes ausschliesst, wird die KESB die Genehmigung verweigern. Das Kind hat einen eigenen Anspruch auf Unterhalt, auf den die Eltern nicht verzichten können.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Der Unterhaltsvertrag in der Schweiz: Inhalt, KESB-Genehmigung und Abänderung",
+        "description": "Unterhaltsvertrag Schweiz: Art. 287 & 287a ZGB erklärt. KESB-Genehmigung, Inhalt, Muster, Kosten, Abänderung und vollstreckbarer Titel. Vollständiger Leitfaden.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-25",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/unterhalt/unterhaltsvertrag"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Ist ein Unterhaltsvertrag ohne KESB-Genehmigung gültig?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein. Ohne Genehmigung durch die KESB ist der Unterhaltsvertrag für minderjährige Kinder nicht verbindlich und nicht vollstreckbar (Art. 287 Abs. 1 ZGB). Sie können bei ausbleibenden Zahlungen keine Betreibung einleiten, keine Schuldneranweisung beantragen und keine Inkassohilfe nutzen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was muss ein Unterhaltsvertrag zwingend enthalten?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Art. 287a ZGB schreibt den Mindestinhalt vor: (a) Einkommen und Vermögen beider Eltern und des Kindes, (b) der Unterhaltsbetrag pro Kind (aufgeschlüsselt in Bar- und Betreuungsunterhalt), (c) ein allfälliges Manko (Fehlbetrag zum gebührenden Unterhalt) und (d) die Indexierungsklausel."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was kostet die KESB-Genehmigung eines Unterhaltsvertrags?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Kosten variieren kantonal. Typischerweise wird ein Kostenvorschuss von CHF 300-500 erhoben (ca. CHF 150-250 pro Elternteil). Die definitiven Kosten hängen vom Aufwand ab und liegen meist zwischen CHF 200-600."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ein Unterhaltsvertrag nachträglich geändert werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja. Bei wesentlichen Veränderungen (Einkommensänderung, geänderte Betreuungssituation, neue Altersstufe des Kindes) kann der Vertrag angepasst werden (Art. 287 Abs. 2 ZGB). Die Änderung muss ebenfalls von der KESB genehmigt werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert, wenn sich die Eltern nicht einigen können?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Wenn keine Einigung möglich ist, muss der Unterhalt gerichtlich festgesetzt werden. Die KESB kann zudem einen Beistand ernennen, der das Kind bei der Wahrung seiner Unterhaltsansprüche vertritt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Braucht ein volljähriges Kind einen Unterhaltsvertrag mit KESB-Genehmigung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein. Das volljährige Kind und der zahlungspflichtige Elternteil können den Unterhalt selbstständig regeln. Der Vertrag bedarf keiner behördlichen Genehmigung."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen Barunterhalt und Betreuungsunterhalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der Barunterhalt deckt die direkten Kosten des Kindes (Nahrung, Kleidung, Wohnen, Krankenkasse, Kita). Der Betreuungsunterhalt gleicht den Erwerbsausfall des betreuenden Elternteils aus, der wegen der Kinderbetreuung nicht voll arbeiten kann."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist ein Manko im Unterhaltsvertrag?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ein Manko liegt vor, wenn die Leistungsfähigkeit der Eltern nicht ausreicht, um den vollen gebührenden Unterhalt des Kindes zu decken. Dieser Fehlbetrag muss nach Art. 287a lit. c ZGB im Vertrag ausgewiesen werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welche Unterlagen brauche ich für die KESB-Genehmigung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sie benötigen: Ausweiskopien beider Eltern, Geburtsurkunde des Kindes, Lohnabrechnungen der letzten 3-6 Monate, letzte Steuererklärung mit Veranlagung, Mietvertrag, Krankenkassenpolice des Kindes und Nachweise über Drittbetreuungskosten."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann auf Kindesunterhalt verzichtet werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein. Ein Verzicht auf Kindesunterhalt ist unzulässig. Enthält der Vertrag eine Klausel, die den Unterhalt des Kindes ausschliesst, wird die KESB die Genehmigung verweigern."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Unterhalt",
+                "item": "https://familienrechtanwalt.ch/unterhalt"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Unterhaltsvertrag",
+                "item": "https://familienrechtanwalt.ch/unterhalt/unterhaltsvertrag"
+            }
+        ]
+    })} />
 </ArticleLayout>

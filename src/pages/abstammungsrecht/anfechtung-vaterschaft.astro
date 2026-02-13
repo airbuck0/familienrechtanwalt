@@ -1,0 +1,739 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+---
+
+<ArticleLayout
+    title="Anfechtung der Vaterschaft in der Schweiz"
+    description="Anfechtung der Vaterschaft Schweiz: Vermutung anfechten (Art. 256 ZGB) & Anerkennung anfechten (Art. 260a ZGB). Fristen, Beweislast & BGE-Rechtsprechung."
+    keywords="Anfechtung Vaterschaft Schweiz, Vaterschaftsvermutung anfechten, Vaterschaftsanerkennung anfechten, Art. 256 ZGB, Art. 260a ZGB, Vaterschaft anfechten Frist, Anfechtungsklage Vaterschaft, biologischer Vater kein Klagerecht"
+    category="Abstammungsrecht"
+    categoryLink="/abstammungsrecht"
+>
+
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Das Schweizer Recht kennt <strong>zwei Anfechtungswege</strong>: die Anfechtung der Vaterschaftsvermutung des Ehemanns (Art. 256–256c ZGB) und die Anfechtung einer freiwilligen Anerkennung (Art. 260a–260c ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die <strong>Vaterschaftsvermutung</strong> kann nur vom Ehemann oder vom Kind angefochten werden – die Mutter und der biologische Vater haben <strong>kein Anfechtungsrecht</strong> (BGE 144 III 1).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die <strong>Anerkennung</strong> kann von der Mutter, dem Kind, dem Anerkennenden selbst und seit 2019 auch von der Heimat- oder Wohnsitzgemeinde angefochten werden.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die relative Frist beträgt <strong>1 Jahr ab Kenntnis</strong>, die absolute Frist <strong>5 Jahre</strong> – für das Kind gilt die Frist bis 1 Jahr nach Volljährigkeit.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Eine erfolgreiche Anfechtung lässt das Kindesverhältnis <strong>rückwirkend ab Geburt</strong> entfallen – mit Folgen für Unterhalt, Erbrecht und Bürgerrecht.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Hat der Ehemann einer <strong>Samenspende zugestimmt</strong>, ist die Anfechtung ausgeschlossen (Art. 256 Abs. 3 ZGB).</span>
+            </li>
+        </ul>
+    </div>
+
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die Anfechtung der Vaterschaft ermöglicht es, ein bestehendes rechtliches Kindesverhältnis zwischen einem Kind und seinem (nicht-biologischen) Vater gerichtlich aufzuheben. Das Schweizer Recht kennt zwei grundlegend verschiedene Anfechtungswege – je nachdem, ob die Vaterschaft durch die Ehemannsvermutung oder durch eine freiwillige Anerkennung begründet wurde. Beide Wege unterscheiden sich in den Voraussetzungen, der Klageberechtigung, den Fristen und der Beweislast. Dieser Artikel behandelt beide Anfechtungswege umfassend und beleuchtet die aktuelle Bundesgerichtsrechtsprechung zu den zahlreichen Streitfragen.</p>
+
+    <!-- Überblick: Zwei Anfechtungswege -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Überblick: Zwei Anfechtungswege im Vergleich</h2>
+
+    <p class="text-gray-700 mb-6">Die Anfechtung der Vaterschaft ist eine <strong>negative Gestaltungsklage</strong>: Sie hebt ein bestehendes Kindesverhältnis rückwirkend auf, im Gegensatz zur <a href="/abstammungsrecht/vaterschaftsklage" class="text-gold hover:underline font-semibold">Vaterschaftsklage</a>, die ein neues Kindesverhältnis begründet. Welcher der beiden Anfechtungswege zum Zug kommt, hängt davon ab, wie das Kindesverhältnis entstanden ist:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Merkmal</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Anfechtung der Vermutung (Art. 256 ff. ZGB)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Anfechtung der Anerkennung (Art. 260a ff. ZGB)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Grundlage des Kindesverhältnisses</td>
+                    <td class="px-6 py-4 text-gray-700">Ehe der Mutter zum Zeitpunkt der Geburt (Art. 255 ZGB)</td>
+                    <td class="px-6 py-4 text-gray-700">Freiwillige Anerkennung durch den Vater (Art. 260 ZGB)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Klageberechtigt</td>
+                    <td class="px-6 py-4 text-gray-700">Ehemann und Kind</td>
+                    <td class="px-6 py-4 text-gray-700">Mutter, Kind, Anerkennender, Gemeinde</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Relative Frist</td>
+                    <td class="px-6 py-4 text-gray-700">1 Jahr ab Kenntnis der Geburt und Nichtvaterschaft</td>
+                    <td class="px-6 py-4 text-gray-700">1 Jahr ab Kenntnis der Anerkennung und Nichtvaterschaft</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Absolute Frist</td>
+                    <td class="px-6 py-4 text-gray-700">5 Jahre ab Geburt</td>
+                    <td class="px-6 py-4 text-gray-700">5 Jahre ab Anerkennung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kind: Frist</td>
+                    <td class="px-6 py-4 text-gray-700">1 Jahr nach Volljährigkeit (bis Alter 19)</td>
+                    <td class="px-6 py-4 text-gray-700">1 Jahr nach Volljährigkeit (bis Alter 19)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Beweislast</td>
+                    <td class="px-6 py-4 text-gray-700">Kläger muss Nichtvaterschaft beweisen (Ausnahmen bei Empfängnis vor Ehe/Trennung)</td>
+                    <td class="px-6 py-4 text-gray-700">Kläger muss Nichtvaterschaft beweisen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Rechtsgrundlage</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 256–256c ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 260a–260c ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Weg 1: Anfechtung der Vaterschaftsvermutung -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Weg 1: Anfechtung der Vaterschaftsvermutung (Art. 256–256c ZGB)</h2>
+
+    <p class="text-gray-700 mb-6">Wird ein Kind während der Ehe oder innert 300 Tagen nach deren Auflösung geboren, gilt der Ehemann als Vater (Art. 255 ZGB). Diese <strong>widerlegbare Vermutung</strong> kann durch eine Anfechtungsklage beseitigt werden. Die Anfechtung ist das einzige Mittel – die Vermutung entfällt nicht automatisch durch Scheidung, Trennung oder eine DNA-Analyse.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Klageberechtigung (Art. 256 Abs. 1 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Klageberechtigt sind ausschliesslich zwei Personen:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Klagepartei</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Voraussetzungen</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Passivlegitimation (Klage gegen)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Ehemann</td>
+                    <td class="px-6 py-4 text-gray-700">Keine besonderen Voraussetzungen neben der Frist</td>
+                    <td class="px-6 py-4 text-gray-700">Kind und Mutter (Art. 256 Abs. 1 ZGB)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kind</td>
+                    <td class="px-6 py-4 text-gray-700">Nur wenn das eheliche Zusammenleben während der Minderjährigkeit aufgehört hat (Art. 256 Abs. 2 ZGB)</td>
+                    <td class="px-6 py-4 text-gray-700">Ehemann und Mutter</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kein Anfechtungsrecht der Mutter</h3>
+
+    <p class="text-gray-700 mb-6">Die Mutter hat <strong>kein eigenes Anfechtungsrecht</strong> bezüglich der Vermutung des Ehemanns. Sie kann die Vaterschaftsvermutung nicht anfechten – auch nicht, wenn sie sicher weiss, dass ein anderer Mann der biologische Vater ist. Die Mutter kann allenfalls als gesetzliche Vertreterin des Kindes handeln, wenn das Kind die Voraussetzungen für eine eigene Klage erfüllt (eheliches Zusammenleben hat aufgehört).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kein Anfechtungsrecht des biologischen Vaters (BGE 144 III 1)</h3>
+
+    <p class="text-gray-700 mb-6">In einem der meistdiskutierten Urteile des Schweizer Familienrechts hat das Bundesgericht 2018 unmissverständlich festgehalten: Der <strong>biologische Vater hat kein Anfechtungsrecht</strong> bezüglich der Vaterschaftsvermutung des Ehemanns. Auch eine Berufung auf Art. 8 EMRK (Recht auf Privat- und Familienleben) begründet kein solches Recht.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">BGE 144 III 1 – Kernaussage:</p>
+        <p class="text-gray-700 mb-4">Der biologische Vater eines während der Ehe geborenen Kindes kann die Vaterschaftsvermutung des Ehemanns nicht anfechten, selbst wenn er nachweislich der leibliche Vater ist und eine enge Beziehung zum Kind unterhält. Das Bundesgericht begründete dies mit dem <strong>Vorrang der sozialen Familie</strong>: Das Kindesverhältnis zum Ehemann schützt die bestehende Familienstruktur und dient in der Regel dem Kindeswohl.</p>
+        <p class="text-gray-700">In der Lehre wird dieses Ergebnis kontrovers beurteilt. Ein Teil der Doktrin fordert die Einführung eines Anfechtungsrechts des biologischen Vaters nach dem Vorbild des deutschen Rechts (§ 1600 BGB). Der Gesetzgeber hat bislang darauf verzichtet.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Klage durch die Eltern des Ehemanns (Art. 258 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Stirbt der Ehemann, wird er urteilsunfähig oder ist er seit mehr als einem Jahr unbekannten Aufenthalts, können seine <strong>Eltern</strong> (Vater und/oder Mutter des Ehemanns) die Anfechtungsklage führen (Art. 258 Abs. 1 ZGB). Diese Stellvertretungsbefugnis ist auf die Eltern beschränkt – Geschwister oder andere Verwandte haben kein Klagerecht. Haben die Eltern die Klage angehoben und fällt der Grund der Stellvertretung weg (z.B. der Ehemann erlangt die Urteilsfähigkeit zurück), treten sie aus dem Verfahren aus.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ausschluss bei Zustimmung zur Samenspende (Art. 256 Abs. 3 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Hat der Ehemann der Zeugung durch <a href="/abstammungsrecht/fortpflanzungsmedizin-samenspende" class="text-gold hover:underline font-semibold">Samenspende</a> zugestimmt, ist die Anfechtung <strong>ausgeschlossen</strong> (Art. 256 Abs. 3 ZGB). Diese Bestimmung schützt die Familie vor widersprüchlichem Verhalten (<em>venire contra factum proprium</em>): Wer der künstlichen Befruchtung mit Spendersamen zustimmt, soll nicht nachträglich die Vaterschaft anfechten können. Die Zustimmung kann in jeder Form erteilt werden, muss aber nachweisbar sein.</p>
+
+    <p class="text-gray-700 mb-6">Der Ausschluss gilt unabhängig davon, ob die Samenspende innerhalb der gesetzlichen Vorgaben des FMedG oder im Rahmen einer <strong>privaten Samenspende</strong> erfolgte – entscheidend ist allein die Zustimmung des Ehemanns.</p>
+
+    <!-- Beweislast bei Anfechtung der Vermutung -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Beweislast bei der Anfechtung der Vermutung</h2>
+
+    <p class="text-gray-700 mb-6">Die Beweislast richtet sich nach dem Zeitpunkt der Empfängnis und ist in Art. 256a und 256b ZGB differenziert geregelt. Das Gesetz unterscheidet drei Konstellationen:</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Empfängnis während des Zusammenlebens (Art. 256a Abs. 1 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Wurde das Kind während des ehelichen Zusammenlebens empfangen, muss der Kläger beweisen, dass der Ehemann <strong>nicht der Vater</strong> ist. Dies geschieht in der Praxis fast ausschliesslich durch ein DNA-Gutachten, das die Vaterschaft mit über 99,99 % Sicherheit ausschliessen kann. Die blosse Behauptung der Untreue oder die Angabe eines anderen möglichen Vaters genügt nicht.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Empfängnis vor der Ehe oder während Trennung (Art. 256a Abs. 2 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Wurde das Kind <strong>vor der Eheschliessung</strong> oder <strong>während einer Trennungszeit</strong> empfangen, wird die Vermutung bereits erschüttert, wenn Zweifel an der Vaterschaft glaubhaft gemacht werden. Der Kläger muss lediglich <strong>glaubhaft machen</strong>, dass die Empfängnis in diese Zeit fiel – die volle Beweislast trifft ihn nicht. Allerdings lebt die Vermutung wieder auf, wenn der Ehemann nachweist, dass er in der Empfängniszeit mit der Mutter Geschlechtsverkehr hatte (Art. 256b Abs. 2 ZGB).</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zeitpunkt der Empfängnis</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beweislast des Klägers</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gegenbeweis</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Während ehelichem Zusammenleben</td>
+                    <td class="px-6 py-4 text-gray-700">Voller Beweis der Nichtvaterschaft (DNA-Test)</td>
+                    <td class="px-6 py-4 text-gray-700">Nicht nötig (Kläger muss Beweis erbringen)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 256a Abs. 1 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Vor der Ehe</td>
+                    <td class="px-6 py-4 text-gray-700">Glaubhaftmachung (erleichterter Beweis)</td>
+                    <td class="px-6 py-4 text-gray-700">Nachweis der Beiwohnung in Empfängniszeit</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 256a Abs. 2, 256b ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Während Trennung</td>
+                    <td class="px-6 py-4 text-gray-700">Glaubhaftmachung (erleichterter Beweis)</td>
+                    <td class="px-6 py-4 text-gray-700">Nachweis der Beiwohnung in Empfängniszeit</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 256a Abs. 2, 256b ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Fristen bei der Anfechtung der Vermutung -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fristen bei der Anfechtung der Vermutung (Art. 256c ZGB)</h2>
+
+    <p class="text-gray-700 mb-6">Die Einhaltung der Klagefrist ist eine <strong>Prozessvoraussetzung</strong>, die das Gericht von Amtes wegen prüft. Wird die Frist versäumt, ist die Klage verwirkt – vorbehaltlich einer Fristwiederherstellung.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kläger</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Fristbeginn</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Relative Frist</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Absolute Frist</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Ehemann</td>
+                    <td class="px-6 py-4 text-gray-700">Ab Kenntnis der Geburt <strong>und</strong> der Tatsache, dass er nicht der Vater ist (oder dass ein Dritter der Mutter beigewohnt hat)</td>
+                    <td class="px-6 py-4 text-gray-700">1 Jahr</td>
+                    <td class="px-6 py-4 text-gray-700">5 Jahre ab Geburt</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kind</td>
+                    <td class="px-6 py-4 text-gray-700">18. Geburtstag</td>
+                    <td class="px-6 py-4 text-gray-700">1 Jahr</td>
+                    <td class="px-6 py-4 text-gray-700">Bis Alter 19</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Eltern des Ehemanns (Art. 258 ZGB)</td>
+                    <td class="px-6 py-4 text-gray-700">Ab Kenntnis des Todes / der Urteilsunfähigkeit des Ehemanns</td>
+                    <td class="px-6 py-4 text-gray-700">1 Jahr</td>
+                    <td class="px-6 py-4 text-gray-700">An die Fristen des Ehemanns gebunden</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kenntnis als Fristauslöser</h3>
+
+    <p class="text-gray-700 mb-6">Der entscheidende Zeitpunkt für den Fristbeginn ist die <strong>Kenntnis</strong> – und zwar kumulativ die Kenntnis der Geburt <strong>und</strong> die Kenntnis der Nichtvaterschaft. Das Bundesgericht verlangt eine <strong>sichere Kenntnis</strong>, nicht bloss einen vagen Verdacht. Blosse Gerüchte oder Mutmassungen lösen die Frist nicht aus (BGE 132 III 1). Kenntnis liegt vor, wenn der Ehemann so viele Anhaltspunkte hat, dass er nach Treu und Glauben die Anfechtung hätte in Betracht ziehen müssen.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praxisbeispiel:</p>
+        <p class="text-gray-700">Ein Ehemann bemerkt, dass das Kind seinem Arbeitskollegen ähnlich sieht. Blosse Ähnlichkeit löst die Frist <strong>nicht</strong> aus. Findet er hingegen eine Nachricht, in der die Ehefrau einräumt, dass das Kind nicht von ihm ist, beginnt die Frist zu laufen. Erst ein DNA-Test schafft volle Gewissheit – aber das Zuwarten auf einen Test kann nicht dazu dienen, die Frist hinauszuzögern, wenn bereits genügend Anhaltspunkte vorliegen.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Fristwiederherstellung (Art. 256c Abs. 3 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Bei Versäumnis der Frist kann das Gericht eine <strong>Fristwiederherstellung</strong> gewähren, wenn wichtige Gründe die Verspätung entschuldigen. Das Bundesgericht legt diesen Begriff <strong>restriktiv</strong> aus:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Geltend gemachter Grund</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Anerkennung durch BGer</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Entscheid</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Psychische Unfähigkeit / schwere Depression</td>
+                    <td class="px-6 py-4 text-green-600 font-semibold">Ja (im Einzelfall)</td>
+                    <td class="px-6 py-4 text-gray-700">BGer 5A_178/2022</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Schwere körperliche Krankheit</td>
+                    <td class="px-6 py-4 text-green-600 font-semibold">Ja (im Einzelfall)</td>
+                    <td class="px-6 py-4 text-gray-700">–</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Zuwarten auf DNA-Test (>2 Jahre nach Verdacht)</td>
+                    <td class="px-6 py-4 text-red-600 font-semibold">Nein</td>
+                    <td class="px-6 py-4 text-gray-700">BGer 5C.130/2003</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Blosse Rechtsunkenntnis</td>
+                    <td class="px-6 py-4 text-red-600 font-semibold">Nein</td>
+                    <td class="px-6 py-4 text-gray-700">–</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Angst vor familiärem Konflikt</td>
+                    <td class="px-6 py-4 text-red-600 font-semibold">Nein</td>
+                    <td class="px-6 py-4 text-gray-700">–</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Sprachbarrieren / kulturelle Gründe</td>
+                    <td class="px-6 py-4 text-red-600 font-semibold">Nein</td>
+                    <td class="px-6 py-4 text-gray-700">–</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Weg 2: Anfechtung der Anerkennung -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Weg 2: Anfechtung der Vaterschaftsanerkennung (Art. 260a–260c ZGB)</h2>
+
+    <p class="text-gray-700 mb-6">Hat ein Mann die Vaterschaft freiwillig beim Zivilstandsamt anerkannt (Art. 260 ZGB), obwohl er nicht der biologische Vater ist, kann diese <a href="/sorgerecht/vaterschaftsanerkennung" class="text-gold hover:underline font-semibold">Anerkennung</a> gerichtlich angefochten werden. Der Kreis der Klageberechtigten ist hier breiter als bei der Anfechtung der Vermutung.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Klageberechtigung (Art. 260a ZGB)</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Klagepartei</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Klagegrund</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Besonderheiten</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Mutter</td>
+                    <td class="px-6 py-4 text-gray-700">Anerkennender ist nicht der biologische Vater</td>
+                    <td class="px-6 py-4 text-gray-700">Eigenes Klagerecht</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kind</td>
+                    <td class="px-6 py-4 text-gray-700">Anerkennender ist nicht der biologische Vater</td>
+                    <td class="px-6 py-4 text-gray-700">Ab Volljährigkeit; vorher durch Mutter oder Beistand vertreten</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Anerkennender selbst</td>
+                    <td class="px-6 py-4 text-gray-700"><strong>Nur</strong> bei Irrtum über die Vaterschaft oder Drohung</td>
+                    <td class="px-6 py-4 text-gray-700">Eingeschränktes Klagerecht (Art. 260a Abs. 2 ZGB)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Heimat- oder Wohnsitzgemeinde</td>
+                    <td class="px-6 py-4 text-gray-700">Missbrauchsverdacht (z.B. Umgehung Ausländerrecht)</td>
+                    <td class="px-6 py-4 text-gray-700">Seit Revision 2019 ausdrücklich anerkannt (Art. 260a Abs. 1 ZGB)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Anfechtung durch den Anerkennenden (Art. 260a Abs. 2 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Der Anerkennende selbst kann die Anerkennung nur anfechten, wenn er bei der Anerkennung einem <strong>Irrtum über seine Vaterschaft</strong> unterlag oder wenn er <strong>bedroht</strong> wurde (Art. 260a Abs. 2 ZGB). Ein relevanter Irrtum liegt vor, wenn der Mann bei der Anerkennung davon ausging, der biologische Vater zu sein, dies aber nicht der Fall ist. Wusste er hingegen bei der Anerkennung, dass er nicht der biologische Vater ist, kann er die Anerkennung <strong>nicht</strong> anfechten – er hat das Kind sehenden Auges anerkannt.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Beispiel:</p>
+        <p class="text-gray-700">Stefan anerkennt das Kind seiner Partnerin Lisa, weil beide davon ausgehen, dass er der Vater ist. Zwei Jahre später ergeben sich Zweifel. Ein DNA-Test zeigt, dass ein anderer Mann der biologische Vater ist. Stefan kann die Anerkennung anfechten – er unterlag einem Irrtum über seine Vaterschaft. Hätte Stefan hingegen schon bei der Anerkennung gewusst, dass er nicht der biologische Vater ist (z.B. weil er Lisas Kind wie sein eigenes behandeln wollte), wäre eine Anfechtung durch ihn ausgeschlossen.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Anfechtung durch die Gemeinde (Missbrauchliche Anerkennung)</h3>
+
+    <p class="text-gray-700 mb-6">Seit der Gesetzesrevision von 2019 kann auch die <strong>Heimat- oder Wohnsitzgemeinde</strong> des Kindes oder des Anerkennenden die Anerkennung anfechten (Art. 260a Abs. 1 ZGB). Dieses Klagerecht wurde eingeführt, um <strong>missbrauchliche Anerkennungen</strong> zu bekämpfen – insbesondere Fälle, in denen ein Schweizer Mann ein ausländisches Kind anerkennt, um diesem das Schweizer Bürgerrecht zu verschaffen, ohne dass eine biologische Vaterschaft besteht.</p>
+
+    <p class="text-gray-700 mb-6">Das Bundesgericht hatte bereits vor der Gesetzesrevision in BGE 143 III 624 ein Anfechtungsrecht der Gemeinde bejaht. Der Gesetzgeber hat diese Rechtsprechung in der Folge kodifiziert. Bei der Beurteilung nimmt das Gericht eine <strong>Interessenabwägung</strong> vor zwischen dem öffentlichen Interesse an der Verhinderung des Missbrauchs und dem Interesse des Kindes an der Aufrechterhaltung des Kindesverhältnisses.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Typische Fallkonstellation:</p>
+        <p class="text-gray-700">Ein Schweizer Mann anerkennt das Kind einer ausländischen Frau, mit der er keine Beziehung hat und nie hatte. Ziel ist die Verschaffung des Schweizer Bürgerrechts für das Kind (und in der Folge erleichterte Aufenthaltsbewilligung für die Mutter). Die Gemeinde kann die Anerkennung anfechten, wenn sie den Verdacht der Missbrauchsabsicht nachweisen kann – etwa durch fehlende tatsächliche Beziehung zwischen dem Anerkennenden und dem Kind.</p>
+    </div>
+
+    <!-- Beweislast bei Anfechtung der Anerkennung -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Beweislast bei der Anfechtung der Anerkennung (Art. 260b ZGB)</h2>
+
+    <p class="text-gray-700 mb-6">Der Kläger muss beweisen, dass der Anerkennende <strong>nicht der biologische Vater</strong> ist (Art. 260b Abs. 1 ZGB). Für den Anerkennenden selbst gilt eine Sonderregel: Er muss zusätzlich den <strong>Irrtum</strong> über die Vaterschaft oder die <strong>Drohung</strong> nachweisen.</p>
+
+    <p class="text-gray-700 mb-6">Eine <strong>Beweiserleichterung</strong> gilt nach Art. 260b Abs. 2 ZGB: Hat der Anerkennende in der Empfängniszeit nicht mit der Mutter verkehrt oder war seine Zeugungsfähigkeit zu dieser Zeit ausgeschlossen, genügt die Glaubhaftmachung dieser Umstände. In der Praxis wird jedoch fast immer ein DNA-Gutachten angeordnet, das die Frage der biologischen Vaterschaft mit höchster Sicherheit beantwortet.</p>
+
+    <!-- Fristen bei der Anfechtung der Anerkennung -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fristen bei der Anfechtung der Anerkennung (Art. 260c ZGB)</h2>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kläger</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Fristbeginn</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Relative Frist</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Absolute Frist</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Mutter</td>
+                    <td class="px-6 py-4 text-gray-700">Ab Kenntnis der Anerkennung und der Nichtvaterschaft</td>
+                    <td class="px-6 py-4 text-gray-700">1 Jahr</td>
+                    <td class="px-6 py-4 text-gray-700">5 Jahre ab Anerkennung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kind</td>
+                    <td class="px-6 py-4 text-gray-700">18. Geburtstag</td>
+                    <td class="px-6 py-4 text-gray-700">1 Jahr</td>
+                    <td class="px-6 py-4 text-gray-700">Bis Alter 19</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Anerkennender</td>
+                    <td class="px-6 py-4 text-gray-700">Ab Kenntnis des Irrtums oder der Drohung</td>
+                    <td class="px-6 py-4 text-gray-700">1 Jahr</td>
+                    <td class="px-6 py-4 text-gray-700">5 Jahre ab Anerkennung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Gemeinde</td>
+                    <td class="px-6 py-4 text-gray-700">Ab Kenntnis der Anerkennung und des Missbrauchsverdachts</td>
+                    <td class="px-6 py-4 text-gray-700">1 Jahr</td>
+                    <td class="px-6 py-4 text-gray-700">5 Jahre ab Anerkennung</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Auch bei der Anfechtung der Anerkennung ist eine <strong>Fristwiederherstellung</strong> bei wichtigen Gründen möglich (Art. 260c Abs. 3 ZGB). Die strengen Massstäbe des Bundesgerichts gelten analog zur Anfechtung der Vermutung.</p>
+
+    <!-- Rechtsfolgen -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtsfolgen einer erfolgreichen Anfechtung</h2>
+
+    <p class="text-gray-700 mb-6">Wird die Anfechtungsklage gutgeheissen, fällt das Kindesverhältnis <strong>rückwirkend ab Geburt</strong> (ex tunc) weg. Dies hat weitreichende Konsequenzen in nahezu allen Lebensbereichen des Kindes und des bisherigen rechtlichen Vaters:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsfolge</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Wirkung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Details</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kindesverhältnis</td>
+                    <td class="px-6 py-4 text-gray-700">Entfällt rückwirkend ab Geburt</td>
+                    <td class="px-6 py-4 text-gray-700">Das Kind hat keinen rechtlichen Vater mehr, bis ein neues Kindesverhältnis begründet wird</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Elterliche Sorge</td>
+                    <td class="px-6 py-4 text-gray-700">Entfällt für den bisherigen Vater</td>
+                    <td class="px-6 py-4 text-gray-700">Mutter erhält alleinige Sorge (oder KESB bestellt Beistandschaft)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Unterhaltspflicht</td>
+                    <td class="px-6 py-4 text-gray-700">Entfällt rückwirkend</td>
+                    <td class="px-6 py-4 text-gray-700">Bereits geleisteter Unterhalt kann als ungerechtfertigte Bereicherung zurückgefordert werden (BGE 129 III 646)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Erbrecht</td>
+                    <td class="px-6 py-4 text-gray-700">Entfällt rückwirkend</td>
+                    <td class="px-6 py-4 text-gray-700">Kind verliert gesetzlichen Erbanspruch und Pflichtteilsschutz gegenüber dem bisherigen Vater</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Familienname</td>
+                    <td class="px-6 py-4 text-gray-700">Kann sich ändern</td>
+                    <td class="px-6 py-4 text-gray-700">Trug das Kind den Namen des bisherigen Vaters, wird es umbenannt (Mutter kann Beibehaltung beantragen)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Bürgerrecht</td>
+                    <td class="px-6 py-4 text-gray-700">Kann sich ändern</td>
+                    <td class="px-6 py-4 text-gray-700">Folgt dem Namensrecht; unter Umständen Verlust des Schweizer Bürgerrechts</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Persönlicher Verkehr</td>
+                    <td class="px-6 py-4 text-gray-700">Kein Anspruch mehr</td>
+                    <td class="px-6 py-4 text-gray-700">Ausnahmsweise kann ein Besuchsrecht nach Art. 274a ZGB bestehen, wenn eine enge Beziehung bestand</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Rückforderung von geleisteten Unterhaltsbeiträgen</h3>
+
+    <p class="text-gray-700 mb-6">Das Bundesgericht hat in BGE 129 III 646 festgehalten, dass der bisherige rechtliche Vater bereits geleistete Unterhaltsbeiträge als <strong>ungerechtfertigte Bereicherung</strong> (Art. 62 ff. OR) zurückfordern kann. Der Rückforderungsanspruch richtet sich gegen die Mutter als Empfängerin der Unterhaltszahlungen. In der Praxis ist die Rückforderung jedoch oft schwierig, weil die Mutter die Mittel bereits für das Kind verbraucht hat und die Bereicherung damit entfallen sein kann (Art. 64 OR).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Genugtuungsanspruch?</h3>
+
+    <p class="text-gray-700 mb-6">Wurde der Ehemann oder Anerkennende über die Nichtvaterschaft <strong>absichtlich getäuscht</strong>, kann unter Umständen ein Anspruch auf Genugtuung (Schmerzensgeld) gegenüber der Mutter bestehen (Art. 49 OR). Das Bundesgericht hat anerkannt, dass die jahrelange Vorenthaltung der Wahrheit über die Nichtvaterschaft eine Persönlichkeitsverletzung darstellen kann (BGE 125 III 209). Die Höhe der Genugtuung richtet sich nach den Umständen des Einzelfalls und bewegt sich in der Praxis zwischen CHF 5'000 und CHF 20'000.</p>
+
+    <!-- Zuständigkeit und Verfahren -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Zuständigkeit und Verfahren</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Örtliche und sachliche Zuständigkeit</h3>
+
+    <p class="text-gray-700 mb-6">Für die Anfechtungsklage ist das erstinstanzliche Gericht am Wohnsitz einer der Parteien zuständig (Art. 26 ZPO). Kein vorgängiges Schlichtungsverfahren ist erforderlich (Art. 198 lit. b ZPO). Es gelten der <strong>Untersuchungsgrundsatz</strong> und die <strong>Offizialmaxime</strong> (Art. 296 ZPO) – das Gericht erforscht den Sachverhalt von Amtes wegen und ist nicht an die Rechtsbegehren der Parteien gebunden.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Verfahrensablauf</h3>
+
+    <p class="text-gray-700 mb-6">Der Verfahrensablauf entspricht weitgehend dem der <a href="/abstammungsrecht/vaterschaftsklage" class="text-gold hover:underline font-semibold">Vaterschaftsklage</a>: Nach Klageeinreichung und Klageantwort ordnet das Gericht in der Regel ein DNA-Gutachten an. Die Mitwirkungspflicht aller Beteiligten gilt auch hier (Art. 296 Abs. 2 ZPO). Die Verfahrensdauer beträgt in der Regel 6 bis 12 Monate.</p>
+
+    <!-- BGE-Rechtsprechung -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">BGE-Rechtsprechung zur Anfechtung der Vaterschaft</h2>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">BGE / Urteil</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Thema</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kernaussage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 144 III 1</td>
+                    <td class="px-6 py-4 text-gray-700">Kein Anfechtungsrecht des biologischen Vaters</td>
+                    <td class="px-6 py-4 text-gray-700">Der biologische Vater kann die Vaterschaftsvermutung des Ehemanns nicht anfechten; auch Art. 8 EMRK begründet kein solches Recht</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 143 III 624</td>
+                    <td class="px-6 py-4 text-gray-700">Anfechtungsrecht der Gemeinde</td>
+                    <td class="px-6 py-4 text-gray-700">Gemeinden können eine Vaterschaftsanerkennung anfechten, wenn diese zur Umgehung des Ausländerrechts dient</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 132 III 1</td>
+                    <td class="px-6 py-4 text-gray-700">Fristbeginn / Kenntnis</td>
+                    <td class="px-6 py-4 text-gray-700">Blosse Gerüchte oder ein vager Verdacht lösen die Anfechtungsfrist nicht aus; erforderlich ist sichere Kenntnis</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 129 III 646</td>
+                    <td class="px-6 py-4 text-gray-700">Rückforderung Unterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Nach erfolgreicher Anfechtung kann geleisteter Unterhalt als ungerechtfertigte Bereicherung zurückgefordert werden</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 125 III 209</td>
+                    <td class="px-6 py-4 text-gray-700">Genugtuung bei Täuschung</td>
+                    <td class="px-6 py-4 text-gray-700">Jahrelange Vorenthaltung der Wahrheit über die Nichtvaterschaft kann einen Genugtuungsanspruch begründen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGer 5A_178/2022</td>
+                    <td class="px-6 py-4 text-gray-700">Fristwiederherstellung bei psychischer Unfähigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Schwere psychische Erkrankung kann ein wichtiger Grund für die Fristwiederherstellung sein</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGer 5C.130/2003</td>
+                    <td class="px-6 py-4 text-gray-700">Keine Fristwiederherstellung bei Zuwarten</td>
+                    <td class="px-6 py-4 text-gray-700">Wer begründete Zweifel hat und länger als 2 Jahre zuwartet, verwirkt den Anspruch auf Fristwiederherstellung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 136 III 593</td>
+                    <td class="px-6 py-4 text-gray-700">Beistandsversagen</td>
+                    <td class="px-6 py-4 text-gray-700">Pflichtwidriges Unterlassen durch den KESB-Beistand kann eine Fristwiederherstellung rechtfertigen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Sonderfälle -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Sonderfälle und Abgrenzungsfragen</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gleichgeschlechtliche Ehen (Art. 255a ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Seit der Einführung der «Ehe für alle» am 1. Juli 2022 gilt die <strong>Elternschaftsvermutung</strong> auch für die Ehefrau der Mutter, sofern das Kind durch Samenspende gemäss FMedG gezeugt wurde (Art. 255a ZGB). Die Anfechtung dieser Elternschaftsvermutung richtet sich analog nach Art. 256 ff. ZGB. Hat die Ehefrau der Samenspende zugestimmt, ist die Anfechtung ausgeschlossen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Doppelte Anfechtung und Vaterschaftsfeststellung</h3>
+
+    <p class="text-gray-700 mb-6">Wenn ein Kind während der Ehe geboren wurde und die Mutter gleichzeitig eine Beziehung mit einem anderen Mann hatte, ergibt sich häufig die Situation, dass zunächst die Vaterschaftsvermutung des Ehemanns angefochten und anschliessend eine <a href="/abstammungsrecht/vaterschaftsklage" class="text-gold hover:underline font-semibold">Vaterschaftsklage</a> gegen den biologischen Vater eingereicht werden muss. Diese beiden Verfahren können <strong>nicht parallel</strong> geführt werden – die Anfechtung muss rechtskräftig abgeschlossen sein, bevor die Vaterschaftsklage zulässig ist (BGE 122 III 97). In der Praxis kann dies zu erheblichen Verzögerungen führen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Anfechtung und Adoption</h3>
+
+    <p class="text-gray-700 mb-6">Ein durch <a href="/adoption" class="text-gold hover:underline font-semibold">Adoption</a> begründetes Kindesverhältnis kann <strong>nicht</strong> im Wege der Anfechtung der Vaterschaft aufgehoben werden. Die Adoption ist ein eigenständiger Rechtsakt mit eigenen Aufhebungsmöglichkeiten (Art. 269 ff. ZGB). Die Anfechtung nach Art. 256 ff. und 260a ff. ZGB ist auf Kindesverhältnisse beschränkt, die durch Vermutung oder Anerkennung begründet wurden.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Internationaler Sachverhalt</h3>
+
+    <p class="text-gray-700 mb-6">Bei Anfechtungsklagen mit <a href="/internationales-familienrecht" class="text-gold hover:underline font-semibold">internationalem Bezug</a> bestimmt sich die Zuständigkeit nach Art. 66 IPRG. Das anwendbare Recht richtet sich nach Art. 68 IPRG und knüpft primär an den gewöhnlichen Aufenthalt des Kindes an. Ausländische Anfechtungsurteile werden in der Schweiz nach Art. 70 i.V.m. Art. 25 ff. IPRG anerkannt, sofern die Voraussetzungen (insbesondere kein Verstoss gegen den Ordre public) erfüllt sind.</p>
+
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">Die Anfechtung der Vaterschaft ist eines der komplexesten Gebiete des Familienrechts. Die Abgrenzung zwischen den beiden Anfechtungswegen, die Einhaltung der Fristen, die Beweisführung und die Beurteilung der Rechtsfolgen erfordern spezialisiertes Wissen. Fehler – insbesondere bei den Fristen – sind irreversibel und können zu einem dauerhaften Verlust des Anfechtungsrechts führen.</p>
+
+        <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> ist unverzichtbar in folgenden Konstellationen: wenn die Klagefrist zu laufen droht und eine rasche Einschätzung der Erfolgsaussichten nötig ist, wenn gleichzeitig Unterhaltsforderungen oder Genugtuungsansprüche geltend gemacht werden sollen, wenn ein internationaler Sachverhalt vorliegt, oder wenn der biologische Vater eine Feststellung seiner Vaterschaft anstrebt und zunächst die bestehende Vermutung beseitigt werden muss.</p>
+
+        <p class="text-gray-700 mb-6">Auch für Mütter, die eine Anerkennung anfechten möchten, oder für Gemeinden, die eine missbrauchliche Anerkennung vermuten, ist die Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> oder <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> unerlässlich, um die Erfolgsaussichten korrekt einzuschätzen und die Klage fristgerecht einzureichen.</p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Haben Sie Zweifel an der Vaterschaft? Unsere spezialisierten Familienrechtsanwälte prüfen Ihre Anfechtungsmöglichkeiten, beraten Sie zu Fristen und Erfolgsaussichten und begleiten Sie durch das gesamte Verfahren.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- Fazit -->
+    <h2 class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Die Anfechtung der Vaterschaft in der Schweiz kennt zwei grundlegend verschiedene Wege: die Anfechtung der Ehemannsvermutung (Art. 256 ff. ZGB) und die Anfechtung einer freiwilligen Anerkennung (Art. 260a ff. ZGB). Beide Wege unterliegen strengen Fristen – insbesondere der relativen Frist von einem Jahr ab Kenntnis und der absoluten Frist von fünf Jahren. Das Bundesgericht hat in zahlreichen Entscheiden die Konturen geschärft: Der biologische Vater hat kein Anfechtungsrecht (BGE 144 III 1), die Gemeinde kann missbrauchliche Anerkennungen anfechten (BGE 143 III 624), und die Fristwiederherstellung wird restriktiv gehandhabt. Eine erfolgreiche Anfechtung lässt das Kindesverhältnis rückwirkend entfallen – mit weitreichenden Folgen für Unterhalt, Erbrecht und Bürgerrecht. Angesichts der Komplexität und der gravierenden Rechtsfolgen ist die frühzeitige Beratung durch einen spezialisierten Familienrechtsanwalt in jedem Fall empfehlenswert.</p>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann der biologische Vater die Vaterschaft des Ehemanns anfechten?</h3>
+                <p class="text-gray-700">Nein. Das Bundesgericht hat in BGE 144 III 1 unmissverständlich festgehalten, dass der biologische Vater kein Anfechtungsrecht hat – auch nicht unter Berufung auf Art. 8 EMRK. Klageberechtigt sind ausschliesslich der Ehemann und das Kind (Art. 256 ZGB). Der biologische Vater kann jedoch die Vaterschaft freiwillig anerkennen, sobald die Vermutung durch den Ehemann oder das Kind erfolgreich angefochten wurde.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie lange habe ich Zeit, die Vaterschaft anzufechten?</h3>
+                <p class="text-gray-700">Die relative Frist beträgt 1 Jahr ab Kenntnis der Geburt und der Nichtvaterschaft (Art. 256c Abs. 1 ZGB). Die absolute Frist beträgt 5 Jahre ab Geburt des Kindes. Für das Kind gilt eine Sonderfrist: Es kann bis spätestens 1 Jahr nach Erreichen der Volljährigkeit (bis Alter 19) klagen. Bei wichtigen Gründen (z.B. schwere Krankheit) ist eine Fristwiederherstellung möglich.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich als Mutter die Vaterschaftsvermutung meines Ehemanns anfechten?</h3>
+                <p class="text-gray-700">Nein, die Mutter hat kein eigenes Anfechtungsrecht bezüglich der Vaterschaftsvermutung des Ehemanns (Art. 256 ZGB). Sie kann jedoch als gesetzliche Vertreterin des Kindes handeln, wenn das Kind die Klagevoraussetzungen erfüllt (eheliches Zusammenleben hat aufgehört). Bei einer freiwilligen Anerkennung (Art. 260a ZGB) hat die Mutter hingegen ein eigenes Anfechtungsrecht.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert mit dem Unterhalt nach einer erfolgreichen Anfechtung?</h3>
+                <p class="text-gray-700">Die Unterhaltspflicht entfällt rückwirkend ab Geburt. Bereits geleistete Unterhaltsbeiträge können als ungerechtfertigte Bereicherung zurückgefordert werden (BGE 129 III 646). In der Praxis ist die Rückforderung allerdings oft schwierig, weil die Mutter die Mittel bereits für das Kind verbraucht hat. Wurde der Ehemann über die Nichtvaterschaft getäuscht, kann zusätzlich ein Genugtuungsanspruch bestehen (Art. 49 OR).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann die Gemeinde eine Vaterschaftsanerkennung anfechten?</h3>
+                <p class="text-gray-700">Ja, seit der Gesetzesrevision von 2019 kann die Heimat- oder Wohnsitzgemeinde eine Vaterschaftsanerkennung anfechten, wenn der Verdacht einer missbrauchlichen Anerkennung besteht (Art. 260a Abs. 1 ZGB). Dies betrifft insbesondere Fälle, in denen ein Schweizer Mann ein ausländisches Kind anerkennt, um diesem das Schweizer Bürgerrecht zu verschaffen, ohne biologischer Vater zu sein (BGE 143 III 624).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich die Vaterschaft anfechten, wenn ich einer Samenspende zugestimmt habe?</h3>
+                <p class="text-gray-700">Nein. Hat der Ehemann der Zeugung durch Samenspende zugestimmt, ist die Anfechtung ausgeschlossen (Art. 256 Abs. 3 ZGB). Dies gilt unabhängig davon, ob die Samenspende innerhalb der gesetzlichen Vorgaben des FMedG oder privat erfolgte – entscheidend ist allein die nachweisbare Zustimmung des Ehemanns.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen Anfechtung der Vermutung und Anfechtung der Anerkennung?</h3>
+                <p class="text-gray-700">Die Anfechtung der Vermutung (Art. 256 ff. ZGB) betrifft Kinder, die während der Ehe geboren wurden – klageberechtigt sind nur der Ehemann und das Kind. Die Anfechtung der Anerkennung (Art. 260a ff. ZGB) betrifft eine freiwillige Vaterschaftsanerkennung – klageberechtigt sind die Mutter, das Kind, der Anerkennende und die Gemeinde. Die Fristen und Beweisregeln unterscheiden sich ebenfalls.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Verliert mein Kind das Schweizer Bürgerrecht nach einer Anfechtung?</h3>
+                <p class="text-gray-700">Das ist möglich. Wenn das Kind das Schweizer Bürgerrecht über den bisherigen Vater erhalten hat und das Kindesverhältnis rückwirkend entfällt, kann auch das Bürgerrecht entfallen. Dies hängt davon ab, ob das Kind das Bürgerrecht über die Mutter oder einen anderen Weg beibehält. In der Praxis sind die Auswirkungen auf das Bürgerrecht besonders bei binationalen Familien komplex und sollten anwaltlich geprüft werden.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Anfechtung der Vaterschaft in der Schweiz",
+        "description": "Anfechtung der Vaterschaft Schweiz: Vermutung anfechten (Art. 256 ZGB) & Anerkennung anfechten (Art. 260a ZGB). Fristen, Beweislast & BGE-Rechtsprechung.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-20",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/abstammungsrecht/anfechtung-vaterschaft"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Kann der biologische Vater die Vaterschaft des Ehemanns anfechten?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein. Das Bundesgericht hat in BGE 144 III 1 unmissverständlich festgehalten, dass der biologische Vater kein Anfechtungsrecht hat – auch nicht unter Berufung auf Art. 8 EMRK. Klageberechtigt sind ausschliesslich der Ehemann und das Kind (Art. 256 ZGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie lange habe ich Zeit, die Vaterschaft anzufechten?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die relative Frist beträgt 1 Jahr ab Kenntnis der Geburt und der Nichtvaterschaft (Art. 256c Abs. 1 ZGB). Die absolute Frist beträgt 5 Jahre ab Geburt des Kindes. Für das Kind gilt eine Sonderfrist: Es kann bis spätestens 1 Jahr nach Erreichen der Volljährigkeit (bis Alter 19) klagen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich als Mutter die Vaterschaftsvermutung meines Ehemanns anfechten?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, die Mutter hat kein eigenes Anfechtungsrecht bezüglich der Vaterschaftsvermutung des Ehemanns (Art. 256 ZGB). Sie kann jedoch als gesetzliche Vertreterin des Kindes handeln, wenn das Kind die Klagevoraussetzungen erfüllt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert mit dem Unterhalt nach einer erfolgreichen Anfechtung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Unterhaltspflicht entfällt rückwirkend ab Geburt. Bereits geleistete Unterhaltsbeiträge können als ungerechtfertigte Bereicherung zurückgefordert werden (BGE 129 III 646). Wurde der Ehemann über die Nichtvaterschaft getäuscht, kann zusätzlich ein Genugtuungsanspruch bestehen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann die Gemeinde eine Vaterschaftsanerkennung anfechten?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, seit der Gesetzesrevision von 2019 kann die Heimat- oder Wohnsitzgemeinde eine Vaterschaftsanerkennung anfechten, wenn der Verdacht einer missbrauchlichen Anerkennung besteht (Art. 260a Abs. 1 ZGB), insbesondere zur Umgehung des Ausländerrechts (BGE 143 III 624)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich die Vaterschaft anfechten, wenn ich einer Samenspende zugestimmt habe?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein. Hat der Ehemann der Zeugung durch Samenspende zugestimmt, ist die Anfechtung ausgeschlossen (Art. 256 Abs. 3 ZGB). Dies gilt unabhängig davon, ob die Samenspende innerhalb der FMedG-Vorgaben oder privat erfolgte."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen Anfechtung der Vermutung und Anfechtung der Anerkennung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Anfechtung der Vermutung (Art. 256 ff. ZGB) betrifft Kinder, die während der Ehe geboren wurden – klageberechtigt sind nur der Ehemann und das Kind. Die Anfechtung der Anerkennung (Art. 260a ff. ZGB) betrifft eine freiwillige Vaterschaftsanerkennung – klageberechtigt sind die Mutter, das Kind, der Anerkennende und die Gemeinde."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Verliert mein Kind das Schweizer Bürgerrecht nach einer Anfechtung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das ist möglich. Wenn das Kind das Schweizer Bürgerrecht über den bisherigen Vater erhalten hat und das Kindesverhältnis rückwirkend entfällt, kann auch das Bürgerrecht entfallen. Die Auswirkungen sind besonders bei binationalen Familien komplex und sollten anwaltlich geprüft werden."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Abstammungsrecht",
+                "item": "https://familienrechtanwalt.ch/abstammungsrecht"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Anfechtung der Vaterschaft in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/abstammungsrecht/anfechtung-vaterschaft"
+            }
+        ]
+    })} />
+
+</ArticleLayout>

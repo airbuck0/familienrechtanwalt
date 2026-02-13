@@ -1,0 +1,1110 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+---
+
+<ArticleLayout
+    title="KESB Schweiz: Aufgaben, Verfahren, Massnahmen & Rechte"
+    description="KESB einfach erklärt: Aufgaben, Kindesschutz, Erwachsenenschutz, Gefährdungsmeldung, Beistandschaft, Beschwerde & Kosten. Mit BGE-Rechtsprechung & Praxistipps."
+    keywords="KESB, Kindes- und Erwachsenenschutzbehörde, KESB Schweiz, Kindesschutz, Erwachsenenschutz, Gefährdungsmeldung, Beistandschaft, KESB Beschwerde, KESB Aufgaben, Obhutsentzug"
+    category="Sorgerecht"
+    categoryLink="/sorgerecht"
+>
+
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">&#10003;</span>
+                <span>Die KESB (Kindes- und Erwachsenenschutzbehörde) ist seit 2013 die professionelle Fachbehörde für den Kindes- und Erwachsenenschutz in der Schweiz (Art. 440 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">&#10003;</span>
+                <span>Sie ersetzt die früheren rund 1'400 kommunalen Laien-Vormundschaftsbehörden und entscheidet interdisziplinär mit mindestens drei Fachpersonen.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">&#10003;</span>
+                <span>Im Kindesschutz ordnet die KESB abgestufte Massnahmen an: von der Ermahnung (Art. 307 ZGB) über die Beistandschaft (Art. 308 ZGB) bis zum Obhutsentzug (Art. 310 ZGB) und Sorgerechtsentzug (Art. 311 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">&#10003;</span>
+                <span>Im Erwachsenenschutz stehen vier Arten von Beistandschaften (Art. 393-398 ZGB) und die fürsorgerische Unterbringung (Art. 426 ZGB) zur Verfügung.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">&#10003;</span>
+                <span>Jede Person kann eine Gefährdungsmeldung bei der KESB einreichen (Art. 443 ZGB). Bestimmte Fachpersonen sind sogar meldepflichtig (Art. 314d ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">&#10003;</span>
+                <span>Gegen KESB-Entscheide kann innert 30 Tagen Beschwerde beim zuständigen kantonalen Gericht erhoben werden (Art. 450 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">&#10003;</span>
+                <span>Ende 2023 waren schweizweit 154'981 Personen von einer KESB-Schutzmassnahme betroffen -- davon rund 49'132 Kinder und 106'000 Erwachsene.</span>
+            </li>
+        </ul>
+    </div>
+
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die Kindes- und Erwachsenenschutzbehörde (KESB) gehört zu den bekanntesten -- und zugleich umstrittensten -- Behörden der Schweiz. Sie greift ein, wenn das Wohl eines Kindes gefährdet ist oder eine erwachsene Person aufgrund einer psychischen Störung, geistigen Behinderung oder schweren Verwahrlosung Schutz benötigt. Dieser Artikel erklärt umfassend, was die KESB ist, welche Aufgaben sie hat, wie ein Verfahren abläuft, welche Massnahmen sie anordnen kann und welche Rechte Betroffene haben.</p>
+
+    <!-- Inhaltsverzeichnis -->
+    <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-12">
+        <h2 class="font-serif text-xl font-bold text-navy mb-4">Inhaltsverzeichnis</h2>
+        <ol class="space-y-2 text-gray-700">
+            <li><a href="#was-ist-die-kesb" class="text-gold hover:underline">1. Was ist die KESB? -- Definition und Überblick</a></li>
+            <li><a href="#geschichte" class="text-gold hover:underline">2. Geschichte: Vom Vormundschaftsrecht zum KESR</a></li>
+            <li><a href="#organisation" class="text-gold hover:underline">3. Organisation und Zusammensetzung der KESB</a></li>
+            <li><a href="#aufgaben" class="text-gold hover:underline">4. Aufgaben der KESB im Überblick</a></li>
+            <li><a href="#kindesschutz" class="text-gold hover:underline">5. Kindesschutz: Massnahmen im Detail</a></li>
+            <li><a href="#erwachsenenschutz" class="text-gold hover:underline">6. Erwachsenenschutz: Massnahmen im Detail</a></li>
+            <li><a href="#kesb-vermeiden" class="text-gold hover:underline">7. KESB vermeiden: Vorsorgeauftrag und Patientenverfügung</a></li>
+            <li><a href="#verfahren" class="text-gold hover:underline">8. Das KESB-Verfahren Schritt für Schritt</a></li>
+            <li><a href="#rechte" class="text-gold hover:underline">9. Rechte der Betroffenen im KESB-Verfahren</a></li>
+            <li><a href="#beschwerde" class="text-gold hover:underline">10. Beschwerde gegen KESB-Entscheide</a></li>
+            <li><a href="#kosten" class="text-gold hover:underline">11. Kosten eines KESB-Verfahrens</a></li>
+            <li><a href="#kesb-familienrecht" class="text-gold hover:underline">12. KESB und Familienrecht</a></li>
+            <li><a href="#kritik" class="text-gold hover:underline">13. Kritik und aktuelle Entwicklungen</a></li>
+            <li><a href="#anwalt" class="text-gold hover:underline">14. Wann Sie einen Anwalt für KESB-Verfahren beiziehen sollten</a></li>
+            <li><a href="#fazit" class="text-gold hover:underline">15. Fazit</a></li>
+            <li><a href="#faq" class="text-gold hover:underline">16. Häufig gestellte Fragen (FAQ)</a></li>
+        </ol>
+    </div>
+
+    <!-- 1. Was ist die KESB? -->
+    <h2 id="was-ist-die-kesb" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Was ist die KESB? -- Definition und Überblick</h2>
+
+    <p class="text-gray-700 mb-6">Die Abkürzung KESB steht für <strong>Kindes- und Erwachsenenschutzbehörde</strong>. Es handelt sich um eine professionelle Fachbehörde, die seit dem 1. Januar 2013 in der gesamten Schweiz für den zivilrechtlichen Schutz von Kindern und hilfsbedürftigen Erwachsenen zuständig ist (Art. 440 ZGB). Die KESB hat damit die früheren kommunalen Vormundschaftsbehörden abgelöst.</p>
+
+    <p class="text-gray-700 mb-6">Die KESB verfolgt zwei übergeordnete Ziele: den Schutz von Kindern, deren Wohl gefährdet ist, und den Schutz von Erwachsenen, die aufgrund einer Schwächesituation ihre Angelegenheiten nicht mehr selbst besorgen können. Dabei gilt stets das <strong>Subsidiaritätsprinzip</strong>: Die KESB greift nur ein, wenn die Unterstützung durch Familie, nahestehende Personen oder andere Dienste nicht ausreicht.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig zu wissen:</p>
+        <p class="text-gray-700">Die KESB ist gemäss Bundesgericht ein Gericht im Sinne von Art. 30 Abs. 1 BV und Art. 6 Ziff. 1 EMRK (BGE 142 III 732). Sie muss daher in ihrer Organisation, personellen Zusammensetzung und Entscheidfindung unabhängig und unparteiisch sein.</p>
+    </div>
+
+    <p class="text-gray-700 mb-6">Die drei Grundprinzipien der KESB-Tätigkeit sind:</p>
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Prinzip</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bedeutung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Subsidiarität</td>
+                    <td class="px-6 py-4 text-gray-700">Behördliche Massnahmen nur, wenn private Hilfe nicht ausreicht</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Verhältnismässigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Nur so viel Eingriff wie nötig, so wenig wie möglich</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kindeswohl / Wohl der betroffenen Person</td>
+                    <td class="px-6 py-4 text-gray-700">Oberstes Leitprinzip bei allen Entscheidungen (BGE 141 III 328)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 2. Geschichte -->
+    <h2 id="geschichte" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Geschichte: Vom Vormundschaftsrecht zum KESR</h2>
+
+    <p class="text-gray-700 mb-6">Vor dem 1. Januar 2013 lag der Kindes- und Erwachsenenschutz in der Schweiz bei rund 1'400 kommunalen Vormundschaftsbehörden. Diese waren mehrheitlich mit Laien besetzt -- häufig Gemeinderäte ohne juristische oder sozialarbeiterische Ausbildung. Zudem entschied vielerorts eine einzelne Person (der Amtsvormund) über einschneidende Massnahmen.</p>
+
+    <p class="text-gray-700 mb-6">Mit der Revision des Vormundschaftsrechts -- die 2008 vom Parlament beschlossen und per 1. Januar 2013 in Kraft gesetzt wurde -- erfolgte eine grundlegende Professionalisierung. Die wichtigsten Neuerungen:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Altes Recht (vor 2013)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Neues Recht (seit 2013)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Behörde</td>
+                    <td class="px-6 py-4 text-gray-700">~1'400 kommunale Vormundschaftsbehörden</td>
+                    <td class="px-6 py-4 text-gray-700">~124 regionale KESB (professionelle Fachbehörden)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Zusammensetzung</td>
+                    <td class="px-6 py-4 text-gray-700">Häufig Laien (Gemeinderäte)</td>
+                    <td class="px-6 py-4 text-gray-700">Interdisziplinäre Fachpersonen (Recht, Sozialarbeit, Psychologie)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Entscheid</td>
+                    <td class="px-6 py-4 text-gray-700">Teilweise Einzelperson</td>
+                    <td class="px-6 py-4 text-gray-700">Kollegium (mind. 3 Mitglieder, Art. 440 Abs. 2 ZGB)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Massnahmen (Erwachsene)</td>
+                    <td class="px-6 py-4 text-gray-700">Starre Formen: Vormundschaft, Beiratschaft, Beistandschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Flexible, massgeschneiderte Beistandschaften (Art. 393-398 ZGB)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Eigene Vorsorge</td>
+                    <td class="px-6 py-4 text-gray-700">Nicht vorgesehen</td>
+                    <td class="px-6 py-4 text-gray-700">Vorsorgeauftrag (Art. 360 ff. ZGB) und Patientenverfügung (Art. 370 ff. ZGB)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Terminologie</td>
+                    <td class="px-6 py-4 text-gray-700">"Entmündigung", "Vormundschaft"</td>
+                    <td class="px-6 py-4 text-gray-700">"Beistandschaft", "fürsorgerische Unterbringung"</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Die Reform führte zu einer massiven Reduktion einschneidender Massnahmen: Während 2012 noch über 26'000 Entmündigungen und Beiratschaften bestanden, gibt es heute nur noch rund 15'000 umfassende Beistandschaften. Die meisten Massnahmen sind nun milder und individuell zugeschnitten.</p>
+
+    <!-- 3. Organisation -->
+    <h2 id="organisation" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Organisation und Zusammensetzung der KESB</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Interdisziplinäre Fachbehörde</h3>
+
+    <p class="text-gray-700 mb-6">Die KESB ist eine interdisziplinäre, kollegiale Fachbehörde (Art. 440 Abs. 1 ZGB). Sie fällt ihre Entscheide mit mindestens drei Mitgliedern (Art. 440 Abs. 2 ZGB). Die Mitglieder verfügen über Fachkenntnisse in den Bereichen Recht, Sozialarbeit und/oder Psychologie. Diese interdisziplinäre Zusammensetzung gewährleistet, dass Entscheide nicht nur rechtlich korrekt, sondern auch fachlich fundiert aus sozialarbeiterischer und psychologischer Sicht getroffen werden.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Örtliche Zuständigkeit</h3>
+
+    <p class="text-gray-700 mb-6">Zuständig ist grundsätzlich die KESB am Wohnsitz der betroffenen Person (Art. 442 Abs. 1 ZGB). Bei Gefahr im Verzug kann ausnahmsweise auch die KESB am Aufenthaltsort Massnahmen treffen (Art. 442 Abs. 2 ZGB). Die KESB prüft ihre Zuständigkeit von Amtes wegen (Art. 444 ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kantonale Unterschiede in der Organisation</h3>
+
+    <p class="text-gray-700 mb-6">Die organisatorische Ausgestaltung der KESB liegt in der Kompetenz der Kantone. Es existieren zwei Grundmodelle:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Modell</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kantone</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Verwaltungsbehörde</td>
+                    <td class="px-6 py-4 text-gray-700">ZH, BE, LU, BS, BL, SG, GR, TG, SO, SZ, NW, OW, UR, ZG, GL, AI, AR, TI, VS, JU</td>
+                    <td class="px-6 py-4 text-gray-700">KESB ist eine Verwaltungsfachbehörde (20 Kantone)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Gerichtsbehörde</td>
+                    <td class="px-6 py-4 text-gray-700">AG, FR, GE, NE, SH, VD</td>
+                    <td class="px-6 py-4 text-gray-700">KESB ist als Fachgericht organisiert (6 Kantone)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Die Anzahl der KESB pro Kanton variiert erheblich: Der Kanton Basel-Stadt hat eine einzige KESB für das gesamte Kantonsgebiet, während der Kanton Zürich mit 13 KESB die früheren 171 Laien-Vormundschaftsbehörden ersetzte. Schweizweit bestehen heute rund 124 regionale KESB.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Koordination durch die KOKES:</p>
+        <p class="text-gray-700">Die Konferenz für Kindes- und Erwachsenenschutz (KOKES) koordiniert die Zusammenarbeit der Kantone, gibt Empfehlungen heraus und führt die nationale KESB-Statistik.</p>
+    </div>
+
+    <!-- 4. Aufgaben -->
+    <h2 id="aufgaben" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Aufgaben der KESB im Überblick</h2>
+
+    <p class="text-gray-700 mb-6">Die KESB erfüllt Aufgaben in mehreren Bereichen. Die folgende Tabelle gibt einen Überblick:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bereich</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aufgaben</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kindesschutz</td>
+                    <td class="px-6 py-4 text-gray-700">Ermahnung, Weisung, Beistandschaft, Obhutsentzug, Sorgerechtsentzug</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 307-317 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Erwachsenenschutz</td>
+                    <td class="px-6 py-4 text-gray-700">Beistandschaften (4 Arten), fürsorgerische Unterbringung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 390-398, 426 ff. ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Eigene Vorsorge</td>
+                    <td class="px-6 py-4 text-gray-700">Validierung von Vorsorgeaufträgen und Patientenverfügungen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 360-373 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Unverheiratete Eltern</td>
+                    <td class="px-6 py-4 text-gray-700">Regelung Vaterschaft, Unterhalt, elterliche Sorge, persönlicher Verkehr</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 308 Abs. 2 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Vertragsgenehmigungen</td>
+                    <td class="px-6 py-4 text-gray-700">Genehmigung von Unterhaltsverträgen und Betreuungsvereinbarungen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 287 Abs. 1 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Adoption</td>
+                    <td class="px-6 py-4 text-gray-700">Entgegennahme der Zustimmungserklärungen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 265a ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Aufsicht</td>
+                    <td class="px-6 py-4 text-gray-700">Überwachung der Beistandspersonen, Rechenschaftsprüfung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 410-415 ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 5. Kindesschutz -->
+    <h2 id="kindesschutz" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kindesschutz: Massnahmen im Detail</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wann greift die KESB ein? -- Kindeswohlgefährdung</h3>
+
+    <p class="text-gray-700 mb-6">Die KESB greift im Kindesschutz ein, wenn das Wohl eines Kindes gefährdet ist und die Eltern nicht von sich aus für Abhilfe sorgen oder dazu ausserstande sind (Art. 307 Abs. 1 ZGB). Eine Kindeswohlgefährdung liegt gemäss Bundesgericht vor, wenn aufgrund der Umstände die <strong>ernstliche Möglichkeit einer Beeinträchtigung</strong> des körperlichen, geistigen oder sittlichen Wohls des Kindes besteht und diese Gefährdung eine gewisse Intensität erreicht (BGE 146 III 313).</p>
+
+    <p class="text-gray-700 mb-6">Typische Situationen, in denen die KESB eingreift:</p>
+    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+        <li>Vernachlässigung der Grundbedürfnisse des Kindes (Ernährung, Hygiene, medizinische Versorgung, Aufsicht)</li>
+        <li>Körperliche, psychische oder sexuelle Gewalt gegen das Kind</li>
+        <li>Schwere Erziehungsdefizite oder Überforderung der Eltern</li>
+        <li>Suchtproblematik eines Elternteils (Alkohol, Drogen)</li>
+        <li>Schwere psychische Erkrankung eines Elternteils</li>
+        <li>Hochstrittige Elternkonflikte, die das Kind belasten</li>
+        <li>Soziale Isolation des Kindes oder fehlender Schulbesuch</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Die Gefährdungsmeldung</h3>
+
+    <p class="text-gray-700 mb-6">Eine Gefährdungsmeldung ist der häufigste Auslöser eines KESB-Verfahrens. Das Gesetz unterscheidet zwischen Melderecht und Meldepflicht:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Personenkreis</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Art der Verpflichtung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Jedermann (Privatpersonen, Nachbarn, Verwandte)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 314c Abs. 1 ZGB / Art. 443 Abs. 1 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Melderecht (freiwillig)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Berufsgeheimnisträger (Ärzte, Anwälte, Seelsorger)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 314c Abs. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Qualifiziertes Melderecht</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Fachpersonen mit Kinderkontakt (Lehrer, Erzieher, Ärzte, Psychologen, Pflegefachpersonen, Sozialarbeiter)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 314d Abs. 1 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Meldepflicht</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Amtspersonen (Behördenmitglieder, Beamte)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 314d Abs. 2 ZGB / Art. 443 Abs. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Meldepflicht</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Eine Gefährdungsmeldung kann formlos -- mündlich oder schriftlich -- bei der zuständigen KESB eingereicht werden. Auch anonyme Meldungen sind möglich; die KESB geht ihnen nach, sofern sie hinreichend substanziiert sind. Nach Eingang einer Meldung prüft die KESB, ob eine Gefährdungslage vorliegt und ob sofortige Massnahmen nötig sind.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praxishinweis:</p>
+        <p class="text-gray-700">Nicht jede Gefährdungsmeldung führt zu Massnahmen. In der Stadt Zürich etwa führten nur rund 32 % der Meldungen tatsächlich zur Anordnung einer Massnahme. Die KESB prüft jeden Fall sorgfältig und greift nur ein, wenn eine tatsächliche Gefährdung festgestellt wird.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Stufenfolge der Kindesschutzmassnahmen</h3>
+
+    <p class="text-gray-700 mb-6">Die KESB ordnet Kindesschutzmassnahmen nach dem Prinzip der Verhältnismässigkeit in einer abgestuften Reihenfolge an -- von der mildesten zur einschneidendsten Massnahme. Eine stärkere Massnahme darf nur angeordnet werden, wenn mildere Massnahmen nicht ausreichen oder von vornherein als ungenügend erscheinen (BGE 142 III 188).</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Stufe</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Massnahme</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">1</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Ermahnung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 307 Abs. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Aufforderung an die Eltern, ein bestimmtes Verhalten zu ändern</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">2</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Weisung / Aufsicht</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 307 Abs. 3 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Anordnung konkreter Handlungen (z. B. Therapiebesuch, Elternberatung); Bestellung einer Aufsichtsperson</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">3</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Erziehungsbeistandschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 308 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Ernennung eines Beistands, der die Eltern mit Rat und Tat unterstützt; evt. mit besonderen Befugnissen (Unterhaltsregelung, Besuchsrechtsüberwachung)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">4</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Obhutsentzug / Fremdplatzierung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 310 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Aufhebung des Aufenthaltsbestimmungsrechts; Unterbringung in Pflegefamilie oder Heim. Nur als ultima ratio zulässig.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">5</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Entzug der elterlichen Sorge</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 311/312 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Stärkster Eingriff: Vollständiger Entzug aller elterlichen Rechte und Pflichten. Kinder erhalten einen Vormund. Nur wenn alle anderen Massnahmen gescheitert sind oder von vornherein als ungenügend erscheinen.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Die <strong>Erziehungsbeistandschaft nach Art. 308 ZGB</strong> ist die in der Praxis mit Abstand am häufigsten angeordnete Kindesschutzmassnahme. Per Ende 2023 bestanden schweizweit 37'542 solcher Beistandschaften. Fremdplatzierungen (Stufe 4) erfolgen dagegen nur in rund 3,4 % aller KESB-Fälle.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Obhutsentzug und Fremdplatzierung im Detail</h3>
+
+    <p class="text-gray-700 mb-6">Der Obhutsentzug nach Art. 310 ZGB ist ein schwerwiegender Eingriff in die Elternrechte und das Familienleben. Die KESB entzieht den Eltern das Aufenthaltsbestimmungsrecht und bringt das Kind in einer Pflegefamilie oder einem Kinder- bzw. Jugendheim unter. Voraussetzung ist, dass der Kindeswohlgefährdung nicht anders begegnet werden kann (Subsidiarität).</p>
+
+    <p class="text-gray-700 mb-6">Bei besonderer Dringlichkeit kann die KESB auch <strong>superprovisorische Massnahmen</strong> erlassen -- das heisst, ein Kind ohne vorgängige Anhörung der Eltern sofort fremdplatzieren (Art. 445 Abs. 3 ZGB). In diesem Fall muss die KESB den Eltern unverzüglich das rechtliche Gehör gewähren und danach einen beschwerdefähigen Entscheid fällen. Gemäss Praxis sollte zwischen der superprovisorischen Anordnung und dem ordentlichen vorsorglichen Entscheid maximal drei Wochen vergehen (BGE 140 III 529).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Anhörung des Kindes</h3>
+
+    <p class="text-gray-700 mb-6">Das Kind wird im KESB-Verfahren persönlich und in altersgerechter Weise angehört, soweit nicht sein Alter oder andere wichtige Gründe dagegen sprechen (Art. 314a ZGB). Gemäss Bundesgerichtspraxis werden Kinder ab etwa 6 Jahren grundsätzlich angehört. Über die Anhörung wird ein Protokoll geführt. Das urteilsfähige Kind kann die Verweigerung seiner Anhörung mit Beschwerde anfechten (Art. 314a Abs. 3 ZGB).</p>
+
+    <p class="text-gray-700 mb-6">In komplexen Fällen -- insbesondere wenn eine Fremdplatzierung im Raum steht -- kann die KESB zudem eine <strong>Kindesvertretung</strong> (Verfahrensbeistand/Kindesanwalt) bestellen (Art. 314a<sup>bis</sup> ZGB). Diese Person vertritt die Interessen des Kindes im Verfahren.</p>
+
+    <!-- 6. Erwachsenenschutz -->
+    <h2 id="erwachsenenschutz" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Erwachsenenschutz: Massnahmen im Detail</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Die vier Arten der Beistandschaft</h3>
+
+    <p class="text-gray-700 mb-6">Die KESB errichtet eine Beistandschaft, wenn eine volljährige Person wegen einer geistigen Behinderung, einer psychischen Störung oder eines ähnlichen Schwächezustands ihre Angelegenheiten nur teilweise oder gar nicht besorgen kann (Art. 390 ZGB). Das Gesetz sieht vier Arten vor, die je nach Bedarf auch kombiniert werden können (Art. 397 ZGB):</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Art</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Wesen</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Handlungsfähigkeit</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Eingriffsschwere</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Begleitbeistandschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 393 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Unterstützende Begleitung mit Rat und Tat; nur mit Zustimmung der betroffenen Person</td>
+                    <td class="px-6 py-4 text-gray-700">Nicht eingeschränkt</td>
+                    <td class="px-6 py-4 text-gray-700">Mildeste Form</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Vertretungsbeistandschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 394/395 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Beistand handelt rechtsverbindlich im Namen der betroffenen Person in definierten Bereichen (z. B. Vermögensverwaltung)</td>
+                    <td class="px-6 py-4 text-gray-700">Kann eingeschränkt werden</td>
+                    <td class="px-6 py-4 text-gray-700">Mittel</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Mitwirkungsbeistandschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 396 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Bestimmte Handlungen der betroffenen Person bedürfen der Zustimmung des Beistands</td>
+                    <td class="px-6 py-4 text-gray-700">Kraft Gesetzes eingeschränkt</td>
+                    <td class="px-6 py-4 text-gray-700">Mittel bis schwer</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Umfassende Beistandschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 398 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Beistand besorgt sämtliche Angelegenheiten (Personen- und Vermögenssorge). Ersetzt die frühere Vormundschaft/Entmündigung.</td>
+                    <td class="px-6 py-4 text-gray-700">Entfällt vollständig</td>
+                    <td class="px-6 py-4 text-gray-700">Stärkster Eingriff</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Die KESB umschreibt die Aufgabenbereiche der Beistandschaft individuell entsprechend den Bedürfnissen der betroffenen Person (Art. 391 ZGB). Die Aufgaben können namentlich die Personensorge, die Vermögenssorge oder den Rechtsverkehr betreffen. Bei der Wahl der Beistandsperson berücksichtigt die KESB die Wünsche der betroffenen Person und ihrer Angehörigen (Art. 401 ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Fürsorgerische Unterbringung (FU)</h3>
+
+    <p class="text-gray-700 mb-6">Die fürsorgerische Unterbringung (FU) ist die einschneidendste Massnahme im Erwachsenenschutz. Eine Person kann in einer geeigneten Einrichtung (z. B. psychiatrische Klinik, Pflegeheim) untergebracht werden, wenn kumulativ folgende Voraussetzungen erfüllt sind (Art. 426 ZGB):</p>
+
+    <ol class="list-decimal pl-6 mb-6 space-y-2 text-gray-700">
+        <li><strong>Schwächezustand:</strong> Die Person leidet an einer psychischen Störung, geistigen Behinderung oder schweren Verwahrlosung.</li>
+        <li><strong>Behandlungs- oder Betreuungsbedürftigkeit:</strong> Die nötige Behandlung oder Betreuung ist erforderlich.</li>
+        <li><strong>Keine ambulante Alternative:</strong> Die Betreuung kann nicht anders (ambulant) erfolgen.</li>
+        <li><strong>Verhältnismässigkeit:</strong> Die Massnahme muss geeignet, erforderlich und zumutbar sein.</li>
+    </ol>
+
+    <p class="text-gray-700 mb-6">Neben der KESB können auch von den Kantonen bezeichnete Ärzte eine FU anordnen -- die sogenannte <strong>ärztliche FU</strong> (Art. 429 ZGB). Diese ist zeitlich befristet (maximal 6 Wochen) und fällt automatisch dahin, wenn nicht ein KESB-Entscheid vorliegt. Die betroffene Person kann jederzeit um Entlassung ersuchen; über dieses Gesuch ist ohne Verzug zu entscheiden (Art. 426 Abs. 4 ZGB).</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Rechte bei einer fürsorgerischen Unterbringung:</p>
+        <p class="text-gray-700">Die betroffene Person hat das Recht auf eine Vertrauensperson (Art. 431 ZGB), auf persönlichen Verkehr (Besuche, Telefonate; Art. 432 ZGB) sowie das Recht, innert 10 Tagen Beschwerde beim zuständigen Gericht einzulegen (Art. 450b Abs. 2 ZGB). Eine Behandlung ohne Zustimmung ist nur unter strengen Voraussetzungen zulässig (Art. 434 ZGB).</p>
+    </div>
+
+    <!-- 7. KESB vermeiden -->
+    <h2 id="kesb-vermeiden" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">KESB vermeiden: Vorsorgeauftrag und Patientenverfügung</h2>
+
+    <p class="text-gray-700 mb-6">Mit dem neuen Erwachsenenschutzrecht hat der Gesetzgeber die Möglichkeit der <strong>eigenen Vorsorge</strong> eingeführt. Wer rechtzeitig vorsorgt, kann den Eingriff der KESB im Bereich des Erwachsenenschutzes weitgehend verhindern.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vorsorgeauftrag (Art. 360-369 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Eine handlungsfähige Person kann in einem Vorsorgeauftrag festlegen, wer im Fall ihrer Urteilsunfähigkeit die Personensorge, die Vermögenssorge oder die Vertretung im Rechtsverkehr übernehmen soll (Art. 360 ZGB). Der Vorsorgeauftrag muss entweder vollständig handschriftlich verfasst oder öffentlich beurkundet werden (Art. 361 ZGB).</p>
+
+    <p class="text-gray-700 mb-6">Tritt die Urteilsunfähigkeit ein, validiert die KESB den Vorsorgeauftrag -- sie prüft, ob er gültig errichtet wurde, ob die Voraussetzungen für seine Wirksamkeit gegeben sind und ob die beauftragte Person geeignet ist (Art. 363 ZGB). Ein gültiger Vorsorgeauftrag macht eine Beistandschaft in der Regel überflüssig.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtige Einschränkung:</p>
+        <p class="text-gray-700">Auch bei einem gültigen Vorsorgeauftrag kann die KESB eingreifen, wenn die Interessen der betroffenen Person gefährdet oder nicht mehr gewahrt sind (Art. 368 ZGB). Der Vorsorgeauftrag schützt also nicht absolut vor KESB-Interventionen.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Patientenverfügung (Art. 370-373 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Eine urteilsfähige Person kann in einer Patientenverfügung festlegen, welchen medizinischen Massnahmen sie im Fall ihrer Urteilsunfähigkeit zustimmt oder nicht zustimmt (Art. 370 ZGB). Die Patientenverfügung ist für den behandelnden Arzt verbindlich, es sei denn, sie verstösst gegen gesetzliche Vorschriften oder es bestehen begründete Zweifel, dass sie noch dem mutmasslichen Willen entspricht (Art. 372 ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gesetzliches Vertretungsrecht des Ehegatten</h3>
+
+    <p class="text-gray-700 mb-6">Auch ohne Vorsorgeauftrag bestehen gewisse gesetzliche Vertretungsrechte: Ehegatten und eingetragene Partner sind berechtigt, eine urteilsunfähige Person zu vertreten, wenn kein Vorsorgeauftrag vorliegt und keine Beistandschaft besteht (Art. 374 ZGB). Dieses Vertretungsrecht umfasst alle Rechtshandlungen, die zur Deckung des Unterhaltsbedarfs üblicherweise erforderlich sind, die ordentliche Verwaltung des Einkommens und Vermögens sowie das Öffnen und Erledigen der Post.</p>
+
+    <!-- 8. Das KESB-Verfahren -->
+    <h2 id="verfahren" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Das KESB-Verfahren Schritt für Schritt</h2>
+
+    <p class="text-gray-700 mb-6">Das Verfahren vor der KESB folgt einem strukturierten Ablauf, der durch die Art. 443 ff. ZGB geregelt ist. Im Kindesschutz gelten die gleichen Verfahrensbestimmungen sinngemäss (Art. 314 ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 1: Verfahrenseinleitung</h3>
+    <p class="text-gray-700 mb-6">Das Verfahren wird eingeleitet durch eine Gefährdungsmeldung (Art. 443 ZGB / Art. 314c-d ZGB), einen Antrag einer betroffenen oder nahestehenden Person, oder von Amtes wegen, wenn die KESB auf anderem Weg von einer Gefährdung Kenntnis erhält. Die KESB prüft zunächst ihre Zuständigkeit (Art. 444 ZGB) und ob sofortige (superprovisorische) Massnahmen nötig sind (Art. 445 ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 2: Abklärung (Sachverhaltsermittlung)</h3>
+    <p class="text-gray-700 mb-6">Die KESB erforscht den Sachverhalt von Amtes wegen (Untersuchungsgrundsatz, Art. 446 ZGB). Sie ist dabei nicht an die Anträge der Beteiligten gebunden. Zu den Abklärungsmethoden gehören: Gespräche mit den Betroffenen (Eltern, Kind, erwachsene Person), Gespräche mit weiteren Beteiligten (Schule, Arbeitgeber), Hausbesuche, Einholung von Informationen bei Dritten (Ärzte, Therapeuten, Sozialdienste), Einsicht in Akten anderer Behörden sowie die Anordnung von Gutachten (Art. 449 ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 3: Anhörung</h3>
+    <p class="text-gray-700 mb-6">Die betroffene Person wird persönlich angehört, soweit dies nicht unverhältnismässig erscheint (Art. 447 ZGB). Die Eltern können ihre Sicht darlegen, zu den Abklärungsergebnissen Stellung nehmen und eigene Lösungsvorschläge einbringen. Im Kindesschutz wird das Kind in altersgerechter Weise angehört (Art. 314a ZGB). Das Recht auf Anhörung ist Ausfluss des verfassungsmässigen Anspruchs auf rechtliches Gehör (Art. 29 Abs. 2 BV).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 4: Entscheid</h3>
+    <p class="text-gray-700 mb-6">Die KESB fällt ihren Entscheid als Kollegium mit mindestens drei Mitgliedern (Art. 440 Abs. 2 ZGB). Der Entscheid wird schriftlich eröffnet und enthält die Sachverhaltsfeststellung, die rechtlichen Erwägungen, das Dispositiv (Anordnung) sowie eine Rechtsmittelbelehrung (zuständiges Gericht, Frist, Form).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 5: Umsetzung und Überprüfung</h3>
+    <p class="text-gray-700 mb-6">Nach dem Entscheid wird die angeordnete Massnahme umgesetzt. Die KESB überprüft bestehende Massnahmen periodisch -- spätestens nach einem Jahr, danach je nach Bedarf mindestens alle zwei Jahre (Art. 415 ZGB). Verändern sich die Verhältnisse, werden die Massnahmen angepasst (Art. 313 ZGB).</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Verfahrensgrundsätze im Überblick:</p>
+        <ul class="space-y-2 text-gray-700 mt-2">
+            <li><strong>Untersuchungsgrundsatz (Art. 446 ZGB):</strong> Die KESB ermittelt den Sachverhalt von Amtes wegen.</li>
+            <li><strong>Offizialmaxime:</strong> Die KESB wird von Amtes wegen oder auf Meldung hin tätig.</li>
+            <li><strong>Anhörungspflicht (Art. 447 ZGB):</strong> Betroffene müssen vor dem Entscheid angehört werden.</li>
+            <li><strong>Verhältnismässigkeit:</strong> Jede Massnahme muss geeignet, erforderlich und zumutbar sein.</li>
+            <li><strong>Subsidiarität:</strong> Staatliche Massnahmen nur als letztes Mittel.</li>
+        </ul>
+    </div>
+
+    <!-- 9. Rechte der Betroffenen -->
+    <h2 id="rechte" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechte der Betroffenen im KESB-Verfahren</h2>
+
+    <p class="text-gray-700 mb-6">Betroffene haben im KESB-Verfahren umfassende Rechte, die sich aus dem Bundesrecht (ZGB, BV) und der EMRK ergeben. Die folgende Übersicht zeigt die wichtigsten Rechte:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Recht</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Inhalt</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Anhörung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 447 ZGB / Art. 29 Abs. 2 BV</td>
+                    <td class="px-6 py-4 text-gray-700">Persönliche Anhörung vor dem Entscheid; Stellungnahme zu Abklärungsergebnissen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Akteneinsicht</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 449b ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Recht auf Einsicht in die Verfahrensakten</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Anwaltliche Vertretung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 29 Abs. 2 BV</td>
+                    <td class="px-6 py-4 text-gray-700">Recht, sich jederzeit durch einen Anwalt vertreten zu lassen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Verfahrensbeistand</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 449 Abs. 2 ZGB / Art. 314a<sup>bis</sup> ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Die KESB kann einen Verfahrensbeistand bestellen; für Kinder: Kindesanwalt</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Unentgeltliche Rechtspflege</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 449b ZGB / Art. 29 Abs. 3 BV</td>
+                    <td class="px-6 py-4 text-gray-700">Bei fehlenden Mitteln: Befreiung von Verfahrenskosten und/oder kostenloser Anwalt</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Beschwerde</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 450 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Beschwerde gegen jeden KESB-Entscheid beim zuständigen Gericht</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Vertrauensperson (bei FU)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 431 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Recht, eine Vertrauensperson beizuziehen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Wechsel der Beistandsperson</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 419 / Art. 423 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Antrag auf Wechsel des Beistands bei wichtigen Gründen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 10. Beschwerde -->
+    <h2 id="beschwerde" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Beschwerde gegen KESB-Entscheide</h2>
+
+    <p class="text-gray-700 mb-6">Gegen jeden Entscheid der KESB kann Beschwerde beim zuständigen kantonalen Gericht erhoben werden (Art. 450 ZGB). Beschwerdeberechtigt sind die am Verfahren beteiligten Personen, nahestehende Personen sowie Personen mit einem rechtlich geschützten Interesse (Art. 450 Abs. 2 ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Beschwerdegründe</h3>
+
+    <p class="text-gray-700 mb-6">Mit der Beschwerde kann gerügt werden (Art. 450a ZGB):</p>
+    <ol class="list-decimal pl-6 mb-6 space-y-2 text-gray-700">
+        <li><strong>Rechtsverletzung</strong> -- einschliesslich Verletzung von Bundesrecht, verfassungsmässigen Rechten und Verfahrensgrundsätzen</li>
+        <li><strong>Unrichtige oder unvollständige Feststellung des rechtserheblichen Sachverhalts</strong></li>
+        <li><strong>Unangemessenheit</strong> -- die Beschwerdeinstanz prüft auch, ob die angeordnete Massnahme verhältnismässig ist</li>
+    </ol>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Fristen und Verfahren</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Ordentliche Beschwerde</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschwerde bei FU</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Frist</td>
+                    <td class="px-6 py-4 text-gray-700">30 Tage seit Eröffnung (Art. 450b Abs. 1 ZGB)</td>
+                    <td class="px-6 py-4 text-gray-700">10 Tage (Art. 450b Abs. 2 ZGB)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Form</td>
+                    <td class="px-6 py-4 text-gray-700">Schriftlich und begründet</td>
+                    <td class="px-6 py-4 text-gray-700">Schriftlich; keine Begründung erforderlich</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Aufschiebende Wirkung</td>
+                    <td class="px-6 py-4 text-gray-700" colspan="2">Grundsätzlich ja (Art. 450c ZGB), sofern nicht entzogen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kognition</td>
+                    <td class="px-6 py-4 text-gray-700" colspan="2">Volle Kognition: Rechts-, Sachverhalts- und Angemessenheitskontrolle</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Instanzenzug</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Instanz</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zuständigkeit</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Frist</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">1. Instanz</td>
+                    <td class="px-6 py-4 text-gray-700">KESB</td>
+                    <td class="px-6 py-4 text-gray-700">--</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">2. Instanz (Beschwerde)</td>
+                    <td class="px-6 py-4 text-gray-700">Kantonales Gericht (je nach Kanton: Bezirksrat, Obergericht, Verwaltungsgericht)</td>
+                    <td class="px-6 py-4 text-gray-700">30 Tage (10 bei FU)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">3. Instanz</td>
+                    <td class="px-6 py-4 text-gray-700">Bundesgericht (Beschwerde in Zivilsachen, Art. 450e ZGB, Art. 72 ff. BGG)</td>
+                    <td class="px-6 py-4 text-gray-700">30 Tage</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Die KESB kann statt einer Stellungnahme gegenüber der Beschwerdeinstanz ihren eigenen Entscheid in Wiedererwägung ziehen (Art. 450d ZGB). Das Bundesgericht übt bei Kindesschutzentscheiden Zurückhaltung und greift nur bei Ermessensmissbrauch oder -überschreitung ein (BGE 5A_914/2018).</p>
+
+    <!-- 11. Kosten -->
+    <h2 id="kosten" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kosten eines KESB-Verfahrens</h2>
+
+    <p class="text-gray-700 mb-6">Die Verfahrenskosten trägt in der Regel die betroffene Person (Art. 449a ZGB). Die KESB kann die Kosten ganz oder teilweise dem Kanton auferlegen, wenn besondere Gründe es rechtfertigen. Die Kosten variieren je nach Kanton und Komplexität des Falls erheblich.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kostenkategorie</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Ungefähre Kosten</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Anmerkung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Verfahrensgebühren allgemein</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 200 -- 10'000</td>
+                    <td class="px-6 py-4 text-gray-700">Abhängig von Aufwand und Schwierigkeit</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Genehmigung Unterhaltsvertrag</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 25 -- 400</td>
+                    <td class="px-6 py-4 text-gray-700">Je nach Kanton (z. B. BS ab CHF 25, LU CHF 400)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Beistandsentschädigung</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 80 -- 120/Stunde</td>
+                    <td class="px-6 py-4 text-gray-700">Für professionelle Beistände; kantonal unterschiedlich</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Platzierungskosten (Heim)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 200 -- 500/Tag</td>
+                    <td class="px-6 py-4 text-gray-700">Eltern leisten Beiträge; kantonal subventioniert</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Verfahrenseinstellung</td>
+                    <td class="px-6 py-4 text-gray-700">In der Regel kostenlos</td>
+                    <td class="px-6 py-4 text-gray-700">Keine Gebühren, wenn keine Massnahme angeordnet wird</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Betroffene, die über ungenügende finanzielle Mittel verfügen, haben Anspruch auf <strong>unentgeltliche Rechtspflege</strong> (Art. 449b ZGB, Art. 29 Abs. 3 BV). Diese umfasst die Befreiung von den Verfahrenskosten und -- bei Bedarf -- die Bestellung eines kostenlosen Rechtsbeistands.</p>
+
+    <!-- 12. KESB und Familienrecht -->
+    <h2 id="kesb-familienrecht" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">KESB und Familienrecht</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Abgrenzung: KESB oder Scheidungsgericht?</h3>
+
+    <p class="text-gray-700 mb-6">Eine wichtige Frage in der Praxis ist, ob die KESB oder das Scheidungsgericht für Kindesschutzmassnahmen zuständig ist. Das Gesetz regelt dies klar:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Situation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zuständig</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Kein hängiges Gerichtsverfahren</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">KESB</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 315 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Hängiges Eheschutzverfahren</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Gericht</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 315 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Hängiges Scheidungsverfahren</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Gericht</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 315a ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Nach Abschluss des Scheidungsverfahrens</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">KESB</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 315b ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Unverheiratete Eltern</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">KESB</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 308 Abs. 2 ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">KESB bei unverheirateten Eltern</h3>
+
+    <p class="text-gray-700 mb-6">Bei der Geburt eines Kindes einer unverheirateten Mutter benachrichtigt das Zivilstandsamt die KESB. Wenn der Vater das Kind nicht anerkannt hat, ernennt die KESB einen Beistand (Art. 308 Abs. 2 ZGB), der die Vaterschaftsfeststellung, die Regelung des Unterhaltsanspruchs und des persönlichen Verkehrs sowie die Regelung der <a href="/sorgerecht/gemeinsames-sorgerecht" class="text-gold hover:underline font-semibold">elterlichen Sorge</a> übernimmt.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">KESB und Besuchsrecht</h3>
+
+    <p class="text-gray-700 mb-6">Die KESB ist zuständig für die Regelung des <a href="/sorgerecht/umgangsrecht" class="text-gold hover:underline font-semibold">Besuchsrechts (persönlicher Verkehr)</a>, wenn kein Gerichtsverfahren hängig ist. Sie kann das Besuchsrecht einschränken oder begleitete Besuche anordnen, wenn das Kindeswohl es erfordert. Wird das Besuchsrecht von einem Elternteil verweigert, kann die KESB Massnahmen zur Durchsetzung treffen.</p>
+
+    <!-- 13. Kritik -->
+    <h2 id="kritik" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kritik und aktuelle Entwicklungen</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Häufige Kritikpunkte</h3>
+
+    <p class="text-gray-700 mb-6">Die KESB gehört zu den umstrittensten Behörden der Schweiz. Die wichtigsten Kritikpunkte:</p>
+    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+        <li><strong>Zu weitgehende Eingriffe</strong> in die Familienautonomie und Privatsphäre</li>
+        <li><strong>Mangelnde Bürgernähe:</strong> Die professionellen regionalen Behörden kennen die lokalen Verhältnisse weniger gut als die früheren Gemeindebehörden</li>
+        <li><strong>Machtkonzentration:</strong> Untersuchung, Abklärung und Entscheid in einer Hand</li>
+        <li><strong>Anonyme Gefährdungsmeldungen</strong> als Missbrauchspotenzial (z. B. in Nachbarschafts- oder Sorgerechtsstreitigkeiten)</li>
+        <li><strong>Lange Verfahrensdauer</strong> in komplexen Fällen</li>
+        <li><strong>Mangelnde Kommunikation:</strong> Betroffene fühlen sich nicht ausreichend informiert und einbezogen</li>
+        <li><strong>Hohe Kosten</strong> der Verfahren und Massnahmen</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Der Fall Flaach (2015)</h3>
+
+    <p class="text-gray-700 mb-6">Der bekannteste KESB-Fall ist die Tragödie von Flaach (2015), bei der eine Mutter ihre zwei Kinder tötete, nachdem die KESB die Kinder zuvor in einem Heim platziert hatte (Art. 310 ZGB). Die öffentliche Empörung richtete sich massiv gegen die KESB. Zwei unabhängige Expertenberichte kamen jedoch zum Schluss, dass kein kausaler Zusammenhang zwischen dem behördlichen Handeln und der Tat bestand. Der Fall zeigt das Grunddilemma der KESB: Greift sie ein, wird ihr Übergriffigkeit vorgeworfen; greift sie nicht ein, wird ihr Versagen vorgeworfen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gescheiterte Volksinitiative</h3>
+
+    <p class="text-gray-700 mb-6">Die 2018 von SVP-Nationalrat Pirmin Schwander lancierte "Volksinitiative zum Schutz der Familie" forderte eine Beschränkung der KESB-Kompetenzen. Die Initiative scheiterte jedoch an der Unterschriftenhürde und wurde 2019 zurückgezogen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Aktuelle Statistiken (2023)</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kennzahl</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Wert (Ende 2023)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Veränderung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Total betroffene Personen</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">154'981</td>
+                    <td class="px-6 py-4 text-gray-700">+3,5 % gegenüber 2022</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Betroffene Kinder</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">49'132</td>
+                    <td class="px-6 py-4 text-gray-700">+6,5 % gegenüber 2022</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Betroffene Erwachsene</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">~106'000</td>
+                    <td class="px-6 py-4 text-gray-700">+2,4 % gegenüber 2022</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Erziehungsbeistandschaften</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">37'542</td>
+                    <td class="px-6 py-4 text-gray-700">Häufigste Kindesschutzmassnahme</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Anteil Fremdplatzierungen</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">~3,4 %</td>
+                    <td class="px-6 py-4 text-gray-700">Aller KESB-Fälle</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Anzahl KESB schweizweit</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">~124</td>
+                    <td class="px-6 py-4 text-gray-700">Ersetzten ~1'400 Vormundschaftsbehörden</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Zehn-Jahres-Bilanz und Reformvorschläge</h3>
+
+    <p class="text-gray-700 mb-6">Nach zehn Jahren zieht die KOKES eine überwiegend positive Bilanz: Die Professionalisierung hat die Qualität der Entscheide verbessert, und die Zahl der einschneidenden Massnahmen ist deutlich zurückgegangen. Gleichzeitig werden folgende Reformen diskutiert: Vereinfachung und Beschleunigung der Verfahren, bessere Kommunikation und Transparenz gegenüber Betroffenen, Stärkung der Fachaufsicht sowie einheitlichere Verfahrensregeln auf Bundesebene.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Anlaufstellen bei Problemen mit der KESB</h3>
+
+    <p class="text-gray-700 mb-6">Die <strong>KESCHA</strong> (Anlaufstelle Kindes- und Erwachsenenschutz) ist eine unabhängige Beratungsstelle für Personen, die Fragen zu oder Probleme mit der KESB haben. Sie bietet kostenlose Erstberatung und vermittelt bei Konflikten zwischen Betroffenen und der KESB.</p>
+
+    <!-- 14. Anwalt-Sektion -->
+    <section id="anwalt" class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für KESB-Verfahren beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">Ein KESB-Verfahren kann tiefgreifende Auswirkungen auf das Familienleben haben -- vom Entzug des Aufenthaltsbestimmungsrechts über die Errichtung einer Beistandschaft bis hin zur fürsorgerischen Unterbringung. Betroffene sind oft emotional stark belastet und kennen ihre Rechte im Verfahren nicht ausreichend. Eine fachkundige anwaltliche Vertretung kann entscheidend dazu beitragen, dass Ihre Rechte gewahrt werden und die KESB-Massnahmen verhältnismässig bleiben.</p>
+
+        <p class="text-gray-700 mb-6">Besonders bei folgenden Konstellationen ist die Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> dringend empfohlen: wenn Ihnen eine Fremdplatzierung Ihres Kindes droht (Art. 310 ZGB), wenn Sie eine Beschwerde gegen einen KESB-Entscheid einlegen möchten (Art. 450 ZGB), wenn Sie mit einer Gefährdungsmeldung konfrontiert sind, oder wenn ein Sorgerechtsentzug im Raum steht (Art. 311 ZGB).</p>
+
+        <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kann Sie umfassend über Ihre Verfahrensrechte aufklären, Sie bei Anhörungen vor der KESB begleiten, Akteneinsicht beantragen und prüfen, ob die angeordneten Massnahmen den Grundsätzen der Verhältnismässigkeit und Subsidiarität entsprechen. Auch bei der Geltendmachung der unentgeltlichen Rechtspflege oder der Einreichung einer Beschwerde beim kantonalen Gericht ist die Unterstützung durch einen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> unerlässlich.</p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Sie sind von einem KESB-Verfahren betroffen oder haben eine Gefährdungsmeldung erhalten? Unsere spezialisierten Familienrechtsanwälte beraten Sie kompetent zu Ihren Rechten und Handlungsmöglichkeiten.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- 15. Fazit -->
+    <h2 id="fazit" class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Die KESB ist eine zentrale Institution des schweizerischen Kindes- und Erwachsenenschutzrechts. Seit der Reform von 2013 entscheiden interdisziplinäre Fachpersonen über Schutzmassnahmen, die nach dem Prinzip der Verhältnismässigkeit und Subsidiarität angeordnet werden. Die grosse Mehrheit der Massnahmen sind milde Formen wie Ermahnungen, Weisungen und Beistandschaften; einschneidende Eingriffe wie Fremdplatzierungen erfolgen nur in rund 3,4 % der Fälle und nur als letztes Mittel.</p>
+
+    <p class="text-gray-700 mb-6">Betroffene haben umfassende Verfahrensrechte -- insbesondere das Recht auf Anhörung, Akteneinsicht, anwaltliche Vertretung und Beschwerde gegen jeden KESB-Entscheid. Wer im Bereich des Erwachsenenschutzes vorsorgen möchte, kann mit einem Vorsorgeauftrag (Art. 360 ff. ZGB) den Eingriff der KESB weitgehend vermeiden. Bei einem laufenden KESB-Verfahren ist die frühzeitige Konsultation eines spezialisierten Familienrechtsanwalts in den meisten Fällen sinnvoll.</p>
+
+    <!-- 16. FAQ -->
+    <section id="faq" class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist die KESB?</h3>
+                <p class="text-gray-700">Die KESB (Kindes- und Erwachsenenschutzbehörde) ist eine professionelle Fachbehörde, die seit dem 1. Januar 2013 in der gesamten Schweiz für den zivilrechtlichen Schutz von Kindern und hilfsbedürftigen Erwachsenen zuständig ist (Art. 440 ZGB). Sie ersetzt die früheren kommunalen Laien-Vormundschaftsbehörden und entscheidet interdisziplinär mit mindestens drei Fachpersonen aus den Bereichen Recht, Sozialarbeit und Psychologie.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wann greift die KESB ein?</h3>
+                <p class="text-gray-700">Die KESB greift ein, wenn das Wohl eines Kindes gefährdet ist und die Eltern nicht von sich aus für Abhilfe sorgen (Art. 307 ZGB), oder wenn eine erwachsene Person aufgrund einer psychischen Störung, geistigen Behinderung oder schweren Verwahrlosung ihre Angelegenheiten nicht mehr selbst besorgen kann (Art. 390 ZGB). Typische Auslöser sind Vernachlässigung, Gewalt, schwere Erziehungsdefizite oder Suchtprobleme. Dabei gilt stets das Subsidiaritätsprinzip: Die KESB greift nur ein, wenn andere Hilfe nicht ausreicht.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann die KESB mir mein Kind wegnehmen?</h3>
+                <p class="text-gray-700">Ja, aber nur als letztes Mittel (ultima ratio). Die KESB kann das Aufenthaltsbestimmungsrecht entziehen und ein Kind in einer Pflegefamilie oder einem Heim unterbringen (Art. 310 ZGB). Dies ist jedoch nur zulässig, wenn der Kindeswohlgefährdung nicht durch mildere Massnahmen (Ermahnung, Weisung, Beistandschaft) begegnet werden kann (BGE 142 III 188). Fremdplatzierungen erfolgen nur in rund 3,4 % aller KESB-Fälle. Bei besonderer Dringlichkeit kann die KESB auch superprovisorisch -- also ohne vorgängige Anhörung -- handeln (Art. 445 Abs. 3 ZGB), muss den Eltern aber unverzüglich das rechtliche Gehör gewähren.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie macht man eine Gefährdungsmeldung bei der KESB?</h3>
+                <p class="text-gray-700">Jede Person kann der KESB formlos -- mündlich oder schriftlich -- eine Gefährdungsmeldung erstatten (Art. 314c Abs. 1 ZGB / Art. 443 Abs. 1 ZGB). Die Meldung wird bei der KESB am Wohnsitz des betroffenen Kindes oder der erwachsenen Person eingereicht. Auch anonyme Meldungen sind möglich. Fachpersonen mit regelmässigem Kinderkontakt (Lehrer, Ärzte, Erzieher) sind sogar meldepflichtig (Art. 314d ZGB).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert nach einer Gefährdungsmeldung?</h3>
+                <p class="text-gray-700">Nach Eingang einer Gefährdungsmeldung prüft die KESB zunächst, ob eine Gefährdungslage vorliegt und ob sofortige Massnahmen nötig sind. Anschliessend folgt eine Abklärungsphase (Art. 446 ZGB), in der Gespräche geführt, Informationen eingeholt und gegebenenfalls Gutachten angeordnet werden. Die betroffenen Personen werden angehört (Art. 447 ZGB). Danach entscheidet die KESB als Kollegium, ob und welche Massnahmen angeordnet werden. Nicht jede Meldung führt zu Massnahmen -- in Zürich etwa nur rund 32 % der Meldungen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist eine Beistandschaft?</h3>
+                <p class="text-gray-700">Eine Beistandschaft ist eine Schutzmassnahme der KESB, bei der eine Person (der Beistand) ernannt wird, um die betroffene Person in bestimmten Bereichen zu unterstützen oder zu vertreten. Es gibt vier Arten: die Begleitbeistandschaft (Art. 393 ZGB), die Vertretungsbeistandschaft (Art. 394/395 ZGB), die Mitwirkungsbeistandschaft (Art. 396 ZGB) und die umfassende Beistandschaft (Art. 398 ZGB). Die Beistandschaft wird individuell auf die Bedürfnisse der betroffenen Person zugeschnitten (Art. 391 ZGB).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie kann ich gegen einen KESB-Entscheid vorgehen?</h3>
+                <p class="text-gray-700">Gegen jeden KESB-Entscheid kann innert 30 Tagen schriftlich und begründet Beschwerde beim zuständigen kantonalen Gericht erhoben werden (Art. 450 ZGB). Bei einer fürsorgerischen Unterbringung beträgt die Frist nur 10 Tage, und eine Begründung ist nicht erforderlich (Art. 450b Abs. 2 ZGB). Die Beschwerde hat grundsätzlich aufschiebende Wirkung (Art. 450c ZGB). Der Entscheid der kantonalen Beschwerdeinstanz kann mit Beschwerde in Zivilsachen an das Bundesgericht weitergezogen werden (Art. 450e ZGB).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was kostet ein KESB-Verfahren?</h3>
+                <p class="text-gray-700">Die Verfahrensgebühren betragen je nach Kanton und Komplexität zwischen CHF 200 und CHF 10'000 und werden grundsätzlich der betroffenen Person auferlegt (Art. 449a ZGB). Bei fehlenden finanziellen Mitteln besteht Anspruch auf unentgeltliche Rechtspflege (Art. 449b ZGB). Wird das Verfahren eingestellt (keine Massnahme angeordnet), fallen in der Regel keine Kosten an. Die Kosten einer Beistandschaft (CHF 80-120/Stunde für professionelle Beistände) werden separat berechnet.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Brauche ich einen Anwalt bei der KESB?</h3>
+                <p class="text-gray-700">Ein Anwalt ist nicht zwingend vorgeschrieben, aber in vielen Fällen dringend empfohlen. Insbesondere wenn Ihnen ein Obhutsentzug oder Sorgerechtsentzug droht, Sie eine Beschwerde einlegen möchten oder wenn Sie mit den Abklärungsergebnissen nicht einverstanden sind, sollten Sie sich anwaltlich beraten lassen. Sie haben jederzeit das Recht, sich durch einen Anwalt vertreten zu lassen (Art. 29 Abs. 2 BV). Bei fehlenden Mitteln können Sie unentgeltliche Rechtspflege beantragen (Art. 449b ZGB).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie kann ich die KESB vermeiden?</h3>
+                <p class="text-gray-700">Im Bereich des Erwachsenenschutzes kann ein Vorsorgeauftrag (Art. 360 ff. ZGB) den Eingriff der KESB weitgehend verhindern. Damit bestimmen Sie im Voraus, wer bei Urteilsunfähigkeit Ihre Angelegenheiten regelt. Der Vorsorgeauftrag muss eigenhändig verfasst oder öffentlich beurkundet werden. Wichtig: Auch bei einem gültigen Vorsorgeauftrag kann die KESB eingreifen, wenn Ihre Interessen gefährdet sind (Art. 368 ZGB). Im Kindesschutz gibt es keine Möglichkeit, die KESB zu "vermeiden" -- das Kindeswohl geht vor.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist eine fürsorgerische Unterbringung (FU)?</h3>
+                <p class="text-gray-700">Die fürsorgerische Unterbringung (FU) ist die Unterbringung einer Person in einer geeigneten Einrichtung (z. B. psychiatrische Klinik) gegen ihren Willen (Art. 426 ZGB). Voraussetzungen sind: eine psychische Störung, geistige Behinderung oder schwere Verwahrlosung, Behandlungs- oder Betreuungsbedürftigkeit und das Fehlen ambulanter Alternativen. Die FU kann von der KESB oder -- zeitlich befristet auf maximal 6 Wochen -- von bezeichneten Ärzten angeordnet werden (Art. 429 ZGB). Die betroffene Person kann jederzeit um Entlassung ersuchen und innert 10 Tagen Beschwerde einlegen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Welche KESB ist für mich zuständig?</h3>
+                <p class="text-gray-700">Zuständig ist grundsätzlich die KESB am Wohnsitz der betroffenen Person (Art. 442 Abs. 1 ZGB). Bei Gefahr im Verzug kann auch die KESB am Aufenthaltsort tätig werden (Art. 442 Abs. 2 ZGB). Die Zuständigkeit und Kontaktdaten der lokalen KESB finden Sie auf der Website Ihrer Wohngemeinde oder Ihres Kantons. In der Schweiz bestehen rund 124 regionale KESB.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich den Beistand wechseln lassen?</h3>
+                <p class="text-gray-700">Ja, Sie können bei der KESB einen Antrag auf Wechsel der Beistandsperson stellen, wenn wichtige Gründe vorliegen -- beispielsweise ein gestörtes Vertrauensverhältnis oder eine ungenügende Aufgabenerfüllung. Die KESB kann den Beistand auch von Amtes wegen abberufen (Art. 411 ZGB). Sie haben zudem das Recht, gegen Handlungen des Beistands Einsprache bei der KESB zu erheben (Art. 419 ZGB).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann eine Gefährdungsmeldung anonym eingereicht werden?</h3>
+                <p class="text-gray-700">Ja, anonyme Gefährdungsmeldungen sind möglich. Die KESB geht ihnen nach, sofern sie hinreichend substanziiert sind. Allerdings sind anonyme Meldungen ein häufiger Kritikpunkt, da sie Missbrauchspotenzial bergen -- etwa im Rahmen von Nachbarschaftsstreitigkeiten oder Sorgerechtsstreitigkeiten. Eine unbegründete oder falsche Meldung hat in der Regel keine rechtlichen Konsequenzen für den Meldenden, kann aber im Extremfall strafrechtlich relevant sein.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Warum wird die KESB kritisiert?</h3>
+                <p class="text-gray-700">Die KESB steht wegen verschiedener Aspekte in der Kritik: zu weitgehende Eingriffe in die Familienautonomie, mangelnde Bürgernähe der regionalen Fachbehörden (im Vergleich zu den früheren lokalen Vormundschaftsbehörden), Konzentration von Untersuchungs- und Entscheidkompetenz in einer Hand, Missbrauchspotenzial durch anonyme Gefährdungsmeldungen, teilweise lange Verfahrensdauer und mangelnde Kommunikation mit Betroffenen. Der Fall Flaach (2015) verschärfte die öffentliche Debatte. Gleichzeitig zeigt die Zehn-Jahres-Bilanz, dass die Professionalisierung die Qualität der Entscheide insgesamt verbessert hat.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Darf die KESB ohne Vorankündigung vorbeikommen?</h3>
+                <p class="text-gray-700">Grundsätzlich werden Hausbesuche der KESB angekündigt. In Ausnahmefällen -- insbesondere bei akuter Gefährdung -- kann die KESB jedoch auch ohne Vorankündigung erscheinen. Sie sind nicht verpflichtet, die KESB ohne richterlichen Beschluss in Ihre Wohnung zu lassen. Bei Verweigerung des Zutritts kann die KESB allerdings die Polizei beiziehen, wenn eine akute Gefährdungssituation vorliegt. Generell ist es ratsam, kooperativ aufzutreten, da Verweigerung negativ ausgelegt werden kann.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wo bekomme ich Hilfe bei Problemen mit der KESB?</h3>
+                <p class="text-gray-700">Die KESCHA (Anlaufstelle Kindes- und Erwachsenenschutz) bietet unabhängige und kostenlose Beratung für Personen, die Fragen zu oder Probleme mit der KESB haben. Daneben können Sie sich an spezialisierte Familienrechtsanwälte wenden, die Sie im KESB-Verfahren vertreten. Bei fehlenden finanziellen Mitteln besteht Anspruch auf unentgeltliche Rechtspflege (Art. 449b ZGB), die Ihnen einen kostenlosen Anwalt ermöglicht.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup: Article -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "KESB Schweiz: Aufgaben, Verfahren, Massnahmen & Rechte",
+        "description": "KESB einfach erklärt: Aufgaben, Kindesschutz, Erwachsenenschutz, Gefährdungsmeldung, Beistandschaft, Beschwerde & Kosten. Mit BGE-Rechtsprechung & Praxistipps.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2026-02-11",
+        "dateModified": "2026-02-11",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/sorgerecht/kesb"
+        }
+    })} />
+
+    <!-- Schema Markup: FAQPage -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Was ist die KESB?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die KESB (Kindes- und Erwachsenenschutzbehörde) ist eine professionelle Fachbehörde, die seit dem 1. Januar 2013 in der gesamten Schweiz für den zivilrechtlichen Schutz von Kindern und hilfsbedürftigen Erwachsenen zuständig ist (Art. 440 ZGB). Sie ersetzt die früheren kommunalen Laien-Vormundschaftsbehörden und entscheidet interdisziplinär mit mindestens drei Fachpersonen aus den Bereichen Recht, Sozialarbeit und Psychologie."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wann greift die KESB ein?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die KESB greift ein, wenn das Wohl eines Kindes gefährdet ist und die Eltern nicht von sich aus für Abhilfe sorgen (Art. 307 ZGB), oder wenn eine erwachsene Person aufgrund einer psychischen Störung, geistigen Behinderung oder schweren Verwahrlosung ihre Angelegenheiten nicht mehr selbst besorgen kann (Art. 390 ZGB). Typische Auslöser sind Vernachlässigung, Gewalt, schwere Erziehungsdefizite oder Suchtprobleme."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann die KESB mir mein Kind wegnehmen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, aber nur als letztes Mittel (ultima ratio). Die KESB kann das Aufenthaltsbestimmungsrecht entziehen und ein Kind in einer Pflegefamilie oder einem Heim unterbringen (Art. 310 ZGB). Dies ist jedoch nur zulässig, wenn der Kindeswohlgefährdung nicht durch mildere Massnahmen begegnet werden kann. Fremdplatzierungen erfolgen nur in rund 3,4 % aller KESB-Fälle."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie macht man eine Gefährdungsmeldung bei der KESB?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Jede Person kann der KESB formlos -- mündlich oder schriftlich -- eine Gefährdungsmeldung erstatten (Art. 314c Abs. 1 ZGB / Art. 443 Abs. 1 ZGB). Die Meldung wird bei der KESB am Wohnsitz des betroffenen Kindes oder der erwachsenen Person eingereicht. Auch anonyme Meldungen sind möglich. Fachpersonen mit regelmässigem Kinderkontakt sind sogar meldepflichtig (Art. 314d ZGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert nach einer Gefährdungsmeldung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nach Eingang einer Gefährdungsmeldung prüft die KESB zunächst, ob eine Gefährdungslage vorliegt und ob sofortige Massnahmen nötig sind. Anschliessend folgt eine Abklärungsphase (Art. 446 ZGB), in der Gespräche geführt, Informationen eingeholt und gegebenenfalls Gutachten angeordnet werden. Die betroffenen Personen werden angehört (Art. 447 ZGB). Nicht jede Meldung führt zu Massnahmen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist eine Beistandschaft?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Eine Beistandschaft ist eine Schutzmassnahme der KESB, bei der eine Person (der Beistand) ernannt wird, um die betroffene Person in bestimmten Bereichen zu unterstützen oder zu vertreten. Es gibt vier Arten: die Begleitbeistandschaft (Art. 393 ZGB), die Vertretungsbeistandschaft (Art. 394/395 ZGB), die Mitwirkungsbeistandschaft (Art. 396 ZGB) und die umfassende Beistandschaft (Art. 398 ZGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie kann ich gegen einen KESB-Entscheid vorgehen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Gegen jeden KESB-Entscheid kann innert 30 Tagen schriftlich und begründet Beschwerde beim zuständigen kantonalen Gericht erhoben werden (Art. 450 ZGB). Bei einer fürsorgerischen Unterbringung beträgt die Frist nur 10 Tage (Art. 450b Abs. 2 ZGB). Die Beschwerde hat grundsätzlich aufschiebende Wirkung (Art. 450c ZGB). Der Entscheid kann bis ans Bundesgericht weitergezogen werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was kostet ein KESB-Verfahren?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Verfahrensgebühren betragen je nach Kanton und Komplexität zwischen CHF 200 und CHF 10'000 und werden grundsätzlich der betroffenen Person auferlegt (Art. 449a ZGB). Bei fehlenden finanziellen Mitteln besteht Anspruch auf unentgeltliche Rechtspflege (Art. 449b ZGB). Wird das Verfahren eingestellt, fallen in der Regel keine Kosten an."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Brauche ich einen Anwalt bei der KESB?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ein Anwalt ist nicht zwingend vorgeschrieben, aber in vielen Fällen dringend empfohlen -- insbesondere wenn ein Obhutsentzug oder Sorgerechtsentzug droht, Sie eine Beschwerde einlegen möchten oder mit den Abklärungsergebnissen nicht einverstanden sind. Sie haben jederzeit das Recht, sich durch einen Anwalt vertreten zu lassen (Art. 29 Abs. 2 BV). Bei fehlenden Mitteln können Sie unentgeltliche Rechtspflege beantragen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie kann ich die KESB vermeiden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Im Bereich des Erwachsenenschutzes kann ein Vorsorgeauftrag (Art. 360 ff. ZGB) den Eingriff der KESB weitgehend verhindern. Damit bestimmen Sie im Voraus, wer bei Urteilsunfähigkeit Ihre Angelegenheiten regelt. Der Vorsorgeauftrag muss eigenhändig verfasst oder öffentlich beurkundet werden. Im Kindesschutz gibt es keine Möglichkeit, die KESB zu vermeiden -- das Kindeswohl geht vor."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist eine fürsorgerische Unterbringung (FU)?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die fürsorgerische Unterbringung (FU) ist die Unterbringung einer Person in einer geeigneten Einrichtung gegen ihren Willen (Art. 426 ZGB). Voraussetzungen sind: eine psychische Störung, geistige Behinderung oder schwere Verwahrlosung, Behandlungsbedürftigkeit und das Fehlen ambulanter Alternativen. Die FU kann von der KESB oder zeitlich befristet von bezeichneten Ärzten angeordnet werden (Art. 429 ZGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welche KESB ist für mich zuständig?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Zuständig ist grundsätzlich die KESB am Wohnsitz der betroffenen Person (Art. 442 Abs. 1 ZGB). Bei Gefahr im Verzug kann auch die KESB am Aufenthaltsort tätig werden. Die Kontaktdaten der lokalen KESB finden Sie auf der Website Ihrer Wohngemeinde oder Ihres Kantons. Schweizweit bestehen rund 124 regionale KESB."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann eine Gefährdungsmeldung anonym eingereicht werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, anonyme Gefährdungsmeldungen sind möglich. Die KESB geht ihnen nach, sofern sie hinreichend substanziiert sind. Allerdings sind anonyme Meldungen ein häufiger Kritikpunkt, da sie Missbrauchspotenzial bergen. Eine unbegründete oder falsche Meldung hat in der Regel keine rechtlichen Konsequenzen für den Meldenden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Warum wird die KESB kritisiert?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die KESB steht wegen verschiedener Aspekte in der Kritik: zu weitgehende Eingriffe in die Familienautonomie, mangelnde Bürgernähe, Machtkonzentration, Missbrauchspotenzial durch anonyme Meldungen, lange Verfahrensdauer und mangelnde Kommunikation mit Betroffenen. Gleichzeitig zeigt die Zehn-Jahres-Bilanz, dass die Professionalisierung die Qualität der Entscheide insgesamt verbessert hat."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wo bekomme ich Hilfe bei Problemen mit der KESB?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die KESCHA (Anlaufstelle Kindes- und Erwachsenenschutz) bietet unabhängige und kostenlose Beratung für Personen, die Fragen zu oder Probleme mit der KESB haben. Daneben können Sie sich an spezialisierte Familienrechtsanwälte wenden. Bei fehlenden finanziellen Mitteln besteht Anspruch auf unentgeltliche Rechtspflege (Art. 449b ZGB)."
+                }
+            }
+        ]
+    })} />
+
+    <!-- Schema Markup: BreadcrumbList -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Sorgerecht",
+                "item": "https://familienrechtanwalt.ch/sorgerecht"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "KESB Schweiz: Aufgaben, Verfahren, Massnahmen & Rechte",
+                "item": "https://familienrechtanwalt.ch/sorgerecht/kesb"
+            }
+        ]
+    })} />
+
+</ArticleLayout>

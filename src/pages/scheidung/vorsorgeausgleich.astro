@@ -1,0 +1,680 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+---
+
+<ArticleLayout
+    title="Vorsorgeausgleich bei Scheidung: Pensionskasse, AHV & 3. Säule"
+    description="Vorsorgeausgleich bei Scheidung einfach erklärt: Pensionskasse teilen, AHV-Splitting, 3. Säule aufteilen. Berechnung, Ausnahmen & Praxistipps 2026."
+    keywords="Vorsorgeausgleich Scheidung, Pensionskasse Scheidung, BVG Teilung, AHV Splitting, 3. Säule Scheidung, Austrittsleistung, Pensionskasse teilen Schweiz"
+    category="Scheidung"
+    categoryLink="/scheidung"
+>
+
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">&#10003;</span>
+                <span>Bei einer Scheidung werden die während der Ehe erworbenen Vorsorgeansprüche aller drei Säulen aufgeteilt: AHV (1. Säule), Pensionskasse (2. Säule) und Säule 3a/3b (3. Säule).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">&#10003;</span>
+                <span>Die Pensionskassenguthaben (2. Säule) werden grundsätzlich hälftig geteilt -- unabhängig vom Güterstand (Art. 122/123 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">&#10003;</span>
+                <span>Massgeblicher Zeitraum: Von der Eheschliessung bis zur Einleitung des Scheidungsverfahrens (seit Revision 2017).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">&#10003;</span>
+                <span>Die AHV-Einkommen werden automatisch gesplittet (Einkommenssplitting). Die 3. Säule wird güterrechtlich aufgeteilt.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">&#10003;</span>
+                <span>Ein Verzicht auf den Vorsorgeausgleich ist nur möglich, wenn eine angemessene Alters- und Invalidenvorsorge gewährleistet bleibt (Art. 124b ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">&#10003;</span>
+                <span>Seit 2017 können auch bereits laufende Renten direkt aus der Pensionskasse geteilt werden (Art. 124a ZGB) -- ein grosser Fortschritt gegenüber dem alten Recht.</span>
+            </li>
+        </ul>
+    </div>
+
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die Aufteilung der Altersvorsorge gehört zu den finanziell bedeutsamsten Aspekten einer Scheidung. Pensionskassenguthaben sind oft das grösste Vermögen eines Ehepaares -- häufig grösser als das Eigenheim. Dieser Artikel erklärt umfassend, wie der Vorsorgeausgleich in allen drei Säulen funktioniert, wie die Berechnung erfolgt, welche Ausnahmen gelten und was seit der Revision 2017 anders ist.</p>
+
+    <!-- Inhaltsverzeichnis -->
+    <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-12">
+        <h2 class="font-serif text-xl font-bold text-navy mb-4">Inhaltsverzeichnis</h2>
+        <ol class="space-y-2 text-gray-700">
+            <li><a href="#grundlagen" class="text-gold hover:underline">1. Was ist der Vorsorgeausgleich?</a></li>
+            <li><a href="#drei-saeulen" class="text-gold hover:underline">2. Das Drei-Säulen-System bei der Scheidung</a></li>
+            <li><a href="#ahv" class="text-gold hover:underline">3. AHV-Splitting (1. Säule)</a></li>
+            <li><a href="#pensionskasse" class="text-gold hover:underline">4. Pensionskasse / BVG-Teilung (2. Säule)</a></li>
+            <li><a href="#berechnung" class="text-gold hover:underline">5. Berechnung des Vorsorgeausgleichs</a></li>
+            <li><a href="#sonderfaelle" class="text-gold hover:underline">6. Sonderfälle: Invalidität, laufende Renten, WEF</a></li>
+            <li><a href="#ausnahmen" class="text-gold hover:underline">7. Ausnahmen und Verzicht auf den Vorsorgeausgleich</a></li>
+            <li><a href="#dritte-saeule" class="text-gold hover:underline">8. Dritte Säule (3a und 3b) bei der Scheidung</a></li>
+            <li><a href="#steuern" class="text-gold hover:underline">9. Steuerliche Folgen und Wiedereinkauf</a></li>
+            <li><a href="#revision" class="text-gold hover:underline">10. Revision 2017: Was hat sich geändert?</a></li>
+            <li><a href="#verfahren" class="text-gold hover:underline">11. Ablauf und Verfahren Schritt für Schritt</a></li>
+            <li><a href="#international" class="text-gold hover:underline">12. Internationale Scheidungen</a></li>
+            <li><a href="#anwalt" class="text-gold hover:underline">13. Wann Sie einen Anwalt beiziehen sollten</a></li>
+            <li><a href="#fazit" class="text-gold hover:underline">14. Fazit</a></li>
+            <li><a href="#faq" class="text-gold hover:underline">15. Häufig gestellte Fragen (FAQ)</a></li>
+        </ol>
+    </div>
+
+    <!-- 1. Grundlagen -->
+    <h2 id="grundlagen" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Was ist der Vorsorgeausgleich?</h2>
+
+    <p class="text-gray-700 mb-6">Der Vorsorgeausgleich ist ein eigenständiges Rechtsinstitut des Schweizer Scheidungsrechts. Er stellt sicher, dass die während der Ehe aufgebaute Altersvorsorge bei einer Scheidung gerecht zwischen den Ehegatten aufgeteilt wird (Art. 122-124e ZGB). Im Unterschied zur <a href="/gueterrecht/gueterrechtliche-auseinandersetzung" class="text-gold hover:underline font-semibold">güterrechtlichen Auseinandersetzung</a> betrifft der Vorsorgeausgleich ausschliesslich die berufliche Vorsorge (2. Säule). Er wird vom Gericht zwingend und von Amtes wegen durchgeführt -- unabhängig vom Güterstand der Ehegatten.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig:</p>
+        <p class="text-gray-700">Der Vorsorgeausgleich ist unabhängig vom Güterstand. Auch bei einer <a href="/gueterrecht/guetertrennung" class="text-gold hover:underline">Gütertrennung</a> werden die Pensionskassenguthaben hälftig geteilt. Ein <a href="/eherecht/ehevertrag" class="text-gold hover:underline">Ehevertrag</a> kann den güterrechtlichen Ausgleich der 3. Säule ausschliessen, nicht aber den Vorsorgeausgleich der 2. Säule.</p>
+    </div>
+
+    <!-- 2. Drei-Säulen-System -->
+    <h2 id="drei-saeulen" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Das Drei-Säulen-System bei der Scheidung</h2>
+
+    <p class="text-gray-700 mb-6">Bei einer Scheidung sind alle drei Säulen der Schweizer Altersvorsorge betroffen -- allerdings auf unterschiedliche Weise:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Säule</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bezeichnung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aufteilung bei Scheidung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">1. Säule (AHV)</td>
+                    <td class="px-6 py-4 text-gray-700">Staatliche Vorsorge</td>
+                    <td class="px-6 py-4 text-gray-700">Einkommenssplitting: AHV-Einkommen beider Ehegatten werden hälftig geteilt</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 29quinquies AHVG</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">2. Säule (BVG)</td>
+                    <td class="px-6 py-4 text-gray-700">Berufliche Vorsorge / Pensionskasse</td>
+                    <td class="px-6 py-4 text-gray-700">Vorsorgeausgleich: Austrittsleistungen werden hälftig geteilt</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 122-124e ZGB, Art. 22 ff. FZG</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">3. Säule (3a/3b)</td>
+                    <td class="px-6 py-4 text-gray-700">Private Vorsorge</td>
+                    <td class="px-6 py-4 text-gray-700">Güterrechtliche Aufteilung als Teil der Errungenschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 196 ff. ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 3. AHV-Splitting -->
+    <h2 id="ahv" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">AHV-Splitting (1. Säule)</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wie funktioniert das Einkommenssplitting?</h3>
+
+    <p class="text-gray-700 mb-6">Bei einer Scheidung werden die während der gemeinsamen Ehejahre erzielten AHV-pflichtigen Einkommen beider Ehegatten hälftig geteilt und jedem Ehegatten je zur Hälfte auf dem individuellen Konto (IK) gutgeschrieben (Art. 29quinquies AHVG). Dies geschieht unabhängig davon, wer tatsächlich erwerbstätig war -- auch ein nicht erwerbstätiger Ehegatte profitiert vom Splitting.</p>
+
+    <p class="text-gray-700 mb-6">Wichtige Regeln beim AHV-Splitting:</p>
+    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+        <li>Es werden nur <strong>vollständige Kalenderjahre</strong> gesplittet, in denen beide Ehegatten bei der AHV versichert waren.</li>
+        <li>Die Einkommen des <strong>Eheschliessung- und Scheidungsjahres</strong> werden nicht gesplittet.</li>
+        <li>Die Ehe muss mindestens ein volles Kalenderjahr gedauert haben.</li>
+        <li>Das Splitting erfolgt spätestens bei der Rentenberechnung von Amtes wegen, sollte aber frühzeitig beantragt werden.</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Erziehungs- und Betreuungsgutschriften</h3>
+
+    <p class="text-gray-700 mb-6">Zusätzlich zum Einkommenssplitting werden die AHV-Erziehungsgutschriften aufgeteilt (Art. 29sexies AHVG). Während der Ehe werden sie hälftig geteilt. Nach der Scheidung werden sie dem Elternteil mit der elterlichen Obhut zugeordnet. Bei <a href="/sorgerecht/gemeinsames-sorgerecht" class="text-gold hover:underline font-semibold">gemeinsamer elterlicher Sorge</a> ohne explizite Regelung gilt die hälftige Teilung, sofern nicht anders vereinbart.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praxistipp -- AHV-Splitting beantragen:</p>
+        <p class="text-gray-700">Beantragen Sie das AHV-Splitting unmittelbar nach Rechtskraft der Scheidung bei Ihrer Ausgleichskasse. Benötigte Unterlagen: Kopie des Familienbüchleins und des Scheidungsurteils mit Rechtskraftbescheinigung. Idealerweise stellen beide Ex-Ehegatten gemeinsam den Antrag.</p>
+    </div>
+
+    <!-- 4. Pensionskasse / BVG -->
+    <h2 id="pensionskasse" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Pensionskasse / BVG-Teilung (2. Säule)</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Grundsatz: Hälftige Teilung</h3>
+
+    <p class="text-gray-700 mb-6">Die während der Ehe erworbenen Austrittsleistungen beider Ehegatten -- einschliesslich Freizügigkeitsguthaben und WEF-Vorbezüge -- werden grundsätzlich hälftig geteilt (Art. 122 und 123 ZGB). Der Vorsorgeausgleich ist zwingend; das Gericht muss ihn von Amtes wegen durchführen.</p>
+
+    <p class="text-gray-700 mb-6">Der massgebliche Zeitraum erstreckt sich von der <strong>Eheschliessung</strong> bis zur <strong>Einleitung des Scheidungsverfahrens</strong> (Art. 122 ZGB). Nur die in diesem Zeitraum angehäuften Vorsorgeguthaben werden geteilt. Voreheliche Guthaben bleiben beim jeweiligen Ehegatten.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Was wird geteilt?</h3>
+
+    <p class="text-gray-700 mb-6">Der Vorsorgeausgleich erfasst sämtliche Ansprüche aus der beruflichen Vorsorge (2. Säule):</p>
+    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+        <li>Guthaben bei der Pensionskasse (obligatorisch und überobligatorisch)</li>
+        <li>Freizügigkeitsguthaben (Freizügigkeitskonto oder Freizügigkeitspolice)</li>
+        <li>WEF-Vorbezüge für Wohneigentum (werden rechnerisch einbezogen)</li>
+        <li>Bei Invalidität: die hypothetische Austrittsleistung (Art. 124 ZGB)</li>
+        <li>Bei laufenden Renten: Rententeilung (Art. 124a ZGB)</li>
+    </ul>
+
+    <!-- 5. Berechnung -->
+    <h2 id="berechnung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Berechnung des Vorsorgeausgleichs</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Berechnungsformel (Art. 22a FZG)</h3>
+
+    <p class="text-gray-700 mb-6">Die zu teilende Austrittsleistung pro Ehegatte berechnet sich wie folgt:</p>
+
+    <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-8">
+        <p class="text-gray-700 font-mono text-sm">
+            Zu teilende Austrittsleistung =<br/>
+            &nbsp;&nbsp;Austrittsleistung bei Einleitung des Scheidungsverfahrens<br/>
+            + Freizügigkeitsguthaben bei Einleitung des Scheidungsverfahrens<br/>
+            + WEF-Vorbezüge während der Ehe (anteilsmässig)<br/>
+            - Austrittsleistung bei Eheschliessung (aufgezinst mit BVG-Mindestzins)<br/>
+            - Freizügigkeitsguthaben bei Eheschliessung (aufgezinst)<br/>
+            - Einmaleinlagen aus Eigengut (+ Zinsen)
+        </p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">BVG-Mindestzinssätze für die Aufzinsung</h3>
+
+    <p class="text-gray-700 mb-6">Das voreheliche Guthaben wird mit dem BVG-Mindestzinssatz aufgezinst. Die aktuellen und historischen Sätze:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zeitraum</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">BVG-Mindestzinssatz</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr><td class="px-6 py-4 text-gray-700">1985-2002</td><td class="px-6 py-4 text-gray-700">4,00 %</td></tr>
+                <tr><td class="px-6 py-4 text-gray-700">2003</td><td class="px-6 py-4 text-gray-700">3,25 %</td></tr>
+                <tr><td class="px-6 py-4 text-gray-700">2004</td><td class="px-6 py-4 text-gray-700">2,25 %</td></tr>
+                <tr><td class="px-6 py-4 text-gray-700">2005-2007</td><td class="px-6 py-4 text-gray-700">2,50 %</td></tr>
+                <tr><td class="px-6 py-4 text-gray-700">2008</td><td class="px-6 py-4 text-gray-700">2,75 %</td></tr>
+                <tr><td class="px-6 py-4 text-gray-700">2009-2011</td><td class="px-6 py-4 text-gray-700">2,00 %</td></tr>
+                <tr><td class="px-6 py-4 text-gray-700">2012-2013</td><td class="px-6 py-4 text-gray-700">1,50 %</td></tr>
+                <tr><td class="px-6 py-4 text-gray-700">2014-2015</td><td class="px-6 py-4 text-gray-700">1,75 %</td></tr>
+                <tr><td class="px-6 py-4 text-gray-700">2016</td><td class="px-6 py-4 text-gray-700">1,25 %</td></tr>
+                <tr><td class="px-6 py-4 text-gray-700">2017-2023</td><td class="px-6 py-4 text-gray-700">1,00 %</td></tr>
+                <tr><td class="px-6 py-4 text-gray-700">2024-2026</td><td class="px-6 py-4 text-gray-700">1,25 %</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Konkretes Berechnungsbeispiel</h3>
+
+    <p class="text-gray-700 mb-4"><strong>Ausgangslage:</strong> Eheschliessung am 1. Juni 2010, Einleitung Scheidungsverfahren am 15. März 2024.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold"></th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Ehemann</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Ehefrau</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Austrittsleistung bei Eheschliessung (2010)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 80'000</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 20'000</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Austrittsleistung bei Einleitung Scheidung (2024)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 350'000</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 120'000</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Voreheliches Guthaben aufgezinst (BVG-Mindestzins)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 95'830</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 23'958</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Zu teilende Austrittsleistung</td>
+                    <td class="px-6 py-4 text-gray-700 font-bold">CHF 254'170</td>
+                    <td class="px-6 py-4 text-gray-700 font-bold">CHF 96'042</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Davon die Hälfte</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 127'085</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 48'021</td>
+                </tr>
+                <tr class="bg-yellow-50">
+                    <td class="px-6 py-4 text-navy font-bold">Netto-Transfer an Ehefrau (nach Verrechnung)</td>
+                    <td class="px-6 py-4 text-navy font-bold" colspan="2">CHF 127'085 - CHF 48'021 = CHF 79'064</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">In diesem Beispiel werden CHF 79'064 von der Vorsorgeeinrichtung des Ehemannes an die Vorsorgeeinrichtung der Ehefrau überwiesen. Beide Ehegatten haben anschliessend -- bezogen auf die Ehezeit -- gleich hohe Vorsorgeguthaben.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ehen vor dem 1. Januar 1995</h3>
+
+    <p class="text-gray-700 mb-6">Ist die Austrittsleistung bei der Eheschliessung nicht bekannt -- was bei Ehen vor dem 1. Januar 1995 (Inkrafttreten des FZG) typisch ist --, wird sie anhand von Tabellen ermittelt, die das EDI erstellt hat (Art. 22b FZG). Die Berechnung basiert dann auf dem nächstliegenden bekannten Wert.</p>
+
+    <!-- 6. Sonderfälle -->
+    <h2 id="sonderfaelle" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Sonderfälle: Invalidität, laufende Renten, WEF</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Invalidenrente vor dem Rentenalter (Art. 124 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Bezieht ein Ehegatte im Zeitpunkt der Einleitung des Scheidungsverfahrens eine Invalidenrente vor dem reglementarischen Rentenalter, wird eine <strong>hypothetische Austrittsleistung</strong> ermittelt (Art. 124 ZGB). Diese umfasst den Betrag, der dem Ehegatten bei Aufhebung der Invalidenrente zustünde (Art. 2 Abs. 1ter FZG) -- also einschliesslich der Gutschriften aus der Weiterführung des Altersguthabens während der Invalidität. Die hypothetische Austrittsleistung wird anschliessend hälftig geteilt (BGE 146 V 95).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Bereits laufende Altersrenten (Art. 124a ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Bezieht ein Ehegatte bereits eine Altersrente oder eine Invalidenrente nach dem reglementarischen Rentenalter, erfolgt eine <strong>Rententeilung</strong> nach richterlichem Ermessen (Art. 124a ZGB). Das Gericht berücksichtigt dabei die Ehedauer und die Vorsorgebedürfnisse beider Ehegatten. Der berechtigte Ehegatte erhält eine <strong>lebenslange Rente</strong>, die direkt von der Vorsorgeeinrichtung des verpflichteten Ehegatten ausgerichtet wird.</p>
+
+    <p class="text-gray-700 mb-6">Dies war eine der grössten Neuerungen der Revision 2017: Unter dem alten Recht musste die "angemessene Entschädigung" aus eigener Tasche bezahlt werden, was bei Tod des Verpflichteten zum Verlust des Anspruchs führte (BGE 151 V 144).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">WEF-Vorbezüge für Wohneigentum</h3>
+
+    <p class="text-gray-700 mb-6">Haben Ehegatten während der Ehe einen Vorbezug für Wohneigentum (WEF) getätigt (Art. 30c BVG), wird dieser bei der Berechnung des Vorsorgeausgleichs mitberücksichtigt. Der Kapitalabfluss und der Zinsverlust werden anteilsmässig dem vorehelichen und dem ehelichen Guthaben belastet (Art. 22a Abs. 3 FZG). Hat die Liegenschaft an Wert verloren, wird nur der Betrag berücksichtigt, der bei einem Verkauf tatsächlich zurückbezahlt werden müsste (BGE 137 III 49).</p>
+
+    <!-- 7. Ausnahmen -->
+    <h2 id="ausnahmen" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Ausnahmen und Verzicht auf den Vorsorgeausgleich</h2>
+
+    <p class="text-gray-700 mb-6">Obwohl die hälftige Teilung der Grundsatz ist, sieht Art. 124b ZGB zwei Möglichkeiten vor, davon abzuweichen:</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">1. Vereinbarung der Ehegatten (Art. 124b Abs. 1 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Die Ehegatten können in der <a href="/scheidung/scheidungskonvention" class="text-gold hover:underline font-semibold">Scheidungskonvention</a> von der hälftigen Teilung abweichen oder ganz auf den Vorsorgeausgleich verzichten. Voraussetzung ist, dass eine <strong>angemessene Alters- und Invalidenvorsorge</strong> gewährleistet bleibt. Das Gericht muss die Vereinbarung prüfen und genehmigen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">2. Abweichung durch das Gericht (Art. 124b Abs. 2 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Das Gericht kann von sich aus weniger als die Hälfte zusprechen oder die Teilung ganz verweigern, wenn <strong>wichtige Gründe</strong> vorliegen. Namentlich wenn die hälftige Teilung unbillig wäre aufgrund:</p>
+    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+        <li>der <strong>güterrechtlichen Auseinandersetzung</strong> oder der wirtschaftlichen Verhältnisse nach der Scheidung</li>
+        <li>der <strong>Vorsorgebedürfnisse</strong>, insbesondere unter Berücksichtigung des Altersunterschieds</li>
+        <li>einer <strong>groben Verletzung der Unterhaltspflicht</strong> während der Ehe (BGE 145 III 56)</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">BGE 145 III 56 -- Strenge Voraussetzungen:</p>
+        <p class="text-gray-700">Das Bundesgericht hat klargestellt, dass die hälftige Teilung nur in besonders stossenden Situationen verweigert werden darf. Der Grundsatz der hälftigen Teilung darf nicht unterlaufen werden. Schwerwiegende Gründe müssen vorliegen.</p>
+    </div>
+
+    <p class="text-gray-700 mb-6">Bei kurzen Ehen (unter 7 Jahren) ohne Kinder, bei denen beide Ehegatten voll erwerbstätig und noch jung sind, kann ein Verzicht eher gerechtfertigt sein (BGE 5A_443/2018).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Angemessene Entschädigung bei Unmöglichkeit (Art. 124e ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Ist ein Ausgleich aus Mitteln der beruflichen Vorsorge nicht möglich -- etwa bei ausländischen Vorsorgeguthaben (Urteil 5A_211/2020), bei Selbständigerwerbenden ohne Pensionskasse oder bei "entwidmeten" WEF-Vorbezügen --, schuldet der verpflichtete Ehegatte eine angemessene Entschädigung in Form einer Kapitalabfindung oder Rente.</p>
+
+    <!-- 8. Dritte Säule -->
+    <h2 id="dritte-saeule" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Dritte Säule (3a und 3b) bei der Scheidung</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Säule 3a (gebundene Vorsorge)</h3>
+
+    <p class="text-gray-700 mb-6">Die Säule 3a wird <strong>nicht</strong> über den Vorsorgeausgleich (Art. 122 ff. ZGB) aufgeteilt, sondern über das <strong>Güterrecht</strong>. Bei der <a href="/gueterrecht/errungenschaftsbeteiligung" class="text-gold hover:underline font-semibold">Errungenschaftsbeteiligung</a> (dem ordentlichen Güterstand) gilt: Die während der Ehe aus Erwerbs- oder Ersatzeinkommen einbezahlten Beiträge gelten als Errungenschaft (Art. 197 Abs. 2 Ziff. 1 ZGB). Bei der Scheidung hat jeder Ehegatte Anspruch auf die Hälfte des Vorschlags (Errungenschaft minus Schulden) des anderen (Art. 215 ZGB). Voreheliches 3a-Guthaben bleibt Eigengut (Art. 198 Ziff. 2 ZGB; BGE 144 III 298).</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Güterstand</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Teilung der Säule 3a?</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Details</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Errungenschaftsbeteiligung</td>
+                    <td class="px-6 py-4 text-gray-700">Ja (als Errungenschaft)</td>
+                    <td class="px-6 py-4 text-gray-700">Ehelich angespartes Guthaben wird über die Vorschlagsbeteiligung geteilt</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Gütertrennung</td>
+                    <td class="px-6 py-4 text-gray-700">Nein</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder behält sein eigenes 3a-Guthaben</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Gütergemeinschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Ja (als Gesamtgut)</td>
+                    <td class="px-6 py-4 text-gray-700">Fällt ins Gesamtgut und wird hälftig geteilt</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Säule 3b (freie Vorsorge)</h3>
+
+    <p class="text-gray-700 mb-6">Guthaben der Säule 3b (Lebensversicherungen, Sparkonten) werden ebenfalls güterrechtlich behandelt. Während der Ehe aus Erwerbseinkommen finanzierte Guthaben gehören zur Errungenschaft. Bei Lebensversicherungen ist der Rückkaufswert massgeblich für die güterrechtliche Auseinandersetzung.</p>
+
+    <!-- 9. Steuern -->
+    <h2 id="steuern" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Steuerliche Folgen und Wiedereinkauf</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Steuerneutrale Übertragung</h3>
+
+    <p class="text-gray-700 mb-6">Die Übertragung von Austrittsleistungen zwischen Vorsorgeeinrichtungen im Rahmen des Vorsorgeausgleichs erfolgt <strong>steuerneutral</strong>. Das heisst: Auf dem übertragenen Betrag fällt keine Einkommenssteuer an, und der Verpflichtete kann keinen Steuerabzug geltend machen. Die Gelder bleiben in der gebundenen Vorsorge und werden erst bei Auszahlung (Pensionierung, Auswanderung, Wohneigentum) besteuert.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wiedereinkauf nach der Scheidung</h3>
+
+    <p class="text-gray-700 mb-6">Der verpflichtete Ehegatte kann die durch den Vorsorgeausgleich entstandene Vorsorgelücke durch <strong>freiwillige Einkäufe</strong> in die Pensionskasse wieder schliessen. Diese Einkäufe sind <strong>steuerlich voll abzugsfähig</strong> -- ein erheblicher finanzieller Vorteil. Die normalerweise geltende dreijährige Sperrfrist für Kapitalbezüge nach einem Einkauf (Art. 79d BVG) gilt bei Einkäufen zur Schliessung einer Scheidungslücke nicht.</p>
+
+    <!-- 10. Revision 2017 -->
+    <h2 id="revision" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Revision 2017: Was hat sich geändert?</h2>
+
+    <p class="text-gray-700 mb-6">Am 1. Januar 2017 trat die umfassende Revision des Vorsorgeausgleichs bei Scheidung in Kraft (Änderung vom 19. Juni 2015). Die wichtigsten Neuerungen im Überblick:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Altes Recht (vor 2017)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Neues Recht (seit 2017)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Massgeblicher Zeitpunkt</td>
+                    <td class="px-6 py-4 text-gray-700">Rechtskraft des Scheidungsurteils</td>
+                    <td class="px-6 py-4 text-gray-700">Einleitung des Scheidungsverfahrens</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Laufende Rente</td>
+                    <td class="px-6 py-4 text-gray-700">Angemessene Entschädigung aus eigener Tasche</td>
+                    <td class="px-6 py-4 text-gray-700">Direkte Rententeilung aus der Vorsorgeeinrichtung (Art. 124a ZGB)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Verzicht/Abweichung</td>
+                    <td class="px-6 py-4 text-gray-700">"Gleichwertige" Vorsorge erforderlich</td>
+                    <td class="px-6 py-4 text-gray-700">"Angemessene" Vorsorge genügt (Art. 124b ZGB)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Tod des Verpflichteten</td>
+                    <td class="px-6 py-4 text-gray-700">Anspruch ging verloren</td>
+                    <td class="px-6 py-4 text-gray-700">Lebenslange Rente aus der Vorsorgeeinrichtung (gesichert)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Verrechnung</td>
+                    <td class="px-6 py-4 text-gray-700">Nicht explizit geregelt</td>
+                    <td class="px-6 py-4 text-gray-700">Explizit geregelt (Art. 124c ZGB)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 11. Verfahren -->
+    <h2 id="verfahren" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Ablauf und Verfahren Schritt für Schritt</h2>
+
+    <p class="text-gray-700 mb-6">Der Vorsorgeausgleich läuft im Rahmen des <a href="/scheidung/ablauf-einer-scheidung" class="text-gold hover:underline font-semibold">Scheidungsverfahrens</a> wie folgt ab:</p>
+
+    <div class="space-y-4 mb-8">
+        <div class="flex items-start">
+            <span class="bg-navy text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">1</span>
+            <div>
+                <p class="font-semibold text-navy">Pensionskassenbestätigungen einholen</p>
+                <p class="text-gray-700">Beide Ehegatten beantragen bei ihren Vorsorgeeinrichtungen eine Bestätigung der Austrittsleistung bei Eheschliessung und bei Einleitung des Scheidungsverfahrens. Die Pensionskassen sind verpflichtet, diese Angaben dem Gericht zu liefern.</p>
+            </div>
+        </div>
+        <div class="flex items-start">
+            <span class="bg-navy text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">2</span>
+            <div>
+                <p class="font-semibold text-navy">Berechnung der zu teilenden Austrittsleistung</p>
+                <p class="text-gray-700">Das Gericht (oder die Parteien) berechnet anhand der Bestätigungen den zu teilenden Betrag nach Art. 22a FZG.</p>
+            </div>
+        </div>
+        <div class="flex items-start">
+            <span class="bg-navy text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">3</span>
+            <div>
+                <p class="font-semibold text-navy">Vereinbarung oder gerichtliche Festlegung</p>
+                <p class="text-gray-700">Die Ehegatten einigen sich in der Scheidungskonvention auf die Teilung (oder einen Verzicht nach Art. 124b ZGB), oder das Gericht legt den Vorsorgeausgleich fest.</p>
+            </div>
+        </div>
+        <div class="flex items-start">
+            <span class="bg-navy text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">4</span>
+            <div>
+                <p class="font-semibold text-navy">Gerichtliche Anordnung an die Vorsorgeeinrichtung</p>
+                <p class="text-gray-700">Das Gericht ordnet im Scheidungsurteil die Übertragung des Betrags von der Vorsorgeeinrichtung des Verpflichteten an die Einrichtung des Berechtigten an.</p>
+            </div>
+        </div>
+        <div class="flex items-start">
+            <span class="bg-navy text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">5</span>
+            <div>
+                <p class="font-semibold text-navy">Übertragung der Mittel</p>
+                <p class="text-gray-700">Die Vorsorgeeinrichtung überweist den Betrag. Ist der berechtigte Ehegatte keiner Pensionskasse angeschlossen, erfolgt die Übertragung auf ein Freizügigkeitskonto.</p>
+            </div>
+        </div>
+        <div class="flex items-start">
+            <span class="bg-navy text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">6</span>
+            <div>
+                <p class="font-semibold text-navy">AHV-Splitting beantragen</p>
+                <p class="text-gray-700">Nach Rechtskraft der Scheidung das Einkommenssplitting bei der zuständigen Ausgleichskasse beantragen.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 12. International -->
+    <h2 id="international" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Internationale Scheidungen</h2>
+
+    <p class="text-gray-700 mb-6">Seit dem 1. Januar 2017 gilt für die Teilung von Schweizer Pensionskassenguthaben eine <strong>ausschliessliche schweizerische Zuständigkeit</strong> (Art. 63 Abs. 1bis und Art. 64 Abs. 1bis IPRG). Das bedeutet: Ein ausländisches Gericht kann nicht über Schweizer Pensionskassengelder entscheiden. Wird die Scheidung im Ausland durchgeführt, muss für die Teilung der Schweizer Vorsorgeguthaben ein Schweizer Gericht eingeschaltet werden. Bei einer <a href="/scheidung/internationale-scheidung" class="text-gold hover:underline font-semibold">internationalen Scheidung</a> ist die frühzeitige Klärung der Zuständigkeit daher besonders wichtig.</p>
+
+    <!-- 13. Anwalt -->
+    <section id="anwalt" class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für den Vorsorgeausgleich beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">Der Vorsorgeausgleich gehört zu den finanziell bedeutsamsten und zugleich komplexesten Aspekten einer Scheidung. Eine falsche Berechnung oder ein unbedachter Verzicht auf die Teilung kann langfristige finanzielle Folgen haben -- insbesondere für den Ehegatten, der zugunsten der Familie auf Erwerbstätigkeit verzichtet hat und dadurch tiefere Vorsorgeansprüche aufweist.</p>
+
+        <p class="text-gray-700 mb-6">Die Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> ist besonders empfohlen, wenn hohe Pensionskassenguthaben im Spiel sind, wenn ein Ehegatte bereits eine Rente bezieht (Art. 124a ZGB), wenn WEF-Vorbezüge oder mehrere Vorsorgeeinrichtungen beteiligt sind, oder wenn ein Verzicht auf die Teilung erwogen wird (Art. 124b ZGB).</p>
+
+        <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kann die korrekte Berechnung prüfen, Ihre Rechte durchsetzen und sicherstellen, dass Ihre Altersvorsorge auch nach der Scheidung angemessen gesichert ist. Auch bei <a href="/scheidung/internationale-scheidung" class="text-gold hover:underline font-semibold">internationalen Scheidungen</a> ist die anwaltliche Beratung durch einen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> unerlässlich.</p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Stehen Sie vor einer Scheidung und möchten wissen, wie sich der Vorsorgeausgleich auf Ihre Altersvorsorge auswirkt? Unsere Familienrechtsanwälte beraten Sie kompetent zu Ihren Ansprüchen.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- 14. Fazit -->
+    <h2 id="fazit" class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Der Vorsorgeausgleich bei Scheidung stellt sicher, dass die während der Ehe aufgebaute Altersvorsorge fair verteilt wird. Die hälftige Teilung der Pensionskassenguthaben (2. Säule) ist der Grundsatz, von dem nur in Ausnahmefällen abgewichen werden darf. Das AHV-Einkommenssplitting (1. Säule) erfolgt automatisch, und die 3. Säule wird über das Güterrecht aufgeteilt. Seit der Revision 2017 können auch bereits laufende Renten direkt aus der Vorsorgeeinrichtung geteilt werden -- ein erheblicher Fortschritt für die Vorsorgesicherheit beider Ehegatten nach der Scheidung.</p>
+
+    <p class="text-gray-700 mb-6">Angesichts der Komplexität der Materie und der weitreichenden finanziellen Auswirkungen empfiehlt sich in den meisten Fällen die Konsultation eines spezialisierten Familienrechtsanwalts, der die korrekte Berechnung sicherstellt und einen fairen Vorsorgeausgleich durchsetzt.</p>
+
+    <!-- 15. FAQ -->
+    <section id="faq" class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert mit der Pensionskasse bei einer Scheidung?</h3>
+                <p class="text-gray-700">Bei einer Scheidung werden die während der Ehe erworbenen Pensionskassenguthaben (2. Säule) grundsätzlich hälftig geteilt (Art. 122/123 ZGB). Massgeblich ist der Zeitraum von der Eheschliessung bis zur Einleitung des Scheidungsverfahrens. Voreheliche Guthaben werden nicht geteilt. Die Teilung ist unabhängig vom Güterstand und wird vom Gericht zwingend durchgeführt.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie wird der Vorsorgeausgleich berechnet?</h3>
+                <p class="text-gray-700">Die Berechnung erfolgt nach Art. 22a FZG: Von der Austrittsleistung bei Einleitung des Scheidungsverfahrens wird die aufgezinste Austrittsleistung bei Eheschliessung (mit BVG-Mindestzins) abgezogen. Die Differenz ist die zu teilende Austrittsleistung. Jeder Ehegatte schuldet dem anderen die Hälfte seiner zu teilenden Austrittsleistung. Durch Verrechnung ergibt sich ein Netto-Transfer vom Ehegatten mit dem höheren zum Ehegatten mit dem tieferen ehelich erworbenen Guthaben.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann man auf die Teilung der Pensionskasse verzichten?</h3>
+                <p class="text-gray-700">Ja, die Ehegatten können in der Scheidungskonvention auf den Vorsorgeausgleich verzichten, sofern eine angemessene Alters- und Invalidenvorsorge gewährleistet bleibt (Art. 124b Abs. 1 ZGB). Das Gericht prüft, ob der Verzicht gerechtfertigt ist. Bei kurzen Ehen ohne Kinder, bei denen beide Ehegatten voll erwerbstätig sind, wird ein Verzicht eher akzeptiert (BGE 5A_443/2018). Ein Verzicht ohne angemessene Gegenleistung wird vom Gericht abgelehnt.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist das AHV-Splitting bei Scheidung?</h3>
+                <p class="text-gray-700">Das AHV-Splitting (Einkommenssplitting) teilt die während der Ehe erzielten AHV-pflichtigen Einkommen beider Ehegatten hälftig (Art. 29quinquies AHVG). Es werden nur vollständige Kalenderjahre gesplittet -- das Eheschliessung- und Scheidungsjahr zählen nicht. Das Splitting sollte unmittelbar nach Rechtskraft der Scheidung bei der Ausgleichskasse beantragt werden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert mit der Säule 3a bei einer Scheidung?</h3>
+                <p class="text-gray-700">Die Säule 3a wird nicht über den Vorsorgeausgleich, sondern über das Güterrecht aufgeteilt. Bei der Errungenschaftsbeteiligung (ordentlicher Güterstand) gehören die während der Ehe einbezahlten 3a-Beiträge zur Errungenschaft und werden bei der güterrechtlichen Auseinandersetzung berücksichtigt. Bei Gütertrennung findet keine Teilung statt. Voreheliches 3a-Guthaben ist Eigengut (BGE 144 III 298).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert, wenn ein Ehepartner bereits pensioniert ist?</h3>
+                <p class="text-gray-700">Bezieht ein Ehegatte bereits eine Altersrente, erfolgt eine Rententeilung nach richterlichem Ermessen (Art. 124a ZGB). Der berechtigte Ehegatte erhält eine lebenslange Rente, die direkt von der Vorsorgeeinrichtung des Verpflichteten ausbezahlt wird. Dies ist eine grosse Verbesserung gegenüber dem alten Recht, unter dem der Anspruch bei Tod des Verpflichteten verloren ging.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie wirkt sich ein WEF-Vorbezug auf den Vorsorgeausgleich aus?</h3>
+                <p class="text-gray-700">WEF-Vorbezüge (Vorbezüge für Wohneigentum) werden bei der Berechnung des Vorsorgeausgleichs mitberücksichtigt (Art. 22a Abs. 3 FZG). Der Kapitalabfluss und der Zinsverlust werden anteilsmässig dem vorehelichen und ehelichen Guthaben belastet. Hat die Liegenschaft an Wert verloren, wird nur der tatsächlich rückzahlbare Betrag berücksichtigt (BGE 137 III 49).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Muss man den Vorsorgeausgleich versteuern?</h3>
+                <p class="text-gray-700">Nein, die Übertragung von Austrittsleistungen zwischen Vorsorgeeinrichtungen im Rahmen des Vorsorgeausgleichs erfolgt steuerneutral. Es fällt keine Einkommenssteuer an. Die Gelder bleiben in der gebundenen Vorsorge und werden erst bei Auszahlung (Pensionierung, Auswanderung) besteuert. Bei einer angemessenen Entschädigung nach Art. 124e ZGB als Kapitalabfindung gelten andere steuerliche Regeln.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann man sich nach der Scheidung wieder in die Pensionskasse einkaufen?</h3>
+                <p class="text-gray-700">Ja, der verpflichtete Ehegatte kann die durch den Vorsorgeausgleich entstandene Vorsorgelücke durch freiwillige Einkäufe in die Pensionskasse schliessen. Diese Einkäufe sind steuerlich voll abzugsfähig. Die normalerweise geltende dreijährige Sperrfrist für Kapitalbezüge nach einem Einkauf gilt bei Scheidungseinkäufen nicht.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was hat sich beim Vorsorgeausgleich seit 2017 geändert?</h3>
+                <p class="text-gray-700">Die Revision per 1.1.2017 brachte wesentliche Verbesserungen: Der massgebliche Zeitpunkt wurde von der Rechtskraft des Urteils auf die Einleitung des Verfahrens vorverlegt (verhindert Verschleppungstaktiken). Bereits laufende Renten können direkt aus der Vorsorgeeinrichtung geteilt werden (Art. 124a ZGB), wodurch der Anspruch auch bei Tod des Verpflichteten gesichert ist. Zudem wurde die Schwelle für einen Verzicht gesenkt ("angemessene" statt "gleichwertige" Vorsorge).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert mit der Pensionskasse bei einer internationalen Scheidung?</h3>
+                <p class="text-gray-700">Seit 2017 gilt für Schweizer Pensionskassenguthaben eine ausschliessliche schweizerische Zuständigkeit (Art. 63 Abs. 1bis IPRG). Ein ausländisches Gericht kann nicht über Schweizer Vorsorgeguthaben entscheiden. Wird die Scheidung im Ausland durchgeführt, muss für die Teilung der Schweizer Vorsorgeguthaben ein Schweizer Gericht eingeschaltet werden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Gilt der Vorsorgeausgleich auch bei eingetragener Partnerschaft?</h3>
+                <p class="text-gray-700">Ja, bei der Auflösung einer eingetragenen Partnerschaft gelten die gleichen Regeln für den Vorsorgeausgleich wie bei einer Scheidung (Art. 22d/23 FZG). Zu beachten ist, dass der gesetzliche Güterstand bei der eingetragenen Partnerschaft die Gütertrennung ist -- die 3. Säule wird daher in der Regel nicht geteilt, wohl aber die 2. Säule über den Vorsorgeausgleich.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup: Article -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Vorsorgeausgleich bei Scheidung: Pensionskasse, AHV & 3. Säule",
+        "description": "Vorsorgeausgleich bei Scheidung einfach erklärt: Pensionskasse teilen, AHV-Splitting, 3. Säule aufteilen. Berechnung, Ausnahmen & Praxistipps 2026.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2026-02-11",
+        "dateModified": "2026-02-11",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/scheidung/vorsorgeausgleich"
+        }
+    })} />
+
+    <!-- Schema Markup: FAQPage -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Was passiert mit der Pensionskasse bei einer Scheidung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei einer Scheidung werden die während der Ehe erworbenen Pensionskassenguthaben (2. Säule) grundsätzlich hälftig geteilt (Art. 122/123 ZGB). Massgeblich ist der Zeitraum von der Eheschliessung bis zur Einleitung des Scheidungsverfahrens. Voreheliche Guthaben werden nicht geteilt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie wird der Vorsorgeausgleich berechnet?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Berechnung erfolgt nach Art. 22a FZG: Von der Austrittsleistung bei Einleitung des Scheidungsverfahrens wird die aufgezinste Austrittsleistung bei Eheschliessung abgezogen. Die Differenz ist die zu teilende Austrittsleistung, die hälftig geteilt wird."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann man auf die Teilung der Pensionskasse verzichten?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, die Ehegatten können in der Scheidungskonvention auf den Vorsorgeausgleich verzichten, sofern eine angemessene Alters- und Invalidenvorsorge gewährleistet bleibt (Art. 124b Abs. 1 ZGB). Das Gericht prüft den Verzicht."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist das AHV-Splitting bei Scheidung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das AHV-Splitting teilt die während der Ehe erzielten AHV-pflichtigen Einkommen beider Ehegatten hälftig (Art. 29quinquies AHVG). Es werden nur vollständige Kalenderjahre gesplittet. Das Splitting sollte nach Rechtskraft der Scheidung bei der Ausgleichskasse beantragt werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert mit der Säule 3a bei einer Scheidung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Säule 3a wird über das Güterrecht aufgeteilt, nicht über den Vorsorgeausgleich. Bei der Errungenschaftsbeteiligung gehören die während der Ehe einbezahlten 3a-Beiträge zur Errungenschaft. Bei Gütertrennung findet keine Teilung statt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert, wenn ein Ehepartner bereits pensioniert ist?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bezieht ein Ehegatte bereits eine Altersrente, erfolgt eine Rententeilung nach richterlichem Ermessen (Art. 124a ZGB). Der berechtigte Ehegatte erhält eine lebenslange Rente direkt von der Vorsorgeeinrichtung."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Muss man den Vorsorgeausgleich versteuern?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, die Übertragung von Austrittsleistungen im Rahmen des Vorsorgeausgleichs erfolgt steuerneutral. Es fällt keine Einkommenssteuer an. Die Gelder bleiben in der gebundenen Vorsorge."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann man sich nach der Scheidung wieder in die Pensionskasse einkaufen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, der verpflichtete Ehegatte kann die Vorsorgelücke durch freiwillige Einkäufe schliessen. Diese sind steuerlich voll abzugsfähig. Die dreijährige Sperrfrist gilt bei Scheidungseinkäufen nicht."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was hat sich beim Vorsorgeausgleich seit 2017 geändert?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Revision 2017 verlegte den massgeblichen Zeitpunkt auf die Einleitung des Verfahrens, ermöglichte die direkte Rententeilung bei laufenden Renten (Art. 124a ZGB) und senkte die Schwelle für einen Verzicht."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert mit der Pensionskasse bei einer internationalen Scheidung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Seit 2017 gilt für Schweizer Pensionskassenguthaben eine ausschliessliche schweizerische Zuständigkeit (Art. 63 Abs. 1bis IPRG). Ein ausländisches Gericht kann nicht über Schweizer Vorsorgeguthaben entscheiden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Gilt der Vorsorgeausgleich auch bei eingetragener Partnerschaft?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, bei der Auflösung einer eingetragenen Partnerschaft gelten die gleichen Regeln für den Vorsorgeausgleich wie bei einer Scheidung (Art. 22d/23 FZG)."
+                }
+            }
+        ]
+    })} />
+
+    <!-- Schema Markup: BreadcrumbList -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Scheidung",
+                "item": "https://familienrechtanwalt.ch/scheidung"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Vorsorgeausgleich bei Scheidung",
+                "item": "https://familienrechtanwalt.ch/scheidung/vorsorgeausgleich"
+            }
+        ]
+    })} />
+
+</ArticleLayout>

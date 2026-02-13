@@ -4,57 +4,185 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 
 <ArticleLayout
     title="Betreuungsunterhalt in der Schweiz"
-    description="Betreuungsunterhalt in der Schweiz: Schulstufenmodell, Berechnung und Anspruchsvoraussetzungen. Umfassender Leitfaden mit Beispielen."
-    keywords="Betreuungsunterhalt Schweiz, Schulstufenmodell, Kindesunterhalt Betreuung, Erwerbsausfall Kinderbetreuung"
+    description="Betreuungsunterhalt Schweiz: Schulstufenmodell, Lebenshaltungskostenmethode & Berechnung nach BGE 144 III 377. Voraussetzungen, Dauer & Anspruch erklärt."
+    keywords="Betreuungsunterhalt Schweiz, Schulstufenmodell, Lebenshaltungskostenmethode, Art. 285 ZGB, Kindesunterhalt Betreuung, BGE 144 III 377, Betreuungsunterhalt Berechnung"
     category="Unterhalt"
     categoryLink="/unterhalt"
 >
-    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Der Betreuungsunterhalt ist seit dem 1. Januar 2017 ein zentraler Bestandteil des Schweizer Kindesunterhaltsrechts. Er stellt eine der bedeutendsten familienrechtlichen Reformen der letzten Jahrzehnte dar und hat das Ziel, die wirtschaftliche Situation von betreuenden Elternteilen zu verbessern.</p>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Der Betreuungsunterhalt ist seit dem 1. Januar 2017 ein <strong>zivilstandsunabhängiger Anspruch des Kindes</strong>, der den Erwerbsausfall des betreuenden Elternteils ausgleicht (Art. 285 Abs. 2 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Berechnung erfolgt verbindlich nach der <strong>Lebenshaltungskostenmethode</strong>: Betreuungsunterhalt = Familienrechtliches Existenzminimum minus Einkommen des betreuenden Elternteils (BGE 144 III 377).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Das <strong>Schulstufenmodell</strong> regelt die Erwerbsobliegenheit: Ab Einschulung 50%, ab Sekundarstufe 80%, ab 16 Jahren 100% (BGE 144 III 481).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bei der Verteilung gilt eine <strong>Prioritätenordnung</strong>: Zuerst Barunterhalt, dann Betreuungsunterhalt, zuletzt nachehelicher Unterhalt (BGE 147 III 265).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Auch <strong>unverheiratete Eltern</strong> haben Anspruch auf Betreuungsunterhalt – die Berechnung erfolgt identisch wie bei verheirateten Paaren.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Der Betreuungsunterhalt ist beim Empfänger <strong>steuerbares Einkommen</strong> und beim Zahlenden <strong>abzugsfähig</strong>.</span>
+            </li>
+        </ul>
+    </div>
+
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Der Betreuungsunterhalt ist seit der Kindesunterhaltsrevision vom 1. Januar 2017 ein zentraler Bestandteil des Schweizer Unterhaltsrechts. Mit dieser Reform wollte der Gesetzgeber sicherstellen, dass die persönliche Betreuung eines Kindes durch einen Elternteil angemessen entschädigt wird – unabhängig davon, ob die Eltern verheiratet waren oder nicht. Der Betreuungsunterhalt gleicht den Erwerbsausfall aus, der dem betreuenden Elternteil dadurch entsteht, dass er sich um das Kind kümmert und deshalb nicht oder nur eingeschränkt arbeiten kann.</p>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Was ist der Betreuungsunterhalt?</h2>
 
-    <p class="text-gray-700 mb-6">Der Betreuungsunterhalt ist eine finanzielle Leistung, die den Erwerbsausfall des hauptbetreuenden Elternteils ausgleichen soll. Er basiert auf dem Grundgedanken, dass die persönliche Betreuung eines Kindes durch einen Elternteil einen wirtschaftlichen Wert hat.</p>
+    <p class="text-gray-700 mb-6">Der Betreuungsunterhalt ist eine finanzielle Leistung, die den Erwerbsausfall des hauptbetreuenden Elternteils ausgleichen soll. Er basiert auf dem Grundgedanken, dass die persönliche Betreuung eines Kindes durch einen Elternteil einen wirtschaftlichen Wert hat und entsprechend entschädigt werden muss.</p>
 
-    <p class="text-gray-700 mb-6">Die gesetzliche Grundlage findet sich in Art. 285 Abs. 2 ZGB: "Der Unterhaltsbeitrag dient auch der Gewährleistung der Betreuung des Kindes durch die Eltern oder Dritte."</p>
+    <p class="text-gray-700 mb-6">Die gesetzliche Grundlage findet sich in Art. 285 Abs. 2 ZGB:</p>
 
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy">Wichtig:</p>
-        <p class="text-gray-700">Der Betreuungsunterhalt ist rechtlich ein Anspruch des Kindes, obwohl er faktisch dem betreuenden Elternteil zugutekommt. Er ist zivilstandsunabhängig - verheiratete und unverheiratete Eltern sind gleichgestellt.</p>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Art. 285 Abs. 2 ZGB:</p>
+        <p class="text-gray-700 italic">"Der Unterhaltsbeitrag dient auch der Gewährleistung der Betreuung des Kindes durch die Eltern oder Dritte."</p>
+    </div>
+
+    <p class="text-gray-700 mb-6">Der Betreuungsunterhalt ist rechtlich ein <strong>Anspruch des Kindes</strong>, obwohl er faktisch dem betreuenden Elternteil zugutekommt. Das Bundesgericht hat dies in BGE 144 III 377 E. 7.1.1 klargestellt: Obwohl der Betreuungsunterhalt formell Kindesunterhalt ist, kommt er "wirtschaftlich dem betreuenden Elternteil" zu.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Abgrenzung zu anderen Unterhaltsarten</h3>
+
+    <p class="text-gray-700 mb-6">Der Kindesunterhalt setzt sich aus drei Komponenten zusammen:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Komponente</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Definition</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beispiele</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Barunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Direkte Kosten für den Lebensunterhalt des Kindes</td>
+                    <td class="px-6 py-4 text-gray-700">Nahrung, Kleidung, Wohnen, Krankenkasse, Schulmaterial</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Betreuungsunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Indirekte Kosten durch Erwerbsausfall des Betreuenden</td>
+                    <td class="px-6 py-4 text-gray-700">Lebenshaltungskosten des betreuenden Elternteils</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Naturalunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Persönliche Betreuung und Erziehung</td>
+                    <td class="px-6 py-4 text-gray-700">Pflege, Hausaufgabenhilfe, emotionale Zuwendung</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Die Kindesunterhaltsrevision 2017</h2>
+
+    <p class="text-gray-700 mb-6">Kern der am 1. Januar 2017 in Kraft getretenen Kindesunterhaltsrevision war die Einführung eines <strong>zivilstandsunabhängigen Betreuungsunterhalts</strong>. Vor dieser Reform hatten nur geschiedene Ehepartner über den nachehelichen Unterhalt einen Anspruch auf Ausgleich des betreuungsbedingten Erwerbsausfalls. Unverheiratete Mütter und Väter gingen oft leer aus.</p>
+
+    <p class="text-gray-700 mb-6">Mit der Reform wurden verheiratete und unverheiratete Eltern gleichgestellt: Wer ein Kind betreut und deshalb nicht arbeiten kann, hat unabhängig vom Zivilstand Anspruch auf Betreuungsunterhalt (Art. 276 Abs. 2 ZGB).</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig:</p>
+        <p class="text-gray-700">Der Betreuungsunterhalt fällt bei mehreren zu betreuenden Kindern nur <strong>einmal</strong> an, weil der betreuende Elternteil den Erwerbsausfall nur einmal hat. Die Betreuung mehrerer Kinder kann jedoch dazu führen, dass vom Schulstufenmodell abgewichen wird.</p>
     </div>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Das Schulstufenmodell</h2>
 
-    <p class="text-gray-700 mb-6">Mit dem Leitentscheid BGE 144 III 481 hat das Bundesgericht das "Schulstufenmodell" eingeführt, das die frühere 10/16-Regel ablöste.</p>
+    <p class="text-gray-700 mb-6">Mit dem Leitentscheid BGE 144 III 481 vom 21. September 2018 hat das Bundesgericht das sogenannte <strong>Schulstufenmodell</strong> eingeführt, das die frühere 10/16-Regel ablöste. Das Schulstufenmodell bestimmt, ab welchem Alter des Kindes dem betreuenden Elternteil eine Erwerbstätigkeit zugemutet werden kann.</p>
 
-    <div class="overflow-x-auto mb-6">
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Die drei Stufen im Überblick</h3>
+
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Schulstufe</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Alter des jüngsten Kindes</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Zumutbares Pensum</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zumutbares Erwerbspensum</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Anspruch auf Betreuungsunterhalt</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Vor Schuleintritt</td>
-                    <td class="px-6 py-4 text-gray-700">0-4 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">0–4 Jahre</td>
                     <td class="px-6 py-4 text-gray-700">0%</td>
+                    <td class="px-6 py-4 text-gray-700">Voller Betreuungsunterhalt</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Kindergarten/Primarschule</td>
-                    <td class="px-6 py-4 text-gray-700">4-12 Jahre</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Kindergarten / Primarschule</td>
+                    <td class="px-6 py-4 text-gray-700">4–12 Jahre</td>
                     <td class="px-6 py-4 text-gray-700">50%</td>
+                    <td class="px-6 py-4 text-gray-700">Reduzierter Betreuungsunterhalt</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Sekundarstufe I</td>
-                    <td class="px-6 py-4 text-gray-700">12-16 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">12–16 Jahre</td>
                     <td class="px-6 py-4 text-gray-700">80%</td>
+                    <td class="px-6 py-4 text-gray-700">Stark reduziert oder entfällt</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">Nach Schulabschluss</td>
                     <td class="px-6 py-4 text-gray-700">Ab 16 Jahren</td>
                     <td class="px-6 py-4 text-gray-700">100%</td>
+                    <td class="px-6 py-4 text-gray-700">Kein Betreuungsunterhalt mehr</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">In den allermeisten Kantonen beginnt die obligatorische Schulzeit mit dem Kindergarteneintritt. Demnach gelten die Altersgrenzen von <strong>4/12/16 Jahren</strong>.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Kritik am Schulstufenmodell:</p>
+        <p class="text-gray-700">In der Lehre wird kritisiert, dass 50% Betreuung nicht automatisch 50% Erwerbsfähigkeit bedeutet. Die ausserschulische Betreuungslast (Aufgabenhilfe, Arztbesuche, Hobbys, Kindergeburtstage) kann erheblich sein. Ab einer Erwerbstätigkeit von 80% ist oft kein Betreuungsunterhalt mehr geschuldet, obwohl der Elternteil weiterhin Betreuungsleistungen erbringt.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ausnahmen vom Schulstufenmodell</h3>
+
+    <p class="text-gray-700 mb-6">Das Bundesgericht hat festgehalten, dass vom Schulstufenmodell im Einzelfall abgewichen werden kann:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Grund für Abweichung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Auswirkung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Mehrere Kinder zu betreuen</td>
+                    <td class="px-6 py-4 text-gray-700">Reduzierte Erwerbsobliegenheit möglich</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Kind mit Behinderung oder erhöhtem Betreuungsbedarf</td>
+                    <td class="px-6 py-4 text-gray-700">Längerer Anspruch, geringere Erwerbspflicht</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Fehlende Kinderbetreuungsangebote</td>
+                    <td class="px-6 py-4 text-gray-700">Erwerbsobliegenheit kann reduziert werden</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Krankheit des betreuenden Elternteils</td>
+                    <td class="px-6 py-4 text-gray-700">Erwerbsobliegenheit kann entfallen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Während der Ehe praktizierte Rollenverteilung</td>
+                    <td class="px-6 py-4 text-gray-700">Übergangsfristen können gewährt werden</td>
                 </tr>
             </tbody>
         </table>
@@ -62,18 +190,63 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Berechnung des Betreuungsunterhalts</h2>
 
-    <p class="text-gray-700 mb-6">Das Bundesgericht hat festgelegt, dass der Betreuungsunterhalt nach der Lebenshaltungskostenmethode berechnet wird:</p>
+    <p class="text-gray-700 mb-6">Das Bundesgericht hat in BGE 144 III 377 die <strong>Lebenshaltungskostenmethode</strong> als verbindlich für die Berechnung des Betreuungsunterhalts erklärt. Andere Methoden (wie die Betreuungsquotenmethode) wurden ausdrücklich als nicht sachgerecht verworfen.</p>
 
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy">Berechnungsformel:</p>
-        <p class="text-gray-700 text-lg">Betreuungsunterhalt = Lebenshaltungskosten des betreuenden Elternteils - Eigenes Einkommen</p>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Die Lebenshaltungskostenmethode</h3>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Berechnungsformel:</p>
+        <p class="text-gray-700 text-lg font-semibold">Betreuungsunterhalt = Familienrechtliches Existenzminimum – Eigenes Einkommen des betreuenden Elternteils</p>
     </div>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Berechnungsbeispiel</h3>
+    <p class="text-gray-700 mb-6">Der Betreuungsunterhalt deckt somit die Differenz zwischen den Lebenshaltungskosten des betreuenden Elternteils und dessen tatsächlichem oder zumutbarem Einkommen. Kann der betreuende Elternteil seinen Bedarf vollständig selbst decken, besteht kein Anspruch auf Betreuungsunterhalt.</p>
 
-    <p class="text-gray-700 mb-4"><strong>Ausgangslage:</strong> Mutter mit 5-jährigem Kind, 40%-Pensum</p>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Das familienrechtliche Existenzminimum</h3>
 
-    <div class="overflow-x-auto mb-6">
+    <p class="text-gray-700 mb-6">Ausgangspunkt ist das betreibungsrechtliche Existenzminimum (Notbedarf), das um weitere Positionen zum familienrechtlichen Existenzminimum erweitert wird. Dieses umfasst typischerweise:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Position</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Richtwert (je nach Kanton)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Grundbetrag (alleinstehend)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'200 – 1'350</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Wohnkosten (eigener Anteil)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'000 – 1'500</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Krankenkassenprämie (Grundversicherung)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 350 – 500</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Berufsauslagen / Arbeitsweg</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 100 – 300</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Steuern</td>
+                    <td class="px-6 py-4 text-gray-700">Individuell</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Total familienrechtliches Existenzminimum</td>
+                    <td class="px-6 py-4 font-semibold text-navy">ca. CHF 2'600 – 3'500</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Konkretes Berechnungsbeispiel</h3>
+
+    <p class="text-gray-700 mb-4"><strong>Ausgangslage:</strong> Mutter mit 5-jährigem Kind (Kindergarten), arbeitet gemäss Schulstufenmodell zu 50%.</p>
+
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
@@ -99,12 +272,12 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
                     <td class="px-6 py-4 text-gray-700">CHF 100</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Bedarf total</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Familienrechtliches Existenzminimum</td>
                     <td class="px-6 py-4 font-semibold text-navy">CHF 3'050</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 text-gray-700">Zumutbares Einkommen (50%)</td>
-                    <td class="px-6 py-4 text-gray-700">CHF 2'500</td>
+                    <td class="px-6 py-4 text-gray-700">Abzüglich: Eigenes Einkommen (50%-Pensum)</td>
+                    <td class="px-6 py-4 text-gray-700">– CHF 2'500</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Betreuungsunterhalt</td>
@@ -114,18 +287,105 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Voraussetzungen für den Anspruch</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Die zweistufige Methode mit Überschussverteilung</h2>
 
-    <p class="text-gray-700 mb-4">Der Anspruch auf Betreuungsunterhalt setzt ein "Versorgungsdefizit" beim betreuenden Elternteil voraus:</p>
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Der betreuende Elternteil kann wegen der Kinderbetreuung nicht oder nur eingeschränkt erwerbstätig sein</li>
-        <li>Das Einkommen reicht nicht aus, um die Lebenshaltungskosten zu decken</li>
-        <li>Das Defizit ist kausal auf die Kinderbetreuung zurückzuführen</li>
-    </ul>
+    <p class="text-gray-700 mb-6">Mit dem Leitentscheid BGE 147 III 265 vom 11. November 2020 hat das Bundesgericht die <strong>zweistufige Methode mit Überschussverteilung</strong> als verbindlich für sämtliche Unterhaltsarten erklärt – für Kindesunterhalt, Betreuungsunterhalt und (nach-)ehelichen Unterhalt.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Erste Stufe: Bedarfsdeckung</h3>
+
+    <p class="text-gray-700 mb-6">In der ersten Stufe wird der finanzielle Grundbedarf aller Familienmitglieder ermittelt. Das betreibungsrechtliche Existenzminimum des Unterhaltspflichtigen ist dabei stets zu wahren.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Prioritätenordnung bei der Verteilung</h3>
+
+    <p class="text-gray-700 mb-6">Das Bundesgericht hat eine klare Rangfolge festgelegt:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rang</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Unterhaltsart</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gesetzliche Grundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">1. Priorität</td>
+                    <td class="px-6 py-4 text-gray-700">Barunterhalt minderjähriger Kinder</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 285 Abs. 1 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">2. Priorität</td>
+                    <td class="px-6 py-4 text-gray-700">Betreuungsunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 285 Abs. 2 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">3. Priorität</td>
+                    <td class="px-6 py-4 text-gray-700">(Nach-)ehelicher Unterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 125 / 163 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">4. Priorität</td>
+                    <td class="px-6 py-4 text-gray-700">Volljährigenunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 277 Abs. 2 ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Zweite Stufe: Überschussverteilung</h3>
+
+    <p class="text-gray-700 mb-6">Verbleibt nach Deckung des familienrechtlichen Grundbedarfs aller Beteiligten ein Überschuss, wird dieser nach "grossen und kleinen Köpfen" verteilt: Erwachsene erhalten einen vollen Anteil, minderjährige Kinder einen halben Anteil.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig:</p>
+        <p class="text-gray-700">Eltern mit blossem Anspruch auf Betreuungsunterhalt haben <strong>keinen</strong> Anspruch auf einen Überschussanteil (BGE 147 III 265). Der Betreuungsunterhalt bleibt immer auf das familienrechtliche Existenzminimum beschränkt. Ein Überschussanteil steht unverheirateten Eltern daher nur zu, wenn sie auch nachehelichen Unterhalt geltend machen können – was aber eine Ehe voraussetzt.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Voraussetzungen für den Anspruch auf Betreuungsunterhalt</h2>
+
+    <p class="text-gray-700 mb-6">Der Anspruch auf Betreuungsunterhalt setzt ein "Versorgungsdefizit" beim betreuenden Elternteil voraus. Folgende Voraussetzungen müssen kumulativ erfüllt sein:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Voraussetzung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erklärung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Betreuung eines Kindes</td>
+                    <td class="px-6 py-4 text-gray-700">Der Elternteil muss das Kind tatsächlich persönlich betreuen.</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Eingeschränkte Erwerbsfähigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Die Betreuung muss eine volle oder teilweise Erwerbstätigkeit verhindern.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Versorgungsdefizit</td>
+                    <td class="px-6 py-4 text-gray-700">Das eigene Einkommen reicht nicht aus, um die Lebenshaltungskosten zu decken.</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Kausalität</td>
+                    <td class="px-6 py-4 text-gray-700">Das Defizit muss auf die Kinderbetreuung zurückzuführen sein.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Leistungsfähigkeit des Pflichtigen</td>
+                    <td class="px-6 py-4 text-gray-700">Der andere Elternteil muss wirtschaftlich in der Lage sein, zu zahlen.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Kein Betreuungsunterhalt besteht, wenn der betreuende Elternteil bereits zu 100% erwerbstätig ist oder völlig arbeitsunfähig ist (dann sind andere Sozialleistungen einschlägig).</p>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Abgrenzung zum nachehelichen Unterhalt</h2>
 
-    <div class="overflow-x-auto mb-6">
+    <p class="text-gray-700 mb-6">Der Betreuungsunterhalt und der nacheheliche Unterhalt (Art. 125 ZGB) dienen unterschiedlichen Zwecken und haben verschiedene Voraussetzungen:</p>
+
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
@@ -141,43 +401,441 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
                     <td class="px-6 py-4 text-gray-700">Art. 125 ZGB</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Zivilstandsabhängig</td>
-                    <td class="px-6 py-4 text-gray-700">Nein</td>
-                    <td class="px-6 py-4 text-gray-700">Ja (nur bei Scheidung)</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Anspruchsträger</td>
+                    <td class="px-6 py-4 text-gray-700">Kind (wirtschaftlich: betreuender Elternteil)</td>
+                    <td class="px-6 py-4 text-gray-700">Ehegatte persönlich</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Voraussetzung</td>
-                    <td class="px-6 py-4 text-gray-700">Kinderbetreuung</td>
-                    <td class="px-6 py-4 text-gray-700">Lebensprägende Ehe</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Zivilstand</td>
+                    <td class="px-6 py-4 text-gray-700">Zivilstandsunabhängig</td>
+                    <td class="px-6 py-4 text-gray-700">Nur bei Scheidung</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Anspruchsträger</td>
-                    <td class="px-6 py-4 text-gray-700">Kind</td>
-                    <td class="px-6 py-4 text-gray-700">Ehegatte persönlich</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Voraussetzung</td>
+                    <td class="px-6 py-4 text-gray-700">Kinderbetreuung</td>
+                    <td class="px-6 py-4 text-gray-700">Lebensprägende Ehe / ehebedingte Nachteile</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Dauer</td>
+                    <td class="px-6 py-4 text-gray-700">Bis Erwerbsaufnahme zumutbar (Schulstufenmodell)</td>
+                    <td class="px-6 py-4 text-gray-700">Individuell, kann lebenslänglich sein</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Überschussanteil</td>
+                    <td class="px-6 py-4 text-gray-700">Nein</td>
+                    <td class="px-6 py-4 text-gray-700">Ja</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Priorität</td>
+                    <td class="px-6 py-4 text-gray-700">2. Rang</td>
+                    <td class="px-6 py-4 text-gray-700">3. Rang</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Sonderfälle</h2>
+    <p class="text-gray-700 mb-6">Bei geschiedenen Paaren mit Kindern können beide Unterhaltsansprüche parallel bestehen. Der Betreuungsunterhalt deckt den betreuungsbedingten Erwerbsausfall, während der <a href="/unterhalt/nachehelicher-unterhalt" class="text-gold hover:underline font-semibold">nacheheliche Unterhalt</a> weitere ehebedingte Nachteile ausgleicht.</p>
 
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Mehrere Kinder:</strong> Bei mehreren Kindern kann vom Schulstufenmodell abgewichen werden</li>
-        <li><strong>Kind mit Behinderung:</strong> Erhöhte Betreuungslast kann längeren Anspruch begründen</li>
-        <li><strong>Geteilte Betreuung:</strong> Bei 50/50-Betreuung kann der Anspruch ganz entfallen</li>
-        <li><strong>Fehlende Betreuungsangebote:</strong> Kann die Erwerbsobliegenheit reduzieren</li>
-    </ul>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Betreuungsunterhalt bei unverheirateten Eltern</h2>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
+    <p class="text-gray-700 mb-6">Seit der Revision 2017 haben auch unverheiratete Mütter und Väter Anspruch auf Betreuungsunterhalt. Die Berechnung erfolgt identisch wie bei verheirateten Paaren – es spielt keine Rolle, ob die Eltern je zusammengelebt haben.</p>
 
-    <p class="text-gray-700 mb-6">Der Betreuungsunterhalt ist ein wichtiges Instrument zur Sicherstellung einer angemessenen Kinderbetreuung und zum Ausgleich der damit verbundenen Erwerbseinbussen. Die Berechnung erfolgt nach der Lebenshaltungskostenmethode, und die Erwerbsobliegenheit richtet sich nach dem Schulstufenmodell.</p>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Festlegung bei unverheirateten Eltern</h3>
 
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy mb-2">Relevante Bundesgerichtsentscheide:</p>
-        <ul class="list-disc list-inside text-gray-700 space-y-1">
-            <li>BGE 144 III 377 - Grundsätzliches zum Betreuungsunterhalt</li>
-            <li>BGE 144 III 481 - Einführung des Schulstufenmodells</li>
-            <li>BGE 147 III 265 - Zweistufige Methode verbindlich</li>
-        </ul>
+    <p class="text-gray-700 mb-6">Der Betreuungsunterhalt wird bei unverheirateten Eltern durch einen <strong>Unterhaltsvertrag</strong> geregelt, der von der KESB (Kindes- und Erwachsenenschutzbehörde) genehmigt werden muss. Können sich die Eltern nicht einigen, entscheidet das Gericht.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Risiko im Konkubinat:</p>
+        <p class="text-gray-700">Im Gegensatz zur Ehe gibt es im Konkubinat keine gesetzlich geregelte Absicherung für den wirtschaftlich schwächeren Partner. Es besteht kein Anspruch auf Vermögensteilung oder nachehelichen Unterhalt. Wer Kinder im Konkubinat bekommt und das Arbeitspensum reduziert, trägt ein erhebliches finanzielles Risiko. Ein Konkubinatsvertrag kann hier Abhilfe schaffen.</p>
     </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Betreuungsunterhalt bei alternierender Obhut</h2>
+
+    <p class="text-gray-700 mb-6">Bei <a href="/sorgerecht/alternierende-obhut" class="text-gold hover:underline font-semibold">alternierender Obhut</a> (Wechselmodell) teilen sich beide Eltern die Betreuung des Kindes – idealerweise zu 50%. Dies hat Auswirkungen auf den Betreuungsunterhalt:</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Szenarien bei geteilter Betreuung</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Konstellation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Betreuungsunterhalt</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">50/50-Betreuung, gleiche Leistungsfähigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Entfällt in der Regel vollständig</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">50/50-Betreuung, ungleiche Leistungsfähigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Ausgleichszahlung möglich</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Ungleiche Betreuung (z.B. 70/30)</td>
+                    <td class="px-6 py-4 text-gray-700">Anspruch für den hauptbetreuenden Elternteil</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Das Bundesgericht hat die alternierende Obhut faktisch zum Regelfall erklärt (BGE 5A_821/2019; BGE 5A_629/2019). Bei echter hälftiger Betreuung reduzieren sich die Betreuungsanteile beider Eltern, sodass theoretisch beide erwerbstätig sein können.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Hypothetisches Einkommen und Erwerbsobliegenheit</h2>
+
+    <p class="text-gray-700 mb-6">Wenn der betreuende Elternteil gemäss Schulstufenmodell arbeiten könnte, aber nicht arbeitet oder weniger arbeitet als zumutbar, kann ihm ein <strong>hypothetisches Einkommen</strong> angerechnet werden.</p>
+
+    <p class="text-gray-700 mb-6">Dies bedeutet: Das Gericht rechnet so, als ob der Elternteil das zumutbare Pensum arbeiten würde. Der Betreuungsunterhalt wird entsprechend reduziert.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Beispiel:</p>
+        <p class="text-gray-700">Das jüngste Kind ist 10 Jahre alt (Primarschule). Gemäss Schulstufenmodell wäre ein 50%-Pensum zumutbar. Die Mutter arbeitet aber nur 20%. Das Gericht kann ihr ein hypothetisches Einkommen von 50% anrechnen, auch wenn sie tatsächlich weniger verdient.</p>
+    </div>
+
+    <p class="text-gray-700 mb-6">Ein hypothetisches Einkommen darf jedoch nicht angerechnet werden, wenn die Erwerbstätigkeit aufgrund konkreter Umstände nicht zumutbar ist (fehlende Kinderbetreuungsangebote, Krankheit, fehlende Stellenangebote trotz intensiver Suche).</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Sonderfälle beim Betreuungsunterhalt</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Mehrere Kinder</h3>
+
+    <p class="text-gray-700 mb-6">Bei mehreren Kindern kann vom Schulstufenmodell abgewichen werden, da die Betreuungslast deutlich grösser ist als bei nur einem Kind. Das Bundesgericht hat anerkannt, dass bei vier Kindern eine Erwerbstätigkeit von 50% bzw. 80% allenfalls nicht zumutbar ist.</p>
+
+    <p class="text-gray-700 mb-6">Der Betreuungsunterhalt wird jedoch nur <strong>einmal</strong> geschuldet – nicht pro Kind –, da der betreuende Elternteil den Erwerbsausfall nur einmal hat.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kind mit Behinderung</h3>
+
+    <p class="text-gray-700 mb-6">Eine Behinderung eines Kindes kann einen erhöhten Betreuungsbedarf begründen. In solchen Fällen kann der Betreuungsunterhalt auch über das 16. Lebensjahr hinaus geschuldet sein, und die Erwerbsobliegenheit kann reduziert oder aufgehoben werden.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Mangellage</h3>
+
+    <p class="text-gray-700 mb-6">Reichen die finanziellen Mittel des Unterhaltspflichtigen nicht aus, um alle Unterhaltsansprüche zu decken (sog. Mangellage), gilt die Prioritätenordnung: Zuerst wird der Barunterhalt der Kinder gedeckt, dann der Betreuungsunterhalt. Der nacheheliche Unterhalt kommt zuletzt.</p>
+
+    <p class="text-gray-700 mb-6">In Mangellagen wird der Betreuungsunterhalt oft gekürzt oder entfällt ganz, da die Existenzsicherung der Kinder Vorrang hat.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Abänderung des Betreuungsunterhalts</h2>
+
+    <p class="text-gray-700 mb-6">Der Betreuungsunterhalt kann nachträglich angepasst werden, wenn sich die Verhältnisse <strong>erheblich, dauerhaft und unvorhergesehen</strong> geändert haben (Art. 286 Abs. 2 ZGB). Typische Gründe für eine Abänderung sind:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Änderungsgrund</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Auswirkung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Betreuender Elternteil erhöht Einkommen wesentlich</td>
+                    <td class="px-6 py-4 text-gray-700">Betreuungsunterhalt sinkt oder entfällt</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Kind wird älter (nächste Schulstufe)</td>
+                    <td class="px-6 py-4 text-gray-700">Erwerbsobliegenheit steigt, Betreuungsunterhalt sinkt</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Pflichtiger verliert Arbeit dauerhaft</td>
+                    <td class="px-6 py-4 text-gray-700">Betreuungsunterhalt kann reduziert werden</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Betreuungsmodell ändert sich</td>
+                    <td class="px-6 py-4 text-gray-700">Neuberechnung erforderlich</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Das Bundesgericht hat in BGE 150 III 153 klargestellt, dass eine Abänderung des Betreuungsunterhalts nicht prinzipiell ausgeschlossen werden darf. Vielmehr hat eine Anpassung zu erfolgen, sofern die Änderung dauerhaft und wesentlich ist.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Kein Abänderungsgrund:</p>
+        <p class="text-gray-700">Der steigende Bedarf des Kindes mit zunehmendem Alter ist <strong>kein</strong> Abänderungsgrund, da dieser vorhersehbar war. Ebenso rechtfertigen geringfügige oder nur vorübergehende Änderungen (z.B. Arbeitslosigkeit unter 4 Monaten) keine Abänderung.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Steuerliche Behandlung des Betreuungsunterhalts</h2>
+
+    <p class="text-gray-700 mb-6">Für den Betreuungsunterhalt gilt das <strong>Korrespondenzprinzip</strong>:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Partei</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Steuerliche Behandlung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Zahlender Elternteil</td>
+                    <td class="px-6 py-4 text-gray-700">Kann den Betreuungsunterhalt als Abzug geltend machen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Empfangender Elternteil</td>
+                    <td class="px-6 py-4 text-gray-700">Muss den Betreuungsunterhalt als Einkommen versteuern</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Der empfangende Elternteil kann in der Regel den <strong>Kinderabzug</strong> geltend machen, da er den Unterhalt des Kindes zur Hauptsache bestreitet. Die Abzugsfähigkeit beim zahlenden Elternteil gilt bis und mit dem Monat, in dem das Kind volljährig wird.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wichtige Bundesgerichtsentscheide zum Betreuungsunterhalt</h2>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Entscheid</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Datum</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kernaussage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 144 III 377</td>
+                    <td class="px-6 py-4 text-gray-700">17.05.2018</td>
+                    <td class="px-6 py-4 text-gray-700">Lebenshaltungskostenmethode ist verbindlich</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 144 III 481</td>
+                    <td class="px-6 py-4 text-gray-700">21.09.2018</td>
+                    <td class="px-6 py-4 text-gray-700">Einführung des Schulstufenmodells</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 147 III 265</td>
+                    <td class="px-6 py-4 text-gray-700">11.11.2020</td>
+                    <td class="px-6 py-4 text-gray-700">Zweistufige Methode mit Überschussverteilung verbindlich</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 148 III 161</td>
+                    <td class="px-6 py-4 text-gray-700">2022</td>
+                    <td class="px-6 py-4 text-gray-700">Verhältnis Betreuungsunterhalt / nachehelicher Unterhalt</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 150 III 153</td>
+                    <td class="px-6 py-4 text-gray-700">2024</td>
+                    <td class="px-6 py-4 text-gray-700">Abänderung bei Einkommenserhöhung des Betreuenden</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">Die Berechnung des Betreuungsunterhalts ist komplex und erfordert eine genaue Kenntnis der aktuellen Bundesgerichtspraxis. Bereits kleine Abweichungen bei der Ermittlung des familienrechtlichen Existenzminimums oder der Anrechnung hypothetischer Einkommen können zu erheblichen finanziellen Unterschieden führen.</p>
+
+        <p class="text-gray-700 mb-6">Besonders bei folgenden Konstellationen ist die Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> empfohlen:</p>
+
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Streit über die Höhe des Betreuungsunterhalts oder die zumutbare Erwerbstätigkeit</li>
+            <li>Abweichung vom Schulstufenmodell (mehrere Kinder, Kind mit Behinderung)</li>
+            <li>Komplexe Einkommensverhältnisse (Selbständigkeit, schwankendes Einkommen)</li>
+            <li>Abänderung eines bestehenden Unterhaltsurteils</li>
+            <li>Unverheiratete Eltern ohne Unterhaltsvereinbarung</li>
+            <li>Mangellage und Verteilung knapper Mittel</li>
+        </ul>
+
+        <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kann die korrekte Berechnung nach der zweistufigen Methode sicherstellen und Ihre Interessen vor Gericht oder bei Verhandlungen mit der Gegenpartei vertreten. Auch bei der Gestaltung von Unterhaltsverträgen ist fachkundige Unterstützung durch einen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> unerlässlich.</p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Lassen Sie Ihren Anspruch auf Betreuungsunterhalt von einem Experten prüfen. Wir berechnen Ihren individuellen Anspruch und beraten Sie zu den besten Handlungsoptionen.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- Fazit -->
+    <h2 class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Der Betreuungsunterhalt ist seit der Revision 2017 ein zentrales Element des Schweizer Kindesunterhaltsrechts. Er stellt sicher, dass die persönliche Betreuung eines Kindes angemessen entschädigt wird – unabhängig davon, ob die Eltern verheiratet waren oder nicht.</p>
+
+    <p class="text-gray-700 mb-6">Die Berechnung erfolgt verbindlich nach der Lebenshaltungskostenmethode (BGE 144 III 377), während das Schulstufenmodell (BGE 144 III 481) die zumutbare Erwerbstätigkeit des betreuenden Elternteils bestimmt. Die zweistufige Methode mit Überschussverteilung (BGE 147 III 265) sorgt für eine einheitliche Berechnung aller Unterhaltsarten.</p>
+
+    <p class="text-gray-700 mb-6">Trotz der Leitentscheide des Bundesgerichts bestehen in der Praxis noch kantonale Unterschiede bei der Umsetzung. Eine fachkundige Beratung ist daher empfehlenswert, um den korrekten Anspruch zu ermitteln und durchzusetzen.</p>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen Betreuungsunterhalt und Alimente?</h3>
+                <p class="text-gray-700">Alimente (Barunterhalt) decken die direkten Kosten des Kindes wie Nahrung, Kleidung und Wohnen. Der Betreuungsunterhalt hingegen gleicht den Erwerbsausfall des betreuenden Elternteils aus, der durch die Kinderbetreuung nicht oder nur eingeschränkt arbeiten kann. Beide sind Bestandteile des Kindesunterhalts nach Art. 285 ZGB.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie lange wird Betreuungsunterhalt gezahlt?</h3>
+                <p class="text-gray-700">Der Betreuungsunterhalt wird gemäss Schulstufenmodell gezahlt: Voller Anspruch bis zum Schuleintritt des jüngsten Kindes (ca. 4 Jahre), dann reduzierter Anspruch bis zur Sekundarstufe (12 Jahre), stark reduziert bis 16 Jahre, danach entfällt er in der Regel vollständig. Bei Kindern mit erhöhtem Betreuungsbedarf kann der Anspruch länger bestehen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie wird der Betreuungsunterhalt berechnet?</h3>
+                <p class="text-gray-700">Der Betreuungsunterhalt wird nach der Lebenshaltungskostenmethode berechnet: Familienrechtliches Existenzminimum des betreuenden Elternteils (ca. CHF 2'600–3'500) minus dessen (zumutbares) Einkommen ergibt den Betreuungsunterhalt. Kann der betreuende Elternteil seinen Bedarf selbst decken, besteht kein Anspruch.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Haben auch unverheiratete Eltern Anspruch auf Betreuungsunterhalt?</h3>
+                <p class="text-gray-700">Ja, seit dem 1. Januar 2017 ist der Betreuungsunterhalt zivilstandsunabhängig. Auch unverheiratete Mütter und Väter haben Anspruch auf Betreuungsunterhalt, wenn sie ein gemeinsames Kind betreuen und deshalb nicht oder nur eingeschränkt arbeiten können. Die Berechnung erfolgt identisch wie bei verheirateten Paaren.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Muss ich Betreuungsunterhalt versteuern?</h3>
+                <p class="text-gray-700">Ja, der empfangene Betreuungsunterhalt ist steuerbares Einkommen und muss in der Steuererklärung deklariert werden. Im Gegenzug kann der zahlende Elternteil den Betreuungsunterhalt von seinem steuerbaren Einkommen abziehen (Korrespondenzprinzip). Dies gilt bis zur Volljährigkeit des Kindes.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist das Schulstufenmodell?</h3>
+                <p class="text-gray-700">Das Schulstufenmodell wurde vom Bundesgericht in BGE 144 III 481 eingeführt und bestimmt, ab wann dem betreuenden Elternteil eine Erwerbstätigkeit zugemutet wird: Ab Einschulung (ca. 4 Jahre) 50%, ab Sekundarstufe (12 Jahre) 80%, ab 16 Jahren 100%. Es ersetzt die frühere 10/16-Regel.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Gibt es Betreuungsunterhalt bei geteilter Obhut (50/50)?</h3>
+                <p class="text-gray-700">Bei echter hälftiger Betreuung (alternierende Obhut 50/50) entfällt der Betreuungsunterhalt in der Regel, da beide Eltern gleichermassen betreuen und erwerbstätig sein können. Bei ungleicher finanzieller Leistungsfähigkeit kann jedoch ein Ausgleich geschuldet sein. Bei ungleicher Betreuung (z.B. 70/30) besteht weiterhin ein Anspruch für den hauptbetreuenden Elternteil.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann der Betreuungsunterhalt nachträglich geändert werden?</h3>
+                <p class="text-gray-700">Ja, der Betreuungsunterhalt kann angepasst werden, wenn sich die Verhältnisse erheblich, dauerhaft und unvorhergesehen geändert haben (Art. 286 ZGB). Typische Gründe sind: Einkommenserhöhung des betreuenden Elternteils, Wechsel der Schulstufe des Kindes oder dauerhafte Arbeitslosigkeit des Pflichtigen. Das Abänderungsverfahren erfolgt über das Gericht.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert bei mehreren Kindern?</h3>
+                <p class="text-gray-700">Der Betreuungsunterhalt fällt auch bei mehreren Kindern nur einmal an, da der Erwerbsausfall des betreuenden Elternteils nur einmal besteht. Allerdings kann bei mehreren Kindern vom Schulstufenmodell abgewichen werden, weil die Betreuungslast deutlich grösser ist. Die Erwerbsobliegenheit kann entsprechend reduziert werden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wer zahlt zuerst: Barunterhalt oder Betreuungsunterhalt?</h3>
+                <p class="text-gray-700">Gemäss BGE 147 III 265 gilt folgende Prioritätenordnung: Zuerst wird der Barunterhalt der minderjährigen Kinder gedeckt, dann der Betreuungsunterhalt, danach der (nach-)eheliche Unterhalt und zuletzt der Volljährigenunterhalt. Bei Mangellagen kann der Betreuungsunterhalt daher gekürzt werden oder ganz entfallen.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Betreuungsunterhalt in der Schweiz",
+        "description": "Betreuungsunterhalt Schweiz: Schulstufenmodell, Lebenshaltungskostenmethode & Berechnung nach BGE 144 III 377. Voraussetzungen, Dauer & Anspruch erklärt.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-21",
+        "dateModified": "2025-01-21",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/unterhalt/betreuungsunterhalt"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen Betreuungsunterhalt und Alimente?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Alimente (Barunterhalt) decken die direkten Kosten des Kindes wie Nahrung, Kleidung und Wohnen. Der Betreuungsunterhalt hingegen gleicht den Erwerbsausfall des betreuenden Elternteils aus, der durch die Kinderbetreuung nicht oder nur eingeschränkt arbeiten kann. Beide sind Bestandteile des Kindesunterhalts nach Art. 285 ZGB."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie lange wird Betreuungsunterhalt gezahlt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der Betreuungsunterhalt wird gemäss Schulstufenmodell gezahlt: Voller Anspruch bis zum Schuleintritt des jüngsten Kindes (ca. 4 Jahre), dann reduzierter Anspruch bis zur Sekundarstufe (12 Jahre), stark reduziert bis 16 Jahre, danach entfällt er in der Regel vollständig. Bei Kindern mit erhöhtem Betreuungsbedarf kann der Anspruch länger bestehen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie wird der Betreuungsunterhalt berechnet?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der Betreuungsunterhalt wird nach der Lebenshaltungskostenmethode berechnet: Familienrechtliches Existenzminimum des betreuenden Elternteils (ca. CHF 2'600–3'500) minus dessen (zumutbares) Einkommen ergibt den Betreuungsunterhalt. Kann der betreuende Elternteil seinen Bedarf selbst decken, besteht kein Anspruch."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Haben auch unverheiratete Eltern Anspruch auf Betreuungsunterhalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, seit dem 1. Januar 2017 ist der Betreuungsunterhalt zivilstandsunabhängig. Auch unverheiratete Mütter und Väter haben Anspruch auf Betreuungsunterhalt, wenn sie ein gemeinsames Kind betreuen und deshalb nicht oder nur eingeschränkt arbeiten können. Die Berechnung erfolgt identisch wie bei verheirateten Paaren."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Muss ich Betreuungsunterhalt versteuern?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, der empfangene Betreuungsunterhalt ist steuerbares Einkommen und muss in der Steuererklärung deklariert werden. Im Gegenzug kann der zahlende Elternteil den Betreuungsunterhalt von seinem steuerbaren Einkommen abziehen (Korrespondenzprinzip). Dies gilt bis zur Volljährigkeit des Kindes."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist das Schulstufenmodell?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das Schulstufenmodell wurde vom Bundesgericht in BGE 144 III 481 eingeführt und bestimmt, ab wann dem betreuenden Elternteil eine Erwerbstätigkeit zugemutet wird: Ab Einschulung (ca. 4 Jahre) 50%, ab Sekundarstufe (12 Jahre) 80%, ab 16 Jahren 100%. Es ersetzt die frühere 10/16-Regel."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Gibt es Betreuungsunterhalt bei geteilter Obhut (50/50)?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei echter hälftiger Betreuung (alternierende Obhut 50/50) entfällt der Betreuungsunterhalt in der Regel, da beide Eltern gleichermassen betreuen und erwerbstätig sein können. Bei ungleicher finanzieller Leistungsfähigkeit kann jedoch ein Ausgleich geschuldet sein. Bei ungleicher Betreuung (z.B. 70/30) besteht weiterhin ein Anspruch für den hauptbetreuenden Elternteil."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann der Betreuungsunterhalt nachträglich geändert werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, der Betreuungsunterhalt kann angepasst werden, wenn sich die Verhältnisse erheblich, dauerhaft und unvorhergesehen geändert haben (Art. 286 ZGB). Typische Gründe sind: Einkommenserhöhung des betreuenden Elternteils, Wechsel der Schulstufe des Kindes oder dauerhafte Arbeitslosigkeit des Pflichtigen. Das Abänderungsverfahren erfolgt über das Gericht."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert bei mehreren Kindern?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der Betreuungsunterhalt fällt auch bei mehreren Kindern nur einmal an, da der Erwerbsausfall des betreuenden Elternteils nur einmal besteht. Allerdings kann bei mehreren Kindern vom Schulstufenmodell abgewichen werden, weil die Betreuungslast deutlich grösser ist. Die Erwerbsobliegenheit kann entsprechend reduziert werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wer zahlt zuerst: Barunterhalt oder Betreuungsunterhalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Gemäss BGE 147 III 265 gilt folgende Prioritätenordnung: Zuerst wird der Barunterhalt der minderjährigen Kinder gedeckt, dann der Betreuungsunterhalt, danach der (nach-)eheliche Unterhalt und zuletzt der Volljährigenunterhalt. Bei Mangellagen kann der Betreuungsunterhalt daher gekürzt werden oder ganz entfallen."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Unterhalt",
+                "item": "https://familienrechtanwalt.ch/unterhalt"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Betreuungsunterhalt in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/unterhalt/betreuungsunterhalt"
+            }
+        ]
+    })} />
+
 </ArticleLayout>

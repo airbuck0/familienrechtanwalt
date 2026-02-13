@@ -1,0 +1,747 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+---
+
+<ArticleLayout
+    title="Alleiniges Sorgerecht und alleinige Obhut in der Schweiz"
+    description="Alleiniges Sorgerecht & alleinige Obhut in der Schweiz: Unterschied, Voraussetzungen, Verfahren bei KESB & Gericht. Mit Gesetzesartikeln & BGE-Entscheiden."
+    keywords="alleiniges Sorgerecht Schweiz, alleinige Obhut, Sorgerecht entziehen, Art. 311 ZGB, Art. 298 ZGB, KESB Sorgerecht, Kindeswohl, Obhut beantragen"
+    category="Sorgerecht"
+    categoryLink="/sorgerecht"
+>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Sorgerecht ≠ Obhut:</strong> Die elterliche Sorge umfasst alle wichtigen Entscheidungen (Schule, Gesundheit, Religion). Die Obhut betrifft die tägliche Betreuung und den Wohnort des Kindes.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Gemeinsames Sorgerecht ist der Regelfall</strong> seit der ZGB-Revision 2014 – auch nach einer Scheidung behalten beide Eltern das Sorgerecht (Art. 296 Abs. 2 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Alleiniges Sorgerecht</strong> wird nur erteilt bei schwerwiegendem Dauerkonflikt, anhaltender Kommunikationsunfähigkeit oder <strong>konkreter Kindeswohlgefährdung</strong> (BGE 141 III 472).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Alleinige Obhut</strong> ist häufiger: Das Kind lebt bei einem Elternteil, aber beide behalten das gemeinsame Sorgerecht.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Zuständig</strong> ist das Scheidungsgericht (bei Scheidung) oder die <strong>KESB</strong> (ausserhalb eines Scheidungsverfahrens).</span>
+            </li>
+        </ul>
+    </div>
+
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">In der Schweiz wird häufig von «Sorgerecht» gesprochen, wenn eigentlich die «Obhut» gemeint ist – oder umgekehrt. Diese beiden Begriffe bezeichnen jedoch unterschiedliche rechtliche Konzepte mit verschiedenen Konsequenzen. Dieser umfassende Ratgeber erklärt den Unterschied zwischen alleinigem Sorgerecht und alleiniger Obhut, die Voraussetzungen für deren Beantragung sowie das Verfahren vor Gericht und KESB.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Sorgerecht vs. Obhut: Der grundlegende Unterschied</h2>
+
+    <p class="text-gray-700 mb-6">Das Schweizer Familienrecht unterscheidet klar zwischen der <strong>elterlichen Sorge</strong> (umgangssprachlich «Sorgerecht») und der <strong>elterlichen Obhut</strong>. Diese Unterscheidung ist zentral für das Verständnis der Elternrechte nach einer Trennung oder Scheidung.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Elterliche Sorge (Sorgerecht)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Elterliche Obhut</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Definition</td>
+                    <td class="px-6 py-4 text-gray-700">Umfassende Rechte und Pflichten gegenüber dem Kind (Art. 296 ff. ZGB)</td>
+                    <td class="px-6 py-4 text-gray-700">Recht und Pflicht zur täglichen Betreuung und Pflege (Teilbereich der Sorge)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Inhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Erziehung, gesetzliche Vertretung, Vermögensverwaltung, Grundsatzentscheidungen</td>
+                    <td class="px-6 py-4 text-gray-700">Zusammenleben, Alltagsbetreuung, tägliche Entscheidungen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Entscheidungen</td>
+                    <td class="px-6 py-4 text-gray-700">Schulwahl, medizinische Behandlungen, religiöse Erziehung, Namensänderung</td>
+                    <td class="px-6 py-4 text-gray-700">Tagesablauf, Mahlzeiten, Hausaufgaben, Freizeitgestaltung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Bei Scheidung</td>
+                    <td class="px-6 py-4 text-gray-700">Bleibt grundsätzlich gemeinsam (Regelfall)</td>
+                    <td class="px-6 py-4 text-gray-700">Wird einem Elternteil zugeteilt (alleinige) oder geteilt (alternierend)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Entzug</td>
+                    <td class="px-6 py-4 text-gray-700">Nur bei schwerwiegenden Gründen (Kindeswohlgefährdung)</td>
+                    <td class="px-6 py-4 text-gray-700">Zuteilung an anderen Elternteil bei Trennung/Scheidung üblich</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig zu verstehen:</p>
+        <p class="text-gray-700">Die <strong>alleinige Obhut</strong> eines Elternteils bedeutet <strong>nicht automatisch</strong>, dass dieser auch das alleinige Sorgerecht hat. In der Praxis ist die Konstellation «gemeinsames Sorgerecht + alleinige Obhut» der häufigste Fall nach einer Scheidung: Das Kind lebt bei einem Elternteil (alleinige Obhut), aber beide Eltern treffen gemeinsam die wichtigen Entscheidungen (gemeinsames Sorgerecht).</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Was umfasst die elterliche Sorge?</h2>
+
+    <p class="text-gray-700 mb-6">Die elterliche Sorge ist in Art. 296-306 ZGB geregelt und umfasst alle Rechte und Pflichten der Eltern gegenüber ihrem Kind. Sie gliedert sich in drei Hauptbereiche:</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">1. Personensorge</h3>
+
+    <p class="text-gray-700 mb-4">Die Personensorge betrifft alle Angelegenheiten der Person des Kindes:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Pflege und Erziehung:</strong> Förderung der körperlichen, geistigen und sittlichen Entwicklung (Art. 302 ZGB)</li>
+        <li><strong>Aufenthaltsbestimmungsrecht:</strong> Bestimmung des Wohnortes des Kindes (Art. 301a ZGB)</li>
+        <li><strong>Religiöse Erziehung:</strong> Bestimmung der religiösen Erziehung bis zur Religionsmündigkeit (16 Jahre)</li>
+        <li><strong>Schulische Belange:</strong> Wahl der Schule und Ausbildung</li>
+        <li><strong>Medizinische Entscheidungen:</strong> Zustimmung zu ärztlichen Behandlungen</li>
+        <li><strong>Namensgebung:</strong> Bestimmung des Vornamens</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">2. Vermögenssorge</h3>
+
+    <p class="text-gray-700 mb-6">Die Vermögenssorge umfasst die Verwaltung des Kindesvermögens (Art. 318 ff. ZGB). Die Eltern haben das Recht und die Pflicht, das Vermögen des Kindes zu verwalten und in seinem Interesse zu verwenden.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">3. Gesetzliche Vertretung</h3>
+
+    <p class="text-gray-700 mb-6">Die Eltern vertreten das Kind gegenüber Drittpersonen (Art. 304 ZGB). Sie handeln für das Kind in allen rechtlichen Angelegenheiten, schliessen Verträge ab und vertreten es gegenüber Behörden.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Was umfasst die elterliche Obhut?</h2>
+
+    <p class="text-gray-700 mb-6">Die Obhut ist ein <strong>Teilbereich der elterlichen Sorge</strong> und umfasst das Recht, mit dem Kind zusammenzuleben und die alltäglichen Angelegenheiten zu regeln. Im Einzelnen beinhaltet die Obhut:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Das Recht, mit dem Kind in häuslicher Gemeinschaft zu leben</li>
+        <li>Die tägliche Betreuung und Pflege</li>
+        <li>Alltagsentscheidungen (Schlafenszeiten, Mahlzeiten, Freizeitgestaltung)</li>
+        <li>Hausaufgabenbetreuung und schulische Alltagsangelegenheiten</li>
+        <li>Organisation des Alltags</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Formen der Obhut</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Obhutsform</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Praxis</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Alleinige Obhut</td>
+                    <td class="px-6 py-4 text-gray-700">Das Kind lebt vorwiegend bei einem Elternteil</td>
+                    <td class="px-6 py-4 text-gray-700">Häufigste Form nach Scheidung; der andere Elternteil hat Besuchsrecht</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Alternierende Obhut</td>
+                    <td class="px-6 py-4 text-gray-700">Das Kind lebt regelmässig abwechselnd bei beiden Eltern</td>
+                    <td class="px-6 py-4 text-gray-700">Z.B. je eine Woche bei Mutter und Vater; setzt Kooperation voraus</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Geteilte Obhut</td>
+                    <td class="px-6 py-4 text-gray-700">Synonym für alternierende Obhut</td>
+                    <td class="px-6 py-4 text-gray-700">Verschiedene Aufteilungsmodelle möglich</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Gemeinsames Sorgerecht als Regelfall</h2>
+
+    <p class="text-gray-700 mb-6">Seit der Revision des Kindesrechts am <strong>1. Juli 2014</strong> ist das gemeinsame Sorgerecht in der Schweiz der gesetzliche Regelfall – unabhängig vom Zivilstand der Eltern (Art. 296 Abs. 2 ZGB). Das bedeutet:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Verheiratete Eltern:</strong> Haben automatisch das gemeinsame Sorgerecht</li>
+        <li><strong>Unverheiratete Eltern:</strong> Können das gemeinsame Sorgerecht durch Erklärung beim Zivilstandsamt oder der KESB erlangen</li>
+        <li><strong>Nach Scheidung:</strong> Das gemeinsame Sorgerecht bleibt grundsätzlich bestehen</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Bundesgerichtliche Rechtsprechung (BGE 142 III 1):</p>
+        <p class="text-gray-700">«Die gemeinsame elterliche Sorge ist unabhängig vom Zivilstand der Eltern der Regelfall. Die alleinige elterliche Sorge bleibt zum Wohl des Kindes möglich, soll aber die eng begrenzte Ausnahme sein.»</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Voraussetzungen für das alleinige Sorgerecht</h2>
+
+    <p class="text-gray-700 mb-6">Das alleinige Sorgerecht ist die <strong>Ausnahme</strong> und wird nur unter strengen Voraussetzungen gewährt. Das Bundesgericht hat die Hürden bewusst hoch angesetzt, um das Prinzip des gemeinsamen Sorgerechts zu schützen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gründe für alleiniges Sorgerecht bei Scheidung (Art. 298 Abs. 1 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Bei einer Scheidung kann das Gericht das Sorgerecht einem Elternteil allein zuteilen, wenn dies <strong>zur Wahrung des Kindeswohls nötig</strong> ist. Gemäss bundesgerichtlicher Rechtsprechung (BGE 141 III 472, BGE 142 III 197) sind folgende Gründe anerkannt:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Grund</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">BGE-Referenz</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Schwerwiegender Dauerkonflikt</td>
+                    <td class="px-6 py-4 text-gray-700">Anhaltender, tiefgreifender Konflikt zwischen den Eltern, der das Kind erheblich belastet</td>
+                    <td class="px-6 py-4 text-gray-700">BGE 142 III 197</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Anhaltende Kommunikationsunfähigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Vollständiges Fehlen einer minimalen Kommunikationsbasis in Kinderbelangen</td>
+                    <td class="px-6 py-4 text-gray-700">BGE 141 III 472</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Konkrete Kindeswohlgefährdung</td>
+                    <td class="px-6 py-4 text-gray-700">Die Konflikte oder die Unfähigkeit zur Kooperation beeinträchtigen das Kind konkret</td>
+                    <td class="px-6 py-4 text-gray-700">BGE 142 III 1</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Instrumentalisierung des Kindes</td>
+                    <td class="px-6 py-4 text-gray-700">Ein Elternteil bezieht das Kind systematisch in den Elternkonflikt ein</td>
+                    <td class="px-6 py-4 text-gray-700">BGE 142 III 481</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Fehlende Bindungstoleranz</td>
+                    <td class="px-6 py-4 text-gray-700">Ein Elternteil verweigert oder erschwert systematisch den Kontakt zum anderen Elternteil</td>
+                    <td class="px-6 py-4 text-gray-700">BGE 142 III 481</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-red-50 border-l-4 border-red-500 p-6 my-8">
+        <p class="font-semibold text-red-800 mb-2">Wichtig:</p>
+        <p class="text-gray-700">Fehlende Kommunikation oder Konflikte allein reichen <strong>nicht</strong> aus. Es muss nachgewiesen werden, dass die Situation das <strong>Kindeswohl konkret beeinträchtigt</strong>. Die blosse Unzumutbarkeit für einen Elternteil ist kein ausreichender Grund (BGE 141 III 472 E. 4).</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Entzug der elterlichen Sorge durch die KESB (Art. 311 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Ausserhalb eines Scheidungsverfahrens kann die <strong>KESB</strong> (Kindes- und Erwachsenenschutzbehörde) die elterliche Sorge entziehen. Dies ist die «<strong>Ultima Ratio</strong>» – das letzte Mittel – wenn andere Massnahmen erfolglos geblieben sind oder von vornherein als ungenügend erscheinen.</p>
+
+    <p class="text-gray-700 mb-4">Gemäss Art. 311 Abs. 1 ZGB kann die Sorge entzogen werden, wenn die Eltern:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Entzugsgrund (Art. 311 Abs. 1 ZGB)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beispiele</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Ziff. 1: Unerfahrenheit, Krankheit, Gebrechen, Abwesenheit, Gewalttätigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Schwere psychische Erkrankung, lange Haftstrafe, Drogenabhängigkeit, chronische körperliche Gewalt</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Ziff. 2: Nicht ernstlich um das Kind gekümmert</td>
+                    <td class="px-6 py-4 text-gray-700">Jahrelange Abwesenheit ohne Kontakt, völlige Vernachlässigung der Elternpflichten</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Ziff. 2: Pflichten gröblich verletzt</td>
+                    <td class="px-6 py-4 text-gray-700">Schwere Misshandlung, sexueller Missbrauch, extreme Vernachlässigung</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Formen der Kindeswohlgefährdung</h2>
+
+    <p class="text-gray-700 mb-6">Eine Kindeswohlgefährdung liegt vor, wenn die körperliche, geistige, seelische oder soziale Entwicklung des Kindes konkret bedroht ist. Die wichtigsten Formen sind:</p>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-gray-50 p-6 rounded-lg">
+            <h4 class="font-semibold text-navy mb-3">Körperliche Misshandlung</h4>
+            <p class="text-gray-700">Jede Form physischer Gewalt: Schlagen, Treten, Würgen, Schütteln (bei Säuglingen), Verbrennen</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg">
+            <h4 class="font-semibold text-navy mb-3">Psychische Misshandlung</h4>
+            <p class="text-gray-700">Systematische Demütigungen, Drohungen, Isolierung, emotionale Ablehnung, Überforderung</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg">
+            <h4 class="font-semibold text-navy mb-3">Sexueller Missbrauch</h4>
+            <p class="text-gray-700">Jede sexuelle Handlung mit oder vor dem Kind; schwerwiegendste Form der Kindeswohlgefährdung</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg">
+            <h4 class="font-semibold text-navy mb-3">Vernachlässigung</h4>
+            <p class="text-gray-700">Mangelnde Pflege, unzureichende Ernährung, fehlende medizinische Versorgung, Aufsichtsmängel</p>
+        </div>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Voraussetzungen für die alleinige Obhut</h2>
+
+    <p class="text-gray-700 mb-6">Im Gegensatz zum alleinigen Sorgerecht ist die <strong>alleinige Obhut</strong> nach einer Trennung oder Scheidung häufig und stellt keine Ausnahme dar. Sie wird zugeteilt, wenn das Kind seinen Lebensmittelpunkt bei einem Elternteil haben soll.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kriterien für die Zuteilung der Obhut</h3>
+
+    <p class="text-gray-700 mb-4">Bei der Entscheidung über die Obhutszuteilung berücksichtigt das Gericht folgende Faktoren (BGE 142 III 612):</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Kindeswohl:</strong> Oberste Maxime aller Entscheidungen</li>
+        <li><strong>Erziehungsfähigkeit:</strong> Beide Eltern müssen erziehungsfähig sein</li>
+        <li><strong>Betreuungsmöglichkeit:</strong> Wer kann das Kind tatsächlich betreuen (Arbeitszeit, Unterstützung)?</li>
+        <li><strong>Kontinuität:</strong> Stabilität der bisherigen Betreuungssituation</li>
+        <li><strong>Bindungstoleranz:</strong> Bereitschaft, den Kontakt zum anderen Elternteil zu fördern</li>
+        <li><strong>Wunsch des Kindes:</strong> Ab ca. 12 Jahren zunehmend gewichtig, aber nicht allein entscheidend</li>
+        <li><strong>Geschwisterbeziehungen:</strong> Geschwister sollen möglichst nicht getrennt werden</li>
+        <li><strong>Geografische Nähe:</strong> Distanz zwischen den Wohnorten der Eltern</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Alternierende Obhut als Option (BGE 142 III 612):</p>
+        <p class="text-gray-700">Seit 2017 können beide Elternteile die <strong>Prüfung der alternierenden Obhut</strong> beantragen. Das Gericht muss diesen Antrag prüfen, wenn die Voraussetzungen gegeben sind: Erziehungsfähigkeit beider Eltern, Kooperationsfähigkeit, geografische Nähe und Vereinbarkeit mit dem Kindeswohl.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Verfahren: So beantragen Sie alleiniges Sorgerecht oder alleinige Obhut</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Zuständigkeit</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Situation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zuständige Behörde</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Im Rahmen einer Scheidung</td>
+                    <td class="px-6 py-4 text-gray-700">Das zuständige Scheidungsgericht (Bezirksgericht, Regionalgericht)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 133, 298 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Vor oder nach der Scheidung</td>
+                    <td class="px-6 py-4 text-gray-700">KESB am Wohnsitz des Kindes</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 315 Abs. 1 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Unverheiratete Eltern</td>
+                    <td class="px-6 py-4 text-gray-700">KESB am Wohnsitz des Kindes</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 298b ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Abänderung nach rechtskräftigem Urteil</td>
+                    <td class="px-6 py-4 text-gray-700">KESB oder Gericht bei wesentlich veränderten Verhältnissen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 134, 298d ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ablauf des Verfahrens bei der KESB</h3>
+
+    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-3">
+        <li><strong>Gesuch einreichen:</strong> Schriftliches Gesuch an die zuständige KESB mit Begründung und Beweismitteln</li>
+        <li><strong>Abklärung:</strong> Die KESB führt Abklärungen durch (Gespräche, Berichte, Gutachten)</li>
+        <li><strong>Anhörung der Eltern:</strong> Beide Elternteile werden angehört</li>
+        <li><strong>Kindesanhörung:</strong> Das Kind wird ab ca. 6 Jahren angehört (Art. 314a ZGB)</li>
+        <li><strong>Entscheid:</strong> Die KESB fällt einen Entscheid, der angefochten werden kann</li>
+    </ol>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kindesanhörung (Art. 314a ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Das Kind hat das Recht, in Verfahren, die es betreffen, <strong>persönlich angehört</strong> zu werden. Die Anhörung erfolgt in der Regel ab einem Alter von etwa 6 Jahren. Je älter das Kind, desto mehr Gewicht hat seine Meinung. Der Kindeswille ist ein wichtiger, jedoch nicht allein entscheidender Faktor.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Mildere Massnahmen vor dem Sorgerechtsentzug</h2>
+
+    <p class="text-gray-700 mb-6">Der Entzug der elterlichen Sorge ist die «Ultima Ratio» – das letzte Mittel. Bevor die KESB oder das Gericht diese Massnahme ergreifen, werden mildere Massnahmen geprüft:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Massnahme</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Ermahnung und Weisung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 307 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Die KESB ermahnt die Eltern oder erteilt Weisungen (z.B. Therapie, Beratung)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Erziehungsbeistandschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 308 Abs. 1 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Ein Beistand unterstützt die Eltern mit Rat und Tat; häufigste Massnahme</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Beistandschaft mit besonderen Befugnissen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 308 Abs. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Beistand mit spezifischen Aufgaben (Besuchsrecht überwachen, Unterhalt durchsetzen)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Aufhebung des Aufenthaltsbestimmungsrechts</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 310 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Fremdplatzierung des Kindes (Pflegefamilie, Heim) bei fortbestehender Sorge</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Entzug der elterlichen Sorge</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 311 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Letztes Mittel; nur wenn andere Massnahmen nicht ausreichen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtsfolgen des alleinigen Sorgerechts</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Rechte des allein sorgeberechtigten Elternteils</h3>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Alleinige Entscheidungsbefugnis in allen wichtigen Angelegenheiten des Kindes</li>
+        <li>Alleinige gesetzliche Vertretung des Kindes</li>
+        <li>Alleinige Vermögensverwaltung des Kindesvermögens</li>
+        <li>Freie Bestimmung des Aufenthaltsortes ohne Zustimmung des anderen Elternteils</li>
+        <li>Alleinige Entscheidung über Schule, Ausbildung, Religion, medizinische Behandlungen</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Verbleibende Rechte des nicht sorgeberechtigten Elternteils</h3>
+
+    <p class="text-gray-700 mb-4">Auch wenn das Sorgerecht entzogen wurde, bleibt die <strong>Eltern-Kind-Beziehung</strong> bestehen. Der nicht sorgeberechtigte Elternteil behält:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Besuchsrecht (Art. 273 ZGB):</strong> Das Recht auf persönlichen Verkehr bleibt grundsätzlich bestehen</li>
+        <li><strong>Informations- und Auskunftsrecht (Art. 275a ZGB):</strong> Recht auf Information über besondere Ereignisse im Leben des Kindes</li>
+        <li><strong>Unterhaltspflicht:</strong> Die Pflicht zur Zahlung von Kindesunterhalt bleibt unverändert bestehen</li>
+        <li><strong>Anhörungsrecht:</strong> Bei wichtigen Entscheidungen ist die Meinung zu berücksichtigen (Art. 301 Abs. 1bis ZGB)</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Einschränkung des Besuchsrechts (Art. 274 ZGB):</p>
+        <p class="text-gray-700">Das Besuchsrecht kann nur eingeschränkt oder entzogen werden, wenn das <strong>Kindeswohl gefährdet</strong> ist. Mögliche Massnahmen sind: begleitetes Besuchsrecht, zeitliche Einschränkungen oder in schweren Fällen vollständiger Entzug.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Sonderfall: Unverheiratete Eltern</h2>
+
+    <p class="text-gray-700 mb-6">Bei unverheirateten Eltern gelten besondere Regeln für das Sorgerecht:</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Automatisches Sorgerecht der Mutter</h3>
+
+    <p class="text-gray-700 mb-6">Bei der Geburt eines Kindes unverheirateter Eltern steht die elterliche Sorge <strong>zunächst der Mutter allein</strong> zu (Art. 298a Abs. 5 ZGB). Der Vater hat kein automatisches Sorgerecht.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gemeinsames Sorgerecht beantragen</h3>
+
+    <p class="text-gray-700 mb-4">Unverheiratete Eltern können das gemeinsame Sorgerecht erlangen durch:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Gemeinsame Erklärung beim Zivilstandsamt:</strong> Gleichzeitig mit der Vaterschaftsanerkennung oder später</li>
+        <li><strong>Gemeinsame Erklärung bei der KESB:</strong> Wenn die Erklärung später abgegeben wird</li>
+        <li><strong>Antrag bei der KESB:</strong> Wenn ein Elternteil die Erklärung verweigert, kann der andere die KESB anrufen</li>
+    </ul>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wiederherstellung der elterlichen Sorge (Art. 313 ZGB)</h2>
+
+    <p class="text-gray-700 mb-6">Wurde die elterliche Sorge entzogen, kann sie unter bestimmten Voraussetzungen <strong>wiederhergestellt</strong> werden:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Wegfall der Entziehungsgründe:</strong> Die Umstände, die zum Entzug führten, müssen nicht mehr bestehen</li>
+        <li><strong>Kindeswohl:</strong> Die Wiederherstellung muss dem Kindeswohl entsprechen</li>
+        <li><strong>Sperrfrist:</strong> Es gilt eine Wartefrist von mindestens einem Jahr</li>
+        <li><strong>Antrag:</strong> Ein Elternteil muss einen Antrag bei der KESB stellen</li>
+    </ul>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wichtige Bundesgerichtsentscheide</h2>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">BGE</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kernaussage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 142 III 1</td>
+                    <td class="px-6 py-4 text-gray-700">Gemeinsames Sorgerecht ist der Regelfall; Alleinsorge nur bei erheblicher Kindeswohlgefährdung als eng begrenzte Ausnahme</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 141 III 472</td>
+                    <td class="px-6 py-4 text-gray-700">Fehlende Kommunikationsfähigkeit allein rechtfertigt keine Alleinzuteilung; es braucht konkrete Kindeswohlbeeinträchtigung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 142 III 197</td>
+                    <td class="px-6 py-4 text-gray-700">Schwerwiegender Dauerkonflikt kann alleiniges Sorgerecht rechtfertigen, wenn das Kind konkret betroffen ist</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 142 III 612</td>
+                    <td class="px-6 py-4 text-gray-700">Grundsatzentscheid zur alternierenden Obhut; Kriterien für die Prüfung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 142 III 481</td>
+                    <td class="px-6 py-4 text-gray-700">Bindungstoleranz: Beide Eltern müssen die Beziehung des Kindes zum anderen Elternteil fördern</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 141 III 328</td>
+                    <td class="px-6 py-4 text-gray-700">Das Kindeswohl ist oberste Maxime des Kindesrechts</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Praktische Tipps</h2>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-3">
+        <li><strong>Dokumentieren Sie alles:</strong> Führen Sie ein Tagebuch über relevante Vorfälle mit Datum, Uhrzeit und Zeugen</li>
+        <li><strong>Sammeln Sie Beweise:</strong> E-Mails, SMS, ärztliche Atteste, Zeugenaussagen</li>
+        <li><strong>Bleiben Sie kooperativ:</strong> Zeigen Sie Ihre Bereitschaft zur Zusammenarbeit – das Gericht bewertet auch Ihre Haltung</li>
+        <li><strong>Prüfen Sie Alternativen:</strong> Mediation oder mildere Massnahmen können oft besser sein als ein langwieriger Rechtsstreit</li>
+        <li><strong>Bedenken Sie das Kind:</strong> Ein Sorgerechtsstreit belastet das Kind erheblich – sein Wohl sollte im Zentrum stehen</li>
+        <li><strong>Holen Sie rechtlichen Rat:</strong> Ein spezialisierter Familienrechtsanwalt kann Ihre Erfolgsaussichten realistisch einschätzen</li>
+    </ul>
+
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">Fragen rund um das Sorgerecht und die Obhut gehören zu den sensibelsten Bereichen des Familienrechts. Die Entscheidungen haben langfristige Auswirkungen auf das Leben Ihres Kindes und Ihre Beziehung zu ihm. Eine fachkundige Beratung ist daher in den meisten Fällen dringend zu empfehlen.</p>
+
+        <p class="text-gray-700 mb-6">Besonders bei folgenden Situationen ist die Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> unerlässlich:</p>
+
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Sie möchten das alleinige Sorgerecht beantragen und die Erfolgsaussichten realistisch einschätzen</li>
+            <li>Der andere Elternteil beantragt das alleinige Sorgerecht und Sie müssen sich verteidigen</li>
+            <li>Es bestehen Vorwürfe von Kindeswohlgefährdung, Misshandlung oder Vernachlässigung</li>
+            <li>Die KESB hat ein Verfahren eingeleitet oder Kindesschutzmassnahmen angeordnet</li>
+            <li>Sie sind unzufrieden mit einem Entscheid und möchten Beschwerde einlegen</li>
+            <li>Die Kommunikation mit dem anderen Elternteil ist völlig gescheitert</li>
+        </ul>
+
+        <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kann Sie im Scheidungsverfahren vertreten und dafür sorgen, dass Ihre Interessen und das Kindeswohl gewahrt werden. Auch ausserhalb eines Scheidungsverfahrens ist fachkundige Unterstützung durch einen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> wichtig, insbesondere bei KESB-Verfahren.</p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Lassen Sie Ihre Situation von einem erfahrenen Familienrechtsanwalt unverbindlich einschätzen. Wir beraten Sie zu Ihren Möglichkeiten beim Sorgerecht und der Obhut.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- Fazit -->
+    <h2 class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Das alleinige Sorgerecht ist im Schweizer Familienrecht bewusst als <strong>absolute Ausnahme</strong> konzipiert. Der Gesetzgeber geht davon aus, dass es grundsätzlich dem Kindeswohl entspricht, wenn beide Eltern gemeinsam die Verantwortung für ihr Kind tragen. Ein Entzug des Sorgerechts kommt daher nur bei schwerwiegenden Gründen in Betracht – insbesondere bei konkreter Kindeswohlgefährdung oder wenn die Eltern dauerhaft nicht in der Lage sind, gemeinsam Entscheidungen zu treffen.</p>
+
+    <p class="text-gray-700 mb-6">Die <strong>alleinige Obhut</strong> hingegen ist nach einer Trennung oder Scheidung häufig und bedeutet lediglich, dass das Kind seinen Lebensmittelpunkt bei einem Elternteil hat. Das gemeinsame Sorgerecht bleibt dabei in der Regel bestehen – beide Eltern treffen weiterhin gemeinsam die wichtigen Entscheidungen.</p>
+
+    <p class="text-gray-700 mb-6">Bevor Sie das alleinige Sorgerecht beantragen, sollten Sie sich fragen: Dient dies wirklich dem Wohl meines Kindes – oder geht es um den Konflikt mit dem anderen Elternteil? Ein langwieriger Sorgerechtsstreit belastet das Kind erheblich. Mediation und mildere Massnahmen sind oft die bessere Lösung.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Relevante Gesetzesbestimmungen:</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li>Art. 296-306 ZGB (Elterliche Sorge)</li>
+            <li>Art. 298, 298a-d ZGB (Gemeinsame elterliche Sorge)</li>
+            <li>Art. 301a ZGB (Aufenthaltsbestimmungsrecht)</li>
+            <li>Art. 307-312 ZGB (Kindesschutzmassnahmen)</li>
+            <li>Art. 311 ZGB (Entziehung der elterlichen Sorge)</li>
+            <li>Art. 313 ZGB (Wiederherstellung der elterlichen Sorge)</li>
+            <li>Art. 273-275a ZGB (Persönlicher Verkehr/Besuchsrecht)</li>
+            <li>Art. 314a ZGB (Kindesanhörung)</li>
+        </ul>
+    </div>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen Sorgerecht und Obhut?</h3>
+                <p class="text-gray-700">Die elterliche Sorge (Sorgerecht) umfasst alle wichtigen Entscheidungen über das Kind: Erziehung, Schule, Gesundheit, Religion und gesetzliche Vertretung. Die Obhut ist ein Teilbereich der Sorge und betrifft die tägliche Betreuung – also das Recht, mit dem Kind zusammenzuleben und Alltagsentscheidungen zu treffen. Man kann die alleinige Obhut haben, aber trotzdem das gemeinsame Sorgerecht mit dem anderen Elternteil teilen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wann bekommt man das alleinige Sorgerecht in der Schweiz?</h3>
+                <p class="text-gray-700">Das alleinige Sorgerecht wird nur in Ausnahmefällen erteilt. Voraussetzung ist entweder ein schwerwiegender Dauerkonflikt zwischen den Eltern, eine anhaltende Kommunikationsunfähigkeit in Kinderbelangen, oder eine konkrete Kindeswohlgefährdung (Art. 298, 311 ZGB). Die blosse Unzumutbarkeit der Zusammenarbeit reicht nicht aus – das Kindeswohl muss konkret beeinträchtigt sein (BGE 141 III 472).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie kann ich die alleinige Obhut beantragen?</h3>
+                <p class="text-gray-700">Im Rahmen einer Scheidung wird die Obhut vom Scheidungsgericht geregelt – Sie können Ihren Wunsch in der Scheidungskonvention oder dem Scheidungsbegehren äussern. Ausserhalb eines Scheidungsverfahrens ist die KESB am Wohnsitz des Kindes zuständig. Dort können Sie ein Gesuch um Regelung der Obhut einreichen, wenn Sie bereits getrennt leben.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Hat die Mutter automatisch das Sorgerecht bei unverheirateten Eltern?</h3>
+                <p class="text-gray-700">Ja, bei unverheirateten Eltern steht die elterliche Sorge zunächst der Mutter allein zu (Art. 298a Abs. 5 ZGB). Der Vater erhält das gemeinsame Sorgerecht nicht automatisch, sondern muss mit der Mutter eine gemeinsame Erklärung beim Zivilstandsamt oder der KESB abgeben. Verweigert die Mutter dies, kann der Vater die KESB anrufen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann das Sorgerecht wieder hergestellt werden?</h3>
+                <p class="text-gray-700">Ja, gemäss Art. 313 ZGB kann die entzogene elterliche Sorge wiederhergestellt werden, wenn die Entziehungsgründe weggefallen sind und die Wiederherstellung dem Kindeswohl entspricht. Es gilt eine Wartefrist von mindestens einem Jahr. Der betroffene Elternteil muss einen Antrag bei der KESB stellen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist die alternierende Obhut?</h3>
+                <p class="text-gray-700">Bei der alternierenden Obhut (geteilte Obhut) lebt das Kind regelmässig abwechselnd bei beiden Elternteilen, z.B. je eine Woche bei Mutter und Vater. Seit 2017 können beide Eltern die Prüfung dieses Modells beantragen. Voraussetzung ist die Erziehungsfähigkeit beider Eltern, ausreichende Kooperation, geografische Nähe und die Vereinbarkeit mit dem Kindeswohl (BGE 142 III 612).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wer entscheidet über das Sorgerecht – Gericht oder KESB?</h3>
+                <p class="text-gray-700">Im Rahmen einer Scheidung entscheidet das Scheidungsgericht (Bezirks- oder Regionalgericht) über Sorgerecht und Obhut. Ausserhalb eines Scheidungsverfahrens ist die KESB (Kindes- und Erwachsenenschutzbehörde) am Wohnsitz des Kindes zuständig. Auch nach einer rechtskräftigen Scheidung kann die KESB bei wesentlich veränderten Verhältnissen angerufen werden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert mit dem Besuchsrecht bei alleinigem Sorgerecht?</h3>
+                <p class="text-gray-700">Auch wenn das Sorgerecht entzogen wird, bleibt das Besuchsrecht (Recht auf persönlichen Verkehr) des anderen Elternteils grundsätzlich bestehen (Art. 273 ZGB). Nur wenn das Kindeswohl konkret gefährdet ist, kann das Besuchsrecht eingeschränkt oder entzogen werden. Mögliche Massnahmen sind begleitetes Besuchsrecht oder zeitliche Einschränkungen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist eine Beistandschaft für Kinder?</h3>
+                <p class="text-gray-700">Die Beistandschaft (Art. 308 ZGB) ist die häufigste Kindesschutzmassnahme und eine mildere Alternative zum Sorgerechtsentzug. Ein Beistand unterstützt die Eltern mit Rat und Tat bei der Erziehung. Er kann auch besondere Aufgaben erhalten, z.B. die Überwachung des Besuchsrechts oder die Durchsetzung von Unterhaltsansprüchen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Muss das Kind bei Sorgerechtsfragen angehört werden?</h3>
+                <p class="text-gray-700">Ja, das Kind hat das Recht, in Verfahren, die es betreffen, persönlich angehört zu werden (Art. 314a ZGB). Die Anhörung erfolgt in der Regel ab einem Alter von etwa 6 Jahren. Je älter das Kind, desto mehr Gewicht hat seine Meinung. Der Kindeswille ist ein wichtiger Faktor, aber das Gericht entscheidet letztlich nach dem objektiven Kindeswohl.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was kostet ein Sorgerechtsverfahren in der Schweiz?</h3>
+                <p class="text-gray-700">Die Kosten variieren stark je nach Komplexität und Kanton. Gerichtskosten betragen typischerweise CHF 1'000 bis 5'000. Hinzu kommen Anwaltskosten von durchschnittlich CHF 5'000 bis 20'000. Bei geringem Einkommen kann unentgeltliche Rechtspflege beantragt werden.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Alleiniges Sorgerecht und alleinige Obhut in der Schweiz",
+        "description": "Alleiniges Sorgerecht & alleinige Obhut in der Schweiz: Unterschied, Voraussetzungen, Verfahren bei KESB & Gericht. Mit Gesetzesartikeln & BGE-Entscheiden.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-21",
+        "dateModified": "2025-01-21",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/sorgerecht/alleiniges-sorgerecht-und-alleinige-obhut"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen Sorgerecht und Obhut?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die elterliche Sorge (Sorgerecht) umfasst alle wichtigen Entscheidungen über das Kind: Erziehung, Schule, Gesundheit, Religion und gesetzliche Vertretung. Die Obhut ist ein Teilbereich der Sorge und betrifft die tägliche Betreuung – also das Recht, mit dem Kind zusammenzuleben und Alltagsentscheidungen zu treffen. Man kann die alleinige Obhut haben, aber trotzdem das gemeinsame Sorgerecht mit dem anderen Elternteil teilen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wann bekommt man das alleinige Sorgerecht in der Schweiz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das alleinige Sorgerecht wird nur in Ausnahmefällen erteilt. Voraussetzung ist entweder ein schwerwiegender Dauerkonflikt zwischen den Eltern, eine anhaltende Kommunikationsunfähigkeit in Kinderbelangen, oder eine konkrete Kindeswohlgefährdung (Art. 298, 311 ZGB). Die blosse Unzumutbarkeit der Zusammenarbeit reicht nicht aus – das Kindeswohl muss konkret beeinträchtigt sein (BGE 141 III 472)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie kann ich die alleinige Obhut beantragen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Im Rahmen einer Scheidung wird die Obhut vom Scheidungsgericht geregelt – Sie können Ihren Wunsch in der Scheidungskonvention oder dem Scheidungsbegehren äussern. Ausserhalb eines Scheidungsverfahrens ist die KESB am Wohnsitz des Kindes zuständig. Dort können Sie ein Gesuch um Regelung der Obhut einreichen, wenn Sie bereits getrennt leben."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Hat die Mutter automatisch das Sorgerecht bei unverheirateten Eltern?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, bei unverheirateten Eltern steht die elterliche Sorge zunächst der Mutter allein zu (Art. 298a Abs. 5 ZGB). Der Vater erhält das gemeinsame Sorgerecht nicht automatisch, sondern muss mit der Mutter eine gemeinsame Erklärung beim Zivilstandsamt oder der KESB abgeben. Verweigert die Mutter dies, kann der Vater die KESB anrufen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann das Sorgerecht wieder hergestellt werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, gemäss Art. 313 ZGB kann die entzogene elterliche Sorge wiederhergestellt werden, wenn die Entziehungsgründe weggefallen sind und die Wiederherstellung dem Kindeswohl entspricht. Es gilt eine Wartefrist von mindestens einem Jahr. Der betroffene Elternteil muss einen Antrag bei der KESB stellen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist die alternierende Obhut?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei der alternierenden Obhut (geteilte Obhut) lebt das Kind regelmässig abwechselnd bei beiden Elternteilen, z.B. je eine Woche bei Mutter und Vater. Seit 2017 können beide Eltern die Prüfung dieses Modells beantragen. Voraussetzung ist die Erziehungsfähigkeit beider Eltern, ausreichende Kooperation, geografische Nähe und die Vereinbarkeit mit dem Kindeswohl (BGE 142 III 612)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wer entscheidet über das Sorgerecht – Gericht oder KESB?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Im Rahmen einer Scheidung entscheidet das Scheidungsgericht (Bezirks- oder Regionalgericht) über Sorgerecht und Obhut. Ausserhalb eines Scheidungsverfahrens ist die KESB (Kindes- und Erwachsenenschutzbehörde) am Wohnsitz des Kindes zuständig. Auch nach einer rechtskräftigen Scheidung kann die KESB bei wesentlich veränderten Verhältnissen angerufen werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert mit dem Besuchsrecht bei alleinigem Sorgerecht?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Auch wenn das Sorgerecht entzogen wird, bleibt das Besuchsrecht (Recht auf persönlichen Verkehr) des anderen Elternteils grundsätzlich bestehen (Art. 273 ZGB). Nur wenn das Kindeswohl konkret gefährdet ist, kann das Besuchsrecht eingeschränkt oder entzogen werden. Mögliche Massnahmen sind begleitetes Besuchsrecht oder zeitliche Einschränkungen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist eine Beistandschaft für Kinder?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Beistandschaft (Art. 308 ZGB) ist die häufigste Kindesschutzmassnahme und eine mildere Alternative zum Sorgerechtsentzug. Ein Beistand unterstützt die Eltern mit Rat und Tat bei der Erziehung. Er kann auch besondere Aufgaben erhalten, z.B. die Überwachung des Besuchsrechts oder die Durchsetzung von Unterhaltsansprüchen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Muss das Kind bei Sorgerechtsfragen angehört werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, das Kind hat das Recht, in Verfahren, die es betreffen, persönlich angehört zu werden (Art. 314a ZGB). Die Anhörung erfolgt in der Regel ab einem Alter von etwa 6 Jahren. Je älter das Kind, desto mehr Gewicht hat seine Meinung. Der Kindeswille ist ein wichtiger Faktor, aber das Gericht entscheidet letztlich nach dem objektiven Kindeswohl."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was kostet ein Sorgerechtsverfahren in der Schweiz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Kosten variieren stark je nach Komplexität und Kanton. Gerichtskosten betragen typischerweise CHF 1'000 bis 5'000. Hinzu kommen Anwaltskosten von durchschnittlich CHF 5'000 bis 20'000. Bei geringem Einkommen kann unentgeltliche Rechtspflege beantragt werden."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Sorgerecht",
+                "item": "https://familienrechtanwalt.ch/sorgerecht"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Alleiniges Sorgerecht und alleinige Obhut",
+                "item": "https://familienrechtanwalt.ch/sorgerecht/alleiniges-sorgerecht-und-alleinige-obhut"
+            }
+        ]
+    })} />
+
+</ArticleLayout>

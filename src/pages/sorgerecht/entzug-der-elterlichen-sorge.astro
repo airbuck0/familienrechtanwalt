@@ -1,0 +1,843 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+---
+
+<ArticleLayout
+    title="Entzug der elterlichen Sorge in der Schweiz"
+    description="Entzug der elterlichen Sorge: Voraussetzungen nach Art. 311/312 ZGB, KESB-Verfahren, Folgen & Wiederherstellung. Mit BGE-Rechtsprechung & Praxistipps."
+    keywords="Entzug elterliche Sorge, Sorgerechtsentzug Schweiz, Art. 311 ZGB, KESB, Kindesschutzmassnahmen, Vormundschaft, Kindeswohl"
+    category="Sorgerecht"
+    categoryLink="/sorgerecht"
+>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Der Entzug der elterlichen Sorge ist die einschneidendste Kindesschutzmassnahme und gilt als <strong>Ultima Ratio</strong> (Art. 311/312 ZGB)</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Voraussetzung ist eine erhebliche Kindeswohlgefährdung, die mit milderen Massnahmen nicht abgewendet werden kann</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Zuständig ist die <strong>Kindes- und Erwachsenenschutzbehörde (KESB)</strong> am Wohnsitz des Kindes</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bei Entzug beider Elternteile wird ein Vormund eingesetzt; das Besuchsrecht und die Unterhaltspflicht bleiben bestehen</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Eine Wiederherstellung der elterlichen Sorge ist frühestens nach einem Jahr möglich (Art. 313 Abs. 2 ZGB)</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Schweizweit werden jährlich nur etwa 50 bis 100 Sorgerechtsentzüge angeordnet</span>
+            </li>
+        </ul>
+    </div>
+
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+        Der Entzug der elterlichen Sorge stellt den gravierendsten Eingriff in die Eltern-Kind-Beziehung dar, den das Schweizer Recht kennt. Er kommt nur in Betracht, wenn das Kindeswohl erheblich gefährdet ist und sämtliche milderen Kindesschutzmassnahmen versagt haben oder von vornherein aussichtslos erscheinen. Dieser Ratgeber erläutert die rechtlichen Grundlagen nach Art. 311 und 312 ZGB, die konkreten Voraussetzungen, das Verfahren vor der KESB sowie die Folgen und Möglichkeiten der Wiederherstellung.
+    </p>
+
+    <!-- Inhaltsverzeichnis -->
+    <div class="bg-gray-50 border border-gray-200 p-6 rounded-lg mb-12">
+        <h2 class="text-xl font-bold text-navy mb-4">Inhaltsverzeichnis</h2>
+        <ul class="space-y-2 text-gray-700">
+            <li><a href="#definition" class="text-gold hover:underline">1. Was ist die elterliche Sorge?</a></li>
+            <li><a href="#rechtliche-grundlagen" class="text-gold hover:underline">2. Rechtliche Grundlagen des Sorgerechtsentzugs</a></li>
+            <li><a href="#voraussetzungen" class="text-gold hover:underline">3. Voraussetzungen für den Entzug</a></li>
+            <li><a href="#kindesschutzmassnahmen" class="text-gold hover:underline">4. Stufenfolge der Kindesschutzmassnahmen</a></li>
+            <li><a href="#zustaendigkeit" class="text-gold hover:underline">5. Zuständigkeit: KESB oder Gericht?</a></li>
+            <li><a href="#verfahren" class="text-gold hover:underline">6. Verfahrensablauf vor der KESB</a></li>
+            <li><a href="#rechtsfolgen" class="text-gold hover:underline">7. Rechtsfolgen des Sorgerechtsentzugs</a></li>
+            <li><a href="#wiederherstellung" class="text-gold hover:underline">8. Wiederherstellung der elterlichen Sorge</a></li>
+            <li><a href="#rechtsmittel" class="text-gold hover:underline">9. Rechtsmittel gegen den Entzug</a></li>
+            <li><a href="#bundesgericht" class="text-gold hover:underline">10. Bundesgerichtliche Rechtsprechung</a></li>
+            <li><a href="#anwalt" class="text-gold hover:underline">11. Wann Sie einen Anwalt beiziehen sollten</a></li>
+            <li><a href="#fazit" class="text-gold hover:underline">12. Fazit</a></li>
+            <li><a href="#faq" class="text-gold hover:underline">13. Häufig gestellte Fragen (FAQ)</a></li>
+        </ul>
+    </div>
+
+    <!-- 1. Definition -->
+    <h2 id="definition" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Was ist die elterliche Sorge?</h2>
+
+    <p class="text-gray-700 mb-6">
+        Die elterliche Sorge umfasst nach Art. 296 ff. ZGB alle Rechte und Pflichten, die Eltern gegenüber ihren minderjährigen Kindern haben. Sie dient dem Wohl des Kindes und beinhaltet insbesondere:
+    </p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2 ml-4">
+        <li><strong>Pflege und Erziehung:</strong> Die tägliche Betreuung sowie die Förderung der körperlichen, geistigen und sittlichen Entwicklung (Art. 301 ZGB)</li>
+        <li><strong>Aufenthaltsbestimmungsrecht:</strong> Das Recht, den Wohnort des Kindes zu bestimmen (Art. 301a ZGB)</li>
+        <li><strong>Gesetzliche Vertretung:</strong> Die Vertretung des Kindes in rechtlichen Angelegenheiten (Art. 304 ZGB)</li>
+        <li><strong>Vermögensverwaltung:</strong> Die Verwaltung des Kindesvermögens (Art. 318 ff. ZGB)</li>
+        <li><strong>Namensgebung:</strong> Entscheidungen über den Vornamen und die religiöse Erziehung</li>
+    </ul>
+
+    <p class="text-gray-700 mb-6">
+        Seit der Gesetzesrevision vom 1. Juli 2014 ist die gemeinsame elterliche Sorge der Regelfall, unabhängig davon, ob die Eltern verheiratet sind oder nicht (Art. 296 Abs. 2 ZGB). Der Entzug der elterlichen Sorge bedeutet den vollständigen Verlust dieser Rechte und Pflichten.
+    </p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Unterscheidung Sorgerecht und Obhut:</p>
+        <p class="text-gray-700">Die elterliche Sorge ist vom Aufenthaltsbestimmungsrecht (Obhut) zu unterscheiden. Die Obhut bezeichnet das Recht, den täglichen Aufenthalt des Kindes zu bestimmen. Der Entzug der Obhut (Art. 310 ZGB) ist eine mildere Massnahme als der vollständige Sorgerechtsentzug.</p>
+    </div>
+
+    <!-- 2. Rechtliche Grundlagen -->
+    <h2 id="rechtliche-grundlagen" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen des Sorgerechtsentzugs</h2>
+
+    <p class="text-gray-700 mb-6">
+        Der Entzug der elterlichen Sorge ist in den Art. 311 und 312 ZGB geregelt. Das Gesetz unterscheidet dabei zwischen dem behördlichen Entzug von Amtes wegen und dem Entzug auf Gesuch der Eltern.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Art. 311 ZGB: Entziehung von Amtes wegen</h3>
+
+    <p class="text-gray-700 mb-4">
+        Art. 311 ZGB regelt den ordentlichen Entzug der elterlichen Sorge durch die Kindesschutzbehörde:
+    </p>
+
+    <div class="bg-gray-100 p-6 rounded-lg my-6 border-l-4 border-navy">
+        <p class="text-gray-700 mb-4"><strong>Art. 311 Abs. 1 ZGB:</strong></p>
+        <p class="text-gray-700 mb-4 italic">
+            «Sind andere Kindesschutzmassnahmen erfolglos geblieben oder erscheinen sie von vornherein als ungenügend, so entzieht die Kindesschutzbehörde die elterliche Sorge:
+        </p>
+        <ol class="list-decimal list-inside text-gray-700 mb-4 space-y-2 ml-4 italic">
+            <li>wenn die Eltern wegen Unerfahrenheit, Krankheit, Gebrechen, Abwesenheit, Gewalttätigkeit oder ähnlichen Gründen ausserstande sind, die elterliche Sorge pflichtgemäss auszuüben;</li>
+            <li>wenn die Eltern sich um das Kind nicht ernsthaft gekümmert oder ihre Pflichten gegenüber ihm gröblich verletzt haben.»</li>
+        </ol>
+        <p class="text-gray-700"><strong>Art. 311 Abs. 2 ZGB:</strong></p>
+        <p class="text-gray-700 italic">«Wird beiden Eltern die Sorge entzogen, so erhalten die Kinder einen Vormund.»</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Art. 312 ZGB: Entzug auf Gesuch der Eltern</h3>
+
+    <p class="text-gray-700 mb-4">
+        Art. 312 ZGB ermöglicht einen vereinfachten Entzug auf Antrag der Eltern selbst:
+    </p>
+
+    <div class="bg-gray-100 p-6 rounded-lg my-6 border-l-4 border-navy">
+        <p class="text-gray-700 mb-4"><strong>Art. 312 ZGB:</strong></p>
+        <p class="text-gray-700 italic">
+            «Die Kindesschutzbehörde entzieht die elterliche Sorge:
+        </p>
+        <ol class="list-decimal list-inside text-gray-700 mb-4 space-y-2 ml-4 italic">
+            <li>wenn die Eltern aus wichtigen Gründen darum nachsuchen;</li>
+            <li>wenn sie in eine künftige Adoption des Kindes durch ungenannte Dritte eingewilligt haben.»</li>
+        </ol>
+    </div>
+
+    <p class="text-gray-700 mb-6">
+        Bei diesem einvernehmlichen Entzug reicht es aus, dass beide Elternteile einen formlosen Antrag unterschreiben und ihr Einverständnis erklären. Es müssen jedoch «wichtige Gründe» vorliegen, etwa wenn die Eltern aufgrund ihrer persönlichen Situation dauerhaft nicht in der Lage sind, die Sorge auszuüben.
+    </p>
+
+    <!-- 3. Voraussetzungen -->
+    <h2 id="voraussetzungen" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Voraussetzungen für den Entzug der elterlichen Sorge</h2>
+
+    <p class="text-gray-700 mb-6">
+        Für den Entzug der elterlichen Sorge müssen kumulativ mehrere Voraussetzungen erfüllt sein. Zentral ist dabei immer die Frage der Kindeswohlgefährdung sowie das Subsidiaritätsprinzip.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gefährdung des Kindeswohls</h3>
+
+    <p class="text-gray-700 mb-6">
+        Grundvoraussetzung jeder Kindesschutzmassnahme ist eine Gefährdung des Kindeswohls (Art. 307 Abs. 1 ZGB). Eine solche liegt vor, wenn die körperliche, geistige, seelische oder soziale Entwicklung des Kindes konkret und erheblich bedroht ist. Die blosse Möglichkeit einer Gefährdung genügt nicht; es muss eine konkrete, gegenwärtige oder unmittelbar drohende Gefahr bestehen.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Entzugsgründe nach Art. 311 Abs. 1 Ziff. 1 ZGB</h3>
+
+    <p class="text-gray-700 mb-4">
+        Diese Bestimmung erfasst Fälle, in denen die Eltern <strong>objektiv unfähig</strong> sind, die elterliche Sorge auszuüben. Ein Verschulden ist nicht erforderlich:
+    </p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Entzugsgrund</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erläuterung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beispiele</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Unerfahrenheit</td>
+                    <td class="px-6 py-4 text-gray-700">Mangelnde Fähigkeit zur Kindererziehung aufgrund fehlender Reife oder Kenntnisse</td>
+                    <td class="px-6 py-4 text-gray-700">Sehr junge Eltern, die trotz Unterstützung überfordert bleiben</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Krankheit</td>
+                    <td class="px-6 py-4 text-gray-700">Schwere körperliche oder psychische Erkrankungen, die die Erziehungsfähigkeit dauerhaft aufheben</td>
+                    <td class="px-6 py-4 text-gray-700">Schwere Psychosen, fortgeschrittene Demenz, schwere Depression mit Suizidalität</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Gebrechen</td>
+                    <td class="px-6 py-4 text-gray-700">Körperliche oder geistige Behinderungen, die die Sorgeausübung verunmöglichen</td>
+                    <td class="px-6 py-4 text-gray-700">Schwere geistige Behinderung, Kombination mehrerer Einschränkungen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Abwesenheit</td>
+                    <td class="px-6 py-4 text-gray-700">Längere Abwesenheit ohne Fürsorge für das Kind</td>
+                    <td class="px-6 py-4 text-gray-700">Langjährige Inhaftierung (BGE 119 II 9), Verschwinden, längerer Auslandaufenthalt ohne Kontakt</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Gewalttätigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Körperliche oder psychische Gewalt gegenüber dem Kind oder im häuslichen Umfeld</td>
+                    <td class="px-6 py-4 text-gray-700">Kindesmisshandlung, häusliche Gewalt, sexueller Missbrauch</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Ähnliche Gründe</td>
+                    <td class="px-6 py-4 text-gray-700">Die Aufzählung ist nicht abschliessend; weitere vergleichbare Unfähigkeitsgründe</td>
+                    <td class="px-6 py-4 text-gray-700">Schwere Suchterkrankungen (Alkohol, Drogen), Wahnvorstellungen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Entzugsgründe nach Art. 311 Abs. 1 Ziff. 2 ZGB</h3>
+
+    <p class="text-gray-700 mb-4">
+        Diese Ziffer erfasst Fälle, in denen die Eltern sich <strong>vorwerfbar</strong> verhalten haben:
+    </p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-3 ml-4">
+        <li><strong>Sich nicht ernsthaft um das Kind gekümmert:</strong> Der Elternteil zeigt über längere Zeit kein Interesse am Kind, hält keinen Kontakt, erscheint nicht zu Besuchen und beteiligt sich nicht an der Erziehung. Blosse Passivität über einen längeren Zeitraum kann genügen.</li>
+        <li><strong>Gröbliche Pflichtverletzung:</strong> Schwere Vernachlässigung (z.B. unzureichende Ernährung, fehlende medizinische Versorgung), Misshandlung, sexueller Missbrauch, Anstiftung zu Straftaten oder die Gefährdung der Gesundheit des Kindes durch eigenes Verhalten.</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praxishinweis:</p>
+        <p class="text-gray-700">Bei den Gründen nach Ziff. 2 ist ein subjektiv vorwerfbares Verhalten erforderlich. Die gröbliche Pflichtverletzung muss dabei ein gewisses Gewicht haben; leichte Erziehungsfehler genügen nicht. Das Bundesgericht verlangt eine «schwere Verletzung» der elterlichen Pflichten.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Subsidiaritätsprinzip (Ultima Ratio)</h3>
+
+    <p class="text-gray-700 mb-6">
+        Der Entzug der elterlichen Sorge ist als <strong>Ultima Ratio</strong> nur zulässig, wenn mildere Kindesschutzmassnahmen erfolglos geblieben sind oder von vornherein als ungenügend erscheinen (Art. 311 Abs. 1 ZGB). Die KESB muss dokumentieren, warum weniger einschneidende Massnahmen wie Ermahnungen, Weisungen, Beistandschaften oder ein Obhutsentzug nicht ausreichen. Die Massnahme muss zudem verhältnismässig sein.
+    </p>
+
+    <!-- 4. Stufenfolge -->
+    <h2 id="kindesschutzmassnahmen" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Stufenfolge der Kindesschutzmassnahmen</h2>
+
+    <p class="text-gray-700 mb-6">
+        Das Schweizer Kindesschutzrecht sieht eine abgestufte Reihe von Massnahmen vor. Die KESB muss grundsätzlich die mildeste Massnahme wählen, die zur Abwendung der Gefährdung geeignet ist. Der Sorgerechtsentzug steht am Ende dieser Stufenfolge.
+    </p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Stufe</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Massnahme</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Wirkung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-medium text-navy">1</td>
+                    <td class="px-6 py-4 text-gray-700">Ermahnung und Weisung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 307 Abs. 3 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Konkrete Anordnungen zur Erziehung (z.B. Schulbesuch, Therapie)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-medium text-navy">2</td>
+                    <td class="px-6 py-4 text-gray-700">Aufsicht</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 307 Abs. 3 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Bestimmung einer Person zur Beratung und Kontrolle</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-medium text-navy">3</td>
+                    <td class="px-6 py-4 text-gray-700">Beistandschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 308 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Einsetzung eines Beistands zur Unterstützung (Erziehungs-, Besuchsrechts- oder Unterhaltsbeistandschaft)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-medium text-navy">4</td>
+                    <td class="px-6 py-4 text-gray-700">Entzug des Aufenthaltsbestimmungsrechts (Obhutsentzug)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 310 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Fremdplatzierung des Kindes (Pflegefamilie, Heim); elterliche Sorge bleibt</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-medium text-navy">5</td>
+                    <td class="px-6 py-4 text-gray-700 font-bold">Entzug der elterlichen Sorge</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 311/312 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Vollständiger Verlust aller elterlichen Rechte; Vormundschaft wird errichtet</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig:</p>
+        <p class="text-gray-700">Der Entzug der Obhut (Art. 310 ZGB) ist nicht mit dem Sorgerechtsentzug gleichzusetzen. Bei einem blossen Obhutsentzug behalten die Eltern die elterliche Sorge und damit das Mitspracherecht bei wichtigen Entscheidungen. Beim Sorgerechtsentzug hingegen verlieren sie sämtliche elterlichen Befugnisse.</p>
+    </div>
+
+    <!-- 5. Zuständigkeit -->
+    <h2 id="zustaendigkeit" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Zuständigkeit: KESB oder Gericht?</h2>
+
+    <p class="text-gray-700 mb-6">
+        Die Zuständigkeit für den Sorgerechtsentzug ist in Art. 315 ff. ZGB geregelt und hängt davon ab, ob ein gerichtliches Verfahren hängig ist oder nicht.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Grundsätzliche Zuständigkeit der KESB</h3>
+
+    <p class="text-gray-700 mb-6">
+        Zuständig für Kindesschutzmassnahmen ist grundsätzlich die <strong>Kindes- und Erwachsenenschutzbehörde (KESB) am Wohnsitz des Kindes</strong> (Art. 315 Abs. 1 ZGB). Dies gilt für alle Massnahmen ausserhalb eines gerichtlichen Verfahrens.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Zuständigkeit des Gerichts bei hängigem Verfahren</h3>
+
+    <p class="text-gray-700 mb-6">
+        Ist ein <strong>Eheschutz-, Scheidungs- oder Kindesrechtsverfahren</strong> hängig, ist das angerufene Gericht für Kindesschutzmassnahmen zuständig (Art. 315a Abs. 1 ZGB). In diesem Fall entscheidet nicht die KESB, sondern das Familiengericht über einen allfälligen Sorgerechtsentzug. Nach Rechtskraft des Urteils geht die Zuständigkeit wieder an die KESB über.
+    </p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Situation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zuständige Behörde</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Kein gerichtliches Verfahren hängig</td>
+                    <td class="px-6 py-4 text-gray-700">KESB am Wohnsitz des Kindes</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 315 Abs. 1 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Hängiges Scheidungs- oder Eheschutzverfahren</td>
+                    <td class="px-6 py-4 text-gray-700">Zuständiges Familiengericht</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 315a Abs. 1 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Hängiges Kindesrechtsverfahren</td>
+                    <td class="px-6 py-4 text-gray-700">Zuständiges Familiengericht</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 315a Abs. 1 ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 6. Verfahren -->
+    <h2 id="verfahren" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Verfahrensablauf vor der KESB</h2>
+
+    <p class="text-gray-700 mb-6">
+        Das Verfahren vor der KESB folgt einem strukturierten Ablauf, der die Rechte aller Beteiligten wahrt und eine fundierte Entscheidung ermöglicht.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">1. Einleitung des Verfahrens</h3>
+
+    <p class="text-gray-700 mb-4">
+        Ein Kindesschutzverfahren kann auf verschiedene Arten eingeleitet werden:
+    </p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2 ml-4">
+        <li><strong>Gefährdungsmeldung:</strong> Jede Person kann bei der KESB eine Meldung einreichen, wenn sie eine Kindeswohlgefährdung vermutet (Art. 314c Abs. 1 ZGB). Die meldende Person muss die Gefährdung nicht beweisen.</li>
+        <li><strong>Von Amtes wegen:</strong> Die KESB kann auch ohne Meldung tätig werden, wenn ihr Informationen über eine mögliche Gefährdung vorliegen.</li>
+        <li><strong>Antrag eines Elternteils:</strong> Ein Elternteil kann den Sorgerechtsentzug des anderen beantragen.</li>
+        <li><strong>Gesuch der Eltern:</strong> Die Eltern können gemeinsam den Entzug beantragen (Art. 312 ZGB).</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wer ist zur Meldung verpflichtet?</p>
+        <p class="text-gray-700 mb-2">Bestimmte Personen unterliegen einer <strong>Meldepflicht</strong> (Art. 314c Abs. 2 ZGB), wenn sie in ihrer amtlichen oder beruflichen Tätigkeit ein gefährdetes Kind wahrnehmen:</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-1 ml-4">
+            <li>Fachpersonen aus Medizin, Psychologie, Pflege, Betreuung, Erziehung, Bildung, Sozialberatung, Religion und Sport</li>
+            <li>Personen, die beruflich regelmässig Kontakt zu Kindern haben</li>
+            <li>Behördenmitglieder und Beamte</li>
+        </ul>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">2. Abklärungsphase</h3>
+
+    <p class="text-gray-700 mb-4">
+        Die KESB führt umfassende Abklärungen durch, um die Situation zu beurteilen:
+    </p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2 ml-4">
+        <li>Befragung und Anhörung der Eltern</li>
+        <li>Anhörung des Kindes (altersangepasst, ab ca. 6 Jahren direkt)</li>
+        <li>Einholung von Berichten (Schule, Kinderarzt, Sozialdienst)</li>
+        <li>Berichte von bereits eingesetzten Beiständen</li>
+        <li>Psychologische oder psychiatrische Gutachten bei Bedarf</li>
+        <li>Hausbesuche und Beobachtungen</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">3. Rechtliches Gehör</h3>
+
+    <p class="text-gray-700 mb-6">
+        Vor dem Entscheid gewährt die KESB allen Beteiligten das <strong>rechtliche Gehör</strong> (Art. 29 Abs. 2 BV). Die Eltern erhalten Einsicht in die Akten und können sich zu den Abklärungsergebnissen äussern. Sie haben das Recht, eigene Beweismittel einzubringen und Lösungsvorschläge zu unterbreiten.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">4. Superprovisorische Massnahmen</h3>
+
+    <p class="text-gray-700 mb-6">
+        In <strong>dringenden Fällen</strong> kann die KESB superprovisorische Massnahmen erlassen, ohne die Beteiligten vorab anzuhören (Art. 445 Abs. 2 ZGB). Dies ist etwa bei unmittelbarer Gefahr für das Kind notwendig. Gegen superprovisorische Massnahmen gibt es kein Rechtsmittel. Die KESB muss jedoch umgehend das rechtliche Gehör gewähren und eine beschwerdefähige Entscheidung fällen.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">5. Entscheidung</h3>
+
+    <p class="text-gray-700 mb-6">
+        Die KESB entscheidet als Kollegialbehörde (in der Regel drei Mitglieder) über den Sorgerechtsentzug. Der Entscheid muss schriftlich begründet werden und enthält eine Rechtsmittelbelehrung mit Angabe der Beschwerdefrist und der zuständigen Beschwerdeinstanz.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">6. Kindesvertretung</h3>
+
+    <p class="text-gray-700 mb-6">
+        In komplexen Fällen kann die KESB dem Kind eine <strong>Kindesvertretung</strong> (Verfahrensbeistand) bestellen, die ausschliesslich die Interessen des Kindes vertritt (Art. 314abis ZGB). Dies ist insbesondere bei einem drohenden Sorgerechtsentzug regelmässig angezeigt.
+    </p>
+
+    <!-- 7. Rechtsfolgen -->
+    <h2 id="rechtsfolgen" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtsfolgen des Sorgerechtsentzugs</h2>
+
+    <p class="text-gray-700 mb-6">
+        Der Entzug der elterlichen Sorge hat weitreichende Konsequenzen für die Eltern, das Kind und das Familiengefüge insgesamt.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Was der Elternteil verliert</h3>
+
+    <p class="text-gray-700 mb-4">
+        Mit dem Sorgerechtsentzug verliert der betroffene Elternteil sämtliche elterlichen Befugnisse:
+    </p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2 ml-4">
+        <li><strong>Erziehungsrecht:</strong> Das Recht auf Pflege und Erziehung des Kindes</li>
+        <li><strong>Aufenthaltsbestimmungsrecht:</strong> Das Recht, den Wohnort des Kindes zu bestimmen</li>
+        <li><strong>Gesetzliche Vertretung:</strong> Das Vertretungsrecht in rechtlichen Angelegenheiten (z.B. Zustimmung zu medizinischen Eingriffen)</li>
+        <li><strong>Vermögensverwaltung:</strong> Das Recht, das Kindesvermögen zu verwalten</li>
+        <li><strong>Mitspracherecht:</strong> Das Entscheidungsrecht bei wichtigen Lebensentscheidungen (Schule, Ausbildung, Religion)</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Was bestehen bleibt</h3>
+
+    <p class="text-gray-700 mb-4">
+        Trotz des Sorgerechtsentzugs bleiben bestimmte Rechte und Pflichten erhalten:
+    </p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2 ml-4">
+        <li><strong>Besuchsrecht:</strong> Das Recht auf persönlichen Verkehr mit dem Kind (Art. 273 ZGB) besteht grundsätzlich weiter, sofern es nicht separat eingeschränkt oder entzogen wird.</li>
+        <li><strong>Informationsrecht:</strong> Das Recht auf Information über besondere Ereignisse im Leben des Kindes (Art. 275a ZGB).</li>
+        <li><strong>Unterhaltspflicht:</strong> Die finanzielle Unterhaltspflicht gegenüber dem Kind bleibt vollumfänglich bestehen.</li>
+        <li><strong>Eltern-Kind-Verhältnis:</strong> Das rechtliche Verwandtschaftsverhältnis und damit auch Erb- und Pflichtteilsrechte bleiben unberührt.</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praxishinweis:</p>
+        <p class="text-gray-700">Das Besuchsrecht kann bei Gefährdung des Kindeswohls eingeschränkt werden, etwa durch begleiteten Umgang oder zeitliche Begrenzungen. In schweren Fällen (z.B. bei Missbrauch) kann das Besuchsrecht auch ganz entzogen werden (Art. 274 ZGB).</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Errichtung einer Vormundschaft</h3>
+
+    <p class="text-gray-700 mb-4">
+        Wird <strong>beiden Eltern</strong> die elterliche Sorge entzogen, errichtet die KESB eine Vormundschaft für das Kind (Art. 311 Abs. 2, Art. 327a ZGB). Der Vormund übernimmt die Rechte und Pflichten der Eltern.
+    </p>
+
+    <p class="text-gray-700 mb-4">
+        Bei der <strong>Auswahl des Vormunds</strong> berücksichtigt die KESB:
+    </p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2 ml-4">
+        <li>Verwandte oder nahestehende Personen (Grosseltern, Tanten/Onkel, Paten)</li>
+        <li>Die soziale Bindung zum Kind</li>
+        <li>Die persönliche und wirtschaftliche Eignung</li>
+        <li>Falls keine geeignete Person gefunden wird: Berufsvormundschaft</li>
+    </ul>
+
+    <p class="text-gray-700 mb-6">
+        Wird nur <strong>einem Elternteil</strong> das Sorgerecht entzogen, erhält der andere Elternteil das alleinige Sorgerecht. Eine Vormundschaft wird in diesem Fall nicht errichtet.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Unterbringung des Kindes</h3>
+
+    <p class="text-gray-700 mb-6">
+        Mit dem Sorgerechtsentzug ist in der Regel auch eine Fremdplatzierung des Kindes verbunden. Die KESB oder der Vormund entscheidet über den Aufenthaltsort. Mögliche Optionen sind:
+    </p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2 ml-4">
+        <li>Unterbringung bei Verwandten</li>
+        <li>Pflegefamilie</li>
+        <li>Kinder- und Jugendheim</li>
+        <li>Betreute Wohnformen für ältere Jugendliche</li>
+    </ul>
+
+    <!-- 8. Wiederherstellung -->
+    <h2 id="wiederherstellung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wiederherstellung der elterlichen Sorge</h2>
+
+    <p class="text-gray-700 mb-6">
+        Der Sorgerechtsentzug ist keine unwiderrufliche Massnahme. Art. 313 ZGB regelt die Möglichkeit der Wiederherstellung.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Voraussetzungen für die Wiederherstellung</h3>
+
+    <p class="text-gray-700 mb-4">
+        Die elterliche Sorge kann wiederhergestellt werden, wenn folgende Voraussetzungen erfüllt sind:
+    </p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2 ml-4">
+        <li><strong>Wegfall der Entzugsgründe:</strong> Die Gründe, die zum Entzug geführt haben, müssen weggefallen sein (z.B. erfolgreiche Therapie, Ende der Sucht, stabile Lebenssituation).</li>
+        <li><strong>Kindeswohl:</strong> Die Wiederherstellung muss dem Kindeswohl entsprechen. Dabei sind auch die aktuellen Bindungen des Kindes zu berücksichtigen.</li>
+        <li><strong>Sperrfrist:</strong> Seit dem Entzug muss mindestens <strong>ein Jahr</strong> vergangen sein (Art. 313 Abs. 2 ZGB).</li>
+    </ul>
+
+    <div class="bg-gray-100 p-6 rounded-lg my-6 border-l-4 border-navy">
+        <p class="text-gray-700"><strong>Art. 313 Abs. 2 ZGB:</strong></p>
+        <p class="text-gray-700 italic">«Die elterliche Sorge darf in keinem Fall vor Ablauf eines Jahres nach ihrer Entziehung wiederhergestellt werden.»</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Verfahren der Wiederherstellung</h3>
+
+    <p class="text-gray-700 mb-4">
+        Die Wiederherstellung erfolgt auf Antrag der Eltern oder von Amtes wegen durch die KESB. Sie prüft:
+    </p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2 ml-4">
+        <li>Ob die ursprünglichen Entzugsgründe weggefallen sind</li>
+        <li>Ob eine stabile und nachhaltige Veränderung eingetreten ist</li>
+        <li>Wie sich das Kindeswohl bei einer Rückplatzierung entwickeln würde</li>
+        <li>Die aktuelle Bindung des Kindes zu seinen Bezugspersonen</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Stufenweise Rückführung</h3>
+
+    <p class="text-gray-700 mb-6">
+        In der Praxis erfolgt die Wiederherstellung oft <strong>schrittweise</strong>, um das Kind nicht zu überfordern und die Nachhaltigkeit der Veränderung zu überprüfen:
+    </p>
+
+    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2 ml-4">
+        <li>Zunächst Ausweitung des Besuchsrechts (häufigere und längere Besuche)</li>
+        <li>Probeweise Wochenendaufenthalte bei den Eltern</li>
+        <li>Probeweise Rückplatzierung mit engmaschiger Begleitung</li>
+        <li>Formelle Wiederherstellung der elterlichen Sorge</li>
+        <li>Allenfalls begleitende Beistandschaft zur Unterstützung</li>
+    </ol>
+
+    <!-- 9. Rechtsmittel -->
+    <h2 id="rechtsmittel" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtsmittel gegen den Sorgerechtsentzug</h2>
+
+    <p class="text-gray-700 mb-6">
+        Gegen den Entscheid der KESB über einen Sorgerechtsentzug stehen den Betroffenen Rechtsmittel zur Verfügung.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Beschwerde an das kantonale Gericht</h3>
+
+    <p class="text-gray-700 mb-4">
+        Gegen Entscheide der KESB kann <strong>Beschwerde</strong> erhoben werden (Art. 450 ff. ZGB):
+    </p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2 ml-4">
+        <li><strong>Beschwerdefrist:</strong> In der Regel 30 Tage ab Zustellung des Entscheids</li>
+        <li><strong>Beschwerdeinstanz:</strong> Variiert je nach Kanton (Bezirksgericht, Obergericht, Verwaltungsgericht)</li>
+        <li><strong>Form:</strong> Schriftlich und begründet</li>
+        <li><strong>Beschwerdeberechtigung:</strong> Am Verfahren beteiligte Personen, nahestehende Personen, Personen mit rechtlich geschütztem Interesse</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Aufschiebende Wirkung</h3>
+
+    <p class="text-gray-700 mb-6">
+        Die Beschwerde hat grundsätzlich <strong>aufschiebende Wirkung</strong> (Art. 450c ZGB). Die KESB oder die Beschwerdeinstanz kann diese jedoch entziehen, wenn das Kindeswohl es erfordert. In diesem Fall wird der Entscheid bereits vor dem rechtskräftigen Urteil umgesetzt.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Weiterzug ans Bundesgericht</h3>
+
+    <p class="text-gray-700 mb-6">
+        Gegen letztinstanzliche kantonale Entscheide kann <strong>Beschwerde ans Bundesgericht</strong> erhoben werden (Art. 72 ff. BGG). Die Beschwerdefrist beträgt 30 Tage. Das Bundesgericht prüft, ob das kantonale Recht bundesrechtskonform angewendet wurde.
+    </p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Kosten des Rechtsmittelverfahrens:</p>
+        <p class="text-gray-700">Ein Beschwerdeverfahren kann mit erheblichen Kosten verbunden sein (Gerichtskosten, Anwaltskosten). Bei knappen finanziellen Verhältnissen kann unentgeltliche Rechtspflege beantragt werden. Voraussetzung ist, dass die Beschwerde nicht aussichtslos erscheint.</p>
+    </div>
+
+    <!-- 10. Bundesgerichtliche Rechtsprechung -->
+    <h2 id="bundesgericht" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Bundesgerichtliche Rechtsprechung</h2>
+
+    <p class="text-gray-700 mb-6">
+        Das Bundesgericht hat in mehreren Entscheiden die Voraussetzungen und Grenzen des Sorgerechtsentzugs präzisiert.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wichtige Bundesgerichtsentscheide</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Entscheid</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Thema</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kernaussage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">BGE 143 III 361</td>
+                    <td class="px-6 py-4 text-gray-700">Alleinzuteilung vs. Sorgerechtsentzug</td>
+                    <td class="px-6 py-4 text-gray-700">Die Voraussetzungen für die Alleinzuteilung der elterlichen Sorge (Art. 298 ff. ZGB) sind nicht identisch mit jenen für den Entzug nach Art. 311 ZGB. Ein schwerwiegender Dauerkonflikt kann die Alleinzuteilung rechtfertigen, ohne dass die Entzugsvoraussetzungen vorliegen müssen.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">BGE 141 III 472</td>
+                    <td class="px-6 py-4 text-gray-700">Gemeinsame elterliche Sorge</td>
+                    <td class="px-6 py-4 text-gray-700">Die gemeinsame elterliche Sorge ist der Regelfall. Eine Abweichung davon muss sich am Kindeswohl orientieren und setzt voraus, dass die gemeinsame Sorge nicht im Interesse des Kindes liegt.</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">BGE 119 II 9</td>
+                    <td class="px-6 py-4 text-gray-700">Inhaftierung als Entzugsgrund</td>
+                    <td class="px-6 py-4 text-gray-700">Eine langjährige Inhaftierung kann einen «ähnlichen Grund» im Sinne von Art. 311 Abs. 1 Ziff. 1 ZGB darstellen, der den Sorgerechtsentzug rechtfertigt.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">BGer 5A_853/2023</td>
+                    <td class="px-6 py-4 text-gray-700">Inhaftierung und Alleinsorge</td>
+                    <td class="px-6 py-4 text-gray-700">Eine Inhaftierung rechtfertigt nur dann den Sorgerechtsentzug, wenn der Elternteil auf unabsehbare Dauer und nicht nur vorübergehend seinen elterlichen Aufgaben nicht nachkommen kann.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Grundsätze aus der Rechtsprechung</h3>
+
+    <p class="text-gray-700 mb-4">
+        Aus der bundesgerichtlichen Rechtsprechung lassen sich folgende Grundsätze ableiten:
+    </p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2 ml-4">
+        <li>Der Sorgerechtsentzug ist <strong>Ultima Ratio</strong> und nur zulässig, wenn mildere Massnahmen versagen.</li>
+        <li>Eine <strong>konkrete Kindeswohlgefährdung</strong> muss nachgewiesen sein; blosse Befürchtungen genügen nicht.</li>
+        <li>Die Massnahme muss <strong>verhältnismässig</strong> sein und darf nicht über das zum Schutz des Kindes Erforderliche hinausgehen.</li>
+        <li>Das <strong>Kindeswohl</strong> ist das oberste Kriterium bei allen Entscheidungen.</li>
+        <li>Die Voraussetzungen für die <strong>Alleinzuteilung</strong> der Sorge sind weniger streng als für den vollständigen Entzug.</li>
+    </ul>
+
+    <!-- 11. Anwalt-Sektion -->
+    <section id="anwalt" class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">
+            Der Entzug der elterlichen Sorge ist die gravierendste Massnahme im Kindesschutzrecht und hat weitreichende Konsequenzen für alle Beteiligten. Aufgrund der Komplexität des Verfahrens und der hohen Anforderungen an die rechtliche Argumentation ist eine fachkundige Begleitung in den meisten Fällen unerlässlich.
+        </p>
+
+        <p class="text-gray-700 mb-6">
+            Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> kann Sie in folgenden Situationen unterstützen:
+        </p>
+
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2 ml-4">
+            <li>Wenn gegen Sie ein Verfahren wegen Sorgerechtsentzug läuft und Sie sich verteidigen müssen</li>
+            <li>Wenn Sie als Elternteil den Sorgerechtsentzug des anderen Elternteils beantragen möchten</li>
+            <li>Wenn Sie als Angehöriger (z.B. Grosseltern) eine Gefährdungsmeldung in Erwägung ziehen</li>
+            <li>Wenn Sie gegen einen KESB-Entscheid Beschwerde erheben möchten</li>
+            <li>Wenn Sie die Wiederherstellung der elterlichen Sorge beantragen möchten</li>
+        </ul>
+
+        <p class="text-gray-700 mb-6">
+            Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> mit Spezialisierung auf Kindesrecht kennt die aktuellen Anforderungen der Rechtsprechung und kann Ihre Erfolgsaussichten realistisch einschätzen. Insbesondere bei einem drohenden Sorgerechtsentzug ist schnelles Handeln entscheidend, da superprovisorische Massnahmen ohne Vorankündigung erfolgen können. Ein <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> kann Sie auch bei der Vorbereitung auf KESB-Anhörungen begleiten und sicherstellen, dass Ihre Rechte gewahrt werden.
+        </p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Ob Sie sich gegen einen Sorgerechtsentzug verteidigen oder eine Kindeswohlgefährdung melden möchten: Unsere erfahrenen Familienrechtsanwälte beraten Sie diskret und kompetent zu Ihren rechtlichen Möglichkeiten.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- 12. Fazit -->
+    <h2 id="fazit" class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">
+        Der Entzug der elterlichen Sorge ist die einschneidendste Kindesschutzmassnahme des Schweizer Rechts und bildet die absolute Ausnahme. Schweizweit werden jährlich nur etwa 50 bis 100 solcher Massnahmen angeordnet, was den Ultima-Ratio-Charakter unterstreicht. Der Sorgerechtsentzug kommt nur in Betracht, wenn das Kindeswohl erheblich gefährdet ist und sämtliche milderen Massnahmen – von der Ermahnung über die Beistandschaft bis zum Obhutsentzug – versagt haben oder von vornherein aussichtslos erscheinen.
+    </p>
+
+    <p class="text-gray-700 mb-6">
+        Die gesetzlichen Voraussetzungen nach Art. 311 ZGB sind hoch: Es muss entweder eine objektive Unfähigkeit der Eltern vorliegen (Unerfahrenheit, Krankheit, Gebrechen, Abwesenheit, Gewalttätigkeit) oder ein vorwerfbares Verhalten (mangelnde Fürsorge, gröbliche Pflichtverletzung). Die KESB als zuständige Behörde muss das Subsidiaritätsprinzip beachten und umfassend abklären, bevor sie eine derart weitreichende Entscheidung trifft.
+    </p>
+
+    <p class="text-gray-700 mb-6">
+        Für Betroffene ist wichtig zu wissen: Auch nach einem Sorgerechtsentzug bleiben das Besuchsrecht, das Informationsrecht und die Unterhaltspflicht grundsätzlich bestehen. Die Massnahme ist zudem nicht unwiderruflich – nach Ablauf eines Jahres kann bei Wegfall der Entzugsgründe die Wiederherstellung beantragt werden. Gegen jeden KESB-Entscheid stehen Rechtsmittel offen.
+    </p>
+
+    <!-- 13. FAQ -->
+    <section id="faq" class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie kann man die elterliche Sorge entziehen?</h3>
+                <p class="text-gray-700">Der Entzug der elterlichen Sorge erfolgt durch die Kindes- und Erwachsenenschutzbehörde (KESB) am Wohnsitz des Kindes. Er kann durch eine Gefährdungsmeldung, den Antrag eines Elternteils oder von Amtes wegen eingeleitet werden. Voraussetzung ist eine erhebliche Kindeswohlgefährdung und das Versagen milderer Massnahmen (Art. 311 ZGB). Bei einem laufenden Scheidungsverfahren ist das Familiengericht zuständig.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Unter welchen Umständen wird das Sorgerecht entzogen?</h3>
+                <p class="text-gray-700">Das Sorgerecht wird entzogen bei Unerfahrenheit, Krankheit, Gebrechen, längerer Abwesenheit (z.B. Inhaftierung), Gewalttätigkeit oder wenn sich die Eltern nicht ernsthaft um das Kind gekümmert oder ihre Pflichten gröblich verletzt haben (Art. 311 Abs. 1 ZGB). Typische Beispiele sind schwere Vernachlässigung, Kindesmisshandlung, sexueller Missbrauch oder schwere Suchterkrankungen. Der Entzug erfolgt nur als Ultima Ratio.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert, wenn beiden Eltern das Sorgerecht entzogen wird?</h3>
+                <p class="text-gray-700">Wird beiden Eltern das Sorgerecht entzogen, bestellt die KESB einen Vormund für das Kind (Art. 311 Abs. 2 ZGB). Der Vormund übernimmt die elterlichen Rechte und Pflichten. Bei der Auswahl wird zuerst nach geeigneten Verwandten oder nahestehenden Personen gesucht. Findet sich niemand, wird ein Berufsvormund eingesetzt. Das Kind wird in der Regel fremdplatziert (Pflegefamilie oder Heim).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann die elterliche Sorge auch grundlos auf Begehren eines Partners entzogen werden?</h3>
+                <p class="text-gray-700">Nein, die elterliche Sorge kann nicht grundlos entzogen werden. Es müssen immer die gesetzlichen Voraussetzungen nach Art. 311 ZGB erfüllt sein, nämlich eine erhebliche Kindeswohlgefährdung. Ein blosser Antrag eines Elternteils genügt nicht. Die KESB prüft in jedem Fall sorgfältig, ob die Entzugsvoraussetzungen tatsächlich vorliegen und mildere Massnahmen nicht ausreichen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wann ist die KESB zuständig und wann das Gericht?</h3>
+                <p class="text-gray-700">Grundsätzlich ist die KESB am Wohnsitz des Kindes für Kindesschutzmassnahmen zuständig (Art. 315 Abs. 1 ZGB). Ist jedoch ein Eheschutz-, Scheidungs- oder Kindesrechtsverfahren hängig, entscheidet das zuständige Familiengericht über den Sorgerechtsentzug (Art. 315a ZGB). Nach Rechtskraft des Urteils geht die Zuständigkeit wieder an die KESB über.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Verliere ich nach dem Sorgerechtsentzug alle Rechte gegenüber meinem Kind?</h3>
+                <p class="text-gray-700">Nein, Sie verlieren zwar die elterliche Sorge (Erziehungsrecht, Vertretungsrecht, Aufenthaltsbestimmungsrecht), behalten aber grundsätzlich das Besuchsrecht (Art. 273 ZGB), das Informationsrecht über besondere Ereignisse und die Unterhaltspflicht. Das Besuchsrecht kann allerdings separat eingeschränkt werden, wenn das Kindeswohl es erfordert.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann das Sorgerecht wiederhergestellt werden?</h3>
+                <p class="text-gray-700">Ja, die elterliche Sorge kann wiederhergestellt werden, wenn die Entzugsgründe weggefallen sind und die Wiederherstellung dem Kindeswohl entspricht (Art. 313 Abs. 1 ZGB). Allerdings gilt eine Sperrfrist von einem Jahr nach dem Entzug (Art. 313 Abs. 2 ZGB). Die Wiederherstellung erfolgt oft stufenweise mit zunächst ausgeweitetem Besuchsrecht und probeweiser Rückplatzierung.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich gegen den Sorgerechtsentzug vorgehen?</h3>
+                <p class="text-gray-700">Ja, gegen KESB-Entscheide kann innert 30 Tagen Beschwerde beim zuständigen kantonalen Gericht erhoben werden (Art. 450 ff. ZGB). Die Beschwerde hat grundsätzlich aufschiebende Wirkung. In letzter Instanz ist das Bundesgericht zuständig. Es empfiehlt sich dringend, einen spezialisierten Anwalt für Familienrecht beizuziehen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wer kann eine Gefährdungsmeldung bei der KESB einreichen?</h3>
+                <p class="text-gray-700">Grundsätzlich kann jede Person eine Gefährdungsmeldung einreichen, wenn sie eine Kindeswohlgefährdung vermutet (Art. 314c Abs. 1 ZGB). Bestimmte Berufsgruppen wie Lehrpersonen, Ärzte, Sozialarbeiter und Behördenmitglieder sind sogar zur Meldung verpflichtet. Die Meldung kann telefonisch, schriftlich oder über Online-Formulare erfolgen und muss nicht bewiesen werden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie oft wird in der Schweiz das Sorgerecht entzogen?</h3>
+                <p class="text-gray-700">Der vollständige Entzug der elterlichen Sorge nach Art. 311/312 ZGB wird schweizweit nur etwa 50 bis 100 Mal pro Jahr angeordnet. Diese niedrige Zahl unterstreicht den absoluten Ausnahmecharakter der Massnahme. Wesentlich häufiger werden mildere Kindesschutzmassnahmen wie Beistandschaften oder der Obhutsentzug angeordnet.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Entzug der elterlichen Sorge in der Schweiz",
+        "description": "Entzug der elterlichen Sorge: Voraussetzungen nach Art. 311/312 ZGB, KESB-Verfahren, Folgen & Wiederherstellung. Mit BGE-Rechtsprechung & Praxistipps.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-21",
+        "dateModified": "2025-01-21",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/sorgerecht/entzug-der-elterlichen-sorge"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Wie kann man die elterliche Sorge entziehen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der Entzug der elterlichen Sorge erfolgt durch die Kindes- und Erwachsenenschutzbehörde (KESB) am Wohnsitz des Kindes. Er kann durch eine Gefährdungsmeldung, den Antrag eines Elternteils oder von Amtes wegen eingeleitet werden. Voraussetzung ist eine erhebliche Kindeswohlgefährdung und das Versagen milderer Massnahmen (Art. 311 ZGB). Bei einem laufenden Scheidungsverfahren ist das Familiengericht zuständig."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Unter welchen Umständen wird das Sorgerecht entzogen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das Sorgerecht wird entzogen bei Unerfahrenheit, Krankheit, Gebrechen, längerer Abwesenheit (z.B. Inhaftierung), Gewalttätigkeit oder wenn sich die Eltern nicht ernsthaft um das Kind gekümmert oder ihre Pflichten gröblich verletzt haben (Art. 311 Abs. 1 ZGB). Typische Beispiele sind schwere Vernachlässigung, Kindesmisshandlung, sexueller Missbrauch oder schwere Suchterkrankungen. Der Entzug erfolgt nur als Ultima Ratio."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert, wenn beiden Eltern das Sorgerecht entzogen wird?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Wird beiden Eltern das Sorgerecht entzogen, bestellt die KESB einen Vormund für das Kind (Art. 311 Abs. 2 ZGB). Der Vormund übernimmt die elterlichen Rechte und Pflichten. Bei der Auswahl wird zuerst nach geeigneten Verwandten oder nahestehenden Personen gesucht. Findet sich niemand, wird ein Berufsvormund eingesetzt. Das Kind wird in der Regel fremdplatziert (Pflegefamilie oder Heim)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann die elterliche Sorge auch grundlos auf Begehren eines Partners entzogen werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, die elterliche Sorge kann nicht grundlos entzogen werden. Es müssen immer die gesetzlichen Voraussetzungen nach Art. 311 ZGB erfüllt sein, nämlich eine erhebliche Kindeswohlgefährdung. Ein blosser Antrag eines Elternteils genügt nicht. Die KESB prüft in jedem Fall sorgfältig, ob die Entzugsvoraussetzungen tatsächlich vorliegen und mildere Massnahmen nicht ausreichen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wann ist die KESB zuständig und wann das Gericht?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Grundsätzlich ist die KESB am Wohnsitz des Kindes für Kindesschutzmassnahmen zuständig (Art. 315 Abs. 1 ZGB). Ist jedoch ein Eheschutz-, Scheidungs- oder Kindesrechtsverfahren hängig, entscheidet das zuständige Familiengericht über den Sorgerechtsentzug (Art. 315a ZGB). Nach Rechtskraft des Urteils geht die Zuständigkeit wieder an die KESB über."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Verliere ich nach dem Sorgerechtsentzug alle Rechte gegenüber meinem Kind?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, Sie verlieren zwar die elterliche Sorge (Erziehungsrecht, Vertretungsrecht, Aufenthaltsbestimmungsrecht), behalten aber grundsätzlich das Besuchsrecht (Art. 273 ZGB), das Informationsrecht über besondere Ereignisse und die Unterhaltspflicht. Das Besuchsrecht kann allerdings separat eingeschränkt werden, wenn das Kindeswohl es erfordert."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann das Sorgerecht wiederhergestellt werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, die elterliche Sorge kann wiederhergestellt werden, wenn die Entzugsgründe weggefallen sind und die Wiederherstellung dem Kindeswohl entspricht (Art. 313 Abs. 1 ZGB). Allerdings gilt eine Sperrfrist von einem Jahr nach dem Entzug (Art. 313 Abs. 2 ZGB). Die Wiederherstellung erfolgt oft stufenweise mit zunächst ausgeweitetem Besuchsrecht und probeweiser Rückplatzierung."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich gegen den Sorgerechtsentzug vorgehen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, gegen KESB-Entscheide kann innert 30 Tagen Beschwerde beim zuständigen kantonalen Gericht erhoben werden (Art. 450 ff. ZGB). Die Beschwerde hat grundsätzlich aufschiebende Wirkung. In letzter Instanz ist das Bundesgericht zuständig. Es empfiehlt sich dringend, einen spezialisierten Anwalt für Familienrecht beizuziehen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wer kann eine Gefährdungsmeldung bei der KESB einreichen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Grundsätzlich kann jede Person eine Gefährdungsmeldung einreichen, wenn sie eine Kindeswohlgefährdung vermutet (Art. 314c Abs. 1 ZGB). Bestimmte Berufsgruppen wie Lehrpersonen, Ärzte, Sozialarbeiter und Behördenmitglieder sind sogar zur Meldung verpflichtet. Die Meldung kann telefonisch, schriftlich oder über Online-Formulare erfolgen und muss nicht bewiesen werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie oft wird in der Schweiz das Sorgerecht entzogen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der vollständige Entzug der elterlichen Sorge nach Art. 311/312 ZGB wird schweizweit nur etwa 50 bis 100 Mal pro Jahr angeordnet. Diese niedrige Zahl unterstreicht den absoluten Ausnahmecharakter der Massnahme. Wesentlich häufiger werden mildere Kindesschutzmassnahmen wie Beistandschaften oder der Obhutsentzug angeordnet."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Sorgerecht",
+                "item": "https://familienrechtanwalt.ch/sorgerecht"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Entzug der elterlichen Sorge in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/sorgerecht/entzug-der-elterlichen-sorge"
+            }
+        ]
+    })} />
+
+</ArticleLayout>

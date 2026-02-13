@@ -3,133 +3,805 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 ---
 
 <ArticleLayout
-  title="Scheidung und Haus in der Schweiz"
-  description="Scheidung und Haus in der Schweiz: Immobilien bei der Ehescheidung. Verkauf, Uebernahme oder fortgesetztes Miteigentum - alle Optionen erklaert."
-  keywords="Scheidung Haus Schweiz, Immobilie Scheidung, Ehewohnung Scheidung, Miteigentum Scheidung"
-  category="Scheidung"
-  categoryLink="/scheidung"
+    title="Scheidung und Haus in der Schweiz: Immobilie, Eigentum & Optionen"
+    description="Scheidung mit Haus in der Schweiz: Wem gehört das Haus? Verkauf, Übernahme, Auszahlung des Partners. Mit Berechnungsbeispielen, Hypothek & Steuern erklärt."
+    keywords="Scheidung Haus Schweiz, Haus bei Scheidung, Scheidung Immobilie, Ehewohnung Scheidung, Scheidung Partner auszahlen, Scheidung Haus verkaufen, Miteigentum Scheidung"
+    category="Scheidung"
+    categoryLink="/scheidung"
 >
-  <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die Frage, was mit dem gemeinsamen Haus oder der Eigentumswohnung geschieht, ist eine der komplexesten und emotionalsten Aspekte einer Scheidung. Dieser Ratgeber erklärt die rechtlichen Grundlagen, die verschiedenen Lösungsmöglichkeiten und die praktischen Aspekte.</p>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Was mit dem Haus bei einer Scheidung geschieht, hängt vom <strong>Güterstand</strong> (Errungenschaftsbeteiligung, Gütertrennung, Gütergemeinschaft) und der <strong>Eigentumsform</strong> (Alleineigentum, Miteigentum, Gesamteigentum) ab.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bei der <strong>Errungenschaftsbeteiligung</strong> (Normalfall ohne Ehevertrag) wird das während der Ehe erworbene Haus hälftig geteilt (Art. 196-220 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die vier Hauptoptionen sind: <strong>Verkauf</strong>, <strong>Übernahme durch einen Partner</strong> (mit Auszahlung), <strong>fortgesetztes Miteigentum</strong> oder <strong>gerichtliche Versteigerung</strong>.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Das Gericht kann die <strong>Familienwohnung</strong> unabhängig von den Eigentumsverhältnissen einem Ehegatten zuweisen – insbesondere wenn Kinder vorhanden sind (Art. 121 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bei einer gemeinsamen Hypothek haften beide Ehegatten <strong>solidarisch</strong> gegenüber der Bank – auch nach der Scheidung, solange keine Entlassung erfolgt.</span>
+            </li>
+        </ul>
+    </div>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Güterrechtliche Einordnung</h2>
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die Frage «Was passiert mit dem Haus bei einer Scheidung?» gehört zu den komplexesten und emotional belastendsten Aspekten einer Ehescheidung in der Schweiz. Das gemeinsame Eigenheim ist oft nicht nur der grösste Vermögenswert, sondern auch ein Ort voller Erinnerungen und Emotionen. In diesem umfassenden Ratgeber erfahren Sie alles über die rechtlichen Grundlagen, die verschiedenen Optionen und die praktischen Aspekte bei der Aufteilung einer Immobilie im Scheidungsfall.</p>
 
-  <div class="overflow-x-auto mb-6">
-    <table class="min-w-full bg-white border border-gray-200">
-      <thead class="bg-navy text-white">
-        <tr>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Situation</th>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Güterrechtliche Behandlung</th>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Aufteilung bei Scheidung</th>
-        </tr>
-      </thead>
-      <tbody class="divide-y divide-gray-200">
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Alleineigentum, vor Ehe erworben</td>
-          <td class="px-6 py-4 text-gray-700">Eigengut</td>
-          <td class="px-6 py-4 text-gray-700">Keine Teilung des Werts</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">Alleineigentum, während Ehe erworben</td>
-          <td class="px-6 py-4 text-gray-700">Errungenschaft</td>
-          <td class="px-6 py-4 text-gray-700">Mehrwert wird geteilt</td>
-        </tr>
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Miteigentum je 1/2</td>
-          <td class="px-6 py-4 text-gray-700">Je nach Finanzierung</td>
-          <td class="px-6 py-4 text-gray-700">Aufhebung des Miteigentums</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">Mit Ehevertrag geregelt</td>
-          <td class="px-6 py-4 text-gray-700">Gemäss Ehevertrag</td>
-          <td class="px-6 py-4 text-gray-700">Gemäss Ehevertrag</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Die rechtlichen Grundlagen: Güterstand und Eigentumsform</h2>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Optionen bei der Scheidung</h2>
+    <p class="text-gray-700 mb-6">Um zu verstehen, wem das Haus bei einer Scheidung gehört und wie es aufgeteilt wird, müssen zwei grundlegende Konzepte unterschieden werden: der <strong>Güterstand</strong> und die <strong>Eigentumsform</strong>. Diese beiden Faktoren bestimmen massgeblich, welche Rechte jeder Ehepartner an der Immobilie hat.</p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Option 1: Verkauf und Erlösteilung</h3>
-  <p class="text-gray-700 mb-4">Der Verkauf der Immobilie und die Aufteilung des Erlöses ist die häufigste Lösung.</p>
-  <p class="text-gray-700 mb-4"><strong>Vorteile:</strong></p>
-  <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
-    <li>Klarer Schnitt und Abschluss</li>
-    <li>Keine weiteren gemeinsamen Verpflichtungen</li>
-    <li>Liquide Mittel für den Neustart</li>
-  </ul>
-  <p class="text-gray-700 mb-4"><strong>Nachteile:</strong></p>
-  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-    <li>Möglicherweise ungünstiger Verkaufszeitpunkt</li>
-    <li>Transaktionskosten und Grundstückgewinnsteuer</li>
-    <li>Verlust des Familienheims</li>
-  </ul>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Die drei Güterstände in der Schweiz</h3>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Option 2: Übernahme durch einen Ehegatten</h3>
-  <p class="text-gray-700 mb-4">Ein Ehegatte kann die Immobilie übernehmen und den anderen auszahlen.</p>
-  <p class="text-gray-700 mb-4"><strong>Voraussetzungen:</strong></p>
-  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-    <li>Finanzielle Tragbarkeit (Hypothek allein tragen können)</li>
-    <li>Einigung über den Übernahmewert</li>
-    <li>Zustimmung der finanzierenden Bank</li>
-  </ul>
+    <p class="text-gray-700 mb-6">Das Schweizer Recht kennt drei Güterstände, die das Vermögen der Eheleute während der Ehe und bei deren Auflösung regeln:</p>
 
-  <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-    <p class="font-semibold text-navy">Tragbarkeitsrechnung:</p>
-    <p class="text-gray-700">Die Bank prüft, ob der übernehmende Ehegatte die Hypothek allein tragen kann. Die Wohnkosten (kalkulatorischer Zins, Amortisation, Nebenkosten) sollten nicht mehr als 33% des Bruttoeinkommens betragen.</p>
-  </div>
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Güterstand</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gesetzliche Grundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Auswirkung auf Haus</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Errungenschaftsbeteiligung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 196-220 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Ordentlicher Güterstand (Normalfall ohne Ehevertrag). Unterscheidung zwischen Eigengut und Errungenschaft.</td>
+                    <td class="px-6 py-4 text-gray-700">Während der Ehe erworbenes Haus: Errungenschaft wird hälftig geteilt</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Gütertrennung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 247-251 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Vollständige Trennung der Vermögen. Erfordert Ehevertrag.</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder behält sein Eigentum; keine Beteiligung am Vermögen des anderen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Gütergemeinschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 221-246 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Vermögen wird weitgehend gemeinsam. Erfordert Ehevertrag.</td>
+                    <td class="px-6 py-4 text-gray-700">Haus gehört zum Gesamtgut und wird bei Scheidung geteilt</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Option 3: Fortgesetztes Miteigentum</h3>
-  <p class="text-gray-700 mb-4">In Ausnahmefällen kann das Miteigentum fortgesetzt werden, etwa wenn Kinder im Haus bleiben sollen.</p>
-  <p class="text-gray-700 mb-4"><strong>Risiken:</strong></p>
-  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-    <li>Fortdauernde gemeinsame Verpflichtungen</li>
-    <li>Konfliktpotential bei Entscheidungen</li>
-    <li>Schwierigkeiten bei späterer Auflösung</li>
-  </ul>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig zu wissen:</p>
+        <p class="text-gray-700">Rund 95% aller Ehepaare in der Schweiz leben im ordentlichen Güterstand der <strong>Errungenschaftsbeteiligung</strong>, da sie keinen Ehevertrag abgeschlossen haben. Die folgenden Ausführungen beziehen sich daher primär auf diesen Güterstand.</p>
+    </div>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Option 4: Gerichtliche Versteigerung</h3>
-  <p class="text-gray-700 mb-6">Können sich die Ehegatten nicht einigen, kann das Gericht die Versteigerung anordnen (Art. 651 ZGB). Der Erlös liegt typischerweise unter dem Marktwert.</p>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Die drei Eigentumsformen für Immobilien</h3>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Die Ehewohnung</h2>
+    <p class="text-gray-700 mb-6">Unabhängig vom Güterstand wird im Grundbuch festgehalten, wem die Immobilie gehört. Das Schweizer Recht kennt drei Eigentumsformen:</p>
 
-  <p class="text-gray-700 mb-6">Unabhängig von den Eigentumsverhältnissen kann das Gericht einem Ehegatten die Ehewohnung zuweisen (Art. 121 ZGB). Der Ehegatte, bei dem die Kinder leben, erhält oft das Recht, in der Familienwohnung zu bleiben.</p>
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Eigentumsform</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Merkmale</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Verfügung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bei Scheidung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Alleineigentum</td>
+                    <td class="px-6 py-4 text-gray-700">Nur ein Ehepartner ist im Grundbuch eingetragen</td>
+                    <td class="px-6 py-4 text-gray-700">Alleineigentümer kann frei verfügen (mit Einschränkungen bei Familienwohnung, Art. 169 ZGB)</td>
+                    <td class="px-6 py-4 text-gray-700">Eigentümer behält Haus; güterrechtliche Ausgleichsansprüche möglich</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Miteigentum</td>
+                    <td class="px-6 py-4 text-gray-700">Beide Ehepartner sind mit definierten Quoten eingetragen (z.B. je 1/2)</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder kann über seinen Anteil verfügen; Verkauf nur gemeinsam</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder hat Anspruch auf seinen Anteil; Vorkaufsrecht des anderen (Art. 682 ZGB)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Gesamteigentum</td>
+                    <td class="px-6 py-4 text-gray-700">Beide Ehepartner sind ohne Quoten eingetragen; Haus gehört beiden gemeinsam</td>
+                    <td class="px-6 py-4 text-gray-700">Nur gemeinsame Verfügung möglich; keine einzelnen Anteile</td>
+                    <td class="px-6 py-4 text-gray-700">Auflösung erforderlich; beide haben denselben Anspruch</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Hypothek und Haftung</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Eigengut vs. Errungenschaft: Was bedeutet das für das Haus?</h2>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Solidarische Haftung</h3>
-  <p class="text-gray-700 mb-6">Haben beide Ehegatten die Hypothek als Solidarschuldner unterzeichnet, haften sie beide gegenüber der Bank für die gesamte Schuld - unabhängig von der Scheidungskonvention. Die Bank ist an Vereinbarungen zwischen den Ehegatten nicht gebunden.</p>
+    <p class="text-gray-700 mb-6">Im Güterstand der Errungenschaftsbeteiligung wird das Vermögen jedes Ehegatten in zwei Kategorien unterteilt: <strong>Eigengut</strong> und <strong>Errungenschaft</strong>. Diese Unterscheidung ist entscheidend für die Frage, ob und wie das Haus bei der Scheidung aufgeteilt wird.</p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Entlassung aus der Haftung</h3>
-  <p class="text-gray-700 mb-6">Der Ehegatte, der die Immobilie nicht übernimmt, sollte eine Entlassung aus der Solidarhaft anstreben. Dies erfordert die Zustimmung der Bank.</p>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Eigengut (Art. 198 ZGB)</h3>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Steuerliche Aspekte</h2>
+    <p class="text-gray-700 mb-4">Zum Eigengut gehören gemäss Art. 198 ZGB:</p>
 
-  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-    <li><strong>Grundstückgewinnsteuer:</strong> Beim Verkauf fällt Steuer auf den Gewinn an</li>
-    <li><strong>Handänderungssteuer:</strong> Je nach Kanton bei Eigentumsübertragungen</li>
-    <li><strong>Eigenmietwert:</strong> Wer als Eigentümer wohnt, versteuert den Eigenmietwert</li>
-  </ul>
-
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Praktische Empfehlungen</h2>
-
-  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-    <li><strong>Frühzeitige Klärung:</strong> Die Frage der Immobilie früh angehen</li>
-    <li><strong>Professionelle Beratung:</strong> Anwalt, Treuhänder und Liegenschaftsschätzer beiziehen</li>
-    <li><strong>Sachliche Verhandlung:</strong> Emotionale Bindung nicht zu irrationalen Entscheidungen führen lassen</li>
-    <li><strong>Zukunftsorientierte Planung:</strong> Die künftige Lebenssituation berücksichtigen</li>
-  </ul>
-
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
-
-  <p class="text-gray-700 mb-6">Die Regelung der Immobilie ist oft der finanziell bedeutsamste Aspekt einer Scheidung. Der Verkauf bietet meist den saubersten Schnitt. Die Übernahme durch einen Ehegatten kann sinnvoll sein, wenn die Finanzierung gesichert ist. Einvernehmliche Lösungen sind fast immer besser als gerichtliche Auseinandersetzungen.</p>
-
-  <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-    <p class="font-semibold text-navy mb-2">Relevante Gesetzesbestimmungen:</p>
-    <ul class="list-disc list-inside text-gray-700 space-y-1">
-      <li>Art. 196-220 ZGB (Errungenschaftsbeteiligung)</li>
-      <li>Art. 206 und 209 ZGB (Ersatzforderungen)</li>
-      <li>Art. 121 ZGB (Zuweisung der Ehewohnung)</li>
-      <li>Art. 651 ZGB (Aufhebung des Miteigentums)</li>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Vermögenswerte, die ein Ehegatte <strong>vor der Ehe</strong> besessen hat</li>
+        <li>Vermögenswerte, die während der Ehe durch <strong>Erbschaft oder Schenkung</strong> erworben wurden</li>
+        <li>Gegenstände, die ausschliesslich dem <strong>persönlichen Gebrauch</strong> dienen</li>
+        <li>Genugtuungsansprüche</li>
     </ul>
-  </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Konsequenz für das Haus:</p>
+        <p class="text-gray-700">Wurde das Haus <strong>vor der Ehe</strong> erworben oder während der Ehe <strong>geerbt</strong>, gehört es zum Eigengut und muss bei der Scheidung nicht geteilt werden. Der Eigengut-Eigentümer behält das Haus vollständig.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Errungenschaft (Art. 197 ZGB)</h3>
+
+    <p class="text-gray-700 mb-4">Zur Errungenschaft gehören gemäss Art. 197 ZGB alle Vermögenswerte, die während der Ehe entgeltlich erworben wurden, insbesondere:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Der <strong>Arbeitserwerb</strong> (Lohn, Gehalt, Honorare)</li>
+        <li>Leistungen von Vorsorgeeinrichtungen und Sozialversicherungen</li>
+        <li>Erträge aus dem Eigengut (z.B. Mietzinseinnahmen)</li>
+        <li>Entgeltlich erworbene Güter während der Ehe</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Konsequenz für das Haus:</p>
+        <p class="text-gray-700">Wurde das Haus <strong>während der Ehe</strong> mit Erwerbseinkommen oder anderen Errungenschaftsmitteln gekauft, gehört es zur Errungenschaft. Bei der Scheidung hat jeder Ehegatte Anspruch auf die <strong>Hälfte des Vorschlags</strong> (Errungenschaft minus Schulden) des anderen (Art. 215 ZGB).</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Mischfinanzierung: Wenn Eigengut und Errungenschaft zusammenkommen</h3>
+
+    <p class="text-gray-700 mb-6">Häufig wird ein Haus mit einer Mischung aus Eigengut (z.B. Erbschaft) und Errungenschaft (z.B. Ersparnisse während der Ehe) finanziert. In diesem Fall entstehen sogenannte <strong>Ersatzforderungen</strong> (Art. 209 ZGB). Das Eigengut hat einen Anspruch auf Rückerstattung des eingebrachten Betrags, zuzüglich eines anteiligen Mehrwerts.</p>
+
+    <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-lg my-8">
+        <p class="font-semibold text-navy mb-4">Berechnungsbeispiel Mischfinanzierung:</p>
+        <p class="text-gray-700 mb-2">Ein Ehepaar kauft ein Haus für CHF 800'000:</p>
+        <ul class="list-disc list-inside text-gray-700 mb-4 space-y-1">
+            <li>Eigengut Ehemann (Erbschaft): CHF 200'000 (25%)</li>
+            <li>Errungenschaft (gemeinsame Ersparnisse): CHF 200'000 (25%)</li>
+            <li>Hypothek: CHF 400'000 (50%)</li>
+        </ul>
+        <p class="text-gray-700 mb-2">Bei der Scheidung ist das Haus CHF 1'000'000 wert:</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li>Mehrwert: CHF 200'000</li>
+            <li>Anteil Eigengut am Mehrwert (25%): CHF 50'000</li>
+            <li>Ersatzforderung Eigengut: CHF 200'000 + CHF 50'000 = <strong>CHF 250'000</strong></li>
+            <li>Verbleibende Errungenschaft wird hälftig geteilt</li>
+        </ul>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wem gehört das Haus bei der Scheidung?</h2>
+
+    <p class="text-gray-700 mb-6">Die Antwort auf die Frage «Wem gehört das Haus?» hängt von der konkreten Situation ab. Das Bundesgericht hat in zahlreichen Entscheiden die Grundsätze präzisiert:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Situation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Eigentum</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aufteilung bei Scheidung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Haus vor der Ehe gekauft, im Alleineigentum</td>
+                    <td class="px-6 py-4 text-gray-700">Eigengut des Eigentümers</td>
+                    <td class="px-6 py-4 text-gray-700">Keine Teilung; Eigentümer behält das Haus</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Haus während der Ehe geerbt</td>
+                    <td class="px-6 py-4 text-gray-700">Eigengut des Erben</td>
+                    <td class="px-6 py-4 text-gray-700">Keine Teilung; Erbe behält das Haus</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Haus während der Ehe gemeinsam gekauft (Miteigentum)</td>
+                    <td class="px-6 py-4 text-gray-700">Errungenschaft beider</td>
+                    <td class="px-6 py-4 text-gray-700">Hälftige Teilung (oder gemäss Miteigentumsquoten)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Haus während der Ehe von einem Ehegatten gekauft (Alleineigentum)</td>
+                    <td class="px-6 py-4 text-gray-700">Errungenschaft des Eigentümers</td>
+                    <td class="px-6 py-4 text-gray-700">Eigentümer behält Haus; Wert fliesst in Vorschlagsberechnung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Mischfinanzierung (Eigengut + Errungenschaft)</td>
+                    <td class="px-6 py-4 text-gray-700">Gemischt</td>
+                    <td class="px-6 py-4 text-gray-700">Ersatzforderungen; anteilige Mehrwertbeteiligung</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Beweislast (Art. 200 ZGB):</p>
+        <p class="text-gray-700">Wer behauptet, ein Vermögenswert gehöre zu seinem Eigengut, muss dies beweisen. Gelingt der Beweis nicht, wird <strong>Miteigentum beider Ehegatten vermutet</strong>. Daher ist es wichtig, Belege über die Herkunft der Mittel (Erbschaft, Schenkung, Ersparnisse vor der Ehe) sorgfältig aufzubewahren.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Die Familienwohnung: Wer darf im Haus bleiben?</h2>
+
+    <p class="text-gray-700 mb-6">Unabhängig von den Eigentumsverhältnissen geniesst die <strong>Familienwohnung</strong> in der Schweiz einen besonderen Schutz. Art. 121 ZGB regelt die Zuweisung der Wohnung bei Scheidung.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Zuweisung der Familienwohnung (Art. 121 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Das Gericht kann einem Ehegatten die Familienwohnung zuweisen, wenn dieser wegen der Kinder oder aus anderen wichtigen Gründen darauf angewiesen ist. Dies gilt sowohl für Mietwohnungen als auch für Eigenheime.</p>
+
+    <p class="text-gray-700 mb-4">Bei der Entscheidung berücksichtigt das Gericht insbesondere (BGE 138 III 348, BGE 114 II 18):</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Kindeswohl:</strong> Wem wird die Obhut über die Kinder zugeteilt? Die Kinder sollen möglichst in ihrer vertrauten Umgebung bleiben können.</li>
+        <li><strong>Berufliche Interessen:</strong> Übt ein Ehegatte seinen Beruf im Haus aus?</li>
+        <li><strong>Gesundheitliche Gründe:</strong> Ist das Haus auf besondere Bedürfnisse angepasst?</li>
+        <li><strong>Zumutbarkeit des Umzugs:</strong> Wem kann ein Umzug eher zugemutet werden?</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig bei Kindern:</p>
+        <p class="text-gray-700">Gemäss bundesgerichtlicher Rechtsprechung (BGE 5A_141/2020) wird die Familienwohnung <strong>regelmässig</strong> demjenigen Elternteil zugewiesen, dem die Obhut über die Kinder zugeteilt wird – <strong>unabhängig davon</strong>, wer Eigentümer ist. Das Kindeswohl hat Vorrang vor den Eigentumsrechten.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wohnrecht bei Alleineigentum des anderen (Art. 121 Abs. 3 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Gehört das Haus dem anderen Ehegatten allein, kann das Gericht dem auf die Wohnung angewiesenen Ehegatten ein <strong>befristetes Wohnrecht</strong> einräumen. Dieses Wohnrecht kann im Grundbuch eingetragen werden und wird in der Regel bis zur Selbständigkeit der Kinder oder für eine bestimmte Übergangszeit gewährt.</p>
+
+    <p class="text-gray-700 mb-6">Für das Wohnrecht ist eine <strong>angemessene Entschädigung</strong> zu leisten, die üblicherweise mit den Unterhaltsbeiträgen verrechnet wird.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Die vier Optionen bei der Scheidung mit Haus</h2>
+
+    <p class="text-gray-700 mb-6">Bei einer Scheidung stehen grundsätzlich vier Möglichkeiten zur Verfügung, wie mit dem gemeinsamen Haus verfahren werden kann:</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Option 1: Verkauf und Erlösteilung</h3>
+
+    <p class="text-gray-700 mb-6">Der Verkauf der Immobilie und die Aufteilung des Erlöses ist die häufigste und oft sauberste Lösung. Nach Abzug der Hypothek, Verkaufskosten und Steuern wird der Nettoerlös gemäss Güterstand und Eigentumsform aufgeteilt.</p>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-green-50 p-6 rounded-lg">
+            <p class="font-semibold text-green-800 mb-3">Vorteile:</p>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                <li>Klarer Schnitt und Abschluss</li>
+                <li>Keine weiteren gemeinsamen Verpflichtungen</li>
+                <li>Liquide Mittel für den Neustart</li>
+                <li>Eindeutige Vermögensaufteilung</li>
+            </ul>
+        </div>
+        <div class="bg-red-50 p-6 rounded-lg">
+            <p class="font-semibold text-red-800 mb-3">Nachteile:</p>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                <li>Möglicherweise ungünstiger Verkaufszeitpunkt</li>
+                <li>Transaktionskosten (Makler, Notar)</li>
+                <li>Grundstückgewinnsteuer</li>
+                <li>Verlust des Familienheims für alle</li>
+            </ul>
+        </div>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Option 2: Übernahme durch einen Ehegatten</h3>
+
+    <p class="text-gray-700 mb-6">Ein Ehegatte kann die Immobilie übernehmen und den anderen für dessen Anteil auszahlen. Diese Option erfordert erhebliche finanzielle Mittel und die Zustimmung der Bank.</p>
+
+    <p class="text-gray-700 mb-4"><strong>Voraussetzungen für die Übernahme:</strong></p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Finanzielle Tragbarkeit:</strong> Der übernehmende Ehegatte muss die Hypothek allein tragen können</li>
+        <li><strong>Einigung über den Übernahmewert:</strong> Beide müssen den Wert der Immobilie akzeptieren</li>
+        <li><strong>Zustimmung der Bank:</strong> Die finanzierende Bank muss der Umschreibung zustimmen</li>
+        <li><strong>Mittel für die Auszahlung:</strong> Eigene Mittel, Pensionskassenvorbezug oder Erbvorbezug</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Tragbarkeitsregel der Banken:</p>
+        <p class="text-gray-700">Die Bank prüft, ob der übernehmende Ehegatte die Hypothek allein tragen kann. Die Wohnkosten (kalkulatorischer Zins von ca. 5%, Amortisation der 2. Hypothek, Nebenkosten von ca. 1% des Immobilienwerts) sollten <strong>nicht mehr als 33% des Bruttoeinkommens</strong> betragen.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Option 3: Fortgesetztes Miteigentum</h3>
+
+    <p class="text-gray-700 mb-6">In Ausnahmefällen können die geschiedenen Eheleute Miteigentümer bleiben. Ein Ehegatte wohnt im Haus und entschädigt den anderen für die Nutzung. Diese Lösung wird in der Scheidungskonvention geregelt.</p>
+
+    <p class="text-gray-700 mb-4"><strong>Risiken dieser Option:</strong></p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Fortdauernde gemeinsame Verpflichtungen und Abhängigkeit</li>
+        <li>Konfliktpotential bei Entscheidungen (Renovationen, Verkauf)</li>
+        <li>Schwierigkeiten bei Wiederverheiratung oder neuer Partnerschaft</li>
+        <li>Komplikationen bei späterer Auflösung</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Option 4: Gerichtliche Versteigerung (Art. 651 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Können sich die Ehegatten nicht einigen, kann das Gericht die öffentliche Versteigerung der Immobilie anordnen. Diese Option sollte vermieden werden, da der Erlös typischerweise <strong>20-30% unter dem Marktwert</strong> liegt.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Partner auszahlen: Berechnung und Beispiel</h2>
+
+    <p class="text-gray-700 mb-6">Wenn ein Ehegatte das Haus übernehmen möchte, muss der andere für seinen Anteil ausgezahlt werden. Die Berechnung erfolgt auf Basis des <strong>aktuellen Verkehrswerts</strong> (Marktwert).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Grundformel für die Auszahlung</h3>
+
+    <div class="bg-gradient-to-r from-navy to-blue-800 p-6 rounded-lg text-white my-8">
+        <p class="font-mono text-lg mb-4">(Verkehrswert - Hypothek - latente Grundstückgewinnsteuer) ÷ 2 = Auszahlungsbetrag</p>
+        <p class="text-sm opacity-80">Bei hälftiger Beteiligung und ohne Eigengut-Anteile</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Detailliertes Berechnungsbeispiel</h3>
+
+    <div class="bg-gray-50 p-6 rounded-lg my-8">
+        <p class="font-semibold text-navy mb-4">Ausgangslage:</p>
+        <ul class="list-disc list-inside text-gray-700 mb-4 space-y-1">
+            <li>Kaufpreis vor 10 Jahren: CHF 800'000</li>
+            <li>Aktueller Verkehrswert: CHF 1'200'000</li>
+            <li>Restschuld Hypothek: CHF 500'000</li>
+            <li>Miteigentum je 1/2, erworben während der Ehe mit Errungenschaftsmitteln</li>
+            <li>Geschätzte Grundstückgewinnsteuer: CHF 60'000</li>
+        </ul>
+
+        <p class="font-semibold text-navy mb-4">Berechnung:</p>
+        <div class="overflow-x-auto">
+            <table class="min-w-full bg-white border border-gray-200">
+                <tbody class="divide-y divide-gray-200">
+                    <tr>
+                        <td class="px-4 py-2 text-gray-700">Verkehrswert</td>
+                        <td class="px-4 py-2 text-right text-gray-700">CHF 1'200'000</td>
+                    </tr>
+                    <tr class="bg-gray-100">
+                        <td class="px-4 py-2 text-gray-700">./. Hypothek</td>
+                        <td class="px-4 py-2 text-right text-gray-700">CHF 500'000</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 text-gray-700">./. Latente Grundstückgewinnsteuer (50%)</td>
+                        <td class="px-4 py-2 text-right text-gray-700">CHF 30'000</td>
+                    </tr>
+                    <tr class="bg-gray-100">
+                        <td class="px-4 py-2 font-semibold text-navy">= Netto-Vermögenswert</td>
+                        <td class="px-4 py-2 text-right font-semibold text-navy">CHF 670'000</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 text-gray-700">÷ 2 (bei hälftiger Beteiligung)</td>
+                        <td class="px-4 py-2 text-right text-gray-700"></td>
+                    </tr>
+                    <tr class="bg-gold/20">
+                        <td class="px-4 py-2 font-bold text-navy">= Auszahlungsbetrag an Ex-Partner</td>
+                        <td class="px-4 py-2 text-right font-bold text-navy">CHF 335'000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Abzug der latenten Grundstückgewinnsteuer:</p>
+        <p class="text-gray-700">In der Praxis wird oft die Hälfte der mutmasslichen Grundstückgewinnsteuer von der Auszahlung abgezogen. Der übernehmende Ehegatte übernimmt damit das Risiko, diese Steuer bei einem späteren Verkauf zahlen zu müssen.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Hypothek bei Scheidung: Solidarische Haftung und Tragbarkeit</h2>
+
+    <p class="text-gray-700 mb-6">Die Hypothek ist bei einer Scheidung mit Haus oft der komplexeste Aspekt. Haben beide Ehegatten den Hypothekarvertrag unterzeichnet, haften sie als <strong>Solidarschuldner</strong> – mit weitreichenden Konsequenzen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Solidarische Haftung gegenüber der Bank</h3>
+
+    <p class="text-gray-700 mb-6">Bei solidarischer Haftung kann die Bank den <strong>gesamten</strong> Hypothekarbetrag von <strong>jedem</strong> der beiden Ehepartner einfordern – unabhängig davon, wer im Haus wohnt oder wie die Scheidungskonvention lautet. Die Bank ist an Vereinbarungen zwischen den Ehegatten nicht gebunden.</p>
+
+    <div class="bg-red-50 border-l-4 border-red-500 p-6 my-8">
+        <p class="font-semibold text-red-800 mb-2">Achtung – Haftungsrisiko:</p>
+        <p class="text-gray-700">Auch wenn in der Scheidungskonvention vereinbart wird, dass ein Ehegatte die Hypothek allein übernimmt, bleibt der andere gegenüber der Bank haftbar, bis er formell aus der Solidarhaftung entlassen wird. Zahlt der im Haus verbleibende Ex-Partner nicht, kann die Bank den anderen belangen.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Entlassung aus der Solidarhaftung</h3>
+
+    <p class="text-gray-700 mb-6">Wer das Haus nicht übernimmt, sollte unbedingt eine <strong>Entlassung aus der Solidarhaftung</strong> (Schuldentlassung) bei der Bank beantragen. Die Bank wird dies nur gewähren, wenn der verbleibende Schuldner die Tragbarkeit allein erfüllt.</p>
+
+    <p class="text-gray-700 mb-4"><strong>Voraussetzungen für die Entlassung:</strong></p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Der verbleibende Schuldner erfüllt die Tragbarkeitskriterien</li>
+        <li>Die Belehnung liegt innerhalb der Richtlinien (max. 80%)</li>
+        <li>Allenfalls zusätzliche Sicherheiten</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Tragbarkeitsrechnung bei Übernahme</h3>
+
+    <div class="bg-gray-50 p-6 rounded-lg my-8">
+        <p class="font-semibold text-navy mb-4">Beispiel Tragbarkeitsberechnung:</p>
+        <ul class="list-disc list-inside text-gray-700 mb-4 space-y-1">
+            <li>Immobilienwert: CHF 1'000'000</li>
+            <li>Hypothek: CHF 600'000</li>
+            <li>Bruttoeinkommen (allein): CHF 150'000</li>
+        </ul>
+
+        <p class="font-semibold text-navy mb-2">Kalkulatorische Kosten pro Jahr:</p>
+        <div class="overflow-x-auto">
+            <table class="min-w-full bg-white border border-gray-200">
+                <tbody class="divide-y divide-gray-200">
+                    <tr>
+                        <td class="px-4 py-2 text-gray-700">Kalkulatorischer Zins (5% auf CHF 600'000)</td>
+                        <td class="px-4 py-2 text-right text-gray-700">CHF 30'000</td>
+                    </tr>
+                    <tr class="bg-gray-100">
+                        <td class="px-4 py-2 text-gray-700">Amortisation 2. Hypothek (1% auf CHF 600'000)</td>
+                        <td class="px-4 py-2 text-right text-gray-700">CHF 6'000</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 text-gray-700">Nebenkosten (1% auf CHF 1'000'000)</td>
+                        <td class="px-4 py-2 text-right text-gray-700">CHF 10'000</td>
+                    </tr>
+                    <tr class="bg-gray-100">
+                        <td class="px-4 py-2 font-semibold text-navy">Total kalkulatorische Kosten</td>
+                        <td class="px-4 py-2 text-right font-semibold text-navy">CHF 46'000</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 py-2 text-gray-700">Belastung in % des Einkommens</td>
+                        <td class="px-4 py-2 text-right text-gray-700">30.7%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="text-green-700 mt-4"><strong>Ergebnis:</strong> Die Tragbarkeit ist erfüllt (unter 33%).</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Pensionskasse und Haus: Der WEF-Vorbezug bei Scheidung</h2>
+
+    <p class="text-gray-700 mb-6">Wurde die Immobilie mit einem Vorbezug aus der Pensionskasse (Wohneigentumsförderung, WEF) finanziert, hat dies bei der Scheidung besondere Konsequenzen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Aufteilung des WEF-Vorbezugs</h3>
+
+    <p class="text-gray-700 mb-6">Der WEF-Vorbezug ist Teil des Pensionskassenguthabens, das bei der Scheidung geteilt wird (Art. 123 ZGB). Der in die Immobilie eingebrachte Vorbezug wird zur Freizügigkeitsleistung addiert, die der Aufteilung unterliegt.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Rückzahlung bei Verkauf</h3>
+
+    <p class="text-gray-700 mb-6">Wird das Haus verkauft, muss der WEF-Vorbezug grundsätzlich an die Pensionskasse zurückgezahlt werden. Bei einer Übertragung an den Ex-Ehegatten, der bestimmte Voraussetzungen erfüllt, kann jedoch eine Ausnahme gelten – dies ist mit der Vorsorgeeinrichtung vorgängig zu klären.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Steuerliche Aspekte beim Haus in der Scheidung</h2>
+
+    <p class="text-gray-700 mb-6">Die Scheidung mit Immobilie hat verschiedene steuerliche Konsequenzen, die bei der Planung berücksichtigt werden müssen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Grundstückgewinnsteuer</h3>
+
+    <p class="text-gray-700 mb-6">Die Grundstückgewinnsteuer fällt an, wenn eine Immobilie mit Gewinn verkauft wird. Bei Handänderungen zwischen Ehegatten im Zusammenhang mit dem Güterrecht oder der Scheidung wird die Steuer jedoch <strong>aufgeschoben</strong> – sie wird erst fällig, wenn der neue Eigentümer die Immobilie an einen Dritten verkauft.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Aufschub ist nicht Aufhebung:</p>
+        <p class="text-gray-700">Der übernehmende Ehegatte übernimmt die <strong>latente Steuerlast</strong>. Bei einem späteren Verkauf wird die Grundstückgewinnsteuer auf der Differenz zum <strong>ursprünglichen Kaufpreis</strong> berechnet, nicht zum Übernahmepreis. Die Besitzdauer des vorherigen Eigentümers wird jedoch angerechnet.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Handänderungssteuer</h3>
+
+    <p class="text-gray-700 mb-6">Die Handänderungssteuer wird bei Eigentumsübertragungen erhoben und ist kantonal unterschiedlich geregelt. In vielen Kantonen (z.B. BE, BS, LU, ZH) sind Handänderungen zwischen Ehegatten im Zusammenhang mit Scheidung oder güterrechtlicher Auseinandersetzung <strong>befreit</strong>.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kanton</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Handänderungssteuer bei Scheidung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Zürich</td>
+                    <td class="px-6 py-4 text-green-700">Befreit</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Bern</td>
+                    <td class="px-6 py-4 text-green-700">Befreit (bei güterrechtlicher Auseinandersetzung)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Basel-Stadt</td>
+                    <td class="px-6 py-4 text-green-700">Befreit</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Thurgau</td>
+                    <td class="px-6 py-4 text-green-700">Befreit</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Andere Kantone</td>
+                    <td class="px-6 py-4 text-gray-700">Kantonal verschieden – im Einzelfall prüfen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Eigenmietwert</h3>
+
+    <p class="text-gray-700 mb-6">Der Ehegatte, der als Eigentümer im Haus wohnt, muss den <strong>Eigenmietwert</strong> als Einkommen versteuern. Im Gegenzug können Hypothekarzinsen und Unterhaltskosten abgezogen werden. Nach der Scheidung wird nur noch ein Einkommen besteuert, was die Steuerbelastung erhöhen kann.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Immobilienbewertung: Den richtigen Wert ermitteln</h2>
+
+    <p class="text-gray-700 mb-6">Die Frage, wie viel das Haus wert ist, führt bei Scheidungen häufig zu Konflikten. Eine professionelle, unabhängige Bewertung ist daher unerlässlich.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Bewertungsmethoden</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Methode</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Anwendung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Hedonische Methode</td>
+                    <td class="px-6 py-4 text-gray-700">Vergleich mit ähnlichen verkauften Objekten; berücksichtigt Lage, Grösse, Baujahr, Ausstattung</td>
+                    <td class="px-6 py-4 text-gray-700">Standard für Einfamilienhäuser und Eigentumswohnungen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Realwertmethode</td>
+                    <td class="px-6 py-4 text-gray-700">Landwert + Neubauwert minus Altersentwertung</td>
+                    <td class="px-6 py-4 text-gray-700">Bei speziellen oder älteren Objekten</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Ertragswertmethode</td>
+                    <td class="px-6 py-4 text-gray-700">Kapitalisierung der erzielbaren Mieteinnahmen</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Renditeobjekten</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Eine professionelle Verkehrswertschätzung durch einen unabhängigen Immobilienbewerter kostet zwischen <strong>CHF 1'000 und CHF 2'000</strong>. Diese Investition lohnt sich, da sie Streitigkeiten vermeiden und eine faire Aufteilung ermöglichen kann.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Was tun, wenn keine Einigung möglich ist?</h2>
+
+    <p class="text-gray-700 mb-6">Können sich die Ehepartner nicht über das Haus einigen, gibt es verschiedene Eskalationsstufen:</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">1. Mediation</h3>
+
+    <p class="text-gray-700 mb-6">Ein neutraler Mediator kann helfen, eine einvernehmliche Lösung zu finden. Die Kosten werden geteilt und liegen deutlich unter den Kosten eines Gerichtsverfahrens.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">2. Gerichtliche Entscheidung</h3>
+
+    <p class="text-gray-700 mb-6">Scheitert die Mediation, entscheidet das Gericht. Es kann einem Ehegatten das Haus zusprechen (mit Auszahlungspflicht) oder den Verkauf anordnen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">3. Öffentliche Versteigerung (Art. 651 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Als letztes Mittel kann das Miteigentum durch öffentliche Versteigerung aufgehoben werden. Jeder Miteigentümer kann dies verlangen, wenn keine Einigung möglich ist. Der Erlös liegt jedoch typischerweise erheblich unter dem Marktwert – diese Option sollte daher vermieden werden.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Praktische Tipps für die Scheidung mit Haus</h2>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-3">
+        <li><strong>Frühzeitig klären:</strong> Sprechen Sie das Thema Immobilie früh an – Verzögerungen erhöhen die Kosten und den emotionalen Stress.</li>
+        <li><strong>Professionelle Bewertung:</strong> Lassen Sie den Wert von einem unabhängigen Experten schätzen, um Streitigkeiten zu vermeiden.</li>
+        <li><strong>Bank einbeziehen:</strong> Klären Sie frühzeitig mit der Bank, ob eine Übernahme durch einen Partner möglich ist und welche Bedingungen gelten.</li>
+        <li><strong>Steuern berücksichtigen:</strong> Berechnen Sie die steuerlichen Konsequenzen (Grundstückgewinnsteuer, Eigenmietwert) bevor Sie entscheiden.</li>
+        <li><strong>Emotionen kontrollieren:</strong> Lassen Sie sich nicht von emotionaler Bindung an das Haus zu irrationalen finanziellen Entscheidungen verleiten.</li>
+        <li><strong>Zukunft planen:</strong> Berücksichtigen Sie Ihre künftige Lebenssituation – Einkommen, Kinder, Wohnbedürfnisse.</li>
+        <li><strong>Rechtliche Beratung:</strong> Ziehen Sie einen spezialisierten Anwalt für Familienrecht hinzu.</li>
+    </ul>
+
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">Die Aufteilung einer Immobilie bei der Scheidung gehört zu den komplexesten Aspekten des Familienrechts. Fehler bei der Berechnung, unvollständige Vereinbarungen oder übersehene steuerliche Konsequenzen können langfristige finanzielle Nachteile verursachen. Eine frühzeitige anwaltliche Beratung kann helfen, kostspielige Fehler zu vermeiden und eine faire Lösung zu finden.</p>
+
+        <p class="text-gray-700 mb-6">Besonders bei folgenden Konstellationen ist die Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> dringend empfohlen:</p>
+
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Das Haus wurde mit gemischten Mitteln (Eigengut und Errungenschaft) finanziert</li>
+            <li>Ein Ehegatte hat vor der Ehe erheblich in die Immobilie des anderen investiert</li>
+            <li>Die Tragbarkeit der Hypothek ist für einen Partner allein fraglich</li>
+            <li>Es besteht Uneinigkeit über den Wert der Immobilie</li>
+            <li>Ein WEF-Vorbezug aus der Pensionskasse wurde getätigt</li>
+            <li>Steuerliche Fragen zur Grundstückgewinnsteuer sind ungeklärt</li>
+        </ul>
+
+        <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kann die güterrechtlichen Ansprüche korrekt berechnen, die Verhandlungen mit dem anderen Ehegatten führen und eine rechtssichere Scheidungskonvention ausarbeiten. Auch bei der Kommunikation mit der Bank und Steuerbehörden ist fachkundige Unterstützung durch einen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> unerlässlich.</p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Lassen Sie Ihre Situation von einem erfahrenen Familienrechtsanwalt unverbindlich einschätzen. Wir beraten Sie zu Ihren Optionen und helfen Ihnen, die beste Lösung für Ihre Immobilie zu finden.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- Fazit -->
+    <h2 class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Die Frage «Was passiert mit dem Haus bei der Scheidung?» lässt sich nicht pauschal beantworten – sie hängt von Güterstand, Eigentumsform, Finanzierungsquellen und den persönlichen Umständen ab. In den meisten Fällen führt der Weg über einen Verkauf oder die Übernahme durch einen Ehegatten mit Auszahlung des anderen.</p>
+
+    <p class="text-gray-700 mb-6">Entscheidend ist, frühzeitig Klarheit über die rechtliche und finanzielle Situation zu schaffen: Lassen Sie den Wert professionell schätzen, klären Sie die Tragbarkeit mit der Bank und berücksichtigen Sie die steuerlichen Konsequenzen. Einvernehmliche Lösungen sind fast immer besser als langwierige und teure Gerichtsverfahren.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Relevante Gesetzesbestimmungen:</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li>Art. 196-220 ZGB (Errungenschaftsbeteiligung)</li>
+            <li>Art. 197-198 ZGB (Errungenschaft und Eigengut)</li>
+            <li>Art. 200 ZGB (Beweislast)</li>
+            <li>Art. 206 und 209 ZGB (Ersatzforderungen)</li>
+            <li>Art. 121 ZGB (Zuweisung der Familienwohnung)</li>
+            <li>Art. 169 ZGB (Schutz der Familienwohnung)</li>
+            <li>Art. 651 ZGB (Aufhebung des Miteigentums)</li>
+            <li>Art. 682 ZGB (Vorkaufsrecht bei Miteigentum)</li>
+        </ul>
+    </div>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert mit dem Haus bei einer Scheidung in der Schweiz?</h3>
+                <p class="text-gray-700">Bei einer Scheidung in der Schweiz wird das Haus je nach Güterstand und Eigentumsform aufgeteilt. Im Normalfall (Errungenschaftsbeteiligung ohne Ehevertrag) wird das während der Ehe erworbene Haus als Errungenschaft hälftig geteilt. Die Optionen sind: Verkauf mit Erlösteilung, Übernahme durch einen Partner mit Auszahlung des anderen, fortgesetztes Miteigentum oder im Streitfall eine gerichtliche Versteigerung.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wem gehört das Haus bei einer Scheidung?</h3>
+                <p class="text-gray-700">Die Eigentumsverhältnisse sind im Grundbuch eingetragen. Bei Miteigentum gehört das Haus beiden Ehegatten zu definierten Anteilen (meist je 1/2). Bei Alleineigentum gehört es nur dem eingetragenen Eigentümer. Unabhängig vom Grundbucheintrag können jedoch güterrechtliche Ausgleichsansprüche bestehen, wenn das Haus mit Errungenschaftsmitteln finanziert wurde.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wer darf bei einer Scheidung im Haus bleiben?</h3>
+                <p class="text-gray-700">Gemäss Art. 121 ZGB kann das Gericht einem Ehegatten die Familienwohnung zuweisen, wenn dieser darauf angewiesen ist – unabhängig von den Eigentumsverhältnissen. Bei gemeinsamen Kindern wird die Wohnung in der Regel dem Elternteil zugewiesen, bei dem die Kinder leben. Das Kindeswohl hat Vorrang vor den Eigentumsrechten.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie berechnet man die Auszahlung bei Scheidung mit Haus?</h3>
+                <p class="text-gray-700">Die Auszahlung berechnet sich aus dem aktuellen Verkehrswert minus Hypothek minus latente Grundstückgewinnsteuer, geteilt durch zwei (bei hälftiger Beteiligung). Beispiel: Bei einem Verkehrswert von CHF 1'000'000, einer Hypothek von CHF 400'000 und ohne Steuern beträgt der Auszahlungsbetrag CHF 300'000 (600'000 ÷ 2).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert mit der Hypothek bei einer Scheidung?</h3>
+                <p class="text-gray-700">Bei einer gemeinsamen Hypothek haften beide Ehegatten solidarisch gegenüber der Bank – auch nach der Scheidung. Übernimmt ein Partner das Haus allein, muss er die Tragbarkeit nachweisen und die Bank muss den anderen aus der Haftung entlassen. Ohne formelle Entlassung bleibt der ausziehende Partner weiterhin haftbar.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Muss man das Haus bei einer Scheidung verkaufen?</h3>
+                <p class="text-gray-700">Nein, ein Verkauf ist nicht zwingend. Ein Ehegatte kann das Haus übernehmen und den anderen auszahlen, sofern er die Finanzierung allein stemmen kann und die Bank zustimmt. Auch ein fortgesetztes Miteigentum ist möglich. Nur wenn keine Einigung erzielt wird, kann das Gericht einen Verkauf oder eine Versteigerung anordnen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie wird der Wert des Hauses bei einer Scheidung bestimmt?</h3>
+                <p class="text-gray-700">Der Wert wird durch den aktuellen Verkehrswert (Marktwert) bestimmt. Am zuverlässigsten ist eine professionelle Schätzung durch einen unabhängigen Immobilienbewerter. Die Kosten liegen bei CHF 1'000-2'000. Die hedonische Methode (Vergleich mit ähnlichen Objekten) ist für Einfamilienhäuser am gebräuchlichsten.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Fallen bei einer Scheidung Steuern auf das Haus an?</h3>
+                <p class="text-gray-700">Bei Übertragung zwischen Ehegatten im Rahmen der Scheidung wird die Grundstückgewinnsteuer aufgeschoben und die Handänderungssteuer in vielen Kantonen erlassen. Beim späteren Verkauf an Dritte wird die Steuer jedoch fällig. Der Eigenmietwert muss vom im Haus lebenden Eigentümer versteuert werden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert mit dem Pensionskassen-Vorbezug bei Scheidung?</h3>
+                <p class="text-gray-700">Der WEF-Vorbezug aus der Pensionskasse ist Teil des bei der Scheidung aufzuteilenden Vorsorgevermögens (Art. 123 ZGB). Er wird zur Freizügigkeitsleistung addiert, die geteilt wird. Bei Verkauf des Hauses muss der Vorbezug grundsätzlich zurückgezahlt werden. Bei Übertragung an den Ex-Ehegatten gelten besondere Regeln.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich meinen Partner aus dem Haus werfen bei Trennung?</h3>
+                <p class="text-gray-700">Nein, während der Ehe und der Trennungsphase darf kein Ehepartner den anderen aus der Familienwohnung verweisen – auch nicht der Alleineigentümer (Art. 169 ZGB). Nur das Gericht kann die Wohnung im Rahmen von Eheschutzmassnahmen einem Ehegatten zuweisen. Bei häuslicher Gewalt sind sofortige Schutzmassnahmen möglich.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Scheidung und Haus in der Schweiz: Immobilie, Eigentum & Optionen",
+        "description": "Scheidung mit Haus in der Schweiz: Wem gehört das Haus? Verkauf, Übernahme, Auszahlung des Partners. Mit Berechnungsbeispielen, Hypothek & Steuern erklärt.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-20",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/scheidung/haus"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Was passiert mit dem Haus bei einer Scheidung in der Schweiz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei einer Scheidung in der Schweiz wird das Haus je nach Güterstand und Eigentumsform aufgeteilt. Im Normalfall (Errungenschaftsbeteiligung ohne Ehevertrag) wird das während der Ehe erworbene Haus als Errungenschaft hälftig geteilt. Die Optionen sind: Verkauf mit Erlösteilung, Übernahme durch einen Partner mit Auszahlung des anderen, fortgesetztes Miteigentum oder im Streitfall eine gerichtliche Versteigerung."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wem gehört das Haus bei einer Scheidung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Eigentumsverhältnisse sind im Grundbuch eingetragen. Bei Miteigentum gehört das Haus beiden Ehegatten zu definierten Anteilen (meist je 1/2). Bei Alleineigentum gehört es nur dem eingetragenen Eigentümer. Unabhängig vom Grundbucheintrag können jedoch güterrechtliche Ausgleichsansprüche bestehen, wenn das Haus mit Errungenschaftsmitteln finanziert wurde."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wer darf bei einer Scheidung im Haus bleiben?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Gemäss Art. 121 ZGB kann das Gericht einem Ehegatten die Familienwohnung zuweisen, wenn dieser darauf angewiesen ist – unabhängig von den Eigentumsverhältnissen. Bei gemeinsamen Kindern wird die Wohnung in der Regel dem Elternteil zugewiesen, bei dem die Kinder leben. Das Kindeswohl hat Vorrang vor den Eigentumsrechten."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie berechnet man die Auszahlung bei Scheidung mit Haus?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Auszahlung berechnet sich aus dem aktuellen Verkehrswert minus Hypothek minus latente Grundstückgewinnsteuer, geteilt durch zwei (bei hälftiger Beteiligung). Beispiel: Bei einem Verkehrswert von CHF 1'000'000, einer Hypothek von CHF 400'000 und ohne Steuern beträgt der Auszahlungsbetrag CHF 300'000 (600'000 ÷ 2)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert mit der Hypothek bei einer Scheidung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei einer gemeinsamen Hypothek haften beide Ehegatten solidarisch gegenüber der Bank – auch nach der Scheidung. Übernimmt ein Partner das Haus allein, muss er die Tragbarkeit nachweisen und die Bank muss den anderen aus der Haftung entlassen. Ohne formelle Entlassung bleibt der ausziehende Partner weiterhin haftbar."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Muss man das Haus bei einer Scheidung verkaufen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, ein Verkauf ist nicht zwingend. Ein Ehegatte kann das Haus übernehmen und den anderen auszahlen, sofern er die Finanzierung allein stemmen kann und die Bank zustimmt. Auch ein fortgesetztes Miteigentum ist möglich. Nur wenn keine Einigung erzielt wird, kann das Gericht einen Verkauf oder eine Versteigerung anordnen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie wird der Wert des Hauses bei einer Scheidung bestimmt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der Wert wird durch den aktuellen Verkehrswert (Marktwert) bestimmt. Am zuverlässigsten ist eine professionelle Schätzung durch einen unabhängigen Immobilienbewerter. Die Kosten liegen bei CHF 1'000-2'000. Die hedonische Methode (Vergleich mit ähnlichen Objekten) ist für Einfamilienhäuser am gebräuchlichsten."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Fallen bei einer Scheidung Steuern auf das Haus an?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei Übertragung zwischen Ehegatten im Rahmen der Scheidung wird die Grundstückgewinnsteuer aufgeschoben und die Handänderungssteuer in vielen Kantonen erlassen. Beim späteren Verkauf an Dritte wird die Steuer jedoch fällig. Der Eigenmietwert muss vom im Haus lebenden Eigentümer versteuert werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert mit dem Pensionskassen-Vorbezug bei Scheidung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der WEF-Vorbezug aus der Pensionskasse ist Teil des bei der Scheidung aufzuteilenden Vorsorgevermögens (Art. 123 ZGB). Er wird zur Freizügigkeitsleistung addiert, die geteilt wird. Bei Verkauf des Hauses muss der Vorbezug grundsätzlich zurückgezahlt werden. Bei Übertragung an den Ex-Ehegatten gelten besondere Regeln."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich meinen Partner aus dem Haus werfen bei Trennung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, während der Ehe und der Trennungsphase darf kein Ehepartner den anderen aus der Familienwohnung verweisen – auch nicht der Alleineigentümer (Art. 169 ZGB). Nur das Gericht kann die Wohnung im Rahmen von Eheschutzmassnahmen einem Ehegatten zuweisen. Bei häuslicher Gewalt sind sofortige Schutzmassnahmen möglich."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Scheidung",
+                "item": "https://familienrechtanwalt.ch/scheidung"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Scheidung und Haus in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/scheidung/haus"
+            }
+        ]
+    })} />
+
 </ArticleLayout>

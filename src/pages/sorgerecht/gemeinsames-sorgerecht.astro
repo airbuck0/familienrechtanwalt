@@ -3,54 +3,237 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 ---
 
 <ArticleLayout
-    title="Gemeinsames Sorgerecht in der Schweiz: Der Regelfall im Familienrecht"
-    description="Gemeinsames Sorgerecht in der Schweiz: Rechtliche Grundlagen nach Art. 296 ZGB, Rechte und Pflichten, Entscheidungsbefugnisse und praktische Tipps für getrennte Eltern."
-    keywords="Gemeinsames Sorgerecht Schweiz, elterliche Sorge, Art. 296 ZGB, Sorgerecht bei Scheidung, Obhut Sorgerecht Unterschied"
+    title="Gemeinsames Sorgerecht in der Schweiz: Rechte, Pflichten & Praxis"
+    description="Gemeinsames Sorgerecht Schweiz: Rechtliche Grundlagen nach Art. 296 ZGB, Entscheidungsbefugnisse, Unterschied zur Obhut, Konflikte & BGE-Rechtsprechung."
+    keywords="Gemeinsames Sorgerecht Schweiz, elterliche Sorge, Art. 296 ZGB, Sorgerecht Scheidung, Obhut Sorgerecht Unterschied, Sorgeerklärung, KESB"
     category="Sorgerecht"
     categoryLink="/sorgerecht"
 >
-    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Das gemeinsame Sorgerecht ist seit der Revision des Kindesrechts im Jahr 2014 der gesetzliche Regelfall in der Schweiz. Unabhängig davon, ob die Eltern verheiratet sind, zusammenleben oder getrennt leben, sollen beide Elternteile gemeinsam die Verantwortung für ihre Kinder tragen.</p>
-
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy mb-2">Das Wichtigste in Kürze:</p>
-        <ul class="list-disc list-inside text-gray-700 space-y-1">
-            <li>Beide Eltern gleichberechtigt für Pflege, Erziehung und Vertretung verantwortlich</li>
-            <li>Bei verheirateten Eltern automatisch mit der Geburt</li>
-            <li>Bleibt auch nach Trennung oder Scheidung grundsätzlich bestehen</li>
-            <li>Wichtige Entscheidungen müssen gemeinsam getroffen werden</li>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">&#10003;</span>
+                <span>Das gemeinsame Sorgerecht ist seit dem 1. Juli 2014 der gesetzliche Regelfall in der Schweiz, unabhängig vom Zivilstand der Eltern (Art. 296 Abs. 2 ZGB)</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">&#10003;</span>
+                <span>Bei verheirateten Eltern entsteht das gemeinsame Sorgerecht automatisch mit der Geburt des Kindes</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">&#10003;</span>
+                <span>Unverheiratete Eltern müssen eine gemeinsame Sorgeerklärung beim Zivilstandsamt oder der KESB abgeben</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">&#10003;</span>
+                <span>Wichtige Entscheidungen (Schule, Gesundheit, Religion, Wohnsitz) müssen gemeinsam getroffen werden</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">&#10003;</span>
+                <span>Das gemeinsame Sorgerecht bleibt auch nach Trennung oder Scheidung grundsätzlich bestehen</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">&#10003;</span>
+                <span>Alleiniges Sorgerecht wird nur in Ausnahmefällen bei schwerwiegender Kindeswohlgefährdung zugeteilt</span>
+            </li>
         </ul>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen</h2>
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Das gemeinsame Sorgerecht - im Gesetz als "gemeinsame elterliche Sorge" bezeichnet - ist seit der grundlegenden Revision des Kindesrechts per 1. Juli 2014 der gesetzliche Regelfall in der Schweiz. Dieser Paradigmenwechsel basiert auf der Erkenntnis, dass Kinder in der Regel von der aktiven Beteiligung beider Eltern an wichtigen Lebensentscheidungen profitieren. Ob verheiratet, unverheiratet, getrennt oder geschieden: Der Gesetzgeber geht davon aus, dass das Kindeswohl am besten gewahrt ist, wenn beide Eltern gemeinsam Verantwortung tragen.</p>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Art. 296 ZGB: Grundsatz der gemeinsamen Sorge</h3>
-    <p class="text-gray-700 mb-6">Art. 296 Abs. 1 ZGB legt den Grundsatz fest: Das Kind steht, solange es minderjährig ist, unter der gemeinsamen elterlichen Sorge von Vater und Mutter. Dieser Grundsatz wurde mit der Revision per 1. Juli 2014 eingeführt und stellt einen Paradigmenwechsel dar.</p>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Definition: Was ist gemeinsames Sorgerecht?</h2>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Art. 298 ZGB: Gemeinsame Sorge bei Scheidung</h3>
-    <p class="text-gray-700 mb-6">Die gemeinsame Sorge wird bei Scheidung beibehalten, sofern nicht ausnahmsweise eine Alleinzuteilung erforderlich ist. Eine Zuteilung an einen Elternteil erfolgt nur, wenn dies zur Wahrung des Kindeswohls nötig ist.</p>
+    <p class="text-gray-700 mb-6">Die elterliche Sorge umfasst gemäss schweizerischem Recht das Recht und die Pflicht, für das minderjährige Kind zu entscheiden, wo es selbst noch nicht entscheiden kann (Art. 296 Abs. 1 ZGB). Bei der gemeinsamen elterlichen Sorge üben beide Elternteile diese Rechte und Pflichten gleichberechtigt aus. Sie sind gemeinsam verantwortlich für:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Pflege und Erziehung</strong> des Kindes</li>
+        <li><strong>Gesetzliche Vertretung</strong> in allen rechtlichen Angelegenheiten</li>
+        <li><strong>Verwaltung des Kindesvermögens</strong></li>
+        <li><strong>Bestimmung des Aufenthaltsortes</strong></li>
+        <li><strong>Entscheidungen</strong> über Bildung, Gesundheit und religiöse Erziehung</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtiger Hinweis:</p>
+        <p class="text-gray-700">Der Begriff "Sorgerecht" wird umgangssprachlich verwendet, das Gesetz spricht von "elterlicher Sorge". Beide Begriffe bezeichnen dasselbe Rechtsinstitut.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen im Schweizer Zivilgesetzbuch (ZGB)</h2>
+
+    <p class="text-gray-700 mb-6">Die elterliche Sorge ist in den Artikeln 296 bis 306 des Schweizerischen Zivilgesetzbuches (ZGB) geregelt. Die wichtigsten Bestimmungen im Überblick:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gesetzesartikel</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Regelungsinhalt</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 296 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Grundsatz: Minderjährige Kinder stehen unter gemeinsamer elterlicher Sorge beider Eltern</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 297 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Gemeinsame Ausübung und Stellvertretung bei Abwesenheit oder Verhinderung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 298 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Gemeinsame Sorge bei Scheidung oder Trennung als Regelfall</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 298a ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Gemeinsame Sorge unverheirateter Eltern durch Sorgeerklärung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 298b ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">KESB-Entscheid bei fehlender Zustimmung eines Elternteils</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 301 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Inhalt der Personensorge (Erziehung, Bildung, religiöse Erziehung)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 301a ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Aufenthaltsbestimmungsrecht und Zustimmungspflicht bei Umzug</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 302 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Erziehung und Förderung der körperlichen, geistigen und sittlichen Entwicklung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 304 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Gesetzliche Vertretung des Kindes</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 318 ff. ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Vermögenssorge und Verwaltung des Kindesvermögens</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Art. 296 ZGB: Der Grundsatz der gemeinsamen Sorge</h3>
+
+    <p class="text-gray-700 mb-6">Art. 296 Abs. 2 ZGB legt den zentralen Grundsatz fest: "Das Kind steht unter der gemeinsamen elterlichen Sorge von Vater und Mutter." Dieser Grundsatz gilt unabhängig davon, ob die Eltern verheiratet sind oder nicht, ob sie zusammenleben oder getrennt sind. Die Gesetzesrevision von 2014 hat damit einen fundamentalen Paradigmenwechsel vollzogen: Vor der Revision war das alleinige Sorgerecht der Mutter bei unverheirateten Eltern die Regel.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Entstehung des gemeinsamen Sorgerechts</h2>
+
+    <p class="text-gray-700 mb-6">Die Art, wie das gemeinsame Sorgerecht entsteht, unterscheidet sich je nach Zivilstand der Eltern:</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Bei verheirateten Eltern</h3>
+
+    <p class="text-gray-700 mb-6">Bei verheirateten Eltern entsteht die gemeinsame elterliche Sorge <strong>automatisch mit der Geburt</strong> des Kindes. Es sind keine weiteren Erklärungen oder Anträge erforderlich. Beide Ehepartner werden kraft Gesetzes gemeinsam sorgeberechtigt (Art. 296 Abs. 2 ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Bei unverheirateten Eltern: Die Sorgeerklärung</h3>
+
+    <p class="text-gray-700 mb-6">Bei unverheirateten Eltern entsteht das gemeinsame Sorgerecht <strong>nicht automatisch</strong>. Zunächst hat die Mutter von Gesetzes wegen das alleinige Sorgerecht. Um das gemeinsame Sorgerecht zu erlangen, müssen folgende Schritte erfolgen:</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-4">Voraussetzungen für die gemeinsame Sorgeerklärung (Art. 298a ZGB):</p>
+        <ol class="list-decimal list-inside text-gray-700 space-y-2">
+            <li><strong>Vaterschaftsanerkennung:</strong> Der Vater muss die Vaterschaft beim Zivilstandsamt anerkennen</li>
+            <li><strong>Gemeinsame Erklärung:</strong> Beide Eltern erklären gemeinsam, dass sie die elterliche Sorge gemeinsam ausüben wollen</li>
+            <li><strong>Einigung:</strong> Die Eltern bestätigen, dass sie sich über Obhut, persönlichen Verkehr (Besuchsrecht) und Unterhalt geeinigt haben</li>
+        </ol>
+    </div>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Wo wird die Sorgeerklärung abgegeben?</h4>
+
+    <p class="text-gray-700 mb-6">Die Sorgeerklärung kann an zwei Stellen abgegeben werden:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Zivilstandsamt:</strong> Idealerweise zusammen mit der Vaterschaftsanerkennung, vor oder nach der Geburt</li>
+        <li><strong>KESB (Kindes- und Erwachsenenschutzbehörde):</strong> Wenn die Erklärung nicht zusammen mit der Vaterschaftsanerkennung erfolgt</li>
+    </ul>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Kosten und Fristen</h4>
+
+    <p class="text-gray-700 mb-6">Die Gebühr für die Sorgeerklärung beträgt in der Regel <strong>CHF 30</strong>. Wird sie zusammen mit der Vaterschaftsanerkennung abgegeben, fallen meist keine zusätzlichen Kosten an. Eine Frist für die Abgabe besteht nicht - die Erklärung kann jederzeit erfolgen, sogar bereits vor der Geburt des Kindes.</p>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Wenn die Mutter nicht zustimmt</h4>
+
+    <p class="text-gray-700 mb-6">Verweigert die Mutter die Zustimmung zur gemeinsamen elterlichen Sorge, kann der Vater die KESB am Wohnsitz des Kindes anrufen (Art. 298b ZGB). Die KESB wird die gemeinsame Sorge anordnen, sofern das Kindeswohl nicht dagegen spricht. Ein blosser Konflikt zwischen den Eltern oder die Ablehnung durch einen Elternteil reicht <strong>nicht</strong> aus, um die gemeinsame Sorge zu verweigern (BGE 142 III 1).</p>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Inhalt der elterlichen Sorge</h2>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Personensorge</h3>
+    <p class="text-gray-700 mb-6">Die elterliche Sorge umfasst drei Kernbereiche: die Personensorge, die Vermögenssorge und die gesetzliche Vertretung.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Personensorge (Art. 301-303 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Die Personensorge beinhaltet alle Aspekte der Fürsorge für das Kind als Person:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bereich</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Inhalt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gesetzliche Grundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Pflege und Erziehung</td>
+                    <td class="px-6 py-4 text-gray-700">Grundlegende Bedürfnisse erfüllen, Wertevermittlung, Förderung der Entwicklung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 301, 302 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Bildung und Ausbildung</td>
+                    <td class="px-6 py-4 text-gray-700">Schulwahl, Schultyp, Berufsausbildung, Förderung der Begabungen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 302 Abs. 2 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Gesundheit</td>
+                    <td class="px-6 py-4 text-gray-700">Medizinische Entscheidungen, Therapien, Impfungen, Operationen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 301 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Religiöse Erziehung</td>
+                    <td class="px-6 py-4 text-gray-700">Konfessionszugehörigkeit, Taufe, religiöse Unterweisung (bis Kind 16 ist)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 303 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Aufenthaltsbestimmung</td>
+                    <td class="px-6 py-4 text-gray-700">Wohnsitz des Kindes, Umzug, Auslandsreisen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 301a ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Aufsicht</td>
+                    <td class="px-6 py-4 text-gray-700">Beaufsichtigung, Schutz vor Gefahren, altersgerechte Begleitung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 301 ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vermögenssorge (Art. 318-327 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Die Vermögenssorge umfasst die Verwaltung des Kindesvermögens. Die Eltern verwalten das Vermögen des Kindes sorgfältig und dürfen die Erträge für Unterhalt, Erziehung und Ausbildung verwenden (Art. 319 ZGB). Sie sind verpflichtet, das Kindesvermögen zu erhalten und - soweit möglich - zu mehren.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gesetzliche Vertretung (Art. 304 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Die Eltern vertreten das Kind von Gesetzes wegen nach aussen in allen zivilrechtlichen Angelegenheiten. Dies umfasst:</p>
+
     <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Pflege und Erziehung:</strong> Grundlegende Bedürfnisse erfüllen, Werte vermitteln</li>
-        <li><strong>Bildung und Ausbildung:</strong> Entscheidungen über Schultyp, Berufswahl</li>
-        <li><strong>Gesundheit:</strong> Medizinische Entscheidungen, Therapien</li>
-        <li><strong>Religion:</strong> Religiöse Erziehung und Konfessionszugehörigkeit</li>
-        <li><strong>Aufenthaltsbestimmung:</strong> Wohnsitz des Kindes festlegen</li>
+        <li>Abschluss von Verträgen im Namen des Kindes</li>
+        <li>Vertretung gegenüber Behörden und Gerichten</li>
+        <li>Prozessführung in Kindesangelegenheiten</li>
+        <li>Beantragung von Dokumenten (Pass, Ausweis)</li>
     </ul>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vermögenssorge</h3>
-    <p class="text-gray-700 mb-6">Die Eltern verwalten das Vermögen des Kindes und dürfen die Erträge für Unterhalt, Erziehung und Ausbildung verwenden.</p>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Entscheidungsbefugnisse: Wer entscheidet was?</h2>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gesetzliche Vertretung</h3>
-    <p class="text-gray-700 mb-6">Die Eltern vertreten das Kind nach aussen in allen zivilrechtlichen Angelegenheiten: Verträge, Behörden, Gerichte.</p>
+    <p class="text-gray-700 mb-6">Bei der gemeinsamen elterlichen Sorge unterscheidet das Gesetz zwischen wichtigen Entscheidungen, die gemeinsam getroffen werden müssen, und Alltagsentscheidungen, die der betreuende Elternteil allein treffen kann.</p>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Entscheidungsbefugnisse</h2>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wichtige Entscheidungen: Gemeinsame Zustimmung erforderlich</h3>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wichtige Entscheidungen: Gemeinsam treffen</h3>
+    <p class="text-gray-700 mb-6">Grundsatzentscheidungen mit weitreichenden Konsequenzen für das Kind müssen von beiden sorgeberechtigten Elternteilen gemeinsam getroffen werden:</p>
 
-    <div class="overflow-x-auto mb-6">
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
@@ -61,97 +244,317 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
             <tbody class="divide-y divide-gray-200">
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Bildung</td>
-                    <td class="px-6 py-4 text-gray-700">Schulwahl, Privatschule, Internat</td>
+                    <td class="px-6 py-4 text-gray-700">Schulwahl, Wechsel in Privatschule, Internat, Repetition einer Klasse, Sonderschule</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">Gesundheit</td>
-                    <td class="px-6 py-4 text-gray-700">Operationen, grössere Eingriffe, Psychotherapie</td>
+                    <td class="px-6 py-4 text-gray-700">Operationen, grössere medizinische Eingriffe, Psychotherapie, Impfungen, ADHS-Therapie, Zahnspange</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Religion</td>
-                    <td class="px-6 py-4 text-gray-700">Taufe, Konfirmation, Religionswechsel</td>
+                    <td class="px-6 py-4 text-gray-700">Taufe, Konfirmation/Firmung, Religionswechsel, religiöse Erziehung</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">Wohnsitz</td>
-                    <td class="px-6 py-4 text-gray-700">Umzug, insbesondere ins Ausland</td>
+                    <td class="px-6 py-4 text-gray-700">Umzug mit erheblichen Auswirkungen, Umzug ins Ausland (immer zustimmungspflichtig)</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Dokumente</td>
-                    <td class="px-6 py-4 text-gray-700">Pass, Ausweis, Namensänderung</td>
+                    <td class="px-6 py-4 text-gray-700">Passbeantragung, Identitätskarte, Namensänderung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Ausbildung</td>
+                    <td class="px-6 py-4 text-gray-700">Berufswahl, Lehrstelle, Gymnasium vs. Sekundarschule</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Rechtliches</td>
+                    <td class="px-6 py-4 text-gray-700">Adoption, Stiefkindadoption, wichtige Verträge</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Alltagsentscheidungen: Betreuender Elternteil entscheidet</h3>
-    <p class="text-gray-700 mb-4">Während der Betreuungszeit kann jeder Elternteil alltägliche Entscheidungen allein treffen:</p>
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-1">
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Alltagsentscheidungen: Der betreuende Elternteil entscheidet</h3>
+
+    <p class="text-gray-700 mb-6">Während der Betreuungszeit kann jeder Elternteil alltägliche Entscheidungen selbständig treffen (Art. 301 Abs. 1bis ZGB). Dies umfasst:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
         <li>Tagesablauf, Schlafenszeiten, Freizeitgestaltung</li>
         <li>Alltägliche Ernährung und Kleidung</li>
-        <li>Routinemässige schulische Belange</li>
-        <li>Kleinere medizinische Entscheidungen</li>
+        <li>Routinemässige schulische Belange (Hausaufgaben, Elternabend)</li>
+        <li>Kleinere medizinische Entscheidungen (Arztbesuch bei Erkältung)</li>
+        <li>Betreuung durch Dritte (Babysitter, Grosseltern)</li>
+        <li>Teilnahme an Schulausflügen</li>
     </ul>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Obhut vs. Sorgerecht</h2>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praxistipp:</p>
+        <p class="text-gray-700">Bei Unsicherheit, ob eine Entscheidung als "alltäglich" oder "wichtig" gilt, empfiehlt es sich, den anderen Elternteil zu informieren. Eine gute Kommunikation vermeidet Konflikte und dient dem Kindeswohl.</p>
+    </div>
 
-    <div class="overflow-x-auto mb-6">
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Was tun bei Uneinigkeit?</h3>
+
+    <p class="text-gray-700 mb-6">Können sich die Eltern bei einer wichtigen Entscheidung nicht einigen, haben sie folgende Möglichkeiten:</p>
+
+    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Beratungsstelle oder Mediation:</strong> Freiwillige Vermittlung durch neutrale Drittpersonen</li>
+        <li><strong>KESB-Antrag:</strong> Bei andauernder Uneinigkeit kann die KESB angerufen werden</li>
+        <li><strong>Gerichtsentscheid:</strong> Bei schwerwiegenden Konflikten entscheidet das Gericht</li>
+    </ol>
+
+    <p class="text-gray-700 mb-6">Die KESB oder das Gericht kann dann entweder den Entscheid an einen Elternteil übertragen oder selbst eine Entscheidung treffen - stets unter dem Gesichtspunkt des Kindeswohls.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Unterschied zwischen Sorgerecht und Obhut</h2>
+
+    <p class="text-gray-700 mb-6">In der Praxis werden die Begriffe "Sorgerecht" und "Obhut" häufig verwechselt. Es handelt sich jedoch um zwei unterschiedliche Rechtsbegriffe:</p>
+
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Elterliche Sorge</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Elterliche Sorge (Sorgerecht)</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Elterliche Obhut</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Inhalt</td>
-                    <td class="px-6 py-4 text-gray-700">Gesamte rechtliche Verantwortung</td>
-                    <td class="px-6 py-4 text-gray-700">Tägliche Betreuung und Pflege</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Definition</td>
+                    <td class="px-6 py-4 text-gray-700">Gesamte rechtliche Verantwortung für das Kind</td>
+                    <td class="px-6 py-4 text-gray-700">Faktische, tägliche Betreuung des Kindes</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Umfang</td>
+                    <td class="px-6 py-4 text-gray-700">Alle wichtigen Grundsatzentscheidungen</td>
+                    <td class="px-6 py-4 text-gray-700">Alltagsangelegenheiten, Wohnort des Kindes</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Bei Trennung</td>
+                    <td class="px-6 py-4 text-gray-700">Bleibt in der Regel gemeinsam</td>
+                    <td class="px-6 py-4 text-gray-700">Wird einem Elternteil zugeteilt oder alternierend geregelt</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">Entscheidungen</td>
-                    <td class="px-6 py-4 text-gray-700">Wichtige Grundsatzfragen</td>
-                    <td class="px-6 py-4 text-gray-700">Alltagsfragen</td>
+                    <td class="px-6 py-4 text-gray-700">Schule, Gesundheit, Religion, Aufenthaltsort</td>
+                    <td class="px-6 py-4 text-gray-700">Tagesablauf, Ernährung, Freizeitgestaltung</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Bei Scheidung</td>
-                    <td class="px-6 py-4 text-gray-700">Bleibt gemeinsam</td>
-                    <td class="px-6 py-4 text-gray-700">Wird einem Elternteil zugeteilt</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Wohnsitz</td>
+                    <td class="px-6 py-4 text-gray-700">Bestimmung des rechtlichen Aufenthalts</td>
+                    <td class="px-6 py-4 text-gray-700">Tatsächlicher Lebensmittelpunkt des Kindes</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Gemeinsame Sorge bei unverheirateten Eltern</h2>
+    <p class="text-gray-700 mb-6">Bei einer Trennung oder Scheidung wird in der Regel nur über die Obhut entschieden, nicht über das Sorgerecht. Das gemeinsame Sorgerecht bleibt bestehen, während die Obhut entweder einem Elternteil (alleinige Obhut) oder beiden Eltern abwechselnd (alternierende Obhut) zugeteilt wird.</p>
 
-    <p class="text-gray-700 mb-4">Bei unverheirateten Eltern steht die elterliche Sorge zunächst allein der Mutter zu. Die gemeinsame Sorge kann erreicht werden durch:</p>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Gemeinsames Sorgerecht bei Trennung und Scheidung</h2>
+
+    <p class="text-gray-700 mb-6">Das gemeinsame Sorgerecht bleibt auch nach einer Trennung oder Scheidung grundsätzlich bestehen (Art. 298 Abs. 1 ZGB). Dies ist einer der Kernpunkte der Gesetzesrevision von 2014: Die Scheidung der Eltern soll nicht automatisch zum Verlust des gemeinsamen Sorgerechts führen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Was wird bei der Scheidung geregelt?</h3>
+
+    <p class="text-gray-700 mb-6">Im Scheidungsurteil werden folgende Kinderbelange geregelt (Art. 133 ZGB):</p>
+
     <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Sorgeerklärung:</strong> Beide Eltern erklären gemeinsam beim Zivilstandsamt oder der KESB</li>
-        <li><strong>KESB-Entscheid:</strong> Verweigert die Mutter die Zustimmung, kann der Vater die KESB anrufen</li>
+        <li><strong>Obhut:</strong> Alleinige Obhut oder alternierende Obhut</li>
+        <li><strong>Persönlicher Verkehr:</strong> Besuchsrecht des nicht obhutsberechtigten Elternteils</li>
+        <li><strong>Kindesunterhalt:</strong> Barunterhalt und Betreuungsunterhalt</li>
+        <li><strong>Elterliche Sorge:</strong> Nur in Ausnahmefällen wird das Sorgerecht einem Elternteil allein zugeteilt</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig:</p>
+        <p class="text-gray-700">Auch bei einer strittigen Scheidung wird das gemeinsame Sorgerecht nur ausnahmsweise aufgehoben. Das Bundesgericht hat wiederholt betont, dass die Alleinzuteilung des Sorgerechts die Ausnahme bleiben muss (BGE 141 III 472).</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Umzug und Aufenthaltsbestimmungsrecht (Art. 301a ZGB)</h2>
+
+    <p class="text-gray-700 mb-6">Das Aufenthaltsbestimmungsrecht ist Teil der elterlichen Sorge und regelt, wo das Kind seinen Wohnsitz hat. Bei gemeinsamem Sorgerecht können die Eltern den Aufenthaltsort nicht einseitig ändern, wenn dies erhebliche Auswirkungen hat.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wann ist die Zustimmung des anderen Elternteils erforderlich?</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Situation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zustimmung erforderlich?</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Umzug ins Ausland</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Immer</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 301a Abs. 2 lit. a ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Umzug innerhalb der Schweiz mit erheblichen Auswirkungen</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Ja</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 301a Abs. 2 lit. b ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Umzug innerhalb der Schweiz ohne erhebliche Auswirkungen</td>
+                    <td class="px-6 py-4 text-gray-700">Nein, aber Information empfohlen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 301a Abs. 1 ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Was sind "erhebliche Auswirkungen"?</h3>
+
+    <p class="text-gray-700 mb-6">Erhebliche Auswirkungen liegen vor, wenn der Umzug die Ausübung der elterlichen Sorge oder den persönlichen Verkehr (Besuchsrecht) wesentlich beeinträchtigt. Dies ist typischerweise der Fall bei:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Grossen Distanzen innerhalb der Schweiz</li>
+        <li>Schulwechsel in einen anderen Kanton</li>
+        <li>Erschwerter Erreichbarkeit für den anderen Elternteil</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Bei fehlender Einigung</h3>
+
+    <p class="text-gray-700 mb-6">Kann keine Einigung erzielt werden, muss das Gericht oder die KESB entscheiden (Art. 301a Abs. 5 ZGB). Die Behörde entscheidet ausschliesslich nach dem Kindeswohl. Ein unrechtmässiger Umzug ins Ausland kann als internationale Kindesentführung nach dem Haager Übereinkommen (HKÜ) gewertet werden.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Alternierende Obhut (Wechselmodell)</h2>
+
+    <p class="text-gray-700 mb-6">Die alternierende Obhut ist ein Betreuungsmodell, bei dem das Kind abwechselnd bei beiden Elternteilen lebt. Seit 2017 sind Gerichte verpflichtet, die alternierende Obhut zu prüfen, wenn ein Elternteil oder das Kind dies verlangt (Art. 298 Abs. 2ter ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Voraussetzungen für die alternierende Obhut</h3>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Gemeinsames Sorgerecht:</strong> Zwingende Voraussetzung (BGE 150 III 97)</li>
+        <li><strong>Kooperationsfähigkeit:</strong> Die Eltern müssen miteinander kommunizieren können</li>
+        <li><strong>Räumliche Nähe:</strong> Beide Eltern sollten in der Nähe des Lebensmittelpunkts des Kindes wohnen</li>
+        <li><strong>Berufliche Verfügbarkeit:</strong> Beide Eltern müssen die Betreuung tatsächlich gewährleisten können</li>
+        <li><strong>Kindeswohl:</strong> Das Modell muss dem Wohl des Kindes entsprechen</li>
+        <li><strong>Wunsch des Kindes:</strong> Je nach Alter wird der Kindeswille berücksichtigt</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gängige Modelle</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Modell</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Geeignet für</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Wochenmodell</td>
+                    <td class="px-6 py-4 text-gray-700">Je eine Woche bei jedem Elternteil</td>
+                    <td class="px-6 py-4 text-gray-700">Ältere Kinder, stabile Verhältnisse</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">2-2-3-Modell</td>
+                    <td class="px-6 py-4 text-gray-700">2 Tage bei A, 2 Tage bei B, 3 Tage bei A (wechselnd)</td>
+                    <td class="px-6 py-4 text-gray-700">Jüngere Kinder</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Nestmodell</td>
+                    <td class="px-6 py-4 text-gray-700">Kind bleibt in der Wohnung, Eltern wechseln sich ab</td>
+                    <td class="px-6 py-4 text-gray-700">Sehr junge Kinder, finanziell aufwendig</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Konflikte und Lösungswege</h2>
+
+    <p class="text-gray-700 mb-6">Konflikte zwischen gemeinsam sorgeberechtigten Eltern sind nicht ungewöhnlich, besonders nach einer Trennung. Das Gesetz sieht verschiedene Mechanismen zur Konfliktlösung vor.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Stufe 1: Beratung und Mediation</h3>
+
+    <p class="text-gray-700 mb-6">Bei Konflikten sollten Eltern zunächst eine Beratungsstelle oder Mediation in Anspruch nehmen. Viele Kantone bieten kostenlose oder vergünstigte Elternberatung an. Eine Mediation hilft den Eltern, selbst eine einvernehmliche Lösung zu finden.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Stufe 2: KESB-Verfahren</h3>
+
+    <p class="text-gray-700 mb-6">Können sich die Eltern nicht einigen, kann die KESB angerufen werden (Art. 298b, 307 ZGB). Die KESB kann:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Die Eltern ermahnen und Weisungen erteilen</li>
+        <li>Die Eltern zu einer Mediation verpflichten</li>
+        <li>Einen konkreten Entscheid anstelle der Eltern treffen</li>
+        <li>Eine Beistandschaft errichten (Art. 308 ZGB)</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Hinweis:</p>
+        <p class="text-gray-700">Die KESB ist nicht dafür da, bei jeder elterlichen Meinungsverschiedenheit zu vermitteln. Die Eltern sind verpflichtet, sich zum Wohl des Kindes rechtzeitig zu einigen. Nur bei schwerwiegenden, andauernden Konflikten wird die KESB tätig.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Stufe 3: Gerichtliches Verfahren</h3>
+
+    <p class="text-gray-700 mb-6">In schwerwiegenden Fällen kann ein Gericht angerufen werden. Dies ist insbesondere relevant bei:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Anträgen auf Alleinsorge</li>
+        <li>Streitigkeiten im Rahmen eines Scheidungsverfahrens</li>
+        <li>Internationalen Kindesentführungsfällen</li>
     </ul>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Ausnahmen: Wann wird alleiniges Sorgerecht zugeteilt?</h2>
 
-    <p class="text-gray-700 mb-4">Das alleinige Sorgerecht wird nur ausnahmsweise zugeteilt bei:</p>
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Schwerer Kindeswohlgefährdung durch einen Elternteil</li>
-        <li>Vollständiger Kommunikationsunfähigkeit mit erheblicher Belastung für das Kind</li>
-        <li>Schwerem Dauerkonflikt mit Instrumentalisierung des Kindes</li>
-        <li>Fehlender Erziehungsfähigkeit eines Elternteils</li>
-    </ul>
+    <p class="text-gray-700 mb-6">Das alleinige Sorgerecht ist die Ausnahme und wird nur zugeteilt, wenn das Kindeswohl dies erfordert (Art. 298 Abs. 1 ZGB). Das Bundesgericht hat strenge Kriterien festgelegt:</p>
 
-    <p class="font-semibold text-navy mb-4">Keine Gründe für Alleinsorge sind:</p>
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-1">
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gründe für die Alleinzuteilung</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Grund</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Voraussetzungen</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Schwerwiegender Dauerkonflikt</td>
+                    <td class="px-6 py-4 text-gray-700">Erheblicher, chronischer Konflikt mit negativen Auswirkungen auf das Kind (BGE 141 III 472)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Anhaltende Kommunikationsunfähigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Vollständiges Unvermögen, über Kindesbelange zu kommunizieren</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Kindeswohlgefährdung</td>
+                    <td class="px-6 py-4 text-gray-700">Missbrauch, Vernachlässigung, Gewalt, schwere Sucht</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Fehlende Erziehungsfähigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Ein Elternteil ist dauerhaft nicht in der Lage, elterliche Pflichten wahrzunehmen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Instrumentalisierung des Kindes</td>
+                    <td class="px-6 py-4 text-gray-700">Ein Elternteil setzt das Kind gegen den anderen ein</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Keine Gründe für die Alleinzuteilung</h3>
+
+    <p class="text-gray-700 mb-6">Das Bundesgericht hat klargestellt, dass folgende Umstände <strong>nicht</strong> ausreichen, um das alleinige Sorgerecht zu rechtfertigen (BGE 142 III 1):</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
         <li>Blosse Streitigkeiten zwischen den Eltern</li>
         <li>Unterschiedliche Erziehungsvorstellungen</li>
-        <li>Grosse räumliche Distanz</li>
+        <li>Grosse räumliche Distanz (auch Auslandsaufenthalt)</li>
         <li>Neue Partnerschaft eines Elternteils</li>
+        <li>Punktuelle Meinungsverschiedenheiten</li>
+        <li>Wirtschaftliche Unterschiede zwischen den Eltern</li>
     </ul>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Bundesgerichtliche Rechtsprechung</h2>
 
-    <div class="overflow-x-auto mb-6">
+    <p class="text-gray-700 mb-6">Das Bundesgericht hat in mehreren Leitentscheiden die Grundsätze zur gemeinsamen elterlichen Sorge konkretisiert:</p>
+
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
@@ -162,42 +565,270 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
             <tbody class="divide-y divide-gray-200">
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">BGE 142 III 1</td>
-                    <td class="px-6 py-4 text-gray-700">Gemeinsame Sorge als Regelfall seit 2014</td>
+                    <td class="px-6 py-4 text-gray-700">Gemeinsame Sorge als Regelfall; Alleinzuteilung muss eng begrenzte Ausnahme bleiben; normale Konflikte rechtfertigen keine Alleinsorge</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">BGE 141 III 472</td>
-                    <td class="px-6 py-4 text-gray-700">Fehlende Kommunikation allein schliesst gemeinsame Sorge nicht aus</td>
+                    <td class="px-6 py-4 text-gray-700">Kriterien für Alleinzuteilung: schwerwiegender Dauerkonflikt oder anhaltende Kommunikationsunfähigkeit mit negativen Auswirkungen auf das Kind</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">BGE 143 III 361</td>
-                    <td class="px-6 py-4 text-gray-700">Bei Sorgerechtsregelung ist Kindeswohl massgebend</td>
+                    <td class="px-6 py-4 text-gray-700">Auch bei gemeinsamen Antrag der Eltern auf Alleinsorge muss das Kindeswohl geprüft werden</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 144 III 481</td>
+                    <td class="px-6 py-4 text-gray-700">Kindeswohl hat absoluten Vorrang; elterliche Interessen sind nachrangig</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 150 III 97</td>
+                    <td class="px-6 py-4 text-gray-700">Alternierende Obhut setzt gemeinsames Sorgerecht zwingend voraus</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">5A_277/2021</td>
+                    <td class="px-6 py-4 text-gray-700">Blosse Streitigkeiten, wie sie in allen Familien vorkommen, sind kein Grund für Alleinzuteilung</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Praktische Empfehlungen</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Unterhalt bei gemeinsamem Sorgerecht</h2>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Für getrennte Eltern</h3>
+    <p class="text-gray-700 mb-6">Das gemeinsame Sorgerecht hat keinen direkten Einfluss auf die Unterhaltspflicht. Die Unterhaltsberechnung richtet sich nach der tatsächlichen Betreuungssituation (Obhut), nicht nach dem Sorgerecht.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Bestandteile des Kindesunterhalts</h3>
+
     <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Kommunizieren Sie sachlich und kindsbezogen</li>
-        <li>Treffen Sie wichtige Entscheidungen gemeinsam und dokumentieren Sie diese</li>
-        <li>Respektieren Sie die Erziehungsautonomie des anderen</li>
-        <li>Sprechen Sie nicht negativ über den anderen Elternteil vor dem Kind</li>
-        <li>Suchen Sie bei Konflikten frühzeitig Hilfe (Mediation, Beratung)</li>
+        <li><strong>Barunterhalt:</strong> Deckung der direkten Kindeskosten (Nahrung, Kleidung, Wohnen, Versicherungen)</li>
+        <li><strong>Betreuungsunterhalt:</strong> Entschädigung für die Betreuungszeit, in der ein Elternteil nicht erwerbstätig sein kann</li>
+        <li><strong>Naturalunterhalt:</strong> Die tatsächliche Pflege und Erziehung des Kindes</li>
     </ul>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Unterhaltsvereinbarung bei unverheirateten Eltern</h3>
 
-    <p class="text-gray-700 mb-6">Das gemeinsame Sorgerecht ist der gesetzliche Normalfall und Ausdruck der Überzeugung, dass Kinder von der Beteiligung beider Eltern profitieren. Es erfordert von den Eltern die Bereitschaft zur Kooperation, auch wenn die persönliche Beziehung nicht mehr besteht.</p>
+    <p class="text-gray-700 mb-6">Bei unverheirateten Eltern muss der Unterhaltsvertrag von der KESB genehmigt werden, damit er für das Kind verbindlich und einklagbar ist. Dies gilt unabhängig davon, ob das Sorgerecht gemeinsam oder allein ausgeübt wird.</p>
 
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy mb-2">Relevante Gesetzesbestimmungen:</p>
-        <ul class="list-disc list-inside text-gray-700 space-y-1">
-            <li>Art. 296 ZGB (Grundsatz der gemeinsamen Sorge)</li>
-            <li>Art. 298 ZGB (Gemeinsame Sorge bei Scheidung)</li>
-            <li>Art. 298a ZGB (Gemeinsame Sorge unverheirateter Eltern)</li>
-            <li>Art. 307 ZGB (Kindesschutzmassnahmen)</li>
-        </ul>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Ende der elterlichen Sorge</h2>
+
+    <p class="text-gray-700 mb-6">Die elterliche Sorge endet automatisch, wenn das Kind <strong>volljährig</strong> wird, also das 18. Lebensjahr vollendet (Art. 296 Abs. 1 ZGB). Ab diesem Zeitpunkt entscheidet das Kind selbständig über alle persönlichen Angelegenheiten.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig:</p>
+        <p class="text-gray-700">Obwohl die elterliche Sorge mit der Volljährigkeit endet, kann die <strong>Unterhaltspflicht</strong> der Eltern fortbestehen - insbesondere während einer Erstausbildung (Lehre, Studium) bis zum Abschluss.</p>
     </div>
+
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">Das gemeinsame Sorgerecht funktioniert im Idealfall reibungslos, wenn beide Eltern kooperieren und das Kindeswohl in den Vordergrund stellen. In der Praxis entstehen jedoch häufig Konflikte, die ohne fachkundige Unterstützung schwer zu lösen sind. Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> kann in folgenden Situationen entscheidend helfen:</p>
+
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li><strong>Streit über wichtige Entscheidungen:</strong> Uneinigkeit bei Schulwahl, medizinischen Eingriffen oder Umzug</li>
+            <li><strong>Verweigerung der Sorgeerklärung:</strong> Wenn die Mutter dem Vater die gemeinsame Sorge verweigert</li>
+            <li><strong>Antrag auf Alleinsorge:</strong> Wenn das Kindeswohl durch den anderen Elternteil gefährdet ist</li>
+            <li><strong>KESB-Verfahren:</strong> Bei behördlichen Massnahmen oder Beistandschaften</li>
+            <li><strong>Internationale Konstellationen:</strong> Umzug ins Ausland, internationale Kindesentführung</li>
+            <li><strong>Hochstrittige Trennung:</strong> Bei eskalierenden Konflikten mit dem Ex-Partner</li>
+        </ul>
+
+        <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kennt die aktuelle Bundesgerichtspraxis und kann Ihre Rechte als Elternteil wirksam durchsetzen. Bei komplexen Sorgerechtsstreitigkeiten ist die Begleitung durch einen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> oft unverzichtbar, um das Kindeswohl zu schützen und eine faire Lösung zu erreichen.</p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Haben Sie Fragen zum gemeinsamen Sorgerecht oder stehen Sie vor einer schwierigen Entscheidung? Unsere erfahrenen Familienrechtsanwälte analysieren Ihre Situation und zeigen Ihnen Ihre rechtlichen Möglichkeiten auf.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- Fazit -->
+    <h2 class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Das gemeinsame Sorgerecht ist seit 2014 der gesetzliche Regelfall in der Schweiz und Ausdruck der Überzeugung des Gesetzgebers, dass Kinder grundsätzlich von der Beteiligung beider Eltern profitieren. Unabhängig vom Zivilstand oder der Wohnsituation der Eltern sollen beide gemeinsam die Verantwortung für wichtige Lebensentscheidungen ihrer Kinder tragen.</p>
+
+    <p class="text-gray-700 mb-6">Für unverheiratete Eltern ist die Abgabe einer Sorgeerklärung beim Zivilstandsamt oder der KESB erforderlich. Auch nach einer Trennung oder Scheidung bleibt das gemeinsame Sorgerecht bestehen - nur in Ausnahmefällen, bei schwerwiegender Kindeswohlgefährdung, wird das alleinige Sorgerecht zugeteilt.</p>
+
+    <p class="text-gray-700 mb-6">Das gemeinsame Sorgerecht erfordert von beiden Eltern die Bereitschaft zur Kommunikation und Kooperation. Bei Konflikten stehen verschiedene Lösungswege zur Verfügung - von der freiwilligen Mediation bis zum KESB-Verfahren. Das Kindeswohl steht dabei immer im Mittelpunkt aller Entscheidungen.</p>
+
+    <!-- FAQ-Sektion -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was bedeutet gemeinsames Sorgerecht in der Schweiz?</h3>
+                <p class="text-gray-700">Gemeinsames Sorgerecht bedeutet, dass beide Elternteile gleichberechtigt für wichtige Entscheidungen im Leben ihres Kindes verantwortlich sind. Dazu gehören Entscheidungen über Bildung, Gesundheit, religiöse Erziehung und den Wohnsitz. Seit 2014 ist das gemeinsame Sorgerecht in der Schweiz der gesetzliche Regelfall (Art. 296 ZGB), unabhängig davon, ob die Eltern verheiratet sind oder nicht.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen Sorgerecht und Obhut?</h3>
+                <p class="text-gray-700">Das Sorgerecht (elterliche Sorge) umfasst die rechtliche Verantwortung für wichtige Grundsatzentscheidungen. Die Obhut bezeichnet die tatsächliche, tägliche Betreuung und bestimmt, wo das Kind wohnt. Bei einer Trennung bleibt das Sorgerecht meist gemeinsam, während die Obhut einem Elternteil zugeteilt oder alternierend geregelt wird.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie bekomme ich als unverheirateter Vater das gemeinsame Sorgerecht?</h3>
+                <p class="text-gray-700">Als unverheirateter Vater müssen Sie zunächst die Vaterschaft anerkennen und dann gemeinsam mit der Mutter eine Sorgeerklärung beim Zivilstandsamt abgeben. Verweigert die Mutter die Zustimmung, können Sie die KESB anrufen, die das gemeinsame Sorgerecht anordnen kann, sofern das Kindeswohl nicht dagegen spricht. Die Kosten betragen ca. CHF 30.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Bleibt das gemeinsame Sorgerecht nach einer Scheidung bestehen?</h3>
+                <p class="text-gray-700">Ja, das gemeinsame Sorgerecht bleibt auch nach einer Scheidung grundsätzlich bestehen (Art. 298 ZGB). Im Scheidungsurteil wird primär über die Obhut, den persönlichen Verkehr (Besuchsrecht) und den Unterhalt entschieden. Das alleinige Sorgerecht wird nur in Ausnahmefällen bei schwerwiegender Kindeswohlgefährdung zugeteilt.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wer entscheidet bei gemeinsamem Sorgerecht über die Schule?</h3>
+                <p class="text-gray-700">Bei gemeinsamem Sorgerecht müssen beide Eltern gemeinsam über die Schulwahl entscheiden. Dies umfasst Entscheidungen wie Privatschule vs. öffentliche Schule, Schultyp (Gymnasium, Sekundarschule) oder Schulwechsel. Alltagsentscheidungen wie Hausaufgabenbetreuung oder Elternabend kann der betreuende Elternteil allein treffen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich mit meinem Kind ins Ausland ziehen bei gemeinsamem Sorgerecht?</h3>
+                <p class="text-gray-700">Ein Umzug ins Ausland erfordert bei gemeinsamem Sorgerecht immer die Zustimmung des anderen Elternteils (Art. 301a Abs. 2 ZGB). Ohne Zustimmung kann ein Gericht oder die KESB entscheiden. Ein unrechtmässiger Umzug ins Ausland kann als internationale Kindesentführung nach dem Haager Übereinkommen gewertet werden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wann kann das alleinige Sorgerecht beantragt werden?</h3>
+                <p class="text-gray-700">Das alleinige Sorgerecht kann beantragt werden, wenn das Kindeswohl durch die gemeinsame Sorge gefährdet ist. Das Bundesgericht verlangt schwerwiegende Gründe wie anhaltende Kommunikationsunfähigkeit, Dauerkonflikt mit negativen Auswirkungen auf das Kind, Gewalt, Missbrauch oder schwere Vernachlässigung. Blosse Streitigkeiten oder unterschiedliche Erziehungsvorstellungen reichen nicht aus.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was tun bei Streit über das Sorgerecht?</h3>
+                <p class="text-gray-700">Bei Konflikten sollten Eltern zunächst eine Beratungsstelle oder Mediation aufsuchen. Führt dies nicht zum Erfolg, kann die KESB angerufen werden. Die KESB kann Weisungen erteilen, zu einer Mediation verpflichten oder eine Entscheidung anstelle der Eltern treffen. In schwerwiegenden Fällen entscheidet das Gericht.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie lange dauert das gemeinsame Sorgerecht?</h3>
+                <p class="text-gray-700">Die elterliche Sorge (gemeinsam oder allein) endet automatisch mit der Volljährigkeit des Kindes, also wenn es 18 Jahre alt wird. Ab diesem Zeitpunkt entscheidet das Kind selbständig über alle persönlichen Angelegenheiten. Die Unterhaltspflicht kann jedoch während einer Ausbildung über die Volljährigkeit hinaus bestehen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist die alternierende Obhut (Wechselmodell)?</h3>
+                <p class="text-gray-700">Bei der alternierenden Obhut lebt das Kind abwechselnd bei beiden Elternteilen, idealerweise zu je 50%. Das gemeinsame Sorgerecht ist zwingende Voraussetzung für dieses Betreuungsmodell. Seit 2017 müssen Gerichte die alternierende Obhut prüfen, wenn ein Elternteil oder das Kind dies verlangt. Wichtig sind Kooperationsfähigkeit, räumliche Nähe und das Kindeswohl.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Gemeinsames Sorgerecht in der Schweiz: Rechte, Pflichten & Praxis",
+        "description": "Gemeinsames Sorgerecht Schweiz: Rechtliche Grundlagen nach Art. 296 ZGB, Entscheidungsbefugnisse, Unterschied zur Obhut, Konflikte & BGE-Rechtsprechung.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2026-01-21",
+        "dateModified": "2026-01-21",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/sorgerecht/gemeinsames-sorgerecht"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Was bedeutet gemeinsames Sorgerecht in der Schweiz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Gemeinsames Sorgerecht bedeutet, dass beide Elternteile gleichberechtigt für wichtige Entscheidungen im Leben ihres Kindes verantwortlich sind. Dazu gehören Entscheidungen über Bildung, Gesundheit, religiöse Erziehung und den Wohnsitz. Seit 2014 ist das gemeinsame Sorgerecht in der Schweiz der gesetzliche Regelfall (Art. 296 ZGB), unabhängig davon, ob die Eltern verheiratet sind oder nicht."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen Sorgerecht und Obhut?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das Sorgerecht (elterliche Sorge) umfasst die rechtliche Verantwortung für wichtige Grundsatzentscheidungen. Die Obhut bezeichnet die tatsächliche, tägliche Betreuung und bestimmt, wo das Kind wohnt. Bei einer Trennung bleibt das Sorgerecht meist gemeinsam, während die Obhut einem Elternteil zugeteilt oder alternierend geregelt wird."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie bekomme ich als unverheirateter Vater das gemeinsame Sorgerecht?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Als unverheirateter Vater müssen Sie zunächst die Vaterschaft anerkennen und dann gemeinsam mit der Mutter eine Sorgeerklärung beim Zivilstandsamt abgeben. Verweigert die Mutter die Zustimmung, können Sie die KESB anrufen, die das gemeinsame Sorgerecht anordnen kann, sofern das Kindeswohl nicht dagegen spricht. Die Kosten betragen ca. CHF 30."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bleibt das gemeinsame Sorgerecht nach einer Scheidung bestehen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, das gemeinsame Sorgerecht bleibt auch nach einer Scheidung grundsätzlich bestehen (Art. 298 ZGB). Im Scheidungsurteil wird primär über die Obhut, den persönlichen Verkehr (Besuchsrecht) und den Unterhalt entschieden. Das alleinige Sorgerecht wird nur in Ausnahmefällen bei schwerwiegender Kindeswohlgefährdung zugeteilt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wer entscheidet bei gemeinsamem Sorgerecht über die Schule?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei gemeinsamem Sorgerecht müssen beide Eltern gemeinsam über die Schulwahl entscheiden. Dies umfasst Entscheidungen wie Privatschule vs. öffentliche Schule, Schultyp (Gymnasium, Sekundarschule) oder Schulwechsel. Alltagsentscheidungen wie Hausaufgabenbetreuung oder Elternabend kann der betreuende Elternteil allein treffen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich mit meinem Kind ins Ausland ziehen bei gemeinsamem Sorgerecht?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ein Umzug ins Ausland erfordert bei gemeinsamem Sorgerecht immer die Zustimmung des anderen Elternteils (Art. 301a Abs. 2 ZGB). Ohne Zustimmung kann ein Gericht oder die KESB entscheiden. Ein unrechtmässiger Umzug ins Ausland kann als internationale Kindesentführung nach dem Haager Übereinkommen gewertet werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wann kann das alleinige Sorgerecht beantragt werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das alleinige Sorgerecht kann beantragt werden, wenn das Kindeswohl durch die gemeinsame Sorge gefährdet ist. Das Bundesgericht verlangt schwerwiegende Gründe wie anhaltende Kommunikationsunfähigkeit, Dauerkonflikt mit negativen Auswirkungen auf das Kind, Gewalt, Missbrauch oder schwere Vernachlässigung. Blosse Streitigkeiten oder unterschiedliche Erziehungsvorstellungen reichen nicht aus."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was tun bei Streit über das Sorgerecht?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei Konflikten sollten Eltern zunächst eine Beratungsstelle oder Mediation aufsuchen. Führt dies nicht zum Erfolg, kann die KESB angerufen werden. Die KESB kann Weisungen erteilen, zu einer Mediation verpflichten oder eine Entscheidung anstelle der Eltern treffen. In schwerwiegenden Fällen entscheidet das Gericht."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie lange dauert das gemeinsame Sorgerecht?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die elterliche Sorge (gemeinsam oder allein) endet automatisch mit der Volljährigkeit des Kindes, also wenn es 18 Jahre alt wird. Ab diesem Zeitpunkt entscheidet das Kind selbständig über alle persönlichen Angelegenheiten. Die Unterhaltspflicht kann jedoch während einer Ausbildung über die Volljährigkeit hinaus bestehen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist die alternierende Obhut (Wechselmodell)?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei der alternierenden Obhut lebt das Kind abwechselnd bei beiden Elternteilen, idealerweise zu je 50%. Das gemeinsame Sorgerecht ist zwingende Voraussetzung für dieses Betreuungsmodell. Seit 2017 müssen Gerichte die alternierende Obhut prüfen, wenn ein Elternteil oder das Kind dies verlangt. Wichtig sind Kooperationsfähigkeit, räumliche Nähe und das Kindeswohl."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Sorgerecht",
+                "item": "https://familienrechtanwalt.ch/sorgerecht"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Gemeinsames Sorgerecht in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/sorgerecht/gemeinsames-sorgerecht"
+            }
+        ]
+    })} />
+
 </ArticleLayout>

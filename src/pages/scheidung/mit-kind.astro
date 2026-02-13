@@ -3,182 +3,777 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 ---
 
 <ArticleLayout
-  title="Scheidung mit Kind in der Schweiz: Sorgerecht, Obhut und Unterhalt"
-  description="Scheidung mit Kind in der Schweiz: Umfassender Leitfaden zu Sorgerecht, Obhut, Besuchsrecht und Kindesunterhalt. Erfahren Sie, wie das Kindeswohl im Scheidungsverfahren geschuetzt wird."
-  keywords="Scheidung mit Kind Schweiz, Sorgerecht Scheidung, Obhut, Kindesunterhalt, Besuchsrecht, Kindeswohl"
-  category="Scheidung"
-  categoryLink="/scheidung"
+    title="Scheidung mit Kind in der Schweiz: Sorgerecht, Obhut, Unterhalt & Besuchsrecht"
+    description="Scheidung mit Kind in der Schweiz erklärt: Sorgerecht, Obhut, alternierende Betreuung, Kindesunterhalt & Besuchsrecht. Mit BGE-Rechtsprechung und praktischen Tipps."
+    keywords="Scheidung mit Kind Schweiz, Sorgerecht Scheidung, Obhut Kind, Kindesunterhalt, Besuchsrecht, alternierende Obhut, Kindeswohl, Betreuungsunterhalt"
+    category="Scheidung"
+    categoryLink="/scheidung"
 >
-  <p class="text-xl text-gray-700 mb-8 leading-relaxed">Eine Scheidung betrifft nicht nur die Ehepartner, sondern in besonderem Masse auch die gemeinsamen Kinder. Das schweizerische Recht stellt das Kindeswohl ins Zentrum aller Entscheidungen. Dieser umfassende Ratgeber erlaeutert die rechtlichen Regelungen zu Sorgerecht, Obhut, Besuchsrecht und Kindesunterhalt sowie praktische Aspekte fuer Eltern in der Trennungssituation.</p>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die <strong>gemeinsame elterliche Sorge</strong> bleibt nach der Scheidung der Regelfall – nur in Ausnahmefällen wird das Sorgerecht einem Elternteil allein zugeteilt (Art. 298 Abs. 1 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die <strong>Obhut</strong> (faktische Betreuung) kann alleinig oder alternierend geregelt werden – die alternierende Obhut ist seit 2017 explizit im Gesetz verankert.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Der <strong>Kindesunterhalt</strong> setzt sich aus dem Barunterhalt (direkte Kosten des Kindes) und dem Betreuungsunterhalt (für den betreuenden Elternteil) zusammen.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Das <strong>Kindeswohl</strong> ist das oberste Prinzip bei allen Entscheidungen – die Interessen der Eltern stehen immer an zweiter Stelle (BGE 142 III 617).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Kinder ab dem <strong>6. Lebensjahr</strong> werden in der Regel vom Gericht angehört – ihr Wille wird altersgerecht berücksichtigt.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die <strong>Scheidung auf gemeinsames Begehren</strong> mit vollständiger Einigung über die Kinderbelange ist der schnellste und kostengünstigste Weg.</span>
+            </li>
+        </ul>
+    </div>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen</h2>
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Jedes Jahr sind in der Schweiz über 12'000 minderjährige Kinder von der Scheidung ihrer Eltern betroffen. Eine Trennung ist für alle Beteiligten belastend – für die Kinder ganz besonders. Das Schweizer Recht stellt deshalb das Kindeswohl ins Zentrum aller Entscheidungen. Dieser umfassende Ratgeber erklärt, wie Sorgerecht, Obhut, Unterhalt und Besuchsrecht bei einer Scheidung mit Kind geregelt werden und was Sie als Eltern beachten sollten.</p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Das Kindeswohl als Leitprinzip</h3>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen der Scheidung mit Kind</h2>
 
-  <p class="text-gray-700 mb-6">Das Kindeswohl ist das oberste Prinzip bei allen Entscheidungen, die Kinder betreffen. Art. 133 Abs. 2 ZGB bestimmt ausdruecklich, dass das Gericht bei der Regelung der Kinderbelange auf alle fuer das Kindeswohl wichtigen Umstaende Ruecksicht nimmt, namentlich auf einen allfaelligen gemeinsamen Antrag der Eltern und auf die Anhoerung des Kindes.</p>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Das Kindeswohl als oberstes Prinzip</h3>
 
-  <p class="text-gray-700 mb-6">Das Bundesgericht hat das Kindeswohl als unbestimmten Rechtsbegriff konkretisiert. Massgebend sind die Beziehungen des Kindes zu beiden Elternteilen, die Erziehungsfaehigkeit der Eltern, die Stabilitaet und Kontinuitaet der Verhaeltnisse, die Geschwisterbeziehungen sowie der Wille des urteilsfaehigen Kindes.</p>
+    <p class="text-gray-700 mb-6">Bei jeder Entscheidung, die minderjährige Kinder betrifft, steht das Kindeswohl an erster Stelle. Art. 133 Abs. 2 ZGB bestimmt ausdrücklich, dass das Gericht bei der Regelung der Kinderbelange auf alle für das Kindeswohl wichtigen Umstände Rücksicht nimmt. Das Bundesgericht hat in seiner ständigen Rechtsprechung klargestellt, dass die Interessen der Eltern stets hinter dem Wohl des Kindes zurückstehen müssen (BGE 142 III 617; BGE 143 III 361).</p>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Elterliche Sorge</h2>
+    <p class="text-gray-700 mb-6">Das Kindeswohl ist ein unbestimmter Rechtsbegriff, den das Bundesgericht konkretisiert hat. Massgebend sind insbesondere die Beziehungen des Kindes zu beiden Elternteilen, die Erziehungsfähigkeit der Eltern, die Stabilität und Kontinuität der Verhältnisse, die Geschwisterbeziehungen sowie der Wille des urteilsfähigen Kindes.</p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gemeinsame elterliche Sorge als Regelfall</h3>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtige Gesetzesgrundlagen:</p>
+        <p class="text-gray-700">Die Regelung der Kinderbelange bei der Scheidung ist in Art. 133 ZGB verankert. Weitere zentrale Bestimmungen finden sich in Art. 270-295 ZGB (Kindesverhältnis), Art. 273-275 ZGB (persönlicher Verkehr), Art. 276-293 ZGB (Kindesunterhalt) und Art. 296-306 ZGB (elterliche Sorge).</p>
+    </div>
 
-  <p class="text-gray-700 mb-6">Seit der Reform von 2014 ist die gemeinsame elterliche Sorge der gesetzliche Regelfall (Art. 298 Abs. 1 ZGB). Bei der Scheidung bleibt die gemeinsame Sorge grundsaetzlich bestehen, unabhaengig davon, bei welchem Elternteil das Kind lebt.</p>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Welche Kinderbelange müssen geregelt werden?</h3>
 
-  <p class="text-gray-700 mb-6">Die gemeinsame elterliche Sorge umfasst das Recht und die Pflicht, die fuer das Kind wichtigen Entscheidungen gemeinsam zu treffen. Dazu gehoeren Entscheidungen ueber die Ausbildung und religioese Erziehung, medizinische Eingriffe, die ueber Routinemassnahmen hinausgehen, die Wahl des Aufenthaltsortes sowie die Verwaltung des Kindesvermoegens.</p>
+    <p class="text-gray-700 mb-6">Bei einer Scheidung mit minderjährigen Kindern müssen zwingend folgende Punkte geregelt werden:</p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Alleinige elterliche Sorge</h3>
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kinderbelang</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gesetzliche Grundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Elterliche Sorge</td>
+                    <td class="px-6 py-4 text-gray-700">Wer trifft die wichtigen Entscheidungen für das Kind?</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 296-306 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Obhut</td>
+                    <td class="px-6 py-4 text-gray-700">Bei wem lebt das Kind und wer betreut es im Alltag?</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 298 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Persönlicher Verkehr</td>
+                    <td class="px-6 py-4 text-gray-700">Wie wird der Kontakt zum nicht-obhutsberechtigten Elternteil geregelt?</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 273-275 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Kindesunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Wie werden die Kosten für das Kind aufgeteilt?</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 276-293 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Betreuungsunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Welchen Beitrag erhält der hauptbetreuende Elternteil?</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 285 Abs. 2 ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-  <p class="text-gray-700 mb-6">Das Gericht kann einem Elternteil die alleinige Sorge zuteilen, wenn dies zum Schutz des Kindeswohls erforderlich ist (Art. 298 Abs. 1 ZGB). Das Bundesgericht hat in BGE 142 III 1 klargestellt, dass dies nur bei einem schwerwiegenden und dauernden elterlichen Konflikt angezeigt ist, der eine gemeinsame Sorge verunmoeglicht.</p>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Ablauf der Scheidung mit Kindern</h2>
 
-  <div class="overflow-x-auto mb-6">
-    <table class="min-w-full bg-white border border-gray-200">
-      <thead class="bg-navy text-white">
-        <tr>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Gemeinsame Sorge</th>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Alleinige Sorge</th>
-        </tr>
-      </thead>
-      <tbody class="divide-y divide-gray-200">
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Regelfall</td>
-          <td class="px-6 py-4 text-gray-700">Ja</td>
-          <td class="px-6 py-4 text-gray-700">Ausnahme</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">Wichtige Entscheidungen</td>
-          <td class="px-6 py-4 text-gray-700">Gemeinsam</td>
-          <td class="px-6 py-4 text-gray-700">Allein</td>
-        </tr>
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Alltaegliche Entscheidungen</td>
-          <td class="px-6 py-4 text-gray-700">Obhutsberechtigter Elternteil</td>
-          <td class="px-6 py-4 text-gray-700">Allein</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">Auskunftsrecht</td>
-          <td class="px-6 py-4 text-gray-700">Beide vollumfaenglich</td>
-          <td class="px-6 py-4 text-gray-700">Nicht sorgeberechtigter eingeschraenkt</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Scheidung auf gemeinsames Begehren</h3>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Obhut und Betreuung</h2>
+    <p class="text-gray-700 mb-6">Die <a href="/scheidung/scheidung-auf-gemeinsames-begehren" class="text-gold hover:underline font-semibold">Scheidung auf gemeinsames Begehren</a> ist der schnellste und einfachste Weg, wenn sich beide Ehepartner über die Scheidung und alle Nebenfolgen einig sind. Bei vollständiger Einigung können die Ehegatten dem Gericht eine Vereinbarung über die Scheidungsfolgen vorlegen, die auch die Regelung der Kinderbelange enthält (Art. 111 ZGB).</p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Unterschied zwischen Sorge und Obhut</h3>
+    <p class="text-gray-700 mb-6">Bei einer teilweisen Einigung (Art. 112 ZGB) legen die Parteien dem Gericht einen gemeinsamen Scheidungsantrag vor und beantragen, dass das Gericht über die strittigen Punkte entscheidet. Das Gericht versucht zunächst, eine Einigung herbeizuführen, bevor es selbst entscheidet.</p>
 
-  <p class="text-gray-700 mb-6">Die elterliche Sorge ist von der Obhut zu unterscheiden. Die Sorge umfasst die grundlegenden Entscheidungen ueber das Kind. Die Obhut bezeichnet das Recht und die Pflicht, das Kind bei sich zu haben und seinen Alltag zu gestalten, einschliesslich der alltaeglichen Erziehungsentscheidungen.</p>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Warum ist die einvernehmliche Scheidung bei Kindern besonders wichtig?</p>
+        <p class="text-gray-700">Eine einvernehmliche Lösung ist für Kinder deutlich weniger belastend als ein strittiges Verfahren. Der Konflikt zwischen den Eltern wird minimiert, das Verfahren dauert kürzer, und die Eltern zeigen dem Kind, dass sie trotz Trennung gemeinsam Verantwortung übernehmen können.</p>
+    </div>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Formen der Obhut</h3>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Strittige Scheidung (Scheidungsklage)</h3>
 
-  <p class="text-gray-700 mb-6">Bei der alleinigen Obhut lebt das Kind hauptsaechlich bei einem Elternteil. Der andere Elternteil hat ein Besuchsrecht und beteiligt sich gegebenenfalls an der Betreuung.</p>
+    <p class="text-gray-700 mb-6">Wenn keine Einigung möglich ist, kann nach einer Trennungsfrist von zwei Jahren eine <a href="/scheidung/scheidungsklage" class="text-gold hover:underline font-semibold">Scheidungsklage</a> eingereicht werden (Art. 114 ZGB). In Ausnahmefällen kann die Scheidung auch vor Ablauf der Trennungsfrist verlangt werden, wenn die Fortsetzung der Ehe aus schwerwiegenden Gründen, die nicht vom Kläger verschuldet sind, unzumutbar ist (Art. 115 ZGB).</p>
 
-  <p class="text-gray-700 mb-6">Bei der alternierenden Obhut lebt das Kind abwechselnd bei beiden Elternteilen, etwa je eine Woche oder je einen halben Monat. Beide Eltern teilen sich die Betreuung gleichberechtigt.</p>
+    <p class="text-gray-700 mb-6">Bei einer strittigen Scheidung entscheidet das Gericht über alle Kinderbelange nach Massgabe des Kindeswohls. Es gilt die Offizialmaxime (Art. 296 ZPO): Das Gericht ist an die Anträge der Parteien nicht gebunden und kann von Amtes wegen Regelungen treffen, die dem Kindeswohl am besten entsprechen.</p>
 
-  <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-    <p class="font-semibold text-navy">BGE 142 III 612 - Voraussetzungen fuer die alternierende Obhut:</p>
-    <p class="text-gray-700">Das Bundesgericht hat die Voraussetzungen konkretisiert: Erforderlich sind die Erziehungsfaehigkeit beider Elternteile, eine gewisse geografische Naehe der Wohnorte, die Faehigkeit zur Kooperation und Kommunikation sowie die Vereinbarkeit mit den Beduerfnissen des Kindes.</p>
-  </div>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Dauer der Scheidung mit Kindern</h3>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Persoenlicher Verkehr (Besuchsrecht)</h2>
+    <p class="text-gray-700 mb-6">Die Dauer einer Scheidung mit Kindern hängt stark davon ab, ob sich die Eltern einigen können:</p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Grundsatz nach Art. 273 ZGB</h3>
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Scheidungsform</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Typische Dauer</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Voraussetzungen</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Einvernehmlich mit vollständiger Einigung</td>
+                    <td class="px-6 py-4 text-gray-700">2-6 Monate</td>
+                    <td class="px-6 py-4 text-gray-700">Vollständige Scheidungskonvention inkl. Kinderbelange</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Einvernehmlich mit teilweiser Einigung</td>
+                    <td class="px-6 py-4 text-gray-700">6-12 Monate</td>
+                    <td class="px-6 py-4 text-gray-700">Einigung über Scheidung, strittige Nebenfolgen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Strittige Scheidung</td>
+                    <td class="px-6 py-4 text-gray-700">1-3 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">Zweijährige Trennungsfrist + Gerichtsverfahren</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-  <p class="text-gray-700 mb-6">Der nicht obhutsberechtigte Elternteil und das Kind haben gegenseitig Anspruch auf angemessenen persoenlichen Verkehr (Art. 273 Abs. 1 ZGB). Das Besuchsrecht dient dem Kindeswohl und soll die Beziehung des Kindes zu beiden Elternteilen aufrechterhalten.</p>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Elterliche Sorge bei der Scheidung</h2>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ausgestaltung des Besuchsrechts</h3>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gemeinsame elterliche Sorge als Regelfall</h3>
 
-  <p class="text-gray-700 mb-6">Die konkrete Ausgestaltung richtet sich nach dem Alter und den Beduerfnissen des Kindes, der praktischen Durchfuehrbarkeit sowie den Arbeitssituationen der Eltern.</p>
+    <p class="text-gray-700 mb-6">Seit der Revision des Sorgerechts am 1. Juli 2014 ist die <strong>gemeinsame elterliche Sorge</strong> der gesetzliche Regelfall (Art. 298 Abs. 1 ZGB). Bei der Scheidung bleibt die gemeinsame Sorge grundsätzlich bestehen – unabhängig davon, bei welchem Elternteil das Kind lebt oder wer die hauptsächliche Betreuung übernimmt.</p>
 
-  <p class="text-gray-700 mb-6">Ein uebliches Besuchsrecht umfasst jedes zweite Wochenende (Freitagabend bis Sonntagabend), einen Abend oder Nachmittag unter der Woche, die haelftige Teilung der Schulferien sowie die abwechselnde Zuteilung der Feiertage.</p>
+    <p class="text-gray-700 mb-6">Die elterliche Sorge umfasst das Recht und die Pflicht, für das Kind die nötigen Entscheidungen zu treffen, es zu erziehen, rechtlich zu vertreten und sein Vermögen zu verwalten (Art. 301 ff. ZGB). Wer die elterliche Sorge hat, entscheidet über alle wichtigen Fragen:</p>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kindesunterhalt</h2>
-
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Komponenten des Kindesunterhalts</h3>
-
-  <p class="text-gray-700 mb-6">Der Kindesunterhalt ist in Art. 276-293 ZGB geregelt. Seit der Reform von 2017 umfasst er ausdruecklich auch einen Beitrag an die Lebenshaltungskosten des betreuenden Elternteils (Betreuungsunterhalt).</p>
-
-  <p class="text-gray-700 mb-6">Der Barunterhalt deckt die direkten Kosten des Kindes wie Nahrung, Kleidung, Wohnen, Versicherungen, Ausbildung und Freizeitaktivitaeten.</p>
-
-  <p class="text-gray-700 mb-6">Der Betreuungsunterhalt deckt den Lebensunterhalt des hauptbetreuenden Elternteils, soweit dieser wegen der Kinderbetreuung nicht oder nicht voll erwerbstaetig sein kann.</p>
-
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Berechnung des Kindesunterhalts</h3>
-
-  <p class="text-gray-700 mb-6">Das Bundesgericht hat in BGE 147 III 265 die zweistufige Methode mit Ueberschussverteilung als Standard etabliert.</p>
-
-  <div class="overflow-x-auto mb-6">
-    <table class="min-w-full bg-white border border-gray-200">
-      <thead class="bg-navy text-white">
-        <tr>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Alter des Kindes</th>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Barunterhalt (Richtwert)</th>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Betreuungsunterhalt</th>
-        </tr>
-      </thead>
-      <tbody class="divide-y divide-gray-200">
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">0-5 Jahre</td>
-          <td class="px-6 py-4 text-gray-700">CHF 800-1'200</td>
-          <td class="px-6 py-4 text-gray-700">Bis zum vollen Lebensunterhalt</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">6-12 Jahre</td>
-          <td class="px-6 py-4 text-gray-700">CHF 900-1'400</td>
-          <td class="px-6 py-4 text-gray-700">Abnehmend gemaess Schulstufenmodell</td>
-        </tr>
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">13-18 Jahre</td>
-          <td class="px-6 py-4 text-gray-700">CHF 1'000-1'600</td>
-          <td class="px-6 py-4 text-gray-700">Gering bis entfallend</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">Volljaehrig in Ausbildung</td>
-          <td class="px-6 py-4 text-gray-700">CHF 1'200-1'800</td>
-          <td class="px-6 py-4 text-gray-700">Entfaellt</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Verfahrensrechtliche Besonderheiten</h2>
-
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Offizialmaxime</h3>
-
-  <p class="text-gray-700 mb-6">In Bezug auf Kinderbelange gilt die Offizialmaxime (Art. 296 ZPO). Das Gericht erforscht den Sachverhalt von Amtes wegen und ist an die Parteiantraege nicht gebunden. Es kann Regelungen treffen, die vom Antrag der Parteien abweichen, wenn dies dem Kindeswohl entspricht.</p>
-
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Anhoerung des Kindes</h3>
-
-  <p class="text-gray-700 mb-6">Das Kind hat das Recht, in Verfahren, die es betreffen, angehoert zu werden (Art. 298 ZPO). Ab etwa 6 Jahren werden Kinder in der Regel angehoert. Die Anhoerung erfolgt durch den Richter oder eine Fachperson. Die Meinung des Kindes wird seinem Alter und seiner Reife entsprechend beruecksichtigt.</p>
-
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Praktische Aspekte fuer Eltern</h2>
-
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kommunikation mit dem Kind</h3>
-
-  <p class="text-gray-700 mb-6">Kinder sollten altersgerecht ueber die Scheidung informiert werden. Wichtig ist die Botschaft, dass die Trennung nicht die Schuld des Kindes ist, dass beide Eltern das Kind weiterhin lieben und dass das Kind zu beiden Eltern Kontakt haben wird.</p>
-
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Konfliktvermeidung</h3>
-
-  <p class="text-gray-700 mb-6">Elternkonflikte belasten Kinder stark. Folgendes sollte vermieden werden: negative Aeusserungen ueber den anderen Elternteil vor dem Kind, das Kind als Boten oder Informationsquelle zu benutzen, das Kind zu zwingen, Partei zu ergreifen, sowie Terminabsprachen ueber das Kind laufen zu lassen.</p>
-
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
-
-  <p class="text-gray-700 mb-6">Die Regelung der Kinderbelange ist der sensibelste Aspekt einer Scheidung. Das schweizerische Recht stellt das Kindeswohl ins Zentrum und bevorzugt Loesungen, die dem Kind den Kontakt zu beiden Elternteilen ermoeglichen.</p>
-
-  <p class="text-gray-700 mb-6">Die gemeinsame elterliche Sorge als Regelfall unterstreicht die Verantwortung beider Eltern. Die konkrete Ausgestaltung von Obhut, Betreuung und Unterhalt muss individuell auf die Situation der Familie abgestimmt werden.</p>
-
-  <p class="text-gray-700 mb-6">Eltern, die trotz ihrer Konflikte im Interesse der Kinder zusammenarbeiten koennen, ermoeglichen ihren Kindern, die Scheidung besser zu verarbeiten. Professionelle Unterstuetzung durch Anwaelte, Mediatoren oder Familientherapeuten kann dabei helfen.</p>
-
-  <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-    <p class="font-semibold text-navy mb-2">Relevante Gesetzesbestimmungen:</p>
-    <ul class="list-disc list-inside text-gray-700 space-y-1">
-      <li>Art. 133 ZGB (Kinderbelange bei Scheidung)</li>
-      <li>Art. 270-295 ZGB (Kindesverhaeltnis)</li>
-      <li>Art. 273-275 ZGB (Persoenlicher Verkehr)</li>
-      <li>Art. 276-293 ZGB (Kindesunterhalt)</li>
-      <li>Art. 296-306 ZGB (Elterliche Sorge)</li>
-      <li>Art. 296-298 ZPO (Verfahren betreffend Kinder)</li>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Bestimmung des Aufenthaltsortes (Wohnort) des Kindes</li>
+        <li>Schulwahl und Ausbildungsentscheidungen</li>
+        <li>Religiöse Erziehung</li>
+        <li>Medizinische Entscheidungen, die über Routinemassnahmen hinausgehen</li>
+        <li>Namensänderungen</li>
+        <li>Verwaltung des Kindesvermögens</li>
     </ul>
-  </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praxis-Tipp – Alltägliche Entscheidungen:</p>
+        <p class="text-gray-700">Bei gemeinsamer elterlicher Sorge kann derjenige Elternteil, der das Kind gerade betreut, alltägliche oder dringliche Entscheidungen alleine treffen (Art. 301 Abs. 1bis ZGB). Dazu gehören beispielsweise die tägliche Ernährung, Schlafenszeiten, Hausaufgabenbetreuung oder kleinere medizinische Behandlungen.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Alleinige elterliche Sorge – Die Ausnahme</h3>
+
+    <p class="text-gray-700 mb-6">Das Gericht kann einem Elternteil die <strong>alleinige elterliche Sorge</strong> zuteilen, wenn dies zum Schutz des Kindeswohls erforderlich ist. Dies stellt jedoch die absolute Ausnahme dar. Das Bundesgericht hat die Voraussetzungen streng definiert:</p>
+
+    <p class="text-gray-700 mb-6">Gemäss BGE 142 III 1 und 5A_106/2019 ist eine Alleinzuteilung nur bei einem <strong>schwerwiegenden, ernsthaften und dauerhaften Konflikt</strong> zwischen den Eltern oder einer <strong>anhaltenden Unfähigkeit zur Kommunikation</strong> in Kinderbelangen gerechtfertigt. Blosse Streitigkeiten, wie sie in vielen Familien – insbesondere bei Trennung oder Scheidung – vorkommen, genügen nicht (5A_277/2021; 5A_701/2017).</p>
+
+    <p class="text-gray-700 mb-6">Weitere Gründe für das alleinige Sorgerecht können sein:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Schwere Kindesmisshandlung oder -vernachlässigung</li>
+        <li>Fehlende Erziehungsfähigkeit eines Elternteils</li>
+        <li>Schwere Alkohol- oder Drogenabhängigkeit</li>
+        <li>Längere Haftstrafe</li>
+        <li>Gefährliches Umfeld eines Elternteils</li>
+        <li>Vollständige Verweigerung jeglicher Kooperation</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vergleich: Gemeinsame vs. alleinige Sorge</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gemeinsame Sorge</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Alleinige Sorge</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Rechtliche Stellung</td>
+                    <td class="px-6 py-4 text-gray-700">Regelfall seit 2014</td>
+                    <td class="px-6 py-4 text-gray-700">Ausnahme bei Kindeswohlgefährdung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Wichtige Entscheidungen</td>
+                    <td class="px-6 py-4 text-gray-700">Gemeinsam durch beide Eltern</td>
+                    <td class="px-6 py-4 text-gray-700">Allein durch sorgeberechtigten Elternteil</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Wohnsitzwechsel des Kindes</td>
+                    <td class="px-6 py-4 text-gray-700">Zustimmung beider Eltern oder Gericht erforderlich</td>
+                    <td class="px-6 py-4 text-gray-700">Alleinige Entscheidung möglich</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Auskunftsrecht</td>
+                    <td class="px-6 py-4 text-gray-700">Beide Eltern vollumfänglich</td>
+                    <td class="px-6 py-4 text-gray-700">Nicht sorgeberechtigter Elternteil hat Anspruch auf Information (Art. 275a ZGB)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Alltägliche Entscheidungen</td>
+                    <td class="px-6 py-4 text-gray-700">Betreuender Elternteil</td>
+                    <td class="px-6 py-4 text-gray-700">Sorgeberechtigter Elternteil</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Obhut und Betreuungsmodelle</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Unterschied zwischen Sorge und Obhut</h3>
+
+    <p class="text-gray-700 mb-6">Die elterliche Sorge ist klar von der <strong>Obhut</strong> zu unterscheiden. Während die Sorge die grundlegenden Entscheidungsbefugnisse umfasst, bezeichnet die Obhut das Recht und die Pflicht, das Kind bei sich zu haben und seinen Alltag zu gestalten – einschliesslich der alltäglichen Erziehungsentscheidungen.</p>
+
+    <p class="text-gray-700 mb-6">Ein gemeinsames Sorgerecht bedeutet <strong>nicht automatisch</strong>, dass die Obhut alternierend ist. Die Obhut ist entweder einem Elternteil allein zugeteilt (alleinige Obhut) oder wird von beiden Eltern geteilt (alternierende Obhut).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Alleinige Obhut (Residenzmodell)</h3>
+
+    <p class="text-gray-700 mb-6">Bei der alleinigen Obhut lebt das Kind hauptsächlich bei einem Elternteil und hat seinen Lebensmittelpunkt dort. Der andere Elternteil hat ein Besuchsrecht (persönlicher Verkehr) und beteiligt sich gegebenenfalls an der Betreuung, jedoch nicht in gleichem Umfang.</p>
+
+    <p class="text-gray-700 mb-6">Das Residenzmodell war lange Zeit die Standardlösung in der Schweiz. Der Elternteil mit alleiniger Obhut kümmert sich tagtäglich um das Kind (Ernährung, Kleidung, Schulbesuch, Arztbesuche usw.), während der andere Elternteil typischerweise ein Besuchsrecht an jedem zweiten Wochenende sowie einen Teil der Schulferien hat.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Alternierende Obhut (Wechselmodell)</h3>
+
+    <p class="text-gray-700 mb-6">Seit der Revision vom 1. Januar 2017 haben Eltern und Kinder das ausdrückliche Recht, eine <strong>alternierende Obhut</strong> zu verlangen (Art. 298 Abs. 2ter ZGB). Von einer alternierenden Obhut spricht man, wenn das Kind zu ungefähr gleichen Teilen – mindestens jedoch zu 30% – bei jedem Elternteil lebt und von diesem betreut wird.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">BGE 142 III 612 – Voraussetzungen für die alternierende Obhut:</p>
+        <p class="text-gray-700">Das Bundesgericht hat die Voraussetzungen konkretisiert: Erforderlich sind die Erziehungsfähigkeit beider Elternteile, eine gewisse geografische Nähe der Wohnorte, die Fähigkeit zur Kooperation und Kommunikation sowie die Vereinbarkeit mit den Bedürfnissen des Kindes. Das Kindeswohl ist das grundlegende Kriterium (BGE 144 III 481).</p>
+    </div>
+
+    <p class="text-gray-700 mb-6">Die alternierende Obhut kann auch gegen den Willen eines Elternteils angeordnet werden, wenn das Kindeswohl dies erfordert. Das Bundesgericht hat in BGE 147 III 121 klargestellt, dass alternierende Obhut nicht zwingend eine 50/50-Aufteilung bedeutet, sondern eine ausgewogene Verteilung sein muss, die über das übliche Besuchsrecht hinausgeht.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Praktische Umsetzung der alternierenden Obhut</h3>
+
+    <p class="text-gray-700 mb-6">Verschiedene Betreuungsrhythmen haben sich in der Praxis etabliert:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Modell</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Geeignet für</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">7/7-Modell</td>
+                    <td class="px-6 py-4 text-gray-700">Je eine Woche bei Vater und Mutter abwechselnd</td>
+                    <td class="px-6 py-4 text-gray-700">Ältere Kinder, die längere Phasen gut verkraften</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">14/14-Modell</td>
+                    <td class="px-6 py-4 text-gray-700">Je 14 Tage bei jedem Elternteil</td>
+                    <td class="px-6 py-4 text-gray-700">Jugendliche mit stabiler Bindung zu beiden Eltern</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">4/4/2/2-Modell</td>
+                    <td class="px-6 py-4 text-gray-700">4 Tage Vater, 4 Tage Mutter, 2 Tage Vater, 2 Tage Mutter</td>
+                    <td class="px-6 py-4 text-gray-700">Jüngere Kinder, die häufigeren Kontakt brauchen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">2/2/3-Modell</td>
+                    <td class="px-6 py-4 text-gray-700">Wöchentlich wechselnde Tage (z.B. Mo-Di bei Mutter, Mi-Do bei Vater, Fr-So alternierend)</td>
+                    <td class="px-6 py-4 text-gray-700">Familien mit flexiblen Arbeitszeiten</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig – Offizieller Wohnsitz:</p>
+        <p class="text-gray-700">Schweizer Bürgerinnen und Bürger können nur einen offiziellen Wohnsitz haben. Die Eltern müssen sich einigen, in welcher Wohnung das Kind offiziell gemeldet ist. Dies hat Auswirkungen auf Schulkreis, Steuern und Kinderzulagen.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Das Nestmodell</h3>
+
+    <p class="text-gray-700 mb-6">Beim <strong>Nestmodell</strong> bleibt das Kind in der bisherigen Familienwohnung, während die Eltern abwechselnd ein- und ausziehen. Das Kind behält so seine vertraute Umgebung. Dieses Modell ist in der Praxis selten, da es hohe Kosten verursacht (drei Wohnungen) und ein sehr hohes Mass an Kooperation erfordert.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kindesunterhalt bei einer Scheidung mit Kind</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Die zwei Komponenten des Kindesunterhalts</h3>
+
+    <p class="text-gray-700 mb-6">Seit der Unterhaltsrechtsreform vom 1. Januar 2017 besteht der Kindesunterhalt aus zwei Komponenten: dem <strong>Barunterhalt</strong> und dem <strong>Betreuungsunterhalt</strong>.</p>
+
+    <p class="text-gray-700 mb-6"><strong>Barunterhalt:</strong> Der Barunterhalt deckt die direkten Kosten des Kindes. Dazu gehören der Grundbetrag für Lebenshaltung, Wohnkosten (anteilig), Krankenversicherungsprämien, Ausbildungskosten, Fremdbetreuungskosten (Krippe, Hort, Nanny) sowie Kosten für Freizeit und besondere Bedürfnisse.</p>
+
+    <p class="text-gray-700 mb-6"><strong>Betreuungsunterhalt:</strong> Der Betreuungsunterhalt ist ein Beitrag an die Lebenshaltungskosten des hauptbetreuenden Elternteils. Er soll die finanziellen Einbussen ausgleichen, die entstehen, weil dieser Elternteil wegen der Kinderbetreuung nicht oder nicht vollständig erwerbstätig sein kann (Art. 285 Abs. 2 ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Berechnung des Kindesunterhalts</h3>
+
+    <p class="text-gray-700 mb-6">Das Bundesgericht hat in BGE 147 III 265 die <strong>zweistufig-konkrete Methode mit Überschussverteilung</strong> als schweizweit verbindliche Berechnungsmethode festgelegt. Diese Methode funktioniert wie folgt:</p>
+
+    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-3">
+        <li><strong>Erste Stufe:</strong> Ermittlung des Bedarfs aller Familienmitglieder (Existenzminimum plus individueller Bedarf)</li>
+        <li><strong>Zweite Stufe:</strong> Verteilung eines allfälligen Überschusses nach Köpfen oder nach Quote</li>
+    </ol>
+
+    <p class="text-gray-700 mb-6">Als Grundlage für die Berechnung des Kinderbedarfs dienen kantonale Kinderkostentabellen, insbesondere die <strong>Zürcher Kinderkosten-Tabelle</strong>, die regelmässig aktualisiert wird.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Richtwerte für den Kindesunterhalt</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Alter des Kindes</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Barunterhalt (Richtwert)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Betreuungsunterhalt</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">0-5 Jahre (Vorschulalter)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 800-1'200/Monat</td>
+                    <td class="px-6 py-4 text-gray-700">Bis zum vollen Existenzminimum des betreuenden Elternteils</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">6-12 Jahre (Primarschule)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'000-1'500/Monat</td>
+                    <td class="px-6 py-4 text-gray-700">Abnehmend gemäss Schulstufenmodell (ca. 50% Erwerbstätigkeit zumutbar)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">13-15 Jahre (Sekundarstufe)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'200-1'700/Monat</td>
+                    <td class="px-6 py-4 text-gray-700">Stark abnehmend (ca. 80% Erwerbstätigkeit zumutbar)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">16-18 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'400-1'900/Monat</td>
+                    <td class="px-6 py-4 text-gray-700">In der Regel entfallend (100% Erwerbstätigkeit zumutbar)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Volljährig in Erstausbildung</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'500-2'000/Monat</td>
+                    <td class="px-6 py-4 text-gray-700">Entfällt vollständig</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Hinweis:</p>
+        <p class="text-gray-700">Die angegebenen Richtwerte sind Durchschnittswerte. Der konkrete Unterhaltsbeitrag hängt von vielen Faktoren ab: Einkommen beider Elternteile, Betreuungsaufteilung, besondere Bedürfnisse des Kindes, Lebensstandard während der Ehe und kantonale Praxis.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Dauer der Unterhaltspflicht</h3>
+
+    <p class="text-gray-700 mb-6">Die Unterhaltspflicht der Eltern gegenüber ihren Kindern endet nicht automatisch mit der Volljährigkeit. Gemäss Art. 277 Abs. 2 ZGB dauert die Unterhaltspflicht <strong>bis zum Abschluss einer angemessenen Erstausbildung</strong> – vorausgesetzt, das Kind schliesst diese in üblicher Zeit ab und steht in einem ordentlichen Ausbildungsverhältnis.</p>
+
+    <p class="text-gray-700 mb-6">Bei volljährigen Kindern in Ausbildung entfällt jedoch der Betreuungsunterhalt vollständig, da das Kind als urteilsfähig gilt und selbst entscheidet, wo es wohnt.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Anpassung des Kindesunterhalts</h3>
+
+    <p class="text-gray-700 mb-6">Der festgelegte Unterhaltsbeitrag kann nachträglich angepasst werden, wenn sich die Verhältnisse wesentlich und dauerhaft ändern (Art. 286 Abs. 2 ZGB). Gründe für eine Anpassung können sein:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Erhebliche Veränderung des Einkommens eines Elternteils (Jobverlust, Beförderung, Krankheit)</li>
+        <li>Änderung der Betreuungsaufteilung</li>
+        <li>Veränderter Bedarf des Kindes (z.B. teure medizinische Behandlung, Privatschule)</li>
+        <li>Neuer Lebenspartner mit gemeinsamem Haushalt</li>
+        <li>Geburt weiterer Kinder</li>
+    </ul>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Besuchsrecht und persönlicher Verkehr</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Grundsatz des persönlichen Verkehrs</h3>
+
+    <p class="text-gray-700 mb-6">Der nicht obhutsberechtigte Elternteil und das Kind haben gegenseitig Anspruch auf angemessenen persönlichen Verkehr (Art. 273 Abs. 1 ZGB). Das Besuchsrecht ist sowohl ein <strong>Recht als auch eine Pflicht</strong> des betreffenden Elternteils. Es dient dem Kindeswohl und soll die Beziehung des Kindes zu beiden Elternteilen aufrechterhalten.</p>
+
+    <p class="text-gray-700 mb-6">Dies gilt für verheiratete, geschiedene und getrennte sowie für unverheiratete Eltern gleichermassen. Auch ein Elternteil, der das Sorgerecht verloren hat, behält grundsätzlich ein Besuchsrecht – sofern dieses nicht zum Schutz des Kindes eingeschränkt oder aufgehoben werden muss.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Übliche Regelung des Besuchsrechts</h3>
+
+    <p class="text-gray-700 mb-6">Die konkrete Ausgestaltung des Besuchsrechts richtet sich primär nach der Vereinbarung der Eltern. Können sich die Eltern nicht einigen, entscheidet das Gericht oder die KESB. In der Praxis haben sich folgende Regelungen etabliert:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Altersgruppe</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Übliches Besuchsrecht</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Ferienrecht</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Säuglinge und Kleinkinder (0-3 Jahre)</td>
+                    <td class="px-6 py-4 text-gray-700">Mindestens 2 Halbtage pro Monat, schrittweise Steigerung möglich</td>
+                    <td class="px-6 py-4 text-gray-700">Zunächst keine Übernachtungen, dann schrittweise</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Vorschulkinder (3-6 Jahre)</td>
+                    <td class="px-6 py-4 text-gray-700">2 Halbtage oder 1 ganzer Tag pro Monat, mit Übernachtungen</td>
+                    <td class="px-6 py-4 text-gray-700">1-2 Wochen pro Jahr</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Schulkinder (ab 6 Jahre)</td>
+                    <td class="px-6 py-4 text-gray-700">Jedes 2. Wochenende (Fr-So) + 1 Abend/Nachmittag unter der Woche</td>
+                    <td class="px-6 py-4 text-gray-700">2-3 Wochen pro Jahr, hälftige Ferienteilung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Jugendliche</td>
+                    <td class="px-6 py-4 text-gray-700">Flexibel nach Bedürfnissen des Kindes</td>
+                    <td class="px-6 py-4 text-gray-700">Nach Absprache, Wünsche des Kindes berücksichtigen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Feiertage:</p>
+        <p class="text-gray-700">Feiertage wie Weihnachten, Ostern, Geburtstage werden in der Regel abwechselnd zugeteilt. Eine häufige Regelung: Das Kind verbringt an geraden Jahren die Weihnachtstage bei einem Elternteil, an ungeraden Jahren beim anderen.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Einschränkung oder Aufhebung des Besuchsrechts</h3>
+
+    <p class="text-gray-700 mb-6">Das Besuchsrecht kann eingeschränkt oder aufgehoben werden, wenn das Kindeswohl gefährdet ist (Art. 274 Abs. 2 ZGB). Das Bundesgericht hat klargestellt, dass zur vollständigen Aufhebung nicht nur eine Gefährdung bestehen muss, sondern dass dieser Gefährdung auch nicht durch eine besondere Ausgestaltung des Besuchsrechts (z.B. begleitetes Besuchsrecht) begegnet werden kann.</p>
+
+    <p class="text-gray-700 mb-6">Gründe für eine Einschränkung können sein: Gewalttätigkeit gegenüber dem Kind, schwere psychische Erkrankung, schwere Suchtproblematik, Entführungsgefahr oder nachgewiesene sexuelle Übergriffe.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Auskunfts- und Informationsrecht</h3>
+
+    <p class="text-gray-700 mb-6">Auch wenn einem Elternteil das Sorgerecht entzogen wurde oder er nicht die Obhut hat, steht ihm ein <strong>Auskunfts- und Informationsrecht</strong> zu (Art. 275a ZGB). Der andere Elternteil muss ihn über wichtige Ereignisse im Leben des Kindes informieren – etwa über die schulische Entwicklung, Gesundheitszustand oder besondere Vorkommnisse.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kindesanhörung im Scheidungsverfahren</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Recht des Kindes auf Anhörung</h3>
+
+    <p class="text-gray-700 mb-6">Das Kind hat das Recht, in Verfahren, die es betreffen, angehört zu werden. Dieses Recht ergibt sich aus Art. 12 der UN-Kinderrechtskonvention und ist in Art. 298 ZPO verankert. Die Anhörung hat einen doppelten Zweck: Sie ist Ausdruck des Respekts gegenüber dem Kind und hilft dem Gericht bei der Beurteilung der Situation.</p>
+
+    <p class="text-gray-700 mb-6">Grundsätzlich werden Kinder <strong>ab dem 6. Lebensjahr</strong> angehört. Das Gericht kann bei jüngeren Kindern die Anhörung an eine Fachperson (Kinderpsychologe, Sozialarbeiter) delegieren. In einvernehmlichen Verfahren verzichten Gerichte häufig auf die Anhörung (BGE 146 III 203), wenn die Vereinbarung der Eltern dem Kindeswohl entspricht.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ablauf der Kindesanhörung</h3>
+
+    <p class="text-gray-700 mb-6">Die Anhörung findet ohne das Beisein der Eltern statt und dauert typischerweise 30-60 Minuten. Sie wird vorzugsweise ausserhalb des Gerichtsgebäudes durchgeführt – etwa in kindgerecht eingerichteten Räumen oder im Büro des Richters. Eine Anhörung in der Wohnung des Kindes ist nicht zulässig.</p>
+
+    <p class="text-gray-700 mb-6">Das Gericht achtet darauf, das Kind nicht in einen <strong>Loyalitätskonflikt</strong> zu bringen. Es werden keine direkten Fragen gestellt wie "Möchtest du lieber bei Mama oder Papa wohnen?". Stattdessen werden offene Fragen zu den Lebensumständen, Wünschen und Beziehungen des Kindes gestellt.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Vertraulichkeit:</p>
+        <p class="text-gray-700">Die Anhörung ist grundsätzlich vertraulich. Den Eltern wird eine Zusammenfassung des Gesprächs bekannt gegeben. Auf Wunsch des Kindes können Teile des Gesprächsinhalts ausgeklammert werden. Das Kind kann auch ablehnen, angehört zu werden.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Das Kindeswohl – Tipps für Eltern</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Auswirkungen der Scheidung auf Kinder</h3>
+
+    <p class="text-gray-700 mb-6">Eine Trennung oder Scheidung ist für Kinder ein einschneidendes Erlebnis. Häufige Reaktionen sind Wut, Trauer, Schuldgefühle oder Angst, einen Elternteil zu verlieren. Manche Kinder zeigen Verhaltensänderungen wie Schlafstörungen, Leistungsabfall in der Schule oder Rückschritte in der Entwicklung (z.B. erneutes Einnässen).</p>
+
+    <p class="text-gray-700 mb-6">Die Forschung zeigt jedoch, dass nicht die Scheidung an sich das Kind belastet, sondern vor allem der <strong>Konflikt zwischen den Eltern</strong>. Kinder, deren Eltern trotz Trennung respektvoll miteinander umgehen und kooperieren, verarbeiten die Situation deutlich besser.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Was Eltern tun sollten</h3>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-3">
+        <li><strong>Gemeinsam informieren:</strong> Erklären Sie dem Kind möglichst gemeinsam und altersgerecht, was sich ändert. Betonen Sie, dass die Trennung nicht die Schuld des Kindes ist.</li>
+        <li><strong>Emotionen zulassen:</strong> Geben Sie dem Kind Raum für seine Gefühle. Wut, Trauer oder Ablehnung sind normale Reaktionen.</li>
+        <li><strong>Routinen beibehalten:</strong> Soweit möglich, sollten gewohnte Abläufe (Schule, Hobbys, Freunde) beibehalten werden, um Stabilität zu geben.</li>
+        <li><strong>Beide Elternbeziehungen fördern:</strong> Unterstützen Sie aktiv die Beziehung des Kindes zum anderen Elternteil.</li>
+        <li><strong>Professionelle Hilfe suchen:</strong> Bei anhaltenden Schwierigkeiten kann eine Familientherapie oder Kinderpsychologin helfen.</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Was Eltern vermeiden sollten</h3>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-3">
+        <li><strong>Das Kind als Boten missbrauchen:</strong> Kommunizieren Sie direkt mit dem anderen Elternteil, nicht über das Kind.</li>
+        <li><strong>Vor dem Kind schlecht über den anderen reden:</strong> Das belastet das Kind und bringt es in einen Loyalitätskonflikt.</li>
+        <li><strong>Das Kind zum Verbündeten machen:</strong> Das Kind darf nicht Partei ergreifen müssen.</li>
+        <li><strong>Das Kind als Informationsquelle nutzen:</strong> Fragen Sie nicht aus, was beim anderen Elternteil passiert.</li>
+        <li><strong>Finanzielle Streitigkeiten vor dem Kind austragen:</strong> Unterhaltsthemen gehören nicht in Ohren des Kindes.</li>
+    </ul>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Mediation bei einer Scheidung mit Kind</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Was ist Mediation?</h3>
+
+    <p class="text-gray-700 mb-6">Mediation ist ein strukturiertes Verfahren zur Konfliktlösung, bei dem eine neutrale Drittperson (Mediator) den Eltern hilft, eigenverantwortlich eine Lösung zu finden. Im Gegensatz zu einem Gerichtsverfahren entscheidet nicht ein Richter, sondern die Eltern erarbeiten gemeinsam eine Vereinbarung.</p>
+
+    <p class="text-gray-700 mb-6">Mediation ist besonders bei Scheidungen mit Kindern empfehlenswert, weil sie die Kommunikation zwischen den Eltern verbessern kann und auf langfristige, tragfähige Lösungen abzielt. Die Eltern bleiben auch nach der Scheidung in einer Beziehung – als Co-Eltern.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vorteile der Mediation</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Mediation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gerichtsverfahren</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Konfliktniveau</td>
+                    <td class="px-6 py-4 text-gray-700">Deeskalierend, lösungsorientiert</td>
+                    <td class="px-6 py-4 text-gray-700">Oft konfliktverschärfend</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Kosten</td>
+                    <td class="px-6 py-4 text-gray-700">In der Regel günstiger</td>
+                    <td class="px-6 py-4 text-gray-700">Höhere Gerichts- und Anwaltskosten</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Dauer</td>
+                    <td class="px-6 py-4 text-gray-700">Meist schneller</td>
+                    <td class="px-6 py-4 text-gray-700">Oft langwierig</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Kontrolle</td>
+                    <td class="px-6 py-4 text-gray-700">Eltern bestimmen selbst</td>
+                    <td class="px-6 py-4 text-gray-700">Richter entscheidet</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Beziehung danach</td>
+                    <td class="px-6 py-4 text-gray-700">Kooperation wird gefördert</td>
+                    <td class="px-6 py-4 text-gray-700">"Gewinner/Verlierer"-Dynamik</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wann ist Mediation nicht geeignet?</h3>
+
+    <p class="text-gray-700 mb-6">Mediation setzt voraus, dass beide Elternteile freiwillig und ernsthaft an einer Lösung interessiert sind. Sie ist nicht geeignet bei häuslicher Gewalt, extremem Machtungleichgewicht zwischen den Parteien, schweren psychischen Erkrankungen oder wenn ein Elternteil die Mediation nur verzögern will.</p>
+
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">Bei einer Scheidung mit Kindern stehen viele komplexe Entscheidungen an, die langfristige Auswirkungen auf das Wohl Ihrer Kinder und Ihre eigene Situation haben. Auch wenn Sie sich eine einvernehmliche Lösung wünschen, kann die Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> entscheidend sein, um Ihre Rechte und die Ihres Kindes zu wahren.</p>
+
+        <p class="text-gray-700 mb-6">Besonders in folgenden Situationen ist anwaltliche Unterstützung empfohlen:</p>
+
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Streit über das Sorgerecht oder die Obhutszuteilung</li>
+            <li>Uneinigkeit über die Höhe des Kindesunterhalts</li>
+            <li>Bedenken bezüglich des Besuchsrechts oder einer alternierenden Obhut</li>
+            <li>Wenn der andere Elternteil bereits anwaltlich vertreten ist</li>
+            <li>Bei komplexen finanziellen Verhältnissen (Unternehmen, Immobilien, internationaler Bezug)</li>
+            <li>Wenn Sie einen Umzug mit dem Kind ins Ausland planen oder befürchten</li>
+        </ul>
+
+        <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kann die Scheidungskonvention prüfen, Sie über Ihre Rechte aufklären und sicherstellen, dass die getroffenen Vereinbarungen dem Kindeswohl entsprechen und rechtlich korrekt sind. Bei strittigen Verfahren ist die Vertretung durch einen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> praktisch unerlässlich, um Ihre Interessen vor Gericht wirksam zu vertreten.</p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Sind Sie unsicher, wie die Kinderbelange bei Ihrer Scheidung am besten geregelt werden? Unsere spezialisierten Familienrechtsanwälte beraten Sie zu Sorgerecht, Obhut, Unterhalt und Besuchsrecht.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <h2 class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Eine Scheidung mit Kindern ist für alle Beteiligten eine grosse Herausforderung. Das Schweizer Recht stellt das Kindeswohl konsequent ins Zentrum aller Entscheidungen. Die gemeinsame elterliche Sorge als Regelfall unterstreicht, dass beide Eltern auch nach der Trennung Verantwortung für ihre Kinder tragen.</p>
+
+    <p class="text-gray-700 mb-6">Die konkrete Ausgestaltung von Obhut, Betreuung und Unterhalt muss individuell auf die Situation der Familie abgestimmt werden. Die alternierende Obhut gewinnt zunehmend an Bedeutung und kann – bei geeigneten Voraussetzungen – für das Kindeswohl die beste Lösung sein.</p>
+
+    <p class="text-gray-700 mb-6">Entscheidend für das Wohlergehen der Kinder ist, dass die Eltern trotz ihrer eigenen Konflikte respektvoll miteinander umgehen und im Interesse der Kinder kooperieren. Professionelle Unterstützung durch Anwälte, Mediatoren oder Familientherapeuten kann dabei helfen, tragfähige Lösungen zu finden und den Kindern einen möglichst sanften Übergang in die neue Familiensituation zu ermöglichen.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Relevante Gesetzesbestimmungen:</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li>Art. 111-115 ZGB (Scheidungsverfahren)</li>
+            <li>Art. 133 ZGB (Kinderbelange bei Scheidung)</li>
+            <li>Art. 270-295 ZGB (Kindesverhältnis)</li>
+            <li>Art. 273-275 ZGB (Persönlicher Verkehr)</li>
+            <li>Art. 276-293 ZGB (Kindesunterhalt)</li>
+            <li>Art. 296-306 ZGB (Elterliche Sorge)</li>
+            <li>Art. 296-298 ZPO (Verfahren betreffend Kinder)</li>
+        </ul>
+    </div>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie lange dauert eine Scheidung mit Kindern in der Schweiz?</h3>
+                <p class="text-gray-700">Eine einvernehmliche Scheidung mit vollständiger Einigung dauert in der Regel 2-6 Monate. Bei einer strittigen Scheidung beträgt die Dauer durchschnittlich 1-3 Jahre, da zunächst eine zweijährige Trennungsfrist abgewartet werden muss (Art. 114 ZGB) und das Gerichtsverfahren selbst Zeit in Anspruch nimmt.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wer bekommt das Sorgerecht bei einer Scheidung in der Schweiz?</h3>
+                <p class="text-gray-700">Seit 2014 ist die gemeinsame elterliche Sorge der Regelfall (Art. 298 Abs. 1 ZGB). Beide Elternteile behalten also das Sorgerecht, unabhängig davon, bei wem das Kind lebt. Nur in Ausnahmefällen – bei schwerwiegendem und dauerhaftem Elternkonflikt oder Gefährdung des Kindeswohls – kann das alleinige Sorgerecht einem Elternteil zugeteilt werden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie hoch ist der Kindesunterhalt in der Schweiz?</h3>
+                <p class="text-gray-700">Der Kindesunterhalt richtet sich nach dem konkreten Bedarf des Kindes und der Leistungsfähigkeit der Eltern. Als Richtwert gilt für ein Kind im Schulalter (6-12 Jahre) ein Barunterhalt von CHF 1'000-1'500 pro Monat, zuzüglich eines allfälligen Betreuungsunterhalts. Die genaue Höhe wird nach der zweistufig-konkreten Methode berechnet.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen Barunterhalt und Betreuungsunterhalt?</h3>
+                <p class="text-gray-700">Der Barunterhalt deckt die direkten Kosten des Kindes (Grundbetrag, Wohnen, Versicherung, Ausbildung, Fremdbetreuung). Der Betreuungsunterhalt hingegen ist ein Beitrag an die Lebenshaltungskosten des hauptbetreuenden Elternteils, um dessen Einkommenseinbusse durch die Kinderbetreuung auszugleichen (Art. 285 Abs. 2 ZGB).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist alternierende Obhut?</h3>
+                <p class="text-gray-700">Bei der alternierenden Obhut (Wechselmodell) lebt das Kind abwechselnd bei beiden Elternteilen und wird von diesen zu ungefähr gleichen Teilen – mindestens jedoch zu 30% – betreut. Seit 2017 können Eltern und Kinder ausdrücklich verlangen, dass das Gericht die alternierende Obhut prüft (Art. 298 Abs. 2ter ZGB).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Ab welchem Alter wird ein Kind bei der Scheidung angehört?</h3>
+                <p class="text-gray-700">Kinder werden in der Regel ab dem 6. Lebensjahr vom Gericht angehört (Art. 298 ZPO). Die Anhörung findet ohne die Eltern statt und dauert etwa 30-60 Minuten. Das Gericht achtet darauf, das Kind nicht in einen Loyalitätskonflikt zu bringen. Das Kind kann die Anhörung auch ablehnen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie wird das Besuchsrecht in der Schweiz geregelt?</h3>
+                <p class="text-gray-700">Das übliche Besuchsrecht umfasst für Schulkinder jedes zweite Wochenende (Freitag bis Sonntag), einen Abend oder Nachmittag unter der Woche sowie 2-3 Wochen Ferien pro Jahr. Bei Säuglingen und Kleinkindern wird das Besuchsrecht schrittweise aufgebaut. Die genaue Regelung können die Eltern frei vereinbaren, solange das Kindeswohl gewahrt bleibt.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Bis wann muss Kindesunterhalt bezahlt werden?</h3>
+                <p class="text-gray-700">Die Unterhaltspflicht dauert grundsätzlich bis zur Volljährigkeit (18 Jahre). Sie verlängert sich jedoch bis zum Abschluss einer angemessenen Erstausbildung (Art. 277 Abs. 2 ZGB), sofern das Kind diese in ordentlicher Zeit absolviert. Bei volljährigen Kindern entfällt allerdings der Betreuungsunterhalt.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann die alternierende Obhut gegen den Willen eines Elternteils angeordnet werden?</h3>
+                <p class="text-gray-700">Ja, das Gericht kann die alternierende Obhut auch gegen den Willen eines Elternteils anordnen, wenn dies dem Kindeswohl entspricht (BGE 142 III 612). Voraussetzungen sind unter anderem die Erziehungsfähigkeit beider Eltern, geografische Nähe der Wohnorte und grundsätzliche Kooperationsfähigkeit in Kinderbelangen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Ist eine Mediation bei einer Scheidung mit Kindern sinnvoll?</h3>
+                <p class="text-gray-700">Mediation ist bei Scheidungen mit Kindern besonders empfehlenswert. Sie ist deeskalierend, meist schneller und günstiger als ein strittiges Gerichtsverfahren und fördert die Kooperation der Eltern. Die gemeinsam erarbeiteten Lösungen werden oft besser akzeptiert und umgesetzt. Mediation ist jedoch nicht geeignet bei häuslicher Gewalt oder extremem Machtungleichgewicht.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Scheidung mit Kind in der Schweiz: Sorgerecht, Obhut, Unterhalt & Besuchsrecht",
+        "description": "Scheidung mit Kind in der Schweiz erklärt: Sorgerecht, Obhut, alternierende Betreuung, Kindesunterhalt & Besuchsrecht. Mit BGE-Rechtsprechung und praktischen Tipps.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-20",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/scheidung/mit-kind"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Wie lange dauert eine Scheidung mit Kindern in der Schweiz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Eine einvernehmliche Scheidung mit vollständiger Einigung dauert in der Regel 2-6 Monate. Bei einer strittigen Scheidung beträgt die Dauer durchschnittlich 1-3 Jahre, da zunächst eine zweijährige Trennungsfrist abgewartet werden muss (Art. 114 ZGB) und das Gerichtsverfahren selbst Zeit in Anspruch nimmt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wer bekommt das Sorgerecht bei einer Scheidung in der Schweiz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Seit 2014 ist die gemeinsame elterliche Sorge der Regelfall (Art. 298 Abs. 1 ZGB). Beide Elternteile behalten also das Sorgerecht, unabhängig davon, bei wem das Kind lebt. Nur in Ausnahmefällen – bei schwerwiegendem und dauerhaftem Elternkonflikt oder Gefährdung des Kindeswohls – kann das alleinige Sorgerecht einem Elternteil zugeteilt werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie hoch ist der Kindesunterhalt in der Schweiz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der Kindesunterhalt richtet sich nach dem konkreten Bedarf des Kindes und der Leistungsfähigkeit der Eltern. Als Richtwert gilt für ein Kind im Schulalter (6-12 Jahre) ein Barunterhalt von CHF 1'000-1'500 pro Monat, zuzüglich eines allfälligen Betreuungsunterhalts. Die genaue Höhe wird nach der zweistufig-konkreten Methode berechnet."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen Barunterhalt und Betreuungsunterhalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der Barunterhalt deckt die direkten Kosten des Kindes (Grundbetrag, Wohnen, Versicherung, Ausbildung, Fremdbetreuung). Der Betreuungsunterhalt hingegen ist ein Beitrag an die Lebenshaltungskosten des hauptbetreuenden Elternteils, um dessen Einkommenseinbusse durch die Kinderbetreuung auszugleichen (Art. 285 Abs. 2 ZGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist alternierende Obhut?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei der alternierenden Obhut (Wechselmodell) lebt das Kind abwechselnd bei beiden Elternteilen und wird von diesen zu ungefähr gleichen Teilen – mindestens jedoch zu 30% – betreut. Seit 2017 können Eltern und Kinder ausdrücklich verlangen, dass das Gericht die alternierende Obhut prüft (Art. 298 Abs. 2ter ZGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Ab welchem Alter wird ein Kind bei der Scheidung angehört?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kinder werden in der Regel ab dem 6. Lebensjahr vom Gericht angehört (Art. 298 ZPO). Die Anhörung findet ohne die Eltern statt und dauert etwa 30-60 Minuten. Das Gericht achtet darauf, das Kind nicht in einen Loyalitätskonflikt zu bringen. Das Kind kann die Anhörung auch ablehnen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie wird das Besuchsrecht in der Schweiz geregelt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das übliche Besuchsrecht umfasst für Schulkinder jedes zweite Wochenende (Freitag bis Sonntag), einen Abend oder Nachmittag unter der Woche sowie 2-3 Wochen Ferien pro Jahr. Bei Säuglingen und Kleinkindern wird das Besuchsrecht schrittweise aufgebaut. Die genaue Regelung können die Eltern frei vereinbaren, solange das Kindeswohl gewahrt bleibt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bis wann muss Kindesunterhalt bezahlt werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Unterhaltspflicht dauert grundsätzlich bis zur Volljährigkeit (18 Jahre). Sie verlängert sich jedoch bis zum Abschluss einer angemessenen Erstausbildung (Art. 277 Abs. 2 ZGB), sofern das Kind diese in ordentlicher Zeit absolviert. Bei volljährigen Kindern entfällt allerdings der Betreuungsunterhalt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann die alternierende Obhut gegen den Willen eines Elternteils angeordnet werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, das Gericht kann die alternierende Obhut auch gegen den Willen eines Elternteils anordnen, wenn dies dem Kindeswohl entspricht (BGE 142 III 612). Voraussetzungen sind unter anderem die Erziehungsfähigkeit beider Eltern, geografische Nähe der Wohnorte und grundsätzliche Kooperationsfähigkeit in Kinderbelangen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Ist eine Mediation bei einer Scheidung mit Kindern sinnvoll?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Mediation ist bei Scheidungen mit Kindern besonders empfehlenswert. Sie ist deeskalierend, meist schneller und günstiger als ein strittiges Gerichtsverfahren und fördert die Kooperation der Eltern. Die gemeinsam erarbeiteten Lösungen werden oft besser akzeptiert und umgesetzt. Mediation ist jedoch nicht geeignet bei häuslicher Gewalt oder extremem Machtungleichgewicht."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Scheidung",
+                "item": "https://familienrechtanwalt.ch/scheidung"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Scheidung mit Kind in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/scheidung/mit-kind"
+            }
+        ]
+    })} />
+
 </ArticleLayout>

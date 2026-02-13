@@ -4,193 +4,444 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 
 <ArticleLayout
     title="Gütertrennung in der Schweiz"
-    description="Gütertrennung in der Schweiz: Vollständiger Leitfaden zum getrennten Güterstand. Vor- und Nachteile, Entstehung und Wirkungen erklärt."
-    keywords="Gütertrennung Schweiz, Ehevertrag Gütertrennung, Art. 247 ZGB, getrenntes Vermögen, Güterstand"
+    description="Gütertrennung einfach erklärt: Entstehung, Wirkungen, Vor- & Nachteile nach Art. 247-251 ZGB. Mit Kosten, Formvorschriften und BGE-Rechtsprechung."
+    keywords="Gütertrennung Schweiz, Ehevertrag Gütertrennung, Art. 247 ZGB, Güterstand, gerichtliche Gütertrennung, Gütertrennungsvertrag"
     category="Güterrecht"
     categoryLink="/gueterrecht"
 >
-    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die Gütertrennung ist der Güterstand mit der grössten vermögensrechtlichen Unabhängigkeit zwischen den Ehegatten. Bei diesem Güterstand gibt es kein gemeinsames Vermögen, keine Errungenschaft und keine Teilung bei Scheidung.</p>
-
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kernmerkmale der Gütertrennung</h2>
-
-    <div class="overflow-x-auto mb-6">
-        <table class="min-w-full bg-white border border-gray-200">
-            <thead class="bg-navy text-white">
-                <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Merkmal</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
-                </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200">
-                <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Vermögensmassen</td>
-                    <td class="px-6 py-4 text-gray-700">Nur zwei: Eigengut Ehemann + Eigengut Ehefrau</td>
-                </tr>
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Gemeinsames Vermögen</td>
-                    <td class="px-6 py-4 text-gray-700">Keines</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Verwaltung</td>
-                    <td class="px-6 py-4 text-gray-700">Vollständig getrennt</td>
-                </tr>
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Haftung</td>
-                    <td class="px-6 py-4 text-gray-700">Nur für eigene Schulden</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Bei Scheidung</td>
-                    <td class="px-6 py-4 text-gray-700">Keine Teilung erforderlich</td>
-                </tr>
-            </tbody>
-        </table>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Gütertrennung ist ein Güterstand, bei dem die Vermögen der Ehegatten vollständig getrennt bleiben – es gibt kein gemeinsames Vermögen (Art. 247 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Gütertrennung kann durch Ehevertrag vereinbart, vom Gericht angeordnet oder tritt bei Konkurs von Gesetzes wegen ein (Art. 182, 185, 188 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Jeder Ehegatte haftet nur für seine eigenen Schulden mit seinem gesamten Vermögen (Art. 249 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bei Scheidung findet keine güterrechtliche Auseinandersetzung statt – jeder behält sein Eigengut.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Pensionskassenguthaben (2. Säule) werden trotz Gütertrennung bei Scheidung hälftig geteilt (Art. 122 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Ein Ehevertrag zur Gütertrennung muss notariell beurkundet werden und kostet je nach Kanton CHF 200 bis CHF 7'500.</span>
+            </li>
+        </ul>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen</h2>
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die Gütertrennung ist der Güterstand mit der grössten vermögensrechtlichen Unabhängigkeit zwischen den Ehegatten. Bei diesem Güterstand gibt es kein gemeinsames Vermögen, keine Errungenschaft und keine Teilung bei Scheidung. Das schweizerische Recht regelt die Gütertrennung in den Art. 247-251 ZGB. In diesem umfassenden Leitfaden erfahren Sie alles über die Entstehung, Wirkungen, Vor- und Nachteile der Gütertrennung sowie deren Auswirkungen bei Scheidung und im Todesfall.</p>
 
-    <p class="text-gray-700 mb-6">Die Gütertrennung ist in den Art. 247-251 des Schweizerischen Zivilgesetzbuches (ZGB) geregelt.</p>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Was ist Gütertrennung?</h2>
 
-    <div class="overflow-x-auto mb-6">
+    <p class="text-gray-700 mb-6">Die Gütertrennung ist einer der drei Güterstände des schweizerischen Eherechts neben der <a href="/gueterrecht/errungenschaftsbeteiligung" class="text-gold hover:underline font-semibold">Errungenschaftsbeteiligung</a> (dem ordentlichen Güterstand) und der <a href="/gueterrecht/guetergemeinschaft" class="text-gold hover:underline font-semibold">Gütergemeinschaft</a>. Anders als bei den beiden anderen Güterständen bleiben bei der Gütertrennung die Vermögen der Ehegatten vollständig getrennt voneinander.</p>
+
+    <p class="text-gray-700 mb-6">Die Gütertrennung wird oft als «Nicht-Güterstand» bezeichnet, weil sie das Gegenteil einer ehelichen Vermögensgemeinschaft darstellt. Jeder Ehegatte bleibt alleiniger Eigentümer seines Vermögens, verwaltet und nutzt dieses selbstständig und verfügt darüber ohne Mitwirkung des anderen Ehegatten (Art. 247 ZGB). Es gibt nur zwei Vermögensmassen: das Eigengut der Ehefrau und das Eigengut des Ehemannes.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Definition nach Art. 247 ZGB:</p>
+        <p class="text-gray-700 italic">«Innerhalb der gesetzlichen Schranken verwaltet und nutzt jeder Ehegatte sein Vermögen und verfügt darüber.»</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Gesetzliche Grundlagen der Gütertrennung</h2>
+
+    <p class="text-gray-700 mb-6">Die Gütertrennung ist in den Art. 247-251 des Schweizerischen Zivilgesetzbuches (ZGB) geregelt. Diese Bestimmungen sind bewusst knapp gehalten, da bei der Gütertrennung weniger Regelungsbedarf besteht als bei den anderen Güterständen.</p>
+
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Artikel</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Marginalie</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Regelungsinhalt</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Art. 247 ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Grundsatz: Eigentum, Verwaltung, Nutzung</td>
+                    <td class="px-6 py-4 text-gray-700">Verwaltung, Nutzung und Verfügung</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder Ehegatte verwaltet, nutzt und verfügt über sein Vermögen selbstständig</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">Art. 248 ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Beweis des Eigentums</td>
+                    <td class="px-6 py-4 text-gray-700">Beweis</td>
+                    <td class="px-6 py-4 text-gray-700">Eigentumsvermutung bei nicht beweisbarer Zugehörigkeit: Miteigentum wird vermutet</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Art. 249 ZGB</td>
                     <td class="px-6 py-4 text-gray-700">Schulden</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder Ehegatte haftet für seine Schulden mit seinem gesamten Vermögen</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">Art. 250 ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Beitrag eines Ehegatten an den anderen</td>
+                    <td class="px-6 py-4 text-gray-700">Beiträge an den Unterhalt der Familie</td>
+                    <td class="px-6 py-4 text-gray-700">Rückforderung von Beiträgen eines Ehegatten an den anderen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 251 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Auflösung</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Auflösung nimmt jeder Ehegatte das ihm Gehörende zurück</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Entstehung der Gütertrennung</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wie entsteht die Gütertrennung?</h2>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">1. Vertragliche Gütertrennung (Art. 182 ZGB)</h3>
-    <p class="text-gray-700 mb-4">Die Ehegatten können die Gütertrennung durch einen Ehevertrag vereinbaren:</p>
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Form:</strong> Öffentliche Beurkundung durch Notar</li>
-        <li><strong>Zeitpunkt:</strong> Vor oder während der Ehe</li>
-        <li><strong>Parteien:</strong> Beide Ehegatten persönlich</li>
-    </ul>
+    <p class="text-gray-700 mb-6">Die Gütertrennung kann auf drei verschiedene Arten entstehen: durch vertragliche Vereinbarung (Ehevertrag), durch gerichtliche Anordnung oder von Gesetzes wegen bei bestimmten Ereignissen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">1. Vertragliche Gütertrennung durch Ehevertrag (Art. 182-184 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Die häufigste Form der Gütertrennung ist die vertragliche Vereinbarung durch einen Ehevertrag. Die Ehegatten können vor oder während der Ehe einen Ehevertrag abschliessen und darin die Gütertrennung als Güterstand wählen (Art. 182 ZGB).</p>
+
+    <p class="text-gray-700 mb-6">Der Ehevertrag bedarf zu seiner Gültigkeit der öffentlichen Beurkundung (Art. 184 Abs. 1 ZGB). Das bedeutet, dass er von einer Urkundsperson (Notar) nach den kantonalen Vorschriften beurkundet werden muss. Beide Ehegatten müssen persönlich anwesend sein und den Vertrag eigenhändig unterschreiben.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Formvorschriften für den Ehevertrag:</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li>Öffentliche Beurkundung durch einen Notar (Art. 184 ZGB)</li>
+            <li>Persönliche Anwesenheit beider Ehegatten</li>
+            <li>Eigenhändige Unterschrift beider Ehegatten</li>
+            <li>Unterschrift und Beurkundungsvermerk des Notars</li>
+        </ul>
+    </div>
+
+    <p class="text-gray-700 mb-6">Die Gütertrennung kann sowohl vor der Eheschliessung als auch jederzeit während der Ehe vereinbart werden. Wird sie während der Ehe vereinbart, können die Ehegatten wählen, ob die Wirkung ab Vertragsabschluss oder rückwirkend ab Eheschliessung eintreten soll (BGE 100 II 276). Bei Rückwirkung auf den Eheschliessungszeitpunkt erfolgt die güterrechtliche Auseinandersetzung des bisherigen Güterstands erst bei der künftigen Auflösung der Ehe.</p>
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">2. Gerichtliche Gütertrennung (Art. 185 ZGB)</h3>
-    <p class="text-gray-700 mb-4">Ein Ehegatte kann beim Gericht die Gütertrennung beantragen, wenn wichtige Gründe vorliegen:</p>
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Überschuldung des anderen Ehegatten</li>
-        <li>Gefährdung der eigenen Vermögensinteressen</li>
-        <li>Verweigerung der Auskunft über Vermögen</li>
-        <li>Missbrauch der Vertretungsbefugnis</li>
-    </ul>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">3. Gütertrennung bei Konkurs (Art. 188 ZGB)</h3>
-    <p class="text-gray-700 mb-6">Bei Konkurs eines Ehegatten tritt die Gütertrennung von Gesetzes wegen ein.</p>
+    <p class="text-gray-700 mb-6">Ein Ehegatte kann beim Gericht die Anordnung der Gütertrennung beantragen, wenn ein wichtiger Grund vorliegt. Die gerichtliche Gütertrennung dient dem Schutz eines Ehegatten vor vermögensrechtlichen Gefährdungen durch den anderen Ehegatten.</p>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wirkungen während der Ehe</h2>
+    <p class="text-gray-700 mb-6">Art. 185 Abs. 2 ZGB nennt beispielhaft folgende wichtige Gründe:</p>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vollständige Trennung</h3>
-    <p class="text-gray-700 mb-6">Bei der Gütertrennung bleiben die Vermögen der Ehegatten vollständig getrennt. Jeder bleibt Eigentümer seines Vermögens, es gibt kein Gesamteigentum kraft Güterrecht, Miteigentum ist aber nach allgemeinen Regeln möglich.</p>
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Ziffer</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Wichtiger Grund (Art. 185 Abs. 2 ZGB)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Ziff. 1</td>
+                    <td class="px-6 py-4 text-gray-700">Der andere Ehegatte ist überschuldet oder sein Anteil am Gesamtgut wird gepfändet</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Ziff. 2</td>
+                    <td class="px-6 py-4 text-gray-700">Der andere Ehegatte gefährdet die Interessen des Gesuchstellers oder der Gemeinschaft</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Ziff. 3</td>
+                    <td class="px-6 py-4 text-gray-700">Der andere Ehegatte verweigert ungerechtfertigt die Zustimmung zu einer Verfügung über das Gesamtgut</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Ziff. 4</td>
+                    <td class="px-6 py-4 text-gray-700">Der andere Ehegatte verweigert die Auskunft über sein Einkommen, Vermögen und Schulden oder über das Gesamtgut</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Ziff. 5</td>
+                    <td class="px-6 py-4 text-gray-700">Der andere Ehegatte ist dauernd urteilsunfähig</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Unterschied zur Errungenschaftsbeteiligung</h3>
+    <p class="text-gray-700 mb-6">Die Aufzählung in Art. 185 Abs. 2 ZGB ist nicht abschliessend («namentlich»). Auch andere Umstände können einen wichtigen Grund darstellen, wenn sie eine vergleichbare Gefährdungslage begründen.</p>
 
-    <div class="overflow-x-auto mb-6">
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Bundesgerichtliche Rechtsprechung zur gerichtlichen Gütertrennung:</p>
+        <p class="text-gray-700">Das Bundesgericht hat in BGE 116 II 21 festgehalten, dass bei der Anordnung der Gütertrennung alle Umstände geprüft werden müssen, in denen die Ehegatten leben. Das Kriterium der Gefährdung wirtschaftlicher Interessen steht dabei im Vordergrund. Die Tatsache, dass eine Wiedervereinigung unwahrscheinlich erscheint, ist für sich alleine kein Umstand, der die Anordnung der Gütertrennung rechtfertigt (BGer 5A_945/2014 vom 26. Mai 2015).</p>
+    </div>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Gütertrennung im Eheschutzverfahren (Art. 176 Abs. 1 Ziff. 3 ZGB)</h4>
+
+    <p class="text-gray-700 mb-6">Im Rahmen eines Eheschutzverfahrens kann das Gericht die Gütertrennung anordnen, «wenn es die Umstände rechtfertigen» (Art. 176 Abs. 1 Ziff. 3 ZGB). Die Voraussetzungen sind hier gegenüber Art. 185 ZGB erleichtert – es muss nicht zwingend ein wichtiger Grund im Sinne von Art. 185 ZGB vorliegen. Die rechtfertigenden Umstände können, müssen aber nicht notwendig einen wichtigen Grund darstellen.</p>
+
+    <p class="text-gray-700 mb-6">Bei Aufhebung des gemeinsamen Haushalts oder bei Bewilligung zum Getrenntleben tritt die Gütertrennung nicht automatisch von Gesetzes wegen ein. Sie muss vom Gericht auf Antrag angeordnet werden. Im Gegensatz zu anderen Eheschutzmassnahmen fällt die Gütertrennung bei Wiederaufnahme des Zusammenlebens nicht automatisch dahin (Art. 179 Abs. 2 ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">3. Gütertrennung von Gesetzes wegen</h3>
+
+    <p class="text-gray-700 mb-6">In bestimmten Fällen tritt die Gütertrennung von Gesetzes wegen ein, ohne dass es einer Vereinbarung oder gerichtlichen Anordnung bedarf:</p>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Bei Konkurs (Art. 188 ZGB)</h4>
+
+    <p class="text-gray-700 mb-6">Wird über einen Ehegatten, der in Gütergemeinschaft lebt, der Konkurs eröffnet, so tritt von Gesetzes wegen Gütertrennung ein (Art. 188 ZGB). Diese Regelung dient dem Schutz der Gläubiger und des anderen Ehegatten. Die Gütertrennung tritt automatisch im Zeitpunkt der Konkurseröffnung ein.</p>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Auf Begehren der Aufsichtsbehörde bei Pfändung (Art. 189 ZGB)</h4>
+
+    <p class="text-gray-700 mb-6">Wird der Anteil eines Ehegatten am Gesamtgut gepfändet, kann die Aufsichtsbehörde in Betreibungssachen beim Gericht die Anordnung der Gütertrennung verlangen (Art. 189 ZGB). Anders als bei Art. 188 ZGB tritt die Gütertrennung hier nicht automatisch ein, sondern muss vom Gericht angeordnet werden.</p>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Bei gerichtlicher Trennung (Art. 118 Abs. 1 ZGB)</h4>
+
+    <p class="text-gray-700 mb-6">Wenn die Ehegatten eine gerichtliche Trennung beantragen (anstelle einer Scheidung), tritt ab dem Zeitpunkt der Einreichung des Trennungsbegehrens oder des gemeinsamen Scheidungsbegehrens von Gesetzes wegen die Gütertrennung ein (Art. 118 Abs. 1 ZGB).</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wirkungen der Gütertrennung während der Ehe</h2>
+
+    <p class="text-gray-700 mb-6">Die Gütertrennung zeichnet sich durch die vollständige vermögensrechtliche Trennung der Ehegatten aus. Während der Ehe gelten folgende Grundsätze:</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Verwaltung, Nutzung und Verfügung (Art. 247 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Jeder Ehegatte verwaltet sein Vermögen selbstständig und unabhängig vom anderen. Er kann über seine Vermögenswerte frei verfügen, ohne dass er die Zustimmung des anderen Ehegatten benötigt. Einzige Einschränkung: Die allgemeinen eherechtlichen Schranken (z.B. Art. 169 ZGB betreffend Familienwohnung) bleiben anwendbar.</p>
+
+    <p class="text-gray-700 mb-6">Jeder Ehegatte trägt auch die Nutzungen seines Vermögens (Zinsen, Mieterträge, Dividenden). Diese fallen ihm allein zu und werden nicht Errungenschaft wie bei der Errungenschaftsbeteiligung.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Eigentumsvermutung bei Beweisnot (Art. 248 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Kann nicht bewiesen werden, welchem Ehegatten ein Vermögenswert gehört, wird Miteigentum beider Ehegatten zu gleichen Teilen vermutet (Art. 248 ZGB). Diese Regel kommt insbesondere bei der Auflösung des Güterstands zum Tragen, wenn die Zugehörigkeit von Gegenständen nicht mehr nachgewiesen werden kann.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praxistipp – Vermögensinventar:</p>
+        <p class="text-gray-700">Um Streitigkeiten über die Eigentumszugehörigkeit zu vermeiden, empfiehlt es sich, bei Abschluss des Ehevertrags ein detailliertes Vermögensinventar zu erstellen. Dieses sollte alle wesentlichen Vermögenswerte beider Ehegatten auflisten und notariell beurkundet werden.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Haftung für Schulden (Art. 249 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Bei der Gütertrennung haftet jeder Ehegatte für seine Schulden mit seinem gesamten Vermögen (Art. 249 ZGB). Es gibt keine Mithaftung für die Schulden des anderen Ehegatten. Ein Gläubiger kann sich nur an das Vermögen des Schuldner-Ehegatten halten, nicht an das Vermögen des anderen Ehegatten.</p>
+
+    <div class="bg-gray-50 border-l-4 border-red-500 p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtiger Hinweis:</p>
+        <p class="text-gray-700">Es ist ein weit verbreiteter Irrtum, dass mit der Gütertrennung die Haftungssituation generell verbessert werden könne. Die Gütertrennung schützt nur das Vermögen des einen Ehegatten vor den Schulden des anderen. Sie schützt jedoch nicht vor bereits bestehenden Schulden oder vor Schulden, für die beide Ehegatten gemeinsam haften (z.B. solidarisch eingegangene Schulden, Bürgschaften, Schulden für den Familienunterhalt nach Art. 166 ZGB).</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ausnahmen von der getrennten Haftung</h3>
+
+    <p class="text-gray-700 mb-6">Trotz Gütertrennung haften beide Ehegatten solidarisch für:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Fall</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erklärung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Schulden für Familienunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 166 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Schulden, die ein Ehegatte im Rahmen seiner Befugnis zur Vertretung der ehelichen Gemeinschaft eingeht</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Gemeinsam eingegangene Schulden</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 143 ff. OR</td>
+                    <td class="px-6 py-4 text-gray-700">Wenn beide Ehegatten als Mitschuldner auftreten (z.B. gemeinsame Hypothek)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Bürgschaften</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 492 ff. OR</td>
+                    <td class="px-6 py-4 text-gray-700">Wenn ein Ehegatte für Schulden des anderen bürgt</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Steuerschulden</td>
+                    <td class="px-6 py-4 text-gray-700">Kantonales Steuerrecht</td>
+                    <td class="px-6 py-4 text-gray-700">Ehegatten haften je nach Kanton solidarisch für die gemeinsame Steuer</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Vergleich der drei Güterstände</h2>
+
+    <p class="text-gray-700 mb-6">Um die Besonderheiten der Gütertrennung besser zu verstehen, ist ein Vergleich mit den anderen Güterständen hilfreich:</p>
+
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Errungenschaftsbeteiligung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gütergemeinschaft</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Gütertrennung</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Arbeitserwerb</td>
-                    <td class="px-6 py-4 text-gray-700">Errungenschaft (wird geteilt)</td>
-                    <td class="px-6 py-4 text-gray-700">Eigengut (bleibt beim Verdienenden)</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Vermögensmassen</td>
+                    <td class="px-6 py-4 text-gray-700">4 Massen (2x Eigengut, 2x Errungenschaft)</td>
+                    <td class="px-6 py-4 text-gray-700">3 Massen (2x Eigengut, Gesamtgut)</td>
+                    <td class="px-6 py-4 text-gray-700">2 Massen (nur je Eigengut)</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Ersparnisse</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Arbeitserwerb</td>
                     <td class="px-6 py-4 text-gray-700">Errungenschaft (wird geteilt)</td>
-                    <td class="px-6 py-4 text-gray-700">Eigengut (bleibt beim Sparenden)</td>
+                    <td class="px-6 py-4 text-gray-700">Gesamtgut (gemeinsam)</td>
+                    <td class="px-6 py-4 text-gray-700">Eigengut (bleibt beim Verdienenden)</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Zinserträge</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Ersparnisse</td>
                     <td class="px-6 py-4 text-gray-700">Errungenschaft (wird geteilt)</td>
+                    <td class="px-6 py-4 text-gray-700">Gesamtgut (gemeinsam)</td>
+                    <td class="px-6 py-4 text-gray-700">Eigengut (bleibt beim Sparenden)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Vermögenserträge</td>
+                    <td class="px-6 py-4 text-gray-700">Errungenschaft (wird geteilt)</td>
+                    <td class="px-6 py-4 text-gray-700">Gesamtgut (gemeinsam)</td>
                     <td class="px-6 py-4 text-gray-700">Eigengut (bleibt beim Eigentümer)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Teilung bei Scheidung</td>
+                    <td class="px-6 py-4 text-gray-700">Hälftige Teilung des Vorschlags</td>
+                    <td class="px-6 py-4 text-gray-700">Teilung des Gesamtguts</td>
+                    <td class="px-6 py-4 text-gray-700">Keine Teilung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Ehevertrag nötig?</td>
+                    <td class="px-6 py-4 text-gray-700">Nein (ordentlicher Güterstand)</td>
+                    <td class="px-6 py-4 text-gray-700">Ja</td>
+                    <td class="px-6 py-4 text-gray-700">Ja (oder gerichtlich/von Gesetzes wegen)</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Haftung für Schulden</h2>
-
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy">Grundsatz (Art. 249 ZGB):</p>
-        <p class="text-gray-700">Bei der Gütertrennung haftet jeder Ehegatte nur für seine eigenen Schulden mit seinem gesamten Vermögen. Es gibt keine Mithaftung für Schulden des anderen Ehegatten.</p>
-    </div>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ausnahmen: Solidarhaftung</h3>
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Gemeinsam eingegangene Schulden: Beide solidarisch</li>
-        <li>Schulden für Familienunterhalt (Art. 166 ZGB): Beide solidarisch</li>
-        <li>Bürgschaft: Nur der Bürge</li>
-    </ul>
-
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Gütertrennung bei Scheidung</h2>
 
-    <p class="text-gray-700 mb-6">Bei der Gütertrennung gibt es keine güterrechtliche Auseinandersetzung im eigentlichen Sinn. Jeder Ehegatte behält sein Vermögen vollständig.</p>
+    <p class="text-gray-700 mb-6">Bei der Gütertrennung findet bei einer Scheidung keine güterrechtliche Auseinandersetzung im eigentlichen Sinn statt. Da es während der Ehe kein gemeinsames Vermögen gibt, gibt es auch nichts aufzuteilen. Die Vermögenswerte gehen zu 100% an den ursprünglichen Eigentümer zurück.</p>
 
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy">Was bei Scheidung geschieht:</p>
-        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
-            <li>Jeder behält sein Eigengut</li>
-            <li>Keine Berechnung eines Vorschlags</li>
-            <li>Keine Beteiligung am Vermögen des anderen</li>
-            <li>Nur gemeinsames Eigentum (Miteigentum) wird aufgeteilt</li>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ablauf bei Auflösung der Gütertrennung (Art. 251 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Bei Auflösung des Güterstands der Gütertrennung gilt:</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li>Jeder Ehegatte nimmt die Vermögenswerte zurück, die im Besitz des anderen sind (Art. 251 Abs. 1 ZGB)</li>
+            <li>Steht ein Vermögenswert im Miteigentum und kann keiner der Ehegatten ein überwiegendes Interesse nachweisen, kann er die Zuweisung an sich gegen Entschädigung verlangen</li>
+            <li>Bei Uneinigkeit entscheidet das Gericht über die Zuteilung</li>
+            <li>Schulden, die ein Ehegatte im Interesse des anderen eingegangen ist, werden abgerechnet (Art. 250 ZGB)</li>
         </ul>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Vorteile der Gütertrennung</h2>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vorsorgeausgleich trotz Gütertrennung</h3>
 
-    <div class="overflow-x-auto mb-6">
+    <p class="text-gray-700 mb-6">Ein wichtiger Punkt, der oft übersehen wird: Die Gütertrennung hat keinen Einfluss auf den Vorsorgeausgleich. Gemäss Art. 122 ZGB werden die während der Ehe erworbenen Ansprüche aus der beruflichen Vorsorge (2. Säule / Pensionskasse) bei Scheidung grundsätzlich hälftig geteilt – unabhängig vom gewählten Güterstand.</p>
+
+    <div class="bg-gray-50 border-l-4 border-red-500 p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig:</p>
+        <p class="text-gray-700">Ein Ehevertrag mit Gütertrennung regelt nur die Aufteilung des Vermögens, nicht der Pensionskassenguthaben. Die während der Ehe angesparten BVG-Guthaben werden bei Scheidung trotzdem hälftig geteilt. Ein Verzicht auf den Vorsorgeausgleich ist nur unter engen Voraussetzungen möglich (Art. 124b ZGB) und muss vom Gericht genehmigt werden.</p>
+    </div>
+
+    <p class="text-gray-700 mb-6">Anders verhält es sich bei der gebundenen Vorsorge (Säule 3a): Diese gehört zum Eigengut und wird bei Gütertrennung nicht geteilt, da es sich um gewöhnliches Vermögen handelt (BGE 137 III 337).</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Gütertrennung und Unterhalt</h2>
+
+    <p class="text-gray-700 mb-6">Ein häufiges Missverständnis betrifft den Zusammenhang zwischen Gütertrennung und Unterhalt. Die Wahl des Güterstands hat grundsätzlich keine Auswirkungen auf die Unterhaltspflicht.</p>
+
+    <p class="text-gray-700 mb-6">Das Güterrecht regelt nur die Vermögensaufteilung, nicht den Unterhalt. Die gesetzlichen Unterhaltsansprüche (Kindesunterhalt nach Art. 276 ff. ZGB und nachehelicher Unterhalt nach Art. 125 ZGB) bestehen unabhängig davon, ob die Ehegatten in Errungenschaftsbeteiligung, Gütergemeinschaft oder Gütertrennung leben.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Merke:</p>
+        <p class="text-gray-700">Die Gütertrennung schützt das Vermögen vor Aufteilung bei Scheidung, befreit aber nicht von der Unterhaltspflicht. Kindesunterhalt und – je nach Umständen – nachehelicher Ehegattenunterhalt können auch bei Gütertrennung geschuldet sein.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Gütertrennung im Todesfall</h2>
+
+    <p class="text-gray-700 mb-6">Bei Auflösung der Ehe durch Tod des einen Ehegatten hat die Gütertrennung besondere Auswirkungen auf die erbrechtliche Situation des überlebenden Ehegatten.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Keine güterrechtliche Beteiligung</h3>
+
+    <p class="text-gray-700 mb-6">Bei der Gütertrennung erhält der überlebende Ehegatte aus dem Güterrecht nichts. Es gibt keine Vorschlagsbeteiligung wie bei der Errungenschaftsbeteiligung und keine Beteiligung am Gesamtgut wie bei der Gütergemeinschaft. Der überlebende Ehegatte behält lediglich sein eigenes Vermögen.</p>
+
+    <p class="text-gray-700 mb-6">Das gesamte Vermögen des verstorbenen Ehegatten bildet ungeteilt den Nachlass. Der überlebende Ehegatte ist an diesem Nachlass nur als Erbe beteiligt – nicht aus Güterrecht.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Erbrechtliche Stellung des überlebenden Ehegatten</h3>
+
+    <p class="text-gray-700 mb-6">Die gesetzliche Erbquote des überlebenden Ehegatten richtet sich nach den Erben, mit denen er zusammentrifft:</p>
+
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Vorteil</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zusammentreffen mit</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erbquote Ehegatte</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erbquote übrige Erben</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Schutz vor Schulden</td>
-                    <td class="px-6 py-4 text-gray-700">Vermögen ist vor Gläubigern des Partners geschützt</td>
+                    <td class="px-6 py-4 text-gray-700">Nachkommen (1. Parentel)</td>
+                    <td class="px-6 py-4 font-semibold text-navy">½ des Nachlasses</td>
+                    <td class="px-6 py-4 text-gray-700">½ (unter Nachkommen aufgeteilt)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Eltern (2. Parentel)</td>
+                    <td class="px-6 py-4 font-semibold text-navy">¾ des Nachlasses</td>
+                    <td class="px-6 py-4 text-gray-700">¼ (Eltern oder deren Nachkommen)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Keine Erben der 1. oder 2. Parentel</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Gesamter Nachlass</td>
+                    <td class="px-6 py-4 text-gray-700">–</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vergleich: Gütertrennung vs. Errungenschaftsbeteiligung im Todesfall</h3>
+
+    <p class="text-gray-700 mb-6">Bei der Errungenschaftsbeteiligung erhält der überlebende Ehegatte zunächst die Hälfte des Vorschlags aus dem Güterrecht. Erst der verbleibende Rest bildet den Nachlass, an dem er dann nochmals als Erbe beteiligt ist. Bei der Gütertrennung fehlt diese güterrechtliche Vorwegbeteiligung – der überlebende Ehegatte erhält nur seinen Erbteil.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Beispiel:</p>
+        <p class="text-gray-700">Der verstorbene Ehemann hinterlässt CHF 1'000'000 und zwei Kinder. Die Ehefrau hat eigenes Vermögen von CHF 200'000.</p>
+        <p class="text-gray-700 mt-2"><strong>Bei Gütertrennung:</strong> Die Ehefrau erhält ½ von CHF 1'000'000 = CHF 500'000 als Erbin. Die Kinder erhalten je CHF 250'000.</p>
+        <p class="text-gray-700 mt-2"><strong>Bei Errungenschaftsbeteiligung:</strong> Die Ehefrau erhält zunächst ½ des Vorschlags (z.B. CHF 400'000), dann ½ des restlichen Nachlasses (CHF 300'000) = total CHF 700'000.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gestaltungsmöglichkeiten durch Ehe- und Erbvertrag</h3>
+
+    <p class="text-gray-700 mb-6">Um den überlebenden Ehegatten trotz Gütertrennung besser zu stellen, können die Ehegatten ergänzende Verfügungen treffen:</p>
+
+    <p class="text-gray-700 mb-6">Im Testament oder Erbvertrag kann dem überlebenden Ehegatten die frei verfügbare Quote oder sogar ein Nutzniessungsrecht am gesamten Nachlass zugewiesen werden. Es empfiehlt sich daher, einen Ehevertrag mit Gütertrennung stets mit einem Erbvertrag zu kombinieren, um die gewünschte Begünstigung des überlebenden Ehegatten sicherzustellen.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Vorteile der Gütertrennung</h2>
+
+    <p class="text-gray-700 mb-6">Die Gütertrennung bietet verschiedene Vorteile, die sie für bestimmte Situationen zum geeigneten Güterstand machen:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Vorteil</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erklärung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Schutz vor Schulden des Partners</td>
+                    <td class="px-6 py-4 text-gray-700">Das eigene Vermögen ist vor Gläubigern des anderen Ehegatten geschützt. Wird der Partner betrieben, kann das eigene Vermögen nicht gepfändet werden.</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">Schutz des Geschäftsvermögens</td>
-                    <td class="px-6 py-4 text-gray-700">Unternehmen wird bei Scheidung nicht geteilt</td>
+                    <td class="px-6 py-4 text-gray-700">Ein Unternehmen wird bei Scheidung nicht in die güterrechtliche Auseinandersetzung einbezogen. Der Fortbestand der Firma ist gesichert.</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Einfache Vermögensverhältnisse</td>
-                    <td class="px-6 py-4 text-gray-700">Klarheit, wem was gehört; keine komplizierte Berechnung</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Einfache und klare Verhältnisse</td>
+                    <td class="px-6 py-4 text-gray-700">Es ist jederzeit klar, wem welches Vermögen gehört. Keine komplizierte Berechnung von Errungenschaft und Vorschlag nötig.</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Flexibilität</td>
-                    <td class="px-6 py-4 text-gray-700">Einfachere Handhabung bei internationalen Verhältnissen</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Schnellere Scheidung</td>
+                    <td class="px-6 py-4 text-gray-700">Da keine güterrechtliche Auseinandersetzung stattfindet, kann die Scheidung schneller und kostengünstiger abgewickelt werden.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Vermögensschutz bei Konkurs</td>
+                    <td class="px-6 py-4 text-gray-700">Bei drohender Insolvenz eines Ehegatten kann durch Gütertrennung das Vermögen des anderen geschützt werden.</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Flexibilität bei internationalen Verhältnissen</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Ehegatten mit Bezug zu verschiedenen Ländern ist die Gütertrennung oft der praktikabelste Güterstand.</td>
                 </tr>
             </tbody>
         </table>
@@ -198,59 +449,417 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Nachteile der Gütertrennung</h2>
 
-    <div class="overflow-x-auto mb-6">
+    <p class="text-gray-700 mb-6">Die Gütertrennung hat auch Nachteile, die bei der Entscheidung für diesen Güterstand berücksichtigt werden sollten:</p>
+
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Nachteil</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erklärung</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Keine Beteiligung</td>
-                    <td class="px-6 py-4 text-gray-700">Der weniger verdienende Partner erhält nichts</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Keine Beteiligung am Vermögenszuwachs</td>
+                    <td class="px-6 py-4 text-gray-700">Der weniger verdienende Ehegatte profitiert nicht vom Vermögenszuwachs des anderen während der Ehe.</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Ungerechte Ergebnisse möglich</td>
-                    <td class="px-6 py-4 text-gray-700">Hausarbeit/Kinderbetreuung wird nicht honoriert</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Unbezahlte Arbeit wird nicht honoriert</td>
+                    <td class="px-6 py-4 text-gray-700">Hausarbeit und Kinderbetreuung werden nicht durch eine güterrechtliche Beteiligung abgegolten. Der betreuende Ehegatte geht leer aus.</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Geringere erbrechtliche Begünstigung</td>
-                    <td class="px-6 py-4 text-gray-700">Nur Erbanteil, keine Vorschlagsbeteiligung</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Geringere erbrechtliche Stellung</td>
+                    <td class="px-6 py-4 text-gray-700">Im Todesfall erhält der überlebende Ehegatte keine Vorschlagsbeteiligung, sondern nur den Erbteil.</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Mögliche steuerliche Nachteile</td>
+                    <td class="px-6 py-4 text-gray-700">Bei der Erbschaftssteuer können durch den fehlenden güterrechtlichen Anspruch höhere Steuern anfallen.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Ungleichgewicht bei traditioneller Rollenverteilung</td>
+                    <td class="px-6 py-4 text-gray-700">Wenn ein Ehegatte seine Erwerbstätigkeit für die Familie reduziert, wird er bei Gütertrennung finanziell benachteiligt.</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Für wen ist die Gütertrennung geeignet?</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Für wen ist die Gütertrennung sinnvoll?</h2>
+
+    <p class="text-gray-700 mb-6">Die Gütertrennung eignet sich besonders für bestimmte Personengruppen und Lebenssituationen:</p>
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Empfohlen für:</h3>
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Unternehmer/Selbstständige:</strong> Schutz des Geschäftsvermögens</li>
-        <li><strong>Partner mit erheblichen Schulden:</strong> Schutz des eigenen Vermögens</li>
-        <li><strong>Patchwork-Familien:</strong> Vermögen bleibt für eigene Kinder erhalten</li>
-        <li><strong>Zweitehen:</strong> Schutz des Vermögens aus erster Ehe</li>
-        <li><strong>Ältere Paare bei Heirat:</strong> Beide bringen erhebliches Vermögen ein</li>
-    </ul>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-gray-50 p-6 rounded-lg">
+            <h4 class="font-semibold text-navy mb-2">Unternehmer und Selbstständige</h4>
+            <p class="text-gray-700">Schutz des Geschäftsvermögens vor Aufteilung bei Scheidung. Der Fortbestand des Unternehmens wird gesichert, auch erleichtert die Gütertrennung die Firmenübernahme durch Nachkommen im Todesfall.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg">
+            <h4 class="font-semibold text-navy mb-2">Ehegatten mit Schuldenrisiko</h4>
+            <p class="text-gray-700">Wenn ein Ehegatte überschuldet ist oder ein hohes Geschäftsrisiko trägt, schützt die Gütertrennung das Vermögen des anderen vor Gläubigerzugriffen.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg">
+            <h4 class="font-semibold text-navy mb-2">Patchwork-Familien und Zweitehen</h4>
+            <p class="text-gray-700">Das Vermögen aus erster Ehe oder für die eigenen Kinder bleibt geschützt und kann gezielt vererbt werden.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg">
+            <h4 class="font-semibold text-navy mb-2">Ältere Paare bei Heirat</h4>
+            <p class="text-gray-700">Wenn beide Ehegatten erhebliches Vermögen einbringen, das sie für sich und ihre Nachkommen erhalten wollen.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg">
+            <h4 class="font-semibold text-navy mb-2">Internationale Konstellationen</h4>
+            <p class="text-gray-700">Bei Ehegatten verschiedener Nationalität oder mit Vermögen in mehreren Ländern ist die Gütertrennung oft die praktikabelste Lösung.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg">
+            <h4 class="font-semibold text-navy mb-2">Wunsch nach finanzieller Unabhängigkeit</h4>
+            <p class="text-gray-700">Wenn beide Ehegatten ihre finanzielle Unabhängigkeit bewahren wollen und beide etwa gleich viel verdienen.</p>
+        </div>
+    </div>
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Nicht empfohlen für:</h3>
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Einverdiener-Familien:</strong> Hausarbeit/Kinderbetreuung wird nicht honoriert</li>
-        <li><strong>Paare mit ähnlichen Verhältnissen:</strong> Errungenschaftsbeteiligung ist fairer</li>
-    </ul>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
+    <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+            <h4 class="font-semibold text-navy mb-2">Einverdiener-Familien</h4>
+            <p class="text-gray-700">Wenn ein Ehegatte seine Erwerbstätigkeit für Haushalt und Kinderbetreuung aufgibt oder reduziert, wird er bei Gütertrennung finanziell benachteiligt.</p>
+        </div>
+        <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+            <h4 class="font-semibold text-navy mb-2">Paare mit traditioneller Rollenverteilung</h4>
+            <p class="text-gray-700">Die unbezahlte Arbeit für die Familie wird bei der Gütertrennung nicht durch eine Vermögensbeteiligung honoriert.</p>
+        </div>
+    </div>
 
-    <p class="text-gray-700 mb-6">Die Gütertrennung ist der Güterstand mit der grössten vermögensrechtlichen Unabhängigkeit. Sie eignet sich besonders für Personen, die ihr Vermögen vor einer möglichen Teilung bei Scheidung oder vor Haftung für Schulden des Partners schützen wollen.</p>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kosten und Formvorschriften für den Gütertrennungsvertrag</h2>
 
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy mb-2">Handlungsempfehlungen:</p>
+    <p class="text-gray-700 mb-6">Ein Ehevertrag zur Begründung der Gütertrennung muss öffentlich beurkundet werden. Die Kosten variieren je nach Kanton erheblich.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kosten nach Kantonen</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kanton</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kosten Ehevertrag</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bemerkungen</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Zürich</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 200 – 7'500</td>
+                    <td class="px-6 py-4 text-gray-700">Richtet sich nach dem Vermögen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Bern</td>
+                    <td class="px-6 py-4 text-gray-700">ab CHF 500</td>
+                    <td class="px-6 py-4 text-gray-700">Nach Gebührenverordnung (GebVN)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">St. Gallen</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 200 – 1'000</td>
+                    <td class="px-6 py-4 text-gray-700">Je nach Komplexität</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Schwyz</td>
+                    <td class="px-6 py-4 text-gray-700">ab CHF 50</td>
+                    <td class="px-6 py-4 text-gray-700">Sehr günstig</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Allgemein</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 50 – 7'500</td>
+                    <td class="px-6 py-4 text-gray-700">Schweizweit grosse Unterschiede</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Die Gebühren richten sich in der Regel nach dem Stundenaufwand des Notars oder nach dem Vermögen, über das verfügt wird (mindestens 1% des Nettovermögens in manchen Kantonen). Hinzu kommen allenfalls Kosten für die anwaltliche Beratung bei der Ausarbeitung des Vertrags.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Freie Wahl des Notars</h3>
+
+    <p class="text-gray-700 mb-6">Örtlich zuständig ist jede Urkundsperson in der Schweiz (Art. 184 Abs. 2 ZGB). Das bedeutet, dass Sie Ihren Notar innerhalb der Schweiz frei wählen können. Es kann sich daher lohnen, die Gebühren verschiedener Kantone zu vergleichen, insbesondere wenn ein hoher Vermögenswert im Spiel ist.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Das Vermögensinventar</h2>
+
+    <p class="text-gray-700 mb-6">Bei Abschluss eines Ehevertrags zur Gütertrennung empfiehlt es sich dringend, ein detailliertes Vermögensinventar zu erstellen. Dieses dokumentiert, welche Vermögenswerte zum Zeitpunkt des Vertragsabschlusses wem gehören.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Anforderungen an das Vermögensinventar</h3>
+
+    <p class="text-gray-700 mb-6">Damit die Vermögenswerte auch von einer unbeteiligten Drittperson unzweifelhaft identifiziert werden können, müssen die Gegenstände und Forderungen im Inventar genau beschrieben werden. Sammelbegriffe wie «Bilder», «Mobiliar» oder «Schmuck» genügen als Beweis nicht.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Das Inventar sollte enthalten:</p>
         <ul class="list-disc list-inside text-gray-700 space-y-1">
-            <li>Prüfen Sie, ob die Gütertrennung wirklich der richtige Güterstand ist</li>
-            <li>Alternativen prüfen (modifizierte Errungenschaftsbeteiligung)</li>
-            <li>Auswirkungen auf Scheidung und Erbfall durchrechnen</li>
-            <li>Rechtliche Beratung einholen</li>
+            <li>Bankkonten mit Kontonummer, Bank und Saldo</li>
+            <li>Wertschriften mit genauer Bezeichnung und Wert</li>
+            <li>Immobilien mit Grundbuchbezeichnung</li>
+            <li>Fahrzeuge mit Marke, Typ und Kontrollschild</li>
+            <li>Wertvolle Gegenstände mit genauer Beschreibung (Marke, Modell, Seriennummer)</li>
+            <li>Betriebsvermögen/Unternehmensanteile</li>
         </ul>
     </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Beweiskraft des Inventars</h3>
+
+    <p class="text-gray-700 mb-6">Das Inventar wird als richtig vermutet, wenn es innert eines Jahres seit Einbringen der Vermögenswerte errichtet wurde (Art. 195a Abs. 2 ZGB). Nur dann wird die Beweislast umgekehrt – wer bestreitet, dass ein Vermögenswert dem im Inventar genannten Ehegatten gehört, muss dies beweisen.</p>
+
+    <p class="text-gray-700 mb-6">Das Inventar muss vom Notar nach denselben Vorschriften wie der Ehevertrag beurkundet werden und braucht die Unterschrift beider Ehegatten. Der Notar prüft das Inventar jedoch nicht auf seine inhaltliche Richtigkeit – er beurkundet nur, was die Ehegatten erklären.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kosten für das Vermögensinventar</h3>
+
+    <p class="text-gray-700 mb-6">Die Kosten für die notarielle Beurkundung des Vermögensinventars werden nach Zeitaufwand berechnet und liegen je nach Kanton zwischen CHF 150 und CHF 1'500. Diese Kosten kommen zu den Kosten für den Ehevertrag hinzu.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Gütertrennung aufheben oder Güterstand wechseln</h2>
+
+    <p class="text-gray-700 mb-6">Die Gütertrennung ist nicht unveränderlich. Die Ehegatten können jederzeit durch einen neuen Ehevertrag zu einem anderen Güterstand wechseln oder die Gütertrennung modifizieren.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wechsel durch Ehevertrag</h3>
+
+    <p class="text-gray-700 mb-6">Ein Wechsel von der Gütertrennung zur Errungenschaftsbeteiligung oder Gütergemeinschaft ist jederzeit möglich. Der neue Güterstand muss in einem öffentlich beurkundeten Ehevertrag festgehalten werden. Die Wirkung des Wechsels kann ab dem Zeitpunkt des Vertragsabschlusses oder auch rückwirkend auf den Eheschliessungszeitpunkt vereinbart werden.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praxistipp – Bedingte Klausel im Ehevertrag:</p>
+        <p class="text-gray-700">Einige Ehepaare vereinbaren im Ehevertrag eine Klausel, wonach die Gütertrennung bei einem bestimmten Ereignis (z.B. Geburt eines Kindes) automatisch in die Errungenschaftsbeteiligung übergeht. So kann in den ersten Ehejahren die finanzielle Unabhängigkeit gewahrt und später eine fairere Lösung erreicht werden.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gerichtliche Wiederherstellung des früheren Güterstands</h3>
+
+    <p class="text-gray-700 mb-6">Wurde die Gütertrennung gerichtlich angeordnet, kann das Gericht auf Antrag eines Ehegatten den früheren Güterstand wiederherstellen, wenn die Gründe für die Gütertrennung weggefallen sind (Art. 187 ZGB). Hat ein zuvor überschuldeter Ehegatte beispielsweise seine Schulden beglichen, kann der frühere Güterstand wiederhergestellt werden.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Einschränkung bei vorheriger Gütergemeinschaft nach Konkurs</h3>
+
+    <p class="text-gray-700 mb-6">Ist die Gütertrennung infolge eines Konkurses von Gesetzes wegen eingetreten (Art. 188 ZGB) oder wurde sie wegen Pfändung des Gesamtgutanteils gerichtlich angeordnet (Art. 189 ZGB), ist ein neuerlicher Wechsel zur Gütergemeinschaft nur nach Befriedigung der Gläubiger und auf gerichtliche Anordnung hin möglich (Art. 191 ZGB).</p>
+
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">Die Entscheidung für oder gegen die Gütertrennung hat weitreichende Konsequenzen für Ihre finanzielle Situation – sowohl während der Ehe als auch bei deren Auflösung durch Scheidung oder Tod. Ohne fachkundige Beratung können schwerwiegende Fehler passieren, die sich erst Jahre später zeigen.</p>
+
+        <p class="text-gray-700 mb-6">Besonders bei folgenden Konstellationen ist die Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> empfohlen: wenn ein Ehegatte Unternehmer oder Selbstständiger ist, bei erheblichen Vermögensunterschieden zwischen den Ehegatten, bei Patchwork-Familien oder Zweitehen, bei internationalem Bezug (verschiedene Nationalitäten, Vermögen im Ausland) oder wenn bereits Schulden oder ein erhöhtes Geschäftsrisiko bestehen.</p>
+
+        <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kann die konkreten Auswirkungen der verschiedenen Güterstände auf Ihre persönliche Situation berechnen und Ihnen helfen, die richtige Entscheidung zu treffen. Auch bei der Ausarbeitung des Ehevertrags und des Vermögensinventars ist fachkundige Unterstützung durch einen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> unerlässlich, um spätere Streitigkeiten zu vermeiden.</p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Unsere spezialisierten Familienrechtsanwälte beraten Sie kompetent zu allen Fragen rund um die Gütertrennung und helfen Ihnen, den für Ihre Situation optimalen Güterstand zu wählen.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- Fazit -->
+    <h2 class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Die Gütertrennung ist der Güterstand mit der grössten vermögensrechtlichen Unabhängigkeit zwischen den Ehegatten. Sie bietet Schutz vor Schulden des Partners, sichert das Geschäftsvermögen bei Scheidung und schafft klare Verhältnisse. Allerdings profitiert der finanziell schwächere Ehegatte nicht vom Vermögenszuwachs des anderen, und unbezahlte Familienarbeit wird nicht honoriert.</p>
+
+    <p class="text-gray-700 mb-6">Die Gütertrennung eignet sich besonders für Unternehmer, Selbstständige, Patchwork-Familien und Paare mit internationalem Bezug. Für Einverdiener-Familien oder Paare mit traditioneller Rollenverteilung ist sie hingegen oft nachteilig.</p>
+
+    <p class="text-gray-700 mb-6">Wichtig zu wissen: Die Gütertrennung schützt nur vor der güterrechtlichen Vermögensteilung, nicht vor Unterhaltsansprüchen. Auch die Pensionskassenguthaben (2. Säule) werden trotz Gütertrennung bei Scheidung hälftig geteilt.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Unsere Empfehlungen:</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li>Prüfen Sie sorgfältig, ob die Gütertrennung für Ihre Situation wirklich geeignet ist</li>
+            <li>Ziehen Sie Alternativen in Betracht (z.B. modifizierte Errungenschaftsbeteiligung)</li>
+            <li>Berechnen Sie die konkreten Auswirkungen auf Scheidung und Erbfall durch</li>
+            <li>Erstellen Sie unbedingt ein detailliertes Vermögensinventar</li>
+            <li>Kombinieren Sie den Ehevertrag mit einem Erbvertrag</li>
+            <li>Holen Sie professionelle rechtliche Beratung ein</li>
+        </ul>
+    </div>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen Gütertrennung und Errungenschaftsbeteiligung?</h3>
+                <p class="text-gray-700">Bei der Errungenschaftsbeteiligung wird der während der Ehe erwirtschaftete Vermögenszuwachs (Errungenschaft) bei Auflösung des Güterstands hälftig geteilt. Bei der Gütertrennung gibt es keine solche Teilung – jeder Ehegatte behält sein gesamtes Vermögen. Die Errungenschaftsbeteiligung ist der ordentliche Güterstand und gilt automatisch, wenn kein Ehevertrag abgeschlossen wird.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich die Gütertrennung auch nach der Heirat noch vereinbaren?</h3>
+                <p class="text-gray-700">Ja, die Gütertrennung kann jederzeit während der Ehe durch einen öffentlich beurkundeten Ehevertrag vereinbart werden. Die Wirkung kann ab Vertragsabschluss oder rückwirkend ab Eheschliessung eintreten. Bei Rückwirkung ist keine güterrechtliche Auseinandersetzung des bisherigen Güterstands zum Änderungszeitpunkt nötig.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was kostet ein Ehevertrag mit Gütertrennung?</h3>
+                <p class="text-gray-700">Die Kosten variieren je nach Kanton stark und liegen zwischen CHF 50 und CHF 7'500. In Zürich kostet ein Ehevertrag typischerweise CHF 200 bis CHF 7'500, in Schwyz kann er bereits ab CHF 50 erhältlich sein. Hinzu kommen allenfalls Kosten für die anwaltliche Beratung und das Vermögensinventar (CHF 150 bis CHF 1'500).</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Schützt die Gütertrennung vor den Schulden meines Ehepartners?</h3>
+                <p class="text-gray-700">Grundsätzlich ja – bei der Gütertrennung haftet jeder Ehegatte nur für seine eigenen Schulden (Art. 249 ZGB). Das Vermögen des einen Ehegatten kann nicht für Schulden des anderen gepfändet werden. Allerdings gibt es Ausnahmen: Für gemeinsam eingegangene Schulden, Bürgschaften und Schulden für den Familienunterhalt (Art. 166 ZGB) haften beide Ehegatten solidarisch.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wird die Pensionskasse bei Gütertrennung auch geteilt?</h3>
+                <p class="text-gray-700">Ja, die während der Ehe erworbenen Pensionskassenguthaben (2. Säule) werden bei Scheidung grundsätzlich hälftig geteilt – unabhängig vom gewählten Güterstand (Art. 122 ZGB). Die Gütertrennung hat keinen Einfluss auf den Vorsorgeausgleich. Nur die 3. Säule (gebundene Vorsorge) gehört zum Eigengut und wird bei Gütertrennung nicht geteilt.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann die Gütertrennung rückgängig gemacht werden?</h3>
+                <p class="text-gray-700">Ja, die Ehegatten können jederzeit durch einen neuen Ehevertrag zu einem anderen Güterstand wechseln. Wurde die Gütertrennung gerichtlich angeordnet, kann das Gericht den früheren Güterstand wiederherstellen, wenn die Gründe weggefallen sind (Art. 187 ZGB). Nach Konkurs ist ein Wechsel zur Gütergemeinschaft nur nach Befriedigung der Gläubiger möglich.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Muss ich bei Gütertrennung keinen Unterhalt zahlen?</h3>
+                <p class="text-gray-700">Nein, die Gütertrennung befreit nicht von der Unterhaltspflicht. Die gesetzlichen Unterhaltsansprüche (Kindesunterhalt und nachehelicher Ehegattenunterhalt) bestehen unabhängig vom Güterstand. Die Gütertrennung betrifft nur die Vermögensaufteilung, nicht den Unterhalt.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert bei Gütertrennung, wenn mein Ehepartner stirbt?</h3>
+                <p class="text-gray-700">Bei Gütertrennung erhält der überlebende Ehegatte aus dem Güterrecht nichts. Er behält nur sein eigenes Vermögen. Am Nachlass des verstorbenen Ehegatten ist er ausschliesslich als Erbe beteiligt – je nach Konstellation mit ½ (bei Nachkommen), ¾ (bei Eltern des Verstorbenen) oder dem gesamten Nachlass (bei keinen näheren Verwandten). Es empfiehlt sich, einen Erbvertrag zur zusätzlichen Begünstigung abzuschliessen.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Für wen ist die Gütertrennung besonders geeignet?</h3>
+                <p class="text-gray-700">Die Gütertrennung eignet sich besonders für Unternehmer und Selbstständige (Schutz des Geschäftsvermögens), Ehegatten mit Schulden oder erhöhtem Geschäftsrisiko, Patchwork-Familien und Zweitehen (Vermögensschutz für eigene Kinder), ältere Paare mit erheblichem Vermögen sowie bei internationalen Konstellationen.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist ein Vermögensinventar und warum ist es wichtig?</h3>
+                <p class="text-gray-700">Ein Vermögensinventar ist eine detaillierte Auflistung aller Vermögenswerte beider Ehegatten zum Zeitpunkt des Ehevertragsabschlusses. Es dokumentiert, wem was gehört, und vermeidet spätere Streitigkeiten über die Eigentumszugehörigkeit. Das Inventar sollte notariell beurkundet werden. Es gilt als richtig vermutet, wenn es innert Jahresfrist seit Einbringen der Vermögenswerte erstellt wurde (Art. 195a Abs. 2 ZGB).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Gütertrennung in der Schweiz",
+        "description": "Gütertrennung einfach erklärt: Entstehung, Wirkungen, Vor- & Nachteile nach Art. 247-251 ZGB. Mit Kosten, Formvorschriften und BGE-Rechtsprechung.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-20",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/gueterrecht/guetertrennung"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen Gütertrennung und Errungenschaftsbeteiligung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei der Errungenschaftsbeteiligung wird der während der Ehe erwirtschaftete Vermögenszuwachs (Errungenschaft) bei Auflösung des Güterstands hälftig geteilt. Bei der Gütertrennung gibt es keine solche Teilung – jeder Ehegatte behält sein gesamtes Vermögen. Die Errungenschaftsbeteiligung ist der ordentliche Güterstand und gilt automatisch, wenn kein Ehevertrag abgeschlossen wird."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich die Gütertrennung auch nach der Heirat noch vereinbaren?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, die Gütertrennung kann jederzeit während der Ehe durch einen öffentlich beurkundeten Ehevertrag vereinbart werden. Die Wirkung kann ab Vertragsabschluss oder rückwirkend ab Eheschliessung eintreten. Bei Rückwirkung ist keine güterrechtliche Auseinandersetzung des bisherigen Güterstands zum Änderungszeitpunkt nötig."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was kostet ein Ehevertrag mit Gütertrennung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Kosten variieren je nach Kanton stark und liegen zwischen CHF 50 und CHF 7'500. In Zürich kostet ein Ehevertrag typischerweise CHF 200 bis CHF 7'500, in Schwyz kann er bereits ab CHF 50 erhältlich sein. Hinzu kommen allenfalls Kosten für die anwaltliche Beratung und das Vermögensinventar (CHF 150 bis CHF 1'500)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Schützt die Gütertrennung vor den Schulden meines Ehepartners?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Grundsätzlich ja – bei der Gütertrennung haftet jeder Ehegatte nur für seine eigenen Schulden (Art. 249 ZGB). Das Vermögen des einen Ehegatten kann nicht für Schulden des anderen gepfändet werden. Allerdings gibt es Ausnahmen: Für gemeinsam eingegangene Schulden, Bürgschaften und Schulden für den Familienunterhalt (Art. 166 ZGB) haften beide Ehegatten solidarisch."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wird die Pensionskasse bei Gütertrennung auch geteilt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, die während der Ehe erworbenen Pensionskassenguthaben (2. Säule) werden bei Scheidung grundsätzlich hälftig geteilt – unabhängig vom gewählten Güterstand (Art. 122 ZGB). Die Gütertrennung hat keinen Einfluss auf den Vorsorgeausgleich. Nur die 3. Säule (gebundene Vorsorge) gehört zum Eigengut und wird bei Gütertrennung nicht geteilt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann die Gütertrennung rückgängig gemacht werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, die Ehegatten können jederzeit durch einen neuen Ehevertrag zu einem anderen Güterstand wechseln. Wurde die Gütertrennung gerichtlich angeordnet, kann das Gericht den früheren Güterstand wiederherstellen, wenn die Gründe weggefallen sind (Art. 187 ZGB). Nach Konkurs ist ein Wechsel zur Gütergemeinschaft nur nach Befriedigung der Gläubiger möglich."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Muss ich bei Gütertrennung keinen Unterhalt zahlen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, die Gütertrennung befreit nicht von der Unterhaltspflicht. Die gesetzlichen Unterhaltsansprüche (Kindesunterhalt und nachehelicher Ehegattenunterhalt) bestehen unabhängig vom Güterstand. Die Gütertrennung betrifft nur die Vermögensaufteilung, nicht den Unterhalt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert bei Gütertrennung, wenn mein Ehepartner stirbt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei Gütertrennung erhält der überlebende Ehegatte aus dem Güterrecht nichts. Er behält nur sein eigenes Vermögen. Am Nachlass des verstorbenen Ehegatten ist er ausschliesslich als Erbe beteiligt – je nach Konstellation mit ½ (bei Nachkommen), ¾ (bei Eltern des Verstorbenen) oder dem gesamten Nachlass (bei keinen näheren Verwandten). Es empfiehlt sich, einen Erbvertrag zur zusätzlichen Begünstigung abzuschliessen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Für wen ist die Gütertrennung besonders geeignet?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Gütertrennung eignet sich besonders für Unternehmer und Selbstständige (Schutz des Geschäftsvermögens), Ehegatten mit Schulden oder erhöhtem Geschäftsrisiko, Patchwork-Familien und Zweitehen (Vermögensschutz für eigene Kinder), ältere Paare mit erheblichem Vermögen sowie bei internationalen Konstellationen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist ein Vermögensinventar und warum ist es wichtig?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ein Vermögensinventar ist eine detaillierte Auflistung aller Vermögenswerte beider Ehegatten zum Zeitpunkt des Ehevertragsabschlusses. Es dokumentiert, wem was gehört, und vermeidet spätere Streitigkeiten über die Eigentumszugehörigkeit. Das Inventar sollte notariell beurkundet werden. Es gilt als richtig vermutet, wenn es innert Jahresfrist seit Einbringen der Vermögenswerte erstellt wurde (Art. 195a Abs. 2 ZGB)."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Güterrecht",
+                "item": "https://familienrechtanwalt.ch/gueterrecht"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Gütertrennung in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/gueterrecht/guetertrennung"
+            }
+        ]
+    })} />
+
 </ArticleLayout>

@@ -3,137 +3,815 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 ---
 
 <ArticleLayout
-  title="Scheidung ohne Anwalt in der Schweiz"
-  description="Scheidung ohne Anwalt in der Schweiz: Möglichkeiten, Risiken und Grenzen. Wann ist eine Scheidung ohne Anwalt möglich und sinnvoll?"
-  keywords="Scheidung ohne Anwalt Schweiz, einvernehmliche Scheidung ohne Anwalt, Scheidung Kosten sparen, Anwaltspflicht Scheidung"
-  category="Scheidung"
-  categoryLink="/scheidung"
+    title="Scheidung ohne Anwalt in der Schweiz"
+    description="Scheidung ohne Anwalt: Voraussetzungen, Ablauf, Kosten & Risiken. Erfahren Sie, wann eine Scheidung ohne Anwalt möglich ist und worauf Sie achten müssen."
+    keywords="Scheidung ohne Anwalt, Scheidung ohne Anwalt Schweiz, einvernehmliche Scheidung, Scheidung auf gemeinsames Begehren, Scheidung Kosten sparen, Anwaltspflicht Scheidung"
+    category="Scheidung"
+    categoryLink="/scheidung"
 >
-  <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die Frage, ob eine Scheidung ohne Anwalt möglich ist, stellt sich vielen Ehepaaren. Das schweizerische Recht sieht grundsätzlich keine Anwaltspflicht bei der Scheidung vor. Dennoch birgt der Verzicht auf rechtliche Beratung erhebliche Risiken.</p>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>In der Schweiz besteht <strong>keine Anwaltspflicht</strong> bei Scheidungen - Sie können sich grundsätzlich ohne Anwalt scheiden lassen (Art. 68 Abs. 1 ZPO).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Eine Scheidung ohne Anwalt ist nur bei einer <strong>einvernehmlichen Scheidung auf gemeinsames Begehren</strong> (Art. 111 ZGB) sinnvoll, wenn beide Partner sich über alle Scheidungsfolgen einig sind.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die <strong>Gerichtskosten</strong> betragen je nach Kanton zwischen CHF 500 und CHF 2'600 - diese fallen auch ohne Anwalt an.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Sie müssen eine vollständige <strong>Scheidungskonvention</strong> erstellen, die Güterrecht, Vorsorgeausgleich, Unterhalt und gegebenenfalls Kinderbelange regelt.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bei <strong>strittigen Scheidungen</strong>, komplexen Vermögensverhältnissen oder minderjährigen Kindern ist eine anwaltliche Beratung dringend empfohlen.</span>
+            </li>
+        </ul>
+    </div>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Keine generelle Anwaltspflicht</h2>
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+        Eine Scheidung kann mit erheblichen Kosten verbunden sein, weshalb sich viele Ehepaare fragen: Ist eine Scheidung ohne Anwalt in der Schweiz möglich? Die Antwort lautet: Ja, grundsätzlich schon. Das Schweizer Recht sieht keine Anwaltspflicht bei Scheidungen vor - anders als beispielsweise in Deutschland, wo mindestens ein Rechtsanwalt beteiligt sein muss. Dennoch birgt der vollständige Verzicht auf rechtliche Unterstützung erhebliche Risiken, die Sie kennen sollten. In diesem umfassenden Ratgeber erfahren Sie, unter welchen Voraussetzungen eine Scheidung ohne Anwalt möglich ist, wie der Ablauf aussieht, welche Kosten entstehen und welche Risiken Sie bedenken sollten.
+    </p>
 
-  <p class="text-gray-700 mb-6">Gemäss Art. 68 Abs. 1 ZPO ist jede prozessfähige Partei berechtigt, vor Gericht selber zu handeln. Die Parteien können den Scheidungsantrag selbst formulieren, die Scheidungskonvention selbst erstellen und an der Anhörung ohne anwaltliche Begleitung erscheinen.</p>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen: Keine Anwaltspflicht bei Scheidungen</h2>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wann ist eine Scheidung ohne Anwalt realistisch?</h2>
+    <p class="text-gray-700 mb-6">
+        Im Schweizer Zivilprozessrecht gilt der Grundsatz, dass jede prozessfähige Partei berechtigt ist, vor Gericht selbst zu handeln. Dies ergibt sich aus Art. 68 Abs. 1 ZPO (Zivilprozessordnung). Im Gegensatz zu vielen anderen Ländern kennt die Schweiz somit <strong>keine obligatorische anwaltliche Vertretung</strong> im Scheidungsverfahren.
+    </p>
 
-  <div class="overflow-x-auto mb-6">
-    <table class="min-w-full bg-white border border-gray-200">
-      <thead class="bg-navy text-white">
-        <tr>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Situation</th>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Scheidung ohne Anwalt</th>
-        </tr>
-      </thead>
-      <tbody class="divide-y divide-gray-200">
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Einvernehmlich, kinderlos, kein Vermögen</td>
-          <td class="px-6 py-4 text-gray-700">Möglich</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">Einvernehmlich, mit Kindern</td>
-          <td class="px-6 py-4 text-gray-700">Mit Vorsicht möglich</td>
-        </tr>
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Einvernehmlich, mit Immobilie/Vermögen</td>
-          <td class="px-6 py-4 text-gray-700">Beratung empfohlen</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">Teileinigung (Art. 112 ZGB)</td>
-          <td class="px-6 py-4 text-gray-700">Beratung dringend empfohlen</td>
-        </tr>
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Strittige Scheidung</td>
-          <td class="px-6 py-4 text-gray-700">Anwalt unerlässlich</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Gesetzliche Grundlage:</p>
+        <p class="text-gray-700 italic">"Jede prozessfähige Partei kann den Prozess selber führen." - Art. 68 Abs. 1 ZPO</p>
+    </div>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Risiken einer Scheidung ohne Anwalt</h2>
+    <p class="text-gray-700 mb-6">
+        Dies bedeutet konkret: Sie können den <a href="/scheidung/scheidungsantrag" class="text-gold hover:underline font-semibold">Scheidungsantrag</a> selbst formulieren, die <a href="/scheidung/scheidungskonvention" class="text-gold hover:underline font-semibold">Scheidungskonvention</a> selbst erstellen und an der gerichtlichen Anhörung ohne anwaltliche Begleitung erscheinen. Das Gericht wird Sie anhören und über die Scheidung entscheiden, unabhängig davon, ob Sie anwaltlich vertreten sind oder nicht.
+    </p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Unkenntnis der eigenen Rechte</h3>
-  <p class="text-gray-700 mb-4">Häufige Fehler passieren bei:</p>
-  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-    <li>Berechnung des nachehelichen Unterhalts</li>
-    <li>Güterrechtliche Auseinandersetzung (Eigengut vs. Errungenschaft)</li>
-    <li>Vorsorgeausgleich (korrekte Berechnung)</li>
-    <li>Kindesunterhalt einschliesslich Betreuungsunterhalt</li>
-  </ul>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Voraussetzungen für eine Scheidung ohne Anwalt</h2>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Formelle Fehler</h3>
-  <p class="text-gray-700 mb-6">Unvollständige Regelungen, fehlende Unterlagen oder formell ungenügende Formulierungen führen zu Verzögerungen.</p>
+    <p class="text-gray-700 mb-6">
+        Obwohl rechtlich keine Anwaltspflicht besteht, ist eine Scheidung ohne Anwalt nur unter bestimmten Voraussetzungen sinnvoll und praktisch umsetzbar. Die wichtigste Voraussetzung ist, dass es sich um eine <strong>einvernehmliche Scheidung auf gemeinsames Begehren</strong> handelt.
+    </p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Langfristige Konsequenzen</h3>
-  <p class="text-gray-700 mb-6">Die Scheidungskonvention hat nach der Genehmigung Urteilswirkung. Fehlerhafte Regelungen sind später nur schwer abzuändern.</p>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Scheidung auf gemeinsames Begehren (Art. 111 ZGB)</h3>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Alternativen zur vollständigen Selbstvertretung</h2>
+    <p class="text-gray-700 mb-6">
+        Die <a href="/scheidung/scheidung-auf-gemeinsames-begehren" class="text-gold hover:underline font-semibold">Scheidung auf gemeinsames Begehren</a> ist die einfachste und schnellste Form der Scheidung. Beide Ehegatten stellen gemeinsam den Antrag auf Scheidung beim zuständigen Gericht. Das Schweizer Zivilgesetzbuch unterscheidet dabei zwei Varianten:
+    </p>
 
-  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-    <li><strong>Anwaltliche Erstberatung:</strong> 1-2 Stunden um die Rechtslage zu verstehen</li>
-    <li><strong>Gemeinsamer Anwalt:</strong> Bei einvernehmlichen Scheidungen möglich</li>
-    <li><strong>Prüfung der Konvention:</strong> Selbst erstellte Konvention prüfen lassen</li>
-    <li><strong>Mediation:</strong> Günstiger als streitiges Verfahren</li>
-    <li><strong>Rechtsauskunftsstellen:</strong> Kostenlose Erstberatung</li>
-  </ul>
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Variante</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gesetzliche Grundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Umfassende Einigung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 111 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Beide Ehegatten sind sich über alle Scheidungsfolgen einig und reichen eine vollständige Scheidungskonvention ein.</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Teileinigung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 112 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Die Ehegatten sind sich über die Scheidung einig, aber nicht über alle Nebenfolgen. Das Gericht entscheidet über die strittigen Punkte.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kostenfrage</h2>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig:</p>
+        <p class="text-gray-700">Eine Scheidung ohne Anwalt ist primär bei der <strong>umfassenden Einigung nach Art. 111 ZGB</strong> sinnvoll. Bei einer Teileinigung nach Art. 112 ZGB, wo das Gericht über strittige Punkte entscheiden muss, ist anwaltliche Unterstützung dringend empfohlen, um Ihre Interessen zu wahren.</p>
+    </div>
 
-  <div class="overflow-x-auto mb-6">
-    <table class="min-w-full bg-white border border-gray-200">
-      <thead class="bg-navy text-white">
-        <tr>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Kostenfaktor</th>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Ohne Anwalt</th>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Mit Anwalt</th>
-        </tr>
-      </thead>
-      <tbody class="divide-y divide-gray-200">
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Gerichtskosten</td>
-          <td class="px-6 py-4 text-gray-700">CHF 500-3'000</td>
-          <td class="px-6 py-4 text-gray-700">CHF 500-3'000</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">Anwaltskosten</td>
-          <td class="px-6 py-4 text-gray-700">CHF 0</td>
-          <td class="px-6 py-4 text-gray-700">CHF 1'500-5'000</td>
-        </tr>
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Risiko von Fehlern</td>
-          <td class="px-6 py-4 text-gray-700">Hoch</td>
-          <td class="px-6 py-4 text-gray-700">Gering</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Weitere Voraussetzungen für eine Scheidung ohne Anwalt</h3>
 
-  <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-    <p class="font-semibold text-navy">Wichtig:</p>
-    <p class="text-gray-700">Die Ersparnis bei einer Scheidung ohne Anwalt kann durch fehlerhafte Vereinbarungen leicht aufgefressen werden. Ein falscher Vorsorgeausgleich kann Tausende Franken kosten.</p>
-  </div>
+    <p class="text-gray-700 mb-6">
+        Neben der Einigung auf gemeinsames Begehren sollten folgende Bedingungen erfüllt sein, damit eine Scheidung ohne Anwalt realistisch umsetzbar ist:
+    </p>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wann Sie unbedingt einen Anwalt konsultieren sollten</h2>
-
-  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-    <li>Sie fühlen sich unter Druck gesetzt</li>
-    <li>Sie verstehen die Vereinbarungen nicht vollständig</li>
-    <li>Erhebliche Vermögenswerte oder Schulden sind vorhanden</li>
-    <li>Sie haben minderjährige Kinder</li>
-    <li>Ihr Ehegatte ist anwaltlich vertreten</li>
-    <li>Die Scheidung ist strittig</li>
-  </ul>
-
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
-
-  <p class="text-gray-700 mb-6">Eine Scheidung ohne Anwalt ist rechtlich möglich und kann bei einfachen Verhältnissen funktionieren. Die kostengünstigste Variante ist oft nicht der vollständige Verzicht auf anwaltliche Hilfe, sondern die gezielte Nutzung punktueller Beratung.</p>
-
-  <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-    <p class="font-semibold text-navy mb-2">Relevante Gesetzesbestimmungen:</p>
-    <ul class="list-disc list-inside text-gray-700 space-y-1">
-      <li>Art. 68 ZPO (Vertretung im Prozess)</li>
-      <li>Art. 111-112 ZGB (Scheidung auf gemeinsames Begehren)</li>
-      <li>Art. 117-123 ZPO (Unentgeltliche Rechtspflege)</li>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Überschaubare Vermögensverhältnisse:</strong> Keine komplexen Vermögenswerte wie Unternehmensbeteiligungen, ausländisches Vermögen oder verschachtelte Immobilienstrukturen</li>
+        <li><strong>Klare Einkommens- und Erwerbssituation:</strong> Beide Partner können ihren Lebensunterhalt selbst bestreiten oder es besteht Einigkeit über Unterhaltszahlungen</li>
+        <li><strong>Keine minderjährigen Kinder</strong> oder vollständige Einigung über Sorgerecht, Obhut und Kindesunterhalt</li>
+        <li><strong>Keine Konflikte:</strong> Kein Druck, keine Einschüchterung, beide Partner treffen die Entscheidung freiwillig</li>
+        <li><strong>Grundlegende Rechtskenntnisse:</strong> Verständnis für die zu regelnden Punkte und deren rechtliche Bedeutung</li>
     </ul>
-  </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Ablauf einer Scheidung ohne Anwalt - Schritt für Schritt</h2>
+
+    <p class="text-gray-700 mb-6">
+        Wenn Sie sich dafür entscheiden, die Scheidung ohne anwaltliche Unterstützung durchzuführen, sollten Sie den folgenden Ablauf kennen und sorgfältig vorbereiten:
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 1: Einigung mit dem Ehepartner</h3>
+
+    <p class="text-gray-700 mb-6">
+        Der erste und wichtigste Schritt ist die vollständige Einigung mit Ihrem Ehepartner über alle Scheidungsfolgen. Besprechen Sie ausführlich alle relevanten Punkte:
+    </p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Aufteilung des Vermögens (güterrechtliche Auseinandersetzung)</li>
+        <li>Teilung der Pensionskassenguthaben (Vorsorgeausgleich)</li>
+        <li>Nachehelicher Unterhalt (falls relevant)</li>
+        <li>Bei gemeinsamen Kindern: Sorgerecht, Obhut, Besuchsrecht und Kindesunterhalt</li>
+        <li>Aufteilung der ehelichen Wohnung und des Hausrats</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 2: Erforderliche Unterlagen sammeln</h3>
+
+    <p class="text-gray-700 mb-6">
+        Für das Scheidungsverfahren benötigen Sie verschiedene <a href="/scheidung/scheidungsunterlagen" class="text-gold hover:underline font-semibold">Scheidungsunterlagen</a>. Sammeln Sie diese frühzeitig:
+    </p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kategorie</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erforderliche Unterlagen</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Persönliche Dokumente</td>
+                    <td class="px-6 py-4 text-gray-700">Familienausweis (aktuell, nicht älter als 6 Monate), Kopie der Ausweise beider Ehegatten</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Einkommensnachweise</td>
+                    <td class="px-6 py-4 text-gray-700">Lohnabrechnungen der letzten 3-6 Monate, letzte Steuererklärung und Veranlagungsverfügung beider Partner</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Vermögensnachweise</td>
+                    <td class="px-6 py-4 text-gray-700">Kontoauszüge, Wertschriftenverzeichnis, Grundbuchauszüge bei Immobilien, Schätzungen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Vorsorge (2. Säule)</td>
+                    <td class="px-6 py-4 text-gray-700">Bestätigung der Pensionskasse über Austrittsleistung bei Heirat und zum Zeitpunkt der Scheidung, Durchführbarkeitsbestätigung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Bei Kindern</td>
+                    <td class="px-6 py-4 text-gray-700">Geburtsurkunden der Kinder, Nachweise über Betreuungskosten (Krippe, Hort, etc.)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Falls vorhanden</td>
+                    <td class="px-6 py-4 text-gray-700">Ehevertrag, bestehende Unterhaltsvereinbarungen, Eheschutzentscheid</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 3: Scheidungskonvention erstellen</h3>
+
+    <p class="text-gray-700 mb-6">
+        Die <a href="/scheidung/scheidungskonvention" class="text-gold hover:underline font-semibold">Scheidungskonvention</a> ist das zentrale Dokument bei einer einvernehmlichen Scheidung. Sie enthält alle Vereinbarungen über die Scheidungsfolgen und muss von beiden Ehegatten unterzeichnet werden. Viele Gerichte stellen Musterkonventionen zur Verfügung, die Sie als Vorlage verwenden können:
+    </p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Kanton Zürich:</strong> Interaktive PDF-Formulare auf gerichte-zh.ch</li>
+        <li><strong>Kanton Bern:</strong> Muster auf der Website der Zivilgerichte</li>
+        <li><strong>Kanton Aargau:</strong> Formulare auf ag.ch</li>
+        <li><strong>Kanton St. Gallen:</strong> Musterkonvention auf sg.ch</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 4: Scheidungsbegehren beim Gericht einreichen</h3>
+
+    <p class="text-gray-700 mb-6">
+        Das gemeinsame Scheidungsbegehren wird beim <strong>Bezirksgericht am Wohnsitz</strong> eines der Ehegatten eingereicht (Art. 23 ZPO). Das Scheidungsbegehren muss enthalten:
+    </p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Ein von beiden Ehegatten unterschriebenes Schreiben mit der Erklärung des Scheidungswillens</li>
+        <li>Die vollständige, unterschriebene Scheidungskonvention</li>
+        <li>Alle erforderlichen Belege und Unterlagen</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praktischer Hinweis:</p>
+        <p class="text-gray-700">Die Gründe für die Scheidung müssen Sie nicht angeben. Es genügt, wenn beide Ehegatten erklären, dass sie die Scheidung wünschen. Ein Schlichtungsverfahren ist bei der Scheidung auf gemeinsames Begehren nicht erforderlich - das Gesuch wird direkt beim Gericht eingereicht (Art. 198 lit. c ZPO).</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 5: Gerichtliche Anhörung</h3>
+
+    <p class="text-gray-700 mb-6">
+        Nach Einreichung des Scheidungsbegehrens lädt das Gericht beide Ehegatten zu einer Anhörung vor. Bei dieser Anhörung prüft das Gericht folgende Punkte (Art. 111 Abs. 1 ZGB):
+    </p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Ob das Scheidungsbegehren auf <strong>freiem Willen</strong> beruht (keine Druckausübung)</li>
+        <li>Ob die Entscheidung auf <strong>reiflicher Überlegung</strong> beruht</li>
+        <li>Ob die Vereinbarung nicht <strong>offensichtlich unangemessen</strong> ist</li>
+        <li>Bei Kindern: Ob die Vereinbarungen dem <strong>Kindeswohl</strong> entsprechen</li>
+    </ul>
+
+    <p class="text-gray-700 mb-6">
+        Die Anhörung erfolgt zunächst getrennt mit jedem Ehegatten einzeln und anschliessend gemeinsam. Dies gibt dem Gericht die Möglichkeit, sich davon zu überzeugen, dass beide Partner freiwillig handeln.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 6: Scheidungsurteil</h3>
+
+    <p class="text-gray-700 mb-6">
+        Wenn alle Voraussetzungen erfüllt sind, kann das Gericht die Scheidung bereits am Ende der Anhörung aussprechen und das Scheidungsurteil aushändigen (Art. 288 ZPO). Die Ehegatten können auf eine schriftliche Urteilsbegründung verzichten, was das Verfahren beschleunigt. Mit Rechtskraft des Urteils ist die Ehe aufgelöst.
+    </p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Inhalt der Scheidungskonvention - Was muss geregelt werden?</h2>
+
+    <p class="text-gray-700 mb-6">
+        Die Scheidungskonvention ist das Herzstück der einvernehmlichen Scheidung. Sie muss alle wesentlichen Scheidungsfolgen regeln, um vom Gericht genehmigt zu werden:
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">1. Güterrechtliche Auseinandersetzung</h3>
+
+    <p class="text-gray-700 mb-6">
+        Die Auflösung des Güterstandes muss geregelt werden. Bei der <a href="/gueterrecht/errungenschaftsbeteiligung" class="text-gold hover:underline font-semibold">Errungenschaftsbeteiligung</a> (dem gesetzlichen Güterstand) wird unterschieden zwischen Eigengut und Errungenschaft. Jeder Ehegatte hat Anspruch auf die Hälfte des Vorschlags des anderen (Art. 215 ZGB). Bei <a href="/gueterrecht/guetertrennung" class="text-gold hover:underline font-semibold">Gütertrennung</a> oder <a href="/gueterrecht/guetergemeinschaft" class="text-gold hover:underline font-semibold">Gütergemeinschaft</a> gelten andere Regeln.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">2. Vorsorgeausgleich (Pensionskasse)</h3>
+
+    <p class="text-gray-700 mb-6">
+        Die während der Ehe angesparten Pensionskassenguthaben (2. Säule) müssen grundsätzlich hälftig geteilt werden (Art. 122 ZGB). Dies ist <strong>zwingendes Recht</strong> und gilt unabhängig vom Güterstand. Eine Abweichung von der hälftigen Teilung ist nur unter bestimmten Voraussetzungen möglich (Art. 124b ZGB), wenn eine angemessene Altersvorsorge gewährleistet bleibt.
+    </p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig beim Vorsorgeausgleich:</p>
+        <p class="text-gray-700">Für die korrekte Berechnung des Vorsorgeausgleichs benötigen Sie von beiden Pensionskassen eine Bestätigung über die Austrittsleistung bei Heirat und zum Zeitpunkt der Einreichung des Scheidungsbegehrens. Die Differenz wird dann hälftig geteilt. Fehler bei der Berechnung können erhebliche finanzielle Konsequenzen haben.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">3. Nachehelicher Unterhalt</h3>
+
+    <p class="text-gray-700 mb-6">
+        Falls ein Ehegatte nach der Scheidung nicht selbst für seinen Unterhalt aufkommen kann, kann ein Anspruch auf <a href="/unterhalt/nachehelicher-unterhalt" class="text-gold hover:underline font-semibold">nachehelichen Unterhalt</a> bestehen (Art. 125 ZGB). Die Höhe und Dauer richten sich nach verschiedenen Faktoren wie Ehedauer, Rollenverteilung, Erwerbsmöglichkeiten und Alter. Auch ein Verzicht auf Unterhalt muss in der Konvention geregelt werden.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">4. Kinderbelange</h3>
+
+    <p class="text-gray-700 mb-6">
+        Bei gemeinsamen minderjährigen Kindern müssen folgende Punkte geregelt werden:
+    </p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong><a href="/sorgerecht/gemeinsames-sorgerecht" class="text-gold hover:underline">Elterliche Sorge</a>:</strong> In der Regel gemeinsam (Art. 296 Abs. 2 ZGB)</li>
+        <li><strong>Obhut:</strong> Bei wem leben die Kinder hauptsächlich? Alternativ: <a href="/sorgerecht/alternierende-obhut" class="text-gold hover:underline">Alternierende Obhut</a></li>
+        <li><strong><a href="/sorgerecht/umgangsrecht" class="text-gold hover:underline">Besuchsrecht</a>:</strong> Regelung des persönlichen Verkehrs mit dem nicht betreuenden Elternteil</li>
+        <li><strong><a href="/unterhalt/alimente" class="text-gold hover:underline">Kindesunterhalt</a>:</strong> Barunterhalt und <a href="/unterhalt/betreuungsunterhalt" class="text-gold hover:underline">Betreuungsunterhalt</a></li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Hinweis zu Kindern:</p>
+        <p class="text-gray-700">Das Gericht prüft bei Kinderbelangen besonders genau, ob die Vereinbarungen dem <strong>Kindeswohl</strong> entsprechen. Je nach Alter können die Kinder auch vom Gericht angehört werden. Eine Scheidung ohne Anwalt bei gemeinsamen Kindern birgt erhöhte Risiken, da Fehler bei der Unterhaltsberechnung oder unausgewogene Vereinbarungen zum Nachteil der Kinder abgelehnt werden können.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">5. Wohnung und Hausrat</h3>
+
+    <p class="text-gray-700 mb-6">
+        Die Konvention sollte regeln, wer in der ehelichen Wohnung verbleibt und wie der Hausrat aufgeteilt wird. Bei Mietwohnungen muss geklärt werden, wer den Mietvertrag übernimmt. Bei Eigentum ist zu regeln, ob die Immobilie verkauft, einem Partner übertragen oder weiter gemeinsam gehalten wird.
+    </p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kosten einer Scheidung ohne Anwalt</h2>
+
+    <p class="text-gray-700 mb-6">
+        Auch bei einer Scheidung ohne Anwalt fallen <a href="/scheidung/kosten-einer-scheidung" class="text-gold hover:underline font-semibold">Scheidungskosten</a> an. Die wichtigsten Kostenposten sind die <a href="/scheidung/gerichtskosten" class="text-gold hover:underline font-semibold">Gerichtskosten</a>, die je nach Kanton erheblich variieren:
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gerichtskosten nach Kantonen (einvernehmliche Scheidung)</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kanton</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gerichtskosten (ca.)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bemerkung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Basel-Stadt</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 500 - 830</td>
+                    <td class="px-6 py-4 text-gray-700">Günstigster Kanton der Deutschschweiz</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Genf</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 600</td>
+                    <td class="px-6 py-4 text-gray-700">Günstigster Kanton der Westschweiz</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Graubünden</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'500</td>
+                    <td class="px-6 py-4 text-gray-700">-</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Aargau</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'800</td>
+                    <td class="px-6 py-4 text-gray-700">-</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Bern</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'800</td>
+                    <td class="px-6 py-4 text-gray-700">-</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Luzern</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'800</td>
+                    <td class="px-6 py-4 text-gray-700">-</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">St. Gallen</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'800</td>
+                    <td class="px-6 py-4 text-gray-700">-</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Jura</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'830</td>
+                    <td class="px-6 py-4 text-gray-700">Teuerster Kanton der Westschweiz</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Schaffhausen</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 2'000</td>
+                    <td class="px-6 py-4 text-gray-700">-</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Schwyz</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 2'000</td>
+                    <td class="px-6 py-4 text-gray-700">-</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Zürich</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 2'500 - 2'600</td>
+                    <td class="px-6 py-4 text-gray-700">Teuerster Kanton der Deutschschweiz</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Tipp bei unterschiedlichen Wohnkantonen:</p>
+        <p class="text-gray-700">Wenn Sie und Ihr Ehepartner in verschiedenen Kantonen wohnen, können Sie wählen, bei welchem Gericht Sie die Scheidung einreichen. Ein Vergleich der Gerichtskosten kann sich lohnen - die Differenz kann mehrere hundert Franken betragen.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gesamtkostenvergleich: Mit und ohne Anwalt</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kostenfaktor</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Ohne Anwalt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Mit Anwalt</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Gerichtskosten</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 500 - 2'600</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 500 - 2'600</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy"><a href="/scheidung/anwaltskosten-scheidung" class="text-gold hover:underline">Anwaltskosten</a></td>
+                    <td class="px-6 py-4 text-gray-700">CHF 0</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'500 - 5'000+</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Stundensatz Anwalt</td>
+                    <td class="px-6 py-4 text-gray-700">-</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 220 - 500/Stunde</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy"><strong>Gesamtkosten (einvernehmlich)</strong></td>
+                    <td class="px-6 py-4 text-gray-700"><strong>CHF 500 - 2'600</strong></td>
+                    <td class="px-6 py-4 text-gray-700"><strong>CHF 3'000 - 8'000</strong></td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Risiko finanzieller Fehler</td>
+                    <td class="px-6 py-4 text-gray-700">Hoch</td>
+                    <td class="px-6 py-4 text-gray-700">Gering</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Risiken und Nachteile einer Scheidung ohne Anwalt</h2>
+
+    <p class="text-gray-700 mb-6">
+        Obwohl eine Scheidung ohne Anwalt Kosten spart, birgt sie erhebliche Risiken. Die kurzfristige Ersparnis kann sich langfristig als teurer Fehler erweisen:
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">1. Unkenntnis der eigenen Rechte</h3>
+
+    <p class="text-gray-700 mb-6">
+        Ohne rechtliche Beratung kennen viele Betroffene ihre Ansprüche nicht vollständig. Häufige Fehler betreffen:
+    </p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Vorsorgeausgleich:</strong> Fehlerhafte Berechnung der zu teilenden Pensionskassenguthaben</li>
+        <li><strong>Güterrecht:</strong> Falsche Zuordnung von Vermögenswerten zu Eigengut oder Errungenschaft</li>
+        <li><strong>Nachehelicher Unterhalt:</strong> Verzicht auf berechtigte Unterhaltsansprüche oder zu niedrige Berechnung</li>
+        <li><strong>Kindesunterhalt:</strong> Unvollständige Berücksichtigung aller Kostenfaktoren, insbesondere des Betreuungsunterhalts</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">2. Formelle Fehler und Verzögerungen</h3>
+
+    <p class="text-gray-700 mb-6">
+        Unvollständige Unterlagen, fehlende Nachweise oder formell fehlerhafte Formulierungen führen dazu, dass das Gericht Nachbesserungen verlangt. Dies verzögert das Verfahren und kann zusätzliche Kosten verursachen.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">3. Ablehnung der Konvention durch das Gericht</h3>
+
+    <p class="text-gray-700 mb-6">
+        Das Gericht kann die Scheidungskonvention ablehnen, wenn:
+    </p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Die Regelungen <strong>offensichtlich unangemessen</strong> sind (Art. 111 Abs. 2 ZGB)</li>
+        <li>Ein Ehegatte <strong>massiv benachteiligt</strong> wird</li>
+        <li>Die Vereinbarungen <strong>das Kindeswohl verletzen</strong></li>
+        <li><strong>Gesetzeswidrige Klauseln</strong> enthalten sind</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">4. Langfristige Konsequenzen</h3>
+
+    <p class="text-gray-700 mb-6">
+        Die genehmigte Scheidungskonvention hat <strong>Urteilswirkung</strong>. Fehlerhafte Regelungen können nach Rechtskraft nur unter sehr eingeschränkten Voraussetzungen abgeändert werden. Ein falscher Vorsorgeausgleich oder ein zu niedriger Unterhalt kann Sie über Jahre oder Jahrzehnte finanziell belasten.
+    </p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praxisbeispiel:</p>
+        <p class="text-gray-700">Ein Ehepaar scheidet sich ohne Anwalt. Bei der güterrechtlichen Auseinandersetzung wird eine Erbschaft fälschlicherweise als Errungenschaft behandelt und geteilt, obwohl sie Eigengut gewesen wäre. Der finanzielle Schaden: mehrere zehntausend Franken. Diese Fehlentscheidung ist nach Rechtskraft des Scheidungsurteils kaum mehr zu korrigieren.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wann ist eine Scheidung ohne Anwalt möglich?</h2>
+
+    <p class="text-gray-700 mb-6">
+        Die folgende Übersicht zeigt, in welchen Situationen eine Scheidung ohne Anwalt realistisch ist und wann Sie besser rechtliche Unterstützung suchen sollten:
+    </p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Situation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Ohne Anwalt möglich?</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Empfehlung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Kurze Ehe, keine Kinder, kein Vermögen</td>
+                    <td class="px-6 py-4 text-green-600 font-semibold">Ja</td>
+                    <td class="px-6 py-4 text-gray-700">Scheidung ohne Anwalt gut machbar</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Einvernehmlich, keine Kinder, einfache Vermögenslage</td>
+                    <td class="px-6 py-4 text-green-600 font-semibold">Ja, mit Vorsicht</td>
+                    <td class="px-6 py-4 text-gray-700">Mindestens Erstberatung empfohlen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Einvernehmlich, mit minderjährigen Kindern</td>
+                    <td class="px-6 py-4 text-yellow-600 font-semibold">Bedingt</td>
+                    <td class="px-6 py-4 text-gray-700">Anwaltliche Prüfung der Konvention empfohlen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Einvernehmlich, mit Immobilie oder grösserem Vermögen</td>
+                    <td class="px-6 py-4 text-yellow-600 font-semibold">Bedingt</td>
+                    <td class="px-6 py-4 text-gray-700">Anwaltliche Beratung dringend empfohlen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Teileinigung (Art. 112 ZGB)</td>
+                    <td class="px-6 py-4 text-orange-600 font-semibold">Nicht empfohlen</td>
+                    <td class="px-6 py-4 text-gray-700">Anwaltliche Vertretung wichtig</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy"><a href="/scheidung/strittige-scheidung" class="text-gold hover:underline">Strittige Scheidung</a></td>
+                    <td class="px-6 py-4 text-red-600 font-semibold">Nein</td>
+                    <td class="px-6 py-4 text-gray-700">Anwalt unerlässlich</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy"><a href="/scheidung/scheidungsklage" class="text-gold hover:underline">Scheidungsklage</a> (Art. 114/115 ZGB)</td>
+                    <td class="px-6 py-4 text-red-600 font-semibold">Nein</td>
+                    <td class="px-6 py-4 text-gray-700">Anwalt unerlässlich</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Gegenseite ist anwaltlich vertreten</td>
+                    <td class="px-6 py-4 text-red-600 font-semibold">Nein</td>
+                    <td class="px-6 py-4 text-gray-700">Eigener Anwalt dringend empfohlen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Alternativen zur vollständigen Selbstvertretung</h2>
+
+    <p class="text-gray-700 mb-6">
+        Zwischen der vollständigen Selbstvertretung und der umfassenden anwaltlichen Begleitung gibt es Zwischenlösungen, die Kosten sparen und dennoch rechtliche Sicherheit bieten:
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">1. Anwaltliche Erstberatung</h3>
+
+    <p class="text-gray-700 mb-6">
+        Eine Erstberatung von 1-2 Stunden beim Anwalt verschafft Ihnen einen Überblick über Ihre Rechte und Ansprüche. Kosten: ca. CHF 200-500. Sie erfahren, worauf Sie bei der Konvention achten müssen und welche Fallstricke es gibt.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">2. Prüfung der selbst erstellten Konvention</h3>
+
+    <p class="text-gray-700 mb-6">
+        Sie erstellen die Scheidungskonvention selbst und lassen diese von einem Anwalt auf Vollständigkeit und Angemessenheit prüfen. So kombinieren Sie Kostenersparnis mit rechtlicher Absicherung. Kosten: ca. CHF 300-800.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">3. Gemeinsamer Anwalt bei einvernehmlicher Scheidung</h3>
+
+    <p class="text-gray-700 mb-6">
+        Bei einer wirklich einvernehmlichen Scheidung können beide Ehegatten einen gemeinsamen Anwalt beauftragen. Dies ist kostengünstiger als zwei separate Anwälte und sorgt für eine ausgewogene Lösung. Der Anwalt muss beide Parteien neutral beraten.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">4. Mediation</h3>
+
+    <p class="text-gray-700 mb-6">
+        Eine Mediation mit einem neutralen Mediator kann helfen, Einigkeit über strittige Punkte zu erzielen. Mediatoren sind oft günstiger als Anwälte und können bei der Erarbeitung einer Scheidungskonvention unterstützen. Die rechtliche Prüfung sollte dennoch erfolgen.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">5. Rechtsauskunftsstellen</h3>
+
+    <p class="text-gray-700 mb-6">
+        Viele Kantone und Gemeinden bieten kostenlose oder günstige Rechtsauskunftsstellen an. Diese können eine erste Orientierung geben, ersetzen aber keine umfassende anwaltliche Beratung.
+    </p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Unentgeltliche Rechtspflege - Kostenloser Anwalt bei fehlenden Mitteln</h2>
+
+    <p class="text-gray-700 mb-6">
+        Wenn Sie sich keinen Anwalt leisten können, haben Sie möglicherweise Anspruch auf <a href="/scheidung/unentgeltliche-rechtspflege" class="text-gold hover:underline font-semibold">unentgeltliche Rechtspflege</a> (Art. 117-123 ZPO). Der Staat übernimmt dann ganz oder teilweise die Gerichts- und Anwaltskosten.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Voraussetzungen für unentgeltliche Rechtspflege</h3>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Mittellosigkeit:</strong> Ihr Einkommen liegt nahe am Existenzminimum und Sie verfügen nicht über relevantes Vermögen</li>
+        <li><strong>Keine Aussichtslosigkeit:</strong> Ihr Rechtsbegehren hat Erfolgsaussichten (bei Scheidungen in der Regel gegeben)</li>
+    </ul>
+
+    <p class="text-gray-700 mb-6">
+        Das Gesuch um unentgeltliche Rechtspflege kann vor oder nach Einreichung des Scheidungsbegehrens gestellt werden. Wichtig: Der Anspruch auf einen Prozesskostenvorschuss vom Ehegatten geht der unentgeltlichen Rechtspflege vor. Sie müssen daher gleichzeitig einen Antrag auf Prozesskostenvorschuss stellen.
+    </p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig:</p>
+        <p class="text-gray-700">Die unentgeltliche Rechtspflege wird in der Regel <strong>nicht rückwirkend</strong> bewilligt. Stellen Sie das Gesuch daher möglichst frühzeitig, bevor Sie Kosten verursachen. Die Praxis der einzelnen Kantone ist unterschiedlich - einige sind grosszügiger als andere.</p>
+    </div>
+
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">
+            Auch wenn eine Scheidung ohne Anwalt rechtlich möglich ist, gibt es zahlreiche Situationen, in denen anwaltliche Unterstützung nicht nur empfehlenswert, sondern nahezu unerlässlich ist. Die vermeintliche Kostenersparnis kann sich schnell in einen erheblichen finanziellen Nachteil verwandeln, wenn wichtige Ansprüche übersehen oder Fehler in der Scheidungskonvention gemacht werden.
+        </p>
+
+        <p class="text-gray-700 mb-6">
+            Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> kann Ihre Situation objektiv beurteilen und sicherstellen, dass Ihre Rechte vollumfänglich gewahrt werden. Besonders wichtig ist die anwaltliche Beratung bei:
+        </p>
+
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Vorhandensein von <strong>minderjährigen Kindern</strong> (Sorgerecht, Unterhalt, Betreuungsunterhalt)</li>
+            <li><strong>Komplexen Vermögensverhältnissen</strong> (Immobilien, Unternehmensbeteiligungen, ausländisches Vermögen)</li>
+            <li><strong>Ungleicher Verhandlungsposition</strong> oder wenn Sie sich unter Druck gesetzt fühlen</li>
+            <li><strong>Längerer Ehedauer</strong> mit entsprechend komplexer güterrechtlicher Auseinandersetzung</li>
+            <li><strong>Unklarheiten beim Vorsorgeausgleich</strong> - Fehler hier können Tausende Franken kosten</li>
+            <li>Wenn die <strong>Gegenseite anwaltlich vertreten</strong> ist</li>
+        </ul>
+
+        <p class="text-gray-700 mb-6">
+            Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kennt die Fallstricke und kann Sie vor kostspieligen Fehlern bewahren. Die Investition in eine professionelle Beratung zahlt sich oft mehrfach aus - sei es durch höhere Unterhaltsansprüche, eine fairere Vermögensaufteilung oder die Vermeidung von Fehlern, die später nicht mehr korrigiert werden können.
+        </p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Sind Sie unsicher, ob Sie einen Anwalt benötigen? In einer unverbindlichen Erstberatung können wir Ihre Situation einschätzen und Ihnen konkret aufzeigen, welche Risiken eine Scheidung ohne Anwalt in Ihrem Fall birgt.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- Fazit -->
+    <h2 class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">
+        Eine Scheidung ohne Anwalt ist in der Schweiz rechtlich möglich und kann bei einfachen Verhältnissen - kurze Ehe, keine Kinder, kein nennenswertes Vermögen - durchaus funktionieren. In diesen Fällen lassen sich die Gerichtskosten von CHF 500 bis 2'600 ohne weitere Anwaltskosten bewältigen.
+    </p>
+
+    <p class="text-gray-700 mb-6">
+        Die kostengünstigste Variante ist jedoch oft nicht der vollständige Verzicht auf anwaltliche Hilfe, sondern die <strong>gezielte Nutzung punktueller Beratung</strong>. Eine anwaltliche Erstberatung oder die Prüfung der selbst erstellten Konvention kann vor kostspieligen Fehlern schützen und kostet nur einen Bruchteil dessen, was ein falscher Vorsorgeausgleich oder eine unzureichende Unterhaltsregelung langfristig kosten würde.
+    </p>
+
+    <p class="text-gray-700 mb-6">
+        Bei <a href="/scheidung/strittige-scheidung" class="text-gold hover:underline font-semibold">strittigen Scheidungen</a>, komplexen Vermögensverhältnissen oder wenn minderjährige Kinder betroffen sind, ist anwaltliche Unterstützung dringend zu empfehlen. Die genehmigte Scheidungskonvention hat Urteilswirkung - Fehler können nach Rechtskraft nur noch sehr schwer korrigiert werden.
+    </p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Relevante Gesetzesbestimmungen:</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li><strong>Art. 68 ZPO</strong> - Vertretung im Prozess (keine Anwaltspflicht)</li>
+            <li><strong>Art. 111 ZGB</strong> - Scheidung auf gemeinsames Begehren mit umfassender Einigung</li>
+            <li><strong>Art. 112 ZGB</strong> - Scheidung auf gemeinsames Begehren mit Teileinigung</li>
+            <li><strong>Art. 114-115 ZGB</strong> - Scheidungsklage</li>
+            <li><strong>Art. 117-123 ZPO</strong> - Unentgeltliche Rechtspflege</li>
+            <li><strong>Art. 122 ZGB</strong> - Vorsorgeausgleich (Pensionskasse)</li>
+            <li><strong>Art. 124b ZGB</strong> - Abweichung von der hälftigen Teilung</li>
+            <li><strong>Art. 125 ZGB</strong> - Nachehelicher Unterhalt</li>
+            <li><strong>Art. 198 lit. c ZPO</strong> - Kein Schlichtungsverfahren bei Scheidung auf gemeinsames Begehren</li>
+            <li><strong>Art. 288 ZPO</strong> - Scheidung ohne Bedenkzeit</li>
+        </ul>
+    </div>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann man sich in der Schweiz ohne Anwalt scheiden lassen?</h3>
+                <p class="text-gray-700">Ja, in der Schweiz besteht keine Anwaltspflicht bei Scheidungen. Gemäss Art. 68 Abs. 1 ZPO kann jede prozessfähige Partei den Prozess selbst führen. Dies gilt sowohl für die Scheidung auf gemeinsames Begehren (Art. 111/112 ZGB) als auch für die Scheidungsklage. Eine Scheidung ohne Anwalt ist jedoch nur bei einvernehmlichen Scheidungen ohne komplexe Verhältnisse empfehlenswert.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was kostet eine Scheidung ohne Anwalt in der Schweiz?</h3>
+                <p class="text-gray-700">Bei einer Scheidung ohne Anwalt fallen nur die Gerichtskosten an. Diese variieren je nach Kanton zwischen CHF 500 (Basel-Stadt, Genf) und CHF 2'600 (Zürich). Bei einer einvernehmlichen Scheidung werden die Gerichtskosten in der Regel von beiden Ehegatten je zur Hälfte getragen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie lange dauert eine Scheidung ohne Anwalt?</h3>
+                <p class="text-gray-700">Eine einvernehmliche Scheidung auf gemeinsames Begehren dauert in der Regel 2 bis 6 Monate von der Einreichung bis zum rechtskräftigen Scheidungsurteil. Bei vollständiger Einigung und korrekten Unterlagen kann das Gericht die Scheidung bereits am Ende der Anhörung aussprechen (Art. 288 ZPO). Verzögerungen entstehen oft durch unvollständige Unterlagen oder Nachbesserungsbedarf.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Welche Unterlagen brauche ich für eine Scheidung ohne Anwalt?</h3>
+                <p class="text-gray-700">Für eine Scheidung auf gemeinsames Begehren benötigen Sie: ein von beiden unterschriebenes Scheidungsbegehren, die vollständige Scheidungskonvention, einen aktuellen Familienausweis (nicht älter als 6 Monate), Einkommens- und Vermögensnachweise beider Ehegatten, Bestätigungen der Pensionskassen über die Austrittsleistungen sowie bei Kindern die Geburtsurkunden und Nachweise über Betreuungskosten.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wann ist eine Scheidung ohne Anwalt nicht empfehlenswert?</h3>
+                <p class="text-gray-700">Eine Scheidung ohne Anwalt ist nicht empfehlenswert bei: strittigen Scheidungen, wenn minderjährige Kinder betroffen sind, bei komplexen Vermögensverhältnissen (Immobilien, Unternehmen), wenn Sie sich unter Druck gesetzt fühlen, wenn die Gegenseite anwaltlich vertreten ist, oder bei einer Scheidungsklage (Art. 114/115 ZGB). In diesen Fällen können Fehler schwerwiegende finanzielle Folgen haben.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich die Scheidungskonvention selbst erstellen?</h3>
+                <p class="text-gray-700">Ja, Sie können die Scheidungskonvention selbst erstellen. Viele Gerichte stellen Musterkonventionen zur Verfügung, etwa die Gerichte Zürich mit interaktiven PDF-Formularen. Die Konvention muss alle Scheidungsfolgen regeln: güterrechtliche Auseinandersetzung, Vorsorgeausgleich, nachehelicher Unterhalt, und bei Kindern Sorgerecht, Obhut und Kindesunterhalt. Empfohlen wird, die selbst erstellte Konvention von einem Anwalt prüfen zu lassen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert, wenn das Gericht die Scheidungskonvention ablehnt?</h3>
+                <p class="text-gray-700">Das Gericht kann die Scheidungskonvention ablehnen, wenn sie offensichtlich unangemessen ist, einen Ehegatten massiv benachteiligt, das Kindeswohl verletzt oder gesetzeswidrige Klauseln enthält (Art. 111 Abs. 2 ZGB). In diesem Fall müssen Sie die Konvention überarbeiten und erneut einreichen. Die Genehmigung wird jedoch selten verweigert, solange die Vereinbarungen rechtskonform und ausgewogen sind.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Gibt es finanzielle Hilfe für Scheidungen, wenn ich mir keinen Anwalt leisten kann?</h3>
+                <p class="text-gray-700">Ja, bei fehlenden finanziellen Mitteln können Sie unentgeltliche Rechtspflege beantragen (Art. 117-123 ZPO). Voraussetzungen sind Mittellosigkeit (Einkommen nahe am Existenzminimum, kein relevantes Vermögen) und ein nicht aussichtsloses Rechtsbegehren. Der Staat übernimmt dann ganz oder teilweise die Gerichts- und Anwaltskosten. Beachten Sie: Der Prozesskostenvorschuss vom Ehegatten geht der unentgeltlichen Rechtspflege vor.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Muss die Pensionskasse bei einer Scheidung ohne Anwalt auch geteilt werden?</h3>
+                <p class="text-gray-700">Ja, der Vorsorgeausgleich (Teilung der Pensionskassenguthaben) ist zwingendes Recht und muss auch bei einer Scheidung ohne Anwalt durchgeführt werden (Art. 122 ZGB). Die während der Ehe angesparten Guthaben werden grundsätzlich hälftig geteilt, unabhängig vom Güterstand. Eine Abweichung ist nur unter bestimmten Voraussetzungen möglich (Art. 124b ZGB). Sie benötigen Bestätigungen beider Pensionskassen über die Austrittsleistungen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wo reiche ich das Scheidungsbegehren ein?</h3>
+                <p class="text-gray-700">Das gemeinsame Scheidungsbegehren wird beim Bezirksgericht (oder dem entsprechenden Gericht, je nach Kanton) am Wohnsitz eines der Ehegatten eingereicht (Art. 23 ZPO). Wenn Sie und Ihr Ehepartner in verschiedenen Kantonen wohnen, können Sie wählen, bei welchem Gericht Sie einreichen - ein Vergleich der Gerichtskosten kann sich lohnen.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Scheidung ohne Anwalt in der Schweiz",
+        "description": "Scheidung ohne Anwalt: Voraussetzungen, Ablauf, Kosten & Risiken. Erfahren Sie, wann eine Scheidung ohne Anwalt möglich ist und worauf Sie achten müssen.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-20",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/scheidung/ohne-anwalt"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Kann man sich in der Schweiz ohne Anwalt scheiden lassen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, in der Schweiz besteht keine Anwaltspflicht bei Scheidungen. Gemäss Art. 68 Abs. 1 ZPO kann jede prozessfähige Partei den Prozess selbst führen. Dies gilt sowohl für die Scheidung auf gemeinsames Begehren (Art. 111/112 ZGB) als auch für die Scheidungsklage. Eine Scheidung ohne Anwalt ist jedoch nur bei einvernehmlichen Scheidungen ohne komplexe Verhältnisse empfehlenswert."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was kostet eine Scheidung ohne Anwalt in der Schweiz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei einer Scheidung ohne Anwalt fallen nur die Gerichtskosten an. Diese variieren je nach Kanton zwischen CHF 500 (Basel-Stadt, Genf) und CHF 2'600 (Zürich). Bei einer einvernehmlichen Scheidung werden die Gerichtskosten in der Regel von beiden Ehegatten je zur Hälfte getragen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie lange dauert eine Scheidung ohne Anwalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Eine einvernehmliche Scheidung auf gemeinsames Begehren dauert in der Regel 2 bis 6 Monate von der Einreichung bis zum rechtskräftigen Scheidungsurteil. Bei vollständiger Einigung und korrekten Unterlagen kann das Gericht die Scheidung bereits am Ende der Anhörung aussprechen (Art. 288 ZPO). Verzögerungen entstehen oft durch unvollständige Unterlagen oder Nachbesserungsbedarf."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welche Unterlagen brauche ich für eine Scheidung ohne Anwalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Für eine Scheidung auf gemeinsames Begehren benötigen Sie: ein von beiden unterschriebenes Scheidungsbegehren, die vollständige Scheidungskonvention, einen aktuellen Familienausweis (nicht älter als 6 Monate), Einkommens- und Vermögensnachweise beider Ehegatten, Bestätigungen der Pensionskassen über die Austrittsleistungen sowie bei Kindern die Geburtsurkunden und Nachweise über Betreuungskosten."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wann ist eine Scheidung ohne Anwalt nicht empfehlenswert?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Eine Scheidung ohne Anwalt ist nicht empfehlenswert bei: strittigen Scheidungen, wenn minderjährige Kinder betroffen sind, bei komplexen Vermögensverhältnissen (Immobilien, Unternehmen), wenn Sie sich unter Druck gesetzt fühlen, wenn die Gegenseite anwaltlich vertreten ist, oder bei einer Scheidungsklage (Art. 114/115 ZGB). In diesen Fällen können Fehler schwerwiegende finanzielle Folgen haben."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich die Scheidungskonvention selbst erstellen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, Sie können die Scheidungskonvention selbst erstellen. Viele Gerichte stellen Musterkonventionen zur Verfügung, etwa die Gerichte Zürich mit interaktiven PDF-Formularen. Die Konvention muss alle Scheidungsfolgen regeln: güterrechtliche Auseinandersetzung, Vorsorgeausgleich, nachehelicher Unterhalt, und bei Kindern Sorgerecht, Obhut und Kindesunterhalt. Empfohlen wird, die selbst erstellte Konvention von einem Anwalt prüfen zu lassen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert, wenn das Gericht die Scheidungskonvention ablehnt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das Gericht kann die Scheidungskonvention ablehnen, wenn sie offensichtlich unangemessen ist, einen Ehegatten massiv benachteiligt, das Kindeswohl verletzt oder gesetzeswidrige Klauseln enthält (Art. 111 Abs. 2 ZGB). In diesem Fall müssen Sie die Konvention überarbeiten und erneut einreichen. Die Genehmigung wird jedoch selten verweigert, solange die Vereinbarungen rechtskonform und ausgewogen sind."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Gibt es finanzielle Hilfe für Scheidungen, wenn ich mir keinen Anwalt leisten kann?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, bei fehlenden finanziellen Mitteln können Sie unentgeltliche Rechtspflege beantragen (Art. 117-123 ZPO). Voraussetzungen sind Mittellosigkeit (Einkommen nahe am Existenzminimum, kein relevantes Vermögen) und ein nicht aussichtsloses Rechtsbegehren. Der Staat übernimmt dann ganz oder teilweise die Gerichts- und Anwaltskosten. Beachten Sie: Der Prozesskostenvorschuss vom Ehegatten geht der unentgeltlichen Rechtspflege vor."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Muss die Pensionskasse bei einer Scheidung ohne Anwalt auch geteilt werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, der Vorsorgeausgleich (Teilung der Pensionskassenguthaben) ist zwingendes Recht und muss auch bei einer Scheidung ohne Anwalt durchgeführt werden (Art. 122 ZGB). Die während der Ehe angesparten Guthaben werden grundsätzlich hälftig geteilt, unabhängig vom Güterstand. Eine Abweichung ist nur unter bestimmten Voraussetzungen möglich (Art. 124b ZGB). Sie benötigen Bestätigungen beider Pensionskassen über die Austrittsleistungen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wo reiche ich das Scheidungsbegehren ein?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das gemeinsame Scheidungsbegehren wird beim Bezirksgericht (oder dem entsprechenden Gericht, je nach Kanton) am Wohnsitz eines der Ehegatten eingereicht (Art. 23 ZPO). Wenn Sie und Ihr Ehepartner in verschiedenen Kantonen wohnen, können Sie wählen, bei welchem Gericht Sie einreichen - ein Vergleich der Gerichtskosten kann sich lohnen."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Scheidung",
+                "item": "https://familienrechtanwalt.ch/scheidung"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Scheidung ohne Anwalt in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/scheidung/ohne-anwalt"
+            }
+        ]
+    })} />
+
 </ArticleLayout>

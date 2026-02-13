@@ -3,156 +3,730 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 ---
 
 <ArticleLayout
-    title="Elternunterhalt in der Schweiz: Verwandtenunterstuetzungspflicht nach Art. 328 ZGB"
-    description="Elternunterhalt in der Schweiz: Verwandtenunterstuetzungspflicht nach Art. 328 ZGB. Voraussetzungen, Berechnung, Freibetraege und Ausschlussgruende."
-    keywords="Elternunterhalt Schweiz, Verwandtenunterstuetzung, Art. 328 ZGB, Unterstuetzungspflicht Eltern, Freibetraege"
+    title="Elternunterhalt in der Schweiz: Verwandtenunterstützungspflicht"
+    description="Elternunterhalt Schweiz: Verwandtenunterstützungspflicht nach Art. 328 ZGB. Voraussetzungen, Freibeträge, Berechnung & Ausschlussgründe. Mit BGE-Rechtsprechung."
+    keywords="Elternunterhalt Schweiz, Verwandtenunterstützung, Art. 328 ZGB, günstige Verhältnisse, Freibeträge, Pflegeheim Kosten"
     category="Unterhalt"
     categoryLink="/unterhalt"
 >
-    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Muessen Kinder fuer ihre beduertigen Eltern finanziell aufkommen? Diese Frage stellt sich immer haeufiger, da die Kosten fuer Pflege und Betreuung im Alter steigen. In der Schweiz gibt es keinen "Elternunterhalt" im eigentlichen Sinne, jedoch die sogenannte Verwandtenunterstuetzungspflicht nach Art. 328 ZGB.</p>
-
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlage: Art. 328 und 329 ZGB</h2>
-
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy">Art. 328 ZGB - Verwandtenunterstuetzung:</p>
-        <p class="text-gray-700">"(1) Wer in guenstigen Verhaeltnissen lebt, ist verpflichtet, Verwandte in auf- und absteigender Linie zu unterstuetzen, die ohne diesen Beistand in Not geraten wuerden. (2) Die Unterhaltspflicht der Eltern und des Ehegatten, der eingetragenen Partnerin oder des eingetragenen Partners bleibt vorbehalten."</p>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Einen eigentlichen «Elternunterhalt» gibt es in der Schweiz nicht, jedoch die <strong>Verwandtenunterstützungspflicht</strong> nach Art. 328 ZGB</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Unterstützungspflichtig sind nur Verwandte in <strong>gerader Linie</strong> (Eltern, Kinder, Grosseltern, Enkel) – nicht Geschwister oder Schwiegereltern</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Voraussetzung: Der Pflichtige muss in <strong>«günstigen Verhältnissen»</strong> leben (ca. CHF 120'000 Jahreseinkommen für Alleinstehende)</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Vermögensfreibeträge: <strong>CHF 250'000</strong> (Alleinstehende) bzw. <strong>CHF 500'000</strong> (Paare)</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Verwandtenunterstützung ist <strong>streng subsidiär</strong>: Erst wenn AHV, EL und andere Leistungen nicht ausreichen</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bei schweren Verfehlungen (z.B. Gewalt, Vernachlässigung) kann die Pflicht <strong>ermässigt oder aufgehoben</strong> werden (Art. 329 Abs. 2 ZGB)</span>
+            </li>
+        </ul>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wer ist unterstuetzungspflichtig?</h2>
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+        Müssen Kinder für ihre bedürftigen Eltern finanziell aufkommen? Diese Frage stellt sich in der Schweiz immer häufiger, da die Kosten für Pflege und Betreuung im Alter steigen. Ein Pflegeheimplatz kostet schnell zwischen CHF 5'000 und CHF 10'000 pro Monat – und rund 60 Prozent der Pflegebedürftigen können diese Kosten nicht vollständig aus eigener Tasche bezahlen. Dieser umfassende Ratgeber erklärt die rechtlichen Grundlagen der Verwandtenunterstützungspflicht nach Art. 328 ZGB, die Voraussetzungen, Freibeträge sowie mögliche Ausschlussgründe.
+    </p>
 
-    <p class="text-gray-700 mb-4">Die Verwandtenunterstuetzungspflicht betrifft Verwandte in auf- und absteigender (gerader) Linie:</p>
+    <!-- Inhaltsverzeichnis -->
+    <div class="bg-gray-50 border border-gray-200 p-6 rounded-lg mb-12">
+        <h2 class="text-xl font-bold text-navy mb-4">Inhaltsverzeichnis</h2>
+        <ul class="space-y-2 text-gray-700">
+            <li><a href="#grundlagen" class="text-gold hover:underline">1. Rechtliche Grundlagen: Art. 328 und 329 ZGB</a></li>
+            <li><a href="#unterstützungspflichtige" class="text-gold hover:underline">2. Wer ist unterstützungspflichtig?</a></li>
+            <li><a href="#voraussetzungen" class="text-gold hover:underline">3. Voraussetzungen für die Unterstützungspflicht</a></li>
+            <li><a href="#guenstige-verhaeltnisse" class="text-gold hover:underline">4. «Günstige Verhältnisse» – Einkommens- und Vermögensgrenzen</a></li>
+            <li><a href="#berechnung" class="text-gold hover:underline">5. Berechnung der Verwandtenunterstützung</a></li>
+            <li><a href="#subsidiaritaet" class="text-gold hover:underline">6. Subsidiarität: Rangfolge der Leistungen</a></li>
+            <li><a href="#reihenfolge" class="text-gold hover:underline">7. Reihenfolge bei mehreren Pflichtigen</a></li>
+            <li><a href="#ausschluss" class="text-gold hover:underline">8. Ausschluss und Ermässigung der Pflicht</a></li>
+            <li><a href="#verfahren" class="text-gold hover:underline">9. Verfahren und Durchsetzung</a></li>
+            <li><a href="#pflegeheim" class="text-gold hover:underline">10. Eltern im Pflegeheim: Wer zahlt?</a></li>
+            <li><a href="#bundesgericht" class="text-gold hover:underline">11. Bundesgerichtliche Rechtsprechung</a></li>
+            <li><a href="#anwalt" class="text-gold hover:underline">12. Wann Sie einen Anwalt beiziehen sollten</a></li>
+            <li><a href="#fazit" class="text-gold hover:underline">13. Fazit</a></li>
+            <li><a href="#faq" class="text-gold hover:underline">14. Häufig gestellte Fragen (FAQ)</a></li>
+        </ul>
+    </div>
 
-    <div class="overflow-x-auto mb-6">
+    <!-- 1. Rechtliche Grundlagen -->
+    <h2 id="grundlagen" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen: Art. 328 und 329 ZGB</h2>
+
+    <p class="text-gray-700 mb-6">
+        In der Schweiz gibt es keinen «Elternunterhalt» im eigentlichen Sinne wie etwa in Deutschland. Das Schweizer Recht kennt jedoch die sogenannte <strong>Verwandtenunterstützungspflicht</strong>, die in den Art. 328 und 329 des Schweizerischen Zivilgesetzbuches (ZGB) geregelt ist. Diese Bestimmungen sind seit dem Inkrafttreten des ZGB am 1. Januar 1912 praktisch unverändert geblieben.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Art. 328 ZGB: Verwandtenunterstützung</h3>
+
+    <div class="bg-gray-100 p-6 rounded-lg my-6 border-l-4 border-navy">
+        <p class="text-gray-700 mb-4"><strong>Art. 328 Abs. 1 ZGB:</strong></p>
+        <p class="text-gray-700 mb-4 italic">
+            «Wer in günstigen Verhältnissen lebt, ist verpflichtet, Verwandte in auf- und absteigender Linie zu unterstützen, die ohne diesen Beistand in Not geraten würden.»
+        </p>
+        <p class="text-gray-700 mb-2"><strong>Art. 328 Abs. 2 ZGB:</strong></p>
+        <p class="text-gray-700 italic">
+            «Die Unterhaltspflicht der Eltern und des Ehegatten, der eingetragenen Partnerin oder des eingetragenen Partners bleibt vorbehalten.»
+        </p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Art. 329 ZGB: Umfang und Durchsetzung</h3>
+
+    <div class="bg-gray-100 p-6 rounded-lg my-6 border-l-4 border-navy">
+        <p class="text-gray-700 mb-4"><strong>Art. 329 Abs. 1 ZGB:</strong></p>
+        <p class="text-gray-700 mb-4 italic">
+            «Der Anspruch auf Unterstützung ist gegen die Pflichtigen in der Reihenfolge ihrer Erbberechtigung geltend zu machen und geht auf die Leistung, die zum Lebensunterhalt erforderlich und den Verhältnissen des Pflichtigen angemessen ist.»
+        </p>
+        <p class="text-gray-700 mb-4"><strong>Art. 329 Abs. 1bis ZGB (seit 2017):</strong></p>
+        <p class="text-gray-700 mb-4 italic">
+            «Kein Anspruch auf Unterstützung kann geltend gemacht werden, wenn die Notlage auf einer Einschränkung der Erwerbstätigkeit zur Betreuung eigener Kinder beruht.»
+        </p>
+        <p class="text-gray-700 mb-2"><strong>Art. 329 Abs. 2 ZGB:</strong></p>
+        <p class="text-gray-700 italic">
+            «Erscheint die Heranziehung eines Pflichtigen wegen besonderer Umstände als unbillig, so kann das Gericht die Unterstützungspflicht ermässigen oder aufheben.»
+        </p>
+    </div>
+
+    <!-- 2. Wer ist unterstützungspflichtig? -->
+    <h2 id="unterstützungspflichtige" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wer ist unterstützungspflichtig?</h2>
+
+    <p class="text-gray-700 mb-6">
+        Die Verwandtenunterstützungspflicht gilt ausschliesslich für Verwandte in <strong>auf- und absteigender Linie</strong>, also in gerader Linie. Verwandte in der Seitenlinie (z.B. Geschwister) sowie angeheiratete Verwandte sind nicht unterstützungspflichtig.
+    </p>
+
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Unterstuetzungspflichtig</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Nicht unterstuetzungspflichtig</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Unterstützungspflichtig (gerade Linie)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Nicht unterstützungspflichtig</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
-                <tr>
-                    <td class="px-6 py-4 text-gray-700">Kinder gegenueber Eltern</td>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Kinder gegenüber Eltern</td>
                     <td class="px-6 py-4 text-gray-700">Geschwister</td>
                 </tr>
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4 text-gray-700">Enkel gegenueber Grosseltern</td>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Eltern gegenüber Kindern</td>
                     <td class="px-6 py-4 text-gray-700">Tanten und Onkel</td>
                 </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Enkel gegenüber Grosseltern</td>
+                    <td class="px-6 py-4 text-gray-700">Nichten und Neffen</td>
+                </tr>
                 <tr>
-                    <td class="px-6 py-4 text-gray-700">Eltern gegenueber Kindern</td>
-                    <td class="px-6 py-4 text-gray-700">Schwiegereltern</td>
+                    <td class="px-6 py-4 text-gray-700">Grosseltern gegenüber Enkeln</td>
+                    <td class="px-6 py-4 text-gray-700">Cousins und Cousinen</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 text-gray-700">Grosseltern gegenueber Enkeln</td>
-                    <td class="px-6 py-4 text-gray-700">Stiefkinder</td>
+                    <td class="px-6 py-4 text-gray-700">Urgrosseltern gegenüber Urenkeln (theoretisch)</td>
+                    <td class="px-6 py-4 text-gray-700">Schwiegereltern, Schwiegerkinder</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">–</td>
+                    <td class="px-6 py-4 text-gray-700">Stiefeltern, Stiefkinder</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Voraussetzungen fuer die Unterstuetzungspflicht</h2>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praxishinweis:</p>
+        <p class="text-gray-700">Das Bundesgericht hat entschieden, dass bei Verwandtschaft im zweiten Grad (z.B. Grosseltern-Enkel) an die Voraussetzungen der Unterstützungspflicht <strong>höhere Anforderungen</strong> gestellt werden können als bei Verwandtschaft ersten Grades (Eltern-Kinder). Dies bedeutet, dass Enkel gegenüber Grosseltern weniger schnell unterstützungspflichtig werden.</p>
+    </div>
 
-    <p class="text-gray-700 mb-4">Damit eine Unterstuetzungspflicht besteht, muessen drei Voraussetzungen gleichzeitig erfuellt sein:</p>
+    <!-- 3. Voraussetzungen -->
+    <h2 id="voraussetzungen" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Voraussetzungen für die Unterstützungspflicht</h2>
+
+    <p class="text-gray-700 mb-6">
+        Damit eine Verwandtenunterstützungspflicht besteht, müssen drei Voraussetzungen <strong>kumulativ</strong> erfüllt sein:
+    </p>
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">1. Notlage des Anspruchsberechtigten</h3>
-    <p class="text-gray-700 mb-4">Die zu unterstuetzende Person muss sich in einer Notlage befinden. Dies liegt vor, wenn das eigene Einkommen nicht zur Deckung des Existenzminimums reicht, das Vermoegen aufgebraucht ist und alle anderen Einkommensquellen ausgeschoepft sind (AHV, IV, EL).</p>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">2. Guenstige Verhaeltnisse des Pflichtigen</h3>
-    <p class="text-gray-700 mb-4">Der Pflichtige muss "in guenstigen Verhaeltnissen" leben. Das Einkommen muss deutlich ueber dem eigenen Existenzminimum liegen und ein erheblicher finanzieller Spielraum bestehen.</p>
+    <p class="text-gray-700 mb-6">
+        Die zu unterstützende Person muss sich in einer <strong>Notlage</strong> befinden. Von einer Notlage wird ausgegangen, wenn die zur Lebensunterhaltung notwendigen Güter wie Nahrung, Kleidung, Wohnung und ärztliche Betreuung nicht aus eigener Kraft beschafft werden können. Das eigene Einkommen und Vermögen müssen aufgebraucht sein, und alle anderen Einkommensquellen (AHV, IV, Ergänzungsleistungen, Sozialhilfe) müssen ausgeschöpft sein.
+    </p>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">3. Zumutbarkeit der Leistung</h3>
-    <p class="text-gray-700 mb-6">Die Unterstuetzungsleistung muss dem Pflichtigen zumutbar sein unter Beruecksichtigung der eigenen finanziellen Verpflichtungen und des Lebensstandards.</p>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtige Ausnahme seit 2017:</p>
+        <p class="text-gray-700">Seit dem 1. Januar 2017 besteht <strong>keine Verwandtenunterstützungspflicht</strong> mehr, wenn die Notlage auf einer Einschränkung der Erwerbstätigkeit zur Betreuung eigener Kinder beruht (Art. 329 Abs. 1bis ZGB). Alleinerziehende können von ihren Verwandten also keine Unterstützung mehr einfordern, wenn ihre Bedürftigkeit auf die Kinderbetreuung zurückzuführen ist.</p>
+    </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Subsidiaritaet der Verwandtenunterstuetzung</h2>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">2. Günstige Verhältnisse des Pflichtigen</h3>
 
-    <p class="text-gray-700 mb-4">Die Verwandtenunterstuetzungspflicht ist streng subsidiaer. Das bedeutet:</p>
+    <p class="text-gray-700 mb-6">
+        Der pflichtige Verwandte muss in <strong>«günstigen Verhältnissen»</strong> leben. Gemäss bundesgerichtlicher Rechtsprechung lebt in günstigen Verhältnissen, wem aufgrund seiner Einkommens- und Vermögenssituation eine <strong>wohlhabende Lebensführung</strong> möglich ist (BGE 136 III 1). Der Pflichtige muss über das hinausgehen, was für den üblichen Lebensunterhalt erforderlich ist.
+    </p>
 
-    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Zuerst:</strong> Eigene Mittel (Einkommen, Vermoegen)</li>
-        <li><strong>Dann:</strong> AHV/IV-Renten</li>
-        <li><strong>Dann:</strong> Ergaenzungsleistungen (EL)</li>
-        <li><strong>Dann:</strong> Weitere Sozialversicherungen</li>
-        <li><strong>Zuletzt:</strong> Verwandtenunterstuetzung / Sozialhilfe</li>
-    </ol>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">3. Verwandtschaft in gerader Linie</h3>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Freibetraege und Schwellenwerte</h2>
+    <p class="text-gray-700 mb-6">
+        Es muss ein Verwandtschaftsverhältnis in auf- oder absteigender Linie bestehen. Weiter darf keine vorrangige Unterhaltspflicht (z.B. Ehegattenunterhalt) bestehen, da diese nach Art. 328 Abs. 2 ZGB vorgeht.
+    </p>
 
-    <div class="overflow-x-auto mb-6">
+    <!-- 4. Günstige Verhältnisse -->
+    <h2 id="guenstige-verhaeltnisse" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">«Günstige Verhältnisse» – Einkommens- und Vermögensgrenzen</h2>
+
+    <p class="text-gray-700 mb-6">
+        Die bundesgerichtliche Rechtsprechung sowie die SKOS-Richtlinien (Schweizerische Konferenz für Sozialhilfe) haben Richtwerte für die «günstigen Verhältnisse» entwickelt. Diese Werte sind nicht verbindlich, dienen aber als Orientierung.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Einkommensgrenzen</h3>
+
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Situation</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Freibetrag pro Jahr (ca.)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Einkommensgrenze (Brutto/Jahr)</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Alleinstehend</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 120'000</td>
+                </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Alleinstehend</td>
-                    <td class="px-6 py-4 text-gray-700">CHF 120'000 - 140'000</td>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Verheiratet / eingetragene Partnerschaft</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 180'000</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Verheiratet</td>
-                    <td class="px-6 py-4 text-gray-700">CHF 140'000 - 180'000</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Pro Kind</td>
-                    <td class="px-6 py-4 text-gray-700">+ CHF 10'000 - 20'000</td>
-                </tr>
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Reinvermoegen</td>
-                    <td class="px-6 py-4 text-gray-700">CHF 250'000</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Wohneigentum</td>
-                    <td class="px-6 py-4 text-gray-700">zusaetzlich ca. CHF 300'000</td>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Zuschlag pro Kind in Ausbildung</td>
+                    <td class="px-6 py-4 text-gray-700">+ CHF 20'000</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Ausschluss und Reduktion der Pflicht</h2>
+    <p class="text-gray-700 mb-6">
+        <strong>Beispiel:</strong> Ein verheiratetes Paar mit zwei Kindern in Ausbildung hat eine Einkommensgrenze von CHF 180'000 + CHF 40'000 = CHF 220'000. Liegt das Einkommen unter dieser Schwelle, besteht keine Unterstützungspflicht.
+    </p>
 
-    <p class="text-gray-700 mb-4">Das Gericht kann die Unterstuetzungspflicht ermaessigen oder aufheben gemaess Art. 329 Abs. 2 ZGB bei "besonderen Umstaenden". Anerkannte Ausschlussgruende sind:</p>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vermögensfreibeträge</h3>
 
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Schwere Verfehlungen gegenueber dem Pflichtigen (Gewalt, Missbrauch)</li>
-        <li>Schwere Vernachlaessigung in der Kindheit</li>
-        <li>Unterlassene Unterhaltszahlungen in der Kindheit</li>
-        <li>Voellige Kontaktverweigerung ohne Grund</li>
-        <li>Selbstverschuldete Notlage oder grobe Vermoegensverschwendung</li>
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Situation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Vermögensfreibetrag</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Alleinstehend</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 250'000</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Verheiratet / eingetragene Partnerschaft</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 500'000</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Zuschlag pro Kind in Ausbildung</td>
+                    <td class="px-6 py-4 text-gray-700">+ CHF 40'000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vermögensverzehr: Altersabhängige Quoten</h3>
+
+    <p class="text-gray-700 mb-4">
+        Übersteigt das Vermögen die Freibeträge, wird ein Teil davon als Einkommen angerechnet. Die Quote für den Vermögensverzehr ist altersabhängig:
+    </p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Alter des Pflichtigen</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Verzehrquote pro Jahr</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Bis 40 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">1/60 (1,67%)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">41–50 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">1/50 (2%)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">51–60 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">1/40 (2,5%)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">61–65 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">1/30 (3,33%)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Über 65 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">1/20 (5%)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 5. Berechnung -->
+    <h2 id="berechnung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Berechnung der Verwandtenunterstützung</h2>
+
+    <p class="text-gray-700 mb-6">
+        Die Berechnung der Verwandtenunterstützung erfolgt in mehreren Schritten. In der Praxis orientieren sich die Sozialbehörden häufig an den SKOS-Richtlinien und der dazugehörigen Praxishilfe.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Berechnungsschema</h3>
+
+    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-3 ml-4">
+        <li><strong>Ermittlung des steuerbaren Einkommens</strong> (gemäss direkter Bundessteuer)</li>
+        <li><strong>Ermittlung des steuerbaren Vermögens</strong> über dem Freibetrag</li>
+        <li><strong>Berechnung des Vermögensverzehrs</strong> gemäss altersabhängiger Quote</li>
+        <li><strong>Addition:</strong> Steuerbares Einkommen + angerechneter Vermögensverzehr = massgebendes Einkommen</li>
+        <li><strong>Vergleich:</strong> Ist das massgebende Einkommen höher als die Einkommensgrenze?</li>
+        <li><strong>Berechnung des Überschusses:</strong> Nur der Betrag über der Grenze kann herangezogen werden</li>
+    </ol>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Praktisches Berechnungsbeispiel</h3>
+
+    <div class="bg-gray-50 border border-gray-200 p-6 rounded-lg my-6">
+        <p class="font-semibold text-navy mb-4">Ausgangslage:</p>
+        <ul class="list-disc list-inside text-gray-700 mb-4 space-y-1">
+            <li>Mutter (82 Jahre) im Pflegeheim, monatliche Kosten CHF 9'000</li>
+            <li>AHV + Ergänzungsleistungen decken CHF 7'500/Monat</li>
+            <li>Fehlbetrag: CHF 1'500/Monat (CHF 18'000/Jahr)</li>
+            <li>Sohn (55 Jahre): Steuerbares Einkommen CHF 150'000/Jahr, verheiratet, keine Kinder</li>
+            <li>Vermögen: CHF 600'000</li>
+        </ul>
+        <p class="font-semibold text-navy mb-4">Berechnung:</p>
+        <ul class="list-disc list-inside text-gray-700 mb-4 space-y-1">
+            <li>Einkommensgrenze (verheiratet): CHF 180'000</li>
+            <li>Vermögensfreibetrag (verheiratet): CHF 500'000</li>
+            <li>Vermögen über Freibetrag: CHF 600'000 – CHF 500'000 = CHF 100'000</li>
+            <li>Vermögensverzehr (Alter 51–60, Quote 1/40): CHF 100'000 × 2,5% = CHF 2'500/Jahr</li>
+            <li>Massgebendes Einkommen: CHF 150'000 + CHF 2'500 = CHF 152'500</li>
+        </ul>
+        <p class="font-semibold text-navy mb-2">Ergebnis:</p>
+        <p class="text-gray-700">Das massgebende Einkommen (CHF 152'500) liegt <strong>unter</strong> der Einkommensgrenze (CHF 180'000). Der Sohn ist <strong>nicht unterstützungspflichtig</strong>.</p>
+    </div>
+
+    <!-- 6. Subsidiarität -->
+    <h2 id="subsidiaritaet" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Subsidiarität: Rangfolge der Leistungen</h2>
+
+    <p class="text-gray-700 mb-6">
+        Die Verwandtenunterstützungspflicht ist <strong>streng subsidiär</strong>. Das bedeutet: Bevor Verwandte zur Unterstützung herangezogen werden können, müssen alle anderen Einkommensquellen und Sozialleistungen ausgeschöpft sein.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Rangfolge der Leistungen</h3>
+
+    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2 ml-4">
+        <li><strong>Eigenes Einkommen und Vermögen</strong> der bedürftigen Person</li>
+        <li><strong>Unterhaltspflicht des Ehegatten</strong> oder eingetragenen Partners (Art. 328 Abs. 2 ZGB)</li>
+        <li><strong>Elterliche Unterhaltspflicht</strong> gegenüber minderjährigen oder in Ausbildung befindlichen Kindern</li>
+        <li><strong>AHV-/IV-Renten</strong></li>
+        <li><strong>Pensionskassenleistungen</strong> (2. Säule)</li>
+        <li><strong>Ergänzungsleistungen (EL)</strong> zur AHV/IV</li>
+        <li><strong>Weitere Sozialversicherungsleistungen</strong></li>
+        <li><strong>Sozialhilfe</strong> (inkl. Abklärung Verwandtenunterstützung)</li>
+    </ol>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig:</p>
+        <p class="text-gray-700">Bei Bezug von <strong>Ergänzungsleistungen (EL)</strong> zur AHV/IV wird keine Verwandtenunterstützung geprüft. Erst wenn die EL nicht ausreichen und Sozialhilfe beansprucht werden muss, können die Sozialbehörden prüfen, ob wohlhabende Verwandte herangezogen werden können.</p>
+    </div>
+
+    <!-- 7. Reihenfolge -->
+    <h2 id="reihenfolge" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Reihenfolge bei mehreren Pflichtigen</h2>
+
+    <p class="text-gray-700 mb-6">
+        Sind mehrere Verwandte potentiell unterstützungspflichtig, bestimmt sich die Reihenfolge nach der <strong>Erbberechtigung</strong> (Art. 329 Abs. 1 ZGB). Nähere Verwandte werden vor entfernteren Verwandten herangezogen.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Grundsätze</h3>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2 ml-4">
+        <li><strong>Reihenfolge nach Erbberechtigung:</strong> Kinder vor Enkeln, Eltern vor Grosseltern</li>
+        <li><strong>Keine Solidarhaftung:</strong> Mehrere Pflichtige auf gleicher Stufe (z.B. mehrere Kinder) haften <strong>anteilsmässig</strong> nach ihrer finanziellen Leistungsfähigkeit, nicht solidarisch</li>
+        <li><strong>Entferntere Verwandte subsidiär:</strong> Enkel werden nur herangezogen, wenn Kinder nicht leistungsfähig sind oder nicht mehr leben</li>
     </ul>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Praktisches Berechnungsbeispiel</h2>
-
-    <p class="text-gray-700 mb-4"><strong>Ausgangslage:</strong> Mutter (78 Jahre) im Pflegeheim, Kosten CHF 8'000/Monat. AHV + EL decken CHF 7'200/Monat. Fehlbetrag: CHF 800/Monat. Sohn: Einkommen CHF 95'000/Jahr, verheiratet, 2 Kinder.</p>
-
-    <p class="text-gray-700 mb-4"><strong>Berechnung:</strong> Freibetrag: CHF 140'000 + CHF 20'000 (Kinder) = CHF 160'000. Einkommen des Sohnes: CHF 95'000</p>
-
-    <p class="text-gray-700 mb-6"><strong>Ergebnis:</strong> Einkommen unter Freibetrag = keine Unterstuetzungspflicht</p>
-
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Haeufige Fragen</h2>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kann ich zur Unterstuetzung meiner Eltern gezwungen werden?</h3>
-    <p class="text-gray-700 mb-4">Grundsaetzlich ja, aber nur wenn Sie in "guenstigen Verhaeltnissen" leben, Ihre Eltern in einer Notlage sind und alle anderen Einkommensquellen ausgeschoepft sind. In der Praxis ist dies wegen der hohen Freibetraege selten der Fall.</p>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Muss ich meine Schwiegereltern unterstuetzen?</h3>
-    <p class="text-gray-700 mb-4">Nein. Die Verwandtenunterstuetzungspflicht gilt nur fuer Verwandte in gerader Linie. Schwiegereltern gehoeren nicht dazu.</p>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kann ich den Kontakt abbrechen, um nicht zahlen zu muessen?</h3>
-    <p class="text-gray-700 mb-6">Der blosse Kontaktabbruch befreit nicht von der Unterstuetzungspflicht. Allerdings kann bei schwerwiegenden Verfehlungen der Eltern die Pflicht reduziert oder aufgehoben werden.</p>
-
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
-
-    <p class="text-gray-700 mb-6">Die Verwandtenunterstuetzungspflicht ist in der Schweiz streng subsidiaer ausgestaltet und kommt in der Praxis selten zur Anwendung. Aufgrund des gut ausgebauten Sozialversicherungssystems und der hohen Freibetraege ist die praktische Bedeutung gering. Nur wer in "guenstigen Verhaeltnissen" lebt (Einkommen ca. CHF 120'000-180'000/Jahr ueber Existenzminimum), ist pflichtig.</p>
-
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy mb-2">Handlungsempfehlungen:</p>
-        <ul class="list-disc list-inside text-gray-700 space-y-1">
-            <li>Pruefen Sie, ob bei Ihren Eltern alle Sozialversicherungsleistungen (insbesondere EL) ausgeschoepft sind</li>
-            <li>Dokumentieren Sie allfaellige Ausschlussgruende</li>
-            <li>Holen Sie bei Unsicherheiten rechtlichen Rat ein</li>
-            <li>Suchen Sie bei Konflikten zunaechst eine einvernehmliche Loesung</li>
-        </ul>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Beispiel:</p>
+        <p class="text-gray-700">Eine bedürftige Mutter hat drei erwachsene Kinder. Kind A verdient CHF 200'000/Jahr, Kind B verdient CHF 80'000/Jahr, Kind C verdient CHF 150'000/Jahr. Kind B liegt unter der Einkommensgrenze und ist nicht unterstützungspflichtig. Kind A und C teilen die Unterstützungslast im Verhältnis ihrer Leistungsfähigkeit (nicht zu gleichen Teilen).</p>
     </div>
+
+    <!-- 8. Ausschluss -->
+    <h2 id="ausschluss" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Ausschluss und Ermässigung der Unterstützungspflicht</h2>
+
+    <p class="text-gray-700 mb-6">
+        Das Gericht kann die Unterstützungspflicht gemäss Art. 329 Abs. 2 ZGB <strong>ermässigen oder aufheben</strong>, wenn die Heranziehung des Pflichtigen wegen «besonderer Umstände» unbillig wäre.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Anerkannte Unbilligkeitsgründe</h3>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2 ml-4">
+        <li><strong>Schwere Verfehlungen gegenüber dem Pflichtigen:</strong> Körperliche oder psychische Gewalt, sexueller Missbrauch</li>
+        <li><strong>Schwere Vernachlässigung in der Kindheit:</strong> Fehlende Fürsorge, emotionale Vernachlässigung</li>
+        <li><strong>Verletzung familienrechtlicher Pflichten:</strong> Unterlassene Unterhaltszahlungen während der Kindheit</li>
+        <li><strong>Schwere Straftaten:</strong> Verbrechen gegenüber dem Pflichtigen oder dessen nahen Angehörigen</li>
+        <li><strong>Jahrelanger vollständiger Kontaktabbruch:</strong> Wenn dieser vom Anspruchsberechtigten ausging</li>
+        <li><strong>Selbstverschuldete Notlage:</strong> Grobe Vermögensverschwendung oder böswilliges Verhalten</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig:</p>
+        <p class="text-gray-700">Der blosse Kontaktabbruch allein befreit <strong>nicht</strong> automatisch von der Unterstützungspflicht. Es müssen schwerwiegende Umstände vorliegen, die vom Gericht im Einzelfall geprüft werden. Die Beweislast liegt beim Pflichtigen.</p>
+    </div>
+
+    <!-- 9. Verfahren -->
+    <h2 id="verfahren" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Verfahren und Durchsetzung</h2>
+
+    <p class="text-gray-700 mb-6">
+        Die Durchsetzung der Verwandtenunterstützungspflicht erfolgt in der Praxis meist im Zusammenhang mit der Sozialhilfe. Die Verfahren unterscheiden sich je nach Kanton.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ablauf in der Praxis</h3>
+
+    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-3 ml-4">
+        <li><strong>Sozialhilfeantrag:</strong> Die bedürftige Person beantragt Sozialhilfe</li>
+        <li><strong>Abklärung durch die Sozialbehörde:</strong> Der Sozialdienst prüft, ob potentiell unterstützungspflichtige Verwandte vorhanden sind</li>
+        <li><strong>Auskunftspflicht:</strong> Der Sozialhilfebezüger muss Name und Adresse der Verwandten in gerader Linie bekanntgeben</li>
+        <li><strong>Solvenzabklärung:</strong> Die Behörde prüft die finanzielle Situation der Verwandten</li>
+        <li><strong>Verhandlungslösung:</strong> Die Behörde versucht zunächst, eine freiwillige Vereinbarung zu erreichen</li>
+        <li><strong>Zivilgerichtlicher Weg:</strong> Bei Uneinigkeit muss der Anspruch vor dem Zivilgericht eingeklagt werden</li>
+    </ol>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Zuständigkeit</h3>
+
+    <p class="text-gray-700 mb-6">
+        Die Sozialbehörde kann die Verwandtenunterstützung <strong>nicht selbst verfügen</strong>. Zur verbindlichen Festlegung von umstrittenen Unterstützungsbeiträgen ist <strong>ausschliesslich das Zivilgericht</strong> zuständig. Die Sozialbehörde kann die Ansprüche der bedürftigen Person jedoch auf dem Subrogationsweg geltend machen.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Rückwirkende Forderung</h3>
+
+    <p class="text-gray-700 mb-6">
+        Verwandtenunterstützungsleistungen können <strong>rückwirkend auf maximal ein Jahr</strong> gefordert werden. Eine darüber hinausgehende Rückforderung ist nicht möglich.
+    </p>
+
+    <!-- 10. Pflegeheim -->
+    <h2 id="pflegeheim" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Eltern im Pflegeheim: Wer zahlt?</h2>
+
+    <p class="text-gray-700 mb-6">
+        Eine der häufigsten Situationen, in denen die Verwandtenunterstützungspflicht relevant wird, ist der Eintritt der Eltern in ein Pflegeheim. Die Kosten übersteigen häufig das vorhandene Einkommen.
+    </p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kosten eines Pflegeheims</h3>
+
+    <p class="text-gray-700 mb-6">
+        Ein Platz in einem Pflegeheim kostet je nach Kanton, Einrichtung und Pflegestufe zwischen <strong>CHF 5'000 und CHF 10'000 pro Monat</strong>. Die Kosten setzen sich zusammen aus:
+    </p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2 ml-4">
+        <li><strong>Pension (Hotellerie):</strong> Unterkunft und Verpflegung</li>
+        <li><strong>Pflege:</strong> Je nach Pflegestufe unterschiedlich hoch</li>
+        <li><strong>Betreuung:</strong> Zusätzliche Betreuungsleistungen</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Finanzierungskaskade</h3>
+
+    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2 ml-4">
+        <li><strong>AHV-Rente</strong></li>
+        <li><strong>Pensionskassenrente</strong> (2. Säule)</li>
+        <li><strong>Eigenes Vermögen</strong> (inkl. Verkauf/Belehnung von Immobilien)</li>
+        <li><strong>Ergänzungsleistungen (EL)</strong> – häufig die Hauptfinanzierungsquelle</li>
+        <li><strong>Hilflosenentschädigung</strong> der AHV</li>
+        <li><strong>Sozialhilfe</strong> – wenn EL nicht ausreichen</li>
+        <li><strong>Verwandtenunterstützung</strong> – nur bei wohlhabenden Angehörigen</li>
+    </ol>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Statistik:</p>
+        <p class="text-gray-700">Rund <strong>60 Prozent</strong> der pflegebedürftigen Personen können die Kosten für das Pflegeheim nicht vollständig aus eigenen Mitteln bezahlen. Sie sind auf Ergänzungsleistungen angewiesen. Die Verwandtenunterstützung wird in der Praxis jedoch nur selten geltend gemacht.</p>
+    </div>
+
+    <!-- 11. Bundesgericht -->
+    <h2 id="bundesgericht" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Bundesgerichtliche Rechtsprechung</h2>
+
+    <p class="text-gray-700 mb-6">
+        Das Bundesgericht hat in mehreren Leitentscheiden die Grundsätze der Verwandtenunterstützungspflicht präzisiert.
+    </p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Entscheid</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Thema</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kernaussage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">BGE 136 III 1</td>
+                    <td class="px-6 py-4 text-gray-700">Definition «günstige Verhältnisse»</td>
+                    <td class="px-6 py-4 text-gray-700">In günstigen Verhältnissen lebt, wer aufgrund seiner finanziellen Gesamtsituation ein wohlhabendes Leben führen kann – nicht nur die notwendigen, sondern auch gehobene Lebenshaltungskosten decken kann.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">BGE 132 III 97</td>
+                    <td class="px-6 py-4 text-gray-700">Vermögensangriff</td>
+                    <td class="px-6 py-4 text-gray-700">Der Pflichtige hat sein Vermögen anzugreifen, soweit es nicht längerfristig zur Sicherung seiner eigenen Existenz (namentlich im Alter) unangetastet bleiben muss.</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">BGE 133 III 507</td>
+                    <td class="px-6 py-4 text-gray-700">Verwandtschaftsgrad</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Verwandtschaft zweiten Grades (Grosseltern-Enkel) können an die Unterstützungspflicht höhere Anforderungen gestellt werden als bei Verwandtschaft ersten Grades.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">BGE 59 II 1</td>
+                    <td class="px-6 py-4 text-gray-700">Subsidiarität</td>
+                    <td class="px-6 py-4 text-gray-700">Die Unterstützungspflicht der Blutsverwandten geht erst nach der Unterhaltspflicht des Ehegatten und der elterlichen Unterhaltspflicht.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 12. Anwalt-Sektion -->
+    <section id="anwalt" class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">
+            Die Verwandtenunterstützungspflicht ist ein komplexes Rechtsgebiet, das an der Schnittstelle von Familien-, Sozial- und Erbrecht liegt. Eine fachkundige Beratung kann helfen, die eigene Situation richtig einzuschätzen und unnötige Zahlungen zu vermeiden – oder berechtigte Ansprüche durchzusetzen.
+        </p>
+
+        <p class="text-gray-700 mb-6">
+            Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> kann Sie in folgenden Situationen unterstützen:
+        </p>
+
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2 ml-4">
+            <li>Wenn Sie von der Sozialbehörde zur Verwandtenunterstützung aufgefordert werden</li>
+            <li>Wenn Sie die Rechtmässigkeit einer Unterstützungsforderung prüfen lassen möchten</li>
+            <li>Wenn Sie Unbilligkeitsgründe geltend machen möchten (z.B. bei schweren Verfehlungen)</li>
+            <li>Wenn Sie selbst Unterstützungsansprüche gegenüber Verwandten haben</li>
+            <li>Wenn Sie die finanzielle Situation Ihrer Eltern im Hinblick auf ein Pflegeheim planen möchten</li>
+        </ul>
+
+        <p class="text-gray-700 mb-6">
+            Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> kann auch bei der Abgrenzung zwischen Ehegattenunterhalt und Verwandtenunterstützung beraten. Gerade bei komplexen Familienkonstellationen ist eine genaue Prüfung der Rangfolge der Ansprüche wichtig. Ein <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> mit Erfahrung im Unterhaltsrecht kann Ihnen helfen, Ihre Rechte zu wahren und ungerechtfertigte Forderungen abzuwehren.
+        </p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Ob Sie sich gegen eine Unterstützungsforderung wehren oder Ihre Ansprüche durchsetzen möchten: Unsere erfahrenen Familienrechtsanwälte beraten Sie diskret und kompetent zu Ihren rechtlichen Möglichkeiten.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- 13. Fazit -->
+    <h2 id="fazit" class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">
+        Die Verwandtenunterstützungspflicht nach Art. 328 ZGB ist in der Schweiz streng subsidiär ausgestaltet und kommt in der Praxis relativ selten zur Anwendung. Das gut ausgebaute Sozialversicherungssystem – insbesondere die Ergänzungsleistungen zur AHV/IV – deckt in den meisten Fällen den Bedarf pflegebedürftiger Personen.
+    </p>
+
+    <p class="text-gray-700 mb-6">
+        Nur wer in «günstigen Verhältnissen» lebt – also ein Jahreseinkommen von rund CHF 120'000 (Alleinstehende) bzw. CHF 180'000 (Paare) übersteigt und ein Vermögen über den Freibeträgen besitzt – kann überhaupt zur Unterstützung herangezogen werden. Die hohen Schwellenwerte führen dazu, dass die praktische Bedeutung der Verwandtenunterstützung gering ist.
+    </p>
+
+    <p class="text-gray-700 mb-6">
+        Wichtig zu wissen: Die Unterstützungspflicht kann bei schwerwiegenden Verfehlungen (Gewalt, Vernachlässigung, unterlassene Unterhaltszahlungen) ermässigt oder ganz aufgehoben werden. Wer von der Sozialbehörde zur Unterstützung aufgefordert wird, sollte seine Rechte kennen und gegebenenfalls fachkundigen Rat einholen.
+    </p>
+
+    <!-- 14. FAQ -->
+    <section id="faq" class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Müssen Kinder für ihre Eltern im Pflegeheim bezahlen?</h3>
+                <p class="text-gray-700">Grundsätzlich nur dann, wenn die Kinder in «günstigen Verhältnissen» leben (Jahreseinkommen über ca. CHF 120'000 für Alleinstehende) und alle anderen Einkommensquellen der Eltern (AHV, Pensionskasse, Vermögen, Ergänzungsleistungen) ausgeschöpft sind. In der Praxis ist dies aufgrund des gut ausgebauten EL-Systems selten der Fall.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie hoch muss mein Einkommen sein, damit ich unterstützungspflichtig bin?</h3>
+                <p class="text-gray-700">Gemäss SKOS-Richtlinien und bundesgerichtlicher Praxis liegt die Einkommensgrenze für Alleinstehende bei ca. CHF 120'000 Jahresbruttoeinkommen, für Verheiratete bei ca. CHF 180'000. Pro Kind in Ausbildung erhöht sich die Grenze um CHF 20'000. Liegt das Einkommen darunter, besteht keine Unterstützungspflicht.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Muss ich meine Schwiegereltern finanziell unterstützen?</h3>
+                <p class="text-gray-700">Nein. Die Verwandtenunterstützungspflicht gilt nur für Verwandte in gerader Linie (Eltern, Kinder, Grosseltern, Enkel). Schwiegereltern, Schwiegerkinder, Stiefeltern, Stiefkinder und Geschwister sind nicht unterstützungspflichtig.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich mich der Unterstützungspflicht entziehen, wenn ich keinen Kontakt zu meinen Eltern habe?</h3>
+                <p class="text-gray-700">Der blosse Kontaktabbruch befreit nicht automatisch von der Unterstützungspflicht. Allerdings kann das Gericht die Pflicht ermässigen oder aufheben, wenn schwerwiegende Unbilligkeitsgründe vorliegen, z.B. Gewalt, Vernachlässigung oder unterlassene Unterhaltszahlungen seitens der Eltern (Art. 329 Abs. 2 ZGB).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was sind «günstige Verhältnisse» im Sinne von Art. 328 ZGB?</h3>
+                <p class="text-gray-700">Gemäss Bundesgericht (BGE 136 III 1) lebt in günstigen Verhältnissen, wer aufgrund seiner Einkommens- und Vermögenssituation eine wohlhabende Lebensführung möglich hat. Das bedeutet: Das Einkommen muss nicht nur die notwendigen Auslagen, sondern auch gehobene Lebenshaltungskosten (Reisen, Kultur, gehobene Gastronomie) decken können.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie wird das Vermögen bei der Unterstützungspflicht berücksichtigt?</h3>
+                <p class="text-gray-700">Vermögen über dem Freibetrag (CHF 250'000 für Alleinstehende, CHF 500'000 für Paare) wird als fiktives Einkommen angerechnet. Die Verzehrquote ist altersabhängig und reicht von 1/60 (unter 40 Jahre) bis 1/20 (über 65 Jahre) pro Jahr. Das eigene Vermögen zur Alterssicherung darf nicht vollständig angegriffen werden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wer entscheidet über die Unterstützungspflicht bei Streit?</h3>
+                <p class="text-gray-700">Die Sozialbehörde kann Verwandtenunterstützungsbeiträge nicht selbst verfügen. Bei Uneinigkeit ist ausschliesslich das Zivilgericht zuständig für die verbindliche Festlegung der Unterstützungspflicht. Die Behörde kann die Ansprüche jedoch auf dem Subrogationsweg geltend machen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann die Unterstützung rückwirkend verlangt werden?</h3>
+                <p class="text-gray-700">Ja, aber nur für maximal ein Jahr rückwirkend. Eine darüber hinausgehende Rückforderung ist nicht möglich. Deshalb ist es wichtig, frühzeitig zu klären, ob eine Unterstützungspflicht besteht.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert, wenn mehrere Kinder vorhanden sind?</h3>
+                <p class="text-gray-700">Mehrere Kinder haften nicht solidarisch, sondern anteilsmässig nach ihrer jeweiligen finanziellen Leistungsfähigkeit. Kinder, deren Einkommen unter der Schwelle liegt, sind nicht unterstützungspflichtig. Die Last verteilt sich auf die wohlhabenden Kinder entsprechend ihren Verhältnissen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Gibt es einen Unterschied zwischen Elternunterhalt und Verwandtenunterstützung?</h3>
+                <p class="text-gray-700">In der Schweiz gibt es keinen «Elternunterhalt» im eigentlichen Sinne. Der Begriff Verwandtenunterstützung (Art. 328 ZGB) umfasst die Unterstützungspflicht in beide Richtungen: Kinder gegenüber Eltern und Eltern gegenüber Kindern. Die Pflicht besteht nur bei günstigen Verhältnissen des Pflichtigen und Notlage des Bedürftigen.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Elternunterhalt in der Schweiz: Verwandtenunterstützungspflicht",
+        "description": "Elternunterhalt Schweiz: Verwandtenunterstützungspflicht nach Art. 328 ZGB. Voraussetzungen, Freibeträge, Berechnung & Ausschlussgründe. Mit BGE-Rechtsprechung.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-21",
+        "dateModified": "2025-01-21",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/unterhalt/elternunterhalt"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Müssen Kinder für ihre Eltern im Pflegeheim bezahlen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Grundsätzlich nur dann, wenn die Kinder in «günstigen Verhältnissen» leben (Jahreseinkommen über ca. CHF 120'000 für Alleinstehende) und alle anderen Einkommensquellen der Eltern (AHV, Pensionskasse, Vermögen, Ergänzungsleistungen) ausgeschöpft sind. In der Praxis ist dies aufgrund des gut ausgebauten EL-Systems selten der Fall."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie hoch muss mein Einkommen sein, damit ich unterstützungspflichtig bin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Gemäss SKOS-Richtlinien und bundesgerichtlicher Praxis liegt die Einkommensgrenze für Alleinstehende bei ca. CHF 120'000 Jahresbruttoeinkommen, für Verheiratete bei ca. CHF 180'000. Pro Kind in Ausbildung erhöht sich die Grenze um CHF 20'000. Liegt das Einkommen darunter, besteht keine Unterstützungspflicht."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Muss ich meine Schwiegereltern finanziell unterstützen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein. Die Verwandtenunterstützungspflicht gilt nur für Verwandte in gerader Linie (Eltern, Kinder, Grosseltern, Enkel). Schwiegereltern, Schwiegerkinder, Stiefeltern, Stiefkinder und Geschwister sind nicht unterstützungspflichtig."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich mich der Unterstützungspflicht entziehen, wenn ich keinen Kontakt zu meinen Eltern habe?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der blosse Kontaktabbruch befreit nicht automatisch von der Unterstützungspflicht. Allerdings kann das Gericht die Pflicht ermässigen oder aufheben, wenn schwerwiegende Unbilligkeitsgründe vorliegen, z.B. Gewalt, Vernachlässigung oder unterlassene Unterhaltszahlungen seitens der Eltern (Art. 329 Abs. 2 ZGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was sind «günstige Verhältnisse» im Sinne von Art. 328 ZGB?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Gemäss Bundesgericht (BGE 136 III 1) lebt in günstigen Verhältnissen, wer aufgrund seiner Einkommens- und Vermögenssituation eine wohlhabende Lebensführung möglich hat. Das bedeutet: Das Einkommen muss nicht nur die notwendigen Auslagen, sondern auch gehobene Lebenshaltungskosten (Reisen, Kultur, gehobene Gastronomie) decken können."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie wird das Vermögen bei der Unterstützungspflicht berücksichtigt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Vermögen über dem Freibetrag (CHF 250'000 für Alleinstehende, CHF 500'000 für Paare) wird als fiktives Einkommen angerechnet. Die Verzehrquote ist altersabhängig und reicht von 1/60 (unter 40 Jahre) bis 1/20 (über 65 Jahre) pro Jahr. Das eigene Vermögen zur Alterssicherung darf nicht vollständig angegriffen werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wer entscheidet über die Unterstützungspflicht bei Streit?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Sozialbehörde kann Verwandtenunterstützungsbeiträge nicht selbst verfügen. Bei Uneinigkeit ist ausschliesslich das Zivilgericht zuständig für die verbindliche Festlegung der Unterstützungspflicht. Die Behörde kann die Ansprüche jedoch auf dem Subrogationsweg geltend machen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann die Unterstützung rückwirkend verlangt werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, aber nur für maximal ein Jahr rückwirkend. Eine darüber hinausgehende Rückforderung ist nicht möglich. Deshalb ist es wichtig, frühzeitig zu klären, ob eine Unterstützungspflicht besteht."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert, wenn mehrere Kinder vorhanden sind?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Mehrere Kinder haften nicht solidarisch, sondern anteilsmässig nach ihrer jeweiligen finanziellen Leistungsfähigkeit. Kinder, deren Einkommen unter der Schwelle liegt, sind nicht unterstützungspflichtig. Die Last verteilt sich auf die wohlhabenden Kinder entsprechend ihren Verhältnissen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Gibt es einen Unterschied zwischen Elternunterhalt und Verwandtenunterstützung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "In der Schweiz gibt es keinen «Elternunterhalt» im eigentlichen Sinne. Der Begriff Verwandtenunterstützung (Art. 328 ZGB) umfasst die Unterstützungspflicht in beide Richtungen: Kinder gegenüber Eltern und Eltern gegenüber Kindern. Die Pflicht besteht nur bei günstigen Verhältnissen des Pflichtigen und Notlage des Bedürftigen."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Unterhalt",
+                "item": "https://familienrechtanwalt.ch/unterhalt"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Elternunterhalt in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/unterhalt/elternunterhalt"
+            }
+        ]
+    })} />
+
 </ArticleLayout>

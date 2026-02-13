@@ -4,20 +4,47 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 
 <ArticleLayout
   title="Scheidungsantrag in der Schweiz: Formale Anforderungen, Inhalt und Einreichung"
-  description="Scheidungsantrag in der Schweiz: Formale Anforderungen, Inhalt und Einreichung. Alles ueber gemeinsames Scheidungsbegehren und Scheidungsklage."
+  description="Scheidungsantrag in der Schweiz: Formale Anforderungen, Inhalt und Einreichung. Alles über gemeinsames Scheidungsbegehren und Scheidungsklage."
   keywords="Scheidungsantrag Schweiz, Scheidungsbegehren, Scheidungsklage einreichen, Scheidungsantrag Inhalt, Scheidungsantrag Formular"
   category="Scheidung"
   categoryLink="/scheidung"
 >
-  <p class="text-xl text-gray-700 mb-8 leading-relaxed">Der Scheidungsantrag bildet den formellen Startpunkt des Scheidungsverfahrens. Seine korrekte Abfassung und Einreichung ist entscheidend fuer einen reibungslosen Ablauf der Scheidung. Dieser umfassende Ratgeber erlaeutert alle rechtlichen Anforderungen, den erforderlichen Inhalt und die praktischen Aspekte der Antragstellung.</p>
+  <!-- Das Wichtigste in Kürze -->
+  <div class="bg-navy text-white p-8 rounded-lg mb-12">
+    <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+    <ul class="space-y-3">
+      <li class="flex items-start">
+        <span class="text-gold mr-3">✓</span>
+        <span>Der Scheidungsantrag ist das formelle Gesuch an das Gericht zur <strong>Auflösung der Ehe</strong>.</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-gold mr-3">✓</span>
+        <span>Mit der Einreichung wird das Verfahren <strong>rechtshängig</strong> – wichtiger Stichtag für Güterrecht, Erbrecht und Vorsorgeausgleich.</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-gold mr-3">✓</span>
+        <span>Der Antrag muss <strong>schriftlich</strong> eingereicht werden und bestimmte Pflichtangaben enthalten (Art. 221 ZPO).</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-gold mr-3">✓</span>
+        <span>Beim gemeinsamen Begehren müssen <strong>beide Ehegatten</strong> unterschreiben; bei der Klage nur der Kläger.</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-gold mr-3">✓</span>
+        <span>Obligatorische Beilagen: <strong>Familienausweis</strong>, <strong>Vorsorgeausweise</strong>, bei Art. 111 ZGB auch die Scheidungskonvention.</span>
+      </li>
+    </ul>
+  </div>
+
+  <p class="text-xl text-gray-700 mb-8 leading-relaxed">Der Scheidungsantrag bildet den formellen Startpunkt des Scheidungsverfahrens. Seine korrekte Abfassung und Einreichung ist entscheidend für einen reibungslosen Ablauf der Scheidung. Dieser umfassende Ratgeber erläutert alle rechtlichen Anforderungen, den erforderlichen Inhalt und die praktischen Aspekte der Antragstellung.</p>
 
   <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen</h2>
 
   <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Definition und Bedeutung</h3>
 
-  <p class="text-gray-700 mb-6">Der Scheidungsantrag ist das formelle Gesuch an das Gericht, die Ehe aufzuloesen. Bei der Scheidung auf gemeinsames Begehren wird der Antrag als gemeinsames Scheidungsbegehren bezeichnet (Art. 111 und 112 ZGB), bei der einseitigen Scheidung als Scheidungsklage (Art. 114 und 115 ZGB).</p>
+  <p class="text-gray-700 mb-6">Der Scheidungsantrag ist das formelle Gesuch an das Gericht, die Ehe aufzulösen. Bei der Scheidung auf gemeinsames Begehren wird der Antrag als gemeinsames Scheidungsbegehren bezeichnet (Art. 111 und 112 ZGB), bei der einseitigen Scheidung als Scheidungsklage (Art. 114 und 115 ZGB).</p>
 
-  <p class="text-gray-700 mb-6">Mit der Einreichung des Scheidungsantrags wird das Verfahren rechtshaengig. Dies hat wichtige rechtliche Konsequenzen: Die Rechtshaengigkeit bestimmt den Stichtag fuer die gueterrechtliche Auseinandersetzung (Art. 204 Abs. 2 ZGB), die gegenseitigen Erbansprueche erloeschen (Art. 120 Abs. 2 ZGB) und der Vorsorgeausgleich wird berechnet (Art. 122 Abs. 1 ZGB).</p>
+  <p class="text-gray-700 mb-6">Mit der Einreichung des Scheidungsantrags wird das Verfahren rechtshängig. Dies hat wichtige rechtliche Konsequenzen: Die Rechtshängigkeit bestimmt den Stichtag für die güterrechtliche Auseinandersetzung (Art. 204 Abs. 2 ZGB), die gegenseitigen Erbansprüche erlöschen (Art. 120 Abs. 2 ZGB) und der Vorsorgeausgleich wird berechnet (Art. 122 Abs. 1 ZGB).</p>
 
   <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Unterscheidung der Antragsarten</h2>
 
@@ -33,9 +60,9 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
       </thead>
       <tbody class="divide-y divide-gray-200">
         <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Gemeinsames Begehren mit vollstaendiger Einigung</td>
+          <td class="px-6 py-4 font-semibold text-navy">Gemeinsames Begehren mit vollständiger Einigung</td>
           <td class="px-6 py-4 text-gray-700">Art. 111 ZGB</td>
-          <td class="px-6 py-4 text-gray-700">Beide wollen Scheidung, Einigung ueber alle Folgen</td>
+          <td class="px-6 py-4 text-gray-700">Beide wollen Scheidung, Einigung über alle Folgen</td>
           <td class="px-6 py-4 text-gray-700">Gemeinsam</td>
         </tr>
         <tr class="bg-gray-50">
@@ -53,7 +80,7 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         <tr class="bg-gray-50">
           <td class="px-6 py-4 font-semibold text-navy">Scheidungsklage wegen Unzumutbarkeit</td>
           <td class="px-6 py-4 text-gray-700">Art. 115 ZGB</td>
-          <td class="px-6 py-4 text-gray-700">Schwerwiegende Gruende</td>
+          <td class="px-6 py-4 text-gray-700">Schwerwiegende Gründe</td>
           <td class="px-6 py-4 text-gray-700">Einseitig</td>
         </tr>
       </tbody>
@@ -64,21 +91,21 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 
   <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schriftlichkeit</h3>
 
-  <p class="text-gray-700 mb-6">Der Scheidungsantrag muss schriftlich eingereicht werden (Art. 130 ZPO). Eine muendliche Antragstellung ist nicht moeglich. Der Antrag kann auf Papier oder in elektronischer Form eingereicht werden, wobei bei elektronischer Einreichung eine qualifizierte elektronische Signatur erforderlich ist.</p>
+  <p class="text-gray-700 mb-6">Der Scheidungsantrag muss schriftlich eingereicht werden (Art. 130 ZPO). Eine mündliche Antragstellung ist nicht möglich. Der Antrag kann auf Papier oder in elektronischer Form eingereicht werden, wobei bei elektronischer Einreichung eine qualifizierte elektronische Signatur erforderlich ist.</p>
 
   <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Unterschrift</h3>
 
-  <p class="text-gray-700 mb-6">Bei einem gemeinsamen Scheidungsbegehren muessen beide Ehegatten den Antrag unterschreiben (Art. 111 Abs. 1 ZGB). Bei der Scheidungsklage genuegt die Unterschrift des klagenden Ehegatten. Die Unterschriften muessen eigenhaendig sein.</p>
+  <p class="text-gray-700 mb-6">Bei einem gemeinsamen Scheidungsbegehren müssen beide Ehegatten den Antrag unterschreiben (Art. 111 Abs. 1 ZGB). Bei der Scheidungsklage genügt die Unterschrift des klagenden Ehegatten. Die Unterschriften müssen eigenhändig sein.</p>
 
   <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Inhalt des Scheidungsantrags</h2>
 
   <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Pflichtangaben</h3>
 
-  <p class="text-gray-700 mb-6">Der Scheidungsantrag muss gemaess Art. 221 ZPO folgende Angaben enthalten:</p>
+  <p class="text-gray-700 mb-6">Der Scheidungsantrag muss gemäss Art. 221 ZPO folgende Angaben enthalten:</p>
 
-  <p class="text-gray-700 mb-6">Die Parteibezeichnung umfasst die vollstaendigen Namen, Geburtsdaten, Adressen und Staatsangehoerigkeiten beider Ehegatten. Bei anwaltlicher Vertretung sind auch die Angaben zum Rechtsvertreter erforderlich.</p>
+  <p class="text-gray-700 mb-6">Die Parteibezeichnung umfasst die vollständigen Namen, Geburtsdaten, Adressen und Staatsangehörigkeiten beider Ehegatten. Bei anwaltlicher Vertretung sind auch die Angaben zum Rechtsvertreter erforderlich.</p>
 
-  <p class="text-gray-700 mb-6">Die Rechtsbegehren muessen klar formuliert sein. Das Hauptbegehren ist die Aufloesung der Ehe. Hinzu kommen Begehren zu den Scheidungsfolgen (Unterhalt, Gueterrecht, Vorsorge, Kinderbelange).</p>
+  <p class="text-gray-700 mb-6">Die Rechtsbegehren müssen klar formuliert sein. Das Hauptbegehren ist die Auflösung der Ehe. Hinzu kommen Begehren zu den Scheidungsfolgen (Unterhalt, Güterrecht, Vorsorge, Kinderbelange).</p>
 
   <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Rechtsbegehren bei einvernehmlicher Scheidung</h3>
 
@@ -130,21 +157,21 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         <tr class="bg-gray-50">
           <td class="px-6 py-4 font-semibold text-navy">Steuerveranlagungen</td>
           <td class="px-6 py-4 text-gray-700">Bei Unterhaltsfragen</td>
-          <td class="px-6 py-4 text-gray-700">Steuerbehoerde</td>
+          <td class="px-6 py-4 text-gray-700">Steuerbehörde</td>
         </tr>
       </tbody>
     </table>
   </div>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Zustaendiges Gericht</h2>
+  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Zuständiges Gericht</h2>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Oertliche Zustaendigkeit</h3>
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Örtliche Zuständigkeit</h3>
 
-  <p class="text-gray-700 mb-6">Gemaess Art. 23 ZPO ist fuer die Scheidung das Gericht am Wohnsitz eines der Ehegatten zustaendig. Bei der Scheidung auf gemeinsames Begehren koennen die Ehegatten waehlen, ob sie den Antrag am Wohnsitz des Ehemannes oder der Ehefrau einreichen.</p>
+  <p class="text-gray-700 mb-6">Gemäss Art. 23 ZPO ist für die Scheidung das Gericht am Wohnsitz eines der Ehegatten zuständig. Bei der Scheidung auf gemeinsames Begehren können die Ehegatten wählen, ob sie den Antrag am Wohnsitz des Ehemannes oder der Ehefrau einreichen.</p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Internationale Zustaendigkeit</h3>
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Internationale Zuständigkeit</h3>
 
-  <p class="text-gray-700 mb-6">Bei Auslandsberuehrung richtet sich die Zustaendigkeit nach dem Bundesgesetz ueber das Internationale Privatrecht (IPRG). Gemaess Art. 59 IPRG sind schweizerische Gerichte zustaendig, wenn ein Ehegatte in der Schweiz wohnt oder ein Ehegatte Schweizer Buerger ist.</p>
+  <p class="text-gray-700 mb-6">Bei Auslandsberührung richtet sich die Zuständigkeit nach dem Bundesgesetz über das Internationale Privatrecht (IPRG). Gemäss Art. 59 IPRG sind schweizerische Gerichte zuständig, wenn ein Ehegatte in der Schweiz wohnt oder ein Ehegatte Schweizer Bürger ist.</p>
 
   <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Gerichtskosten und Kostenvorschuss</h2>
 
@@ -158,7 +185,7 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
       </thead>
       <tbody class="divide-y divide-gray-200">
         <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Zuerich</td>
+          <td class="px-6 py-4 font-semibold text-navy">Zürich</td>
           <td class="px-6 py-4 text-gray-700">CHF 600</td>
         </tr>
         <tr class="bg-gray-50">
@@ -181,24 +208,182 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
     </table>
   </div>
 
+  <!-- Anwalt-Sektion -->
+  <section class="mb-12">
+    <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+    <p class="text-gray-700 mb-6">Die korrekte Formulierung des Scheidungsantrags ist entscheidend für ein effizientes Verfahren. Formelle Mängel führen zu Rückweisungen und Verzögerungen. Insbesondere bei der Scheidungsklage sind die Anforderungen an die rechtliche Begründung hoch.</p>
+
+    <p class="text-gray-700 mb-6">Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> kann sicherstellen, dass Ihr Scheidungsantrag alle formellen und inhaltlichen Anforderungen erfüllt. Dies ist besonders wichtig bei komplexen Vermögensverhältnissen, strittigen Unterhaltsansprüchen oder wenn Kinder betroffen sind.</p>
+
+    <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kennt die aktuellen Anforderungen der Gerichte und kann die Rechtsbegehren optimal formulieren. Die <a href="/" class="text-gold hover:underline font-semibold">anwaltliche Beratung</a> vermeidet kostspielige Fehler und beschleunigt das Verfahren.</p>
+
+    <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+      <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+      <p class="mb-6">Unsere spezialisierten Familienrechtsanwälte prüfen Ihren Scheidungsantrag und beraten Sie zu den formellen Anforderungen.</p>
+      <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+    </div>
+  </section>
+
   <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
 
-  <p class="text-gray-700 mb-6">Der Scheidungsantrag ist der formelle Auftakt des Scheidungsverfahrens und verdient sorgfaeltige Vorbereitung. Die korrekte Abfassung, vollstaendige Beilagen und Einreichung beim zustaendigen Gericht sind Voraussetzungen fuer einen reibungslosen Ablauf.</p>
+  <p class="text-gray-700 mb-6">Der Scheidungsantrag ist der formelle Auftakt des Scheidungsverfahrens und verdient sorgfältige Vorbereitung. Die korrekte Abfassung, vollständige Beilagen und Einreichung beim zuständigen Gericht sind Voraussetzungen für einen reibungslosen Ablauf.</p>
 
-  <p class="text-gray-700 mb-6">Bei der Scheidung auf gemeinsames Begehren ist der Antrag gemeinsam mit einer Scheidungskonvention einzureichen. Bei der Scheidungsklage muss die Begruendung den gesetzlichen Voraussetzungen entsprechen.</p>
+  <p class="text-gray-700 mb-6">Bei der Scheidung auf gemeinsames Begehren ist der Antrag gemeinsam mit einer Scheidungskonvention einzureichen. Bei der Scheidungsklage muss die Begründung den gesetzlichen Voraussetzungen entsprechen.</p>
 
-  <p class="text-gray-700 mb-6">Eine sorgfaeltige Vorbereitung, gegebenenfalls mit anwaltlicher Unterstuetzung, vermeidet formelle Maengel und Verzoegerungen.</p>
+  <p class="text-gray-700 mb-6">Eine sorgfältige Vorbereitung, gegebenenfalls mit anwaltlicher Unterstützung, vermeidet formelle Mängel und Verzögerungen.</p>
 
   <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
     <p class="font-semibold text-navy mb-2">Relevante Gesetzesbestimmungen:</p>
     <ul class="list-disc list-inside text-gray-700 space-y-1">
-      <li>Art. 111-115 ZGB (Scheidungsgruende)</li>
+      <li>Art. 111-115 ZGB (Scheidungsgründe)</li>
       <li>Art. 120 ZGB (Erbrechtliche Wirkungen)</li>
-      <li>Art. 204 ZGB (Gueterrechtliche Aufloesung)</li>
+      <li>Art. 204 ZGB (Güterrechtliche Auflösung)</li>
       <li>Art. 122-124e ZGB (Vorsorgeausgleich)</li>
       <li>Art. 221 ZPO (Klageschrift)</li>
       <li>Art. 274-293 ZPO (Scheidungsverfahren)</li>
-      <li>Art. 23 ZPO (Oertliche Zustaendigkeit)</li>
+      <li>Art. 23 ZPO (Örtliche Zuständigkeit)</li>
     </ul>
   </div>
+
+  <!-- FAQ -->
+  <section class="mt-16 mb-12">
+    <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+
+    <div class="space-y-6">
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Was ist ein Scheidungsantrag?</h3>
+        <p class="text-gray-700">Der Scheidungsantrag ist das formelle Gesuch an das Gericht zur Auflösung der Ehe. Bei der einvernehmlichen Scheidung heisst er "gemeinsames Scheidungsbegehren" (Art. 111/112 ZGB), bei der einseitigen Scheidung "Scheidungsklage" (Art. 114/115 ZGB).</p>
+      </div>
+
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Welche Angaben muss der Scheidungsantrag enthalten?</h3>
+        <p class="text-gray-700">Der Antrag muss gemäss Art. 221 ZPO enthalten: vollständige Parteibezeichnung beider Ehegatten, klare Rechtsbegehren (Scheidung, Unterhalt, Güterrecht, Kinderbelange), sowie Datum und Unterschriften.</p>
+      </div>
+
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Welche Beilagen sind obligatorisch?</h3>
+        <p class="text-gray-700">Obligatorisch sind der Familienausweis und die Vorsorgeausweise beider Ehegatten. Bei der Scheidung nach Art. 111 ZGB zusätzlich die vollständige Scheidungskonvention. Je nach Fall auch Lohnausweise und Steuererklärungen für die Unterhaltsberechnung.</p>
+      </div>
+
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Was bedeutet die Rechtshängigkeit?</h3>
+        <p class="text-gray-700">Mit Einreichung des Scheidungsantrags wird das Verfahren rechtshängig. Dies ist der Stichtag für die güterrechtliche Auseinandersetzung (Art. 204 Abs. 2 ZGB), das Erlöschen der Erbansprüche (Art. 120 ZGB) und die Berechnung des Vorsorgeausgleichs (Art. 122 ZGB).</p>
+      </div>
+
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Bei welchem Gericht wird der Scheidungsantrag eingereicht?</h3>
+        <p class="text-gray-700">Der Antrag wird beim Bezirksgericht am Wohnsitz eines der Ehegatten eingereicht (Art. 23 ZPO). Bei verschiedenen Wohnsitzen können die Ehegatten wählen, was bei unterschiedlichen Gerichtskosten relevant sein kann.</p>
+      </div>
+
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Was kostet die Einreichung des Scheidungsantrags?</h3>
+        <p class="text-gray-700">Die Gerichtskosten variieren je nach Kanton. Bei einer einfachen einvernehmlichen Scheidung liegen sie zwischen CHF 500 (Bern, Aargau) und CHF 1'000 (Genf). Bei strittigen Scheidungen können die Kosten erheblich höher sein.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Scheidungsantrag in der Schweiz: Formale Anforderungen, Inhalt und Einreichung",
+    "description": "Scheidungsantrag in der Schweiz: Formale Anforderungen, Inhalt und Einreichung. Alles über gemeinsames Scheidungsbegehren und Scheidungsklage.",
+    "author": {
+      "@type": "Organization",
+      "name": "Familienrechtanwalt.ch"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Familienrechtanwalt.ch",
+      "url": "https://familienrechtanwalt.ch"
+    },
+    "datePublished": "2025-01-20",
+    "dateModified": "2025-01-20",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://familienrechtanwalt.ch/scheidung/scheidungsantrag"
+    }
+  })} />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was ist ein Scheidungsantrag?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Der Scheidungsantrag ist das formelle Gesuch an das Gericht zur Auflösung der Ehe. Bei der einvernehmlichen Scheidung heisst er 'gemeinsames Scheidungsbegehren' (Art. 111/112 ZGB), bei der einseitigen Scheidung 'Scheidungsklage' (Art. 114/115 ZGB)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Welche Angaben muss der Scheidungsantrag enthalten?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Der Antrag muss gemäss Art. 221 ZPO enthalten: vollständige Parteibezeichnung beider Ehegatten, klare Rechtsbegehren (Scheidung, Unterhalt, Güterrecht, Kinderbelange), sowie Datum und Unterschriften."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Welche Beilagen sind obligatorisch?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Obligatorisch sind der Familienausweis und die Vorsorgeausweise beider Ehegatten. Bei der Scheidung nach Art. 111 ZGB zusätzlich die vollständige Scheidungskonvention. Je nach Fall auch Lohnausweise und Steuererklärungen für die Unterhaltsberechnung."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was bedeutet die Rechtshängigkeit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mit Einreichung des Scheidungsantrags wird das Verfahren rechtshängig. Dies ist der Stichtag für die güterrechtliche Auseinandersetzung (Art. 204 Abs. 2 ZGB), das Erlöschen der Erbansprüche (Art. 120 ZGB) und die Berechnung des Vorsorgeausgleichs (Art. 122 ZGB)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Bei welchem Gericht wird der Scheidungsantrag eingereicht?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Der Antrag wird beim Bezirksgericht am Wohnsitz eines der Ehegatten eingereicht (Art. 23 ZPO). Bei verschiedenen Wohnsitzen können die Ehegatten wählen, was bei unterschiedlichen Gerichtskosten relevant sein kann."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was kostet die Einreichung des Scheidungsantrags?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die Gerichtskosten variieren je nach Kanton. Bei einer einfachen einvernehmlichen Scheidung liegen sie zwischen CHF 500 (Bern, Aargau) und CHF 1'000 (Genf). Bei strittigen Scheidungen können die Kosten erheblich höher sein."
+        }
+      }
+    ]
+  })} />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://familienrechtanwalt.ch"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Scheidung",
+        "item": "https://familienrechtanwalt.ch/scheidung"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Scheidungsantrag",
+        "item": "https://familienrechtanwalt.ch/scheidung/scheidungsantrag"
+      }
+    ]
+  })} />
+
 </ArticleLayout>

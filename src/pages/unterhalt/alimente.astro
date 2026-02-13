@@ -4,187 +4,909 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 
 <ArticleLayout
     title="Alimente in der Schweiz: Der umfassende Leitfaden zum Kindesunterhalt"
-    description="Alimente in der Schweiz: Umfassender Leitfaden zum Kindesunterhalt. Berechnung, Höhe, Dauer, Durchsetzung und rechtliche Grundlagen nach Art. 276 ZGB."
-    keywords="Alimente Schweiz, Kindesunterhalt, Alimentenberechnung, Barunterhalt, Betreuungsunterhalt, Alimentenhilfe"
+    description="Alimente in der Schweiz: Berechnung nach der zweistufigen Methode, Barunterhalt, Betreuungsunterhalt, Schulstufenmodell & Durchsetzung. Mit Rechenbeispielen."
+    keywords="Alimente Schweiz, Kindesunterhalt, Alimentenberechnung, Barunterhalt, Betreuungsunterhalt, zweistufige Methode, Alimentenhilfe, Mündigenunterhalt"
     category="Unterhalt"
     categoryLink="/unterhalt"
 >
-    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Alimente, also Unterhaltszahlungen für Kinder, sind ein zentrales Thema im Schweizer Familienrecht. Sie sichern den Lebensunterhalt von Kindern nach der Trennung oder Scheidung der Eltern. Dieser umfassende Leitfaden erklärt alle relevanten Aspekte des Kindesunterhalts in der Schweiz.</p>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Kindesunterhalt besteht aus drei Komponenten:</strong> Barunterhalt (direkte Kosten), Betreuungsunterhalt (Erwerbsausfall) und Drittbetreuungskosten (Art. 285 Abs. 2 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Die zweistufige Methode ist verbindlich:</strong> Seit BGE 147 III 265 gilt schweizweit die Bedarfsermittlung mit anschliessender Überschussverteilung nach «grossen und kleinen Köpfen».</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Schulstufenmodell für Betreuungsunterhalt:</strong> Der betreuende Elternteil muss ab Kindergarteneintritt 50%, ab Sekundarstufe 80% und ab 16 Jahren 100% arbeiten.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Unterhaltspflicht bis zum Abschluss der Erstausbildung:</strong> Grundsätzlich bis 18 Jahre, bei Studium oder Lehre bis zum Abschluss (Art. 277 Abs. 2 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Auf Kindesunterhalt kann nicht verzichtet werden:</strong> Alimente sind ein unverzichtbares Recht des Kindes – Vereinbarungen zu Lasten des Kindes sind ungültig.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span><strong>Wirksame Durchsetzungsmöglichkeiten:</strong> Bei Nichtzahlung stehen Betreibung, Schuldneranweisung, Lohnpfändung und die kostenlose Alimentenhilfe zur Verfügung.</span>
+            </li>
+        </ul>
+    </div>
+
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Alimente – also Unterhaltszahlungen für Kinder – gehören zu den wichtigsten und zugleich komplexesten Themen im Schweizer Familienrecht. Sie sichern nach einer Trennung oder Scheidung den Lebensunterhalt der Kinder und ermöglichen deren angemessene Betreuung. Seit der Revision des Kindesunterhaltsrechts vom 1. Januar 2017 haben sich die Berechnungsgrundlagen grundlegend geändert. Dieser umfassende Leitfaden erklärt alle Aspekte des Kindesunterhalts nach aktuellem Schweizer Recht.</p>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Was sind Alimente?</h2>
 
-    <p class="text-gray-700 mb-4">Alimente (auch: Kindesunterhalt, Unterhaltsbeiträge) sind finanzielle Leistungen, die ein Elternteil für den Lebensunterhalt seines Kindes erbringt. Sie dienen der:</p>
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Sicherung des Lebensunterhalts des Kindes</li>
-        <li>Deckung der direkten Kosten (Nahrung, Kleidung, Wohnen)</li>
-        <li>Ermöglichung der Kinderbetreuung (Betreuungsunterhalt)</li>
-        <li>Aufrechterhaltung eines angemessenen Lebensstandards</li>
-    </ul>
+    <p class="text-gray-700 mb-6">Der Begriff «Alimente» (von lateinisch «alimentum» = Nahrung, Unterhalt) bezeichnet im Schweizer Recht die finanziellen Unterhaltsbeiträge, die ein Elternteil für sein Kind zu leisten hat. Juristisch korrekt spricht man vom «Kindesunterhalt» oder «Unterhaltsbeitrag». Die Alimente dienen der umfassenden Sicherung des Lebensbedarfs des Kindes.</p>
 
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="text-gray-700">Die Unterhaltspflicht für Elternteile, die nicht dauerhaft zur Sorge und Obhut ihres Kindes betragen, ist unbestritten und kann in der Schweiz auch nicht mittels Verzicht aufgehoben werden.</p>
-    </div>
+    <p class="text-gray-700 mb-6">Der Unterhalt kann auf zwei Arten erbracht werden: durch persönliche Betreuung (Naturalunterhalt) oder durch Geldzahlung (Barunterhalt). Bei getrennt lebenden Eltern leistet der hauptbetreuende Elternteil seinen Beitrag typischerweise durch die tägliche Pflege und Erziehung, während der andere Elternteil Geldleistungen erbringt (Art. 276 Abs. 2 ZGB).</p>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen</h2>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Rechtliche Grundlagen im ZGB</h3>
+
+    <p class="text-gray-700 mb-6">Der Kindesunterhalt ist im Schweizerischen Zivilgesetzbuch (ZGB) umfassend geregelt. Die zentralen Bestimmungen finden sich in den Artikeln 276 bis 295 ZGB.</p>
 
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Artikel</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Inhalt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gesetzesartikel</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Regelungsinhalt</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Art. 276 ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Grundsatz: Eltern tragen Kosten für Unterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Grundsatz der Unterhaltspflicht: Eltern tragen gemeinsam die Kosten für Unterhalt, Erziehung und Ausbildung</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Art. 276 Abs. 2 ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Unterhalt durch Pflege, Erziehung und Geldzahlung</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 276a ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Vorrang des Kindesunterhalts vor anderen familienrechtlichen Unterhaltspflichten</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Art. 277 ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Dauer der Unterhaltspflicht</td>
+                    <td class="px-6 py-4 text-gray-700">Dauer der Unterhaltspflicht (Volljährigkeit bzw. Erstausbildung)</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">Art. 285 ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Bemessung des Unterhaltsbeitrags</td>
+                    <td class="px-6 py-4 text-gray-700">Bemessung des Unterhaltsbeitrags nach Bedürfnissen des Kindes und Leistungsfähigkeit der Eltern</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 font-semibold text-navy">Art. 285 Abs. 2 ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Betreuungsunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Betreuungsunterhalt zur Gewährleistung der persönlichen Betreuung</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">Art. 286 ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Anpassung des Unterhalts</td>
+                    <td class="px-6 py-4 text-gray-700">Änderung des Unterhaltsbeitrags bei wesentlicher Veränderung der Verhältnisse</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 286a ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Nachforderung bei Mangellage (Deckungslücke)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 287 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Unterhaltsvertrag und behördliche Genehmigung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 289 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Anspruchsübergang bei Sozialhilfe und Alimentenbevorschussung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 291 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Sicherstellung des Unterhalts</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Art. 131a ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Inkassohilfe und Alimentenbevorschussung durch Kantone</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Bestandteile der Alimente</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Die drei Komponenten des Kindesunterhalts</h2>
 
-    <p class="text-gray-700 mb-6">Seit der Kindesunterhaltsrevision vom 1. Januar 2017 setzen sich die Alimente aus mehreren Komponenten zusammen:</p>
+    <p class="text-gray-700 mb-6">Seit der Revision des Kindesunterhaltsrechts vom 1. Januar 2017 setzt sich der Kindesunterhalt aus drei klar definierten Komponenten zusammen. Diese Differenzierung ist für die Berechnung und das Verständnis der Alimente von zentraler Bedeutung.</p>
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">1. Barunterhalt</h3>
-    <p class="text-gray-700 mb-4">Der Barunterhalt deckt die direkten Kosten für das Kind:</p>
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Lebenshaltungskosten (Nahrung, Kleidung, Körperpflege)</li>
-        <li>Wohnkosten (Anteil an Miete und Nebenkosten)</li>
-        <li>Gesundheitskosten (Krankenkassenprämie, Zahnarzt)</li>
-        <li>Bildung und Freizeit (Schulmaterial, Hobbys)</li>
-        <li>Sonstige Kosten (ÖV, Taschengeld)</li>
-    </ul>
+
+    <p class="text-gray-700 mb-6">Der Barunterhalt deckt die direkten, regelmässig anfallenden Kosten für das Kind. Er bildet das Kernstück der Alimentenzahlung und umfasst sämtliche Ausgaben, die unmittelbar dem Kind zugutekommen.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kostenkategorie</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Enthaltene Positionen</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Grundbedarf / Lebenshaltung</td>
+                    <td class="px-6 py-4 text-gray-700">Nahrung, Kleidung, Körperpflege, Taschengeld</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Wohnkosten</td>
+                    <td class="px-6 py-4 text-gray-700">Anteil an Miete, Nebenkosten, Strom (ca. 20% pro Kind)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Gesundheitskosten</td>
+                    <td class="px-6 py-4 text-gray-700">Krankenkassenprämie (Grundversicherung), Selbstbehalt, Zahnarzt, Brille</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Bildung</td>
+                    <td class="px-6 py-4 text-gray-700">Schulmaterial, Schulausflüge, ausserschulische Bildung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Freizeit</td>
+                    <td class="px-6 py-4 text-gray-700">Hobbys, Sportverein, Musikunterricht</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Mobilität</td>
+                    <td class="px-6 py-4 text-gray-700">ÖV-Abonnement, Fahrrad</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Kommunikation</td>
+                    <td class="px-6 py-4 text-gray-700">Mobiltelefon, Internet (altersabhängig)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">2. Betreuungsunterhalt</h3>
-    <p class="text-gray-700 mb-6">Der Betreuungsunterhalt gleicht den Erwerbsausfall des betreuenden Elternteils aus. Er soll den finanziellen Verlust ausgleichen, der durch die Kinderbetreuung und daraus möglicherweise resultierende Arbeitsunfähigkeit entsteht.</p>
+
+    <p class="text-gray-700 mb-6">Der Betreuungsunterhalt wurde mit der Revision 2017 eingeführt und stellt eine der wichtigsten Neuerungen dar. Er gleicht den Erwerbsausfall des betreuenden Elternteils aus, der durch die persönliche Kinderbetreuung entsteht (Art. 285 Abs. 2 ZGB).</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Ziel des Betreuungsunterhalts:</p>
+        <p class="text-gray-700">Der Betreuungsunterhalt soll sicherstellen, dass der betreuende Elternteil während der Betreuungszeit mindestens sein Existenzminimum decken kann. Er ist nicht als Entschädigung für die Betreuungsleistung gedacht, sondern als Ausgleich für die eingeschränkte Erwerbstätigkeit.</p>
+    </div>
+
+    <p class="text-gray-700 mb-4">Die Berechnung des Betreuungsunterhalts erfolgt nach dem sogenannten «Lebenshaltungskostenansatz»:</p>
+
+    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
+        <li>Ermittlung des Einkommens des betreuenden Elternteils bei zumutbarem Beschäftigungsgrad</li>
+        <li>Ermittlung des familienrechtlichen Existenzminimums des betreuenden Elternteils</li>
+        <li>Betreuungsunterhalt = Existenzminimum minus zumutbares Einkommen (Fehlbetrag)</li>
+    </ol>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-4">Das Schulstufenmodell</h4>
+
+    <p class="text-gray-700 mb-6">Das Bundesgericht hat mit seiner Rechtsprechung (BGE 144 III 481) das sogenannte «Schulstufenmodell» etabliert, das die frühere «10/16-Regel» abgelöst hat. Es legt fest, welcher Beschäftigungsgrad dem betreuenden Elternteil je nach Alter des jüngsten Kindes zumutbar ist.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Alter des jüngsten Kindes</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Schulstufe</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zumutbarer Beschäftigungsgrad</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">0–4 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">Vor Kindergarten</td>
+                    <td class="px-6 py-4 text-gray-700">0% (keine Erwerbstätigkeit zumutbar)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Ab ca. 4 Jahren</td>
+                    <td class="px-6 py-4 text-gray-700">Kindergarteneintritt</td>
+                    <td class="px-6 py-4 text-gray-700">50% Erwerbstätigkeit</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Ab ca. 12 Jahren</td>
+                    <td class="px-6 py-4 text-gray-700">Eintritt Sekundarstufe I</td>
+                    <td class="px-6 py-4 text-gray-700">80% Erwerbstätigkeit</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Ab 16 Jahren</td>
+                    <td class="px-6 py-4 text-gray-700">Obligatorische Schulzeit beendet</td>
+                    <td class="px-6 py-4 text-gray-700">100% Erwerbstätigkeit</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtiger Hinweis:</p>
+        <p class="text-gray-700">Das Schulstufenmodell stellt Richtwerte dar. Im Einzelfall kann das Gericht je nach konkreten Umständen (z.B. besondere Betreuungsbedürfnisse des Kindes, Verfügbarkeit von Betreuungsplätzen, Arbeitsmarktsituation) davon abweichen (BGE 144 III 481 E. 4.7.6).</p>
+    </div>
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">3. Drittbetreuungskosten</h3>
-    <p class="text-gray-700 mb-6">Kosten für externe Betreuung werden separat ausgewiesen: Kindertagesstätte (Kita), Hort und Mittagstisch, Tagesmutter.</p>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Berechnung der Alimente</h2>
+    <p class="text-gray-700 mb-6">Die Drittbetreuungskosten umfassen die Ausgaben für externe Kinderbetreuung, die notwendig ist, damit der betreuende Elternteil einer Erwerbstätigkeit nachgehen kann. Sie werden als eigenständige Komponente separat ausgewiesen.</p>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Die zweistufige Methode</h3>
-    <p class="text-gray-700 mb-6">Das Bundesgericht hat mit BGE 147 III 265 die zweistufige Methode mit Überschussverteilung als verbindlich erklärt.</p>
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Kindertagesstätte (Kita):</strong> Betreuung während der Arbeitszeit</li>
+        <li><strong>Tagesschule und Mittagstisch:</strong> Schulergänzende Betreuung</li>
+        <li><strong>Tagesmutter / Tagesfamilie:</strong> Flexible familienergänzende Betreuung</li>
+        <li><strong>Hort:</strong> Nachmittagsbetreuung nach der Schule</li>
+        <li><strong>Ferienbetreuung:</strong> Betreuung während der Schulferien</li>
+    </ul>
 
-    <p class="font-semibold text-navy mb-4">Stufe 1: Bedarfsermittlung</p>
-    <p class="text-gray-700 mb-4">Für jedes Familienmitglied wird der individuelle Bedarf ermittelt: Grundbetrag (Existenzminimum), Wohnkosten (anteilig), Krankenkasse und weitere individuelle Kosten.</p>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Berechnung der Alimente: Die zweistufige Methode</h2>
 
-    <p class="font-semibold text-navy mb-4">Stufe 2: Überschussverteilung</p>
-    <p class="text-gray-700 mb-6">Der verbleibende Überschuss wird verteilt nach "grossen und kleinen Köpfen": Erwachsene je 40% (2/5), Kinder je 20% (1/5).</p>
+    <p class="text-gray-700 mb-6">Mit dem Leitentscheid BGE 147 III 265 vom 11. November 2020 hat das Bundesgericht die sogenannte «zweistufige Methode mit Überschussverteilung» als verbindliche Berechnungsmethode für sämtliche familienrechtlichen Unterhaltsansprüche festgelegt. Diese Methode gilt schweizweit und hat die zuvor kantonal unterschiedlichen Berechnungsweisen abgelöst.</p>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Richtwerte nach Altersstufen</h3>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Stufe 1: Bedarfsermittlung</h3>
+
+    <p class="text-gray-700 mb-6">In der ersten Stufe wird der konkrete Bedarf aller Beteiligten ermittelt. Dabei wird zwischen dem Existenzminimum und dem erweiterten Bedarf unterschieden.</p>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-4">a) Betreibungsrechtliches Existenzminimum (Grundbedarf)</h4>
+
+    <p class="text-gray-700 mb-6">Das betreibungsrechtliche Existenzminimum bildet die absolute Untergrenze und basiert auf den Richtlinien der Konferenz der Betreibungs- und Konkursbeamten der Schweiz. Es dient als Ausgangspunkt und umfasst:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Position</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erwachsene</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kinder</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Grundbetrag</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'200 (alleinstehend) / CHF 1'350 (Alleinerziehend)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 400–600 (je nach Alter)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Wohnkosten</td>
+                    <td class="px-6 py-4 text-gray-700">Effektive Miete (angemessen)</td>
+                    <td class="px-6 py-4 text-gray-700">Anteil ca. 20% der Miete</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Krankenkasse</td>
+                    <td class="px-6 py-4 text-gray-700">Effektive Prämie Grundversicherung</td>
+                    <td class="px-6 py-4 text-gray-700">Effektive Prämie</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-4">b) Familienrechtliches Existenzminimum (erweiterter Bedarf)</h4>
+
+    <p class="text-gray-700 mb-6">Das familienrechtliche Existenzminimum erweitert den betreibungsrechtlichen Grundbedarf um zusätzliche Positionen und bildet die Grundlage für die Unterhaltsberechnung:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Betreibungsrechtliches Existenzminimum (Basis)</li>
+        <li><strong>Plus:</strong> Steuern (Anteil pro Person)</li>
+        <li><strong>Plus:</strong> Obligatorische Versicherungen (2./3. Säule bei Selbständigen)</li>
+        <li><strong>Plus:</strong> Berufsauslagen (Arbeitsweg, Verpflegung, Berufskleidung)</li>
+        <li><strong>Plus:</strong> Angemessene Weiterbildungskosten</li>
+        <li><strong>Plus:</strong> Kinderbetreuungskosten (Drittbetreuung)</li>
+    </ul>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-4">c) Zürcher Kinderkostentabelle</h4>
+
+    <p class="text-gray-700 mb-6">Für die Ermittlung des Kindesbedarfs wird häufig die Zürcher Kinderkostentabelle als Orientierungshilfe herangezogen. Diese wird jährlich vom Amt für Jugend und Berufsberatung des Kantons Zürich publiziert und zeigt durchschnittliche Kosten nach Altersstufen.</p>
 
     <div class="overflow-x-auto mb-6">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Altersstufe</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Ungefährer Barbedarf</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Ungefährer Barbedarf (2024)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Enthaltene Positionen</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">0-6 Jahre</td>
-                    <td class="px-6 py-4 text-gray-700">CHF 1'200 - 1'400</td>
+                    <td class="px-6 py-4 font-semibold text-navy">0–6 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'200–1'400</td>
+                    <td class="px-6 py-4 text-gray-700">Grundbedarf, Wohnen, KK, ohne Drittbetreuung</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">7-12 Jahre</td>
-                    <td class="px-6 py-4 text-gray-700">CHF 1'400 - 1'600</td>
+                    <td class="px-6 py-4 font-semibold text-navy">7–12 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'400–1'600</td>
+                    <td class="px-6 py-4 text-gray-700">Grundbedarf, Wohnen, KK, Freizeit, Mobilität</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">13-18 Jahre</td>
-                    <td class="px-6 py-4 text-gray-700">CHF 1'600 - 1'900</td>
+                    <td class="px-6 py-4 font-semibold text-navy">13–18 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'600–1'900</td>
+                    <td class="px-6 py-4 text-gray-700">Grundbedarf, Wohnen, KK, erhöhte Kosten</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Bundesgerichtliche Einschränkung:</p>
+        <p class="text-gray-700">Das Bundesgericht hat in BGE 147 III 265 klargestellt, dass Tabellen wie die Zürcher Kinderkostentabelle nur den durchschnittlichen Bedarf darstellen und die individuellen Verhältnisse nicht abbilden können. Sie haben daher nur informativen Charakter und ersetzen nicht die konkrete Bedarfsermittlung im Einzelfall.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Stufe 2: Überschussverteilung</h3>
+
+    <p class="text-gray-700 mb-6">In der zweiten Stufe wird ermittelt, ob nach Deckung des Bedarfs aller Beteiligten ein Überschuss verbleibt. Dieser wird nach dem Prinzip der «grossen und kleinen Köpfe» verteilt:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Familienkonstellation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Verteilschlüssel</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">2 Erwachsene</td>
+                    <td class="px-6 py-4 text-gray-700">Je 50% (1/2)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">2 Erwachsene + 1 Kind</td>
+                    <td class="px-6 py-4 text-gray-700">Erwachsene je 40% (2/5), Kind 20% (1/5)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">2 Erwachsene + 2 Kinder</td>
+                    <td class="px-6 py-4 text-gray-700">Erwachsene je 33.3% (2/6), Kinder je 16.7% (1/6)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">2 Erwachsene + 3 Kinder</td>
+                    <td class="px-6 py-4 text-gray-700">Erwachsene je 28.6% (2/7), Kinder je 14.3% (1/7)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Rechenbeispiel: Alimentenberechnung</h3>
+
+    <p class="text-gray-700 mb-4">Ausgangslage: Vater verdient CHF 8'000 netto, Mutter CHF 4'000 netto (50%-Pensum), ein Kind (8 Jahre).</p>
+
+    <div class="bg-gray-50 p-6 my-6 rounded-lg">
+        <p class="font-semibold text-navy mb-4">Stufe 1: Bedarfsermittlung</p>
+        <p class="text-gray-700 mb-2"><strong>Bedarf Vater:</strong> CHF 3'500 (inkl. Wohnung, KK, Steuern)</p>
+        <p class="text-gray-700 mb-2"><strong>Bedarf Mutter:</strong> CHF 3'200 (inkl. Wohnung, KK, Steuern)</p>
+        <p class="text-gray-700 mb-2"><strong>Bedarf Kind:</strong> CHF 1'500 (Barbedarf)</p>
+        <p class="text-gray-700 mb-4"><strong>Gesamtbedarf:</strong> CHF 8'200</p>
+
+        <p class="font-semibold text-navy mb-4">Stufe 2: Überschussverteilung</p>
+        <p class="text-gray-700 mb-2"><strong>Gesamteinkommen:</strong> CHF 12'000</p>
+        <p class="text-gray-700 mb-2"><strong>Überschuss:</strong> CHF 12'000 – CHF 8'200 = CHF 3'800</p>
+        <p class="text-gray-700 mb-4"><strong>Verteilung nach 2:2:1:</strong></p>
+        <ul class="list-disc list-inside text-gray-700 mb-4 space-y-1">
+            <li>Vater: CHF 1'520 (2/5)</li>
+            <li>Mutter: CHF 1'520 (2/5)</li>
+            <li>Kind: CHF 760 (1/5)</li>
+        </ul>
+
+        <p class="font-semibold text-navy mb-4">Unterhaltsbeitrag für das Kind</p>
+        <p class="text-gray-700 mb-2"><strong>Barbedarf:</strong> CHF 1'500</p>
+        <p class="text-gray-700 mb-2"><strong>Plus Überschussanteil:</strong> CHF 760</p>
+        <p class="text-gray-700 mb-2"><strong>Minus Familienzulage:</strong> CHF 200</p>
+        <p class="text-gray-700"><strong>= Kindesunterhalt total:</strong> CHF 2'060</p>
+    </div>
+
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Dauer der Unterhaltspflicht</h2>
 
-    <p class="text-gray-700 mb-4">Die Unterhaltspflicht dauert grundsätzlich bis zum 18. Geburtstag des Kindes. Die Pflicht besteht länger, wenn das Kind noch keine angemessene Erstausbildung abgeschlossen hat:</p>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Grundsatz: Bis zur Volljährigkeit</h3>
+
+    <p class="text-gray-700 mb-6">Die Unterhaltspflicht der Eltern dauert gemäss Art. 277 Abs. 1 ZGB grundsätzlich bis zur Volljährigkeit des Kindes, d.h. bis zum 18. Geburtstag. Mit Erreichen der Volljährigkeit wird der Unterhaltsanspruch zum sogenannten «Mündigenunterhalt».</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ausnahme: Erstausbildung</h3>
+
+    <p class="text-gray-700 mb-6">Art. 277 Abs. 2 ZGB sieht vor, dass die Unterhaltspflicht über die Volljährigkeit hinaus fortbesteht, wenn das Kind noch keine angemessene Ausbildung abgeschlossen hat und dies den Eltern nach den gesamten Umständen zugemutet werden kann.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Ausbildungsweg</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gilt als Erstausbildung abgeschlossen</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Berufslehre (EFZ/EBA)</td>
+                    <td class="px-6 py-4 text-gray-700">Mit Lehrabschluss (auch ohne Berufsmatura)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Gymnasium / Matura</td>
+                    <td class="px-6 py-4 text-gray-700">Nein – Matura ist Zwischenabschluss für Hochschule</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Fachhochschule (FH)</td>
+                    <td class="px-6 py-4 text-gray-700">Mit Bachelorabschluss</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Universität (Jura, Medizin)</td>
+                    <td class="px-6 py-4 text-gray-700">Erst mit Masterabschluss (berufsbefähigend)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Universität (andere Fächer)</td>
+                    <td class="px-6 py-4 text-gray-700">Je nach Berufsfeld Bachelor oder Master</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Mündigenunterhalt: Besonderheiten</h3>
+
+    <p class="text-gray-700 mb-6">Der Mündigenunterhalt (Volljährigenunterhalt) unterscheidet sich in wichtigen Punkten vom Unterhalt für minderjährige Kinder:</p>
+
     <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Gymnasium → Universität: Bis Masterabschluss</li>
-        <li>Lehre: Bis Lehrabschluss</li>
-        <li>Fachhochschule: Bis Bachelorabschluss</li>
+        <li><strong>Parteidisposition:</strong> Das volljährige Kind kann über seinen Unterhaltsanspruch frei verfügen und auch darauf verzichten</li>
+        <li><strong>Direkter Anspruch:</strong> Der Anspruch steht dem Kind persönlich zu, nicht dem betreuenden Elternteil</li>
+        <li><strong>Beide Eltern schulden:</strong> Der Unterhalt wird von beiden Elternteilen nach ihrer Leistungsfähigkeit geschuldet</li>
+        <li><strong>Eigenleistung:</strong> Das Kind muss zumutbare Eigenleistungen erbringen (Nebenjobs, Stipendien)</li>
     </ul>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Alimente einfordern</h2>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Ende der Unterhaltspflicht:</p>
+        <p class="text-gray-700">Die Unterhaltspflicht kann auch vor Ausbildungsabschluss enden, wenn sie für die Eltern unzumutbar wird. Dies kann der Fall sein bei: dauerhafter Kontaktverweigerung des Kindes ohne triftigen Grund, übermässiger Verlängerung des Studiums («ewige Studenten»), schwerer Pflichtverletzung des Kindes oder erheblicher Verschlechterung der finanziellen Situation der Eltern (BGE 129 III 375).</p>
+    </div>
 
-    <p class="text-gray-700 mb-4">Bei ausbleibenden Zahlungen stehen verschiedene Massnahmen zur Verfügung:</p>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Mangellage und gebührender Unterhalt</h2>
+
+    <p class="text-gray-700 mb-6">Wenn das Einkommen des unterhaltspflichtigen Elternteils nicht ausreicht, um den vollen Unterhalt zu decken, spricht man von einer «Mangellage» oder einem «Mankofall». In dieser Situation gelten besondere Regeln.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vorrang des Kindesunterhalts</h3>
+
+    <p class="text-gray-700 mb-6">Art. 276a ZGB stellt klar: Die Unterhaltspflicht gegenüber einem minderjährigen Kind geht allen anderen familienrechtlichen Unterhaltspflichten vor. Das bedeutet: Kindesunterhalt wird vor Ehegattenunterhalt bedient.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gebührender Unterhalt vs. tatsächlich geschuldeter Unterhalt</h3>
+
+    <p class="text-gray-700 mb-6">In einer Mangellage unterscheidet man zwischen:</p>
+
     <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Mahnung:</strong> Schriftliche Aufforderung mit Frist</li>
-        <li><strong>Betreibung:</strong> Beim Betreibungsamt einleiten</li>
-        <li><strong>Schuldneranweisung:</strong> Gericht weist Arbeitgeber zur direkten Zahlung an</li>
-        <li><strong>Lohnpfändung:</strong> Monatliche Abzüge vom Lohn</li>
-        <li><strong>Alimentenhilfe:</strong> Kostenlose Inkassohilfe und Bevorschussung</li>
+        <li><strong>Gebührender Unterhalt:</strong> Der Betrag, den das Kind bei ausreichenden Mitteln erhalten würde</li>
+        <li><strong>Tatsächlich geschuldeter Unterhalt:</strong> Der Betrag, den der Pflichtige leisten kann, ohne sein Existenzminimum zu unterschreiten</li>
+        <li><strong>Deckungslücke (Manko):</strong> Die Differenz zwischen gebührendem und tatsächlich geschuldetem Unterhalt</li>
     </ul>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Anpassung der Alimente</h2>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Nachforderung nach Art. 286a ZGB</h3>
 
-    <p class="text-gray-700 mb-4">Art. 286 ZGB ermöglicht eine Anpassung bei erheblicher und dauerhafter Änderung der Verhältnisse:</p>
+    <p class="text-gray-700 mb-6">Die Revision 2017 hat mit Art. 286a ZGB eine wichtige Neuerung eingeführt: Verbessert sich die finanzielle Situation des unterhaltspflichtigen Elternteils ausserordentlich, kann das Kind die in den letzten fünf Jahren fehlenden Beträge nachfordern.</p>
 
-    <p class="font-semibold text-navy mb-2">Herabsetzung möglich bei:</p>
-    <ul class="list-disc list-inside text-gray-700 mb-4 space-y-1">
-        <li>Wesentlicher Einkommensrückgang</li>
-        <li>Erhöhte eigene Belastungen</li>
-        <li>Änderung der Betreuungssituation</li>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Voraussetzungen der Nachforderung:</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li>Der fehlende Betrag (Manko) muss im ursprünglichen Urteil oder Unterhaltsvertrag ausdrücklich beziffert sein</li>
+            <li>Die Nachforderung kann rückwirkend für maximal fünf Jahre geltend gemacht werden</li>
+            <li>Es muss eine «ausserordentliche» Verbesserung der Verhältnisse eingetreten sein</li>
+        </ul>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Änderung der Alimente</h2>
+
+    <p class="text-gray-700 mb-6">Unterhaltsbeiträge sind nicht in Stein gemeisselt. Art. 286 ZGB ermöglicht eine Anpassung, wenn sich die Verhältnisse erheblich und dauerhaft geändert haben.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gründe für eine Herabsetzung</h3>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Wesentlicher Einkommensrückgang (z.B. Arbeitslosigkeit, Krankheit)</li>
+        <li>Geburt weiterer unterhaltsberechtigter Kinder</li>
+        <li>Erhöhte eigene Betreuungsanteile</li>
+        <li>Wesentlich verbessertes Einkommen des anderen Elternteils</li>
+        <li>Eigenes Einkommen des Kindes (z.B. Lehrlingslohn)</li>
     </ul>
 
-    <p class="font-semibold text-navy mb-2">Erhöhung möglich bei:</p>
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-1">
-        <li>Wesentliche Einkommenserhöhung</li>
-        <li>Erhöhter Bedarf des Kindes</li>
-        <li>Ausserordentliche Kosten</li>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gründe für eine Erhöhung</h3>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Wesentliche Einkommenserhöhung des Pflichtigen</li>
+        <li>Erhöhter Bedarf des Kindes (z.B. Schuleintritt, besondere Förderung)</li>
+        <li>Wegfall von Familienzulagen oder anderen Leistungen</li>
+        <li>Ausserordentliche Kosten (z.B. Kieferorthopädie, Therapien)</li>
     </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Verfahren zur Abänderung</h3>
+
+    <p class="text-gray-700 mb-6">Eine Änderung des Unterhalts erfordert ein gerichtliches Verfahren. Zuständig ist das Gericht am Wohnsitz des Kindes. Bis zur rechtskräftigen Abänderung gilt der ursprünglich festgesetzte Unterhalt.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Alimente einfordern und durchsetzen</h2>
+
+    <p class="text-gray-700 mb-6">Leider werden Alimente nicht immer pünktlich oder vollständig bezahlt. Studien zeigen, dass etwa 20% der Alleinerziehenden Probleme mit der Alimentenzahlung haben. Das Schweizer Recht bietet jedoch wirksame Durchsetzungsmechanismen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Stufenweise Durchsetzung</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Massnahme</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">1. Mahnung</td>
+                    <td class="px-6 py-4 text-gray-700">Schriftliche Zahlungsaufforderung mit Fristansetzung</td>
+                    <td class="px-6 py-4 text-gray-700">Formlos (empfohlen: eingeschrieben)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">2. Betreibung</td>
+                    <td class="px-6 py-4 text-gray-700">Einleitung der Schuldbetreibung beim Betreibungsamt</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 67ff. SchKG</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">3. Schuldneranweisung</td>
+                    <td class="px-6 py-4 text-gray-700">Gericht weist Arbeitgeber an, direkt an Berechtigten zu zahlen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 291 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">4. Lohnpfändung</td>
+                    <td class="px-6 py-4 text-gray-700">Monatlicher Abzug vom Lohn über das Existenzminimum hinaus</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 93 SchKG</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">5. Sicherstellung</td>
+                    <td class="px-6 py-4 text-gray-700">Kaution oder Vermögenssperre zur Sicherung künftiger Zahlungen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 291 ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Alimentenhilfe und Inkassohilfe</h3>
+
+    <p class="text-gray-700 mb-6">Die Kantone sind gemäss Art. 131a ZGB verpflichtet, Alimentenhilfe anzubieten. Diese umfasst zwei wesentliche Leistungen:</p>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-4">Inkassohilfe</h4>
+    <p class="text-gray-700 mb-6">Die kantonale Fachstelle übernimmt alle notwendigen Schritte zur Eintreibung ausstehender Alimente: Kontaktaufnahme mit dem Schuldner, Mahnwesen, Einleitung von Betreibungen, Beantragung von Schuldneranweisungen. Die Inkassohilfe für Kindesunterhalt ist in der Regel kostenlos.</p>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-4">Alimentenbevorschussung</h4>
+    <p class="text-gray-700 mb-6">Werden Alimente nicht oder nur teilweise bezahlt, kann das Gemeinwesen einen Vorschuss leisten. Die Voraussetzungen und Höchstbeträge sind kantonal unterschiedlich geregelt.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Typische Regelung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Berechtigte</td>
+                    <td class="px-6 py-4 text-gray-700">Minderjährige Kinder mit Wohnsitz im Kanton</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Voraussetzung</td>
+                    <td class="px-6 py-4 text-gray-700">Vollstreckbarer Unterhaltstitel (Urteil oder genehmigte Vereinbarung)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Einkommensgrenze</td>
+                    <td class="px-6 py-4 text-gray-700">Meist Bedarfsabhängig (variiert nach Kanton)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Vermögensgrenze (Bsp. ZH)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 105'700 (Ein-Eltern-Haushalt mit 1 Kind)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Maximaler Vorschuss</td>
+                    <td class="px-6 py-4 text-gray-700">Meist bis zur geschuldeten Höhe oder Maximalbetrag</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Antragstellung</td>
+                    <td class="px-6 py-4 text-gray-700">Bei der Wohnsitzgemeinde</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Strafrechtliche Konsequenzen</h3>
+
+    <p class="text-gray-700 mb-6">Wer die Alimente trotz Fähigkeit zur Zahlung nicht leistet, macht sich strafbar. Art. 217 StGB (Vernachlässigung von Unterhaltspflichten) sieht folgende Sanktionen vor:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Freiheitsstrafe bis zu 3 Jahren</strong> oder Geldstrafe</li>
+        <li>Strafantrag durch den Unterhaltsberechtigten oder dessen Vertreter erforderlich</li>
+        <li>Voraussetzung: Der Schuldner wäre zur Zahlung in der Lage gewesen oder hätte es sein können</li>
+    </ul>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praktischer Hinweis:</p>
+        <p class="text-gray-700">In der Praxis wird bei erstmaliger Verurteilung meist eine bedingte Strafe ausgesprochen, verbunden mit der Auflage, die Rückstände zu bezahlen. Die Strafandrohung dient primär als Druckmittel zur Sicherstellung der Zahlungen.</p>
+    </div>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Steuerliche Aspekte</h2>
 
+    <p class="text-gray-700 mb-6">Die steuerliche Behandlung von Alimenten folgt dem Prinzip der «Besteuerung beim Empfänger» bei minderjährigen Kindern:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Situation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zahlender Elternteil</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Empfangender Elternteil/Kind</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Kindesunterhalt (Kind minderjährig)</td>
+                    <td class="px-6 py-4 text-gray-700">Abzugsfähig vom steuerbaren Einkommen</td>
+                    <td class="px-6 py-4 text-gray-700">Steuerbar als Einkommen des obhutsberechtigten Elternteils</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Mündigenunterhalt (Kind volljährig)</td>
+                    <td class="px-6 py-4 text-gray-700">Nicht abzugsfähig</td>
+                    <td class="px-6 py-4 text-gray-700">Steuerfrei für das Kind</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Betreuungsunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Abzugsfähig (Teil des Kindesunterhalts)</td>
+                    <td class="px-6 py-4 text-gray-700">Steuerbar beim betreuenden Elternteil</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
     <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Zahlender Elternteil:</strong> Kann Alimente von den Steuern abziehen</li>
-        <li><strong>Empfangender Elternteil:</strong> Muss Alimente als Einkommen versteuern</li>
-        <li>Nur tatsächlich geleistete/erhaltene Zahlungen sind steuerlich relevant</li>
+        <li>Nur tatsächlich geleistete bzw. erhaltene Zahlungen sind steuerlich relevant</li>
+        <li>Ausstehende (nicht bezahlte) Alimente können nicht abgezogen werden</li>
+        <li>Der Kinderabzug steht dem obhutsberechtigten Elternteil zu</li>
+        <li>Bei alternierender Obhut: Aufteilung je nach kantonaler Praxis</li>
     </ul>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wichtige Bundesgerichtsentscheide</h2>
 
-    <p class="text-gray-700 mb-4">Die wichtigsten Punkte zum Thema Alimente:</p>
-    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
-        <li>Alimente bestehen aus Barunterhalt und Betreuungsunterhalt</li>
-        <li>Die Höhe wird nach der zweistufigen Methode individuell ermittelt</li>
-        <li>Grundsätzlich bis zur Volljährigkeit, allenfalls länger bei Erstausbildung</li>
-        <li>Bei Nichtzahlung stehen wirksame Mittel zur Verfügung</li>
-        <li>Auf Kindesunterhalt kann nicht verzichtet werden</li>
-    </ol>
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">BGE</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kernaussage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 147 III 265</td>
+                    <td class="px-6 py-4 text-gray-700">Verbindliche Anwendung der zweistufigen Methode mit Überschussverteilung für alle familienrechtlichen Unterhaltsansprüche</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 144 III 481</td>
+                    <td class="px-6 py-4 text-gray-700">Einführung des Schulstufenmodells: Zumutbare Erwerbstätigkeit ab Kindergarteneintritt 50%, ab Sekundarstufe 80%, ab 16 Jahren 100%</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 144 III 377</td>
+                    <td class="px-6 py-4 text-gray-700">Berechnung des Betreuungsunterhalts nach der Lebenshaltungskostenmethode</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 137 III 59</td>
+                    <td class="px-6 py-4 text-gray-700">Zum Verhältnis von Kindesunterhalt und nachehelichem Unterhalt bei beschränkten Mitteln</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 129 III 375</td>
+                    <td class="px-6 py-4 text-gray-700">Voraussetzungen für den Wegfall der Unterhaltspflicht gegenüber volljährigen Kindern (Unzumutbarkeit)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">Die Berechnung und Durchsetzung von Alimenten ist ein komplexes Rechtsgebiet, bei dem bereits kleine Fehler erhebliche finanzielle Auswirkungen haben können – und das über viele Jahre hinweg. Eine professionelle rechtliche Beratung ist daher in vielen Situationen nicht nur empfehlenswert, sondern kann sich finanziell lohnen.</p>
+
+        <p class="text-gray-700 mb-6">Insbesondere bei folgenden Konstellationen ist die Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> empfohlen:</p>
+
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Erstmalige Festsetzung der Alimente bei Trennung oder Scheidung</li>
+            <li>Komplizierte Einkommensverhältnisse (Selbständigkeit, variables Einkommen, Bonuszahlungen)</li>
+            <li>Streitigkeiten über den Betreuungsunterhalt oder die Erwerbsobliegenheit</li>
+            <li>Abänderungsverfahren bei veränderten Verhältnissen</li>
+            <li>Durchsetzung ausstehender Unterhaltszahlungen</li>
+            <li>Internationale Sachverhalte (Wohnsitz im Ausland)</li>
+        </ul>
+
+        <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kann sicherstellen, dass alle Unterhaltskomponenten korrekt berechnet werden und Ihre Rechte gewahrt bleiben. Auch bei Problemen mit der Durchsetzung kann ein <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> effizient die richtigen Massnahmen einleiten und koordinieren.</p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Unsere spezialisierten Familienrechtsanwälte beraten Sie kompetent zu allen Fragen rund um Alimente und Kindesunterhalt. Erhalten Sie eine erste Einschätzung Ihrer Situation und erfahren Sie, welche Schritte in Ihrem Fall sinnvoll sind.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- Fazit -->
+    <h2 class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Das Schweizer Kindesunterhaltsrecht hat sich mit der Revision 2017 und der bundesgerichtlichen Rechtsprechung (insbesondere BGE 147 III 265) grundlegend gewandelt. Die dreistufige Struktur aus Barunterhalt, Betreuungsunterhalt und Drittbetreuungskosten sowie die verbindliche zweistufige Methode mit Überschussverteilung sorgen für eine schweizweit einheitlichere Berechnung.</p>
+
+    <p class="text-gray-700 mb-6">Zentral bleibt: Der Kindesunterhalt dient dem Wohl des Kindes und hat Vorrang vor anderen Unterhaltsansprüchen. Auf ihn kann nicht verzichtet werden, und bei Nichtzahlung stehen wirksame Durchsetzungsmechanismen zur Verfügung. Das Schulstufenmodell schafft klare Erwartungen bezüglich der Erwerbstätigkeit des betreuenden Elternteils, wobei im Einzelfall immer die konkreten Umstände zu berücksichtigen sind.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
         <p class="font-semibold text-navy mb-2">Relevante Gesetzesbestimmungen:</p>
         <ul class="list-disc list-inside text-gray-700 space-y-1">
-            <li>Art. 276-277 ZGB (Unterhaltspflicht)</li>
-            <li>Art. 285-286 ZGB (Bemessung und Anpassung)</li>
+            <li>Art. 276–277 ZGB (Unterhaltspflicht und Dauer)</li>
+            <li>Art. 285–286a ZGB (Bemessung, Anpassung, Nachforderung)</li>
             <li>Art. 287 ZGB (Unterhaltsvertrag)</li>
+            <li>Art. 289–291 ZGB (Erfüllung und Sicherstellung)</li>
+            <li>Art. 131a ZGB (Inkassohilfe und Bevorschussung)</li>
+            <li>Art. 217 StGB (Vernachlässigung von Unterhaltspflichten)</li>
         </ul>
     </div>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie hoch sind die Alimente für ein Kind in der Schweiz?</h3>
+                <p class="text-gray-700">Die Höhe der Alimente hängt vom individuellen Bedarf des Kindes und der Leistungsfähigkeit der Eltern ab. Als Richtwert gilt: für Kinder von 0–6 Jahren ca. CHF 1'200–1'400, für 7–12-Jährige ca. CHF 1'400–1'600 und für 13–18-Jährige ca. CHF 1'600–1'900 monatlich (Barunterhalt). Hinzu kommen der Betreuungsunterhalt und allfällige Drittbetreuungskosten. Die genaue Berechnung erfolgt nach der zweistufigen Methode (BGE 147 III 265).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie werden Alimente in der Schweiz berechnet?</h3>
+                <p class="text-gray-700">Seit dem Leitentscheid BGE 147 III 265 gilt schweizweit die zweistufige Methode mit Überschussverteilung. In der ersten Stufe wird der konkrete Bedarf aller Familienmitglieder ermittelt. In der zweiten Stufe wird ein allfälliger Überschuss nach «grossen und kleinen Köpfen» verteilt: Erwachsene erhalten je 2/5 (40%), Kinder je 1/5 (20%) des Überschusses.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie lange muss man Alimente zahlen in der Schweiz?</h3>
+                <p class="text-gray-700">Grundsätzlich bis zur Volljährigkeit (18. Geburtstag). Die Unterhaltspflicht dauert jedoch länger, wenn das Kind noch keine angemessene Erstausbildung abgeschlossen hat (Art. 277 Abs. 2 ZGB). Bei einer Berufslehre bis zum Lehrabschluss, bei einem Universitätsstudium in der Regel bis zum Master (z.B. Jura, Medizin) oder Bachelor (z.B. an Fachhochschulen).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen Barunterhalt und Betreuungsunterhalt?</h3>
+                <p class="text-gray-700">Der Barunterhalt deckt die direkten Kosten für das Kind (Nahrung, Kleidung, Wohnen, Krankenkasse, Freizeit). Der Betreuungsunterhalt hingegen gleicht den Erwerbsausfall des betreuenden Elternteils aus, der durch die persönliche Kinderbetreuung entsteht. Er wurde 2017 eingeführt und berechnet sich nach der Lebenshaltungskostenmethode (Art. 285 Abs. 2 ZGB).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann man auf Kindesunterhalt verzichten?</h3>
+                <p class="text-gray-700">Nein, auf Kindesunterhalt kann nicht verzichtet werden. Alimente sind ein unverzichtbares Recht des Kindes. Vereinbarungen zwischen den Eltern, die zu Lasten des Kindes gehen, sind ungültig. Auch ein Unterhaltsvertrag bedarf der behördlichen Genehmigung (Art. 287 ZGB), um sicherzustellen, dass das Kindeswohl gewahrt bleibt.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert, wenn Alimente nicht bezahlt werden?</h3>
+                <p class="text-gray-700">Bei Nichtzahlung stehen mehrere Massnahmen zur Verfügung: Betreibung beim Betreibungsamt, Schuldneranweisung an den Arbeitgeber (Art. 291 ZGB), Lohnpfändung sowie die kostenlose Alimentenhilfe (Inkassohilfe und Bevorschussung) beim Kanton. Zudem droht bei vorsätzlicher Nichtzahlung trotz Zahlungsfähigkeit eine Freiheitsstrafe bis zu 3 Jahren (Art. 217 StGB).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist das Schulstufenmodell?</h3>
+                <p class="text-gray-700">Das Schulstufenmodell (BGE 144 III 481) legt fest, ab wann der betreuende Elternteil zur Erwerbstätigkeit verpflichtet ist: ab Kindergarteneintritt (ca. 4 Jahre) 50%, ab Sekundarstufe (ca. 12 Jahre) 80%, ab 16 Jahren 100% Erwerbstätigkeit. Es hat die frühere «10/16-Regel» abgelöst und dient zur Berechnung des Betreuungsunterhalts.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wann können Alimente geändert werden?</h3>
+                <p class="text-gray-700">Eine Änderung ist bei erheblicher und dauerhafter Veränderung der Verhältnisse möglich (Art. 286 ZGB). Gründe für eine Herabsetzung sind z.B. Arbeitslosigkeit oder weitere Unterhaltspflichten. Gründe für eine Erhöhung sind z.B. gestiegenes Einkommen des Pflichtigen oder erhöhter Bedarf des Kindes. Die Änderung erfolgt durch das zuständige Gericht.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Müssen Alimente versteuert werden?</h3>
+                <p class="text-gray-700">Ja, beim empfangenden Elternteil: Erhaltene Kindesalimente (für minderjährige Kinder) müssen als Einkommen versteuert werden. Der zahlende Elternteil kann die Alimente von seinem steuerbaren Einkommen abziehen. Bei volljährigen Kindern kehrt sich das System um: Der Zahlende kann nicht abziehen, die Alimente sind aber für das Kind steuerfrei.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist die Alimentenbevorschussung?</h3>
+                <p class="text-gray-700">Die Alimentenbevorschussung ist eine kantonale Leistung, bei der das Gemeinwesen die ausstehenden Kinderalimente vorschiesst, wenn diese nicht oder nur teilweise bezahlt werden (Art. 131a ZGB). Die Voraussetzungen (Einkommens- und Vermögensgrenzen) sind kantonal unterschiedlich geregelt. Der Antrag wird bei der Wohnsitzgemeinde gestellt.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Alimente in der Schweiz: Der umfassende Leitfaden zum Kindesunterhalt",
+        "description": "Alimente in der Schweiz: Berechnung nach der zweistufigen Methode, Barunterhalt, Betreuungsunterhalt, Schulstufenmodell & Durchsetzung. Mit Rechenbeispielen.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2026-01-21",
+        "dateModified": "2026-01-21",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/unterhalt/alimente"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Wie hoch sind die Alimente für ein Kind in der Schweiz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Höhe der Alimente hängt vom individuellen Bedarf des Kindes und der Leistungsfähigkeit der Eltern ab. Als Richtwert gilt: für Kinder von 0–6 Jahren ca. CHF 1'200–1'400, für 7–12-Jährige ca. CHF 1'400–1'600 und für 13–18-Jährige ca. CHF 1'600–1'900 monatlich (Barunterhalt). Hinzu kommen der Betreuungsunterhalt und allfällige Drittbetreuungskosten. Die genaue Berechnung erfolgt nach der zweistufigen Methode (BGE 147 III 265)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie werden Alimente in der Schweiz berechnet?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Seit dem Leitentscheid BGE 147 III 265 gilt schweizweit die zweistufige Methode mit Überschussverteilung. In der ersten Stufe wird der konkrete Bedarf aller Familienmitglieder ermittelt. In der zweiten Stufe wird ein allfälliger Überschuss nach «grossen und kleinen Köpfen» verteilt: Erwachsene erhalten je 2/5 (40%), Kinder je 1/5 (20%) des Überschusses."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie lange muss man Alimente zahlen in der Schweiz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Grundsätzlich bis zur Volljährigkeit (18. Geburtstag). Die Unterhaltspflicht dauert jedoch länger, wenn das Kind noch keine angemessene Erstausbildung abgeschlossen hat (Art. 277 Abs. 2 ZGB). Bei einer Berufslehre bis zum Lehrabschluss, bei einem Universitätsstudium in der Regel bis zum Master (z.B. Jura, Medizin) oder Bachelor (z.B. an Fachhochschulen)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen Barunterhalt und Betreuungsunterhalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der Barunterhalt deckt die direkten Kosten für das Kind (Nahrung, Kleidung, Wohnen, Krankenkasse, Freizeit). Der Betreuungsunterhalt hingegen gleicht den Erwerbsausfall des betreuenden Elternteils aus, der durch die persönliche Kinderbetreuung entsteht. Er wurde 2017 eingeführt und berechnet sich nach der Lebenshaltungskostenmethode (Art. 285 Abs. 2 ZGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann man auf Kindesunterhalt verzichten?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, auf Kindesunterhalt kann nicht verzichtet werden. Alimente sind ein unverzichtbares Recht des Kindes. Vereinbarungen zwischen den Eltern, die zu Lasten des Kindes gehen, sind ungültig. Auch ein Unterhaltsvertrag bedarf der behördlichen Genehmigung (Art. 287 ZGB), um sicherzustellen, dass das Kindeswohl gewahrt bleibt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert, wenn Alimente nicht bezahlt werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei Nichtzahlung stehen mehrere Massnahmen zur Verfügung: Betreibung beim Betreibungsamt, Schuldneranweisung an den Arbeitgeber (Art. 291 ZGB), Lohnpfändung sowie die kostenlose Alimentenhilfe (Inkassohilfe und Bevorschussung) beim Kanton. Zudem droht bei vorsätzlicher Nichtzahlung trotz Zahlungsfähigkeit eine Freiheitsstrafe bis zu 3 Jahren (Art. 217 StGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist das Schulstufenmodell?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das Schulstufenmodell (BGE 144 III 481) legt fest, ab wann der betreuende Elternteil zur Erwerbstätigkeit verpflichtet ist: ab Kindergarteneintritt (ca. 4 Jahre) 50%, ab Sekundarstufe (ca. 12 Jahre) 80%, ab 16 Jahren 100% Erwerbstätigkeit. Es hat die frühere «10/16-Regel» abgelöst und dient zur Berechnung des Betreuungsunterhalts."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wann können Alimente geändert werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Eine Änderung ist bei erheblicher und dauerhafter Veränderung der Verhältnisse möglich (Art. 286 ZGB). Gründe für eine Herabsetzung sind z.B. Arbeitslosigkeit oder weitere Unterhaltspflichten. Gründe für eine Erhöhung sind z.B. gestiegenes Einkommen des Pflichtigen oder erhöhter Bedarf des Kindes. Die Änderung erfolgt durch das zuständige Gericht."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Müssen Alimente versteuert werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, beim empfangenden Elternteil: Erhaltene Kindesalimente (für minderjährige Kinder) müssen als Einkommen versteuert werden. Der zahlende Elternteil kann die Alimente von seinem steuerbaren Einkommen abziehen. Bei volljährigen Kindern kehrt sich das System um: Der Zahlende kann nicht abziehen, die Alimente sind aber für das Kind steuerfrei."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist die Alimentenbevorschussung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Alimentenbevorschussung ist eine kantonale Leistung, bei der das Gemeinwesen die ausstehenden Kinderalimente vorschiesst, wenn diese nicht oder nur teilweise bezahlt werden (Art. 131a ZGB). Die Voraussetzungen (Einkommens- und Vermögensgrenzen) sind kantonal unterschiedlich geregelt. Der Antrag wird bei der Wohnsitzgemeinde gestellt."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Unterhalt",
+                "item": "https://familienrechtanwalt.ch/unterhalt"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Alimente in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/unterhalt/alimente"
+            }
+        ]
+    })} />
+
 </ArticleLayout>

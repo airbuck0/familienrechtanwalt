@@ -3,26 +3,155 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 ---
 
 <ArticleLayout
-    title="Nachehelicher Unterhalt in der Schweiz"
-    description="Nachehelicher Unterhalt in der Schweiz: Voraussetzungen, Berechnung und Dauer nach Art. 125 ZGB. Umfassender Leitfaden."
-    keywords="Nachehelicher Unterhalt Schweiz, Art. 125 ZGB, Scheidungsunterhalt, lebensprägende Ehe, Ehegattenunterhalt"
+    title="Nachehelicher Unterhalt in der Schweiz: Voraussetzungen, Berechnung & Dauer"
+    description="Nachehelicher Unterhalt Schweiz: Voraussetzungen nach Art. 125 ZGB, lebensprägende Ehe, zweistufige Berechnungsmethode, Dauer & aktuelle BGE-Rechtsprechung."
+    keywords="Nachehelicher Unterhalt Schweiz, Art. 125 ZGB, lebensprägende Ehe, Scheidungsunterhalt, Ehegattenunterhalt, zweistufige Methode, BGE 147 III 293"
     category="Unterhalt"
     categoryLink="/unterhalt"
 >
-    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Der nacheheliche Unterhalt ist einer der komplexesten Bereiche des Schweizer Scheidungsrechts. Er soll den wirtschaftlich schwächeren Ehegatten nach der Scheidung absichern, unterliegt aber strengen Voraussetzungen.</p>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">&#10003;</span>
+                <span>Der nacheheliche Unterhalt ist die Ausnahme, nicht die Regel - es gilt der Grundsatz der Eigenverantwortung (Clean Break)</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">&#10003;</span>
+                <span>Voraussetzung ist grundsätzlich eine lebensprägende Ehe, bei der ein Ehegatte seine wirtschaftliche Selbständigkeit aufgegeben hat</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">&#10003;</span>
+                <span>Die Berechnung erfolgt verbindlich nach der zweistufigen Methode mit Überschussverteilung (BGE 147 III 293)</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">&#10003;</span>
+                <span>Die bisherige "45er-Regel" und die automatische Lebensprägung bei Kindern wurden vom Bundesgericht aufgegeben</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">&#10003;</span>
+                <span>Der Unterhalt ist in der Regel befristet - oft bis zum AHV-Alter des Pflichtigen</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">&#10003;</span>
+                <span>Der Anspruch erlischt bei Wiederverheiratung oder qualifiziertem Konkubinat (Art. 130 ZGB)</span>
+            </li>
+        </ul>
+    </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Grundsatz: Eigenversorgung hat Vorrang</h2>
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Der nacheheliche Unterhalt - auch Scheidungsunterhalt oder Nachscheidungsrente genannt - gehört zu den komplexesten und umstrittensten Bereichen des Schweizer Scheidungsrechts. Er soll den wirtschaftlich schwächeren Ehegatten nach der Scheidung absichern, unterliegt aber seit mehreren Grundsatzurteilen des Bundesgerichts in den Jahren 2020 bis 2022 deutlich strengeren Voraussetzungen. Dieser Artikel erklärt die aktuelle Rechtslage, die Berechnungsmethode und die wichtigsten Bundesgerichtsentscheide.</p>
 
-    <p class="text-gray-700 mb-6">Das Schweizer Scheidungsrecht ist vom Grundsatz der nachehelichen Eigenverantwortung geprägt. Nach der Scheidung soll grundsätzlich jeder Ehegatte für seinen eigenen Unterhalt sorgen. Der nacheheliche Unterhalt ist nicht der Regelfall, sondern die Ausnahme für besondere Situationen.</p>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Definition: Was ist nachehelicher Unterhalt?</h2>
 
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy">Art. 125 Abs. 1 ZGB:</p>
+    <p class="text-gray-700 mb-6">Der nacheheliche Unterhalt ist ein Beitrag, den ein Ehegatte dem anderen nach rechtskräftiger Scheidung schuldet, wenn dieser seinen gebührenden Unterhalt nicht selbst bestreiten kann. Im Gegensatz zum <a href="/unterhalt/trennungsunterhalt" class="text-gold hover:underline">Trennungsunterhalt</a> (während des Getrenntlebens) oder dem <a href="/unterhalt/ehegattenunterhalt" class="text-gold hover:underline">Ehegattenunterhalt</a> während der Ehe ist der nacheheliche Unterhalt an besondere Voraussetzungen geknüpft.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Art. 125 Abs. 1 ZGB - Gesetzliche Grundlage:</p>
         <p class="text-gray-700 italic">"Ist einem Ehegatten nicht zuzumuten, dass er für den ihm gebührenden Unterhalt unter Einschluss einer angemessenen Altersvorsorge selbst aufkommt, so hat ihm der andere einen angemessenen Beitrag zu leisten."</p>
     </div>
 
+    <p class="text-gray-700 mb-6">Diese Vorschrift konkretisiert zwei zentrale Grundsätze des Schweizer Scheidungsrechts:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Wirtschaftliche Unabhängigkeit:</strong> Jeder Ehegatte soll nach der Scheidung grundsätzlich für sich selbst sorgen</li>
+        <li><strong>Nacheheliche Solidarität:</strong> Die Ehegatten tragen die Folgen der während der Ehe vereinbarten Aufgabenteilung gemeinsam</li>
+    </ul>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Der Grundsatz der nachehelichen Eigenverantwortung (Clean Break)</h2>
+
+    <p class="text-gray-700 mb-6">Das Schweizer Scheidungsrecht ist vom Prinzip des "Clean Break" geprägt: Nach der Scheidung soll grundsätzlich jeder Ehegatte für seinen eigenen Unterhalt sorgen. Der nacheheliche Unterhalt ist nicht der Regelfall, sondern eine Ausnahme für besondere Konstellationen.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Prinzip</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bedeutung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Clean Break</td>
+                    <td class="px-6 py-4 text-gray-700">Vollständige wirtschaftliche Trennung nach der Scheidung als Idealzustand</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Eigenverantwortung</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder Ehegatte hat selbst für seinen Unterhalt aufzukommen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Subsidiarität</td>
+                    <td class="px-6 py-4 text-gray-700">Unterhalt nur, wenn Eigenversorgung nicht möglich oder unzumutbar ist</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Nacheheliche Solidarität</td>
+                    <td class="px-6 py-4 text-gray-700">Ausgleich ehebedingter Nachteile bei lebensprägender Ehe</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Das Bundesgericht hat den Vorrang der Eigenversorgung in seiner neueren Rechtsprechung wiederholt betont: "Im Rahmen der Scheidung gilt der Vorrang der Eigenversorgung, wonach jeder Ehegatte vorab selbst für seinen Unterhalt aufzukommen hat - und nur subsidiär, wo dies nicht oder nicht umfassend möglich und zumutbar ist, den anderen Ehegatten eine zeitlich begrenzte Unterhaltspflicht aufgrund nachehelicher Solidarität trifft" (BGE 147 III 308).</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Voraussetzungen für den nachehelichen Unterhalt</h2>
+
+    <p class="text-gray-700 mb-6">Für einen Anspruch auf nachehelichen Unterhalt müssen mehrere Voraussetzungen erfüllt sein:</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">1. Lebensprägende Ehe</h3>
+
+    <p class="text-gray-700 mb-6">Die zentrale Frage für den nachehelichen Unterhalt ist, ob die Ehe als "lebensprägend" einzustufen ist. Dies ist der Fall, wenn ein Ehegatte aufgrund eines gemeinsamen Lebensplans seine ökonomische Selbständigkeit zugunsten der Haushaltsbesorgung und Kinderbetreuung aufgegeben hat und es ihm nach langjähriger Ehe nicht mehr möglich ist, an seiner früheren beruflichen Stellung anzuknüpfen (BGE 148 III 161).</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Lebensprägende Ehe</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Nicht lebensprägende Ehe</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Anspruch auf Fortführung des zuletzt gemeinsam gelebten Lebensstandards</td>
+                    <td class="px-6 py-4 text-gray-700">Rückkehr zu den vorehelichen Verhältnissen (Status quo ante)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Vertrauensschutz in die eheliche Aufgabenteilung</td>
+                    <td class="px-6 py-4 text-gray-700">Allenfalls Ersatz des "negativen Interesses" (Heiratsschaden)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Überschussverteilung nach zweistufiger Methode</td>
+                    <td class="px-6 py-4 text-gray-700">In der Regel kein oder nur kurzer Unterhalt</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h4 class="font-serif text-xl font-bold text-navy mt-6 mb-3">Aktuelle Rechtsprechung zur Lebensprägung</h4>
+
+    <p class="text-gray-700 mb-6">Das Bundesgericht hat seine Rechtsprechung zur lebensprägenden Ehe in mehreren Grundsatzurteilen seit 2020 deutlich verschärft:</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-4">Aufgegebene Vermutungen (BGE 147 III 249, BGE 148 III 161):</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li><strong>10-Jahres-Vermutung aufgegeben:</strong> Eine Ehedauer von 10+ Jahren begründet nicht mehr automatisch eine lebensprägende Ehe</li>
+            <li><strong>Kinder-Vermutung aufgegeben:</strong> Gemeinsame Kinder allein machen eine Ehe nicht mehr lebensprägend</li>
+            <li><strong>Einzelfallprüfung erforderlich:</strong> Die Lebensprägung muss stets konkret geprüft werden</li>
+        </ul>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">2. Gebührender Unterhalt nicht selbst deckbar</h3>
+
+    <p class="text-gray-700 mb-6">Der anspruchsberechtigte Ehegatte muss nachweisen, dass er seinen "gebührenden Unterhalt" einschliesslich einer angemessenen Altersvorsorge nicht selbst bestreiten kann. Der gebührende Unterhalt orientiert sich bei lebensprägenden Ehen am bisherigen gemeinsamen Lebensstandard.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">3. Leistungsfähigkeit des Pflichtigen</h3>
+
+    <p class="text-gray-700 mb-6">Der unterhaltspflichtige Ehegatte muss wirtschaftlich in der Lage sein, Unterhalt zu leisten. Sein betreibungsrechtliches Existenzminimum muss gewahrt bleiben (BGE 123 III 1). Reicht das Einkommen nicht für beide Existenzminima, geht das Existenzminimum des Pflichtigen vor.</p>
+
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Bemessungskriterien nach Art. 125 Abs. 2 ZGB</h2>
 
-    <div class="overflow-x-auto mb-6">
+    <p class="text-gray-700 mb-6">Das Gesetz nennt in Art. 125 Abs. 2 ZGB acht Kriterien, die bei der Festsetzung des nachehelichen Unterhalts zu berücksichtigen sind:</p>
+
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
@@ -35,120 +164,608 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
                 <tr>
                     <td class="px-6 py-4 text-gray-700">1</td>
                     <td class="px-6 py-4 font-semibold text-navy">Aufgabenteilung während der Ehe</td>
-                    <td class="px-6 py-4 text-gray-700">Wer hat welche Aufgaben übernommen?</td>
+                    <td class="px-6 py-4 text-gray-700">Wer hat Hausarbeit, Kinderbetreuung, Erwerbsarbeit übernommen?</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 text-gray-700">2</td>
                     <td class="px-6 py-4 font-semibold text-navy">Dauer der Ehe</td>
-                    <td class="px-6 py-4 text-gray-700">Je länger, desto eher Anspruch</td>
+                    <td class="px-6 py-4 text-gray-700">Je länger die Ehe, desto eher entsteht ein Vertrauensschutz</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 text-gray-700">3</td>
                     <td class="px-6 py-4 font-semibold text-navy">Lebensstellung während der Ehe</td>
-                    <td class="px-6 py-4 text-gray-700">Welcher Lebensstandard wurde gepflegt?</td>
+                    <td class="px-6 py-4 text-gray-700">Welcher Lebensstandard wurde gemeinsam gepflegt?</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 text-gray-700">4</td>
-                    <td class="px-6 py-4 font-semibold text-navy">Alter und Gesundheit</td>
-                    <td class="px-6 py-4 text-gray-700">Einschränkungen der Erwerbsfähigkeit</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Alter und Gesundheitszustand</td>
+                    <td class="px-6 py-4 text-gray-700">Einschränkungen der Erwerbsfähigkeit durch Alter oder Krankheit</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 text-gray-700">5</td>
                     <td class="px-6 py-4 font-semibold text-navy">Einkommen und Vermögen</td>
-                    <td class="px-6 py-4 text-gray-700">Aktuelle finanzielle Situation</td>
+                    <td class="px-6 py-4 text-gray-700">Aktuelle finanzielle Situation beider Parteien</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 text-gray-700">6</td>
-                    <td class="px-6 py-4 font-semibold text-navy">Kinderbetreuung</td>
-                    <td class="px-6 py-4 text-gray-700">Umfang und Dauer der noch nötigen Betreuung</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Umfang der Kinderbetreuung</td>
+                    <td class="px-6 py-4 text-gray-700">Noch notwendige Betreuungsarbeit und deren Auswirkung auf Erwerbstätigkeit</td>
                 </tr>
                 <tr>
                     <td class="px-6 py-4 text-gray-700">7</td>
-                    <td class="px-6 py-4 font-semibold text-navy">Berufliche Aussichten</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Berufliche Ausbildung und Aussichten</td>
                     <td class="px-6 py-4 text-gray-700">Reintegrationschancen am Arbeitsmarkt</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 text-gray-700">8</td>
-                    <td class="px-6 py-4 font-semibold text-navy">Vorsorgeanwartschaften</td>
-                    <td class="px-6 py-4 text-gray-700">AHV, BVG und andere Vorsorge</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Anwartschaften aus Vorsorge</td>
+                    <td class="px-6 py-4 text-gray-700">AHV, BVG und andere Vorsorgeleistungen</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Die lebensprägende Ehe</h2>
-
-    <p class="text-gray-700 mb-4">Eine Ehe gilt als "lebensprägend", wenn sie das Leben eines Ehegatten so wesentlich beeinflusst hat, dass eine Rückkehr zum früheren Stand nicht mehr zumutbar ist:</p>
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Unter 5 Jahren:</strong> In der Regel keine lebensprägende Ehe</li>
-        <li><strong>5-10 Jahre:</strong> Einzelfallprüfung</li>
-        <li><strong>Über 10 Jahre:</strong> Vermutung einer lebensprägenden Ehe</li>
-        <li><strong>Gemeinsame Kinder:</strong> Begründen regelmässig eine Lebensprägung</li>
-    </ul>
-
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Berechnung des nachehelichen Unterhalts</h2>
 
-    <p class="text-gray-700 mb-6">Mit BGE 147 III 293 hat das Bundesgericht die zweistufige Methode mit Überschussverteilung als verbindlich erklärt:</p>
+    <p class="text-gray-700 mb-6">Mit dem Grundsatzurteil BGE 147 III 293 vom Februar 2021 hat das Bundesgericht die <strong>zweistufige Methode mit Überschussverteilung</strong> als verbindliche Berechnungsmethode für den nachehelichen Unterhalt festgelegt.</p>
 
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy">Berechnungsformel:</p>
-        <p class="text-gray-700">Unterhaltsanspruch = (Bedarf + Überschussanteil) - Eigenes Einkommen</p>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Die zweistufige Methode im Detail</h3>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-4">Schritt 1: Ermittlung der Einkommen und Bedarfe</p>
+        <ol class="list-decimal list-inside text-gray-700 space-y-2">
+            <li>Ermittlung des Einkommens beider Ehegatten (tatsächliches oder hypothetisches)</li>
+            <li>Feststellung des familienrechtlichen Grundbedarfs (erweitertes Existenzminimum) beider Ehegatten</li>
+            <li>Der Grundbedarf umfasst: Wohnkosten, Krankenkassenprämien, Steuern, Berufsauslagen, Grundbetrag</li>
+        </ol>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Dauer des Unterhaltsanspruchs</h2>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-4">Schritt 2: Überschussverteilung</p>
+        <ol class="list-decimal list-inside text-gray-700 space-y-2">
+            <li>Berechnung des Überschusses: Gesamteinkommen minus beide Grundbedarfe</li>
+            <li>Verteilung des Überschusses: In der Regel hälftig zwischen den Ehegatten</li>
+            <li>Unterhaltsanspruch = (Grundbedarf + Überschussanteil) - Eigenes Einkommen</li>
+        </ol>
+    </div>
 
-    <div class="overflow-x-auto mb-6">
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Berechnungsbeispiel</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Position</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Ehemann</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Ehefrau</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Nettoeinkommen</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 9'000</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 3'000</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Grundbedarf</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 4'000</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 3'500</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Gesamteinkommen</td>
+                    <td class="px-6 py-4 text-gray-700" colspan="2">CHF 12'000</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Gesamtbedarf</td>
+                    <td class="px-6 py-4 text-gray-700" colspan="2">CHF 7'500</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Überschuss</td>
+                    <td class="px-6 py-4 text-gray-700" colspan="2">CHF 4'500</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Überschussanteil (je 50%)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 2'250</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 2'250</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Gebührender Bedarf</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 6'250</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 5'750</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Unterhaltsanspruch Ehefrau</td>
+                    <td class="px-6 py-4 text-gray-700" colspan="2">CHF 5'750 - CHF 3'000 = <strong>CHF 2'750</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ausnahme: Einstufige Methode</h3>
+
+    <p class="text-gray-700 mb-6">Die einstufig-konkrete Berechnungsmethode kommt nur ausnahmsweise bei aussergewöhnlich günstigen Verhältnissen zur Anwendung. In diesem Fall wird nicht der gesamte Überschuss verteilt, sondern nur ein Betrag zugesprochen, der dem konkreten Bedarf entspricht. Die Abweichung von der zweistufigen Methode muss im Urteil begründet werden (BGE 147 III 293, E. 4.5).</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Erwerbsobliegenheit und Schulstufenmodell</h2>
+
+    <p class="text-gray-700 mb-6">Wer nachehelichen Unterhalt beansprucht, muss grundsätzlich alles Zumutbare unternehmen, um selbst für seinen Lebensunterhalt aufzukommen. Die Erwerbsobliegenheit ist ein zentraler Aspekt des nachehelichen Unterhalts.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Das Schulstufenmodell (BGE 144 III 481)</h3>
+
+    <p class="text-gray-700 mb-6">Für den hauptbetreuenden Elternteil hat das Bundesgericht das Schulstufenmodell entwickelt, das die frühere "10/16-Regel" ersetzt hat:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Alter des jüngsten Kindes</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zumutbare Erwerbstätigkeit</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Vor Schulpflicht (0-4 Jahre)</td>
+                    <td class="px-6 py-4 text-gray-700">Keine oder geringe Erwerbstätigkeit zumutbar</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Obligatorische Schulpflicht (ab ca. 4-5 Jahre)</td>
+                    <td class="px-6 py-4 text-gray-700">50% Erwerbstätigkeit zumutbar</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Sekundarstufe I (ab ca. 12 Jahre)</td>
+                    <td class="px-6 py-4 text-gray-700">80% Erwerbstätigkeit zumutbar</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Ab 16. Lebensjahr</td>
+                    <td class="px-6 py-4 text-gray-700">100% Erwerbstätigkeit zumutbar</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Aufgabe der "45er-Regel" (BGE 147 III 308)</h3>
+
+    <p class="text-gray-700 mb-6">Die frühere Regel, wonach einer Person nach Erreichen des 45. Altersjahres die Wiederaufnahme einer Erwerbstätigkeit nicht mehr zumutbar sei, wurde vom Bundesgericht formell aufgegeben. Das Bundesgericht hielt fest, dass diese Regel "in ihrer Absolutheit nicht mehr den tatsächlichen Verhältnissen entspricht".</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Neue Praxis:</p>
+        <p class="text-gray-700">Neu ist grundsätzlich stets von der Zumutbarkeit einer Erwerbsarbeit auszugehen, soweit eine solche Möglichkeit tatsächlich besteht und keine konkreten Hinderungsgründe vorliegen (wie z.B. Kinderbetreuung, Gesundheit, fehlende Sprachkenntnisse).</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Dauer und Befristung des nachehelichen Unterhalts</h2>
+
+    <p class="text-gray-700 mb-6">Obwohl das Gesetz keine Befristung des nachehelichen Unterhalts vorsieht, wird der Unterhalt in der Praxis regelmässig befristet. Das Bundesgericht hat betont: Es besteht "kein Anspruch auf lebenslängliche Gleichstellung" (5A_801/2022).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Typische Befristungsszenarien</h3>
+
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Situation</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Typische Dauer</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Begründung</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Kurze Ehe ohne Kinder</td>
-                    <td class="px-6 py-4 text-gray-700">Keine oder kurze Dauer</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Kurze Ehe ohne Kinder (&lt;5 Jahre)</td>
+                    <td class="px-6 py-4 text-gray-700">Kein oder kurzer Unterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Keine Lebensprägung</td>
                 </tr>
                 <tr class="bg-gray-50">
                     <td class="px-6 py-4 font-semibold text-navy">Eingliederungsunterhalt</td>
                     <td class="px-6 py-4 text-gray-700">2-5 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">Zeit für berufliche Reintegration</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Mittlere Ehe mit Kindern</td>
-                    <td class="px-6 py-4 text-gray-700">Bis Selbstständigkeit der Kinder</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Ehe mit kleinen Kindern</td>
+                    <td class="px-6 py-4 text-gray-700">Bis Kinder 16 Jahre alt</td>
+                    <td class="px-6 py-4 text-gray-700">Schulstufenmodell</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Lange Ehe, traditionell</td>
-                    <td class="px-6 py-4 text-gray-700">Bis AHV-Alter</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Lange traditionelle Ehe</td>
+                    <td class="px-6 py-4 text-gray-700">Bis AHV-Alter des Pflichtigen</td>
+                    <td class="px-6 py-4 text-gray-700">Vertrauensschutz, erschwerte Reintegration</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Sehr lange Ehe (20+ Jahre)</td>
-                    <td class="px-6 py-4 text-gray-700">Evtl. unbefristet</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Sehr lange Ehe (20+ Jahre), Alter 50+</td>
+                    <td class="px-6 py-4 text-gray-700">Evtl. bis AHV-Alter des Berechtigten</td>
+                    <td class="px-6 py-4 text-gray-700">Ausnahmsweise unbefristet bei fehlender Reintegrationsmöglichkeit</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Erlöschen des Anspruchs</h2>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kriterien für die Befristung (5A_801/2022)</h3>
+
+    <p class="text-gray-700 mb-6">Im Leiturteil 5A_801/2022 vom Mai 2024 hat das Bundesgericht die Kriterien für die zeitliche Begrenzung des nachehelichen Unterhalts konkretisiert. Massgebend sind insbesondere:</p>
 
     <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Tod des Berechtigten oder Pflichtigen</li>
-        <li>Wiederverheiratung des Berechtigten (sofortiges Erlöschen)</li>
-        <li>Ablauf der Befristung</li>
-        <li>Qualifiziertes Konkubinat kann zum faktischen Erlöschen führen</li>
+        <li><strong>Dauer des ehelichen Zusammenlebens:</strong> Je kürzer, desto weniger einschneidend die Umgewöhnung</li>
+        <li><strong>Erwerbshinderung durch Kinderbetreuung:</strong> Führt zu längeren Unterhaltsrenten</li>
+        <li><strong>Allfällige Hausgattenehe:</strong> Bei langjähriger Hausgattenehe ggf. Unterhalt bis AHV-Alter</li>
+        <li><strong>Vertrauen in Fortbestand der Ehe:</strong> Bei längerer Ehe stärker zu würdigen</li>
     </ul>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Abänderung des nachehelichen Unterhalts (Art. 129 ZGB)</h2>
 
-    <p class="text-gray-700 mb-6">Der nacheheliche Unterhalt ist die Ausnahme, nicht die Regel. Nur bei einer lebensprägenden Ehe besteht ein Vertrauensschutz. Die Berechnung erfolgt verbindlich nach der zweistufigen Methode mit Überschussverteilung. Bei Fragen empfiehlt sich die frühzeitige Beratung durch einen spezialisierten Familienrechtsanwalt.</p>
+    <p class="text-gray-700 mb-6">Der im Scheidungsurteil festgesetzte nacheheliche Unterhalt kann unter bestimmten Voraussetzungen nachträglich geändert werden:</p>
 
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy mb-2">Relevante Bundesgerichtsentscheide:</p>
-        <ul class="list-disc list-inside text-gray-700 space-y-1">
-            <li>BGE 147 III 293 - Zweistufige Methode verbindlich</li>
-            <li>BGE 141 III 465 - Lebensprägende Ehe</li>
-            <li>BGE 137 III 102 - Erwerbsobliegenheit</li>
-        </ul>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Voraussetzungen für eine Abänderung</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kriterium</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Anforderung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Veränderung der Verhältnisse</td>
+                    <td class="px-6 py-4 text-gray-700">Verbesserung oder Verschlechterung der finanziellen Situation</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Erheblichkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Mindestens ca. 10% Veränderung der Leistungsfähigkeit</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Dauerhaftigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Keine bloss vorübergehende Änderung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Unvorhersehbarkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Durfte bei Urteilsfällung nicht berücksichtigt werden</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Möglichkeiten nach Art. 129 ZGB</h3>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li><strong>Herabsetzung:</strong> Bei Verschlechterung beim Pflichtigen oder Verbesserung beim Berechtigten</li>
+        <li><strong>Sistierung:</strong> Vorübergehende Einstellung der Zahlungen (z.B. bei einfachem Konkubinat)</li>
+        <li><strong>Aufhebung:</strong> Vollständige Beendigung der Unterhaltspflicht</li>
+        <li><strong>Erhöhung:</strong> Nur ausnahmsweise möglich (Art. 129 Abs. 3 ZGB) - bei unvorhersehbarer Verbesserung beim Pflichtigen, wenn Deckung ursprünglich nicht möglich war, innert 5 Jahren nach Rechtskraft</li>
+    </ul>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Erlöschen des Unterhaltsanspruchs (Art. 130 ZGB)</h2>
+
+    <p class="text-gray-700 mb-6">Der Anspruch auf nachehelichen Unterhalt erlischt von Gesetzes wegen in folgenden Fällen:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erlöschensgrund</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Wirkung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Tod des Berechtigten</td>
+                    <td class="px-6 py-4 text-gray-700">Sofortiges Erlöschen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 130 Abs. 1 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Tod des Pflichtigen</td>
+                    <td class="px-6 py-4 text-gray-700">Sofortiges Erlöschen (keine Vererbung)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 130 Abs. 1 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Wiederverheiratung des Berechtigten</td>
+                    <td class="px-6 py-4 text-gray-700">Sofortiges Erlöschen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 130 Abs. 2 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Qualifiziertes Konkubinat</td>
+                    <td class="px-6 py-4 text-gray-700">Vollständiges und endgültiges Erlöschen</td>
+                    <td class="px-6 py-4 text-gray-700">Analogie zu Art. 130 Abs. 2 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Ablauf der Befristung</td>
+                    <td class="px-6 py-4 text-gray-700">Erlöschen zum vereinbarten/festgesetzten Zeitpunkt</td>
+                    <td class="px-6 py-4 text-gray-700">Scheidungsurteil/Vereinbarung</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Qualifiziertes Konkubinat</h3>
+
+    <p class="text-gray-700 mb-6">Ein qualifiziertes Konkubinat liegt vor, wenn die nichteheliche Lebensgemeinschaft stabil, auf Dauer ausgerichtet und eheähnlich ist. Das Bundesgericht geht bei einem Konkubinat von mindestens 5 Jahren Dauer grundsätzlich von einem qualifizierten Konkubinat aus.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig:</p>
+        <p class="text-gray-700">Bei einem qualifizierten Konkubinat erlischt die Unterhaltspflicht <strong>vollständig und endgültig</strong>. Eine blosse Sistierung ist nicht möglich. Bei einem einfachen (nicht qualifizierten) Konkubinat kann der Unterhalt hingegen nur sistiert werden und lebt bei Beendigung des Konkubinats wieder auf.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kapitalabfindung statt Rente</h2>
+
+    <p class="text-gray-700 mb-6">In der Regel wird der nacheheliche Unterhalt als monatliche Rente ausgerichtet. Bei besonderen Umständen kann jedoch auch eine einmalige Kapitalabfindung festgesetzt werden, was dem Clean-Break-Prinzip besser entspricht.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Voraussetzungen für eine Kapitalabfindung</h3>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Einverständnis beider Parteien oder besondere Umstände</li>
+        <li>Ausreichende finanzielle Mittel des Pflichtigen</li>
+        <li>Praktische Gründe (z.B. Wegzug ins Ausland, Vermeidung künftiger Konflikte)</li>
+    </ul>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Verzicht auf nachehelichen Unterhalt</h2>
+
+    <p class="text-gray-700 mb-6">Die Ehegatten können in einer Scheidungskonvention gegenseitig auf nachehelichen Unterhalt verzichten. Eine typische Formulierung lautet: "Die Parteien verzichten gegenseitig auf nachehelichen Unterhalt im Sinne von Art. 125 ZGB."</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Gerichtliche Genehmigung:</p>
+        <p class="text-gray-700">Das Gericht prüft, ob der Verzicht nicht offensichtlich unangemessen ist (Art. 279 Abs. 1 ZPO). Ein Verzicht wird insbesondere dann nicht genehmigt, wenn dadurch die Sozialhilfe belastet würde.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Relevante Bundesgerichtsentscheide</h2>
+
+    <p class="text-gray-700 mb-6">Die folgenden Leitentscheide haben das Recht des nachehelichen Unterhalts in den letzten Jahren massgeblich geprägt:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Entscheid</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kernaussage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 147 III 293</td>
+                    <td class="px-6 py-4 text-gray-700">Zweistufige Methode mit Überschussverteilung ist verbindlich für nachehelichen Unterhalt</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 147 III 249</td>
+                    <td class="px-6 py-4 text-gray-700">Verschärfung der Kriterien für lebensprägende Ehe; Aufgabe der bisherigen Vermutungen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 148 III 161 (5A_568/2021)</td>
+                    <td class="px-6 py-4 text-gray-700">Weitere Einschränkung des Begriffs der lebensprägenden Ehe; Kinder allein begründen keine Lebensprägung mehr</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 147 III 308</td>
+                    <td class="px-6 py-4 text-gray-700">Aufgabe der 45er-Regel; Vorrang der Eigenversorgung betont</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 144 III 481</td>
+                    <td class="px-6 py-4 text-gray-700">Einführung des Schulstufenmodells für Erwerbsobliegenheit</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">5A_801/2022</td>
+                    <td class="px-6 py-4 text-gray-700">Kriterien für zeitliche Befristung des nachehelichen Unterhalts; kein Anspruch auf lebenslängliche Gleichstellung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 141 III 465</td>
+                    <td class="px-6 py-4 text-gray-700">Definition der lebensprägenden Ehe (Grundlagen)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 137 III 102</td>
+                    <td class="px-6 py-4 text-gray-700">Erwerbsobliegenheit und zumutbare Erwerbstätigkeit</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">Der nacheheliche Unterhalt ist einer der komplexesten und finanziell bedeutsamsten Aspekte einer Scheidung. Die zahlreichen Grundsatzurteile des Bundesgerichts in den letzten Jahren haben die Rechtslage erheblich verändert. Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> ist in folgenden Situationen unverzichtbar:</p>
+
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li><strong>Beurteilung der Lebensprägung:</strong> Ob Ihre Ehe als lebensprägend gilt, hat massive finanzielle Auswirkungen</li>
+            <li><strong>Unterhaltsberechnung:</strong> Die zweistufige Methode erfordert präzise Berechnung von Einkommen und Bedarf</li>
+            <li><strong>Erwerbsobliegenheit:</strong> Welche Erwerbstätigkeit ist Ihnen zuzumuten?</li>
+            <li><strong>Verhandlung der Scheidungskonvention:</strong> Optimale Regelung des Unterhalts</li>
+            <li><strong>Abänderungsklage:</strong> Bei wesentlicher Veränderung der Verhältnisse</li>
+            <li><strong>Verteidigung gegen überhöhte Forderungen:</strong> Als Unterhaltspflichtiger</li>
+        </ul>
+
+        <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kennt die aktuelle Bundesgerichtspraxis und kann Ihre Interessen wirksam vertreten - ob Sie Unterhalt beanspruchen oder leisten müssen. Bei komplexen Vermögensverhältnissen ist die Beratung durch einen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> besonders wichtig.</p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Haben Sie Fragen zum nachehelichen Unterhalt oder stehen Sie vor einer Scheidung? Unsere erfahrenen Familienrechtsanwälte analysieren Ihre Situation und zeigen Ihnen Ihre rechtlichen Möglichkeiten auf.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- Fazit -->
+    <h2 class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Der nacheheliche Unterhalt hat durch die Rechtsprechung des Bundesgerichts in den letzten Jahren einen tiefgreifenden Wandel erfahren. Der Grundsatz der nachehelichen Eigenverantwortung (Clean Break) steht im Vordergrund. Unterhalt ist nur noch bei lebensprägenden Ehen geschuldet, wobei die bisherigen Vermutungen (10 Jahre Ehedauer, gemeinsame Kinder) aufgegeben wurden.</p>
+
+    <p class="text-gray-700 mb-6">Die Berechnung erfolgt verbindlich nach der zweistufigen Methode mit Überschussverteilung. Die Erwerbsobliegenheit wurde verschärft - die frühere 45er-Regel gilt nicht mehr. Der Unterhalt ist in der Regel befristet; ein Anspruch auf lebenslängliche Gleichstellung besteht nicht.</p>
+
+    <p class="text-gray-700 mb-6">Angesichts der komplexen Rechtslage und der hohen finanziellen Tragweite ist eine fachkundige Beratung durch einen spezialisierten Familienrechtsanwalt unerlässlich - sowohl für potentielle Unterhaltsberechtigte als auch für Unterhaltspflichtige.</p>
+
+    <!-- FAQ-Sektion -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wann habe ich Anspruch auf nachehelichen Unterhalt in der Schweiz?</h3>
+                <p class="text-gray-700">Sie haben Anspruch auf nachehelichen Unterhalt, wenn Sie Ihren gebührenden Unterhalt nicht selbst decken können und die Ehe lebensprägend war (Art. 125 ZGB). Lebensprägend ist eine Ehe, wenn Sie aufgrund der ehelichen Aufgabenteilung Ihre wirtschaftliche Selbständigkeit aufgegeben haben und nicht mehr an Ihre frühere berufliche Stellung anknüpfen können. Die blosse Ehedauer von 10+ Jahren oder gemeinsame Kinder begründen keine automatische Lebensprägung mehr.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie wird der nacheheliche Unterhalt berechnet?</h3>
+                <p class="text-gray-700">Die Berechnung erfolgt nach der zweistufigen Methode mit Überschussverteilung (BGE 147 III 293). Zunächst werden die Einkommen und der familienrechtliche Grundbedarf beider Ehegatten ermittelt. Der Überschuss (Gesamteinkommen minus Gesamtbedarf) wird dann hälftig verteilt. Der Unterhaltsanspruch ergibt sich aus: (Grundbedarf + Überschussanteil) minus eigenes Einkommen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie lange muss nachehelicher Unterhalt bezahlt werden?</h3>
+                <p class="text-gray-700">Der nacheheliche Unterhalt ist in der Regel befristet. Die Dauer hängt von der Ehedauer, den Umständen und der Möglichkeit der wirtschaftlichen Reintegration ab. Bei kürzeren Ehen beträgt die Dauer oft 2-5 Jahre (Eingliederungsunterhalt). Bei langjährigen traditionellen Ehen kann der Unterhalt bis zum AHV-Alter des Pflichtigen dauern. Ein Anspruch auf lebenslängliche Gleichstellung besteht nicht.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist eine lebensprägende Ehe?</h3>
+                <p class="text-gray-700">Eine lebensprägende Ehe liegt vor, wenn ein Ehegatte aufgrund eines gemeinsamen Lebensplans seine wirtschaftliche Selbständigkeit zugunsten von Haushaltsbesorgung und Kinderbetreuung aufgegeben hat und ihm eine Rückkehr zur früheren beruflichen Stellung nicht mehr möglich ist. Das Bundesgericht hat die bisherigen Vermutungen (10-Jahres-Regel, Kinder-Regel) aufgegeben - es ist stets eine Einzelfallprüfung erforderlich.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wann endet der nacheheliche Unterhalt?</h3>
+                <p class="text-gray-700">Der nacheheliche Unterhalt endet bei: Tod des Berechtigten oder Pflichtigen, Wiederverheiratung des Berechtigten (sofortiges Erlöschen), qualifiziertem Konkubinat (ab ca. 5 Jahren), Ablauf der Befristung oder wenn der Berechtigte seinen Unterhalt selbst decken kann. Bei einem qualifizierten Konkubinat erlischt der Anspruch vollständig und endgültig.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann der nacheheliche Unterhalt nachträglich geändert werden?</h3>
+                <p class="text-gray-700">Ja, bei erheblicher und dauernder Veränderung der Verhältnisse kann der Unterhalt gemäss Art. 129 ZGB herabgesetzt, sistiert oder aufgehoben werden. Die Veränderung muss unvorhersehbar gewesen sein und mindestens ca. 10% der Leistungsfähigkeit betragen. Eine Erhöhung ist nur ausnahmsweise möglich - innert 5 Jahren nach Rechtskraft und nur wenn ursprünglich keine volle Deckung möglich war.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was gilt bei einem neuen Partner (Konkubinat)?</h3>
+                <p class="text-gray-700">Bei einem qualifizierten Konkubinat (stabil, auf Dauer ausgerichtet, eheähnlich) erlischt der Unterhaltsanspruch vollständig und endgültig. Das Bundesgericht geht bei einem Konkubinat von mindestens 5 Jahren grundsätzlich von einer Qualifikation aus. Bei einem einfachen Konkubinat kann der Unterhalt nur sistiert werden; bei Beendigung lebt er wieder auf. Auch Einsparungen durch Zusammenleben können angerechnet werden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist das Schulstufenmodell?</h3>
+                <p class="text-gray-700">Das Schulstufenmodell regelt die Erwerbsobliegenheit des hauptbetreuenden Elternteils. Ab Schulpflicht des jüngsten Kindes ist 50% Erwerbstätigkeit zumutbar, ab Sekundarstufe I (ca. 12 Jahre) 80%, ab 16 Jahren 100%. Das Modell ersetzt die frühere 10/16-Regel und führt zu einer früheren Erwerbsobliegenheit.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich auf nachehelichen Unterhalt verzichten?</h3>
+                <p class="text-gray-700">Ja, ein Verzicht auf nachehelichen Unterhalt in der Scheidungskonvention ist grundsätzlich möglich. Das Gericht prüft jedoch, ob der Verzicht nicht offensichtlich unangemessen ist. Ein Verzicht wird insbesondere dann nicht genehmigt, wenn dadurch die Sozialhilfe belastet würde.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen nachehelichem Unterhalt und Trennungsunterhalt?</h3>
+                <p class="text-gray-700">Der Trennungsunterhalt wird während des Getrenntlebens vor der Scheidung geschuldet und basiert auf der fortbestehenden ehelichen Beistandspflicht (Art. 163 ZGB). Der nacheheliche Unterhalt wird erst nach rechtskräftiger Scheidung geschuldet und unterliegt strengeren Voraussetzungen - insbesondere muss die Ehe lebensprägend gewesen sein. Beim Trennungsunterhalt gilt der Grundsatz der Gleichstellung der Ehegatten stärker.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Nachehelicher Unterhalt in der Schweiz: Voraussetzungen, Berechnung & Dauer",
+        "description": "Nachehelicher Unterhalt Schweiz: Voraussetzungen nach Art. 125 ZGB, lebensprägende Ehe, zweistufige Berechnungsmethode, Dauer & aktuelle BGE-Rechtsprechung.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2026-01-21",
+        "dateModified": "2026-01-21",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/unterhalt/nachehelicher-unterhalt"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Wann habe ich Anspruch auf nachehelichen Unterhalt in der Schweiz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sie haben Anspruch auf nachehelichen Unterhalt, wenn Sie Ihren gebührenden Unterhalt nicht selbst decken können und die Ehe lebensprägend war (Art. 125 ZGB). Lebensprägend ist eine Ehe, wenn Sie aufgrund der ehelichen Aufgabenteilung Ihre wirtschaftliche Selbständigkeit aufgegeben haben und nicht mehr an Ihre frühere berufliche Stellung anknüpfen können. Die blosse Ehedauer von 10+ Jahren oder gemeinsame Kinder begründen keine automatische Lebensprägung mehr."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie wird der nacheheliche Unterhalt berechnet?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Berechnung erfolgt nach der zweistufigen Methode mit Überschussverteilung (BGE 147 III 293). Zunächst werden die Einkommen und der familienrechtliche Grundbedarf beider Ehegatten ermittelt. Der Überschuss (Gesamteinkommen minus Gesamtbedarf) wird dann hälftig verteilt. Der Unterhaltsanspruch ergibt sich aus: (Grundbedarf + Überschussanteil) minus eigenes Einkommen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie lange muss nachehelicher Unterhalt bezahlt werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der nacheheliche Unterhalt ist in der Regel befristet. Die Dauer hängt von der Ehedauer, den Umständen und der Möglichkeit der wirtschaftlichen Reintegration ab. Bei kürzeren Ehen beträgt die Dauer oft 2-5 Jahre (Eingliederungsunterhalt). Bei langjährigen traditionellen Ehen kann der Unterhalt bis zum AHV-Alter des Pflichtigen dauern. Ein Anspruch auf lebenslängliche Gleichstellung besteht nicht."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist eine lebensprägende Ehe?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Eine lebensprägende Ehe liegt vor, wenn ein Ehegatte aufgrund eines gemeinsamen Lebensplans seine wirtschaftliche Selbständigkeit zugunsten von Haushaltsbesorgung und Kinderbetreuung aufgegeben hat und ihm eine Rückkehr zur früheren beruflichen Stellung nicht mehr möglich ist. Das Bundesgericht hat die bisherigen Vermutungen (10-Jahres-Regel, Kinder-Regel) aufgegeben - es ist stets eine Einzelfallprüfung erforderlich."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wann endet der nacheheliche Unterhalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der nacheheliche Unterhalt endet bei: Tod des Berechtigten oder Pflichtigen, Wiederverheiratung des Berechtigten (sofortiges Erlöschen), qualifiziertem Konkubinat (ab ca. 5 Jahren), Ablauf der Befristung oder wenn der Berechtigte seinen Unterhalt selbst decken kann. Bei einem qualifizierten Konkubinat erlischt der Anspruch vollständig und endgültig."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann der nacheheliche Unterhalt nachträglich geändert werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, bei erheblicher und dauernder Veränderung der Verhältnisse kann der Unterhalt gemäss Art. 129 ZGB herabgesetzt, sistiert oder aufgehoben werden. Die Veränderung muss unvorhersehbar gewesen sein und mindestens ca. 10% der Leistungsfähigkeit betragen. Eine Erhöhung ist nur ausnahmsweise möglich - innert 5 Jahren nach Rechtskraft und nur wenn ursprünglich keine volle Deckung möglich war."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was gilt bei einem neuen Partner (Konkubinat)?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei einem qualifizierten Konkubinat (stabil, auf Dauer ausgerichtet, eheähnlich) erlischt der Unterhaltsanspruch vollständig und endgültig. Das Bundesgericht geht bei einem Konkubinat von mindestens 5 Jahren grundsätzlich von einer Qualifikation aus. Bei einem einfachen Konkubinat kann der Unterhalt nur sistiert werden; bei Beendigung lebt er wieder auf. Auch Einsparungen durch Zusammenleben können angerechnet werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist das Schulstufenmodell?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das Schulstufenmodell regelt die Erwerbsobliegenheit des hauptbetreuenden Elternteils. Ab Schulpflicht des jüngsten Kindes ist 50% Erwerbstätigkeit zumutbar, ab Sekundarstufe I (ca. 12 Jahre) 80%, ab 16 Jahren 100%. Das Modell ersetzt die frühere 10/16-Regel und führt zu einer früheren Erwerbsobliegenheit."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich auf nachehelichen Unterhalt verzichten?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, ein Verzicht auf nachehelichen Unterhalt in der Scheidungskonvention ist grundsätzlich möglich. Das Gericht prüft jedoch, ob der Verzicht nicht offensichtlich unangemessen ist. Ein Verzicht wird insbesondere dann nicht genehmigt, wenn dadurch die Sozialhilfe belastet würde."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen nachehelichem Unterhalt und Trennungsunterhalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der Trennungsunterhalt wird während des Getrenntlebens vor der Scheidung geschuldet und basiert auf der fortbestehenden ehelichen Beistandspflicht (Art. 163 ZGB). Der nacheheliche Unterhalt wird erst nach rechtskräftiger Scheidung geschuldet und unterliegt strengeren Voraussetzungen - insbesondere muss die Ehe lebensprägend gewesen sein. Beim Trennungsunterhalt gilt der Grundsatz der Gleichstellung der Ehegatten stärker."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Unterhalt",
+                "item": "https://familienrechtanwalt.ch/unterhalt"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Nachehelicher Unterhalt in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/unterhalt/nachehelicher-unterhalt"
+            }
+        ]
+    })} />
+
 </ArticleLayout>

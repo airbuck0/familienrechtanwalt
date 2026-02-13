@@ -1,0 +1,507 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+---
+
+<ArticleLayout
+    title="Adoptionsverfahren in der Schweiz: Ablauf, Dauer, Behörden und Kosten"
+    description="Adoptionsverfahren Schweiz: Kompletter Ablauf Schritt für Schritt, Eignungsabklärung, KESB, Dauer, benötigte Dokumente & Kosten. Praxisleitfaden 2025."
+    keywords="Adoptionsverfahren Schweiz, Adoption Ablauf, Adoption Schweiz Schritte, Eignungsabklärung Adoption, Adoption KESB, Adoptionsgesuch Schweiz"
+    category="Adoption"
+    categoryLink="/adoption"
+>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Das Adoptionsverfahren beginnt mit der Eignungsabklärung durch die kantonale Zentralbehörde und endet mit dem rechtskräftigen Adoptionsentscheid (Art. 268 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Eignungsabklärung umfasst persönliche Gespräche, Hausbesuche und die Prüfung aller persönlichen, familiären, gesundheitlichen und wirtschaftlichen Verhältnisse (Art. 5 ff. AdoV).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Verfahrensdauer beträgt bei einer Inlandsadoption 1 bis 3 Jahre, bei einer Stiefkindadoption 6 bis 18 Monate und bei einer internationalen Adoption 3 bis 5 Jahre oder länger.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>An dem Verfahren sind mehrere Behörden beteiligt: kantonale Zentralbehörde, KESB, kantonales Gericht und bei internationalen Adoptionen das Bundesamt für Justiz.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Gesamtkosten variieren je nach Adoptionsform zwischen CHF 1'500 (Erwachsenenadoption) und CHF 50'000+ (internationale Adoption).</span>
+            </li>
+        </ul>
+    </div>
+
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Das Adoptionsverfahren in der Schweiz ist ein sorgfältig strukturierter Prozess, der sicherstellen soll, dass jede Adoption dem Wohl des Kindes dient. Von der ersten Beratung über die umfassende Eignungsabklärung bis zum rechtskräftigen Adoptionsentscheid sind zahlreiche Schritte und Behörden involviert. Dieser Artikel führt Sie durch den gesamten Verfahrensablauf und zeigt, was Sie in jeder Phase erwartet.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Überblick: Die Phasen des Adoptionsverfahrens</h2>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Phase</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Inhalt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zuständige Stelle</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Dauer (ca.)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">1. Information und Beratung</td>
+                    <td class="px-6 py-4 text-gray-700">Erstberatung, Informationsbeschaffung</td>
+                    <td class="px-6 py-4 text-gray-700">Kantonale Zentralbehörde</td>
+                    <td class="px-6 py-4 text-gray-700">1–3 Monate</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">2. Eignungsabklärung</td>
+                    <td class="px-6 py-4 text-gray-700">Umfassende Prüfung der Eignung</td>
+                    <td class="px-6 py-4 text-gray-700">Kantonale Zentralbehörde</td>
+                    <td class="px-6 py-4 text-gray-700">3–12 Monate</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">3. Zustimmungen einholen</td>
+                    <td class="px-6 py-4 text-gray-700">Zustimmung leiblicher Eltern, Kind, Ehegatte</td>
+                    <td class="px-6 py-4 text-gray-700">KESB</td>
+                    <td class="px-6 py-4 text-gray-700">1–6 Monate</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">4. Pflegeverhältnis</td>
+                    <td class="px-6 py-4 text-gray-700">Kind lebt bei Adoptiveltern</td>
+                    <td class="px-6 py-4 text-gray-700">KESB / Zentralbehörde</td>
+                    <td class="px-6 py-4 text-gray-700">Mind. 12 Monate</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">5. Adoptionsgesuch</td>
+                    <td class="px-6 py-4 text-gray-700">Formelles Gesuch einreichen</td>
+                    <td class="px-6 py-4 text-gray-700">Kantonale Behörde / Gericht</td>
+                    <td class="px-6 py-4 text-gray-700">1–3 Monate</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">6. Adoptionsentscheid</td>
+                    <td class="px-6 py-4 text-gray-700">Prüfung und Ausspruch der Adoption</td>
+                    <td class="px-6 py-4 text-gray-700">Kantonales Gericht / Behörde</td>
+                    <td class="px-6 py-4 text-gray-700">1–6 Monate</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">7. Zivilstandseintragung</td>
+                    <td class="px-6 py-4 text-gray-700">Eintragung im Register</td>
+                    <td class="px-6 py-4 text-gray-700">Zivilstandsamt</td>
+                    <td class="px-6 py-4 text-gray-700">1–4 Wochen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Phase 1: Information und Beratung</h2>
+
+    <p class="text-gray-700 mb-6">Der erste Schritt auf dem Weg zur Adoption ist die Kontaktaufnahme mit der kantonalen Zentralbehörde des Wohnsitzkantons. Jeder Kanton hat eine solche Zentralbehörde, die für alle Adoptionsfragen zuständig ist. Sie informiert über die verschiedenen Adoptionsformen, die gesetzlichen <a href="/adoption/adoptionsvoraussetzungen" class="text-gold hover:underline font-semibold">Adoptionsvoraussetzungen</a>, den Verfahrensablauf und die zu erwartenden Kosten.</p>
+
+    <p class="text-gray-700 mb-6">In vielen Kantonen bietet die Zentralbehörde ein kostenloses Erstgespräch an, in dem die individuelle Situation der Adoptionsbewerber besprochen wird. Dieses Gespräch dient der Orientierung und ermöglicht eine erste Einschätzung, welche Adoptionsform in Frage kommt und welche Schritte als nächstes einzuleiten sind.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Phase 2: Die Eignungsabklärung</h2>
+
+    <p class="text-gray-700 mb-6">Die Eignungsabklärung ist das Herzstück des Adoptionsverfahrens. Sie wird von der kantonalen Zentralbehörde durchgeführt und dient der umfassenden Beurteilung, ob die Adoptionsbewerber die persönlichen, familiären, gesundheitlichen und wirtschaftlichen Voraussetzungen für eine Adoption erfüllen (Art. 5 ff. AdoV).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Einzureichende Unterlagen</h3>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Dokument</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Motivationsschreiben</td>
+                    <td class="px-6 py-4 text-gray-700">Ausführliche Darlegung der Gründe und Motivation für die Adoption</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Lebenslauf</td>
+                    <td class="px-6 py-4 text-gray-700">Tabellarischer Lebenslauf beider Bewerber (bei Paaren)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Strafregisterauszug</td>
+                    <td class="px-6 py-4 text-gray-700">Aktueller Auszug (nicht älter als 3 Monate)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Ärztliches Zeugnis</td>
+                    <td class="px-6 py-4 text-gray-700">Bestätigung der physischen und psychischen Gesundheit</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Betreibungsregisterauszug</td>
+                    <td class="px-6 py-4 text-gray-700">Nachweis der finanziellen Unbescholtenheit</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Steuerveranlagung / Lohnausweis</td>
+                    <td class="px-6 py-4 text-gray-700">Nachweis der wirtschaftlichen Leistungsfähigkeit (letzte 2–3 Jahre)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Familienschein</td>
+                    <td class="px-6 py-4 text-gray-700">Nachweis der aktuellen Familienverhältnisse</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Wohnsitznachweis</td>
+                    <td class="px-6 py-4 text-gray-700">Meldebestätigung, ggf. Nachweis des gemeinsamen Haushalts</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ablauf der Eignungsabklärung</h3>
+
+    <p class="text-gray-700 mb-6">Die Eignungsabklärung erstreckt sich über mehrere Monate und umfasst typischerweise folgende Elemente:</p>
+
+    <p class="text-gray-700 mb-6"><strong>Informationsveranstaltung:</strong> Viele kantonale Zentralbehörden bieten obligatorische Informationsveranstaltungen für Adoptionsbewerber an, in denen die rechtlichen, psychologischen und praktischen Aspekte der Adoption erläutert werden.</p>
+
+    <p class="text-gray-700 mb-6"><strong>Persönliche Gespräche:</strong> Es finden mehrere vertiefte Gespräche mit Fachpersonen (Sozialarbeiter, Psychologen) statt. Diese Gespräche behandeln die Lebensgeschichte der Bewerber, ihre Motivation für die Adoption, ihre Erziehungsvorstellungen, ihre Auseinandersetzung mit dem Thema Adoption und ihre Erwartungen an das Adoptivkind.</p>
+
+    <p class="text-gray-700 mb-6"><strong>Hausbesuche:</strong> Die Fachpersonen besuchen die Bewerber mindestens einmal in ihrem Zuhause. Der Hausbesuch dient der Beurteilung der Wohnverhältnisse, des familiären Umfelds und der Alltagssituation. Es wird geprüft, ob das Wohnumfeld kindgerecht ist und ob die Bewerber ein stabiles, sicheres Zuhause bieten können.</p>
+
+    <p class="text-gray-700 mb-6"><strong>Paargespräche:</strong> Bei Paaren werden sowohl gemeinsame Gespräche als auch Einzelgespräche durchgeführt. Die Qualität und Stabilität der Beziehung wird beurteilt, ebenso wie die gemeinsame Vorstellung von der Adoption und der künftigen Familiengestaltung.</p>
+
+    <p class="text-gray-700 mb-6"><strong>Abklärungsbericht:</strong> Am Ende der Eignungsabklärung erstellt die Fachperson einen umfassenden Abklärungsbericht mit einer Eignungsbeurteilung. Dieser Bericht bildet die Grundlage für das weitere Verfahren.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Tipp: Vorbereitung auf die Eignungsabklärung</p>
+        <p class="text-gray-700">Bereiten Sie sich gründlich auf die Eignungsabklärung vor. Setzen Sie sich ehrlich mit Ihrer Motivation, Ihren Stärken und Schwächen auseinander. Die Fachpersonen suchen keine «perfekten» Eltern, sondern Personen, die reflektiert, belastbar und bereit sind, sich auf die besonderen Herausforderungen einer Adoption einzulassen.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Phase 3: Zustimmungen einholen</h2>
+
+    <p class="text-gray-700 mb-6">Parallel zur oder nach der Eignungsabklärung müssen die erforderlichen Zustimmungen eingeholt werden.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Zustimmung der leiblichen Eltern</h3>
+
+    <p class="text-gray-700 mb-6">Bei der Kindesadoption müssen beide leiblichen Eltern der Adoption zustimmen (Art. 265a ZGB). Die Zustimmung wird vor der KESB erklärt und kann frühestens sechs Wochen nach der Geburt erfolgen. Sie ist unwiderruflich, sobald die KESB sie entgegengenommen hat (Art. 265b Abs. 3 ZGB).</p>
+
+    <p class="text-gray-700 mb-6">Bei der <a href="/adoption/stiefkindadoption" class="text-gold hover:underline font-semibold">Stiefkindadoption</a> muss der andere leibliche Elternteil – also der Elternteil, der nicht im gemeinsamen Haushalt lebt – zustimmen. Falls die Zustimmung verweigert wird, prüft die Behörde, ob diese nach Art. 265c ZGB ersetzt werden kann.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Anhörung und Zustimmung des Kindes</h3>
+
+    <p class="text-gray-700 mb-6">Urteilsfähige Kinder müssen der Adoption zustimmen (Art. 265 Abs. 2 ZGB). Auch jüngere Kinder werden dem Alter entsprechend angehört. Die Anhörung erfolgt kindgerecht und vertraulich durch eine Fachperson.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Phase 4: Das Pflegeverhältnis</h2>
+
+    <p class="text-gray-700 mb-6">Vor dem Ausspruch der Adoption muss das Kind mindestens ein Jahr bei den künftigen Adoptiveltern gelebt und von ihnen gepflegt und erzogen worden sein (Art. 264 Abs. 2 ZGB). Für die Aufnahme eines nicht-verwandten Kindes ist eine Pflegeplatzbewilligung der KESB erforderlich (Art. 316 ZGB i.V.m. PAVO).</p>
+
+    <p class="text-gray-700 mb-6">Während des Pflegeverhältnisses wird die Familie von der Zentralbehörde begleitet. Regelmässige Besuche durch Fachpersonen dienen der Beobachtung der Beziehungsentwicklung und der Integration des Kindes. Die Ergebnisse fliessen in die spätere Adoptionsbeurteilung ein.</p>
+
+    <p class="text-gray-700 mb-6">Bei der Stiefkindadoption entfällt die Pflegeplatzbewilligung, da das Kind bei seinem leiblichen Elternteil lebt. Die einjährige Frist läuft ab dem Zeitpunkt, ab dem der gemeinsame Haushalt besteht. Bei der <a href="/adoption/erwachsenenadoption" class="text-gold hover:underline font-semibold">Erwachsenenadoption</a> entfällt das Pflegeverhältnis gänzlich.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Phase 5: Das formelle Adoptionsgesuch</h2>
+
+    <p class="text-gray-700 mb-6">Nach Ablauf der einjährigen Pflegezeit kann das formelle Adoptionsgesuch bei der zuständigen kantonalen Behörde eingereicht werden (Art. 268 ZGB). Das Gesuch enthält den Antrag auf Ausspruch der Adoption, die Dokumentation der erfüllten Voraussetzungen, den Abklärungsbericht der Zentralbehörde, die Zustimmungserklärungen und die aktuellen Unterlagen der Adoptiveltern.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Phase 6: Der Adoptionsentscheid</h2>
+
+    <p class="text-gray-700 mb-6">Die zuständige kantonale Behörde – in den meisten Kantonen das Gericht, in einigen Kantonen eine Verwaltungsbehörde – prüft alle Voraussetzungen und spricht die Adoption aus, sofern sie dem Kindeswohl dient (Art. 268 ZGB). Der Entscheid wird den Beteiligten schriftlich eröffnet.</p>
+
+    <p class="text-gray-700 mb-6">Gegen den Adoptionsentscheid können die Beteiligten Beschwerde erheben. Nach Ablauf der Beschwerdefrist – in der Regel 30 Tage – wird der Entscheid rechtskräftig. Ab diesem Zeitpunkt entfaltet die Adoption ihre vollen rechtlichen Wirkungen.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Phase 7: Zivilstandseintragung und Namenregelung</h2>
+
+    <p class="text-gray-700 mb-6">Nach Rechtskraft des Adoptionsentscheids wird die Adoption im Zivilstandsregister eingetragen. Der Adoptivelternteil wird als Elternteil des Kindes registriert. Die Namensregelung wird im Adoptionsentscheid festgelegt – das Kind kann den Familiennamen der Adoptiveltern annehmen.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Zuständige Behörden im Überblick</h2>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Behörde</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aufgaben im Adoptionsverfahren</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Kantonale Zentralbehörde für Adoption</td>
+                    <td class="px-6 py-4 text-gray-700">Erstberatung, Eignungsabklärung, Begleitung während Pflegeverhältnis, Abklärungsbericht, Koordination bei internationalen Adoptionen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">KESB (Kindes- und Erwachsenenschutzbehörde)</td>
+                    <td class="px-6 py-4 text-gray-700">Entgegennahme der Zustimmung leiblicher Eltern, Pflegeplatzbewilligung, Kindesanhörung, in einigen Kantonen Adoptionsentscheid</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Kantonales Gericht</td>
+                    <td class="px-6 py-4 text-gray-700">Ausspruch der Adoption (in den meisten Kantonen), Ersetzung der Zustimmung leiblicher Eltern</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Bundesamt für Justiz (BJ)</td>
+                    <td class="px-6 py-4 text-gray-700">Bundeszentralbehörde für internationale Adoptionen, Bewilligung von Vermittlungsstellen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Zivilstandsamt</td>
+                    <td class="px-6 py-4 text-gray-700">Eintragung der Adoption im Zivilstandsregister, Namenregelung</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Verfahrensdauer nach Adoptionsform</h2>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Adoptionsform</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Typische Dauer</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Einflussfaktoren</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Stiefkindadoption (einvernehmlich)</td>
+                    <td class="px-6 py-4 text-gray-700">6–18 Monate</td>
+                    <td class="px-6 py-4 text-gray-700">Zustimmung des anderen Elternteils, kantonale Unterschiede</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Stiefkindadoption (streitig)</td>
+                    <td class="px-6 py-4 text-gray-700">1–3 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">Verfahren zur Ersetzung der Zustimmung, gerichtliche Verfahren</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Gemeinschaftliche Adoption (Inland)</td>
+                    <td class="px-6 py-4 text-gray-700">1–3 Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">Wartezeit auf Kind, Pflegeverhältnis, kantonale Unterschiede</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Internationale Adoption</td>
+                    <td class="px-6 py-4 text-gray-700">3–5+ Jahre</td>
+                    <td class="px-6 py-4 text-gray-700">Herkunftsland, Matching, Reise, Anerkennung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Erwachsenenadoption</td>
+                    <td class="px-6 py-4 text-gray-700">3–12 Monate</td>
+                    <td class="px-6 py-4 text-gray-700">Nachweis des wichtigen Grundes, Anhörung Nachkommen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kosten des Adoptionsverfahrens</h2>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Adoptionsform</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gesamtkosten (ca.)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Stiefkindadoption</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 2'000 – 8'000</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Gemeinschaftliche Adoption (Inland)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 2'000 – 10'000</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Internationale Adoption</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 20'000 – 50'000+</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Erwachsenenadoption</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'500 – 6'000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Beschwerde und Rechtsmittel</h2>
+
+    <p class="text-gray-700 mb-6">Gegen den Adoptionsentscheid stehen den Beteiligten Beschwerdemöglichkeiten offen. Die konkrete Beschwerdeinstanz richtet sich nach kantonalem Recht. In der Regel kann zunächst bei der übergeordneten kantonalen Instanz (Obergericht, Verwaltungsgericht) Beschwerde erhoben werden. Gegen den kantonalen Entscheid kann unter den Voraussetzungen des Bundesgerichtsgesetzes (BGG) Beschwerde beim Bundesgericht geführt werden.</p>
+
+    <p class="text-gray-700 mb-6">Die Beschwerdefrist beträgt in der Regel 30 Tage ab Zustellung des Entscheids. In der Praxis werden Adoptionsentscheide nur zurückhaltend aufgehoben, da die Behörden einen erheblichen Ermessensspielraum haben.</p>
+
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">Obwohl das Adoptionsverfahren in vielen Fällen ohne anwaltliche Vertretung durchlaufen werden kann, gibt es zahlreiche Situationen, in denen die Unterstützung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> den Unterschied zwischen Erfolg und Ablehnung ausmachen kann.</p>
+
+        <p class="text-gray-700 mb-6">Anwaltliche Beratung ist insbesondere empfohlen bei der Vorbereitung der Eignungsabklärung, wenn Unsicherheiten bestehen, bei der Ersetzung der Zustimmung eines leiblichen Elternteils, bei negativem Ergebnis der Eignungsabklärung und geplanter Beschwerde, bei internationalen Adoptionen mit komplexen Zuständigkeitsfragen und bei Fragen zu den erbrechtlichen und unterhaltsrechtlichen Auswirkungen.</p>
+
+        <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> mit Spezialisierung im Familienrecht kennt die Praxis der kantonalen Behörden und kann Ihnen helfen, das Verfahren effizient und zielgerichtet zu durchlaufen. Gerade bei komplexen Konstellationen ist die frühzeitige Beratung durch einen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> eine lohnende Investition.</p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Planen Sie eine Adoption und möchten sich optimal auf das Verfahren vorbereiten? Lassen Sie Ihre Situation von einem erfahrenen Fachanwalt für Familienrecht unverbindlich einschätzen.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- Fazit -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Das Adoptionsverfahren in der Schweiz ist ein sorgfältig strukturierter Prozess, der das Kindeswohl in den Mittelpunkt stellt. Die Eignungsabklärung, die Zustimmungserfordernisse und das einjährige Pflegeverhältnis dienen alle dem Ziel, eine fundierte und verantwortungsvolle Adoptionsentscheidung zu ermöglichen.</p>
+
+    <p class="text-gray-700 mb-6">Die Verfahrensdauer und die Kosten variieren erheblich je nach Adoptionsform. Eine gute Vorbereitung, die frühzeitige Zusammenstellung aller erforderlichen Dokumente und bei Bedarf die Unterstützung durch einen spezialisierten Anwalt können den Prozess massgeblich erleichtern. Ausführliche Informationen zu den einzelnen Adoptionsformen finden Sie in unseren Artikeln zur <a href="/adoption/stiefkindadoption" class="text-gold hover:underline font-semibold">Stiefkindadoption</a>, zur <a href="/adoption/internationale-adoption" class="text-gold hover:underline font-semibold">internationalen Adoption</a> und zur <a href="/adoption/erwachsenenadoption" class="text-gold hover:underline font-semibold">Erwachsenenadoption</a>.</p>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie läuft ein Adoptionsverfahren in der Schweiz ab?</h3>
+                <p class="text-gray-700">Das Verfahren umfasst sieben Phasen: Beratung, Eignungsabklärung, Einholen der Zustimmungen, Pflegeverhältnis (mind. 1 Jahr), Einreichung des Adoptionsgesuchs, Adoptionsentscheid durch die zuständige Behörde und Eintragung im Zivilstandsregister. Die Gesamtdauer beträgt je nach Adoptionsform 6 Monate bis 5 Jahre.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wo muss ich ein Adoptionsgesuch einreichen?</h3>
+                <p class="text-gray-700">Das Adoptionsgesuch wird bei der zuständigen kantonalen Behörde am Wohnsitz der Adoptiveltern eingereicht (Art. 268 ZGB). Der erste Anlaufpunkt ist die kantonale Zentralbehörde für Adoption, die über den weiteren Verfahrensweg informiert. Die Eignungsabklärung beginnt ebenfalls dort.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Welche Dokumente brauche ich für eine Adoption?</h3>
+                <p class="text-gray-700">Zu den wichtigsten Dokumenten gehören: Motivationsschreiben, Lebenslauf, aktueller Strafregisterauszug, ärztliches Zeugnis, Betreibungsregisterauszug, Steuerveranlagung, Familienschein, Wohnsitznachweis und je nach Adoptionsform weitere Unterlagen. Die genauen Anforderungen variieren je nach Kanton.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie lange dauert die Eignungsabklärung?</h3>
+                <p class="text-gray-700">Die Eignungsabklärung dauert in der Regel 3 bis 12 Monate. Sie umfasst mehrere persönliche Gespräche, mindestens einen Hausbesuch, die Prüfung aller eingereichten Unterlagen und die Erstellung eines Abklärungsberichts. Bei internationalen Adoptionen kann sie länger dauern.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was kostet das Adoptionsverfahren insgesamt?</h3>
+                <p class="text-gray-700">Die Kosten variieren je nach Adoptionsform: Stiefkindadoption CHF 2'000–8'000, gemeinschaftliche Adoption (Inland) CHF 2'000–10'000, internationale Adoption CHF 20'000–50'000+, Erwachsenenadoption CHF 1'500–6'000. Darin enthalten sind Eignungsabklärung, Behördengebühren, Dokumentenkosten und ggf. anwaltliche Beratung.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert, wenn das Adoptionsgesuch abgelehnt wird?</h3>
+                <p class="text-gray-700">Gegen eine Ablehnung können die Bewerber Beschwerde bei der übergeordneten kantonalen Instanz erheben. Die Beschwerdefrist beträgt in der Regel 30 Tage. In manchen Fällen empfiehlt die Behörde, zu einem späteren Zeitpunkt erneut ein Gesuch einzureichen, wenn sich die Lebensumstände verändert haben.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Welche Rolle spielt die KESB im Adoptionsverfahren?</h3>
+                <p class="text-gray-700">Die KESB (Kindes- und Erwachsenenschutzbehörde) nimmt die Zustimmung der leiblichen Eltern entgegen, erteilt die Pflegeplatzbewilligung und hört das Kind an. In einigen Kantonen ist die KESB auch für den Adoptionsentscheid selbst zuständig. Sie spielt somit eine zentrale Rolle im gesamten Verfahren.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Warum muss das Kind ein Jahr bei den Adoptiveltern leben?</h3>
+                <p class="text-gray-700">Die einjährige Pflegezeit (Art. 264 Abs. 2 ZGB) dient der Sicherstellung, dass eine tragfähige Beziehung zwischen dem Kind und den Adoptiveltern entstanden ist. Die Behörden beobachten während dieser Zeit die Entwicklung des Kindes und die Eignung der Adoptiveltern. Erst wenn sich zeigt, dass die Adoption dem Kindeswohl dient, wird sie ausgesprochen.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Adoptionsverfahren in der Schweiz: Ablauf, Dauer, Behörden und Kosten",
+        "description": "Adoptionsverfahren Schweiz: Kompletter Ablauf Schritt für Schritt, Eignungsabklärung, KESB, Dauer, benötigte Dokumente & Kosten. Praxisleitfaden 2025.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-02-12",
+        "dateModified": "2025-02-12",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/adoption/adoptionsverfahren"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Wie läuft ein Adoptionsverfahren in der Schweiz ab?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das Verfahren umfasst sieben Phasen: Beratung, Eignungsabklärung, Einholen der Zustimmungen, Pflegeverhältnis (mind. 1 Jahr), Einreichung des Adoptionsgesuchs, Adoptionsentscheid durch die zuständige Behörde und Eintragung im Zivilstandsregister. Die Gesamtdauer beträgt je nach Adoptionsform 6 Monate bis 5 Jahre."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wo muss ich ein Adoptionsgesuch einreichen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das Adoptionsgesuch wird bei der zuständigen kantonalen Behörde am Wohnsitz der Adoptiveltern eingereicht (Art. 268 ZGB). Der erste Anlaufpunkt ist die kantonale Zentralbehörde für Adoption, die über den weiteren Verfahrensweg informiert."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welche Dokumente brauche ich für eine Adoption?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Zu den wichtigsten Dokumenten gehören: Motivationsschreiben, Lebenslauf, aktueller Strafregisterauszug, ärztliches Zeugnis, Betreibungsregisterauszug, Steuerveranlagung, Familienschein, Wohnsitznachweis und je nach Adoptionsform weitere Unterlagen. Die genauen Anforderungen variieren je nach Kanton."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie lange dauert die Eignungsabklärung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Eignungsabklärung dauert in der Regel 3 bis 12 Monate. Sie umfasst mehrere persönliche Gespräche, mindestens einen Hausbesuch, die Prüfung aller eingereichten Unterlagen und die Erstellung eines Abklärungsberichts. Bei internationalen Adoptionen kann sie länger dauern."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was kostet das Adoptionsverfahren insgesamt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Kosten variieren je nach Adoptionsform: Stiefkindadoption CHF 2'000–8'000, gemeinschaftliche Adoption (Inland) CHF 2'000–10'000, internationale Adoption CHF 20'000–50'000+, Erwachsenenadoption CHF 1'500–6'000."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert, wenn das Adoptionsgesuch abgelehnt wird?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Gegen eine Ablehnung können die Bewerber Beschwerde bei der übergeordneten kantonalen Instanz erheben. Die Beschwerdefrist beträgt in der Regel 30 Tage. In manchen Fällen empfiehlt die Behörde, zu einem späteren Zeitpunkt erneut ein Gesuch einzureichen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welche Rolle spielt die KESB im Adoptionsverfahren?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die KESB nimmt die Zustimmung der leiblichen Eltern entgegen, erteilt die Pflegeplatzbewilligung und hört das Kind an. In einigen Kantonen ist die KESB auch für den Adoptionsentscheid selbst zuständig."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Warum muss das Kind ein Jahr bei den Adoptiveltern leben?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die einjährige Pflegezeit (Art. 264 Abs. 2 ZGB) dient der Sicherstellung, dass eine tragfähige Beziehung zwischen dem Kind und den Adoptiveltern entstanden ist. Die Behörden beobachten während dieser Zeit die Entwicklung des Kindes und die Eignung der Adoptiveltern."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Adoption",
+                "item": "https://familienrechtanwalt.ch/adoption"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Adoptionsverfahren in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/adoption/adoptionsverfahren"
+            }
+        ]
+    })} />
+
+</ArticleLayout>

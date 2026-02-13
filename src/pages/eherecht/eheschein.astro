@@ -9,6 +9,33 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
     category="Eherecht"
     categoryLink="/eherecht"
 >
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Der Eheschein (Trauungsurkunde) kostet schweizweit einheitlich CHF 30.00 – sowohl für die nationale als auch für die internationale Version (CIEC).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Zuständig ist ausschliesslich das Zivilstandsamt, das die Eheschliessung vorgenommen hat – nicht das Amt am aktuellen Wohnort.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Für die Verwendung im Ausland: Internationale CIEC-Urkunden benötigen in Mitgliedstaaten keine Beglaubigung – sonst ist eine Apostille oder Legalisation erforderlich.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Elektronische Ehescheine sind seit 2019 verfügbar und haben denselben Rechtswert wie Papierurkunden – müssen aber digital aufbewahrt werden.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Lieferzeit: 5-10 Arbeitstage bei Postversand, bei persönlicher Abholung oft sofort erhältlich.</span>
+            </li>
+        </ul>
+    </div>
+
     <!-- Einleitung -->
     <section class="bg-white rounded-lg shadow-md p-8 mb-8">
         <p class="text-lg leading-relaxed mb-6">Der Eheschein, auch Trauungsurkunde genannt, ist eine offizielle Zivilstandsurkunde, die in der Schweiz die Eheschliessung zweier Personen rechtlich dokumentiert. In diesem umfassenden Leitfaden erfahren Sie alles Wissenswerte über den Eheschein: von den rechtlichen Grundlagen über die Beantragung bis hin zur Verwendung im In- und Ausland.</p>
@@ -376,33 +403,47 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         <p>Paare, die vor dem 1. Juli 2022 eine eingetragene Partnerschaft eingegangen sind, können diese in eine Ehe umwandeln lassen. Nach der Umwandlung kann ein Eheschein ausgestellt werden, der das Datum der Umwandlung als Eheschliessungsdatum ausweist.</p>
     </section>
 
-    <!-- FAQ -->
-    <section class="bg-gray-50 rounded-lg p-8 mb-8">
-        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Häufige Fragen zum Eheschein</h2>
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+        <p class="text-gray-700 mb-6">Die Beantragung eines Ehescheins ist in der Regel unkompliziert. In bestimmten Situationen kann jedoch rechtliche Unterstützung sinnvoll sein, insbesondere bei komplexen internationalen Sachverhalten.</p>
+        <p class="text-gray-700 mb-6">Besonders in folgenden Situationen ist die Beratung durch einen erfahrenen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> empfohlen:</p>
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Wenn eine im Ausland geschlossene Ehe in der Schweiz anerkannt werden soll</li>
+            <li>Bei Problemen mit der Anerkennung von Dokumenten durch ausländische Behörden</li>
+            <li>Wenn Fragen zur Legalisation oder Apostille bestehen</li>
+            <li>Bei Streitigkeiten über den Zivilstand (z.B. bei Ungültigerklärung einer Ehe)</li>
+        </ul>
+        <p class="text-gray-700 mb-6">Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> kann Sie bei komplexen Fragen rund um Zivilstandsurkunden und deren internationale Verwendung unterstützen.</p>
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Haben Sie Fragen zur Anerkennung Ihrer Ehe oder zur Verwendung von Dokumenten im Ausland? Wir beraten Sie gerne.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
 
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
         <div class="space-y-6">
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <h3 class="text-lg font-semibold text-navy mb-2">Was tun bei Verlust des Ehescheins?</h3>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was tun bei Verlust des Ehescheins?</h3>
                 <p class="text-gray-700">Ein verlorener Eheschein kann jederzeit beim Zivilstandsamt des Eheschliessungsortes neu bestellt werden. Die Kosten betragen CHF 30.00 zuzüglich Portokosten.</p>
             </div>
-
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <h3 class="text-lg font-semibold text-navy mb-2">Wie lange ist ein Eheschein gültig?</h3>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie lange ist ein Eheschein gültig?</h3>
                 <p class="text-gray-700">Der Eheschein selbst hat keine begrenzte Gültigkeitsdauer. Allerdings verlangen viele Behörden aktuelle Dokumente, die nicht älter als sechs Monate sind.</p>
             </div>
-
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <h3 class="text-lg font-semibold text-navy mb-2">Benötige ich für eine kirchliche Trauung einen Eheschein?</h3>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Benötige ich für eine kirchliche Trauung einen Eheschein?</h3>
                 <p class="text-gray-700">Ja, für eine kirchliche Trauung in der Schweiz wird eine Trauungsurkunde verlangt, da die kirchliche Trauung erst nach der Ziviltrauung erfolgen darf (Art. 97 Abs. 3 ZGB).</p>
             </div>
-
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <h3 class="text-lg font-semibold text-navy mb-2">Ist der Eheschein dasselbe wie das Familienbüchlein?</h3>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Ist der Eheschein dasselbe wie das Familienbüchlein?</h3>
                 <p class="text-gray-700">Nein. Der Eheschein dokumentiert nur die Eheschliessung, während der Familienausweis (früher Familienbüchlein) zusätzlich Informationen über Kinder und Änderungen im Zivilstand enthält.</p>
             </div>
-
-            <div class="bg-white p-6 rounded-lg shadow-sm">
-                <h3 class="text-lg font-semibold text-navy mb-2">Kann ich einen Eheschein für eine im Ausland geschlossene Ehe erhalten?</h3>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich einen Eheschein für eine im Ausland geschlossene Ehe erhalten?</h3>
                 <p class="text-gray-700">Wenn die Ehe im Ausland geschlossen wurde, kann kein Schweizer Eheschein ausgestellt werden. Die Ehe muss jedoch im Schweizer Personenstandsregister eingetragen werden, danach kann ein entsprechender Registerauszug bestellt werden.</p>
             </div>
         </div>
@@ -425,7 +466,7 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
     </section>
 
     <!-- Rechtliche Grundlagen -->
-    <section class="bg-navy/5 rounded-lg p-8">
+    <section class="bg-navy/5 rounded-lg p-8 mb-8">
         <h2 class="text-2xl font-serif font-bold text-navy mb-4">Rechtliche Grundlagen (Auswahl)</h2>
         <ul class="space-y-2 text-gray-700">
             <li>Schweizerisches Zivilgesetzbuch (ZGB), Art. 39-48, Art. 90-110</li>
@@ -438,4 +479,99 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         </ul>
         <p class="text-sm text-gray-500 mt-4">Stand: Januar 2026</p>
     </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Eheschein in der Schweiz: Rechtliches, Beantragung, Kosten und Verwendung",
+        "description": "Umfassender Leitfaden zum Eheschein in der Schweiz: Rechtliche Grundlagen, Beantragung beim Zivilstandsamt, Kosten, elektronische Urkunden und Verwendung im In- und Ausland.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-20",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/eherecht/eheschein"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Was tun bei Verlust des Ehescheins?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ein verlorener Eheschein kann jederzeit beim Zivilstandsamt des Eheschliessungsortes neu bestellt werden. Die Kosten betragen CHF 30.00 zuzüglich Portokosten."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie lange ist ein Eheschein gültig?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der Eheschein selbst hat keine begrenzte Gültigkeitsdauer. Allerdings verlangen viele Behörden aktuelle Dokumente, die nicht älter als sechs Monate sind."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Benötige ich für eine kirchliche Trauung einen Eheschein?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, für eine kirchliche Trauung in der Schweiz wird eine Trauungsurkunde verlangt, da die kirchliche Trauung erst nach der Ziviltrauung erfolgen darf (Art. 97 Abs. 3 ZGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Ist der Eheschein dasselbe wie das Familienbüchlein?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein. Der Eheschein dokumentiert nur die Eheschliessung, während der Familienausweis (früher Familienbüchlein) zusätzlich Informationen über Kinder und Änderungen im Zivilstand enthält."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich einen Eheschein für eine im Ausland geschlossene Ehe erhalten?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Wenn die Ehe im Ausland geschlossen wurde, kann kein Schweizer Eheschein ausgestellt werden. Die Ehe muss jedoch im Schweizer Personenstandsregister eingetragen werden, danach kann ein entsprechender Registerauszug bestellt werden."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Eherecht",
+                "item": "https://familienrechtanwalt.ch/eherecht"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Eheschein in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/eherecht/eheschein"
+            }
+        ]
+    })} />
 </ArticleLayout>

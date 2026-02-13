@@ -1,0 +1,1059 @@
+---
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+---
+
+<ArticleLayout
+    title="Vaterschaftsanerkennung in der Schweiz"
+    description="Vaterschaftsanerkennung einfach erklärt: Ablauf beim Zivilstandsamt, Dokumente, Kosten (CHF 75) & alle Rechtsfolgen. Mit Checkliste für werdende Väter."
+    keywords="Vaterschaftsanerkennung Schweiz, Vaterschaft anerkennen, Kindesanerkennung, Vaterschaftsklage, Vaterschaft anfechten, Vaterschaftstest Schweiz, Art. 260 ZGB, Sorgeerklärung, Vaterschaftsvermutung, DNA-Test Vaterschaft"
+    category="Sorgerecht"
+    categoryLink="/sorgerecht"
+>
+
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bei verheirateten Paaren gilt der Ehemann automatisch als Vater – eine Anerkennung ist nicht nötig (Art. 255 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Unverheiratete Väter müssen die Vaterschaft beim Zivilstandsamt anerkennen (Art. 260 ZGB) – die Kosten betragen CHF 75.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Anerkennung ist bereits vor der Geburt möglich und wird dringend empfohlen – so sind Sorgerecht und Vaterschaftsurlaub ab Geburt gesichert.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Zustimmung der Mutter ist für die Anerkennung nicht erforderlich – ein biologischer Nachweis ebenfalls nicht.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Gleichzeitig mit der Anerkennung sollte die gemeinsame elterliche Sorge erklärt werden (Art. 298a ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Erkennt der Vater das Kind nicht an, kann die Mutter oder das Kind eine Vaterschaftsklage einreichen (Art. 261 ZGB).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Ein heimlicher Vaterschaftstest ist in der Schweiz strafbar – es drohen bis zu 3 Jahre Freiheitsstrafe (Art. 36 GUMG).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Anerkennung begründet Unterhalts-, Erb- und Bürgerrechtsansprüche des Kindes rückwirkend ab Geburt.</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Inhaltsverzeichnis -->
+    <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-12">
+        <h2 class="font-serif text-xl font-bold text-navy mb-4">Inhaltsverzeichnis</h2>
+        <ol class="space-y-2 text-gray-700">
+            <li>1. <a href="#kindesverhaeltnis" class="text-gold hover:underline">Wie entsteht das Kindesverhältnis zum Vater?</a></li>
+            <li>2. <a href="#vaterschaftsvermutung" class="text-gold hover:underline">Vaterschaftsvermutung bei Ehekindern (Art. 255 ZGB)</a></li>
+            <li>3. <a href="#voraussetzungen" class="text-gold hover:underline">Voraussetzungen der Vaterschaftsanerkennung (Art. 260 ZGB)</a></li>
+            <li>4. <a href="#vorgeburtlich" class="text-gold hover:underline">Vorgeburtliche Anerkennung</a></li>
+            <li>5. <a href="#ablauf" class="text-gold hover:underline">Ablauf und Verfahren beim Zivilstandsamt</a></li>
+            <li>6. <a href="#formen" class="text-gold hover:underline">Formen der Anerkennung</a></li>
+            <li>7. <a href="#zustaendigkeit" class="text-gold hover:underline">Zuständigkeit: Welches Zivilstandsamt?</a></li>
+            <li>8. <a href="#kosten" class="text-gold hover:underline">Kosten der Vaterschaftsanerkennung</a></li>
+            <li>9. <a href="#rechtsfolgen" class="text-gold hover:underline">Rechtsfolgen der Vaterschaftsanerkennung</a></li>
+            <li>10. <a href="#sorgeerklaerung" class="text-gold hover:underline">Gemeinsame elterliche Sorge bei unverheirateten Eltern</a></li>
+            <li>11. <a href="#vater-nicht-anerkennt" class="text-gold hover:underline">Was passiert, wenn der Vater nicht anerkennt?</a></li>
+            <li>12. <a href="#vaterschaftsklage" class="text-gold hover:underline">Vaterschaftsklage (Art. 261–263 ZGB)</a></li>
+            <li>13. <a href="#anfechtung-anerkennung" class="text-gold hover:underline">Anfechtung der Vaterschaftsanerkennung</a></li>
+            <li>14. <a href="#anfechtung-vermutung" class="text-gold hover:underline">Anfechtung der Vaterschaftsvermutung des Ehemanns</a></li>
+            <li>15. <a href="#dna-test" class="text-gold hover:underline">Vaterschaftstest (DNA-Test) in der Schweiz</a></li>
+            <li>16. <a href="#sonderfaelle" class="text-gold hover:underline">Sonderfälle: Samenspende, Leihmutterschaft und mehr</a></li>
+            <li>17. <a href="#international" class="text-gold hover:underline">Internationale Aspekte</a></li>
+            <li>18. <a href="#checkliste" class="text-gold hover:underline">Checkliste für unverheiratete werdende Väter</a></li>
+            <li>19. <a href="#bge" class="text-gold hover:underline">BGE-Rechtsprechung im Überblick</a></li>
+            <li>20. <a href="#anwalt" class="text-gold hover:underline">Wann Sie einen Anwalt beiziehen sollten</a></li>
+            <li>21. <a href="#fazit" class="text-gold hover:underline">Fazit</a></li>
+            <li>22. <a href="#faq" class="text-gold hover:underline">Häufig gestellte Fragen (FAQ)</a></li>
+        </ol>
+    </div>
+
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die Vaterschaftsanerkennung ist für unverheiratete Väter in der Schweiz der zentrale Rechtsakt, um ein rechtliches Kindesverhältnis zu ihrem Kind zu begründen. Ohne diese Anerkennung hat der biologische Vater weder Sorgerecht noch Besuchsrecht – und das Kind keine Erb- oder Unterhaltsansprüche gegenüber dem Vater. Dieser Artikel erklärt umfassend alle Aspekte rund um die Vaterschaft: von der Anerkennung über die Vaterschaftsklage bis zur Anfechtung, einschliesslich der rechtlichen Grundlagen, Fristen, Kosten und aktueller Bundesgerichtsentscheide.</p>
+
+    <!-- 1. Wie entsteht das Kindesverhältnis zum Vater? -->
+    <h2 id="kindesverhaeltnis" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wie entsteht das Kindesverhältnis zum Vater?</h2>
+
+    <p class="text-gray-700 mb-6">Das Kindesverhältnis zwischen einem Kind und seinem Vater kann in der Schweiz auf vier verschiedenen Wegen entstehen (Art. 252 ZGB). Im Gegensatz zur Mutter, bei der das Kindesverhältnis stets durch die Geburt begründet wird, bedarf es beim Vater eines zusätzlichen Rechtsakts oder einer gesetzlichen Vermutung.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Weg zum Kindesverhältnis</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Wann anwendbar</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Wirkung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Vaterschaftsvermutung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 255 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Geburt während der Ehe oder innert 300 Tagen nach Auflösung</td>
+                    <td class="px-6 py-4 text-gray-700">Automatisch – keine Handlung nötig</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Anerkennung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 260 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Unverheiratete Eltern – freiwillige Erklärung des Vaters</td>
+                    <td class="px-6 py-4 text-gray-700">Rückwirkend ab Geburt</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Gerichtliches Urteil</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 261 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Vaterschaftsklage der Mutter oder des Kindes</td>
+                    <td class="px-6 py-4 text-gray-700">Rückwirkend ab Geburt</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Adoption</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 264 ff. ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Adoptionsverfahren (inkl. Stiefkindadoption)</td>
+                    <td class="px-6 py-4 text-gray-700">Ab Rechtskraft des Adoptionsentscheids</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Für die allermeisten unverheirateten Väter ist die <strong>Vaterschaftsanerkennung beim Zivilstandsamt</strong> der einfachste, schnellste und kostengünstigste Weg, um das rechtliche Kindesverhältnis herzustellen. Kommt eine freiwillige Anerkennung nicht zustande, bleibt als letztes Mittel die Vaterschaftsklage.</p>
+
+    <!-- 2. Vaterschaftsvermutung bei Ehekindern -->
+    <h2 id="vaterschaftsvermutung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Vaterschaftsvermutung bei Ehekindern (Art. 255 ZGB)</h2>
+
+    <p class="text-gray-700 mb-6">Bei verheirateten Paaren entsteht das Kindesverhältnis zum Vater <strong>automatisch durch das Gesetz</strong>. Eine Anerkennung ist weder nötig noch möglich. Art. 255 ZGB enthält drei Vermutungsregeln:</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Geburt während der Ehe (Art. 255 Abs. 1 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Wird ein Kind während der Ehe geboren, gilt der Ehemann als Vater. Diese Vermutung greift unabhängig davon, ob der Ehemann tatsächlich der biologische Vater ist. Das Kindesverhältnis, die gemeinsame elterliche Sorge und sämtliche Rechtsfolgen (Unterhalt, Erbrecht, Name, Bürgerrecht) entstehen automatisch mit der Geburt.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">300-Tage-Frist nach Tod des Ehemanns (Art. 255 Abs. 2 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Stirbt der Ehemann, gilt er als Vater, wenn das Kind innerhalb von 300 Tagen nach seinem Tod geboren wird. Wird das Kind später geboren, besteht die Vermutung nur, wenn nachgewiesen werden kann, dass die Empfängnis vor dem Tod des Ehemanns erfolgte. Diese Regelung sichert die erbrechtlichen Ansprüche des posthum geborenen Kindes.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Elternschaftsvermutung bei gleichgeschlechtlichen Ehen (Art. 255a ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Seit der Einführung der «Ehe für alle» am 1. Juli 2022 gilt Art. 255a ZGB: Die Ehefrau der Mutter wird automatisch als Elternteil anerkannt, sofern die Eheleute zum Zeitpunkt der Geburt verheiratet sind und das Kind durch Samenspende gemäss dem Fortpflanzungsmedizingesetz (FMedG) gezeugt wurde.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig:</p>
+        <p class="text-gray-700">Die Vaterschaftsvermutung ist eine <strong>widerlegbare Rechtsvermutung</strong>. Sie kann durch eine Anfechtungsklage nach Art. 256 ff. ZGB umgestossen werden – dies ist jedoch nur dem Ehemann selbst oder dem Kind vorbehalten. Der biologische Vater hat <strong>kein Anfechtungsrecht</strong> (BGE 144 III 1).</p>
+    </div>
+
+    <!-- 3. Voraussetzungen der Vaterschaftsanerkennung -->
+    <h2 id="voraussetzungen" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Voraussetzungen der Vaterschaftsanerkennung (Art. 260 ZGB)</h2>
+
+    <p class="text-gray-700 mb-6">Die Vaterschaftsanerkennung ist eine einseitige, empfangsbedürftige Willenserklärung des Vaters. Sie ist nur nötig und möglich, wenn kein Kindesverhältnis zu einem anderen Mann besteht – also insbesondere bei unverheirateten Eltern. Die Voraussetzungen im Einzelnen:</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kein bestehendes Kindesverhältnis zu einem anderen Mann</h3>
+
+    <p class="text-gray-700 mb-6">Das Kind darf zum Zeitpunkt der Anerkennung kein rechtliches Kindesverhältnis zu einem anderen Mann haben (Art. 260 Abs. 1 ZGB). Besteht ein solches – etwa durch eine frühere Ehe der Mutter oder eine vorherige Anerkennung –, muss dieses zuerst durch eine Anfechtungsklage beseitigt werden, bevor eine neue Anerkennung erfolgen kann.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Urteilsfähigkeit des Anerkennenden</h3>
+
+    <p class="text-gray-700 mb-6">Der Anerkennende muss urteilsfähig sein (Art. 16 ZGB). Er muss die Bedeutung und Tragweite seiner Erklärung erfassen können. Bei minderjährigen Vätern oder Personen unter umfassender Beistandschaft ist zusätzlich die Zustimmung der Eltern bzw. des Beistands erforderlich (Art. 260 Abs. 2 ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Keine Zustimmung der Mutter erforderlich</h3>
+
+    <p class="text-gray-700 mb-6">Die Vaterschaftsanerkennung erfordert weder die Zustimmung der Mutter noch jene des Kindes. Der Vater kann die Anerkennung einseitig erklären. Die Mutter und das Kind werden lediglich über die erfolgte Anerkennung informiert. Sind sie mit der Anerkennung nicht einverstanden, können sie diese innerhalb der gesetzlichen Fristen anfechten (Art. 260a ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kein biologischer Nachweis nötig</h3>
+
+    <p class="text-gray-700 mb-6">Das Zivilstandsamt verlangt bei der Anerkennung keinen DNA-Test oder sonstigen Nachweis der biologischen Vaterschaft. Der Anerkennende erklärt lediglich, der Vater des Kindes zu sein. Dies bedeutet theoretisch, dass auch ein Mann, der nicht der biologische Vater ist, ein Kind anerkennen kann – etwa um dem Kind einen rechtlichen Vater zu geben. Eine solche Anerkennung kann jedoch von Interessierten angefochten werden (Art. 260a ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Unwiderruflichkeit der Anerkennung</h3>
+
+    <p class="text-gray-700 mb-6">Eine einmal erklärte Vaterschaftsanerkennung kann nicht einfach widerrufen werden. Sie kann nur durch eine gerichtliche Anfechtungsklage beseitigt werden. Dies unterstreicht die Bedeutung einer bewussten und überlegten Entscheidung vor der Erklärung.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Voraussetzung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Details</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kein bestehendes Kindesverhältnis</td>
+                    <td class="px-6 py-4 text-gray-700">Kein anderer Mann als rechtlicher Vater eingetragen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 260 Abs. 1 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Urteilsfähigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Fähigkeit, die Tragweite der Erklärung zu erfassen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 16 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Zustimmung bei Minderjährigen</td>
+                    <td class="px-6 py-4 text-gray-700">Zustimmung der Eltern oder des Beistands</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 260 Abs. 2 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Keine Zustimmung der Mutter</td>
+                    <td class="px-6 py-4 text-gray-700">Mutter wird nur informiert, nicht gefragt</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 260 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kein biologischer Nachweis</td>
+                    <td class="px-6 py-4 text-gray-700">Kein DNA-Test oder Abstammungsnachweis verlangt</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 260 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Persönliches Erscheinen</td>
+                    <td class="px-6 py-4 text-gray-700">Keine Vertretung durch Bevollmächtigte möglich</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 260 Abs. 3 ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 4. Vorgeburtliche Anerkennung -->
+    <h2 id="vorgeburtlich" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Vorgeburtliche Anerkennung – warum Sie nicht warten sollten</h2>
+
+    <p class="text-gray-700 mb-6">Die Vaterschaftsanerkennung kann bereits <strong>vor der Geburt</strong> erklärt werden – rechtlich ab dem Zeitpunkt der Zeugung (Art. 31 Abs. 2 ZGB, der dem Nasciturus unter dem Vorbehalt der Lebendgeburt Rechte einräumt). In der Praxis empfehlen sowohl Behörden als auch Fachpersonen dringend, die Anerkennung vorgeburtlich durchzuführen.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Die 6 Vorteile der vorgeburtlichen Anerkennung:</p>
+        <ul class="space-y-2 text-gray-700 mt-3">
+            <li><strong>1. Eintrag in die Geburtsurkunde:</strong> Der Vater wird direkt bei der Geburt als Vater registriert – kein späterer Nachtrag nötig.</li>
+            <li><strong>2. Vaterschaftsurlaub gesichert:</strong> Der Anspruch auf 14 Tage bezahlten Vaterschaftsurlaub (10 Taggelder) besteht ab dem Tag der Geburt.</li>
+            <li><strong>3. Gemeinsame elterliche Sorge sofort:</strong> Die <a href="/sorgerecht/sorgeerklaerung" class="text-gold hover:underline">Sorgeerklärung</a> kann gleichzeitig abgegeben werden und ist ab Geburt wirksam.</li>
+            <li><strong>4. Namensbestimmung vorab:</strong> Die Eltern können den Familiennamen des Kindes bereits vor der Geburt wählen.</li>
+            <li><strong>5. Notfallsicherheit:</strong> Bei Komplikationen während der Geburt sind alle Verhältnisse sofort geklärt.</li>
+            <li><strong>6. Administrative Erleichterung:</strong> Keine zusätzlichen Behördengänge nach der Geburt nötig, wenn alles vorgeburtlich erledigt wird.</li>
+        </ul>
+    </div>
+
+    <p class="text-gray-700 mb-6">Die vorgeburtliche Anerkennung steht unter dem Vorbehalt der Lebendgeburt. Wird das Kind nicht lebend geboren, wird die Anerkennung hinfällig. Ebenso fällt sie dahin, wenn die Mutter in der Zwischenzeit einen anderen Mann heiratet – in diesem Fall greift die Vaterschaftsvermutung des Ehemanns (Art. 255 ZGB).</p>
+
+    <!-- 5. Ablauf und Verfahren -->
+    <h2 id="ablauf" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Ablauf und Verfahren beim Zivilstandsamt – Schritt für Schritt</h2>
+
+    <p class="text-gray-700 mb-6">Die Vaterschaftsanerkennung beim Zivilstandsamt ist ein unkomplizierter Verwaltungsakt. Der gesamte Vorgang dauert in der Regel 15–30 Minuten. Im Folgenden der genaue Ablauf:</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 1: Terminvereinbarung</h3>
+
+    <p class="text-gray-700 mb-6">Vereinbaren Sie einen Termin beim Zivilstandsamt. Bei den meisten Ämtern ist eine vorherige Anmeldung erforderlich. In einigen Kantonen können Termine online gebucht werden.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 2: Dokumente zusammenstellen</h3>
+
+    <p class="text-gray-700 mb-6">Stellen Sie alle erforderlichen Unterlagen im Voraus zusammen. Welche Dokumente Sie benötigen, hängt von Ihrer Staatsangehörigkeit und Lebenssituation ab.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Dokument</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Schweizer Staatsangehörige</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Ausländische Staatsangehörige</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Gültiger Ausweis</td>
+                    <td class="px-6 py-4 text-gray-700">Pass oder Identitätskarte</td>
+                    <td class="px-6 py-4 text-gray-700">Pass (zwingend)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Personenstandsausweis</td>
+                    <td class="px-6 py-4 text-gray-700">Vom Heimatort (max. 6 Monate alt)</td>
+                    <td class="px-6 py-4 text-gray-700">Zivilstandsdokument aus Heimatland (apostilliert/legalisiert)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Wohnsitzbestätigung</td>
+                    <td class="px-6 py-4 text-gray-700">Falls nötig (bei anderem Kanton)</td>
+                    <td class="px-6 py-4 text-gray-700">Aufenthaltsbewilligung (Kopie)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Geburtsurkunde des Kindes</td>
+                    <td class="px-6 py-4 text-gray-700">Nur bei nachgeburtlicher Anerkennung</td>
+                    <td class="px-6 py-4 text-gray-700">Nur bei nachgeburtlicher Anerkennung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Scheidungsurteil der Mutter</td>
+                    <td class="px-6 py-4 text-gray-700">Falls Mutter geschieden ist</td>
+                    <td class="px-6 py-4 text-gray-700">Falls Mutter geschieden ist (mit Übersetzung)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Weitere Dokumente</td>
+                    <td class="px-6 py-4 text-gray-700">–</td>
+                    <td class="px-6 py-4 text-gray-700">Je nach Herkunftsland: Ledignamensbescheinigung, Familienregisterauszug u.a.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Tipp:</p>
+        <p class="text-gray-700">Erkundigen Sie sich frühzeitig beim zuständigen Zivilstandsamt, welche Dokumente genau erforderlich sind. Bei ausländischen Staatsangehörigen können zusätzliche Dokumente und Übersetzungen nötig sein, deren Beschaffung mehrere Wochen dauern kann.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 3: Persönliches Erscheinen</h3>
+
+    <p class="text-gray-700 mb-6">Der Vater muss <strong>persönlich</strong> beim Zivilstandsamt erscheinen. Eine Vertretung durch eine bevollmächtigte Person ist nicht zulässig. Die Mutter muss beim Termin nicht anwesend sein – allerdings empfiehlt es sich, gemeinsam zu erscheinen, wenn gleichzeitig die <a href="/sorgerecht/sorgeerklaerung" class="text-gold hover:underline">Sorgeerklärung</a> und die Namenserklärung abgegeben werden sollen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 4: Anerkennungserklärung abgeben</h3>
+
+    <p class="text-gray-700 mb-6">Der Zivilstandsbeamte nimmt die Erklärung des Vaters entgegen und prüft, ob die formellen Voraussetzungen erfüllt sind (Identität, keine bestehende Vaterschaft eines anderen Mannes). Die Anerkennung wird beurkundet und dem Kind sowie der Mutter mitgeteilt.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 5: Gleichzeitig gemeinsame elterliche Sorge erklären</h3>
+
+    <p class="text-gray-700 mb-6">Im gleichen Termin können beide Eltern die <a href="/sorgerecht/gemeinsames-sorgerecht" class="text-gold hover:underline">gemeinsame elterliche Sorge</a> erklären (Art. 298a ZGB). Dazu müssen sie bestätigen, dass sie gemeinsam die Verantwortung für das Kind übernehmen und sich über Obhut, persönlichen Verkehr und <a href="/unterhalt/kindesunterhalt" class="text-gold hover:underline">Kindesunterhalt</a> geeinigt haben. Die gleichzeitige Erklärung ist der einfachste und günstigste Weg.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 6: Namenserklärung (optional)</h3>
+
+    <p class="text-gray-700 mb-6">Wenn die Eltern die gemeinsame elterliche Sorge erklären, können sie gleichzeitig bestimmen, welchen Ledignamen das Kind tragen soll – jenen der Mutter oder jenen des Vaters (Art. 270a ZGB). Ohne Namenserklärung erhält das Kind den Ledignamen der Mutter.</p>
+
+    <!-- 6. Formen der Anerkennung -->
+    <h2 id="formen" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Formen der Anerkennung (Art. 260 Abs. 3 ZGB)</h2>
+
+    <p class="text-gray-700 mb-6">Das Gesetz sieht drei Formen der Vaterschaftsanerkennung vor. In der Praxis erfolgt die überwiegende Mehrheit der Anerkennungen beim Zivilstandsamt.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Form</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Häufigkeit</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Besonderheiten</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Vor dem Zivilstandsbeamten</td>
+                    <td class="px-6 py-4 text-gray-700">Mündliche Erklärung vor dem Zivilstandsamt</td>
+                    <td class="px-6 py-4 text-gray-700">Häufigster Fall (>95 %)</td>
+                    <td class="px-6 py-4 text-gray-700">Persönliches Erscheinen zwingend; Gleichzeitig Sorge- und Namenserklärung möglich</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Durch letztwillige Verfügung</td>
+                    <td class="px-6 py-4 text-gray-700">Anerkennung in einem Testament (handschriftlich oder öffentlich beurkundet)</td>
+                    <td class="px-6 py-4 text-gray-700">Selten</td>
+                    <td class="px-6 py-4 text-gray-700">Wirksam erst nach dem Tod des Erblassers; Ermöglicht posthume Vaterschaft</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Vor Gericht</td>
+                    <td class="px-6 py-4 text-gray-700">Erklärung im Rahmen eines hängigen Vaterschaftsverfahrens</td>
+                    <td class="px-6 py-4 text-gray-700">Selten</td>
+                    <td class="px-6 py-4 text-gray-700">Nur wenn bereits eine Vaterschaftsklage hängig ist; Vermeidet weitere Prozesskosten</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Die Anerkennung durch <strong>Testament</strong> ist insbesondere dann relevant, wenn der Vater schwer erkrankt ist und die Geburt des Kindes möglicherweise nicht mehr erlebt. In einem solchen Fall kann er durch eine letztwillige Verfügung sicherstellen, dass das Kind nach seinem Tod als sein Nachkomme anerkannt wird und volle Erb- und Pflichtteilsansprüche erhält.</p>
+
+    <!-- 7. Zuständigkeit -->
+    <h2 id="zustaendigkeit" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Zuständigkeit: Welches Zivilstandsamt?</h2>
+
+    <p class="text-gray-700 mb-6">Die Zuständigkeit des Zivilstandsamts hängt von der Staatsangehörigkeit und dem Wohnsitz des Vaters ab.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Konstellation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zuständiges Zivilstandsamt</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Schweizer mit Wohnsitz in der Schweiz</td>
+                    <td class="px-6 py-4 text-gray-700">Jedes Zivilstandsamt in der Schweiz (freie Wahl)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Ausländer mit Wohnsitz in der Schweiz</td>
+                    <td class="px-6 py-4 text-gray-700">Zivilstandsamt am Wohnort des Vaters</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Schweizer Vater im Ausland</td>
+                    <td class="px-6 py-4 text-gray-700">Zivilstandsamt am Geburtsort des Kindes, Wohnsitz/Heimatort der Mutter oder Heimatort des Vaters</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Ausländer im Ausland</td>
+                    <td class="px-6 py-4 text-gray-700">Zuständige Behörde im Heimat- oder Wohnsitzland; Schweizer Registrierung nur bei Schweizer Kind</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Wird die gemeinsame elterliche Sorge nicht gleichzeitig mit der Anerkennung beim Zivilstandsamt erklärt, sondern zu einem späteren Zeitpunkt beantragt, ist die <a href="/sorgerecht/kesb" class="text-gold hover:underline">KESB</a> (Kindes- und Erwachsenenschutzbehörde) am Wohnsitz des Kindes zuständig.</p>
+
+    <!-- 8. Kosten -->
+    <h2 id="kosten" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kosten der Vaterschaftsanerkennung</h2>
+
+    <p class="text-gray-700 mb-6">Die Vaterschaftsanerkennung ist im Vergleich zu anderen familienrechtlichen Verfahren äusserst kostengünstig. Die Gebühren sind bundesweit einheitlich geregelt.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Leistung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kosten</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bemerkung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Anerkennungserklärung</td>
+                    <td class="px-6 py-4 text-gray-700 font-bold">CHF 75</td>
+                    <td class="px-6 py-4 text-gray-700">Bundesweit einheitliche Gebühr</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Anerkennungsurkunde</td>
+                    <td class="px-6 py-4 text-gray-700 font-bold">CHF 30</td>
+                    <td class="px-6 py-4 text-gray-700">Zuzüglich allfälliger Versandkosten</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Erklärung gemeinsame elterliche Sorge</td>
+                    <td class="px-6 py-4 text-gray-700 font-bold">CHF 0</td>
+                    <td class="px-6 py-4 text-gray-700">Keine Zusatzkosten bei gleichzeitiger Abgabe mit Anerkennung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Namenserklärung</td>
+                    <td class="px-6 py-4 text-gray-700 font-bold">CHF 75</td>
+                    <td class="px-6 py-4 text-gray-700">Falls der Familienname geändert werden soll</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Zum Vergleich: Eine Vaterschaftsklage vor Gericht kostet ein Vielfaches – Gerichtskosten von CHF 500 bis CHF 5'000, ein DNA-Gutachten von rund CHF 1'200 sowie Anwaltskosten von CHF 3'000 bis CHF 10'000. Die freiwillige Anerkennung ist daher der mit Abstand günstigste und einfachste Weg.</p>
+
+    <!-- 9. Rechtsfolgen -->
+    <h2 id="rechtsfolgen" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtsfolgen der Vaterschaftsanerkennung</h2>
+
+    <p class="text-gray-700 mb-6">Die Anerkennung begründet ein <strong>vollwertiges Kindesverhältnis</strong>, das rückwirkend ab Geburt des Kindes gilt. Die Rechtsfolgen betreffen nahezu alle Lebensbereiche.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Elterliche Sorge (Art. 296 ff. ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Die Anerkennung allein begründet <strong>noch kein gemeinsames Sorgerecht</strong>. Bei unverheirateten Eltern hat zunächst die Mutter die alleinige elterliche Sorge. Für die gemeinsame Sorge müssen beide Eltern eine <a href="/sorgerecht/sorgeerklaerung" class="text-gold hover:underline">gemeinsame Erklärung</a> abgeben (Art. 298a ZGB) – idealerweise gleichzeitig mit der Anerkennung. Seit der Gesetzesrevision von 2014 ist die gemeinsame elterliche Sorge auch für unverheiratete Eltern der Regelfall.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Namensrecht (Art. 270/270a ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Die Anerkennung allein ändert den Namen des Kindes <strong>nicht</strong>. Ohne gemeinsame elterliche Sorge erhält das Kind den Ledignamen der Mutter. Erst wenn die gemeinsame Sorge erklärt wird, können die Eltern wählen, ob das Kind den Ledignamen der Mutter oder des Vaters tragen soll.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Konstellation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Name des Kindes</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Frist für Änderung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Anerkennung ohne gemeinsame Sorge</td>
+                    <td class="px-6 py-4 text-gray-700">Ledigname der Mutter</td>
+                    <td class="px-6 py-4 text-gray-700">–</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Anerkennung + gemeinsame Sorge vor Geburt</td>
+                    <td class="px-6 py-4 text-gray-700">Ledigname der Mutter <strong>oder</strong> des Vaters (Wahlrecht)</td>
+                    <td class="px-6 py-4 text-gray-700">Bei der Geburtsmeldung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Gemeinsame Sorge nach Geburt erklärt</td>
+                    <td class="px-6 py-4 text-gray-700">Zunächst Ledigname der Mutter; Änderung möglich</td>
+                    <td class="px-6 py-4 text-gray-700">1 Jahr ab Begründung der gemeinsamen Sorge</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Kind über 12 Jahre bei Namensänderung</td>
+                    <td class="px-6 py-4 text-gray-700">Namensänderung nur mit Zustimmung des Kindes</td>
+                    <td class="px-6 py-4 text-gray-700">–</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Bürgerrecht und Staatsangehörigkeit</h3>
+
+    <p class="text-gray-700 mb-6">Das Kind erhält das Kantons- und Gemeindebürgerrecht des Elternteils, dessen Namen es trägt. Ist der Vater Schweizer Bürger und die Mutter Ausländerin, erhält das Kind durch die Anerkennung das Schweizer Bürgerrecht, sofern das Kind den Namen des Vaters annimmt. Dies gilt für Kinder, die ab dem 1. Januar 2006 geboren wurden. Ohne Namenswechsel behält das Kind das Bürgerrecht der Mutter.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Unterhaltspflicht (Art. 276 ff. ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Mit der Anerkennung wird der Vater <strong>unterhaltspflichtig</strong>. Der <a href="/unterhalt/kindesunterhalt" class="text-gold hover:underline">Kindesunterhalt</a> umfasst seit dem 1. Januar 2017 den Barunterhalt (direkte Kinderkosten) und den Betreuungsunterhalt (Lebenshaltungskosten des betreuenden Elternteils). Die Pflicht besteht bis zur Volljährigkeit des Kindes bzw. bis zum Abschluss einer angemessenen Erstausbildung (Art. 277 ZGB). Darüber hinaus hat die unverheiratete Mutter Anspruch auf Beiträge an die Entbindungskosten sowie auf Unterhalt für mindestens 4 Wochen vor und 8 Wochen nach der Geburt (Art. 295 ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Erbrecht (Art. 457 ff. ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Seit dem 1. Januar 1978 sind eheliche und aussereheliche Kinder erbrechtlich <strong>vollständig gleichgestellt</strong>. Ein anerkanntes Kind hat denselben gesetzlichen Erbanspruch und Pflichtteilsschutz wie ein eheliches Kind. Seit der Erbrechtsrevision vom 1. Januar 2023 beträgt der Pflichtteil für Nachkommen 50 % des gesetzlichen Erbteils (Art. 471 ZGB).</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Hinweis – Altrechtliche «Zahlvaterschaft»:</p>
+        <p class="text-gray-700">Kinder, die vor dem 1. Januar 1977 ausserehelich geboren wurden, können unter Umständen kein Erbrecht gegenüber dem biologischen Vater geltend machen. Die sogenannte «Zahlvaterschaft» des alten Rechts begründete kein vollwertiges Kindesverhältnis und damit keinen Erbanspruch. Dies hat das Bundesgericht in BGE 150 III 160 bestätigt.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vaterschaftsurlaub</h3>
+
+    <p class="text-gray-700 mb-6">Der rechtliche Vater hat Anspruch auf 14 Tage bezahlten Vaterschaftsurlaub (10 Taggelder zu 80 % des Einkommens, maximal CHF 220 pro Tag). Voraussetzung ist, dass der Vater zum Zeitpunkt der Geburt oder innerhalb von 6 Monaten danach als rechtlicher Vater feststeht. Der Urlaub muss innerhalb von 6 Monaten nach der Geburt bezogen werden und kann tage- oder wochenweise aufgeteilt werden. Die vorgeburtliche Anerkennung stellt sicher, dass der Anspruch ab dem ersten Tag besteht.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsfolge</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Wirkung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kindesverhältnis</td>
+                    <td class="px-6 py-4 text-gray-700">Rückwirkend ab Geburt</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 260 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Elterliche Sorge</td>
+                    <td class="px-6 py-4 text-gray-700">Nur bei gemeinsamer Erklärung (Art. 298a ZGB)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 296 ff. ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Name des Kindes</td>
+                    <td class="px-6 py-4 text-gray-700">Wahlrecht nur bei gemeinsamer Sorge</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 270a ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Bürgerrecht</td>
+                    <td class="px-6 py-4 text-gray-700">Folgt dem Namensrecht des Kindes</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 271 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Unterhaltspflicht</td>
+                    <td class="px-6 py-4 text-gray-700">Bar- und Betreuungsunterhalt bis Ausbildungsende</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 276–285 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Erbrecht</td>
+                    <td class="px-6 py-4 text-gray-700">Volle Gleichstellung; Pflichtteil 50 %</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 457 ff., 471 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Vaterschaftsurlaub</td>
+                    <td class="px-6 py-4 text-gray-700">14 Tage bezahlt (10 Taggelder)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 329g OR</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 10. Gemeinsame elterliche Sorge -->
+    <h2 id="sorgeerklaerung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Gemeinsame elterliche Sorge bei unverheirateten Eltern</h2>
+
+    <p class="text-gray-700 mb-6">Die Vaterschaftsanerkennung und die <a href="/sorgerecht/sorgeerklaerung" class="text-gold hover:underline">Erklärung der gemeinsamen elterlichen Sorge</a> sind zwei getrennte Rechtsakte, die jedoch in der Praxis zusammen vorgenommen werden sollten. Während die Anerkennung das Kindesverhältnis begründet, regelt die Sorgeerklärung die elterliche Verantwortung.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Erklärung beim Zivilstandsamt oder bei der KESB</h3>
+
+    <p class="text-gray-700 mb-6">Die gemeinsame Erklärung kann an zwei Orten abgegeben werden: Beim <strong>Zivilstandsamt</strong> (gleichzeitig mit der Anerkennung – kostenlos und am einfachsten) oder bei der <strong><a href="/sorgerecht/kesb" class="text-gold hover:underline">KESB</a></strong> am Wohnsitz des Kindes (wenn die Sorgeerklärung zu einem späteren Zeitpunkt erfolgt). Die KESB bietet zudem kostenlose Beratungen an.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Inhalt der Erklärung (Art. 298a ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Die Eltern müssen in der Erklärung bestätigen, dass sie bereit sind, gemeinsam die Verantwortung für das Kind zu übernehmen, und dass sie sich geeinigt haben über die Obhut und den persönlichen Verkehr bzw. die Betreuungsanteile sowie über den Unterhaltsbeitrag für das Kind.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Was tun bei Verweigerung?</h3>
+
+    <p class="text-gray-700 mb-6">Verweigert ein Elternteil die gemeinsame Sorgeerklärung, kann der andere Elternteil einen Antrag bei der KESB stellen (Art. 298b ZGB). Die KESB entscheidet unter Berücksichtigung des Kindeswohls. Seit der Reform von 2014 wird die gemeinsame elterliche Sorge als Regelfall betrachtet und nur in Ausnahmefällen verweigert – etwa bei schwerwiegenden Konflikten oder Gefährdung des Kindswohls.</p>
+
+    <!-- 11. Was passiert, wenn der Vater nicht anerkennt? -->
+    <h2 id="vater-nicht-anerkennt" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Was passiert, wenn der Vater nicht anerkennt?</h2>
+
+    <p class="text-gray-700 mb-6">Wird ein Kind geboren, für das kein rechtliches Kindesverhältnis zum Vater besteht – etwa weil der Vater die Anerkennung verweigert –, greift ein mehrstufiges behördliches Verfahren.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">1. Meldung an die KESB</h3>
+
+    <p class="text-gray-700 mb-6">Das Zivilstandsamt informiert die <a href="/sorgerecht/kesb" class="text-gold hover:underline">KESB</a> am Wohnsitz des Kindes, wenn bei der Geburtsmeldung kein Kindesverhältnis zum Vater vorliegt. Dies geschieht in der Regel innerhalb von 2–3 Monaten nach der Geburt.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">2. Errichtung einer Beistandschaft (Art. 308 Abs. 2 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Die KESB bestellt einen Beistand für das Kind, der folgende Aufgaben hat: die Vaterschaft zu klären und den mutmasslichen Vater zu identifizieren, den Vater zur freiwilligen Anerkennung zu bewegen, bei Verweigerung eine Vaterschaftsklage einzureichen (Art. 261 ZGB) sowie die Unterhaltsansprüche des Kindes sicherzustellen. Die Mutter ist zur Mitwirkung bei der Klärung der Vaterschaft verpflichtet.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">3. Eigenständige Klage der Mutter oder des Kindes</h3>
+
+    <p class="text-gray-700 mb-6">Unabhängig von der KESB-Beistandschaft kann auch die Mutter selbst eine Vaterschaftsklage einreichen. Die Klagefrist beträgt für die Mutter 1 Jahr ab Geburt (Art. 263 Abs. 1 Ziff. 1 ZGB). Das Kind kann bis spätestens 1 Jahr nach Erreichen der Volljährigkeit klagen (Art. 263 Abs. 1 Ziff. 2 ZGB).</p>
+
+    <!-- 12. Vaterschaftsklage -->
+    <h2 id="vaterschaftsklage" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Vaterschaftsklage (Art. 261–263 ZGB)</h2>
+
+    <p class="text-gray-700 mb-6">Kommt eine freiwillige Anerkennung nicht zustande, kann die Vaterschaft durch eine gerichtliche Klage festgestellt werden. Die Vaterschaftsklage ist ein Gestaltungsurteil, das das Kindesverhältnis rückwirkend ab Geburt begründet.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Klagerecht (Art. 261 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Klageberechtigt sind ausschliesslich die <strong>Mutter</strong> und das <strong>Kind</strong> – gemeinsam oder getrennt. Der mutmassliche Vater hat kein Klagerecht; er kann die Vaterschaft nur freiwillig anerkennen. Bei minderjährigen oder urteilsunfähigen Kindern wird die Klage durch einen von der KESB bestellten Beistand geführt, um Interessenkonflikte mit der Mutter zu vermeiden.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vaterschaftsvermutung (Art. 262 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Hat der Beklagte in der Empfängniszeit (300.–180. Tag vor der Geburt) mit der Mutter Geschlechtsverkehr gehabt, wird seine Vaterschaft vermutet (Art. 262 Abs. 1 ZGB). Diese Vermutung besteht auch bei Beiwohnung ausserhalb der Empfängniszeit, wenn das Gericht die Zeugung für wahrscheinlich hält (Art. 262 Abs. 2 ZGB). Die Vermutung kann durch den Gegenbeweis entkräftet werden, insbesondere durch einen DNA-Test, der die Vaterschaft ausschliesst (Art. 262 Abs. 3 ZGB).</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praktische Bedeutung:</p>
+        <p class="text-gray-700">Durch die heutigen DNA-Analysen mit einer Genauigkeit von über 99,99 % haben die indirekten Vermutungen von Art. 262 ZGB an Bedeutung verloren. In der Praxis wird fast immer ein DNA-Gutachten angeordnet, das die Vaterschaft mit nahezu absoluter Sicherheit bestätigt oder ausschliesst.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Fristen der Vaterschaftsklage (Art. 263 ZGB)</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kläger</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Relative Frist</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Absolute Frist</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Fristwiederherstellung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Mutter</td>
+                    <td class="px-6 py-4 text-gray-700">1 Jahr ab Geburt</td>
+                    <td class="px-6 py-4 text-gray-700">–</td>
+                    <td class="px-6 py-4 text-gray-700">Ja, bei wichtigen Gründen (Art. 263 Abs. 3 ZGB)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kind</td>
+                    <td class="px-6 py-4 text-gray-700">1 Jahr nach Erreichen der Volljährigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Bis spätestens Alter 19</td>
+                    <td class="px-6 py-4 text-gray-700">Ja, bei wichtigen Gründen (z.B. späte Kenntnis der Identität des Vaters, BGE 143 III 554)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Die Fristwiederherstellung wird vom Bundesgericht <strong>restriktiv</strong> gehandhabt. Anerkannte wichtige Gründe sind unter anderem schwere Krankheit, Freiheitsentzug oder die erst nachträgliche Kenntnis der Identität des biologischen Vaters. Blosse Unkenntnis des Gesetzes genügt nicht.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Verfahrensablauf</h3>
+
+    <p class="text-gray-700 mb-6">Die Vaterschaftsklage wird direkt beim Bezirksgericht (Regionalgericht) eingereicht – ein vorgängiges Schlichtungsverfahren ist nicht nötig (Art. 198 lit. b ZPO). Es gilt der Untersuchungsgrundsatz (Art. 296 ZPO): Das Gericht ermittelt den Sachverhalt von Amtes wegen. In der Regel ordnet das Gericht ein DNA-Gutachten an. Es besteht eine Mitwirkungspflicht aller Beteiligten bei der Abstammungsuntersuchung (Art. 296 Abs. 2 ZPO). Eine Verweigerung des DNA-Tests kann zwangsweise durchgesetzt werden (BGer 5A_492/2016). Die Vaterschaftsklage kann mit Unterhaltsansprüchen kombiniert werden (Art. 303 Abs. 2 ZPO).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kosten der Vaterschaftsklage</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kostenposition</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Betrag</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Gerichtskosten (Grundgebühr)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 500 – CHF 5'000</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">DNA-Gutachten (Trio: Mutter + Vater + Kind)</td>
+                    <td class="px-6 py-4 text-gray-700">ca. CHF 1'200</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Anwaltskosten</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 3'000 – CHF 10'000</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Total geschätzt</td>
+                    <td class="px-6 py-4 text-gray-700 font-bold">CHF 4'700 – CHF 16'200</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Die Kosten werden der unterliegenden Partei auferlegt. Mutter und Kind haben Anspruch auf <strong>unentgeltliche Rechtspflege</strong> (Art. 117 ZPO), wenn sie finanziell bedürftig sind und die Klage nicht aussichtslos ist. In diesem Fall werden Gerichtskosten, Gutachterkosten und Anwaltskosten vom Staat übernommen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wirkungen des Vaterschaftsurteils</h3>
+
+    <p class="text-gray-700 mb-6">Ein rechtskräftiges Vaterschaftsurteil begründet das Kindesverhältnis rückwirkend ab Geburt. Das Gericht entscheidet gleichzeitig über die elterliche Sorge (Art. 298c ZGB – gemeinsame Sorge als Regelfall), die Obhut und den persönlichen Verkehr bzw. die Betreuungsanteile, den <a href="/unterhalt/kindesunterhalt" class="text-gold hover:underline">Kindesunterhalt</a> sowie die Prozesskosten. Während des laufenden Verfahrens kann der Beklagte die Vaterschaft jederzeit freiwillig anerkennen (Art. 260 Abs. 3 ZGB), was den Prozess beendet und weitere Kosten vermeidet.</p>
+
+    <!-- 13. Anfechtung der Vaterschaftsanerkennung -->
+    <h2 id="anfechtung-anerkennung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Anfechtung der Vaterschaftsanerkennung (Art. 260a–260c ZGB)</h2>
+
+    <p class="text-gray-700 mb-6">Eine einmal erklärte Vaterschaftsanerkennung kann nicht widerrufen, aber unter bestimmten Voraussetzungen <strong>gerichtlich angefochten</strong> werden. Die Anfechtung ist das einzige Mittel, um eine bereits erfolgte Anerkennung rückgängig zu machen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wer kann die Anerkennung anfechten? (Art. 260a ZGB)</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kläger</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zulässige Gründe</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Mutter</td>
+                    <td class="px-6 py-4 text-gray-700">Anerkennender ist nicht der biologische Vater</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 260a Abs. 1 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kind (bzw. dessen Nachkommen)</td>
+                    <td class="px-6 py-4 text-gray-700">Anerkennender ist nicht der biologische Vater</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 260a Abs. 1 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Heimat- oder Wohnsitzgemeinde</td>
+                    <td class="px-6 py-4 text-gray-700">Missbrauchliche Anerkennung (Umgehung Ausländerrecht)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 260a Abs. 1 ZGB; BGE 143 III 624</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Anerkennender selbst</td>
+                    <td class="px-6 py-4 text-gray-700"><strong>Nur</strong> bei Drohung oder Irrtum über die Vaterschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 260a Abs. 2 ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Beweislast (Art. 260b ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Der Kläger muss beweisen, dass der Anerkennende <strong>nicht der biologische Vater</strong> ist. In der Praxis wird dies durch ein DNA-Gutachten nachgewiesen. Eine Beweiserleichterung gilt, wenn der Anerkennende nicht glaubhaft machen kann, dass er in der Empfängniszeit mit der Mutter Geschlechtsverkehr hatte.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Fristen für die Anfechtung (Art. 260c ZGB)</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kläger</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Relative Frist</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Absolute Frist</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Mutter / Gemeinde / Anerkennender</td>
+                    <td class="px-6 py-4 text-gray-700">1 Jahr ab Kenntnis der Anerkennung und der Nichtvaterschaft</td>
+                    <td class="px-6 py-4 text-gray-700">5 Jahre ab Anerkennung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kind</td>
+                    <td class="px-6 py-4 text-gray-700">1 Jahr nach Erreichen der Volljährigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Bis spätestens Alter 19</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Missbrauchliche Anerkennungen (BGE 143 III 624)</h3>
+
+    <p class="text-gray-700 mb-6">In einem wegweisenden Entscheid hat das Bundesgericht festgehalten, dass Gemeinden eine Vaterschaftsanerkennung anfechten können, wenn diese zur <strong>Umgehung des Ausländerrechts</strong> dient – etwa um dem Kind oder dem Anerkennenden das Schweizer Bürgerrecht zu verschaffen. Das Gericht nimmt eine Interessenabwägung zwischen dem öffentlichen Interesse an der Missbrauchsbekämpfung und dem privaten Interesse des Kindes an der Aufrechterhaltung des Kindesverhältnisses vor.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Folgen einer erfolgreichen Anfechtung</h3>
+
+    <p class="text-gray-700 mb-6">Wird die Anfechtung gutgeheissen, fällt das Kindesverhältnis <strong>rückwirkend</strong> ab Geburt weg. Die Unterhaltspflicht entfällt rückwirkend, und bereits geleisteter Unterhalt kann als ungerechtfertigte Bereicherung zurückgefordert werden (BGE 129 III 646). Das Erbrecht entfällt ebenfalls. Name und Bürgerrecht des Kindes ändern sich entsprechend.</p>
+
+    <!-- 14. Anfechtung der Vaterschaftsvermutung des Ehemanns -->
+    <h2 id="anfechtung-vermutung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Anfechtung der Vaterschaftsvermutung des Ehemanns (Art. 256–256c ZGB)</h2>
+
+    <p class="text-gray-700 mb-6">Die Anfechtung der Vaterschaftsvermutung betrifft Fälle, in denen ein während der Ehe geborenes Kind nicht vom Ehemann abstammt. Die Anfechtung unterscheidet sich wesentlich von der Anfechtung einer freiwilligen Anerkennung.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Klageberechtigung (Art. 256 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Klageberechtigt sind ausschliesslich der <strong>Ehemann</strong> und das <strong>Kind</strong>. Die Mutter hat kein Anfechtungsrecht, und – besonders wichtig – auch der <strong>biologische Vater hat kein Klagerecht</strong>. Dies hat das Bundesgericht in BGE 144 III 1 ausdrücklich bestätigt: Auch eine Berufung auf Art. 8 EMRK (Recht auf Familienleben) begründet kein Anfechtungsrecht des biologischen Vaters.</p>
+
+    <p class="text-gray-700 mb-6">Das Kind kann die Vaterschaftsvermutung nur anfechten, wenn das eheliche Zusammenleben der Eltern während seiner Minderjährigkeit aufgehört hat (Art. 256 Abs. 2 ZGB). Stirbt der Ehemann oder wird er urteilsunfähig, können auch seine Eltern die Klage führen (Art. 258 ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Beweislast</h3>
+
+    <p class="text-gray-700 mb-6">Die Beweislast hängt davon ab, wann das Kind empfangen wurde. Wurde es <strong>während der Ehe</strong> empfangen, muss der Kläger die Nichtvaterschaft beweisen – in der Regel durch einen DNA-Test (Art. 256a ZGB). Wurde das Kind dagegen <strong>vor der Eheschliessung oder während einer Trennung</strong> empfangen, entfällt die Vermutung leichter: Die Anfechtung bedarf keiner weiteren Begründung (Art. 256b Abs. 1 ZGB), es sei denn, der Ehemann hat glaubhaft in der Empfängniszeit mit der Mutter verkehrt.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Fristen (Art. 256c ZGB)</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kläger</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Relative Frist</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Absolute Frist</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Ehemann</td>
+                    <td class="px-6 py-4 text-gray-700">1 Jahr ab Kenntnis der Geburt und der Nichtvaterschaft</td>
+                    <td class="px-6 py-4 text-gray-700">5 Jahre ab Geburt</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Kind</td>
+                    <td class="px-6 py-4 text-gray-700">1 Jahr nach Erreichen der Volljährigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Bis spätestens Alter 19</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Eltern des Ehemanns</td>
+                    <td class="px-6 py-4 text-gray-700">1 Jahr ab Kenntnis des Todes/der Urteilsunfähigkeit des Ehemanns</td>
+                    <td class="px-6 py-4 text-gray-700">An die Fristen des Ehemanns gebunden</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Eine Fristwiederherstellung ist bei wichtigen Gründen möglich (Art. 256c Abs. 3 ZGB). Das Bundesgericht legt diese <strong>restriktiv</strong> aus: Wer begründete Zweifel an der Vaterschaft hat, darf nicht länger als 2 Jahre warten (BGer 5C.130/2003). Psychische Unfähigkeit kann hingegen ein wichtiger Grund sein (BGer 5A_178/2022).</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Sonderfall Fortpflanzungsmedizin:</p>
+        <p class="text-gray-700">Hat der Ehemann der Zeugung durch Samenspende zugestimmt, steht ihm <strong>kein Anfechtungsrecht</strong> zu (Art. 256 Abs. 3 ZGB i.V.m. Art. 23 FMedG). Diese Regelung gilt unabhängig davon, ob die Samenspende innerhalb der gesetzlichen Vorgaben des FMedG oder privat erfolgte – entscheidend ist die Zustimmung des Ehemanns.</p>
+    </div>
+
+    <!-- 15. DNA-Test -->
+    <h2 id="dna-test" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Vaterschaftstest (DNA-Test) in der Schweiz</h2>
+
+    <p class="text-gray-700 mb-6">Der Vaterschaftstest (DNA-Analyse) ist das zentrale Beweismittel in Abstammungsverfahren. In der Schweiz unterliegt er strengen gesetzlichen Vorgaben, die im Bundesgesetz über genetische Untersuchungen beim Menschen (GUMG) geregelt sind.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Rechtliche Grundlagen (GUMG)</h3>
+
+    <p class="text-gray-700 mb-6">Genetische Abstammungsuntersuchungen sind in Art. 31 ff. GUMG geregelt. Jede DNA-Untersuchung zur Klärung der Abstammung erfordert die <strong>freiwillige und schriftliche Einwilligung</strong> aller zu testenden Personen. Bei minderjährigen Kindern ist die Zustimmung eines sorgeberechtigten Elternteils erforderlich; bei urteilsfähigen Minderjährigen zusätzlich deren eigene Zustimmung.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Heimliche Tests sind strafbar</h3>
+
+    <p class="text-gray-700 mb-6">Ein Vaterschaftstest ohne Einwilligung aller Beteiligten ist in der Schweiz <strong>strafbar</strong>. Art. 36 GUMG sieht eine Freiheitsstrafe bis zu 3 Jahren oder eine Geldstrafe vor. Es ist daher illegal, heimlich DNA-Proben (z.B. Haare, Speichel von einem Trinkglas) zu entnehmen und analysieren zu lassen. Ergebnisse aus heimlichen Tests sind vor Gericht <strong>nicht verwertbar</strong>.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Warnung vor Internet-Tests:</p>
+        <p class="text-gray-700">Online bestellte DNA-Tests, bei denen Proben per Post an ein Labor geschickt werden, sind in der Schweiz <strong>nicht gerichtsverwertbar</strong>. Für einen gerichtlich verwertbaren Test müssen alle Beteiligten persönlich bei einem vom Bund anerkannten Labor (z.B. Institut für Rechtsmedizin) erscheinen, wo eine Identitätsfeststellung mittels amtlichem Ausweis erfolgt.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gerichtsverwertbarkeit</h3>
+
+    <p class="text-gray-700 mb-6">Damit ein DNA-Test vor Gericht verwertbar ist, müssen folgende Voraussetzungen erfüllt sein: Die Durchführung erfolgt bei einem vom Bund anerkannten Labor oder Institut für Rechtsmedizin. Alle zu testenden Personen erscheinen persönlich zur Probeentnahme (Mundschleimhautabstrich). Es findet eine Identitätsfeststellung mit gültigem amtlichem Ausweis statt. Die schriftliche Einwilligung aller Beteiligten oder eine gerichtliche Anordnung liegt vor. Die Einhaltung strenger «Chain-of-Custody»-Protokolle ist gewährleistet.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gerichtlich angeordneter DNA-Test</h3>
+
+    <p class="text-gray-700 mb-6">Im Rahmen einer Vaterschaftsklage oder Anfechtungsklage kann das Gericht einen DNA-Test <strong>von Amtes wegen</strong> anordnen. In diesem Fall besteht eine Mitwirkungspflicht aller Beteiligten (Art. 296 Abs. 2 ZPO). Die allgemeinen Verweigerungsrechte (Art. 163 ff. ZPO) sind in Abstammungsverfahren <strong>nicht anwendbar</strong>. Bei Verweigerung kann der Test zwangsweise durchgesetzt werden (BGer 5A_492/2016) – das Gericht kann zudem negative Schlussfolgerungen aus der Verweigerung ziehen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kosten eines Vaterschaftstests</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Art des Tests</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kosten</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gerichtsverwertbar?</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Privater Test (Vater + Kind)</td>
+                    <td class="px-6 py-4 text-gray-700">ca. CHF 300</td>
+                    <td class="px-6 py-4 text-gray-700">Nur bei anerkanntem Labor mit Identitätsfeststellung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Trio-Test am Institut für Rechtsmedizin (Mutter + Vater + Kind)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 1'090 – CHF 1'200</td>
+                    <td class="px-6 py-4 text-gray-700">Ja</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Gerichtlich angeordneter Test</td>
+                    <td class="px-6 py-4 text-gray-700">ca. CHF 1'200</td>
+                    <td class="px-6 py-4 text-gray-700">Ja – Kosten trägt unterliegende Partei</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Internet-Test (per Post)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 150 – CHF 300</td>
+                    <td class="px-6 py-4 text-gray-700 font-bold text-red-600">Nein</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Vertiefende Artikel im Abstammungsrecht -->
+    <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-lg my-12 border border-gray-200">
+        <p class="font-semibold text-navy mb-3">Vertiefende Artikel im Abstammungsrecht:</p>
+        <ul class="space-y-2 text-gray-700">
+            <li>→ <a href="/abstammungsrecht" class="text-gold hover:underline font-semibold">Abstammungsrecht in der Schweiz</a> – Gesamtübersicht: Kindesverhältnis, Vermutung, Anerkennung, Klage und Anfechtung</li>
+            <li>→ <a href="/abstammungsrecht/vaterschaftsklage" class="text-gold hover:underline font-semibold">Vaterschaftsklage</a> – Deep-Dive: Klagerecht, Fristen, DNA-Gutachten, Verfahrensablauf und Kosten</li>
+            <li>→ <a href="/abstammungsrecht/anfechtung-vaterschaft" class="text-gold hover:underline font-semibold">Anfechtung der Vaterschaft</a> – Beide Anfechtungswege: Vermutung (Art. 256 ZGB) und Anerkennung (Art. 260a ZGB)</li>
+            <li>→ <a href="/abstammungsrecht/fortpflanzungsmedizin-samenspende" class="text-gold hover:underline font-semibold">Fortpflanzungsmedizin und Samenspende</a> – FMedG, Samenspende, private Samenspende, Eizellspende</li>
+            <li>→ <a href="/abstammungsrecht/leihmutterschaft" class="text-gold hover:underline font-semibold">Leihmutterschaft</a> – Verbot, Auslandsfälle, Stiefkindadoption, EGMR-Rechtsprechung</li>
+            <li>→ <a href="/abstammungsrecht/recht-auf-kenntnis-der-abstammung" class="text-gold hover:underline font-semibold">Recht auf Kenntnis der Abstammung</a> – Auskunftsrecht bei Adoption und Samenspende, DNA-Tests</li>
+        </ul>
+    </div>
+
+    <!-- 16. Sonderfälle -->
+    <h2 id="sonderfaelle" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Sonderfälle: Samenspende, Leihmutterschaft und mehr</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Samenspende (Fortpflanzungsmedizingesetz FMedG)</h3>
+
+    <p class="text-gray-700 mb-6">Die Samenspende ist in der Schweiz nur im Rahmen des FMedG zulässig – seit der «Ehe für alle» (1. Juli 2022) auch für verheiratete weibliche Paare. Der Ehemann bzw. die Ehefrau der Mutter wird automatisch rechtlicher Elternteil durch die Vermutung nach Art. 255/255a ZGB. Das Anfechtungsrecht ist ausgeschlossen, wenn der Ehepartner der Zeugung zugestimmt hat (Art. 256 Abs. 3 ZGB, Art. 23 FMedG). Der Samenspender hat <strong>keine Rechte und Pflichten</strong> gegenüber dem Kind – weder Sorgerecht noch Unterhaltspflicht noch Erbrecht. Das Kind hat ab 18 Jahren das Recht, die Identität des Spenders zu erfahren (Art. 27 FMedG).</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Private (illegale) Samenspende:</p>
+        <p class="text-gray-700">Erfolgt die Samenspende ausserhalb der FMedG-Vorgaben (z.B. durch private Absprache), kann der Spender als biologischer Vater behandelt werden. Eine Vaterschaftsklage gegen den privaten Samenspender ist grundsätzlich zulässig, da die Schutzbestimmungen des FMedG (Anfechtungsverbot, keine Pflichten des Spenders) nur bei gesetzeskonformer Samenspende greifen.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Leihmutterschaft</h3>
+
+    <p class="text-gray-700 mb-6">Leihmutterschaft ist in der Schweiz <strong>auf Verfassungsstufe verboten</strong> (Art. 119 Abs. 2 lit. d BV, Art. 4 FMedG). Nach dem Grundsatz <em>mater semper certa est</em> ist die rechtliche Mutter immer die Frau, die das Kind gebiert (Art. 252 Abs. 1 ZGB) – auch wenn sie genetisch nicht mit dem Kind verwandt ist (BGE 141 III 328).</p>
+
+    <p class="text-gray-700 mb-6">Bei einer im Ausland durchgeführten Leihmutterschaft gilt: Der genetische Vater (Wunschvater) kann das Kind durch <strong>Anerkennung nach Art. 260 ZGB</strong> als sein Kind anerkennen (BGE 148 III 384). Die Wunschmutter muss dagegen den Weg der <strong>Stiefkindadoption</strong> (Art. 264c ZGB) beschreiten. Ausländische Geburtsurkunden, die den Wunscheltern die Elternschaft bescheinigen, werden nicht automatisch als ausländische Entscheidungen anerkannt (BGE 148 III 245).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Posthume Vaterschaft</h3>
+
+    <p class="text-gray-700 mb-6">Die Vaterschaft kann auch nach dem Tod des Vaters festgestellt oder begründet werden. Dies geschieht durch eine Anerkennung im Testament (Art. 260 Abs. 3 ZGB), durch die 300-Tage-Vermutung bei Tod des Ehemanns (Art. 255 Abs. 2 ZGB) oder durch eine Vaterschaftsklage gegen die Erben des verstorbenen mutmasslichen Vaters. DNA-Material kann vom Verstorbenen, von dessen Verwandten oder aus konserviertem biologischem Material gewonnen werden. Die Verwendung von Keimzellen eines Verstorbenen für eine Zeugung ist hingegen nach dem FMedG verboten.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Stiefkindadoption (Art. 264c ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Seit dem 1. Januar 2018 können Ehegatten, eingetragene Partner und faktische Lebenspartner das Kind ihres Partners adoptieren. Die Voraussetzungen umfassen ein gemeinsames Zusammenleben seit mindestens 3 Jahren, eine Pflege und Erziehung des Kindes seit mindestens 1 Jahr, die Wahrung des Kindeswohls sowie die Zustimmung des betroffenen leiblichen Elternteils. Die Stiefkindadoption steht allen Paaren offen – unabhängig von Geschlecht oder Zivilstand.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Minderjähriger Vater</h3>
+
+    <p class="text-gray-700 mb-6">Auch ein minderjähriger Vater kann die Vaterschaft anerkennen, sofern er urteilsfähig ist (Art. 16 ZGB). Allerdings benötigt er die Zustimmung seiner Eltern oder seines gesetzlichen Vertreters (Art. 260 Abs. 2 ZGB). Diese Zustimmung kann nicht verweigert werden, wenn die Anerkennung dem Kindeswohl dient.</p>
+
+    <!-- 17. Internationale Aspekte -->
+    <h2 id="international" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Internationale Aspekte der Vaterschaft (IPRG)</h2>
+
+    <p class="text-gray-700 mb-6">Bei Sachverhalten mit internationalem Bezug – etwa wenn ein Elternteil ausländischer Staatsangehöriger ist oder das Kind im Ausland geboren wurde – kommen die Bestimmungen des Bundesgesetzes über das Internationale Privatrecht (IPRG) zur Anwendung.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Zuständigkeit (Art. 66–67 IPRG)</h3>
+
+    <p class="text-gray-700 mb-6">Schweizer Gerichte sind für Vaterschaftsklagen und Anfechtungen zuständig, wenn das Kind oder der Beklagte Wohnsitz in der Schweiz hat (Art. 66 IPRG). Für Anerkennungen sind Schweizer Behörden zuständig, wenn der Anerkennende Wohnsitz in der Schweiz hat oder das Kind die Schweizer Staatsangehörigkeit besitzt (Art. 67 IPRG).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Anwendbares Recht (Art. 68 IPRG)</h3>
+
+    <p class="text-gray-700 mb-6">Die Begründung, Feststellung oder Anfechtung des Kindesverhältnisses untersteht dem Recht am gewöhnlichen Aufenthalt des Kindes (Art. 68 IPRG). Hat das Kind seinen gewöhnlichen Aufenthalt in der Schweiz, kommt Schweizer Recht zur Anwendung – unabhängig von der Staatsangehörigkeit der Eltern.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Anerkennung ausländischer Entscheide (Art. 70 IPRG)</h3>
+
+    <p class="text-gray-700 mb-6">Ausländische Vaterschaftsurteile und -anerkennungen werden in der Schweiz grundsätzlich anerkannt, sofern sie den allgemeinen Voraussetzungen des IPRG genügen (Art. 25 ff. IPRG) und nicht gegen den Schweizer Ordre public verstossen (Art. 17 IPRG). Ausländische Anerkennungen müssen beim zuständigen Schweizer Zivilstandsamt registriert werden. Mit einzelnen Ländern (Deutschland, Österreich, Italien) bestehen Abkommen zur automatischen Meldung zwischen den Zivilstandsämtern.</p>
+
+    <!-- 18. Checkliste -->
+    <h2 id="checkliste" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Checkliste für unverheiratete werdende Väter</h2>
+
+    <p class="text-gray-700 mb-6">Diese chronologische Checkliste fasst alle rechtlichen Schritte zusammen, die unverheiratete Väter idealerweise vor und nach der Geburt ihres Kindes unternehmen sollten.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Schritt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zeitpunkt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Wo</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kosten</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">1. Vaterschaftsanerkennung</td>
+                    <td class="px-6 py-4 text-gray-700">Ab Empfängnis – idealerweise im 2. Trimester</td>
+                    <td class="px-6 py-4 text-gray-700">Zivilstandsamt</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 75</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">2. Gemeinsame elterliche Sorge erklären</td>
+                    <td class="px-6 py-4 text-gray-700">Gleichzeitig mit Anerkennung</td>
+                    <td class="px-6 py-4 text-gray-700">Zivilstandsamt</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 0 (bei gleichzeitiger Abgabe)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">3. Namenserklärung</td>
+                    <td class="px-6 py-4 text-gray-700">Gleichzeitig oder innert 1 Jahr nach Geburt</td>
+                    <td class="px-6 py-4 text-gray-700">Zivilstandsamt</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 75 (falls Namensänderung)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">4. Unterhaltsvereinbarung</td>
+                    <td class="px-6 py-4 text-gray-700">Um die Geburt herum</td>
+                    <td class="px-6 py-4 text-gray-700">KESB (zur Genehmigung)</td>
+                    <td class="px-6 py-4 text-gray-700">Kostenlos (KESB-Beratung)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">5. Vaterschaftsurlaub beantragen</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Geburt oder kurz danach</td>
+                    <td class="px-6 py-4 text-gray-700">Arbeitgeber</td>
+                    <td class="px-6 py-4 text-gray-700">–</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">6. AHV-Erziehungsgutschriften klären</td>
+                    <td class="px-6 py-4 text-gray-700">Nach der Geburt</td>
+                    <td class="px-6 py-4 text-gray-700">AHV-Ausgleichskasse</td>
+                    <td class="px-6 py-4 text-gray-700">–</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Empfehlung:</p>
+        <p class="text-gray-700">Vereinbaren Sie den Termin beim Zivilstandsamt idealerweise im <strong>2. Trimester der Schwangerschaft</strong>. So haben Sie genügend Zeit, alle Dokumente zu beschaffen (insbesondere bei ausländischer Staatsangehörigkeit), und können Anerkennung, Sorgeerklärung und Namenserklärung in einem einzigen Termin erledigen.</p>
+    </div>
+
+    <!-- 19. BGE-Rechtsprechung -->
+    <h2 id="bge" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">BGE-Rechtsprechung im Überblick</h2>
+
+    <p class="text-gray-700 mb-6">Die folgende Tabelle fasst die wichtigsten Bundesgerichtsentscheide zum Thema Vaterschaft zusammen.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Entscheid</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Thema</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kernaussage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 150 III 160</td>
+                    <td class="px-6 py-4 text-gray-700">Altrechtliche «Zahlvaterschaft» und Erbrecht</td>
+                    <td class="px-6 py-4 text-gray-700">Die altrechtliche «Zahlvaterschaft» (vor 1978) begründet per se keinen gesetzlichen Erbanspruch und kein Pflichtteilsrecht.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 148 III 384</td>
+                    <td class="px-6 py-4 text-gray-700">Leihmutterschaft und Personenstandsregister</td>
+                    <td class="px-6 py-4 text-gray-700">Ausländische Geburtsurkunden bei Leihmutterschaft sind keine «Entscheidungen» nach IPRG. Der Wunschvater kann über Art. 260 ZGB anerkennen; die Wunschmutter muss den Weg der Stiefkindadoption beschreiten.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 144 III 1</td>
+                    <td class="px-6 py-4 text-gray-700">Kein Anfechtungsrecht des biologischen Vaters</td>
+                    <td class="px-6 py-4 text-gray-700">Der biologische Vater kann die Vaterschaftsvermutung des Ehemanns nicht anfechten – auch nicht unter Berufung auf Art. 8 EMRK (Recht auf Familienleben).</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 143 III 624</td>
+                    <td class="px-6 py-4 text-gray-700">Missbrauchliche Vaterschaftsanerkennung</td>
+                    <td class="px-6 py-4 text-gray-700">Gemeinden können eine Anerkennung anfechten, wenn diese zur Umgehung des Ausländerrechts dient. Interessenabwägung zwischen öffentlichem und privatem Interesse des Kindes.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 143 III 554</td>
+                    <td class="px-6 py-4 text-gray-700">Fristwiederherstellung bei Vaterschaftsklage</td>
+                    <td class="px-6 py-4 text-gray-700">Enge Auslegung von Art. 263 Abs. 3 ZGB. Ein wichtiger Grund liegt vor, wenn das Kind erst nach Ablauf der Klagefrist die Identität seines biologischen Vaters erfährt.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 141 III 328</td>
+                    <td class="px-6 py-4 text-gray-700">Leihmutterschaft – Mater semper certa est</td>
+                    <td class="px-6 py-4 text-gray-700">Die rechtliche Mutter ist stets die Frau, die das Kind gebiert – unabhängig von der genetischen Abstammung. Das Verbot der Leihmutterschaft gilt für Vorgänge in der Schweiz.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 134 III 241</td>
+                    <td class="px-6 py-4 text-gray-700">Recht auf Kenntnis der Abstammung</td>
+                    <td class="px-6 py-4 text-gray-700">Das Kind hat ein auf dem Persönlichkeitsrecht (Art. 28 ZGB) basierendes Recht auf Kenntnis seiner Abstammung, unabhängig von statusrechtlichen Klagen.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGE 129 III 646</td>
+                    <td class="px-6 py-4 text-gray-700">Rückforderung von Unterhalt nach Anfechtung</td>
+                    <td class="px-6 py-4 text-gray-700">Der «Registervater» kann nach erfolgreicher Anfechtung geleisteten Unterhalt vom biologischen Vater als ungerechtfertigte Bereicherung zurückfordern.</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGer 5A_492/2016</td>
+                    <td class="px-6 py-4 text-gray-700">Zwangsweise DNA-Analyse</td>
+                    <td class="px-6 py-4 text-gray-700">Die Mitwirkungspflicht bei DNA-Gutachten im Vaterschaftsverfahren kann zwangsweise durchgesetzt werden (Art. 343 ZPO).</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">BGer 5C.130/2003</td>
+                    <td class="px-6 py-4 text-gray-700">Fristwiederherstellung – Zuwarten</td>
+                    <td class="px-6 py-4 text-gray-700">Wer begründete Zweifel an der Vaterschaft hat, darf nicht länger als 2 Jahre warten, bevor er Schritte zur Klärung unternimmt.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+PLACEHOLDER_VATERSCHAFTSANERKENNUNG_PART_FOUR

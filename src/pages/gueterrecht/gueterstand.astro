@@ -3,82 +3,140 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 ---
 
 <ArticleLayout
-    title="Güterstand in der Schweiz"
-    description="Güterstand in der Schweiz: Die drei Güterstände im umfassenden Vergleich. Errungenschaftsbeteiligung, Gütergemeinschaft und Gütertrennung erklärt."
-    keywords="Güterstand Schweiz, Errungenschaftsbeteiligung, Gütergemeinschaft, Gütertrennung, Ehevertrag, Art. 181 ZGB"
+    title="Güterstand in der Schweiz: Alle drei Güterstände im Vergleich"
+    description="Güterstand Schweiz erklärt: Errungenschaftsbeteiligung, Gütergemeinschaft & Gütertrennung im Detail. Mit Gesetzesartikeln, BGE-Entscheiden & praktischen Beispielen."
+    keywords="Güterstand Schweiz, Errungenschaftsbeteiligung, Gütergemeinschaft, Gütertrennung, Ehevertrag, ordentlicher Güterstand, ausserordentlicher Güterstand, Art. 181 ZGB, Güterrecht"
     category="Güterrecht"
     categoryLink="/gueterrecht"
 >
-    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Der Güterstand regelt, wie das Vermögen von Ehegatten während der Ehe behandelt wird und wie es bei Scheidung oder Tod aufgeteilt wird. Die Schweiz kennt drei Güterstände: Errungenschaftsbeteiligung, Gütergemeinschaft und Gütertrennung.</p>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Schweiz kennt drei Güterstände: Errungenschaftsbeteiligung (ordentlicher Güterstand), Gütergemeinschaft und Gütertrennung (Art. 181 ZGB)</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Ohne Ehevertrag gilt automatisch die Errungenschaftsbeteiligung - dies betrifft über 90% aller Schweizer Ehepaare</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Der Güterstand bestimmt die Vermögenszuordnung während der Ehe, die Haftung für Schulden und die Vermögensaufteilung bei Scheidung oder Tod</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Ein Wechsel des Güterstands ist jederzeit durch öffentlich beurkundeten Ehevertrag möglich (Art. 182 ZGB)</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bei Konkurs eines Ehegatten tritt von Gesetzes wegen die Gütertrennung ein (Art. 188 ZGB)</span>
+            </li>
+        </ul>
+    </div>
+
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Der Güterstand regelt die vermögensrechtlichen Beziehungen zwischen Ehegatten während der Ehe und bei deren Auflösung durch Scheidung oder Tod. Die Wahl des richtigen Güterstands hat weitreichende finanzielle Konsequenzen und sollte wohlüberlegt sein. Dieser umfassende Ratgeber erklärt alle drei Schweizer Güterstände im Detail, zeigt deren Vor- und Nachteile auf und hilft Ihnen, die richtige Entscheidung für Ihre persönliche Situation zu treffen.</p>
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Was ist ein Güterstand?</h2>
 
-    <p class="text-gray-700 mb-6">Der Güterstand ist die rechtliche Regelung der vermögensrechtlichen Beziehungen zwischen Ehegatten. Er beantwortet grundlegende Fragen:</p>
+    <p class="text-gray-700 mb-6">Der Güterstand ist die rechtliche Ordnung, die bestimmt, wie das Vermögen von Ehegatten während der Ehe und bei deren Auflösung behandelt wird. Das schweizerische Güterrecht ist im Zivilgesetzbuch (ZGB) in den Artikeln 181 bis 251 geregelt und beantwortet vier grundlegende Fragen:</p>
 
-    <div class="overflow-x-auto mb-6">
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Frage</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Antwort durch Güterstand</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Grundfrage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Was wird geregelt?</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Relevante Artikel</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 text-gray-700">Wem gehört was?</td>
-                    <td class="px-6 py-4 text-gray-700">Zuordnung der Vermögenswerte</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Vermögenszuordnung</td>
+                    <td class="px-6 py-4 text-gray-700">Welche Vermögenswerte gehören welchem Ehegatten?</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 196-200 ZGB</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 text-gray-700">Wer verwaltet was?</td>
-                    <td class="px-6 py-4 text-gray-700">Verwaltungsbefugnisse</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Verwaltung</td>
+                    <td class="px-6 py-4 text-gray-700">Wer darf über welches Vermögen verfügen?</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 201 ZGB</td>
                 </tr>
                 <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Haftung</td>
                     <td class="px-6 py-4 text-gray-700">Wer haftet für welche Schulden?</td>
-                    <td class="px-6 py-4 text-gray-700">Haftungsregeln</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 202-203 ZGB</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 text-gray-700">Wie wird bei Auflösung geteilt?</td>
-                    <td class="px-6 py-4 text-gray-700">Aufteilungsregeln</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Aufteilung</td>
+                    <td class="px-6 py-4 text-gray-700">Wie wird das Vermögen bei Auflösung geteilt?</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 204-220 ZGB</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-        <p class="font-semibold text-navy mb-2">Wichtig:</p>
-        <p class="text-gray-700">Der Güterstand beginnt mit der Eheschliessung. Ohne abweichende Vereinbarung gilt automatisch die Errungenschaftsbeteiligung.</p>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig zu wissen:</p>
+        <p class="text-gray-700">Der Güterstand beginnt mit dem Tag der Eheschliessung und endet mit dem Tod eines Ehegatten, der Scheidung oder der Vereinbarung eines anderen Güterstands (Art. 204 ZGB). Ohne abweichende Vereinbarung durch Ehevertrag gilt automatisch die Errungenschaftsbeteiligung als ordentlicher Güterstand (Art. 181 ZGB).</p>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Die drei Güterstände der Schweiz</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Die drei Güterstände im Überblick</h2>
 
-    <div class="overflow-x-auto mb-6">
+    <p class="text-gray-700 mb-6">Das schweizerische Recht kennt genau drei Güterstände, die sich grundlegend in ihrer Struktur, ihren Wirkungen und ihrer Entstehung unterscheiden:</p>
+
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Güterstand</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Art. ZGB</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Entstehung</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Kernprinzip</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Merkmal</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Errungenschaftsbeteiligung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gütergemeinschaft</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gütertrennung</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Errungenschaftsbeteiligung</td>
-                    <td class="px-6 py-4 text-gray-700">196-220</td>
-                    <td class="px-6 py-4 text-gray-700">Automatisch</td>
-                    <td class="px-6 py-4 text-gray-700">Getrenntes Vermögen, Teilung bei Auflösung</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Rechtsgrundlage</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 196-220 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 221-246 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 247-251 ZGB</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Gütergemeinschaft</td>
-                    <td class="px-6 py-4 text-gray-700">221-246</td>
-                    <td class="px-6 py-4 text-gray-700">Nur Ehevertrag</td>
-                    <td class="px-6 py-4 text-gray-700">Gemeinsames Vermögen (Gesamtgut)</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Entstehung</td>
+                    <td class="px-6 py-4 text-gray-700">Automatisch bei Heirat</td>
+                    <td class="px-6 py-4 text-gray-700">Nur durch Ehevertrag</td>
+                    <td class="px-6 py-4 text-gray-700">Ehevertrag oder Gericht</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Gütertrennung</td>
-                    <td class="px-6 py-4 text-gray-700">247-251</td>
-                    <td class="px-6 py-4 text-gray-700">Ehevertrag oder Gericht</td>
-                    <td class="px-6 py-4 text-gray-700">Vollständig getrenntes Vermögen</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Vermögensmassen</td>
+                    <td class="px-6 py-4 text-gray-700">4 (je Eigengut + Errungenschaft)</td>
+                    <td class="px-6 py-4 text-gray-700">3 (Gesamtgut + je Eigengut)</td>
+                    <td class="px-6 py-4 text-gray-700">2 (je eigenes Vermögen)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Gemeinsames Vermögen</td>
+                    <td class="px-6 py-4 text-gray-700">Nein (nur bei Auflösung geteilt)</td>
+                    <td class="px-6 py-4 text-gray-700">Ja (Gesamtgut)</td>
+                    <td class="px-6 py-4 text-gray-700">Nein</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Verwaltung</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder sein Vermögen</td>
+                    <td class="px-6 py-4 text-gray-700">Gemeinsam oder geteilt</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder sein Vermögen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Aufteilung bei Scheidung</td>
+                    <td class="px-6 py-4 text-gray-700">Hälfte des Vorschlags</td>
+                    <td class="px-6 py-4 text-gray-700">Hälfte des Gesamtguts</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder behält seines</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Verbreitung</td>
+                    <td class="px-6 py-4 text-gray-700">Ca. 95% aller Ehen</td>
+                    <td class="px-6 py-4 text-gray-700">Selten (< 1%)</td>
+                    <td class="px-6 py-4 text-gray-700">Ca. 4-5% aller Ehen</td>
                 </tr>
             </tbody>
         </table>
@@ -86,123 +144,168 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Errungenschaftsbeteiligung: Der ordentliche Güterstand</h2>
 
-    <p class="text-gray-700 mb-6">Bei der Errungenschaftsbeteiligung bleibt das Vermögen während der Ehe getrennt. Jeder Ehegatte verwaltet sein Vermögen selbstständig. Erst bei Auflösung des Güterstands erfolgt ein wertmässiger Ausgleich der Errungenschaften.</p>
+    <p class="text-gray-700 mb-6">Die Errungenschaftsbeteiligung ist der gesetzliche Regelfall und gilt automatisch für alle Ehepaare, die keinen Ehevertrag abgeschlossen haben (Art. 181 ZGB). Während der Ehe bleibt das Vermögen der Ehegatten grundsätzlich getrennt. Erst bei Auflösung des Güterstands erfolgt ein wertmässiger Ausgleich der während der Ehe erwirtschafteten Vermögenswerte.</p>
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Die vier Vermögensmassen</h3>
 
+    <p class="text-gray-700 mb-6">Bei der Errungenschaftsbeteiligung unterscheidet das Gesetz zwischen vier Vermögensmassen - je zwei pro Ehegatte:</p>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-gray-50 p-6 rounded-lg">
+            <h4 class="font-bold text-navy mb-3">Eigengut (Art. 198-199 ZGB)</h4>
+            <p class="text-gray-700 mb-3">Vermögenswerte, die einem Ehegatten allein gehören und nicht geteilt werden:</p>
+            <ul class="text-gray-700 space-y-2">
+                <li>• Vermögen vor der Ehe eingebracht</li>
+                <li>• Erbschaften während der Ehe</li>
+                <li>• Schenkungen während der Ehe</li>
+                <li>• Gegenstände zum persönlichen Gebrauch</li>
+                <li>• Genugtuungsansprüche</li>
+            </ul>
+        </div>
+        <div class="bg-blue-50 p-6 rounded-lg">
+            <h4 class="font-bold text-navy mb-3">Errungenschaft (Art. 197 ZGB)</h4>
+            <p class="text-gray-700 mb-3">Vermögenswerte, die während der Ehe entgeltlich erworben werden:</p>
+            <ul class="text-gray-700 space-y-2">
+                <li>• Arbeitserwerb (Lohn, Bonus, etc.)</li>
+                <li>• Leistungen der Sozialversicherungen (AHV, IV, ALV)</li>
+                <li>• Pensionskassenguthaben</li>
+                <li>• Erträge aus dem Eigengut (Zinsen, Mieten)</li>
+                <li>• Ersatzanschaffungen für Errungenschaft</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Vermutungsregel (Art. 200 ZGB):</p>
+        <p class="text-gray-700">Kann nicht bewiesen werden, ob ein Vermögenswert Eigengut oder Errungenschaft ist, gilt die gesetzliche Vermutung zugunsten der Errungenschaft. Das Bundesgericht hat diese Regel mehrfach bestätigt (BGE 141 III 53). Deshalb ist es ratsam, ein Inventar der eingebrachten Vermögenswerte zu erstellen.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Eigengut im Detail (Art. 198 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Das Eigengut umfasst gemäss Art. 198 ZGB von Gesetzes wegen:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kategorie</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beispiele</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Eingebrachtes Vermögen</td>
+                    <td class="px-6 py-4 text-gray-700">Alles, was bei Eheschliessung bereits vorhanden war</td>
+                    <td class="px-6 py-4 text-gray-700">Ersparnisse, Immobilien, Wertpapiere, Fahrzeuge</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Erbschaften</td>
+                    <td class="px-6 py-4 text-gray-700">Während der Ehe durch Erbgang erworbene Vermögenswerte</td>
+                    <td class="px-6 py-4 text-gray-700">Erbschaft von Eltern, Legat</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Schenkungen</td>
+                    <td class="px-6 py-4 text-gray-700">Unentgeltliche Zuwendungen von Dritten</td>
+                    <td class="px-6 py-4 text-gray-700">Geldgeschenke, geschenkte Immobilie</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Persönliche Gegenstände</td>
+                    <td class="px-6 py-4 text-gray-700">Gegenstände, die ausschliesslich dem persönlichen Gebrauch dienen</td>
+                    <td class="px-6 py-4 text-gray-700">Kleidung, Schmuck (getragener), Sportausrüstung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Genugtuungsansprüche</td>
+                    <td class="px-6 py-4 text-gray-700">Entschädigungen für immaterielle Schäden</td>
+                    <td class="px-6 py-4 text-gray-700">Schmerzensgeld, Genugtuung für Persönlichkeitsverletzung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Ersatzanschaffungen</td>
+                    <td class="px-6 py-4 text-gray-700">Mit Eigengutsmitteln erworbene Vermögenswerte</td>
+                    <td class="px-6 py-4 text-gray-700">Mit Erbschaft gekaufte Immobilie</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Zusätzlich können die Ehegatten durch Ehevertrag weitere Vermögenswerte zum Eigengut erklären (Art. 199 ZGB):</p>
+
     <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Eigengut Ehemann:</strong> Eingebrachtes, Geerbtes, Geschenktes, Persönliches</li>
-        <li><strong>Eigengut Ehefrau:</strong> Eingebrachtes, Geerbtes, Geschenktes, Persönliches</li>
-        <li><strong>Errungenschaft Ehemann:</strong> Arbeitserwerb, Sozialversicherungen, Erträge des Eigenguts</li>
-        <li><strong>Errungenschaft Ehefrau:</strong> Arbeitserwerb, Sozialversicherungen, Erträge des Eigenguts</li>
+        <li>Vermögenswerte, die für die Ausübung eines Berufes oder den Betrieb eines Gewerbes bestimmt sind</li>
+        <li>Erträge aus dem Eigengut (die sonst in die Errungenschaft fallen würden)</li>
     </ul>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Bei Auflösung</h3>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Errungenschaft im Detail (Art. 197 ZGB)</h3>
 
-    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
-        <li>Jeder nimmt sein Eigengut zurück</li>
-        <li>Vorschlag wird berechnet (Errungenschaft - Schulden)</li>
-        <li>Jeder erhält die Hälfte des Vorschlags des anderen</li>
-    </ol>
+    <p class="text-gray-700 mb-6">Die Errungenschaft bildet das während der Ehe erwirtschaftete Vermögen und ist bei Auflösung des Güterstands zu teilen. Art. 197 ZGB definiert als Errungenschaft:</p>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Gütergemeinschaft: Der gemeinsame Güterstand</h2>
-
-    <p class="text-gray-700 mb-6">Bei der Gütergemeinschaft verschmilzt das Vermögen der Ehegatten ganz oder teilweise zu einem Gesamtgut. Die Ehegatten werden wirtschaftlich zu einer Einheit.</p>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Drei Formen</h3>
-
-    <div class="overflow-x-auto mb-6">
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Form</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Gesamtgut umfasst</th>
-                </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200">
-                <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Allgemeine Gütergemeinschaft</td>
-                    <td class="px-6 py-4 text-gray-700">Gesamtes Vermögen und Einkünfte</td>
-                </tr>
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Errungenschaftsgemeinschaft</td>
-                    <td class="px-6 py-4 text-gray-700">Nur die Errungenschaften</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Ausschlussgemeinschaft</td>
-                    <td class="px-6 py-4 text-gray-700">Alles ausser dem Ausgeschlossenen</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Gütertrennung: Der getrennte Güterstand</h2>
-
-    <p class="text-gray-700 mb-6">Bei der Gütertrennung gibt es keine vermögensrechtliche Verflechtung. Jeder Ehegatte bleibt alleiniger Eigentümer seines Vermögens, verwaltet es selbst und haftet nur für eigene Schulden.</p>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Entstehungsgründe</h3>
-
-    <div class="overflow-x-auto mb-6">
-        <table class="min-w-full bg-white border border-gray-200">
-            <thead class="bg-navy text-white">
-                <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Entstehung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kategorie</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beispiele</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 text-gray-700">Vertragliche (durch Ehevertrag)</td>
-                    <td class="px-6 py-4 text-gray-700">Art. 182 ZGB</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Arbeitserwerb</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 197 Abs. 2 Ziff. 1 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Lohn, Honorare, Provisionen, Boni</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 text-gray-700">Gerichtliche (auf Antrag)</td>
-                    <td class="px-6 py-4 text-gray-700">Art. 185 ZGB</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Sozialversicherungen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 197 Abs. 2 Ziff. 2 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">AHV-Renten, IV-Renten, Arbeitslosenentschädigung</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 text-gray-700">Eheschutz (bei Aufhebung des Haushalts)</td>
-                    <td class="px-6 py-4 text-gray-700">Art. 176 Abs. 1 Ziff. 3 ZGB</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Erwerbsunfähigkeitsentschädigungen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 197 Abs. 2 Ziff. 3 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Unfalltaggeld, Krankentaggeld</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 text-gray-700">Konkurs eines Ehegatten</td>
-                    <td class="px-6 py-4 text-gray-700">Art. 188 ZGB</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Erträge des Eigenguts</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 197 Abs. 2 Ziff. 4 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Zinsen auf geerbtem Kapital, Mieteinnahmen aus geerbter Liegenschaft</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Ersatzanschaffungen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 197 Abs. 2 Ziff. 5 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Mit Lohn gekauftes Auto, mit Ersparnissen erworbene Immobilie</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Detaillierter Vergleich der Güterstände</h2>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Verwaltung und Verfügung während der Ehe</h3>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Bei Scheidung</h3>
+    <p class="text-gray-700 mb-6">Während der Ehe verwaltet und nutzt jeder Ehegatte sein Vermögen innerhalb der gesetzlichen Schranken selbstständig (Art. 201 ZGB). Diese Regelung entspricht praktisch einer Gütertrennung während der Dauer der Ehe. Wichtige Einschränkungen bestehen jedoch für:</p>
 
-    <div class="overflow-x-auto mb-6">
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Kriterium</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Errungenschafts-beteiligung</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Gütergemeinschaft</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Gütertrennung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschränkung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Wirkung</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Was wird geteilt?</td>
-                    <td class="px-6 py-4 text-gray-700">Vorschlag (1/2)</td>
-                    <td class="px-6 py-4 text-gray-700">Gesamtgut (1/2)</td>
-                    <td class="px-6 py-4 text-gray-700">Nichts</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Familienwohnung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 169 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Veräusserung/Belastung nur mit Zustimmung des anderen Ehegatten</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Komplexität</td>
-                    <td class="px-6 py-4 text-gray-700">Mittel</td>
-                    <td class="px-6 py-4 text-gray-700">Mittel</td>
-                    <td class="px-6 py-4 text-gray-700">Gering</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Hausrat</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 169 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Veräusserung nur mit Zustimmung</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Schutz schwächerer Partner</td>
-                    <td class="px-6 py-4 text-gray-700">Gut</td>
-                    <td class="px-6 py-4 text-gray-700">Gut</td>
-                    <td class="px-6 py-4 text-gray-700">Gering</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Mietvertrag</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 169 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Kündigung nur mit Zustimmung</td>
                 </tr>
             </tbody>
         </table>
@@ -210,34 +313,571 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Haftung für Schulden</h3>
 
-    <div class="overflow-x-auto mb-6">
+    <p class="text-gray-700 mb-6">Bei der Errungenschaftsbeteiligung gilt der Grundsatz der Einzelhaftung: Jeder Ehegatte haftet nur für seine eigenen Schulden mit seinem gesamten Vermögen (Art. 202 ZGB). Eine wichtige Ausnahme besteht jedoch:</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Solidarhaftung für den Familienunterhalt (Art. 166 ZGB):</p>
+        <p class="text-gray-700">Jeder Ehegatte vertritt während des Zusammenlebens die eheliche Gemeinschaft für die laufenden Bedürfnisse der Familie. Für diese Schulden haften beide Ehegatten solidarisch - auch wenn nur einer die Verpflichtung eingegangen ist. Dies betrifft typischerweise Einkäufe für den Haushalt, Ausgaben für die Kinder oder laufende Rechnungen.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Güterrechtliche Auseinandersetzung und Vorschlagsberechnung</h3>
+
+    <p class="text-gray-700 mb-6">Der Güterstand der Errungenschaftsbeteiligung wird aufgelöst durch (Art. 204 ZGB):</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Tod eines Ehegatten</li>
+        <li>Scheidung, Trennung oder Ungültigerklärung der Ehe</li>
+        <li>Vereinbarung eines anderen Güterstandes (Ehevertrag)</li>
+        <li>Gerichtliche Anordnung der Gütertrennung</li>
+    </ul>
+
+    <p class="text-gray-700 mb-6">Bei der Auflösung erfolgt die <a href="/gueterrecht/gueterrechtliche-auseinandersetzung" class="text-gold hover:underline font-semibold">güterrechtliche Auseinandersetzung</a> in sechs Schritten:</p>
+
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Kriterium</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Errungenschafts-beteiligung</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Gütergemeinschaft</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Gütertrennung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Schritt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Für eigene Schulden</td>
-                    <td class="px-6 py-4 text-gray-700">Mit eigenem Vermögen</td>
-                    <td class="px-6 py-4 text-gray-700">Eigengut + ggf. Gesamtgut</td>
-                    <td class="px-6 py-4 text-gray-700">Nur eigenes Vermögen</td>
+                    <td class="px-6 py-4 font-semibold text-navy">1. Gütertrennung</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder Ehegatte nimmt seine Vermögenswerte zurück, die sich im Besitz des anderen befinden</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 205 ZGB</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Solidarhaftung</td>
-                    <td class="px-6 py-4 text-gray-700">Nur Familienunterhalt</td>
-                    <td class="px-6 py-4 text-gray-700">Umfangreich (Vollschulden)</td>
-                    <td class="px-6 py-4 text-gray-700">Nur Familienunterhalt</td>
+                    <td class="px-6 py-4 font-semibold text-navy">2. Aussonderung Miteigentum</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Miteigentum kann ein Ehegatte die Zuteilung des Gegenstands verlangen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 205 Abs. 2 ZGB</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Haftungsrisiko</td>
-                    <td class="px-6 py-4 text-gray-700">Mittel</td>
-                    <td class="px-6 py-4 text-gray-700">Hoch</td>
-                    <td class="px-6 py-4 text-gray-700">Niedrig</td>
+                    <td class="px-6 py-4 font-semibold text-navy">3. Schuldenbereinigung</td>
+                    <td class="px-6 py-4 text-gray-700">Gegenseitige Schulden werden verrechnet</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 205 Abs. 3 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">4. Zuweisung zu den Gütermassen</td>
+                    <td class="px-6 py-4 text-gray-700">Vermögenswerte werden dem Eigengut oder der Errungenschaft zugewiesen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 207 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">5. Hinzurechnung</td>
+                    <td class="px-6 py-4 text-gray-700">Unentgeltliche Zuwendungen und Verschlechterungen werden hinzugerechnet</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 208 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">6. Vorschlagsteilung</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder Ehegatte erhält die Hälfte des Vorschlags des anderen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 215 ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Was ist der Vorschlag?</h3>
+
+    <p class="text-gray-700 mb-6">Der Vorschlag ist der Überschuss, der nach Abzug der Schulden von der Errungenschaft verbleibt (Art. 210 ZGB). Die Berechnung erfolgt nach folgender Formel:</p>
+
+    <div class="bg-navy text-white p-6 rounded-lg my-8">
+        <p class="text-lg font-semibold text-gold mb-4">Vorschlagsberechnung:</p>
+        <p class="mb-2">Aktiven der Errungenschaft</p>
+        <p class="mb-2">- Schulden der Errungenschaft</p>
+        <p class="mb-2">+ Hinzurechnungen (Art. 208 ZGB)</p>
+        <p class="mb-2">+ Ersatzforderungen des Eigenguts an die Errungenschaft</p>
+        <p class="mb-2">- Ersatzforderungen der Errungenschaft an das Eigengut</p>
+        <p class="border-t border-gold pt-2 mt-2">= <strong>Vorschlag</strong> (wenn positiv) oder Rückschlag (wenn negativ)</p>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig - Bewertungszeitpunkt (Art. 214 ZGB):</p>
+        <p class="text-gray-700">Die Vermögenswerte werden grundsätzlich zum Verkehrswert im Zeitpunkt der Auseinandersetzung bewertet. Bei einer Scheidung ist der massgebliche Zeitpunkt für die Zusammensetzung der Gütermassen der Tag der Einreichung des Scheidungsbegehrens (Art. 204 Abs. 2 ZGB), für die Bewertung jedoch der Tag des Urteils oder der gütlichen Einigung (BGE 136 III 209; 5A_749/2023).</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Praktisches Beispiel zur Vorschlagsteilung</h3>
+
+    <div class="bg-blue-50 p-6 rounded-lg my-8">
+        <p class="font-semibold text-navy mb-4">Beispiel:</p>
+        <p class="text-gray-700 mb-4">Die Ehegatten Anna und Beat lassen sich nach 15 Jahren Ehe scheiden.</p>
+
+        <div class="grid md:grid-cols-2 gap-4 mb-4">
+            <div>
+                <p class="font-semibold text-navy">Anna:</p>
+                <p class="text-gray-700">Errungenschaft: CHF 200'000</p>
+                <p class="text-gray-700">Schulden: CHF 20'000</p>
+                <p class="text-gray-700 font-semibold">Vorschlag: CHF 180'000</p>
+            </div>
+            <div>
+                <p class="font-semibold text-navy">Beat:</p>
+                <p class="text-gray-700">Errungenschaft: CHF 400'000</p>
+                <p class="text-gray-700">Schulden: CHF 50'000</p>
+                <p class="text-gray-700 font-semibold">Vorschlag: CHF 350'000</p>
+            </div>
+        </div>
+
+        <p class="text-gray-700"><strong>Berechnung der Vorschlagsbeteiligung:</strong></p>
+        <p class="text-gray-700">Anna erhält ½ von Beats Vorschlag: CHF 175'000</p>
+        <p class="text-gray-700">Beat erhält ½ von Annas Vorschlag: CHF 90'000</p>
+        <p class="text-gray-700 mt-2"><strong>Saldo:</strong> Beat schuldet Anna CHF 85'000 (CHF 175'000 - CHF 90'000)</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Gütergemeinschaft: Der vereinigende Güterstand</h2>
+
+    <p class="text-gray-700 mb-6">Die <a href="/gueterrecht/guetergemeinschaft" class="text-gold hover:underline font-semibold">Gütergemeinschaft</a> ist ein vertraglicher Güterstand, bei dem das Vermögen der Ehegatten ganz oder teilweise zu einem Gesamtgut vereinigt wird (Art. 221 ZGB). Dieser Güterstand kann nur durch einen öffentlich beurkundeten Ehevertrag begründet werden und ist heute in der Schweiz selten geworden.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Die drei Formen der Gütergemeinschaft</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Form</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Umfang des Gesamtguts</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Allgemeine Gütergemeinschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 222 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Gesamtes Vermögen und Einkünfte beider Ehegatten (ausser gesetzliches Eigengut)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Errungenschaftsgemeinschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 223 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Nur die Errungenschaften beider Ehegatten</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Ausschlussgemeinschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 224 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Alles ausser den vertraglich ausgeschlossenen Vermögenswerten</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gesamtgut und Eigengut</h3>
+
+    <p class="text-gray-700 mb-6">Das eheliche Vermögen besteht bei der Gütergemeinschaft aus dem Gesamtgut und dem Eigengut jedes Ehegatten. Das Gesamtgut gehört beiden Ehegatten als Gesamteigentum (Art. 222 Abs. 3 ZGB) - keiner kann allein über seinen Anteil verfügen.</p>
+
+    <p class="text-gray-700 mb-6">Von Gesetzes wegen zum Eigengut gehören nur (Art. 225 Abs. 2 ZGB):</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+        <li>Gegenstände, die ausschliesslich dem persönlichen Gebrauch eines Ehegatten dienen</li>
+        <li>Genugtuungsansprüche</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Verwaltung und Verfügung</h3>
+
+    <p class="text-gray-700 mb-6">Die Ehegatten verwalten das Gesamtgut im Interesse der ehelichen Gemeinschaft (Art. 227 ZGB). Das Gesetz unterscheidet zwischen:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Art der Verwaltung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Befugnis</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beispiele</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Ordentliche Verwaltung</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder Ehegatte kann allein handeln und die Gemeinschaft verpflichten (Art. 227 Abs. 2 ZGB)</td>
+                    <td class="px-6 py-4 text-gray-700">Einkäufe, Reparaturen, laufende Geschäfte</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Ausserordentliche Verwaltung</td>
+                    <td class="px-6 py-4 text-gray-700">Erfordert die Einwilligung beider Ehegatten (Art. 228 ZGB)</td>
+                    <td class="px-6 py-4 text-gray-700">Verkauf von Grundstücken, grössere Investitionen, Kreditaufnahme</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Haftung bei der Gütergemeinschaft</h3>
+
+    <p class="text-gray-700 mb-6">Die Gütergemeinschaft zeichnet sich durch ein komplexes Haftungssystem aus. Das Gesetz unterscheidet zwischen Vollschulden und Eigenschulden:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Schuldenart</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Haftungsmasse</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beispiele</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Vollschulden (Art. 233 ZGB)</td>
+                    <td class="px-6 py-4 text-gray-700">Eigengut und Gesamtgut</td>
+                    <td class="px-6 py-4 text-gray-700">Schulden aus Vertretung der Gemeinschaft, Beruf/Gewerbe, Verpflichtungen mit Zustimmung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Eigenschulden (Art. 234 ZGB)</td>
+                    <td class="px-6 py-4 text-gray-700">Eigengut und Hälfte des Gesamtgutwerts</td>
+                    <td class="px-6 py-4 text-gray-700">Persönliche Schulden ohne Bezug zur Gemeinschaft</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Achtung - erhöhtes Haftungsrisiko:</p>
+        <p class="text-gray-700">Die Gütergemeinschaft birgt ein erhebliches Haftungsrisiko, da ein Ehegatte unter Umständen auch für Schulden des anderen mit dem Gesamtgut haftet. Dies ist einer der Hauptgründe, weshalb dieser Güterstand heute kaum noch gewählt wird.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Auflösung der Gütergemeinschaft</h3>
+
+    <p class="text-gray-700 mb-6">Bei Auflösung der Gütergemeinschaft durch Scheidung oder Tod erhält grundsätzlich jeder Ehegatte die Hälfte des Gesamtguts (Art. 241 ZGB). Durch Ehevertrag kann jedoch auch eine andere Teilung vereinbart werden, wobei die Pflichtteilsansprüche der Kinder zu beachten sind.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Gütertrennung: Der separate Güterstand</h2>
+
+    <p class="text-gray-700 mb-6">Die <a href="/gueterrecht/guetertrennung" class="text-gold hover:underline font-semibold">Gütertrennung</a> ist der Güterstand mit der geringsten vermögensrechtlichen Verflechtung der Ehegatten. Jeder Ehegatte bleibt alleiniger Eigentümer seines Vermögens, verwaltet es selbstständig und haftet nur für seine eigenen Schulden (Art. 247 ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Entstehungsgründe der Gütertrennung</h3>
+
+    <p class="text-gray-700 mb-6">Die Gütertrennung kann auf drei verschiedene Arten entstehen:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Entstehungsgrund</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Vertragliche Gütertrennung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 182 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Durch öffentlich beurkundeten <a href="/eherecht/ehevertrag" class="text-gold hover:underline">Ehevertrag</a></td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Gerichtliche Gütertrennung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 185 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Auf Begehren eines Ehegatten bei wichtigem Grund</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Gütertrennung von Gesetzes wegen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 188, 118 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Konkurs eines Ehegatten oder gerichtlicher Trennung</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wirkungen der Gütertrennung</h3>
+
+    <p class="text-gray-700 mb-6">Die Gütertrennung hat folgende rechtliche Wirkungen:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Regelung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Verwaltung</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder Ehegatte verwaltet sein Vermögen selbst</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 247 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Nutzung</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder Ehegatte nutzt sein Vermögen selbst</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 247 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Verfügung</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder Ehegatte verfügt über sein Vermögen selbst</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 247 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Haftung</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder Ehegatte haftet nur für seine eigenen Schulden</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 249 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Beweisvermutung</td>
+                    <td class="px-6 py-4 text-gray-700">Bei unklarer Zugehörigkeit: Miteigentum</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 248 ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vorteile und Nachteile der Gütertrennung</h3>
+
+    <div class="grid md:grid-cols-2 gap-6 mb-8">
+        <div class="bg-green-50 p-6 rounded-lg">
+            <h4 class="font-bold text-navy mb-3">Vorteile</h4>
+            <ul class="text-gray-700 space-y-2">
+                <li>• Schutz des eigenen Vermögens vor Gläubigern des Partners</li>
+                <li>• Keine Vermögensteilung bei Scheidung</li>
+                <li>• Vollständige finanzielle Unabhängigkeit</li>
+                <li>• Schutz von Unternehmen und Geschäftsvermögen</li>
+                <li>• Einfache und klare Verhältnisse</li>
+                <li>• Ideal bei sehr unterschiedlichen Vermögen</li>
+            </ul>
+        </div>
+        <div class="bg-red-50 p-6 rounded-lg">
+            <h4 class="font-bold text-navy mb-3">Nachteile</h4>
+            <ul class="text-gray-700 space-y-2">
+                <li>• Kein Vermögensausgleich bei Scheidung</li>
+                <li>• Keine Beteiligung am Verdienst des Partners</li>
+                <li>• Kann wirtschaftlich schwächeren Partner benachteiligen</li>
+                <li>• Pensionskasse wird trotzdem geteilt</li>
+                <li>• Erfordert detaillierte Dokumentation</li>
+                <li>• Kosten für Inventar und Ehevertrag</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig - Pensionskassenguthaben:</p>
+        <p class="text-gray-700">Auch bei Gütertrennung wird das während der Ehe angesparte Pensionskassenguthaben bei einer Scheidung hälftig geteilt (Vorsorgeausgleich gemäss Art. 122 ff. ZGB). Die Gütertrennung betrifft nur das übrige Vermögen, nicht die berufliche Vorsorge.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Der ausserordentliche Güterstand</h2>
+
+    <p class="text-gray-700 mb-6">Als «ausserordentlicher Güterstand» bezeichnet man die Gütertrennung, wenn sie nicht freiwillig vereinbart, sondern durch gerichtliche Anordnung oder von Gesetzes wegen eingetreten ist. Diese Möglichkeit dient dem Schutz eines Ehegatten oder der Gläubiger.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gerichtliche Anordnung (Art. 185 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Auf Begehren eines Ehegatten ordnet das Gericht die Gütertrennung an, wenn ein wichtiger Grund vorliegt. Das Gesetz nennt in Art. 185 Abs. 2 ZGB folgende wichtige Gründe:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Nr.</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Wichtiger Grund</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">1</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Überschuldung/Pfändung</td>
+                    <td class="px-6 py-4 text-gray-700">Der andere Ehegatte ist überschuldet oder sein Anteil am Gesamtgut ist gepfändet</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">2</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Interessengefährdung</td>
+                    <td class="px-6 py-4 text-gray-700">Der andere Ehegatte gefährdet die Interessen des Gesuchstellers oder der Gemeinschaft</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">3</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Zustimmungsverweigerung</td>
+                    <td class="px-6 py-4 text-gray-700">Ungerechtfertigte Verweigerung der Zustimmung zu einer Verfügung über das Gesamtgut</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">4</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Auskunftsverweigerung</td>
+                    <td class="px-6 py-4 text-gray-700">Verweigerung der Auskunft über Einkommen, Vermögen, Schulden oder Gesamtgut</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">5</td>
+                    <td class="px-6 py-4 font-semibold text-navy">Dauerhafte Urteilsunfähigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Der andere Ehegatte ist dauernd urteilsunfähig</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gütertrennung von Gesetzes wegen (Art. 188 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">In bestimmten Fällen tritt die Gütertrennung automatisch ein, ohne dass ein Begehren gestellt werden muss:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Situation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zeitpunkt des Eintritts</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Konkurs eines Ehegatten in Gütergemeinschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 188 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Tag der Konkurseröffnung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Gerichtliche Trennung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 118 Abs. 1 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Mit der Rechtskraft des Trennungsurteils</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Zeitpunkt der Wirkung</h3>
+
+    <p class="text-gray-700 mb-6">Die gerichtlich angeordnete Gütertrennung wirkt gemäss Art. 204 Abs. 2 ZGB auf den Tag der Einreichung des Begehrens zurück. Dies ist wichtig für die Berechnung der Gütermassen und verhindert, dass ein Ehegatte noch kurz vor der Anordnung Vermögenswerte verschieben kann.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Güterstandswechsel durch Ehevertrag</h2>
+
+    <p class="text-gray-700 mb-6">Die Ehegatten können ihren Güterstand jederzeit durch einen Ehevertrag ändern, aufheben oder modifizieren (Art. 182 ZGB). Ein solcher Wechsel kann sowohl vor als auch nach der Eheschliessung erfolgen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Formvorschriften für den Ehevertrag</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Anforderung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Öffentliche Beurkundung</td>
+                    <td class="px-6 py-4 text-gray-700">Der Ehevertrag muss von einem Notar öffentlich beurkundet werden</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 184 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Persönliche Anwesenheit</td>
+                    <td class="px-6 py-4 text-gray-700">Beide Ehegatten müssen persönlich beim Notar erscheinen</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 184 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Urteilsfähigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Beide Ehegatten müssen urteilsfähig sein</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 183 ZGB</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Freiwilligkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Der Vertrag muss ohne Zwang oder Drohung abgeschlossen werden</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 28 ff. OR</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kosten für einen Ehevertrag</h3>
+
+    <p class="text-gray-700 mb-6">Die Kosten für einen Ehevertrag variieren je nach Kanton und Komplexität des Vertrags erheblich:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kostenposition</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kostenrahmen</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bemerkung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Notariatsgebühr (einfacher Vertrag)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 200-800</td>
+                    <td class="px-6 py-4 text-gray-700">Variiert stark nach Kanton</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Notariatsgebühr (komplexer Vertrag)</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 500-3'000</td>
+                    <td class="px-6 py-4 text-gray-700">Abhängig vom Vermögen und Aufwand</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Vermögensinventar</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 150-1'500</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Gütertrennung empfohlen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Anwaltliche Beratung</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 300-500/Stunde</td>
+                    <td class="px-6 py-4 text-gray-700">Optional, aber empfohlen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Tipp:</p>
+        <p class="text-gray-700">In Kantonen mit Amtsnotariat (z.B. Zürich, Thurgau) sind die Notariatsgebühren in der Regel günstiger als in Kantonen mit freiem Notariat. Die Beratung durch den Notar ist üblicherweise in der Beurkundungsgebühr inbegriffen.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gläubigerschutz beim Güterstandswechsel</h3>
+
+    <p class="text-gray-700 mb-6">Ein wichtiger Aspekt beim Güterstandswechsel ist der Schutz von Gläubigern. Gemäss Art. 193 ZGB kann der Wechsel des Güterstands oder eine güterrechtliche Auseinandersetzung nicht zum Nachteil der Gläubiger wirken. Bestehende Schulden bleiben bestehen und können auch nach dem Wechsel eingefordert werden.</p>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Güterstand und Scheidung</h2>
+
+    <p class="text-gray-700 mb-6">Der Güterstand hat erhebliche Auswirkungen auf die <a href="/gueterrecht/vermoegensaufteilung-bei-scheidung" class="text-gold hover:underline font-semibold">Vermögensaufteilung bei der Scheidung</a>. Die nachfolgende Übersicht zeigt die Unterschiede:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Güterstand</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Was wird geteilt?</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Komplexität</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Errungenschaftsbeteiligung</td>
+                    <td class="px-6 py-4 text-gray-700">Hälfte des Vorschlags jedes Ehegatten</td>
+                    <td class="px-6 py-4 text-gray-700">Mittel (Berechnung der vier Gütermassen)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Gütergemeinschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Hälfte des Gesamtguts</td>
+                    <td class="px-6 py-4 text-gray-700">Mittel (Abgrenzung Gesamtgut/Eigengut)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Gütertrennung</td>
+                    <td class="px-6 py-4 text-gray-700">Nichts (jeder behält sein Vermögen)</td>
+                    <td class="px-6 py-4 text-gray-700">Gering</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Unabhängig vom Güterstand:</p>
+        <p class="text-gray-700">Die Aufteilung des Pensionskassenguthabens (Vorsorgeausgleich) und des AHV-Splitting erfolgen unabhängig vom gewählten Güterstand. Diese Ansprüche bestehen bei jeder Scheidung und werden nach den Regeln von Art. 122 ff. ZGB abgewickelt.</p>
+    </div>
+
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Güterstand und Erbrecht</h2>
+
+    <p class="text-gray-700 mb-6">Der Güterstand beeinflusst auch die erbrechtliche Situation beim Tod eines Ehegatten. Vor der Erbteilung muss die güterrechtliche Auseinandersetzung durchgeführt werden. Erst der verbleibende Nachlass wird dann nach den erbrechtlichen Regeln verteilt.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Güterstand</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Anspruch des überlebenden Ehegatten</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Nachlass (vor Erbteilung)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Errungenschaftsbeteiligung</td>
+                    <td class="px-6 py-4 text-gray-700">Eigengut + eigene Errungenschaft + ½ Vorschlag des Verstorbenen</td>
+                    <td class="px-6 py-4 text-gray-700">Eigengut + Errungenschaft des Verstorbenen - Vorschlagsforderung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 font-semibold text-navy">Gütergemeinschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Eigengut + ½ Gesamtgut</td>
+                    <td class="px-6 py-4 text-gray-700">Eigengut + ½ Gesamtgut des Verstorbenen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 font-semibold text-navy">Gütertrennung</td>
+                    <td class="px-6 py-4 text-gray-700">Eigenes Vermögen (kein güterrechtlicher Anspruch)</td>
+                    <td class="px-6 py-4 text-gray-700">Gesamtes Vermögen des Verstorbenen</td>
                 </tr>
             </tbody>
         </table>
@@ -245,150 +885,266 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 
     <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Welcher Güterstand ist für wen geeignet?</h2>
 
+    <p class="text-gray-700 mb-6">Die Wahl des richtigen Güterstands hängt von den individuellen Umständen ab. Hier eine Entscheidungshilfe:</p>
+
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Errungenschaftsbeteiligung empfohlen für:</h3>
 
     <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Die meisten Ehepaare:</strong> Guter Kompromiss zwischen Selbstständigkeit und Fairness</li>
-        <li><strong>Einverdiener-Ehen:</strong> Schutz des nicht erwerbstätigen Partners</li>
-        <li><strong>Normale Vermögensverhältnisse:</strong> Unkompliziert, keine Vertragskosten</li>
+        <li><strong>Die meisten Ehepaare:</strong> Bietet einen guten Kompromiss zwischen Selbstständigkeit während der Ehe und fairem Ausgleich bei Auflösung</li>
+        <li><strong>Einverdiener-Ehen:</strong> Schützt den nicht oder weniger erwerbstätigen Partner durch die Vorschlagsbeteiligung</li>
+        <li><strong>Ehepaare mit Kindern:</strong> Besonders wenn ein Elternteil die Erwerbstätigkeit zugunsten der Kinderbetreuung reduziert</li>
+        <li><strong>Normale Vermögensverhältnisse:</strong> Keine besonderen Risiken oder Schutzbedürfnisse</li>
     </ul>
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gütergemeinschaft empfohlen für:</h3>
 
     <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Traditionelles Familienbild:</strong> Volle wirtschaftliche Einheit</li>
-        <li><strong>Landwirtschaftliche Betriebe:</strong> Gemeinsame Bewirtschaftung</li>
-        <li><strong>Starke Verflechtung gewünscht:</strong> "Was mein ist, ist dein"</li>
+        <li><strong>Traditionelles Familienbild:</strong> Wunsch nach vollständiger wirtschaftlicher Einheit</li>
+        <li><strong>Landwirtschaftliche Betriebe:</strong> Gemeinsame Bewirtschaftung eines Hofes</li>
+        <li><strong>Sehr enge Verbundenheit:</strong> "Was mein ist, ist auch dein" als gelebte Philosophie</li>
     </ul>
 
     <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gütertrennung empfohlen für:</h3>
 
     <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li><strong>Unternehmer/Selbstständige:</strong> Schutz des Geschäftsvermögens</li>
-        <li><strong>Erhebliche Schulden eines Partners:</strong> Schutz vor Mithaftung</li>
-        <li><strong>Sehr unterschiedliche Vermögen:</strong> Klare Trennung gewünscht</li>
-        <li><strong>Zweitehe mit Kindern aus erster Ehe:</strong> Schutz des Vermögens für eigene Kinder</li>
+        <li><strong>Unternehmer und Selbstständige:</strong> Schutz des Geschäftsvermögens und der Firma vor Scheidungsfolgen</li>
+        <li><strong>Erhebliche Schulden eines Partners:</strong> Schutz des eigenen Vermögens vor den Gläubigern des Partners</li>
+        <li><strong>Sehr unterschiedliche Vermögensverhältnisse:</strong> Wenn ein Partner erheblich mehr Vermögen einbringt</li>
+        <li><strong>Zweitehe mit Kindern aus erster Ehe:</strong> Schutz des Vermögens für die eigenen Kinder</li>
+        <li><strong>Ältere Ehepaare:</strong> Bei Heirat im fortgeschrittenen Alter mit bereits vorhandenem Vermögen</li>
+        <li><strong>Risikoberufe:</strong> Bei erhöhtem Haftungsrisiko (z.B. Ärzte, Architekten, Verwaltungsräte)</li>
     </ul>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Güterstandswahl und Wechsel</h2>
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wichtige Bundesgerichtsentscheide zum Güterrecht</h2>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Formvorschriften für den Ehevertrag</h3>
+    <p class="text-gray-700 mb-6">Das Bundesgericht hat in zahlreichen Entscheiden wichtige Grundsätze zum Güterrecht festgelegt:</p>
 
-    <div class="overflow-x-auto mb-6">
+    <div class="overflow-x-auto mb-8">
         <table class="min-w-full bg-white border border-gray-200">
             <thead class="bg-navy text-white">
                 <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Anforderung</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
-                </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200">
-                <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Form</td>
-                    <td class="px-6 py-4 text-gray-700">Öffentliche Beurkundung (Notar)</td>
-                </tr>
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Parteien</td>
-                    <td class="px-6 py-4 text-gray-700">Beide Ehegatten persönlich</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Urteilsfähigkeit</td>
-                    <td class="px-6 py-4 text-gray-700">Beide müssen urteilsfähig sein</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kosten</h3>
-
-    <p class="text-gray-700 mb-6">Die Notariatskosten sind kantonal unterschiedlich:</p>
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Mindestgebühr: ca. CHF 200-500</li>
-        <li>Bei komplexeren Verträgen: höher</li>
-        <li>Anwaltliche Beratung: zusätzlich</li>
-    </ul>
-
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit und Empfehlungen</h2>
-
-    <div class="overflow-x-auto mb-6">
-        <table class="min-w-full bg-white border border-gray-200">
-            <thead class="bg-navy text-white">
-                <tr>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Güterstand</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Empfehlung</th>
-                </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200">
-                <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Errungenschaftsbeteiligung</td>
-                    <td class="px-6 py-4 text-gray-700">Für die meisten Ehepaare der beste Kompromiss</td>
-                </tr>
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4 font-semibold text-navy">Gütergemeinschaft</td>
-                    <td class="px-6 py-4 text-gray-700">Für traditionelle Ehen mit starker wirtschaftlicher Verflechtung</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4 font-semibold text-navy">Gütertrennung</td>
-                    <td class="px-6 py-4 text-gray-700">Für Unternehmer, bei Schulden oder komplexen Verhältnissen</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Handlungsempfehlungen</h3>
-
-    <p class="text-gray-700 mb-4"><strong>Vor der Heirat:</strong></p>
-    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
-        <li>Vermögensverhältnisse beider Partner analysieren</li>
-        <li>Berufliche Situation und Pläne besprechen</li>
-        <li>Entscheiden, ob Ehevertrag sinnvoll ist</li>
-    </ol>
-
-    <p class="text-gray-700 mb-4"><strong>Während der Ehe:</strong></p>
-    <ol class="list-decimal list-inside text-gray-700 mb-6 space-y-2">
-        <li>Vermögensverhältnisse dokumentieren</li>
-        <li>Bei Veränderungen (Firmengründung, Erbschaft) Güterstand überprüfen</li>
-        <li>Regelmässig aktualisieren</li>
-    </ol>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wichtige Gesetzesartikel</h3>
-
-    <div class="overflow-x-auto mb-6">
-        <table class="min-w-full bg-white border border-gray-200">
-            <thead class="bg-navy text-white">
-                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">BGE</th>
                     <th class="px-6 py-3 text-left text-sm font-semibold">Thema</th>
-                    <th class="px-6 py-3 text-left text-sm font-semibold">Artikel</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kernaussage</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 <tr>
-                    <td class="px-6 py-4 text-gray-700">Güterstandswahl</td>
-                    <td class="px-6 py-4 text-gray-700">Art. 181-182 ZGB</td>
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 141 III 53</td>
+                    <td class="px-6 py-4 text-gray-700">Beweisvermutung</td>
+                    <td class="px-6 py-4 text-gray-700">Bei unklarer Zuordnung gilt die Vermutung zugunsten der Errungenschaft</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 text-gray-700">Ehevertrag</td>
-                    <td class="px-6 py-4 text-gray-700">Art. 182-186 ZGB</td>
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 136 III 209</td>
+                    <td class="px-6 py-4 text-gray-700">Bewertungszeitpunkt</td>
+                    <td class="px-6 py-4 text-gray-700">Vermögenswerte sind zum Verkehrswert im Zeitpunkt der Auseinandersetzung zu bewerten</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 text-gray-700">Errungenschaftsbeteiligung</td>
-                    <td class="px-6 py-4 text-gray-700">Art. 196-220 ZGB</td>
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 123 III 289</td>
+                    <td class="px-6 py-4 text-gray-700">Stichtag</td>
+                    <td class="px-6 py-4 text-gray-700">Massgeblicher Zeitpunkt für die Zusammensetzung ist das Datum der Einreichung des Scheidungsbegehrens</td>
                 </tr>
                 <tr class="bg-gray-50">
-                    <td class="px-6 py-4 text-gray-700">Gütergemeinschaft</td>
-                    <td class="px-6 py-4 text-gray-700">Art. 221-246 ZGB</td>
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 141 III 49</td>
+                    <td class="px-6 py-4 text-gray-700">Verzinsung</td>
+                    <td class="px-6 py-4 text-gray-700">Schulden zwischen Ehegatten werden im Prinzip nicht verzinst</td>
                 </tr>
                 <tr>
-                    <td class="px-6 py-4 text-gray-700">Gütertrennung</td>
-                    <td class="px-6 py-4 text-gray-700">Art. 247-251 ZGB</td>
-                </tr>
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4 text-gray-700">Gerichtliche Gütertrennung</td>
-                    <td class="px-6 py-4 text-gray-700">Art. 185 ZGB</td>
+                    <td class="px-6 py-4 font-semibold text-navy">BGE 140 III 337</td>
+                    <td class="px-6 py-4 text-gray-700">Unterhalt und Güterrecht</td>
+                    <td class="px-6 py-4 text-gray-700">Ausstehende Unterhaltsansprüche sind im Rahmen der güterrechtlichen Auseinandersetzung zu liquidieren</td>
                 </tr>
             </tbody>
         </table>
     </div>
 
-    <p class="text-gray-500 text-sm mt-8 italic">Dieser Artikel dient der allgemeinen Information und ersetzt keine individuelle Rechtsberatung. Bei konkreten Fragen zum Güterstand empfehlen wir, einen spezialisierten Anwalt für Familienrecht oder einen Notar zu konsultieren.</p>
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">Die Wahl des richtigen Güterstands und die korrekte Durchführung einer güterrechtlichen Auseinandersetzung sind rechtlich komplex und haben weitreichende finanzielle Konsequenzen. Fehler können zu erheblichen Vermögensverlusten führen. Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> kann Sie in folgenden Situationen unterstützen:</p>
+
+        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+            <li>Beratung vor der Wahl eines Güterstands und Gestaltung eines Ehevertrags</li>
+            <li>Berechnung der Vorschlagsbeteiligung bei der Errungenschaftsbeteiligung</li>
+            <li>Bewertung komplexer Vermögenswerte (Unternehmen, Immobilien, Kunstwerke)</li>
+            <li>Durchsetzung von Hinzurechnungsansprüchen bei Vermögensverschiebungen</li>
+            <li>Antrag auf gerichtliche Gütertrennung bei Gefährdung Ihrer Interessen</li>
+            <li>Vertretung in streitigen Scheidungsverfahren mit güterrechtlichen Fragen</li>
+        </ul>
+
+        <p class="text-gray-700 mb-6">Besonders bei Unternehmern, Selbstständigen oder bei komplexen Vermögensverhältnissen ist die Beratung durch einen erfahrenen <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> unerlässlich. Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> kennt die aktuelle Rechtsprechung und kann Ihre Interessen wirksam vertreten.</p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Lassen Sie sich unverbindlich beraten, welcher Güterstand für Ihre persönliche Situation am besten geeignet ist oder wie Sie Ihre Ansprüche bei einer güterrechtlichen Auseinandersetzung optimal durchsetzen können.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- Fazit -->
+    <h2 class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Die Wahl des Güterstands ist eine der wichtigsten finanziellen Entscheidungen für Ehepaare. Die Errungenschaftsbeteiligung als gesetzlicher Güterstand bietet für die meisten Paare einen ausgewogenen Kompromiss zwischen finanzieller Unabhängigkeit während der Ehe und fairem Ausgleich bei deren Auflösung. Für bestimmte Lebenssituationen - insbesondere bei Unternehmern, erheblichen Schulden oder sehr unterschiedlichen Vermögensverhältnissen - kann jedoch die Gütertrennung die bessere Wahl sein.</p>
+
+    <p class="text-gray-700 mb-6">Ein Güterstandswechsel ist jederzeit durch einen öffentlich beurkundeten Ehevertrag möglich. Vor einer solchen Entscheidung sollte jedoch immer eine fundierte rechtliche Beratung eingeholt werden, um die individuellen Vor- und Nachteile abzuwägen und die eigenen Interessen bestmöglich zu schützen.</p>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Welchen Güterstand hat man nach der Heirat automatisch?</h3>
+                <p class="text-gray-700">Ohne Ehevertrag gilt automatisch die Errungenschaftsbeteiligung als ordentlicher Güterstand (Art. 181 ZGB). Dieser tritt mit dem Tag der Eheschliessung in Kraft und gilt für über 90% aller Schweizer Ehen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann man den Güterstand während der Ehe ändern?</h3>
+                <p class="text-gray-700">Ja, die Ehegatten können den Güterstand jederzeit durch einen öffentlich beurkundeten Ehevertrag ändern (Art. 182 ZGB). Dazu müssen beide Ehegatten persönlich beim Notar erscheinen und den Vertrag gemeinsam unterzeichnen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was kostet ein Ehevertrag zur Änderung des Güterstands?</h3>
+                <p class="text-gray-700">Die Kosten variieren je nach Kanton und Komplexität zwischen CHF 200 und CHF 3'000 für die Notariatsgebühren. Bei Gütertrennung kommen noch CHF 150-1'500 für das Vermögensinventar hinzu. Eine zusätzliche anwaltliche Beratung ist optional aber empfehlenswert.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen Errungenschaftsbeteiligung und Gütertrennung?</h3>
+                <p class="text-gray-700">Bei der Errungenschaftsbeteiligung erhält jeder Ehegatte bei Scheidung oder Tod die Hälfte des Vorschlags (Errungenschaft minus Schulden) des anderen. Bei der Gütertrennung gibt es keinen solchen Ausgleich - jeder behält sein eigenes Vermögen vollständig. Die Gütertrennung schützt vor den Schulden des Partners, führt aber zu keiner Beteiligung am gemeinsam Erwirtschafteten.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wann tritt die Gütertrennung automatisch ein?</h3>
+                <p class="text-gray-700">Die Gütertrennung tritt von Gesetzes wegen ein bei Konkurs eines Ehegatten, der in Gütergemeinschaft lebt (Art. 188 ZGB), sowie bei gerichtlicher Trennung (Art. 118 Abs. 1 ZGB). Zudem kann das Gericht auf Antrag die Gütertrennung anordnen, wenn wichtige Gründe vorliegen (Art. 185 ZGB).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert mit der Pensionskasse bei der Gütertrennung?</h3>
+                <p class="text-gray-700">Das während der Ehe angesparte Pensionskassenguthaben wird auch bei Gütertrennung bei einer Scheidung hälftig geteilt. Der Vorsorgeausgleich nach Art. 122 ff. ZGB ist vom Güterstand unabhängig und erfolgt bei jeder Scheidung.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Haftet man für die Schulden des Ehepartners?</h3>
+                <p class="text-gray-700">Grundsätzlich haftet jeder Ehegatte nur für seine eigenen Schulden. Eine Ausnahme besteht bei Schulden für den laufenden Familienunterhalt (Art. 166 ZGB) - hier haften beide solidarisch. Bei der Gütergemeinschaft ist das Haftungsrisiko grösser, da auch das Gesamtgut für bestimmte Schulden (Vollschulden) haftet.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Vorschlag bei der Errungenschaftsbeteiligung?</h3>
+                <p class="text-gray-700">Der Vorschlag ist der positive Saldo der Errungenschaft nach Abzug aller Schulden (Art. 210 ZGB). Bei Auflösung des Güterstands erhält jeder Ehegatte die Hälfte des Vorschlags des anderen. Ein negativer Saldo (Rückschlag) muss nicht geteilt werden.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Güterstand in der Schweiz: Alle drei Güterstände im Vergleich",
+        "description": "Güterstand Schweiz erklärt: Errungenschaftsbeteiligung, Gütergemeinschaft & Gütertrennung im Detail. Mit Gesetzesartikeln, BGE-Entscheiden & praktischen Beispielen.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-20",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/gueterrecht/gueterstand"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Welchen Güterstand hat man nach der Heirat automatisch?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ohne Ehevertrag gilt automatisch die Errungenschaftsbeteiligung als ordentlicher Güterstand (Art. 181 ZGB). Dieser tritt mit dem Tag der Eheschliessung in Kraft und gilt für über 90% aller Schweizer Ehen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann man den Güterstand während der Ehe ändern?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, die Ehegatten können den Güterstand jederzeit durch einen öffentlich beurkundeten Ehevertrag ändern (Art. 182 ZGB). Dazu müssen beide Ehegatten persönlich beim Notar erscheinen und den Vertrag gemeinsam unterzeichnen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was kostet ein Ehevertrag zur Änderung des Güterstands?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Kosten variieren je nach Kanton und Komplexität zwischen CHF 200 und CHF 3'000 für die Notariatsgebühren. Bei Gütertrennung kommen noch CHF 150-1'500 für das Vermögensinventar hinzu. Eine zusätzliche anwaltliche Beratung ist optional aber empfehlenswert."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen Errungenschaftsbeteiligung und Gütertrennung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei der Errungenschaftsbeteiligung erhält jeder Ehegatte bei Scheidung oder Tod die Hälfte des Vorschlags (Errungenschaft minus Schulden) des anderen. Bei der Gütertrennung gibt es keinen solchen Ausgleich - jeder behält sein eigenes Vermögen vollständig. Die Gütertrennung schützt vor den Schulden des Partners, führt aber zu keiner Beteiligung am gemeinsam Erwirtschafteten."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wann tritt die Gütertrennung automatisch ein?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Gütertrennung tritt von Gesetzes wegen ein bei Konkurs eines Ehegatten, der in Gütergemeinschaft lebt (Art. 188 ZGB), sowie bei gerichtlicher Trennung (Art. 118 Abs. 1 ZGB). Zudem kann das Gericht auf Antrag die Gütertrennung anordnen, wenn wichtige Gründe vorliegen (Art. 185 ZGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert mit der Pensionskasse bei der Gütertrennung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das während der Ehe angesparte Pensionskassenguthaben wird auch bei Gütertrennung bei einer Scheidung hälftig geteilt. Der Vorsorgeausgleich nach Art. 122 ff. ZGB ist vom Güterstand unabhängig und erfolgt bei jeder Scheidung."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Haftet man für die Schulden des Ehepartners?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Grundsätzlich haftet jeder Ehegatte nur für seine eigenen Schulden. Eine Ausnahme besteht bei Schulden für den laufenden Familienunterhalt (Art. 166 ZGB) - hier haften beide solidarisch. Bei der Gütergemeinschaft ist das Haftungsrisiko grösser, da auch das Gesamtgut für bestimmte Schulden (Vollschulden) haftet."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist der Vorschlag bei der Errungenschaftsbeteiligung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der Vorschlag ist der positive Saldo der Errungenschaft nach Abzug aller Schulden (Art. 210 ZGB). Bei Auflösung des Güterstands erhält jeder Ehegatte die Hälfte des Vorschlags des anderen. Ein negativer Saldo (Rückschlag) muss nicht geteilt werden."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Güterrecht",
+                "item": "https://familienrechtanwalt.ch/gueterrecht"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Güterstand in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/gueterrecht/gueterstand"
+            }
+        ]
+    })} />
+
 </ArticleLayout>

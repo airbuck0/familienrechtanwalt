@@ -3,179 +3,891 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 ---
 
 <ArticleLayout
-    title="Elterliche Sorge übertragen in der Schweiz | Familienrechtsanwalt"
-    description="Elterliche Sorge übertragen: Möglichkeiten und rechtliche Grenzen in der Schweiz. Informationen zu Übertragung auf anderen Elternteil, Vormundschaft und Adoption."
-    keywords="elterliche Sorge übertragen, Sorgerecht übertragen, Vormundschaft, Adoption, gemeinsame Sorge, Schweiz"
-    category="Sorgerecht"
-    categoryLink="/sorgerecht"
+  title="Elterliche Sorge übertragen in der Schweiz: Voraussetzungen & Verfahren"
+  description="Elterliche Sorge übertragen: Alleiniges Sorgerecht beantragen nach BGE 141 III 472, gemeinsame Sorge für unverheiratete Väter, Sorgerechtsverfügung. KESB vs. Gericht im Überblick."
+  keywords="elterliche Sorge übertragen, Sorgerecht übertragen Schweiz, alleiniges Sorgerecht beantragen, Sorgerechtsverfügung, gemeinsame elterliche Sorge, KESB, Art 298 ZGB, BGE 141 III 472"
+  category="Sorgerecht"
+  categoryLink="/sorgerecht"
 >
-    <p class="text-xl text-gray-600 mb-8">Die Frage, ob und wie die elterliche Sorge auf eine andere Person übertragen werden kann, stellt sich in verschiedenen Lebenssituationen. Das Schweizer Recht kennt verschiedene Mechanismen, wobei eine vollständig freiwillige Übertragung nur eingeschränkt möglich ist. Dieser Leitfaden erläutert die rechtlichen Möglichkeiten und Grenzen der Übertragung der elterlichen Sorge.</p>
+  <!-- Das Wichtigste in Kürze -->
+  <div class="bg-navy text-white p-8 rounded-lg mb-12">
+    <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+    <ul class="space-y-3">
+      <li class="flex items-start">
+        <span class="text-gold mr-3">✓</span>
+        <span>Die <strong>gemeinsame elterliche Sorge</strong> ist seit 2014 der gesetzliche Regelfall – auch bei Scheidung und bei unverheirateten Eltern (Art. 296 Abs. 2 ZGB).</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-gold mr-3">✓</span>
+        <span>Eine <strong>Übertragung auf den anderen Elternteil</strong> (alleinige Sorge) ist nur bei schwerwiegendem Dauerkonflikt oder anhaltender Kommunikationsunfähigkeit möglich – ein blosser Elternstreit reicht nicht (BGE 141 III 472).</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-gold mr-3">✓</span>
+        <span>Drei <strong>kumulative Voraussetzungen</strong> für Alleinsorge: 1) Dauerkonflikt/Kommunikationsunfähigkeit, 2) negative Auswirkung auf Kindeswohl, 3) Entlastung durch Alleinsorge erwartbar (BGE 142 III 197).</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-gold mr-3">✓</span>
+        <span>Unverheiratete Eltern können die gemeinsame Sorge beim <strong>Zivilstandsamt</strong> (bei Vaterschaftsanerkennung, kostenlos) oder bei der <strong>KESB</strong> (später, CHF 100.–) erklären.</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-gold mr-3">✓</span>
+        <span>Eine <strong>freiwillige Übertragung auf Dritte</strong> (z.B. Grosseltern) ist nicht möglich – nur Vormundschaft nach Entzug (Art. 311 ZGB) oder Adoption.</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-gold mr-3">✓</span>
+        <span>Mit einer <strong>Sorgerechtsverfügung</strong> können Sie einen Wunschvormund für den Todesfall benennen – rechtlich nicht bindend, aber von der KESB berücksichtigt.</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-gold mr-3">✓</span>
+        <span><strong>Sanktionsgedanken</strong> gegen einen nicht kooperierenden Elternteil dürfen bei der Sorgerechtsentscheidung keine Rolle spielen (BGE 142 III 197 E. 3.7).</span>
+      </li>
+    </ul>
+  </div>
 
-    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
-        <h2 class="text-xl font-bold text-navy mt-0 mb-4">Das Wichtigste in Kürze</h2>
-        <p class="mb-0 text-gray-700">Eine freiwillige Übertragung der elterlichen Sorge auf Dritte (z.B. Grosseltern) ist im Schweizer Recht nicht vorgesehen. Das Sorgerecht kann nur von einem Elternteil auf den anderen übergehen oder durch die KESB entzogen und einem Vormund übertragen werden. Bei Unfähigkeit oder Unwilligkeit beider Eltern wird eine Vormundschaft errichtet. Die Übertragung auf den anderen Elternteil ist bei gemeinsamem Sorgerecht nur möglich, wenn dies dem Kindeswohl entspricht.</p>
+  <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die elterliche Sorge umfasst alle Rechte und Pflichten der Eltern gegenüber ihrem Kind – von der Erziehung über die Vertretung bis zur Vermögensverwaltung. Doch was passiert, wenn ein Elternteil die alleinige Sorge übernehmen soll? Wie können unverheiratete Väter die gemeinsame Sorge erhalten? Und wie regelt man die Vorsorge für den Todesfall? Dieser umfassende Ratgeber erklärt alle Möglichkeiten der Übertragung der elterlichen Sorge im Schweizer Recht, die massgebliche Bundesgerichtspraxis und die Verfahren vor KESB und Gericht.</p>
+
+  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Was ist die elterliche Sorge?</h2>
+
+  <p class="text-gray-700 mb-6">Die elterliche Sorge ist ein zentraler Begriff des Schweizer Familienrechts und umfasst die Gesamtheit der Rechte und Pflichten der Eltern gegenüber ihrem minderjährigen Kind. Sie dient dem <strong>Wohl des Kindes</strong> (Art. 296 Abs. 1 ZGB) und beinhaltet verschiedene Teilbereiche:</p>
+
+  <div class="overflow-x-auto mb-8">
+    <table class="min-w-full bg-white border border-gray-200">
+      <thead class="bg-navy text-white">
+        <tr>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Teilbereich</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Inhalt</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-200">
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">Pflege und Erziehung</td>
+          <td class="px-6 py-4 text-gray-700">Körperliches, geistiges und sittliches Wohl des Kindes; Ausbildung; Erziehungsstil</td>
+          <td class="px-6 py-4 text-gray-700">Art. 301 ZGB</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 font-semibold text-navy">Aufenthaltsbestimmungsrecht</td>
+          <td class="px-6 py-4 text-gray-700">Recht, den Wohnort des Kindes zu bestimmen; Umzugsentscheidungen</td>
+          <td class="px-6 py-4 text-gray-700">Art. 301a ZGB</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">Religiöse Erziehung</td>
+          <td class="px-6 py-4 text-gray-700">Bestimmung der Konfession des Kindes; religiöse Unterweisung</td>
+          <td class="px-6 py-4 text-gray-700">Art. 303 ZGB</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 font-semibold text-navy">Gesetzliche Vertretung</td>
+          <td class="px-6 py-4 text-gray-700">Vertretung des Kindes gegenüber Dritten; Abschluss von Verträgen</td>
+          <td class="px-6 py-4 text-gray-700">Art. 304 ZGB</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">Vermögensverwaltung</td>
+          <td class="px-6 py-4 text-gray-700">Verwaltung des Kindesvermögens; Anlageentscheidungen; Schutz vor Verlust</td>
+          <td class="px-6 py-4 text-gray-700">Art. 318 ff. ZGB</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 font-semibold text-navy">Namenswahl</td>
+          <td class="px-6 py-4 text-gray-700">Bestimmung des Vornamens des Kindes</td>
+          <td class="px-6 py-4 text-gray-700">Art. 301 Abs. 4 ZGB</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+    <p class="font-semibold text-navy mb-2">Wichtige Unterscheidung: Sorgerecht vs. Obhut</p>
+    <p class="text-gray-700">Die elterliche Sorge ist nicht mit der <strong>Obhut</strong> zu verwechseln. Die Obhut betrifft nur die tatsächliche Betreuung und den Aufenthalt des Kindes. Eltern können die gemeinsame Sorge haben, während die Obhut nur bei einem Elternteil liegt. Umgekehrt ist eine <a href="/sorgerecht/alternierende-obhut" class="text-gold hover:underline font-semibold">alternierende Obhut</a> nur bei gemeinsamer elterlicher Sorge möglich (BGE 150 III 97).</p>
+  </div>
+
+  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Gemeinsame elterliche Sorge als Regelfall</h2>
+
+  <p class="text-gray-700 mb-6">Seit der Gesetzesrevision vom <strong>1. Juli 2014</strong> ist die gemeinsame elterliche Sorge in der Schweiz der gesetzliche Regelfall – unabhängig davon, ob die Eltern verheiratet sind, zusammenleben oder getrennt sind (Art. 296 Abs. 2 ZGB). Der Gesetzgeber geht davon aus, dass die gemeinsame Sorge das Kindeswohl am besten wahrt.</p>
+
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Bei verheirateten Eltern</h3>
+
+  <p class="text-gray-700 mb-6">Sind die Eltern miteinander verheiratet, steht ihnen die gemeinsame elterliche Sorge <strong>automatisch ab Geburt</strong> des Kindes zu. Daran ändert auch eine Scheidung grundsätzlich nichts: Das <a href="/sorgerecht/gemeinsames-sorgerecht" class="text-gold hover:underline font-semibold">gemeinsame Sorgerecht</a> bleibt bestehen, sofern das Kindeswohl nicht ausnahmsweise etwas anderes erfordert (Art. 298 Abs. 1 ZGB).</p>
+
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Bei unverheirateten Eltern</h3>
+
+  <p class="text-gray-700 mb-6">Bei <strong>unverheirateten Eltern</strong> liegt die Situation anders: Bei Geburt des Kindes erhält zunächst nur die <strong>Mutter</strong> automatisch die elterliche Sorge. Der Vater muss zuerst das Kindesverhältnis anerkennen (Vaterschaftsanerkennung), bevor die gemeinsame Sorge möglich ist.</p>
+
+  <p class="text-gray-700 mb-6">Um die gemeinsame elterliche Sorge zu erhalten, müssen unverheiratete Eltern eine <strong>gemeinsame Erklärung</strong> abgeben (Art. 298a ZGB). Diese kann an verschiedenen Orten erfolgen:</p>
+
+  <div class="overflow-x-auto mb-8">
+    <table class="min-w-full bg-white border border-gray-200">
+      <thead class="bg-navy text-white">
+        <tr>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Ort der Erklärung</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Zeitpunkt</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Kosten</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Besonderheiten</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-200">
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">Zivilstandsamt</td>
+          <td class="px-6 py-4 text-gray-700">Mit Vaterschaftsanerkennung (auch vor Geburt möglich)</td>
+          <td class="px-6 py-4 text-gray-700">Kostenlos</td>
+          <td class="px-6 py-4 text-gray-700">Einfachste und schnellste Lösung</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 font-semibold text-navy">KESB</td>
+          <td class="px-6 py-4 text-gray-700">Nach Vaterschaftsanerkennung (später)</td>
+          <td class="px-6 py-4 text-gray-700">CHF 100.–</td>
+          <td class="px-6 py-4 text-gray-700">Wenn nicht gleichzeitig mit Anerkennung</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">Ausländische Behörde</td>
+          <td class="px-6 py-4 text-gray-700">Bei Wohnsitz im Ausland</td>
+          <td class="px-6 py-4 text-gray-700">Je nach Land</td>
+          <td class="px-6 py-4 text-gray-700">Wird in der Schweiz anerkannt (Art. 298a Abs. 4 ZGB)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Inhalt der Erklärung nach Art. 298a ZGB</h3>
+
+  <p class="text-gray-700 mb-6">In der Erklärung bestätigen die Eltern, dass sie bereit sind, gemeinsam die Verantwortung für das Kind zu übernehmen und sich über folgende Punkte geeinigt haben (Art. 298a Abs. 1 ZGB):</p>
+
+  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+    <li><strong>Obhut:</strong> Bei welchem Elternteil lebt das Kind hauptsächlich?</li>
+    <li><strong>Persönlicher Verkehr:</strong> Wie ist das Besuchsrecht geregelt?</li>
+    <li><strong>Betreuungsanteile:</strong> Wie teilen sich die Eltern die Betreuung auf?</li>
+    <li><strong>Unterhaltsbeitrag:</strong> Wer zahlt wie viel für das Kind?</li>
+  </ul>
+
+  <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+    <p class="font-semibold text-navy mb-2">Praxistipp:</p>
+    <p class="text-gray-700">Die einfachste und kostengünstigste Lösung ist, die Erklärung über die gemeinsame elterliche Sorge <strong>gleichzeitig mit der Vaterschaftsanerkennung</strong> beim Zivilstandsamt abzugeben. So entstehen keine zusätzlichen Kosten. Gleichzeitig können die Eltern auch über den Familiennamen des Kindes und die Anrechnung der Erziehungsgutschriften (AHV) entscheiden.</p>
+  </div>
+
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wenn ein Elternteil die gemeinsame Sorge verweigert (Art. 298b ZGB)</h3>
+
+  <p class="text-gray-700 mb-6">Weigert sich ein Elternteil, die Erklärung über die gemeinsame elterliche Sorge abzugeben, kann der andere Elternteil die <strong>KESB am Wohnsitz des Kindes</strong> anrufen (Art. 298b Abs. 1 ZGB). Die KESB wird in der Regel die gemeinsame Sorge verfügen – es sei denn, zur Wahrung des Kindeswohls ist ausnahmsweise an der alleinigen Sorge festzuhalten.</p>
+
+  <p class="text-gray-700 mb-6">Gemäss Bundesgericht stellt die Unzumutbarkeit für einen Elternteil allein keinen Grund dar, von der gemeinsamen Sorge abzusehen. Die oberste Richtschnur ist das Kindeswohl, nicht die Interessen der Eltern.</p>
+
+  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Übertragung der alleinigen elterlichen Sorge</h2>
+
+  <p class="text-gray-700 mb-6">Die Zuteilung der <strong>alleinigen elterlichen Sorge</strong> an nur einen Elternteil ist die <strong>eng begrenzte Ausnahme</strong>. Das Bundesgericht hat dies in mehreren Leitentscheiden unmissverständlich klargestellt (BGE 141 III 472 E. 4): Die Alleinsorge darf nicht dort ausgesprochen werden, wo sie dem Kindeswohl bloss am besten gerecht würde – sie muss die Ausnahme bleiben.</p>
+
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Bundesgerichtliche Leitentscheide zur Alleinsorge</h3>
+
+  <div class="overflow-x-auto mb-8">
+    <table class="min-w-full bg-white border border-gray-200">
+      <thead class="bg-navy text-white">
+        <tr>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Entscheid</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Datum</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Kernaussage</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-200">
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">BGE 141 III 472</td>
+          <td class="px-6 py-4 text-gray-700">27.08.2015</td>
+          <td class="px-6 py-4 text-gray-700">Leitentscheid: Drei kumulative Voraussetzungen für Alleinsorge; Kindeswohl als einzige Maxime</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 font-semibold text-navy">BGE 142 III 197</td>
+          <td class="px-6 py-4 text-gray-700">25.02.2016</td>
+          <td class="px-6 py-4 text-gray-700">Sanktionsverbot: Keine "Bestrafung" eines nicht kooperierenden Elternteils; Alleinsorge nur zur Entlastung der Situation</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">BGE 143 III 361</td>
+          <td class="px-6 py-4 text-gray-700">2017</td>
+          <td class="px-6 py-4 text-gray-700">Qualifizierte Kooperationsunfähigkeit als Entzugsgrund; konkrete Feststellung der Kindeswohlbeeinträchtigung erforderlich</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 font-semibold text-navy">5A_377/2021</td>
+          <td class="px-6 py-4 text-gray-700">21.02.2022</td>
+          <td class="px-6 py-4 text-gray-700">Konkrete Feststellung erforderlich, in welcher Hinsicht das Kindeswohl beeinträchtigt ist</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">5A_40/2024</td>
+          <td class="px-6 py-4 text-gray-700">08.02.2024</td>
+          <td class="px-6 py-4 text-gray-700">Strenge Praxis bei Alleinzuteilung; klar erstellte und erhebliche Beeinträchtigung des Kindeswohls erforderlich</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 font-semibold text-navy">5A_853/2023</td>
+          <td class="px-6 py-4 text-gray-700">2024</td>
+          <td class="px-6 py-4 text-gray-700">Langjährige Inhaftierung als Grund für Alleinsorge, wenn faktische Ausübung unmöglich</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Die drei kumulativen Voraussetzungen (BGE 141 III 472)</h3>
+
+  <p class="text-gray-700 mb-6">Das Bundesgericht hat in BGE 141 III 472 drei <strong>kumulative Voraussetzungen</strong> für die Zuteilung der alleinigen elterlichen Sorge aufgestellt:</p>
+
+  <div class="overflow-x-auto mb-8">
+    <table class="min-w-full bg-white border border-gray-200">
+      <thead class="bg-navy text-white">
+        <tr>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Voraussetzung</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Beispiele</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-200">
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">1. Dauerkonflikt / Kommunikationsunfähigkeit</td>
+          <td class="px-6 py-4 text-gray-700">Schwerwiegender elterlicher Dauerkonflikt oder anhaltende Kommunikationsunfähigkeit</td>
+          <td class="px-6 py-4 text-gray-700">Totale Kommunikationsverweigerung; ständige gerichtliche Streitigkeiten; systematische Blockade</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 font-semibold text-navy">2. Negative Auswirkung auf Kindeswohl</td>
+          <td class="px-6 py-4 text-gray-700">Der Mangel wirkt sich konkret negativ auf das Kindeswohl aus</td>
+          <td class="px-6 py-4 text-gray-700">Kind wird in Loyalitätskonflikt hineingezogen; psychische Belastung; Entwicklungsstörungen</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">3. Entlastung durch Alleinsorge</td>
+          <td class="px-6 py-4 text-gray-700">Von der Alleinzuteilung ist eine Verbesserung/Entlastung der Situation zu erwarten</td>
+          <td class="px-6 py-4 text-gray-700">Weniger Konflikte bei Entscheidungen; Kind muss nicht mehr ständig vermitteln</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="bg-red-50 border-l-4 border-red-500 p-6 my-8">
+    <p class="font-semibold text-red-800 mb-2">Wichtig – Sanktionsverbot (BGE 142 III 197):</p>
+    <p class="text-red-700">Das <strong>Kindeswohl</strong> ist die einzige Maxime für die Sorgerechtszuteilung. Eine "Sanktionierung" eines nicht kooperierenden Elternteils darf bei der Entscheidung <strong>keine Rolle</strong> spielen – dies würde "auf dem Buckel des Kindes" geschehen. Die Alleinsorge darf nie als Strafe gedacht sein, sondern nur zur Wahrung des Kindeswohls.</p>
+  </div>
+
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Weitere anerkannte Gründe für die Alleinsorge</h3>
+
+  <div class="overflow-x-auto mb-8">
+    <table class="min-w-full bg-white border border-gray-200">
+      <thead class="bg-navy text-white">
+        <tr>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Grund</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Erläuterung</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-200">
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">Schwerwiegender Dauerkonflikt</td>
+          <td class="px-6 py-4 text-gray-700">Anhaltende Kommunikations- oder Kooperationsunfähigkeit, die das Kind belastet</td>
+          <td class="px-6 py-4 text-gray-700">BGE 141 III 472</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 font-semibold text-navy">Qualifizierte Kooperationsunfähigkeit</td>
+          <td class="px-6 py-4 text-gray-700">Elternteil blockiert systematisch alle Entscheidungen zum Nachteil des Kindes</td>
+          <td class="px-6 py-4 text-gray-700">BGE 143 III 361</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">Langjährige Inhaftierung</td>
+          <td class="px-6 py-4 text-gray-700">Elternteil kann Sorge faktisch nicht ausüben</td>
+          <td class="px-6 py-4 text-gray-700">5A_853/2023</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 font-semibold text-navy">Dauerhafte Abwesenheit</td>
+          <td class="px-6 py-4 text-gray-700">Längerer Auslandsaufenthalt ohne Rückkehrabsicht</td>
+          <td class="px-6 py-4 text-gray-700">Art. 311 Abs. 1 Ziff. 1 ZGB</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">Schwere Krankheit/Gebrechen</td>
+          <td class="px-6 py-4 text-gray-700">Schwere psychische oder körperliche Erkrankung, die Sorgeausübung verhindert</td>
+          <td class="px-6 py-4 text-gray-700">Art. 311 Abs. 1 Ziff. 1 ZGB</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 font-semibold text-navy">Häusliche Gewalt / Gewalttätigkeit</td>
+          <td class="px-6 py-4 text-gray-700">Gewalt gegen Kind oder anderen Elternteil; seit 2014 explizit in Art. 311 ZGB genannt</td>
+          <td class="px-6 py-4 text-gray-700">Art. 311 Abs. 1 Ziff. 1 ZGB</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">Gröbliche Pflichtverletzung</td>
+          <td class="px-6 py-4 text-gray-700">Elternteil kümmert sich nicht ernsthaft um das Kind</td>
+          <td class="px-6 py-4 text-gray-700">Art. 311 Abs. 1 Ziff. 2 ZGB</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 font-semibold text-navy">Offensichtlicher Rechtsmissbrauch</td>
+          <td class="px-6 py-4 text-gray-700">Missbrauch des Sorgerechts zum Schaden des Kindes</td>
+          <td class="px-6 py-4 text-gray-700">Art. 2 ZGB</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Teilbereichsregelung als Alternative (Art. 298 Abs. 2 ZGB)</h3>
+
+  <p class="text-gray-700 mb-6">Bevor eine vollständige Alleinzuteilung ausgesprochen wird, prüft das Bundesgericht, ob eine <strong>Teilbereichsregelung</strong> ausreicht. Das Gericht kann einem Elternteil die Alleinentscheidungsbefugnis in einem <strong>bestimmten Teilbereich</strong> der elterlichen Sorge zuweisen – z.B. nur für schulische Angelegenheiten oder nur für medizinische Entscheidungen – während die gemeinsame Sorge im Übrigen bestehen bleibt.</p>
+
+  <p class="text-gray-700 mb-6">Eine solche Teilbereichsregelung ist allerdings nur sinnvoll, wenn sich der elterliche Konflikt auf einzelne Probleme beschränkt und im Grundsatz ein einvernehmliches Zusammenwirken möglich ist.</p>
+
+  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Häusliche Gewalt und elterliche Sorge</h2>
+
+  <p class="text-gray-700 mb-6">Mit der Revision von 2014 wurde <strong>häusliche Gewalt</strong> explizit in Art. 311 Abs. 1 Ziff. 1 ZGB als Entzugsgrund aufgenommen. Der Gesetzgeber hat damit klargestellt, dass Gewalt im häuslichen Umfeld die Befähigung zur Ausübung der elterlichen Sorge grundsätzlich in Frage stellt.</p>
+
+  <div class="overflow-x-auto mb-8">
+    <table class="min-w-full bg-white border border-gray-200">
+      <thead class="bg-navy text-white">
+        <tr>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Art der Gewalt</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Auswirkung auf Sorgerecht</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Massnahmen</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-200">
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">Direkte Gewalt gegen das Kind</td>
+          <td class="px-6 py-4 text-gray-700">Kann zum Entzug der Sorge führen</td>
+          <td class="px-6 py-4 text-gray-700">Art. 311 ZGB; evtl. strafrechtliche Folgen</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 font-semibold text-navy">Gewalt gegen anderen Elternteil (Kind Zeuge)</td>
+          <td class="px-6 py-4 text-gray-700">Indirekte Kindeswohlgefährdung; kann Alleinsorge begründen</td>
+          <td class="px-6 py-4 text-gray-700">Art. 298, 311 ZGB; Gewaltschutzgesetz</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">Psychische Gewalt</td>
+          <td class="px-6 py-4 text-gray-700">Bei schwerer Beeinträchtigung des Kindeswohls relevant</td>
+          <td class="px-6 py-4 text-gray-700">Einzelfallprüfung; evtl. Kindesschutzmassnahmen</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+    <p class="font-semibold text-navy mb-2">Meldepflicht bei häuslicher Gewalt:</p>
+    <p class="text-gray-700">Seit 1. Januar 2024 gilt eine erweiterte Auskunftspflicht für die KESB. Bei Polizeieinsätzen wegen häuslicher Gewalt wird die KESB informiert, wenn minderjährige Kinder im Haushalt leben. So sollen Kindeswohlgefährdungen frühzeitig erkannt werden.</p>
+  </div>
+
+  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Zuständigkeit: KESB oder Gericht?</h2>
+
+  <p class="text-gray-700 mb-6">Die Frage, welche Behörde für die Übertragung oder Änderung der elterlichen Sorge zuständig ist, hängt von der konkreten Situation ab:</p>
+
+  <div class="overflow-x-auto mb-8">
+    <table class="min-w-full bg-white border border-gray-200">
+      <thead class="bg-navy text-white">
+        <tr>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Situation</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Zuständige Behörde</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Verfahren</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-200">
+        <tr>
+          <td class="px-6 py-4 text-gray-700">Gemeinsame Sorge erklären (einvernehmlich)</td>
+          <td class="px-6 py-4 font-semibold text-navy">Zivilstandsamt oder KESB</td>
+          <td class="px-6 py-4 text-gray-700">Art. 298a ZGB</td>
+          <td class="px-6 py-4 text-gray-700">Gemeinsame Erklärung</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 text-gray-700">Ein Elternteil verweigert gemeinsame Sorge</td>
+          <td class="px-6 py-4 font-semibold text-navy">KESB</td>
+          <td class="px-6 py-4 text-gray-700">Art. 298b ZGB</td>
+          <td class="px-6 py-4 text-gray-700">Antrag des anderen Elternteils</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 text-gray-700">Sorgerecht bei Scheidung regeln</td>
+          <td class="px-6 py-4 font-semibold text-navy">Gericht (Scheidungsgericht)</td>
+          <td class="px-6 py-4 text-gray-700">Art. 298 ZGB</td>
+          <td class="px-6 py-4 text-gray-700">Im Rahmen des Scheidungsverfahrens</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 text-gray-700">Änderung nach Scheidung (einvernehmlich)</td>
+          <td class="px-6 py-4 font-semibold text-navy">KESB</td>
+          <td class="px-6 py-4 text-gray-700">Art. 134 Abs. 3 ZGB</td>
+          <td class="px-6 py-4 text-gray-700">Gemeinsamer Antrag der Eltern</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 text-gray-700">Änderung nach Scheidung (strittig)</td>
+          <td class="px-6 py-4 font-semibold text-navy">Gericht</td>
+          <td class="px-6 py-4 text-gray-700">Art. 134 Abs. 4 ZGB</td>
+          <td class="px-6 py-4 text-gray-700">Abänderungsklage</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 text-gray-700">Entzug der elterlichen Sorge</td>
+          <td class="px-6 py-4 font-semibold text-navy">KESB</td>
+          <td class="px-6 py-4 text-gray-700">Art. 311 ZGB</td>
+          <td class="px-6 py-4 text-gray-700">Von Amtes wegen oder auf Antrag</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 text-gray-700">Änderung der Verhältnisse (unverheiratet)</td>
+          <td class="px-6 py-4 font-semibold text-navy">KESB oder Gericht</td>
+          <td class="px-6 py-4 text-gray-700">Art. 298d ZGB</td>
+          <td class="px-6 py-4 text-gray-700">Neubeurteilung bei wesentlicher Änderung</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Änderung der elterlichen Sorge nach Scheidung (Art. 134 ZGB)</h2>
+
+  <p class="text-gray-700 mb-6">Die im Scheidungsurteil getroffene Regelung der Kinderbelange ist grundsätzlich auf Dauer angelegt. Eine Änderung ist aber möglich, wenn sich die Verhältnisse <strong>wesentlich und dauerhaft</strong> verändert haben und dies zum Wohl des Kindes geboten ist (Art. 134 Abs. 1 ZGB).</p>
+
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Voraussetzungen für eine Änderung</h3>
+
+  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+    <li><strong>Wesentliche Veränderung:</strong> Die Verhältnisse müssen sich erheblich geändert haben – kleinere Änderungen oder Unzufriedenheit mit der ursprünglichen Regelung reichen nicht</li>
+    <li><strong>Dauerhaftigkeit:</strong> Die Veränderung muss von Dauer sein, nicht nur vorübergehend</li>
+    <li><strong>Kindeswohl:</strong> Die Änderung muss dem Kindeswohl dienen, nicht den Interessen eines Elternteils</li>
+    <li><strong>Keine "Korrektur":</strong> Das Änderungsverfahren dient nicht dazu, das ursprüngliche Urteil zu "korrigieren", sondern es an neue Umstände anzupassen (BGE 137 III 604)</li>
+  </ul>
+
+  <p class="text-gray-700 mb-6"><strong>Antragsberechtigt</strong> sind die Eltern, das Kind selbst (ab einem gewissen Alter und Reife) sowie die KESB von Amtes wegen.</p>
+
+  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Übertragung auf Dritte: Grundsätzlich nicht möglich</h2>
+
+  <p class="text-gray-700 mb-6">Das Schweizer Recht sieht <strong>keine Möglichkeit</strong> vor, die elterliche Sorge freiwillig auf Dritte zu übertragen. Eltern können nicht einfach entscheiden, dass Grosseltern, Verwandte oder andere Personen das Sorgerecht übernehmen. Die elterliche Sorge ist ein <strong>höchstpersönliches Recht</strong>, das an das Kindesverhältnis geknüpft ist.</p>
+
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Mögliche Alternativen</h3>
+
+  <div class="overflow-x-auto mb-8">
+    <table class="min-w-full bg-white border border-gray-200">
+      <thead class="bg-navy text-white">
+        <tr>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Alternative</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Rechtliche Wirkung</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-200">
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">Vollmachten</td>
+          <td class="px-6 py-4 text-gray-700">Vollmachten für bestimmte alltägliche Angelegenheiten</td>
+          <td class="px-6 py-4 text-gray-700">Keine Übertragung des Sorgerechts; nur Einzelbefugnisse</td>
+          <td class="px-6 py-4 text-gray-700">OR (Stellvertretung)</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 font-semibold text-navy">Pflegekindverhältnis</td>
+          <td class="px-6 py-4 text-gray-700">Kind lebt dauerhaft bei Dritten mit Bewilligung</td>
+          <td class="px-6 py-4 text-gray-700">Betreuungsrechte, aber keine elterliche Sorge</td>
+          <td class="px-6 py-4 text-gray-700">Art. 300 ZGB</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">Vormundschaft</td>
+          <td class="px-6 py-4 text-gray-700">Nur nach Entzug der Sorge bei beiden Eltern</td>
+          <td class="px-6 py-4 text-gray-700">Vormund übernimmt sorgeähnliche Rechte und Pflichten</td>
+          <td class="px-6 py-4 text-gray-700">Art. 327a ZGB, Art. 311 ZGB</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 font-semibold text-navy">Adoption</td>
+          <td class="px-6 py-4 text-gray-700">Kindesverhältnis zu leiblichen Eltern erlischt vollständig</td>
+          <td class="px-6 py-4 text-gray-700">Adoptiveltern erhalten elterliche Sorge</td>
+          <td class="px-6 py-4 text-gray-700">Art. 264 ff. ZGB</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">Stiefkindadoption</td>
+          <td class="px-6 py-4 text-gray-700">Partner eines Elternteils adoptiert das Kind</td>
+          <td class="px-6 py-4 text-gray-700">Gemeinsame Sorge mit neuem Partner</td>
+          <td class="px-6 py-4 text-gray-700">Art. 264c ZGB</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Die Sorgerechtsverfügung (Sorgerechtstestament)</h2>
+
+  <p class="text-gray-700 mb-6">Viele Eltern fragen sich, was mit ihren Kindern geschieht, wenn sie sterben. Mit einer <strong>Sorgerechtsverfügung</strong> können Sie einen <strong>Wunschvormund</strong> für diesen Fall benennen.</p>
+
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Was passiert beim Tod eines Elternteils?</h3>
+
+  <div class="overflow-x-auto mb-8">
+    <table class="min-w-full bg-white border border-gray-200">
+      <thead class="bg-navy text-white">
+        <tr>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Ausgangslage</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Was passiert mit der Sorge?</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">KESB involviert?</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-200">
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">Gemeinsame Sorge – ein Elternteil stirbt</td>
+          <td class="px-6 py-4 text-gray-700">Sorge geht automatisch auf überlebenden Elternteil über</td>
+          <td class="px-6 py-4 text-gray-700">Nein (ausser bei Kindeswohlgefährdung)</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 font-semibold text-navy">Alleinige Sorge – allein sorgeberechtigter Elternteil stirbt</td>
+          <td class="px-6 py-4 text-gray-700">KESB prüft Übertragung auf anderen Elternteil oder Vormundschaft</td>
+          <td class="px-6 py-4 text-gray-700">Ja – KESB entscheidet</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">Beide Eltern sterben</td>
+          <td class="px-6 py-4 text-gray-700">KESB bestellt einen Vormund</td>
+          <td class="px-6 py-4 text-gray-700">Ja – Sorgerechtsverfügung wird berücksichtigt</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Rechtliche Wirkung und Anforderungen der Sorgerechtsverfügung</h3>
+
+  <p class="text-gray-700 mb-6">Die Sorgerechtsverfügung ist <strong>rechtlich nicht bindend</strong> – sie ist eine Absichtserklärung. Die KESB wird sich aber in der Regel an Ihren Wunsch halten, sofern der vorgeschlagene Vormund geeignet ist und das Kindeswohl nicht dagegen spricht.</p>
+
+  <div class="overflow-x-auto mb-8">
+    <table class="min-w-full bg-white border border-gray-200">
+      <thead class="bg-navy text-white">
+        <tr>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Anforderung</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-200">
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">Form</td>
+          <td class="px-6 py-4 text-gray-700">Schriftlich, mit Ort, Datum und Unterschrift (handschriftlich nicht zwingend nötig)</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 font-semibold text-navy">Inhalt</td>
+          <td class="px-6 py-4 text-gray-700">Name, Adresse, Geburtsdatum des Wunschvormunds; Begründung empfohlen</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">Anzahl</td>
+          <td class="px-6 py-4 text-gray-700">Jeder Elternteil muss eigenes Exemplar ausfertigen</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 font-semibold text-navy">Aufbewahrung</td>
+          <td class="px-6 py-4 text-gray-700">Zu Hause, beim Wunschvormund, evtl. bei der KESB oder einem Notar</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">Weitere Möglichkeiten</td>
+          <td class="px-6 py-4 text-gray-700">Ersatzpersonen nennen, Personen ausschliessen, Vermögensverwaltung separat regeln</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 font-semibold text-navy">Aktualisierung</td>
+          <td class="px-6 py-4 text-gray-700">Regelmässig überprüfen und bei Änderung der Lebensumstände anpassen</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+    <p class="font-semibold text-navy mb-2">Praxistipp:</p>
+    <p class="text-gray-700">Sprechen Sie mit der Person, die Sie als Wunschvormund einsetzen möchten, <strong>bevor</strong> Sie die Verfügung erstellen. Stellen Sie sicher, dass diese Person bereit und in der Lage ist, die Verantwortung zu übernehmen. Informieren Sie auch Ihre Familie über die Existenz und den Aufbewahrungsort der Verfügung.</p>
+  </div>
+
+  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Entzug vs. Übertragung: Wichtige Unterscheidung</h2>
+
+  <p class="text-gray-700 mb-6">Das Bundesgericht hat klargestellt, dass für die <strong>Alleinzuteilung</strong> der elterlichen Sorge (Art. 298 ff. ZGB) <strong>nicht die gleichen Voraussetzungen</strong> wie für den <strong>Entzug</strong> (Art. 311 ZGB) gelten. Diese Unterscheidung ist zentral:</p>
+
+  <div class="overflow-x-auto mb-8">
+    <table class="min-w-full bg-white border border-gray-200">
+      <thead class="bg-navy text-white">
+        <tr>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Aspekt</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Alleinzuteilung (Art. 298 ZGB)</th>
+          <th class="px-6 py-3 text-left text-sm font-semibold">Entzug (Art. 311 ZGB)</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-200">
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">Charakter</td>
+          <td class="px-6 py-4 text-gray-700">Regelung bei Trennung/Scheidung</td>
+          <td class="px-6 py-4 text-gray-700">Kindesschutzmassnahme (ultima ratio)</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 font-semibold text-navy">Voraussetzungen</td>
+          <td class="px-6 py-4 text-gray-700">Dauerkonflikt + Kindeswohlbeeinträchtigung + Entlastung durch Alleinsorge</td>
+          <td class="px-6 py-4 text-gray-700">Unerfahrenheit, Krankheit, Abwesenheit, Gewalt, Pflichtverletzung</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">Zuständigkeit</td>
+          <td class="px-6 py-4 text-gray-700">Gericht (bei Scheidung) oder KESB</td>
+          <td class="px-6 py-4 text-gray-700">KESB (von Amtes wegen)</td>
+        </tr>
+        <tr class="bg-gray-50">
+          <td class="px-6 py-4 font-semibold text-navy">Wirkung</td>
+          <td class="px-6 py-4 text-gray-700">Sorge geht an den anderen Elternteil</td>
+          <td class="px-6 py-4 text-gray-700">Sorge wird entzogen; evtl. Vormundschaft</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 font-semibold text-navy">Schwelle</td>
+          <td class="px-6 py-4 text-gray-700">Niedriger (eng begrenzte Ausnahme)</td>
+          <td class="px-6 py-4 text-gray-700">Höher (Subsidiaritätsprinzip)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wiederherstellung der elterlichen Sorge (Art. 313 ZGB)</h2>
+
+  <p class="text-gray-700 mb-6">Wurde die Sorge entzogen, kann sie unter bestimmten Voraussetzungen <strong>wiederhergestellt</strong> werden (Art. 313 ZGB):</p>
+
+  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+    <li>Die Gründe für den Entzug müssen <strong>weggefallen</strong> sein</li>
+    <li>Die Wiederherstellung muss dem <strong>Kindeswohl</strong> entsprechen</li>
+    <li>Eine <strong>Sperrfrist von einem Jahr</strong> muss abgelaufen sein</li>
+  </ul>
+
+  <p class="text-gray-700 mb-6">Ein Antrag auf Wiederherstellung kann bei der KESB gestellt werden. Die Behörde prüft, ob sich die Verhältnisse nachhaltig verbessert haben.</p>
+
+  <!-- Anwalt-Sektion -->
+  <section class="mb-12">
+    <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+    <p class="text-gray-700 mb-6">Fragen rund um die elterliche Sorge sind oft emotional beladen und rechtlich komplex. Die bundesgerichtliche Rechtsprechung – insbesondere BGE 141 III 472 und BGE 142 III 197 – stellt hohe Anforderungen an die Begründung eines Antrags auf Alleinsorge. Die falsche Vorgehensweise kann langfristige Konsequenzen für Sie und Ihr Kind haben. Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> kann Sie in folgenden Situationen unterstützen:</p>
+
+    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
+      <li>Wenn der andere Elternteil die gemeinsame Sorge verweigert (Art. 298b ZGB)</li>
+      <li>Wenn Sie das alleinige Sorgerecht beantragen möchten und die drei kumulativen Voraussetzungen darlegen müssen</li>
+      <li>Bei häuslicher Gewalt und der Frage, ob ein Entzug der Sorge angezeigt ist</li>
+      <li>Wenn Sie eine Änderung der Sorgerechtsregelung nach Scheidung anstreben (Art. 134 ZGB)</li>
+      <li>Wenn die KESB involviert ist und Sie Ihre Rechte wahren möchten</li>
+      <li>Bei der Erstellung einer rechtssicheren Sorgerechtsverfügung</li>
+    </ul>
+
+    <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kennt die aktuelle Rechtsprechung und kann einschätzen, welche Argumente vor Gericht oder der KESB Erfolg versprechen. Bei Streitigkeiten um das Sorgerecht ist professionelle Unterstützung durch einen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> oft entscheidend.</p>
+
+    <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+      <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+      <p class="mb-6">Lassen Sie Ihre Fragen zur elterlichen Sorge von einem Experten beantworten. Wir beraten Sie zu Ihren Möglichkeiten und begleiten Sie durch das Verfahren vor KESB oder Gericht.</p>
+      <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
     </div>
+  </section>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen</h2>
+  <!-- Fazit -->
+  <h2 class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Unübertragbarkeit der elterlichen Sorge</h3>
+  <p class="text-gray-700 mb-6">Die Übertragung der elterlichen Sorge ist im Schweizer Recht nur in bestimmten Konstellationen möglich. Die gemeinsame elterliche Sorge ist seit 2014 der gesetzliche Regelfall und bleibt auch nach einer Scheidung bestehen. Unverheiratete Väter können die gemeinsame Sorge durch eine Erklärung beim Zivilstandsamt oder bei der KESB erlangen.</p>
 
-    <p class="text-gray-700 mb-6">Die elterliche Sorge ist ein höchstpersönliches Recht und kann nicht wie ein Vermögensrecht übertragen werden. Art. 296 ZGB bestimmt, dass das Kind unter der elterlichen Sorge seiner Eltern steht. Diese gesetzliche Zuweisung kann nicht durch private Vereinbarung geändert werden.</p>
+  <p class="text-gray-700 mb-6">Die Zuteilung der alleinigen Sorge an nur einen Elternteil ist die eng begrenzte Ausnahme und erfordert gemäss Bundesgericht (BGE 141 III 472) drei kumulative Voraussetzungen: einen schwerwiegenden Dauerkonflikt oder anhaltende Kommunikationsunfähigkeit, eine negative Auswirkung auf das Kindeswohl sowie die begründete Erwartung einer Entlastung durch die Alleinsorge. Sanktionsgedanken gegen einen nicht kooperierenden Elternteil dürfen keine Rolle spielen (BGE 142 III 197).</p>
 
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Mögliche Konstellationen</h3>
+  <p class="text-gray-700 mb-6">Eine freiwillige Übertragung auf Dritte ist nicht möglich – hier kommen nur Vormundschaft nach Entzug oder Adoption in Betracht. Mit einer Sorgerechtsverfügung können Sie jedoch vorsorglich einen Wunschvormund für den Todesfall benennen.</p>
 
-    <p class="text-gray-700 mb-4">Trotz der Unübertragbarkeit gibt es Situationen, in denen sich die Inhaberschaft der elterlichen Sorge ändert:</p>
-
-    <div class="overflow-x-auto my-8">
-        <table class="min-w-full bg-white border border-gray-200">
-            <thead class="bg-navy text-white">
-                <tr>
-                    <th class="px-6 py-3 text-left font-semibold">Konstellation</th>
-                    <th class="px-6 py-3 text-left font-semibold">Rechtsgrundlage</th>
-                    <th class="px-6 py-3 text-left font-semibold">Ergebnis</th>
-                </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-200">
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4 text-gray-700">Übertragung auf anderen Elternteil</td>
-                    <td class="px-6 py-4 text-gray-700">Art. 298 Abs. 2 ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Ein Elternteil erhält alleiniges Sorgerecht</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4 text-gray-700">Entzug und Vormundschaft</td>
-                    <td class="px-6 py-4 text-gray-700">Art. 311, 327a ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Vormund erhält sorgeähnliche Stellung</td>
-                </tr>
-                <tr class="bg-gray-50">
-                    <td class="px-6 py-4 text-gray-700">Tod eines Elternteils</td>
-                    <td class="px-6 py-4 text-gray-700">Art. 297 ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Überlebender Elternteil hat alleinige Sorge</td>
-                </tr>
-                <tr>
-                    <td class="px-6 py-4 text-gray-700">Adoption</td>
-                    <td class="px-6 py-4 text-gray-700">Art. 264 ff. ZGB</td>
-                    <td class="px-6 py-4 text-gray-700">Adoptiveltern erhalten Sorgerecht</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Übertragung auf den anderen Elternteil</h2>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Bei Scheidung oder Trennung</h3>
-
-    <p class="text-gray-700 mb-6">Bei Scheidung oder Trennung bleibt das gemeinsame Sorgerecht grundsätzlich bestehen. Das Gericht kann jedoch einem Elternteil das alleinige Sorgerecht zuteilen, wenn dies zur Wahrung des Kindeswohls nötig ist (Art. 298 Abs. 1 ZGB).</p>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Freiwillige Übertragung</h3>
-
-    <p class="text-gray-700 mb-4">Ein Elternteil kann grundsätzlich darauf verzichten, das Sorgerecht auszuüben, und beantragen, dass dem anderen Elternteil das alleinige Sorgerecht übertragen wird. Dies bedarf aber der Genehmigung durch das Gericht oder die KESB, die prüft, ob die Übertragung dem Kindeswohl entspricht.</p>
-
-    <p class="text-gray-700 mb-4"><strong>Gründe für eine freiwillige Übertragung können sein:</strong></p>
-
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Dauerhafte Abwesenheit (z.B. längerer Auslandsaufenthalt)</li>
-        <li>Unfähigkeit, das Sorgerecht auszuüben (Krankheit, Arbeitsbelastung)</li>
-        <li>Wunsch, dem anderen Elternteil die Alleinerziehung zu ermöglichen</li>
+  <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
+    <p class="font-semibold text-navy mb-2">Relevante Gesetzesbestimmungen:</p>
+    <ul class="list-disc list-inside text-gray-700 space-y-1">
+      <li>Art. 296 ZGB – Grundsatz der elterlichen Sorge</li>
+      <li>Art. 298 ZGB – Elterliche Sorge bei Scheidung</li>
+      <li>Art. 298a ZGB – Gemeinsame Erklärung unverheirateter Eltern</li>
+      <li>Art. 298b ZGB – Entscheid der KESB bei Weigerung</li>
+      <li>Art. 298d ZGB – Änderung der Verhältnisse</li>
+      <li>Art. 300 ZGB – Pflegekindverhältnis</li>
+      <li>Art. 301 ZGB – Pflege und Erziehung</li>
+      <li>Art. 301a ZGB – Bestimmung des Aufenthaltsorts</li>
+      <li>Art. 304 ZGB – Gesetzliche Vertretung</li>
+      <li>Art. 311 ZGB – Entzug der elterlichen Sorge</li>
+      <li>Art. 313 ZGB – Wiederherstellung der elterlichen Sorge</li>
+      <li>Art. 327a ZGB – Vormundschaft</li>
+      <li>Art. 134 ZGB – Änderung nach Scheidung</li>
+      <li>Art. 264 ff. ZGB – Adoption</li>
     </ul>
+  </div>
 
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Übertragung auf Dritte: Grundsätzlich nicht möglich</h2>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Keine freiwillige Übertragung auf Grosseltern etc.</h3>
-
-    <p class="text-gray-700 mb-4">Das Schweizer Recht sieht keine Möglichkeit vor, die elterliche Sorge freiwillig auf Dritte zu übertragen. Eltern können nicht einfach entscheiden, dass die Grosseltern oder andere Verwandte das Sorgerecht übernehmen.</p>
-
-    <p class="text-gray-700 mb-6">Hintergrund ist der höchstpersönliche Charakter der elterlichen Sorge und der Schutz des Kindes: Die Sorge soll grundsätzlich bei den leiblichen Eltern liegen.</p>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Alternative: Vollmachten für alltägliche Angelegenheiten</h3>
-
-    <p class="text-gray-700 mb-4">Eltern können Dritten Vollmachten für bestimmte Angelegenheiten erteilen, z.B.:</p>
-
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Abholung von der Schule</li>
-        <li>Medizinische Routineentscheidungen</li>
-        <li>Begleitung bei Behördengängen</li>
-    </ul>
-
-    <p class="text-gray-700 mb-6">Diese Vollmachten betreffen aber nur einzelne Aspekte und übertragen nicht das Sorgerecht als Ganzes.</p>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Alternative: Pflegekindverhältnis</h3>
-
-    <p class="text-gray-700 mb-6">Wenn ein Kind dauerhaft bei Dritten (z.B. Grosseltern) lebt, kann ein Pflegekindverhältnis begründet werden. Dafür ist eine Bewilligung der KESB erforderlich. Die Pflegeeltern haben dann gewisse Betreuungsrechte und -pflichten, aber nicht die volle elterliche Sorge.</p>
-
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Entzug und Übertragung auf einen Vormund</h2>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Entzug der elterlichen Sorge (Art. 311 ZGB)</h3>
-
-    <p class="text-gray-700 mb-4">Wenn beide Eltern unfähig oder unwillig sind, die elterliche Sorge auszuüben, kann die KESB diese entziehen und eine Vormundschaft errichten. Gründe für den Entzug sind in Art. 311 ZGB genannt:</p>
-
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Unerfahrenheit, Krankheit, Gebrechen, Abwesenheit, Gewalttätigkeit oder ähnliche Gründe</li>
-        <li>Der Elternteil hat sich nicht ernsthaft um das Kind gekümmert oder seine Pflichten gröblich verletzt</li>
-    </ul>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Errichtung einer Vormundschaft (Art. 327a ZGB)</h3>
-
-    <p class="text-gray-700 mb-4">Wird beiden Eltern die Sorge entzogen, errichtet die KESB eine Vormundschaft. Der Vormund übernimmt dann die Rechte und Pflichten, die sonst den Eltern zustehen:</p>
-
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Pflege und Erziehung des Kindes</li>
-        <li>Gesetzliche Vertretung</li>
-        <li>Verwaltung des Kindesvermögens</li>
-        <li>Bestimmung des Aufenthaltsortes</li>
-    </ul>
-
-    <p class="text-gray-700 mb-6">Häufig werden Grosseltern, Tanten oder Onkel als Vormunde eingesetzt, wenn sie geeignet sind.</p>
-
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Adoption als Form der Sorgerechtsübertragung</h2>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Stiefkindadoption</h3>
-
-    <p class="text-gray-700 mb-4">Bei der Stiefkindadoption adoptiert der Ehepartner oder eingetragene Partner eines Elternteils das Kind. Der nicht sorgeberechtigte leibliche Elternteil verliert damit seine Elternstellung, und der Adoptivelternteil tritt an seine Stelle.</p>
-
-    <p class="text-gray-700 mb-4"><strong>Voraussetzungen sind unter anderem:</strong></p>
-
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Zustimmung beider leiblichen Eltern (oder Ersetzung der Zustimmung durch das Gericht)</li>
-        <li>Das Kind muss mindestens ein Jahr im gemeinsamen Haushalt gelebt haben</li>
-        <li>Die Adoption muss dem Kindeswohl dienen</li>
-    </ul>
-
-    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Rechtsfolgen der Adoption</h3>
-
-    <p class="text-gray-700 mb-6">Mit der Adoption erlischt das Kindesverhältnis zu den leiblichen Eltern. Das Kind gilt rechtlich als Kind der Adoptiveltern, mit allen Rechten und Pflichten (Erbrecht, Unterhaltspflicht, Name, etc.).</p>
-
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wiederherstellung der elterlichen Sorge</h2>
-
-    <p class="text-gray-700 mb-4">Wurde die elterliche Sorge entzogen, kann sie unter bestimmten Voraussetzungen wiederhergestellt werden (Art. 313 ZGB):</p>
-
-    <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-        <li>Die Gründe für den Entzug müssen weggefallen sein</li>
-        <li>Die Wiederherstellung muss dem Kindeswohl entsprechen</li>
-        <li>Eine Sperrfrist von einem Jahr muss abgelaufen sein</li>
-    </ul>
-
-    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Häufig gestellte Fragen</h2>
-
+  <!-- FAQ -->
+  <section class="mt-16 mb-12">
+    <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
     <div class="space-y-6">
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-bold text-navy mb-2">Kann ich das Sorgerecht auf meine Eltern (die Grosseltern des Kindes) übertragen?</h3>
-            <p class="text-gray-700">Nein, eine direkte Übertragung auf die Grosseltern ist nicht möglich. Wenn beide Eltern die Sorge nicht ausüben können, kann die KESB die Sorge entziehen und einen Vormund bestellen, der dann die Grosseltern sein können.</p>
-        </div>
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-bold text-navy mb-2">Kann ich freiwillig auf das Sorgerecht verzichten?</h3>
-            <p class="text-gray-700">Sie können beantragen, dass dem anderen Elternteil das alleinige Sorgerecht übertragen wird. Dies bedarf aber der behördlichen Genehmigung und muss dem Kindeswohl entsprechen.</p>
-        </div>
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-bold text-navy mb-2">Was passiert, wenn ich das Sorgerecht nicht mehr ausüben kann?</h3>
-            <p class="text-gray-700">Wenn Sie vorübergehend verhindert sind, kann der andere Elternteil allein handeln. Bei dauerhafter Unfähigkeit kann das Sorgerecht auf den anderen Elternteil übertragen oder, wenn auch dieser nicht in der Lage ist, entzogen und ein Vormund bestellt werden.</p>
-        </div>
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-bold text-navy mb-2">Kann der andere Elternteil das Sorgerecht allein beantragen?</h3>
-            <p class="text-gray-700">Ja, bei gemeinsamem Sorgerecht kann ein Elternteil beantragen, dass ihm das alleinige Sorgerecht übertragen wird. Das Gericht oder die KESB prüft, ob dies dem Kindeswohl entspricht.</p>
-        </div>
-        <div class="bg-gray-50 p-6 rounded-lg">
-            <h3 class="font-bold text-navy mb-2">Verliere ich alle Rechte, wenn das Sorgerecht übertragen wird?</h3>
-            <p class="text-gray-700">Nein, Sie behalten das Recht auf persönlichen Verkehr (Besuchsrecht) und das Recht auf Information. Auch die Unterhaltspflicht bleibt bestehen.</p>
-        </div>
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Kann ich das Sorgerecht auf die Grosseltern übertragen?</h3>
+        <p class="text-gray-700">Nein, eine freiwillige Übertragung der elterlichen Sorge auf Grosseltern oder andere Dritte ist im Schweizer Recht nicht möglich. Die elterliche Sorge ist an das Kindesverhältnis geknüpft. Nur wenn beiden Eltern die Sorge entzogen wird (Art. 311 ZGB), kann die KESB einen Vormund bestellen – das können dann die Grosseltern sein. Alternativ ist eine Adoption möglich.</p>
+      </div>
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Wie beantrage ich als unverheirateter Vater die gemeinsame elterliche Sorge?</h3>
+        <p class="text-gray-700">Sie und die Mutter können beim Zivilstandsamt (zusammen mit der Vaterschaftsanerkennung, kostenlos) oder bei der KESB (später, CHF 100.–) eine gemeinsame Erklärung abgeben. Darin bestätigen Sie, dass Sie gemeinsam Verantwortung übernehmen und sich über Obhut, Betreuung und Unterhalt geeinigt haben (Art. 298a ZGB). Verweigert die Mutter die Erklärung, können Sie die KESB anrufen (Art. 298b ZGB).</p>
+      </div>
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Unter welchen Voraussetzungen kann ich das alleinige Sorgerecht erhalten?</h3>
+        <p class="text-gray-700">Die alleinige elterliche Sorge ist die Ausnahme und erfordert gemäss BGE 141 III 472 drei kumulative Voraussetzungen: 1) Schwerwiegender Dauerkonflikt oder anhaltende Kommunikationsunfähigkeit, 2) negative Auswirkungen auf das Kindeswohl, 3) begründete Erwartung einer Entlastung durch Alleinsorge. Ein blosser Streit oder die Unzumutbarkeit für einen Elternteil reichen nicht aus.</p>
+      </div>
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Was ist das Sanktionsverbot bei der Sorgerechtszuteilung?</h3>
+        <p class="text-gray-700">Das Bundesgericht hat in BGE 142 III 197 entschieden, dass Sanktionsgedanken gegen einen nicht kooperierenden Elternteil bei der Sorgerechtszuteilung keine Rolle spielen dürfen. Die Alleinsorge darf nicht als "Strafe" für einen Elternteil gedacht sein – das würde "auf dem Buckel des Kindes" geschehen. Einzige Maxime ist das Kindeswohl.</p>
+      </div>
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Was ist eine Sorgerechtsverfügung?</h3>
+        <p class="text-gray-700">Eine Sorgerechtsverfügung (Sorgerechtstestament) ist ein schriftliches Dokument, in dem Sie festhalten, wer im Todesfall beider Eltern die Vormundschaft für Ihre Kinder übernehmen soll. Sie ist rechtlich nicht bindend, wird aber von der KESB bei der Vormundbestellung berücksichtigt. Die Verfügung muss schriftlich sein und Ort, Datum sowie Unterschrift enthalten.</p>
+      </div>
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Was passiert mit dem Sorgerecht, wenn ein Elternteil stirbt?</h3>
+        <p class="text-gray-700">Bei gemeinsamer elterlicher Sorge geht die Sorge automatisch auf den überlebenden Elternteil über – die KESB ist nicht involviert. Hatte nur der verstorbene Elternteil die alleinige Sorge, prüft die KESB, ob dem überlebenden Elternteil die Sorge übertragen werden kann. Sterben beide Eltern, bestellt die KESB einen Vormund.</p>
+      </div>
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Kann ich freiwillig auf das Sorgerecht verzichten?</h3>
+        <p class="text-gray-700">Sie können beantragen, dass dem anderen Elternteil das alleinige Sorgerecht übertragen wird. Dies bedarf aber der Genehmigung durch das Gericht oder die KESB, die prüft, ob die Übertragung dem Kindeswohl entspricht. Ein einseitiger "Verzicht" ohne behördliche Genehmigung ist nicht möglich.</p>
+      </div>
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Wer ist zuständig: KESB oder Gericht?</h3>
+        <p class="text-gray-700">Bei einer Scheidung entscheidet das Gericht über die elterliche Sorge (Art. 298 ZGB). Nach der Scheidung ist bei einvernehmlicher Änderung die KESB zuständig (Art. 134 Abs. 3 ZGB), bei Streit das Gericht (Art. 134 Abs. 4 ZGB). Unverheiratete Eltern wenden sich an das Zivilstandsamt oder die KESB. Für den Entzug der Sorge ist die KESB zuständig.</p>
+      </div>
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Kann das Sorgerecht nach einem Entzug wiederhergestellt werden?</h3>
+        <p class="text-gray-700">Ja, die elterliche Sorge kann wiederhergestellt werden, wenn die Gründe für den Entzug weggefallen sind, die Wiederherstellung dem Kindeswohl entspricht und eine Sperrfrist von einem Jahr abgelaufen ist (Art. 313 ZGB). Ein Antrag kann bei der KESB gestellt werden.</p>
+      </div>
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen Sorgerecht und Obhut?</h3>
+        <p class="text-gray-700">Die elterliche Sorge umfasst alle Rechte und Pflichten gegenüber dem Kind (Erziehung, Vertretung, Vermögensverwaltung). Die Obhut betrifft nur die tatsächliche Betreuung und den Aufenthalt des Kindes. Eltern können die gemeinsame Sorge haben, während die Obhut nur bei einem Elternteil liegt. Umgekehrt setzt die alternierende Obhut die gemeinsame elterliche Sorge voraus (BGE 150 III 97).</p>
+      </div>
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen Alleinzuteilung und Entzug der Sorge?</h3>
+        <p class="text-gray-700">Die Alleinzuteilung (Art. 298 ZGB) ist eine Regelung bei Trennung/Scheidung, bei der die Sorge auf den anderen Elternteil übergeht. Der Entzug (Art. 311 ZGB) ist eine Kindesschutzmassnahme, bei der die Sorge vollständig entzogen wird und ein Vormund bestellt werden kann. Für die Alleinzuteilung gelten weniger strenge Voraussetzungen als für den Entzug.</p>
+      </div>
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Verliere ich alle Rechte, wenn dem anderen Elternteil das alleinige Sorgerecht übertragen wird?</h3>
+        <p class="text-gray-700">Nein, Sie behalten das Recht auf persönlichen Verkehr (Besuchsrecht, Art. 273 ZGB) und das Recht auf Information über wichtige Ereignisse im Leben des Kindes (Art. 275a ZGB). Auch die Unterhaltspflicht bleibt bestehen. Bei wichtigen Entscheidungen (z.B. Wohnsitzwechsel ins Ausland) haben Sie weiterhin ein Mitspracherecht.</p>
+      </div>
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Wie wirkt sich häusliche Gewalt auf das Sorgerecht aus?</h3>
+        <p class="text-gray-700">Häusliche Gewalt ist seit 2014 explizit in Art. 311 Abs. 1 Ziff. 1 ZGB als Entzugsgrund aufgeführt. Sie kann zum Entzug der Sorge führen, wenn das Kind direkt betroffen ist oder als Zeuge indirekt belastet wird. Seit 2024 gilt zudem eine erweiterte Auskunftspflicht: Bei Polizeieinsätzen wegen häuslicher Gewalt wird die KESB informiert, wenn Kinder im Haushalt leben.</p>
+      </div>
     </div>
+  </section>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Elterliche Sorge übertragen in der Schweiz: Voraussetzungen & Verfahren",
+    "description": "Elterliche Sorge übertragen: Alleiniges Sorgerecht beantragen nach BGE 141 III 472, gemeinsame Sorge für unverheiratete Väter, Sorgerechtsverfügung. KESB vs. Gericht im Überblick.",
+    "author": {
+      "@type": "Organization",
+      "name": "Familienrechtanwalt.ch"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Familienrechtanwalt.ch",
+      "url": "https://familienrechtanwalt.ch"
+    },
+    "datePublished": "2026-01-21",
+    "dateModified": "2026-01-26",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://familienrechtanwalt.ch/sorgerecht/elterliche-sorge-uebertragen"
+    }
+  })} />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Kann ich das Sorgerecht auf die Grosseltern übertragen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein, eine freiwillige Übertragung der elterlichen Sorge auf Grosseltern oder andere Dritte ist im Schweizer Recht nicht möglich. Nur wenn beiden Eltern die Sorge entzogen wird (Art. 311 ZGB), kann die KESB einen Vormund bestellen. Alternativ ist eine Adoption möglich."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie beantrage ich als unverheirateter Vater die gemeinsame elterliche Sorge?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sie und die Mutter können beim Zivilstandsamt (zusammen mit der Vaterschaftsanerkennung, kostenlos) oder bei der KESB (später, CHF 100.–) eine gemeinsame Erklärung abgeben (Art. 298a ZGB). Verweigert die Mutter die Erklärung, können Sie die KESB anrufen (Art. 298b ZGB)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Unter welchen Voraussetzungen kann ich das alleinige Sorgerecht erhalten?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die alleinige Sorge erfordert gemäss BGE 141 III 472 drei kumulative Voraussetzungen: 1) Schwerwiegender Dauerkonflikt oder Kommunikationsunfähigkeit, 2) negative Auswirkungen auf das Kindeswohl, 3) begründete Erwartung einer Entlastung durch Alleinsorge."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was ist das Sanktionsverbot bei der Sorgerechtszuteilung?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Das Bundesgericht hat in BGE 142 III 197 entschieden, dass Sanktionsgedanken gegen einen nicht kooperierenden Elternteil bei der Sorgerechtszuteilung keine Rolle spielen dürfen. Die Alleinsorge darf nicht als Strafe gedacht sein."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was ist eine Sorgerechtsverfügung?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Eine Sorgerechtsverfügung ist ein schriftliches Dokument, in dem Sie festhalten, wer im Todesfall beider Eltern die Vormundschaft für Ihre Kinder übernehmen soll. Sie ist rechtlich nicht bindend, wird aber von der KESB berücksichtigt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was passiert mit dem Sorgerecht, wenn ein Elternteil stirbt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bei gemeinsamer elterlicher Sorge geht die Sorge automatisch auf den überlebenden Elternteil über. Hatte nur der verstorbene Elternteil die alleinige Sorge, prüft die KESB, ob dem überlebenden Elternteil die Sorge übertragen werden kann."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kann ich freiwillig auf das Sorgerecht verzichten?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sie können beantragen, dass dem anderen Elternteil das alleinige Sorgerecht übertragen wird. Dies bedarf aber der Genehmigung durch das Gericht oder die KESB, die prüft, ob die Übertragung dem Kindeswohl entspricht."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wer ist zuständig: KESB oder Gericht?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bei einer Scheidung entscheidet das Gericht über die elterliche Sorge (Art. 298 ZGB). Nach der Scheidung ist bei einvernehmlicher Änderung die KESB zuständig (Art. 134 Abs. 3 ZGB), bei Streit das Gericht. Für den Entzug ist die KESB zuständig."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kann das Sorgerecht nach einem Entzug wiederhergestellt werden?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, die elterliche Sorge kann wiederhergestellt werden, wenn die Gründe für den Entzug weggefallen sind, die Wiederherstellung dem Kindeswohl entspricht und eine Sperrfrist von einem Jahr abgelaufen ist (Art. 313 ZGB)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was ist der Unterschied zwischen Sorgerecht und Obhut?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die elterliche Sorge umfasst alle Rechte und Pflichten gegenüber dem Kind. Die Obhut betrifft nur die tatsächliche Betreuung und den Aufenthalt. Die alternierende Obhut setzt die gemeinsame elterliche Sorge voraus (BGE 150 III 97)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Was ist der Unterschied zwischen Alleinzuteilung und Entzug der Sorge?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die Alleinzuteilung (Art. 298 ZGB) ist eine Regelung bei Trennung/Scheidung, bei der die Sorge auf den anderen Elternteil übergeht. Der Entzug (Art. 311 ZGB) ist eine Kindesschutzmassnahme, bei der ein Vormund bestellt werden kann."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Verliere ich alle Rechte, wenn dem anderen Elternteil das alleinige Sorgerecht übertragen wird?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nein, Sie behalten das Recht auf persönlichen Verkehr (Besuchsrecht, Art. 273 ZGB) und das Recht auf Information (Art. 275a ZGB). Auch die Unterhaltspflicht bleibt bestehen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie wirkt sich häusliche Gewalt auf das Sorgerecht aus?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Häusliche Gewalt ist seit 2014 explizit in Art. 311 Abs. 1 Ziff. 1 ZGB als Entzugsgrund aufgeführt. Sie kann zum Entzug der Sorge führen. Seit 2024 wird die KESB bei Polizeieinsätzen wegen häuslicher Gewalt informiert, wenn Kinder im Haushalt leben."
+        }
+      }
+    ]
+  })} />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://familienrechtanwalt.ch"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Sorgerecht",
+        "item": "https://familienrechtanwalt.ch/sorgerecht"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Elterliche Sorge übertragen",
+        "item": "https://familienrechtanwalt.ch/sorgerecht/elterliche-sorge-uebertragen"
+      }
+    ]
+  })} />
+
 </ArticleLayout>

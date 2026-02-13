@@ -9,6 +9,33 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
   category="Scheidung"
   categoryLink="/scheidung"
 >
+  <!-- Das Wichtigste in Kürze -->
+  <div class="bg-navy text-white p-8 rounded-lg mb-12">
+    <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+    <ul class="space-y-3">
+      <li class="flex items-start">
+        <span class="text-gold mr-3">✓</span>
+        <span>Der Scheidungsantrag ist das formelle Dokument zur Einleitung des Scheidungsverfahrens beim zuständigen Gericht.</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-gold mr-3">✓</span>
+        <span>Bei einvernehmlicher Scheidung wird ein <strong>gemeinsames Scheidungsbegehren</strong> (Art. 111/112 ZGB) eingereicht, bei einseitiger Scheidung eine <strong>Scheidungsklage</strong> (Art. 114/115 ZGB).</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-gold mr-3">✓</span>
+        <span>Das gemeinsame Begehren muss von <strong>beiden Ehegatten</strong> unterzeichnet werden und zusammen mit der Scheidungskonvention eingereicht werden.</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-gold mr-3">✓</span>
+        <span>Die Scheidungsklage erfordert eine <strong>zweijährige Trennungsfrist</strong> (Art. 114 ZGB) oder schwerwiegende Gründe (Art. 115 ZGB).</span>
+      </li>
+      <li class="flex items-start">
+        <span class="text-gold mr-3">✓</span>
+        <span>Der Antrag wird beim <strong>Bezirksgericht am Wohnsitz</strong> eines der Ehegatten eingereicht (Art. 23 ZPO).</span>
+      </li>
+    </ul>
+  </div>
+
   <p class="text-xl text-gray-700 mb-8 leading-relaxed">Der Scheidungsantrag ist das formelle Dokument, mit dem die Scheidung beim zuständigen Gericht eingeleitet wird. Bei der einvernehmlichen Scheidung wird er als gemeinsames Scheidungsbegehren bezeichnet, bei der einseitigen Scheidung als Scheidungsklage. Dieser Ratgeber erklärt die Anforderungen an den Scheidungsantrag, dessen Inhalt und die korrekte Einreichung.</p>
 
   <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Begriffliche Abgrenzung</h2>
@@ -117,6 +144,23 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 
   <p class="text-gray-700 mb-6">Die Scheidungsklage kann bei der einseitigen Scheidung erst eingereicht werden, wenn die zweijährige Trennungsfrist abgelaufen ist (Art. 114 ZGB) oder wenn schwerwiegende Gründe die Fortsetzung der Ehe unzumutbar machen (Art. 115 ZGB).</p>
 
+  <!-- Anwalt-Sektion -->
+  <section class="mb-12">
+    <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+    <p class="text-gray-700 mb-6">Die korrekte Formulierung des Scheidungsantrags ist entscheidend für einen reibungslosen Verfahrensablauf. Formelle Mängel können zu Rückweisungen und Verzögerungen führen. Besonders bei der Scheidungsklage sind die Anforderungen an die Begründung hoch.</p>
+
+    <p class="text-gray-700 mb-6">Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> kann sicherstellen, dass Ihr Scheidungsantrag alle formellen Anforderungen erfüllt und die richtigen Rechtsbegehren enthält. Dies ist besonders wichtig bei komplexen Vermögensverhältnissen, strittigen Unterhaltsansprüchen oder wenn Kinder betroffen sind.</p>
+
+    <p class="text-gray-700 mb-6">Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kann Sie bei der Zusammenstellung der erforderlichen Beilagen unterstützen und die Scheidungskonvention so gestalten, dass sie vom Gericht ohne Beanstandungen genehmigt wird. Bei der Scheidungsklage ist die <a href="/" class="text-gold hover:underline font-semibold">anwaltliche Vertretung</a> besonders empfehlenswert.</p>
+
+    <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+      <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+      <p class="mb-6">Unsere spezialisierten Familienrechtsanwälte prüfen Ihren Scheidungsantrag und beraten Sie zu den formellen Anforderungen und Erfolgsaussichten.</p>
+      <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+    </div>
+  </section>
+
   <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
 
   <p class="text-gray-700 mb-6">Der Scheidungsantrag ist das formelle Instrument zur Einleitung des Scheidungsverfahrens. Seine korrekte Formulierung und Einreichung ist entscheidend für einen reibungslosen Verfahrensablauf. Bei der einvernehmlichen Scheidung sind die formellen Anforderungen geringer als bei der Scheidungsklage, die alle Elemente einer Zivilklage enthalten muss.</p>
@@ -131,4 +175,145 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
       <li>Art. 98-101 ZPO (Kostenvorschuss)</li>
     </ul>
   </div>
+
+  <!-- FAQ -->
+  <section class="mt-16 mb-12">
+    <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+
+    <div class="space-y-6">
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen Scheidungsbegehren und Scheidungsklage?</h3>
+        <p class="text-gray-700">Das Scheidungsbegehren ist ein gemeinsamer Antrag beider Ehegatten bei der einvernehmlichen Scheidung (Art. 111/112 ZGB). Die Scheidungsklage ist der einseitige Antrag eines Ehegatten, wenn der andere nicht einverstanden ist oder die Voraussetzungen nach Art. 114/115 ZGB vorliegen.</p>
+      </div>
+
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Müssen beide Ehegatten den Scheidungsantrag unterschreiben?</h3>
+        <p class="text-gray-700">Beim gemeinsamen Scheidungsbegehren müssen beide Ehegatten eigenhändig unterschreiben. Bei der Scheidungsklage genügt die Unterschrift des klagenden Ehegatten.</p>
+      </div>
+
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Wo muss ich den Scheidungsantrag einreichen?</h3>
+        <p class="text-gray-700">Der Scheidungsantrag wird beim Bezirksgericht (oder je nach Kanton Regionalgericht) am Wohnsitz eines der Ehegatten eingereicht (Art. 23 ZPO). Bei verschiedenen Wohnsitzen können Sie wählen.</p>
+      </div>
+
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Welche Unterlagen muss ich dem Scheidungsantrag beilegen?</h3>
+        <p class="text-gray-700">Obligatorisch sind der Familienausweis und die Vorsorgeausweise beider Ehegatten. Bei einvernehmlicher Scheidung zusätzlich die Scheidungskonvention. Je nach Fall auch Lohnausweise, Steuererklärungen und weitere Dokumente zur Unterhaltsberechnung.</p>
+      </div>
+
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Kann ich den Scheidungsantrag ohne Anwalt einreichen?</h3>
+        <p class="text-gray-700">Ja, in der Schweiz besteht keine Anwaltspflicht bei Scheidungen. Sie können den Antrag selbst einreichen. Bei komplexen Verhältnissen oder einer Scheidungsklage ist anwaltliche Beratung jedoch empfehlenswert.</p>
+      </div>
+
+      <div class="border-b border-gray-200 pb-6">
+        <h3 class="text-xl font-semibold text-navy mb-3">Wann kann ich die Scheidungsklage einreichen?</h3>
+        <p class="text-gray-700">Die Scheidungsklage nach Art. 114 ZGB kann eingereicht werden, wenn Sie mindestens zwei Jahre getrennt gelebt haben. Bei schwerwiegenden Gründen wie häuslicher Gewalt ist eine sofortige Klage nach Art. 115 ZGB möglich.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Scheidungsantrag in der Schweiz: Formulierung, Inhalt und Einreichung",
+    "description": "Scheidungsantrag in der Schweiz: Formulierung, Inhalt und Einreichung. Erfahren Sie alles über gemeinsames Scheidungsbegehren und Scheidungsklage.",
+    "author": {
+      "@type": "Organization",
+      "name": "Familienrechtanwalt.ch"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Familienrechtanwalt.ch",
+      "url": "https://familienrechtanwalt.ch"
+    },
+    "datePublished": "2025-01-20",
+    "dateModified": "2025-01-20",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://familienrechtanwalt.ch/scheidung/scheidungsantrag-einreichen"
+    }
+  })} />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Was ist der Unterschied zwischen Scheidungsbegehren und Scheidungsklage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Das Scheidungsbegehren ist ein gemeinsamer Antrag beider Ehegatten bei der einvernehmlichen Scheidung (Art. 111/112 ZGB). Die Scheidungsklage ist der einseitige Antrag eines Ehegatten, wenn der andere nicht einverstanden ist oder die Voraussetzungen nach Art. 114/115 ZGB vorliegen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Müssen beide Ehegatten den Scheidungsantrag unterschreiben?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Beim gemeinsamen Scheidungsbegehren müssen beide Ehegatten eigenhändig unterschreiben. Bei der Scheidungsklage genügt die Unterschrift des klagenden Ehegatten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wo muss ich den Scheidungsantrag einreichen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Der Scheidungsantrag wird beim Bezirksgericht (oder je nach Kanton Regionalgericht) am Wohnsitz eines der Ehegatten eingereicht (Art. 23 ZPO). Bei verschiedenen Wohnsitzen können Sie wählen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Welche Unterlagen muss ich dem Scheidungsantrag beilegen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Obligatorisch sind der Familienausweis und die Vorsorgeausweise beider Ehegatten. Bei einvernehmlicher Scheidung zusätzlich die Scheidungskonvention. Je nach Fall auch Lohnausweise, Steuererklärungen und weitere Dokumente zur Unterhaltsberechnung."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Kann ich den Scheidungsantrag ohne Anwalt einreichen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, in der Schweiz besteht keine Anwaltspflicht bei Scheidungen. Sie können den Antrag selbst einreichen. Bei komplexen Verhältnissen oder einer Scheidungsklage ist anwaltliche Beratung jedoch empfehlenswert."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wann kann ich die Scheidungsklage einreichen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die Scheidungsklage nach Art. 114 ZGB kann eingereicht werden, wenn Sie mindestens zwei Jahre getrennt gelebt haben. Bei schwerwiegenden Gründen wie häuslicher Gewalt ist eine sofortige Klage nach Art. 115 ZGB möglich."
+        }
+      }
+    ]
+  })} />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://familienrechtanwalt.ch"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Scheidung",
+        "item": "https://familienrechtanwalt.ch/scheidung"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Scheidungsantrag einreichen",
+        "item": "https://familienrechtanwalt.ch/scheidung/scheidungsantrag-einreichen"
+      }
+    ]
+  })} />
+
 </ArticleLayout>

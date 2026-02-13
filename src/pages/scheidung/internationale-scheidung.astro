@@ -3,111 +3,632 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 ---
 
 <ArticleLayout
-  title="Internationale Scheidung in der Schweiz"
-  description="Internationale Scheidung in der Schweiz: Zustaendigkeit, anwendbares Recht und Anerkennung auslaendischer Urteile. Umfassender Ratgeber."
-  keywords="Internationale Scheidung Schweiz, Scheidung Ausland, IPRG Scheidung, Anerkennung Scheidungsurteil"
-  category="Scheidung"
-  categoryLink="/scheidung"
+    title="Internationale Scheidung in der Schweiz"
+    description="Internationale Scheidung: Zuständigkeit nach IPRG, anwendbares Recht, Anerkennung ausländischer Urteile. Mit BGE-Rechtsprechung und Haager Übereinkommen."
+    keywords="Internationale Scheidung Schweiz, binationale Scheidung, IPRG Scheidung, Anerkennung Scheidungsurteil, Scheidung Ausländer Schweiz, Art. 59 IPRG"
+    category="Scheidung"
+    categoryLink="/scheidung"
 >
-  <p class="text-xl text-gray-700 mb-8 leading-relaxed">Scheidungen mit internationalem Bezug stellen Betroffene vor besondere Herausforderungen. Wenn Ehegatten unterschiedlicher Nationalität sind, im Ausland geheiratet haben oder ein Partner im Ausland lebt, müssen Fragen der internationalen Zuständigkeit, des anwendbaren Rechts und der Anerkennung geklärt werden.</p>
+    <!-- Das Wichtigste in Kürze -->
+    <div class="bg-navy text-white p-8 rounded-lg mb-12">
+        <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+        <ul class="space-y-3">
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Schweizer Gerichte sind zuständig, wenn der Beklagte in der Schweiz wohnt oder der Kläger Schweizer ist bzw. seit mindestens einem Jahr in der Schweiz lebt (Art. 59 IPRG)</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Bei Scheidungen in der Schweiz wird grundsätzlich Schweizer Recht angewendet – auch wenn beide Ehegatten Ausländer sind (Art. 61 Abs. 1 IPRG)</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Für Kinderbelange gilt das Haager Kindesschutzübereinkommen (HKsÜ): Zuständig sind die Behörden am gewöhnlichen Aufenthalt des Kindes</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Ausländische Scheidungsurteile werden in der Schweiz anerkannt, wenn sie im Wohnsitz-, Aufenthalts- oder Heimatstaat eines Ehegatten ergangen sind (Art. 65 IPRG)</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Die Aufteilung der Schweizer Pensionskasse fällt in die ausschliessliche Zuständigkeit der Schweizer Gerichte – auch bei Scheidung im Ausland (Art. 63 Abs. 1bis IPRG)</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Rund die Hälfte aller Scheidungen in der Schweiz betreffen internationale Ehen – spezialisierte Beratung ist dringend empfohlen</span>
+            </li>
+        </ul>
+    </div>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtsgrundlagen</h2>
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Scheidungen mit internationalem Bezug stellen Betroffene vor besondere rechtliche Herausforderungen. Wenn Ehegatten unterschiedlicher Nationalität sind, im Ausland geheiratet haben, einer oder beide Partner im Ausland leben oder Vermögen in mehreren Ländern besteht, müssen komplexe Fragen der internationalen Zuständigkeit, des anwendbaren Rechts und der Anerkennung geklärt werden. Dieser umfassende Leitfaden erklärt alle relevanten Bestimmungen des Bundesgesetzes über das Internationale Privatrecht (IPRG) sowie die wichtigsten internationalen Abkommen.</p>
 
-  <p class="text-gray-700 mb-6">Das schweizerische internationale Privatrecht ist hauptsächlich im Bundesgesetz über das Internationale Privatrecht (IPRG) geregelt. Die Art. 59-65 IPRG betreffen spezifisch die Ehescheidung und Ehetrennung.</p>
+    <!-- Rechtsgrundlagen -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtsgrundlagen der internationalen Scheidung</h2>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Internationale Zuständigkeit</h2>
+    <p class="text-gray-700 mb-6">Das schweizerische internationale Privatrecht für Scheidungen ist hauptsächlich in folgenden Rechtsquellen geregelt:</p>
 
-  <div class="overflow-x-auto mb-6">
-    <table class="min-w-full bg-white border border-gray-200">
-      <thead class="bg-navy text-white">
-        <tr>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Konstellation</th>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Zuständigkeit</th>
-          <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
-        </tr>
-      </thead>
-      <tbody class="divide-y divide-gray-200">
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Beide in der Schweiz wohnhaft</td>
-          <td class="px-6 py-4 text-gray-700">Gericht am Wohnsitz eines Ehegatten</td>
-          <td class="px-6 py-4 text-gray-700">Art. 59 IPRG</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">Kläger in der Schweiz, Beklagter im Ausland</td>
-          <td class="px-6 py-4 text-gray-700">Gericht am Wohnsitz des Klägers (nach 1 Jahr oder bei CH-Staatsangehörigkeit)</td>
-          <td class="px-6 py-4 text-gray-700">Art. 59 lit. b IPRG</td>
-        </tr>
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Kläger im Ausland, Beklagter in der Schweiz</td>
-          <td class="px-6 py-4 text-gray-700">Gericht am Wohnsitz des Beklagten</td>
-          <td class="px-6 py-4 text-gray-700">Art. 59 lit. a IPRG</td>
-        </tr>
-        <tr class="bg-gray-50">
-          <td class="px-6 py-4 font-semibold text-navy">Beide im Ausland, mindestens einer Schweizer</td>
-          <td class="px-6 py-4 text-gray-700">Gericht am Heimatort des Schweizers</td>
-          <td class="px-6 py-4 text-gray-700">Art. 60 IPRG</td>
-        </tr>
-        <tr>
-          <td class="px-6 py-4 font-semibold text-navy">Scheidung im Ausland unmöglich/unzumutbar</td>
-          <td class="px-6 py-4 text-gray-700">Gericht am Heimatort oder letzten Wohnsitz</td>
-          <td class="px-6 py-4 text-gray-700">Art. 60 IPRG</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsquelle</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Regelungsbereich</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Relevante Artikel</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">IPRG</td>
+                    <td class="px-6 py-4 text-gray-700">Zuständigkeit, anwendbares Recht, Anerkennung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 59-65 (Scheidung), Art. 52-58 (Güterrecht), Art. 25-32 (Anerkennung)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Haager Kindesschutzübereinkommen (HKsÜ)</td>
+                    <td class="px-6 py-4 text-gray-700">Elterliche Sorge, Kindesschutz</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 5 ff. (Zuständigkeit), Art. 15 ff. (anwendbares Recht)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Haager Kindesentführungsübereinkommen (HKÜ)</td>
+                    <td class="px-6 py-4 text-gray-700">Internationale Kindesentführung</td>
+                    <td class="px-6 py-4 text-gray-700">Rückführung widerrechtlich verbrachter Kinder</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Lugano-Übereinkommen</td>
+                    <td class="px-6 py-4 text-gray-700">Unterhaltsansprüche (nicht Scheidung selbst)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 5 Ziff. 2</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Materielles Scheidungsrecht der Schweiz</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 111 ff.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Anwendbares Recht</h2>
+    <!-- Internationale Zuständigkeit -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Internationale Zuständigkeit der Schweizer Gerichte</h2>
 
-  <p class="text-gray-700 mb-6">Das auf die Scheidung anwendbare Recht bestimmt sich nach Art. 61 IPRG. Grundsätzlich gilt schweizerisches Recht, wenn beide Ehegatten in der Schweiz wohnen oder wenn nur ein Ehegatte in der Schweiz wohnt und die Klage von diesem erhoben wird.</p>
+    <p class="text-gray-700 mb-6">Die internationale Zuständigkeit der Schweizer Gerichte für Scheidungen richtet sich nach Art. 59-60 IPRG. Diese Bestimmungen sind zwingend – Gerichtsstandsvereinbarungen können die internationale Zuständigkeit nicht begründen oder ausschliessen.</p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Rechtswahl</h3>
-  <p class="text-gray-700 mb-6">Gemäss Art. 61 Abs. 3 IPRG können die Ehegatten die Anwendung schweizerischen Rechts vereinbaren, wenn mindestens einer von ihnen Schweizer ist oder seit mindestens einem Jahr in der Schweiz wohnt.</p>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Art. 59 IPRG: Ordentliche Zuständigkeit</h3>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Besondere Aspekte</h2>
+    <p class="text-gray-700 mb-6">Gemäss Art. 59 IPRG sind die Schweizer Gerichte für Scheidungs- oder Trennungsklagen zuständig:</p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kinderbelange</h3>
-  <p class="text-gray-700 mb-6">Bei Scheidungen mit Kindern ist die internationale Zuständigkeit für Kinderbelange separat zu prüfen. Das Haager Kindesschutzübereinkommen (HKsÜ) bestimmt als Grundregel, dass die Behörden des Staates des gewöhnlichen Aufenthalts des Kindes zuständig sind.</p>
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Variante</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Voraussetzungen</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Wohnsitz des Beklagten</td>
+                    <td class="px-6 py-4 text-gray-700">Der beklagte Ehegatte hat Wohnsitz in der Schweiz</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 59 lit. a IPRG</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Wohnsitz des Klägers (Schweizer)</td>
+                    <td class="px-6 py-4 text-gray-700">Der klagende Ehegatte wohnt in der Schweiz und hat das Schweizer Bürgerrecht</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 59 lit. b IPRG</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Wohnsitz des Klägers (1 Jahr)</td>
+                    <td class="px-6 py-4 text-gray-700">Der klagende Ehegatte wohnt in der Schweiz und hält sich seit mindestens einem Jahr hier auf</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 59 lit. b IPRG</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Güterrecht bei internationalen Ehen</h3>
-  <p class="text-gray-700 mb-6">Das eheliche Güterrecht unterliegt gemäss Art. 52-58 IPRG ebenfalls dem internationalen Privatrecht. Fehlt eine Rechtswahl, bestimmt sich das anwendbare Recht nach dem ersten gemeinsamen Wohnsitz oder der gemeinsamen Staatsangehörigkeit.</p>
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig für Ausländer:</p>
+        <p class="text-gray-700">Für ausländische Staatsangehörige ohne Schweizer Pass gilt: Sie können in der Schweiz nur dann Scheidungsklage erheben, wenn sie sich seit mindestens einem Jahr in der Schweiz aufhalten. Diese Jahresfrist ist strikt – ein kürzerer Aufenthalt begründet keine Klageberechtigung nach Art. 59 lit. b IPRG.</p>
+    </div>
 
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Anerkennung ausländischer Urteile</h2>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Art. 60 IPRG: Subsidiäre Zuständigkeit (Heimatort)</h3>
 
-  <p class="text-gray-700 mb-4">Ausländische Scheidungsurteile werden in der Schweiz anerkannt, wenn:</p>
-  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-    <li>Sie im Staat des Wohnsitzes, des gewöhnlichen Aufenthalts oder im Heimatstaat eines Ehegatten ergangen sind</li>
-    <li>Der Beklagte sich auf das Verfahren eingelassen hat</li>
-    <li>Beide Ehegatten die Scheidung gemeinsam beantragt haben</li>
-  </ul>
+    <p class="text-gray-700 mb-6">Sind beide Ehegatten im Ausland wohnhaft und ist mindestens einer von ihnen Schweizer Staatsbürger, kann unter bestimmten Voraussetzungen dennoch ein Schweizer Gericht angerufen werden:</p>
 
-  <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Anerkennungshindernisse</h3>
-  <p class="text-gray-700 mb-4">Die Anerkennung wird verweigert, wenn:</p>
-  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-    <li>Das Urteil mit dem schweizerischen Ordre public offensichtlich unvereinbar ist</li>
-    <li>Eine Partei nicht ordnungsgemäss am Verfahren teilnehmen konnte</li>
-    <li>Das Urteil mit einem früheren schweizerischen Entscheid unvereinbar ist</li>
-  </ul>
-
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Praktische Empfehlungen</h2>
-
-  <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-    <li><strong>Frühzeitige Abklärung:</strong> Prüfen Sie zu Beginn, welche Gerichte international zuständig sind</li>
-    <li><strong>Forum Shopping:</strong> Die Wahl des günstigsten Forums ist im internationalen Familienrecht legitim</li>
-    <li><strong>Dokumentenbeschaffung:</strong> Planen Sie genügend Zeit für die Beschaffung ausländischer Dokumente ein</li>
-    <li><strong>Spezialisierte Beratung:</strong> Das internationale Familienrecht erfordert spezialisiertes Wissen</li>
-  </ul>
-
-  <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Fazit</h2>
-
-  <p class="text-gray-700 mb-6">Internationale Scheidungen erfordern eine sorgfältige Prüfung der Zuständigkeit, des anwendbaren Rechts und der Anerkennungsfähigkeit von Entscheidungen. Das schweizerische internationale Privatrecht bietet einen umfassenden Rahmen, der in vielen Konstellationen eine Scheidung in der Schweiz ermöglicht.</p>
-
-  <div class="bg-gray-50 border-l-4 border-gold p-6 my-6">
-    <p class="font-semibold text-navy mb-2">Relevante Gesetzesbestimmungen:</p>
-    <ul class="list-disc list-inside text-gray-700 space-y-1">
-      <li>Art. 59-65 IPRG (Scheidung und Ehetrennung)</li>
-      <li>Art. 9 IPRG (Ausländische Rechtshängigkeit)</li>
-      <li>Art. 25-32 IPRG (Anerkennung ausländischer Entscheidungen)</li>
-      <li>Haager Kindesschutzübereinkommen (HKsÜ)</li>
+    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+        <li>Es ist unmöglich oder unzumutbar, die Klage am ausländischen Wohnsitz zu erheben</li>
+        <li>In diesem Fall ist das Gericht am schweizerischen Heimatort eines Ehegatten zuständig</li>
+        <li>Diese Notzuständigkeit dient dem Schutz von Auslandschweizern</li>
     </ul>
-  </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Art. 3 IPRG: Notzuständigkeit</h3>
+
+    <p class="text-gray-700 mb-6">Ist kein Schweizer Gerichtsstand gegeben, kann ausnahmsweise eine sogenannte Notzuständigkeit nach Art. 3 IPRG bestehen. Voraussetzung ist, dass ein Verfahren im Ausland unmöglich oder unzumutbar ist. Das Bundesgericht legt diese Bestimmung restriktiv aus.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Perpetuatio fori: Fortdauernde Zuständigkeit</h3>
+
+    <p class="text-gray-700 mb-6">Ist die Scheidungsklage einmal rechtshängig gemacht, bleibt das angerufene Gericht zuständig – auch wenn ein Ehegatte während des Verfahrens ins Ausland zieht. Ein Umzug während des laufenden Verfahrens hat keinen Einfluss auf die einmal begründete Zuständigkeit.</p>
+
+    <!-- Litispendenz -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Litispendenz: Parallele Verfahren vermeiden</h2>
+
+    <p class="text-gray-700 mb-6">Bei internationalen Scheidungen besteht oft die Gefahr, dass beide Ehegatten zeitgleich in verschiedenen Ländern Scheidungsklage erheben. Das IPRG enthält in Art. 9 eine wichtige Regelung zur Vermeidung solcher paralleler Verfahren:</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Art. 9 IPRG – Ausländische Rechtshängigkeit:</p>
+        <p class="text-gray-700">Ist eine Klage über denselben Gegenstand zwischen denselben Parteien zuerst im Ausland hängig gemacht worden, so setzt das schweizerische Gericht das Verfahren aus, wenn zu erwarten ist, dass das ausländische Gericht in angemessener Frist eine Entscheidung fällt, die in der Schweiz anerkennungsfähig sein wird.</p>
+    </div>
+
+    <p class="text-gray-700 mb-6">Das Prioritätsprinzip gilt: Das Gericht, bei dem zuerst Klage erhoben wurde, ist zuständig. Das später angerufene Gericht muss sein Verfahren aussetzen oder die Klage abweisen. Daher kann es strategisch sinnvoll sein, schnell zu handeln und die Scheidung zuerst einzureichen – dies ist im internationalen Familienrecht legitim («Forum Shopping»).</p>
+
+    <!-- Anwendbares Recht -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Anwendbares Recht bei der Scheidung</h2>
+
+    <p class="text-gray-700 mb-6">Das auf die Scheidung und ihre Nebenfolgen anwendbare Recht bestimmt sich nach Art. 61-64 IPRG. Dabei ist zwischen dem Scheidungsstatut (der Scheidung selbst) und den verschiedenen Nebenfolgen zu unterscheiden.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Art. 61 IPRG: Scheidungsstatut</h3>
+
+    <p class="text-gray-700 mb-6">Grundregel: In der Schweiz durchgeführte Scheidungen werden nach Schweizer Recht beurteilt (Art. 61 Abs. 1 IPRG). Dies gilt unabhängig von der Staatsangehörigkeit der Ehegatten – auch zwei Ausländer werden nach Schweizer Recht geschieden, wenn das Verfahren in der Schweiz stattfindet.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Konstellation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Anwendbares Recht</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Scheidung in der Schweiz (Regelfall)</td>
+                    <td class="px-6 py-4 text-gray-700">Schweizer Recht (ZGB)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 61 Abs. 1 IPRG</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Beide Ausländer mit gleicher Staatsangehörigkeit, nur einer in CH wohnhaft</td>
+                    <td class="px-6 py-4 text-gray-700">Gemeinsames Heimatrecht</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 61 Abs. 2 IPRG</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Offensichtlich engerer Zusammenhang mit ausländischem Recht</td>
+                    <td class="px-6 py-4 text-gray-700">Ausländisches Recht (Ausnahme)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 15 Abs. 1 IPRG</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ausnahmeklausel (Art. 15 IPRG)</h3>
+
+    <p class="text-gray-700 mb-6">Haben beide Parteien während eines grossen Teils der Ehedauer im Ausland gelebt und begründet eine Partei kurzfristig einen Schweizer Scheidungsgerichtsstand, kann das Gericht annehmen, dass der Sachverhalt einen offensichtlich viel engeren Zusammenhang mit dem ausländischen Recht aufweist. In diesem Fall kann ausnahmsweise ausländisches Recht zur Anwendung kommen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Art. 63 IPRG: Nebenfolgen der Scheidung</h3>
+
+    <p class="text-gray-700 mb-6">Grundsätzlich unterstehen die Nebenfolgen der Scheidung demselben Recht wie die Scheidung selbst (Art. 63 Abs. 2 IPRG). Allerdings existieren für viele Nebenfolgen spezielle Regelungen:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Nebenfolge</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Anwendbares Recht</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Nachehelicher Unterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Staatsverträge gehen vor (Haager Unterhaltsübereinkommen 1973)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 63 Abs. 1 IPRG</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Kindesunterhalt</td>
+                    <td class="px-6 py-4 text-gray-700">Recht am gewöhnlichen Aufenthalt des Kindes</td>
+                    <td class="px-6 py-4 text-gray-700">Haager Unterhaltsübereinkommen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Güterrecht</td>
+                    <td class="px-6 py-4 text-gray-700">Gewähltes Recht oder Recht des ersten gemeinsamen Wohnsitzes</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 52-58 IPRG</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Elterliche Sorge</td>
+                    <td class="px-6 py-4 text-gray-700">Recht am gewöhnlichen Aufenthalt des Kindes</td>
+                    <td class="px-6 py-4 text-gray-700">Haager Kindesschutzübereinkommen (HKsÜ)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Berufliche Vorsorge (Schweizer PK)</td>
+                    <td class="px-6 py-4 text-gray-700">Ausschliesslich Schweizer Recht und Schweizer Gerichte</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 63 Abs. 1bis IPRG</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig – Schweizer Pensionskasse:</p>
+        <p class="text-gray-700">Gemäss Art. 63 Abs. 1bis IPRG fällt die Aufteilung der schweizerischen beruflichen Vorsorge in die ausschliessliche Zuständigkeit der Schweizer Gerichte. Bei einer Scheidung im Ausland kann das Schweizer Vorsorgeguthaben nur durch ein Schweizer Gericht geteilt werden – auch wenn das ausländische Scheidungsgericht das Guthaben in seinem Urteil berücksichtigt hat. In solchen Fällen muss ein separates Verfahren in der Schweiz eingeleitet werden.</p>
+    </div>
+
+    <!-- Güterrecht -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Güterrecht bei internationalen Ehen</h2>
+
+    <p class="text-gray-700 mb-6">Das auf den Güterstand und seine Abwicklung anwendbare Recht bestimmt sich nach Art. 52-58 IPRG. Die Ehegatten haben dabei eine wichtige Wahlmöglichkeit.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Rechtswahl (Art. 52 IPRG)</h3>
+
+    <p class="text-gray-700 mb-6">Die Ehegatten können das auf ihren Güterstand anwendbare Recht wählen. Folgende Rechte stehen zur Auswahl:</p>
+
+    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+        <li>Das Recht des Staates, in dem beide ihren Wohnsitz haben oder haben werden</li>
+        <li>Das Recht des Heimatstaates eines der Ehegatten</li>
+    </ul>
+
+    <p class="text-gray-700 mb-6">Diese Rechtswahl kann vor der Ehe, während der Ehe oder sogar noch während des Scheidungsverfahrens getroffen werden. Sie muss schriftlich erfolgen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ohne Rechtswahl (Art. 54 IPRG)</h3>
+
+    <p class="text-gray-700 mb-6">Haben die Ehegatten keine Rechtswahl getroffen, untersteht der Güterstand dem Recht des Staates, in dem beide gleichzeitig ihren Wohnsitz haben. Hatten sie nie einen gemeinsamen Wohnsitz, gilt das Recht ihres letzten gemeinsamen Wohnsitzes.</p>
+
+    <!-- Kindesbelange -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kindesbelange bei internationalen Scheidungen</h2>
+
+    <p class="text-gray-700 mb-6">Bei Scheidungen mit gemeinsamen Kindern ist die internationale Zuständigkeit für Kindesbelange separat zu prüfen. Hier gilt das Haager Kindesschutzübereinkommen (HKsÜ), das die Schweiz 2009 ratifiziert hat.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Zuständigkeit nach HKsÜ (Art. 5)</h3>
+
+    <p class="text-gray-700 mb-6">Zuständig für Massnahmen zum Schutz der Person oder des Vermögens des Kindes – einschliesslich der Regelung der elterlichen Sorge und des Besuchsrechts – sind die Behörden des Vertragsstaats, in dem das Kind seinen gewöhnlichen Aufenthalt hat.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">BGE 126 III 298:</p>
+        <p class="text-gray-700">Das Bundesgericht hat entschieden: Ist für die Zuteilung der elterlichen Gewalt und die Regelung des persönlichen Verkehrs ein Schweizer Gericht zuständig und kann daher der Entscheid eines ausländischen Gerichts in der Schweiz nicht anerkannt werden, so hat das mit der Gestaltung der Elternrechte befasste Schweizer Gericht von Amtes wegen auch den Kindesunterhalt festzulegen.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wechsel des Aufenthalts</h3>
+
+    <p class="text-gray-700 mb-6">Bei einem Wechsel des gewöhnlichen Aufenthalts des Kindes in einen anderen Vertragsstaat werden die Behörden des neuen Aufenthaltsstaates zuständig. Die bisherige Zuständigkeit entfällt. Dies ist besonders relevant, wenn ein Elternteil mit dem Kind ins Ausland ziehen möchte.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Internationale Kindesentführung</h3>
+
+    <p class="text-gray-700 mb-6">Das Haager Kindesentführungsübereinkommen (HKÜ) schützt vor der widerrechtlichen Verbringung oder dem widerrechtlichen Zurückhalten von Kindern. Üben die Eltern das Sorgerecht gemeinsam aus und will ein Elternteil mit dem Kind ins Ausland ziehen, bedarf dies der Zustimmung des anderen Elternteils oder eines Gerichtsentscheids (Art. 301a ZGB).</p>
+
+    <!-- Anerkennung ausländischer Urteile -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Anerkennung ausländischer Scheidungsurteile</h2>
+
+    <p class="text-gray-700 mb-6">Die Anerkennung ausländischer Scheidungsurteile in der Schweiz richtet sich nach Art. 65 IPRG. Die Schweiz verfolgt eine grosszügige Anerkennungspraxis.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Voraussetzungen nach Art. 65 Abs. 1 IPRG</h3>
+
+    <p class="text-gray-700 mb-6">Ausländische Scheidungsurteile werden in der Schweiz anerkannt, wenn sie ergangen sind:</p>
+
+    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+        <li>Im Staat des Wohnsitzes eines der Ehegatten</li>
+        <li>Im Staat des gewöhnlichen Aufenthalts eines der Ehegatten</li>
+        <li>Im Heimatstaat eines der Ehegatten</li>
+        <li>In einem Staat, in dem die Scheidung aufgrund dessen Gesetzgebung oder verbindlicher Staatsverträge anerkannt wird</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Einschränkungen bei Drittstaaten (Art. 65 Abs. 2 IPRG)</h3>
+
+    <p class="text-gray-700 mb-6">Strengere Anforderungen gelten, wenn das Urteil in einem Staat ergangen ist, dem keiner oder nur der klagende Ehegatte angehört. In diesem Fall wird die Scheidung nur anerkannt, wenn:</p>
+
+    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+        <li>Im Zeitpunkt der Klageeinleitung wenigstens ein Ehegatte dort Wohnsitz oder gewöhnlichen Aufenthalt hatte</li>
+        <li>Der beklagte Ehegatte seinen Wohnsitz nicht in der Schweiz hatte</li>
+        <li>Der beklagte Ehegatte sich der Zuständigkeit des ausländischen Gerichts vorbehaltlos unterworfen hat oder mit der Anerkennung in der Schweiz einverstanden ist</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Anerkennungshindernisse (Art. 27 IPRG)</h3>
+
+    <p class="text-gray-700 mb-6">Die Anerkennung wird verweigert, wenn:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Hindernis</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Ordre public</td>
+                    <td class="px-6 py-4 text-gray-700">Das Urteil ist mit dem Schweizer Ordre public offensichtlich unvereinbar</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 27 Abs. 1 IPRG</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Verfahrensmangel</td>
+                    <td class="px-6 py-4 text-gray-700">Eine Partei konnte nicht ordnungsgemäss am Verfahren teilnehmen (z.B. keine ordnungsgemässe Ladung)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 27 Abs. 2 IPRG</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Widerspruch zu CH-Entscheid</td>
+                    <td class="px-6 py-4 text-gray-700">Das Urteil ist mit einem früheren Schweizer Entscheid in derselben Sache unvereinbar</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 27 Abs. 2 lit. c IPRG</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Anerkennung von Privatscheidungen</h3>
+
+    <p class="text-gray-700 mb-6">In einigen Ländern sind sogenannte Privatscheidungen möglich – also Scheidungen ohne gerichtliches Verfahren. Das Bundesgericht hat entschieden, dass auch solche Privatscheidungen als «Entscheid» im Sinne der Art. 25 ff. und Art. 65 IPRG gelten und daher in der Schweiz grundsätzlich anerkennungsfähig sind.</p>
+
+    <!-- Besondere Konstellationen -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Besondere Konstellationen</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Scheidung zwischen der Schweiz und EU-Staaten</h3>
+
+    <p class="text-gray-700 mb-6">Für Scheidungen zwischen der Schweiz und EU-Staaten gilt: Das Lugano-Übereinkommen regelt nicht die Scheidung selbst (diese ist ausdrücklich ausgenommen), sondern nur Unterhaltsansprüche. Für die Zuständigkeit und das anwendbare Recht bei der Scheidung gilt daher das IPRG.</p>
+
+    <p class="text-gray-700 mb-6">In der EU gilt die Brüssel IIa-Verordnung (bzw. seit 2022 die Brüssel IIb-Verordnung), die der Schweiz nicht anwendbar ist. Bei grenzüberschreitenden Scheidungen zwischen der Schweiz und der EU ist daher genau zu prüfen, welche Zuständigkeitsregeln auf welcher Seite gelten.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Binationale Ehen mit Bezug zu islamischen Ländern</h3>
+
+    <p class="text-gray-700 mb-6">Besondere Herausforderungen können sich bei Scheidungen mit Bezug zu islamisch geprägten Rechtsordnungen ergeben. Hier können Fragen auftreten betreffend:</p>
+
+    <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+        <li>Anerkennung von Talaq-Scheidungen (einseitige Verstossung)</li>
+        <li>Unterschiedliche Regelungen zum Sorgerecht</li>
+        <li>Ordre public-Vorbehalte bei diskriminierenden Regelungen</li>
+    </ul>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Forum Shopping</h3>
+
+    <p class="text-gray-700 mb-6">Bei internationalen Scheidungen kann die Wahl des Scheidungsortes erhebliche finanzielle Auswirkungen haben. Die Unterhaltsberechnung, das Güterrecht und andere Nebenfolgen können je nach anwendbarem Recht sehr unterschiedlich ausfallen. Die bewusste Wahl des günstigsten Forums («Forum Shopping») ist im internationalen Familienrecht grundsätzlich legitim.</p>
+
+    <!-- Praktische Empfehlungen -->
+    <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Praktische Empfehlungen</h2>
+
+    <div class="grid md:grid-cols-2 gap-6 my-8">
+        <div class="bg-white border border-gray-200 rounded-lg p-6">
+            <h4 class="font-bold text-navy mb-3">Vor der Scheidungseinreichung</h4>
+            <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start"><span class="text-gold mr-2">•</span>Zuständigkeit aller möglichen Gerichte prüfen</li>
+                <li class="flex items-start"><span class="text-gold mr-2">•</span>Anwendbares Recht in jedem Forum abklären</li>
+                <li class="flex items-start"><span class="text-gold mr-2">•</span>Finanzielle Auswirkungen vergleichen</li>
+                <li class="flex items-start"><span class="text-gold mr-2">•</span>Zeitfaktor berücksichtigen (Litispendenz)</li>
+            </ul>
+        </div>
+        <div class="bg-white border border-gray-200 rounded-lg p-6">
+            <h4 class="font-bold text-navy mb-3">Während des Verfahrens</h4>
+            <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start"><span class="text-gold mr-2">•</span>Zustellungsempfänger in der Schweiz benennen (bei Auslandswohnsitz)</li>
+                <li class="flex items-start"><span class="text-gold mr-2">•</span>Ausländische Dokumente frühzeitig beschaffen</li>
+                <li class="flex items-start"><span class="text-gold mr-2">•</span>Übersetzungen und Apostillen einplanen</li>
+                <li class="flex items-start"><span class="text-gold mr-2">•</span>Parallelverfahren im Ausland vermeiden</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Tipp – Zustellungsempfänger:</p>
+        <p class="text-gray-700">Leben Sie im Ausland und möchten in der Schweiz geschieden werden, müssen Sie einen Zustellungsempfänger mit Wohnsitz in der Schweiz benennen. Ohne gültige Zustelladresse kann das Gericht keine Schriftstücke zustellen und das Verfahren nicht durchführen.</p>
+    </div>
+
+    <!-- Anwalt-Sektion -->
+    <section class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+        <p class="text-gray-700 mb-6">Internationale Scheidungen gehören zu den komplexesten Fällen im Familienrecht. Die Verflechtung verschiedener Rechtsordnungen, internationaler Abkommen und nationaler Gesetze erfordert spezialisiertes Wissen. Fehler bei der Wahl des Gerichtsstands oder bei der Beurteilung des anwendbaren Rechts können schwerwiegende und irreversible Folgen haben.</p>
+
+        <p class="text-gray-700 mb-6">Die Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> ist bei internationalen Scheidungen dringend zu empfehlen. Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> mit Erfahrung im internationalen Privatrecht kann:</p>
+
+        <ul class="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+            <li>Die internationale Zuständigkeit aller möglichen Gerichte prüfen</li>
+            <li>Das günstigste Forum für Ihre Situation identifizieren</li>
+            <li>Die Auswirkungen des jeweils anwendbaren Rechts erläutern</li>
+            <li>Bei der Beschaffung ausländischer Dokumente unterstützen</li>
+            <li>Mit ausländischen Anwälten koordinieren, falls erforderlich</li>
+            <li>Die Anerkennung ausländischer Entscheidungen erwirken</li>
+        </ul>
+
+        <p class="text-gray-700 mb-6">Besonders wenn Kinder betroffen sind, Vermögen in mehreren Ländern besteht oder eine Pensionskassenteilung erforderlich ist, sollten Sie keinesfalls ohne fachkundige Unterstützung vorgehen. Ein <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> mit internationaler Erfahrung kann Ihre Interessen wirksam schützen.</p>
+
+        <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+            <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+            <p class="mb-6">Lassen Sie sich unverbindlich beraten, welches Gericht für Ihre internationale Scheidung zuständig ist und welches Recht zur Anwendung kommt. Unsere spezialisierten Anwälte für Familienrecht unterstützen Sie bei allen Fragen rund um binationale Scheidungen.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+        </div>
+    </section>
+
+    <!-- Fazit -->
+    <h2 class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Internationale Scheidungen erfordern eine sorgfältige Analyse der Zuständigkeit, des anwendbaren Rechts und der Anerkennungsfähigkeit von Entscheidungen. Das schweizerische internationale Privatrecht (IPRG) bietet zusammen mit den verschiedenen Haager Übereinkommen einen umfassenden rechtlichen Rahmen, der in vielen Konstellationen eine Scheidung in der Schweiz ermöglicht.</p>
+
+    <p class="text-gray-700 mb-6">Entscheidend ist, frühzeitig zu handeln und alle Optionen zu prüfen. Der Ort der Scheidung kann erhebliche Auswirkungen auf die finanziellen Folgen haben – vom Unterhalt über die güterrechtliche Auseinandersetzung bis zur Regelung der Kinderbelange. Mit rund der Hälfte aller Scheidungen in der Schweiz, die internationale Ehen betreffen, ist dieses Rechtsgebiet von grosser praktischer Bedeutung.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Relevante Gesetzesbestimmungen:</p>
+        <ul class="list-disc list-inside text-gray-700 space-y-1">
+            <li>Art. 59-65 IPRG (Scheidung und Ehetrennung)</li>
+            <li>Art. 52-58 IPRG (Güterrecht)</li>
+            <li>Art. 25-32 IPRG (Anerkennung ausländischer Entscheidungen)</li>
+            <li>Art. 3 IPRG (Notzuständigkeit)</li>
+            <li>Art. 9 IPRG (Ausländische Rechtshängigkeit)</li>
+            <li>Haager Kindesschutzübereinkommen (HKsÜ)</li>
+            <li>Haager Kindesentführungsübereinkommen (HKÜ)</li>
+            <li>Lugano-Übereinkommen (für Unterhaltsansprüche)</li>
+        </ul>
+    </div>
+
+    <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-6 rounded-lg my-12 border border-gray-200">
+        <p class="font-semibold text-navy mb-3">Vertiefende Artikel zum internationalen Familienrecht:</p>
+        <ul class="space-y-2 text-gray-700">
+            <li>→ <a href="/internationales-familienrecht" class="text-gold hover:underline font-semibold">Internationales Familienrecht in der Schweiz</a> – Gesamtübersicht IPRG, Haager Übereinkommen & Lugano</li>
+            <li>→ <a href="/internationales-familienrecht/internationale-kindesentfuehrung" class="text-gold hover:underline font-semibold">Internationale Kindesentführung</a> – HKÜ-Verfahren, Rückführung & Prävention</li>
+            <li>→ <a href="/internationales-familienrecht/internationaler-kindesunterhalt" class="text-gold hover:underline font-semibold">Internationaler Kindesunterhalt</a> – Grenzüberschreitende Vollstreckung</li>
+            <li>→ <a href="/internationales-familienrecht/internationales-eherecht" class="text-gold hover:underline font-semibold">Internationales Eherecht</a> – Eheschliessung mit Auslandsbezug</li>
+            <li>→ <a href="/internationales-familienrecht/internationales-gueterrecht" class="text-gold hover:underline font-semibold">Internationales Güterrecht</a> – Vermögen in mehreren Ländern</li>
+            <li>→ <a href="/internationales-familienrecht/anerkennung-auslaendischer-entscheidungen" class="text-gold hover:underline font-semibold">Anerkennung ausländischer Entscheidungen</a> – Verfahren & Voraussetzungen</li>
+        </ul>
+    </div>
+
+    <!-- FAQ -->
+    <section class="mt-16 mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+
+        <div class="space-y-6">
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich mich als Ausländer in der Schweiz scheiden lassen?</h3>
+                <p class="text-gray-700">Ja, wenn Sie seit mindestens einem Jahr in der Schweiz leben oder Ihr Ehepartner in der Schweiz wohnt. Die Schweizer Staatsangehörigkeit ist nicht erforderlich. Bei Wohnsitz Ihres Ehepartners in der Schweiz können Sie sofort klagen; bei eigenem Wohnsitz ohne Schweizer Pass müssen Sie die Jahresfrist abwarten.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Welches Recht gilt bei einer internationalen Scheidung in der Schweiz?</h3>
+                <p class="text-gray-700">Grundsätzlich gilt Schweizer Recht (ZGB), wenn die Scheidung in der Schweiz durchgeführt wird – unabhängig von Ihrer Staatsangehörigkeit. Eine Ausnahme besteht, wenn beide Ehegatten dieselbe ausländische Staatsangehörigkeit haben und nur einer in der Schweiz wohnt: Dann kann das gemeinsame Heimatrecht zur Anwendung kommen.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wird meine ausländische Scheidung in der Schweiz anerkannt?</h3>
+                <p class="text-gray-700">In den meisten Fällen ja. Ausländische Scheidungsurteile werden anerkannt, wenn sie im Wohnsitz-, Aufenthalts- oder Heimatstaat eines Ehegatten ergangen sind und nicht gegen den Schweizer Ordre public verstossen. Für die formelle Anerkennung sollten Sie das Urteil mit Apostille und Übersetzung beim Zivilstandsamt einreichen.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert mit meiner Schweizer Pensionskasse bei einer Scheidung im Ausland?</h3>
+                <p class="text-gray-700">Die Aufteilung der Schweizer Pensionskasse fällt in die ausschliessliche Zuständigkeit der Schweizer Gerichte (Art. 63 Abs. 1bis IPRG). Das ausländische Scheidungsgericht kann die Pensionskasse nicht teilen. Sie müssen daher ein separates Verfahren in der Schweiz einleiten, um die Vorsorgeteilung durchzuführen.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Welches Gericht ist für die Kinder zuständig bei internationaler Scheidung?</h3>
+                <p class="text-gray-700">Für Kindesbelange (Sorgerecht, Besuchsrecht, Kindesunterhalt) ist das Gericht am gewöhnlichen Aufenthalt des Kindes zuständig – nicht am Wohnsitz der Eltern. Dies folgt aus dem Haager Kindesschutzübereinkommen. Leben die Kinder in einem anderen Land als das Scheidungsgericht, kann die Zuständigkeit auseinanderfallen.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist «Forum Shopping» und ist es erlaubt?</h3>
+                <p class="text-gray-700">Forum Shopping bezeichnet die bewusste Wahl des günstigsten Gerichtsstands bei internationalen Scheidungen. Dies ist im internationalen Familienrecht grundsätzlich legitim. Da Unterhaltsberechnung, Güterrecht und andere Folgen je nach Rechtsordnung unterschiedlich ausfallen können, lohnt sich die Prüfung aller möglichen Gerichtsstände.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert, wenn beide Ehepartner gleichzeitig in verschiedenen Ländern Scheidung einreichen?</h3>
+                <p class="text-gray-700">Es gilt das Prioritätsprinzip: Das Gericht, bei dem zuerst Klage erhoben wurde, bleibt zuständig. Das später angerufene Gericht muss sein Verfahren aussetzen, bis feststeht, ob das erste Gericht zuständig ist und eine anerkennungsfähige Entscheidung treffen wird. Daher kann schnelles Handeln strategisch wichtig sein.</p>
+            </div>
+
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Brauche ich einen Zustellungsempfänger, wenn ich im Ausland lebe?</h3>
+                <p class="text-gray-700">Ja, wenn Sie im Ausland wohnen und in der Schweiz ein Scheidungsverfahren führen, müssen Sie eine Person mit Schweizer Wohnsitz als Zustellungsempfänger benennen. Diese Person nimmt alle Gerichtsdokumente entgegen. Ohne gültige Zustelladresse kann das Verfahren nicht durchgeführt werden.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Internationale Scheidung in der Schweiz",
+        "description": "Internationale Scheidung: Zuständigkeit nach IPRG, anwendbares Recht, Anerkennung ausländischer Urteile. Mit BGE-Rechtsprechung und Haager Übereinkommen.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2025-01-20",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/scheidung/internationale-scheidung"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Kann ich mich als Ausländer in der Schweiz scheiden lassen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, wenn Sie seit mindestens einem Jahr in der Schweiz leben oder Ihr Ehepartner in der Schweiz wohnt. Die Schweizer Staatsangehörigkeit ist nicht erforderlich. Bei Wohnsitz Ihres Ehepartners in der Schweiz können Sie sofort klagen; bei eigenem Wohnsitz ohne Schweizer Pass müssen Sie die Jahresfrist abwarten."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welches Recht gilt bei einer internationalen Scheidung in der Schweiz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Grundsätzlich gilt Schweizer Recht (ZGB), wenn die Scheidung in der Schweiz durchgeführt wird – unabhängig von Ihrer Staatsangehörigkeit. Eine Ausnahme besteht, wenn beide Ehegatten dieselbe ausländische Staatsangehörigkeit haben und nur einer in der Schweiz wohnt: Dann kann das gemeinsame Heimatrecht zur Anwendung kommen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wird meine ausländische Scheidung in der Schweiz anerkannt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "In den meisten Fällen ja. Ausländische Scheidungsurteile werden anerkannt, wenn sie im Wohnsitz-, Aufenthalts- oder Heimatstaat eines Ehegatten ergangen sind und nicht gegen den Schweizer Ordre public verstossen. Für die formelle Anerkennung sollten Sie das Urteil mit Apostille und Übersetzung beim Zivilstandsamt einreichen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert mit meiner Schweizer Pensionskasse bei einer Scheidung im Ausland?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Aufteilung der Schweizer Pensionskasse fällt in die ausschliessliche Zuständigkeit der Schweizer Gerichte (Art. 63 Abs. 1bis IPRG). Das ausländische Scheidungsgericht kann die Pensionskasse nicht teilen. Sie müssen daher ein separates Verfahren in der Schweiz einleiten, um die Vorsorgeteilung durchzuführen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welches Gericht ist für die Kinder zuständig bei internationaler Scheidung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Für Kindesbelange (Sorgerecht, Besuchsrecht, Kindesunterhalt) ist das Gericht am gewöhnlichen Aufenthalt des Kindes zuständig – nicht am Wohnsitz der Eltern. Dies folgt aus dem Haager Kindesschutzübereinkommen. Leben die Kinder in einem anderen Land als das Scheidungsgericht, kann die Zuständigkeit auseinanderfallen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist «Forum Shopping» und ist es erlaubt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Forum Shopping bezeichnet die bewusste Wahl des günstigsten Gerichtsstands bei internationalen Scheidungen. Dies ist im internationalen Familienrecht grundsätzlich legitim. Da Unterhaltsberechnung, Güterrecht und andere Folgen je nach Rechtsordnung unterschiedlich ausfallen können, lohnt sich die Prüfung aller möglichen Gerichtsstände."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert, wenn beide Ehepartner gleichzeitig in verschiedenen Ländern Scheidung einreichen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Es gilt das Prioritätsprinzip: Das Gericht, bei dem zuerst Klage erhoben wurde, bleibt zuständig. Das später angerufene Gericht muss sein Verfahren aussetzen, bis feststeht, ob das erste Gericht zuständig ist und eine anerkennungsfähige Entscheidung treffen wird. Daher kann schnelles Handeln strategisch wichtig sein."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Brauche ich einen Zustellungsempfänger, wenn ich im Ausland lebe?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, wenn Sie im Ausland wohnen und in der Schweiz ein Scheidungsverfahren führen, müssen Sie eine Person mit Schweizer Wohnsitz als Zustellungsempfänger benennen. Diese Person nimmt alle Gerichtsdokumente entgegen. Ohne gültige Zustelladresse kann das Verfahren nicht durchgeführt werden."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Scheidung",
+                "item": "https://familienrechtanwalt.ch/scheidung"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Internationale Scheidung in der Schweiz",
+                "item": "https://familienrechtanwalt.ch/scheidung/internationale-scheidung"
+            }
+        ]
+    })} />
+
 </ArticleLayout>
