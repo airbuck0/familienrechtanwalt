@@ -8,17 +8,18 @@
             <div class="flex items-center">
                 <a href="/" class="text-2xl font-serif font-bold text-navy">Familienrechtsanwalt</a>
             </div>
-            <div class="hidden md:flex items-center space-x-8">
-                <a href="/eherecht" class="text-gray-700 hover:text-gold transition">Eherecht</a>
-                <a href="/scheidung" class="text-gray-700 hover:text-gold transition">Scheidung</a>
-                <a href="/unterhalt" class="text-gray-700 hover:text-gold transition">Unterhalt</a>
-                <a href="/sorgerecht" class="text-gray-700 hover:text-gold transition">Sorgerecht</a>
-                <a href="/gueterrecht" class="text-gray-700 hover:text-gold transition">Güterrecht</a>
-                <a href="/kontakt" class="bg-gold text-white px-5 py-2 rounded hover:bg-opacity-90 transition">Beratung</a>
+            <div class="hidden lg:flex items-center space-x-6">
+                <a href="/scheidung" class="text-gray-700 hover:text-gold transition text-sm font-medium">Scheidung</a>
+                <a href="/sorgerecht" class="text-gray-700 hover:text-gold transition text-sm font-medium">Sorgerecht</a>
+                <a href="/eherecht" class="text-gray-700 hover:text-gold transition text-sm font-medium">Eherecht</a>
+                <a href="/unterhalt" class="text-gray-700 hover:text-gold transition text-sm font-medium">Unterhalt</a>
+                <a href="/gueterrecht" class="text-gray-700 hover:text-gold transition text-sm font-medium">Güterrecht</a>
+                <a href="/kindesschutz" class="text-gray-700 hover:text-gold transition text-sm font-medium">Kindesschutz</a>
+                <a href="/kontakt" class="bg-gold text-navy px-5 py-2 rounded font-semibold text-sm hover:bg-yellow-500 transition-colors">Beratung</a>
             </div>
             <!-- Mobile menu button -->
-            <div class="md:hidden flex items-center">
-                <button id="mobile-menu-btn" class="text-gray-700 hover:text-gold">
+            <div class="lg:hidden flex items-center">
+                <button id="mobile-menu-btn" class="text-gray-700 hover:text-gold" aria-label="Menü öffnen">
                     <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
@@ -27,14 +28,19 @@
         </div>
     </div>
     <!-- Mobile menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t">
         <div class="px-4 py-3 space-y-3">
-            <a href="/eherecht" class="block text-gray-700 hover:text-gold transition">Eherecht</a>
             <a href="/scheidung" class="block text-gray-700 hover:text-gold transition">Scheidung</a>
-            <a href="/unterhalt" class="block text-gray-700 hover:text-gold transition">Unterhalt</a>
             <a href="/sorgerecht" class="block text-gray-700 hover:text-gold transition">Sorgerecht</a>
+            <a href="/eherecht" class="block text-gray-700 hover:text-gold transition">Eherecht</a>
+            <a href="/unterhalt" class="block text-gray-700 hover:text-gold transition">Unterhalt</a>
             <a href="/gueterrecht" class="block text-gray-700 hover:text-gold transition">Güterrecht</a>
-            <a href="/kontakt" class="block bg-gold text-white px-5 py-2 rounded text-center hover:bg-opacity-90 transition">Beratung</a>
+            <a href="/kindesschutz" class="block text-gray-700 hover:text-gold transition">Kindesschutz</a>
+            <a href="/adoption" class="block text-gray-700 hover:text-gold transition">Adoption</a>
+            <a href="/mediation" class="block text-gray-700 hover:text-gold transition">Mediation</a>
+            <a href="/abstammungsrecht" class="block text-gray-700 hover:text-gold transition">Abstammungsrecht</a>
+            <a href="/internationales-familienrecht" class="block text-gray-700 hover:text-gold transition">Internationales Familienrecht</a>
+            <a href="/kontakt" class="block bg-gold text-navy px-5 py-2 rounded text-center font-semibold hover:bg-yellow-500 transition-colors">Beratung anfragen</a>
         </div>
     </div>
 </nav>

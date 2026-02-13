@@ -1,117 +1,594 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import CTA from '../components/CTA.astro';
 ---
 
-<Layout title="Startseite" description="Kompetente Rechtsberatung im Schweizer Familienrecht - Scheidung, Unterhalt, Sorgerecht und Güterrecht">
+<Layout
+    title="Anwalt für Familienrecht Schweiz"
+    description="Ihr Anwalt für Familienrecht in der Schweiz: Scheidung, Sorgerecht, Unterhalt & Güterrecht. Über 100 Fachartikel. Kostenlose Ersteinschätzung anfragen."
+    keywords="Anwalt für Familienrecht, Rechtsanwalt Familienrecht, Anwalt Eherecht, Scheidungsanwalt, Familienrecht Schweiz"
+>
 
     <!-- Hero Section -->
-    <header class="bg-navy pt-32 pb-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl md:text-6xl font-serif font-bold text-white mb-6">
-                Familienrecht in der Schweiz
-            </h1>
-            <p class="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
-                Kompetente Rechtsberatung bei Scheidung, Unterhalt, Sorgerecht und Güterrecht
-            </p>
-            <a href="/kontakt" class="inline-block bg-gold text-white px-8 py-4 rounded font-semibold text-lg hover:bg-opacity-90 transition">
-                Kostenlose Erstberatung
-            </a>
+    <header class="bg-navy pt-32 pb-24 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;%3E%3Cg fill=&quot;%23ffffff&quot; fill-opacity=&quot;0.4&quot;%3E%3Cpath d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="text-gold font-semibold text-lg mb-4 tracking-wide uppercase">Spezialisiert auf Schweizer Familienrecht</p>
+                <h1 class="text-4xl md:text-6xl font-serif font-bold text-white mb-6 leading-tight">
+                    Ihr Anwalt für Familienrecht in der Schweiz
+                </h1>
+                <p class="text-xl md:text-2xl text-blue-100 mb-10 max-w-3xl mx-auto leading-relaxed">
+                    Einfühlsam. Kompetent. Durchsetzungsstark. Wir vertreten Ihre Interessen bei Scheidung, Sorgerecht, Unterhalt und allen familienrechtlichen Angelegenheiten.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/kontakt" class="inline-block bg-gold text-navy font-bold px-8 py-4 rounded-lg text-lg hover:bg-yellow-500 transition-colors shadow-lg">
+                        Kostenlose Ersteinschätzung anfragen
+                    </a>
+                    <a href="#rechtsgebiete" class="inline-block border-2 border-white text-white font-semibold px-8 py-4 rounded-lg text-lg hover:bg-white hover:text-navy transition-colors">
+                        Rechtsgebiete entdecken
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- Rechtsgebiete -->
-    <section class="py-16 bg-gray-50">
+    <!-- Trust Bar -->
+    <section class="bg-white border-b border-gray-200 py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-serif font-bold text-navy text-center mb-12">Unsere Rechtsgebiete</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <p class="text-3xl md:text-4xl font-serif font-bold text-navy">100+</p>
+                    <p class="text-gray-600 mt-1">Fachartikel zum Schweizer Familienrecht</p>
+                </div>
+                <div>
+                    <p class="text-3xl md:text-4xl font-serif font-bold text-navy">10</p>
+                    <p class="text-gray-600 mt-1">Rechtsgebiete abgedeckt</p>
+                </div>
+                <div>
+                    <p class="text-3xl md:text-4xl font-serif font-bold text-navy">100%</p>
+                    <p class="text-gray-600 mt-1">Fokus auf Familienrecht</p>
+                </div>
+                <div>
+                    <p class="text-3xl md:text-4xl font-serif font-bold text-navy">ZGB</p>
+                    <p class="text-gray-600 mt-1">Aktuellste Rechtsprechung & Gesetzgebung</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Eherecht -->
-                <a href="/eherecht" class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition group">
-                    <h3 class="text-2xl font-serif font-bold text-navy mb-4 group-hover:text-gold transition">Eherecht</h3>
-                    <p class="text-gray-600 mb-4">Ehevertrag, Eheschliessung, Eheschutz und mehr.</p>
-                    <span class="text-gold font-semibold">Mehr erfahren →</span>
-                </a>
+    <!-- Ihre Situation Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy text-center mb-6">Familienrechtliche Probleme erfordern spezialisierte Lösungen</h2>
+            <p class="text-lg text-gray-700 text-center mb-8 max-w-3xl mx-auto leading-relaxed">
+                Ob Scheidung, Sorgerechtsstreit, Unterhaltsberechnung oder Eheschutzverfahren — familienrechtliche Auseinandersetzungen sind emotional belastend und rechtlich komplex. Als spezialisierter <strong>Rechtsanwalt für Familienrecht</strong> kennen wir die Schweizer Gesetzgebung und aktuelle Bundesgerichtsentscheide im Detail. Wir setzen Ihre Rechte durch — mit Empathie, Erfahrung und juristischer Präzision.
+            </p>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-gold">
+                    <h3 class="font-bold text-navy mb-2">Persönliche Beratung</h3>
+                    <p class="text-gray-600 text-sm">Jede familiäre Situation ist einzigartig. Wir hören zu, analysieren Ihre Lage und entwickeln eine massgeschneiderte Strategie.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-gold">
+                    <h3 class="font-bold text-navy mb-2">Aussergerichtliche Lösungen</h3>
+                    <p class="text-gray-600 text-sm">Wo immer möglich, streben wir einvernehmliche Regelungen an — schneller, günstiger und weniger belastend für alle Beteiligten.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border-l-4 border-gold">
+                    <h3 class="font-bold text-navy mb-2">Konsequente Vertretung</h3>
+                    <p class="text-gray-600 text-sm">Wenn eine einvernehmliche Lösung scheitert, vertreten wir Ihre Interessen vor Gericht — durchsetzungsstark und kompetent.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rechtsgebiete -->
+    <section id="rechtsgebiete" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy mb-4">Unsere Rechtsgebiete im Familienrecht</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Als <strong>Anwalt für Eherecht</strong> und Familienrecht decken wir sämtliche Bereiche des Schweizer Familienrechts ab — von der Eheschliessung bis zum Kindesschutz.</p>
+            </div>
+
+            <!-- Primary Categories -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
 
                 <!-- Scheidung -->
-                <a href="/scheidung" class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition group">
-                    <h3 class="text-2xl font-serif font-bold text-navy mb-4 group-hover:text-gold transition">Scheidung</h3>
-                    <p class="text-gray-600 mb-4">Ablauf, Kosten, Scheidungskonvention und rechtliche Folgen.</p>
-                    <span class="text-gold font-semibold">Mehr erfahren →</span>
-                </a>
-
-                <!-- Unterhalt -->
-                <a href="/unterhalt" class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition group">
-                    <h3 class="text-2xl font-serif font-bold text-navy mb-4 group-hover:text-gold transition">Unterhalt</h3>
-                    <p class="text-gray-600 mb-4">Alimente, Ehegattenunterhalt und Unterhaltsberechnung.</p>
-                    <span class="text-gold font-semibold">Mehr erfahren →</span>
+                <a href="/scheidung" class="group bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl hover:border-gold transition-all duration-300">
+                    <div class="w-14 h-14 bg-navy bg-opacity-10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-gold group-hover:bg-opacity-20 transition-colors">
+                        <svg class="w-7 h-7 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-navy mb-3 group-hover:text-gold transition-colors">Scheidung</h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">Einvernehmliche und strittige Scheidung, Scheidungsklage, Scheidungskonvention, Kosten, Ablauf und Trennungsvereinbarung. Alles zum Scheidungsverfahren in der Schweiz.</p>
+                    <span class="text-gold font-semibold text-sm flex items-center">25 Fachartikel <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></span>
                 </a>
 
                 <!-- Sorgerecht -->
-                <a href="/sorgerecht" class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition group">
-                    <h3 class="text-2xl font-serif font-bold text-navy mb-4 group-hover:text-gold transition">Sorgerecht</h3>
-                    <p class="text-gray-600 mb-4">Gemeinsames Sorgerecht, Obhut und Umgangsrecht.</p>
-                    <span class="text-gold font-semibold">Mehr erfahren →</span>
+                <a href="/sorgerecht" class="group bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl hover:border-gold transition-all duration-300">
+                    <div class="w-14 h-14 bg-navy bg-opacity-10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-gold group-hover:bg-opacity-20 transition-colors">
+                        <svg class="w-7 h-7 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-navy mb-3 group-hover:text-gold transition-colors">Sorgerecht & Obhut</h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">Gemeinsames und alleiniges Sorgerecht, Obhut, Umgangsrecht, Besuchsrecht, KESB-Verfahren und Vaterschaftsanerkennung nach Schweizer Recht.</p>
+                    <span class="text-gold font-semibold text-sm flex items-center">22 Fachartikel <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></span>
+                </a>
+
+                <!-- Eherecht -->
+                <a href="/eherecht" class="group bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl hover:border-gold transition-all duration-300">
+                    <div class="w-14 h-14 bg-navy bg-opacity-10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-gold group-hover:bg-opacity-20 transition-colors">
+                        <svg class="w-7 h-7 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-navy mb-3 group-hover:text-gold transition-colors">Eherecht</h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">Eheschliessung, Ehevertrag, Eheschutzverfahren, eingetragene Partnerschaft, Konkubinat und häusliche Gewalt. Ihr <strong>Anwalt für Eherecht</strong> berät Sie umfassend.</p>
+                    <span class="text-gold font-semibold text-sm flex items-center">16 Fachartikel <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></span>
+                </a>
+
+                <!-- Unterhalt -->
+                <a href="/unterhalt" class="group bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl hover:border-gold transition-all duration-300">
+                    <div class="w-14 h-14 bg-navy bg-opacity-10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-gold group-hover:bg-opacity-20 transition-colors">
+                        <svg class="w-7 h-7 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-navy mb-3 group-hover:text-gold transition-colors">Unterhalt & Alimente</h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">Kindesunterhalt, Ehegattenunterhalt, nachehelicher Unterhalt, Alimentenberechnung, Unterhaltsklage und Vollstreckung von Unterhaltsbeiträgen.</p>
+                    <span class="text-gold font-semibold text-sm flex items-center">15 Fachartikel <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></span>
                 </a>
 
                 <!-- Güterrecht -->
-                <a href="/gueterrecht" class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition group">
-                    <h3 class="text-2xl font-serif font-bold text-navy mb-4 group-hover:text-gold transition">Güterrecht</h3>
-                    <p class="text-gray-600 mb-4">Güterstand, Errungenschaftsbeteiligung und Gütertrennung.</p>
-                    <span class="text-gold font-semibold">Mehr erfahren →</span>
+                <a href="/gueterrecht" class="group bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl hover:border-gold transition-all duration-300">
+                    <div class="w-14 h-14 bg-navy bg-opacity-10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-gold group-hover:bg-opacity-20 transition-colors">
+                        <svg class="w-7 h-7 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-navy mb-3 group-hover:text-gold transition-colors">Güterrecht</h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">Errungenschaftsbeteiligung, Gütertrennung, Gütergemeinschaft, Vermögensaufteilung bei Scheidung und güterrechtliche Auseinandersetzung.</p>
+                    <span class="text-gold font-semibold text-sm flex items-center">8 Fachartikel <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></span>
                 </a>
 
-                <!-- Kontakt -->
-                <a href="/kontakt" class="bg-navy p-8 rounded-lg shadow-md hover:shadow-lg transition group">
-                    <h3 class="text-2xl font-serif font-bold text-white mb-4">Beratung anfragen</h3>
-                    <p class="text-blue-100 mb-4">Kostenlose Ersteinschätzung Ihrer Situation.</p>
-                    <span class="text-gold font-semibold">Kontakt aufnehmen →</span>
+                <!-- Kindesschutz -->
+                <a href="/kindesschutz" class="group bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl hover:border-gold transition-all duration-300">
+                    <div class="w-14 h-14 bg-navy bg-opacity-10 rounded-lg flex items-center justify-center mb-5 group-hover:bg-gold group-hover:bg-opacity-20 transition-colors">
+                        <svg class="w-7 h-7 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-navy mb-3 group-hover:text-gold transition-colors">Kindesschutz & KESB</h3>
+                    <p class="text-gray-600 mb-4 text-sm leading-relaxed">KESB-Verfahren, Beistandschaft, Gefährdungsmeldung, Fremdplatzierung, Beschwerde gegen KESB-Entscheide und Kindeswohlgefährdung.</p>
+                    <span class="text-gold font-semibold text-sm flex items-center">5 Fachartikel <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></span>
+                </a>
+            </div>
+
+            <!-- Secondary Categories -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Adoption -->
+                <a href="/adoption" class="group bg-gray-50 border border-gray-200 rounded-lg p-6 hover:shadow-lg hover:border-gold transition-all duration-300">
+                    <h3 class="text-lg font-serif font-bold text-navy mb-2 group-hover:text-gold transition-colors">Adoption</h3>
+                    <p class="text-gray-600 text-sm mb-3">Stiefkindadoption, internationale Adoption, Voraussetzungen und Verfahren.</p>
+                    <span class="text-gold font-semibold text-xs flex items-center">6 Artikel <svg class="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></span>
+                </a>
+
+                <!-- Abstammungsrecht -->
+                <a href="/abstammungsrecht" class="group bg-gray-50 border border-gray-200 rounded-lg p-6 hover:shadow-lg hover:border-gold transition-all duration-300">
+                    <h3 class="text-lg font-serif font-bold text-navy mb-2 group-hover:text-gold transition-colors">Abstammungsrecht</h3>
+                    <p class="text-gray-600 text-sm mb-3">Vaterschaftsklage, Anfechtung, Leihmutterschaft und Fortpflanzungsmedizin.</p>
+                    <span class="text-gold font-semibold text-xs flex items-center">5 Artikel <svg class="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></span>
+                </a>
+
+                <!-- Internationales Familienrecht -->
+                <a href="/internationales-familienrecht" class="group bg-gray-50 border border-gray-200 rounded-lg p-6 hover:shadow-lg hover:border-gold transition-all duration-300">
+                    <h3 class="text-lg font-serif font-bold text-navy mb-2 group-hover:text-gold transition-colors">Internationales Familienrecht</h3>
+                    <p class="text-gray-600 text-sm mb-3">IPRG, Kindesentführung, internationaler Unterhalt und Anerkennung ausländischer Urteile.</p>
+                    <span class="text-gold font-semibold text-xs flex items-center">5 Artikel <svg class="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></span>
+                </a>
+
+                <!-- Mediation -->
+                <a href="/mediation" class="group bg-gray-50 border border-gray-200 rounded-lg p-6 hover:shadow-lg hover:border-gold transition-all duration-300">
+                    <h3 class="text-lg font-serif font-bold text-navy mb-2 group-hover:text-gold transition-colors">Mediation</h3>
+                    <p class="text-gray-600 text-sm mb-3">Scheidungsmediation, Ablauf, Kosten und Mediation vs. Gerichtsverfahren.</p>
+                    <span class="text-gold font-semibold text-xs flex items-center">4 Artikel <svg class="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></span>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Warum wir -->
-    <section class="py-16">
+    <!-- Warum ein spezialisierter Anwalt -->
+    <section class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-serif font-bold text-navy text-center mb-12">Warum Familienrechtsanwalt.ch?</h2>
+            <div class="text-center mb-14">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy mb-4">Warum ein spezialisierter Rechtsanwalt für Familienrecht?</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Das Familienrecht gehört zu den komplexesten und emotionalsten Rechtsgebieten. Ein Generalist kennt die Feinheiten der aktuellen Bundesgerichtspraxis nicht — ein Spezialist schon.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <div class="space-y-8">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-gold bg-opacity-20 rounded-lg flex-shrink-0 flex items-center justify-center">
+                            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-navy text-lg mb-1">Tiefgreifende Fachkenntnis</h3>
+                            <p class="text-gray-600">Wir kennen nicht nur das Gesetz, sondern auch die aktuelle Rechtsprechung des Bundesgerichts — von der Unterhaltsberechnung nach der Zweistufig-Dreistufigen Methode bis zur neuesten Praxis bei der alternierenden Obhut.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-gold bg-opacity-20 rounded-lg flex-shrink-0 flex items-center justify-center">
+                            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-navy text-lg mb-1">Strategisches Vorgehen</h3>
+                            <p class="text-gray-600">Familienrechtliche Verfahren erfordern taktisches Geschick. Ob Eheschutzverfahren als Vorstufe zur Scheidung, Prozesskostenvorschuss oder vorsorgliche Massnahmen — wir kennen die richtigen Schritte.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-gold bg-opacity-20 rounded-lg flex-shrink-0 flex items-center justify-center">
+                            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" /></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-navy text-lg mb-1">Verhandlungsgeschick</h3>
+                            <p class="text-gray-600">Die meisten familienrechtlichen Streitigkeiten werden durch Verhandlung gelöst. Ein erfahrener <strong>Rechtsanwalt für Eherecht</strong> erzielt bessere Ergebnisse — ob bei der Scheidungskonvention, dem Unterhaltsvertrag oder der Sorgerechtsvereinbarung.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-gold bg-opacity-20 rounded-lg flex-shrink-0 flex items-center justify-center">
+                            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" /></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-navy text-lg mb-1">Kindeswohl im Fokus</h3>
+                            <p class="text-gray-600">Das Kindeswohl ist der zentrale Massstab aller familienrechtlichen Entscheide (Art. 296 Abs. 1 ZGB). Wir stellen sicher, dass die Interessen Ihrer Kinder gewahrt bleiben — bei Obhut, Betreuung und Unterhalt.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-gold bg-opacity-20 rounded-lg flex-shrink-0 flex items-center justify-center">
+                            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-navy text-lg mb-1">Finanzielle Klarheit</h3>
+                            <p class="text-gray-600">Unterhaltsberechnung, Vorsorgeausgleich, güterrechtliche Auseinandersetzung — die finanziellen Folgen einer Scheidung sind weitreichend. Wir berechnen Ihre Ansprüche präzise und sichern Ihre wirtschaftliche Zukunft.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-gold bg-opacity-20 rounded-lg flex-shrink-0 flex items-center justify-center">
+                            <svg class="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-navy text-lg mb-1">Internationale Kompetenz</h3>
+                            <p class="text-gray-600">Bei Fällen mit internationalem Bezug — binationale Ehen, grenzüberschreitender Unterhalt oder Kindesentführung — navigieren wir souverän durch IPRG und Haager Übereinkommen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- So funktioniert es -->
+    <section class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy mb-4">In drei Schritten zu Ihrem Recht</h2>
+                <p class="text-lg text-gray-600">So einfach erhalten Sie rechtliche Unterstützung von einem spezialisierten Familienrechtsanwalt.</p>
+            </div>
 
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="text-center">
-                    <div class="w-16 h-16 bg-gold bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
+                    <div class="w-16 h-16 bg-navy rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-serif font-bold text-gold">1</span>
                     </div>
-                    <h3 class="text-xl font-bold text-navy mb-2">Spezialisiert</h3>
-                    <p class="text-gray-600">Fokus ausschliesslich auf Schweizer Familienrecht</p>
+                    <h3 class="text-xl font-bold text-navy mb-3">Kontakt aufnehmen</h3>
+                    <p class="text-gray-600">Schildern Sie uns Ihre Situation — per Kontaktformular, Telefon oder E-Mail. Die Ersteinschätzung ist kostenlos und unverbindlich.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-navy rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-serif font-bold text-gold">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Persönliche Beratung</h3>
+                    <p class="text-gray-600">In einem ausführlichen Erstgespräch analysieren wir Ihre rechtliche Lage, erklären Ihre Optionen und entwickeln eine klare Strategie.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-navy rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-serif font-bold text-gold">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Umsetzung & Vertretung</h3>
+                    <p class="text-gray-600">Wir setzen die vereinbarte Strategie um — ob aussergerichtliche Verhandlung, Mediation oder Vertretung vor Gericht.</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="/kontakt" class="inline-block bg-gold text-navy font-bold px-8 py-4 rounded-lg text-lg hover:bg-yellow-500 transition-colors shadow-lg">
+                    Jetzt kostenlos anfragen
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beliebte Themen -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy mb-4">Meistgelesene Ratgeber-Artikel</h2>
+                <p class="text-lg text-gray-600">Fundierte Informationen zu den häufigsten familienrechtlichen Fragen in der Schweiz.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="/scheidung/einvernehmliche-scheidung" class="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-gold uppercase tracking-wide">Scheidung</span>
+                        <h3 class="text-lg font-bold text-navy mt-2 mb-2 group-hover:text-gold transition-colors">Einvernehmliche Scheidung in der Schweiz</h3>
+                        <p class="text-gray-600 text-sm">Ablauf, Voraussetzungen, Kosten und Dauer einer Scheidung auf gemeinsames Begehren nach Art. 111/112 ZGB.</p>
+                    </div>
+                </a>
+                <a href="/unterhalt/alimente" class="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-gold uppercase tracking-wide">Unterhalt</span>
+                        <h3 class="text-lg font-bold text-navy mt-2 mb-2 group-hover:text-gold transition-colors">Alimente in der Schweiz</h3>
+                        <p class="text-gray-600 text-sm">Berechnung, Höhe und Dauer von Kindes- und Ehegattenunterhalt. Mit aktueller Rechtsprechung und Berechnungsbeispielen.</p>
+                    </div>
+                </a>
+                <a href="/sorgerecht/gemeinsames-sorgerecht" class="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-gold uppercase tracking-wide">Sorgerecht</span>
+                        <h3 class="text-lg font-bold text-navy mt-2 mb-2 group-hover:text-gold transition-colors">Gemeinsames Sorgerecht</h3>
+                        <p class="text-gray-600 text-sm">Das gemeinsame Sorgerecht ist seit 2014 der Regelfall. Rechte, Pflichten und wann alleiniges Sorgerecht möglich ist.</p>
+                    </div>
+                </a>
+                <a href="/scheidung/kosten-einer-scheidung" class="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-gold uppercase tracking-wide">Scheidung</span>
+                        <h3 class="text-lg font-bold text-navy mt-2 mb-2 group-hover:text-gold transition-colors">Scheidungskosten in der Schweiz</h3>
+                        <p class="text-gray-600 text-sm">Gerichtskosten, Anwaltskosten und Gesamtkosten einer Scheidung — mit kantonalen Unterschieden und Spartipps.</p>
+                    </div>
+                </a>
+                <a href="/gueterrecht/errungenschaftsbeteiligung" class="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-gold uppercase tracking-wide">Güterrecht</span>
+                        <h3 class="text-lg font-bold text-navy mt-2 mb-2 group-hover:text-gold transition-colors">Errungenschaftsbeteiligung</h3>
+                        <p class="text-gray-600 text-sm">Der ordentliche Güterstand erklärt: Eigengut, Errungenschaft, Vorschlagsberechnung und güterrechtliche Auseinandersetzung.</p>
+                    </div>
+                </a>
+                <a href="/eherecht/ehevertrag" class="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-gold uppercase tracking-wide">Eherecht</span>
+                        <h3 class="text-lg font-bold text-navy mt-2 mb-2 group-hover:text-gold transition-colors">Ehevertrag in der Schweiz</h3>
+                        <p class="text-gray-600 text-sm">Wann ein Ehevertrag sinnvoll ist, was er regeln kann und wie Sie ihn erstellen lassen — inklusive Musterklauseln.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wann sollten Sie einen Anwalt beiziehen -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy mb-8 text-center">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+            <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                Nicht jede familienrechtliche Angelegenheit erfordert zwingend anwaltliche Unterstützung. Bei einer einfachen, vollständig einvernehmlichen Scheidung ohne Kinder und ohne nennenswertes Vermögen können Sie das Verfahren grundsätzlich selbst durchführen. In den meisten anderen Fällen ist die Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> jedoch dringend empfohlen.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-10">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="font-bold text-navy mb-3">Scheidung & Trennung</h3>
+                    <ul class="space-y-2 text-gray-700 text-sm">
+                        <li class="flex items-start"><span class="text-gold mr-2 mt-0.5">&#9679;</span>Strittige Scheidung mit uneinigen Parteien</li>
+                        <li class="flex items-start"><span class="text-gold mr-2 mt-0.5">&#9679;</span>Scheidung mit gemeinsamen Kindern</li>
+                        <li class="flex items-start"><span class="text-gold mr-2 mt-0.5">&#9679;</span>Erhebliches Vermögen oder Immobilienbesitz</li>
+                        <li class="flex items-start"><span class="text-gold mr-2 mt-0.5">&#9679;</span>Prüfung der Scheidungskonvention</li>
+                        <li class="flex items-start"><span class="text-gold mr-2 mt-0.5">&#9679;</span>Eheschutzverfahren bei Trennung</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="font-bold text-navy mb-3">Kinder & Unterhalt</h3>
+                    <ul class="space-y-2 text-gray-700 text-sm">
+                        <li class="flex items-start"><span class="text-gold mr-2 mt-0.5">&#9679;</span>Sorgerechtsstreitigkeiten</li>
+                        <li class="flex items-start"><span class="text-gold mr-2 mt-0.5">&#9679;</span>Abänderung von Unterhaltsbeiträgen</li>
+                        <li class="flex items-start"><span class="text-gold mr-2 mt-0.5">&#9679;</span>Verweigerung des Besuchsrechts</li>
+                        <li class="flex items-start"><span class="text-gold mr-2 mt-0.5">&#9679;</span>KESB-Verfahren und Kindesschutz</li>
+                        <li class="flex items-start"><span class="text-gold mr-2 mt-0.5">&#9679;</span>Internationale Kindesentführung</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="text-gray-700 mb-8 leading-relaxed">
+                Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> schützt Sie vor kostspieligen Fehlern — etwa bei der Unterhaltsberechnung, beim Vorsorgeausgleich oder bei der güterrechtlichen Auseinandersetzung. Gerade bei strittigen Verfahren ist die frühzeitige Beratung durch einen <a href="/" class="text-gold hover:underline font-semibold">Rechtsanwalt für Eherecht</a> entscheidend, um Ihre Rechte von Anfang an zu sichern.
+            </p>
+
+            <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white text-center">
+                <h3 class="text-2xl font-serif font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+                <p class="mb-6 text-blue-100 max-w-2xl mx-auto">Schildern Sie uns Ihre Situation unverbindlich. Wir prüfen Ihren Fall und zeigen Ihnen Ihre rechtlichen Optionen auf — kostenlos und diskret.</p>
+                <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-8 rounded-lg hover:bg-yellow-500 transition-colors text-lg">Jetzt Beratung anfragen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy mb-10 text-center">Häufig gestellte Fragen (FAQ)</h2>
+
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-semibold text-navy mb-3">Was kostet ein Anwalt für Familienrecht in der Schweiz?</h3>
+                    <p class="text-gray-700">Die Kosten für einen Familienrechtsanwalt variieren je nach Kanton und Komplexität des Falls. Der Stundenansatz liegt in der Regel zwischen CHF 250 und CHF 450. Eine Erstberatung kostet typischerweise CHF 200 bis CHF 400. Bei einer einvernehmlichen Scheidung belaufen sich die Anwaltskosten auf ca. CHF 2'500 bis CHF 6'000, bei einer strittigen Scheidung auf CHF 10'000 bis CHF 30'000 oder mehr. Bei geringem Einkommen besteht Anspruch auf unentgeltliche Rechtspflege (Art. 117 ZPO).</p>
                 </div>
 
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-gold bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-navy mb-2">Erfahren</h3>
-                    <p class="text-gray-600">Jahrelange Erfahrung in familienrechtlichen Verfahren</p>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-semibold text-navy mb-3">Was macht ein Anwalt für Familienrecht?</h3>
+                    <p class="text-gray-700">Ein Anwalt für Familienrecht berät und vertritt Klienten in sämtlichen familienrechtlichen Angelegenheiten: Scheidung und Trennung, Sorgerecht und Obhut, Kindes- und Ehegattenunterhalt, güterrechtliche Auseinandersetzung, Eheschutzverfahren, Vaterschaftsanerkennung, Adoption und KESB-Verfahren. Er verhandelt Scheidungskonventionen, berechnet Unterhaltsansprüche und vertritt seine Mandanten vor Gericht.</p>
                 </div>
 
-                <div class="text-center">
-                    <div class="w-16 h-16 bg-gold bg-opacity-20 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-navy mb-2">Persönlich</h3>
-                    <p class="text-gray-600">Individuelle Beratung und Betreuung</p>
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-semibold text-navy mb-3">Brauche ich einen Anwalt für die Scheidung in der Schweiz?</h3>
+                    <p class="text-gray-700">Bei einer einvernehmlichen Scheidung auf gemeinsames Begehren (Art. 111 ZGB) ist ein Anwalt nicht zwingend vorgeschrieben — das Gericht prüft aber die Scheidungskonvention auf Angemessenheit. Bei einer strittigen Scheidung (Art. 114/115 ZGB) ist anwaltliche Vertretung dringend empfohlen, da Fehler bei Unterhalt, Vorsorgeausgleich oder Güterrecht langfristige finanzielle Folgen haben können. Sobald Kinder, Immobilien oder erhebliches Vermögen betroffen sind, lohnt sich eine anwaltliche Beratung in jedem Fall.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-semibold text-navy mb-3">Wie finde ich einen guten Familienrechtsanwalt?</h3>
+                    <p class="text-gray-700">Achten Sie auf Spezialisierung im Familienrecht (idealerweise SAV/SBA-Fachanwaltstitel), Erfahrung mit vergleichbaren Fällen und ein gutes persönliches Vertrauensverhältnis. Ein guter Familienrechtsanwalt erklärt die Rechtslage verständlich, gibt eine realistische Einschätzung Ihrer Chancen und legt die Kosten transparent dar. Nutzen Sie ein Erstgespräch, um die Chemie zu prüfen — Sie werden eng zusammenarbeiten.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-semibold text-navy mb-3">Was ist der Unterschied zwischen Familienrecht und Eherecht?</h3>
+                    <p class="text-gray-700">Das Eherecht ist ein Teilgebiet des Familienrechts. Das Familienrecht umfasst sämtliche Rechtsverhältnisse innerhalb der Familie: Ehe, Scheidung, Kindesverhältnis, Sorgerecht, Unterhalt, Güterrecht, Adoption und Kindesschutz (Art. 90-456 ZGB). Das Eherecht im engeren Sinne regelt die Eheschliessung, die Wirkungen der Ehe, den Eheschutz und die Scheidung (Art. 90-251 ZGB). Ein Anwalt für Eherecht ist daher stets auch ein Anwalt für Familienrecht.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-semibold text-navy mb-3">Wie lange dauert eine Scheidung in der Schweiz?</h3>
+                    <p class="text-gray-700">Eine einvernehmliche Scheidung (Scheidung auf gemeinsames Begehren) dauert in der Regel 2 bis 6 Monate ab Einreichung des Begehrens. Eine strittige Scheidung kann 1 bis 3 Jahre oder länger dauern — abhängig von der Komplexität der strittigen Punkte und dem zuständigen Gericht. Bei einer Scheidungsklage nach zweijähriger Trennung (Art. 114 ZGB) kommt die Trennungsfrist hinzu.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-semibold text-navy mb-3">Wer zahlt den Anwalt bei einer Scheidung?</h3>
+                    <p class="text-gray-700">Grundsätzlich bezahlt jede Partei ihren eigenen Anwalt. Bei einer einvernehmlichen Scheidung können sich die Ehegatten die Kosten eines gemeinsamen Anwalts teilen. Ist eine Partei finanziell nicht in der Lage, einen Anwalt zu bezahlen, kann sie beim Gericht unentgeltliche Rechtspflege beantragen (Art. 117 ff. ZPO). Zudem kann die wirtschaftlich schwächere Partei vom anderen Ehegatten einen Prozesskostenvorschuss verlangen (Art. 159 Abs. 3 ZGB).</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-semibold text-navy mb-3">Was regelt das Schweizer Familienrecht?</h3>
+                    <p class="text-gray-700">Das Schweizer Familienrecht (Zweite Abteilung des ZGB, Art. 90-456) regelt alle rechtlichen Beziehungen innerhalb der Familie: Eheschliessung und Ehevertrag, Wirkungen der Ehe, Eheschutz und Scheidung, Güterrecht (Errungenschaftsbeteiligung, Gütertrennung, Gütergemeinschaft), Kindesverhältnis und Abstammung, elterliche Sorge und Obhut, Kindes- und Ehegattenunterhalt, Adoption, Kindesschutz (KESB) sowie Erwachsenenschutz (Beistandschaft, Vorsorgeauftrag).</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <CTA
-        title="Haben Sie Fragen zum Familienrecht?"
-        text="Kontaktieren Sie uns für eine kostenlose Ersteinschätzung Ihrer Situation."
-    />
+    <!-- Final CTA -->
+    <section class="py-20 bg-navy">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-white mb-6">Lassen Sie sich jetzt beraten</h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">Familienrechtliche Probleme lösen sich nicht von allein. Je früher Sie handeln, desto besser können wir Ihre Interessen schützen.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/kontakt" class="inline-block bg-gold text-navy font-bold px-8 py-4 rounded-lg text-lg hover:bg-yellow-500 transition-colors shadow-lg">
+                    Kostenlose Ersteinschätzung anfragen
+                </a>
+            </div>
+            <p class="text-blue-200 mt-6 text-sm">Kostenlos und unverbindlich. Ihre Anfrage wird vertraulich behandelt.</p>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": "Familienrechtanwalt.ch",
+        "description": "Spezialisierter Anwalt für Familienrecht in der Schweiz. Beratung und Vertretung bei Scheidung, Sorgerecht, Unterhalt, Güterrecht und allen familienrechtlichen Angelegenheiten.",
+        "url": "https://familienrechtanwalt.ch",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Schweiz"
+        },
+        "serviceType": ["Familienrecht", "Scheidungsrecht", "Eherecht", "Sorgerecht", "Unterhaltsrecht", "Güterrecht", "Kindesschutz", "Adoptionsrecht", "Mediation", "Internationales Familienrecht"],
+        "knowsAbout": ["Schweizer Familienrecht", "ZGB", "Scheidung Schweiz", "Sorgerecht Schweiz", "Unterhalt Schweiz", "Güterrecht", "KESB", "Kindesschutz"],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Familienrecht Dienstleistungen",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Kostenlose Ersteinschätzung",
+                        "description": "Unverbindliche Ersteinschätzung Ihrer familienrechtlichen Situation"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Scheidungsberatung",
+                        "description": "Beratung und Vertretung bei einvernehmlicher und strittiger Scheidung"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Sorgerechtsberatung",
+                        "description": "Beratung und Vertretung bei Sorgerechts- und Obhutsstreitigkeiten"
+                    }
+                }
+            ]
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Was kostet ein Anwalt für Familienrecht in der Schweiz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Kosten für einen Familienrechtsanwalt variieren je nach Kanton und Komplexität des Falls. Der Stundenansatz liegt in der Regel zwischen CHF 250 und CHF 450. Eine Erstberatung kostet typischerweise CHF 200 bis CHF 400. Bei einer einvernehmlichen Scheidung belaufen sich die Anwaltskosten auf ca. CHF 2'500 bis CHF 6'000, bei einer strittigen Scheidung auf CHF 10'000 bis CHF 30'000 oder mehr. Bei geringem Einkommen besteht Anspruch auf unentgeltliche Rechtspflege (Art. 117 ZPO)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was macht ein Anwalt für Familienrecht?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ein Anwalt für Familienrecht berät und vertritt Klienten in sämtlichen familienrechtlichen Angelegenheiten: Scheidung und Trennung, Sorgerecht und Obhut, Kindes- und Ehegattenunterhalt, güterrechtliche Auseinandersetzung, Eheschutzverfahren, Vaterschaftsanerkennung, Adoption und KESB-Verfahren. Er verhandelt Scheidungskonventionen, berechnet Unterhaltsansprüche und vertritt seine Mandanten vor Gericht."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Brauche ich einen Anwalt für die Scheidung in der Schweiz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei einer einvernehmlichen Scheidung auf gemeinsames Begehren (Art. 111 ZGB) ist ein Anwalt nicht zwingend vorgeschrieben — das Gericht prüft aber die Scheidungskonvention auf Angemessenheit. Bei einer strittigen Scheidung (Art. 114/115 ZGB) ist anwaltliche Vertretung dringend empfohlen, da Fehler bei Unterhalt, Vorsorgeausgleich oder Güterrecht langfristige finanzielle Folgen haben können."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie finde ich einen guten Familienrechtsanwalt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Achten Sie auf Spezialisierung im Familienrecht (idealerweise SAV/SBA-Fachanwaltstitel), Erfahrung mit vergleichbaren Fällen und ein gutes persönliches Vertrauensverhältnis. Ein guter Familienrechtsanwalt erklärt die Rechtslage verständlich, gibt eine realistische Einschätzung Ihrer Chancen und legt die Kosten transparent dar."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen Familienrecht und Eherecht?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das Eherecht ist ein Teilgebiet des Familienrechts. Das Familienrecht umfasst sämtliche Rechtsverhältnisse innerhalb der Familie: Ehe, Scheidung, Kindesverhältnis, Sorgerecht, Unterhalt, Güterrecht, Adoption und Kindesschutz (Art. 90-456 ZGB). Das Eherecht im engeren Sinne regelt die Eheschliessung, die Wirkungen der Ehe, den Eheschutz und die Scheidung (Art. 90-251 ZGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie lange dauert eine Scheidung in der Schweiz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Eine einvernehmliche Scheidung dauert in der Regel 2 bis 6 Monate ab Einreichung des Begehrens. Eine strittige Scheidung kann 1 bis 3 Jahre oder länger dauern. Bei einer Scheidungsklage nach zweijähriger Trennung (Art. 114 ZGB) kommt die Trennungsfrist hinzu."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wer zahlt den Anwalt bei einer Scheidung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Grundsätzlich bezahlt jede Partei ihren eigenen Anwalt. Bei einer einvernehmlichen Scheidung können sich die Ehegatten die Kosten eines gemeinsamen Anwalts teilen. Ist eine Partei finanziell nicht in der Lage, einen Anwalt zu bezahlen, kann sie beim Gericht unentgeltliche Rechtspflege beantragen (Art. 117 ff. ZPO). Zudem kann die wirtschaftlich schwächere Partei einen Prozesskostenvorschuss verlangen (Art. 159 Abs. 3 ZGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was regelt das Schweizer Familienrecht?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das Schweizer Familienrecht (Zweite Abteilung des ZGB, Art. 90-456) regelt alle rechtlichen Beziehungen innerhalb der Familie: Eheschliessung und Ehevertrag, Wirkungen der Ehe, Eheschutz und Scheidung, Güterrecht, Kindesverhältnis und Abstammung, elterliche Sorge und Obhut, Kindes- und Ehegattenunterhalt, Adoption, Kindesschutz (KESB) sowie Erwachsenenschutz."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Familienrechtanwalt.ch",
+        "url": "https://familienrechtanwalt.ch",
+        "description": "Ihr Anwalt für Familienrecht in der Schweiz. Spezialisiert auf Scheidung, Sorgerecht, Unterhalt und Güterrecht.",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        }
+    })} />
+
 </Layout>
