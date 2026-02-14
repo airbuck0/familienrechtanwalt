@@ -11,6 +11,10 @@ interface Props {
 
 const { title, description = "Kompetente Rechtsberatung im Schweizer Familienrecht", keywords = "Familienrecht, Schweiz, Anwalt" } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+// Add brand suffix to plain titles (no separator) so <title> differs from <h1>
+const hasSeparator = title.includes(' | ') || title.includes(' – ') || (title.includes(': ') && title.indexOf(': ') >= 20) || (title.includes('? ') && title.indexOf('? ') >= 15) || /\s\d{4}$/.test(title);
+const pageTitle = hasSeparator ? title : `${title} | Familienrechtanwalt.ch`;
 ---
 
 <!DOCTYPE html>
@@ -22,7 +26,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="keywords" content={keywords}>
     <link rel="canonical" href={canonicalURL} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>{title}</title>
+    <title>{pageTitle}</title>
     <!-- Open Graph -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />

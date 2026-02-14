@@ -4,13 +4,25 @@ import CTA from '../components/CTA.astro';
 
 interface Props {
   title: string;
+  h1?: string;
   description: string;
   keywords?: string;
   category: string;
   categoryLink: string;
 }
 
-const { title, description, keywords, category, categoryLink } = Astro.props;
+const { title, h1, description, keywords, category, categoryLink } = Astro.props;
+
+// Auto-derive H1 from title if not explicitly provided
+function deriveHeading(t: string): string {
+  if (t.includes(' | ')) return t.split(' | ')[0].trim();
+  if (t.includes(' – ')) return t.split(' – ')[0].trim();
+  if (t.includes(': ') && t.indexOf(': ') >= 20) return t.split(': ')[0].trim();
+  if (t.includes('? ') && t.indexOf('? ') >= 15) return t.substring(0, t.indexOf('? ') + 1).trim();
+  return t.replace(/\s+\d{4}$/, '');
+}
+
+const heading = h1 || deriveHeading(title);
 ---
 
 <Layout title={title} description={description} keywords={keywords}>
@@ -18,7 +30,7 @@ const { title, description, keywords, category, categoryLink } = Astro.props;
     <header class="bg-navy pt-32 pb-16">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <a href={categoryLink} class="text-gold mb-4 font-medium hover:underline">{category}</a>
-            <h1 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6 mt-2">{title}</h1>
+            <h1 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6 mt-2">{heading}</h1>
             <p class="text-xl text-blue-100">{description}</p>
         </div>
     </header>
