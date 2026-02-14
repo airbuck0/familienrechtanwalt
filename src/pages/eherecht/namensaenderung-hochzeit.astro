@@ -4,8 +4,8 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 
 <ArticleLayout
     title="Namensänderung nach der Hochzeit in der Schweiz"
-    description="Leitfaden zur Namensänderung nach der Hochzeit in der Schweiz: Namensrecht seit 2013, Optionen, Allianzname und praktische Checkliste."
-    keywords="Namensänderung, Hochzeit, Namensrecht, Allianzname, Doppelname, Ledignamen, Familienname, Art. 160 ZGB, Schweiz"
+    description="Namensänderung nach der Hochzeit: Alle Optionen (Ledigname, gemeinsamer Name, Allianzname), Name der Kinder, Kosten & Checkliste. Mit Art. 160 ZGB erklärt."
+    keywords="Namensänderung Hochzeit, Namensrecht Schweiz, Allianzname, Doppelname, Familienname, Ledignamen, Art. 160 ZGB, Name Kinder Hochzeit"
     category="Eherecht"
     categoryLink="/eherecht"
 >
@@ -15,206 +15,734 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         <ul class="space-y-3">
             <li class="flex items-start">
                 <span class="text-gold mr-3">✓</span>
-                <span>Seit der Revision 2013 behält jeder Ehegatte automatisch seinen Ledignamen – eine Namensänderung ist freiwillig (Art. 160 ZGB).</span>
+                <span>Seit der Revision 2013 behält jeder Ehegatte automatisch seinen Ledignamen -- eine Namensänderung ist freiwillig (Art. 160 Abs. 1 ZGB).</span>
             </li>
             <li class="flex items-start">
                 <span class="text-gold mr-3">✓</span>
-                <span>Optionen: Beide behalten ihren Namen (Standard), gemeinsamer Familienname (Name eines Partners) oder Allianzname (Doppelname mit Bindestrich).</span>
+                <span>Es gibt drei Optionen: Beide behalten ihren Ledignamen (Standard), gemeinsamer Familienname (Ledigname eines Partners) oder Allianzname (Doppelname mit Bindestrich, z.B. Müller-Meier).</span>
             </li>
             <li class="flex items-start">
                 <span class="text-gold mr-3">✓</span>
-                <span>Der Allianzname (z.B. Müller-Meier) ist kein amtlicher Name, kann aber im Pass und in der ID eingetragen werden.</span>
+                <span>Der Allianzname ist kein amtlicher Name und wird nicht im Zivilstandsregister eingetragen, kann aber im Pass und in der ID eingetragen werden.</span>
             </li>
             <li class="flex items-start">
                 <span class="text-gold mr-3">✓</span>
-                <span>Bei Namensänderung: Führerausweis und Fahrzeugausweis innerhalb von 14 Tagen aktualisieren (gesetzliche Pflicht).</span>
+                <span>Bei verschiedenen Familiennamen müssen die Brautleute bei der Trauung bestimmen, welchen Ledignamen die gemeinsamen Kinder tragen (Art. 270 Abs. 1 ZGB).</span>
             </li>
             <li class="flex items-start">
                 <span class="text-gold mr-3">✓</span>
-                <span>Nach einer Scheidung kann jederzeit beim Zivilstandsamt erklärt werden, wieder den Ledignamen zu tragen (Art. 119 ZGB, Kosten: CHF 75).</span>
+                <span>Nach einer Scheidung kann jederzeit beim Zivilstandsamt erklärt werden, wieder den Ledignamen zu tragen (Art. 119 Abs. 1 ZGB, Kosten: CHF 75).</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Eine parlamentarische Revision soll echte Doppelnamen (ohne Bindestrich) wieder ermöglichen -- die Vorlage befindet sich in der Differenzbereinigung zwischen National- und Ständerat (Stand Februar 2026).</span>
             </li>
         </ul>
     </div>
 
-    <section class="bg-white rounded-lg shadow-md p-8 mb-8">
-        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Die Revision von 2013</h2>
-        <p class="mb-4">Am 1. Januar 2013 trat die grosse Revision des Schweizer Namensrechts in Kraft, nachdem der EGMR das alte Recht als EMRK-widrig beurteilt hatte.</p>
-        <div class="grid md:grid-cols-2 gap-6">
-            <div class="bg-gray-50 p-6 rounded-lg">
-                <h3 class="text-lg font-semibold text-navy mb-3">Früher (vor 2013)</h3>
-                <ul class="list-disc list-inside space-y-2 text-gray-700">
-                    <li>Gleicher Familienname war Pflicht</li>
-                    <li>Grundsätzlich Name des Mannes</li>
-                    <li>Nur Frau durfte Doppelname führen</li>
-                </ul>
-            </div>
-            <div class="bg-gray-50 p-6 rounded-lg">
-                <h3 class="text-lg font-semibold text-navy mb-3">Heute (seit 2013)</h3>
-                <ul class="list-disc list-inside space-y-2 text-gray-700">
-                    <li>Jeder behält seinen Ledignamen</li>
-                    <li>Gemeinsamer Name ist freiwillig</li>
-                    <li>Vollständige Gleichstellung</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    <!-- Inhaltsverzeichnis -->
+    <nav class="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-12">
+        <h2 class="text-xl font-serif font-bold text-navy mb-4">Inhaltsverzeichnis</h2>
+        <ol class="space-y-2 text-gray-700 list-decimal list-inside">
+            <li><a href="#einleitung" class="text-gold hover:underline">Namensrecht bei der Hochzeit -- Einleitung</a></li>
+            <li><a href="#historische-entwicklung" class="text-gold hover:underline">Historische Entwicklung des Namensrechts</a></li>
+            <li><a href="#geltendes-recht" class="text-gold hover:underline">Geltendes Recht seit 2013 (Art. 160 ZGB)</a></li>
+            <li><a href="#drei-optionen" class="text-gold hover:underline">Die drei Optionen bei der Namensgebung</a></li>
+            <li><a href="#name-der-kinder" class="text-gold hover:underline">Name der Kinder</a></li>
+            <li><a href="#allianzname-vs-doppelname" class="text-gold hover:underline">Allianzname vs. echter Doppelname</a></li>
+            <li><a href="#geplante-revision" class="text-gold hover:underline">Geplante Namensrechtsrevision</a></li>
+            <li><a href="#namensaenderung-scheidung" class="text-gold hover:underline">Namensänderung nach der Scheidung</a></li>
+            <li><a href="#namensaenderung-verwitwung" class="text-gold hover:underline">Namensänderung bei Verwitwung</a></li>
+            <li><a href="#checkliste" class="text-gold hover:underline">Checkliste: Dokumente nach der Hochzeit</a></li>
+            <li><a href="#kosten" class="text-gold hover:underline">Kosten der Namensänderung</a></li>
+            <li><a href="#sonderfaelle" class="text-gold hover:underline">Sonderfälle</a></li>
+            <li><a href="#uebergangsrecht" class="text-gold hover:underline">Übergangsrecht für vor 2013 Verheiratete</a></li>
+            <li><a href="#anwalt" class="text-gold hover:underline">Wann Sie einen Anwalt beiziehen sollten</a></li>
+            <li><a href="#fazit" class="text-gold hover:underline">Fazit</a></li>
+            <li><a href="#faq" class="text-gold hover:underline">Häufig gestellte Fragen (FAQ)</a></li>
+        </ol>
+    </nav>
 
-    <section class="bg-white rounded-lg shadow-md p-8 mb-8">
-        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Optionen bei der Namensgebung</h2>
+    <!-- Einleitung -->
+    <h2 id="einleitung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Namensrecht bei der Hochzeit -- Einleitung</h2>
 
-        <div class="space-y-6">
-            <div class="bg-gray-50 p-6 rounded-lg">
-                <h3 class="text-xl font-serif font-bold text-navy mb-4">Option 1: Beide behalten ihren Ledignamen (Standard)</h3>
-                <p class="text-gray-700 mb-4">Dies ist die Standardoption. Ohne aktive Erklärung behält jeder Ehegatte automatisch seinen bisherigen Namen.</p>
-                <div class="overflow-x-auto">
-                    <table class="min-w-full border border-gray-300">
-                        <thead class="bg-navy text-white"><tr><th class="px-4 py-2 text-left">Vor der Hochzeit</th><th class="px-4 py-2 text-left">Nach der Hochzeit</th></tr></thead>
-                        <tbody><tr class="bg-white"><td class="px-4 py-2">Anna Müller</td><td class="px-4 py-2">Anna Müller</td></tr><tr class="bg-gray-50"><td class="px-4 py-2">Peter Meier</td><td class="px-4 py-2">Peter Meier</td></tr></tbody>
-                    </table>
-                </div>
-            </div>
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">Die Frage, welchen Namen die Ehegatten nach der Hochzeit tragen, beschäftigt fast jedes Brautpaar in der Schweiz. Seit der grundlegenden Revision des Namensrechts am 1. Januar 2013 gilt eine klare Regel: Jeder Ehegatte behält automatisch seinen Ledignamen. Eine Namensänderung ist möglich, aber freiwillig. Diese Neuerung brachte nach jahrzehntelanger Diskussion die vollständige Gleichstellung von Frau und Mann im Namensrecht.</p>
 
-            <div class="bg-gray-50 p-6 rounded-lg">
-                <h3 class="text-xl font-serif font-bold text-navy mb-4">Option 2: Gemeinsamer Familienname</h3>
-                <p class="text-gray-700 mb-4">Die Brautleute können den Ledignamen eines Partners als gemeinsamen Familiennamen wählen - freie Wahl zwischen beiden Namen.</p>
-                <div class="grid md:grid-cols-2 gap-4">
-                    <div class="overflow-x-auto">
-                        <p class="font-semibold mb-2">Variante A: Name des Mannes</p>
-                        <table class="min-w-full border border-gray-300">
-                            <tbody><tr class="bg-white"><td class="px-4 py-2">Anna Müller -> Anna Meier</td></tr><tr class="bg-gray-50"><td class="px-4 py-2">Peter Meier -> Peter Meier</td></tr></tbody>
-                        </table>
-                    </div>
-                    <div class="overflow-x-auto">
-                        <p class="font-semibold mb-2">Variante B: Name der Frau</p>
-                        <table class="min-w-full border border-gray-300">
-                            <tbody><tr class="bg-white"><td class="px-4 py-2">Anna Müller -> Anna Müller</td></tr><tr class="bg-gray-50"><td class="px-4 py-2">Peter Meier -> Peter Müller</td></tr></tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
+    <p class="text-gray-700 mb-6">In der Praxis stehen Brautleuten heute drei Möglichkeiten offen: Beide behalten ihren bisherigen Namen, sie wählen einen gemeinsamen Familiennamen oder sie führen im Alltag einen Allianznamen mit Bindestrich. Die Wahl hat nicht nur Auswirkungen auf die eigene Identität, sondern auch auf den Namen der gemeinsamen Kinder, auf amtliche Dokumente und auf zahlreiche Verträge und Registrierungen.</p>
 
-            <div class="bg-gray-50 p-6 rounded-lg">
-                <h3 class="text-xl font-serif font-bold text-navy mb-4">Option 3: Allianzname</h3>
-                <p class="text-gray-700 mb-4">Der Allianzname ist ein mit Bindestrich geführter Doppelname für den Alltag (z.B. Müller-Meier).</p>
-                <div class="bg-gold/10 border-l-4 border-gold p-4 rounded-r-lg">
-                    <p class="text-gray-700"><strong>Wichtig:</strong> Der Allianzname ist kein amtlicher Name und wird nicht im Zivilstandsregister eingetragen. Er kann aber im Pass und in der ID eingetragen werden.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <p class="text-gray-700 mb-6">Dieser Artikel erklärt das geltende Namensrecht umfassend, zeigt die historische Entwicklung auf und geht auf alle praktischen Aspekte ein -- von der Namenswahl über die Dokumente, die nach der Hochzeit geändert werden müssen, bis hin zur geplanten Revision, die echte Doppelnamen wieder ermöglichen soll.</p>
 
-    <section class="bg-white rounded-lg shadow-md p-8 mb-8">
-        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Allianzname vs. Doppelname</h2>
-        <div class="overflow-x-auto">
-            <table class="min-w-full border border-gray-300">
-                <thead class="bg-navy text-white">
-                    <tr>
-                        <th class="px-4 py-3 text-left">Merkmal</th>
-                        <th class="px-4 py-3 text-left">Allianzname</th>
-                        <th class="px-4 py-3 text-left">Echter Doppelname</th>
-                    </tr>
-                </thead>
-                <tbody class="divide-y divide-gray-200">
-                    <tr class="bg-white"><td class="px-4 py-3 font-medium">Beispiel</td><td class="px-4 py-3">Müller-Meier</td><td class="px-4 py-3">Müller Meier</td></tr>
-                    <tr class="bg-gray-50"><td class="px-4 py-3 font-medium">Bindestrich</td><td class="px-4 py-3">Ja</td><td class="px-4 py-3">Nein</td></tr>
-                    <tr class="bg-white"><td class="px-4 py-3 font-medium">Amtlicher Status</td><td class="px-4 py-3">Nein</td><td class="px-4 py-3">Ja</td></tr>
-                    <tr class="bg-gray-50"><td class="px-4 py-3 font-medium">Im Pass eintragbar</td><td class="px-4 py-3">Ja (auf Antrag)</td><td class="px-4 py-3">Ja (automatisch)</td></tr>
-                    <tr class="bg-white"><td class="px-4 py-3 font-medium">Bei Heirat seit 2013</td><td class="px-4 py-3">Möglich</td><td class="px-4 py-3">Nicht möglich</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+    <!-- Historische Entwicklung -->
+    <h2 id="historische-entwicklung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Historische Entwicklung des Namensrechts</h2>
 
-    <section class="bg-white rounded-lg shadow-md p-8 mb-8">
-        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Checkliste: Dokumente nach der Hochzeit</h2>
-        <div class="overflow-x-auto">
-            <table class="min-w-full border border-gray-300">
-                <thead class="bg-navy text-white">
-                    <tr>
-                        <th class="px-4 py-3 text-left">Dokument/Stelle</th>
-                        <th class="px-4 py-3 text-left">Frist</th>
-                        <th class="px-4 py-3 text-left">Kosten (ca.)</th>
-                    </tr>
-                </thead>
-                <tbody class="divide-y divide-gray-200">
-                    <tr class="bg-white"><td class="px-4 py-3 font-medium">Pass</td><td class="px-4 py-3">Bei Bedarf</td><td class="px-4 py-3">CHF 145</td></tr>
-                    <tr class="bg-gray-50"><td class="px-4 py-3 font-medium">Identitätskarte</td><td class="px-4 py-3">Bei Bedarf</td><td class="px-4 py-3">CHF 75</td></tr>
-                    <tr class="bg-white"><td class="px-4 py-3 font-medium">Führerausweis</td><td class="px-4 py-3 font-semibold text-red-600">14 Tage</td><td class="px-4 py-3">CHF 30-50</td></tr>
-                    <tr class="bg-gray-50"><td class="px-4 py-3 font-medium">Fahrzeugausweis</td><td class="px-4 py-3 font-semibold text-red-600">14 Tage</td><td class="px-4 py-3">CHF 30-50</td></tr>
-                    <tr class="bg-white"><td class="px-4 py-3 font-medium">AHV-Ausweis</td><td class="px-4 py-3">Sofort</td><td class="px-4 py-3">Kostenlos</td></tr>
-                    <tr class="bg-gray-50"><td class="px-4 py-3 font-medium">Krankenversicherung</td><td class="px-4 py-3">Sofort</td><td class="px-4 py-3">Kostenlos</td></tr>
-                    <tr class="bg-white"><td class="px-4 py-3 font-medium">Bank/Kreditkarten</td><td class="px-4 py-3">Sofort</td><td class="px-4 py-3">Meist kostenlos</td></tr>
-                    <tr class="bg-gray-50"><td class="px-4 py-3 font-medium">Arbeitgeber</td><td class="px-4 py-3">Sofort</td><td class="px-4 py-3">-</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+    <p class="text-gray-700 mb-6">Das Schweizer Namensrecht hat sich in den letzten Jahrzehnten grundlegend gewandelt. Um das heutige System zu verstehen, lohnt sich ein Blick auf die Geschichte.</p>
 
-    <section class="bg-white rounded-lg shadow-md p-8 mb-8">
-        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Namensänderung nach der Scheidung</h2>
-        <p class="mb-4">Der Ehegatte, der bei der Eheschliessung seinen Namen geändert hat, kann jederzeit beim Zivilstandsamt erklären, dass er wieder seinen Ledignamen tragen will (Art. 119 ZGB).</p>
-        <ul class="list-disc list-inside space-y-2 text-gray-700">
-            <li>Erklärung bei jedem Zivilstandsamt möglich</li>
-            <li>Keine Gründe erforderlich</li>
-            <li>Keine Frist - jederzeit möglich</li>
-            <li><strong>Kosten:</strong> CHF 75</li>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Das alte Recht vor 2013</h3>
+
+    <p class="text-gray-700 mb-6">Bis Ende 2012 galt in der Schweiz ein Namensrecht, das auf dem Grundsatz des gemeinsamen Familiennamens beruhte. Die Ehegatten mussten zwingend einen gemeinsamen Familiennamen führen. Grundsätzlich war dies der Name des Mannes (Art. 160 aZGB). Nur wenn die Brautleute ein Gesuch stellten und «achtenswerte Gründe» nachwiesen, konnte der Name der Frau als gemeinsamer Familienname gewählt werden. Zudem hatte ausschliesslich die Frau die Möglichkeit, ihren Ledignamen dem Familiennamen des Mannes voranzustellen und so einen Doppelnamen zu bilden (z.B. «Müller Meier»). Dem Mann stand diese Option nicht offen.</p>
+
+    <p class="text-gray-700 mb-6">Dieses System wurde zunehmend als unzeitgemäss und diskriminierend empfunden, da es Frauen und Männer ungleich behandelte.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Das EGMR-Urteil «Losonci Rose und Rose gegen die Schweiz» (2010)</h3>
+
+    <p class="text-gray-700 mb-6">Der Europäische Gerichtshof für Menschenrechte (EGMR) stellte am 9. November 2010 im Fall «Losonci Rose und Rose gegen die Schweiz» (Beschwerde Nr. 664/06) fest, dass das damalige Schweizer Namensrecht gegen die Europäische Menschenrechtskonvention (EMRK) verstösst. Konkret lag eine Verletzung von Art. 14 EMRK (Diskriminierungsverbot) in Verbindung mit Art. 8 EMRK (Recht auf Achtung des Privat- und Familienlebens) vor.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Hintergrund des Urteils:</p>
+        <p class="text-gray-700">Das Ehepaar Losonci Rose und Rose -- sie Schweizerin, er ungarischer Staatsangehöriger -- wollte, dass jeder seinen Ledignamen behält. Das damalige Schweizer Recht liess dies bei binationalen Paaren nur zu, wenn der Mann Schweizer war, nicht aber umgekehrt. Der EGMR qualifizierte diese Ungleichbehandlung als geschlechterdiskriminierend.</p>
+    </div>
+
+    <p class="text-gray-700 mb-6">Dieses Urteil erhöhte den Druck auf das Schweizer Parlament, das Namensrecht grundlegend zu reformieren. Bereits 2011 verabschiedete die Bundesversammlung die neue Regelung, die am 1. Januar 2013 in Kraft trat.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Die Revision 2013: Ein Paradigmenwechsel</h3>
+
+    <p class="text-gray-700 mb-6">Die am 1. Januar 2013 in Kraft getretene Revision brachte einen fundamentalen Paradigmenwechsel: Statt eines gemeinsamen Familiennamens als Pflicht gilt seither der Grundsatz der Namenswahrung. Jeder Ehegatte behält automatisch seinen Ledignamen. Ein gemeinsamer Familienname ist nur noch auf ausdrücklichen Wunsch und durch aktive Erklärung gegenüber der Zivilstandsbeamtin möglich.</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Merkmal</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Altes Recht (vor 2013)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Neues Recht (seit 2013)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Grundregel</td>
+                    <td class="px-6 py-4 text-gray-700">Gemeinsamer Familienname ist Pflicht</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder behält seinen Ledignamen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Name des Mannes</td>
+                    <td class="px-6 py-4 text-gray-700">Grundsätzlich Familienname</td>
+                    <td class="px-6 py-4 text-gray-700">Gleichberechtigt wählbar</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Name der Frau</td>
+                    <td class="px-6 py-4 text-gray-700">Nur mit «achtenswerten Gründen»</td>
+                    <td class="px-6 py-4 text-gray-700">Gleichberechtigt wählbar</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Doppelname</td>
+                    <td class="px-6 py-4 text-gray-700">Nur für die Frau möglich</td>
+                    <td class="px-6 py-4 text-gray-700">Kein amtlicher Doppelname (nur Allianzname)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Gleichstellung</td>
+                    <td class="px-6 py-4 text-gray-700">Nicht gegeben</td>
+                    <td class="px-6 py-4 text-gray-700">Vollständig</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Geltendes Recht seit 2013 -->
+    <h2 id="geltendes-recht" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Geltendes Recht seit 2013 (Art. 160 ZGB)</h2>
+
+    <p class="text-gray-700 mb-6">Das geltende Namensrecht der Ehegatten ist in Art. 160 ZGB geregelt. Die Bestimmung lautet wie folgt:</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Art. 160 ZGB -- Name der Ehegatten:</p>
+        <p class="text-gray-700 mb-2">Abs. 1: «Jeder Ehegatte behält seinen Namen.»</p>
+        <p class="text-gray-700 mb-2">Abs. 2: «Die Brautleute können aber gegenüber der Zivilstandsbeamtin oder dem Zivilstandsbeamten erklären, dass sie den Ledignamen der Braut oder des Bräutigams als gemeinsamen Familiennamen tragen wollen.»</p>
+        <p class="text-gray-700">Abs. 3: «Haben die Brautleute einen gemeinsamen Familiennamen gewählt, so bestimmen sie, welchen ihrer Ledignamen ihre Kinder tragen sollen. In begründeten Fällen kann die Zivilstandsbeamtin oder der Zivilstandsbeamte die Brautleute von dieser Pflicht befreien.»</p>
+    </div>
+
+    <p class="text-gray-700 mb-6">Der Grundsatz ist klar: Die Heirat ändert den Namen nicht. Ohne aktives Handeln behält jeder Ehegatte seinen bisherigen Namen. Nur wer ausdrücklich einen gemeinsamen Familiennamen wünscht, muss eine Erklärung beim Zivilstandsamt abgeben. Diese Erklärung erfolgt in der Regel bei der Trauung selbst, kann aber auch im Rahmen des Ehevorbereitungsverfahrens abgegeben werden.</p>
+
+    <p class="text-gray-700 mb-6">Als gemeinsamer Familienname kann ausschliesslich der Ledigname eines der beiden Ehegatten gewählt werden. Eine Kombination beider Namen -- also ein Doppelname -- ist nach geltendem Recht nicht als amtlicher Familienname möglich. Wer den Ledignamen des Partners als Familiennamen annimmt, gibt seinen eigenen Ledignamen als amtlichen Namen auf (behält ihn aber als sogenannten «Ledigname» im Zivilstandsregister eingetragen).</p>
+
+    <!-- Die drei Optionen -->
+    <h2 id="drei-optionen" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Die drei Optionen bei der Namensgebung</h2>
+
+    <p class="text-gray-700 mb-6">Bei der Eheschliessung stehen den Brautleuten drei Varianten zur Verfügung. Jede hat spezifische Konsequenzen für den Alltag, für amtliche Dokumente und für den Namen der gemeinsamen Kinder.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Option 1: Beide behalten ihren Ledignamen (Standard)</h3>
+
+    <p class="text-gray-700 mb-6">Dies ist die gesetzliche Standardregel (Art. 160 Abs. 1 ZGB). Wenn die Brautleute keine Erklärung abgeben, behält jeder automatisch seinen bisherigen Namen. Es ist kein Antrag und kein Formular nötig.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Vor der Hochzeit</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Nach der Hochzeit</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Anna Müller</td>
+                    <td class="px-6 py-4 text-gray-700">Anna Müller</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Peter Meier</td>
+                    <td class="px-6 py-4 text-gray-700">Peter Meier</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Diese Variante hat den Vorteil, dass keine Dokumente geändert werden müssen. Pass, Identitätskarte, Führerausweis, Bankkonten und alle Verträge bleiben unverändert gültig. Der einzige administrative Aufwand betrifft gegebenenfalls die Meldung des neuen Zivilstands an Versicherungen und Behörden.</p>
+
+    <p class="text-gray-700 mb-6">Allerdings müssen die Ehegatten bei der Trauung bestimmen, welchen Ledignamen ihre gemeinsamen Kinder tragen werden (Art. 270 Abs. 1 ZGB). Diese Entscheidung gilt für alle gemeinsamen Kinder und kann nur innerhalb eines Jahres nach der Geburt des ersten Kindes einmal geändert werden.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Option 2: Gemeinsamer Familienname</h3>
+
+    <p class="text-gray-700 mb-6">Die Brautleute können erklären, dass sie den Ledignamen eines der beiden Partner als gemeinsamen Familiennamen tragen wollen (Art. 160 Abs. 2 ZGB). Dabei steht es ihnen frei, ob sie den Ledignamen der Braut oder des Bräutigams wählen -- eine vollständige Gleichstellung beider Geschlechter.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Variante</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Vor der Hochzeit</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Nach der Hochzeit</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium" rowspan="2">Name des Mannes als Familienname</td>
+                    <td class="px-6 py-4 text-gray-700">Anna Müller</td>
+                    <td class="px-6 py-4 text-gray-700">Anna Meier</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Peter Meier</td>
+                    <td class="px-6 py-4 text-gray-700">Peter Meier</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium" rowspan="2">Name der Frau als Familienname</td>
+                    <td class="px-6 py-4 text-gray-700">Anna Müller</td>
+                    <td class="px-6 py-4 text-gray-700">Anna Müller</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Peter Meier</td>
+                    <td class="px-6 py-4 text-gray-700">Peter Müller</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Die Erklärung zum gemeinsamen Familiennamen wird gegenüber der Zivilstandsbeamtin oder dem Zivilstandsbeamten abgegeben. Der übliche Zeitpunkt ist die Trauung selbst, die Erklärung kann aber auch bereits im Rahmen des <a href="/eherecht/ehevorbereitungsverfahren" class="text-gold hover:underline font-semibold">Ehevorbereitungsverfahrens</a> erfolgen.</p>
+
+    <p class="text-gray-700 mb-6">Der Ehegatte, der seinen Ledignamen zugunsten des gemeinsamen Familiennamens aufgibt, hat diesen Wechsel im Zivilstandsregister dokumentiert. Sein Ledigname bleibt aber als solcher im Register eingetragen und kann nach einer allfälligen Scheidung wieder angenommen werden (Art. 119 Abs. 1 ZGB).</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praxishinweis:</p>
+        <p class="text-gray-700">Auch heute wählen die meisten Paare, die sich für einen gemeinsamen Familiennamen entscheiden, den Namen des Mannes. Es steht aber beiden Ehegatten frei, den Namen des anderen zu übernehmen -- der Mann kann also ohne Weiteres den Ledignamen seiner Frau annehmen.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Option 3: Allianzname (Doppelname mit Bindestrich)</h3>
+
+    <p class="text-gray-700 mb-6">Der Allianzname ist eine im Alltag sehr verbreitete Lösung, die es ermöglicht, beide Familiennamen zu führen -- verbunden durch einen Bindestrich (z.B. «Müller-Meier»). Dabei wird der eigene Ledigname vorangestellt und der Name des Ehepartners angefügt.</p>
+
+    <p class="text-gray-700 mb-6">Rechtlich ist der Allianzname jedoch kein amtlicher Name. Er wird nicht im Zivilstandsregister eingetragen und hat keinen Einfluss auf den amtlichen Familiennamen. Der Allianzname kann aber auf Antrag in den Schweizer Pass und in die Identitätskarte eingetragen werden. Im geschäftlichen und privaten Verkehr darf er frei verwendet werden.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Person</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Amtlicher Name</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Allianzname (auf Antrag)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Anna</td>
+                    <td class="px-6 py-4 text-gray-700">Müller</td>
+                    <td class="px-6 py-4 text-gray-700">Müller-Meier</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Peter</td>
+                    <td class="px-6 py-4 text-gray-700">Meier</td>
+                    <td class="px-6 py-4 text-gray-700">Meier-Müller</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Der Allianzname steht jedem Ehegatten offen -- unabhängig davon, ob ein gemeinsamer Familienname gewählt wurde oder nicht. Um den Allianznamen im Pass oder in der ID eintragen zu lassen, ist ein Antrag beim Passbüro der Wohngemeinde oder des Kantons erforderlich. Die Eintragung erfolgt als Zusatz zum amtlichen Namen.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig:</p>
+        <p class="text-gray-700">Der Allianzname kann nicht an Kinder weitergegeben werden. Kinder erhalten ausschliesslich den amtlichen Familiennamen ihrer Eltern, nicht den Allianznamen.</p>
+    </div>
+
+    <!-- Name der Kinder -->
+    <h2 id="name-der-kinder" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Name der Kinder</h2>
+
+    <p class="text-gray-700 mb-6">Die Namensgebung der Kinder ist ein zentraler Aspekt bei der Namenswahl der Ehegatten. Art. 270 ZGB regelt, welchen Familiennamen die Kinder verheirateter Eltern erhalten.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gemeinsamer Familienname der Eltern</h3>
+
+    <p class="text-gray-700 mb-6">Haben die Ehegatten einen gemeinsamen Familiennamen gewählt, erhalten die Kinder automatisch diesen Namen (Art. 270 Abs. 1 ZGB). Eine weitere Erklärung ist nicht erforderlich. Alle gemeinsamen Kinder tragen denselben Familiennamen.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Verschiedene Namen der Eltern</h3>
+
+    <p class="text-gray-700 mb-6">Behalten beide Ehegatten ihren Ledignamen, müssen sie bei der Trauung bestimmen, welchen ihrer Ledignamen die gemeinsamen Kinder tragen sollen (Art. 270 Abs. 1 ZGB). Diese Bestimmung ist zwingend und gilt für alle gemeinsamen Kinder -- eine unterschiedliche Namensvergabe an einzelne Kinder ist nicht möglich.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Beispiel:</p>
+        <p class="text-gray-700">Anna Müller und Peter Meier behalten beide ihren Ledignamen. Bei der Trauung bestimmen sie, dass ihre Kinder den Namen «Müller» tragen. Alle gemeinsamen Kinder werden den Familiennamen «Müller» erhalten.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kann der Kindesname nachträglich geändert werden?</h3>
+
+    <p class="text-gray-700 mb-6">Grundsätzlich ist die bei der Trauung getroffene Bestimmung bindend. Art. 270a Abs. 2 ZGB sieht jedoch eine Ausnahme vor: Innerhalb eines Jahres nach der Geburt des ersten Kindes können die Eltern gemeinsam verlangen, dass das Kind den Ledignamen des anderen Elternteils trägt. Der Namenswechsel gilt dann auch für alle künftigen gemeinsamen Kinder.</p>
+
+    <p class="text-gray-700 mb-6">Nach Ablauf dieser Frist ist eine Namensänderung des Kindes nur noch über das Verfahren nach Art. 30 Abs. 1 ZGB möglich. Hierfür müssen «achtenswerte Gründe» vorliegen, und die zuständige kantonale Behörde (in der Regel die Kantonsregierung oder das Departement des Innern) muss die Änderung bewilligen.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Situation</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Name des Kindes</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Eltern mit gemeinsamem Familiennamen</td>
+                    <td class="px-6 py-4 text-gray-700">Automatisch der gemeinsame Familienname</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Eltern mit verschiedenen Namen</td>
+                    <td class="px-6 py-4 text-gray-700">Bei der Trauung bestimmter Ledigname eines Elternteils</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Änderung bis 1 Jahr nach Geburt des 1. Kindes</td>
+                    <td class="px-6 py-4 text-gray-700">Wechsel zum anderen Ledignamen möglich (gemeinsam erklären)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Spätere Änderung</td>
+                    <td class="px-6 py-4 text-gray-700">Nur mit «achtenswerten Gründen» nach Art. 30 ZGB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Allianzname vs. Doppelname -->
+    <h2 id="allianzname-vs-doppelname" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Allianzname vs. echter Doppelname</h2>
+
+    <p class="text-gray-700 mb-6">In der öffentlichen Diskussion werden die Begriffe «Allianzname» und «Doppelname» häufig verwechselt. Rechtlich handelt es sich jedoch um zwei grundverschiedene Konzepte.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Merkmal</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Allianzname</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Echter Doppelname</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Schreibweise</td>
+                    <td class="px-6 py-4 text-gray-700">Mit Bindestrich (z.B. Müller-Meier)</td>
+                    <td class="px-6 py-4 text-gray-700">Ohne Bindestrich (z.B. Müller Meier)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Amtlicher Status</td>
+                    <td class="px-6 py-4 text-gray-700">Nein, kein amtlicher Name</td>
+                    <td class="px-6 py-4 text-gray-700">Ja, amtlicher Familienname</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Eintragung im Zivilstandsregister</td>
+                    <td class="px-6 py-4 text-gray-700">Nein</td>
+                    <td class="px-6 py-4 text-gray-700">Ja</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Eintragung in Pass/ID</td>
+                    <td class="px-6 py-4 text-gray-700">Ja, auf Antrag</td>
+                    <td class="px-6 py-4 text-gray-700">Ja, automatisch</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Weitergabe an Kinder</td>
+                    <td class="px-6 py-4 text-gray-700">Nein</td>
+                    <td class="px-6 py-4 text-gray-700">Ja (im alten Recht)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Bei Heirat seit 2013</td>
+                    <td class="px-6 py-4 text-gray-700">Möglich</td>
+                    <td class="px-6 py-4 text-gray-700">Nicht möglich</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Reihenfolge der Namen</td>
+                    <td class="px-6 py-4 text-gray-700">Eigener Name zuerst</td>
+                    <td class="px-6 py-4 text-gray-700">Nur Frau konnte voranstellen (altes Recht)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Der echte Doppelname existierte unter dem alten Recht nur für Frauen: Die Ehefrau konnte ihren Ledignamen dem Familiennamen des Mannes voranstellen (z.B. «Müller Meier»). Seit dem 1. Januar 2013 können bei der Eheschliessung keine neuen echten Doppelnamen mehr gebildet werden. Wer bereits vor 2013 einen Doppelnamen erworben hat, darf diesen aber weiterhin führen.</p>
+
+    <p class="text-gray-700 mb-6">Der Allianzname hingegen ist eine reine Gebrauchsform: Jeder Ehegatte kann seinen Ledignamen durch den Allianznamen ergänzen. Der Allianzname wird zwar als Zusatz im Pass und in der ID eingetragen, ist aber kein Teil des amtlichen Namens im Zivilstandsregister.</p>
+
+    <!-- Geplante Namensrechtsrevision -->
+    <h2 id="geplante-revision" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Geplante Namensrechtsrevision: Echte Doppelnamen sollen wieder möglich werden</h2>
+
+    <p class="text-gray-700 mb-6">Seit der Abschaffung des echten Doppelnamens im Jahr 2013 gibt es politische Bestrebungen, diese Möglichkeit wieder einzuführen. Die parlamentarische Initiative 17.523 der Kommission für Rechtsfragen des Nationalrats (RK-N) fordert eine Anpassung des Namensrechts.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Hintergrund und Verlauf</h3>
+
+    <p class="text-gray-700 mb-6">Die RK-N hat im November 2023 einen Bericht mit einem Gesetzesentwurf verabschiedet. Im Juni 2024 hat der Nationalrat die Vorlage beraten und sich für eine weitgehende Flexibilisierung des Namensrechts ausgesprochen: Brautleute sollen individuell und unabhängig voneinander über ihren künftigen Nachnamen entscheiden können. Dazu gehört die Möglichkeit, einen echten Doppelnamen zu wählen -- mit oder ohne Bindestrich und in frei wählbarer Reihenfolge.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Unterschiede zwischen Nationalrat und Ständerat</h3>
+
+    <p class="text-gray-700 mb-6">Zwischen den beiden Kammern bestehen Differenzen, die eine Differenzbereinigung erfordern:</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Punkt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Position Nationalrat</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Position Ständerat</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Doppelname</td>
+                    <td class="px-6 py-4 text-gray-700">Ja, mit oder ohne Bindestrich</td>
+                    <td class="px-6 py-4 text-gray-700">Ja, aber nur mit Ledignamen</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Namensquelle</td>
+                    <td class="px-6 py-4 text-gray-700">Auch Name aus früherer Ehe möglich</td>
+                    <td class="px-6 py-4 text-gray-700">Nur der angestammte Ledigname</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Doppelname für Kinder</td>
+                    <td class="px-6 py-4 text-gray-700">Nein</td>
+                    <td class="px-6 py-4 text-gray-700">Nein</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Beide Kammern sind sich einig, dass Kinder keinen Doppelnamen erhalten sollen. Die Differenzbereinigung zwischen National- und Ständerat dauert an (Stand Februar 2026). Ein definitives Inkrafttreten ist frühestens 2027 zu erwarten.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Aktueller Stand (Februar 2026):</p>
+        <p class="text-gray-700">Die Vorlage befindet sich in der Differenzbereinigung zwischen Nationalrat und Ständerat. Der Grundsatz, dass echte Doppelnamen wieder möglich sein sollen, ist in beiden Kammern unbestritten. Offen ist, ob auch ein Name aus einer früheren Ehe Teil des Doppelnamens sein darf.</p>
+    </div>
+
+    <!-- Namensänderung nach der Scheidung -->
+    <h2 id="namensaenderung-scheidung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Namensänderung nach der Scheidung</h2>
+
+    <p class="text-gray-700 mb-6">Die <a href="/scheidung" class="text-gold hover:underline font-semibold">Scheidung</a> hat direkte Auswirkungen auf das Namensrecht. Art. 119 ZGB regelt die Situation umfassend.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Rückkehr zum Ledignamen (Art. 119 Abs. 1 ZGB)</h3>
+
+    <p class="text-gray-700 mb-6">Der Ehegatte, der bei der Eheschliessung seinen Namen geändert hat, behält nach der Scheidung zunächst den angenommenen Familiennamen. Er kann aber jederzeit gegenüber der Zivilstandsbeamtin erklären, dass er wieder seinen Ledignamen tragen will (Art. 119 Abs. 1 ZGB). Diese Erklärung ist an keine Frist gebunden, erfordert keine Begründung und kann bei jedem Zivilstandsamt in der Schweiz abgegeben werden.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Beibehaltung des Ehenamens</h3>
+
+    <p class="text-gray-700 mb-6">Wer den bei der Eheschliessung angenommenen Familiennamen behalten möchte, muss nichts unternehmen. Der Ehename wird nach der Scheidung automatisch beibehalten. Der geschiedene Ehegatte darf den Ehenamen zeitlich unbeschränkt weiterführen -- der Ex-Partner kann dies nicht verhindern und hat kein Mitspracherecht.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Nachträgliche Namensänderung nach Art. 30 ZGB</h3>
+
+    <p class="text-gray-700 mb-6">Möchte eine geschiedene Person einen anderen Namen annehmen als ihren Ledignamen oder den bisherigen Ehenamen -- beispielsweise einen früheren Ehenamen -- ist dies nur über das Verfahren nach Art. 30 Abs. 1 ZGB möglich. Die Regierung des Wohnsitzkantons kann eine Namensänderung bewilligen, wenn «achtenswerte Gründe» vorliegen. Die Kosten für dieses Verfahren betragen je nach Kanton zwischen CHF 200 und CHF 600.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Was passiert mit dem Namen der Kinder?</h3>
+
+    <p class="text-gray-700 mb-6">Die Scheidung ändert den Familiennamen der Kinder nicht. Kinder behalten grundsätzlich den bei der Geburt erhaltenen Namen -- unabhängig davon, ob ein Elternteil nach der Scheidung wieder seinen Ledignamen annimmt. Eine Namensänderung des Kindes ist nur unter besonderen Umständen und mit Bewilligung nach Art. 30 Abs. 1 ZGB möglich. Ab dem 12. Altersjahr ist die Zustimmung des Kindes erforderlich.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praxisbeispiel:</p>
+        <p class="text-gray-700">Anna hat bei der Heirat den Namen «Meier» ihres Mannes angenommen. Die gemeinsamen Kinder heissen ebenfalls Meier. Nach der Scheidung nimmt Anna wieder ihren Ledignamen «Müller» an. Die Kinder behalten den Namen «Meier» -- sie tragen nun einen anderen Familiennamen als ihre Mutter.</p>
+    </div>
+
+    <!-- Namensänderung bei Verwitwung -->
+    <h2 id="namensaenderung-verwitwung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Namensänderung bei Verwitwung</h2>
+
+    <p class="text-gray-700 mb-6">Verstirbt ein Ehegatte, behält der überlebende Ehegatte seinen bisherigen Namen. Wenn der überlebende Ehegatte bei der Eheschliessung seinen Namen geändert hat und den gemeinsamen Familiennamen trägt, kann er jederzeit beim Zivilstandsamt erklären, dass er wieder seinen Ledignamen tragen möchte. Diese Möglichkeit ist analog zur Situation bei einer Scheidung geregelt und unterliegt keiner Frist. Es ist keine Begründung erforderlich, und die Kosten betragen CHF 75.</p>
+
+    <p class="text-gray-700 mb-6">Die Erklärung kann jederzeit abgegeben werden -- ob kurz nach dem Todesfall oder Jahre später. Es besteht kein Zwang, den Ehenamen abzulegen.</p>
+
+    <!-- Checkliste -->
+    <h2 id="checkliste" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Checkliste: Dokumente nach der Hochzeit ändern</h2>
+
+    <p class="text-gray-700 mb-6">Wer bei der Hochzeit einen gemeinsamen Familiennamen wählt, muss zahlreiche Stellen über die Namensänderung informieren. Die folgende Checkliste gibt einen Überblick über die wichtigsten Dokumente und Stellen sowie die geltenden Fristen und Kosten.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Dokument / Stelle</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Frist</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kosten (ca.)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Hinweis</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Schweizer Pass</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Bedarf</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 145</td>
+                    <td class="px-6 py-4 text-gray-700">Neuer Pass nötig bei Namensänderung</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Identitätskarte</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Bedarf</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 75</td>
+                    <td class="px-6 py-4 text-gray-700">Neuer Ausweis bei Namensänderung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Führerausweis</td>
+                    <td class="px-6 py-4 text-red-600 font-semibold">14 Tage</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 30--50</td>
+                    <td class="px-6 py-4 text-gray-700">Gesetzliche Pflicht!</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Fahrzeugausweis</td>
+                    <td class="px-6 py-4 text-red-600 font-semibold">14 Tage</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 30--50</td>
+                    <td class="px-6 py-4 text-gray-700">Gesetzliche Pflicht!</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">AHV-Ausweis</td>
+                    <td class="px-6 py-4 text-gray-700">Umgehend</td>
+                    <td class="px-6 py-4 text-gray-700">Kostenlos</td>
+                    <td class="px-6 py-4 text-gray-700">Meldung an Ausgleichskasse</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Krankenversicherung</td>
+                    <td class="px-6 py-4 text-gray-700">Umgehend</td>
+                    <td class="px-6 py-4 text-gray-700">Kostenlos</td>
+                    <td class="px-6 py-4 text-gray-700">Versicherungskarte aktualisieren</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Bank / Kreditkarten</td>
+                    <td class="px-6 py-4 text-gray-700">Umgehend</td>
+                    <td class="px-6 py-4 text-gray-700">Meist kostenlos</td>
+                    <td class="px-6 py-4 text-gray-700">Neue Karten werden ausgestellt</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Arbeitgeber</td>
+                    <td class="px-6 py-4 text-gray-700">Umgehend</td>
+                    <td class="px-6 py-4 text-gray-700">--</td>
+                    <td class="px-6 py-4 text-gray-700">Für korrekte Lohnabrechnung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Steuerbehörde</td>
+                    <td class="px-6 py-4 text-gray-700">Umgehend</td>
+                    <td class="px-6 py-4 text-gray-700">Kostenlos</td>
+                    <td class="px-6 py-4 text-gray-700">Gemeinsame Veranlagung ab Heiratsjahr</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Post (Adressänderung)</td>
+                    <td class="px-6 py-4 text-gray-700">Umgehend</td>
+                    <td class="px-6 py-4 text-gray-700">Kostenlos</td>
+                    <td class="px-6 py-4 text-gray-700">Nachsendeauftrag einrichten</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Grundbuchamt</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Immobilienbesitz</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 50--100</td>
+                    <td class="px-6 py-4 text-gray-700">Berichtigung des Grundbucheintrags</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Handelsregister</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Unternehmen</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 100--200</td>
+                    <td class="px-6 py-4 text-gray-700">Für Selbständige / GmbH-Gesellschafter</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Vereinsmitgliedschaften</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Gelegenheit</td>
+                    <td class="px-6 py-4 text-gray-700">Kostenlos</td>
+                    <td class="px-6 py-4 text-gray-700">Sport- und andere Vereine informieren</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-medium">Online-Konten</td>
+                    <td class="px-6 py-4 text-gray-700">Bei Gelegenheit</td>
+                    <td class="px-6 py-4 text-gray-700">Kostenlos</td>
+                    <td class="px-6 py-4 text-gray-700">E-Mail, Social Media, Online-Shopping</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig -- Führerausweis und Fahrzeugausweis:</p>
+        <p class="text-gray-700">Die Änderung des Führerausweises und des Fahrzeugausweises ist gesetzlich vorgeschrieben und muss innerhalb von 14 Tagen nach der Namensänderung erfolgen. Bei Versäumnis droht eine Busse.</p>
+    </div>
+
+    <!-- Kosten -->
+    <h2 id="kosten" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kosten der Namensänderung</h2>
+
+    <p class="text-gray-700 mb-6">Die Kosten einer Namensänderung bei der Hochzeit setzen sich aus verschiedenen Posten zusammen. Die eigentliche Namenswahl bei der Trauung ist kostenlos -- sie ist Teil des Ehevorbereitungsverfahrens und der Trauung. Kosten entstehen erst durch die Aktualisierung der Dokumente.</p>
+
+    <div class="overflow-x-auto mb-6">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kostenart</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Betrag (ca.)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Namenserklärung bei der Trauung</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 0 (in Trauungsgebühr enthalten)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Neuer Schweizer Pass</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 145</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Neue Identitätskarte</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 75</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Neuer Führerausweis</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 30--50 (kantonal unterschiedlich)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Neuer Fahrzeugausweis</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 30--50 (kantonal unterschiedlich)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700">Grundbuchberichtigung</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 50--100 (falls Immobilienbesitz)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Handelsregistermutation</td>
+                    <td class="px-6 py-4 text-gray-700">CHF 100--200 (falls anwendbar)</td>
+                </tr>
+                <tr class="bg-gray-50">
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Typische Gesamtkosten</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">CHF 300--500</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p class="text-gray-700 mb-6">Wer bei der Hochzeit keinen gemeinsamen Familiennamen wählt und beide Partner ihren Ledignamen behalten, hat keine Kosten für Dokumentenänderungen -- lediglich der Zivilstand ändert sich, was bei der nächsten Erneuerung des Ausweises berücksichtigt wird.</p>
+
+    <!-- Sonderfälle -->
+    <h2 id="sonderfaelle" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Sonderfälle im Namensrecht</h2>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ausländische Namen und Mehrfach-Staatsbürgerschaft</h3>
+
+    <p class="text-gray-700 mb-6">Bei Personen mit ausländischer Staatsangehörigkeit oder Mehrfach-Staatsbürgerschaft können Konflikte zwischen verschiedenen nationalen Namensrechten entstehen. Grundsätzlich gilt: Wird die Ehe in der Schweiz geschlossen, richtet sich die Namensführung nach Schweizer Recht (Art. 37 Abs. 2 IPRG). Das Heimatland des ausländischen Ehegatten muss diese Namenswahl aber nicht zwingend anerkennen.</p>
+
+    <p class="text-gray-700 mb-6">Personen, die nach dem Recht ihres Heimatlandes einen Doppelnamen tragen (z.B. spanische Staatsangehörige mit zwei Familiennamen), können diesen auch in der Schweiz als amtlichen Namen führen, sofern er im Heimatland rechtmässig erworben wurde. Der Grundsatz der Anerkennung ausländischer Namensgebung ist in der Schweiz anerkannt.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Eheschliessung im Ausland</h3>
+
+    <p class="text-gray-700 mb-6">Schweizer Staatsangehörige, die im Ausland heiraten, können ihre Namensänderung nachträglich beim zuständigen Schweizer Zivilstandsamt anmelden. Die im Ausland getroffene Namenswahl wird in der Schweiz grundsätzlich anerkannt, sofern sie nicht gegen den schweizerischen Ordre public verstösst. Es empfiehlt sich, die Eheschliessung und die Namensführung bei der zuständigen Schweizer Vertretung im Ausland oder nach der Rückkehr beim Zivilstandsamt zu registrieren.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Name bei Wiederheirat</h3>
+
+    <p class="text-gray-700 mb-6">Wer nach einer Scheidung oder Verwitwung erneut heiratet, hat dieselben namensrechtlichen Optionen wie bei der ersten Eheschliessung. Die Brautleute können beide ihren aktuellen Namen behalten oder den Ledignamen eines Partners als gemeinsamen Familiennamen wählen. Als gemeinsamer Familienname kommt nur der Ledigname in Frage -- nicht ein Name aus einer früheren Ehe. Wer nach einer früheren Scheidung den Ehenamen beibehalten hat, führt bei einer Wiederheirat ohne Namensänderung weiterhin diesen Namen.</p>
+
+    <!-- Übergangsrecht -->
+    <h2 id="uebergangsrecht" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Übergangsrecht für vor 2013 Verheiratete</h2>
+
+    <p class="text-gray-700 mb-6">Ehepaare, die vor dem 1. Januar 2013 geheiratet haben, konnten von einer Übergangsregelung profitieren. Art. 8a des Schlusstitels ZGB (SchlT ZGB) ermöglichte es Ehegatten, die bei der Eheschliessung ihren Namen geändert hatten, jederzeit gegenüber der Zivilstandsbeamtin zu erklären, dass sie wieder ihren Ledignamen tragen wollen.</p>
+
+    <p class="text-gray-700 mb-6">Diese Möglichkeit besteht auch heute noch: Ein Ehegatte, der unter dem alten Recht den Namen des Partners angenommen hat, kann jederzeit zum eigenen Ledignamen zurückkehren. Die Erklärung beim Zivilstandsamt genügt, eine Begründung ist nicht erforderlich.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praxishinweis für vor 2013 Verheiratete:</p>
+        <p class="text-gray-700">Wer unter dem alten Recht einen Doppelnamen gebildet hat (z.B. «Müller Meier»), darf diesen weiterhin führen. Das neue Recht ermöglicht es aber, auf den eigenen Ledignamen zurückzukehren. Eine Neubildung eines Doppelnamens nach altem Recht ist hingegen nicht mehr möglich.</p>
+    </div>
+
+    <p class="text-gray-700 mb-6">Für den Namen der gemeinsamen Kinder galt eine spezielle Frist: Eltern, die aufgrund der Übergangsregelung ihren Ledignamen wieder angenommen hatten, konnten bis zum 31. Dezember 2013 erklären, dass ihre minderjährigen Kinder den Ledignamen des erklärenden Elternteils tragen sollen. Nach Ablauf dieser Frist ist eine Namensänderung der Kinder nur noch über Art. 30 ZGB (achtenswerte Gründe) möglich.</p>
+
+    <!-- Relevante Gesetzesartikel -->
+    <div class="bg-navy/5 rounded-lg p-8 mb-8">
+        <h2 class="text-2xl font-serif font-bold text-navy mb-4">Relevante Gesetzesartikel</h2>
+        <ul class="space-y-2 text-gray-700">
+            <li><strong>Art. 160 ZGB</strong> -- Name der Ehegatten</li>
+            <li><strong>Art. 119 ZGB</strong> -- Name nach Scheidung</li>
+            <li><strong>Art. 270 ZGB</strong> -- Familienname des Kindes (verheiratete Eltern)</li>
+            <li><strong>Art. 270a ZGB</strong> -- Änderung des Kindesnamens</li>
+            <li><strong>Art. 30 ZGB</strong> -- Namensänderung (allgemein, achtenswerte Gründe)</li>
+            <li><strong>Art. 37 Abs. 2 IPRG</strong> -- Namensrecht bei Eheschliessung in der Schweiz</li>
+            <li><strong>Art. 8a SchlT ZGB</strong> -- Übergangsrecht für vor 2013 Verheiratete</li>
         </ul>
-    </section>
+    </div>
 
     <!-- Anwalt-Sektion -->
-    <section class="mb-12">
+    <section id="anwalt" class="mb-12">
         <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
-        <p class="text-gray-700 mb-6">Die Namensführung bei der Hochzeit ist in den meisten Fällen unkompliziert. In bestimmten Situationen kann jedoch rechtliche Beratung sinnvoll sein, insbesondere wenn es um die Namensführung der Kinder oder Sonderfälle geht.</p>
-        <p class="text-gray-700 mb-6">Besonders in folgenden Situationen ist die Beratung durch einen erfahrenen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> empfohlen:</p>
-        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-            <li>Bei Uneinigkeit über den Namen der gemeinsamen Kinder</li>
-            <li>Wenn Sie einen ausländischen Doppelnamen tragen und dessen Eintragung wünschen</li>
-            <li>Bei Fragen zur Namensführung im internationalen Kontext (unterschiedliche Namensrechte)</li>
-            <li>Wenn Sie nach der Scheidung Ihren angenommenen Ehenamen behalten möchten und der Ex-Partner Einwände hat</li>
-        </ul>
-        <p class="text-gray-700 mb-6">Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> kann Sie zu den namensrechtlichen Optionen beraten und bei Streitigkeiten unterstützen.</p>
+
+        <p class="text-gray-700 mb-6">Die Namensführung bei der Hochzeit ist in den meisten Fällen unkompliziert und erfordert keine anwaltliche Beratung. In bestimmten Konstellationen kann jedoch die Unterstützung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> sinnvoll oder sogar notwendig sein -- insbesondere wenn internationale Bezüge bestehen oder Konflikte über den Namen der Kinder entstehen.</p>
+
+        <p class="text-gray-700 mb-6">Besonders in folgenden Situationen ist die Beratung durch einen erfahrenen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> empfohlen: bei Uneinigkeit der Ehegatten über den Familiennamen der gemeinsamen Kinder, wenn ein ausländischer Doppelname in der Schweiz anerkannt werden soll, bei Fragen zur Namensführung im internationalen Kontext mit unterschiedlichen nationalen Namensrechten, bei einer nachträglichen Namensänderung nach Art. 30 ZGB (insbesondere wenn die «achtenswerten Gründe» nachgewiesen werden müssen) oder wenn nach einer Scheidung Konflikte über die Weiterführung des Ehenamens bestehen.</p>
+
+        <p class="text-gray-700 mb-6">Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kann auch bei der Planung einer <a href="/eherecht/ehevertrag" class="text-gold hover:underline font-semibold">Ehevertrag</a>-Regelung beraten, die Namensklauseln im Zusammenhang mit einer allfälligen Scheidung berücksichtigt.</p>
+
         <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
             <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
-            <p class="mb-6">Haben Sie Fragen zur Namensführung bei der Hochzeit oder nach einer Scheidung? Wir beraten Sie gerne zu Ihren Optionen.</p>
+            <p class="mb-6">Haben Sie Fragen zur Namensführung bei der Hochzeit, im internationalen Kontext oder nach einer Scheidung? Unsere erfahrenen Anwälte beraten Sie gerne zu Ihren Optionen und den rechtlichen Konsequenzen.</p>
             <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
         </div>
     </section>
 
+    <!-- Fazit -->
+    <section id="fazit" class="mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+        <p class="text-gray-700 mb-6">Das Schweizer Namensrecht bei der Hochzeit ist seit der Revision 2013 klar und gleichstellungskonform geregelt. Jeder Ehegatte behält automatisch seinen Ledignamen, kann aber freiwillig den Ledignamen des Partners als gemeinsamen Familiennamen wählen oder im Alltag einen Allianznamen mit Bindestrich führen. Die Wahl hat direkte Auswirkungen auf den Namen der gemeinsamen Kinder und auf zahlreiche amtliche Dokumente.</p>
+
+        <p class="text-gray-700 mb-6">Die geplante Namensrechtsrevision wird voraussichtlich echte Doppelnamen wieder ermöglichen und damit eine seit 2013 bestehende Lücke schliessen. Bis dahin bleibt der Allianzname die einzige Möglichkeit, beide Familiennamen im Alltag zu kombinieren. Für die grosse Mehrheit der Paare ist die Namenswahl ein unkomplizierter Vorgang -- bei internationalen Bezügen, Konflikten über den Kindesnamen oder nachträglichen Änderungswünschen lohnt sich jedoch die Beratung durch einen spezialisierten Anwalt.</p>
+    </section>
+
     <!-- FAQ -->
-    <section class="mt-16 mb-12">
+    <section id="faq" class="mt-16 mb-12">
         <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
         <div class="space-y-6">
             <div class="border-b border-gray-200 pb-6">
                 <h3 class="text-xl font-semibold text-navy mb-3">Muss ich meinen Namen bei der Hochzeit ändern?</h3>
-                <p class="text-gray-700">Nein, seit 2013 behält jeder Ehegatte automatisch seinen Ledignamen. Eine Namensänderung ist freiwillig und muss aktiv erklärt werden.</p>
+                <p class="text-gray-700">Nein, seit 2013 behält jeder Ehegatte automatisch seinen Ledignamen (Art. 160 Abs. 1 ZGB). Eine Namensänderung ist freiwillig und erfordert eine aktive Erklärung gegenüber der Zivilstandsbeamtin bei der Trauung oder im Ehevorbereitungsverfahren.</p>
             </div>
             <div class="border-b border-gray-200 pb-6">
                 <h3 class="text-xl font-semibold text-navy mb-3">Welchen Namen bekommen unsere Kinder?</h3>
-                <p class="text-gray-700">Haben Sie einen gemeinsamen Familiennamen, erhalten die Kinder diesen automatisch. Behalten beide Ehegatten ihren Ledignamen, müssen Sie bei der Trauung bestimmen, welchen Ledignamen alle gemeinsamen Kinder tragen werden.</p>
+                <p class="text-gray-700">Haben Sie einen gemeinsamen Familiennamen gewählt, erhalten die Kinder automatisch diesen Namen. Behalten beide Ehegatten ihren Ledignamen, müssen Sie bei der Trauung bestimmen, welchen Ledignamen alle gemeinsamen Kinder tragen (Art. 270 Abs. 1 ZGB). Diese Wahl gilt für alle gemeinsamen Kinder und kann nur innerhalb eines Jahres nach der Geburt des ersten Kindes einmal geändert werden.</p>
             </div>
             <div class="border-b border-gray-200 pb-6">
-                <h3 class="text-xl font-semibold text-navy mb-3">Was ist ein Allianzname und wie bekomme ich ihn?</h3>
-                <p class="text-gray-700">Der Allianzname ist ein mit Bindestrich geführter Doppelname (z.B. Müller-Meier). Er ist kein amtlicher Name und wird nicht im Zivilstandsregister eingetragen, kann aber auf Antrag in Pass und ID eingetragen werden.</p>
+                <h3 class="text-xl font-semibold text-navy mb-3">Was ist ein Allianzname?</h3>
+                <p class="text-gray-700">Der Allianzname ist ein mit Bindestrich geführter Doppelname (z.B. Müller-Meier), bei dem der eigene Ledigname vorangestellt und der Name des Ehepartners angefügt wird. Er ist kein amtlicher Name und wird nicht im Zivilstandsregister eingetragen, kann aber auf Antrag in Pass und ID eingetragen werden. Er kann nicht an Kinder weitergegeben werden.</p>
             </div>
             <div class="border-b border-gray-200 pb-6">
                 <h3 class="text-xl font-semibold text-navy mb-3">Kann ich nach der Scheidung meinen Ledignamen wieder annehmen?</h3>
-                <p class="text-gray-700">Ja, jederzeit. Sie können beim Zivilstandsamt erklären, dass Sie wieder Ihren Ledignamen tragen möchten (Art. 119 ZGB). Die Erklärung kostet CHF 75 und ist ohne Begründung möglich.</p>
+                <p class="text-gray-700">Ja, jederzeit. Der Ehegatte, der seinen Namen bei der Heirat geändert hat, kann gegenüber jeder Zivilstandsbeamtin erklären, dass er wieder seinen Ledignamen tragen will (Art. 119 Abs. 1 ZGB). Es ist keine Begründung und keine Frist zu beachten. Die Kosten betragen CHF 75.</p>
             </div>
             <div class="border-b border-gray-200 pb-6">
-                <h3 class="text-xl font-semibold text-navy mb-3">Werden echte Doppelnamen (ohne Bindestrich) wieder eingeführt?</h3>
-                <p class="text-gray-700">Eine Reform des Namensrechts wird diskutiert. Der Bundesrat hat einen Entwurf vorgelegt, der echte Doppelnamen ermöglichen soll. Die Vorlage befindet sich im parlamentarischen Prozess (Stand 2025).</p>
+                <h3 class="text-xl font-semibold text-navy mb-3">Werden echte Doppelnamen wieder eingeführt?</h3>
+                <p class="text-gray-700">Ja, das Parlament arbeitet an einer Revision des Namensrechts (parlamentarische Initiative 17.523). Sowohl National- als auch Ständerat befürworten die Wiedereinführung echter Doppelnamen. Die Vorlage befindet sich in der Differenzbereinigung zwischen den beiden Kammern (Stand Februar 2026). Ein definitives Inkrafttreten ist frühestens 2027 zu erwarten.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann mein Mann meinen Namen annehmen?</h3>
+                <p class="text-gray-700">Ja, seit der Revision 2013 herrscht vollständige Gleichstellung. Der Bräutigam kann den Ledignamen der Braut als gemeinsamen Familiennamen annehmen, genauso wie umgekehrt (Art. 160 Abs. 2 ZGB). Es ist kein Gesuch und keine Begründung erforderlich -- die Erklärung bei der Zivilstandsbeamtin genügt.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was kostet eine Namensänderung nach der Hochzeit?</h3>
+                <p class="text-gray-700">Die Namenswahl bei der Trauung ist kostenlos. Kosten entstehen durch die Aktualisierung der Dokumente: neuer Pass (CHF 145), neue ID (CHF 75), neuer Führerausweis (CHF 30--50), neuer Fahrzeugausweis (CHF 30--50). Insgesamt sind mit CHF 300--500 zu rechnen, je nachdem welche Dokumente erneuert werden müssen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Welche Dokumente muss ich nach der Hochzeit ändern?</h3>
+                <p class="text-gray-700">Bei einer Namensänderung müssen mindestens der Führerausweis und der Fahrzeugausweis innerhalb von 14 Tagen aktualisiert werden (gesetzliche Pflicht). Pass und ID sollten bei Bedarf erneuert werden. Zudem sind Arbeitgeber, Krankenversicherung, Banken, AHV-Ausgleichskasse, Steuerbehörde und gegebenenfalls das Grundbuchamt und das Handelsregister zu informieren.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich meinen Namen nachträglich ändern?</h3>
+                <p class="text-gray-700">Eine nachträgliche Namensänderung ausserhalb der Möglichkeiten bei Heirat oder Scheidung erfordert ein Gesuch nach Art. 30 Abs. 1 ZGB bei der Regierung des Wohnsitzkantons. Es müssen «achtenswerte Gründe» nachgewiesen werden. Die Kosten betragen je nach Kanton CHF 200--600.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Was passiert mit dem Namen meiner Kinder bei einer Scheidung?</h3>
+                <p class="text-gray-700">Die Kinder behalten bei einer Scheidung ihren bisherigen Familiennamen -- auch wenn ein Elternteil wieder seinen Ledignamen annimmt. Eine Namensänderung des Kindes ist nur mit Bewilligung der kantonalen Behörde nach Art. 30 ZGB und bei Vorliegen achtenswerter Gründe möglich. Ab dem 12. Altersjahr ist zudem die Zustimmung des Kindes erforderlich.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich als vor 2013 Verheiratete das neue Namensrecht nutzen?</h3>
+                <p class="text-gray-700">Ja, teilweise. Wer unter dem alten Recht den Familiennamen des Partners angenommen hat, kann jederzeit beim Zivilstandsamt erklären, wieder den eigenen Ledignamen zu tragen (Art. 8a SchlT ZGB). Die Gebühr beträgt CHF 75. Einen bestehenden Doppelnamen nach altem Recht dürfen Sie weiterhin führen. Eine Neubildung eines Doppelnamens ist jedoch nicht möglich.</p>
             </div>
         </div>
-    </section>
-
-    <section class="bg-navy/5 rounded-lg p-8 mb-8">
-        <h2 class="text-2xl font-serif font-bold text-navy mb-4">Relevante Gesetzesartikel</h2>
-        <ul class="space-y-2 text-gray-700">
-            <li>Art. 160 ZGB - Name der Ehegatten</li>
-            <li>Art. 119 ZGB - Namensänderung nach Scheidung</li>
-            <li>Art. 270 ZGB - Name des Kindes (verheiratete Eltern)</li>
-            <li>Art. 30 ZGB - Namensänderung (allgemein)</li>
-        </ul>
     </section>
 
     <!-- Schema Markup -->
@@ -222,7 +750,7 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": "Namensänderung nach der Hochzeit in der Schweiz",
-        "description": "Leitfaden zur Namensänderung nach der Hochzeit in der Schweiz: Namensrecht seit 2013, Optionen, Allianzname und praktische Checkliste.",
+        "description": "Namensänderung nach der Hochzeit: Alle Optionen (Ledigname, gemeinsamer Name, Allianzname), Name der Kinder, Kosten & Checkliste. Mit Art. 160 ZGB erklärt.",
         "author": {
             "@type": "Organization",
             "name": "Familienrechtanwalt.ch"
@@ -233,7 +761,7 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
             "url": "https://familienrechtanwalt.ch"
         },
         "datePublished": "2025-01-20",
-        "dateModified": "2025-01-20",
+        "dateModified": "2026-02-14",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://familienrechtanwalt.ch/eherecht/namensaenderung-hochzeit"
@@ -249,7 +777,7 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
                 "name": "Muss ich meinen Namen bei der Hochzeit ändern?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Nein, seit 2013 behält jeder Ehegatte automatisch seinen Ledignamen. Eine Namensänderung ist freiwillig und muss aktiv erklärt werden."
+                    "text": "Nein, seit 2013 behält jeder Ehegatte automatisch seinen Ledignamen (Art. 160 Abs. 1 ZGB). Eine Namensänderung ist freiwillig und erfordert eine aktive Erklärung gegenüber der Zivilstandsbeamtin bei der Trauung oder im Ehevorbereitungsverfahren."
                 }
             },
             {
@@ -257,15 +785,15 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
                 "name": "Welchen Namen bekommen unsere Kinder?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Haben Sie einen gemeinsamen Familiennamen, erhalten die Kinder diesen automatisch. Behalten beide Ehegatten ihren Ledignamen, müssen Sie bei der Trauung bestimmen, welchen Ledignamen alle gemeinsamen Kinder tragen werden."
+                    "text": "Haben Sie einen gemeinsamen Familiennamen gewählt, erhalten die Kinder automatisch diesen Namen. Behalten beide Ehegatten ihren Ledignamen, müssen Sie bei der Trauung bestimmen, welchen Ledignamen alle gemeinsamen Kinder tragen (Art. 270 Abs. 1 ZGB). Diese Wahl gilt für alle gemeinsamen Kinder und kann nur innerhalb eines Jahres nach der Geburt des ersten Kindes einmal geändert werden."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Was ist ein Allianzname und wie bekomme ich ihn?",
+                "name": "Was ist ein Allianzname?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Der Allianzname ist ein mit Bindestrich geführter Doppelname (z.B. Müller-Meier). Er ist kein amtlicher Name und wird nicht im Zivilstandsregister eingetragen, kann aber auf Antrag in Pass und ID eingetragen werden."
+                    "text": "Der Allianzname ist ein mit Bindestrich geführter Doppelname (z.B. Müller-Meier), bei dem der eigene Ledigname vorangestellt und der Name des Ehepartners angefügt wird. Er ist kein amtlicher Name und wird nicht im Zivilstandsregister eingetragen, kann aber auf Antrag in Pass und ID eingetragen werden. Er kann nicht an Kinder weitergegeben werden."
                 }
             },
             {
@@ -273,15 +801,63 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
                 "name": "Kann ich nach der Scheidung meinen Ledignamen wieder annehmen?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Ja, jederzeit. Sie können beim Zivilstandsamt erklären, dass Sie wieder Ihren Ledignamen tragen möchten (Art. 119 ZGB). Die Erklärung kostet CHF 75 und ist ohne Begründung möglich."
+                    "text": "Ja, jederzeit. Der Ehegatte, der seinen Namen bei der Heirat geändert hat, kann gegenüber jeder Zivilstandsbeamtin erklären, dass er wieder seinen Ledignamen tragen will (Art. 119 Abs. 1 ZGB). Es ist keine Begründung und keine Frist zu beachten. Die Kosten betragen CHF 75."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Werden echte Doppelnamen (ohne Bindestrich) wieder eingeführt?",
+                "name": "Werden echte Doppelnamen wieder eingeführt?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Eine Reform des Namensrechts wird diskutiert. Der Bundesrat hat einen Entwurf vorgelegt, der echte Doppelnamen ermöglichen soll. Die Vorlage befindet sich im parlamentarischen Prozess (Stand 2025)."
+                    "text": "Ja, das Parlament arbeitet an einer Revision des Namensrechts (parlamentarische Initiative 17.523). Sowohl National- als auch Ständerat befürworten die Wiedereinführung echter Doppelnamen. Die Vorlage befindet sich in der Differenzbereinigung zwischen den beiden Kammern (Stand Februar 2026). Ein definitives Inkrafttreten ist frühestens 2027 zu erwarten."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann mein Mann meinen Namen annehmen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, seit der Revision 2013 herrscht vollständige Gleichstellung. Der Bräutigam kann den Ledignamen der Braut als gemeinsamen Familiennamen annehmen, genauso wie umgekehrt (Art. 160 Abs. 2 ZGB). Es ist kein Gesuch und keine Begründung erforderlich -- die Erklärung bei der Zivilstandsbeamtin genügt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was kostet eine Namensänderung nach der Hochzeit?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Namenswahl bei der Trauung ist kostenlos. Kosten entstehen durch die Aktualisierung der Dokumente: neuer Pass (CHF 145), neue ID (CHF 75), neuer Führerausweis (CHF 30--50), neuer Fahrzeugausweis (CHF 30--50). Insgesamt sind mit CHF 300--500 zu rechnen, je nachdem welche Dokumente erneuert werden müssen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welche Dokumente muss ich nach der Hochzeit ändern?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei einer Namensänderung müssen mindestens der Führerausweis und der Fahrzeugausweis innerhalb von 14 Tagen aktualisiert werden (gesetzliche Pflicht). Pass und ID sollten bei Bedarf erneuert werden. Zudem sind Arbeitgeber, Krankenversicherung, Banken, AHV-Ausgleichskasse, Steuerbehörde und gegebenenfalls das Grundbuchamt und das Handelsregister zu informieren."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich meinen Namen nachträglich ändern?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Eine nachträgliche Namensänderung ausserhalb der Möglichkeiten bei Heirat oder Scheidung erfordert ein Gesuch nach Art. 30 Abs. 1 ZGB bei der Regierung des Wohnsitzkantons. Es müssen «achtenswerte Gründe» nachgewiesen werden. Die Kosten betragen je nach Kanton CHF 200--600."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert mit dem Namen meiner Kinder bei einer Scheidung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Kinder behalten bei einer Scheidung ihren bisherigen Familiennamen -- auch wenn ein Elternteil wieder seinen Ledignamen annimmt. Eine Namensänderung des Kindes ist nur mit Bewilligung der kantonalen Behörde nach Art. 30 ZGB und bei Vorliegen achtenswerter Gründe möglich. Ab dem 12. Altersjahr ist zudem die Zustimmung des Kindes erforderlich."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann ich als vor 2013 Verheiratete das neue Namensrecht nutzen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, teilweise. Wer unter dem alten Recht den Familiennamen des Partners angenommen hat, kann jederzeit beim Zivilstandsamt erklären, wieder den eigenen Ledignamen zu tragen (Art. 8a SchlT ZGB). Die Gebühr beträgt CHF 75. Einen bestehenden Doppelnamen nach altem Recht dürfen Sie weiterhin führen. Eine Neubildung eines Doppelnamens ist jedoch nicht möglich."
                 }
             }
         ]

@@ -3,9 +3,9 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
 ---
 
 <ArticleLayout
-    title="Konkubinatsvertrag in der Schweiz: Inhalt, Muster und rechtliche Grundlagen"
-    description="Leitfaden zum Konkubinatsvertrag in der Schweiz: Inhalt, Formvorschriften, empfohlene Regelungen und häufige Fehler."
-    keywords="Konkubinatsvertrag, Lebenspartnerschaftsvertrag, unverheiratete Paare, Formvorschriften, Haushaltskosten, Trennung, Schweiz"
+    title="Konkubinatsvertrag in der Schweiz: Inhalt, Musterklauseln und rechtliche Grundlagen"
+    description="Konkubinatsvertrag umfassend erklärt: Inhalte, Formvorschriften, Musterklauseln, Immobilienregelung, Trennungsfolgen und Kosten. Mit Praxistipps und FAQ."
+    keywords="Konkubinatsvertrag, Konkubinatsvertrag Schweiz, Lebenspartnerschaftsvertrag, unverheiratete Paare, Konkubinat Vertrag, Konkubinatsvertrag Inhalt, Konkubinatsvertrag Kosten, gemeinsame Immobilie Konkubinat"
     category="Eherecht"
     categoryLink="/eherecht"
 >
@@ -15,201 +15,757 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         <ul class="space-y-3">
             <li class="flex items-start">
                 <span class="text-gold mr-3">✓</span>
-                <span>Der Konkubinatsvertrag ist formfrei – aus Beweisgründen ist die schriftliche Form jedoch dringend empfohlen.</span>
+                <span>Der Konkubinatsvertrag ist ein sogenannter Innominatvertrag und grundsätzlich formfrei gültig. Aus Beweisgründen ist die schriftliche Form mit Unterschrift beider Partner jedoch dringend empfohlen.</span>
             </li>
             <li class="flex items-start">
                 <span class="text-gold mr-3">✓</span>
-                <span>Erbrechtliche Verfügungen gehören nicht in den Konkubinatsvertrag – dafür ist ein Testament oder Erbvertrag (notariell) erforderlich.</span>
+                <span>Das Schweizer Recht enthält keine spezifischen Bestimmungen zum Konkubinat. Ohne vertragliche Regelung wenden Gerichte bei Streitigkeiten häufig die Regeln der einfachen Gesellschaft an (Art. 530 ff. OR).</span>
             </li>
             <li class="flex items-start">
                 <span class="text-gold mr-3">✓</span>
-                <span>Empfohlene Regelungen: Haushaltskosten, Eigentumsverhältnisse, gemeinsame Immobilie, Trennungsfolgen und Kinderbetreuung.</span>
+                <span>Empfohlene Regelungen: Kostenaufteilung, Eigentumsverhältnisse, gemeinsame Immobilie, Trennungsfolgen, Kinderbetreuung, Investitionen in das Eigentum des Partners und Vorsorge.</span>
             </li>
             <li class="flex items-start">
                 <span class="text-gold mr-3">✓</span>
-                <span>Kosten: Kostenlose Vorlagen bis CHF 2'000+ bei anwaltlicher Erstellung für komplexe Verhältnisse.</span>
+                <span>Erbrechtliche Verfügungen im Konkubinatsvertrag sind nichtig. Dafür ist ein separates Testament oder ein notariell beurkundeter Erbvertrag erforderlich.</span>
             </li>
             <li class="flex items-start">
                 <span class="text-gold mr-3">✓</span>
-                <span>Ohne Konkubinatsvertrag wenden Gerichte bei Trennung häufig die Regeln der einfachen Gesellschaft an (Art. 530 ff. OR).</span>
+                <span>Kosten: Von kostenlosen Vorlagen (nur bei sehr einfachen Verhältnissen) bis CHF 2'000+ bei anwaltlicher Erstellung für komplexe Situationen mit Immobilienbesitz.</span>
+            </li>
+            <li class="flex items-start">
+                <span class="text-gold mr-3">✓</span>
+                <span>Der Konkubinatsvertrag sollte stets durch ergänzende Dokumente wie Testament, Vorsorgeauftrag, Patientenverfügung und Begünstigungserklärungen bei Pensionskasse und Säule 3a flankiert werden.</span>
             </li>
         </ul>
     </div>
 
-    <section class="bg-white rounded-lg shadow-md p-8 mb-8">
-        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Was ist ein Konkubinatsvertrag?</h2>
-        <p class="mb-4">Ein Konkubinatsvertrag ist ein privatrechtlicher Vertrag zwischen zwei Personen, die in einer nichtehelichen Lebensgemeinschaft zusammenleben. Er regelt die Bedingungen des gemeinsamen Zusammenlebens und definiert die gegenseitigen Rechte und Pflichten.</p>
-        <div class="bg-gold/10 border-l-4 border-gold p-6 rounded-r-lg">
-            <p class="text-gray-700"><strong>Wichtig:</strong> Da das ZGB keine Bestimmungen über das Konkubinat enthält, schafft der Konkubinatsvertrag die rechtliche Grundlage, die das Gesetz nicht bietet.</p>
-        </div>
-    </section>
+    <!-- Inhaltsverzeichnis -->
+    <nav class="bg-gray-50 border border-gray-200 rounded-lg p-8 mb-12">
+        <h2 class="font-serif text-2xl font-bold text-navy mb-6">Inhaltsverzeichnis</h2>
+        <ol class="space-y-2 text-gray-700">
+            <li><a href="#was-ist-ein-konkubinatsvertrag" class="text-gold hover:underline">1. Was ist ein Konkubinatsvertrag?</a></li>
+            <li><a href="#rechtliche-grundlagen" class="text-gold hover:underline">2. Rechtliche Grundlagen</a></li>
+            <li><a href="#formvorschriften" class="text-gold hover:underline">3. Formvorschriften im Detail</a></li>
+            <li><a href="#vertragsinhalte" class="text-gold hover:underline">4. Empfohlene Vertragsinhalte im Detail</a></li>
+            <li><a href="#gemeinsame-immobilie" class="text-gold hover:underline">5. Gemeinsame Immobilie im Konkubinatsvertrag</a></li>
+            <li><a href="#trennungsregelungen" class="text-gold hover:underline">6. Trennungsregelungen</a></li>
+            <li><a href="#kinderregelungen" class="text-gold hover:underline">7. Kinderregelungen</a></li>
+            <li><a href="#unwirksame-klauseln" class="text-gold hover:underline">8. Was NICHT in den Konkubinatsvertrag gehört</a></li>
+            <li><a href="#musterklauseln" class="text-gold hover:underline">9. Musterklauseln für den Konkubinatsvertrag</a></li>
+            <li><a href="#ergaenzende-dokumente" class="text-gold hover:underline">10. Ergänzende Dokumente</a></li>
+            <li><a href="#haeufige-fehler" class="text-gold hover:underline">11. Häufige Fehler bei Konkubinatsverträgen</a></li>
+            <li><a href="#kosten" class="text-gold hover:underline">12. Kosten eines Konkubinatsvertrags</a></li>
+            <li><a href="#aenderung-kuendigung" class="text-gold hover:underline">13. Änderung und Kündigung des Vertrags</a></li>
+            <li><a href="#anwalt" class="text-gold hover:underline">14. Wann Sie einen Anwalt beiziehen sollten</a></li>
+            <li><a href="#fazit" class="text-gold hover:underline">15. Fazit</a></li>
+            <li><a href="#faq" class="text-gold hover:underline">16. Häufig gestellte Fragen (FAQ)</a></li>
+        </ol>
+    </nav>
 
-    <section class="bg-white rounded-lg shadow-md p-8 mb-8">
-        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Formvorschriften</h2>
-        <p class="mb-4">Der Konkubinatsvertrag unterliegt grundsätzlich der <strong>Formfreiheit</strong>. Aus Beweisgründen ist jedoch die schriftliche Form dringend empfohlen.</p>
-        <div class="overflow-x-auto">
-            <table class="min-w-full border border-gray-300">
-                <thead class="bg-navy text-white">
-                    <tr>
-                        <th class="px-4 py-3 text-left">Vertragsinhalt</th>
-                        <th class="px-4 py-3 text-left">Erforderliche Form</th>
-                    </tr>
-                </thead>
-                <tbody class="divide-y divide-gray-200">
-                    <tr class="bg-white"><td class="px-4 py-3">Haushaltskosten, Eigentumsverhältnisse</td><td class="px-4 py-3">Einfache Schriftlichkeit (empfohlen)</td></tr>
-                    <tr class="bg-gray-50"><td class="px-4 py-3">Trennungsregelungen, Unterhalt</td><td class="px-4 py-3">Einfache Schriftlichkeit</td></tr>
-                    <tr class="bg-white"><td class="px-4 py-3">Immobilienregelungen (ohne Übertragung)</td><td class="px-4 py-3">Einfache Schriftlichkeit</td></tr>
-                    <tr class="bg-gray-50"><td class="px-4 py-3">Grundstückübertragung</td><td class="px-4 py-3 font-semibold">Öffentliche Beurkundung</td></tr>
-                    <tr class="bg-white"><td class="px-4 py-3">Erbrechtliche Verfügungen</td><td class="px-4 py-3 font-semibold">Öffentliche Beurkundung (Erbvertrag)</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+    <p class="text-xl text-gray-700 mb-8 leading-relaxed">In der Schweiz leben über 700'000 Paare im <a href="/eherecht/konkubinat" class="text-gold hover:underline font-semibold">Konkubinat</a> -- Tendenz steigend. Anders als bei der Ehe oder der <a href="/eherecht/eingetragene-partnerschaft" class="text-gold hover:underline font-semibold">eingetragenen Partnerschaft</a> gibt es für unverheiratete Paare jedoch keinerlei gesetzliche Regelungen zu Unterhalt, Vermögensteilung oder gegenseitigen Rechten. Der Konkubinatsvertrag schliesst diese Lücke und schafft Rechtssicherheit für den gemeinsamen Alltag, eine allfällige Trennung und den Todesfall. Dieser umfassende Leitfaden erklärt alle Aspekte des Konkubinatsvertrags im Schweizer Recht.</p>
 
-    <section class="bg-white rounded-lg shadow-md p-8 mb-8">
-        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Empfohlene Vertragsinhalte</h2>
-        <div class="overflow-x-auto">
-            <table class="min-w-full border border-gray-300">
-                <thead class="bg-navy text-white">
-                    <tr>
-                        <th class="px-4 py-3 text-left">Bereich</th>
-                        <th class="px-4 py-3 text-left">Regelungsinhalt</th>
-                    </tr>
-                </thead>
-                <tbody class="divide-y divide-gray-200">
-                    <tr class="bg-white"><td class="px-4 py-3 font-medium">Lebenshaltungskosten</td><td class="px-4 py-3">Aufteilung von Miete, Nebenkosten, Lebensmitteln</td></tr>
-                    <tr class="bg-gray-50"><td class="px-4 py-3 font-medium">Eigentumsverhältnisse</td><td class="px-4 py-3">Inventar des Eigenguts, Regelung gemeinsamer Anschaffungen</td></tr>
-                    <tr class="bg-white"><td class="px-4 py-3 font-medium">Gemeinsame Immobilie</td><td class="px-4 py-3">Eigentumsform, Finanzierung, Mehrwertbeteiligung</td></tr>
-                    <tr class="bg-gray-50"><td class="px-4 py-3 font-medium">Trennung</td><td class="px-4 py-3">Verfahren, Auszugsfrist, Ausgleichszahlungen</td></tr>
-                    <tr class="bg-white"><td class="px-4 py-3 font-medium">Kinder</td><td class="px-4 py-3">Betreuungsregelung, Unterhalt, elterliche Sorge</td></tr>
-                    <tr class="bg-gray-50"><td class="px-4 py-3 font-medium">Todesfall</td><td class="px-4 py-3">Verweis auf Testament/Erbvertrag</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+    <!-- 1. Was ist ein Konkubinatsvertrag -->
+    <h2 id="was-ist-ein-konkubinatsvertrag" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Was ist ein Konkubinatsvertrag?</h2>
 
-    <section class="bg-white rounded-lg shadow-md p-8 mb-8">
-        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Aufteilung der Haushaltskosten</h2>
-        <div class="overflow-x-auto">
-            <table class="min-w-full border border-gray-300">
-                <thead class="bg-navy text-white">
-                    <tr>
-                        <th class="px-4 py-3 text-left">Aufteilungsmodell</th>
-                        <th class="px-4 py-3 text-left">Beschreibung</th>
-                        <th class="px-4 py-3 text-left">Geeignet für</th>
-                    </tr>
-                </thead>
-                <tbody class="divide-y divide-gray-200">
-                    <tr class="bg-white"><td class="px-4 py-3 font-medium">Hälftige Teilung</td><td class="px-4 py-3">Beide tragen je 50%</td><td class="px-4 py-3">Ähnliches Einkommen</td></tr>
-                    <tr class="bg-gray-50"><td class="px-4 py-3 font-medium">Verhältnis zum Einkommen</td><td class="px-4 py-3">Proportional zum Nettoeinkommen</td><td class="px-4 py-3">Unterschiedliches Einkommen</td></tr>
-                    <tr class="bg-white"><td class="px-4 py-3 font-medium">Feste Beträge</td><td class="px-4 py-3">Jeder zahlt einen fixierten Betrag</td><td class="px-4 py-3">Einfache Handhabung</td></tr>
-                    <tr class="bg-gray-50"><td class="px-4 py-3 font-medium">Aufgabenteilung</td><td class="px-4 py-3">Ein Partner zahlt mehr, der andere übernimmt Hausarbeit</td><td class="px-4 py-3">Traditionelle Rollenverteilung</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+    <p class="text-gray-700 mb-6">Ein Konkubinatsvertrag (auch Lebenspartnerschaftsvertrag oder Zusammenlebensvertrag genannt) ist ein privatrechtlicher Vertrag zwischen zwei Personen, die in einer nichtehelichen Lebensgemeinschaft zusammenleben. Er regelt die Bedingungen des gemeinsamen Zusammenlebens und definiert die gegenseitigen Rechte und Pflichten der Partner.</p>
 
-    <section class="bg-white rounded-lg shadow-md p-8 mb-8">
-        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Was nicht in den Konkubinatsvertrag gehört</h2>
-        <div class="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-lg mb-6">
-            <h3 class="font-semibold text-red-800 mb-2">Erbrechtliche Verfügungen</h3>
-            <p class="text-gray-700">Für erbrechtliche Verfügungen ist ein Testament (eigenhändig) oder Erbvertrag (notariell beurkundet) erforderlich. Im Konkubinatsvertrag enthaltene erbrechtliche Klauseln sind nichtig.</p>
-        </div>
-        <h3 class="text-lg font-semibold text-navy mb-3">Weitere unwirksame Klauseln:</h3>
-        <ul class="list-disc list-inside space-y-2 text-gray-700">
-            <li>Verzicht auf künftigen Kindesunterhalt</li>
-            <li>Sittenwidrige Vereinbarungen</li>
-            <li>Vereinbarungen zu Lasten Dritter</li>
-            <li>Pflichtteilsverletzende Verfügungen</li>
-        </ul>
-    </section>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Rechtliche Natur: Innominatvertrag</h3>
 
-    <section class="bg-white rounded-lg shadow-md p-8 mb-8">
-        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Kosten</h2>
-        <div class="overflow-x-auto">
-            <table class="min-w-full border border-gray-300">
-                <thead class="bg-navy text-white">
-                    <tr>
-                        <th class="px-4 py-3 text-left">Erstellungsart</th>
-                        <th class="px-4 py-3 text-left">Kosten</th>
-                        <th class="px-4 py-3 text-left">Geeignet für</th>
-                    </tr>
-                </thead>
-                <tbody class="divide-y divide-gray-200">
-                    <tr class="bg-white"><td class="px-4 py-3">Kostenlose Vorlage</td><td class="px-4 py-3 font-semibold">CHF 0</td><td class="px-4 py-3">Sehr einfache Verhältnisse</td></tr>
-                    <tr class="bg-gray-50"><td class="px-4 py-3">Kostenpflichtige Mustervorlage</td><td class="px-4 py-3 font-semibold">CHF 50-200</td><td class="px-4 py-3">Einfache bis mittlere Komplexität</td></tr>
-                    <tr class="bg-white"><td class="px-4 py-3">Online-Rechtsdienst</td><td class="px-4 py-3 font-semibold">CHF 200-500</td><td class="px-4 py-3">Mittlere Komplexität</td></tr>
-                    <tr class="bg-gray-50"><td class="px-4 py-3">Anwalt oder Notar</td><td class="px-4 py-3 font-semibold">CHF 500-2'000+</td><td class="px-4 py-3">Komplexe Verhältnisse, Immobilien</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+    <p class="text-gray-700 mb-6">Der Konkubinatsvertrag ist ein sogenannter Innominatvertrag -- ein Vertrag, der im Gesetz nicht ausdrücklich geregelt ist. Er basiert auf dem Grundsatz der Vertragsfreiheit (Art. 19 OR), der es den Parteien erlaubt, den Inhalt eines Vertrags innerhalb der Schranken des Gesetzes frei zu bestimmen. Der Vertrag darf weder gegen die öffentliche Ordnung noch gegen die guten Sitten verstossen und keine unmöglichen oder widerrechtlichen Leistungen zum Gegenstand haben (Art. 20 OR).</p>
 
-    <section class="bg-white rounded-lg shadow-md p-8 mb-8">
-        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Ergänzende Dokumente</h2>
-        <div class="overflow-x-auto">
-            <table class="min-w-full border border-gray-300">
-                <thead class="bg-navy text-white">
-                    <tr>
-                        <th class="px-4 py-3 text-left">Dokument</th>
-                        <th class="px-4 py-3 text-left">Erforderliche Massnahme</th>
-                        <th class="px-4 py-3 text-left">Anmerkung</th>
-                    </tr>
-                </thead>
-                <tbody class="divide-y divide-gray-200">
-                    <tr class="bg-white"><td class="px-4 py-3 font-medium">Testament</td><td class="px-4 py-3">Eigenhändig oder öffentlich beurkundet</td><td class="px-4 py-3">Für erbrechtliche Begünstigung</td></tr>
-                    <tr class="bg-gray-50"><td class="px-4 py-3 font-medium">Erbvertrag</td><td class="px-4 py-3">Notariell beurkundet</td><td class="px-4 py-3">Gegenseitige Verbindlichkeit</td></tr>
-                    <tr class="bg-white"><td class="px-4 py-3 font-medium">Pensionskasse</td><td class="px-4 py-3">Schriftliche Anmeldung des Partners</td><td class="px-4 py-3">Reglement prüfen</td></tr>
-                    <tr class="bg-gray-50"><td class="px-4 py-3 font-medium">Säule 3a</td><td class="px-4 py-3">Begünstigungserklärung</td><td class="px-4 py-3">5 Jahre Zusammenleben</td></tr>
-                    <tr class="bg-white"><td class="px-4 py-3 font-medium">Vorsorgeauftrag</td><td class="px-4 py-3">Eigenhändig oder notariell</td><td class="px-4 py-3">Für Urteilsunfähigkeit</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Warum ist ein Konkubinatsvertrag notwendig?</h3>
+
+    <p class="text-gray-700 mb-6">Das Schweizer Zivilgesetzbuch (ZGB) enthält keine spezifischen Bestimmungen zum Konkubinat. Anders als bei der Ehe (Art. 159 ff. ZGB) oder der eingetragenen Partnerschaft (PartG) haben unverheiratete Partner keine gegenseitige Unterhaltspflicht, kein gesetzliches Erbrecht und keine automatische Vermögensteilung bei einer Trennung. Ohne vertragliche Regelung stehen die Partner im Streitfall weitgehend schutzlos da.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praxishinweis:</p>
+        <p class="text-gray-700">Ohne Konkubinatsvertrag wenden Gerichte bei vermögensrechtlichen Streitigkeiten häufig die Regeln der einfachen Gesellschaft an (Art. 530 ff. OR). Diese Regeln sind jedoch nicht auf Lebensgemeinschaften zugeschnitten und führen oft zu unbefriedigenden oder unbeabsichtigten Ergebnissen -- insbesondere bei der Auflösung einer langjährigen Partnerschaft.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Für wen ist ein Konkubinatsvertrag sinnvoll?</h3>
+
+    <p class="text-gray-700 mb-6">Grundsätzlich profitiert jedes unverheiratete Paar, das zusammenlebt, von einem Konkubinatsvertrag. Besonders empfehlenswert ist er in folgenden Konstellationen: wenn die Partner unterschiedlich hohe Einkommen oder Vermögen haben, wenn ein Partner für die Kinderbetreuung die Erwerbstätigkeit reduziert oder aufgibt, wenn gemeinsam eine Immobilie erworben wird, wenn ein Partner Investitionen in das Eigentum des anderen tätigt oder wenn ein Partner im Geschäft des anderen mitarbeitet.</p>
+
+    <!-- 2. Rechtliche Grundlagen -->
+    <h2 id="rechtliche-grundlagen" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen des Konkubinatsvertrags</h2>
+
+    <p class="text-gray-700 mb-6">Da der Konkubinatsvertrag gesetzlich nicht geregelt ist, stützt er sich auf verschiedene allgemeine Bestimmungen des Obligationenrechts und des Zivilgesetzbuches. Die wichtigsten Rechtsgrundlagen im Überblick:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Inhalt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Bedeutung für den Konkubinatsvertrag</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Art. 1 ff. OR</td>
+                    <td class="px-6 py-4 text-gray-700">Allgemeine Vertragsbestimmungen</td>
+                    <td class="px-6 py-4 text-gray-700">Zustandekommen des Vertrags durch übereinstimmende Willensäusserung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Art. 11 OR</td>
+                    <td class="px-6 py-4 text-gray-700">Formfreiheit</td>
+                    <td class="px-6 py-4 text-gray-700">Verträge bedürfen nur dann einer besonderen Form, wenn das Gesetz es vorschreibt</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Art. 19 OR</td>
+                    <td class="px-6 py-4 text-gray-700">Vertragsfreiheit</td>
+                    <td class="px-6 py-4 text-gray-700">Inhalt des Vertrags kann innerhalb der Schranken des Gesetzes frei bestimmt werden</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Art. 20 OR</td>
+                    <td class="px-6 py-4 text-gray-700">Nichtigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Verträge mit unmöglichem, widerrechtlichem oder sittenwidrigem Inhalt sind nichtig</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Art. 530 ff. OR</td>
+                    <td class="px-6 py-4 text-gray-700">Einfache Gesellschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Subsidiäre Regelung bei fehlender vertraglicher Vereinbarung (gemeinsamer Zweck)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Art. 930 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Besitzvermutung</td>
+                    <td class="px-6 py-4 text-gray-700">Besitzer einer beweglichen Sache wird als Eigentümer vermutet</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Art. 8 ZGB</td>
+                    <td class="px-6 py-4 text-gray-700">Beweislast</td>
+                    <td class="px-6 py-4 text-gray-700">Wer Eigentum behauptet, muss dies beweisen -- daher die Wichtigkeit eines Inventars</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Die einfache Gesellschaft als Auffangregelung</h3>
+
+    <p class="text-gray-700 mb-6">Fehlt ein Konkubinatsvertrag, qualifizieren Gerichte das Zusammenleben häufig als einfache Gesellschaft im Sinne von Art. 530 OR. Eine einfache Gesellschaft entsteht, wenn sich zwei Personen vertraglich zur Erreichung eines gemeinsamen Zwecks mit gemeinsamen Kräften oder Mitteln verbinden. Im Kontext des Konkubinats wird dieser gemeinsame Zweck im gemeinsamen Zusammenleben und der gegenseitigen Unterstützung gesehen.</p>
+
+    <p class="text-gray-700 mb-6">Die Konsequenzen bei einer Auflösung nach den Regeln der einfachen Gesellschaft sind weitreichend: Grundsätzlich steht jedem Gesellschafter ein Liquidationsanteil am gemeinsamen Vermögen zu (Art. 549 OR). Die Bestimmung der jeweiligen Beiträge und Anteile ist in der Praxis jedoch oft streitig und erfordert eine aufwändige Beweisführung, was zu langwierigen und teuren Gerichtsverfahren führen kann.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig zu wissen:</p>
+        <p class="text-gray-700">Das Bundesgericht hat in mehreren Entscheiden bestätigt, dass die Regeln der einfachen Gesellschaft auf Konkubinatsverhältnisse anwendbar sein können, wenn die Partner gemeinsam wirtschaften und einen gemeinsamen Zweck verfolgen (BGE 108 II 204). Allerdings muss im Einzelfall geprüft werden, ob tatsächlich eine einfache Gesellschaft vorliegt oder ob nur ein schlichtes Zusammenleben ohne gemeinsame Zweckverfolgung besteht.</p>
+    </div>
+
+    <!-- 3. Formvorschriften im Detail -->
+    <h2 id="formvorschriften" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Formvorschriften im Detail</h2>
+
+    <p class="text-gray-700 mb-6">Der Konkubinatsvertrag unterliegt dem Grundsatz der Formfreiheit (Art. 11 OR). Er kann theoretisch auch mündlich abgeschlossen werden. Aus Beweisgründen ist die schriftliche Form jedoch dringend empfohlen. Bestimmte Vertragsinhalte erfordern darüber hinaus zwingende Formvorschriften.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Übersicht: Form nach Vertragsinhalt</h3>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Vertragsinhalt</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erforderliche Form</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Haushaltskosten, Eigentumsverhältnisse, Inventar</td>
+                    <td class="px-6 py-4 text-gray-700">Formfrei (schriftlich empfohlen)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 11 OR</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Trennungsregelungen, Ausgleichszahlungen</td>
+                    <td class="px-6 py-4 text-gray-700">Formfrei (schriftlich empfohlen)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 11 OR</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Immobilienregelungen (ohne Eigentumsübertragung)</td>
+                    <td class="px-6 py-4 text-gray-700">Formfrei (schriftlich empfohlen)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 11 OR</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Vorkaufsrecht an Grundstücken</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Schriftlich (für Vormerkung im Grundbuch: öffentliche Beurkundung)</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 216c OR / Art. 681a ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Grundstückkauf oder -übertragung</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Öffentliche Beurkundung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 657 Abs. 1 ZGB / Art. 216 OR</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Erbrechtliche Verfügungen (Erbvertrag)</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Öffentliche Beurkundung</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 512 ZGB</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700">Schenkungsversprechen</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">Schriftlich</td>
+                    <td class="px-6 py-4 text-gray-700">Art. 243 Abs. 1 OR</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wann ist ein Notar erforderlich?</h3>
+
+    <p class="text-gray-700 mb-6">Eine notarielle Beurkundung (öffentliche Beurkundung) ist in folgenden Fällen zwingend: bei der Übertragung von Grundeigentum (Art. 657 ZGB), bei der Errichtung eines Erbvertrags (Art. 512 ZGB) und bei der Vormerkung eines Vorkaufsrechts im Grundbuch. Für den reinen Konkubinatsvertrag ohne solche Bestandteile genügt hingegen die einfache Schriftlichkeit mit Datum und eigenhändiger Unterschrift beider Partner.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Empfehlung:</p>
+        <p class="text-gray-700">Erstellen Sie den Konkubinatsvertrag in zwei Originalexemplaren -- eines für jeden Partner. Beide Exemplare sollten von beiden Partnern handschriftlich mit Ort, Datum und Unterschrift versehen werden. Ergänzende erbrechtliche Regelungen gehören in ein separates Dokument (Testament oder Erbvertrag).</p>
+    </div>
+
+    <!-- 4. Empfohlene Vertragsinhalte -->
+    <h2 id="vertragsinhalte" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Empfohlene Vertragsinhalte im Detail</h2>
+
+    <p class="text-gray-700 mb-6">Der Inhalt des Konkubinatsvertrags kann dank der Vertragsfreiheit (Art. 19 OR) individuell gestaltet werden. Die folgenden Bereiche sollten in jedem umfassenden Konkubinatsvertrag geregelt werden.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">4.1 Kostenaufteilung im Haushalt</h3>
+
+    <p class="text-gray-700 mb-6">Die Aufteilung der Lebenshaltungskosten ist einer der wichtigsten Bestandteile des Konkubinatsvertrags. Dazu gehören Miete oder Hypothekarzinsen, Nebenkosten (Heizung, Wasser, Strom), Lebensmittel und Haushaltsbedarf, Versicherungsprämien (Hausrat, Privathaftpflicht), Internet und Telekommunikation sowie gemeinsame Freizeitaktivitäten und Ferien.</p>
+
+    <p class="text-gray-700 mb-6">In der Praxis haben sich vier Aufteilungsmodelle etabliert:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Aufteilungsmodell</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Geeignet für</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Beispiel</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Hälftige Teilung</td>
+                    <td class="px-6 py-4 text-gray-700">Beide tragen je 50 % aller Kosten</td>
+                    <td class="px-6 py-4 text-gray-700">Ähnliches Einkommen</td>
+                    <td class="px-6 py-4 text-gray-700">Kosten CHF 4'000/Mt.: je CHF 2'000</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Proportional zum Einkommen</td>
+                    <td class="px-6 py-4 text-gray-700">Anteil entspricht dem Einkommensverhältnis</td>
+                    <td class="px-6 py-4 text-gray-700">Unterschiedliches Einkommen</td>
+                    <td class="px-6 py-4 text-gray-700">Einkommen 60:40 bei CHF 4'000: CHF 2'400 / CHF 1'600</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Feste Beträge</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder Partner zahlt einen fixierten Betrag</td>
+                    <td class="px-6 py-4 text-gray-700">Einfache Handhabung</td>
+                    <td class="px-6 py-4 text-gray-700">Partner A: CHF 2'500, Partner B: CHF 1'500</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Aufgabenteilung</td>
+                    <td class="px-6 py-4 text-gray-700">Ein Partner zahlt mehr, der andere übernimmt Hausarbeit/Kinderbetreuung</td>
+                    <td class="px-6 py-4 text-gray-700">Teilzeitarbeit eines Partners</td>
+                    <td class="px-6 py-4 text-gray-700">Partner A: 80 % Kosten, Partner B: Haushalt und Kinderbetreuung</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praxistipp -- Gemeinsames Haushaltskonto:</p>
+        <p class="text-gray-700">Viele Paare richten ein gemeinsames Haushaltskonto ein, auf das beide monatlich ihren vereinbarten Beitrag einzahlen. Von diesem Konto werden sämtliche Gemeinschaftsausgaben bezahlt. Im Konkubinatsvertrag sollte festgehalten werden, wer Kontoinhaber ist, wie hoch die jeweiligen Einzahlungen sind und was mit einem allfälligen Guthaben bei Trennung geschieht.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">4.2 Eigentumsverhältnisse und Inventar</h3>
+
+    <p class="text-gray-700 mb-6">Die klare Zuordnung von Eigentum ist zentral, da im Konkubinat -- anders als in der Ehe -- keine güterrechtlichen Bestimmungen gelten. Jeder Partner bleibt grundsätzlich Eigentümer der Sachen, die er in die Gemeinschaft einbringt. Probleme entstehen, wenn bei einer Trennung nicht mehr nachgewiesen werden kann, wem ein Gegenstand gehört.</p>
+
+    <p class="text-gray-700 mb-6">Nach Art. 930 ZGB wird der Besitzer einer beweglichen Sache als deren Eigentümer vermutet. Im Zweifelsfall müsste ein Partner also beweisen, dass ihm ein bestimmter Gegenstand gehört, obwohl der andere Partner ihn besitzt. Diese Beweislast (Art. 8 ZGB) macht ein detailliertes Inventar unerlässlich.</p>
+
+    <p class="text-gray-700 mb-6">Das Inventar sollte als Anhang zum Konkubinatsvertrag folgende Vermögenswerte auflisten: Möbel und Einrichtungsgegenstände (mit Fotos), Fahrzeuge, Wertgegenstände (Schmuck, Kunst, Elektronik), Bankkonten und Wertschriften sowie Immobilien. Bei jeder Anschaffung oder Veränderung sollte das Inventar aktualisiert werden.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">4.3 Gemeinsame Anschaffungen</h3>
+
+    <p class="text-gray-700 mb-6">Gemeinsam gekaufte Gegenstände gehören beiden Partnern als Miteigentümer (Art. 646 ff. ZGB). Im Konkubinatsvertrag sollte festgelegt werden, in welchem Verhältnis die Miteigentumsquoten stehen -- typischerweise nach dem Verhältnis der finanziellen Beiträge. Wird beispielsweise ein Sofa für CHF 3'000 angeschafft und zahlt Partner A CHF 2'000 und Partner B CHF 1'000, beträgt die Miteigentumsquote 2/3 zu 1/3.</p>
+
+    <p class="text-gray-700 mb-6">Es empfiehlt sich, im Vertrag auch zu regeln, wie bei einer Trennung mit Miteigentum verfahren wird: Wer hat ein Vorkaufsrecht? Wie wird der Verkehrswert bestimmt? Was geschieht, wenn sich die Partner über den Wert nicht einigen können?</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">4.4 Gemeinsame Konten und Bankverbindungen</h3>
+
+    <p class="text-gray-700 mb-6">Wenn Partner gemeinsame Konten führen, sollte der Konkubinatsvertrag klären, wer Kontoinhaber ist und wer Vollmacht hat, wie die Einzahlungen aufgeteilt werden, wem das Guthaben bei Trennung zusteht und ob Einzelzeichnungsrecht oder Kollektivzeichnungsrecht gilt. Bei Gemeinschaftskonten empfiehlt sich die Regelung, dass das Guthaben im Verhältnis der Einzahlungen aufgeteilt wird, sofern die Partner nichts anderes vereinbaren.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">4.5 Arbeit im Haushalt und Kinderbetreuung</h3>
+
+    <p class="text-gray-700 mb-6">Reduziert ein Partner seine Erwerbstätigkeit zugunsten von Haushaltsarbeit oder Kinderbetreuung, entstehen ihm erhebliche wirtschaftliche Nachteile: geringeres Einkommen, tiefere Beiträge an AHV, Pensionskasse und Säule 3a sowie eingeschränkte Karrieremöglichkeiten. Anders als in der Ehe (Art. 163 ZGB) gibt es im Konkubinat keine gesetzliche Grundlage für einen Ausgleich dieser Leistungen.</p>
+
+    <p class="text-gray-700 mb-6">Der Konkubinatsvertrag kann diese Lücke schliessen, indem er die Haushalts- und Betreuungsarbeit monetär bewertet und Ausgleichsmechanismen vorsieht. Übliche Ansätze sind eine monatliche Ausgleichszahlung an den betreuenden Partner, eine Reduktion seines Anteils an den Haushaltskosten, eine Einzahlung des erwerbstätigen Partners in die Altersvorsorge des betreuenden Partners (z. B. Säule 3a) oder eine Kombination dieser Massnahmen.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Berechnungsbeispiel:</p>
+        <p class="text-gray-700">Partner A arbeitet 100 %, Partner B reduziert auf 60 % für die Kinderbetreuung. Der Einkommensverlust von Partner B durch die 40%ige Reduktion beträgt CHF 2'400 pro Monat. Die Partner vereinbaren, dass Partner A monatlich CHF 1'200 als Ausgleich an Partner B zahlt und zusätzlich CHF 500 in die Säule 3a von Partner B einzahlt. Die verbleibenden Haushaltskosten werden im Verhältnis der tatsächlichen Einkommen geteilt.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">4.6 Investitionen in das Eigentum des Partners</h3>
+
+    <p class="text-gray-700 mb-6">Häufig investiert ein Partner Geld oder Arbeitsleistung in das Eigentum des anderen -- zum Beispiel durch die Renovation der Wohnung des Partners, die Mitfinanzierung seines Autos oder die Unterstützung seines Geschäfts. Ohne vertragliche Regelung riskiert der investierende Partner, bei einer Trennung mit leeren Händen dazustehen.</p>
+
+    <p class="text-gray-700 mb-6">Der Konkubinatsvertrag sollte daher klare Rückerstattungsklauseln enthalten. Mögliche Regelungen sind die Rückerstattung der investierten Summe (nominal oder teuerungsbereinigt), eine Beteiligung am Mehrwert, der durch die Investition geschaffen wurde, oder die Umwandlung der Investition in einen Miteigentumsanteil. Ohne solche Regelungen kann der investierende Partner allenfalls Ansprüche aus ungerechtfertigter Bereicherung (Art. 62 ff. OR) geltend machen -- die Beweislast und Durchsetzung sind jedoch schwierig.</p>
+
+    <!-- 5. Gemeinsame Immobilie -->
+    <h2 id="gemeinsame-immobilie" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Gemeinsame Immobilie im Konkubinatsvertrag</h2>
+
+    <p class="text-gray-700 mb-6">Der gemeinsame Erwerb einer Immobilie ist für Konkubinatspaare eine der wichtigsten und gleichzeitig riskantesten finanziellen Entscheidungen. Ohne klare vertragliche Regelung drohen bei einer Trennung oder im Todesfall schwerwiegende finanzielle und praktische Konsequenzen. Daher verdient dieses Thema im Konkubinatsvertrag besondere Aufmerksamkeit.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Eigentumsformen: Miteigentum vs. Gesamteigentum</h3>
+
+    <p class="text-gray-700 mb-6">Unverheiratete Paare können eine Immobilie grundsätzlich in zwei Eigentumsformen erwerben:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kriterium</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Miteigentum (Art. 646 ff. ZGB)</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Gesamteigentum (Art. 652 ff. ZGB)</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Grundbucheintrag</td>
+                    <td class="px-6 py-4 text-gray-700">Beide Partner mit ihren Quoten einzeln eingetragen</td>
+                    <td class="px-6 py-4 text-gray-700">Beide Partner gemeinsam eingetragen (keine Quoten)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Verfügung über Anteil</td>
+                    <td class="px-6 py-4 text-gray-700">Jeder kann über seinen Anteil frei verfügen (verkaufen, verpfänden)</td>
+                    <td class="px-6 py-4 text-gray-700">Nur gemeinsam über die ganze Sache verfügbar</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Quoten</td>
+                    <td class="px-6 py-4 text-gray-700">Frei wählbar (z. B. 60:40, 70:30)</td>
+                    <td class="px-6 py-4 text-gray-700">Keine individuellen Quoten -- gleichberechtigtes Eigentum</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Vorsorgegelder</td>
+                    <td class="px-6 py-4 text-gray-700">Einsatz von PK- und 3a-Geldern möglich und klar zuordenbar</td>
+                    <td class="px-6 py-4 text-gray-700">Einsatz problematisch, da Anteile nicht klar ersichtlich</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Geeignet für</td>
+                    <td class="px-6 py-4 text-gray-700">Paare mit unterschiedlich hohem Eigenkapital</td>
+                    <td class="px-6 py-4 text-gray-700">Paare mit gleicher finanzieller Beteiligung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Rechtsgrundlage</td>
+                    <td class="px-6 py-4 text-gray-700">Erfordert eine Grundlage (z. B. einfache Gesellschaft oder Vereinbarung)</td>
+                    <td class="px-6 py-4 text-gray-700">Setzt eine gesetzliche oder vertragliche Gemeinschaft voraus (z. B. einfache Gesellschaft)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Empfehlung für Konkubinatspaare:</p>
+        <p class="text-gray-700">In den meisten Fällen ist das <strong>Miteigentum</strong> die geeignetere Eigentumsform für Konkubinatspaare. Die individuellen Quoten erlauben eine gerechte Zuordnung entsprechend der finanziellen Beiträge, und der Einsatz von Vorsorgegeldern (Pensionskasse, Säule 3a) ist klar zuordenbar. Das Gesamteigentum ist nur dann sinnvoll, wenn beide Partner exakt gleich viel Eigenkapital einbringen und keine Vorsorgegelder verwendet werden.</p>
+    </div>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Was der Konkubinatsvertrag bei Immobilien regeln sollte</h3>
+
+    <p class="text-gray-700 mb-6">Bei gemeinsamem Immobilienbesitz sollte der Konkubinatsvertrag folgende Punkte detailliert regeln:</p>
+
+    <p class="text-gray-700 mb-6"><strong>Finanzierung und Eigenkapital:</strong> Der Vertrag sollte festhalten, wie viel Eigenkapital jeder Partner eingebracht hat (inklusive Herkunft: Ersparnisse, Erbvorbezug, Pensionskasse, Säule 3a) und wie die Hypothekarzinsen und Amortisationen aufgeteilt werden. Diese Angaben sind entscheidend für die Bestimmung der Miteigentumsquoten und für allfällige Rückforderungsansprüche bei einer Trennung.</p>
+
+    <p class="text-gray-700 mb-6"><strong>Tragung der laufenden Kosten:</strong> Neben den Hypothekarzinsen fallen Nebenkosten, Unterhaltskosten und Erneuerungskosten an. Der Vertrag sollte klar regeln, wer welchen Anteil dieser Kosten trägt und ob die Kostenverteilung den Eigentumsquoten entspricht oder anders geregelt wird.</p>
+
+    <p class="text-gray-700 mb-6"><strong>Mehrwertbeteiligung:</strong> Steigt der Wert der Immobilie, partizipieren beide Partner an der Wertsteigerung -- grundsätzlich im Verhältnis ihrer Miteigentumsquoten. Wenn jedoch ein Partner durch wertvermehrende Investitionen (z. B. Renovation, Anbau) zum Mehrwert beigetragen hat, sollte dies im Vertrag berücksichtigt werden.</p>
+
+    <p class="text-gray-700 mb-6"><strong>Vorkaufsrecht und Übernahmeklausel:</strong> Eine der wichtigsten Regelungen bei gemeinsamen Immobilien ist das gegenseitige Vorkaufsrecht. Damit kann der verbleibende Partner bei einer Trennung oder im Todesfall den Anteil des anderen Partners übernehmen, ohne dass die Immobilie an Dritte verkauft werden muss. Der Vertrag sollte festlegen, wie der Übernahmepreis bestimmt wird (Verkehrswert, Schätzung durch einen unabhängigen Schätzer) und innerhalb welcher Frist das Vorkaufsrecht ausgeübt werden muss.</p>
+
+    <p class="text-gray-700 mb-6"><strong>Auszahlungsmodalitäten:</strong> Wird ein Partneranteil übernommen, muss der übernehmende Partner den anderen auszahlen. Der Vertrag sollte die Zahlungsfrist und allfällige Ratenzahlungen regeln. Ebenso ist zu klären, was geschieht, wenn sich der übernehmende Partner die Auszahlung finanziell nicht leisten kann (z. B. Verkauf der Liegenschaft auf dem freien Markt).</p>
+
+    <p class="text-gray-700 mb-6"><strong>Wohnrecht bei Trennung:</strong> Der Vertrag kann ein befristetes Wohnrecht zugunsten eines Partners vorsehen, etwa wenn gemeinsame Kinder vorhanden sind und ein Umzug vermieden werden soll. Die Dauer, eine allfällige Entschädigung und die Tragung der Kosten während dieser Übergangsfrist sollten geregelt werden.</p>
+
+    <!-- 6. Trennungsregelungen -->
+    <h2 id="trennungsregelungen" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Trennungsregelungen</h2>
+
+    <p class="text-gray-700 mb-6">Anders als bei einer Scheidung gibt es bei der Auflösung eines Konkubinats kein gerichtliches Verfahren, das die Trennungsfolgen regelt. Der Konkubinatsvertrag ist daher das einzige Instrument, um die Folgen einer Trennung vorhersehbar und fair zu gestalten. Folgende Aspekte sollten geregelt werden:</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kündigungsfristen und Trennungsmodalitäten</h3>
+
+    <p class="text-gray-700 mb-6">Der Konkubinatsvertrag kann eine Kündigungsfrist vorsehen, innerhalb derer ein Partner die Beendigung des Zusammenlebens ankündigen muss. Üblich sind Fristen von einem bis drei Monaten. Die Kündigung sollte schriftlich erfolgen und die Frist mit dem Empfang des Kündigungsschreibens beginnen. Für Fälle von häuslicher Gewalt oder anderen schwerwiegenden Gründen kann eine fristlose Kündigung vorgesehen werden.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Auszug und Übernahme des Mietvertrags</h3>
+
+    <p class="text-gray-700 mb-6">Der Vertrag sollte regeln, wer bei einer Trennung die gemeinsame Wohnung verlässt und wer verbleibt. Stehen beide als Mieter im Mietvertrag, ist die Situation rechtlich komplex: Grundsätzlich bedarf es der Zustimmung beider Mieter und des Vermieters, um den Mietvertrag auf einen Partner allein umzuschreiben. Der Konkubinatsvertrag kann zwar die interne Absicht der Partner regeln, bindet den Vermieter jedoch nicht. Steht nur ein Partner im Mietvertrag, hat der andere bei einer Trennung kein Recht, in der Wohnung zu bleiben -- anders als bei Ehepaaren, für die Art. 169 ZGB einen besonderen Schutz der Familienwohnung vorsieht.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Aufteilung des Hausrats</h3>
+
+    <p class="text-gray-700 mb-6">Das im Konkubinatsvertrag erstellte Inventar erleichtert die Zuweisung der Haushaltsgegenstände bei einer Trennung erheblich. Für gemeinsam angeschaffte Gegenstände sollte der Vertrag ein Verfahren vorsehen: wer hat ein Vorkaufsrecht, wie wird der aktuelle Wert bestimmt (Zeitwert oder Anschaffungswert) und was geschieht bei Uneinigkeit (Losentscheid, Mediation, Versteigerung unter den Partnern).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Übergangsunterhalt und Ausgleichszahlungen</h3>
+
+    <p class="text-gray-700 mb-6">Im Konkubinat besteht -- anders als bei der Ehe (Art. 125 ZGB) -- kein gesetzlicher Anspruch auf nachehelichen Unterhalt. Die Partner können jedoch im Konkubinatsvertrag freiwillig Unterhaltsbeiträge oder Ausgleichszahlungen für den Fall der Trennung vereinbaren. Solche Klauseln sind rechtlich gültig und durchsetzbar, sofern sie nicht sittenwidrig sind.</p>
+
+    <p class="text-gray-700 mb-6">Übliche Regelungen sind ein befristeter Übergangsunterhalt (z. B. für sechs bis zwölf Monate nach der Trennung), eine einmalige Ausgleichszahlung als Abfindung, die Übernahme bestimmter Kosten (z. B. Umzugskosten) oder eine Beteiligung an den Kosten einer Weiterbildung, wenn der Partner seine Karriere zugunsten der Beziehung eingeschränkt hat. Die Höhe und Dauer sollten möglichst konkret im Vertrag festgelegt werden, um Streitigkeiten zu vermeiden.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Mediationsklausel</h3>
+
+    <p class="text-gray-700 mb-6">Eine Mediationsklausel verpflichtet die Partner, bei Streitigkeiten zunächst eine Mediation durchzuführen, bevor der Rechtsweg beschritten wird. Diese Klausel kann Zeit und Geld sparen und eine einvernehmliche Lösung fördern. Im Vertrag sollte festgehalten werden, wer die Mediationskosten trägt (in der Regel hälftig), welche Mediationsstelle zuständig ist und innerhalb welcher Frist die Mediation eingeleitet werden muss.</p>
+
+    <!-- 7. Kinderregelungen -->
+    <h2 id="kinderregelungen" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kinderregelungen im Konkubinatsvertrag</h2>
+
+    <p class="text-gray-700 mb-6">Haben die Partner gemeinsame Kinder, sollte der Konkubinatsvertrag auch Regelungen zur Kinderbetreuung enthalten. Dabei ist zu beachten, dass gewisse Bereiche zwingend dem Kindesrecht unterliegen und vertraglich nicht abbedungen werden können.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Elterliche Sorge</h3>
+
+    <p class="text-gray-700 mb-6">Seit der Revision des Kindesrechts im Jahr 2014 steht unverheirateten Eltern, die eine gemeinsame Sorgeerklärung abgegeben haben, die gemeinsame elterliche Sorge zu (Art. 298a ZGB). Diese Sorgeerklärung muss beim Zivilstandsamt abgegeben werden und ist vom Konkubinatsvertrag unabhängig. Der Konkubinatsvertrag kann die elterliche Sorge weder begründen noch entziehen -- dies ist ausschliesslich Sache des Zivilstandsamts bzw. der KESB.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Obhut und Betreuungsanteile</h3>
+
+    <p class="text-gray-700 mb-6">Der Konkubinatsvertrag kann festlegen, wie die Betreuung der Kinder während des Zusammenlebens und nach einer allfälligen Trennung aufgeteilt wird. Üblich sind Regelungen zur alternierenden Obhut (z. B. Wochenmodell, Tagemodell) oder zur alleinigen Obhut mit Besuchsrecht. Diese Regelungen im Konkubinatsvertrag sind als Absichtserklärung der Eltern zu verstehen. Im Streitfall entscheidet jedoch die KESB oder das Gericht über die Zuteilung der Obhut, wobei stets das Kindeswohl massgebend ist (Art. 296 Abs. 1 ZGB).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kindesunterhalt</h3>
+
+    <p class="text-gray-700 mb-6">Der Kindesunterhalt ist eine gesetzliche Pflicht der Eltern (Art. 276 ZGB) und kann vertraglich weder ausgeschlossen noch beschränkt werden. Ein Verzicht auf Kindesunterhalt im Konkubinatsvertrag wäre nichtig. Allerdings können die Partner regeln, wie sie die Kosten für die Kinder während des Zusammenlebens aufteilen -- etwa wer Krippe, Schulmaterial, Freizeitaktivitäten oder Krankenkassenprämien bezahlt.</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Wichtig:</p>
+        <p class="text-gray-700">Bei einer Trennung kann der betreuende Elternteil Kindesunterhalt unabhängig vom Konkubinatsvertrag geltend machen. Die Unterhaltsberechnung richtet sich nach den effektiven Kosten des Kindes und der Leistungsfähigkeit der Eltern (Art. 285 ZGB). Seit 2017 umfasst der Kindesunterhalt auch einen Betreuungsunterhalt für den betreuenden Elternteil (Art. 285 Abs. 2 ZGB).</p>
+    </div>
+
+    <!-- 8. Was NICHT in den Konkubinatsvertrag gehört -->
+    <h2 id="unwirksame-klauseln" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Was NICHT in den Konkubinatsvertrag gehört</h2>
+
+    <p class="text-gray-700 mb-6">Nicht alles, was die Partner vereinbaren möchten, kann wirksam in den Konkubinatsvertrag aufgenommen werden. Folgende Klauseln sind unwirksam (nichtig) oder gehören in separate Dokumente:</p>
+
+    <div class="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-lg mb-6">
+        <h3 class="font-semibold text-red-800 mb-2">Erbrechtliche Verfügungen</h3>
+        <p class="text-gray-700">Konkubinatspartner haben kein gesetzliches Erbrecht. Erbrechtliche Begünstigungen können deshalb nur durch ein gültiges Testament (Art. 505 ZGB: eigenhändig geschrieben, datiert und unterschrieben) oder einen notariell beurkundeten Erbvertrag (Art. 512 ZGB) erfolgen. Im Konkubinatsvertrag enthaltene erbrechtliche Klauseln sind nichtig, da sie die gesetzlich vorgeschriebene Form nicht einhalten.</p>
+    </div>
+
+    <div class="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-lg mb-6">
+        <h3 class="font-semibold text-red-800 mb-2">Verzicht auf Kindesunterhalt</h3>
+        <p class="text-gray-700">Jedes Kind hat einen gesetzlichen Anspruch auf Unterhalt durch seine Eltern (Art. 276 ZGB). Ein vertraglicher Verzicht auf Kindesunterhalt -- auch ein im Voraus erklärter Verzicht für den Fall der Trennung -- ist nichtig. Das Kind selbst ist durch den Vertrag der Eltern nicht gebunden und kann seinen Unterhaltsanspruch jederzeit geltend machen.</p>
+    </div>
+
+    <div class="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-lg mb-6">
+        <h3 class="font-semibold text-red-800 mb-2">Sittenwidrige Vereinbarungen</h3>
+        <p class="text-gray-700">Klauseln, die gegen die guten Sitten verstossen, sind nach Art. 20 Abs. 1 OR nichtig. Beispiele: Vertragsstrafen für "Untreue", die Verpflichtung zu bestimmtem persönlichem Verhalten (z. B. Pflicht zur häuslichen Arbeit ohne jede Gegenleistung), oder Klauseln, die einen Partner in eine wirtschaftliche Abhängigkeit zwingen.</p>
+    </div>
+
+    <div class="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-lg mb-6">
+        <h3 class="font-semibold text-red-800 mb-2">Persönlichkeitsverletzende Klauseln</h3>
+        <p class="text-gray-700">Vereinbarungen, die die Persönlichkeitsrechte eines Partners übermässig einschränken, sind nichtig (Art. 27 Abs. 2 ZGB). Dazu gehören Klauseln, die einen Partner daran hindern, eine Erwerbstätigkeit aufzunehmen, den Wohnort zu wechseln oder soziale Kontakte zu pflegen. Ebenso unwirksam sind Klauseln, die einen Partner verpflichten, für immer im Konkubinat zu verbleiben.</p>
+    </div>
+
+    <div class="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-lg mb-6">
+        <h3 class="font-semibold text-red-800 mb-2">Vereinbarungen zu Lasten Dritter</h3>
+        <p class="text-gray-700">Ein Vertrag kann grundsätzlich nur Rechte und Pflichten zwischen den Vertragsparteien begründen. Vereinbarungen, die Dritte (z. B. Vermieter, Banken, Behörden) verpflichten sollen, sind unwirksam. So kann etwa der Vermieter nicht durch den Konkubinatsvertrag verpflichtet werden, den Mietvertrag bei Trennung auf einen bestimmten Partner umzuschreiben.</p>
+    </div>
+
+    <!-- 9. Musterklauseln -->
+    <h2 id="musterklauseln" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Musterklauseln für den Konkubinatsvertrag</h2>
+
+    <p class="text-gray-700 mb-6">Die folgenden Musterklauseln dienen als Orientierung und können an die individuellen Bedürfnisse der Partner angepasst werden. Sie ersetzen keine individuelle anwaltliche Beratung, zeigen aber die typische Formulierungsweise.</p>
+
+    <div class="bg-gray-100 border border-gray-300 rounded-lg p-6 mb-8">
+        <h3 class="font-serif text-xl font-bold text-navy mb-4">Musterklausel 1: Kostenaufteilung</h3>
+        <p class="text-gray-700 italic">"Die gemeinsamen Lebenshaltungskosten (Miete, Nebenkosten, Lebensmittel, Versicherungen, Internet) werden im Verhältnis der jeweiligen Nettoeinkommen aufgeteilt. Beide Partner zahlen ihren Anteil monatlich bis zum 5. des laufenden Monats auf das gemeinsame Haushaltskonto [Kontonummer] bei der [Bank] ein. Die Einkommens- und Kostenverhältnisse werden jährlich per 1. Januar überprüft und bei wesentlichen Veränderungen (z. B. Stellenwechsel, Pensumsänderung, Geburt eines Kindes) angepasst."</p>
+    </div>
+
+    <div class="bg-gray-100 border border-gray-300 rounded-lg p-6 mb-8">
+        <h3 class="font-serif text-xl font-bold text-navy mb-4">Musterklausel 2: Eigentumsverhältnisse und Inventar</h3>
+        <p class="text-gray-700 italic">"Jeder Partner bleibt Eigentümer der Vermögensgegenstände, die er in die Gemeinschaft einbringt. Die bei Vertragsbeginn vorhandenen Vermögensgegenstände sind im Inventar (Anhang 1) aufgelistet. Gemeinsam angeschaffte Gegenstände stehen im Miteigentum der Partner im Verhältnis ihrer finanziellen Beteiligung. Können die Anteile nicht nachgewiesen werden, gilt je hälftiges Miteigentum. Bei der Trennung hat derjenige Partner ein Vorkaufsrecht, der den Gegenstand überwiegend nutzt, zum geschätzten Zeitwert."</p>
+    </div>
+
+    <div class="bg-gray-100 border border-gray-300 rounded-lg p-6 mb-8">
+        <h3 class="font-serif text-xl font-bold text-navy mb-4">Musterklausel 3: Trennungsregelung</h3>
+        <p class="text-gray-700 italic">"Der Konkubinatsvertrag kann von jedem Partner unter Einhaltung einer Kündigungsfrist von zwei Monaten schriftlich gekündigt werden. Die Kündigung wird mit Zugang beim anderen Partner wirksam. Bei Kündigung verlässt derjenige Partner die gemeinsame Wohnung, der nicht als Mieter im Mietvertrag aufgeführt ist. Stehen beide Partner im Mietvertrag, verlässt derjenige Partner die Wohnung, der die Kündigung ausgesprochen hat, sofern die Partner nichts anderes vereinbaren. Jeder Partner trägt seine eigenen Umzugskosten."</p>
+    </div>
+
+    <div class="bg-gray-100 border border-gray-300 rounded-lg p-6 mb-8">
+        <h3 class="font-serif text-xl font-bold text-navy mb-4">Musterklausel 4: Gemeinsame Immobilie</h3>
+        <p class="text-gray-700 italic">"Die Liegenschaft [Grundbuchblatt-Nr.] steht im Miteigentum der Partner. Partner A ist zu [X]% und Partner B zu [Y]% als Miteigentümer im Grundbuch eingetragen. Die Miteigentumsquoten entsprechen dem Verhältnis des von den Partnern eingebrachten Eigenkapitals. Bei Auflösung des Konkubinats hat jeder Partner ein Vorkaufsrecht am Anteil des anderen Partners zum aktuellen Verkehrswert, ermittelt durch einen von beiden Partnern gemeinsam beauftragten unabhängigen Schätzer. Das Vorkaufsrecht ist innert 60 Tagen nach schriftlicher Mitteilung der Trennungsabsicht auszuüben. Wird das Vorkaufsrecht nicht ausgeübt, wird die Liegenschaft zum Verkehrswert auf dem freien Markt veräussert und der Erlös nach Abzug der Hypothekarschuld im Verhältnis der Miteigentumsquoten aufgeteilt."</p>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Hinweis:</p>
+        <p class="text-gray-700">Diese Musterklauseln dienen lediglich als Orientierung. Jede Klausel sollte individuell auf die konkrete Lebenssituation der Partner angepasst werden. Bei komplexen Verhältnissen (insbesondere bei Immobilien, Kindern oder grösseren Vermögenswerten) ist die Beratung durch einen spezialisierten Anwalt dringend empfohlen.</p>
+    </div>
+
+    <!-- 10. Ergänzende Dokumente -->
+    <h2 id="ergaenzende-dokumente" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Ergänzende Dokumente zum Konkubinatsvertrag</h2>
+
+    <p class="text-gray-700 mb-6">Der Konkubinatsvertrag allein deckt nicht alle relevanten Lebensbereiche ab. Um als unverheiratetes Paar umfassend abgesichert zu sein, sollten folgende ergänzende Dokumente erstellt werden:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Dokument</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Form</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Zweck</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Wichtige Details</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Testament</td>
+                    <td class="px-6 py-4 text-gray-700">Eigenhändig (Art. 505 ZGB) oder öffentlich beurkundet (Art. 499 ZGB)</td>
+                    <td class="px-6 py-4 text-gray-700">Erbrechtliche Begünstigung des Partners</td>
+                    <td class="px-6 py-4 text-gray-700">Verfügbare Quote nach Abzug der Pflichtteile; seit 2023 sind die Pflichtteile reduziert, sodass mehr Spielraum besteht</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Erbvertrag</td>
+                    <td class="px-6 py-4 text-gray-700">Öffentliche Beurkundung durch Notar (Art. 512 ZGB)</td>
+                    <td class="px-6 py-4 text-gray-700">Gegenseitige verbindliche erbrechtliche Begünstigung</td>
+                    <td class="px-6 py-4 text-gray-700">Bindet beide Partner; kann nicht einseitig geändert werden; ermöglicht z. B. gegenseitige Nutzniessung</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Vorsorgeauftrag</td>
+                    <td class="px-6 py-4 text-gray-700">Eigenhändig oder öffentlich beurkundet (Art. 360 ff. ZGB)</td>
+                    <td class="px-6 py-4 text-gray-700">Bestimmt, wer bei Urteilsunfähigkeit entscheidet</td>
+                    <td class="px-6 py-4 text-gray-700">Ohne Vorsorgeauftrag hat der Konkubinatspartner kein gesetzliches Vertretungsrecht (anders als Ehegatten nach Art. 374 ZGB)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Patientenverfügung</td>
+                    <td class="px-6 py-4 text-gray-700">Schriftlich, datiert, unterschrieben (Art. 370 ff. ZGB)</td>
+                    <td class="px-6 py-4 text-gray-700">Regelt medizinische Massnahmen und Vertretung bei Urteilsunfähigkeit</td>
+                    <td class="px-6 py-4 text-gray-700">Kann den Konkubinatspartner als vertretungsberechtigte Person bezeichnen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Begünstigung Pensionskasse (2. Säule)</td>
+                    <td class="px-6 py-4 text-gray-700">Schriftliche Anmeldung bei der Pensionskasse</td>
+                    <td class="px-6 py-4 text-gray-700">Hinterlassenenleistung für den Partner im Todesfall</td>
+                    <td class="px-6 py-4 text-gray-700">Nur möglich, wenn das PK-Reglement dies vorsieht; oft an Bedingungen geknüpft (z. B. 5 Jahre Zusammenleben, Nachweis des gemeinsamen Haushalts)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Begünstigungserklärung Säule 3a</td>
+                    <td class="px-6 py-4 text-gray-700">Schriftliche Erklärung bei der Vorsorgestiftung</td>
+                    <td class="px-6 py-4 text-gray-700">Partner als Begünstigten im Todesfall einsetzen</td>
+                    <td class="px-6 py-4 text-gray-700">Der Konkubinatspartner kann erst nach den Kindern begünstigt werden; Nachweis des gemeinsamen Haushalts oder 5 Jahre ununterbrochenes Zusammenleben erforderlich (Art. 2 Abs. 1bis BVV3)</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Vollmachten</td>
+                    <td class="px-6 py-4 text-gray-700">Schriftlich</td>
+                    <td class="px-6 py-4 text-gray-700">Handlungsfähigkeit im Alltag (Bank, Post, Behörden)</td>
+                    <td class="px-6 py-4 text-gray-700">Ohne Vollmacht hat der Konkubinatspartner keine Vertretungsbefugnis; empfohlen: Generalvollmacht oder spezifische Vollmachten für Bank und Versicherungen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Dringende Empfehlung:</p>
+        <p class="text-gray-700">Der Vorsorgeauftrag ist für Konkubinatspaare besonders wichtig: Anders als Ehegatten hat der Konkubinatspartner ohne Vorsorgeauftrag kein gesetzliches Vertretungsrecht bei Urteilsunfähigkeit. Ohne dieses Dokument wird die KESB (Kindes- und Erwachsenenschutzbehörde) einen Beistand ernennen -- der Konkubinatspartner hat keinen automatischen Vorrang.</p>
+    </div>
+
+    <!-- 11. Häufige Fehler -->
+    <h2 id="haeufige-fehler" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Häufige Fehler bei Konkubinatsverträgen</h2>
+
+    <p class="text-gray-700 mb-6">In der Praxis werden beim Abschluss von Konkubinatsverträgen immer wieder typische Fehler gemacht, die im Streitfall zu erheblichen Problemen führen können. Die folgende Übersicht zeigt die häufigsten Fehler und wie sie vermieden werden können:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Fehler</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Folge</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Lösung</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Kein schriftlicher Vertrag</td>
+                    <td class="px-6 py-4 text-gray-700">Beweisnotstand bei Streitigkeiten; Anwendung der Regeln der einfachen Gesellschaft</td>
+                    <td class="px-6 py-4 text-gray-700">Vertrag immer schriftlich abfassen und von beiden Partnern unterschreiben lassen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Fehlendes oder veraltetes Inventar</td>
+                    <td class="px-6 py-4 text-gray-700">Unmöglichkeit, Eigentum nachzuweisen; Partner mit Besitz gilt als Eigentümer (Art. 930 ZGB)</td>
+                    <td class="px-6 py-4 text-gray-700">Inventar als Anhang erstellen und regelmässig (mindestens jährlich) aktualisieren</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Erbrechtliche Klauseln im Konkubinatsvertrag</td>
+                    <td class="px-6 py-4 text-gray-700">Nichtigkeit der Klauseln; Partner erbt im Todesfall nichts</td>
+                    <td class="px-6 py-4 text-gray-700">Separates Testament oder Erbvertrag erstellen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Verzicht auf Kindesunterhalt vereinbart</td>
+                    <td class="px-6 py-4 text-gray-700">Klausel ist nichtig; Kind kann Unterhalt jederzeit fordern</td>
+                    <td class="px-6 py-4 text-gray-700">Kindesunterhalt ist unverzichtbar; nur die Aufteilung während des Zusammenlebens regeln</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Keine Regelung für Immobilie</td>
+                    <td class="px-6 py-4 text-gray-700">Langwierige und teure Auseinandersetzung bei Trennung; Zwangsverkauf möglich</td>
+                    <td class="px-6 py-4 text-gray-700">Eigentumsquoten, Vorkaufsrecht, Übernahmepreis und Auszahlungsmodalitäten detailliert regeln</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Fehlende Anpassung bei Veränderungen</td>
+                    <td class="px-6 py-4 text-gray-700">Vertrag entspricht nicht mehr der aktuellen Lebenssituation</td>
+                    <td class="px-6 py-4 text-gray-700">Vertrag bei wesentlichen Veränderungen (Geburt, Berufswechsel, Immobilienkauf) anpassen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Keine ergänzenden Dokumente</td>
+                    <td class="px-6 py-4 text-gray-700">Lücken bei Erbrecht, Vorsorge und Vertretung</td>
+                    <td class="px-6 py-4 text-gray-700">Testament, Vorsorgeauftrag, Patientenverfügung und Begünstigungserklärungen parallel erstellen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Verwendung veralteter Internet-Vorlagen</td>
+                    <td class="px-6 py-4 text-gray-700">Wichtige Punkte werden nicht abgedeckt; eventuell veraltete Rechtsgrundlagen</td>
+                    <td class="px-6 py-4 text-gray-700">Vorlage nur als Ausgangsbasis nutzen und individuell anpassen oder professionell erstellen lassen</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 12. Kosten -->
+    <h2 id="kosten" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Kosten eines Konkubinatsvertrags</h2>
+
+    <p class="text-gray-700 mb-6">Die Kosten für einen Konkubinatsvertrag variieren stark je nach Komplexität der Vermögensverhältnisse und der gewählten Erstellungsart. Im Folgenden eine Übersicht der gängigen Optionen:</p>
+
+    <div class="overflow-x-auto mb-8">
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead class="bg-navy text-white">
+                <tr>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Erstellungsart</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Kosten</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Leistung</th>
+                    <th class="px-6 py-3 text-left text-sm font-semibold">Geeignet für</th>
+                </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-200">
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Kostenlose Vorlage aus dem Internet</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">CHF 0</td>
+                    <td class="px-6 py-4 text-gray-700">Standardvorlage ohne individuelle Anpassung oder Beratung</td>
+                    <td class="px-6 py-4 text-gray-700">Sehr einfache Verhältnisse ohne Immobilie, Kinder oder grösseres Vermögen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Kostenpflichtige Mustervorlage</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">CHF 50 -- 200</td>
+                    <td class="px-6 py-4 text-gray-700">Kommentierte Vorlage mit Erläuterungen und Varianten</td>
+                    <td class="px-6 py-4 text-gray-700">Einfache Verhältnisse; Partner können Vorlage selbständig ausfüllen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Online-Rechtsdienst</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">CHF 200 -- 500</td>
+                    <td class="px-6 py-4 text-gray-700">Individuell generierter Vertrag basierend auf Online-Fragebogen, teilweise mit telefonischer Beratung</td>
+                    <td class="px-6 py-4 text-gray-700">Mittlere Komplexität ohne besondere Konstellationen</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Anwalt oder Notar</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">CHF 500 -- 2'000+</td>
+                    <td class="px-6 py-4 text-gray-700">Vollständige Beratung, massgeschneiderter Vertrag, inkl. Besprechung aller relevanten Punkte</td>
+                    <td class="px-6 py-4 text-gray-700">Komplexe Verhältnisse, gemeinsame Immobilie, Kinder, ungleiche Vermögensverhältnisse</td>
+                </tr>
+                <tr>
+                    <td class="px-6 py-4 text-gray-700 font-medium">Anwalt + Notar (Gesamtpaket inkl. Erbvertrag)</td>
+                    <td class="px-6 py-4 text-gray-700 font-semibold">CHF 2'000 -- 5'000+</td>
+                    <td class="px-6 py-4 text-gray-700">Konkubinatsvertrag, Testament/Erbvertrag, Vorsorgeauftrag, Begünstigungserklärungen aus einer Hand</td>
+                    <td class="px-6 py-4 text-gray-700">Umfassende Absicherung bei hohem Vermögen, Immobilie und Kindern</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Kosten-Nutzen-Abwägung:</p>
+        <p class="text-gray-700">Die Kosten eines professionell erstellten Konkubinatsvertrags (CHF 500 -- 2'000) stehen in keinem Verhältnis zu den möglichen Kosten eines Rechtsstreits bei einer Trennung ohne vertragliche Regelung. Ein Gerichtsverfahren über die Auflösung einer gemeinsamen Immobilie kann schnell CHF 20'000 -- 50'000 und mehr kosten -- von der emotionalen Belastung ganz abgesehen. Die Investition in einen professionellen Vertrag zahlt sich in der Regel vielfach aus.</p>
+    </div>
+
+    <!-- 13. Änderung und Kündigung -->
+    <h2 id="aenderung-kuendigung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Änderung und Kündigung des Konkubinatsvertrags</h2>
+
+    <p class="text-gray-700 mb-6">Ein Konkubinatsvertrag ist kein statisches Dokument. Die Lebensumstände der Partner verändern sich im Laufe der Zeit, und der Vertrag sollte diese Veränderungen widerspiegeln.</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Änderung des Vertrags</h3>
+
+    <p class="text-gray-700 mb-6">Eine Änderung des Konkubinatsvertrags ist jederzeit möglich, sofern beide Partner damit einverstanden sind. Änderungen sollten aus Beweisgründen immer schriftlich in Form eines Nachtrags erfolgen, der von beiden Partnern datiert und unterschrieben wird. Der Nachtrag nimmt Bezug auf den ursprünglichen Vertrag und legt fest, welche Klauseln ersetzt, ergänzt oder aufgehoben werden.</p>
+
+    <p class="text-gray-700 mb-6">Der Vertrag sollte regelmässig überprüft und bei wesentlichen Veränderungen angepasst werden, insbesondere bei der Geburt oder Adoption eines Kindes, bei einem Stellenwechsel oder einer Pensumsänderung eines Partners, beim gemeinsamen Erwerb einer Immobilie, bei einer Erbschaft oder Schenkung an einen Partner, bei einer erheblichen Veränderung der Einkommensverhältnisse oder bei einem Wohnortswechsel (z. B. in einen anderen Kanton mit abweichendem Steuerrecht).</p>
+
+    <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kündigung des Vertrags</h3>
+
+    <p class="text-gray-700 mb-6">Der Konkubinatsvertrag kann von jedem Partner unter Einhaltung der vereinbarten Kündigungsfrist gekündigt werden. Die Kündigung sollte schriftlich und nachweisbar (Einschreiben) erfolgen. Haben die Partner keine Kündigungsfrist vereinbart, kann der Vertrag grundsätzlich jederzeit gekündigt werden -- es empfiehlt sich jedoch, eine angemessene Frist (z. B. zwei bis drei Monate) festzulegen, um beiden Partnern Zeit für die Neuorganisation ihres Lebens zu geben.</p>
+
+    <p class="text-gray-700 mb-6">Die Kündigung des Konkubinatsvertrags bewirkt nicht automatisch das Ende des Zusammenlebens. Umgekehrt führt die Trennung der Partner auch ohne formelle Kündigung zur Auflösung der vertraglichen Regelungen -- sofern der Vertrag keine abweichende Regelung vorsieht (z. B. Fortgeltung bestimmter Klauseln wie Übergangsunterhalt oder Immobilienregelungen über die Trennung hinaus).</p>
+
+    <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+        <p class="font-semibold text-navy mb-2">Praxistipp:</p>
+        <p class="text-gray-700">Formulieren Sie im Konkubinatsvertrag eine Klausel, die regelt, welche Bestimmungen auch nach der Trennung fortgelten (sogenannte Nachklauseln). Typische Nachklauseln betreffen den Übergangsunterhalt, die Abwicklung gemeinsamer Immobilien, die Aufteilung des Inventars und die Kinderbetreuungsregelungen.</p>
+    </div>
 
     <!-- Anwalt-Sektion -->
-    <section class="mb-12">
+    <section id="anwalt" class="mb-12">
         <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
-        <p class="text-gray-700 mb-6">Ein Konkubinatsvertrag aus dem Internet mag für sehr einfache Verhältnisse ausreichen. Bei komplexeren Situationen ist jedoch professionelle Unterstützung wichtig, um alle relevanten Aspekte abzudecken und rechtliche Fallstricke zu vermeiden.</p>
-        <p class="text-gray-700 mb-6">Besonders in folgenden Situationen ist die Beratung durch einen erfahrenen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> dringend empfohlen:</p>
-        <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-            <li>Wenn Sie gemeinsam eine Immobilie erwerben oder besitzen</li>
-            <li>Bei erheblichen Einkommens- oder Vermögensunterschieden zwischen den Partnern</li>
-            <li>Wenn ein Partner für die Kinderbetreuung die Erwerbstätigkeit reduziert</li>
-            <li>Wenn ein Partner in die Selbständigkeit des anderen investiert</li>
-            <li>Für die Koordination von Konkubinatsvertrag, Testament und Vorsorgevollmacht</li>
-        </ul>
-        <p class="text-gray-700 mb-6">Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> kann einen massgeschneiderten Konkubinatsvertrag erstellen und Sie zu ergänzenden Dokumenten (Testament, Erbvertrag, Vorsorgeauftrag) beraten.</p>
+
+        <p class="text-gray-700 mb-6">Für sehr einfache Verhältnisse -- zwei Partner mit ähnlichem Einkommen, keine Kinder, keine Immobilie, kein grösseres Vermögen -- kann eine gut kommentierte Mustervorlage als Ausgangsbasis genügen. In den meisten Lebenssituationen ist jedoch die Beratung durch einen spezialisierten Anwalt empfehlenswert, um alle relevanten Aspekte abzudecken und rechtliche Fallstricke zu vermeiden.</p>
+
+        <p class="text-gray-700 mb-6">Besonders in folgenden Konstellationen ist die Beratung durch einen erfahrenen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> dringend empfohlen: beim gemeinsamen Erwerb einer Immobilie (Eigentumsform, Finanzierung, Vorkaufsrecht), bei erheblichen Einkommens- oder Vermögensunterschieden zwischen den Partnern, wenn ein Partner für die Kinderbetreuung die Erwerbstätigkeit reduziert, wenn ein Partner in das Eigentum oder Geschäft des anderen investiert und für die Koordination von Konkubinatsvertrag, Testament und Vorsorgeauftrag als aufeinander abgestimmtes Gesamtpaket.</p>
+
+        <p class="text-gray-700 mb-6">Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> kann einen massgeschneiderten Konkubinatsvertrag erstellen, der alle individuellen Bedürfnisse abdeckt, und Sie gleichzeitig zu den notwendigen ergänzenden Dokumenten (Testament, Erbvertrag, Vorsorgeauftrag) beraten. Im Vergleich zu einer Mustervorlage aus dem Internet bietet ein professionell erstellter Vertrag deutlich mehr Rechtssicherheit -- insbesondere bei komplexen Vermögensverhältnissen, bei denen bereits kleine Formulierungsfehler zu grossen finanziellen Nachteilen führen können.</p>
+
         <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
             <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
-            <p class="mb-6">Lassen Sie sich beraten, welche Regelungen für Ihre persönliche Situation sinnvoll sind und wie Sie sich optimal absichern können.</p>
+            <p class="mb-6">Lassen Sie sich unverbindlich beraten, welche vertraglichen Regelungen für Ihre persönliche Lebenssituation sinnvoll sind und wie Sie sich und Ihre Familie optimal absichern können -- von der Kostenaufteilung über die Immobilienregelung bis zur Vorsorgeplanung.</p>
             <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
         </div>
     </section>
 
+    <!-- Fazit -->
+    <h2 id="fazit" class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+    <p class="text-gray-700 mb-6">Der Konkubinatsvertrag ist für unverheiratete Paare in der Schweiz ein unverzichtbares Instrument zur rechtlichen Absicherung. Da das Schweizer Recht keine spezifischen Bestimmungen zum <a href="/eherecht/konkubinat" class="text-gold hover:underline font-semibold">Konkubinat</a> enthält, müssen die Partner ihre gegenseitigen Rechte und Pflichten selbst vertraglich regeln -- andernfalls drohen bei einer Trennung oder im Todesfall unklare Verhältnisse und langwierige Rechtsstreitigkeiten.</p>
+
+    <p class="text-gray-700 mb-6">Ein gut aufgesetzter Konkubinatsvertrag regelt die wesentlichen Aspekte des Zusammenlebens: Kostenaufteilung, Eigentumsverhältnisse, gemeinsame Immobilie, Trennungsfolgen und Kinderbetreuung. Er sollte stets durch ergänzende Dokumente wie Testament, Vorsorgeauftrag und Begünstigungserklärungen bei Pensionskasse und Säule 3a flankiert werden. Nur so entsteht ein lückenloses Absicherungspaket, das den Bedürfnissen unverheirateter Paare gerecht wird.</p>
+
+    <p class="text-gray-700 mb-6">Die Investition in einen professionell erstellten Konkubinatsvertrag -- ob durch einen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> oder Notar -- zahlt sich in der Regel vielfach aus. Die Kosten von einigen hundert bis wenigen tausend Franken sind gering im Vergleich zu den potenziellen Kosten eines Rechtsstreits, der ohne klare vertragliche Grundlage droht.</p>
+
     <!-- FAQ -->
-    <section class="mt-16 mb-12">
+    <section id="faq" class="mt-16 mb-12">
         <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
         <div class="space-y-6">
             <div class="border-b border-gray-200 pb-6">
-                <h3 class="text-xl font-semibold text-navy mb-3">Ist ein Konkubinatsvertrag rechtlich bindend?</h3>
-                <p class="text-gray-700">Ja, sofern er den allgemeinen Voraussetzungen für Verträge entspricht (Handlungsfähigkeit, freier Wille, möglicher und erlaubter Inhalt) und keine unwirksamen Klauseln enthält.</p>
+                <h3 class="text-xl font-semibold text-navy mb-3">Was kostet ein Konkubinatsvertrag?</h3>
+                <p class="text-gray-700">Die Kosten variieren je nach Erstellungsart: Kostenlose Mustervorlagen aus dem Internet eignen sich nur für sehr einfache Verhältnisse. Kostenpflichtige Vorlagen kosten CHF 50 -- 200, Online-Rechtsdienste CHF 200 -- 500. Ein individuell erstellter Vertrag durch einen Anwalt oder Notar kostet CHF 500 -- 2'000. Bei komplexen Verhältnissen mit Immobilie und ergänzenden Dokumenten (Erbvertrag, Vorsorgeauftrag) ist mit CHF 2'000 -- 5'000 zu rechnen.</p>
             </div>
             <div class="border-b border-gray-200 pb-6">
-                <h3 class="text-xl font-semibold text-navy mb-3">Muss der Konkubinatsvertrag notariell beglaubigt werden?</h3>
-                <p class="text-gray-700">Nein, die einfache Schriftlichkeit mit Unterschrift beider Partner genügt. Nur bei erbrechtlichen Verfügungen (Erbvertrag) oder Grundstückübertragungen ist eine notarielle Beurkundung zwingend erforderlich.</p>
+                <h3 class="text-xl font-semibold text-navy mb-3">Ist ein Konkubinatsvertrag rechtlich bindend?</h3>
+                <p class="text-gray-700">Ja, ein Konkubinatsvertrag ist rechtlich bindend, sofern er die allgemeinen Voraussetzungen des Vertragsrechts erfüllt: Handlungsfähigkeit beider Partner (Art. 12 ff. ZGB), übereinstimmende Willensäusserung (Art. 1 OR), möglicher und erlaubter Inhalt (Art. 20 OR). Er kann wie jeder andere Vertrag gerichtlich durchgesetzt werden. Klauseln, die gegen zwingendes Recht oder die guten Sitten verstossen, sind jedoch nichtig.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Muss ein Konkubinatsvertrag notariell beglaubigt werden?</h3>
+                <p class="text-gray-700">Nein, der Konkubinatsvertrag selbst muss nicht notariell beglaubigt werden. Die einfache Schriftlichkeit mit Datum und eigenhändiger Unterschrift beider Partner genügt (Art. 11 OR). Eine notarielle Beurkundung ist nur dann zwingend erforderlich, wenn der Vertrag erbrechtliche Verfügungen (Erbvertrag, Art. 512 ZGB) oder Grundstückübertragungenklauseln enthält (Art. 657 ZGB).</p>
             </div>
             <div class="border-b border-gray-200 pb-6">
                 <h3 class="text-xl font-semibold text-navy mb-3">Was passiert ohne Konkubinatsvertrag bei einer Trennung?</h3>
-                <p class="text-gray-700">Ohne Vertrag gibt es keine gesetzlichen Regelungen für das Konkubinat. Gerichte wenden häufig die Regeln der einfachen Gesellschaft an (Art. 530 ff. OR), was zu aufwändigen und kostspieligen Verfahren führen kann.</p>
+                <p class="text-gray-700">Ohne Vertrag gibt es keine gesetzlichen Regelungen, die die Trennungsfolgen automatisch ordnen. Jeder Partner behält grundsätzlich, was ihm gehört. Bei gemeinsamen Anschaffungen oder gemeinsamen Investitionen wenden Gerichte häufig die Regeln der einfachen Gesellschaft an (Art. 530 ff. OR). Die Beweislast für Eigentum und Beiträge liegt bei dem Partner, der Ansprüche geltend macht. Dies führt oft zu langwierigen, kostspieligen Gerichtsverfahren.</p>
             </div>
             <div class="border-b border-gray-200 pb-6">
-                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich im Konkubinatsvertrag Unterhalt für den Fall der Trennung vereinbaren?</h3>
-                <p class="text-gray-700">Ja, Sie können Ausgleichszahlungen oder Unterhaltsbeiträge für den Fall der Trennung vereinbaren. Solche Regelungen sind rechtlich bindend, sofern sie nicht sittenwidrig sind.</p>
+                <h3 class="text-xl font-semibold text-navy mb-3">Was muss in einem Konkubinatsvertrag stehen?</h3>
+                <p class="text-gray-700">Pflichtinhalte gibt es nicht, da der Vertrag gesetzlich nicht geregelt ist. Empfohlen werden folgende Regelungen: Personalien beider Partner, Aufteilung der Haushaltskosten, Inventar der eingebrachten Vermögenswerte, Regelung gemeinsamer Anschaffungen, Regelung bei gemeinsamer Immobilie (Eigentumsquoten, Vorkaufsrecht), Trennungsfolgen (Kündigungsfrist, Auszug, Ausgleichszahlungen), Kinderbetreuungsregelung sowie Verweis auf ergänzende Dokumente (Testament, Vorsorgeauftrag).</p>
             </div>
             <div class="border-b border-gray-200 pb-6">
-                <h3 class="text-xl font-semibold text-navy mb-3">Kann ich im Konkubinatsvertrag regeln, wer die Wohnung bei Trennung behält?</h3>
-                <p class="text-gray-700">Ja, Sie können vereinbaren, wer bei einer Trennung in der gemeinsamen Wohnung verbleibt und zu welchen Bedingungen (z.B. Auszugsfrist, Übernahme des Mietvertrags). Bei Mietwohnungen muss jedoch der Vermieter zustimmen.</p>
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann man im Konkubinatsvertrag Unterhalt regeln?</h3>
+                <p class="text-gray-700">Ja, die Partner können im Konkubinatsvertrag Ausgleichszahlungen oder Unterhaltsbeiträge für den Fall der Trennung vereinbaren. Solche Regelungen sind rechtlich bindend, sofern sie nicht sittenwidrig sind (Art. 20 OR). Typisch sind befristete Übergangszahlungen, um dem wirtschaftlich schwächeren Partner die Neuorganisation seines Lebens zu ermöglichen. Ein Verzicht auf Kindesunterhalt ist hingegen nichtig, da dieser Anspruch dem Kind zusteht (Art. 276 ZGB).</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie regelt man eine gemeinsame Immobilie im Konkubinatsvertrag?</h3>
+                <p class="text-gray-700">Bei einer gemeinsamen Immobilie sollte der Konkubinatsvertrag folgende Punkte regeln: Eigentumsform (Miteigentum mit individuellen Quoten ist für Konkubinatspaare meist empfehlenswert), Eigenkapitalaufteilung, Tragung der laufenden Kosten (Hypothekarzinsen, Nebenkosten), gegenseitiges Vorkaufsrecht bei Trennung oder Tod, Methode zur Bestimmung des Übernahmepreises (z. B. unabhängige Schätzung) und Auszahlungsmodalitäten. Für die Vormerkung eines Vorkaufsrechts im Grundbuch ist eine notarielle Beurkundung erforderlich.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann man den Konkubinatsvertrag nachträglich ändern?</h3>
+                <p class="text-gray-700">Ja, der Konkubinatsvertrag kann jederzeit einvernehmlich geändert werden. Änderungen sollten schriftlich in Form eines Nachtrags festgehalten und von beiden Partnern datiert und unterschrieben werden. Eine regelmässige Überprüfung empfiehlt sich insbesondere bei wesentlichen Veränderungen der Lebenssituation (Geburt eines Kindes, Immobilienkauf, Einkommensveränderung). Eine einseitige Änderung ist nicht möglich.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Braucht man einen Anwalt für einen Konkubinatsvertrag?</h3>
+                <p class="text-gray-700">Rechtlich ist ein Anwalt nicht zwingend erforderlich. Für sehr einfache Verhältnisse (keine Kinder, keine Immobilie, ähnliches Einkommen) kann eine kommentierte Vorlage ausreichen. Bei komplexeren Konstellationen -- insbesondere bei gemeinsamem Immobilienbesitz, ungleichen Vermögensverhältnissen, Kindern oder wenn ergänzende Dokumente (Testament, Erbvertrag, Vorsorgeauftrag) koordiniert werden müssen -- ist die Beratung durch einen spezialisierten Anwalt für Familienrecht dringend empfohlen.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Kann man erbrechtliche Regelungen in den Konkubinatsvertrag aufnehmen?</h3>
+                <p class="text-gray-700">Nein, erbrechtliche Verfügungen im Konkubinatsvertrag sind nichtig, da sie die gesetzlich vorgeschriebene Form nicht einhalten. Für die erbrechtliche Begünstigung des Konkubinatspartners muss ein separates Testament (eigenhändig nach Art. 505 ZGB) oder ein notariell beurkundeter Erbvertrag (Art. 512 ZGB) erstellt werden. Im Konkubinatsvertrag kann lediglich ein Verweis auf diese separaten Dokumente aufgenommen werden.</p>
+            </div>
+            <div class="border-b border-gray-200 pb-6">
+                <h3 class="text-xl font-semibold text-navy mb-3">Wie regelt man Kinder im Konkubinatsvertrag?</h3>
+                <p class="text-gray-700">Im Konkubinatsvertrag können die Aufteilung der Kinderbetreuung, die Kostentragung während des Zusammenlebens und die Betreuungsregelung nach einer Trennung festgehalten werden. Die gemeinsame elterliche Sorge muss jedoch separat beim Zivilstandsamt erklärt werden (Art. 298a ZGB). Verzichtsklauseln zum Kindesunterhalt sind nichtig. Im Streitfall entscheidet die KESB oder das Gericht stets nach dem Kindeswohl über Obhut und Betreuung (Art. 296 ZGB).</p>
             </div>
         </div>
     </section>
@@ -218,8 +774,8 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
     <script type="application/ld+json" set:html={JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Konkubinatsvertrag in der Schweiz: Inhalt, Muster und rechtliche Grundlagen",
-        "description": "Leitfaden zum Konkubinatsvertrag in der Schweiz: Inhalt, Formvorschriften, empfohlene Regelungen und häufige Fehler.",
+        "headline": "Konkubinatsvertrag in der Schweiz: Inhalt, Musterklauseln und rechtliche Grundlagen",
+        "description": "Konkubinatsvertrag umfassend erklärt: Inhalte, Formvorschriften, Musterklauseln, Immobilienregelung, Trennungsfolgen und Kosten. Mit Praxistipps und FAQ.",
         "author": {
             "@type": "Organization",
             "name": "Familienrechtanwalt.ch"
@@ -230,7 +786,7 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
             "url": "https://familienrechtanwalt.ch"
         },
         "datePublished": "2025-01-20",
-        "dateModified": "2025-01-20",
+        "dateModified": "2026-02-14",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://familienrechtanwalt.ch/eherecht/konkubinatsvertrag"
@@ -243,18 +799,26 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "Ist ein Konkubinatsvertrag rechtlich bindend?",
+                "name": "Was kostet ein Konkubinatsvertrag?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Ja, sofern er den allgemeinen Voraussetzungen für Verträge entspricht (Handlungsfähigkeit, freier Wille, möglicher und erlaubter Inhalt) und keine unwirksamen Klauseln enthält."
+                    "text": "Die Kosten variieren je nach Erstellungsart: Kostenlose Mustervorlagen aus dem Internet eignen sich nur für sehr einfache Verhältnisse. Kostenpflichtige Vorlagen kosten CHF 50 – 200, Online-Rechtsdienste CHF 200 – 500. Ein individuell erstellter Vertrag durch einen Anwalt oder Notar kostet CHF 500 – 2'000. Bei komplexen Verhältnissen mit Immobilie und ergänzenden Dokumenten (Erbvertrag, Vorsorgeauftrag) ist mit CHF 2'000 – 5'000 zu rechnen."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Muss der Konkubinatsvertrag notariell beglaubigt werden?",
+                "name": "Ist ein Konkubinatsvertrag rechtlich bindend?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Nein, die einfache Schriftlichkeit mit Unterschrift beider Partner genügt. Nur bei erbrechtlichen Verfügungen (Erbvertrag) oder Grundstückübertragungen ist eine notarielle Beurkundung zwingend erforderlich."
+                    "text": "Ja, ein Konkubinatsvertrag ist rechtlich bindend, sofern er die allgemeinen Voraussetzungen des Vertragsrechts erfüllt: Handlungsfähigkeit beider Partner (Art. 12 ff. ZGB), übereinstimmende Willensäusserung (Art. 1 OR), möglicher und erlaubter Inhalt (Art. 20 OR). Er kann wie jeder andere Vertrag gerichtlich durchgesetzt werden. Klauseln, die gegen zwingendes Recht oder die guten Sitten verstossen, sind jedoch nichtig."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Muss ein Konkubinatsvertrag notariell beglaubigt werden?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, der Konkubinatsvertrag selbst muss nicht notariell beglaubigt werden. Die einfache Schriftlichkeit mit Datum und eigenhändiger Unterschrift beider Partner genügt (Art. 11 OR). Eine notarielle Beurkundung ist nur dann zwingend erforderlich, wenn der Vertrag erbrechtliche Verfügungen (Erbvertrag, Art. 512 ZGB) oder Grundstückübertragungsklauseln enthält (Art. 657 ZGB)."
                 }
             },
             {
@@ -262,23 +826,63 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
                 "name": "Was passiert ohne Konkubinatsvertrag bei einer Trennung?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Ohne Vertrag gibt es keine gesetzlichen Regelungen für das Konkubinat. Gerichte wenden häufig die Regeln der einfachen Gesellschaft an (Art. 530 ff. OR), was zu aufwändigen und kostspieligen Verfahren führen kann."
+                    "text": "Ohne Vertrag gibt es keine gesetzlichen Regelungen, die die Trennungsfolgen automatisch ordnen. Jeder Partner behält grundsätzlich, was ihm gehört. Bei gemeinsamen Anschaffungen oder gemeinsamen Investitionen wenden Gerichte häufig die Regeln der einfachen Gesellschaft an (Art. 530 ff. OR). Die Beweislast für Eigentum und Beiträge liegt bei dem Partner, der Ansprüche geltend macht. Dies führt oft zu langwierigen, kostspieligen Gerichtsverfahren."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Kann ich im Konkubinatsvertrag Unterhalt für den Fall der Trennung vereinbaren?",
+                "name": "Was muss in einem Konkubinatsvertrag stehen?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Ja, Sie können Ausgleichszahlungen oder Unterhaltsbeiträge für den Fall der Trennung vereinbaren. Solche Regelungen sind rechtlich bindend, sofern sie nicht sittenwidrig sind."
+                    "text": "Pflichtinhalte gibt es nicht, da der Vertrag gesetzlich nicht geregelt ist. Empfohlen werden folgende Regelungen: Personalien beider Partner, Aufteilung der Haushaltskosten, Inventar der eingebrachten Vermögenswerte, Regelung gemeinsamer Anschaffungen, Regelung bei gemeinsamer Immobilie (Eigentumsquoten, Vorkaufsrecht), Trennungsfolgen (Kündigungsfrist, Auszug, Ausgleichszahlungen), Kinderbetreuungsregelung sowie Verweis auf ergänzende Dokumente (Testament, Vorsorgeauftrag)."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Kann ich im Konkubinatsvertrag regeln, wer die Wohnung bei Trennung behält?",
+                "name": "Kann man im Konkubinatsvertrag Unterhalt regeln?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Ja, Sie können vereinbaren, wer bei einer Trennung in der gemeinsamen Wohnung verbleibt und zu welchen Bedingungen (z.B. Auszugsfrist, Übernahme des Mietvertrags). Bei Mietwohnungen muss jedoch der Vermieter zustimmen."
+                    "text": "Ja, die Partner können im Konkubinatsvertrag Ausgleichszahlungen oder Unterhaltsbeiträge für den Fall der Trennung vereinbaren. Solche Regelungen sind rechtlich bindend, sofern sie nicht sittenwidrig sind (Art. 20 OR). Typisch sind befristete Übergangszahlungen, um dem wirtschaftlich schwächeren Partner die Neuorganisation seines Lebens zu ermöglichen. Ein Verzicht auf Kindesunterhalt ist hingegen nichtig, da dieser Anspruch dem Kind zusteht (Art. 276 ZGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie regelt man eine gemeinsame Immobilie im Konkubinatsvertrag?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei einer gemeinsamen Immobilie sollte der Konkubinatsvertrag folgende Punkte regeln: Eigentumsform (Miteigentum mit individuellen Quoten ist für Konkubinatspaare meist empfehlenswert), Eigenkapitalaufteilung, Tragung der laufenden Kosten (Hypothekarzinsen, Nebenkosten), gegenseitiges Vorkaufsrecht bei Trennung oder Tod, Methode zur Bestimmung des Übernahmepreises (z. B. unabhängige Schätzung) und Auszahlungsmodalitäten. Für die Vormerkung eines Vorkaufsrechts im Grundbuch ist eine notarielle Beurkundung erforderlich."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann man den Konkubinatsvertrag nachträglich ändern?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, der Konkubinatsvertrag kann jederzeit einvernehmlich geändert werden. Änderungen sollten schriftlich in Form eines Nachtrags festgehalten und von beiden Partnern datiert und unterschrieben werden. Eine regelmässige Überprüfung empfiehlt sich insbesondere bei wesentlichen Veränderungen der Lebenssituation (Geburt eines Kindes, Immobilienkauf, Einkommensveränderung). Eine einseitige Änderung ist nicht möglich."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Braucht man einen Anwalt für einen Konkubinatsvertrag?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Rechtlich ist ein Anwalt nicht zwingend erforderlich. Für sehr einfache Verhältnisse (keine Kinder, keine Immobilie, ähnliches Einkommen) kann eine kommentierte Vorlage ausreichen. Bei komplexeren Konstellationen – insbesondere bei gemeinsamem Immobilienbesitz, ungleichen Vermögensverhältnissen, Kindern oder wenn ergänzende Dokumente (Testament, Erbvertrag, Vorsorgeauftrag) koordiniert werden müssen – ist die Beratung durch einen spezialisierten Anwalt für Familienrecht dringend empfohlen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann man erbrechtliche Regelungen in den Konkubinatsvertrag aufnehmen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein, erbrechtliche Verfügungen im Konkubinatsvertrag sind nichtig, da sie die gesetzlich vorgeschriebene Form nicht einhalten. Für die erbrechtliche Begünstigung des Konkubinatspartners muss ein separates Testament (eigenhändig nach Art. 505 ZGB) oder ein notariell beurkundeter Erbvertrag (Art. 512 ZGB) erstellt werden. Im Konkubinatsvertrag kann lediglich ein Verweis auf diese separaten Dokumente aufgenommen werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie regelt man Kinder im Konkubinatsvertrag?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Im Konkubinatsvertrag können die Aufteilung der Kinderbetreuung, die Kostentragung während des Zusammenlebens und die Betreuungsregelung nach einer Trennung festgehalten werden. Die gemeinsame elterliche Sorge muss jedoch separat beim Zivilstandsamt erklärt werden (Art. 298a ZGB). Verzichtsklauseln zum Kindesunterhalt sind nichtig. Im Streitfall entscheidet die KESB oder das Gericht stets nach dem Kindeswohl über Obhut und Betreuung (Art. 296 ZGB)."
                 }
             }
         ]
@@ -308,4 +912,5 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
             }
         ]
     })} />
+
 </ArticleLayout>
