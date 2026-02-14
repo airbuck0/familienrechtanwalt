@@ -1,49 +1,646 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import CTA from '../../components/CTA.astro';
-
-const articles = [
-  { title: "Ehevertrag", href: "/eherecht/ehevertrag", desc: "Der Ehevertrag in der Schweiz" },
-  { title: "Ehevertrag Kosten", href: "/eherecht/ehevertrag-kosten", desc: "Was kostet ein Ehevertrag?" },
-  { title: "Ehevertrag Gütertrennung", href: "/eherecht/ehevertrag-guetertrennung", desc: "Gütertrennung im Ehevertrag" },
-  { title: "Ehevertrag Haus", href: "/eherecht/ehevertrag-haus", desc: "Immobilien im Ehevertrag" },
-  { title: "Eheschutz", href: "/eherecht/eheschutz", desc: "Eheschutzverfahren und -massnahmen" },
-  { title: "Eheschliessung", href: "/eherecht/eheschliessung", desc: "Heiraten in der Schweiz" },
-  { title: "Eheschein", href: "/eherecht/eheschein", desc: "Der Eheschein und seine Bedeutung" },
-  { title: "Ehefähigkeit", href: "/eherecht/ehefaehigkeit", desc: "Voraussetzungen zur Eheschliessung" },
-  { title: "Ehe annullieren", href: "/eherecht/ehe-annullieren", desc: "Aufhebung der Ehe" },
-  { title: "Eheungültigkeit", href: "/eherecht/eheungueltigkeit", desc: "Wann ist eine Ehe ungültig?" },
-  { title: "Ehevorbereitungsverfahren", href: "/eherecht/ehevorbereitungsverfahren", desc: "Vorbereitung der Eheschliessung" },
-  { title: "Eingetragene Partnerschaft", href: "/eherecht/eingetragene-partnerschaft", desc: "Rechtliche Aspekte der Partnerschaft" },
-  { title: "Konkubinat", href: "/eherecht/konkubinat", desc: "Unverheiratetes Zusammenleben" },
-  { title: "Konkubinatsvertrag", href: "/eherecht/konkubinatsvertrag", desc: "Vertrag für unverheiratete Paare" },
-  { title: "Namensänderung bei Hochzeit", href: "/eherecht/namensaenderung-hochzeit", desc: "Namensrecht bei der Heirat" },
-];
 ---
 
-<Layout title="Eherecht" description="Alles zum Thema Eherecht in der Schweiz: Ehevertrag, Eheschliessung, Eheschutz und Konkubinat">
+<Layout
+    title="Eherecht in der Schweiz – Ehevertrag, Eheschutz & Recht 2026"
+    description="Eherecht Schweiz: Ehevertrag, Eheschliessung, Eheschutz & Konkubinat erklärt. Rechte und Pflichten in der Ehe, Namensrecht & aktuelle Gesetzeslage 2026."
+    keywords="Eherecht Schweiz, Ehevertrag, Eheschliessung, Eheschutz, Konkubinat, eingetragene Partnerschaft, Ehe für alle, Namensänderung Hochzeit, Ehevertrag Kosten, Ehefähigkeit"
+>
+
+    <!-- Header -->
     <header class="bg-navy pt-32 pb-16">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-gold font-medium mb-4">Ratgeber Familienrecht</p>
             <h1 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Eherecht in der Schweiz</h1>
-            <p class="text-xl text-blue-100">Ehevertrag, Eheschliessung, Eheschutz und Partnerschaft</p>
+            <p class="text-xl text-blue-100">Ehevertrag, Eheschliessung, Eheschutz und Partnerschaftsformen – der umfassende Leitfaden</p>
         </div>
     </header>
 
-    <section class="py-12">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid gap-6">
-                {articles.map(article => (
-                    <a href={article.href} class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
-                        <h2 class="text-xl font-bold text-navy mb-2">{article.title}</h2>
-                        <p class="text-gray-600">{article.desc}</p>
-                    </a>
-                ))}
+    <!-- Main Content -->
+    <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <!-- Das Wichtigste in Kürze -->
+        <div class="bg-navy text-white p-8 rounded-lg mb-12">
+            <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+            <ul class="space-y-3">
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">✓</span>
+                    <span><strong>Ehe für alle:</strong> Seit dem 1. Juli 2022 können auch gleichgeschlechtliche Paare in der Schweiz heiraten – die eingetragene Partnerschaft wurde abgelöst</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">✓</span>
+                    <span><strong>Gegenseitige Pflichten:</strong> Ehegatten schulden einander Beistand, Treue und gemeinsame Sorge für die Familie (Art. 159 ZGB)</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">✓</span>
+                    <span><strong>Ehevertrag:</strong> Ein notariell beurkundeter Ehevertrag ermöglicht die individuelle Regelung des Güterstands (Art. 182–184 ZGB)</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">✓</span>
+                    <span><strong>Eheschutz:</strong> Bei Ehekrise können Eheschutzmassnahmen (Getrenntleben, Unterhalt, Kinderbelange) gerichtlich angeordnet werden (Art. 172–179 ZGB)</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">✓</span>
+                    <span><strong>Namensrecht:</strong> Seit 2013 behalten Ehegatten ihren Familiennamen oder wählen einen gemeinsamen Namen – eine Pflicht zur Namensänderung besteht nicht mehr (Art. 160 ZGB)</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">✓</span>
+                    <span><strong>Konkubinat:</strong> Unverheiratetes Zusammenleben ist rechtlich nicht der Ehe gleichgestellt – für gemeinsame Kinder gelten jedoch die gleichen Unterhaltsregeln</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Einleitung -->
+        <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+            Das Eherecht bildet zusammen mit dem <a href="/gueterrecht" class="text-gold hover:underline font-semibold">Güterrecht</a>, dem <a href="/unterhalt" class="text-gold hover:underline font-semibold">Unterhaltsrecht</a> und dem <a href="/sorgerecht" class="text-gold hover:underline font-semibold">Kindesrecht</a> das Fundament des Schweizer Familienrechts. Es regelt die Voraussetzungen und das Verfahren der Eheschliessung, die Rechte und Pflichten der Ehegatten während der Ehe, den Schutz bei Ehekrisen und die verschiedenen Formen des Zusammenlebens. Das Schweizer Eherecht wurde zuletzt mit der Einführung der «Ehe für alle» per 1. Juli 2022 grundlegend modernisiert.
+        </p>
+        <p class="text-gray-700 mb-6">
+            Dieser Ratgeber gibt Ihnen einen umfassenden Überblick über alle Bereiche des Eherechts: vom <a href="/eherecht/ehevertrag" class="text-gold hover:underline font-semibold">Ehevertrag</a> und der <a href="/eherecht/eheschliessung" class="text-gold hover:underline font-semibold">Eheschliessung</a> über den <a href="/eherecht/eheschutz" class="text-gold hover:underline font-semibold">Eheschutz</a> bei Krisen bis hin zum <a href="/eherecht/konkubinat" class="text-gold hover:underline font-semibold">Konkubinat</a> und der <a href="/eherecht/eingetragene-partnerschaft" class="text-gold hover:underline font-semibold">eingetragenen Partnerschaft</a>. Jeder Abschnitt verweist auf weiterführende Detailartikel.
+        </p>
+
+        <!-- Inhaltsverzeichnis -->
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-12">
+            <h2 class="font-serif text-xl font-bold text-navy mb-4">Inhaltsverzeichnis</h2>
+            <nav>
+                <ol class="space-y-2 text-gray-700">
+                    <li><a href="#grundlagen" class="text-gold hover:underline">1. Rechtliche Grundlagen des Eherechts</a></li>
+                    <li><a href="#eheschliessung" class="text-gold hover:underline">2. Eheschliessung – Heiraten in der Schweiz</a></li>
+                    <li><a href="#rechte-pflichten" class="text-gold hover:underline">3. Rechte und Pflichten in der Ehe</a></li>
+                    <li><a href="#ehevertrag" class="text-gold hover:underline">4. Der Ehevertrag</a></li>
+                    <li><a href="#eheschutz" class="text-gold hover:underline">5. Eheschutz bei Ehekrise</a></li>
+                    <li><a href="#ungueltig" class="text-gold hover:underline">6. Eheungültigkeit und Eheannullierung</a></li>
+                    <li><a href="#name" class="text-gold hover:underline">7. Namensrecht bei Heirat</a></li>
+                    <li><a href="#konkubinat" class="text-gold hover:underline">8. Konkubinat – unverheiratetes Zusammenleben</a></li>
+                    <li><a href="#partnerschaft" class="text-gold hover:underline">9. Eingetragene Partnerschaft und Ehe für alle</a></li>
+                    <li><a href="#anwalt" class="text-gold hover:underline">10. Wann Sie einen Anwalt beiziehen sollten</a></li>
+                    <li><a href="#fazit" class="text-gold hover:underline">11. Fazit</a></li>
+                    <li><a href="#faq" class="text-gold hover:underline">12. Häufig gestellte Fragen (FAQ)</a></li>
+                </ol>
+            </nav>
+        </div>
+
+        <!-- 1. Rechtliche Grundlagen -->
+        <h2 id="grundlagen" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen des Eherechts</h2>
+
+        <p class="text-gray-700 mb-6">
+            Das Schweizer Eherecht ist im Zivilgesetzbuch (ZGB) in den Art. 90–251 umfassend geregelt. Es umfasst das Verlöbnis, die Eheschliessung, die Wirkungen der Ehe, den Eheschutz und das Güterrecht. Die wichtigsten Abschnitte:
+        </p>
+
+        <div class="overflow-x-auto mb-8">
+            <table class="min-w-full bg-white border border-gray-200">
+                <thead class="bg-navy text-white">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Bereich</th>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Gegenstand</th>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Artikel ZGB</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Verlöbnis</td>
+                        <td class="px-6 py-4 text-gray-700">Eheversprechen, Geschenke, Schadenersatz</td>
+                        <td class="px-6 py-4 text-gray-700">Art. 90–93 ZGB</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Eheschliessung</td>
+                        <td class="px-6 py-4 text-gray-700">Ehefähigkeit, Verfahren, Trauung</td>
+                        <td class="px-6 py-4 text-gray-700">Art. 94–103 ZGB</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Ungültigkeit der Ehe</td>
+                        <td class="px-6 py-4 text-gray-700">Nichtige und anfechtbare Ehe</td>
+                        <td class="px-6 py-4 text-gray-700">Art. 104–110 ZGB</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Wirkungen der Ehe</td>
+                        <td class="px-6 py-4 text-gray-700">Eheliche Rechte und Pflichten, Name, Bürgerrecht</td>
+                        <td class="px-6 py-4 text-gray-700">Art. 159–180 ZGB</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Eheschutz</td>
+                        <td class="px-6 py-4 text-gray-700">Massnahmen bei Ehekrise, Getrenntleben</td>
+                        <td class="px-6 py-4 text-gray-700">Art. 172–179 ZGB</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Güterrecht</td>
+                        <td class="px-6 py-4 text-gray-700">Ehevertrag, Güterstände, Vermögensaufteilung</td>
+                        <td class="px-6 py-4 text-gray-700">Art. 181–251 ZGB</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Ehescheidung</td>
+                        <td class="px-6 py-4 text-gray-700">Scheidungsvoraussetzungen, Verfahren, Folgen</td>
+                        <td class="px-6 py-4 text-gray-700">Art. 111–134 ZGB</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 2. Eheschliessung -->
+        <h2 id="eheschliessung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Eheschliessung – Heiraten in der Schweiz</h2>
+
+        <p class="text-gray-700 mb-6">
+            Die <a href="/eherecht/eheschliessung" class="text-gold hover:underline font-semibold">Eheschliessung</a> unterliegt in der Schweiz bestimmten Voraussetzungen und einem vorgeschriebenen Verfahren. Seit dem 1. Juli 2022 steht die Ehe auch gleichgeschlechtlichen Paaren offen.
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ehefähigkeit (Art. 94 ZGB)</h3>
+
+        <p class="text-gray-700 mb-6">
+            Die <a href="/eherecht/ehefaehigkeit" class="text-gold hover:underline font-semibold">Ehefähigkeit</a> setzt voraus: Volljährigkeit (18 Jahre), Urteilsfähigkeit und das Fehlen von Ehehindernissen. Ehehindernisse sind die Verwandtschaft in gerader Linie (Eltern/Kinder) und zwischen Geschwistern (Art. 95 ZGB). Eine bestehende Ehe oder eingetragene Partnerschaft ist ebenfalls ein Hindernis – Bigamie ist in der Schweiz verboten und strafbar (Art. 215 StGB).
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ehevorbereitungsverfahren</h3>
+
+        <p class="text-gray-700 mb-6">
+            Vor der Trauung müssen die Verlobten das <a href="/eherecht/ehevorbereitungsverfahren" class="text-gold hover:underline font-semibold">Ehevorbereitungsverfahren</a> beim Zivilstandsamt durchlaufen (Art. 97–103 ZGB). Dabei werden die Identität und die Ehefähigkeit geprüft. Erforderliche Dokumente sind: Identitätsausweis, Geburtsschein, Wohnsitzbescheinigung und allenfalls ein Scheidungsurteil oder eine Todesurkunde des früheren Ehegatten. Ausländische Staatsangehörige benötigen zudem einen Zivilstandsausweis und gegebenenfalls eine Aufenthaltsbewilligung. Das Verfahren dauert in der Regel 1–2 Monate. Nach Abschluss erhalten die Verlobten den <a href="/eherecht/eheschein" class="text-gold hover:underline font-semibold">Eheschein</a> bzw. die Ermächtigung zur Trauung.
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Trauung</h3>
+
+        <p class="text-gray-700 mb-6">
+            Die zivilrechtliche Trauung findet vor dem Zivilstandsbeamten statt (Art. 101 ZGB). Sie kann in Anwesenheit von zwei Trauzeugen erfolgen, diese sind jedoch nicht mehr zwingend vorgeschrieben. Die Trauung ist öffentlich. Kirchliche oder religiöse Trauungen haben in der Schweiz keine zivilrechtliche Wirkung – sie dürfen aber nach der zivilrechtlichen Trauung vorgenommen werden.
+        </p>
+
+        <!-- 3. Rechte und Pflichten -->
+        <h2 id="rechte-pflichten" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechte und Pflichten in der Ehe</h2>
+
+        <p class="text-gray-700 mb-6">
+            Mit der Eheschliessung entstehen gegenseitige Rechte und Pflichten, die im ZGB in den Art. 159–180 geregelt sind. Diese Bestimmungen bilden den Rahmen der ehelichen Gemeinschaft.
+        </p>
+
+        <div class="overflow-x-auto mb-8">
+            <table class="min-w-full bg-white border border-gray-200">
+                <thead class="bg-navy text-white">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Pflicht / Recht</th>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Beschreibung</th>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Rechtsgrundlage</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Eheliche Gemeinschaft</td>
+                        <td class="px-6 py-4 text-gray-700">Beistand, Rücksicht und gemeinsame Fürsorge für die Familie</td>
+                        <td class="px-6 py-4 text-gray-700">Art. 159 ZGB</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Unterhalt der Familie</td>
+                        <td class="px-6 py-4 text-gray-700">Gemeinsame Sorge für den Familienunterhalt (Geld, Haushalt, Kinderbetreuung)</td>
+                        <td class="px-6 py-4 text-gray-700">Art. 163 ZGB</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Wohnung</td>
+                        <td class="px-6 py-4 text-gray-700">Gemeinsame Bestimmung der Familienwohnung; Schutz der Familienwohnung</td>
+                        <td class="px-6 py-4 text-gray-700">Art. 162, 169 ZGB</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Beruf und Gewerbe</td>
+                        <td class="px-6 py-4 text-gray-700">Jeder Ehegatte wählt seinen Beruf frei (Rücksichtnahme auf den anderen)</td>
+                        <td class="px-6 py-4 text-gray-700">Art. 167 ZGB</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Auskunfts- und Informationspflicht</td>
+                        <td class="px-6 py-4 text-gray-700">Ehegatten informieren sich gegenseitig über Einkommen, Vermögen und Schulden</td>
+                        <td class="px-6 py-4 text-gray-700">Art. 170 ZGB</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Schutz der Familienwohnung</td>
+                        <td class="px-6 py-4 text-gray-700">Veräusserung oder Kündigung der Familienwohnung nur mit Zustimmung beider Ehegatten</td>
+                        <td class="px-6 py-4 text-gray-700">Art. 169 ZGB</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 4. Ehevertrag -->
+        <h2 id="ehevertrag" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Der Ehevertrag</h2>
+
+        <p class="text-gray-700 mb-6">
+            Der <a href="/eherecht/ehevertrag" class="text-gold hover:underline font-semibold">Ehevertrag</a> ist das wichtigste Instrument zur individuellen Gestaltung der ehelichen Vermögensverhältnisse. Er ermöglicht den Ehegatten, vom ordentlichen Güterstand (Errungenschaftsbeteiligung) abzuweichen und die <a href="/gueterrecht/guetertrennung" class="text-gold hover:underline font-semibold">Gütertrennung</a> oder <a href="/gueterrecht/guetergemeinschaft" class="text-gold hover:underline font-semibold">Gütergemeinschaft</a> zu vereinbaren. Der Ehevertrag muss notariell beurkundet werden (Art. 184 ZGB) und kann vor oder während der Ehe geschlossen werden.
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Kosten und häufige Regelungen</h3>
+
+        <p class="text-gray-700 mb-6">
+            Die <a href="/eherecht/ehevertrag-kosten" class="text-gold hover:underline font-semibold">Kosten eines Ehevertrags</a> variieren je nach Kanton und Komplexität. Für einen Standard-Ehevertrag mit Gütertrennungsvereinbarung ist mit CHF 500–2'000 für die notarielle Beurkundung zu rechnen. Bei komplexeren Regelungen (Unternehmensbewertung, internationale Sachverhalte) können die Kosten deutlich höher liegen.
+        </p>
+
+        <p class="text-gray-700 mb-6">
+            Häufige Regelungsinhalte eines Ehevertrags sind: die Wahl der <a href="/eherecht/ehevertrag-guetertrennung" class="text-gold hover:underline font-semibold">Gütertrennung</a>, die Zuweisung bestimmter Vermögenswerte zum Eigengut, die Regelung der Erträge des Eigenguts, die Veränderung der Vorschlagsteilung sowie besondere Bestimmungen für <a href="/eherecht/ehevertrag-haus" class="text-gold hover:underline font-semibold">Immobilien</a> und Unternehmensbeteiligungen.
+        </p>
+
+        <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+            <p class="font-semibold text-navy mb-2">Praxishinweis – Ehevertrag und Scheidung:</p>
+            <p class="text-gray-700">Der Ehevertrag regelt nur das Güterrecht. Er kann keine Vereinbarungen über <a href="/unterhalt" class="text-gold hover:underline font-semibold">Unterhalt</a>, <a href="/sorgerecht" class="text-gold hover:underline font-semibold">Sorgerecht</a> oder die Aufteilung der beruflichen Vorsorge (2. Säule) enthalten – diese Punkte werden erst im Rahmen der <a href="/scheidung" class="text-gold hover:underline font-semibold">Scheidung</a> geregelt. Vorabregelungen über den nachehelichen Unterhalt in einem Ehevertrag sind rechtlich unwirksam.</p>
+        </div>
+
+        <!-- 5. Eheschutz -->
+        <h2 id="eheschutz" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Eheschutz bei Ehekrise</h2>
+
+        <p class="text-gray-700 mb-6">
+            Der <a href="/eherecht/eheschutz" class="text-gold hover:underline font-semibold">Eheschutz</a> (Art. 172–179 ZGB) bietet Ehegatten die Möglichkeit, bei schwerwiegenden Ehekrisen gerichtliche Massnahmen zu beantragen, ohne sofort ein Scheidungsverfahren einleiten zu müssen. Das Eheschutzverfahren ist ein schnelles, summarisches Verfahren, das typischerweise innerhalb weniger Wochen entschieden wird.
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Eheschutzmassnahmen</h3>
+
+        <p class="text-gray-700 mb-6">
+            Das Gericht kann im Eheschutzverfahren folgende Massnahmen anordnen:
+        </p>
+
+        <ul class="list-disc list-inside space-y-2 text-gray-700 mb-6 ml-4">
+            <li><strong>Getrenntleben:</strong> Bewilligung des Getrenntlebens und Zuweisung der Familienwohnung an einen Ehegatten (Art. 176 Abs. 1 ZGB)</li>
+            <li><strong>Unterhalt:</strong> Festsetzung von <a href="/unterhalt/trennungsunterhalt" class="text-gold hover:underline font-semibold">Trennungsunterhalt</a> und Kindesunterhalt</li>
+            <li><strong>Kinderbelange:</strong> Regelung der Obhut, des Besuchsrechts und des Kindesunterhalts</li>
+            <li><strong>Gütertrennung:</strong> Anordnung der Gütertrennung zum Schutz der wirtschaftlichen Interessen (Art. 176 Abs. 3 ZGB)</li>
+            <li><strong>Verfügungsbeschränkungen:</strong> Verbot der Veräusserung bestimmter Vermögenswerte</li>
+        </ul>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Häusliche Gewalt</h3>
+
+        <p class="text-gray-700 mb-6">
+            Bei <a href="/eherecht/haeusliche-gewalt" class="text-gold hover:underline font-semibold">häuslicher Gewalt</a> stehen besondere Schutzmassnahmen zur Verfügung. Das Opfer kann beim Gericht eine sofortige Wegweisung des Täters aus der gemeinsamen Wohnung beantragen (Art. 28b ZGB). Zudem kann ein Kontakt- und Annäherungsverbot angeordnet werden. In dringenden Fällen kann die Polizei den Täter sofort wegweisen und ein Betretungsverbot aussprechen – die kantonalen Polizeigesetze sehen hierfür Sofortmassnahmen vor.
+        </p>
+
+        <!-- 6. Eheungültigkeit -->
+        <h2 id="ungueltig" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Eheungültigkeit und Eheannullierung</h2>
+
+        <p class="text-gray-700 mb-6">
+            Die <a href="/eherecht/eheungueltigkeit" class="text-gold hover:underline font-semibold">Ungültigerklärung einer Ehe</a> ist von der Scheidung zu unterscheiden. Während die Scheidung eine gültige Ehe auflöst, stellt die Ungültigerklärung fest, dass die Ehe von Anfang an mit einem Mangel behaftet war. Das Gesetz unterscheidet zwei Kategorien:
+        </p>
+
+        <p class="text-gray-700 mb-6">
+            <strong>Nichtige Ehe (Art. 105 ZGB):</strong> Eine Ehe ist nichtig bei: Urteilsunfähigkeit eines Ehegatten zur Zeit der Trauung, Bestehen einer bereits verheirateten Ehe (Bigamie) und Verwandtschaft in gerader Linie. Die Nichtigkeit wird durch Klage festgestellt und wirkt grundsätzlich von Anfang an (ex tunc).
+        </p>
+
+        <p class="text-gray-700 mb-6">
+            <strong>Anfechtbare Ehe (Art. 107 ZGB):</strong> Eine <a href="/eherecht/ehe-annullieren" class="text-gold hover:underline font-semibold">Ehe kann angefochten werden</a> bei: vorübergehender Urteilsunfähigkeit, Irrtum (z.B. über die Identität des Partners), Täuschung über wesentliche persönliche Eigenschaften oder Drohung. Die Anfechtung muss innerhalb von sechs Monaten nach Entdeckung des Grundes bzw. nach Wegfall der Drohung erfolgen.
+        </p>
+
+        <!-- 7. Namensrecht -->
+        <h2 id="name" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Namensrecht bei Heirat</h2>
+
+        <p class="text-gray-700 mb-6">
+            Das <a href="/eherecht/namensaenderung-hochzeit" class="text-gold hover:underline font-semibold">Namensrecht bei der Hochzeit</a> wurde in der Schweiz 2013 grundlegend reformiert (Art. 160 ZGB). Seither gilt: Jeder Ehegatte behält grundsätzlich seinen Familiennamen. Die Ehegatten können jedoch einen gemeinsamen Familiennamen bestimmen – entweder den Ledignamen der Frau oder den Ledignamen des Mannes. Ein Doppelname (z.B. «Müller-Meier») ist als offizieller Familienname nicht mehr möglich, kann aber als Allianzname im täglichen Gebrauch geführt werden.
+        </p>
+
+        <p class="text-gray-700 mb-6">
+            Die Wahl des gemeinsamen Familiennamens erfolgt während des Ehevorbereitungsverfahrens. Wird kein gemeinsamer Name gewählt, behalten beide ihren bisherigen Namen. Kinder erhalten den gemeinsamen Familiennamen der Eltern oder, falls kein gemeinsamer Name gewählt wurde, den Namen, den die Eltern bei der Heirat als Kindsnamen bestimmen.
+        </p>
+
+        <!-- 8. Konkubinat -->
+        <h2 id="konkubinat" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Konkubinat – unverheiratetes Zusammenleben</h2>
+
+        <p class="text-gray-700 mb-6">
+            Das <a href="/eherecht/konkubinat" class="text-gold hover:underline font-semibold">Konkubinat</a> (eheähnliche Lebensgemeinschaft) ist die häufigste Alternative zur Ehe. In der Schweiz leben schätzungsweise über 400'000 Paare im Konkubinat. Rechtlich ist das Konkubinat der Ehe jedoch nicht gleichgestellt: Es bestehen keine gegenseitigen Unterhaltsansprüche, kein gesetzliches Erbrecht und keine güterrechtliche Teilhabe. Bei einer Trennung nimmt jeder Partner seine eigenen Vermögenswerte mit.
+        </p>
+
+        <p class="text-gray-700 mb-6">
+            Ein <a href="/eherecht/konkubinatsvertrag" class="text-gold hover:underline font-semibold">Konkubinatsvertrag</a> kann diese Lücken teilweise schliessen. Darin können die Partner unter anderem die Aufteilung der Lebenshaltungskosten, die Nutzung der gemeinsamen Wohnung bei Trennung und die Zuweisung gemeinsam angeschaffter Gegenstände regeln. Ein Konkubinatsvertrag bedarf keiner notariellen Form, eine schriftliche Vereinbarung ist jedoch empfehlenswert.
+        </p>
+
+        <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+            <p class="font-semibold text-navy mb-2">Wichtig – Kinder im Konkubinat:</p>
+            <p class="text-gray-700">Für gemeinsame Kinder im Konkubinat gelten seit der Revision von 2017 die gleichen Unterhaltsregeln wie für Kinder verheirateter Eltern. Der nicht betreuende Elternteil schuldet <a href="/unterhalt/alimente" class="text-gold hover:underline font-semibold">Kindesunterhalt</a> und <a href="/unterhalt/betreuungsunterhalt" class="text-gold hover:underline font-semibold">Betreuungsunterhalt</a>. Das <a href="/sorgerecht/gemeinsames-sorgerecht" class="text-gold hover:underline font-semibold">gemeinsame Sorgerecht</a> muss bei unverheirateten Eltern durch gemeinsame Erklärung beim Zivilstandsamt begründet werden (Art. 298a ZGB).</p>
+        </div>
+
+        <!-- 9. Eingetragene Partnerschaft -->
+        <h2 id="partnerschaft" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Eingetragene Partnerschaft und Ehe für alle</h2>
+
+        <p class="text-gray-700 mb-6">
+            Die <a href="/eherecht/eingetragene-partnerschaft" class="text-gold hover:underline font-semibold">eingetragene Partnerschaft</a> war bis zum 30. Juni 2022 die einzige Möglichkeit für gleichgeschlechtliche Paare, ihre Beziehung rechtlich zu formalisieren. Seit dem 1. Juli 2022 steht die Ehe für alle offen – gleichgeschlechtliche Paare können seither heiraten und geniessen die gleichen Rechte wie verschiedengeschlechtliche Ehepaare.
+        </p>
+
+        <p class="text-gray-700 mb-6">
+            Bestehende eingetragene Partnerschaften bleiben gültig und können auf Wunsch in eine Ehe umgewandelt werden. Neue eingetragene Partnerschaften können seit dem 1. Juli 2022 nicht mehr begründet werden. Die Umwandlung erfolgt durch eine gemeinsame Erklärung beim Zivilstandsamt und ist gebührenfrei. Bei der Umwandlung bleibt das Datum der ursprünglichen Partnerschaftsbegründung als massgeblicher Zeitpunkt erhalten.
+        </p>
+
+        <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+            <p class="font-semibold text-navy mb-2">Neuerungen durch die «Ehe für alle»:</p>
+            <p class="text-gray-700">Mit der Ehe für alle haben gleichgeschlechtliche Ehepaare auch Zugang zur gemeinschaftlichen Adoption, zur Stiefkindadoption und – bei verheirateten Frauenpaaren – zur Samenspende. Der ordentliche Güterstand ist die <a href="/gueterrecht/errungenschaftsbeteiligung" class="text-gold hover:underline font-semibold">Errungenschaftsbeteiligung</a>, und es gelten die gleichen Unterhaltsregeln wie für verschiedengeschlechtliche Ehen.</p>
+        </div>
+
+        <!-- Anwalt-Sektion -->
+        <section id="anwalt" class="mb-12">
+            <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Eherecht beiziehen sollten</h2>
+
+            <p class="text-gray-700 mb-6">
+                Das Eherecht berührt zentrale Lebensbereiche und hat weitreichende finanzielle und persönliche Konsequenzen. Von der Gestaltung eines Ehevertrags über die Regelung einer Ehekrise bis hin zur Beratung bei einer Eheungültigkeitsklage – fachkundige Unterstützung kann entscheidend sein, um Ihre Rechte zu wahren.
+            </p>
+
+            <p class="text-gray-700 mb-6">
+                Besonders in folgenden Situationen ist die Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> empfohlen: bei der Erstellung eines Ehevertrags, im Eheschutzverfahren bei Trennung, bei häuslicher Gewalt, bei der Prüfung einer Eheannullierung, bei komplexen internationalen Sachverhalten sowie bei der Planung einer <a href="/scheidung" class="text-gold hover:underline font-semibold">Scheidung</a>.
+            </p>
+
+            <p class="text-gray-700 mb-6">
+                Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> kann Sie umfassend über Ihre Rechte und Pflichten in der Ehe beraten, Eheverträge rechtssicher gestalten und Sie im Eheschutzverfahren vertreten. Auch bei Fragen zum <a href="/eherecht/konkubinat" class="text-gold hover:underline font-semibold">Konkubinat</a> oder zur <a href="/eherecht/eingetragene-partnerschaft" class="text-gold hover:underline font-semibold">eingetragenen Partnerschaft</a> ist fachkundige Unterstützung durch einen <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> empfehlenswert.
+            </p>
+
+            <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+                <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+                <p class="mb-6">Unsere spezialisierten Familienrechtsanwälte beraten Sie zu allen Fragen des Eherechts – vom Ehevertrag über den Eheschutz bis zur Scheidungsplanung. Unverbindlich und kostenlos.</p>
+                <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+            </div>
+        </section>
+
+        <!-- Fazit -->
+        <h2 id="fazit" class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+        <p class="text-gray-700 mb-6">
+            Das Schweizer Eherecht bietet einen umfassenden rechtlichen Rahmen für die verschiedenen Formen des Zusammenlebens. Die Ehe begründet weitreichende gegenseitige Rechte und Pflichten, die durch einen Ehevertrag individuell gestaltet werden können. Bei Ehekrisen stehen mit dem Eheschutzverfahren schnelle gerichtliche Massnahmen zur Verfügung, bevor ein Scheidungsverfahren eingeleitet wird. Seit der Einführung der Ehe für alle ist das Schweizer Eherecht zudem zeitgemäss modernisiert.
+        </p>
+
+        <p class="text-gray-700 mb-6">
+            Für Paare – ob verheiratet, im Konkubinat oder in eingetragener Partnerschaft – ist es wichtig, die jeweiligen Rechte und Pflichten zu kennen. Nutzen Sie die weiterführenden Detailartikel auf dieser Seite, um sich umfassend über die einzelnen Themenbereiche des Eherechts zu informieren.
+        </p>
+
+        <!-- FAQ -->
+        <section id="faq" class="mt-16 mb-12">
+            <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+            <div class="space-y-6">
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Was kostet ein Ehevertrag in der Schweiz?</h3>
+                    <p class="text-gray-700">Die Kosten für einen Ehevertrag variieren je nach Kanton und Komplexität. Für einen Standard-Ehevertrag (z.B. Gütertrennung) ist mit CHF 500–2'000 für die notarielle Beurkundung zu rechnen. Bei komplexeren Regelungen (Unternehmensbewertung, internationale Sachverhalte) liegen die Kosten bei CHF 2'000–5'000 oder mehr. Die Anwaltskosten für die Beratung und Ausarbeitung kommen gegebenenfalls hinzu.</p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Braucht man in der Schweiz einen Ehevertrag?</h3>
+                    <p class="text-gray-700">Ohne Ehevertrag gilt automatisch die Errungenschaftsbeteiligung (Art. 196 ZGB). Diese ist für viele Paare angemessen. Ein Ehevertrag ist besonders empfehlenswert bei: Unternehmensbeteiligung, grossem vorehelichem Vermögen, Wiederverheiratung mit Kindern aus erster Ehe, grossen Einkommensunterschieden und internationalen Ehen. Der Ehevertrag muss notariell beurkundet werden.</p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Was ist ein Eheschutzverfahren?</h3>
+                    <p class="text-gray-700">Das Eheschutzverfahren (Art. 172–179 ZGB) ist ein schnelles gerichtliches Verfahren bei Ehekrisen. Es ermöglicht die Regelung des Getrenntlebens, des Unterhalts, der Kinderbelange und der Familienwohnung, ohne dass eine Scheidung eingeleitet werden muss. Die Massnahmen gelten vorläufig und können im späteren Scheidungsverfahren abgeändert werden.</p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Kann man eine Ehe in der Schweiz annullieren lassen?</h3>
+                    <p class="text-gray-700">Ja, unter bestimmten Voraussetzungen. Eine Ehe ist nichtig (Art. 105 ZGB) bei Bigamie, Urteilsunfähigkeit zum Zeitpunkt der Trauung oder verbotener Verwandtschaft. Eine Ehe ist anfechtbar (Art. 107 ZGB) bei Irrtum, Täuschung oder Drohung. Die Anfechtung muss innerhalb von sechs Monaten nach Entdeckung des Grundes erfolgen.</p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Welche Rechte hat man im Konkubinat?</h3>
+                    <p class="text-gray-700">Im Konkubinat bestehen keine gegenseitigen gesetzlichen Unterhaltsansprüche, kein gesetzliches Erbrecht und keine güterrechtliche Teilhabe. Für gemeinsame Kinder gelten jedoch die gleichen Unterhaltsregeln wie bei verheirateten Eltern (Kindesunterhalt und Betreuungsunterhalt). Ein Konkubinatsvertrag kann die finanziellen Verhältnisse regeln.</p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Was hat sich mit der «Ehe für alle» geändert?</h3>
+                    <p class="text-gray-700">Seit dem 1. Juli 2022 können gleichgeschlechtliche Paare in der Schweiz heiraten. Sie erhalten damit die gleichen Rechte wie verschiedengeschlechtliche Ehepaare, einschliesslich gemeinschaftlicher Adoption, Stiefkindadoption und Zugang zur Samenspende (bei Frauenpaaren). Neue eingetragene Partnerschaften können nicht mehr begründet werden; bestehende können in eine Ehe umgewandelt werden.</p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Muss man bei der Hochzeit den Namen ändern?</h3>
+                    <p class="text-gray-700">Nein. Seit der Reform des Namensrechts 2013 (Art. 160 ZGB) behalten Ehegatten grundsätzlich ihren Familiennamen. Sie können jedoch freiwillig einen gemeinsamen Familiennamen wählen – entweder den Ledignamen der Frau oder des Mannes. Ein offizieller Doppelname ist nicht mehr möglich, ein Allianzname (z.B. «Müller-Meier») kann aber im Alltag geführt werden.</p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Welche Dokumente braucht man zum Heiraten in der Schweiz?</h3>
+                    <p class="text-gray-700">Für das Ehevorbereitungsverfahren benötigen Sie: Identitätsausweis, Geburtsschein (nicht älter als 6 Monate), Wohnsitzbescheinigung und allenfalls ein Scheidungsurteil oder eine Todesurkunde. Ausländische Staatsangehörige benötigen zusätzlich einen Zivilstandsausweis und gegebenenfalls eine Aufenthaltsbewilligung. Die Dokumente müssen in einer Amtssprache vorliegen oder übersetzt sein.</p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Was passiert mit der eingetragenen Partnerschaft?</h3>
+                    <p class="text-gray-700">Bestehende eingetragene Partnerschaften bleiben gültig und behalten ihre Rechtswirkungen. Sie können jederzeit durch gemeinsame Erklärung beim Zivilstandsamt gebührenfrei in eine Ehe umgewandelt werden. Neue eingetragene Partnerschaften können seit dem 1. Juli 2022 nicht mehr begründet werden. Die Auflösung einer bestehenden eingetragenen Partnerschaft erfolgt auf dem Klageweg analog zur Scheidung.</p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Was ist bei häuslicher Gewalt zu tun?</h3>
+                    <p class="text-gray-700">Bei häuslicher Gewalt können Sie: die Polizei rufen (Notruf 117), die Polizei kann den Täter sofort wegweisen und ein Betretungsverbot aussprechen. Zudem können Sie beim Gericht eine Wegweisung und ein Kontaktverbot beantragen (Art. 28b ZGB). Opferberatungsstellen bieten kostenlose und vertrauliche Unterstützung. Im Eheschutzverfahren können zudem die Zuweisung der Wohnung und Unterhalt geregelt werden.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </article>
+
+    <!-- Cluster Directory -->
+    <section class="bg-gray-50 py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-serif font-bold text-navy mb-4 text-center">Alle Ratgeber zum Thema Eherecht</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-3xl mx-auto">Vertiefen Sie Ihr Wissen mit unseren spezialisierten Artikeln zu allen Aspekten des Eherechts in der Schweiz.</p>
+
+            <!-- Ehevertrag -->
+            <h3 class="text-2xl font-serif font-bold text-navy mb-6">Ehevertrag</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <a href="/eherecht/ehevertrag" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="text-lg font-bold text-navy mb-2">Ehevertrag in der Schweiz</h4>
+                    <p class="text-gray-600 text-sm">Umfassender Ratgeber: Inhalt, Form, Gestaltungsmöglichkeiten und Grenzen des Ehevertrags.</p>
+                </a>
+                <a href="/eherecht/ehevertrag-kosten" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="text-lg font-bold text-navy mb-2">Ehevertrag Kosten</h4>
+                    <p class="text-gray-600 text-sm">Was kostet ein Ehevertrag? Notariatskosten, Anwaltskosten und Gebühren nach Kanton.</p>
+                </a>
+                <a href="/eherecht/ehevertrag-guetertrennung" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="text-lg font-bold text-navy mb-2">Ehevertrag mit Gütertrennung</h4>
+                    <p class="text-gray-600 text-sm">Gütertrennung im Ehevertrag vereinbaren: Vor- und Nachteile, Muster und Tipps.</p>
+                </a>
+                <a href="/eherecht/ehevertrag-haus" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="text-lg font-bold text-navy mb-2">Ehevertrag und Immobilien</h4>
+                    <p class="text-gray-600 text-sm">Haus und Wohnung im Ehevertrag: Zuweisung, Finanzierung und Scheidungsfolgen.</p>
+                </a>
+            </div>
+
+            <!-- Eheschliessung -->
+            <h3 class="text-2xl font-serif font-bold text-navy mb-6">Eheschliessung</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <a href="/eherecht/eheschliessung" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="text-lg font-bold text-navy mb-2">Eheschliessung</h4>
+                    <p class="text-gray-600 text-sm">Heiraten in der Schweiz: Ablauf, Voraussetzungen und das zivilstandsamtliche Verfahren.</p>
+                </a>
+                <a href="/eherecht/ehefaehigkeit" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="text-lg font-bold text-navy mb-2">Ehefähigkeit</h4>
+                    <p class="text-gray-600 text-sm">Voraussetzungen zur Eheschliessung: Alter, Urteilsfähigkeit und Ehehindernisse.</p>
+                </a>
+                <a href="/eherecht/ehevorbereitungsverfahren" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="text-lg font-bold text-navy mb-2">Ehevorbereitungsverfahren</h4>
+                    <p class="text-gray-600 text-sm">Ablauf, Dokumente und Fristen des Ehevorbereitungsverfahrens beim Zivilstandsamt.</p>
+                </a>
+                <a href="/eherecht/eheschein" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="text-lg font-bold text-navy mb-2">Eheschein</h4>
+                    <p class="text-gray-600 text-sm">Der Eheschein: Bedeutung, Bestellung und Verwendungszwecke.</p>
+                </a>
+                <a href="/eherecht/namensaenderung-hochzeit" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="text-lg font-bold text-navy mb-2">Namensänderung bei Hochzeit</h4>
+                    <p class="text-gray-600 text-sm">Namensrecht bei der Heirat: Gemeinsamer Name, Allianzname und Kindsname.</p>
+                </a>
+            </div>
+
+            <!-- Eheschutz & Eheauflösung -->
+            <h3 class="text-2xl font-serif font-bold text-navy mb-6">Eheschutz und Eheauflösung</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <a href="/eherecht/eheschutz" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="text-lg font-bold text-navy mb-2">Eheschutz</h4>
+                    <p class="text-gray-600 text-sm">Eheschutzverfahren und -massnahmen bei Ehekrise: Getrenntleben, Unterhalt, Wohnung.</p>
+                </a>
+                <a href="/eherecht/haeusliche-gewalt" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="text-lg font-bold text-navy mb-2">Häusliche Gewalt</h4>
+                    <p class="text-gray-600 text-sm">Schutzmassnahmen bei häuslicher Gewalt: Wegweisung, Kontaktverbot und Opferhilfe.</p>
+                </a>
+                <a href="/eherecht/ehe-annullieren" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="text-lg font-bold text-navy mb-2">Ehe annullieren</h4>
+                    <p class="text-gray-600 text-sm">Voraussetzungen und Verfahren der Eheannullierung in der Schweiz.</p>
+                </a>
+                <a href="/eherecht/eheungueltigkeit" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="text-lg font-bold text-navy mb-2">Eheungültigkeit</h4>
+                    <p class="text-gray-600 text-sm">Nichtige und anfechtbare Ehe: Gründe, Rechtsfolgen und Unterschied zur Scheidung.</p>
+                </a>
+            </div>
+
+            <!-- Alternative Partnerschaften -->
+            <h3 class="text-2xl font-serif font-bold text-navy mb-6">Alternative Partnerschaftsformen</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <a href="/eherecht/konkubinat" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="text-lg font-bold text-navy mb-2">Konkubinat</h4>
+                    <p class="text-gray-600 text-sm">Unverheiratetes Zusammenleben: Rechte, Pflichten und rechtliche Unterschiede zur Ehe.</p>
+                </a>
+                <a href="/eherecht/konkubinatsvertrag" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="text-lg font-bold text-navy mb-2">Konkubinatsvertrag</h4>
+                    <p class="text-gray-600 text-sm">Vertrag für unverheiratete Paare: Inhalt, Form und wichtige Regelungspunkte.</p>
+                </a>
+                <a href="/eherecht/eingetragene-partnerschaft" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="text-lg font-bold text-navy mb-2">Eingetragene Partnerschaft</h4>
+                    <p class="text-gray-600 text-sm">Rechte, Pflichten und Umwandlung in eine Ehe seit der «Ehe für alle».</p>
+                </a>
             </div>
         </div>
     </section>
 
-    <CTA
-        title="Fragen zum Eherecht?"
-        text="Lassen Sie sich von einem spezialisierten Familienrechtsanwalt beraten."
-    />
+    <!-- CTA -->
+    <section class="bg-gradient-to-r from-navy to-blue-800 py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-serif font-bold text-white mb-6">Fragen zum Eherecht?</h2>
+            <p class="text-xl text-blue-100 mb-8">Lassen Sie sich von einem spezialisierten Familienrechtsanwalt beraten – kostenlos und unverbindlich.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-4 px-8 rounded-lg text-lg hover:bg-yellow-500 transition-colors">Kostenlose Ersteinschätzung anfragen</a>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Eherecht in der Schweiz – Ehevertrag, Eheschutz & Recht 2026",
+        "description": "Eherecht Schweiz: Ehevertrag, Eheschliessung, Eheschutz & Konkubinat erklärt. Rechte und Pflichten in der Ehe, Namensrecht & aktuelle Gesetzeslage 2026.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2026-02-14",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/eherecht"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Was kostet ein Ehevertrag in der Schweiz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die Kosten für einen Ehevertrag variieren je nach Kanton und Komplexität. Für einen Standard-Ehevertrag (z.B. Gütertrennung) ist mit CHF 500–2'000 für die notarielle Beurkundung zu rechnen. Bei komplexeren Regelungen (Unternehmensbewertung, internationale Sachverhalte) liegen die Kosten bei CHF 2'000–5'000 oder mehr. Die Anwaltskosten für die Beratung und Ausarbeitung kommen gegebenenfalls hinzu."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Braucht man in der Schweiz einen Ehevertrag?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ohne Ehevertrag gilt automatisch die Errungenschaftsbeteiligung (Art. 196 ZGB). Diese ist für viele Paare angemessen. Ein Ehevertrag ist besonders empfehlenswert bei: Unternehmensbeteiligung, grossem vorehelichem Vermögen, Wiederverheiratung mit Kindern aus erster Ehe, grossen Einkommensunterschieden und internationalen Ehen. Der Ehevertrag muss notariell beurkundet werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist ein Eheschutzverfahren?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das Eheschutzverfahren (Art. 172–179 ZGB) ist ein schnelles gerichtliches Verfahren bei Ehekrisen. Es ermöglicht die Regelung des Getrenntlebens, des Unterhalts, der Kinderbelange und der Familienwohnung, ohne dass eine Scheidung eingeleitet werden muss. Die Massnahmen gelten vorläufig und können im späteren Scheidungsverfahren abgeändert werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann man eine Ehe in der Schweiz annullieren lassen?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, unter bestimmten Voraussetzungen. Eine Ehe ist nichtig (Art. 105 ZGB) bei Bigamie, Urteilsunfähigkeit zum Zeitpunkt der Trauung oder verbotener Verwandtschaft. Eine Ehe ist anfechtbar (Art. 107 ZGB) bei Irrtum, Täuschung oder Drohung. Die Anfechtung muss innerhalb von sechs Monaten nach Entdeckung des Grundes erfolgen."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welche Rechte hat man im Konkubinat?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Im Konkubinat bestehen keine gegenseitigen gesetzlichen Unterhaltsansprüche, kein gesetzliches Erbrecht und keine güterrechtliche Teilhabe. Für gemeinsame Kinder gelten jedoch die gleichen Unterhaltsregeln wie bei verheirateten Eltern (Kindesunterhalt und Betreuungsunterhalt). Ein Konkubinatsvertrag kann die finanziellen Verhältnisse regeln."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was hat sich mit der «Ehe für alle» geändert?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Seit dem 1. Juli 2022 können gleichgeschlechtliche Paare in der Schweiz heiraten. Sie erhalten damit die gleichen Rechte wie verschiedengeschlechtliche Ehepaare, einschliesslich gemeinschaftlicher Adoption, Stiefkindadoption und Zugang zur Samenspende (bei Frauenpaaren). Neue eingetragene Partnerschaften können nicht mehr begründet werden; bestehende können in eine Ehe umgewandelt werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Muss man bei der Hochzeit den Namen ändern?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein. Seit der Reform des Namensrechts 2013 (Art. 160 ZGB) behalten Ehegatten grundsätzlich ihren Familiennamen. Sie können jedoch freiwillig einen gemeinsamen Familiennamen wählen – entweder den Ledignamen der Frau oder des Mannes. Ein offizieller Doppelname ist nicht mehr möglich, ein Allianzname (z.B. «Müller-Meier») kann aber im Alltag geführt werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Welche Dokumente braucht man zum Heiraten in der Schweiz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Für das Ehevorbereitungsverfahren benötigen Sie: Identitätsausweis, Geburtsschein (nicht älter als 6 Monate), Wohnsitzbescheinigung und allenfalls ein Scheidungsurteil oder eine Todesurkunde. Ausländische Staatsangehörige benötigen zusätzlich einen Zivilstandsausweis und gegebenenfalls eine Aufenthaltsbewilligung. Die Dokumente müssen in einer Amtssprache vorliegen oder übersetzt sein."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert mit der eingetragenen Partnerschaft?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bestehende eingetragene Partnerschaften bleiben gültig und behalten ihre Rechtswirkungen. Sie können jederzeit durch gemeinsame Erklärung beim Zivilstandsamt gebührenfrei in eine Ehe umgewandelt werden. Neue eingetragene Partnerschaften können seit dem 1. Juli 2022 nicht mehr begründet werden. Die Auflösung einer bestehenden eingetragenen Partnerschaft erfolgt auf dem Klageweg analog zur Scheidung."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist bei häuslicher Gewalt zu tun?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei häuslicher Gewalt können Sie: die Polizei rufen (Notruf 117), die Polizei kann den Täter sofort wegweisen und ein Betretungsverbot aussprechen. Zudem können Sie beim Gericht eine Wegweisung und ein Kontaktverbot beantragen (Art. 28b ZGB). Opferberatungsstellen bieten kostenlose und vertrauliche Unterstützung. Im Eheschutzverfahren können zudem die Zuweisung der Wohnung und Unterhalt geregelt werden."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Eherecht",
+                "item": "https://familienrechtanwalt.ch/eherecht"
+            }
+        ]
+    })} />
+
 </Layout>

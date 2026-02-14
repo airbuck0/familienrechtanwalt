@@ -1,54 +1,604 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import CTA from '../../components/CTA.astro';
-
-const articles = [
-  { title: "Gemeinsames Sorgerecht", href: "/sorgerecht/gemeinsames-sorgerecht", desc: "Das gemeinsame Sorgerecht nach Trennung" },
-  { title: "Alleiniges Sorgerecht", href: "/sorgerecht/alleiniges-sorgerecht", desc: "Wann wird alleiniges Sorgerecht erteilt?" },
-  { title: "Alternierende Obhut", href: "/sorgerecht/alternierende-obhut", desc: "Das Wechselmodell in der Schweiz" },
-  { title: "Umgangsrecht", href: "/sorgerecht/umgangsrecht", desc: "Das Besuchsrecht des nicht betreuenden Elternteils" },
-  { title: "Umgangsregelung", href: "/sorgerecht/umgangsregelung", desc: "Gestaltung der Besuchsrechtsregelung" },
-  { title: "Umgangsrecht verweigern", href: "/sorgerecht/umgangsrecht-verweigern", desc: "Einschränkung des Besuchsrechts" },
-  { title: "Umgangsrecht Vater", href: "/sorgerecht/umgangsrecht-vater", desc: "Besuchsrecht des Vaters" },
-  { title: "Umgangsrecht Kind", href: "/sorgerecht/umgangsrecht-kind", desc: "Rechte des Kindes beim Umgang" },
-  { title: "Umgangsrecht Grosseltern", href: "/sorgerecht/umgangsrecht-grosseltern", desc: "Besuchsrecht der Grosseltern" },
-  { title: "Betreuter Umgang", href: "/sorgerecht/betreuter-umgang", desc: "Begleiteter Umgang mit dem Kind" },
-  { title: "Elterliche Sorge beantragen", href: "/sorgerecht/elterliche-sorge-beantragen", desc: "Antrag auf elterliche Sorge" },
-  { title: "Elterliche Sorge übertragen", href: "/sorgerecht/elterliche-sorge-uebertragen", desc: "Übertragung der Sorge" },
-  { title: "Entzug elterliche Sorge", href: "/sorgerecht/entzug-elterliche-sorge", desc: "Wann wird das Sorgerecht entzogen?" },
-  { title: "Sorgeerklärung", href: "/sorgerecht/sorgeerklaerung", desc: "Erklärung der gemeinsamen Sorge" },
-  { title: "Sorgerecht für Kinder", href: "/sorgerecht/sorgerecht-kinder", desc: "Grundlagen des Sorgerechts" },
-  { title: "Aufenthaltsbestimmungsrecht", href: "/sorgerecht/aufenthaltsbestimmungsrecht", desc: "Wer bestimmt den Wohnort des Kindes?" },
-  { title: "Aufenthaltsbestimmungsrecht beantragen", href: "/sorgerecht/aufenthaltsbestimmungsrecht-beantragen", desc: "Antrag auf Aufenthaltsbestimmungsrecht" },
-  { title: "Aufenthaltsbestimmungsrecht entziehen", href: "/sorgerecht/aufenthaltsbestimmungsrecht-entziehen", desc: "Entzug des Aufenthaltsbestimmungsrechts" },
-  { title: "Wechselmodell", href: "/sorgerecht/wechselmodell", desc: "Das Wechselmodell im Detail" },
-  { title: "Aufenthaltsbestimmungsrecht Wechselmodell", href: "/sorgerecht/aufenthaltsbestimmungsrecht-wechselmodell", desc: "Wechselmodell und Aufenthalt" },
-];
 ---
 
-<Layout title="Sorgerecht" description="Alles zum Thema Sorgerecht in der Schweiz: Gemeinsames Sorgerecht, Obhut, Umgangsrecht und Aufenthaltsbestimmungsrecht">
+<Layout
+    title="Sorgerecht in der Schweiz – Elterliche Sorge, Obhut & Besuchsrecht"
+    description="Sorgerecht Schweiz: Gemeinsames & alleiniges Sorgerecht, Obhut, Besuchsrecht & Aufenthaltsbestimmungsrecht. Alle Gesetzesartikel & BGE 2026."
+    keywords="Sorgerecht Schweiz, gemeinsames Sorgerecht, alleiniges Sorgerecht, elterliche Sorge, Obhut, Besuchsrecht, Aufenthaltsbestimmungsrecht, KESB"
+>
+
+    <!-- Header -->
     <header class="bg-navy pt-32 pb-16">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-gold font-medium mb-4">Ratgeber Familienrecht</p>
             <h1 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Sorgerecht in der Schweiz</h1>
-            <p class="text-xl text-blue-100">Elterliche Sorge, Obhut und Umgangsrecht</p>
+            <p class="text-xl text-blue-100">Elterliche Sorge, Obhut, Besuchsrecht und Aufenthaltsbestimmungsrecht – umfassend erklärt</p>
         </div>
     </header>
 
-    <section class="py-12">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid gap-6">
-                {articles.map(article => (
-                    <a href={article.href} class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
-                        <h2 class="text-xl font-bold text-navy mb-2">{article.title}</h2>
-                        <p class="text-gray-600">{article.desc}</p>
-                    </a>
-                ))}
+    <!-- Main Content -->
+    <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <!-- Das Wichtigste in Kürze -->
+        <div class="bg-navy text-white p-8 rounded-lg mb-12">
+            <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+            <ul class="space-y-3">
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">✓</span>
+                    <span><strong>Gemeinsames Sorgerecht als Regelfall:</strong> Seit dem 1. Juli 2014 gilt das gemeinsame Sorgerecht als Regelfall – auch nach Scheidung oder bei unverheirateten Eltern (Art. 296 Abs. 2 ZGB)</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">✓</span>
+                    <span><strong>Alleiniges Sorgerecht nur ausnahmsweise:</strong> Das alleinige Sorgerecht wird nur bei Gefährdung des Kindeswohls angeordnet (Art. 298 Abs. 1 ZGB)</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">✓</span>
+                    <span><strong>Sorgerecht ≠ Obhut:</strong> Sorgerecht betrifft die rechtliche Vertretung und grundlegende Entscheide; Obhut betrifft die tägliche Betreuung und den Aufenthaltsort des Kindes</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">✓</span>
+                    <span><strong>Besuchsrecht:</strong> Der nicht betreuende Elternteil hat ein Recht auf persönlichen Verkehr (Art. 273 ZGB) – üblich ist jedes zweite Wochenende plus Ferienregelung</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">✓</span>
+                    <span><strong>Kindeswohl als oberstes Prinzip:</strong> Alle Entscheide zum Sorgerecht richten sich nach dem Wohl des Kindes – nicht nach den Interessen der Eltern</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">✓</span>
+                    <span><strong>KESB zuständig:</strong> Bei unverheirateten Eltern und Kindesschutzfragen ist die KESB (Kindes- und Erwachsenenschutzbehörde) zuständig</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Einleitung -->
+        <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+            Das Sorgerecht – im Schweizer Recht als <strong>elterliche Sorge</strong> bezeichnet – umfasst das Recht und die Pflicht der Eltern, für ihre minderjährigen Kinder zu sorgen. Es ist eines der zentralen Themen im Schweizer Familienrecht und betrifft alle Eltern: ob verheiratet, unverheiratet oder geschieden. Die elterliche Sorge regelt, wer über Erziehung, Ausbildung, medizinische Behandlung und rechtliche Vertretung des Kindes entscheidet.
+        </p>
+        <p class="text-gray-700 mb-6">
+            Seit der Gesetzesrevision vom 1. Juli 2014 gilt das <a href="/sorgerecht/gemeinsames-sorgerecht" class="text-gold hover:underline font-semibold">gemeinsame Sorgerecht</a> als Regelfall – unabhängig vom Zivilstand der Eltern. Damit hat der Gesetzgeber einen Paradigmenwechsel vollzogen: Nicht mehr die Ehe, sondern das Kindeswohl bestimmt, wer die elterliche Sorge ausübt. Dieser Ratgeber erklärt alle Aspekte des Sorgerechts in der Schweiz – von den <a href="/sorgerecht/sorgerecht-fuer-kinder" class="text-gold hover:underline font-semibold">Grundlagen des Sorgerechts für Kinder</a> über die verschiedenen <a href="/sorgerecht/umgangsrecht" class="text-gold hover:underline font-semibold">Umgangs- und Besuchsrechte</a> bis hin zum <a href="/sorgerecht/aufenthaltsbestimmungsrecht" class="text-gold hover:underline font-semibold">Aufenthaltsbestimmungsrecht</a> und der Rolle der <a href="/sorgerecht/kesb" class="text-gold hover:underline font-semibold">KESB</a>.
+        </p>
+
+        <!-- Rechtliche Grundlagen -->
+        <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen der elterlichen Sorge</h2>
+        <p class="text-gray-700 mb-6">
+            Die elterliche Sorge ist im Schweizerischen Zivilgesetzbuch (ZGB) in den Artikeln 296–317 geregelt. Sie umfasst drei zentrale Bereiche: die <strong>Pflege und Erziehung</strong> des Kindes (Art. 301 f. ZGB), die <strong>gesetzliche Vertretung</strong> (Art. 304 f. ZGB) und die <strong>Vermögensverwaltung</strong> (Art. 318 ff. ZGB). Die elterliche Sorge steht grundsätzlich beiden Elternteilen gemeinsam zu und dauert bis zur Volljährigkeit des Kindes (18. Altersjahr).
+        </p>
+        <p class="text-gray-700 mb-6">
+            Mit der Revision des Kindesrechts per 1. Juli 2014 wurde das gemeinsame Sorgerecht zum Regelfall erklärt (Art. 296 Abs. 2 ZGB). Seither gilt: Das gemeinsame Sorgerecht besteht von Gesetzes wegen bei verheirateten Eltern und kann durch <a href="/sorgerecht/sorgeerklaerung" class="text-gold hover:underline font-semibold">Sorgeerklärung</a> oder gerichtlichen Entscheid auch bei unverheirateten Eltern begründet werden (Art. 298a ZGB). Das Bundesgericht hat klargestellt, dass das alleinige Sorgerecht nur in Ausnahmefällen angeordnet werden darf (BGE 142 III 612).
+        </p>
+
+        <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+            <p class="font-semibold text-navy mb-2">Wichtige Gesetzesartikel:</p>
+            <p class="text-gray-700">Art. 296–298d ZGB (elterliche Sorge), Art. 301–301a ZGB (Pflege, Erziehung, Aufenthaltsbestimmung), Art. 304–306 ZGB (gesetzliche Vertretung), Art. 273–274a ZGB (persönlicher Verkehr / Besuchsrecht), Art. 307–317 ZGB (Kindesschutz), Art. 133 ZGB (Kinderbelange bei Scheidung).</p>
+        </div>
+
+        <!-- Sorgerecht vs. Obhut -->
+        <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Sorgerecht und Obhut – der wichtige Unterschied</h2>
+        <p class="text-gray-700 mb-6">
+            In der Praxis werden die Begriffe Sorgerecht und Obhut häufig verwechselt, obwohl sie rechtlich unterschiedliche Bereiche abdecken. Die Unterscheidung ist für Eltern, die sich trennen oder scheiden lassen, von zentraler Bedeutung.
+        </p>
+
+        <div class="overflow-x-auto mb-8">
+            <table class="min-w-full bg-white border border-gray-200">
+                <thead class="bg-navy text-white">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Merkmal</th>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Elterliche Sorge (Sorgerecht)</th>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Obhut</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Definition</td>
+                        <td class="px-6 py-4 text-gray-700">Recht und Pflicht, grundlegende Entscheide für das Kind zu treffen</td>
+                        <td class="px-6 py-4 text-gray-700">Tatsächliche Betreuung und Aufenthalt des Kindes im Alltag</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Umfasst</td>
+                        <td class="px-6 py-4 text-gray-700">Erziehung, Schulwahl, Religion, medizinische Entscheide, Namensgebung, Vertretung</td>
+                        <td class="px-6 py-4 text-gray-700">Wohnsitz, tägliche Betreuung, Alltagsentscheide</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Regelfall</td>
+                        <td class="px-6 py-4 text-gray-700">Gemeinsam (beide Eltern)</td>
+                        <td class="px-6 py-4 text-gray-700">Alleinige oder alternierende Obhut</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Rechtsgrundlage</td>
+                        <td class="px-6 py-4 text-gray-700">Art. 296 ff. ZGB</td>
+                        <td class="px-6 py-4 text-gray-700">Art. 298 Abs. 2ter ZGB</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Zuständigkeit</td>
+                        <td class="px-6 py-4 text-gray-700">Gericht (bei Scheidung) / KESB (bei Unverheirateten)</td>
+                        <td class="px-6 py-4 text-gray-700">Gericht (bei Scheidung) / KESB (bei Unverheirateten)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="text-gray-700 mb-6">
+            Konkret bedeutet das: Beide Eltern können das gemeinsame Sorgerecht haben, aber nur ein Elternteil die (alleinige) Obhut. Der andere Elternteil hat dann ein <a href="/sorgerecht/umgangsrecht" class="text-gold hover:underline font-semibold">Besuchsrecht</a>. Zunehmend wird aber auch die <a href="/sorgerecht/alternierende-obhut" class="text-gold hover:underline font-semibold">alternierende Obhut</a> (Wechselmodell) angeordnet, bei der das Kind abwechselnd bei beiden Elternteilen lebt.
+        </p>
+
+        <!-- Gemeinsames Sorgerecht -->
+        <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Gemeinsames Sorgerecht</h2>
+        <p class="text-gray-700 mb-6">
+            Das <a href="/sorgerecht/gemeinsames-sorgerecht" class="text-gold hover:underline font-semibold">gemeinsame Sorgerecht</a> ist seit 2014 der gesetzliche Regelfall in der Schweiz (Art. 296 Abs. 2 ZGB). Es bedeutet, dass beide Elternteile gleichberechtigt an allen wesentlichen Entscheidungen für das Kind beteiligt sind – unabhängig davon, ob sie verheiratet sind, getrennt leben oder geschieden wurden.
+        </p>
+        <p class="text-gray-700 mb-6">
+            Das gemeinsame Sorgerecht entsteht automatisch bei verheirateten Eltern. Bei <strong>unverheirateten Eltern</strong> entsteht das gemeinsame Sorgerecht durch eine <a href="/sorgerecht/sorgeerklaerung" class="text-gold hover:underline font-semibold">Sorgeerklärung</a> beim Zivilstandsamt oder bei der KESB (Art. 298a ZGB). Seit der Gesetzesrevision kann auch die <a href="/sorgerecht/kesb" class="text-gold hover:underline font-semibold">KESB</a> oder das Gericht das gemeinsame Sorgerecht auf Antrag eines Elternteils anordnen, wenn dies dem Kindeswohl entspricht (Art. 298b ZGB).
+        </p>
+        <p class="text-gray-700 mb-6">
+            Bei einer <a href="/scheidung" class="text-gold hover:underline font-semibold">Scheidung</a> bleibt das gemeinsame Sorgerecht grundsätzlich bestehen (Art. 133 Abs. 1 ZGB). Das Gericht überträgt das alleinige Sorgerecht einem Elternteil nur, wenn dies zur Wahrung des Kindeswohls nötig ist. Das Bundesgericht hat festgehalten, dass ein erheblicher und andauernder elterlicher Konflikt allein nicht genügt, um das alleinige Sorgerecht zu begründen (BGE 142 III 612).
+        </p>
+
+        <!-- Alleiniges Sorgerecht -->
+        <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Alleiniges Sorgerecht</h2>
+        <p class="text-gray-700 mb-6">
+            Das <a href="/sorgerecht/alleiniges-sorgerecht-und-alleinige-obhut" class="text-gold hover:underline font-semibold">alleinige Sorgerecht</a> wird nur in Ausnahmefällen angeordnet, wenn das Kindeswohl bei gemeinsamer Sorge gefährdet wäre. Gemäss Art. 298 Abs. 1 ZGB kann das Gericht einem Elternteil die alleinige Sorge zuteilen, wenn dies im Interesse des Kindes erforderlich ist.
+        </p>
+        <p class="text-gray-700 mb-6">
+            Gründe für die Zuteilung des alleinigen Sorgerechts können sein: schwere Vernachlässigung oder Misshandlung des Kindes, schwere psychische Erkrankung eines Elternteils, Suchtprobleme, anhaltend schwerer elterlicher Konflikt, der das Kind belastet, oder völlige Kommunikationsunfähigkeit zwischen den Eltern (BGE 141 III 472). Die Hürde ist bewusst hoch angesetzt – das Bundesgericht hat wiederholt betont, dass das gemeinsame Sorgerecht der Regelfall bleiben muss.
+        </p>
+        <p class="text-gray-700 mb-6">
+            Auch bei alleinigem Sorgerecht behält der andere Elternteil das <a href="/sorgerecht/umgangsrecht" class="text-gold hover:underline font-semibold">Besuchsrecht</a> (Art. 273 ZGB) und das Recht, über wichtige Angelegenheiten informiert und angehört zu werden (Art. 275a ZGB). Der <a href="/sorgerecht/entzug-der-elterlichen-sorge" class="text-gold hover:underline font-semibold">vollständige Entzug der elterlichen Sorge</a> ist die ultima ratio und erfolgt nur durch die KESB bei schwerwiegender Kindeswohlgefährdung (Art. 311 ZGB).
+        </p>
+
+        <!-- Obhut und Betreuungsmodelle -->
+        <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Obhut und Betreuungsmodelle</h2>
+        <p class="text-gray-700 mb-6">
+            Neben dem Sorgerecht muss bei einer Trennung oder Scheidung auch die Obhut geregelt werden – also bei welchem Elternteil das Kind hauptsächlich lebt und von wem es im Alltag betreut wird. Das Schweizer Recht kennt dabei verschiedene Betreuungsmodelle.
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Alleinige Obhut</h3>
+        <p class="text-gray-700 mb-6">
+            Bei der alleinigen Obhut lebt das Kind überwiegend bei einem Elternteil, der die tägliche Betreuung übernimmt. Der andere Elternteil hat ein <a href="/sorgerecht/umgangsrecht" class="text-gold hover:underline font-semibold">Umgangsrecht</a> (Besuchsrecht). Dies war lange Zeit das Standardmodell in der Schweiz. Die übliche Besuchsrechtsregelung sieht vor, dass der nicht betreuende Elternteil das Kind jedes zweite Wochenende sowie einen Teil der Schulferien bei sich hat.
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Alternierende Obhut (Wechselmodell)</h3>
+        <p class="text-gray-700 mb-6">
+            Bei der <a href="/sorgerecht/alternierende-obhut" class="text-gold hover:underline font-semibold">alternierenden Obhut</a> betreuen beide Elternteile das Kind zu annähernd gleichen Teilen. Das Kind lebt abwechselnd bei Mutter und Vater – beispielsweise wochenweise oder nach einem bestimmten Rhythmus. Seit einem Leitentscheid des Bundesgerichts (BGE 142 III 481) muss die alternierende Obhut als gleichwertige Option geprüft werden, wenn ein Elternteil dies beantragt. Detaillierte Informationen finden Sie in unserem Artikel zum <a href="/sorgerecht/wechselmodell" class="text-gold hover:underline font-semibold">Wechselmodell</a>.
+        </p>
+
+        <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+            <p class="font-semibold text-navy mb-2">Voraussetzungen für die alternierende Obhut (BGE 142 III 481):</p>
+            <p class="text-gray-700">Das Bundesgericht verlangt für die alternierende Obhut: Erziehungsfähigkeit beider Eltern, räumliche Nähe der Wohnungen, Kooperations- und Kommunikationsfähigkeit der Eltern, Alter und Bedürfnisse des Kindes sowie – sofern das Kind urteilsfähig ist – seinen Willen. Eine alternierende Obhut gegen den Willen eines Elternteils ist möglich, wenn sie dem Kindeswohl am besten entspricht.</p>
+        </div>
+
+        <!-- Umgangs- und Besuchsrecht -->
+        <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Umgangs- und Besuchsrecht</h2>
+        <p class="text-gray-700 mb-6">
+            Das <a href="/sorgerecht/umgangsrecht" class="text-gold hover:underline font-semibold">Umgangsrecht</a> (in der Schweiz als "persönlicher Verkehr" bezeichnet) gibt dem nicht betreuenden Elternteil das Recht auf regelmässigen Kontakt mit dem Kind (Art. 273 ZGB). Dieses Recht steht beiden Elternteilen zu – es ist sowohl ein Recht des Elternteils als auch ein Recht des Kindes.
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Übliche Besuchsrechtsregelungen</h3>
+        <p class="text-gray-700 mb-6">
+            Die konkrete <a href="/sorgerecht/umgangsregelung" class="text-gold hover:underline font-semibold">Umgangsregelung</a> kann von den Eltern frei vereinbart werden. Fehlt eine Einigung, legt das Gericht oder die KESB die Regelung fest. Die in der Schweiz am häufigsten angewandten Modelle sind:
+        </p>
+        <div class="overflow-x-auto mb-8">
+            <table class="min-w-full bg-white border border-gray-200">
+                <thead class="bg-navy text-white">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Modell</th>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Umfang</th>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Geeignet für</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Standardregelung</td>
+                        <td class="px-6 py-4 text-gray-700">Jedes 2. Wochenende (Fr–So) + ½ Schulferien + Feiertage alternierend</td>
+                        <td class="px-6 py-4 text-gray-700">Alleinige Obhut beim anderen Elternteil</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Erweitertes Besuchsrecht</td>
+                        <td class="px-6 py-4 text-gray-700">Jedes 2. Wochenende + 1 Wochentag + ½ Ferien</td>
+                        <td class="px-6 py-4 text-gray-700">Elternteil möchte mehr Betreuungszeit</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Alternierende Obhut</td>
+                        <td class="px-6 py-4 text-gray-700">50/50 oder ähnliche Aufteilung (z.B. 60/40)</td>
+                        <td class="px-6 py-4 text-gray-700">Gute Kooperation, räumliche Nähe</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Begleiteter Umgang</td>
+                        <td class="px-6 py-4 text-gray-700">Kontakt nur unter Aufsicht einer Fachperson</td>
+                        <td class="px-6 py-4 text-gray-700">Bei Kindeswohlgefährdung</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Besuchsrecht des Vaters</h3>
+        <p class="text-gray-700 mb-6">
+            In der Praxis ist es nach wie vor häufig so, dass die Kinder nach einer Trennung überwiegend bei der Mutter leben. Das <a href="/sorgerecht/umgangsrecht-vater" class="text-gold hover:underline font-semibold">Besuchsrecht des Vaters</a> ist dann ein zentrales Thema. Wichtig: Rechtlich besteht keinerlei Unterschied zwischen den Rechten von Mutter und Vater. Beide haben grundsätzlich denselben Anspruch auf Kontakt mit dem Kind.
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Besuchsrecht der Grosseltern</h3>
+        <p class="text-gray-700 mb-6">
+            Auch <a href="/sorgerecht/umgangsrecht-grosseltern" class="text-gold hover:underline font-semibold">Grosseltern können ein Besuchsrecht</a> erhalten (Art. 274a ZGB). Dies wird allerdings nur unter besonderen Umständen gewährt – namentlich wenn eine enge Beziehung zum Kind bestand und die Verweigerung des Kontakts dem Kindeswohl abträglich wäre. Das <a href="/sorgerecht/umgangsrecht-kind" class="text-gold hover:underline font-semibold">Recht des Kindes</a> auf Kontakt mit seinen Grosseltern wird dabei besonders berücksichtigt.
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Einschränkung und Verweigerung des Besuchsrechts</h3>
+        <p class="text-gray-700 mb-6">
+            Das Besuchsrecht kann eingeschränkt oder entzogen werden, wenn das Wohl des Kindes gefährdet ist (Art. 274 Abs. 2 ZGB). Dies kann bei Missbrauch, Vernachlässigung oder schweren Verhaltensproblemen des besuchsberechtigten Elternteils der Fall sein. In solchen Situationen kann ein <a href="/sorgerecht/betreuter-umgang" class="text-gold hover:underline font-semibold">begleiteter Umgang</a> angeordnet werden. Das eigenmächtige <a href="/sorgerecht/umgangsrecht-verweigern" class="text-gold hover:underline font-semibold">Verweigern des Besuchsrechts</a> durch den obhutsberechtigten Elternteil ist grundsätzlich unzulässig und kann rechtliche Konsequenzen haben.
+        </p>
+
+        <!-- Aufenthaltsbestimmungsrecht -->
+        <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Aufenthaltsbestimmungsrecht</h2>
+        <p class="text-gray-700 mb-6">
+            Das <a href="/sorgerecht/aufenthaltsbestimmungsrecht" class="text-gold hover:underline font-semibold">Aufenthaltsbestimmungsrecht</a> regelt, wer über den Wohnort des Kindes entscheidet. Bei gemeinsamer elterlicher Sorge können beide Elternteile den Aufenthaltsort des Kindes mitbestimmen. Seit der Revision vom 1. Juli 2014 gilt eine wichtige Regelung: Ein Umzug des Kindes an einen anderen Ort bedarf der Zustimmung des anderen Elternteils oder – bei Uneinigkeit – eines Gerichts- bzw. KESB-Entscheids (Art. 301a ZGB).
+        </p>
+        <p class="text-gray-700 mb-6">
+            Diese sogenannte <strong>Umzugsklausel</strong> gilt insbesondere bei Umzügen ins Ausland, aber auch bei Umzügen innerhalb der Schweiz, wenn dadurch die Betreuungsregelung erheblich beeinträchtigt wird. Das Bundesgericht hat klargestellt, dass der Umzug eines Elternteils mit dem Kind nicht leichtfertig bewilligt werden darf und die Auswirkungen auf das Kind sorgfältig abzuwägen sind (BGE 144 III 10). Weitere Details finden Sie in den Artikeln zum <a href="/sorgerecht/aufenthaltsbestimmungsrecht-beantragen" class="text-gold hover:underline font-semibold">Beantragen</a> und <a href="/sorgerecht/aufenthaltsbestimmungsrecht-entziehen" class="text-gold hover:underline font-semibold">Entziehen des Aufenthaltsbestimmungsrechts</a>.
+        </p>
+
+        <!-- Sorgerecht bei unverheirateten Eltern -->
+        <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Sorgerecht bei unverheirateten Eltern</h2>
+        <p class="text-gray-700 mb-6">
+            Bei unverheirateten Eltern hat zunächst die Mutter die alleinige elterliche Sorge (Art. 298a Abs. 5 ZGB). Um das gemeinsame Sorgerecht zu erlangen, müssen die Eltern eine <a href="/sorgerecht/sorgeerklaerung" class="text-gold hover:underline font-semibold">Sorgeerklärung</a> abgeben. Diese kann beim Zivilstandsamt (zusammen mit der <a href="/sorgerecht/vaterschaftsanerkennung" class="text-gold hover:underline font-semibold">Vaterschaftsanerkennung</a>) oder bei der KESB eingereicht werden.
+        </p>
+        <p class="text-gray-700 mb-6">
+            Seit 2014 kann auch der Vater allein bei der KESB einen Antrag auf gemeinsames Sorgerecht stellen, wenn die Mutter nicht einverstanden ist (Art. 298b ZGB). Die KESB prüft dann, ob das gemeinsame Sorgerecht dem Kindeswohl entspricht. In der Praxis wird das gemeinsame Sorgerecht in der grossen Mehrheit der Fälle gewährt.
+        </p>
+        <p class="text-gray-700 mb-6">
+            Möchte ein Elternteil die <a href="/sorgerecht/elterliche-sorge-beantragen" class="text-gold hover:underline font-semibold">elterliche Sorge beantragen</a> oder auf den anderen Elternteil <a href="/sorgerecht/elterliche-sorge-uebertragen" class="text-gold hover:underline font-semibold">übertragen</a>, ist ebenfalls die KESB zuständig. Eine spätere Änderung der Sorgerechtszuteilung setzt veränderte Verhältnisse voraus, die das Kindeswohl betreffen.
+        </p>
+
+        <!-- Sorgerecht bei Scheidung -->
+        <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Sorgerecht bei Scheidung</h2>
+        <p class="text-gray-700 mb-6">
+            Bei einer <a href="/scheidung" class="text-gold hover:underline font-semibold">Scheidung</a> bleibt das gemeinsame Sorgerecht grundsätzlich bestehen (Art. 133 Abs. 1 ZGB). Das Gericht muss im Scheidungsverfahren die folgenden Kinderbelange regeln: elterliche Sorge, Obhut und Betreuungsanteile, persönlichen Verkehr (Besuchsrecht), den <a href="/unterhalt/alimente" class="text-gold hover:underline font-semibold">Kindesunterhalt</a> und gegebenenfalls das Aufenthaltsbestimmungsrecht.
+        </p>
+        <p class="text-gray-700 mb-6">
+            Bei der einvernehmlichen <a href="/scheidung/scheidung-auf-gemeinsames-begehren" class="text-gold hover:underline font-semibold">Scheidung auf gemeinsames Begehren</a> können die Eltern eine Vereinbarung über die Kinderbelange in der <a href="/scheidung/scheidungskonvention" class="text-gold hover:underline font-semibold">Scheidungskonvention</a> festhalten. Das Gericht prüft diese Vereinbarung und genehmigt sie, wenn sie dem Kindeswohl entspricht. Bei strittigen Verhältnissen entscheidet das Gericht. Es kann dazu Abklärungen anordnen und das Kind – sofern es urteilsfähig ist – persönlich anhören (Art. 298 Abs. 1 ZPO). Ausführliche Informationen zu <a href="/scheidung/mit-kind" class="text-gold hover:underline font-semibold">Scheidung mit Kindern</a> finden Sie in unserem Detailartikel.
+        </p>
+
+        <!-- KESB und Kindesschutz -->
+        <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">KESB und Kindesschutz</h2>
+        <p class="text-gray-700 mb-6">
+            Die <a href="/sorgerecht/kesb" class="text-gold hover:underline font-semibold">KESB</a> (Kindes- und Erwachsenenschutzbehörde) spielt eine zentrale Rolle im Schweizer Kindesrecht. Sie ist zuständig für Sorgerechtsentscheide bei unverheirateten Eltern, Kindesschutzmassnahmen und – in schwerwiegenden Fällen – den <a href="/sorgerecht/entzug-der-elterlichen-sorge" class="text-gold hover:underline font-semibold">Entzug der elterlichen Sorge</a> (Art. 311/312 ZGB).
+        </p>
+        <p class="text-gray-700 mb-6">
+            Kindesschutzmassnahmen nach Art. 307–317 ZGB werden abgestuft angeordnet – vom blossen Ermahnungsgespräch über die Errichtung einer Beistandschaft (Art. 308 ZGB) bis hin zum Obhutsentzug (Art. 310 ZGB) und dem vollständigen Sorgerechtsentzug (Art. 311 ZGB). Der Entzug der elterlichen Sorge ist die schwerste Massnahme und wird nur angeordnet, wenn andere Massnahmen erfolglos geblieben sind oder von vornherein ungenügend erscheinen. Weiterführende Informationen bietet auch unsere Seite zum Thema <a href="/kindesschutz" class="text-gold hover:underline font-semibold">Kindesschutz</a>.
+        </p>
+
+        <!-- Anwalt-Sektion -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+            <p class="text-gray-700 mb-6">
+                Sorgerechtsfragen gehören zu den emotionalsten und zugleich rechtlich komplexesten Bereichen des Familienrechts. Ein spezialisierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> kann entscheidend dazu beitragen, Ihre Rechte und die Rechte Ihres Kindes zu wahren – insbesondere wenn die Gegenseite bereits anwaltlich vertreten ist.
+            </p>
+            <p class="text-gray-700 mb-6">
+                Besonders in folgenden Situationen ist die Beratung durch einen erfahrenen <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> dringend empfohlen: bei Streitigkeiten über die Obhutszuteilung, bei drohendem oder erfolgtem Kindesentzug durch die KESB, bei Umzugswünschen mit dem Kind (Inland oder Ausland), bei Verweigerung des Besuchsrechts durch den anderen Elternteil oder bei einem Antrag auf alleiniges Sorgerecht.
+            </p>
+            <p class="text-gray-700 mb-6">
+                Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> kennt die aktuelle Bundesgerichtspraxis, kann Ihre Chancen realistisch einschätzen und vertritt Ihre Interessen in Verhandlungen mit der KESB oder vor Gericht professionell.
+            </p>
+
+            <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+                <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+                <p class="mb-6">Unsere spezialisierten Familienrechtsanwälte beraten Sie zu Ihren Rechten im Sorgerecht, der Obhut und dem Besuchsrecht – unverbindlich und kostenlos.</p>
+                <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
             </div>
+        </section>
+
+        <!-- Fazit -->
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+        <p class="text-gray-700 mb-6">
+            Das Sorgerecht in der Schweiz hat sich seit der Revision von 2014 grundlegend verändert. Das gemeinsame Sorgerecht ist heute der Regelfall – sowohl bei verheirateten als auch bei unverheirateten Eltern. Der wichtige Unterschied zwischen Sorgerecht und Obhut wird in der Praxis häufig übersehen, ist aber für die konkrete Betreuungsregelung entscheidend.
+        </p>
+        <p class="text-gray-700 mb-6">
+            Bei allen Entscheidungen steht das Kindeswohl im Zentrum. Die alternierende Obhut hat sich als gleichwertige Option zur alleinigen Obhut etabliert und wird von den Gerichten zunehmend angeordnet. Eltern, die sich in Sorgerechtsfragen nicht einigen können, sollten frühzeitig fachkundige Unterstützung suchen – ob durch <a href="/mediation" class="text-gold hover:underline font-semibold">Mediation</a> oder anwaltliche Beratung.
+        </p>
+
+        <!-- FAQ -->
+        <section class="mt-16 mb-12">
+            <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+            <div class="space-y-6">
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen Sorgerecht und Obhut?</h3>
+                    <p class="text-gray-700">Das Sorgerecht (elterliche Sorge) umfasst das Recht, grundlegende Entscheidungen für das Kind zu treffen – Erziehung, Schulwahl, medizinische Behandlung, religiöse Erziehung und rechtliche Vertretung. Die Obhut betrifft dagegen den tatsächlichen Aufenthalt und die alltägliche Betreuung des Kindes. Beide Eltern können das gemeinsame Sorgerecht haben, während die Obhut nur bei einem Elternteil oder alternierend liegt.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Wer bekommt nach der Scheidung das Sorgerecht?</h3>
+                    <p class="text-gray-700">Seit 2014 bleibt das gemeinsame Sorgerecht nach der Scheidung grundsätzlich bestehen (Art. 133 Abs. 1 ZGB). Beide Elternteile behalten das Sorgerecht. Das alleinige Sorgerecht wird nur bei einer Gefährdung des Kindeswohls angeordnet – beispielsweise bei schwerer Vernachlässigung, Gewalt oder völliger Kommunikationsunfähigkeit der Eltern (BGE 142 III 612). Die Obhut – also bei wem das Kind lebt – wird dagegen separat geregelt.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Wie bekomme ich als Vater das gemeinsame Sorgerecht?</h3>
+                    <p class="text-gray-700">Bei verheirateten Eltern haben beide automatisch das gemeinsame Sorgerecht. Bei unverheirateten Eltern muss eine Sorgeerklärung beim Zivilstandsamt (zusammen mit der Vaterschaftsanerkennung) oder bei der KESB abgegeben werden (Art. 298a ZGB). Verweigert die Mutter die gemeinsame Sorgeerklärung, kann der Vater bei der KESB einen Antrag auf gemeinsames Sorgerecht stellen (Art. 298b ZGB). Die KESB gewährt das gemeinsame Sorgerecht in der Regel, sofern es dem Kindeswohl entspricht.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Was ist die alternierende Obhut (Wechselmodell)?</h3>
+                    <p class="text-gray-700">Bei der alternierenden Obhut lebt das Kind abwechselnd bei beiden Elternteilen – beispielsweise wochenweise oder im 2-Wochen-Rhythmus. Seit dem Leitentscheid BGE 142 III 481 muss das Gericht die alternierende Obhut als gleichwertige Option prüfen, wenn ein Elternteil dies beantragt. Voraussetzungen sind unter anderem: Erziehungsfähigkeit beider Eltern, geografische Nähe der Wohnungen und eine ausreichende Kooperationsbereitschaft.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Wie oft darf der Vater das Kind sehen?</h3>
+                    <p class="text-gray-700">Es gibt keine gesetzlich festgelegte Häufigkeit. Die übliche Regelung in der Schweiz sieht vor, dass der nicht betreuende Elternteil das Kind jedes zweite Wochenende (Freitag bis Sonntag) sowie die Hälfte der Schulferien und alternierend die Feiertage bei sich hat. Bei kleineren Kindern kann zusätzlich ein Nachmittag unter der Woche vereinbart werden. Die konkrete Regelung hängt vom Alter des Kindes, den Bedürfnissen und den Umständen ab.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Kann das Besuchsrecht verweigert werden?</h3>
+                    <p class="text-gray-700">Das eigenmächtige Verweigern des Besuchsrechts ist grundsätzlich unzulässig. Der obhutsberechtigte Elternteil darf den Kontakt nicht ohne rechtliche Grundlage unterbinden. Das Besuchsrecht kann nur durch die KESB oder das Gericht eingeschränkt oder entzogen werden, wenn das Kindeswohl konkret gefährdet ist (Art. 274 Abs. 2 ZGB). Bei Verdacht auf Missbrauch oder Gewalt kann ein begleiteter Umgang angeordnet werden.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Wann wird das alleinige Sorgerecht erteilt?</h3>
+                    <p class="text-gray-700">Das alleinige Sorgerecht wird nur in Ausnahmefällen angeordnet, wenn das Kindeswohl bei gemeinsamer Sorge gefährdet wäre. Gründe können sein: schwere Vernachlässigung oder Misshandlung, schwere psychische Erkrankung, Suchtprobleme, anhaltend schwerer elterlicher Konflikt, der das Kind belastet, oder dauerhafte Kommunikationsunfähigkeit. Das Bundesgericht hat die Hürde bewusst hoch angesetzt (BGE 142 III 612).</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Was ist eine Sorgeerklärung?</h3>
+                    <p class="text-gray-700">Die Sorgeerklärung ist die gemeinsame Erklärung unverheirateter Eltern, dass sie die elterliche Sorge gemeinsam ausüben wollen (Art. 298a ZGB). Sie wird beim Zivilstandsamt – idealerweise zusammen mit der Vaterschaftsanerkennung – oder bei der KESB abgegeben. Mit der Sorgeerklärung erhalten beide Elternteile das gemeinsame Sorgerecht. Ohne Sorgeerklärung hat bei unverheirateten Eltern zunächst die Mutter die alleinige Sorge.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Darf ich mit meinem Kind in einen anderen Kanton oder ins Ausland ziehen?</h3>
+                    <p class="text-gray-700">Bei gemeinsamer elterlicher Sorge benötigt ein Umzug mit dem Kind die Zustimmung des anderen Elternteils, wenn er den Aufenthaltsort des Kindes verändert und die Betreuungsregelung erheblich beeinträchtigt (Art. 301a ZGB). Bei Umzügen ins Ausland ist die Zustimmung immer erforderlich. Verweigert der andere Elternteil die Zustimmung, muss die KESB oder das Gericht entscheiden. Das Kindeswohl ist dabei massgebend (BGE 144 III 10).</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Welche Rolle spielt die KESB beim Sorgerecht?</h3>
+                    <p class="text-gray-700">Die KESB ist zuständig für Sorgerechtsentscheide bei unverheirateten Eltern (Sorgeerklärung, Antrag auf gemeinsames Sorgerecht), Kindesschutzmassnahmen (Beistandschaft, Obhutsentzug, Sorgerechtsentzug) und die Genehmigung von Umzügen. Bei Scheidungen ist dagegen das Gericht zuständig. Die KESB handelt immer im Interesse des Kindeswohls und kann auch von Amtes wegen eingreifen, wenn Hinweise auf eine Kindeswohlgefährdung vorliegen.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Ab welchem Alter darf das Kind mitentscheiden?</h3>
+                    <p class="text-gray-700">Das Schweizer Recht kennt keine starre Altersgrenze für die Mitbestimmung des Kindes. Generell wird das Kind angehört, sobald es urteilsfähig ist – in der Regel ab etwa 6 Jahren. Ab 12 Jahren wird dem Willen des Kindes ein grösseres Gewicht beigemessen. Das Bundesgericht hat betont, dass der Kindeswille ein wichtiger, aber nicht der allein ausschlaggebende Faktor ist (BGE 131 III 553). Die Anhörung des Kindes ist bei Sorgerechtsentscheiden grundsätzlich obligatorisch.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alle Artikel zum Thema Sorgerecht -->
+        <section class="mt-16 mb-12">
+            <h2 class="text-3xl font-serif font-bold text-navy mb-8">Alle Artikel zum Thema Sorgerecht</h2>
+            <p class="text-gray-700 mb-8">Vertiefen Sie Ihr Wissen mit unseren ausführlichen Fachartikeln zu allen Aspekten des Sorgerechts in der Schweiz.</p>
+
+            <h3 class="font-serif text-xl font-bold text-navy mt-8 mb-4">Elterliche Sorge</h3>
+            <div class="grid md:grid-cols-2 gap-4 mb-8">
+                <a href="/sorgerecht/gemeinsames-sorgerecht" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Gemeinsames Sorgerecht</h4>
+                    <p class="text-gray-600 text-sm">Das gemeinsame Sorgerecht als Regelfall</p>
+                </a>
+                <a href="/sorgerecht/alleiniges-sorgerecht-und-alleinige-obhut" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Alleiniges Sorgerecht</h4>
+                    <p class="text-gray-600 text-sm">Wann wird alleiniges Sorgerecht erteilt?</p>
+                </a>
+                <a href="/sorgerecht/sorgerecht-fuer-kinder" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Sorgerecht für Kinder</h4>
+                    <p class="text-gray-600 text-sm">Grundlagen des Sorgerechts im Überblick</p>
+                </a>
+                <a href="/sorgerecht/sorgeerklaerung" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Sorgeerklärung</h4>
+                    <p class="text-gray-600 text-sm">Gemeinsame Sorge für unverheiratete Eltern</p>
+                </a>
+                <a href="/sorgerecht/elterliche-sorge-beantragen" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Elterliche Sorge beantragen</h4>
+                    <p class="text-gray-600 text-sm">Antrag auf elterliche Sorge bei der KESB</p>
+                </a>
+                <a href="/sorgerecht/elterliche-sorge-uebertragen" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Elterliche Sorge übertragen</h4>
+                    <p class="text-gray-600 text-sm">Übertragung der Sorge auf den anderen Elternteil</p>
+                </a>
+                <a href="/sorgerecht/entzug-der-elterlichen-sorge" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Entzug der elterlichen Sorge</h4>
+                    <p class="text-gray-600 text-sm">Wann wird das Sorgerecht entzogen?</p>
+                </a>
+                <a href="/sorgerecht/vaterschaftsanerkennung" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Vaterschaftsanerkennung</h4>
+                    <p class="text-gray-600 text-sm">Anerkennung der Vaterschaft in der Schweiz</p>
+                </a>
+                <a href="/sorgerecht/kesb" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">KESB</h4>
+                    <p class="text-gray-600 text-sm">Kindes- und Erwachsenenschutzbehörde</p>
+                </a>
+            </div>
+
+            <h3 class="font-serif text-xl font-bold text-navy mt-8 mb-4">Obhut und Betreuung</h3>
+            <div class="grid md:grid-cols-2 gap-4 mb-8">
+                <a href="/sorgerecht/alternierende-obhut" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Alternierende Obhut</h4>
+                    <p class="text-gray-600 text-sm">Das Wechselmodell in der Schweiz</p>
+                </a>
+                <a href="/sorgerecht/wechselmodell" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Wechselmodell</h4>
+                    <p class="text-gray-600 text-sm">Das Wechselmodell im Detail</p>
+                </a>
+                <a href="/sorgerecht/aufenthaltsbestimmungsrecht" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Aufenthaltsbestimmungsrecht</h4>
+                    <p class="text-gray-600 text-sm">Wer bestimmt den Wohnort des Kindes?</p>
+                </a>
+                <a href="/sorgerecht/aufenthaltsbestimmungsrecht-beantragen" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Aufenthaltsbestimmungsrecht beantragen</h4>
+                    <p class="text-gray-600 text-sm">Antrag bei Umzug mit dem Kind</p>
+                </a>
+                <a href="/sorgerecht/aufenthaltsbestimmungsrecht-entziehen" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Aufenthaltsbestimmungsrecht entziehen</h4>
+                    <p class="text-gray-600 text-sm">Entzug des Aufenthaltsbestimmungsrechts</p>
+                </a>
+                <a href="/sorgerecht/aufenthaltsbestimmungsrecht-wechselmodell" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Aufenthaltsbestimmungsrecht & Wechselmodell</h4>
+                    <p class="text-gray-600 text-sm">Wechselmodell und Aufenthaltsort</p>
+                </a>
+            </div>
+
+            <h3 class="font-serif text-xl font-bold text-navy mt-8 mb-4">Umgangs- und Besuchsrecht</h3>
+            <div class="grid md:grid-cols-2 gap-4 mb-8">
+                <a href="/sorgerecht/umgangsrecht" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Umgangsrecht</h4>
+                    <p class="text-gray-600 text-sm">Besuchsrecht des nicht betreuenden Elternteils</p>
+                </a>
+                <a href="/sorgerecht/umgangsregelung" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Umgangsregelung</h4>
+                    <p class="text-gray-600 text-sm">Gestaltung der Besuchsrechtsregelung</p>
+                </a>
+                <a href="/sorgerecht/umgangsrecht-vater" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Umgangsrecht Vater</h4>
+                    <p class="text-gray-600 text-sm">Besuchsrecht des Vaters</p>
+                </a>
+                <a href="/sorgerecht/umgangsrecht-kind" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Umgangsrecht Kind</h4>
+                    <p class="text-gray-600 text-sm">Rechte des Kindes beim Umgang</p>
+                </a>
+                <a href="/sorgerecht/umgangsrecht-grosseltern" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Umgangsrecht Grosseltern</h4>
+                    <p class="text-gray-600 text-sm">Besuchsrecht der Grosseltern</p>
+                </a>
+                <a href="/sorgerecht/umgangsrecht-verweigern" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Umgangsrecht verweigern</h4>
+                    <p class="text-gray-600 text-sm">Einschränkung des Besuchsrechts</p>
+                </a>
+                <a href="/sorgerecht/betreuter-umgang" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Betreuter Umgang</h4>
+                    <p class="text-gray-600 text-sm">Begleiteter Umgang mit dem Kind</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Schema Markup: Article -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Sorgerecht in der Schweiz – Elterliche Sorge, Obhut & Besuchsrecht",
+            "description": "Sorgerecht Schweiz: Gemeinsames & alleiniges Sorgerecht, Obhut, Besuchsrecht & Aufenthaltsbestimmungsrecht. Alle Gesetzesartikel & BGE 2026.",
+            "author": {
+                "@type": "Organization",
+                "name": "Familienrechtanwalt.ch"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Familienrechtanwalt.ch",
+                "url": "https://familienrechtanwalt.ch"
+            },
+            "datePublished": "2025-01-20",
+            "dateModified": "2026-02-14",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://familienrechtanwalt.ch/sorgerecht"
+            }
+        })} />
+
+        <!-- Schema Markup: FAQPage -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Was ist der Unterschied zwischen Sorgerecht und Obhut?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Das Sorgerecht (elterliche Sorge) umfasst das Recht, grundlegende Entscheidungen für das Kind zu treffen – Erziehung, Schulwahl, medizinische Behandlung, religiöse Erziehung und rechtliche Vertretung. Die Obhut betrifft dagegen den tatsächlichen Aufenthalt und die alltägliche Betreuung des Kindes. Beide Eltern können das gemeinsame Sorgerecht haben, während die Obhut nur bei einem Elternteil oder alternierend liegt."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Wer bekommt nach der Scheidung das Sorgerecht?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Seit 2014 bleibt das gemeinsame Sorgerecht nach der Scheidung grundsätzlich bestehen (Art. 133 Abs. 1 ZGB). Beide Elternteile behalten das Sorgerecht. Das alleinige Sorgerecht wird nur bei einer Gefährdung des Kindeswohls angeordnet – beispielsweise bei schwerer Vernachlässigung, Gewalt oder völliger Kommunikationsunfähigkeit der Eltern (BGE 142 III 612). Die Obhut – also bei wem das Kind lebt – wird dagegen separat geregelt."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Wie bekomme ich als Vater das gemeinsame Sorgerecht?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Bei verheirateten Eltern haben beide automatisch das gemeinsame Sorgerecht. Bei unverheirateten Eltern muss eine Sorgeerklärung beim Zivilstandsamt (zusammen mit der Vaterschaftsanerkennung) oder bei der KESB abgegeben werden (Art. 298a ZGB). Verweigert die Mutter die gemeinsame Sorgeerklärung, kann der Vater bei der KESB einen Antrag auf gemeinsames Sorgerecht stellen (Art. 298b ZGB)."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Was ist die alternierende Obhut (Wechselmodell)?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Bei der alternierenden Obhut lebt das Kind abwechselnd bei beiden Elternteilen – beispielsweise wochenweise oder im 2-Wochen-Rhythmus. Seit dem Leitentscheid BGE 142 III 481 muss das Gericht die alternierende Obhut als gleichwertige Option prüfen, wenn ein Elternteil dies beantragt. Voraussetzungen sind unter anderem: Erziehungsfähigkeit beider Eltern, geografische Nähe der Wohnungen und eine ausreichende Kooperationsbereitschaft."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Wie oft darf der Vater das Kind sehen?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Es gibt keine gesetzlich festgelegte Häufigkeit. Die übliche Regelung in der Schweiz sieht vor, dass der nicht betreuende Elternteil das Kind jedes zweite Wochenende (Freitag bis Sonntag) sowie die Hälfte der Schulferien und alternierend die Feiertage bei sich hat. Bei kleineren Kindern kann zusätzlich ein Nachmittag unter der Woche vereinbart werden."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Kann das Besuchsrecht verweigert werden?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Das eigenmächtige Verweigern des Besuchsrechts ist grundsätzlich unzulässig. Das Besuchsrecht kann nur durch die KESB oder das Gericht eingeschränkt oder entzogen werden, wenn das Kindeswohl konkret gefährdet ist (Art. 274 Abs. 2 ZGB). Bei Verdacht auf Missbrauch oder Gewalt kann ein begleiteter Umgang angeordnet werden."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Wann wird das alleinige Sorgerecht erteilt?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Das alleinige Sorgerecht wird nur in Ausnahmefällen angeordnet, wenn das Kindeswohl bei gemeinsamer Sorge gefährdet wäre. Gründe können sein: schwere Vernachlässigung oder Misshandlung, schwere psychische Erkrankung, Suchtprobleme, anhaltend schwerer elterlicher Konflikt oder dauerhafte Kommunikationsunfähigkeit. Das Bundesgericht hat die Hürde bewusst hoch angesetzt (BGE 142 III 612)."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Was ist eine Sorgeerklärung?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Die Sorgeerklärung ist die gemeinsame Erklärung unverheirateter Eltern, dass sie die elterliche Sorge gemeinsam ausüben wollen (Art. 298a ZGB). Sie wird beim Zivilstandsamt – idealerweise zusammen mit der Vaterschaftsanerkennung – oder bei der KESB abgegeben. Mit der Sorgeerklärung erhalten beide Elternteile das gemeinsame Sorgerecht."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Darf ich mit meinem Kind in einen anderen Kanton oder ins Ausland ziehen?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Bei gemeinsamer elterlicher Sorge benötigt ein Umzug mit dem Kind die Zustimmung des anderen Elternteils, wenn er den Aufenthaltsort des Kindes verändert und die Betreuungsregelung erheblich beeinträchtigt (Art. 301a ZGB). Bei Umzügen ins Ausland ist die Zustimmung immer erforderlich. Verweigert der andere Elternteil die Zustimmung, muss die KESB oder das Gericht entscheiden (BGE 144 III 10)."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Welche Rolle spielt die KESB beim Sorgerecht?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Die KESB ist zuständig für Sorgerechtsentscheide bei unverheirateten Eltern (Sorgeerklärung, Antrag auf gemeinsames Sorgerecht), Kindesschutzmassnahmen (Beistandschaft, Obhutsentzug, Sorgerechtsentzug) und die Genehmigung von Umzügen. Bei Scheidungen ist dagegen das Gericht zuständig."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Ab welchem Alter darf das Kind mitentscheiden?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Das Schweizer Recht kennt keine starre Altersgrenze für die Mitbestimmung des Kindes. Generell wird das Kind angehört, sobald es urteilsfähig ist – in der Regel ab etwa 6 Jahren. Ab 12 Jahren wird dem Willen des Kindes ein grösseres Gewicht beigemessen. Das Bundesgericht hat betont, dass der Kindeswille ein wichtiger, aber nicht der allein ausschlaggebende Faktor ist (BGE 131 III 553)."
+                    }
+                }
+            ]
+        })} />
+
+        <!-- Schema Markup: BreadcrumbList -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://familienrechtanwalt.ch"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Sorgerecht",
+                    "item": "https://familienrechtanwalt.ch/sorgerecht"
+                }
+            ]
+        })} />
+
+    </article>
+
+    <!-- CTA Section -->
+    <section class="bg-navy py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-serif font-bold text-white mb-4">Fragen zum Sorgerecht?</h2>
+            <p class="text-blue-100 mb-8 text-lg">Lassen Sie sich von einem spezialisierten Familienrechtsanwalt beraten – kostenlos und unverbindlich.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-white px-8 py-4 rounded font-semibold text-lg hover:bg-opacity-90 transition">Kostenlose Ersteinschätzung</a>
         </div>
     </section>
 
-    <CTA
-        title="Fragen zum Sorgerecht?"
-        text="Lassen Sie sich von einem spezialisierten Familienrechtsanwalt beraten."
-    />
 </Layout>

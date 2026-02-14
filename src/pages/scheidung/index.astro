@@ -1,56 +1,657 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import CTA from '../../components/CTA.astro';
-
-const articles = [
-  { title: "Kosten einer Scheidung", href: "/scheidung/kosten-einer-scheidung", desc: "Vollständiger Überblick über alle Scheidungskosten" },
-  { title: "Ablauf einer Scheidung", href: "/scheidung/ablauf-einer-scheidung", desc: "Schritt für Schritt durch das Scheidungsverfahren" },
-  { title: "Scheidung auf gemeinsames Begehren", href: "/scheidung/auf-gemeinsames-begehren", desc: "Die einvernehmliche Scheidung in der Schweiz" },
-  { title: "Strittige Scheidung", href: "/scheidung/strittige-scheidung", desc: "Wenn keine Einigung möglich ist" },
-  { title: "Dauer der Scheidung", href: "/scheidung/dauer-der-scheidung", desc: "Wie lange dauert ein Scheidungsverfahren?" },
-  { title: "Scheidung einreichen", href: "/scheidung/einreichen", desc: "Wie und wo Sie die Scheidung einreichen" },
-  { title: "Scheidungskonvention", href: "/scheidung/scheidungskonvention", desc: "Die Vereinbarung der Scheidungsfolgen" },
-  { title: "Scheidung ohne Anwalt", href: "/scheidung/ohne-anwalt", desc: "Ist eine Scheidung ohne Anwalt möglich?" },
-  { title: "Scheidungsantrag einreichen", href: "/scheidung/scheidungsantrag-einreichen", desc: "Der formelle Scheidungsantrag" },
-  { title: "Gesetzeslage Scheidung", href: "/scheidung/gesetzeslage", desc: "Rechtliche Grundlagen der Scheidung" },
-  { title: "Anwaltskosten Scheidung", href: "/scheidung/anwaltskosten", desc: "Was kostet ein Scheidungsanwalt?" },
-  { title: "Internationale Scheidung", href: "/scheidung/internationale-scheidung", desc: "Scheidung mit Auslandsbezug" },
-  { title: "Scheidung und Haus", href: "/scheidung/haus", desc: "Was passiert mit der Immobilie?" },
-  { title: "Scheidung mit Kind", href: "/scheidung/mit-kind", desc: "Besonderheiten bei Kindern" },
-  { title: "Scheidung rechtskräftig", href: "/scheidung/rechtskraeftig", desc: "Wann wird die Scheidung rechtskräftig?" },
-  { title: "Scheidungsantrag", href: "/scheidung/scheidungsantrag", desc: "Inhalt und Form des Antrags" },
-  { title: "Scheidungsklage", href: "/scheidung/scheidungsklage", desc: "Die einseitige Scheidungsklage" },
-  { title: "Scheidungsunterlagen", href: "/scheidung/unterlagen", desc: "Welche Dokumente werden benötigt?" },
-  { title: "Gerichtskosten Scheidung", href: "/scheidung/gerichtskosten", desc: "Übersicht der Gerichtsgebühren" },
-  { title: "Namensänderung nach Scheidung", href: "/scheidung/namensaenderung", desc: "Rückkehr zum Ledignamen" },
-  { title: "Unentgeltliche Rechtspflege", href: "/scheidung/unentgeltliche-rechtspflege", desc: "Kostenlose Rechtshilfe bei Scheidung" },
-  { title: "Vermögensaufteilung", href: "/scheidung/vermoegensaufteilung", desc: "Güterrechtliche Auseinandersetzung" },
-];
 ---
 
-<Layout title="Scheidung" description="Alles zum Thema Scheidung in der Schweiz: Ablauf, Kosten, Dauer und rechtliche Grundlagen">
+<Layout
+    title="Scheidung in der Schweiz – Ablauf, Kosten & Recht 2026"
+    description="Scheidung Schweiz: Kompletter Ratgeber zu Ablauf, Kosten (ab CHF 600), Dauer & Scheidungsfolgen. Alle Gesetzesartikel, Fristen & Checklisten 2026."
+    keywords="Scheidung Schweiz, Scheidung Kosten, Scheidung Ablauf, einvernehmliche Scheidung Schweiz, strittige Scheidung, Scheidungsverfahren, Scheidung mit Kindern, Scheidungsfolgen"
+>
+
+    <!-- Header -->
     <header class="bg-navy pt-32 pb-16">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-gold font-medium mb-4">Ratgeber Familienrecht</p>
             <h1 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Scheidung in der Schweiz</h1>
-            <p class="text-xl text-blue-100">Umfassende Informationen zu Ablauf, Kosten und rechtlichen Aspekten</p>
+            <p class="text-xl text-blue-100">Ablauf, Kosten, Dauer und Scheidungsfolgen – der umfassende Leitfaden für Betroffene</p>
         </div>
     </header>
 
-    <section class="py-12">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid gap-6">
-                {articles.map(article => (
-                    <a href={article.href} class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
-                        <h2 class="text-xl font-bold text-navy mb-2">{article.title}</h2>
-                        <p class="text-gray-600">{article.desc}</p>
-                    </a>
-                ))}
+    <!-- Main Content -->
+    <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <!-- Das Wichtigste in Kürze -->
+        <div class="bg-navy text-white p-8 rounded-lg mb-12">
+            <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+            <ul class="space-y-3">
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">✓</span>
+                    <span><strong>Zwei Scheidungsarten:</strong> Einvernehmliche Scheidung auf gemeinsames Begehren (Art. 111 ZGB) oder Scheidungsklage nach zweijähriger Trennung (Art. 114 ZGB)</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">✓</span>
+                    <span><strong>Kein Trennungsjahr nötig:</strong> Bei der einvernehmlichen Scheidung ist in der Schweiz keine Trennungszeit erforderlich – anders als in Deutschland</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">✓</span>
+                    <span><strong>Kosten:</strong> Gerichtskosten ab CHF 600 (einvernehmlich); strittige Scheidung je nach Kanton und Streitwert bis CHF 30'000+</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">✓</span>
+                    <span><strong>Dauer:</strong> Einvernehmliche Scheidung 2–6 Monate; strittige Scheidung 1–3 Jahre (plus 2 Jahre Trennungsfrist)</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">✓</span>
+                    <span><strong>Scheidungsfolgen:</strong> Unterhalt, Sorgerecht, güterrechtliche Auseinandersetzung, Vorsorgeausgleich und Namensänderung müssen geregelt werden</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">✓</span>
+                    <span><strong>Zuständiges Gericht:</strong> Das Gericht am Wohnsitz eines der Ehegatten ist zuständig (Art. 23 ZPO)</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Einleitung -->
+        <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+            Eine Scheidung ist einer der einschneidendsten Schritte im Leben. In der Schweiz werden jährlich rund 16'000 Ehen geschieden – fast jede zweite Ehe wird statistisch gesehen aufgelöst. Das Schweizer Scheidungsrecht ist im Zivilgesetzbuch (ZGB) in den Artikeln 111–134 geregelt und wurde zuletzt mit der Revision des Vorsorgeausgleichs per 1. Januar 2017 grundlegend angepasst.
+        </p>
+        <p class="text-gray-700 mb-6">
+            Dieser Ratgeber gibt Ihnen einen umfassenden Überblick über alle Aspekte der Scheidung in der Schweiz: von den <a href="/scheidung/gesetzeslage" class="text-gold hover:underline font-semibold">rechtlichen Grundlagen</a> über den konkreten <a href="/scheidung/ablauf-einer-scheidung" class="text-gold hover:underline font-semibold">Ablauf des Scheidungsverfahrens</a> und die <a href="/scheidung/kosten-einer-scheidung" class="text-gold hover:underline font-semibold">anfallenden Kosten</a> bis hin zu den Scheidungsfolgen wie <a href="/unterhalt" class="text-gold hover:underline font-semibold">Unterhalt</a>, <a href="/sorgerecht" class="text-gold hover:underline font-semibold">Sorgerecht</a> und <a href="/gueterrecht" class="text-gold hover:underline font-semibold">güterrechtlicher Auseinandersetzung</a>. Jeder Abschnitt verweist auf weiterführende Detailartikel, in denen die jeweiligen Themen vertieft behandelt werden.
+        </p>
+
+        <!-- Rechtliche Grundlagen -->
+        <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen der Scheidung in der Schweiz</h2>
+        <p class="text-gray-700 mb-6">
+            Die Scheidung ist in der Schweiz als gerichtliche Auflösung der Ehe konzipiert. Eine Ehe kann nur durch ein Gericht geschieden werden – eine rein administrative Scheidung ist nicht möglich (Art. 111 ff. ZGB). Das materielle Scheidungsrecht findet sich in den Art. 111–134 ZGB, die verfahrensrechtlichen Bestimmungen in den Art. 274–294 ZPO.
+        </p>
+        <p class="text-gray-700 mb-6">
+            Das Schweizer Scheidungsrecht kennt das sogenannte <strong>Zerrüttungsprinzip</strong>: Eine Ehe wird nicht aufgrund des Verschuldens eines Ehegatten geschieden, sondern weil die eheliche Gemeinschaft gescheitert ist. Seit der Scheidungsrechtsrevision vom 1. Januar 2000 spielt ein Verschulden für den Scheidungsgrund grundsätzlich keine Rolle mehr (BGE 128 III 65). Es gibt keinen Schuldspruch und keine "schuldige Partei".
+        </p>
+
+        <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+            <p class="font-semibold text-navy mb-2">Wichtige Gesetzesartikel:</p>
+            <p class="text-gray-700">Art. 111–112 ZGB (Scheidung auf gemeinsames Begehren), Art. 114 ZGB (Scheidungsklage nach Trennung), Art. 115 ZGB (Scheidungsklage wegen Unzumutbarkeit), Art. 119–132 ZGB (Scheidungsfolgen), Art. 274–294 ZPO (Scheidungsverfahren). Eine detaillierte Übersicht finden Sie in unserem Artikel zur <a href="/scheidung/gesetzeslage" class="text-gold hover:underline font-semibold">Gesetzeslage bei Scheidung</a>.</p>
+        </div>
+
+        <!-- Voraussetzungen -->
+        <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Voraussetzungen für eine Scheidung</h2>
+        <p class="text-gray-700 mb-6">
+            Um sich in der Schweiz scheiden lassen zu können, müssen bestimmte Voraussetzungen erfüllt sein. Grundsätzlich gibt es zwei Wege:
+        </p>
+        <p class="text-gray-700 mb-6">
+            Bei der <strong>einvernehmlichen Scheidung</strong> (Art. 111 ZGB) genügt der gemeinsame Wille beider Ehegatten. Es muss keine Trennungszeit eingehalten werden, und die Ehegatten können die Scheidung sofort beim zuständigen Gericht einreichen, sofern sie sich über sämtliche Scheidungsfolgen einig sind. Diese Einigung wird in einer <a href="/scheidung/scheidungskonvention" class="text-gold hover:underline font-semibold">Scheidungskonvention</a> festgehalten.
+        </p>
+        <p class="text-gray-700 mb-6">
+            Bei der <strong>einseitigen Scheidung</strong> (Scheidungsklage) muss entweder eine <strong>zweijährige Trennungszeit</strong> nachgewiesen werden (Art. 114 ZGB) oder es müssen <strong>schwerwiegende Gründe</strong> vorliegen, die ein Abwarten der Trennungsfrist unzumutbar machen (Art. 115 ZGB). Solche Unzumutbarkeitsgründe sind beispielsweise schwere häusliche Gewalt, Suchtprobleme des anderen Ehegatten oder das Eingehen einer neuen Partnerschaft mit Schwangerschaft (BGE 127 III 129).
+        </p>
+
+        <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+            <p class="font-semibold text-navy mb-2">Kein Trennungsjahr bei Einigkeit:</p>
+            <p class="text-gray-700">Anders als in vielen anderen Ländern kennt die Schweiz bei der einvernehmlichen Scheidung <strong>keine obligatorische Trennungszeit</strong>. Sind sich beide Ehegatten einig, kann die Scheidung unmittelbar eingereicht werden. Die zweijährige Trennungsfrist gilt nur bei der einseitigen Scheidungsklage nach Art. 114 ZGB.</p>
+        </div>
+
+        <!-- Scheidungsarten -->
+        <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Scheidungsarten im Überblick</h2>
+        <p class="text-gray-700 mb-6">
+            Das Schweizer Recht kennt zwei grundlegende Scheidungsarten, die sich massgeblich in Ablauf, Dauer und Kosten unterscheiden.
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Einvernehmliche Scheidung (Scheidung auf gemeinsames Begehren)</h3>
+        <p class="text-gray-700 mb-6">
+            Die <a href="/scheidung/scheidung-auf-gemeinsames-begehren" class="text-gold hover:underline font-semibold">Scheidung auf gemeinsames Begehren</a> nach Art. 111 ZGB ist die häufigste und schnellste Form der Scheidung. Voraussetzung ist, dass sich beide Ehegatten einig sind – sowohl über die Scheidung an sich als auch über die Regelung der Scheidungsfolgen (Unterhalt, Sorgerecht, Vermögen, Vorsorge).
+        </p>
+        <p class="text-gray-700 mb-6">
+            Die Ehegatten reichen gemeinsam ein Scheidungsbegehren mit einer vollständigen <a href="/scheidung/scheidungskonvention" class="text-gold hover:underline font-semibold">Scheidungskonvention</a> beim Gericht ein. Das Gericht prüft die Konvention, hört beide Ehegatten persönlich an und genehmigt die Vereinbarung, wenn diese den gesetzlichen Anforderungen entspricht (Art. 111 Abs. 1 ZGB). Ist die Einigung nur teilweise, können die strittigen Punkte vom Gericht entschieden werden (Art. 112 ZGB).
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Strittige Scheidung (Scheidungsklage)</h3>
+        <p class="text-gray-700 mb-6">
+            Sind sich die Ehegatten nicht einig, muss die Scheidung mittels einer <a href="/scheidung/scheidungsklage" class="text-gold hover:underline font-semibold">Scheidungsklage</a> beantragt werden. Gemäss Art. 114 ZGB kann ein Ehegatte nach einer <strong>mindestens zweijährigen Trennungszeit</strong> einseitig die Scheidung verlangen. In Ausnahmefällen – bei Unzumutbarkeit des Zuwartens – kann die Scheidung auch ohne Trennungsfrist eingeklagt werden (Art. 115 ZGB). Ausführliche Informationen finden Sie in unserem Artikel zur <a href="/scheidung/strittige-scheidung" class="text-gold hover:underline font-semibold">strittigen Scheidung</a>.
+        </p>
+
+        <!-- Vergleichstabelle -->
+        <div class="overflow-x-auto mb-8">
+            <table class="min-w-full bg-white border border-gray-200">
+                <thead class="bg-navy text-white">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Merkmal</th>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Einvernehmliche Scheidung</th>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Strittige Scheidung</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Rechtsgrundlage</td>
+                        <td class="px-6 py-4 text-gray-700">Art. 111/112 ZGB</td>
+                        <td class="px-6 py-4 text-gray-700">Art. 114/115 ZGB</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Einigung nötig</td>
+                        <td class="px-6 py-4 text-gray-700">Ja, über alle Scheidungsfolgen</td>
+                        <td class="px-6 py-4 text-gray-700">Nein</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Trennungszeit</td>
+                        <td class="px-6 py-4 text-gray-700">Keine erforderlich</td>
+                        <td class="px-6 py-4 text-gray-700">Mind. 2 Jahre (Art. 114 ZGB)</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Dauer</td>
+                        <td class="px-6 py-4 text-gray-700">2–6 Monate</td>
+                        <td class="px-6 py-4 text-gray-700">1–3 Jahre (ohne Trennungsfrist)</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Gerichtskosten</td>
+                        <td class="px-6 py-4 text-gray-700">CHF 600–2'600</td>
+                        <td class="px-6 py-4 text-gray-700">CHF 2'000–30'000+</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Anwaltskosten (ca.)</td>
+                        <td class="px-6 py-4 text-gray-700">CHF 3'000–10'000</td>
+                        <td class="px-6 py-4 text-gray-700">CHF 10'000–100'000+</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Gerichtsverhandlung</td>
+                        <td class="px-6 py-4 text-gray-700">Eine Anhörung (ggf. zwei)</td>
+                        <td class="px-6 py-4 text-gray-700">Mehrere Verhandlungen</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Ablauf -->
+        <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Ablauf einer Scheidung in der Schweiz</h2>
+        <p class="text-gray-700 mb-6">
+            Der <a href="/scheidung/ablauf-einer-scheidung" class="text-gold hover:underline font-semibold">Ablauf einer Scheidung</a> hängt wesentlich davon ab, ob sie einvernehmlich oder strittig ist. Beide Verfahren folgen jedoch einem grundsätzlichen Muster.
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 1: Vorbereitung und Unterlagen</h3>
+        <p class="text-gray-700 mb-6">
+            Bevor die Scheidung beim Gericht eingereicht wird, sollten alle notwendigen <a href="/scheidung/unterlagen" class="text-gold hover:underline font-semibold">Scheidungsunterlagen</a> zusammengestellt werden. Dazu gehören: Familienschein, Heiratsurkunde, Steuerunterlagen, Pensionskassenausweise beider Ehegatten, Lohnausweise, Angaben zu Vermögen und Schulden sowie bei Kindern Informationen zum Einkommen und zu den Betreuungsverhältnissen.
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 2: Scheidungsbegehren einreichen</h3>
+        <p class="text-gray-700 mb-6">
+            Die Scheidung wird durch Einreichung eines <a href="/scheidung/scheidungsantrag" class="text-gold hover:underline font-semibold">Scheidungsantrags</a> bzw. Scheidungsbegehrens beim zuständigen Gericht eingeleitet. Bei der einvernehmlichen Scheidung reichen beide Ehegatten gemeinsam ein; bei der Scheidungsklage klagt ein Ehegatte gegen den anderen. Zuständig ist grundsätzlich das Gericht am Wohnsitz eines der Ehegatten (Art. 23 ZPO). Ausführliche Informationen finden Sie in unserem Artikel zum Thema <a href="/scheidung/scheidung-einreichen" class="text-gold hover:underline font-semibold">Scheidung einreichen</a>.
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 3: Gerichtsverhandlung und Anhörung</h3>
+        <p class="text-gray-700 mb-6">
+            Bei der einvernehmlichen Scheidung findet in der Regel <strong>eine Anhörung</strong> statt, bei der das Gericht beide Ehegatten persönlich befragt und prüft, ob der Scheidungswille frei und überlegt ist (Art. 111 Abs. 1 ZGB). Bei der strittigen Scheidung finden eine Schlichtungsverhandlung und anschliessend eine oder mehrere Hauptverhandlungen statt (Art. 291 ZPO).
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Schritt 4: Scheidungsurteil und Rechtskraft</h3>
+        <p class="text-gray-700 mb-6">
+            Das Gericht spricht das Scheidungsurteil und regelt gleichzeitig die Scheidungsfolgen (Unterhalt, Sorgerecht, Güterrecht, Vorsorge). Das Urteil wird 30 Tage nach Zustellung <a href="/scheidung/rechtskraeftig" class="text-gold hover:underline font-semibold">rechtskräftig</a>, sofern keine Partei ein Rechtsmittel (Berufung) ergreift. Bei Rechtsmittelverzicht tritt die Rechtskraft sofort ein.
+        </p>
+
+        <!-- Kosten -->
+        <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Was kostet eine Scheidung in der Schweiz?</h2>
+        <p class="text-gray-700 mb-6">
+            Die <a href="/scheidung/kosten-einer-scheidung" class="text-gold hover:underline font-semibold">Kosten einer Scheidung</a> setzen sich aus Gerichtskosten und allfälligen Anwaltskosten zusammen. Die Höhe hängt stark vom Kanton, der Art der Scheidung und dem Streitwert ab.
+        </p>
+
+        <div class="overflow-x-auto mb-8">
+            <table class="min-w-full bg-white border border-gray-200">
+                <thead class="bg-navy text-white">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Kostenart</th>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Einvernehmlich</th>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Strittig</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Gerichtskosten</td>
+                        <td class="px-6 py-4 text-gray-700">CHF 600–2'600</td>
+                        <td class="px-6 py-4 text-gray-700">CHF 2'000–30'000+</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Anwaltskosten (pro Partei)</td>
+                        <td class="px-6 py-4 text-gray-700">CHF 3'000–10'000</td>
+                        <td class="px-6 py-4 text-gray-700">CHF 10'000–100'000+</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Mediationskosten</td>
+                        <td class="px-6 py-4 text-gray-700">CHF 200–400/h</td>
+                        <td class="px-6 py-4 text-gray-700">–</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Gesamtkosten (ca.)</td>
+                        <td class="px-6 py-4 text-gray-700">CHF 4'000–15'000</td>
+                        <td class="px-6 py-4 text-gray-700">CHF 15'000–150'000+</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="text-gray-700 mb-6">
+            Die <a href="/scheidung/gerichtskosten" class="text-gold hover:underline font-semibold">Gerichtskosten</a> variieren erheblich zwischen den Kantonen. Im Kanton Zürich liegen sie für eine einvernehmliche Scheidung bei rund CHF 2'600, in Basel-Stadt bei etwa CHF 830. Die <a href="/scheidung/anwaltskosten-scheidung" class="text-gold hover:underline font-semibold">Anwaltskosten</a> werden in der Regel nach Aufwand (CHF 200–400 pro Stunde) oder mittels Pauschale abgerechnet.
+        </p>
+
+        <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+            <p class="font-semibold text-navy mb-2">Finanzielle Unterstützung:</p>
+            <p class="text-gray-700">Wer die Scheidungskosten nicht aufbringen kann, hat Anspruch auf <a href="/scheidung/unentgeltliche-rechtspflege" class="text-gold hover:underline font-semibold">unentgeltliche Rechtspflege</a> (Art. 117 ZPO). Der Staat übernimmt dann die Gerichtskosten und stellt einen kostenlosen Anwalt zur Verfügung, sofern die Bedürftigkeit nachgewiesen wird und die Sache nicht aussichtslos ist.</p>
+        </div>
+
+        <!-- Dauer -->
+        <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Wie lange dauert eine Scheidung in der Schweiz?</h2>
+        <p class="text-gray-700 mb-6">
+            Die <a href="/scheidung/dauer-der-scheidung" class="text-gold hover:underline font-semibold">Dauer einer Scheidung</a> hängt von der Art der Scheidung und der Komplexität der Scheidungsfolgen ab.
+        </p>
+        <p class="text-gray-700 mb-6">
+            Eine <strong>einvernehmliche Scheidung</strong> dauert in der Regel <strong>2–6 Monate</strong> ab Einreichung des Begehrens. In einfachen Fällen ohne Kinder und mit überschaubaren Vermögensverhältnissen kann das Verfahren in manchen Kantonen sogar innert weniger Wochen abgeschlossen werden.
+        </p>
+        <p class="text-gray-700 mb-6">
+            Eine <strong>strittige Scheidung</strong> dauert deutlich länger. Allein die Trennungsfrist beträgt gemäss Art. 114 ZGB <strong>mindestens zwei Jahre</strong>. Danach folgt das gerichtliche Verfahren, das je nach Umfang der strittigen Punkte, Beweiserhebungen und Gutachten <strong>1–3 weitere Jahre</strong> dauern kann. In besonders komplexen Fällen – etwa bei internationalen Sachverhalten oder umfangreichen Vermögensverhältnissen – kann sich das Verfahren über mehrere Jahre erstrecken.
+        </p>
+
+        <!-- Scheidungsfolgen -->
+        <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Scheidungsfolgen: Was bei einer Scheidung geregelt werden muss</h2>
+        <p class="text-gray-700 mb-6">
+            Bei jeder Scheidung müssen die sogenannten <strong>Scheidungsfolgen</strong> (Nebenfolgen) geregelt werden. Diese umfassen die finanziellen und persönlichen Konsequenzen der Eheauflösung. Das Gericht regelt diese entweder auf Basis der Einigung der Ehegatten (Scheidungskonvention) oder durch gerichtlichen Entscheid.
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Nachehelicher Unterhalt</h3>
+        <p class="text-gray-700 mb-6">
+            Nach der Scheidung kann einem Ehegatten ein <a href="/unterhalt" class="text-gold hover:underline font-semibold">nachehelicher Unterhalt</a> zugesprochen werden, wenn er seinen gebührenden Bedarf nicht selbständig decken kann (Art. 125 ZGB). Das Gericht prüft dabei insbesondere die Aufgabenteilung während der Ehe, die Dauer der Ehe, die Erwerbsaussichten und das Alter der Ehegatten. Der nacheheliche Unterhalt wird zeitlich befristet – das Bundesgericht verlangt eine Befristung, sofern keine besonderen Umstände vorliegen (BGE 141 III 465). Bei gemeinsamen Kindern sind zudem <a href="/unterhalt/alimente" class="text-gold hover:underline font-semibold">Kinderalimente</a> zu regeln.
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Sorgerecht und Kinderbelange</h3>
+        <p class="text-gray-700 mb-6">
+            Haben die Ehegatten gemeinsame minderjährige Kinder, ist die Regelung des <a href="/sorgerecht" class="text-gold hover:underline font-semibold">Sorgerechts</a> ein zentraler Bestandteil der Scheidung. Seit der Gesetzesänderung vom 1. Juli 2014 gilt das <a href="/sorgerecht/gemeinsames-sorgerecht" class="text-gold hover:underline font-semibold">gemeinsame Sorgerecht</a> als Regelfall – auch nach der Scheidung (Art. 296 Abs. 2 ZGB). Das alleinige Sorgerecht wird nur bei einer Gefährdung des Kindeswohls verfügt. Daneben müssen die Obhut (persönliche Betreuung), das Besuchsrecht und der Kindesunterhalt geregelt werden. Weiterführende Informationen finden Sie in unserem Artikel <a href="/scheidung/mit-kind" class="text-gold hover:underline font-semibold">Scheidung mit Kind</a>.
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Güterrechtliche Auseinandersetzung</h3>
+        <p class="text-gray-700 mb-6">
+            Die Scheidung löst automatisch die güterrechtliche Auseinandersetzung aus. Der ordentliche Güterstand in der Schweiz ist die <a href="/gueterrecht/errungenschaftsbeteiligung" class="text-gold hover:underline font-semibold">Errungenschaftsbeteiligung</a> (Art. 196 ff. ZGB). Dabei wird das während der Ehe erworbene Vermögen (Errungenschaft) hälftig geteilt, während das vor der Ehe vorhandene Vermögen und Erbschaften (Eigengut) beim jeweiligen Ehegatten verbleiben. Haben die Ehegatten mittels <a href="/eherecht/ehevertrag" class="text-gold hover:underline font-semibold">Ehevertrag</a> eine <a href="/gueterrecht/guetertrennung" class="text-gold hover:underline font-semibold">Gütertrennung</a> vereinbart, findet keine Teilung statt. Einen umfassenden Überblick bietet unsere Seite zum <a href="/gueterrecht" class="text-gold hover:underline font-semibold">Güterrecht</a>.
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Vorsorgeausgleich (Pensionskasse)</h3>
+        <p class="text-gray-700 mb-6">
+            Bei der Scheidung werden die während der Ehe erworbenen Ansprüche aus der beruflichen Vorsorge (2. Säule / Pensionskasse) grundsätzlich hälftig geteilt – dies nennt man den <a href="/scheidung/vorsorgeausgleich" class="text-gold hover:underline font-semibold">Vorsorgeausgleich</a> (Art. 122–124e ZGB). Seit der Revision per 1. Januar 2017 gilt die hälftige Teilung auch dann, wenn ein Ehegatte bereits eine Rente bezieht. Die Teilung erfolgt unabhängig vom Güterstand und wird vom Gericht von Amtes wegen angeordnet.
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Wohnung und Immobilien</h3>
+        <p class="text-gray-700 mb-6">
+            Was passiert mit dem gemeinsamen Haus oder der Mietwohnung? Das Gericht kann die eheliche Wohnung einem Ehegatten zuweisen, insbesondere wenn gemeinsame Kinder vorhanden sind (Art. 121 ZGB). Bei Eigentum muss entschieden werden, ob das Haus verkauft, einem Ehegatten übertragen oder weiterhin gemeinsam gehalten wird. Die detaillierten Optionen erläutert unser Artikel <a href="/scheidung/haus" class="text-gold hover:underline font-semibold">Scheidung und Haus</a>.
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Namensänderung nach der Scheidung</h3>
+        <p class="text-gray-700 mb-6">
+            Wer bei der Heirat den Namen des anderen Ehegatten angenommen hat, kann nach der Scheidung den <strong>Ledignamen</strong> wieder annehmen – eine einfache Erklärung beim Zivilstandsamt genügt (Art. 119 Abs. 1 ZGB). Diese Erklärung kann jederzeit nach Rechtskraft der Scheidung abgegeben werden. Alles Weitere erfahren Sie im Artikel <a href="/scheidung/namensaenderung" class="text-gold hover:underline font-semibold">Namensänderung nach Scheidung</a>.
+        </p>
+
+        <!-- Trennung ohne Scheidung -->
+        <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Trennung ohne Scheidung</h2>
+        <p class="text-gray-700 mb-6">
+            Nicht jede Ehekrise muss zwangsläufig in einer Scheidung enden. Das Schweizer Recht kennt das sogenannte <strong>Getrenntleben</strong> als Alternative zur Scheidung. Im Rahmen eines <a href="/eherecht/eheschutz" class="text-gold hover:underline font-semibold">Eheschutzverfahrens</a> (Art. 172 ff. ZGB) kann das Gericht die Ehegatten zum Getrenntleben ermächtigen und gleichzeitig wichtige Punkte wie Unterhalt, Kinderbelange und Wohnungszuweisung regeln.
+        </p>
+        <p class="text-gray-700 mb-6">
+            Die <a href="/scheidung/trennung-ohne-scheidung" class="text-gold hover:underline font-semibold">Trennung ohne Scheidung</a> kann sinnvoll sein, wenn die Ehegatten eine Versöhnung nicht ausschliessen, aus religiösen Gründen keine Scheidung wünschen oder die zweijährige Trennungsfrist für eine spätere Scheidungsklage abwarten möchten. Die Ehe bleibt dabei formal bestehen – mit allen erbrechtlichen und versicherungsrechtlichen Konsequenzen.
+        </p>
+
+        <!-- Internationale Scheidung -->
+        <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Internationale Scheidung</h2>
+        <p class="text-gray-700 mb-6">
+            Bei Scheidungen mit Auslandsbezug – etwa wenn ein Ehegatte ausländische Staatsangehörigkeit besitzt, im Ausland lebt oder die Ehe im Ausland geschlossen wurde – stellen sich komplexe Fragen des <a href="/internationales-familienrecht" class="text-gold hover:underline font-semibold">internationalen Familienrechts</a>. Massgeblich ist zunächst, welches Gericht zuständig ist und welches Recht angewendet wird. Das Bundesgesetz über das Internationale Privatrecht (IPRG) regelt die Zuständigkeit und das anwendbare Recht. Grundsätzlich ist ein Schweizer Gericht zuständig, wenn ein Ehegatte in der Schweiz Wohnsitz hat (Art. 59 IPRG). Detaillierte Informationen bietet unser Artikel zur <a href="/scheidung/internationale-scheidung" class="text-gold hover:underline font-semibold">internationalen Scheidung</a>.
+        </p>
+
+        <!-- Scheidung ohne Anwalt -->
+        <h2 class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Scheidung ohne Anwalt – ist das möglich?</h2>
+        <p class="text-gray-700 mb-6">
+            Grundsätzlich ist in der Schweiz keine Anwaltspflicht bei Scheidungsverfahren vorgesehen. Eine <a href="/scheidung/ohne-anwalt" class="text-gold hover:underline font-semibold">Scheidung ohne Anwalt</a> ist daher prinzipiell möglich – insbesondere bei einer einvernehmlichen Scheidung ohne Kinder und mit einfachen Vermögensverhältnissen.
+        </p>
+        <p class="text-gray-700 mb-6">
+            In der Praxis zeigt sich jedoch, dass der Verzicht auf anwaltliche Vertretung riskant sein kann. Fehlerhaft formulierte Scheidungskonventionen können später zu erheblichen Nachteilen führen, etwa wenn Unterhaltsansprüche zu niedrig angesetzt, Vorsorgeansprüche nicht korrekt aufgeteilt oder güterrechtliche Ansprüche übersehen werden. Bei strittigen Scheidungen, bei Scheidungen mit Kindern oder bei grösseren Vermögenswerten ist anwaltliche Vertretung dringend empfohlen. Eine <a href="/mediation" class="text-gold hover:underline font-semibold">Mediation</a> kann zudem helfen, die Kosten niedrig zu halten und dennoch eine faire Lösung zu erzielen.
+        </p>
+
+        <!-- Anwalt-Sektion -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Scheidungsanwalt beiziehen sollten</h2>
+            <p class="text-gray-700 mb-6">
+                Auch wenn bei einer einvernehmlichen Scheidung keine Anwaltspflicht besteht, kann die frühzeitige Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> entscheidend sein, um kostspielige Fehler zu vermeiden. Viele Betroffene unterschätzen die Komplexität einer Scheidung – insbesondere bei der Berechnung des nachehelichen Unterhalts, der Aufteilung der Pensionskasse und der güterrechtlichen Auseinandersetzung.
+            </p>
+            <p class="text-gray-700 mb-6">
+                Besonders in folgenden Situationen ist die Beratung durch einen erfahrenen <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> dringend empfohlen: bei gemeinsamen Kindern (Regelung von Sorgerecht und Kindesunterhalt), bei Immobilienbesitz (Bewertung und Zuteilung), bei Selbständigkeit eines Ehegatten (Unternehmensbewertung), bei erheblichen Vermögenswerten oder Schulden sowie bei internationalen Sachverhalten.
+            </p>
+            <p class="text-gray-700 mb-6">
+                Ein versierter <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> kennt die aktuelle Rechtsprechung, kann Ihre Ansprüche korrekt beziffern und sorgt dafür, dass Ihre Rechte im Scheidungsverfahren gewahrt werden. Bei einer strittigen Scheidung ist professionelle Vertretung nahezu unerlässlich, um vor Gericht bestehen zu können.
+            </p>
+
+            <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+                <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer Situation</h3>
+                <p class="mb-6">Unsere spezialisierten Familienrechtsanwälte beraten Sie zu Ihren Rechten, Ansprüchen und dem optimalen Vorgehen bei Ihrer Scheidung – unverbindlich und kostenlos.</p>
+                <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
             </div>
+        </section>
+
+        <!-- Fazit -->
+        <h2 class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+        <p class="text-gray-700 mb-6">
+            Eine Scheidung in der Schweiz ist ein vielschichtiger Prozess, der sorgfältige Planung und fundierte rechtliche Kenntnisse erfordert. Die einvernehmliche Scheidung bietet den schnellsten und günstigsten Weg, wenn sich beide Ehegatten einig sind. Bei strittigen Punkten ist der Weg über die Scheidungsklage nach zweijähriger Trennung möglich, jedoch deutlich aufwendiger und teurer.
+        </p>
+        <p class="text-gray-700 mb-6">
+            Unabhängig von der Scheidungsart müssen zentrale Fragen wie Unterhalt, Sorgerecht, Vermögensteilung und Vorsorgeausgleich geregelt werden. Eine frühzeitige Beratung durch einen spezialisierten Familienrechtsanwalt hilft, die eigenen Rechte zu wahren und kostspielige Fehler zu vermeiden. In den weiterführenden Artikeln auf dieser Seite finden Sie vertiefte Informationen zu jedem Aspekt der Scheidung.
+        </p>
+
+        <!-- FAQ -->
+        <section class="mt-16 mb-12">
+            <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+            <div class="space-y-6">
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Was muss ich als Erstes tun, wenn ich mich scheiden lassen will?</h3>
+                    <p class="text-gray-700">Klären Sie zunächst, ob eine einvernehmliche Scheidung möglich ist, indem Sie mit Ihrem Ehegatten über die Scheidungsfolgen sprechen. Sammeln Sie alle relevanten Unterlagen (Familienschein, Steuerunterlagen, Pensionskassenausweise, Lohnausweise). Lassen Sie sich von einem Anwalt für Familienrecht beraten, um Ihre Ansprüche einschätzen zu lassen. Anschliessend reichen Sie das Scheidungsbegehren beim zuständigen Gericht an Ihrem Wohnsitz ein (Art. 23 ZPO).</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Wie viel kostet eine Scheidung, wenn beide einverstanden sind, in der Schweiz?</h3>
+                    <p class="text-gray-700">Eine einvernehmliche Scheidung kostet in der Schweiz insgesamt zwischen CHF 4'000 und CHF 15'000. Die Gerichtskosten liegen je nach Kanton bei CHF 600 bis CHF 2'600. Hinzu kommen Anwaltskosten von durchschnittlich CHF 3'000 bis CHF 10'000, abhängig von der Komplexität. Ohne Anwalt – was nur in einfachen Fällen empfehlenswert ist – fallen lediglich die Gerichtskosten an.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Was bekommt die Frau bei der Scheidung in der Schweiz?</h3>
+                    <p class="text-gray-700">Das Schweizer Scheidungsrecht ist geschlechtsneutral – die Ansprüche richten sich nicht nach dem Geschlecht, sondern nach der konkreten Situation. Beide Ehegatten haben Anspruch auf die Hälfte der während der Ehe erworbenen Errungenschaft (Art. 215 ZGB), die hälftige Teilung der Pensionskassenguthaben (Art. 122 ZGB) und gegebenenfalls nachehelichen Unterhalt (Art. 125 ZGB), wenn ein Ehegatte nicht selbständig für sich sorgen kann. Die gleichen Ansprüche gelten für den Mann.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Wie lange muss ein Mann seiner geschiedenen Frau Unterhalt zahlen?</h3>
+                    <p class="text-gray-700">Es gibt keine feste Regel – die Dauer des nachehelichen Unterhalts hängt von den konkreten Umständen ab (Art. 125 Abs. 2 ZGB). Massgeblich sind insbesondere die Ehedauer, die Aufgabenverteilung während der Ehe, das Alter und die Erwerbsmöglichkeiten. Das Bundesgericht verlangt grundsätzlich eine zeitliche Befristung (BGE 141 III 465). Bei kurzen Ehen ohne Kinder wird in der Regel kein oder nur kurzzeitig Unterhalt zugesprochen. Bei langen Ehen mit klassischer Rollenteilung kann der Unterhalt bis zur Pensionierung dauern.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Was wird bei einer Scheidung nicht geteilt?</h3>
+                    <p class="text-gray-700">Nicht geteilt wird das sogenannte Eigengut jedes Ehegatten (Art. 198 ZGB). Dazu gehören: Vermögenswerte, die vor der Ehe vorhanden waren, Erbschaften und Schenkungen während der Ehe, Gegenstände zum persönlichen Gebrauch sowie Genugtuungsansprüche. Nur die während der Ehe gemeinsam erwirtschaftete Errungenschaft wird hälftig geteilt. Bei Gütertrennung findet gar keine Teilung statt.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Welche Nachteile hat eine einvernehmliche Scheidung?</h3>
+                    <p class="text-gray-700">Die einvernehmliche Scheidung hat wenige echte Nachteile, birgt aber Risiken: Ohne anwaltliche Beratung besteht die Gefahr, dass ein Ehegatte auf Ansprüche verzichtet, die ihm zustehen (z.B. zu tiefer Unterhalt, unvollständiger Vorsorgeausgleich). Zudem kann eine vorschnelle Einigung unter emotionalem Druck zustande kommen. Auch wird die Scheidungskonvention vom Gericht nur eingeschränkt geprüft – bei formaler Korrektheit wird sie genehmigt, selbst wenn sie materiell unausgewogen ist.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Wann lohnt sich eine Scheidung?</h3>
+                    <p class="text-gray-700">Eine pauschale Antwort ist nicht möglich, da jede Situation anders ist. Aus rechtlicher Sicht lohnt sich eine Scheidung, wenn die Ehe unwiderruflich gescheitert ist und keine Aussicht auf Versöhnung besteht. Finanziell sind die Konsequenzen sorgfältig abzuwägen: zwei Haushalte sind teurer als einer. Alternativen wie die Trennung ohne Scheidung (Eheschutzverfahren nach Art. 172 ff. ZGB) oder eine Mediation können in bestimmten Fällen sinnvoller sein.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Wie lange dauert eine Scheidung in der Schweiz?</h3>
+                    <p class="text-gray-700">Eine einvernehmliche Scheidung dauert in der Schweiz in der Regel 2–6 Monate ab Einreichung. Bei einer strittigen Scheidung muss zunächst die zweijährige Trennungsfrist abgewartet werden (Art. 114 ZGB), danach dauert das Gerichtsverfahren zusätzlich 1–3 Jahre. In einfachen Fällen ohne Kinder kann eine einvernehmliche Scheidung in manchen Kantonen sogar innert weniger Wochen abgeschlossen werden.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Was passiert mit dem Haus bei einer Scheidung?</h3>
+                    <p class="text-gray-700">Bei einer Scheidung gibt es für die gemeinsame Immobilie grundsätzlich drei Optionen: Verkauf und Aufteilung des Erlöses, Übernahme durch einen Ehegatten mit Auszahlung des anderen oder (selten) weiterer gemeinsamer Besitz. Die Zuteilung hängt von der Finanzierbarkeit, dem Güterstand und dem Kindeswohl ab. Dem Ehegatten, der die Kinder hauptsächlich betreut, wird die Familienwohnung häufig zugewiesen (Art. 121 ZGB).</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Brauche ich einen Anwalt für die Scheidung?</h3>
+                    <p class="text-gray-700">Ein Anwalt ist in der Schweiz nicht obligatorisch, aber dringend empfohlen. Nur bei sehr einfachen einvernehmlichen Scheidungen (keine Kinder, kein Immobilienbesitz, geringe Vermögenswerte) kann unter Umständen auf einen Anwalt verzichtet werden. Bei allen anderen Konstellationen schützt anwaltliche Vertretung vor finanziellen Nachteilen. Bei strittigen Scheidungen ist eine professionelle Vertretung nahezu unerlässlich.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Was ist eine Scheidungskonvention?</h3>
+                    <p class="text-gray-700">Die Scheidungskonvention ist die schriftliche Vereinbarung der Ehegatten über die Regelung aller Scheidungsfolgen – Unterhalt, Sorgerecht, Vermögensteilung und Vorsorgeausgleich (Art. 111 Abs. 1 ZGB). Sie wird gemeinsam mit dem Scheidungsbegehren beim Gericht eingereicht und vom Gericht geprüft und genehmigt. Ohne vollständige Scheidungskonvention ist eine einvernehmliche Scheidung nach Art. 111 ZGB nicht möglich.</p>
+                </div>
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Kann ich die Scheidung auch online einreichen?</h3>
+                    <p class="text-gray-700">In der Schweiz kann das Scheidungsbegehren in den meisten Kantonen nach wie vor nicht vollständig online eingereicht werden. Der Scheidungsantrag muss in der Regel schriftlich beim zuständigen Gericht eingereicht werden. Einzelne Kantone bieten elektronische Eingabemöglichkeiten an, verlangen aber in der Regel eine qualifizierte elektronische Signatur. Die persönliche Anhörung vor Gericht bleibt zudem obligatorisch und kann nicht durch eine Online-Verhandlung ersetzt werden.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alle Artikel zum Thema Scheidung -->
+        <section class="mt-16 mb-12">
+            <h2 class="text-3xl font-serif font-bold text-navy mb-8">Alle Artikel zum Thema Scheidung</h2>
+            <p class="text-gray-700 mb-8">Vertiefen Sie Ihr Wissen mit unseren ausführlichen Fachartikeln zu allen Aspekten der Scheidung in der Schweiz.</p>
+
+            <h3 class="font-serif text-xl font-bold text-navy mt-8 mb-4">Scheidungsverfahren</h3>
+            <div class="grid md:grid-cols-2 gap-4 mb-8">
+                <a href="/scheidung/ablauf-einer-scheidung" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Ablauf einer Scheidung</h4>
+                    <p class="text-gray-600 text-sm">Schritt für Schritt durch das Scheidungsverfahren</p>
+                </a>
+                <a href="/scheidung/scheidung-auf-gemeinsames-begehren" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Einvernehmliche Scheidung</h4>
+                    <p class="text-gray-600 text-sm">Die Scheidung auf gemeinsames Begehren (Art. 111 ZGB)</p>
+                </a>
+                <a href="/scheidung/strittige-scheidung" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Strittige Scheidung</h4>
+                    <p class="text-gray-600 text-sm">Wenn keine Einigung möglich ist</p>
+                </a>
+                <a href="/scheidung/scheidungsklage" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Scheidungsklage</h4>
+                    <p class="text-gray-600 text-sm">Die einseitige Scheidungsklage nach Art. 114/115 ZGB</p>
+                </a>
+                <a href="/scheidung/scheidung-einreichen" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Scheidung einreichen</h4>
+                    <p class="text-gray-600 text-sm">Wie und wo Sie die Scheidung einreichen</p>
+                </a>
+                <a href="/scheidung/scheidungsantrag" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Scheidungsantrag</h4>
+                    <p class="text-gray-600 text-sm">Inhalt und Form des Scheidungsantrags</p>
+                </a>
+                <a href="/scheidung/scheidungskonvention" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Scheidungskonvention</h4>
+                    <p class="text-gray-600 text-sm">Die Vereinbarung der Scheidungsfolgen</p>
+                </a>
+                <a href="/scheidung/unterlagen" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Scheidungsunterlagen</h4>
+                    <p class="text-gray-600 text-sm">Welche Dokumente werden benötigt?</p>
+                </a>
+                <a href="/scheidung/dauer-der-scheidung" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Dauer der Scheidung</h4>
+                    <p class="text-gray-600 text-sm">Wie lange dauert ein Scheidungsverfahren?</p>
+                </a>
+                <a href="/scheidung/rechtskraeftig" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Scheidung rechtskräftig</h4>
+                    <p class="text-gray-600 text-sm">Wann wird die Scheidung rechtskräftig?</p>
+                </a>
+                <a href="/scheidung/gesetzeslage" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Gesetzeslage Scheidung</h4>
+                    <p class="text-gray-600 text-sm">Rechtliche Grundlagen im Überblick</p>
+                </a>
+                <a href="/scheidung/trennung-ohne-scheidung" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Trennung ohne Scheidung</h4>
+                    <p class="text-gray-600 text-sm">Getrenntleben als Alternative zur Scheidung</p>
+                </a>
+            </div>
+
+            <h3 class="font-serif text-xl font-bold text-navy mt-8 mb-4">Scheidungskosten</h3>
+            <div class="grid md:grid-cols-2 gap-4 mb-8">
+                <a href="/scheidung/kosten-einer-scheidung" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Kosten einer Scheidung</h4>
+                    <p class="text-gray-600 text-sm">Vollständiger Überblick über alle Scheidungskosten</p>
+                </a>
+                <a href="/scheidung/gerichtskosten" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Gerichtskosten Scheidung</h4>
+                    <p class="text-gray-600 text-sm">Übersicht der Gerichtsgebühren nach Kanton</p>
+                </a>
+                <a href="/scheidung/anwaltskosten-scheidung" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Anwaltskosten Scheidung</h4>
+                    <p class="text-gray-600 text-sm">Was kostet ein Scheidungsanwalt?</p>
+                </a>
+                <a href="/scheidung/unentgeltliche-rechtspflege" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Unentgeltliche Rechtspflege</h4>
+                    <p class="text-gray-600 text-sm">Kostenlose Rechtshilfe bei Scheidung</p>
+                </a>
+                <a href="/scheidung/ohne-anwalt" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Scheidung ohne Anwalt</h4>
+                    <p class="text-gray-600 text-sm">Ist eine Scheidung ohne Anwalt möglich?</p>
+                </a>
+            </div>
+
+            <h3 class="font-serif text-xl font-bold text-navy mt-8 mb-4">Scheidungsfolgen</h3>
+            <div class="grid md:grid-cols-2 gap-4 mb-8">
+                <a href="/scheidung/mit-kind" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Scheidung mit Kind</h4>
+                    <p class="text-gray-600 text-sm">Besonderheiten bei Kindern</p>
+                </a>
+                <a href="/scheidung/haus" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Scheidung und Haus</h4>
+                    <p class="text-gray-600 text-sm">Was passiert mit der Immobilie?</p>
+                </a>
+                <a href="/scheidung/vorsorgeausgleich" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Vorsorgeausgleich</h4>
+                    <p class="text-gray-600 text-sm">Teilung der Pensionskasse bei Scheidung</p>
+                </a>
+                <a href="/scheidung/namensaenderung" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Namensänderung nach Scheidung</h4>
+                    <p class="text-gray-600 text-sm">Rückkehr zum Ledignamen</p>
+                </a>
+                <a href="/scheidung/internationale-scheidung" class="block bg-white p-5 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="font-bold text-navy mb-1">Internationale Scheidung</h4>
+                    <p class="text-gray-600 text-sm">Scheidung mit Auslandsbezug</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Schema Markup: Article -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Scheidung in der Schweiz – Ablauf, Kosten & Recht 2026",
+            "description": "Scheidung Schweiz: Kompletter Ratgeber zu Ablauf, Kosten (ab CHF 600), Dauer & Scheidungsfolgen. Alle Gesetzesartikel, Fristen & Checklisten 2026.",
+            "author": {
+                "@type": "Organization",
+                "name": "Familienrechtanwalt.ch"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Familienrechtanwalt.ch",
+                "url": "https://familienrechtanwalt.ch"
+            },
+            "datePublished": "2025-01-20",
+            "dateModified": "2026-02-14",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://familienrechtanwalt.ch/scheidung"
+            }
+        })} />
+
+        <!-- Schema Markup: FAQPage -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Was muss ich als Erstes tun, wenn ich mich scheiden lassen will?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Klären Sie zunächst, ob eine einvernehmliche Scheidung möglich ist, indem Sie mit Ihrem Ehegatten über die Scheidungsfolgen sprechen. Sammeln Sie alle relevanten Unterlagen (Familienschein, Steuerunterlagen, Pensionskassenausweise, Lohnausweise). Lassen Sie sich von einem Anwalt für Familienrecht beraten, um Ihre Ansprüche einschätzen zu lassen. Anschliessend reichen Sie das Scheidungsbegehren beim zuständigen Gericht an Ihrem Wohnsitz ein (Art. 23 ZPO)."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Wie viel kostet eine Scheidung, wenn beide einverstanden sind, in der Schweiz?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Eine einvernehmliche Scheidung kostet in der Schweiz insgesamt zwischen CHF 4'000 und CHF 15'000. Die Gerichtskosten liegen je nach Kanton bei CHF 600 bis CHF 2'600. Hinzu kommen Anwaltskosten von durchschnittlich CHF 3'000 bis CHF 10'000, abhängig von der Komplexität. Ohne Anwalt – was nur in einfachen Fällen empfehlenswert ist – fallen lediglich die Gerichtskosten an."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Was bekommt die Frau bei der Scheidung in der Schweiz?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Das Schweizer Scheidungsrecht ist geschlechtsneutral – die Ansprüche richten sich nicht nach dem Geschlecht, sondern nach der konkreten Situation. Beide Ehegatten haben Anspruch auf die Hälfte der während der Ehe erworbenen Errungenschaft (Art. 215 ZGB), die hälftige Teilung der Pensionskassenguthaben (Art. 122 ZGB) und gegebenenfalls nachehelichen Unterhalt (Art. 125 ZGB), wenn ein Ehegatte nicht selbständig für sich sorgen kann. Die gleichen Ansprüche gelten für den Mann."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Wie lange muss ein Mann seiner geschiedenen Frau Unterhalt zahlen?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Es gibt keine feste Regel – die Dauer des nachehelichen Unterhalts hängt von den konkreten Umständen ab (Art. 125 Abs. 2 ZGB). Massgeblich sind insbesondere die Ehedauer, die Aufgabenverteilung während der Ehe, das Alter und die Erwerbsmöglichkeiten. Das Bundesgericht verlangt grundsätzlich eine zeitliche Befristung (BGE 141 III 465). Bei kurzen Ehen ohne Kinder wird in der Regel kein oder nur kurzzeitig Unterhalt zugesprochen. Bei langen Ehen mit klassischer Rollenteilung kann der Unterhalt bis zur Pensionierung dauern."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Was wird bei einer Scheidung nicht geteilt?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Nicht geteilt wird das sogenannte Eigengut jedes Ehegatten (Art. 198 ZGB). Dazu gehören: Vermögenswerte, die vor der Ehe vorhanden waren, Erbschaften und Schenkungen während der Ehe, Gegenstände zum persönlichen Gebrauch sowie Genugtuungsansprüche. Nur die während der Ehe gemeinsam erwirtschaftete Errungenschaft wird hälftig geteilt. Bei Gütertrennung findet gar keine Teilung statt."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Welche Nachteile hat eine einvernehmliche Scheidung?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Die einvernehmliche Scheidung hat wenige echte Nachteile, birgt aber Risiken: Ohne anwaltliche Beratung besteht die Gefahr, dass ein Ehegatte auf Ansprüche verzichtet, die ihm zustehen (z.B. zu tiefer Unterhalt, unvollständiger Vorsorgeausgleich). Zudem kann eine vorschnelle Einigung unter emotionalem Druck zustande kommen. Auch wird die Scheidungskonvention vom Gericht nur eingeschränkt geprüft – bei formaler Korrektheit wird sie genehmigt, selbst wenn sie materiell unausgewogen ist."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Wann lohnt sich eine Scheidung?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Eine pauschale Antwort ist nicht möglich, da jede Situation anders ist. Aus rechtlicher Sicht lohnt sich eine Scheidung, wenn die Ehe unwiderruflich gescheitert ist und keine Aussicht auf Versöhnung besteht. Finanziell sind die Konsequenzen sorgfältig abzuwägen: zwei Haushalte sind teurer als einer. Alternativen wie die Trennung ohne Scheidung (Eheschutzverfahren nach Art. 172 ff. ZGB) oder eine Mediation können in bestimmten Fällen sinnvoller sein."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Wie lange dauert eine Scheidung in der Schweiz?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Eine einvernehmliche Scheidung dauert in der Schweiz in der Regel 2–6 Monate ab Einreichung. Bei einer strittigen Scheidung muss zunächst die zweijährige Trennungsfrist abgewartet werden (Art. 114 ZGB), danach dauert das Gerichtsverfahren zusätzlich 1–3 Jahre. In einfachen Fällen ohne Kinder kann eine einvernehmliche Scheidung in manchen Kantonen sogar innert weniger Wochen abgeschlossen werden."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Was passiert mit dem Haus bei einer Scheidung?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Bei einer Scheidung gibt es für die gemeinsame Immobilie grundsätzlich drei Optionen: Verkauf und Aufteilung des Erlöses, Übernahme durch einen Ehegatten mit Auszahlung des anderen oder (selten) weiterer gemeinsamer Besitz. Die Zuteilung hängt von der Finanzierbarkeit, dem Güterstand und dem Kindeswohl ab. Dem Ehegatten, der die Kinder hauptsächlich betreut, wird die Familienwohnung häufig zugewiesen (Art. 121 ZGB)."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Brauche ich einen Anwalt für die Scheidung?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Ein Anwalt ist in der Schweiz nicht obligatorisch, aber dringend empfohlen. Nur bei sehr einfachen einvernehmlichen Scheidungen (keine Kinder, kein Immobilienbesitz, geringe Vermögenswerte) kann unter Umständen auf einen Anwalt verzichtet werden. Bei allen anderen Konstellationen schützt anwaltliche Vertretung vor finanziellen Nachteilen. Bei strittigen Scheidungen ist eine professionelle Vertretung nahezu unerlässlich."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Was ist eine Scheidungskonvention?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Die Scheidungskonvention ist die schriftliche Vereinbarung der Ehegatten über die Regelung aller Scheidungsfolgen – Unterhalt, Sorgerecht, Vermögensteilung und Vorsorgeausgleich (Art. 111 Abs. 1 ZGB). Sie wird gemeinsam mit dem Scheidungsbegehren beim Gericht eingereicht und vom Gericht geprüft und genehmigt. Ohne vollständige Scheidungskonvention ist eine einvernehmliche Scheidung nach Art. 111 ZGB nicht möglich."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Kann ich die Scheidung auch online einreichen?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "In der Schweiz kann das Scheidungsbegehren in den meisten Kantonen nach wie vor nicht vollständig online eingereicht werden. Der Scheidungsantrag muss in der Regel schriftlich beim zuständigen Gericht eingereicht werden. Einzelne Kantone bieten elektronische Eingabemöglichkeiten an, verlangen aber in der Regel eine qualifizierte elektronische Signatur. Die persönliche Anhörung vor Gericht bleibt zudem obligatorisch und kann nicht durch eine Online-Verhandlung ersetzt werden."
+                    }
+                }
+            ]
+        })} />
+
+        <!-- Schema Markup: BreadcrumbList -->
+        <script type="application/ld+json" set:html={JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://familienrechtanwalt.ch"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Scheidung",
+                    "item": "https://familienrechtanwalt.ch/scheidung"
+                }
+            ]
+        })} />
+
+    </article>
+
+    <!-- CTA Section -->
+    <section class="bg-navy py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-serif font-bold text-white mb-4">Fragen zur Scheidung?</h2>
+            <p class="text-blue-100 mb-8 text-lg">Lassen Sie sich von einem spezialisierten Familienrechtsanwalt beraten – kostenlos und unverbindlich.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-white px-8 py-4 rounded font-semibold text-lg hover:bg-opacity-90 transition">Kostenlose Ersteinschätzung</a>
         </div>
     </section>
 
-    <CTA
-        title="Fragen zur Scheidung?"
-        text="Lassen Sie sich von einem spezialisierten Familienrechtsanwalt beraten."
-    />
 </Layout>

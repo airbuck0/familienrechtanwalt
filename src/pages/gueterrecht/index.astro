@@ -1,41 +1,690 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import CTA from '../../components/CTA.astro';
-
-const articles = [
-  { title: "Güterrecht in der Schweiz", href: "/gueterrecht/gueterrecht-schweiz", desc: "Übersicht über das Schweizer Güterrecht" },
-  { title: "Güterstand", href: "/gueterrecht/gueterstand", desc: "Die verschiedenen Güterstände" },
-  { title: "Errungenschaftsbeteiligung", href: "/gueterrecht/errungenschaftsbeteiligung", desc: "Der ordentliche Güterstand" },
-  { title: "Gütertrennung", href: "/gueterrecht/guetertrennung", desc: "Vollständige Vermögenstrennung" },
-  { title: "Gütergemeinschaft", href: "/gueterrecht/guetergemeinschaft", desc: "Gemeinsames Vermögen der Ehegatten" },
-  { title: "Güterrechtliche Auseinandersetzung", href: "/gueterrecht/gueterrechtliche-auseinandersetzung", desc: "Vermögensaufteilung bei Scheidung" },
-  { title: "Gütertrennungsvertrag", href: "/gueterrecht/guetertrennungsvertrag", desc: "Vertrag zur Gütertrennung" },
-];
 ---
 
-<Layout title="Güterrecht" description="Alles zum Thema Güterrecht in der Schweiz: Güterstand, Errungenschaftsbeteiligung, Gütertrennung und Vermögensaufteilung">
+<Layout
+    title="Güterrecht in der Schweiz – Güterstand, Vermögen & Scheidung 2026"
+    description="Güterrecht Schweiz: Errungenschaftsbeteiligung, Gütertrennung & Gütergemeinschaft erklärt. Vermögensaufteilung bei Scheidung, Ehevertrag & aktuelle Rechtsprechung."
+    keywords="Güterrecht Schweiz, Errungenschaftsbeteiligung, Gütertrennung, Gütergemeinschaft, Güterstand, Vermögensaufteilung Scheidung, Ehevertrag, güterrechtliche Auseinandersetzung, Eigengut, Errungenschaft"
+>
+
+    <!-- Header -->
     <header class="bg-navy pt-32 pb-16">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-gold font-medium mb-4">Ratgeber Familienrecht</p>
             <h1 class="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Güterrecht in der Schweiz</h1>
-            <p class="text-xl text-blue-100">Güterstand, Vermögensaufteilung und eheliches Vermögensrecht</p>
+            <p class="text-xl text-blue-100">Güterstände, Vermögensaufteilung und güterrechtliche Auseinandersetzung – der umfassende Leitfaden</p>
         </div>
     </header>
 
-    <section class="py-12">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid gap-6">
-                {articles.map(article => (
-                    <a href={article.href} class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
-                        <h2 class="text-xl font-bold text-navy mb-2">{article.title}</h2>
-                        <p class="text-gray-600">{article.desc}</p>
-                    </a>
-                ))}
+    <!-- Main Content -->
+    <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <!-- Das Wichtigste in Kürze -->
+        <div class="bg-navy text-white p-8 rounded-lg mb-12">
+            <h2 class="text-2xl font-serif font-bold mb-6 text-white">Das Wichtigste in Kürze</h2>
+            <ul class="space-y-3">
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">✓</span>
+                    <span><strong>Drei Güterstände:</strong> Errungenschaftsbeteiligung (gesetzlicher Normalfall, Art. 196 ZGB), Gütertrennung (Art. 247 ZGB) und Gütergemeinschaft (Art. 221 ZGB) – wählbar per Ehevertrag</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">✓</span>
+                    <span><strong>Errungenschaftsbeteiligung gilt automatisch:</strong> Ohne Ehevertrag unterstehen alle Ehepaare in der Schweiz der Errungenschaftsbeteiligung</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">✓</span>
+                    <span><strong>Eigengut bleibt geschützt:</strong> Voreheliches Vermögen, Erbschaften und Schenkungen gehören zum Eigengut und werden bei der Scheidung nicht geteilt (Art. 198 ZGB)</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">✓</span>
+                    <span><strong>Vorschlagsteilung:</strong> Bei der Scheidung wird die Errungenschaft (Wertzuwachs während der Ehe) hälftig geteilt – jeder Ehegatte erhält die Hälfte des Vorschlags des anderen (Art. 215 ZGB)</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">✓</span>
+                    <span><strong>Ehevertrag:</strong> Ein notariell beurkundeter Ehevertrag ermöglicht die Wahl eines anderen Güterstands oder Modifikationen innerhalb der Errungenschaftsbeteiligung (Art. 182 ZGB)</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-gold mr-3">✓</span>
+                    <span><strong>Beweislast:</strong> Wer behauptet, ein Vermögenswert sei Eigengut, muss dies beweisen – ansonsten gilt die Vermutung, dass er zur Errungenschaft gehört (Art. 200 ZGB)</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Einleitung -->
+        <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+            Das Güterrecht regelt die vermögensrechtlichen Beziehungen zwischen Ehegatten – sowohl während der Ehe als auch bei deren Auflösung durch <a href="/scheidung" class="text-gold hover:underline font-semibold">Scheidung</a> oder Tod. Es bestimmt, welche Vermögenswerte wem gehören, wie diese während der Ehe verwaltet werden und wie das Vermögen bei Beendigung des Güterstands aufgeteilt wird. Das Schweizer Güterrecht ist in den Art. 181–251 des Zivilgesetzbuchs (ZGB) geregelt.
+        </p>
+        <p class="text-gray-700 mb-6">
+            Dieser Ratgeber gibt Ihnen einen umfassenden Überblick über die <a href="/gueterrecht/gueterstand" class="text-gold hover:underline font-semibold">drei Güterstände</a> im Schweizer Recht: von der <a href="/gueterrecht/errungenschaftsbeteiligung" class="text-gold hover:underline font-semibold">Errungenschaftsbeteiligung</a> als gesetzlichem Normalfall über die <a href="/gueterrecht/guetertrennung" class="text-gold hover:underline font-semibold">Gütertrennung</a> bis zur <a href="/gueterrecht/guetergemeinschaft" class="text-gold hover:underline font-semibold">Gütergemeinschaft</a>. Sie erfahren, wie die <a href="/gueterrecht/gueterrechtliche-auseinandersetzung" class="text-gold hover:underline font-semibold">güterrechtliche Auseinandersetzung</a> bei einer Scheidung abläuft und wann ein <a href="/eherecht/ehevertrag" class="text-gold hover:underline font-semibold">Ehevertrag</a> sinnvoll ist.
+        </p>
+
+        <!-- Inhaltsverzeichnis -->
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-12">
+            <h2 class="font-serif text-xl font-bold text-navy mb-4">Inhaltsverzeichnis</h2>
+            <nav>
+                <ol class="space-y-2 text-gray-700">
+                    <li><a href="#grundlagen" class="text-gold hover:underline">1. Rechtliche Grundlagen des Güterrechts</a></li>
+                    <li><a href="#gueterstaende" class="text-gold hover:underline">2. Die drei Güterstände im Überblick</a></li>
+                    <li><a href="#errungenschaftsbeteiligung" class="text-gold hover:underline">3. Errungenschaftsbeteiligung – der ordentliche Güterstand</a></li>
+                    <li><a href="#guetertrennung" class="text-gold hover:underline">4. Gütertrennung</a></li>
+                    <li><a href="#guetergemeinschaft" class="text-gold hover:underline">5. Gütergemeinschaft</a></li>
+                    <li><a href="#ehevertrag" class="text-gold hover:underline">6. Ehevertrag und Güterstandswahl</a></li>
+                    <li><a href="#auseinandersetzung" class="text-gold hover:underline">7. Güterrechtliche Auseinandersetzung bei Scheidung</a></li>
+                    <li><a href="#vermoegenswerte" class="text-gold hover:underline">8. Typische Vermögenswerte und ihre Zuordnung</a></li>
+                    <li><a href="#hinzurechnung" class="text-gold hover:underline">9. Hinzurechnung und Ersatzforderungen</a></li>
+                    <li><a href="#anwalt" class="text-gold hover:underline">10. Wann Sie einen Anwalt beiziehen sollten</a></li>
+                    <li><a href="#fazit" class="text-gold hover:underline">11. Fazit</a></li>
+                    <li><a href="#faq" class="text-gold hover:underline">12. Häufig gestellte Fragen (FAQ)</a></li>
+                </ol>
+            </nav>
+        </div>
+
+        <!-- 1. Rechtliche Grundlagen -->
+        <h2 id="grundlagen" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Rechtliche Grundlagen des Güterrechts</h2>
+
+        <p class="text-gray-700 mb-6">
+            Das <a href="/gueterrecht/gueterrecht-schweiz" class="text-gold hover:underline font-semibold">Schweizer Güterrecht</a> ist im Zweiten Titel des Zivilgesetzbuchs (ZGB) in den Art. 181–251 geregelt. Es gliedert sich in vier Abschnitte: die allgemeinen Vorschriften (Art. 181–195), die Errungenschaftsbeteiligung (Art. 196–220), die Gütergemeinschaft (Art. 221–246) und die Gütertrennung (Art. 247–251). Das Güterrecht tritt mit der Eheschliessung in Kraft und endet mit der Auflösung der Ehe durch Scheidung, Tod oder Ungültigerklärung.
+        </p>
+
+        <div class="overflow-x-auto mb-8">
+            <table class="min-w-full bg-white border border-gray-200">
+                <thead class="bg-navy text-white">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Abschnitt</th>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Gegenstand</th>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Artikel ZGB</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Allgemeine Vorschriften</td>
+                        <td class="px-6 py-4 text-gray-700">Güterstandswahl, Ehevertrag, Vermögensverwaltung, Haftung</td>
+                        <td class="px-6 py-4 text-gray-700">Art. 181–195</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Errungenschaftsbeteiligung</td>
+                        <td class="px-6 py-4 text-gray-700">Ordentlicher Güterstand: Eigengut, Errungenschaft, Vorschlag</td>
+                        <td class="px-6 py-4 text-gray-700">Art. 196–220</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Gütergemeinschaft</td>
+                        <td class="px-6 py-4 text-gray-700">Gesamtgut, Eigengut, Verwaltung, Haftung</td>
+                        <td class="px-6 py-4 text-gray-700">Art. 221–246</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Gütertrennung</td>
+                        <td class="px-6 py-4 text-gray-700">Vollständig getrennte Vermögensmassen</td>
+                        <td class="px-6 py-4 text-gray-700">Art. 247–251</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+            <p class="font-semibold text-navy mb-2">Wichtig – Vertragsfreiheit mit Grenzen:</p>
+            <p class="text-gray-700">Die Ehegatten können ihren Güterstand durch Ehevertrag frei wählen (Art. 182 ZGB). Der Vertrag muss jedoch öffentlich beurkundet werden (Art. 184 ZGB). Innerhalb des gewählten Güterstands bestehen zudem bestimmte Gestaltungsmöglichkeiten – so kann etwa bei der Errungenschaftsbeteiligung vereinbart werden, dass die Erträge des Eigenguts nicht zur Errungenschaft zählen (Art. 199 ZGB).</p>
+        </div>
+
+        <!-- 2. Drei Güterstände -->
+        <h2 id="gueterstaende" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Die drei Güterstände im Überblick</h2>
+
+        <p class="text-gray-700 mb-6">
+            Das Schweizer Recht kennt drei <a href="/gueterrecht/gueterstand" class="text-gold hover:underline font-semibold">Güterstände</a>, die sich grundlegend in der Frage unterscheiden, wem das Vermögen während der Ehe gehört und wie es bei Auflösung aufgeteilt wird.
+        </p>
+
+        <div class="overflow-x-auto mb-8">
+            <table class="min-w-full bg-white border border-gray-200">
+                <thead class="bg-navy text-white">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Kriterium</th>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Errungenschaftsbeteiligung</th>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Gütertrennung</th>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Gütergemeinschaft</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Rechtsgrundlage</td>
+                        <td class="px-6 py-4 text-gray-700">Art. 196–220 ZGB</td>
+                        <td class="px-6 py-4 text-gray-700">Art. 247–251 ZGB</td>
+                        <td class="px-6 py-4 text-gray-700">Art. 221–246 ZGB</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Entstehung</td>
+                        <td class="px-6 py-4 text-gray-700">Von Gesetzes wegen (ohne Ehevertrag)</td>
+                        <td class="px-6 py-4 text-gray-700">Durch Ehevertrag oder gerichtliche Anordnung</td>
+                        <td class="px-6 py-4 text-gray-700">Nur durch Ehevertrag</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Vermögensmassen</td>
+                        <td class="px-6 py-4 text-gray-700">4 Massen: Eigengut Mann, Eigengut Frau, Errungenschaft Mann, Errungenschaft Frau</td>
+                        <td class="px-6 py-4 text-gray-700">2 Massen: Vermögen Mann, Vermögen Frau</td>
+                        <td class="px-6 py-4 text-gray-700">3 Massen: Gesamtgut, Eigengut Mann, Eigengut Frau</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Aufteilung bei Scheidung</td>
+                        <td class="px-6 py-4 text-gray-700">Hälftige Teilung des Vorschlags (Errungenschaft)</td>
+                        <td class="px-6 py-4 text-gray-700">Keine Teilung – jeder behält sein Vermögen</td>
+                        <td class="px-6 py-4 text-gray-700">Hälftige Teilung des Gesamtguts</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Schutz des Eigenguts</td>
+                        <td class="px-6 py-4 text-gray-700">Erbschaften, Schenkungen, voreheliches Vermögen bleiben geschützt</td>
+                        <td class="px-6 py-4 text-gray-700">Gesamtes Vermögen bleibt beim jeweiligen Ehegatten</td>
+                        <td class="px-6 py-4 text-gray-700">Nur gesetzliches oder vertraglich vereinbartes Eigengut</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Häufigkeit</td>
+                        <td class="px-6 py-4 text-gray-700">Ca. 90 % aller Ehen (Normalfall)</td>
+                        <td class="px-6 py-4 text-gray-700">Ca. 9 % (v.a. bei Unternehmern, Selbstständigen)</td>
+                        <td class="px-6 py-4 text-gray-700">Ca. 1 % (selten gewählt)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 3. Errungenschaftsbeteiligung -->
+        <h2 id="errungenschaftsbeteiligung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Errungenschaftsbeteiligung – der ordentliche Güterstand</h2>
+
+        <p class="text-gray-700 mb-6">
+            Die <a href="/gueterrecht/errungenschaftsbeteiligung" class="text-gold hover:underline font-semibold">Errungenschaftsbeteiligung</a> ist der ordentliche Güterstand im Schweizer Recht (Art. 196 ZGB). Sie gilt automatisch für alle Ehepaare, die keinen Ehevertrag abgeschlossen haben – das sind rund 90 % aller Ehen in der Schweiz. Während der Ehe verwaltet jeder Ehegatte sein Vermögen selbst. Erst bei der Auflösung des Güterstands (durch Scheidung oder Tod) wird die während der Ehe erzielte Errungenschaft hälftig geteilt.
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Eigengut und Errungenschaft</h3>
+
+        <p class="text-gray-700 mb-6">
+            Das Herzstück der Errungenschaftsbeteiligung ist die Unterscheidung zwischen Eigengut und Errungenschaft. Jeder Ehegatte verfügt über zwei Vermögensmassen:
+        </p>
+
+        <p class="text-gray-700 mb-4"><strong>Eigengut (Art. 198 ZGB):</strong> Vermögenswerte, die einem Ehegatten allein gehören und nicht geteilt werden:</p>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 mb-6 ml-4">
+            <li>Gegenstände, die dem persönlichen Gebrauch dienen</li>
+            <li>Vermögenswerte, die beim Eheschluss bereits vorhanden waren (voreheliches Vermögen)</li>
+            <li>Während der Ehe unentgeltlich erworbene Werte (Erbschaften, Schenkungen)</li>
+            <li>Genugtuungsansprüche</li>
+            <li>Surrogate für Eigengut (Ersatzanschaffungen)</li>
+        </ul>
+
+        <p class="text-gray-700 mb-4"><strong>Errungenschaft (Art. 197 ZGB):</strong> Vermögenswerte, die während der Ehe entgeltlich erworben werden:</p>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 mb-6 ml-4">
+            <li>Arbeitserwerb (Lohn, Gehalt, Boni, Honorare)</li>
+            <li>Leistungen der Sozialversicherungen und Personalfürsorge</li>
+            <li>Entschädigungen wegen Arbeitsunfähigkeit</li>
+            <li>Erträge des Eigenguts (z.B. Mietzinseinnahmen einer geerbten Liegenschaft)</li>
+            <li>Was mit Mitteln der Errungenschaft erworben wurde (Surrogate)</li>
+        </ul>
+
+        <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+            <p class="font-semibold text-navy mb-2">Wichtig – Vermutung zugunsten der Errungenschaft:</p>
+            <p class="text-gray-700">Kann nicht nachgewiesen werden, dass ein Vermögenswert Eigengut ist, so wird vermutet, dass er zur Errungenschaft gehört (Art. 200 Abs. 3 ZGB). Die Beweislast liegt bei demjenigen, der behauptet, ein Wert sei Eigengut. In der Praxis ist es daher entscheidend, die Eigengutqualität zu dokumentieren – insbesondere bei gemischten Finanzierungen (z.B. Immobilienkauf mit Eigengut und Errungenschaft, BGE 138 III 150).</p>
+        </div>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Der Vorschlag und seine Berechnung</h3>
+
+        <p class="text-gray-700 mb-6">
+            Bei der Auflösung der Errungenschaftsbeteiligung wird für jeden Ehegatten die Errungenschaft ermittelt. Der Überschuss der Errungenschaft über die Schulden, die auf der Errungenschaft lasten, ergibt den <strong>Vorschlag</strong> (Art. 210 ZGB). Dieser Vorschlag wird zwischen den Ehegatten hälftig geteilt (Art. 215 Abs. 1 ZGB). Jeder Ehegatte hat somit Anspruch auf die Hälfte des Vorschlags des anderen Ehegatten. Ein allfälliger Rückschlag (Schulden übersteigen die Errungenschaft) wird nicht geteilt, sondern verbleibt beim betreffenden Ehegatten (Art. 210 Abs. 2 ZGB).
+        </p>
+
+        <p class="text-gray-700 mb-6">
+            Vereinfachtes Berechnungsschema:
+        </p>
+
+        <ol class="list-decimal list-inside space-y-2 text-gray-700 mb-6 ml-4">
+            <li>Aktiven der Errungenschaft jedes Ehegatten ermitteln (Marktwerte per Stichtag)</li>
+            <li>Schulden der Errungenschaft abziehen</li>
+            <li>Allfällige Hinzurechnungen vornehmen (Art. 208 ZGB)</li>
+            <li>Allfällige Ersatzforderungen zwischen Vermögensmassen berücksichtigen (Art. 209 ZGB)</li>
+            <li>Vorschlag = Errungenschaft ./. Schulden + Hinzurechnungen ./. Ersatzforderungen</li>
+            <li>Vorschlagsbeteiligung = ½ des Vorschlags des anderen Ehegatten</li>
+        </ol>
+
+        <!-- 4. Gütertrennung -->
+        <h2 id="guetertrennung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Gütertrennung</h2>
+
+        <p class="text-gray-700 mb-6">
+            Die <a href="/gueterrecht/guetertrennung" class="text-gold hover:underline font-semibold">Gütertrennung</a> ist der einfachste Güterstand: Es gibt kein gemeinsames Vermögen. Jeder Ehegatte behält sein Eigentum, verwaltet es selbst und haftet allein für seine Schulden (Art. 247 ff. ZGB). Bei einer Scheidung findet keine Vermögensteilung statt – jeder nimmt mit, was ihm gehört.
+        </p>
+
+        <p class="text-gray-700 mb-6">
+            Die Gütertrennung entsteht auf drei Arten: durch <a href="/gueterrecht/guetertrennungsvertrag" class="text-gold hover:underline font-semibold">Ehevertrag (Gütertrennungsvertrag)</a>, durch gerichtliche Anordnung (Art. 185 ZGB, z.B. bei Überschuldung eines Ehegatten oder wenn die wirtschaftlichen Interessen eines Ehegatten gefährdet sind) oder von Gesetzes wegen im Fall eines Konkursverfahrens über einen Ehegatten (Art. 188 ZGB).
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Für wen eignet sich die Gütertrennung?</h3>
+
+        <p class="text-gray-700 mb-6">
+            Die Gütertrennung wird häufig gewählt von Unternehmern und Selbstständigen (zum Schutz des Ehegatten vor Geschäftsrisiken), bei Wiederverheiratung mit Kindern aus erster Ehe, bei sehr ungleichen Vermögensverhältnissen oder wenn beide Ehegatten wirtschaftlich unabhängig sind und ihre Finanzen vollständig getrennt halten möchten. Sie bietet maximalen Schutz, aber auch keine güterrechtliche Teilhabe am Vermögenszuwachs während der Ehe.
+        </p>
+
+        <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+            <p class="font-semibold text-navy mb-2">Hinweis – Gütertrennung schützt nicht vor Unterhalt:</p>
+            <p class="text-gray-700">Die Gütertrennung betrifft nur das Güterrecht. Ansprüche auf <a href="/unterhalt" class="text-gold hover:underline font-semibold">Unterhalt</a> (nachehelicher Unterhalt, Kindesunterhalt) und auf den Vorsorgeausgleich (Teilung der 2. Säule) bestehen unabhängig vom Güterstand. Auch bei Gütertrennung kann ein Ehegatte also nach der Scheidung zur Zahlung von <a href="/unterhalt/nachehelicher-unterhalt" class="text-gold hover:underline font-semibold">nachehelichem Unterhalt</a> verpflichtet werden.</p>
+        </div>
+
+        <!-- 5. Gütergemeinschaft -->
+        <h2 id="guetergemeinschaft" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Gütergemeinschaft</h2>
+
+        <p class="text-gray-700 mb-6">
+            Die <a href="/gueterrecht/guetergemeinschaft" class="text-gold hover:underline font-semibold">Gütergemeinschaft</a> ist der umfassendste Güterstand und kann nur durch Ehevertrag begründet werden (Art. 221 ZGB). In diesem System werden die Vermögen beider Ehegatten weitgehend zusammengelegt: Es entsteht ein <strong>Gesamtgut</strong>, das beiden Ehegatten gemeinsam gehört und gemeinsam verwaltet wird. Daneben kann jeder Ehegatte über ein Eigengut verfügen.
+        </p>
+
+        <p class="text-gray-700 mb-6">
+            Das Gesetz unterscheidet drei Formen der Gütergemeinschaft: die <strong>allgemeine Gütergemeinschaft</strong> (alles wird Gesamtgut), die <strong>Errungenschaftsgemeinschaft</strong> (nur die Errungenschaft wird Gesamtgut) und die <strong>beschränkte Gütergemeinschaft</strong> (nur bestimmte Vermögenswerte werden Gesamtgut). In der Praxis wird die Gütergemeinschaft nur noch selten gewählt, da sie komplexe Verwaltungs- und Haftungsfragen aufwirft.
+        </p>
+
+        <!-- 6. Ehevertrag -->
+        <h2 id="ehevertrag" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Ehevertrag und Güterstandswahl</h2>
+
+        <p class="text-gray-700 mb-6">
+            Ein <a href="/eherecht/ehevertrag" class="text-gold hover:underline font-semibold">Ehevertrag</a> ermöglicht den Ehegatten, vom ordentlichen Güterstand (Errungenschaftsbeteiligung) abzuweichen oder Modifikationen innerhalb des gewählten Systems vorzunehmen. Der Ehevertrag muss notariell beurkundet werden (Art. 184 ZGB) und kann vor oder während der Ehe abgeschlossen werden. Er kann auch nachträglich geändert oder aufgehoben werden.
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Gestaltungsmöglichkeiten im Ehevertrag</h3>
+
+        <p class="text-gray-700 mb-6">
+            Innerhalb der Errungenschaftsbeteiligung bieten sich folgende vertragliche Gestaltungsmöglichkeiten:
+        </p>
+
+        <ul class="list-disc list-inside space-y-2 text-gray-700 mb-6 ml-4">
+            <li><strong>Veränderung der Vorschlagsteilung (Art. 216 ZGB):</strong> Die Ehegatten können vereinbaren, dass der Vorschlag anders als hälftig geteilt wird – z.B. dass der gesamte Vorschlag dem überlebenden Ehegatten zukommt (Meistbegünstigungsklausel)</li>
+            <li><strong>Ausschluss der Erträge des Eigenguts (Art. 199 ZGB):</strong> Normalerweise zählen Erträge des Eigenguts (z.B. Mieteinnahmen) zur Errungenschaft. Per Ehevertrag können diese dem Eigengut zugewiesen werden</li>
+            <li><strong>Zuweisung von Vermögenswerten zum Eigengut (Art. 199 ZGB):</strong> Bestimmte während der Ehe erworbene Werte können vertraglich als Eigengut qualifiziert werden</li>
+        </ul>
+
+        <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+            <p class="font-semibold text-navy mb-2">Praxishinweis – Wann ist ein Ehevertrag sinnvoll?</p>
+            <p class="text-gray-700">Ein Ehevertrag ist besonders empfehlenswert bei: Unternehmensbeteiligungen (Schutz des Betriebs), erheblichem vorehelichem Vermögen, internationalen Ehen (Festlegung des anwendbaren Rechts), Wiederverheiratung mit Kindern aus erster Ehe, grossen Einkommensunterschieden und bei Immobilienbesitz mit gemischter Finanzierung.</p>
+        </div>
+
+        <!-- 7. Güterrechtliche Auseinandersetzung -->
+        <h2 id="auseinandersetzung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Güterrechtliche Auseinandersetzung bei Scheidung</h2>
+
+        <p class="text-gray-700 mb-6">
+            Die <a href="/gueterrecht/gueterrechtliche-auseinandersetzung" class="text-gold hover:underline font-semibold">güterrechtliche Auseinandersetzung</a> ist neben dem <a href="/unterhalt" class="text-gold hover:underline font-semibold">Unterhalt</a>, dem <a href="/sorgerecht" class="text-gold hover:underline font-semibold">Sorgerecht</a> und dem Vorsorgeausgleich eine der vier zentralen Scheidungsfolgen. Sie bestimmt, wie das Vermögen der Ehegatten aufgeteilt wird. Bei der Errungenschaftsbeteiligung folgt die Auseinandersetzung einem klar strukturierten Ablauf.
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ablauf der güterrechtlichen Auseinandersetzung</h3>
+
+        <ol class="list-decimal list-inside space-y-3 text-gray-700 mb-6 ml-4">
+            <li><strong>Stichtag bestimmen:</strong> Massgebend ist grundsätzlich der Zeitpunkt der Einreichung des Scheidungsbegehrens (Art. 204 Abs. 2 ZGB). Für die Bewertung der Vermögenswerte ist der Zeitpunkt der Auseinandersetzung massgebend (Art. 214 ZGB).</li>
+            <li><strong>Inventar erstellen:</strong> Sämtliche Vermögenswerte und Schulden beider Ehegatten werden erfasst und den vier Gütermassen zugeordnet (Eigengut Mann/Frau, Errungenschaft Mann/Frau).</li>
+            <li><strong>Vermögenswerte bewerten:</strong> Alle Aktiven werden zum Verkehrswert bewertet. Bei Liegenschaften, Unternehmen und Kunstgegenständen kann eine professionelle Schätzung erforderlich sein.</li>
+            <li><strong>Schulden zuordnen:</strong> Schulden werden der Vermögensmasse zugeordnet, mit der sie zusammenhängen.</li>
+            <li><strong>Ersatzforderungen berechnen:</strong> Haben Vermögensverschiebungen zwischen den Massen stattgefunden (z.B. Eigengut zur Tilgung von Schulden der Errungenschaft verwendet), sind Ersatzforderungen zu berechnen (Art. 209 ZGB).</li>
+            <li><strong>Hinzurechnungen prüfen:</strong> Unentgeltliche Zuwendungen und Vermögensentäusserungen werden dem Vorschlag hinzugerechnet (Art. 208 ZGB).</li>
+            <li><strong>Vorschlag berechnen und teilen:</strong> Der Vorschlag jedes Ehegatten wird hälftig geteilt (Art. 215 ZGB).</li>
+        </ol>
+
+        <p class="text-gray-700 mb-6">
+            Die güterrechtliche Auseinandersetzung kann einvernehmlich im Rahmen einer <a href="/scheidung/scheidungskonvention" class="text-gold hover:underline font-semibold">Scheidungskonvention</a> geregelt werden. Bei Streitigkeiten entscheidet das Gericht. In der Praxis sind häufig die Bewertung von Liegenschaften und Unternehmen, die Zuordnung gemischt finanzierter Vermögenswerte und die Berechnung von Ersatzforderungen strittig.
+        </p>
+
+        <!-- 8. Typische Vermögenswerte -->
+        <h2 id="vermoegenswerte" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Typische Vermögenswerte und ihre Zuordnung</h2>
+
+        <p class="text-gray-700 mb-6">
+            In der Praxis ergeben sich bei der <a href="/gueterrecht/vermoegensaufteilung-bei-scheidung" class="text-gold hover:underline font-semibold">Vermögensaufteilung bei der Scheidung</a> regelmässig Zuordnungsfragen. Die folgende Übersicht zeigt, wie typische Vermögenswerte behandelt werden:
+        </p>
+
+        <div class="overflow-x-auto mb-8">
+            <table class="min-w-full bg-white border border-gray-200">
+                <thead class="bg-navy text-white">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Vermögenswert</th>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Zuordnung</th>
+                        <th class="px-6 py-3 text-left text-sm font-semibold">Besonderheiten</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Immobilie (während Ehe gekauft)</td>
+                        <td class="px-6 py-4 text-gray-700">Errungenschaft (soweit mit Erwerbseinkommen finanziert)</td>
+                        <td class="px-6 py-4 text-gray-700">Bei gemischter Finanzierung anteilige Zuordnung zu Eigengut und Errungenschaft</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Geerbte Liegenschaft</td>
+                        <td class="px-6 py-4 text-gray-700">Eigengut</td>
+                        <td class="px-6 py-4 text-gray-700">Wertsteigerung durch Investitionen aus Errungenschaft begründet Ersatzforderung</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Bankkonto / Sparkonten</td>
+                        <td class="px-6 py-4 text-gray-700">Errungenschaft (Lohnersparnisse)</td>
+                        <td class="px-6 py-4 text-gray-700">Eigengut nur bei nachweisbarer Herkunft (Erbschaft, vorehelich)</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-6 py-4 text-gray-700 font-semibold">3. Säule (Säule 3a)</td>
+                        <td class="px-6 py-4 text-gray-700">Errungenschaft</td>
+                        <td class="px-6 py-4 text-gray-700">Einzahlungen während der Ehe aus Erwerbseinkommen</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Unternehmen / Geschäftsanteile</td>
+                        <td class="px-6 py-4 text-gray-700">Errungenschaft (während Ehe aufgebauter Wert)</td>
+                        <td class="px-6 py-4 text-gray-700">Bewertung komplex (Ertragswert, Substanzwert); vorehelicher Wert = Eigengut</td>
+                    </tr>
+                    <tr class="bg-gray-50">
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Fahrzeug</td>
+                        <td class="px-6 py-4 text-gray-700">Errungenschaft (bei Kauf mit Lohn)</td>
+                        <td class="px-6 py-4 text-gray-700">Verkehrswert per Stichtag</td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4 text-gray-700 font-semibold">Schmuck / Kunstgegenstände</td>
+                        <td class="px-6 py-4 text-gray-700">Persönlicher Gebrauch: Eigengut; Anlageobjekt: je nach Finanzierung</td>
+                        <td class="px-6 py-4 text-gray-700">Bei Schenkung unter Ehegatten: Eigengut des Beschenkten</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 9. Hinzurechnung und Ersatzforderungen -->
+        <h2 id="hinzurechnung" class="font-serif text-3xl font-bold text-navy mt-12 mb-6">Hinzurechnung und Ersatzforderungen</h2>
+
+        <p class="text-gray-700 mb-6">
+            Zwei Schutzmechanismen des Güterrechts sind besonders wichtig: die Hinzurechnung (Art. 208 ZGB) und die Ersatzforderungen (Art. 209 ZGB). Sie verhindern, dass ein Ehegatte die Errungenschaft zum Nachteil des anderen schmälert.
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Hinzurechnung (Art. 208 ZGB)</h3>
+
+        <p class="text-gray-700 mb-6">
+            Hat ein Ehegatte in den fünf Jahren vor Auflösung des Güterstands ohne Zustimmung des anderen unentgeltliche Zuwendungen gemacht (Schenkungen, Vermögensverschiebungen), werden diese dem Vorschlag wieder hinzugerechnet. Gleiches gilt für Vermögensentäusserungen, die in der Absicht vorgenommen wurden, den Beteiligungsanspruch des anderen zu schmälern – ohne zeitliche Beschränkung. In der Praxis dient diese Bestimmung dem Schutz vor einer Verschleuderung der Errungenschaft im Hinblick auf die Scheidung (BGE 132 III 145).
+        </p>
+
+        <h3 class="font-serif text-2xl font-bold text-navy mt-8 mb-4">Ersatzforderungen (Art. 209 ZGB)</h3>
+
+        <p class="text-gray-700 mb-6">
+            Wenn eine Vermögensmasse (z.B. Eigengut) zum Vorteil einer anderen Vermögensmasse (z.B. Errungenschaft) beigetragen hat, entsteht eine Ersatzforderung. Typische Beispiele:
+        </p>
+
+        <ul class="list-disc list-inside space-y-2 text-gray-700 mb-6 ml-4">
+            <li>Eigengut wird für die Amortisation einer Hypothek auf einer Liegenschaft der Errungenschaft verwendet</li>
+            <li>Errungenschaft wird für die Renovation einer geerbten Liegenschaft (Eigengut) eingesetzt</li>
+            <li>Erbschaft (Eigengut) fliesst in ein gemeinsam genutztes Bankkonto der Errungenschaft</li>
+        </ul>
+
+        <div class="bg-gray-50 border-l-4 border-gold p-6 my-8">
+            <p class="font-semibold text-navy mb-2">Praxishinweis – Dokumentation ist entscheidend:</p>
+            <p class="text-gray-700">Ersatzforderungen müssen nachgewiesen werden. Wer Eigengut in die Errungenschaft investiert (oder umgekehrt), sollte dies sorgfältig dokumentieren: Überweisungsbelege aufbewahren, Vermögensmassen auf getrennten Konten führen und die Herkunft von Geldflüssen nachvollziehbar machen. Ohne Nachweis gilt die Vermutung der Errungenschaft (Art. 200 Abs. 3 ZGB).</p>
+        </div>
+
+        <!-- Anwalt-Sektion -->
+        <section id="anwalt" class="mb-12">
+            <h2 class="text-3xl font-serif font-bold text-navy mb-6">Wann Sie einen Anwalt für Familienrecht beiziehen sollten</h2>
+
+            <p class="text-gray-700 mb-6">
+                Das Güterrecht gehört zu den technisch anspruchsvollsten Bereichen des Familienrechts. Die korrekte Zuordnung von Vermögenswerten zu Eigengut und Errungenschaft, die Berechnung von Ersatzforderungen und die Bewertung von Liegenschaften und Unternehmen erfordern spezialisiertes Fachwissen. Bereits kleine Fehler bei der Zuordnung können zu erheblichen finanziellen Nachteilen führen.
+            </p>
+
+            <p class="text-gray-700 mb-6">
+                Besonders in folgenden Situationen ist die Beratung durch einen spezialisierten <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Familienrecht</a> empfohlen: bei der güterrechtlichen Auseinandersetzung im Rahmen einer <a href="/scheidung" class="text-gold hover:underline font-semibold">Scheidung</a>, bei der Erstellung oder Überprüfung eines Ehevertrags, bei Streitigkeiten über die Zuordnung von Vermögenswerten, bei der Bewertung von Unternehmen oder Liegenschaften sowie bei internationalen Sachverhalten mit ausländischen Vermögenswerten.
+            </p>
+
+            <p class="text-gray-700 mb-6">
+                Ein erfahrener <a href="/" class="text-gold hover:underline font-semibold">Scheidungsanwalt</a> kann die güterrechtliche Auseinandersetzung professionell vorbereiten, Ihre Ansprüche berechnen und durchsetzen. Auch bei der Ausarbeitung eines <a href="/eherecht/ehevertrag" class="text-gold hover:underline font-semibold">Ehevertrags</a> ist die Unterstützung durch einen <a href="/" class="text-gold hover:underline font-semibold">Anwalt für Eherecht</a> empfehlenswert, um die vertragliche Gestaltung optimal auf Ihre Situation abzustimmen.
+            </p>
+
+            <div class="bg-gradient-to-r from-navy to-blue-800 p-8 rounded-lg text-white">
+                <h3 class="text-xl font-bold mb-4">Kostenlose Ersteinschätzung Ihrer güterrechtlichen Situation</h3>
+                <p class="mb-6">Unsere spezialisierten Familienrechtsanwälte analysieren Ihre Vermögenssituation und zeigen Ihnen auf, welche Ansprüche im Rahmen der güterrechtlichen Auseinandersetzung bestehen. Unverbindlich und kostenlos.</p>
+                <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-3 px-6 rounded-lg hover:bg-yellow-500 transition-colors">Jetzt Beratung anfragen</a>
+            </div>
+        </section>
+
+        <!-- Fazit -->
+        <h2 id="fazit" class="text-3xl font-serif font-bold text-navy mb-6">Fazit</h2>
+
+        <p class="text-gray-700 mb-6">
+            Das Schweizer Güterrecht bietet mit der Errungenschaftsbeteiligung einen ausgewogenen Kompromiss zwischen wirtschaftlicher Eigenständigkeit während der Ehe und gerechter Teilhabe am gemeinsam Erarbeiteten bei deren Auflösung. Wer seine Vermögensverhältnisse anders gestalten möchte, kann durch Ehevertrag die Gütertrennung oder Gütergemeinschaft wählen – oder innerhalb der Errungenschaftsbeteiligung individuelle Anpassungen vornehmen.
+        </p>
+
+        <p class="text-gray-700 mb-6">
+            Für Betroffene ist es entscheidend, die eigenen Vermögensverhältnisse zu kennen und die Zuordnung von Vermögenswerten zu dokumentieren. Die Unterscheidung zwischen Eigengut und Errungenschaft ist bei einer Scheidung von grosser finanzieller Tragweite. Nutzen Sie die weiterführenden Detailartikel auf dieser Seite, um sich umfassend über die einzelnen Güterstände und die güterrechtliche Auseinandersetzung zu informieren.
+        </p>
+
+        <!-- FAQ -->
+        <section id="faq" class="mt-16 mb-12">
+            <h2 class="text-3xl font-serif font-bold text-navy mb-8">Häufig gestellte Fragen (FAQ)</h2>
+            <div class="space-y-6">
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Was ist der ordentliche Güterstand in der Schweiz?</h3>
+                    <p class="text-gray-700">Der ordentliche Güterstand in der Schweiz ist die Errungenschaftsbeteiligung (Art. 196 ZGB). Sie gilt automatisch für alle Ehepaare, die keinen Ehevertrag abgeschlossen haben. Dabei bleibt während der Ehe das Vermögen getrennt; erst bei der Auflösung des Güterstands (Scheidung oder Tod) wird die während der Ehe erzielte Errungenschaft hälftig geteilt.</p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Wie wird das Vermögen bei einer Scheidung aufgeteilt?</h3>
+                    <p class="text-gray-700">Bei der Errungenschaftsbeteiligung wird die Errungenschaft (während der Ehe entgeltlich erworbenes Vermögen) hälftig geteilt. Eigengut (voreheliches Vermögen, Erbschaften, Schenkungen) wird nicht geteilt und bleibt beim jeweiligen Ehegatten. Zusätzlich erfolgt ein Vorsorgeausgleich (Teilung der 2. Säule). Bei Gütertrennung findet keine Vermögensteilung statt.</p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Was zählt als Eigengut und was als Errungenschaft?</h3>
+                    <p class="text-gray-700">Zum Eigengut gehören: voreheliches Vermögen, Erbschaften, Schenkungen, Genugtuungsansprüche und persönliche Gebrauchsgegenstände (Art. 198 ZGB). Zur Errungenschaft gehören: Arbeitserwerb, Sozialversicherungsleistungen, Erträge des Eigenguts und alles, was mit Mitteln der Errungenschaft angeschafft wurde (Art. 197 ZGB). Im Zweifel gilt die Vermutung zugunsten der Errungenschaft (Art. 200 Abs. 3 ZGB).</p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Was passiert mit dem Haus bei einer Scheidung?</h3>
+                    <p class="text-gray-700">Das Haus wird nach seiner Finanzierung den Vermögensmassen zugeordnet. Wurde es mit Erwerbseinkommen (Errungenschaft) finanziert, fliesst es in die Vorschlagsteilung ein. Bei gemischter Finanzierung (z.B. Erbschaft + Sparkapital) wird anteilig zugeordnet. Das Gericht kann einem Ehegatten die Liegenschaft unter Anrechnung auf seinen Vorschlag zuweisen, wobei der andere entschädigt wird.</p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Wann braucht man einen Ehevertrag?</h3>
+                    <p class="text-gray-700">Ein Ehevertrag ist besonders empfehlenswert bei: Unternehmensbeteiligungen, grossem vorehelichem Vermögen, Wiederverheiratung mit Kindern aus erster Ehe, internationalen Ehen und bei grosser Einkommensdifferenz. Ohne Ehevertrag gilt automatisch die Errungenschaftsbeteiligung. Der Ehevertrag muss notariell beurkundet werden (Art. 184 ZGB).</p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Was ist der Unterschied zwischen Gütertrennung und Errungenschaftsbeteiligung?</h3>
+                    <p class="text-gray-700">Bei der Errungenschaftsbeteiligung wird die Errungenschaft (Wertzuwachs während der Ehe) bei Auflösung hälftig geteilt. Bei der Gütertrennung findet keinerlei Vermögensteilung statt – jeder Ehegatte behält sein gesamtes Vermögen. Die Gütertrennung muss per Ehevertrag vereinbart oder gerichtlich angeordnet werden.</p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Wird eine Erbschaft bei der Scheidung geteilt?</h3>
+                    <p class="text-gray-700">Nein. Erbschaften und Schenkungen gehören zum Eigengut (Art. 198 Ziff. 2 ZGB) und werden bei der güterrechtlichen Auseinandersetzung nicht geteilt. Allerdings: Erträge der Erbschaft (z.B. Zinsen, Mieteinnahmen) gelten als Errungenschaft und fliessen in die Vorschlagsteilung ein – sofern kein Ehevertrag dies anders regelt.</p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Was sind Ersatzforderungen im Güterrecht?</h3>
+                    <p class="text-gray-700">Ersatzforderungen entstehen, wenn eine Vermögensmasse auf Kosten einer anderen bereichert wurde (Art. 209 ZGB). Beispiel: Wird Eigengut (z.B. geerbtes Geld) für die Amortisation der Hypothek auf einem Haus der Errungenschaft verwendet, hat das Eigengut eine Ersatzforderung gegen die Errungenschaft. Diese wird bei der Scheidung verrechnet.</p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Kann man den Güterstand während der Ehe wechseln?</h3>
+                    <p class="text-gray-700">Ja, die Ehegatten können jederzeit durch notariellen Ehevertrag den Güterstand wechseln (Art. 182 ZGB). Beim Wechsel wird zunächst der bisherige Güterstand abgerechnet und dann der neue Güterstand begründet. Ein Güterstandswechsel kann auch steuerliche Auswirkungen haben und sollte sorgfältig geplant werden.</p>
+                </div>
+
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-navy mb-3">Was passiert mit der Pensionskasse bei einer Scheidung?</h3>
+                    <p class="text-gray-700">Die berufliche Vorsorge (2. Säule / Pensionskasse) wird unabhängig vom Güterstand hälftig geteilt (Art. 122–124e ZGB). Das während der Ehe angesparte Vorsorgeguthaben wird zwischen den Ehegatten ausgeglichen. Dies geschieht über das Gericht, das die Pensionskassen anweist, die entsprechenden Guthaben zu übertragen. Die 2. Säule ist vom Güterrecht getrennt und wird separat abgewickelt.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </article>
+
+    <!-- Cluster Directory -->
+    <section class="bg-gray-50 py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-serif font-bold text-navy mb-4 text-center">Alle Ratgeber zum Thema Güterrecht</h2>
+            <p class="text-gray-600 text-center mb-12 max-w-3xl mx-auto">Vertiefen Sie Ihr Wissen mit unseren spezialisierten Artikeln zu allen Aspekten des Güterrechts in der Schweiz.</p>
+
+            <!-- Güterstände -->
+            <h3 class="text-2xl font-serif font-bold text-navy mb-6">Güterstände</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <a href="/gueterrecht/gueterrecht-schweiz" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="text-lg font-bold text-navy mb-2">Güterrecht in der Schweiz</h4>
+                    <p class="text-gray-600 text-sm">Umfassende Übersicht über das Schweizer Güterrecht: Grundlagen, Systematik und praktische Bedeutung.</p>
+                </a>
+                <a href="/gueterrecht/gueterstand" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="text-lg font-bold text-navy mb-2">Güterstand</h4>
+                    <p class="text-gray-600 text-sm">Die drei Güterstände im Vergleich: Errungenschaftsbeteiligung, Gütertrennung und Gütergemeinschaft.</p>
+                </a>
+                <a href="/gueterrecht/errungenschaftsbeteiligung" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="text-lg font-bold text-navy mb-2">Errungenschaftsbeteiligung</h4>
+                    <p class="text-gray-600 text-sm">Der ordentliche Güterstand: Eigengut, Errungenschaft, Vorschlagsberechnung und Teilung.</p>
+                </a>
+                <a href="/gueterrecht/guetertrennung" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="text-lg font-bold text-navy mb-2">Gütertrennung</h4>
+                    <p class="text-gray-600 text-sm">Vollständig getrennte Vermögensmassen: Voraussetzungen, Vorteile und Nachteile.</p>
+                </a>
+                <a href="/gueterrecht/guetergemeinschaft" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="text-lg font-bold text-navy mb-2">Gütergemeinschaft</h4>
+                    <p class="text-gray-600 text-sm">Gesamtgut, Eigengut und die drei Formen der Gütergemeinschaft erklärt.</p>
+                </a>
+                <a href="/gueterrecht/guetertrennungsvertrag" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="text-lg font-bold text-navy mb-2">Gütertrennungsvertrag</h4>
+                    <p class="text-gray-600 text-sm">Ehevertrag zur Gütertrennung: Inhalt, Form, Kosten und Gestaltungsmöglichkeiten.</p>
+                </a>
+            </div>
+
+            <!-- Vermögensaufteilung -->
+            <h3 class="text-2xl font-serif font-bold text-navy mb-6">Vermögensaufteilung bei Scheidung</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <a href="/gueterrecht/gueterrechtliche-auseinandersetzung" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="text-lg font-bold text-navy mb-2">Güterrechtliche Auseinandersetzung</h4>
+                    <p class="text-gray-600 text-sm">Ablauf, Stichtag, Bewertung und Berechnung der Vorschlagsteilung bei Scheidung.</p>
+                </a>
+                <a href="/gueterrecht/vermoegensaufteilung-bei-scheidung" class="block bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition border-l-4 border-gold">
+                    <h4 class="text-lg font-bold text-navy mb-2">Vermögensaufteilung bei Scheidung</h4>
+                    <p class="text-gray-600 text-sm">Praktischer Ratgeber: Wie wird das Vermögen bei einer Scheidung in der Schweiz aufgeteilt?</p>
+                </a>
             </div>
         </div>
     </section>
 
-    <CTA
-        title="Fragen zum Güterrecht?"
-        text="Lassen Sie sich von einem spezialisierten Familienrechtsanwalt beraten."
-    />
+    <!-- CTA -->
+    <section class="bg-gradient-to-r from-navy to-blue-800 py-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-serif font-bold text-white mb-6">Fragen zum Güterrecht?</h2>
+            <p class="text-xl text-blue-100 mb-8">Lassen Sie Ihre güterrechtliche Situation von einem spezialisierten Anwalt analysieren – kostenlos und unverbindlich.</p>
+            <a href="/kontakt" class="inline-block bg-gold text-navy font-bold py-4 px-8 rounded-lg text-lg hover:bg-yellow-500 transition-colors">Kostenlose Ersteinschätzung anfragen</a>
+        </div>
+    </section>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Güterrecht in der Schweiz – Güterstand, Vermögen & Scheidung 2026",
+        "description": "Güterrecht Schweiz: Errungenschaftsbeteiligung, Gütertrennung & Gütergemeinschaft erklärt. Vermögensaufteilung bei Scheidung, Ehevertrag & aktuelle Rechtsprechung.",
+        "author": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Familienrechtanwalt.ch",
+            "url": "https://familienrechtanwalt.ch"
+        },
+        "datePublished": "2025-01-20",
+        "dateModified": "2026-02-14",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://familienrechtanwalt.ch/gueterrecht"
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Was ist der ordentliche Güterstand in der Schweiz?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Der ordentliche Güterstand in der Schweiz ist die Errungenschaftsbeteiligung (Art. 196 ZGB). Sie gilt automatisch für alle Ehepaare, die keinen Ehevertrag abgeschlossen haben. Dabei bleibt während der Ehe das Vermögen getrennt; erst bei der Auflösung des Güterstands (Scheidung oder Tod) wird die während der Ehe erzielte Errungenschaft hälftig geteilt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wie wird das Vermögen bei einer Scheidung aufgeteilt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei der Errungenschaftsbeteiligung wird die Errungenschaft (während der Ehe entgeltlich erworbenes Vermögen) hälftig geteilt. Eigengut (voreheliches Vermögen, Erbschaften, Schenkungen) wird nicht geteilt und bleibt beim jeweiligen Ehegatten. Zusätzlich erfolgt ein Vorsorgeausgleich (Teilung der 2. Säule). Bei Gütertrennung findet keine Vermögensteilung statt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was zählt als Eigengut und was als Errungenschaft?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Zum Eigengut gehören: voreheliches Vermögen, Erbschaften, Schenkungen, Genugtuungsansprüche und persönliche Gebrauchsgegenstände (Art. 198 ZGB). Zur Errungenschaft gehören: Arbeitserwerb, Sozialversicherungsleistungen, Erträge des Eigenguts und alles, was mit Mitteln der Errungenschaft angeschafft wurde (Art. 197 ZGB). Im Zweifel gilt die Vermutung zugunsten der Errungenschaft (Art. 200 Abs. 3 ZGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert mit dem Haus bei einer Scheidung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Das Haus wird nach seiner Finanzierung den Vermögensmassen zugeordnet. Wurde es mit Erwerbseinkommen (Errungenschaft) finanziert, fliesst es in die Vorschlagsteilung ein. Bei gemischter Finanzierung (z.B. Erbschaft + Sparkapital) wird anteilig zugeordnet. Das Gericht kann einem Ehegatten die Liegenschaft unter Anrechnung auf seinen Vorschlag zuweisen, wobei der andere entschädigt wird."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wann braucht man einen Ehevertrag?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ein Ehevertrag ist besonders empfehlenswert bei: Unternehmensbeteiligungen, grossem vorehelichem Vermögen, Wiederverheiratung mit Kindern aus erster Ehe, internationalen Ehen und bei grosser Einkommensdifferenz. Ohne Ehevertrag gilt automatisch die Errungenschaftsbeteiligung. Der Ehevertrag muss notariell beurkundet werden (Art. 184 ZGB)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen Gütertrennung und Errungenschaftsbeteiligung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bei der Errungenschaftsbeteiligung wird die Errungenschaft (Wertzuwachs während der Ehe) bei Auflösung hälftig geteilt. Bei der Gütertrennung findet keinerlei Vermögensteilung statt – jeder Ehegatte behält sein gesamtes Vermögen. Die Gütertrennung muss per Ehevertrag vereinbart oder gerichtlich angeordnet werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Wird eine Erbschaft bei der Scheidung geteilt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nein. Erbschaften und Schenkungen gehören zum Eigengut (Art. 198 Ziff. 2 ZGB) und werden bei der güterrechtlichen Auseinandersetzung nicht geteilt. Allerdings: Erträge der Erbschaft (z.B. Zinsen, Mieteinnahmen) gelten als Errungenschaft und fliessen in die Vorschlagsteilung ein – sofern kein Ehevertrag dies anders regelt."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was sind Ersatzforderungen im Güterrecht?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ersatzforderungen entstehen, wenn eine Vermögensmasse auf Kosten einer anderen bereichert wurde (Art. 209 ZGB). Beispiel: Wird Eigengut (z.B. geerbtes Geld) für die Amortisation der Hypothek auf einem Haus der Errungenschaft verwendet, hat das Eigengut eine Ersatzforderung gegen die Errungenschaft. Diese wird bei der Scheidung verrechnet."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kann man den Güterstand während der Ehe wechseln?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ja, die Ehegatten können jederzeit durch notariellen Ehevertrag den Güterstand wechseln (Art. 182 ZGB). Beim Wechsel wird zunächst der bisherige Güterstand abgerechnet und dann der neue Güterstand begründet. Ein Güterstandswechsel kann auch steuerliche Auswirkungen haben und sollte sorgfältig geplant werden."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Was passiert mit der Pensionskasse bei einer Scheidung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Die berufliche Vorsorge (2. Säule / Pensionskasse) wird unabhängig vom Güterstand hälftig geteilt (Art. 122–124e ZGB). Das während der Ehe angesparte Vorsorgeguthaben wird zwischen den Ehegatten ausgeglichen. Dies geschieht über das Gericht, das die Pensionskassen anweist, die entsprechenden Guthaben zu übertragen. Die 2. Säule ist vom Güterrecht getrennt und wird separat abgewickelt."
+                }
+            }
+        ]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Güterrecht",
+                "item": "https://familienrechtanwalt.ch/gueterrecht"
+            }
+        ]
+    })} />
+
 </Layout>
