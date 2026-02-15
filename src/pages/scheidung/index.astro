@@ -639,6 +639,31 @@ import Layout from '../../layouts/Layout.astro';
             ]
         })} />
 
+        <script type="application/ld+json" set:html={JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Scheidungsberatung",
+            "description": "Beratung und Vertretung bei einvernehmlicher und strittiger Scheidung in der Schweiz. Scheidungskonvention, Nebenfolgen und Gerichtsverfahren.",
+            "provider": {
+                "@type": "LegalService",
+                "name": "Familienrechtsanwalt",
+                "url": "https://familienrechtanwalt.ch",
+                "telephone": "+41 XX XXX XX XX",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Reinhardstrasse 19",
+                    "postalCode": "8008",
+                    "addressLocality": "Zürich",
+                    "addressCountry": "CH"
+                }
+            },
+            "areaServed": {
+                "@type": "Country",
+                "name": "Schweiz"
+            },
+            "serviceType": "Familienrecht"
+        })} />
+
     </article>
 
     <!-- CTA Section -->

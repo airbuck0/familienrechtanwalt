@@ -107,4 +107,45 @@ import Layout from '../layouts/Layout.astro';
             </div>
         </div>
     </section>
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Familienrechtsanwalt",
+        "url": "https://familienrechtanwalt.ch",
+        "description": "Spezialisierter Anwalt für Familienrecht in Zürich. Seit über 15 Jahren ausschliesslich im Familienrecht tätig.",
+        "telephone": "+41 XX XXX XX XX",
+        "email": "kontakt@familienrechtanwalt.ch",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Reinhardstrasse 19",
+            "postalCode": "8008",
+            "addressLocality": "Zürich",
+            "addressCountry": "CH"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Schweiz"
+        },
+        "knowsAbout": ["Familienrecht", "Scheidungsrecht", "Sorgerecht", "Unterhaltsrecht", "Güterrecht", "Eherecht"]
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Über uns",
+                "item": "https://familienrechtanwalt.ch/ueber-uns"
+            }
+        ]
+    })} />
 </Layout>

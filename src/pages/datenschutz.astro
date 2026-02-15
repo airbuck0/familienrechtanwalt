@@ -21,13 +21,13 @@ import Layout from '../layouts/Layout.astro';
                     Verantwortlich für die Datenverarbeitung auf dieser Website ist:
                 </p>
                 <p class="text-gray-600">
-                    [FIRMENNAME]<br>
+                    Familienrechtsanwalt<br>
                     [VOLLSTÄNDIGER NAME]<br>
-                    [ADRESSE]<br>
-                    [PLZ ORT]<br>
+                    Reinhardstrasse 19<br>
+                    8008 Zürich<br>
                     Schweiz<br><br>
-                    Telefon: [TELEFON]<br>
-                    E-Mail: [EMAIL]
+                    Telefon: +41 XX XXX XX XX<br>
+                    E-Mail: kontakt@familienrechtanwalt.ch
                 </p>
 
                 <h2 class="text-2xl font-bold text-navy mb-4 mt-8">2. Erfassung allgemeiner Informationen</h2>
@@ -175,4 +175,23 @@ import Layout from '../layouts/Layout.astro';
             </div>
         </div>
     </section>
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Datenschutzerklärung",
+                "item": "https://familienrechtanwalt.ch/datenschutz"
+            }
+        ]
+    })} />
 </Layout>

@@ -1022,4 +1022,56 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
             }
         ]
     })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Unterhalt vollstrecken in der Schweiz – Schritt für Schritt",
+        "description": "Anleitung zur Vollstreckung von Unterhaltsforderungen in der Schweiz: Vom Rechtstitel über Inkassohilfe und Betreibung bis zur Pfändung.",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Vollstreckbaren Rechtstitel sicherstellen",
+                "text": "Stellen Sie sicher, dass Sie über einen vollstreckbaren Rechtstitel verfügen: ein rechtskräftiges Gerichtsurteil, einen Eheschutzentscheid, eine gerichtlich genehmigte Konvention oder einen von der KESB genehmigten Unterhaltsvertrag (Art. 80 SchKG)."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Inkassohilfe kontaktieren",
+                "text": "Beantragen Sie die kostenlose Inkassohilfe bei der zuständigen Gemeinde (Art. 131/290 ZGB). Die Fachstelle übernimmt die Mahnung, unterstützt bei der Betreibung und kann eine Schuldneranweisung beantragen."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Schuldneranweisung erwirken",
+                "text": "Beantragen Sie beim Gericht eine Schuldneranweisung (Art. 132/177/291 ZGB), damit der Unterhaltsbetrag direkt vom Arbeitgeber des Schuldners an Sie überwiesen wird."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Betreibungsbegehren einreichen",
+                "text": "Reichen Sie ein Betreibungsbegehren beim zuständigen Betreibungsamt am Wohnsitz des Schuldners ein (Art. 67 ff. SchKG). Geben Sie die einzelnen ausstehenden Beträge mit Verfallsdatum an."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 5,
+                "name": "Rechtsöffnung beantragen",
+                "text": "Beantragen Sie beim Rechtsöffnungsgericht die definitive Rechtsöffnung unter Vorlage Ihres Rechtstitels (Art. 80 SchKG). Bei einem privaten Unterhaltsvertrag wird nur provisorische Rechtsöffnung gewährt (Art. 82 SchKG)."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 6,
+                "name": "Fortsetzungsbegehren stellen",
+                "text": "Stellen Sie nach erteilter Rechtsöffnung innerhalb eines Jahres das Fortsetzungsbegehren beim Betreibungsamt (Art. 88 SchKG). Beachten Sie das Vorfahrprivileg: Laufende Unterhaltsforderungen erlauben die Pfändung ins Existenzminimum des Schuldners (BGE 145 III 317)."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 7,
+                "name": "Pfändung und Verwertung",
+                "text": "Das Betreibungsamt vollzieht die Pfändung von Einkommen und Vermögen des Schuldners. Unterhaltsforderungen geniessen erste Konkursklasse (Art. 219 Abs. 4 SchKG) und das Vorfahrprivileg bei der Pfändung."
+            }
+        ]
+    })} />
+
 </ArticleLayout>

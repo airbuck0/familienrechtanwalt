@@ -713,4 +713,56 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
             }
         ]
     })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Ehe annullieren in der Schweiz – Schritt für Schritt",
+        "description": "Anleitung zur Annullierung einer Ehe in der Schweiz: Von der Prüfung der Ungültigkeitsgründe bis zum Gerichtsurteil.",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Ungültigkeitsgrund prüfen",
+                "text": "Prüfen Sie, ob ein absoluter Ungültigkeitsgrund nach Art. 105 ZGB (z.B. Bigamie, Urteilsunfähigkeit, Verwandtschaft) oder ein relativer Ungültigkeitsgrund nach Art. 107 ZGB (z.B. Irrtum, Täuschung, Drohung) vorliegt."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Fristen und Klageberechtigung klären",
+                "text": "Bei relativen Ungültigkeitsgründen (Art. 107 ZGB) muss die Klage innert sechs Monaten seit Kenntnis des Grundes bzw. seit Wegfall der Drohung eingereicht werden, spätestens aber innert fünf Jahren seit der Eheschliessung. Bei absoluten Gründen (Art. 105 ZGB) gibt es keine Frist."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Beweismittel zusammentragen",
+                "text": "Sammeln Sie alle relevanten Beweise für den Ungültigkeitsgrund: Dokumente, Zeugenaussagen, ärztliche Gutachten oder behördliche Unterlagen, die den Mangel bei der Eheschliessung belegen."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Anwalt für Familienrecht konsultieren",
+                "text": "Ziehen Sie einen spezialisierten Anwalt für Familienrecht bei, der die Erfolgsaussichten beurteilt, die Klageschrift verfasst und Sie im gerichtlichen Verfahren vertritt."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 5,
+                "name": "Ungültigkeitsklage beim Gericht einreichen",
+                "text": "Reichen Sie die Ungültigkeitsklage beim zuständigen Gericht am Wohnsitz einer der Parteien ein. Bei absoluten Ungültigkeitsgründen kann auch die zuständige kantonale Behörde von Amtes wegen klagen (Art. 106 ZGB)."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 6,
+                "name": "Gerichtliches Verfahren durchlaufen",
+                "text": "Das Gericht führt ein Beweisverfahren durch, hört die Parteien an und prüft den geltend gemachten Ungültigkeitsgrund. Das Verfahren richtet sich nach der Zivilprozessordnung (ZPO)."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 7,
+                "name": "Gerichtsurteil und Nebenfolgen",
+                "text": "Das Gericht entscheidet über die Ungültigkeit der Ehe und regelt gleichzeitig die Nebenfolgen (Unterhalt, Güterrecht, Kinderbelange). Eine für ungültig erklärte Ehe gilt rückwirkend als nie geschlossen – ausser bei den Kindesfolgen."
+            }
+        ]
+    })} />
+
 </ArticleLayout>

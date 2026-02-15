@@ -643,4 +643,29 @@ import Layout from '../../layouts/Layout.astro';
         ]
     })} />
 
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Eherechtsberatung",
+        "description": "Beratung bei Eheschliessung, Ehevertrag, Eheschutz, eingetragener Partnerschaft und Konkubinat in der Schweiz.",
+        "provider": {
+            "@type": "LegalService",
+            "name": "Familienrechtsanwalt",
+            "url": "https://familienrechtanwalt.ch",
+            "telephone": "+41 XX XXX XX XX",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Reinhardstrasse 19",
+                "postalCode": "8008",
+                "addressLocality": "Zürich",
+                "addressCountry": "CH"
+            }
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Schweiz"
+        },
+        "serviceType": "Familienrecht"
+    })} />
+
 </Layout>

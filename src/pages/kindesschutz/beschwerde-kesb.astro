@@ -755,4 +755,61 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         ]
     })} />
 
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Beschwerde gegen KESB-Entscheid einreichen – Schritt für Schritt",
+        "description": "Anleitung zur Einreichung einer Beschwerde gegen einen KESB-Entscheid in der Schweiz: Von der Fristprüfung bis zum Gerichtsentscheid.",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "KESB-Entscheid prüfen und Frist beachten",
+                "text": "Prüfen Sie den schriftlich zugestellten KESB-Entscheid und beachten Sie die Beschwerdefrist von 30 Tagen ab Mitteilung (Art. 450b Abs. 1 ZGB). Die Frist ist eine nicht verlängerbare Verwirkungsfrist. Gerichtsferien hemmen die Frist im Kindesschutzverfahren nicht."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Beschwerdelegitimation und Beschwerdegründe klären",
+                "text": "Stellen Sie sicher, dass Sie beschwerdeberechtigt sind (Art. 450 Abs. 2 ZGB: betroffene Person, nahestehende Personen oder Personen mit rechtlich geschütztem Interesse). Identifizieren Sie die Beschwerdegründe: Rechtsverletzung, unrichtige Sachverhaltsfeststellung oder Unangemessenheit (Art. 450a ZGB)."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Beschwerdeschrift verfassen",
+                "text": "Verfassen Sie eine schriftliche Beschwerdeschrift mit einem klaren Antrag (was soll das Gericht entscheiden?), einer fundierten Begründung (warum ist der Entscheid falsch oder unangemessen?) und relevanten Beweismitteln."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Beschwerde beim zuständigen Gericht einreichen",
+                "text": "Reichen Sie die Beschwerde fristgerecht beim zuständigen kantonalen Gericht ein (Art. 450 Abs. 1 ZGB). Massgebend ist der Eingang beim Gericht, nicht die Absendung."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 5,
+                "name": "Aufschiebende Wirkung beantragen",
+                "text": "Beantragen Sie bei Bedarf die aufschiebende Wirkung der Beschwerde (Art. 450c ZGB). Standardmässig hat die Beschwerde keine aufschiebende Wirkung – der KESB-Entscheid wird sofort vollstreckt."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 6,
+                "name": "Vernehmlassung und Schriftenwechsel abwarten",
+                "text": "Das Gericht gibt der KESB Gelegenheit zur Vernehmlassung (Art. 450d ZGB). Es folgen ggf. Replik und Duplik. Bei Bedarf ordnet das Gericht weitere Beweismassnahmen an (Anhörung, Gutachten)."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 7,
+                "name": "Gerichtsentscheid",
+                "text": "Das Gericht entscheidet über die Beschwerde: Es kann den KESB-Entscheid aufheben, abändern oder die Beschwerde abweisen. Die Gesamtdauer beträgt typischerweise 3 bis 12 Monate."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 8,
+                "name": "Weiterzug ans Bundesgericht prüfen",
+                "text": "Gegen den Gerichtsentscheid kann innert 30 Tagen Beschwerde ans Bundesgericht erhoben werden (Art. 72 Abs. 2 lit. b BGG). Das Bundesgericht prüft nur noch Rechtsverletzungen, nicht die Angemessenheit."
+            }
+        ]
+    })} />
+
 </ArticleLayout>

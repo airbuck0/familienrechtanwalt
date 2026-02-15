@@ -582,4 +582,43 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
             }
         ]
     })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Ehevorbereitungsverfahren in der Schweiz – Schritt für Schritt",
+        "description": "Anleitung zum Ehevorbereitungsverfahren in der Schweiz: von der Vorbereitung der Dokumente über die Anmeldung beim Zivilstandsamt bis zur Trauungsermächtigung.",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Vorbereitung (3-6 Monate vor der Trauung)",
+                "text": "Ermitteln Sie das zuständige Zivilstandsamt am schweizerischen Wohnort eines der Verlobten. Beschaffen Sie alle benötigten Dokumente: gültiger Pass oder ID, aktuelle Wohnsitzbescheinigung und Gesuchsformular. Ausländische Staatsangehörige benötigen zusätzlich Geburtsurkunde, Zivilstandsnachweis, Nationalitätsnachweis und Aufenthaltsnachweis. Lassen Sie ausländische Dokumente übersetzen und beglaubigen (Apostille oder Legalisation)."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Anmeldung beim Zivilstandsamt",
+                "text": "Beide Verlobten müssen persönlich und gemeinsam beim Zivilstandsamt erscheinen. Stellen Sie das Gesuch und reichen Sie alle erforderlichen Dokumente im Original ein. Eine Vertretung ist nicht möglich. Das Verfahren kann frühestens 3 Monate vor dem gewünschten Trauungstermin eingeleitet werden."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Prüfung durch das Zivilstandsamt",
+                "text": "Das Zivilstandsamt prüft die Ehefähigkeit beider Verlobten, kontrolliert, ob Ehehindernisse vorliegen, und überprüft bei Ausländern den rechtmässigen Aufenthalt in der Schweiz. Die Bearbeitungsdauer beträgt 2-4 Wochen bei Schweizer Staatsangehörigen und 4-8 Wochen oder länger bei ausländischen Staatsangehörigen."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Abschluss des Verfahrens und Trauungsermächtigung",
+                "text": "Bei positiver Prüfung stellt das Zivilstandsamt die Trauungsermächtigung aus. Diese ist 3 Monate gültig. Die Kosten für das Ehevorbereitungsverfahren inklusive Trauungsermächtigung betragen CHF 150. Seit dem 1. Januar 2020 gibt es keine Wartefrist mehr zwischen Abschluss des Verfahrens und der Trauung."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 5,
+                "name": "Trauungstermin und Zivilstandskreis festlegen",
+                "text": "Wählen Sie den Zivilstandskreis für die Trauung -- dieser ist frei wählbar und muss nicht dem Wohnort entsprechen. Vereinbaren Sie den Trauungstermin. Bestimmen Sie zwei volljährige, urteilsfähige Trauzeugen mit gültigem Ausweis. Für Samstagstrauungen oder externe Traulokale fallen Zuschläge an."
+            }
+        ]
+    })} />
 </ArticleLayout>

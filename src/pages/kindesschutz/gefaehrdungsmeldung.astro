@@ -595,4 +595,55 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         ]
     })} />
 
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Gefährdungsmeldung bei der KESB einreichen – Schritt für Schritt",
+        "description": "Anleitung zur Einreichung einer Gefährdungsmeldung bei der KESB in der Schweiz: Von der Erkennung der Gefährdung bis zum KESB-Entscheid.",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Gefährdungsanzeichen erkennen",
+                "text": "Achten Sie auf konkrete Anzeichen einer Kindeswohlgefährdung: körperliche Verletzungen, Verhaltensauffälligkeiten, Vernachlässigung, psychische Belastung oder andere Hinweise, die auf eine Gefährdung des Kindes hindeuten."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Zuständige KESB ermitteln",
+                "text": "Ermitteln Sie die zuständige KESB am Wohnsitz des Kindes (Art. 315 Abs. 1 ZGB). Jede Gemeinde bzw. Region hat eine zuständige Kindes- und Erwachsenenschutzbehörde."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Gefährdungsmeldung vorbereiten",
+                "text": "Bereiten Sie die Meldung vor: Angaben zum Kind (Name, Alter, Adresse), Beschreibung der konkreten Beobachtungen, Zeitraum und Häufigkeit der Vorfälle, eigene bereits unternommene Schritte und Einschätzung der Dringlichkeit."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Meldung bei der KESB einreichen",
+                "text": "Reichen Sie die Gefährdungsmeldung bei der zuständigen KESB ein – schriftlich, mündlich, telefonisch oder per E-Mail (Art. 443 Abs. 1 ZGB). Viele KESB stellen auf ihrer Website Meldeformulare zur Verfügung."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 5,
+                "name": "KESB führt Triage und Vorabklärung durch",
+                "text": "Die KESB prüft die Meldung sofort auf Dringlichkeit (Triage). Bei akuter Gefahr werden superprovisorische Massnahmen eingeleitet (Art. 445 ZGB). Ansonsten erfolgt eine Vorabklärung zur Plausibilität der Meldung."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 6,
+                "name": "Sachverhaltsabklärung durch die KESB",
+                "text": "Die KESB führt eine umfassende Sachverhaltsabklärung durch: Gespräche mit Eltern, Kind und Fachpersonen, Einholung von Berichten und ggf. ein Erziehungsfähigkeitsgutachten. Die Betroffenen werden angehört (Art. 314a ZGB)."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 7,
+                "name": "KESB-Entscheid",
+                "text": "Die KESB entscheidet kollegial über das weitere Vorgehen: Einstellung des Verfahrens (keine Gefährdung), Anordnung von Kindesschutzmassnahmen (Beistandschaft, Obhutsentzug etc.) oder Verweis an freiwillige Beratungsstellen."
+            }
+        ]
+    })} />
+
 </ArticleLayout>

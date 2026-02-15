@@ -978,4 +978,49 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         ]
     })} />
 
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Aufenthaltsbestimmungsrecht beantragen – Umzugsgenehmigung für das Kind",
+        "description": "Anleitung zur Beantragung einer Umzugsgenehmigung bei gemeinsamem Sorgerecht in der Schweiz: von der einvernehmlichen Einigung bis zum behördlichen Entscheid nach Art. 301a ZGB.",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Einvernehmliche Einigung mit dem anderen Elternteil anstreben",
+                "text": "Versuchen Sie zunächst, eine einvernehmliche Lösung mit dem anderen Elternteil zu finden. Eine Mediation kann helfen, eine für beide Seiten akzeptable Regelung zu erarbeiten."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Zuständige Behörde bestimmen",
+                "text": "Bestimmen Sie die zuständige Behörde: Im Rahmen eines Scheidungsverfahrens ist das Gericht zuständig (Art. 315a ZGB), ausserhalb eines Scheidungsverfahrens die KESB am Wohnsitz des Kindes (Art. 301a Abs. 5 ZGB)."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Formellen Antrag einreichen",
+                "text": "Reichen Sie einen schriftlichen Antrag bei der zuständigen Behörde ein, der das Begehren, die Umzugsgründe, die geplanten Verhältnisse am neuen Ort und einen Vorschlag für das Besuchsrecht enthält."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Belege und Nachweise beifügen",
+                "text": "Legen Sie dem Antrag alle relevanten Belege bei: Arbeitsvertrag am neuen Ort, Mietvertrag, Schulanmeldung und weitere Nachweise zur geplanten Lebenssituation."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 5,
+                "name": "Anhörung und Abklärungen abwarten",
+                "text": "Die KESB oder das Gericht hört beide Elternteile und gegebenenfalls das Kind an. In komplexen Fällen kann ein kinderpsychologisches Gutachten angeordnet werden."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 6,
+                "name": "Entscheid der Behörde abwarten",
+                "text": "Die Behörde entscheidet auf Basis des Kindeswohls über die Bewilligung des Umzugs. Die Genehmigung kann mit Auflagen verbunden werden, etwa einer bestimmten Besuchsrechtsregelung."
+            }
+        ]
+    })} />
+
 </ArticleLayout>

@@ -428,4 +428,49 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         ]
     })} />
 
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Mediationsverfahren im Familienrecht – Schritt für Schritt",
+        "description": "Anleitung zum Ablauf eines Mediationsverfahrens im Schweizer Familienrecht: Von der Auftragsklärung über die Interessenklärung bis zur verbindlichen Vereinbarung.",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Erstgespräch und Auftragsklärung",
+                "text": "Im Erstgespräch erklärt der Mediator das Verfahren, klärt den Auftrag und die Erwartungen beider Parteien. Die Parteien unterzeichnen eine Mediationsvereinbarung mit den Regeln der Zusammenarbeit (Vertraulichkeit, Freiwilligkeit, Fairness)."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Themensammlung und Bestandesaufnahme",
+                "text": "Gemeinsam werden alle zu klärenden Themen gesammelt und strukturiert: z.B. Sorgerecht, Betreuung, Unterhalt, Wohnsituation und Vermögensaufteilung. Die aktuelle Situation wird erfasst und die relevanten Fakten zusammengetragen."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Interessenklärung",
+                "text": "In dieser zentralen Phase werden die hinter den Positionen liegenden Interessen, Bedürfnisse und Sorgen beider Parteien herausgearbeitet. Der Mediator unterstützt die Parteien dabei, die Perspektive des anderen zu verstehen."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Lösungsentwicklung",
+                "text": "Auf Basis der geklärten Interessen entwickeln die Parteien gemeinsam Lösungsoptionen. Kreative Ansätze werden erarbeitet und anhand der Interessen beider Seiten bewertet, bis einvernehmliche Lösungen gefunden werden."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 5,
+                "name": "Vereinbarung",
+                "text": "Die erarbeiteten Lösungen werden in einer schriftlichen Mediationsvereinbarung festgehalten. Bei einer Scheidungsmediation bildet diese Vereinbarung die Grundlage für die Scheidungskonvention, die dem Gericht eingereicht wird."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 6,
+                "name": "Umsetzung und Nachbetreuung",
+                "text": "Die getroffenen Vereinbarungen werden umgesetzt. Bei Bedarf bietet der Mediator nach einigen Monaten ein Nachgespräch an, um zu prüfen, ob die Vereinbarungen funktionieren und gegebenenfalls Anpassungen vorzunehmen."
+            }
+        ]
+    })} />
+
 </ArticleLayout>

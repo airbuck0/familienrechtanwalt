@@ -1259,4 +1259,49 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         ]
     })} />
 
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Vaterschaftsanerkennung beim Zivilstandsamt – Schritt für Schritt",
+        "description": "Anleitung zur Vaterschaftsanerkennung für unverheiratete Väter in der Schweiz: Ablauf beim Zivilstandsamt inkl. gleichzeitiger Sorgeerklärung nach Art. 260 und 298a ZGB.",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Termin beim Zivilstandsamt vereinbaren",
+                "text": "Vereinbaren Sie einen Termin beim zuständigen Zivilstandsamt. Bei den meisten Ämtern ist eine vorherige Anmeldung erforderlich. In einigen Kantonen können Termine online gebucht werden."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Dokumente zusammenstellen",
+                "text": "Stellen Sie alle erforderlichen Unterlagen zusammen: gültigen Ausweis (Pass oder ID), Personenstandsausweis, Wohnsitzbestätigung und bei nachgeburtlicher Anerkennung die Geburtsurkunde des Kindes."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Persönlich beim Zivilstandsamt erscheinen",
+                "text": "Der Vater muss persönlich beim Zivilstandsamt erscheinen. Eine Vertretung ist nicht zulässig. Die Mutter sollte anwesend sein, wenn gleichzeitig die Sorgeerklärung abgegeben werden soll."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Anerkennungserklärung abgeben",
+                "text": "Der Zivilstandsbeamte nimmt die Erklärung des Vaters entgegen, prüft die formellen Voraussetzungen und beurkundet die Anerkennung. Mutter und Kind werden anschliessend informiert."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 5,
+                "name": "Gleichzeitig gemeinsame elterliche Sorge erklären",
+                "text": "Beide Eltern erklären im selben Termin die gemeinsame elterliche Sorge (Art. 298a ZGB) und bestätigen, dass sie sich über Obhut, persönlichen Verkehr und Kindesunterhalt geeinigt haben."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 6,
+                "name": "Namenserklärung abgeben (optional)",
+                "text": "Wenn die Eltern die gemeinsame Sorge erklären, können sie gleichzeitig bestimmen, ob das Kind den Ledignamen der Mutter oder des Vaters tragen soll (Art. 270a ZGB)."
+            }
+        ]
+    })} />
+
 </ArticleLayout>

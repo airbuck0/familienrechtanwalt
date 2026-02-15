@@ -504,4 +504,55 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         ]
     })} />
 
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Adoptionsverfahren in der Schweiz – Schritt für Schritt",
+        "description": "Anleitung zum Adoptionsverfahren in der Schweiz: Von der Erstberatung über die Eignungsabklärung bis zum Adoptionsentscheid und der Zivilstandseintragung.",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Information und Beratung bei der Zentralbehörde",
+                "text": "Kontaktieren Sie die kantonale Zentralbehörde für Adoption Ihres Wohnsitzkantons. In einem Erstgespräch werden die verschiedenen Adoptionsformen, die gesetzlichen Voraussetzungen, der Verfahrensablauf und die Kosten besprochen."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Eignungsabklärung durchlaufen",
+                "text": "Durchlaufen Sie die umfassende Eignungsabklärung durch die kantonale Zentralbehörde (Art. 5 ff. AdoV): Einreichung der erforderlichen Unterlagen (Motivationsschreiben, Strafregisterauszug, ärztliches Zeugnis etc.), persönliche Gespräche, Hausbesuche und Paargespräche. Dauer: 3–12 Monate."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Erforderliche Zustimmungen einholen",
+                "text": "Holen Sie die erforderlichen Zustimmungen ein: Zustimmung der leiblichen Eltern vor der KESB (frühestens 6 Wochen nach Geburt, Art. 265a ZGB), Zustimmung des urteilsfähigen Kindes (Art. 265 Abs. 2 ZGB) und ggf. Zustimmung des Ehegatten."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Pflegeverhältnis etablieren",
+                "text": "Das Kind muss mindestens ein Jahr bei den künftigen Adoptiveltern leben und von ihnen gepflegt und erzogen werden (Art. 264 Abs. 2 ZGB). Für die Aufnahme eines nicht-verwandten Kindes ist eine Pflegeplatzbewilligung der KESB erforderlich."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 5,
+                "name": "Formelles Adoptionsgesuch einreichen",
+                "text": "Reichen Sie nach Ablauf der einjährigen Pflegezeit das formelle Adoptionsgesuch bei der zuständigen kantonalen Behörde ein (Art. 268 ZGB), inklusive Abklärungsbericht, Zustimmungserklärungen und aktuellen Unterlagen."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 6,
+                "name": "Adoptionsentscheid abwarten",
+                "text": "Die zuständige kantonale Behörde oder das Gericht prüft alle Voraussetzungen und spricht die Adoption aus, sofern sie dem Kindeswohl dient (Art. 268 ZGB). Nach Ablauf der 30-tägigen Beschwerdefrist wird der Entscheid rechtskräftig."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 7,
+                "name": "Zivilstandseintragung",
+                "text": "Nach Rechtskraft des Adoptionsentscheids wird die Adoption im Zivilstandsregister eingetragen. Der Adoptivelternteil wird als Elternteil registriert und die Namensregelung gemäss Adoptionsentscheid umgesetzt."
+            }
+        ]
+    })} />
+
 </ArticleLayout>

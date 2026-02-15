@@ -817,4 +817,49 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         ]
     })} />
 
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Scheidung auf gemeinsames Begehren einreichen – Schritt für Schritt",
+        "description": "Anleitung für die einvernehmliche Scheidung in der Schweiz nach Art. 111/112 ZGB: von der Vorbereitung der Scheidungskonvention bis zum rechtskräftigen Urteil.",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Vorbereitung: Scheidungskonvention erstellen und Unterlagen zusammenstellen",
+                "text": "Erstellen Sie gemeinsam eine vollständige Scheidungskonvention, die alle Nebenfolgen regelt (Sorgerecht, Unterhalt, Güterrecht, Vorsorgeausgleich, Wohnung), und stellen Sie alle erforderlichen Belege zusammen."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Gemeinsames Scheidungsbegehren beim zuständigen Gericht einreichen",
+                "text": "Reichen Sie das von beiden Ehegatten unterzeichnete Scheidungsbegehren zusammen mit der Konvention und allen Beilagen beim Bezirksgericht am Wohnsitz eines Ehegatten ein."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Formelle Prüfung durch das Gericht abwarten",
+                "text": "Das Gericht prüft die Vollständigkeit der Eingabe und fordert gegebenenfalls Ergänzungen oder fehlende Unterlagen an."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Kostenvorschuss bezahlen",
+                "text": "Das Gericht verlangt einen Kostenvorschuss für die Gerichtskosten (je nach Kanton CHF 500–3'000). Bezahlen Sie diesen fristgerecht."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 5,
+                "name": "Persönlich zur Anhörung erscheinen",
+                "text": "Beide Ehegatten erscheinen persönlich zur Anhörung. Das Gericht befragt Sie getrennt und gemeinsam zum Scheidungswillen und zur Konvention."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 6,
+                "name": "Scheidungsurteil und Rechtskraft",
+                "text": "Bei Genehmigung spricht das Gericht die Scheidung aus. Durch Verzicht auf die schriftliche Begründung wird das Urteil sofort rechtskräftig, andernfalls nach 30 Tagen."
+            }
+        ]
+    })} />
+
 </ArticleLayout>

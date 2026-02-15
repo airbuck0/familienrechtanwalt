@@ -63,6 +63,30 @@ import Layout from '../layouts/Layout.astro';
 
                     <div class="space-y-6">
                         <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="font-bold text-navy mb-2">Adresse</h3>
+                            <p class="text-gray-600">
+                                Familienrechtsanwalt<br>
+                                Reinhardstrasse 19<br>
+                                8008 Zürich
+                            </p>
+                        </div>
+
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="font-bold text-navy mb-2">Telefon</h3>
+                            <p class="text-gray-600">
+                                <a href="tel:+41XXXXXXXX" class="text-navy hover:text-gold transition">+41 XX XXX XX XX</a>
+                            </p>
+                        </div>
+
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="font-bold text-navy mb-2">E-Mail</h3>
+                            <p class="text-gray-600">
+                                <a href="mailto:kontakt@familienrechtanwalt.ch" class="text-navy hover:text-gold transition">kontakt@familienrechtanwalt.ch</a><br>
+                                <a href="mailto:info@familienrechtanwalt.ch" class="text-navy hover:text-gold transition">info@familienrechtanwalt.ch</a>
+                            </p>
+                        </div>
+
+                        <div class="bg-gray-50 p-6 rounded-lg">
                             <h3 class="font-bold text-navy mb-2">Kostenlose Ersteinschätzung</h3>
                             <p class="text-gray-600">Schildern Sie uns Ihren Fall - wir geben Ihnen eine erste Einschätzung kostenlos und unverbindlich.</p>
                         </div>
@@ -70,11 +94,6 @@ import Layout from '../layouts/Layout.astro';
                         <div class="bg-gray-50 p-6 rounded-lg">
                             <h3 class="font-bold text-navy mb-2">Schnelle Antwort</h3>
                             <p class="text-gray-600">Wir antworten in der Regel innerhalb von 24 Stunden auf Ihre Anfrage.</p>
-                        </div>
-
-                        <div class="bg-gray-50 p-6 rounded-lg">
-                            <h3 class="font-bold text-navy mb-2">Vertraulich</h3>
-                            <p class="text-gray-600">Alle Ihre Angaben werden streng vertraulich behandelt und unterliegen dem Anwaltsgeheimnis.</p>
                         </div>
 
                         <div class="bg-navy p-6 rounded-lg text-white">
@@ -92,4 +111,53 @@ import Layout from '../layouts/Layout.astro';
             </div>
         </div>
     </section>
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": "Familienrechtsanwalt",
+        "description": "Spezialisierter Anwalt für Familienrecht in Zürich. Beratung und Vertretung bei Scheidung, Sorgerecht, Unterhalt und Güterrecht.",
+        "url": "https://familienrechtanwalt.ch",
+        "telephone": "+41 XX XXX XX XX",
+        "email": "kontakt@familienrechtanwalt.ch",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Reinhardstrasse 19",
+            "postalCode": "8008",
+            "addressLocality": "Zürich",
+            "addressCountry": "CH"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Schweiz"
+        },
+        "serviceType": ["Familienrecht", "Scheidungsrecht", "Eherecht", "Sorgerecht", "Unterhaltsrecht", "Güterrecht"],
+        "priceRange": "$$",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+41 XX XXX XX XX",
+            "email": "kontakt@familienrechtanwalt.ch",
+            "contactType": "customer service",
+            "availableLanguage": ["Deutsch"]
+        }
+    })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://familienrechtanwalt.ch"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Kontakt",
+                "item": "https://familienrechtanwalt.ch/kontakt"
+            }
+        ]
+    })} />
 </Layout>

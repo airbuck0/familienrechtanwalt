@@ -1039,4 +1039,55 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         ]
     })} />
 
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Unterhalt einklagen in der Schweiz – Schritt für Schritt",
+        "description": "Anleitung zur Durchsetzung von Unterhaltsansprüchen in der Schweiz: Von der Dokumentation der Nichtzahlung bis zur Strafanzeige.",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Nichtzahlung dokumentieren",
+                "text": "Dokumentieren Sie alle ausgebliebenen Unterhaltszahlungen lückenlos: Kontoauszüge, Zahlungsbelege und den massgeblichen Unterhaltstitel (Gerichtsurteil, Eheschutzentscheid oder genehmigter Unterhaltsvertrag) sichern."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Schriftliche Mahnung versenden",
+                "text": "Senden Sie dem Unterhaltsschuldner eine schriftliche Mahnung per Einschreiben mit einer angemessenen Zahlungsfrist. Die Mahnung dient als Nachweis der Zahlungsaufforderung."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Inkassohilfe beantragen",
+                "text": "Beantragen Sie die kostenlose Inkassohilfe bei der zuständigen Gemeinde oder dem Kanton (Art. 131/290 ZGB). Die Fachstelle unterstützt Sie bei Mahnungen, Betreibungen und Schuldneranweisungen."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Alimentenbevorschussung prüfen",
+                "text": "Prüfen Sie, ob Sie Anspruch auf Alimentenbevorschussung durch die Wohngemeinde haben. Diese Leistung sichert den laufenden Unterhalt, während die Forderung gegenüber dem Schuldner weiterverfolgt wird."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 5,
+                "name": "Schuldneranweisung beantragen",
+                "text": "Beantragen Sie beim Gericht eine Schuldneranweisung an den Arbeitgeber des Pflichtigen (Art. 132/177/291 ZGB). Damit wird der Unterhaltsbetrag direkt vom Lohn abgezogen und an Sie überwiesen."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 6,
+                "name": "Betreibung einleiten",
+                "text": "Leiten Sie eine Betreibung auf Pfändung beim zuständigen Betreibungsamt ein (Art. 67 ff. SchKG). Mit einem vollstreckbaren Unterhaltstitel erhalten Sie die definitive Rechtsöffnung (Art. 80 SchKG)."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 7,
+                "name": "Strafanzeige erstatten",
+                "text": "Bei beharrlicher Nichtzahlung trotz wirtschaftlicher Leistungsfähigkeit können Sie Strafanzeige wegen Vernachlässigung der Unterhaltspflicht erstatten (Art. 217 StGB). Es droht Geldstrafe oder Freiheitsstrafe bis zu 3 Jahren."
+            }
+        ]
+    })} />
+
 </ArticleLayout>

@@ -724,4 +724,55 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         ]
     })} />
 
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Gemeinsame elterliche Sorge beantragen – Anleitung für unverheiratete Eltern",
+        "description": "Schritt-für-Schritt-Anleitung für unverheiratete Eltern in der Schweiz zur Beantragung der gemeinsamen elterlichen Sorge beim Zivilstandsamt oder bei der KESB nach Art. 298a ZGB.",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Termin beim Zivilstandsamt vereinbaren",
+                "text": "Vereinbaren Sie telefonisch einen Termin beim zuständigen Zivilstandsamt. Beide Elternteile müssen persönlich anwesend sein."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Erforderliche Dokumente vorbereiten",
+                "text": "Stellen Sie alle benötigten Unterlagen zusammen: gültige Ausweise beider Eltern, Wohnsitzbescheinigung (nicht älter als 8 Wochen) und gegebenenfalls die Geburtsurkunde des Kindes."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Gemeinsam beim Zivilstandsamt erscheinen",
+                "text": "Beide Eltern erscheinen gemeinsam beim Termin. Der gesamte Vorgang dauert ca. 30–60 Minuten."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Vaterschaftsanerkennung abgeben",
+                "text": "Der Vater erklärt mündlich die Vaterschaft und unterschreibt die Anerkennungsurkunde. Die Gebühr beträgt CHF 75."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 5,
+                "name": "Gemeinsame Sorgeerklärung abgeben",
+                "text": "Beide Eltern erklären gemeinsam die elterliche Sorge und bestätigen, dass sie sich über Obhut, Betreuungsanteile und Unterhalt verständigt haben (Art. 298a ZGB). Die Gebühr beträgt CHF 30."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 6,
+                "name": "Namenserklärung für das Kind abgeben",
+                "text": "Die Eltern bestimmen, welchen Ledignamen das Kind tragen soll – den der Mutter oder den des Vaters. Ohne Erklärung erhält das Kind den Ledignamen der Mutter."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 7,
+                "name": "Eintragung im Personenstandsregister",
+                "text": "Das Zivilstandsamt trägt die gemeinsame elterliche Sorge im Personenstandsregister ein. Die Eintragung ist sofort wirksam."
+            }
+        ]
+    })} />
+
 </ArticleLayout>

@@ -658,4 +658,29 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         ]
     })} />
 
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Internationales Familienrecht",
+        "description": "Beratung bei internationalen Scheidungen, Kindesentführung, Unterhaltsansprüchen und Anerkennung ausländischer Entscheidungen.",
+        "provider": {
+            "@type": "LegalService",
+            "name": "Familienrechtsanwalt",
+            "url": "https://familienrechtanwalt.ch",
+            "telephone": "+41 XX XXX XX XX",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Reinhardstrasse 19",
+                "postalCode": "8008",
+                "addressLocality": "Zürich",
+                "addressCountry": "CH"
+            }
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Schweiz"
+        },
+        "serviceType": "Familienrecht"
+    })} />
+
 </ArticleLayout>

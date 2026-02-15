@@ -515,4 +515,49 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
             }
         ]
     })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Eheschliessung in der Schweiz – Schritt für Schritt",
+        "description": "Anleitung zur Eheschliessung in der Schweiz: vom Ehevorbereitungsverfahren über die benötigten Dokumente bis zur Ziviltrauung und den Formalitäten danach.",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Zuständiges Zivilstandsamt ermitteln und Dokumente beschaffen",
+                "text": "Ermitteln Sie das zuständige Zivilstandsamt am Wohnort eines der Verlobten. Beschaffen Sie alle erforderlichen Dokumente: gültiger Pass oder ID, aktuelle Wohnsitzbescheinigung, Gesuchsformular. Bei ausländischer Staatsangehörigkeit zusätzlich: Geburtsurkunde, Zivilstandsnachweis, Nationalitätsnachweis und Aufenthaltsnachweis. Ausländische Dokumente müssen übersetzt und beglaubigt werden."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Ehevorbereitungsverfahren einleiten",
+                "text": "Erscheinen Sie persönlich und gemeinsam beim Zivilstandsamt. Das Verfahren kann frühestens 3 Monate vor dem gewünschten Trauungstermin eingeleitet werden. Reichen Sie alle Dokumente im Original ein und bezahlen Sie die Gebühren (ca. CHF 75-150)."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Prüfung abwarten und Trauungsermächtigung erhalten",
+                "text": "Das Zivilstandsamt prüft die Ehefähigkeit und kontrolliert, ob Ehehindernisse vorliegen. Bei Schweizer Staatsangehörigen dauert dies 2-4 Wochen, bei Ausländern 4-8 Wochen oder länger. Bei positiver Prüfung wird die Trauungsermächtigung ausgestellt, die 3 Monate gültig ist."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Namensrecht und Trauungstermin klären",
+                "text": "Treffen Sie den Entscheid über die Namensführung: beide Ledignamen behalten, einen gemeinsamen Familiennamen wählen oder einen Allianznamen führen. Bei verschiedenen Familiennamen bestimmen Sie, welchen Ledignamen die Kinder tragen. Vereinbaren Sie den Trauungstermin und wählen Sie zwei volljährige Trauzeugen."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 5,
+                "name": "Ziviltrauung durchführen",
+                "text": "Zur Ziviltrauung erscheinen das Brautpaar und die zwei Trauzeugen im Trausaal. Die Zivilstandsbeamtin prüft die Identität, hält eine Ansprache, stellt die Frage nach dem freien Willen und nimmt das Ja-Wort entgegen. Anschliessend erfolgen der optionale Ringtausch, die Unterschriften und die Übergabe des Familienbüchleins."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 6,
+                "name": "Formalitäten nach der Hochzeit erledigen",
+                "text": "Bewahren Sie das Familienbüchlein auf. Bei Namensänderung: Passen Sie Ausweise (Pass, ID), Führerausweis, Bankkonten und Versicherungen an. Informieren Sie Pensionskasse und Steuerbehörde. Überprüfen oder erstellen Sie Testament und Vorsorgeauftrag."
+            }
+        ]
+    })} />
 </ArticleLayout>

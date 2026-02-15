@@ -736,4 +736,29 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         ]
     })} />
 
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Kindesschutzberatung",
+        "description": "Beratung bei KESB-Verfahren, Beistandschaft, Gefährdungsmeldungen und Fremdplatzierung in der Schweiz.",
+        "provider": {
+            "@type": "LegalService",
+            "name": "Familienrechtsanwalt",
+            "url": "https://familienrechtanwalt.ch",
+            "telephone": "+41 XX XXX XX XX",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Reinhardstrasse 19",
+                "postalCode": "8008",
+                "addressLocality": "Zürich",
+                "addressCountry": "CH"
+            }
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Schweiz"
+        },
+        "serviceType": "Familienrecht"
+    })} />
+
 </ArticleLayout>

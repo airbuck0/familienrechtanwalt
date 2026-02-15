@@ -1015,4 +1015,49 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         ]
     })} />
 
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Scheidung einreichen in der Schweiz – Schritt für Schritt",
+        "description": "Anleitung zum Einreichen einer einvernehmlichen Scheidung in der Schweiz: von der Regelung der Scheidungsfolgen bis zur Anhörung vor Gericht.",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Scheidungsfolgen regeln",
+                "text": "Einigen Sie sich mit Ihrem Ehepartner über alle Scheidungsfolgen: Kinderbelange (Sorgerecht, Obhut, Besuchsrecht, Unterhalt), Güterrecht, Vorsorgeausgleich, nachehelicher Unterhalt und Wohnung."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Scheidungskonvention erstellen",
+                "text": "Halten Sie alle Vereinbarungen schriftlich in einer Scheidungskonvention fest. Eine rechtliche Beratung wird empfohlen, um Fehler zu vermeiden."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Unterlagen zusammenstellen",
+                "text": "Besorgen Sie alle erforderlichen Dokumente: Familienausweis, Einkommensnachweise, Pensionskassenbestätigungen, Steuererklärungen und weitere Belege."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Scheidungsbegehren ausfüllen",
+                "text": "Füllen Sie das Formular für das gemeinsame Scheidungsbegehren aus. Viele Gerichte stellen Formulare auf ihrer Website zur Verfügung."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 5,
+                "name": "Einreichung beim Gericht",
+                "text": "Reichen Sie das Scheidungsbegehren mit allen Unterlagen beim zuständigen Bezirksgericht am Wohnsitz eines Ehegatten ein und bezahlen Sie den Kostenvorschuss."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 6,
+                "name": "Anhörung vor Gericht",
+                "text": "Das Gericht lädt Sie zur Anhörung vor. Bei vollständiger Einigung und Genehmigung durch das Gericht wird die Scheidung sofort rechtskräftig."
+            }
+        ]
+    })} />
+
 </ArticleLayout>

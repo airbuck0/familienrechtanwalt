@@ -42,4 +42,26 @@ const heading = h1 || deriveHeading(title);
 
     <!-- CTA Section -->
     <CTA />
+
+    <!-- Organization Schema (NAP on every article page) -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": "Familienrechtsanwalt",
+        "url": "https://familienrechtanwalt.ch",
+        "telephone": "+41 XX XXX XX XX",
+        "email": "kontakt@familienrechtanwalt.ch",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Reinhardstrasse 19",
+            "postalCode": "8008",
+            "addressLocality": "Zürich",
+            "addressCountry": "CH"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Schweiz"
+        },
+        "priceRange": "$$"
+    })} />
 </Layout>

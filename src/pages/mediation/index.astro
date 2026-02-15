@@ -643,4 +643,29 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
         ]
     })} />
 
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Familienmediation",
+        "description": "Mediation bei Scheidung, Trennung und familienrechtlichen Konflikten als Alternative zum Gerichtsverfahren.",
+        "provider": {
+            "@type": "LegalService",
+            "name": "Familienrechtsanwalt",
+            "url": "https://familienrechtanwalt.ch",
+            "telephone": "+41 XX XXX XX XX",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Reinhardstrasse 19",
+                "postalCode": "8008",
+                "addressLocality": "Zürich",
+                "addressCountry": "CH"
+            }
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Schweiz"
+        },
+        "serviceType": "Familienrecht"
+    })} />
+
 </ArticleLayout>

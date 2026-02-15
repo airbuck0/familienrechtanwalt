@@ -767,4 +767,49 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
   }
   </script>
 
+  <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "Namensänderung nach der Scheidung – Rückkehr zum Ledignamen",
+      "description": "Anleitung zur Rückkehr zum Ledignamen nach einer Scheidung in der Schweiz gemäss Art. 119 ZGB: Verfahren beim Zivilstandsamt und anschliessende Dokumentenanpassung.",
+      "step": [
+          {
+              "@type": "HowToStep",
+              "position": 1,
+              "name": "Termin beim Zivilstandsamt vereinbaren",
+              "text": "Vereinbaren Sie einen Termin bei einem beliebigen Zivilstandsamt in der Schweiz. Eine vorherige Terminvereinbarung ist optional, aber empfohlen."
+          },
+          {
+              "@type": "HowToStep",
+              "position": 2,
+              "name": "Erforderliche Unterlagen zusammenstellen",
+              "text": "Bringen Sie einen gültigen Ausweis (Pass oder ID), eine beglaubigte Kopie des rechtskräftigen Scheidungsurteils und allenfalls einen Personenstandsausweis mit."
+          },
+          {
+              "@type": "HowToStep",
+              "position": 3,
+              "name": "Persönlich beim Zivilstandsamt erscheinen und Erklärung abgeben",
+              "text": "Erscheinen Sie persönlich beim Zivilstandsamt und erklären Sie, dass Sie Ihren Ledignamen wieder annehmen möchten. Eine Begründung ist nicht erforderlich."
+          },
+          {
+              "@type": "HowToStep",
+              "position": 4,
+              "name": "Gebühr bezahlen",
+              "text": "Bezahlen Sie die Gebühr von CHF 75 für die Namenserklärung. Optional können Sie eine Bestätigung für zusätzlich CHF 30 verlangen."
+          },
+          {
+              "@type": "HowToStep",
+              "position": 5,
+              "name": "Neue Ausweisdokumente beantragen",
+              "text": "Beantragen Sie umgehend neue Ausweisdokumente (Pass, Identitätskarte, Führerausweis) mit Ihrem Ledignamen."
+          },
+          {
+              "@type": "HowToStep",
+              "position": 6,
+              "name": "Behörden, Banken und Versicherungen informieren",
+              "text": "Informieren Sie innerhalb von 14 bis 30 Tagen Einwohneramt, Arbeitgeber, Banken, Krankenkasse, Versicherungen und weitere Stellen über die Namensänderung."
+          }
+      ]
+  })} />
+
 </ArticleLayout>

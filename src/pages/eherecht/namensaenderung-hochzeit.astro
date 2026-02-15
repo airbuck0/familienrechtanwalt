@@ -887,4 +887,49 @@ import ArticleLayout from '../../layouts/ArticleLayout.astro';
             }
         ]
     })} />
+
+    <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Namensänderung nach der Hochzeit in der Schweiz – Schritt für Schritt",
+        "description": "Anleitung zur Namensänderung bei der Eheschliessung in der Schweiz: von der Wahl des Namens über die Erklärung beim Zivilstandsamt bis zur Aktualisierung aller Dokumente.",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Namensoption wählen",
+                "text": "Entscheiden Sie sich für eine der drei Optionen: Beide behalten ihren Ledignamen (Standard, keine Erklärung nötig), ein gemeinsamer Familienname (Ledigname eines Partners) oder ein Allianzname mit Bindestrich für den Alltag. Beachten Sie die Auswirkungen auf den Kindesnamen."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Kindesnamen festlegen",
+                "text": "Falls beide Ehegatten ihren Ledignamen behalten, müssen Sie bei der Trauung bestimmen, welchen Ledignamen Ihre gemeinsamen Kinder tragen werden (Art. 270 Abs. 1 ZGB). Bei einem gemeinsamen Familiennamen erhalten die Kinder automatisch diesen Namen."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Erklärung beim Zivilstandsamt abgeben",
+                "text": "Wenn Sie einen gemeinsamen Familiennamen wünschen, geben Sie die Erklärung gegenüber der Zivilstandsbeamtin ab -- entweder bei der Trauung oder bereits im Ehevorbereitungsverfahren (Art. 160 Abs. 2 ZGB). Die Erklärung ist kostenlos und im Trauungsverfahren enthalten."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Allianzname beantragen (optional)",
+                "text": "Falls Sie einen Allianznamen (z.B. Müller-Meier) im Pass und in der ID führen möchten, stellen Sie einen Antrag beim Passbüro Ihrer Wohngemeinde oder des Kantons. Der Allianzname ist kein amtlicher Name, kann aber in den Ausweispapieren eingetragen werden."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 5,
+                "name": "Ausweise und Führerausweis aktualisieren",
+                "text": "Beantragen Sie bei Namensänderung einen neuen Schweizer Pass (CHF 145) und eine neue Identitätskarte (CHF 75). Ändern Sie den Führerausweis und den Fahrzeugausweis innerhalb von 14 Tagen -- dies ist gesetzlich vorgeschrieben (je CHF 30-50)."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 6,
+                "name": "Weitere Stellen informieren",
+                "text": "Melden Sie die Namensänderung umgehend an: Arbeitgeber, Krankenversicherung, Banken und Kreditkartenunternehmen, AHV-Ausgleichskasse, Steuerbehörde und Post. Bei Immobilienbesitz: Grundbuchamt informieren. Bei Selbständigkeit: Handelsregister aktualisieren."
+            }
+        ]
+    })} />
 </ArticleLayout>
