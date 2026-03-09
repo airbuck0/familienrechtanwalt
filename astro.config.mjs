@@ -7,6 +7,9 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: 'https://familienrechtanwalt.ch',
   trailingSlash: 'never',
+  build: {
+    format: 'file'
+  },
   vite: {
     plugins: [tailwindcss()]
   }
