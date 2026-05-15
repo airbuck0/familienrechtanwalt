@@ -11,7 +11,12 @@ interface Props {
 }
 
 const { title, description = "Kompetente Rechtsberatung im Schweizer Familienrecht", keywords = "Familienrecht, Schweiz, Anwalt", noindex = false } = Astro.props;
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+// Strip ".html" so the canonical matches the live (extensionless) URL the server serves.
+// Without this, `build.format: 'file'` produces canonicals like `/scheidung.html` while
+// the server redirects `.html` → `/scheidung`, causing Screaming Frog/Google to mark every
+// page as "Canonicalised" → not indexable.
+const cleanPath = Astro.url.pathname.replace(/\.html$/, '').replace(/\/index$/, '/') || '/';
+const canonicalURL = new URL(cleanPath, Astro.site);
 
 // Add brand suffix to plain titles (no separator) so <title> differs from <h1>
 const hasSeparator = title.includes(' | ') || title.includes(' – ') || (title.includes(': ') && title.indexOf(': ') >= 20) || (title.includes('? ') && title.indexOf('? ') >= 15) || /\s\d{4}$/.test(title);
