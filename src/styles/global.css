@@ -3,6 +3,10 @@
 @theme {
   --color-navy: #1e3a8a;
   --color-gold: #c9a961;
+  /* Darker gold variant for use on white/light backgrounds (WCAG AA: ~5.1:1 on white).
+     Original --color-gold has only 2.6:1 on white. Use text-gold-dark for links and
+     text on white surfaces; keep text-gold for content on navy/dark backgrounds. */
+  --color-gold-dark: #8b6914;
   --font-family-serif: 'Playfair Display', serif;
   --font-family-sans: 'Inter', sans-serif;
 }
