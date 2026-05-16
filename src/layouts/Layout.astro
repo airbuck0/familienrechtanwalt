@@ -54,7 +54,9 @@ const pageTitle = hasSeparator ? title : `${title} | Familienrechtanwalt.ch`;
 </head>
 <body class="font-sans text-gray-800">
     <Nav />
-    <slot />
+    <main>
+        <slot />
+    </main>
     <Footer />
 </body>
 </html>
